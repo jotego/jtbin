@@ -72,7 +72,7 @@ BASE_PATH="/media/fat"
 declare -A CORE_CATEGORY_PATHS
 #CORE_CATEGORY_PATHS["cores"]="$BASE_PATH/_Computer"
 #CORE_CATEGORY_PATHS["console-cores"]="$BASE_PATH/_Console"
-CORE_CATEGORY_PATHS["arcade-cores"]="$BASE_PATH/_Arcade"
+CORE_CATEGORY_PATHS["arcade-cores"]="$BASE_PATH/_Arcade/cores"
 #CORE_CATEGORY_PATHS["service-cores"]="$BASE_PATH/_Utility"
 
 #Optional pipe "|" separated list of directories containing alternative arcade cores to be updated,
