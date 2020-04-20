@@ -34,5 +34,5 @@ YM2149:               https://www.github.com/jotego/jt49
 # Final Words
 
 You can show your appreciation through
-    * Patreon: https://patreon.com/topapate
-    * Paypal:  https://paypal.me/topapate
+* Patreon: https://patreon.com/topapate
+* Paypal:  https://paypal.me/topapate
