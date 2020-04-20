@@ -1,9 +1,11 @@
 #!/bin/bash
 
-datestr=$(date "+%H:%M:%S %B %e, %Y")
+datestr=$(date +"%Y%m%d")
 
-function make_zip { 
-    echo zip $1_${2}.zip $2/releases/$1/jt${1}_${datestr}.rbf
+function make_zip {
+    RBF=$2/$1/releases/jt${1}_${datestr}.rbf
+    echo $2
+    zip --junk-paths $1_${2}.zip $RBF
 }
 
 for i in mist sidi mister; do

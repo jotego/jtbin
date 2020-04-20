@@ -39,3 +39,31 @@ YM2149:              | https://www.github.com/jotego/jt49
 You can show your appreciation through
 * Patreon: https://patreon.com/topapate
 * Paypal:  https://paypal.me/topapate
+
+```
++--------------------------------------------------------------------------------+
+|oooooooooooooooooooooooooooooooooo+++++++++++ooooooooooooooooooooooooooooooooooo|
+|ooooooooooooooooooooooooooooooooo+. .    . .+ooooooooooooooooooooooooooooooooooo|
+|ooooooooooooooooooooooooooooooooo~         :o++ooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooo+ooo+.        .++.:oo+oo+oooooo+o+oo+oooooo++ooooooo|
+|ooooooooooooooooooooooooo+.......          .. .............................:oooo|
+|oooooooooooooooooooooooo+.                                                .+o+oo|
+|oooooooooooooooooooooooo:                                                 :o:.+o|
+|ooooooooooooooooooooooo+.                                                .++.:oo|
+|ooooooooooooooooooooooo:.....           ...........          ....... ....:o~.+oo|
+|oooooooooooooooooooooooo+++++~         ~+++:++:++++.         ++++++++++++++.+ooo|
+|oooooooooooooooooooooooooo+:~         .++.~:::::::.         .o+.~:::::::::::+ooo|
+|oooooooooooooooooooooooooooo:         :o~.+oooooo+.         ++.~oooooooooooooooo|
+|ooo~........~oooooooooooooo+.        .++.:ooooooo+         ~o:.+oooooooooooooooo|
+|oo:         ~o++ooooooooooo.         +o~.ooooooo+.        .++.~ooooooooooooooooo|
+|oo.         :+.:ooooooooo+.         ~o+.+ooooooo:         ~o:.+ooooooooooooooooo|
+|oo.         ...~:::::::..          .++.~ooooooo+.        .o+.:oooooooooooooooooo|
+|oo~                               ~o+..+ooooooo~         +o~.+oooooooooooooooooo|
+|oo+.                           .~+o+..+ooooooo+.        .o+.+ooooooooooooooooooo|
+|oooo~.                       .:+o+..:+oooooooo.         +o..oooooooooooooooooooo|
+|ooooo+:...              ..~:+++:..:+ooooooooo+         .o+.+oooooooooooooooooooo|
+|ooooooo+++::::::::::++++++++~~.~++ooooooooooo+:+:::::+:++.~ooooooooooooooooooooo|
+|ooooooooo+++:::::::::~:~~~~:++oooooooooooooooooo+::::~::~.+ooooooooooooooooooooo|
+|oooooooooooooo+o+oo++++o+ooooooooooooooooooooooo+o+++o++o+oooooooooooooooooooooo|
++--------------------------------------------------------------------------------+
+```
