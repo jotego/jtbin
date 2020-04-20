@@ -386,8 +386,8 @@ function checkCoreURL {
 			then
 				if [ ${DELETE_OLD_FILES} == "true" ]
 				then
-					echo "Deleting old ${BASE_FILE_NAME} files"
-					rm "${CURRENT_DIR}/${BASE_FILE_NAME}"*.${TO_BE_DELETED_EXTENSION} > /dev/null 2>&1
+					rm "${CURRENT_DIR}/${BASE_FILE_NAME}"*.${TO_BE_DELETED_EXTENSION} > /dev/null 2>&1 && \
+					echo "Deleted old ${BASE_FILE_NAME} files"
 				fi
 				if [ $BASE_FILE_NAME == "MiSTer" ] || [ $BASE_FILE_NAME == "menu" ]
 				then
