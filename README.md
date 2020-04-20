@@ -1,8 +1,8 @@
-# FPGA Clones of arcade games by Jose Tejada (@topapate)
+# FPGA Clones of Arcade Games by Jose Tejada (@topapate)
 
-This a repository containing only binary files of my FPGA cores. Although I have
+This repository contains only binary files of my FPGA cores. Although I have
 had some cores released through the MiSTer repository or the source code repository;
-from now on I will be adding new releases to this repository in binary form.
+nowadays I only add new releases to this repository in binary form.
 
 # Supported FPGA Systems
 
