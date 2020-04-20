@@ -27,9 +27,12 @@ Popeye              | https://www.github.com/jotego/jtdd
 CPS                 | still undisclosed
 
 If you are a developer, don't miss these cores too:
-YM2612,YM2610,YM2203: https://www.github.com/jotego/jt12
-YM2151:               https://www.github.com/jotego/jt51
-YM2149:               https://www.github.com/jotego/jt49
+
+Chip                 | Source code
+---------------------|-----------------------------------
+YM2612,YM2610,YM2203 | https://www.github.com/jotego/jt12
+YM2151:              | https://www.github.com/jotego/jt51
+YM2149:              | https://www.github.com/jotego/jt49
 
 # Final Words
 
