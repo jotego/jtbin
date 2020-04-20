@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# this will create zip files for today's version of a given core
+# call it with the core name from the jtbin folder.
+# For instance: ziptodays.sh sectionz
+
 datestr=$(date +"%Y%m%d")
 
 function make_zip {
