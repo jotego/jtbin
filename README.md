@@ -1,33 +1,37 @@
-FPGA Clones of arcade games by Jose Tejada (@topapate)
-======================================================
+#FPGA Clones of arcade games by Jose Tejada (@topapate)
 
 This a repository containing only binary files of my FPGA cores. Although I have
 had some cores released through the MiSTer repository or the source code repository;
-from now on I will be adding new releases to this repository.
+from now on I will be adding new releases to this repository in binary form.
 
-MiST
-====
+#Supported FPGA Systems
 
-Get your files from the mist folder.
+Currently there are three systems that I maintain: MiST, MiSTer and SiDi.
 
-MiSTer
-======
+##MiST & SiDi
+For these systems you can generate ROMs using batch files or the MRA-to-rom file converter.
 
-You can download files from the mister folder. But if you are a MiSTer user you can adapt
- your update script to grab files from this repository. Do not ask me how.
+##MiSTer
 
-Eventually, the cores may get transferred into the regular MiSTer repository, but
-during the development phase I prefer to keep the source code in my own repository.
+You can download the binaries files from the mister folder. But you can also adapt
+your update script to grab files from this repository. The folder mister/update contains
+the update script
 
-Source code repository: 
+#Source Code Repositories
 
-CAPCOM arcade cores:  https://www.github.com/jotego/jt_gng
+core                | Source code
+====================|============================
+CAPCOM CPS0         | https://www.github.com/jotego/jt_gng
+Double Dragon       | https://www.github.com/jotego/jtdd
+Popeye              | https://www.github.com/jotego/jtdd
+CPS                 | still undisclosed
 
 If you are a developer, don't miss these cores too:
 YM2612,YM2610,YM2203: https://www.github.com/jotego/jt12
 YM2151:               https://www.github.com/jotego/jt51
 YM2149:               https://www.github.com/jotego/jt49
 
+#Final Words
 
 You can show your appreciation through
     * Patreon: https://patreon.com/topapate
