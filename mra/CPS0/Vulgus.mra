@@ -6,8 +6,9 @@
 	<year>1984</year>
 	<manufacturer>Capcom</manufacturer>
 	<category>Space / Force</category>
+    <mameversion>0217</mameversion>
 	<rbf>jtvulgus</rbf>
-	<rom index="0" zip="vulgus.zip" md5="410250f0a3af08ead86b4ddd8dd78006" type="merged|nonmerged">
+	<rom index="0" zip="vulgus.zip" md5="410250f0a3af08ead86b4ddd8dd78006" >
 		<part name="vulgus.002"/>
 		<part name="vulgus.003"/>
 		<part name="vulgus.004"/>
@@ -39,4 +40,19 @@
 		<part name="j2.bin"/>
 		<part name="82s129.8n"/>
 	</rom>
+    <switches default="FF,FF" base="16">
+        <!-- DSW1 -->
+        <dip name="Lives" bits="0,1" ids="5,1,2,3"></dip>
+        <dip name="Coin B" bits="2,4" ids="2/1,4/1,1/2,5/1,1/3,3/1,1/1"></dip>
+        <dip name="Coin A" bits="5,7" ids="Free Play,2/1,4/1,1/2,5/1,1/3,3/1,1/1"></dip>
+        <!-- DSW2 -->
+        <dip name="Unused" bits="8" ids="On,Off"></dip>
+        <dip name="Unused" bits="9" ids="On,Off"></dip>
+        <dip name="Demo Music" bits="10" ids="Off,On"></dip>
+        <dip name="Demo Sounds" bits="11" ids="Off,On"></dip>
+        <dip name="Bonus Life" bits="12,14" ids="None,10k 70k,20k 80k,10k 50k,30k 70k,10k 60k,20k 70k,20k 60k"></dip>
+        <dip name="Cabinet" bits="15" ids="Upright,Cocktail"></dip>
+    </switches>
+   	<buttons names="Shot,Missile,Start,Coin,Pause" 
+        default="A,B,R,L,Start"/>
 </misterromdescription>

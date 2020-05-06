@@ -1,13 +1,13 @@
 <misterromdescription>
 	<name>Tiger Road (US)</name>
-	<mameversion>0216</mameversion>
 	<setname>tigeroad</setname>
 	<mratimestamp>201911270000</mratimestamp>
 	<year>1987</year>
 	<manufacturer>Capcom</manufacturer>
 	<category>Fighter / Asian</category>
+    <mameversion>0217</mameversion>
 	<rbf>jttora</rbf>
-	<rom index="0" zip="tigeroad.zip" md5="153ab39a778af8b5b2240d9d1719ca97" type="merged|nonmerged">
+	<rom index="0" zip="tigeroad.zip" md5="153ab39a778af8b5b2240d9d1719ca97" >
 		<part name="tre_02.6j"/>
 		<part name="tre_04.6k"/>
 		<part name="tru_05.12k"/>
@@ -30,4 +30,18 @@
 		<part name="tr-09a.3b"/>
 		<part name="tr.9e"/>
 	</rom>
+    <switches default="FF,FF" base="16">
+        <!-- DSW -->
+        <dip name="Coin B" bits="0,2" ids="4/1,3/1,2/1,1/6,1/4,1/3,1/2,1/1"></dip>
+        <dip name="Coin A" bits="3,5" ids="4/1,3/1,2/1,1/6,1/4,1/3,1/2,1/1"></dip>
+        <dip name="Service Mode" bits="6" ids="On,Off"></dip>
+        <dip name="Flip Screen" bits="7" ids="On,Off"></dip>
+        <dip name="Lives" bits="8,9" ids="7,5,4,3"></dip>
+        <dip name="Cabinet" bits="10" ids="Upright,Cocktail"></dip>
+        <dip name="Bonus Life" bits="11,12" ids="30k 90k 90k,30k 80k 80k,20k 80k 80k,20k 70k 70k"></dip>
+        <dip name="Level" bits="13,14" ids="Hard,Very Easy,Easy,Normal"></dip>
+        <dip name="Allow Continue" bits="15" ids="No,Yes"></dip>
+    </switches>
+    <buttons names="Fire,Jump,Start,Coin,Pause" 
+        default="A,B,R,L,Start"/>
 </misterromdescription>

@@ -1,10 +1,10 @@
 <misterromdescription>
-    <name>Legendary Wings</name>
-    <setname>lwings</setname>
+    <name>Ares no tsubasa</name>
+    <setname>ares</setname>
     <manufacturer>Capcom</manufacturer>
     <category>Shooter</category>
-    <mameversion>0217</mameversion>
     <rbf alt="jtsz">jtsectionz</rbf>
+    <mameversion>0217</mameversion>
     <rom index="0" zip="lwings.zip" md5="none">
         <!-- 32-byte Header -->
         <part> 01 00 00 00 00 00 00 00 </part>
@@ -14,10 +14,10 @@
         <!-- ROMs -->
         
         <!-- CPU: banks -->
-        <part name="7c_lw02.bin" crc="a5efbb1b"/>
+        <part name="lwingsj/a_07c.rom" crc="d6a2edc4"/>
         <part name="9c_lw03.bin" crc="ec5cc201"/>
         <!-- CPU: non banked -->
-        <part name="6c_lw01.bin" crc="b55a7f60"/>
+        <part name="lwingsj/a_06c.rom" crc="2068a738"/>
 
         <!-- Sound -->
         <part name="11e_lw04.bin" crc="a20337a2"/>
@@ -25,25 +25,25 @@
         <part name="9h_lw05.bin" crc="091d923c"/>
         <!-- SCROLL -->
         <interleave output="32">
-            <part name="3f_lw15.bin" crc="99e134ba" map="0001"/>
-            <part name="3b_lw12.bin" crc="32e17b3c" map="0010"/>
-            <part name="3d_lw13.bin" crc="fdd1908a" map="0100"/>
-            <part name="3e_lw14.bin" crc="5436392c" map="1000"/>
+            <part name="lwings2/b_03f.rom" crc="9b374dcc" map="0001"/>
+            <part name="lwings2/b_03b.rom" crc="4f8182e9" map="0010"/>
+            <part name="lwings2/b_03d.rom" crc="001caa35" map="0100"/>
+            <part name="lwings2/b_03e.rom" crc="176e3027" map="1000"/>
         </interleave>
         <interleave output="32">
-            <part name="1f_lw09.bin" crc="c8f28777" map="0001"/>
-            <part name="1b_lw06.bin" crc="52e533c1" map="0010"/>
-            <part name="1d_lw07.bin" crc="5c73d406" map="0100"/>
-            <part name="1e_lw08.bin" crc="b491bbbb" map="1000"/>
+            <part name="lwings2/b_01f.rom" crc="23654e0a" map="0001"/>
+            <part name="lwings2/b_01b.rom" crc="f1617374" map="0010"/>
+            <part name="lwings2/b_01d.rom" crc="0ba008c3" map="0100"/>
+            <part name="lwings2/b_01e.rom" crc="f5d25623" map="1000"/>
         </interleave>
         <!-- OBJ -->
         <interleave output="16">
-            <part name="3j_lw17.bin" crc="5ed1bc9b" map="01"/>
-            <part name="3h_lw16.bin" crc="e8834006" map="10"/>
+            <part name="lwings2/b_03j.rom" crc="8f3c763a" map="01"/>
+            <part name="lwings2/b_03h.rom" crc="7d58f532" map="10"/>
         </interleave>
         <interleave output="16">
-            <part name="1j_lw11.bin" crc="2a0790d6" map="01"/>
-            <part name="1h_lw10.bin" crc="b693f5a5" map="10"/>
+            <part name="lwings2/b_01j.rom" crc="7cc90a1d" map="01"/>
+            <part name="lwings2/b_01h.rom" crc="3e396eda" map="10"/>
         </interleave>
     </rom>
     <!-- enable vertical screen -->

@@ -6,8 +6,9 @@
 	<year>1988</year>
 	<manufacturer>Capcom (Romstar license)</manufacturer>
 	<category>Racing / F1</category>
-	<rbf>jtf1dream</rbf>
-	<rom index="0" zip="f1dream.zip" md5="7bbad4ffbf4d2829569baa73eb38a2b1" type="merged|nonmerged">
+    <mameversion>0217</mameversion>
+	<rbf alt="JTF1DRM">jtf1dream</rbf>
+	<rom index="0" zip="f1dream.zip" md5="7bbad4ffbf4d2829569baa73eb38a2b1" >
 		<part name="f1_02.6j"/>
 		<part name="f1_03.6k"/>
 		<part name="f1_04.12k"/>
@@ -58,4 +59,18 @@
 		<part name="tr.9e"/>
 		<part name="f1.9j"/>
 	</rom>
+    <switches default="FF,FF" base="16">
+        <dip name="Coin B" bits="0,2" ids="4/1,3/1,2/1,1/6,1/4,1/3,1/2,1/1"></dip>
+        <dip name="Coin A" bits="3,5" ids="4/1,3/1,2/1,1/6,1/4,1/3,1/2,1/1"></dip>
+        <dip name="Service Mode" bits="6" ids="On,Off"></dip>
+        <dip name="Flip Screen" bits="7" ids="On,Off"></dip>
+        <dip name="Lives" bits="8,9" ids="7,5,4,3"></dip>
+        <dip name="Cabinet" bits="10" ids="Upright,Cocktail"></dip>
+        <dip name="F1 Up Point" bits="11,12" ids="20,18,16,12"></dip>
+        <dip name="Level" bits="13" ids="Hardt,Normal"></dip>
+        <dip name="Version" bits="14" ids="World,Japan"></dip>
+        <dip name="Allow Continue" bits="15" ids="No,Yes"></dip>
+    </switches>
+    <buttons names="Slow,Fast,Start,Coin,Pause" 
+        default="A,B,R,L,Start"/>
 </misterromdescription>
