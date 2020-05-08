@@ -50,7 +50,7 @@
     <switches default="FF,FF" base="16">
         <!-- DSWA -->
         <dip name="Level" bits="0,3" ids="16,15,14,13,12,11,10,9,8,7,6,5,4,3,2,1"></dip>
-        <dip name="2 Player Coins" bits="4" ids="1 Credit/2 Players,2 Credits/2 Players" coin="yes"></dip>
+        <dip name="2 Pl." bits="4" ids="1 Credit/2 Players,2 Credits/2 Players" coin="yes"></dip>
         <dip name="Cabinet" bits="5" ids="Cocktail,Upright"></dip>
         <dip name="Screen Stop" bits="6" ids="On,Off"></dip>
         <dip name="Service Mode" bits="7" ids="On,Off"></dip>
