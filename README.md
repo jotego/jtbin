@@ -24,6 +24,7 @@ core                | Source code
 CAPCOM CPS0         | https://www.github.com/jotego/jt_gng
 Double Dragon       | https://www.github.com/jotego/jtdd
 Popeye              | https://www.github.com/jotego/jtdd
+Contra              | https://www.github.com/jotego/jtcontra
 CPS                 | still undisclosed
 
 If you are a developer, don't miss these cores too:
