@@ -1,0 +1,31 @@
+<misterromdescription>
+	<name>Double Dragon II - The Revenge (Japan)</name>
+	<mameversion>0217</mameversion>
+	<mratimestamp>20200110232148</mratimestamp>
+	<year>1988</year>
+	<manufacturer>Technos Japan</manufacturer>
+	<category>Fighter / Hero</category>
+	<rbf>jtdd2</rbf>
+	<rom index="0" zip="ddragon.zip|ddragon2.zip|ddragon2j.zip" md5="dddfe0cc57c557598e53063f90588e8c">
+		<part crc="bfb4ee04" name="26aa-0_j.ic52"/>
+		<part crc="49ddddcd" name="26ab-0.ic53"/>
+		<part crc="165858c7" name="26ac-0_j.ic63"/>
+		<part crc="165858c7" name="26ac-0_j.ic63"/>
+		<part crc="5e4fcdff" name="26a9-0_j.ic38"/>
+		<part crc="3788af3b" name="26ad-0.ic41"/>
+		<part crc="ea437867" name="26ae-0.ic37"/>
+		<part crc="a84b2a29" name="26j6-0.bin"/>
+		<part crc="bc6a48d5" name="26j7-0.bin"/>
+		<part crc="4e80cd36" name="26a8-0e.19"/>
+		<part crc="a8c93e76" name="26j4-0.bin"/>
+		<part crc="ee555237" name="26j5-0.bin"/>
+		<part crc="db309c84" name="26j0-0.bin"/>
+		<part crc="c3081e0c" name="26j1-0.bin"/>
+		<part crc="3a615aad" name="26af-0.bin"/>
+		<part crc="589564ae" name="26j2-0.bin"/>
+		<part crc="daf040d6" name="26j3-0.bin"/>
+		<part crc="6d16d889" name="26a10-0.bin"/>
+		<part crc="fdb130a9" name="21j-k-0"/>
+		<part crc="46339529" name="prom.16"/>
+	</rom>
+</misterromdescription>
