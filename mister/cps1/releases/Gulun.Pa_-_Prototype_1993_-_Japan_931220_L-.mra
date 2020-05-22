@@ -1,0 +1,52 @@
+<misterromdescription>
+    <name>gulunpa (World 901130)</name>
+    <setname>gulunpa</setname>
+    <year>1990</year>
+    <manufacturer>Capcom</manufacturer>
+    <rbf>jtcps1</rbf>
+    <rom index="0" zip="gulunpa.zip" md5="none">
+        <!-- relative position of each ROM section in the file, discounting the header, in kilobytes -->
+        <!-- Size of M68000 code 256 kB -->
+        <!-- Sound CPU size 64 kB -->
+        <part>00 01 </part>
+        <!-- OKI samples size 256 kB -->
+        <part>40 01 </part>
+        <!-- Graphics size 2048 kB -->
+        <part>40 02 </part>
+        <part repeat="10">FF</part>
+        <!-- CPS-B config for gulunpa --> 
+        <part> 32 FF 00 02 04 06 26 28 2A 2C 2E 00 00 30 02 04 08 30 </part>
+        <!-- Mapper for gulunpa --> 
+        <part> 28 40 C8 73 FF </part>
+        <part> 00 </part>
+        <part repeat="24">FF</part>
+        <!-- maincpu -->
+        <interleave output="16">
+		    <part name="30" crc="" map="01"/>
+            <part name="26" crc="" map="10"/>
+        </interleave>
+        <!-- audiocpu -->
+        <part name="9" crc=""/>
+        <!-- oki -->
+        <part name="18" crc=""/>
+        <part name="19" crc=""/>
+        <!-- gfx -->
+        <interleave output="64">
+            <part name="1" crc=""  map="00000021"/>
+            <part name="2" crc=""  map="00002100"/>
+            <part name="3" crc=""  map="00210000"/>
+            <part name="4" crc=""  map="21000000"/>
+        </interleave>
+    </rom>
+    <rom index="1"><part> 72 </part></rom>
+    <buttons names="B0,B1,B2,-,-,-,Start,Coin,Pause" 
+        default="A,B,X,R,L,Start"/>
+    <switches default="FF,FF,FF,FF">
+        <dip bits="0,2"	 name="Coin A" ids="4 Coins/1 Credit,3 Coins/1 Credit,2 Coins/1 Credit,1 Coin/6 Credits,1 Coin/4 Credits,1 Coin/3 Credits,1 Coin/2 Credits,1 Coin/1 Credit"/>
+        <dip bits="8,10"	 name="Difficulty" ids="7 (Hardest),6,5,4,3 (Normal),2,1,0 (Easiest)"/>
+        <dip bits="19"	 name="Freeze" ids="On,Off"/>
+        <dip bits="20"	 name="Flip Screen" ids="On,Off"/>
+        <dip bits="21"	 name="Demo_Sounds" ids="On,Off"/>
+        <dip bits="23"	 name="Service Mode" ids="On,Off"/>
+    </switches>
+</misterromdescription>
