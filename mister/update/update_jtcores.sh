@@ -13,12 +13,13 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-# Copyright 2019 Alessandro "Locutus73" Miele
+# Copyright 2019-2020 Alessandro "Locutus73" Miele
+# Adapted to jotego cores by José Manuel Barroso Galindo "theypsilon" © 2020
 
-# You can download the original version of this script from:
-# https://github.com/MiSTer-devel/Updater_script_MiSTer
+# You can download the latest version of this script from:
+# https://github.com/jotego/Updater_script_MiSTer
 
-# Version Jotego - Changes for updating cores from @Jotego
+# Version 2.1.3 - 2020-01-18 - Improved script output.
 # Version 2.1.2 - 2019-08-16 - Minor refactoring by frederic-mahe, thank you very much.
 # Version 2.1.1 - 2019-06-10 - Testing Internet connectivity with github.com instead of google.com.
 # Version 2.1 - 2019-02-23 - CURL RETRY OPTIONS by wesclemens, now the script has a timeout and retry logic to prevent spotty connections causing the update to lockup; thank you very much.
@@ -29,8 +30,8 @@
 
 # ========= OPTIONS ==================
 URL="https://github.com"
-SCRIPT_URL="${URL}/jotego/jtbin/blob/master/mister/update/mister_updater_jtcores.sh"
-CURL_RETRY="--connect-timeout 15 --max-time 120 --retry 3 --retry-delay 5 --silent"
+SCRIPT_URL="${URL}/jotego/Updater_script_MiSTer/blob/master/mister_updater.sh"
+CURL_RETRY="--connect-timeout 15 --max-time 120 --retry 3 --retry-delay 5 --silent --show-error"
 
 # ========= ADVANCED OPTIONS =========
 # ALLOW_INSECURE_SSL="true" will check if SSL certificate verification (see https://curl.haxx.se/docs/sslcerts.html )
