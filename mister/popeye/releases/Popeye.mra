@@ -1,0 +1,41 @@
+<misterromdescription>
+	<name>Popeye (revision D not protected)</name>
+	<mameversion>0216</mameversion>
+	<setname>popeyeu</setname>
+	<mratimestamp>201911270000</mratimestamp>
+	<year>1982</year>
+	<manufacturer>Nintendo</manufacturer>
+	<rbf>jtpopeye</rbf>
+	<rom index="0" zip="popeyeu.zip" md5="b288ce65ce74fedf56c236f113721386" type="nonmerged">
+		<part name="7a"/>
+		<part name="7b"/>
+		<part name="7c"/>
+		<part name="7e"/>
+		<part name="tpp2-v.1e"/>
+		<part name="tpp2-v.1f"/>
+		<part name="tpp2-v.1j"/>
+		<part name="tpp2-v.1k"/>
+		<part name="tpp2-v.5n"/>
+		<part name="tpp2-v.7j"/>
+		<part name="tpp2-c.5b"/>
+		<part name="tpp2-c.5a"/>
+		<part name="tpp2-c.4a"/>
+		<part name="tpp2-c.3a"/>
+	</rom>
+	<rom index="0" zip="popeye.zip" md5="b288ce65ce74fedf56c236f113721386" type="merged">
+		<part name="popeyeu/7a"/>
+		<part name="popeyeb3/bdf-6"/>
+		<part name="popeyeb3/bdf-7"/>
+		<part name="popeyeu/7e"/>
+		<part name="tpp2-v.1e"/>
+		<part name="tpp2-v.1f"/>
+		<part name="tpp2-v.1j"/>
+		<part name="tpp2-v.1k"/>
+		<part name="tpp2-v.5n"/>
+		<part name="tpp2-v.7j"/>
+		<part name="tpp2-c.5b"/>
+		<part name="tpp2-c.5a"/>
+		<part name="tpp2-c.4a"/>
+		<part name="tpp2-c.3a"/>
+	</rom>
+</misterromdescription>
