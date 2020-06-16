@@ -92,7 +92,7 @@
 
     <buttons names="B0,B1,B2,B3,B4,B5,Start,Coin,Pause" 
         default="A,B,X,Y,R,L,Select,Select,Start"/>
-    <switches default="FF,FF,FF" base="8">
+    <switches page_id="1" page_name="Switches" default="FF,FF,FF" base="8">
         <dip bits="0,7"	 name="Unknown" ids="On,Off"/>
         <dip bits="8,15"	 name="Unknown" ids="On,Off"/>
         <dip bits="16,23"	 name="Unknown" ids="On,Off"/>

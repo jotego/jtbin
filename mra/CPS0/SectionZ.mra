@@ -50,7 +50,7 @@
     <!-- horizontal screen -->
     <rom index="1"><part> 00 </part></rom>
     <buttons names="Fire,Turn around,Start,Coin,Pause" default="A,B,R,L,Start"/>
-    <switches default="FF,FE" base="0x10">
+    <switches page_id="1" page_name="Switches" default="FF,FE" base="0x10">
         <!-- A -->
         <dip bits="0"   name="Service Mode" ids="On,Off"/>
         <dip bits="1"   name="Flip Screen"  ids="On,Off"/>

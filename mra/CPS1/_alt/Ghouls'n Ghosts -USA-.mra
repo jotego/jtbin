@@ -92,7 +92,7 @@
 
     <buttons names="B0,B1,-,-,-,-,Start,Coin,Pause" 
         default="A,B,R,L,Start"/>
-    <switches default="FF,FF,FF" base="8">
+    <switches page_id="1" page_name="Switches" default="FF,FF,FF" base="8">
         <dip bits="0,3"	 name="Starting Level" ids="Level 6,Level 5 (2nd half),Level 5 (1st half),Level 4 (2nd half),Level 4 (1st half),Level 3 (2nd half),Level 3 (1st half),Level 2 (2nd half),Level 2 (1st half),Level 1 (2nd half),Level 1 (1st half)"/>
         <dip bits="0,2"	 name="Coin A" ids="4 Coins/1 Credit,3 Coins/1 Credit,2 Coins/1 Credit,1 Coin/6 Credits,1 Coin/4 Credits,1 Coin/3 Credits,1 Coin/2 Credits,1 Coin/1 Credit"/>
         <dip bits="4"	 name="Invulnerability" ids="On,Off"/>

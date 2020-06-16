@@ -30,7 +30,7 @@
 		<part name="tr-09a.3b"/>
 		<part name="tr.9e"/>
 	</rom>
-    <switches default="FF,FF" base="16">
+    <switches page_id="1" page_name="Switches" default="FF,FF" base="16">
         <!-- DSW -->
         <dip name="Coin B" bits="0,2" ids="4/1,3/1,2/1,1/6,1/4,1/3,1/2,1/1"></dip>
         <dip name="Coin A" bits="3,5" ids="4/1,3/1,2/1,1/6,1/4,1/3,1/2,1/1"></dip>

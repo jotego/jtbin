@@ -72,7 +72,7 @@
 
     <buttons names="B0,B1,B2,B3,-,-,Start,Coin,Pause" 
         default="A,B,X,Y,R,L,Start"/>
-    <switches default="FF,FF,FF" base="8">
+    <switches page_id="1" page_name="Switches" default="FF,FF,FF" base="8">
         <dip bits="0"	 name="Medal Setup" ids="Don't use,1 Medal 1 Credit"/>
         <dip bits="1"	 name="Coin Setup" ids="10 Yen,100 Yen"/>
         <dip bits="2,4"	 name="Change Setup" ids="11,12,No change,5,6,7,8,10"/>
