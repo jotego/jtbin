@@ -74,7 +74,7 @@
 
     <buttons names="B0,B1,B2,-,-,-,Start,Coin,Pause" 
         default="A,B,X,R,L,Start"/>
-    <switches default="FF,FF,FF" base="8">
+    <switches page_id="1" page_name="Switches" default="FF,FF,FF" base="8">
         <dip bits="0,2"	 name="Coin A" ids="2 Coins/1 Credit (1 to continue),4 Coins/1 Credit,3 Coins/1 Credit,2 Coins/1 Credit,1 Coin/4 Credits,1 Coin/3 Credits,1 Coin/2 Credits,1 Coin/1 Credit"/>
         <dip bits="3,5"	 name="Coin B" ids="2 Coins/1 Credit (1 to continue),4 Coins/1 Credit,3 Coins/1 Credit,2 Coins/1 Credit,1 Coin/4 Credits,1 Coin/3 Credits,1 Coin/2 Credits,1 Coin/1 Credit"/>
         <dip bits="7"	 name="Free Play" ids="On,Off"/>

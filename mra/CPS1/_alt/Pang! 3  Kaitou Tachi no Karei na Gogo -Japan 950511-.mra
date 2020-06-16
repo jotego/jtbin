@@ -68,7 +68,7 @@
 
     <buttons names="B0,B1,-,-,-,-,Start,Coin,Pause" 
         default="A,B,R,L,Start"/>
-    <switches default="FF,FF,FF" base="8">
+    <switches page_id="1" page_name="Switches" default="FF,FF,FF" base="8">
         <dip bits="23"	 name="Service Mode" ids="On,Off"/>
     </switches>
 </misterromdescription>
