@@ -30,6 +30,7 @@
 	<year>1988</year>
 	<manufacturer>Technos Japan</manufacturer>
 	<category>Fighter / Hero</category>
+	<setname>ddragon2</setname>
 	<rbf>jtdd2</rbf>
 	<rom index="0" zip="ddragon.zip|ddragon2.zip" md5="bff6a54222f3da0732febf6948c2ad24">
 		<part crc="44dd5d4b" name="26aa-03.bin"/>
@@ -53,7 +54,7 @@
 		<part crc="fdb130a9" name="21j-k-0"/>
 		<part crc="46339529" name="prom.16"/>
 	</rom>
-    <switches default="FF,7F" base="16">
+    <switches page_id="1" page_name="Switches" default="FF,7F" base="16">
         <!-- DSW0 -->
         <dip name="Coin A" bits="0,2" ids="4/1,3/1,2/1,1/5,1/4,1/3,1/2,1/1"/>
         <dip name="Coin B" bits="3,5" ids="4/1,3/1,2/1,1/5,1/4,1/3,1/2,1/1"/>
