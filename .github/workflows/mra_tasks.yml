@@ -1,6 +1,9 @@
 name: MRA Tasks
 
-on: [push, pull_request]
+on:
+  push:
+    branches:
+      - master
 
 jobs:
   build:
@@ -11,3 +14,6 @@ jobs:
 
     - name: mra/_alternatives to mister/MRA-Alternatives_MiSTer/releases/
       run: ./.github/mister_alternatives.sh
+
+    - name: Sync MRAs
+      run: ./.github/mra_sync.sh

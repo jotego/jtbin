@@ -85,7 +85,7 @@
 
     <buttons names="B0,B1,B2,-,-,-,Start,Coin,Pause" 
         default="A,B,X,R,L,Start"/>
-    <switches default="FF,FF,FF" base="8">
+    <switches page_id="1" page_name="Switches" default="FF,FF,FF" base="8">
         <dip bits="0,1"	 name="Coinage" ids="4 Coins/1 Credit,3 Coins/1 Credit,1 Coin/1 Credit,2 Coins/1 Credit"/>
         <dip bits="6"	 name="Unknown" ids="On,Off"/>
         <dip bits="8,9"	 name="Demo Sounds" ids="Off,Every 4,Every 2,On"/>

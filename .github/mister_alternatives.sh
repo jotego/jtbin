@@ -5,21 +5,25 @@ set -euo pipefail
 MRA_DIR="mra"
 MRA_ALTERNATIVES_DIR="_alternatives"
 MISTER_MRA_ALTERNATIVES_PATH="mister/MRA-Alternatives_MiSTer/releases/"
+LATEST_COMMIT_FILE=".github/mister_alternatives.latest_commit.txt"
+
 
 echo "Checking for changed MRA-Alternatives..."
 echo
 
 git fetch origin --unshallow 2> /dev/null || true
+git checkout -f master
 
-TMP=$(mktemp)
+LATEST_COMMIT=$(git log -n 1 --pretty=format:"%H")
+PREVIOUS_COMMIT="$(cat ${LATEST_COMMIT_FILE})"
 
-git log -n 2 --pretty=format:"%H" > ${TMP}
-LATEST_COMMIT=$(cat ${TMP} | head -n 1)
-PREVIOUS_COMMIT=$(cat ${TMP} | tail -n 1)
-
+echo
 echo "Latest commit: ${LATEST_COMMIT}"
 echo "Previous commit: ${PREVIOUS_COMMIT}"
 echo
+
+TMP=$(mktemp)
+
 git diff --name-only ${LATEST_COMMIT}..${PREVIOUS_COMMIT} "${MRA_DIR}/${MRA_ALTERNATIVES_DIR}/" > ${TMP}
 
 ALTERNATIVES_QTY=$(cat ${TMP} | wc -l)
@@ -51,6 +55,8 @@ if [ ${ALTERNATIVES_QTY} -ge 1 ] ; then
 
     echo
     echo "Pushing changes to origin:"
+    echo "${LATEST_COMMIT}" > "${LATEST_COMMIT_FILE}"
+    git add "${LATEST_COMMIT_FILE}"
     git add "${MISTER_MRA_ALTERNATIVES_PATH}"
     git commit -m "BOT: Releasing MiSTer ${TODAYS_MISTER_MRA_FILE}." -m "Because of detected changes between ${LATEST_COMMIT}..${PREVIOUS_COMMIT}."
     git push origin master
