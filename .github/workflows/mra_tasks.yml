@@ -1,0 +1,19 @@
+name: MRA Tasks
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: mra/_alternatives to mister/MRA-Alternatives_MiSTer/releases/
+      run: ./.github/mister_alternatives.sh
+
+    - name: Sync MRAs
+      run: ./.github/mra_sync.sh
