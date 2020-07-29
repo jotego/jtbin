@@ -9,7 +9,11 @@ nowadays I only add new releases to this repository in binary form.
 Currently there are three systems that I maintain: MiST, MiSTer and SiDi.
 
 ## MiST & SiDi
-For these systems you can generate ROMs using batch files or the MRA-to-rom file converter.
+For these systems you can generate ROMs using batch files or the MRA-to-rom file converter. Note that you have to rename the RBF files in order to remove the timestamp. For instance:
+
+jt1942_20200728.rbf --> jt1942.rbf
+
+20200728 is the timestamp and stands for 28th of July 2020.
 
 ## MiSTer
 
@@ -19,21 +23,28 @@ the update script
 
 # Source Code Repositories
 
-core                | Source code
+Normally each repository covers for many arcade games that share identical or similar hardware.
+
+FPGA Core           | Source code
 --------------------|--------------------------
 CAPCOM CPS0         | https://www.github.com/jotego/jt_gng
 Double Dragon       | https://www.github.com/jotego/jtdd
-Popeye              | https://www.github.com/jotego/jtdd
+Popeye              | https://www.github.com/jotego/jtpopeye
 Contra              | https://www.github.com/jotego/jtcontra
-CPS                 | still undisclosed
+CPS                 | https://www.github.com/jotego/jtcps
+Bubble Bobble       | https://www.github.com/jotego/jtbubl (still not public)
 
 If you are a developer, don't miss these cores too:
 
-Chip                 | Source code
----------------------|-----------------------------------
-YM2612,YM2610,YM2203 | https://www.github.com/jotego/jt12
-YM2151:              | https://www.github.com/jotego/jt51
-YM2149:              | https://www.github.com/jotego/jt49
+Chip                   | Source code
+-----------------------|-----------------------------------
+YM2203, YM2612, YM2610 | [JT12](https://github.com/jotego/jt12)
+YM2151                 | [JT51](https://github.com/jotego/jt51)
+YM3526                 | [JTOPL](https://github.com/jotego/jtopl)
+YM2149                 | [JT49](https://github.com/jotego/jt49)
+sn76489an              | [JT89](https://github.com/jotego/jt89)
+OKI 6295               | [JT6295](https://github.com/jotego/jt6295)
+OKI MSM5205            | [JT5205](https://github.com/jotego/jt5205)
 
 # Final Words
 
