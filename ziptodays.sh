@@ -65,7 +65,7 @@ EOF
 while [ $# -gt 0 ]; do
     case "$1" in
         -nomra)
-            MRAALT=;;
+            MRAALT=0;;
         -help|-h|--help)
             show_help
             exit 0;;
