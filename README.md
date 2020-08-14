@@ -32,7 +32,7 @@ Double Dragon       | https://www.github.com/jotego/jtdd
 Popeye              | https://www.github.com/jotego/jtpopeye
 Contra              | https://www.github.com/jotego/jtcontra
 CPS                 | https://www.github.com/jotego/jtcps
-Bubble Bobble       | https://www.github.com/jotego/jtbubl (still not public)
+Bubble Bobble       | https://www.github.com/jotego/jtbubl
 
 If you are a developer, don't miss these cores too:
 
