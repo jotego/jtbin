@@ -3,8 +3,9 @@
     <setname>ffightae</setname>
     <year>1989</year>
     <manufacturer>Capcom</manufacturer>
+    <mameversion>0217</mameversion>
     <rbf>jtcps1</rbf>
-    <rom index="0" zip="ffightae.zip" md5="none">
+    <rom index="0" zip="/hbmame/ffight.zip" md5="none">
         <!-- relative position of each ROM section in the file, discounting the header, in kilobytes -->
         <!-- Size of M68000 code 1024 kB -->
         <!-- Sound CPU size 64 kB -->
