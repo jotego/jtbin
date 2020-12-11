@@ -1,0 +1,83 @@
+<!--          FPGA compatible core of arcade hardware by Jotego
+
+              This core is available for hardware compatible with MiST and MiSTer
+              Other FPGA systems may be supported by the time you read this.
+              This work is not mantained by the MiSTer project. Please contact the
+              core author for issues and updates.
+
+              (c) Jose Tejada, 2020. Please support the author
+              Patreon: https://patreon.com/topapate
+              Paypal:  https://paypal.me/topapate
+
+              The author does not endorse or participate in illegal distribution
+              of copyrighted material. This work can be used with legally
+              obtained ROM dumps or with compatible homebrew software
+
+              This file license is GNU GPLv2.
+              You can read the whole license file in
+              https://opensource.org/licenses/gpl-2.0.php
+
+-->
+
+<misterromdescription>
+    <about author="jotego" webpage="https://patreon.com/topapate" source="https://github.com/jotego" twitter="@topapate"/>
+    <name>Biaofeng Zhanjing (Chinese bootleg of The Punisher)</name>
+    <setname>punisherbz</setname>
+    <rbf>jtcps15</rbf>
+    <rom index="0" zip="punisherbz.zip|punisher.zip|qsound.zip" type="merged" md5="None">
+        <part>
+        00 08 80 06 40 08 40 19 
+        ff ff ff ff ff ff ff ff 
+        0e c0 ff ff ff ff 12 14 
+        16 08 0a 00 00 0c 04 02 
+        20 00 17 40 88 73 ff ff 
+        ff ff ff ff ff ff ff ff 
+        67 45 21 03 75 31 60 24 
+        22 22 22 ff ff ff ff ff 
+        </part>
+        <!-- maincpu - starts at 0x0 -->
+        <part name="23.096" crc="bfa45d23"/>
+        <part name="22.096" crc="092578a4"/>
+        <part name="21.096" crc="d21ccddb"/>
+        <part name="20.096" crc="f9f334ce"/>
+        <!-- audiocpu - starts at 0x200000 -->
+        <part name="9.512" crc="b8367eb5"/>
+        <!-- gfx - starts at 0x210000 -->
+        <interleave output="64">
+            <part name="1.096" crc="ad468e07" map="00000021"/>
+            <part name="2.096" crc="b9fdb6b5" map="00002100"/>
+            <part name="3.096" crc="be0b1a78" map="00210000"/>
+            <part name="4.096" crc="bba67a43" map="21000000"/>
+        </interleave>
+        <interleave output="64">
+            <part name="ps_gfx5.rom" crc="c54ea839" map="00000021"/>
+            <part name="ps_gfx7.rom" crc="04c5acbd" map="00002100"/>
+            <part name="ps_gfx6.rom" crc="a544f4cc" map="00210000"/>
+            <part name="ps_gfx8.rom" crc="8f02f436" map="21000000"/>
+        </interleave>
+        <!-- oki - starts at 0x610000 -->
+        <part name="18.010" crc="375c66e7"/>
+        <part name="19.010" crc="eb5ca884"/>
+        <!-- QSound firmware - starts at 0x650000 -->
+        <part name="dl-1425.bin" crc="d6cf5ef5" length="0x2000"/>
+        <!-- Total 0x652000 bytes - 6472 kBytes -->
+    </rom>
+    <rom index="1">
+        <part>00</part>
+    </rom>
+    <switches base="16" default="FF,FF">
+        <!-- DSWA -->
+        <dip name="Coinage" bits="0,2" ids="4/1,3/1,2/1,1/6,1/4,1/3,1/2,1/1"/>
+        <dip name="2 Coins to Start, 1 to Continue" bits="3" ids="On,Off"/>
+        <dip name="Lives" bits="4,5" ids="4,3,2,1"/>
+        <dip name="Sound" bits="6" ids="Monaural,Q Sound"/>
+        <dip name="Flip Screen" bits="7" ids="On,Off"/>
+        <!-- DSWB -->
+        <dip name="Difficulty" bits="8,10" ids="Hardest,Extra Hard,Very Hard,Hard,Normal,Easy,Very Easy,Extra Easy"/>
+        <dip name="Extend" bits="11,12" ids="No Extend,280k0,180k0,80k0"/>
+        <dip name="Allow Continue" bits="13" ids="Yes,No"/>
+        <dip name="Demo Sounds" bits="14" ids="On,Off"/>
+        <dip name="Unknown" bits="15" ids="On,Off"/>
+    </switches>
+    <buttons names="Attack,Jump,-,-,-,-,Start,Coin,Pause" default="Y,X,B,A,L,R,Select,Start,-"/>
+</misterromdescription>

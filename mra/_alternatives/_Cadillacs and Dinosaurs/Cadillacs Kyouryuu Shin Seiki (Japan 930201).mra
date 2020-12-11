@@ -1,0 +1,70 @@
+<!--          FPGA compatible core of arcade hardware by Jotego
+
+              This core is available for hardware compatible with MiST and MiSTer
+              Other FPGA systems may be supported by the time you read this.
+              This work is not mantained by the MiSTer project. Please contact the
+              core author for issues and updates.
+
+              (c) Jose Tejada, 2020. Please support the author
+              Patreon: https://patreon.com/topapate
+              Paypal:  https://paypal.me/topapate
+
+              The author does not endorse or participate in illegal distribution
+              of copyrighted material. This work can be used with legally
+              obtained ROM dumps or with compatible homebrew software
+
+              This file license is GNU GPLv2.
+              You can read the whole license file in
+              https://opensource.org/licenses/gpl-2.0.php
+
+-->
+
+<misterromdescription>
+    <about author="jotego" webpage="https://patreon.com/topapate" source="https://github.com/jotego" twitter="@topapate"/>
+    <name>Cadillacs: Kyouryuu Shin Seiki (Japan 930201)</name>
+    <setname>dinoj</setname>
+    <rbf>jtcps15</rbf>
+    <rom index="0" zip="dinoj.zip|dino.zip|qsound.zip" type="merged" md5="None">
+        <part>
+        00 06 80 06 80 0e 80 1e 
+        ff ff ff ff ff ff ff ff 
+        ff ff ff ff ff ff 0a 0c 
+        0e 00 02 00 00 04 16 16 
+        16 00 05 40 88 73 ff ff 
+        ff ff ff ff ff ff ff ff 
+        76 54 32 10 24 60 13 57 
+        43 43 43 ff ff ff ff ff 
+        </part>
+        <!-- maincpu - starts at 0x0 -->
+        <part name="cdj_23a.8f" crc="5f3ece96"/>
+        <part name="cdj_22a.7f" crc="a0d8de29"/>
+        <part name="cdj_21a.6f" crc="66d23de2"/>
+        <!-- audiocpu - starts at 0x180000 -->
+        <part name="cd_q.5k" crc="605fdb0b"/>
+        <!-- qsound - starts at 0x1A0000 -->
+        <part name="cd-q1.1k" crc="60927775"/>
+        <part name="cd-q2.2k" crc="770f4c47"/>
+        <part name="cd-q3.3k" crc="2f273ffc"/>
+        <part name="cd-q4.4k" crc="2c67821d"/>
+        <!-- gfx - starts at 0x3A0000 -->
+        <interleave output="64">
+            <part name="cd_01.3a" crc="8da4f917" map="00000021"/>
+            <part name="cd_02.4a" crc="6c40f603" map="00002100"/>
+            <part name="cd_03.5a" crc="09c8fc2d" map="00210000"/>
+            <part name="cd_04.6a" crc="637ff38f" map="21000000"/>
+        </interleave>
+        <interleave output="64">
+            <part name="cd_05.7a" crc="470befee" map="00000021"/>
+            <part name="cd_06.8a" crc="22bfb7a3" map="00002100"/>
+            <part name="cd_07.9a" crc="e7599ac4" map="00210000"/>
+            <part name="cd_08.10a" crc="211b4b15" map="21000000"/>
+        </interleave>
+        <!-- QSound firmware - starts at 0x7A0000 -->
+        <part name="dl-1425.bin" crc="d6cf5ef5" length="0x2000"/>
+        <!-- Total 0x7A2000 bytes - 7816 kBytes -->
+    </rom>
+    <rom index="1">
+        <part>00</part>
+    </rom>
+    <buttons names="Attack,Jump,-,-,-,-,Start,Coin,Pause" default="Y,X,B,A,L,R,Select,Start,-"/>
+</misterromdescription>

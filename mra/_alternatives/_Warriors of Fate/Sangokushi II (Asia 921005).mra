@@ -1,0 +1,69 @@
+<!--          FPGA compatible core of arcade hardware by Jotego
+
+              This core is available for hardware compatible with MiST and MiSTer
+              Other FPGA systems may be supported by the time you read this.
+              This work is not mantained by the MiSTer project. Please contact the
+              core author for issues and updates.
+
+              (c) Jose Tejada, 2020. Please support the author
+              Patreon: https://patreon.com/topapate
+              Paypal:  https://paypal.me/topapate
+
+              The author does not endorse or participate in illegal distribution
+              of copyrighted material. This work can be used with legally
+              obtained ROM dumps or with compatible homebrew software
+
+              This file license is GNU GPLv2.
+              You can read the whole license file in
+              https://opensource.org/licenses/gpl-2.0.php
+
+-->
+
+<misterromdescription>
+    <about author="jotego" webpage="https://patreon.com/topapate" source="https://github.com/jotego" twitter="@topapate"/>
+    <name>Sangokushi II (Asia 921005)</name>
+    <setname>wofa</setname>
+    <rbf>jtcps15</rbf>
+    <rom index="0" zip="wofa.zip|wof.zip|qsound.zip" type="merged" md5="None">
+        <part>
+        00 04 80 04 80 0c 80 1c 
+        ff ff ff ff ff ff ff ff 
+        ff ff ff ff ff ff 22 24 
+        26 28 2a 00 00 2c 10 08 
+        04 00 25 40 88 73 ff ff 
+        ff ff ff ff ff ff ff ff 
+        01 23 45 67 54 16 30 72 
+        51 51 51 ff ff ff ff ff 
+        </part>
+        <!-- maincpu - starts at 0x0 -->
+        <part name="tk2a_23c.8f" crc="2e024628"/>
+        <part name="tk2a_22c.7f" crc="900ad4cd"/>
+        <!-- audiocpu - starts at 0x100000 -->
+        <part name="tk2_qa.5k" crc="c9183a0d"/>
+        <!-- qsound - starts at 0x120000 -->
+        <part name="tk2-q1.1k" crc="611268cf"/>
+        <part name="tk2-q2.2k" crc="20f55ca9"/>
+        <part name="tk2-q3.3k" crc="bfcf6f52"/>
+        <part name="tk2-q4.4k" crc="36642e88"/>
+        <!-- gfx - starts at 0x320000 -->
+        <interleave output="64">
+            <part name="tk2-1m.3a" crc="0d9cb9bf" map="00000021"/>
+            <part name="tk2-3m.5a" crc="45227027" map="00002100"/>
+            <part name="tk2-2m.4a" crc="c5ca2460" map="00210000"/>
+            <part name="tk2-4m.6a" crc="e349551c" map="21000000"/>
+        </interleave>
+        <interleave output="64">
+            <part name="tk2-5m.7a" crc="291f0f0b" map="00000021"/>
+            <part name="tk2-7m.9a" crc="3edeb949" map="00002100"/>
+            <part name="tk2-6m.8a" crc="1abd14d6" map="00210000"/>
+            <part name="tk2-8m.10a" crc="b27948e3" map="21000000"/>
+        </interleave>
+        <!-- QSound firmware - starts at 0x720000 -->
+        <part name="dl-1425.bin" crc="d6cf5ef5" length="0x2000"/>
+        <!-- Total 0x722000 bytes - 7304 kBytes -->
+    </rom>
+    <rom index="1">
+        <part>00</part>
+    </rom>
+    <buttons names="Attack,Jump,-,-,-,-,Start,Coin,Pause" default="Y,X,B,A,L,R,Select,Start,-"/>
+</misterromdescription>
