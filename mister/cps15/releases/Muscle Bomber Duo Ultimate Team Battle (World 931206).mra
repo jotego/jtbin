@@ -91,5 +91,5 @@
     <rom index="1">
         <part>00</part>
     </rom>
-    <buttons names="Punch,Attack,Jump,-,-,-,Start,Coin,Pause" default="Y,X,B,A,L,R,Select,Start,-"/>
+    <buttons names="Grab,Attack,Jump,-,-,-,Start,Coin,Pause" default="Y,X,B,A,L,R,Start,Select,-"/>
 </misterromdescription>
