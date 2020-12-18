@@ -26,7 +26,7 @@
     <manufacturer>Capcom</manufacturer>
     <mameversion>sfacps15hack</mameversion>
     <rbf>jtcps15</rbf>
-    <rom index="0" zip="sfzch_cps15.zip|qsound.zip" md5="none">
+    <rom index="0" zip="/hbmame/sfzch_cps15.zip|qsound.zip" md5="none">
         <!-- relative position of each ROM section in the file, discounting the header, in kilobytes -->
         <!-- Size of M68000 code 2048 kB -->
         <!-- Sound CPU size 256 kB -->
