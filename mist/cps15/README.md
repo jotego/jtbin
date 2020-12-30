@@ -86,18 +86,18 @@ MiST and SiDi compilations produce STA clean files with the default seed. Howeve
 
 # MRA Format
 
-Offset | Length | Use
--------|--------|-------------
- 0     |  2     | Sound CPU ROM*
- 2     |  2     | PCM data*
- 4     |  2     | GFX ROM*
- 6     |  2     | QSound firmware*
-10h    | 18     | CPS-B configuration
-22h    |  1     | Game ID
-23h    |  2     | Bank offset
-25h    |  2     | Bank mask
-27h    |  1     | CPS-A board type
-30h    | 11     | Kabuki keys (CPS 1.5 only)
+Offset    | Length | Use
+----------|--------|-------------
+ 0  /  0o |  2     | Sound CPU ROM*
+ 2  /  2o |  2     | PCM data*
+ 4  /  4o |  2     | GFX ROM*
+ 6  /  6o |  2     | QSound firmware*
+10h / 20o | 18     | CPS-B configuration
+22h / 42o |  1     | Game ID
+23h / 43o |  2     | Bank offset
+25h / 45o |  2     | Bank mask
+27h / 47o |  1     | CPS-A board type
+30h / 60o | 11     | Kabuki keys (CPS 1.5 only)
 
 * All offset values are expressed in kilobytes and stored with MSB byte second
 
