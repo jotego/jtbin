@@ -13,19 +13,17 @@ MiSTer allows for gamepad redifinition. However, the keyboard can be used with m
 
 For MiST, the first 6 gamepad buttons are used for game buttons, the next 2 buttons are used for credit and start buttons. If there is still one button left in the gamepad, it will be used for pause.
 
-# MiSTer
+# Setup
+
+## MiSTer
 
 Copy the RBF file to `_Arcade/cores` and the MRA files to `_Arcade`. Copy zipped MAME romsets to `_Arcade/mame`. Enjoy.
 
 It is also possible to keep the MAME romsets in `_Arcade/mame` but have the MRA files in `_CPS` and the RBF files in `_CPS/cores`
 
-## Notes
-
 The _rotate screen_ OSD option is ignored for horizontal games.
 
-# MiST
-
-## Setup
+## MiST
 
 You need to generate the .rom file using this (tool)[https://github.com/sebdel/mra-tools-c/tree/master/release]. Basically call it like this:
 
@@ -37,9 +35,9 @@ And that will produce the .rom file and a .arc file. The .arc file can be used t
 
 Copy the RBF, .arc and .rom files to MiST and enjoy!
 
-## Notes
-
 Note that there is no screen rotation in MiST. Vertical games require you to turn your screen around. You can however flip the image through the OSD.
+
+Pang! 3 and all CPS 1.5/2 games did not use DIP switches to configure the game, but a small non-volatile RAM. You have to enter the test menu to configure it (via OSD). After you have configured the settings, save the contents using the OSD option *Save NVRAM*. A file will be created at the root of your SD card called game.RAM, where game will match the name of the .ROM file used with the game.
 
 # Issues
 
