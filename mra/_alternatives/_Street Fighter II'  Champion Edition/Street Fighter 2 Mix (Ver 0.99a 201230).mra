@@ -20,12 +20,12 @@
     <about author="jotego" webpage="https://patreon.com/topapate"
                            source ="https://github.com/jotego/jtcps1"
                            twitter="@topapate"/>
-    <name>Street Fighter 2 Mix (Ver 0.98c 201214)</name>
+    <name>Street Fighter 2 Mix (Ver 0.99a 201230)</name>
     <setname>sf2mix</setname>
     <year>2020</year>
     <manufacturer>ZERO800</manufacturer>
     <rbf>jtcps1</rbf>
-    <rom index="0" zip="sf2mix.zip" md5="74b7fdb2726eedbf1ffb27a8b066e3b1">
+    <rom index="0" zip="sf2mix.zip" md5="734dd5b60b8a7353043c5ead7554b66d">
         <!-- relative position of each ROM section in the file, discounting the header, in kilobytes -->
         <!-- Size of M68000 code 1536 kB -->
         <!-- Sound CPU size 64 kB -->
@@ -43,13 +43,13 @@
         <part repeat="24">FF</part>
         <!-- maincpu -->
         <interleave output="16">
-            <part name="s92e_23b.8f" crc="ed5d932f" map="21"/>
+            <part name="s92e_23b.8f" crc="ac0ea126" map="21"/>
         </interleave>
         <interleave output="16">
-            <part name="s92_22b.7f" crc="27b92198" map="21"/>
+            <part name="s92_22b.7f" crc="aac9a601" map="21"/>
         </interleave>
         <interleave output="16">
-            <part name="s92_21a.6f" crc="50cf4959" map="21"/>
+            <part name="s92_21a.6f" crc="60c3e417" map="21"/>
         </interleave>
         <!-- audiocpu -->
         <part name="s92_09.11a" crc="a379fdc5"/>
@@ -58,16 +58,16 @@
         <part name="s92_19.12c" crc="f92f5a4f"/>
         <!-- gfx -->
         <interleave output="64">
-            <part name="s92-1m.3a" crc="a1d1a20f"  map="00000021"/>
-            <part name="s92-3m.5a" crc="0708bb01"  map="00002100"/>
-            <part name="s92-2m.4a" crc="42e159b9"  map="00210000"/>
-            <part name="s92-4m.6a" crc="cac353a3"  map="21000000"/>
+            <part name="s92-1m.3a" crc="a8f70643"  map="00000021"/>
+            <part name="s92-3m.5a" crc="f73f1913"  map="00002100"/>
+            <part name="s92-2m.4a" crc="a80234b4"  map="00210000"/>
+            <part name="s92-4m.6a" crc="4d910b53"  map="21000000"/>
         </interleave>
         <interleave output="64">
-            <part name="s92-5m.7a" crc="44788fc3"  map="00000021"/>
-            <part name="s92-7m.9a" crc="db3e33f9"  map="00002100"/>
-            <part name="s92-6m.8a" crc="7f757d22"  map="00210000"/>
-            <part name="s92-8m.10a" crc="7e2c6383"  map="21000000"/>
+            <part name="s92-5m.7a" crc="10dbab9f"  map="00000021"/>
+            <part name="s92-7m.9a" crc="3f368031"  map="00002100"/>
+            <part name="s92-6m.8a" crc="94bf5b35"  map="00210000"/>
+            <part name="s92-8m.10a" crc="ae59521a"  map="21000000"/>
         </interleave>
         <interleave output="64">
             <part name="s92-10m.3c" crc="d4e75239"  map="00000021"/>
@@ -90,6 +90,7 @@
         <dip bits="7"	 name="Portuguese Win Quotes" ids="On,Off"/>
         <dip bits="8,10"	 name="Difficulty" ids="7 (Hardest),6,5,4,3 (Normal),2,1,0 (Easiest)"/>
         <dip bits="11"	 name="Complete Mode" ids="On,Off"/>
+        <dip bits="12"	 name="Classic Mode" ids="On,Off"/>
         <dip bits="18"	 name="Free Play" ids="On,Off"/>
         <dip bits="19"	 name="Freeze" ids="On,Off"/>
         <dip bits="20"	 name="Flip Screen" ids="On,Off"/>
