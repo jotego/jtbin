@@ -55,6 +55,23 @@ The DSP16A clock enable must be an exact multiple of 30MHz. Otherwise the sampli
 
 Even with the right clock enable, there is still hiss occasionally in MiST(er). Using the FPGA logic analyzer I could check that the period was indeed constant but hiss was present.
 
+# CPS-1 Audio
+
+The OKI PCM input clock is 1MHz, depending on the SS input setting, this gives two sampling frequencies:
+
+SS | Fs (Hz) | 4xFs  |    a    |  1-a
+---|---------|-------|---------|--------
+0  | 6097.5  | 24390 | 0.8200  | 0.1800
+1  | 7575.7  | 30303 | 0.8524  | 0.1476
+
+The original board has a first-order low pass filter at 770 Hz, this can be implemented with a first order IIR filter:
+
+y[k] = a * y[k-1] + (1-a) * x[k]
+
+where a = exp(-wc/T )
+wc = 2*pi*770 = 4838 rad/s
+T  = 1/4Fs
+
 # QSound
 
 QSound requires its own firmware rom to work. In MAME this is called qsound.zip. QSound sampling frequency is 3746 ticks of the input clock, when the clock enable applied is 2/3. For a 90MHz input clock, this will result in the correct internal 30MHz and in a sampling frequency of 90MHz/3747=24,019.2Hz
