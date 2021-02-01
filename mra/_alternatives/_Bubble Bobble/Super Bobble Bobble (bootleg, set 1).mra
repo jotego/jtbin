@@ -1,0 +1,88 @@
+<!--          FPGA compatible core of arcade hardware by Jotego
+
+              This core is available for hardware compatible with MiST and MiSTer
+              Other FPGA systems may be supported by the time you read this.
+              This work is not mantained by the MiSTer project. Please contact the
+              core author for issues and updates.
+
+              (c) Jose Tejada, 2020. Please support the author
+              Patreon: https://patreon.com/topapate
+              Paypal:  https://paypal.me/topapate
+
+              The author does not endorse or participate in illegal distribution
+              of copyrighted material. This work can be used with legally
+              obtained ROM dumps or with compatible homebrew software
+
+              This file license is GNU GPLv2.
+              You can read the whole license file in
+              https://opensource.org/licenses/gpl-2.0.php
+
+-->
+
+<misterromdescription>
+    <about author="jotego" webpage="https://patreon.com/topapate" source="https://github.com/jotego" twitter="@topapate"/>
+    <name>Super Bobble Bobble (bootleg, set 1)</name>
+    <setname>sboblbobl</setname>
+    <rbf>jtbubl</rbf>
+    <rom index="0" zip="sboblbobl.zip|bublbobl.zip" type="merged" md5="None">
+        <!-- maincpu - starts at 0x0 -->
+        <interleave output="16">
+            <part name="cpu2-3.bin" crc="2d9107b6" map="12"/>
+        </interleave>
+        <interleave output="16">
+            <part name="bb5" crc="13118eb1" map="12"/>
+        </interleave>
+        <interleave output="16">
+            <part name="cpu2-4.bin" crc="3f9fed10" map="12"/>
+        </interleave>
+        <part repeat="0x10000">FF</part>
+        <!-- subcpu - starts at 0x28000 -->
+        <interleave output="16">
+            <part name="a78-08.37" crc="ae11a07b" map="12"/>
+        </interleave>
+        <!-- audiocpu - starts at 0x30000 -->
+        <interleave output="16">
+            <part name="a78-07.46" crc="4f9a26e8" map="12"/>
+        </interleave>
+        <part repeat="0x8000">FF</part>
+        <!-- gfx1 - starts at 0x40000 -->
+        <interleave output="16">
+            <part name="gfx11.bin" crc="76f2b367" map="01"/>
+            <part name="gfx8.bin" crc="677840e8" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="gfx10.bin" crc="d370f499" map="01"/>
+            <part name="gfx7.bin" crc="702f61c0" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="a78-13.16" crc="d0af35c5" map="01"/>
+            <part name="a78-19.34" crc="66e9438c" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="a78-14.17" crc="7b5369a8" map="01"/>
+            <part name="a78-20.35" crc="9ef863ad" map="10"/>
+        </interleave>
+        <part repeat="0x20000">FF</part>
+        <!-- proms - starts at 0xC0000 -->
+        <part name="a71-25.41" crc="2d0f8545"/>
+        <!-- Total 0xC0100 bytes - 768 kBytes -->
+    </rom>
+    <rom index="1">
+        <part>00</part>
+    </rom>
+    <switches default="FF,FF" base="16">
+        <!-- DSW0 -->
+        <dip name="Game" bits="0" ids="Super Bobble Bobble,Bobble Bobble"/>
+        <dip name="Flip Screen" bits="1" ids="On,Off"/>
+        <dip name="Service Mode" bits="2" ids="On,Off"/>
+        <dip name="Demo Sounds" bits="3" ids="Off,On"/>
+        <dip name="Coin A" bits="4,5" ids="2/3,2/1,1/2,1/1"/>
+        <dip name="Coin B" bits="6,7" ids="2/3,2/1,1/2,1/1"/>
+        <!-- DSW1 -->
+        <dip name="Difficulty" bits="8,9" ids="Very Hard,Hard,Easy,Normal"/>
+        <dip name="Bonus Life" bits="10,11" ids="50K 250K 500K,40K 200K 500K,20K 80K 300K,30K 100K 400K"/>
+        <dip name="Lives" bits="12,13" ids="2,1,100,3"/>
+        <dip name="Monster Speed" bits="14,15" ids="Normal,Medium,High,Very High"/>
+    </switches>
+    <buttons names="Shoot,Jump,Start,Coin,Pause" default="Y,X,R,L,Start"/>
+</misterromdescription>
