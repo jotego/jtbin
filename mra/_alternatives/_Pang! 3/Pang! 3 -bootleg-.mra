@@ -35,9 +35,9 @@
         <!-- Graphics size 4096 kB -->
         <part>40 05 </part>
         <part repeat="10">FF</part>
-        <!-- CPS-B config for pang3b --> 
+        <!-- CPS-B config for pang3b -->
         <part> 32 FF 00 02 04 06 26 28 2A 2C 2E 00 00 30 02 04 08 30 </part>
-        <!-- Mapper for  --> 
+        <!-- Mapper for  -->
         <part> 14 40 88 73 FF </part>
         <part> 01 </part>
         <part repeat="24">FF</part>
@@ -66,10 +66,11 @@
     <!-- Set bit 1 for vertical games.
          Set bit 2 for games using 4-way joysticks -->
     <rom index="1"><part> 02 </part></rom>
+    <nvram index="2" size="128"/>
 
-    <buttons names="B0,B1,-,-,-,-,Start,Coin,Pause" 
+    <buttons names="B0,B1,-,-,-,-,Start,Coin,Pause"
         default="A,B,R,L,Start"/>
-    <switches page_id="1" page_name="Switches" default="FF,FF,FF" base="8">
+    <switches default="FF,FF,FF" base="8">
         <dip bits="19"	 name="Freeze" ids="On,Off"/>
         <dip bits="23"	 name="Service Mode" ids="On,Off"/>
     </switches>

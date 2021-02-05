@@ -65,6 +65,7 @@
     <rom index="1">
         <part>00</part>
     </rom>
+    <nvram index="2" size="128"/>
     <switches base="16" default="FF,FF">
         <!-- DSWA -->
         <dip name="Coinage" bits="0,2" ids="4/1,3/1,2/1,1/6,1/4,1/3,1/2,1/1"/>

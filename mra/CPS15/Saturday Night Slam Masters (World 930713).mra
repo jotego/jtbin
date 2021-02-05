@@ -26,14 +26,14 @@
     <rbf>jtcps15</rbf>
     <rom index="0" zip="slammast.zip|qsound.zip" type="merged" md5="None">
         <part>
-        00 08 80 08 80 18 80 30 
-        ff ff ff ff ff ff ff ff 
-        2e c1 ff ff ff ff 16 00 
-        02 28 2a 00 00 2c 04 08 
-        10 00 10 40 c8 73 f7 20 
-        ff ff ff ff ff ff ff ff 
-        54 32 10 76 65 43 21 07 
-        31 31 19 ff ff ff ff ff 
+        00 08 80 08 80 18 80 30
+        ff ff ff ff ff ff ff ff
+        2e c1 ff ff ff ff 16 00
+        02 28 2a 00 00 2c 04 08
+        10 00 10 40 c8 73 f7 20
+        ff ff ff ff ff ff ff ff
+        54 32 10 76 65 43 21 07
+        31 31 19 ff ff ff ff ff
         </part>
         <!-- maincpu - starts at 0x0 -->
         <part name="mbe_23e.8f" crc="5394057a"/>
@@ -84,5 +84,6 @@
     <rom index="1">
         <part>00</part>
     </rom>
-    <buttons names="Attack,Jump,Pin,-,-,-,Start,Coin,Pause" default="Y,X,B,A,L,R,Start,Select,-"/>
+    <nvram index="2" size="128"/>
+    <buttons names="Grab,Attack,Jump,-,-,-,Start,Coin,Pause" default="Y,X,B,A,L,R,Start,Select,-"/>
 </misterromdescription>
