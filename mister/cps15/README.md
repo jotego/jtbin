@@ -111,8 +111,9 @@ Offset    | Length | Use
 22h / 42o |  1     | Game ID
 23h / 43o |  2     | Bank offset
 25h / 45o |  2     | Bank mask
-27h / 47o |  1     | CPS-A board type
+27h / 47o |  1     | CPS-A board type (Pang! 3, etc.)
 30h / 60o | 11     | Kabuki keys (CPS 1.5 only)
+2ch / 54o | 20     | CPS2 keys
 
 * All offset values are expressed in kilobytes and stored with MSB byte second
 
