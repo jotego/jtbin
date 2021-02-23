@@ -22,6 +22,7 @@
 <misterromdescription>
     <about author="jotego" webpage="https://patreon.com/topapate" source="https://github.com/jotego" twitter="@topapate"/>
     <name>Street Fighter (US, set 1)</name>
+	<mameversion>0217</mameversion>
     <setname>sf</setname>
     <rbf>jtsf</rbf>
     <rom index="0" zip="sf.zip" type="merged" md5="None">

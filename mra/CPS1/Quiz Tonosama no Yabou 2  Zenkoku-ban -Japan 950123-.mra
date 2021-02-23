@@ -21,6 +21,7 @@
                            source ="https://github.com/jotego/jtcps1"
                            twitter="@topapate"/>
     <name>Quiz Tonosama no Yabou 2: Zenkoku-ban (Japan 950123)</name>
+	<mameversion>0217</mameversion>
     <setname>qtono2j</setname>
     <year>1995</year>
     <manufacturer>Capcom</manufacturer>
