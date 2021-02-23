@@ -21,6 +21,7 @@
                            source ="https://github.com/jotego/jtcps1"
                            twitter="@topapate"/>
     <name>Knights of the Round (Japan 911127, B-Board 89625B-1)</name>
+    <mameversion>0217</mameversion>
     <setname>knightsja</setname>
     <year>1991</year>
     <manufacturer>Capcom</manufacturer>

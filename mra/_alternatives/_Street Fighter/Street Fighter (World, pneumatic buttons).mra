@@ -22,6 +22,7 @@
 <misterromdescription>
     <about author="jotego" webpage="https://patreon.com/topapate" source="https://github.com/jotego" twitter="@topapate"/>
     <name>Street Fighter (World, pneumatic buttons)</name>
+    <mameversion>0217</mameversion>
     <setname>sfan</setname>
     <rbf>jtsf</rbf>
     <rom index="0" zip="sfan.zip|sf.zip" type="merged" md5="None">

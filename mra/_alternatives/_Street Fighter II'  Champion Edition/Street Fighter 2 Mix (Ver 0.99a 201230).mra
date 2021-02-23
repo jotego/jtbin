@@ -21,6 +21,7 @@
                            source ="https://github.com/jotego/jtcps1"
                            twitter="@topapate"/>
     <name>Street Fighter 2 Mix (Ver 0.99a 201230)</name>
+    <mameversion>0217</mameversion>
     <setname>sf2mix</setname>
     <year>2020</year>
     <manufacturer>ZERO800</manufacturer>

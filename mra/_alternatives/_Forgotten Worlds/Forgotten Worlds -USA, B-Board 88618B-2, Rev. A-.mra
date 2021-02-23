@@ -21,6 +21,7 @@
                            source ="https://github.com/jotego/jtcps1"
                            twitter="@topapate"/>
     <name>Forgotten Worlds (USA, B-Board 88618B-2, Rev. A)</name>
+    <mameversion>0217</mameversion>
     <setname>forgottnua</setname>
     <year>1988</year>
     <manufacturer>Capcom</manufacturer>

@@ -22,6 +22,7 @@
 <misterromdescription>
     <about author="jotego" webpage="https://patreon.com/topapate" source="https://github.com/jotego" twitter="@topapate"/>
     <name>Trojan (bootleg)</name>
+    <mameversion>0217</mameversion>
     <setname>trojanb</setname>
     <rbf>jttrojan</rbf>
     <rom index="0" zip="trojanb.zip|trojan.zip" type="merged" md5="None">

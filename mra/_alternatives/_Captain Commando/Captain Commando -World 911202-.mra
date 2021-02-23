@@ -21,6 +21,7 @@
                            source ="https://github.com/jotego/jtcps1"
                            twitter="@topapate"/>
     <name>Captain Commando (World 911202)</name>
+    <mameversion>0217</mameversion>
     <setname>captcomm</setname>
     <year>1991</year>
     <manufacturer>Capcom</manufacturer>

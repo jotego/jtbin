@@ -21,6 +21,7 @@
                            source ="https://github.com/jotego/jtcps1"
                            twitter="@topapate"/>
     <name>Rockman: The Power Battle (CPS1, Japan 950922)</name>
+    <mameversion>0217</mameversion>
     <setname>rockmanj</setname>
     <year>1995</year>
     <manufacturer>Capcom</manufacturer>

@@ -21,6 +21,7 @@
                            source ="https://github.com/jotego/jtcps1"
                            twitter="@topapate"/>
     <name>Biaofeng Zhanjing (Chinese bootleg of The Punisher)</name>
+    <mameversion>0217</mameversion>
     <setname>punisherbz</setname>
     <year>1993</year>
     <manufacturer>bootleg</manufacturer>

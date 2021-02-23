@@ -21,6 +21,7 @@
                            source ="https://github.com/jotego/jtcps1"
                            twitter="@topapate"/>
     <name>Varth: Operation Thunderstorm (USA 920612)</name>
+    <mameversion>0217</mameversion>
     <setname>varthu</setname>
     <year>1992</year>
     <manufacturer>Capcom (Romstar license)</manufacturer>

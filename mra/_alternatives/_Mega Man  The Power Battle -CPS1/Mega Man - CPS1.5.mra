@@ -21,6 +21,7 @@
                            source ="https://github.com/jotego/jtcps1"
                            twitter="@topapate"/>
     <name>Mega Man: The Power Battle CPS 1.5</name>
+    <mameversion>0217</mameversion>
     <setname>megaman</setname>
     <year>1995</year>
     <manufacturer>Capcom</manufacturer>

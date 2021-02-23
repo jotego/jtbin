@@ -21,6 +21,7 @@
                            source ="https://github.com/jotego/jtcps1"
                            twitter="@topapate"/>
     <name>Nemo (World 901130)</name>
+    <mameversion>0217</mameversion>
     <setname>nemo</setname>
     <year>1990</year>
     <manufacturer>Capcom</manufacturer>

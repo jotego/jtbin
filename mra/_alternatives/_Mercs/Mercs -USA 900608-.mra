@@ -21,6 +21,7 @@
                            source ="https://github.com/jotego/jtcps1"
                            twitter="@topapate"/>
     <name>Mercs (USA 900608)</name>
+    <mameversion>0217</mameversion>
     <setname>mercsu</setname>
     <year>1990</year>
     <manufacturer>Capcom</manufacturer>

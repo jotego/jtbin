@@ -21,6 +21,7 @@
                            source ="https://github.com/jotego/jtcps1"
                            twitter="@topapate"/>
     <name>Quiz &amp; Dragons: Capcom Quiz Game (Japan Resale Ver. 940921)</name>
+    <mameversion>0217</mameversion>
     <setname>qadjr</setname>
     <year>1994</year>
     <manufacturer>Capcom</manufacturer>

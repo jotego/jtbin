@@ -21,6 +21,7 @@
                            source ="https://github.com/jotego/jtcps1"
                            twitter="@topapate"/>
     <name>Street Fighter Alpha: Warriors' Dreams (CPS Changer, Publicity USA 950727)</name>
+    <mameversion>0217</mameversion>
     <setname>sfach</setname>
     <year>1995</year>
     <manufacturer>Capcom</manufacturer>

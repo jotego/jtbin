@@ -21,6 +21,7 @@
                            source ="https://github.com/jotego/jtcps1"
                            twitter="@topapate"/>
     <name>Chiki Chiki Boys (Japan 900619)</name>
+    <mameversion>0217</mameversion>
     <setname>chikij</setname>
     <year>1990</year>
     <manufacturer>Capcom</manufacturer>

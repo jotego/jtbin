@@ -21,6 +21,7 @@
                            source ="https://github.com/jotego/jtcps1"
                            twitter="@topapate"/>
     <name>Three Wonders (USA 910520)</name>
+    <mameversion>0217</mameversion>
     <setname>3wondersu</setname>
     <year>1991</year>
     <manufacturer>Capcom</manufacturer>

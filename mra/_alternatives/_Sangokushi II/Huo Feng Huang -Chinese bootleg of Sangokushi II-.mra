@@ -21,6 +21,7 @@
                            source ="https://github.com/jotego/jtcps1"
                            twitter="@topapate"/>
     <name>Huo Feng Huang (Chinese bootleg of Sangokushi II)</name>
+    <mameversion>0217</mameversion>
     <setname>wofhfh</setname>
     <year>1999</year>
     <manufacturer>bootleg</manufacturer>

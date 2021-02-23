@@ -21,6 +21,7 @@
                            source ="https://github.com/jotego/jtcps1"
                            twitter="@topapate"/>
     <name>Street Fighter II: The World Warrior (Quicken Pt-I, bootleg)</name>
+    <mameversion>0217</mameversion>
     <setname>sf2qp1</setname>
     <year>1991</year>
     <manufacturer>bootleg</manufacturer>

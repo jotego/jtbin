@@ -21,6 +21,7 @@
                            source ="https://github.com/jotego/jtcps1"
                            twitter="@topapate"/>
     <name>Magic Sword: Heroic Fantasy (World 900623)</name>
+    <mameversion>0217</mameversion>
     <setname>mswordr1</setname>
     <year>1990</year>
     <manufacturer>Capcom</manufacturer>
