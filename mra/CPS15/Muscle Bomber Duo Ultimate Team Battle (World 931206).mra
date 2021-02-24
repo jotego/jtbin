@@ -22,6 +22,7 @@
 <misterromdescription>
     <about author="jotego" webpage="https://patreon.com/topapate" source="https://github.com/jotego" twitter="@topapate"/>
     <name>Muscle Bomber Duo: Ultimate Team Battle (World 931206)</name>
+    <mameversion>0217</mameversion>
     <setname>mbombrd</setname>
     <rbf>jtcps15</rbf>
     <rom index="0" zip="mbombrd.zip|qsound.zip" type="merged" md5="None">
