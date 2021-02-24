@@ -21,6 +21,7 @@
                            source ="https://github.com/jotego/jtcps1"
                            twitter="@topapate"/>
     <name>Mega Twins (World 900619)</name>
+	<mameversion>0217</mameversion>
     <setname>mtwins</setname>
     <year>1990</year>
     <manufacturer>Capcom</manufacturer>

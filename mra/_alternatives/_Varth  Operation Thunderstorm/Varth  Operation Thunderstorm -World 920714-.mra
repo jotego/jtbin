@@ -21,7 +21,7 @@
                            source ="https://github.com/jotego/jtcps1"
                            twitter="@topapate"/>
     <name>Varth: Operation Thunderstorm (World 920714)</name>
-    <mameversion>0217</mameversion>
+	<mameversion>0217</mameversion>
     <setname>varth</setname>
     <year>1992</year>
     <manufacturer>Capcom</manufacturer>

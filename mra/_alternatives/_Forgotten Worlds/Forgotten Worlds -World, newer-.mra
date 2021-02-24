@@ -21,7 +21,7 @@
                            source ="https://github.com/jotego/jtcps1"
                            twitter="@topapate"/>
     <name>Forgotten Worlds (World, newer)</name>
-    <mameversion>0217</mameversion>
+	<mameversion>0217</mameversion>
     <setname>forgottn</setname>
     <year>1988</year>
     <manufacturer>Capcom</manufacturer>

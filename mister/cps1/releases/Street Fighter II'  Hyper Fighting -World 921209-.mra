@@ -21,6 +21,7 @@
                            source ="https://github.com/jotego/jtcps1"
                            twitter="@topapate"/>
     <name>Street Fighter II': Hyper Fighting (World 921209)</name>
+	<mameversion>0217</mameversion>
     <setname>sf2hf</setname>
     <year>1992</year>
     <manufacturer>Capcom</manufacturer>

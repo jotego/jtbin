@@ -21,7 +21,7 @@
                            source ="https://github.com/jotego/jtcps1"
                            twitter="@topapate"/>
     <name>Quiz &amp; Dragons: Capcom Quiz Game (USA 920701)</name>
-    <mameversion>0217</mameversion>
+	<mameversion>0217</mameversion>
     <setname>qad</setname>
     <year>1992</year>
     <manufacturer>Capcom</manufacturer>

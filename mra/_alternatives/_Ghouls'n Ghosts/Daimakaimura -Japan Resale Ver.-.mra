@@ -21,8 +21,8 @@
                            source ="https://github.com/jotego/jtcps1"
                            twitter="@topapate"/>
     <name>Daimakaimura (Japan Resale Ver.)</name>
-    <mameversion>0217</mameversion>
     <setname>daimakair</setname>
+	<mameversion>0217</mameversion>
     <year>1988</year>
     <manufacturer>Capcom</manufacturer>
     <rbf>jtcps1</rbf>

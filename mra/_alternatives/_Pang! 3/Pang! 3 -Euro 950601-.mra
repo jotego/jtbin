@@ -21,7 +21,7 @@
                            source ="https://github.com/jotego/jtcps1"
                            twitter="@topapate"/>
     <name>Pang! 3 (Euro 950601)</name>
-    <mameversion>0217</mameversion>
+	<mameversion>0217</mameversion>
     <setname>pang3</setname>
     <year>1995</year>
     <manufacturer>Mitchell</manufacturer>

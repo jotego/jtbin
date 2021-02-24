@@ -21,7 +21,7 @@
                            source ="https://github.com/jotego/jtcps1"
                            twitter="@topapate"/>
     <name>Knights of the Round (World 911127)</name>
-    <mameversion>0217</mameversion>
+	<mameversion>0217</mameversion>
     <setname>knights</setname>
     <year>1991</year>
     <manufacturer>Capcom</manufacturer>

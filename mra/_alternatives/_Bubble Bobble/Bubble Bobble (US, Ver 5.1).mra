@@ -22,7 +22,7 @@
 <misterromdescription>
     <about author="jotego" webpage="https://patreon.com/topapate" source="https://github.com/jotego" twitter="@topapate"/>
     <name>Bubble Bobble (US, Ver 5.1)</name>
-    <mameversion>0217</mameversion>
+	<mameversion>0217</mameversion>
     <setname>bublboblr</setname>
     <rbf>jtbubl</rbf>
     <rom index="0" zip="bublboblr.zip|bublbobl.zip" type="merged" md5="None">

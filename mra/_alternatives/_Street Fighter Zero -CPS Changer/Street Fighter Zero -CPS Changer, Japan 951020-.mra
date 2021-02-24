@@ -21,7 +21,7 @@
                            source ="https://github.com/jotego/jtcps1"
                            twitter="@topapate"/>
     <name>Street Fighter Zero (CPS Changer, Japan 951020)</name>
-    <mameversion>0217</mameversion>
+	<mameversion>0217</mameversion>
     <setname>sfzch</setname>
     <year>1995</year>
     <manufacturer>Capcom</manufacturer>

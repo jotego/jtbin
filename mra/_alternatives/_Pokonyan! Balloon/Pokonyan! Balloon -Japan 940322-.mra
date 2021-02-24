@@ -21,7 +21,7 @@
                            source ="https://github.com/jotego/jtcps1"
                            twitter="@topapate"/>
     <name>Pokonyan! Balloon (Japan 940322)</name>
-    <mameversion>0217</mameversion>
+	<mameversion>0217</mameversion>
     <setname>pokonyan</setname>
     <year>1994</year>
     <manufacturer>Capcom</manufacturer>

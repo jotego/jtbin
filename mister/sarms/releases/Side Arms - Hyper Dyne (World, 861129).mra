@@ -22,6 +22,7 @@
 <misterromdescription>
     <about author="jotego" webpage="https://patreon.com/topapate" source="https://github.com/jotego" twitter="@topapate"/>
     <name>Side Arms - Hyper Dyne (World, 861129)</name>
+	<mameversion>0217</mameversion>
     <setname>sidearms</setname>
     <rbf>jtsarms</rbf>
     <rom index="0" zip="sidearms.zip" type="merged" md5="None">
