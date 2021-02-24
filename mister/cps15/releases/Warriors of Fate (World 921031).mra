@@ -22,6 +22,7 @@
 <misterromdescription>
     <about author="jotego" webpage="https://patreon.com/topapate" source="https://github.com/jotego" twitter="@topapate"/>
     <name>Warriors of Fate (World 921031)</name>
+    <mameversion>0217</mameversion>
     <setname>wof</setname>
     <rbf>jtcps15</rbf>
     <rom index="0" zip="wof.zip|qsound.zip" type="merged" md5="None">
