@@ -21,6 +21,7 @@
                            source ="https://github.com/jotego/jtcps1"
                            twitter="@topapate"/>
     <name>The King of Dragons (Japan 910805, B-Board 89625B-1)</name>
+    <mameversion>0217</mameversion>
     <setname>kodja</setname>
     <year>1991</year>
     <manufacturer>Capcom</manufacturer>

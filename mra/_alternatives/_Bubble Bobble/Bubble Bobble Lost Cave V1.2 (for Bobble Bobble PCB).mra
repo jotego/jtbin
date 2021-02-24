@@ -22,6 +22,7 @@
 <misterromdescription>
     <about author="jotego" webpage="https://patreon.com/topapate" source="https://github.com/jotego" twitter="@topapate"/>
     <name>Bubble Bobble: Lost Cave V1.2 (for Bobble Bobble PCB)</name>
+    <mameversion>0217</mameversion>
     <setname>boblcave</setname>
     <rbf>jtbubl</rbf>
     <rom index="0" zip="boblcave.zip|bublbobl.zip" type="merged" md5="None">

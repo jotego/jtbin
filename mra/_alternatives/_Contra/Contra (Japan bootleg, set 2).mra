@@ -22,6 +22,7 @@
 <misterromdescription>
     <about author="jotego" webpage="https://patreon.com/topapate" source="https://github.com/jotego" twitter="@topapate"/>
     <name>Contra (Japan bootleg, set 2)</name>
+    <mameversion>0217</mameversion>
     <setname>contrabj1</setname>
     <rbf>jtcontra</rbf>
     <rom index="0" zip="contrabj1.zip|contra.zip" type="merged" md5="None">

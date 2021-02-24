@@ -21,8 +21,8 @@
 
 <misterromdescription>
     <about author="jotego" webpage="https://patreon.com/topapate" source="https://github.com/jotego" twitter="@topapate"/>
-    <name>Tokio / Scramble Formation (bootleg)
-        </name>
+    <name>Tokio / Scramble Formation (bootleg)</name>
+	<mameversion>0217</mameversion>
     <setname>tokiob</setname>
     <rbf>jtbubl</rbf>
     <rom index="0" zip="tokiob.zip|tokio.zip" type="merged" md5="None">

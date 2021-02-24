@@ -21,6 +21,7 @@
                            source ="https://github.com/jotego/jtcps1"
                            twitter="@topapate"/>
     <name>Pnickies (Japan 940608)</name>
+    <mameversion>0217</mameversion>
     <setname>pnickj</setname>
     <year>1994</year>
     <manufacturer>Capcom</manufacturer>

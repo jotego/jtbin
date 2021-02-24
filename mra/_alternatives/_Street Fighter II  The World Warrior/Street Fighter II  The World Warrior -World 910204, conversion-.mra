@@ -21,6 +21,7 @@
                            source ="https://github.com/jotego/jtcps1"
                            twitter="@topapate"/>
     <name>Street Fighter II: The World Warrior (World 910204, conversion)</name>
+    <mameversion>0217</mameversion>
     <setname>sf2en</setname>
     <year>1991</year>
     <manufacturer>Capcom</manufacturer>

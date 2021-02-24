@@ -22,6 +22,7 @@
                            twitter="@topapate"/>
     <name>Daimakaimura (Japan Resale Ver.)</name>
     <setname>daimakair</setname>
+	<mameversion>0217</mameversion>
     <year>1988</year>
     <manufacturer>Capcom</manufacturer>
     <rbf>jtcps1</rbf>

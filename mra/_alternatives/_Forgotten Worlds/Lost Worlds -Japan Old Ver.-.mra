@@ -21,6 +21,7 @@
                            source ="https://github.com/jotego/jtcps1"
                            twitter="@topapate"/>
     <name>Lost Worlds (Japan Old Ver.)</name>
+    <mameversion>0217</mameversion>
     <setname>lostwrldo</setname>
     <year>1988</year>
     <manufacturer>Capcom</manufacturer>

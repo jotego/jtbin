@@ -22,6 +22,7 @@
 <misterromdescription>
     <about author="jotego" webpage="https://patreon.com/topapate" source="https://github.com/jotego" twitter="@topapate"/>
     <name>Bubble Bobble ('bootleg redux' hack for Bobble Bobble PCB)</name>
+    <mameversion>0217</mameversion>
     <setname>bbredux</setname>
     <rbf>jtbubl</rbf>
     <rom index="0" zip="bbredux.zip|bublbobl.zip" type="merged" md5="None">

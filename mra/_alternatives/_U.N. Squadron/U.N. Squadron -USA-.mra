@@ -21,6 +21,7 @@
                            source ="https://github.com/jotego/jtcps1"
                            twitter="@topapate"/>
     <name>U.N. Squadron (USA)</name>
+    <mameversion>0217</mameversion>
     <setname>unsquad</setname>
     <year>1989</year>
     <manufacturer>Capcom</manufacturer>

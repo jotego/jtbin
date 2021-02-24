@@ -21,6 +21,7 @@
                            source ="https://github.com/jotego/jtcps1"
                            twitter="@topapate"/>
     <name>Final Fight (Japan 900405)</name>
+    <mameversion>0217</mameversion>
     <setname>ffightj3</setname>
     <year>1989</year>
     <manufacturer>Capcom</manufacturer>

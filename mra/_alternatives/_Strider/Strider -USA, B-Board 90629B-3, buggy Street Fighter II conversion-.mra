@@ -21,6 +21,7 @@
                            source ="https://github.com/jotego/jtcps1"
                            twitter="@topapate"/>
     <name>Strider (USA, B-Board 90629B-3, buggy Street Fighter II conversion)</name>
+    <mameversion>0217</mameversion>
     <setname>strideruc</setname>
     <year>1989</year>
     <manufacturer>bootleg (Capcom)</manufacturer>

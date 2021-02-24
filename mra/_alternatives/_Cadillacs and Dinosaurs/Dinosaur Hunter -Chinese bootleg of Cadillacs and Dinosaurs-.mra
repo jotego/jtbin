@@ -21,6 +21,7 @@
                            source ="https://github.com/jotego/jtcps1"
                            twitter="@topapate"/>
     <name>Dinosaur Hunter (Chinese bootleg of Cadillacs and Dinosaurs)</name>
+    <mameversion>0217</mameversion>
     <setname>dinohunt</setname>
     <year>1993</year>
     <manufacturer>bootleg</manufacturer>

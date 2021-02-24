@@ -21,6 +21,7 @@
                            source ="https://github.com/jotego/jtcps1"
                            twitter="@topapate"/>
     <name>The King of Dragons (World 910805)</name>
+	<mameversion>0217</mameversion>
     <setname>kod</setname>
     <year>1991</year>
     <manufacturer>Capcom</manufacturer>

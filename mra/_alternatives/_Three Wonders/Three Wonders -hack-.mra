@@ -21,6 +21,7 @@
                            source ="https://github.com/jotego/jtcps1"
                            twitter="@topapate"/>
     <name>Three Wonders (hack)</name>
+    <mameversion>0217</mameversion>
     <setname>3wondersh</setname>
     <year>1991</year>
     <manufacturer>bootleg</manufacturer>

@@ -22,6 +22,7 @@
 <misterromdescription>
     <about author="jotego" webpage="https://patreon.com/topapate" source="https://github.com/jotego" twitter="@topapate"/>
     <name>Super Bobble Bobble (bootleg, set 1)</name>
+    <mameversion>0217</mameversion>
     <setname>sboblbobl</setname>
     <rbf>jtbubl</rbf>
     <rom index="0" zip="sboblbobl.zip|bublbobl.zip" type="merged" md5="None">

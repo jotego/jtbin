@@ -21,6 +21,7 @@
                            source ="https://github.com/jotego/jtcps1"
                            twitter="@topapate"/>
     <name>1941: Counter Attack (World)</name>
+    <mameversion>0217</mameversion>
     <setname>1941r1</setname>
     <year>1990</year>
     <manufacturer>Capcom</manufacturer>

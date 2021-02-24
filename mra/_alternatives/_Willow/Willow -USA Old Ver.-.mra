@@ -21,6 +21,7 @@
                            source ="https://github.com/jotego/jtcps1"
                            twitter="@topapate"/>
     <name>Willow (USA Old Ver.)</name>
+    <mameversion>0217</mameversion>
     <setname>willowuo</setname>
     <year>1989</year>
     <manufacturer>Capcom</manufacturer>

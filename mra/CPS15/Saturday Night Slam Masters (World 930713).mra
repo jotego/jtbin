@@ -22,6 +22,7 @@
 <misterromdescription>
     <about author="jotego" webpage="https://patreon.com/topapate" source="https://github.com/jotego" twitter="@topapate"/>
     <name>Saturday Night Slam Masters (World 930713)</name>
+	<mameversion>0217</mameversion>
     <setname>slammast</setname>
     <rbf>jtcps15</rbf>
     <rom index="0" zip="slammast.zip|qsound.zip" type="merged" md5="None">

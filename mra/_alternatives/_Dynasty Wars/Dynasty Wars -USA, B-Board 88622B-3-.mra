@@ -21,6 +21,7 @@
                            source ="https://github.com/jotego/jtcps1"
                            twitter="@topapate"/>
     <name>Dynasty Wars (USA, B-Board 88622B-3)</name>
+    <mameversion>0217</mameversion>
     <setname>dynwara</setname>
     <year>1989</year>
     <manufacturer>Capcom</manufacturer>

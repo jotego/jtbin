@@ -21,6 +21,7 @@
                            source ="https://github.com/jotego/jtcps1"
                            twitter="@topapate"/>
     <name>Final Fight (USA, set 2)</name>
+    <mameversion>0217</mameversion>
     <setname>ffightu1</setname>
     <year>1989</year>
     <manufacturer>Capcom</manufacturer>

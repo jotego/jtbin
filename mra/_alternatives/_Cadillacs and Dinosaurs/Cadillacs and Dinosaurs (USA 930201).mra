@@ -22,6 +22,7 @@
 <misterromdescription>
     <about author="jotego" webpage="https://patreon.com/topapate" source="https://github.com/jotego" twitter="@topapate"/>
     <name>Cadillacs and Dinosaurs (USA 930201)</name>
+    <mameversion>0217</mameversion>
     <setname>dinou</setname>
     <rbf>jtcps15</rbf>
     <rom index="0" zip="dinou.zip|dino.zip|qsound.zip" type="merged" md5="None">

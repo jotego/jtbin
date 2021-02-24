@@ -24,6 +24,7 @@
                            source ="https://github.com/jotego/jtcontra"
                            twitter="@topapate"/>
     <name>contrabj1</name>
+    <mameversion>0217</mameversion>
     <rbf>jtcontra</rbf>
     <setname>contrabj1</setname>
     <rom index="0" zip="contrabj1.zip|contra.zip" type="merged" md5="None">

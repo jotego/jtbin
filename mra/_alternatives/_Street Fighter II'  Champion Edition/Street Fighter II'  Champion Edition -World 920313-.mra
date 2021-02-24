@@ -21,6 +21,7 @@
                            source ="https://github.com/jotego/jtcps1"
                            twitter="@topapate"/>
     <name>Street Fighter II': Champion Edition (World 920313)</name>
+    <mameversion>0217</mameversion>
     <setname>sf2ceea</setname>
     <year>1992</year>
     <manufacturer>Capcom</manufacturer>

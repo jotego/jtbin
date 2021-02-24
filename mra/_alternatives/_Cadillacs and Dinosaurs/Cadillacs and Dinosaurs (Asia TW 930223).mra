@@ -22,6 +22,7 @@
 <misterromdescription>
     <about author="jotego" webpage="https://patreon.com/topapate" source="https://github.com/jotego" twitter="@topapate"/>
     <name>Cadillacs and Dinosaurs (Asia TW 930223)</name>
+    <mameversion>0217</mameversion>
     <setname>dinoa</setname>
     <rbf>jtcps15</rbf>
     <rom index="0" zip="dinoa.zip|dino.zip|qsound.zip" type="merged" md5="None">
