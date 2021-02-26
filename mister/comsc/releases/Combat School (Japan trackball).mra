@@ -1,0 +1,83 @@
+<!--          FPGA compatible core of arcade hardware by Jotego
+
+              This core is available for hardware compatible with MiST and MiSTer
+              Other FPGA systems may be supported by the time you read this.
+              This work is not mantained by the MiSTer project. Please contact the
+              core author for issues and updates.
+
+              (c) Jose Tejada, 2020. Please support the author
+              Patreon: https://patreon.com/topapate
+              Paypal:  https://paypal.me/topapate
+
+              The author does not endorse or participate in illegal distribution
+              of copyrighted material. This work can be used with legally
+              obtained ROM dumps or with compatible homebrew software
+
+              This file license is GNU GPLv2.
+              You can read the whole license file in
+              https://opensource.org/licenses/gpl-2.0.php
+
+-->
+
+<misterromdescription>
+    <about author="jotego" webpage="https://patreon.com/topapate" source="https://github.com/jotego" twitter="@topapate"/>
+    <name>Combat School (Japan trackball)</name>
+    <setname>combatscj</setname>
+    <rbf>jtcomsc</rbf>
+    <rom index="0" zip="combatscj.zip|combatsc.zip" type="merged" md5="None">
+        <!-- maincpu - starts at 0x0 -->
+        <interleave output="16">
+            <part name="611p01.a14" crc="d748268e" map="12"/>
+        </interleave>
+        <interleave output="16">
+            <part name="611g02.rom" crc="9ba05327" map="12"/>
+        </interleave>
+        <!-- audiocpu - starts at 0x30000 -->
+        <interleave output="16">
+            <part name="611g03.rom" crc="2a544db5" map="12"/>
+        </interleave>
+        <part repeat="0x8000">FF</part>
+        <!-- gfx1 - starts at 0x40000 -->
+        <interleave output="16">
+            <part name="611g07.rom" crc="73b38720" map="01"/>
+            <part name="611g08.rom" crc="46e7d28c" map="10"/>
+        </interleave>
+        <part repeat="0x80000">FF</part>
+        <!-- gfx2 - starts at 0x140000 -->
+        <interleave output="16">
+            <part name="611g11.rom" crc="69687538" map="01"/>
+            <part name="611g12.rom" crc="9c6bf898" map="10"/>
+        </interleave>
+        <!-- upd - starts at 0x1C0000 -->
+        <interleave output="16">
+            <part name="611g04.rom" crc="2987e158" map="12"/>
+        </interleave>
+        <part repeat="0xE0000">FF</part>
+        <!-- proms - starts at 0x2C0000 -->
+        <part name="611g06.h14" crc="f916129a"/>
+        <part name="611g05.h15" crc="207a7b07"/>
+        <part name="611g10.h6" crc="f916129a"/>
+        <part name="611g09.h7" crc="207a7b07"/>
+        <!-- Total 0x2C0400 bytes - 2817 kBytes -->
+    </rom>
+    <rom index="1">00</rom>
+    <switches default="FF,FF" base="8">
+        <!-- DSW1 -->
+        <dip name="Coin A" bits="0,3" ids="Free Play,4/3,4/1,3/4,3/2,3/1,2/5,2/3,2/1,1/7,1/6,1/5,1/4,1/3,1/2,1/1"/>
+        <dip name="Coin B" bits="4,7" ids="None,4/3,4/1,3/4,3/2,3/1,2/5,2/3,2/1,1/7,1/6,1/5,1/4,1/3,1/2,1/1"/>
+        <!-- DSW2 -->
+        <dip name="Unknown" bits="8" ids="On,Off"/>
+        <dip name="Unknown" bits="9" ids="On,Off"/>
+        <dip name="Cabinet" bits="10" ids="Upright,Cocktail"/>
+        <dip name="Unknown" bits="11" ids="On,Off"/>
+        <dip name="Unknown" bits="12" ids="On,Off"/>
+        <dip name="Difficulty" bits="13,14" ids="Very Difficult,Difficult,Normal,Easy"/>
+        <dip name="Demo Sounds" bits="15" ids="On,Off"/>
+        <!-- DSW3 -->
+        <dip name="Flip Screen" bits="16" ids="On,Off"/>
+        <dip name="Unknown" bits="17" ids="Off,On"/>
+        <dip name="Service Mode" bits="18" ids="On,Off"/>
+        <dip name="Unknown" bits="19" ids="Off,On"/>
+    </switches>
+    <buttons names="Fire,Jump,Start,Coin,Pause" default="A,B,R,L,Start"/>
+</misterromdescription>

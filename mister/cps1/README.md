@@ -113,6 +113,7 @@ Offset    | Length | Use
 25h / 45o |  2     | Bank mask
 27h / 47o |  1     | CPS-A board type (Pang! 3, etc.)
 30h / 60o | 11     | Kabuki keys (CPS 1.5 only)
+28h / 50o |  1     | CPS2 board type
 2ch / 54o | 20     | CPS2 keys
 
 * All offset values are expressed in kilobytes and stored with MSB byte second
@@ -132,6 +133,11 @@ Bits   |  Use
 4      | High for charger games
 5      | 0 = Disables Kabuki decryption
 
+CPS2 board type format:
+
+Bits   |  Use
+-------|-------
+1:0    | Controller type
 
 # SDRAM Usage
 
