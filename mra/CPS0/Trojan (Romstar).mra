@@ -102,5 +102,5 @@
         <dip name="Flip Screen" bits="14" ids="On,Off"/>
         <dip name="Allow Continue" bits="15" ids="No,Yes"/>
     </switches>
-    <buttons names="Fire,Jump,Start,Coin,Pause" default="Y,X,R,L,Start"/>
+    <buttons names="Attack,Shield,Start,Coin,Pause" default="Y,X,R,L,Start"/>
 </misterromdescription>
