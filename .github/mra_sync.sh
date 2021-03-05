@@ -20,7 +20,10 @@ echo
 
 TMP=$(mktemp)
 
-git diff --name-only ${LATEST_COMMIT}..${PREVIOUS_COMMIT} | grep -i '.mra$' | grep -iv '/_alternatives/' > ${TMP} || true
+if ! git diff --name-only ${LATEST_COMMIT}..${PREVIOUS_COMMIT} | grep -i '.mra$' | grep -iv '/_alternatives/' > ${TMP} ; then
+    PREVIOUS_COMMIT="$(git rev-list --max-parents=0 HEAD)"
+    git diff --name-only ${LATEST_COMMIT}..${PREVIOUS_COMMIT} | grep -i '.mra$' | grep -iv '/_alternatives/' > ${TMP}
+fi
 
 MRA_QTY=$(cat ${TMP} | wc -l)
 
