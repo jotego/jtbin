@@ -1,0 +1,73 @@
+<misterromdescription>
+	<name>Ghosts'n Goblins (US)</name>
+	<mameversion>0216</mameversion>
+	<setname>gngt</setname>
+	<mratimestamp>201911270000</mratimestamp>
+	<year>1985</year>
+	<manufacturer>Capcom (Taito America license)</manufacturer>
+	<category>Adventure / Knights</category>
+	<category>Fighter / Warriors</category>
+	<rbf>jtgng</rbf>
+	<rom index="0" zip="gngt.zip" md5="205229cb8941ae2ab651777018f91826" type="nonmerged">
+		<part name="mmt03d.8n"/>
+		<part name="mmt04d.10n"/>
+		<part name="mmt05d.13n"/>
+		<part name="mm01.11e"/>
+		<part name="mm02.14h"/>
+		<part name="mm09.3c"/>
+		<part name="mm08.1c"/>
+		<part name="mm07.3b"/>
+		<part name="mm06.1b"/>
+		<part name="mm11.3e"/>
+		<part name="mm10.1e"/>
+		<part name="mm11.3e"/>
+		<part name="mm10.1e"/>
+		<part name="mm17.4n"/>
+		<part name="mm16.3n"/>
+		<part name="mm15.1n"/>
+		<part name="mm15.1n"/>
+		<part name="mm14.4l"/>
+		<part name="mm13.3l"/>
+		<part name="mm12.1l"/>
+		<part name="mm12.1l"/>
+	</rom>
+	<rom index="0" zip="gng.zip" md5="205229cb8941ae2ab651777018f91826" type="merged">
+		<part name="gngt/mmt03d.8n"/>
+		<part name="gngt/mmt04d.10n"/>
+		<part name="gngt/mmt05d.13n"/>
+		<part name="gg1.bin"/>
+		<part name="gg2.bin"/>
+		<part name="gg9.bin"/>
+		<part name="gg8.bin"/>
+		<part name="gg7.bin"/>
+		<part name="gg6.bin"/>
+		<part name="gg11.bin"/>
+		<part name="gg10.bin"/>
+		<part name="gg11.bin"/>
+		<part name="gg10.bin"/>
+		<part name="gg17.bin"/>
+		<part name="gg16.bin"/>
+		<part name="gg15.bin"/>
+		<part name="gg15.bin"/>
+		<part name="gg14.bin"/>
+		<part name="gg13.bin"/>
+		<part name="gg12.bin"/>
+		<part name="gg12.bin"/>
+	</rom>
+    <switches page_id="1" page_name="Switches" default="FF,7F" base="16">
+        <!-- DSW1 -->
+        <dip name="Coinage" bits="0,3" ids="Free Play,4/3,4/1,3/4,3/2,3/1,2/5,2/3,2/1,1/7,1/6,1/5,1/4,1/3,1/2,1/1"></dip>
+        <dip name="Coinage affects" bits="4" ids="Coin B,Coin A"></dip>
+        <dip name="Demo Sounds" bits="5" ids="On,Off"></dip>
+        <dip name="Service Mode" bits="6" ids="On,Off"></dip>
+        <dip name="Flip Screen" bits="7" ids="On,Off"></dip>
+        <!-- DSW2 -->
+        <dip name="Lives" bits="8,9" ids="7,5,4,3"></dip>
+        <dip name="Cabinet" bits="10" ids="Upright,Cocktail"></dip>
+        <dip name="Bonus Life" bits="11,12" ids="30K/80K,20K/80K,30K 80K/80K,20K 70K/70K"></dip>
+        <dip name="Level" bits="13,14" ids="Very Hard,Hard,Easy,Normal"></dip>
+        <dip name="Unused" bits="15" ids="On,Off"></dip>
+    </switches>
+    <buttons names="Fire,Jump,Start,Coin,Pause"
+        default="A,B,R,L,Start"/>
+</misterromdescription>

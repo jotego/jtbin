@@ -1,0 +1,22 @@
+[ARC]
+RBF=JTCPS1
+MOD=0
+NAME=MEGAMAN
+DEFAULT=0xFFFFFF00
+CONF="O8C,Coinage,Free Play,2 to Start, 1 to Cont.,9/1,8/1,7/1,6/1,5/1,4/1,3/1,2/1,1/9,1/8,1/7,1/6,1/5,1/4,1/3,1/2,1/1"
+CONF="ODE,Coin slots,1, Common,2, Individual,2, Common"
+CONF="OF,Unknown,On,Off"
+CONF="OGH,Difficulty,Hardest,Hard,Normal,Easy"
+CONF="OIJ,Time,60,70,90,100"
+CONF="OK,Unknown,On,Off"
+CONF="OL,Unknown,On,Off"
+CONF="OM,Voice,Off,On"
+CONF="ON,Unknown,On,Off"
+CONF="OO,Flip Screen,On,Off"
+CONF="OP,Demo Sounds,Off,On"
+CONF="OQ,Continue,No,Yes"
+CONF="OR,Unknown,On,Off"
+CONF="OS,Unknown,On,Off"
+CONF="OT,Unknown,On,Off"
+CONF="OU,Unknown,On,Off"
+CONF="OV,Game Mode,Test,Game"

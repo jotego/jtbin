@@ -1,0 +1,20 @@
+[ARC]
+RBF=JTCPS1
+MOD=0
+NAME=POKONYAN
+DEFAULT=0xFFFFFF00
+CONF="O89,Coinage,4 Coins/1 Credit,3 Coins/1 Credit,1 Coin/1 Credit,2 Coins/1 Credit"
+CONF="OE,Unknown,On,Off"
+CONF="OGH,Demo Sounds,Off,Every 4,Every 2,On"
+CONF="OI,Prize Mode,Not Used,Used"
+CONF="OJ,Credit Mode,On,Off"
+CONF="OK,Max Stage,2,3"
+CONF="OL,Card Check,On,Off"
+CONF="OO,Unknown,On,Off"
+CONF="OP,Body Check,On,Off"
+CONF="OQ,Unknown,On,Off"
+CONF="OR,Screen Stop,On,Off"
+CONF="OS,Flip Screen,On,Off"
+CONF="OT,Unknown,On,Off"
+CONF="OU,Unknown,On,Off"
+CONF="OV,Service Mode,On,Off"
