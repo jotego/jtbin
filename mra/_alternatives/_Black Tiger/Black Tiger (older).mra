@@ -1,0 +1,33 @@
+<misterromdescription>
+	<name>Black Tiger (older)</name>
+	<mameversion>0216</mameversion>
+	<setname>blktiger</setname>
+	<mratimestamp>201911270000</mratimestamp>
+	<year>1987</year>
+	<manufacturer>Capcom</manufacturer>
+	<category>Fighter / Warriors</category>
+	<rbf>jtbtiger</rbf>
+	<rom index='0' md5='9ae346b9d842ed19197fcc743cf672f0' type='merged|nonmerged|split' zip='blktigera.zip|blktiger.zip'>
+		<part crc='2e0daf1b' name='bdu-02.6e'/>
+		<part crc='3b67dfec' name='bdu-03.8e'/>
+		<part crc='ed6af6ec' name='bd-04.9e'/>
+		<part crc='ae59b72e' name='bd-05.10e'/>
+		<part crc='47b13922' name='bdu-01.5e'/>
+		<part crc='2cf54274' name='bd-06.1l'/>
+		<part crc='70175d78' name='bd-15.2n'/>
+		<part crc='70175d78' name='bd-15.2n'/>
+		<part crc='dc49593a' name='bd-14.9b'/>
+		<part crc='7ed7a122' name='bd-13.8b'/>
+		<part crc='c4524993' name='bd-12.5b'/>
+		<part crc='7932c86f' name='bd-11.4b'/>
+		<part crc='e2f17438' name='bd-08.5a'/>
+		<part crc='5fccbd27' name='bd-07.4a'/>
+		<part crc='fc33ccc6' name='bd-10.9a'/>
+		<part crc='f449de01' name='bd-09.8a'/>
+		<part crc='ac7d14f1' name='bd.6k'/>
+		<part crc='29b459e5' name='bd01.8j'/>
+		<part crc='8b741e66' name='bd02.9j'/>
+		<part crc='27201c75' name='bd03.11k'/>
+		<part crc='e5490b68' name='bd04.11l'/>
+	</rom>
+</misterromdescription>

@@ -1,0 +1,104 @@
+<!--          FPGA compatible core of arcade hardware by Jotego
+
+              This core is available for hardware compatible with MiST and MiSTer
+              Other FPGA systems may be supported by the time you read this.
+              This work is not mantained by the MiSTer project. Please contact the
+              core author for issues and updates.
+
+              (c) Jose Tejada, 2020. Please support the author
+              Patreon: https://patreon.com/topapate
+              Paypal:  https://paypal.me/topapate
+
+              The author does not endorse or participate in illegal distribution
+              of copyrighted material. This work can be used with legally
+              obtained ROM dumps or with compatible homebrew software
+
+              This file license is GNU GPLv2.
+              You can read the whole license file in
+              https://opensource.org/licenses/gpl-2.0.php
+
+-->
+
+<misterromdescription>
+    <about author="jotego" webpage="https://patreon.com/topapate" source="https://github.com/jotego" twitter="@topapate"/>
+    <name>Contra (US / Asia, set 3)</name>
+    <mameversion>0217</mameversion>
+    <setname>contrae</setname>
+    <rbf>jtcontra</rbf>
+    <rom index="0" zip="contrae.zip|contra.zip" type="merged" md5="None">
+        <!-- maincpu - starts at 0x0 -->
+        <interleave output="16">
+            <part name="633_e03.18a" crc="7ebdb314" map="12"/>
+        </interleave>
+        <interleave output="16">
+            <part name="633_e02.17a" crc="9d5ebe66" map="12"/>
+        </interleave>
+        <!-- audiocpu - starts at 0x20000 -->
+        <interleave output="16">
+            <part name="633e01.12a" crc="d1549255" map="12"/>
+        </interleave>
+        <!-- gfx1 - starts at 0x28000 -->
+        <interleave output="16">
+            <part name="633_e04_a.7d" crc="e027f330" map="01"/>
+            <part name="633_e05_a.7f" crc="81a70a77" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="633_e04_b.7d" crc="a71230f5" map="01"/>
+            <part name="633_e05_b.7f" crc="55556f29" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="633_e04_c.7d" crc="0b103d01" map="01"/>
+            <part name="633_e05_c.7f" crc="acba86bf" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="633_e04_d.7d" crc="ab3faa60" map="01"/>
+            <part name="633_e05_d.7f" crc="59cf234d" map="10"/>
+        </interleave>
+        <!-- gfx2 - starts at 0xA8000 -->
+        <interleave output="16">
+            <part name="633_e06_a.16d" crc="030079c5" map="01"/>
+            <part name="633_e07_a.16f" crc="8fcd40e5" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="633_e06_b.16d" crc="e17d5807" map="01"/>
+            <part name="633_e07_b.16f" crc="694e306e" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="633_e06_c.16d" crc="7d6a28cd" map="01"/>
+            <part name="633_e07_c.16f" crc="fb33f3ff" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="633_e06_d.16d" crc="83db378f" map="01"/>
+            <part name="633_e07_d.16f" crc="cfab0988" map="10"/>
+        </interleave>
+        <!-- pals - starts at 0x128000 -->
+        <part name="007766.20d.bin" crc=""/>
+        <!-- proms - starts at 0x128001 -->
+        <part name="633e08.10g" crc="9f0949fa"/>
+        <part name="633e09.12g" crc="14ca5e19"/>
+        <part name="633e10.18g" crc="e782c494"/>
+        <part name="633e11.20g" crc="14ca5e19"/>
+        <!-- Total 0x128401 bytes - 1185 kBytes -->
+    </rom>
+    <!-- Vertical game -->
+    <rom index="1">
+        <part>01</part>
+    </rom>
+    <switches base="16" default="FF,FF">
+        <!-- DSW1 -->
+        <dip name="Coin A" bits="0,3" ids="Free Play,4/3,4/1,3/4,3/2,3/1,2/5,2/3,2/1,1/7,1/6,1/5,1/4,1/3,1/2,1/1"/>
+        <dip name="Coin B" bits="4,7" ids="No B,4/3,4/1,3/4,3/2,3/1,2/5,2/3,2/1,1/7,1/6,1/5,1/4,1/3,1/2,1/1"/>
+        <!-- DSW2 -->
+        <dip name="Lives" bits="8,9" ids="7,5,3,2"/>
+        <dip name="Unused" bits="10" ids="On,Off"/>
+        <dip name="Bonus Life" bits="11,12" ids="50k,40k,40k 80k,30k 70k"/>
+        <dip name="Difficulty" bits="13,14" ids="Hardest,Hard,Normal,Easy"/>
+        <dip name="Demo Sounds" bits="15" ids="On,Off"/>
+        <!-- DSW3 -->
+        <dip name="Flip Screen" bits="16" ids="On,Off"/>
+        <dip name="Unused" bits="17" ids="On,Off"/>
+        <dip name="Service Mode" bits="18" ids="On,Off"/>
+        <dip name="Sound" bits="19" ids="Mono,Stereo"/>
+    </switches>
+    <buttons names="Fire,Jump,Start,Coin,Pause" default="Y,X,R,L,Start"/>
+</misterromdescription>
