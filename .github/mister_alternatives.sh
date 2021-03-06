@@ -24,7 +24,10 @@ echo
 
 TMP=$(mktemp)
 
-git diff --name-only ${LATEST_COMMIT}..${PREVIOUS_COMMIT} "${MRA_DIR}/${MRA_ALTERNATIVES_DIR}/" > ${TMP}
+if ! git diff --name-only ${LATEST_COMMIT}..${PREVIOUS_COMMIT} "${MRA_DIR}/${MRA_ALTERNATIVES_DIR}/" > ${TMP} ; then
+    PREVIOUS_COMMIT="$(git rev-list --max-parents=0 HEAD)"
+    git diff --name-only ${LATEST_COMMIT}..${PREVIOUS_COMMIT} "${MRA_DIR}/${MRA_ALTERNATIVES_DIR}/" > ${TMP}
+fi
 
 ALTERNATIVES_QTY=$(cat ${TMP} | wc -l)
 
