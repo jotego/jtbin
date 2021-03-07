@@ -146,10 +146,10 @@ Bits   |  Use
 
 SDRAM bank | Usage
 -----------|-------
-0          | RAM/VRAM
+0          | RAM/VRAM/M68000 ROM
 1          | Sound CPU/PCM samples
 2          | GFX
-3          | M68000 ROM
+3          | GFX
 
 ## CPS 1.5 ROM Size
 
@@ -169,6 +169,7 @@ Muscle Bomber Duo     | 2.0 MB  |  128 kB     | 6 MB    | 4 MB    |
 Game                  | CPU     |   Z80       | GFX     | Q-Sound | Popularity
 ----------------------|---------|-------------|---------|---------|------------
 19XX                  | 2.5 MB  |  128 kB     | 10 MB   | 4 MB    | 191
+1944                  | 1.5 MB  |  128 kB     | 20 MB   | 8 MB    | 161
 Alien vs Predator     | 2.0 MB  |  128 kB     | 16 MB   | 4 MB    | 637
 Armored Warriors      | 4.0 MB  |  256 kB     | 20 MB   | 4 MB    | 278
 Battle Circuit        | 3.5 MB  |  256 kB     | 16 MB   | 4 MB    |  87
@@ -192,6 +193,7 @@ Darkstalker's revenge | 4.0 MB  |  256 kB     | 32 MB   | 4 MB    |  54
 Progear               | 1.0 MB  |  128 kB     | 16 MB   | 8 MB    |  72
 Puzz Loop 2           | 2.0 MB  |  128 kB     | 16 MB   | 4 MB    |  16
 Quiz Nanairo Dreams   | 2.0 MB  |  128 kB     |  8 MB   | 4 MB    |   8
+Ring of Destruction   | 3.0 MB  |  256 kB     | 18 MB   | 4 MB    | 293
 Slam Masters 2        | 3.0 MB  |  256 kB     | 18 MB   | 4 MB    | 291
 SF alpha 1            | 2.0 MB  |  256 kB     |  8 MB   | 4 MB    | 190
 SF alpha 2            | 3.0 MB  |  256 kB     | 20 MB   | 4 MB    | 218
