@@ -1,8 +1,8 @@
 <misterromdescription>
-    <name>gulunpa (World 901130)</name>
-	<mameversion>0217</mameversion>
+    <name>GulunPa (Japan Prototype 931220)</name>
+	<mameversion>0221</mameversion>
     <setname>gulunpa</setname>
-    <year>1990</year>
+    <year>1993</year>
     <manufacturer>Capcom</manufacturer>
     <rbf>jtcps1</rbf>
     <rom index="0" zip="gulunpa.zip" md5="none">
@@ -15,9 +15,9 @@
         <!-- Graphics size 2048 kB -->
         <part>40 02 </part>
         <part repeat="10">FF</part>
-        <!-- CPS-B config for gulunpa --> 
+        <!-- CPS-B config for gulunpa -->
         <part> 32 FF 00 02 04 06 26 28 2A 2C 2E 00 00 30 02 04 08 30 </part>
-        <!-- Mapper for gulunpa --> 
+        <!-- Mapper for gulunpa -->
         <part> 28 40 C8 73 FF </part>
         <part> 00 </part>
         <part repeat="24">FF</part>
