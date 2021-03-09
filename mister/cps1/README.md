@@ -76,6 +76,8 @@ T  = 1/4Fs
 
 QSound requires its own firmware rom to work. In MAME this is called qsound.zip. QSound sampling frequency is 3746 ticks of the input clock, when the clock enable applied is 2/3. For a 90MHz input clock, this will result in the correct internal 30MHz and in a sampling frequency of 90MHz/3747=24,019.2Hz
 
+The original board had a digitally controlled amplifier. The volume set on this amplifier could be read back by the CPU and DSP. In order to control the value read by these devices, press and hold the coin button for 1P while pressing up or down (for more or less volume). Note that this does not have an actual effect on the sound output.
+
 # PAL Dumps
 PAL dumps cam be obtained from MAME rom sets directly. Use the tool jedutil in order to extract the equations from them. The device is usually a gal16v8. For instance:
 
