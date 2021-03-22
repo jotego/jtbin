@@ -25,6 +25,7 @@
     <setname>ganbare</setname>
     <year>2000</year>
     <manufacturer>Capcom</manufacturer>
+    <category>Shooter</category>
     <rbf>jtcps1</rbf>
     <rom index="0" zip="ganbare.zip" md5="none">
         <!-- relative position of each ROM section in the file, discounting the header, in kilobytes -->

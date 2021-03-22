@@ -4,7 +4,6 @@
     <setname>gulunpa</setname>
     <year>1993</year>
     <manufacturer>Capcom</manufacturer>
-    <category>Puzzle</category>
     <rbf>jtcps1</rbf>
     <rom index="0" zip="gulunpa.zip" md5="none">
         <!-- relative position of each ROM section in the file, discounting the header, in kilobytes -->
