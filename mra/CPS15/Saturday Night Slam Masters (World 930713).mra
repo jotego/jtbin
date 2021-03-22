@@ -24,6 +24,9 @@
     <name>Saturday Night Slam Masters (World 930713)</name>
     <mameversion>0217</mameversion>
     <setname>slammast</setname>
+      <year>1993</year>
+    <manufacturer>Capcom</manufacturer>
+    <category>Wrestling/Fighting</category>
     <rbf>jtcps15</rbf>
     <rom index="0" zip="slammast.zip|qsound.zip" type="merged" md5="None">
         <part>
