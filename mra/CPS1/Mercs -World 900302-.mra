@@ -25,7 +25,7 @@
     <setname>mercs</setname>
     <year>1990</year>
     <manufacturer>Capcom</manufacturer>
-    <category>Run 'n Gun</category>
+    <category>Run n Gun</category>
     <rbf>jtcps1</rbf>
     <rom index="0" zip="mercs.zip" md5="none">
         <!-- relative position of each ROM section in the file, discounting the header, in kilobytes -->
