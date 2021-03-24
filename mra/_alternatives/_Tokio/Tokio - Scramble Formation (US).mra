@@ -24,6 +24,9 @@
     <name>Tokio / Scramble Formation (US)</name>
     <mameversion>0217</mameversion>
     <setname>tokiou</setname>
+    <year>1986</year>
+    <manufacturer>Taito</manufacturer>
+    <category>Platform</category>
     <rbf>jtbubl</rbf>
     <rom index="0" zip="tokiou.zip|tokio.zip" type="merged" md5="None">
         <!-- maincpu - starts at 0x0 -->
