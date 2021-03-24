@@ -25,6 +25,7 @@
     <setname>sf2j</setname>
     <year>1991</year>
     <manufacturer>Capcom</manufacturer>
+    <category>Fighting</category>
     <rbf>jtcps1</rbf>
     <rom index="0" zip="sf2.zip|sf2.zip|sf2j.zip" md5="none">
         <!-- relative position of each ROM section in the file, discounting the header, in kilobytes -->
