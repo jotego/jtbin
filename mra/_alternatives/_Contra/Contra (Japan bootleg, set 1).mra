@@ -24,6 +24,9 @@
     <name>Contra (Japan bootleg, set 1)</name>
     <mameversion>0217</mameversion>
     <setname>contrabj</setname>
+    <year>1987</year>
+	<manufacturer>bootleg</manufacturer>
+	<category>Run n Gun</category>
     <rbf>jtcontra</rbf>
     <rom index="0" zip="contrabj.zip|contra.zip" type="merged" md5="None">
         <!-- maincpu - starts at 0x0 -->
