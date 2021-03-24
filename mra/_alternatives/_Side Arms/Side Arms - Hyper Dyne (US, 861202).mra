@@ -24,6 +24,9 @@
     <name>Side Arms - Hyper Dyne (US, 861202)</name>
     <mameversion>0217</mameversion>
     <setname>sidearmsu</setname>
+     <year>1986</year>
+    <manufacturer>Capcom</manufacturer>
+    <category>Shoot em up</category>
     <rbf>jtsarms</rbf>
     <rom index="0" zip="sidearmsu.zip|sidearms.zip" type="merged" md5="None">
         <!-- maincpu - starts at 0x0 -->
