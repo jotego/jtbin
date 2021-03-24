@@ -24,6 +24,9 @@
     <name>Cadillacs: Kyouryuu Shin Seiki (Japan 930201)</name>
     <mameversion>0217</mameversion>
     <setname>dinoj</setname>
+    <year>1993</year>
+    <manufacturer>Capcom</manufacturer>
+    <category>Beat em up</category>
     <rbf>jtcps15</rbf>
     <rom index="0" zip="dinoj.zip|dino.zip|qsound.zip" type="merged" md5="None">
         <part>
