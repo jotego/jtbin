@@ -25,6 +25,9 @@
                            twitter="@topapate"/>
     <name>contraj</name>
     <mameversion>0217</mameversion>
+    <year>1987</year>
+	<manufacturer>Konami</manufacturer>
+	<category>Run n Gun</category>
     <rbf>jtcontra</rbf>
     <setname>contraj</setname>
     <rom index="0" zip="contraj.zip|contra.zip" type="merged" md5="None">
