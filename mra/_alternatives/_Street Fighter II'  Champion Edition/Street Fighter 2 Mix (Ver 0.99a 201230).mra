@@ -25,6 +25,7 @@
     <setname>sf2mix</setname>
     <year>2020</year>
     <manufacturer>ZERO800</manufacturer>
+    <category>Fighting</category>
     <rbf>jtcps1</rbf>
     <rom index="0" zip="sf2mix.zip" md5="734dd5b60b8a7353043c5ead7554b66d">
         <!-- relative position of each ROM section in the file, discounting the header, in kilobytes -->
