@@ -24,6 +24,9 @@
     <name>Contra (Japan, set 1)</name>
     <mameversion>0217</mameversion>
     <setname>contraj</setname>
+    <year>1987</year>
+	<manufacturer>Konami</manufacturer>
+	<category>Run n Gun</category>
     <rbf>jtcontra</rbf>
     <rom index="0" zip="contraj.zip|contra.zip" type="merged" md5="None">
         <!-- maincpu - starts at 0x0 -->
