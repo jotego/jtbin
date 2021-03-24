@@ -24,6 +24,9 @@
     <name>Tenchi wo Kurau II: Sekiheki no Tatakai (Japan 921031)</name>
     <mameversion>0217</mameversion>
     <setname>wofj</setname>
+    <year>1992</year>
+    <manufacturer>Capcom</manufacturer>
+    <category>Beat em up</category>
     <rbf>jtcps15</rbf>
     <rom index="0" zip="wofj.zip|wof.zip|qsound.zip" type="merged" md5="None">
         <part>
