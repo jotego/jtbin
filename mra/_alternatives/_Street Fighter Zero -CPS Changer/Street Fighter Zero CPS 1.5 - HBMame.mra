@@ -24,6 +24,7 @@
     <setname>sfzch_cps15</setname>
     <year>1995</year>
     <manufacturer>Capcom</manufacturer>
+    <category>Fighting</category>
     <mameversion>sfacps15hack</mameversion>
     <rbf>jtcps15</rbf>
     <rom index="0" zip="/hbmame/sfzch_cps15.zip|qsound.zip" md5="none">
