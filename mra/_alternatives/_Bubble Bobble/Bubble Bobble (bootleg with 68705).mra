@@ -24,6 +24,9 @@
     <name>Bubble Bobble (bootleg with 68705)</name>
     <mameversion>0217</mameversion>
     <setname>bub68705</setname>
+    <year>1986</year>
+    <manufacturer>bootleg</manufacturer>
+    <category>Platform</category>
     <rbf>jtbubl</rbf>
     <rom index="0" zip="bub68705.zip|bublbobl.zip" type="merged" md5="None">
         <!-- maincpu - starts at 0x0 -->
