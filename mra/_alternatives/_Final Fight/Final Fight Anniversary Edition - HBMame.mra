@@ -3,6 +3,7 @@
     <setname>ffightae</setname>
     <year>1989</year>
     <manufacturer>Capcom</manufacturer>
+    <category>Beat em up</category>
     <mameversion>0217</mameversion>
     <rbf>jtcps1</rbf>
     <rom index="0" zip="/hbmame/ffight.zip" md5="none">
