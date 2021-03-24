@@ -24,6 +24,9 @@
     <name>Dinosaur Hunter (Chinese bootleg of Cadillacs and Dinosaurs)</name>
     <mameversion>0217</mameversion>
     <setname>dinohunt</setname>
+    <year>1993</year>
+    <manufacturer>bootleg</manufacturer>
+    <category>Beat em up</category>
     <rbf>jtcps15</rbf>
     <rom index="0" zip="dinohunt.zip|dino.zip|qsound.zip" type="merged" md5="None">
         <part>
