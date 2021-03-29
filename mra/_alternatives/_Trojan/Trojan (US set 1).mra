@@ -24,6 +24,9 @@
     <name>Trojan (US set 1)</name>
     <mameversion>0217</mameversion>
     <setname>trojan</setname>
+     <year>1986</year>
+    <manufacturer>Capcom</manufacturer>
+    <category>Hack n Slash</category>
     <rbf>jttrojan</rbf>
     <rom index="0" zip="trojan.zip" type="merged" md5="None">
         <part>

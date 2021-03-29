@@ -26,7 +26,7 @@
     <setname>sf</setname>
      <year>1987</year>
     <manufacturer>Capcom</manufacturer>
-    <category>Beat 'em up</category>
+    <category>Beat em up</category>
     <rbf>jtsf</rbf>
     <rom index="0" zip="sf.zip" type="merged" md5="None">
         <!-- maincpu - starts at 0x0 -->

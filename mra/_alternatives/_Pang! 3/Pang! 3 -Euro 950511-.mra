@@ -25,6 +25,7 @@
     <setname>pang3r1</setname>
     <year>1995</year>
     <manufacturer>Mitchell</manufacturer>
+    <category>Puzzle</category>
     <rbf>jtcps1</rbf>
     <rom index="0" zip="pang3.zip|pang3r1.zip" md5="none">
         <!-- relative position of each ROM section in the file, discounting the header, in kilobytes -->

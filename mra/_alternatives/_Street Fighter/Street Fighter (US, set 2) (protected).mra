@@ -24,6 +24,9 @@
     <name>Street Fighter (US, set 2) (protected)</name>
     <mameversion>0217</mameversion>
     <setname>sfua</setname>
+    <year>1987</year>
+    <manufacturer>Capcom</manufacturer>
+    <category>Beat em up</category>
     <rbf>jtsf</rbf>
     <rom index="0" zip="sfua.zip|sf.zip" type="merged" md5="None">
         <!-- maincpu - starts at 0x0 -->

@@ -26,7 +26,7 @@
     <setname>sidearms</setname>
      <year>1986</year>
     <manufacturer>Capcom</manufacturer>
-    <category>Shoot 'em up</category>
+    <category>Shoot em up</category>
     <rbf>jtsarms</rbf>
     <rom index="0" zip="sidearms.zip" type="merged" md5="None">
         <!-- maincpu - starts at 0x0 -->

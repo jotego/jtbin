@@ -24,6 +24,9 @@
     <name>Muscle Bomber Duo: Heat Up Warriors (Japan 931206)</name>
     <mameversion>0217</mameversion>
     <setname>mbombrdj</setname>
+    <year>1993</year>
+    <manufacturer>Capcom</manufacturer>
+    <category>Fighting</category>
     <rbf>jtcps15</rbf>
     <rom index="0" zip="mbombrdj.zip|mbombrd.zip|qsound.zip" type="merged" md5="None">
         <part>

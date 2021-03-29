@@ -25,6 +25,7 @@
     <setname>strideruc</setname>
     <year>1989</year>
     <manufacturer>bootleg (Capcom)</manufacturer>
+    <category>Platform</category>
     <rbf>jtcps1</rbf>
     <rom index="0" zip="stridrua.zip|strider.zip|strider.zip|strideruc.zip" md5="none">
         <!-- relative position of each ROM section in the file, discounting the header, in kilobytes -->

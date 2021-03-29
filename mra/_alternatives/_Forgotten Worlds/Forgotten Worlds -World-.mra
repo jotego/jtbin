@@ -22,7 +22,8 @@
                            twitter="@topapate"/>
     <name>Forgotten Worlds (World)</name>
     <mameversion>0217</mameversion>
-    <setname>forgottna</setname>
+   <category>Shoot em up</category>
+   <setname>forgottna</setname>
     <year>1988</year>
     <manufacturer>Capcom</manufacturer>
     <rbf>jtcps1</rbf>

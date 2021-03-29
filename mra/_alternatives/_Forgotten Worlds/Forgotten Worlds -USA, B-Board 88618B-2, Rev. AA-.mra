@@ -25,6 +25,7 @@
     <setname>forgottnuaa</setname>
     <year>1988</year>
     <manufacturer>Capcom</manufacturer>
+    <category>Shoot em up</category>
     <rbf>jtcps1</rbf>
     <rom index="0" zip="forgottn.zip|forgottnuaa.zip" md5="none">
         <!-- relative position of each ROM section in the file, discounting the header, in kilobytes -->

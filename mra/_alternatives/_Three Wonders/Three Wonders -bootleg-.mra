@@ -25,6 +25,7 @@
     <setname>3wondersb</setname>
     <year>1991</year>
     <manufacturer>bootleg</manufacturer>
+    <category>Multigame</category>
     <rbf>jtcps1</rbf>
     <rom index="0" zip="3wonders.zip|3wondersb.zip" md5="none">
         <!-- relative position of each ROM section in the file, discounting the header, in kilobytes -->

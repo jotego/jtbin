@@ -25,6 +25,7 @@
     <setname>sf2hfu</setname>
     <year>1992</year>
     <manufacturer>Capcom</manufacturer>
+    <category>Fighting</category>
     <rbf>jtcps1</rbf>
     <rom index="0" zip="sf2hf.zip|sf2hfu.zip" md5="none">
         <!-- relative position of each ROM section in the file, discounting the header, in kilobytes -->

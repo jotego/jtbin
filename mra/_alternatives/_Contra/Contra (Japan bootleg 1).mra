@@ -25,6 +25,9 @@
                            twitter="@topapate"/>
     <name>contrabj</name>
     <mameversion>0217</mameversion>
+    <year>1987</year>
+	<manufacturer>bootleg</manufacturer>
+	<category>Run n Gun</category>
     <rbf>jtcontra</rbf>
     <setname>contrabj</setname>
     <rom index="0" zip="contrabj.zip|contra.zip" type="merged" md5="None">

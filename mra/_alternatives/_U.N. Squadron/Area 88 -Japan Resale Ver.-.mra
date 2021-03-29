@@ -25,6 +25,7 @@
     <setname>area88r</setname>
     <year>1989</year>
     <manufacturer>Capcom</manufacturer>
+     <category>Shoot em up</category>
     <rbf>jtcps1</rbf>
     <rom index="0" zip="unsquad.zip|area88r.zip" md5="none">
         <!-- relative position of each ROM section in the file, discounting the header, in kilobytes -->

@@ -25,6 +25,7 @@
     <setname>wofhfh</setname>
     <year>1999</year>
     <manufacturer>bootleg</manufacturer>
+    <category>Beat em up</category>
     <rbf>jtcps1</rbf>
     <rom index="0" zip="wof.zip|wof.zip|wofhfh.zip" md5="none">
         <!-- relative position of each ROM section in the file, discounting the header, in kilobytes -->
