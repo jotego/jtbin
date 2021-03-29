@@ -26,7 +26,7 @@
     <setname>tokio</setname>
     <year>1986</year>
     <manufacturer>Taito</manufacturer>
-    <category>Platform</category>
+    <category>Shoot em up</category>
     <rbf>jtbubl</rbf>
     <rom index="0" zip="tokio.zip" type="merged" md5="None">
         <!-- maincpu - starts at 0x0 -->
