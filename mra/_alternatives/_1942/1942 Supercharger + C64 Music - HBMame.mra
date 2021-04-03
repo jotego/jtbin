@@ -6,7 +6,7 @@
 	<year>1991</year>
 	<manufacturer>hack (Two Bit Score)</manufacturer>
 	<category>Army / Airforce</category>
-	<rbf>1942</rbf>
+	<rbf>jt1942</rbf>
 	<rom index="0" zip="1942h.zip" md5="ba98c8f0d34b514f9adbd9ea739e3c33" type="nonmerged">
 		<part name="supercharger_1942_@3.m3"/>
 		<part name="supercharger_1942_@4.m4"/>
