@@ -1,0 +1,67 @@
+<misterromdescription>
+    <name>Ares no Tsubasa (Japan, Rev A)</name>
+    <setname>lwings</setname>
+    <year>1986</year>
+    <manufacturer>Capcom</manufacturer>
+    <category>Shooter</category>
+    <mameversion>0217</mameversion>
+    <rbf alt="jtsz">jtsectionz</rbf>
+    <rom index="0" zip="lwings.zip" md5="none">
+        <!-- 32-byte Header -->
+        <part> 01 00 00 00 00 00 00 00 </part>
+        <part> 01 80 02 00 02 40 06 40 </part>
+        <part> 08 40 FF FF FF FF FF FF </part>
+        <part> FF FF FF FF FF FF FF FF </part>
+        <!-- ROMs -->
+        
+        <!-- CPU: banks -->
+        <part name="at_02.7c" crc="d6a2edc4"/> 
+        <part name="at_03.9c" crc="ec5cc201"/>
+        <!-- CPU: non banked -->
+        <part name="at_01a.6c" crc="568f1ea5"/>
+
+        <!-- Sound -->
+        <part name="at_03.11e" crc="a20337a2"/>
+        <!-- CHAR -->
+        <part name="at_05.9h" crc="091d923c"/>
+        <!-- SCROLL -->
+        <interleave output="32">
+            <part name="at_15.3f" crc="9b374dcc" map="0001"/>
+            <part name="at_12.3b" crc="4f8182e9" map="0010"/>
+            <part name="at_13.3d" crc="001caa35" map="0100"/>
+            <part name="at_14.3e" crc="176e3027" map="1000"/>
+        </interleave>
+        <interleave output="32">
+            <part name="at_09.1f" crc="23654e0a" map="0001"/>
+            <part name="at_06.1b" crc="f1617374" map="0010"/>
+            <part name="at_07.1d" crc="0ba008c3" map="0100"/>
+            <part name="at_08.1e" crc="f5d25623" map="1000"/>
+        </interleave>
+        <!-- OBJ -->
+        <interleave output="16">
+            <part name="at_17.3j" crc="8f3c763a" map="01"/>
+            <part name="at_16.3h" crc="7d58f532" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="at_11.1j" crc="7cc90a1d" map="01"/>
+            <part name="at_10.1h" crc="3e396eda" map="10"/>
+        </interleave>
+    </rom>
+    <!-- enable vertical screen -->
+    <rom index="1"><part> 01 </part></rom>
+    <switches page_id="1" page_name="Switches" base="0x10" default="FF,FD">
+        <!-- DSWA -->
+        <dip name="Test mode" bits="0" ids="On,Off"></dip>
+        <dip name="Flip Screen" bits="1" ids="On,Off"></dip>
+        <dip name="Lives" bits="2,3" ids="6,4,5,3"></dip>
+        <dip name="Coin B" bits="4,5" ids="4/1,2/1,3/1,1/1"></dip>
+        <dip name="Coin A" bits="6,7" ids="2/4,1/2,1/3,1/1"></dip>
+        <!-- DSWB -->
+        <dip name="Continue play" bits="8" ids="Off,On"></dip>
+        <dip name="Level" bits="9,10" ids="Hardest,Easy,Hard,Medium"></dip>
+        <dip name="Demo Sounds" bits="11" ids="Off,On"></dip>
+        <dip name="Allow Continue" bits="12" ids="No,Yes"></dip>
+        <dip name="Bonus Life" bits="13,15" ids="None,30k/60k,30k/80k,20k/60k,40k/10k0,20k/70k,30k/70k,20k/50k"></dip>
+    </switches>
+    <buttons names="Shot,Bomb,Start,Coin,Pause" default="A,B,R,L,Start"/>
+</misterromdescription>
