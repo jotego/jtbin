@@ -1,12 +1,12 @@
 <misterromdescription>
     <name>Legendary Wings (bootleg)</name>
-    <setname>lwings</setname>
+    <setname>lwingsb</setname>
     <year>1986</year>
     <manufacturer>Capcom</manufacturer>
     <category>Shooter</category>
     <mameversion>0217</mameversion>
     <rbf alt="jtsz">jtsectionz</rbf>
-    <rom index="0" zip="lwings.zip" md5="none">
+    <rom index="0" zip="lwings.zip|lwingsb.zip" type="merged|nonmerged|split" md5="none">
         <!-- 32-byte Header -->
         <part> 01 00 00 00 00 00 00 00 </part>
         <part> 01 80 02 00 02 40 06 40 </part>
