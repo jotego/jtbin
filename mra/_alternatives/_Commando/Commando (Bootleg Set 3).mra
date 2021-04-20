@@ -21,11 +21,11 @@
 
 <misterromdescription>
     <about author="jotego" webpage="https://patreon.com/topapate" source="https://github.com/jotego" twitter="@topapate"/>
-    <name>Commando Deluxe - HBMAME</name>
-    <setname>comdelux</setname>
+    <name>Commando (Bootleg Set 3)</name>
+    <setname>commandob3</setname>
     <rbf alt="jtcom">jtcommando</rbf>
-    <year>2002</year>
-    <manufacturer>Capcom (Hack)</manufacturer>
+    <year>1985</year>
+    <manufacturer>Capcom (Bootleg)</manufacturer>
     <players>2</players>
     <joystick>8-way</joystick>
     <rotation>Vertical</rotation>
@@ -33,12 +33,13 @@
     <category>Shooter / Walking</category>
     <mameversion>0230</mameversion>
     <mratimestamp>20210418</mratimestamp>
-    <rom index="0" zip="/hbmame/commando.zip" type="merged|nonmerged|split" md5="none">
+    <rom index="0" zip="commando.zip|commandob3.zip" type="merged|nonmerged|split" md5="none">
         <!-- maincpu -->
-        <part name="cm04.9m" crc="8438b694"/>
+        <part name="b5.10n" crc="df8f4e9a"/>
+        <part name="b4.9n" crc="aca99905"/>
         <part name="cm03.8m" crc="35486542"/>
         <!-- audiocpu -->
-        <part name="cm02.9f" crc="f9cc4a74"/>
+        <part name="b2.9f" crc="f9cc4a74"/>
         <!-- gfx1 -->
         <part name="vt01.5d" crc="505726e0"/>
         <!-- gfx2 -->
@@ -51,12 +52,12 @@
         <part name="vt15.9a" crc="de70babf"/>
         <part name="vt16.10a" crc="14178237"/>
         <!-- gfx3 -->
-        <part name="dx_vt05.7e" crc="b1839dd4"/>
+        <part name="vt05.7e" crc="79f16e3d"/>
         <part name="vt06.8e" crc="26fee521"/>
-        <part name="dx_vt07.9e" crc="4cb1cd67"/>
-        <part name="dx_vt08.7h" crc="42ff8a11"/>
+        <part name="vt07.9e" crc="ca88bdfd"/>
+        <part name="vt08.7h" crc="2019c883"/>
         <part name="vt09.8h" crc="98703982"/>
-        <part name="dx_vt10.9h" crc="7650a262"/>
+        <part name="vt10.9h" crc="f069d2f8"/>
         <!-- proms -->
         <part name="vtb1.1d" crc="3aba15a1"/>
         <part name="vtb2.2d" crc="88865754"/>
