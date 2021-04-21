@@ -31,7 +31,8 @@ CAPCOM CPS0         | https://www.github.com/jotego/jt_gng
 Double Dragon       | https://www.github.com/jotego/jtdd
 Popeye              | https://www.github.com/jotego/jtpopeye
 Contra              | https://www.github.com/jotego/jtcontra
-CPS                 | https://www.github.com/jotego/jtcps
+CPS1                | https://www.github.com/jotego/jtcps1
+CPS1.5
 Bubble Bobble       | https://www.github.com/jotego/jtbubl
 
 If you are a developer, don't miss these cores too:
@@ -43,8 +44,11 @@ YM2151                 | [JT51](https://github.com/jotego/jt51)
 YM3526                 | [JTOPL](https://github.com/jotego/jtopl)
 YM2149                 | [JT49](https://github.com/jotego/jt49)
 sn76489an              | [JT89](https://github.com/jotego/jt89)
+NEC uPD7759            | [JT7759](https://github.com/jotego/jt7759)
 OKI 6295               | [JT6295](https://github.com/jotego/jt6295)
 OKI MSM5205            | [JT5205](https://github.com/jotego/jt5205)
+Intel 8255             | [JT8255](https://github.com/jotego/jt8255)
+Various EEPROM Chips   | [JTEEPROM](https://github.com/jotego/jteeprom)
 
 # Final Words
 
