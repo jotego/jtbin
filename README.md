@@ -28,10 +28,10 @@ Normally each repository covers for many arcade games that share identical or si
 FPGA Core           | Source code
 --------------------|--------------------------
 CAPCOM CPS0         | https://www.github.com/jotego/jt_gng
+CAPCOM CPS1         | https://www.github.com/jotego/jtcps1
 Double Dragon       | https://www.github.com/jotego/jtdd
 Popeye              | https://www.github.com/jotego/jtpopeye
 Contra              | https://www.github.com/jotego/jtcontra
-CPS1                | https://www.github.com/jotego/jtcps1
 Bubble Bobble       | https://www.github.com/jotego/jtbubl
 
 If you are a developer, don't miss these cores too:
