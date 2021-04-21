@@ -1,12 +1,12 @@
 # FPGA Clones of Arcade Games by Jose Tejada ([@topapate](https://twitter.com/topapate))
 
-This repository contains only binary files of my FPGA cores. Although I have
-had some cores released through the MiSTer repository or the source code repository;
-nowadays I only add new releases to this repository in binary form.
+This repository contains only the binary files of my FPGA cores. Although I have had some cores released through the MiSTer repository or the source code repository in the past; nowadays I only add new releases to this repository in binary form.
 
-# Supported FPGA Systems
+## Currently Supported FPGA Systems
 
-Currently there are three systems that I maintain: MiST, MiSTer and SiDi.
+* [MiST](https://github.com/mist-devel/mist-board/wiki)
+* [MiSTer](https://github.com/MiSTer-devel/Main_MiSTer/wiki)
+* [SiDi](https://github.com/ManuFerHi/SiDi-FPGA/wiki)
 
 ## MiST & SiDi
 For these systems you can generate ROMs using batch files or the MRA-to-rom file converter. Note that you have to rename the RBF files in order to remove the timestamp. For instance:
