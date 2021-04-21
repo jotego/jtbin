@@ -11,7 +11,7 @@ This repository contains only the binary files of my FPGA cores. Although I have
 ## MiST & SiDi
 For these systems you can generate ROMs using batch files or the MRA-to-rom file converter. Note that you have to rename the RBF files in order to remove the timestamp. For instance:
 
-jt1942_20200728.rbf --> jt1942.rbf
+`jt1942_20200728.rbf` ➜  `jt1942.rbf`
 
 20200728 is the timestamp and stands for 28th of July 2020.
 
