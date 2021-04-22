@@ -1,17 +1,17 @@
-# FPGA Clones of Arcade Games by Jose Tejada (@topapate)
+# FPGA Clones of Arcade Games by Jose Tejada ([@topapate](https://twitter.com/topapate))
 
-This repository contains only binary files of my FPGA cores. Although I have
-had some cores released through the MiSTer repository or the source code repository;
-nowadays I only add new releases to this repository in binary form.
+This repository contains only the binary files of my FPGA cores. Although I have had some cores released through the MiSTer repository or the source code repository in the past; nowadays I only add new releases to this repository in binary form.
 
-# Supported FPGA Systems
+## Currently Supported FPGA Systems
 
-Currently there are three systems that I maintain: MiST, MiSTer and SiDi.
+* [MiST](https://github.com/mist-devel/mist-board/wiki)
+* [MiSTer](https://github.com/MiSTer-devel/Main_MiSTer/wiki)
+* [SiDi](https://github.com/ManuFerHi/SiDi-FPGA/wiki)
 
 ## MiST & SiDi
 For these systems you can generate ROMs using batch files or the MRA-to-rom file converter. Note that you have to rename the RBF files in order to remove the timestamp. For instance:
 
-jt1942_20200728.rbf --> jt1942.rbf
+`jt1942_20200728.rbf` ➜  `jt1942.rbf`
 
 20200728 is the timestamp and stands for 28th of July 2020.
 
@@ -28,10 +28,10 @@ Normally each repository covers for many arcade games that share identical or si
 FPGA Core           | Source code
 --------------------|--------------------------
 CAPCOM CPS0         | https://www.github.com/jotego/jt_gng
+CAPCOM CPS1         | https://www.github.com/jotego/jtcps1
 Double Dragon       | https://www.github.com/jotego/jtdd
 Popeye              | https://www.github.com/jotego/jtpopeye
 Contra              | https://www.github.com/jotego/jtcontra
-CPS                 | https://www.github.com/jotego/jtcps
 Bubble Bobble       | https://www.github.com/jotego/jtbubl
 
 If you are a developer, don't miss these cores too:
@@ -43,8 +43,11 @@ YM2151                 | [JT51](https://github.com/jotego/jt51)
 YM3526                 | [JTOPL](https://github.com/jotego/jtopl)
 YM2149                 | [JT49](https://github.com/jotego/jt49)
 sn76489an              | [JT89](https://github.com/jotego/jt89)
+NEC uPD7759            | [JT7759](https://github.com/jotego/jt7759)
 OKI 6295               | [JT6295](https://github.com/jotego/jt6295)
 OKI MSM5205            | [JT5205](https://github.com/jotego/jt5205)
+Intel 8255             | [JT8255](https://github.com/jotego/jt8255)
+Various EEPROM Chips   | [JTEEPROM](https://github.com/jotego/jteeprom)
 
 # Final Words
 
