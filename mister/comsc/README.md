@@ -41,11 +41,14 @@ JTFRAME       | FPGA framework    | jotego  | https://github.com/jotego/jtframe
 
 # KONAMI 007121
 
+Furrtek made a full RE of this chip [here](https://github.com/furrtek/VGChips/tree/master/Konami/007121)
+
 The internal register mapping has R/W access from the CPU. If the row scroll registers are prevented from reading, Combat School boots up with an error on "zure RAM", note that "zure" is Japanese for scroll.
 
 Address    |   Purpose
 -----------|------------
 20-3F      | zure RAM - row scroll
+40-5F      | text tilemap selection (over scroll tilemap)
 2000-2FFF  | VRAM
 3000-3FFF  | OBJ RAM
 
@@ -82,14 +85,8 @@ Pin Name | Number | I/O | Usage
 
 ## Register Map
 
-There are likely to be 32 programmable registers
-
-Register | Bits   | R/W | Games         | Meaning
----------|--------|-----|---------------|----------------
- A       |   -    | R/W | Contra        | affects the barrels
- B       |   -    | R/W | Contra        | affects the barrels
- C       |   -    | R/W | Contra        | affects the barrels
- D       |   -    | R/W | Contra        | affects the barrels
+There are 8 programmable registers, most of them are 8-bit long, some have unused bits which
+do not connect to any physical register. Register cannot be read back.
 
 ## Combat School
 
