@@ -1,6 +1,10 @@
 # jtcps1
 
-Capcom System 1/1.5 compatible verilog core for FPGA by Jose Tejada (jotego).
+Capcom System 1/1.5/2 compatible verilog core for FPGA by Jose Tejada (jotego).
+
+# Memory Requirements
+
+All CPS1 and CPS1.5 operate correctly on a 32MB SDRAM system. Some CPS2 games may require a 64MB module. Those games are listed as having a GFX ROM of 16MB or more below. Please check the CPS2 ROM size section.
 
 # Control
 
@@ -12,6 +16,8 @@ MiSTer allows for gamepad redifinition. However, the keyboard can be used with m
 -1,2 1P, 2P
 
 For MiST, the first 6 gamepad buttons are used for game buttons, the next 2 buttons are used for credit and start buttons. If there is still one button left in the gamepad, it will be used for pause.
+
+There is an option to slow down the game (available only for CPS2). If you enable the 1P_hold_for_slow setting on the OSD, then while the 1P button is held the game will run at half the speed. Release the 1P button to go back to normal speed or disable the option in the OSD. Note that if the option is enabled the 2P, 3P and 4P buttons will also activate the slow down effect.
 
 # Setup
 
@@ -43,9 +49,7 @@ Pang! 3 and all CPS 1.5/2 games did not use DIP switches to configure the game, 
 
 Known issues:
 
--Fuel hoses in Carrier Airwing appear on top of the airplane
--12MHz games may run slightly slower than the original
--QSound hiss
+-Fuel hoses in Carrier Airwing appear on top of the airplane. This may be a problem with MRA file, and not with the core itself.
 
 Please report issues (here)[https://github.com/jotego/jtbin/issues].
 
@@ -75,6 +79,8 @@ T  = 1/4Fs
 # QSound
 
 QSound requires its own firmware rom to work. In MAME this is called qsound.zip. QSound sampling frequency is 3746 ticks of the input clock, when the clock enable applied is 2/3. For a 90MHz input clock, this will result in the correct internal 30MHz and in a sampling frequency of 90MHz/3747=24,019.2Hz
+
+The original board had a digitally controlled amplifier. The volume set on this amplifier could be read back by the CPU and DSP. In order to control the value read by these devices, press and hold the coin button for 1P while pressing up or down (for more or less volume). Note that this does not have an actual effect on the sound output.
 
 # PAL Dumps
 PAL dumps cam be obtained from MAME rom sets directly. Use the tool jedutil in order to extract the equations from them. The device is usually a gal16v8. For instance:
@@ -111,8 +117,10 @@ Offset    | Length | Use
 22h / 42o |  1     | Game ID
 23h / 43o |  2     | Bank offset
 25h / 45o |  2     | Bank mask
-27h / 47o |  1     | CPS-A board type
+27h / 47o |  1     | CPS-A board type (Pang! 3, etc.)
 30h / 60o | 11     | Kabuki keys (CPS 1.5 only)
+28h / 50o |  1     | CPS2 board type
+2ch / 54o | 20     | CPS2 keys
 
 * All offset values are expressed in kilobytes and stored with MSB byte second
 
@@ -131,6 +139,11 @@ Bits   |  Use
 4      | High for charger games
 5      | 0 = Disables Kabuki decryption
 
+CPS2 board type format:
+
+Bits   |  Use
+-------|-------
+1:0    | Controller type
 
 # SDRAM Usage
 
@@ -139,10 +152,10 @@ Bits   |  Use
 
 SDRAM bank | Usage
 -----------|-------
-0          | RAM/VRAM
+0          | RAM/VRAM/M68000 ROM
 1          | Sound CPU/PCM samples
 2          | GFX
-3          | M68000 ROM
+3          | GFX
 
 ## CPS 1.5 ROM Size
 
@@ -159,45 +172,50 @@ Muscle Bomber Duo     | 2.0 MB  |  128 kB     | 6 MB    | 4 MB    |
 
 ## CPS 2 ROM Size
 
-Game                  | CPU     |   Z80       | GFX     | Q-Sound | Popularity
-----------------------|---------|-------------|---------|---------|------------
-19XX                  | 2.5 MB  |  128 kB     | 10 MB   | 4 MB    | 191
-Alien vs Predator     | 2.0 MB  |  128 kB     | 16 MB   | 4 MB    | 637
-Armored Warriors      | 4.0 MB  |  256 kB     | 20 MB   | 4 MB    | 278
-Battle Circuit        | 3.5 MB  |  256 kB     | 16 MB   | 4 MB    |  87
-Capcom Sports Club    | 2.5 MB  |  128 kB     |  8 MB   | 4 MB    |  20
-Cyberbots             | 4.0 MB  |  256 kB     | 32 MB   | 4 MB    | 141
-Darkstalkers          | 4.0 MB  |  256 kB     | 20 MB   | 4 MB    | 146
-Dimahoo               | 2.0 MB  |  256 kB     | 16 MB   | 8 MB    |  32
-DnD Shadow o. Mystara | 4.0 MB  |  256 kB     | 24 MB   | 4 MB    | 336
-DnD Tower of Doom     | 2.5 MB  |  128 kB     | 12 MB   | 4 MB    | 108
-Eco Fighters          | 2.0 MB  |  128 kB     | 12 MB   | 4 MB    |  64
-Giga Wing             | 1.5 MB  |  128 kB     | 16 MB   | 8 MB    |  66
-Hyper SF II           | 4.0 MB  |  256 kB     | 32 MB   | 8 MB    | 171
-Janpai                | 1.0 MB  |  128 kB     | 16 MB   | 4 MB    |  15
-Jyangokushi           | 0.5 MB  |  128 kB     | 16 MB   | 4 MB    |   1
-Mars Matrix           | 1.5 MB  |  128 kB     | 32 MB   | 8 MB    |  57
-Marvel Super Heroes   | 4.0 MB  |  256 kB     | 32 MB   | 4 MB    | 165
-Marvel vs SF          | 4.0 MB  |  256 kB     | 32 MB   | 8 MB    | 336
-Marvel vs CAPCOM      | 4.0 MB  |  256 kB     | 32 MB   | 8 MB    | 377
-Megaman 2             | 1.5 MB  |  256 kB     |  8 MB   | 4 MB    | 225
-Darkstalker's revenge | 4.0 MB  |  256 kB     | 32 MB   | 4 MB    |  54
-Progear               | 1.0 MB  |  128 kB     | 16 MB   | 8 MB    |  72
-Puzz Loop 2           | 2.0 MB  |  128 kB     | 16 MB   | 4 MB    |  16
-Quiz Nanairo Dreams   | 2.0 MB  |  128 kB     |  8 MB   | 4 MB    |   8
-Slam Masters 2        | 3.0 MB  |  256 kB     | 18 MB   | 4 MB    | 291
-SF alpha 1            | 2.0 MB  |  256 kB     |  8 MB   | 4 MB    | 190
-SF alpha 2            | 3.0 MB  |  256 kB     | 20 MB   | 4 MB    | 218
-SF alpha 3            | 4.0 MB  |  256 kB     | 32 MB   | 8 MB    | 456
-SF zero 2 alpha       | 3.0 MB  |  256 kB     | 20 MB   | 4 MB    | 293
-Super Gem Fighter     | 2.5 MB  |  256 kB     | 20 MB   | 8 MB    | 252
-Super Puzzle Fighter 2| 1.0 MB  |  256 kB     |  4 MB   | 4 MB    | 210
-SF2 New Challengers   | 2.5 MB  |  128 kB     | 12 MB   | 4 MB    | 135
-SF2 Turbo             | 3.5 MB  |  256 kB     | 16 MB   | 4 MB    |1200
-Vampire Savior 1      | 4.0 MB  |  256 kB     | 32 MB   | 8 MB    |  30
-Vampire Savior 2      | 4.0 MB  |  256 kB     | 32 MB   | 8 MB    |  26
-X-Men Children of A.  | 4.0 MB  |  256 kB     | 32 MB   | 4 MB    | 179
-X-Men vs SF           | 3.5 MB  |  256 kB     | 32 MB   | 4 MB    | 337
+It looks like the 16kB memory add-on is not used for regular games. Maybe it is used for
+network connectivity only.
+
+Game                  | CPU     |   Z80       | GFX     | Q-Sound |Obj base| Addon | Popularity
+----------------------|---------|-------------|---------|---------|--------|-------|------------
+19XX                  | 2.5 MB  |  128 kB     | 10 MB   | 4 MB    | 7080   |  No   | 191
+1944                  | 1.5 MB  |  128 kB     | 20 MB   | 8 MB    | 7080   |  No   | 161
+Alien vs Predator     | 2.0 MB  |  128 kB     | 16 MB   | 4 MB    | 7000   |  No   | 637
+Armored Warriors      | 4.0 MB  |  256 kB     | 20 MB   | 4 MB    | 7000   |  No   | 278
+Battle Circuit        | 3.5 MB  |  256 kB     | 16 MB   | 4 MB    | 7080   |  No   |  87
+Capcom Sports Club    | 2.5 MB  |  128 kB     |  8 MB   | 4 MB    | 7080   |  No   |  20
+Cyberbots             | 4.0 MB  |  256 kB     | 32 MB   | 4 MB    | 7080   |  No   | 141
+Darkstalkers          | 4.0 MB  |  256 kB     | 20 MB   | 4 MB    | 7080   |       | 146
+Dimahoo               | 2.0 MB  |  256 kB     | 16 MB   | 8 MB    | 7080   |  No   |  32
+DnD Shadow o. Mystara | 4.0 MB  |  256 kB     | 24 MB   | 4 MB    | 7080   |  No   | 336
+DnD Tower of Doom     | 2.5 MB  |  128 kB     | 12 MB   | 4 MB    | 7080   |  No   | 108
+Eco Fighters          | 2.0 MB  |  128 kB     | 12 MB   | 4 MB    | 7000   |       |  64
+Giga Wing             | 1.5 MB  |  128 kB     | 16 MB   | 8 MB    | 7080   |       |  66
+Hyper SF II           | 4.0 MB  |  256 kB     | 32 MB   | 8 MB    | 7080   |       | 171
+Janpai                | 1.0 MB  |  128 kB     | 16 MB   | 4 MB    | 7000   |       |  15
+Jyangokushi           | 0.5 MB  |  128 kB     | 16 MB   | 4 MB    |        |       |   1
+Mars Matrix           | 1.5 MB  |  128 kB     | 32 MB   | 8 MB    |        |  No   |  57
+Marvel Super Heroes   | 4.0 MB  |  256 kB     | 32 MB   | 4 MB    |        |       | 165
+Marvel vs SF          | 4.0 MB  |  256 kB     | 32 MB   | 8 MB    |        |       | 336
+Marvel vs CAPCOM      | 4.0 MB  |  256 kB     | 32 MB   | 8 MB    |        |       | 377
+Megaman 2             | 1.5 MB  |  256 kB     |  8 MB   | 4 MB    |        |       | 225
+Darkstalker's revenge | 4.0 MB  |  256 kB     | 32 MB   | 4 MB    |        |       |  54
+Progear               | 1.0 MB  |  128 kB     | 16 MB   | 8 MB    | 7080   |  No   |  72
+Puzz Loop 2           | 2.0 MB  |  128 kB     | 16 MB   | 4 MB    | 7000   |       |  16
+Quiz Nanairo Dreams   | 2.0 MB  |  128 kB     |  8 MB   | 4 MB    |        |       |   8
+Ring of Destruction   | 3.0 MB  |  256 kB     | 18 MB   | 4 MB    |        |       | 293
+Slam Masters 2        | 3.0 MB  |  256 kB     | 18 MB   | 4 MB    |        |       | 291
+SF alpha 1            | 2.0 MB  |  256 kB     |  8 MB   | 4 MB    | 7000   |       | 190
+SF alpha 2            | 3.0 MB  |  256 kB     | 20 MB   | 4 MB    | 7000   |       | 218
+SF alpha 3            | 4.0 MB  |  256 kB     | 32 MB   | 8 MB    | 7000   |       | 456
+SF zero 2 alpha       | 3.0 MB  |  256 kB     | 20 MB   | 4 MB    | 7000   |       | 293
+Super Gem Fighter     | 2.5 MB  |  256 kB     | 20 MB   | 8 MB    |        |       | 252
+Super Puzzle Fighter 2| 1.0 MB  |  256 kB     |  4 MB   | 4 MB    | 7000   |       | 210
+SF2 New Challengers   | 2.5 MB  |  128 kB     | 12 MB   | 4 MB    | 7080   |  No   | 135
+SF2 Turbo             | 3.5 MB  |  256 kB     | 16 MB   | 4 MB    | 7080   |       |1200
+Vampire Savior 1      | 4.0 MB  |  256 kB     | 32 MB   | 8 MB    |        |       |  30
+Vampire Savior 2      | 4.0 MB  |  256 kB     | 32 MB   | 8 MB    |        |       |  26
+X-Men Children of A.  | 4.0 MB  |  256 kB     | 32 MB   | 4 MB    | 7080   |  No   | 179
+X-Men vs SF           | 3.5 MB  |  256 kB     | 32 MB   | 4 MB    | 7080   |  No   | 337
 
 # Simulation
 
@@ -297,3 +315,141 @@ Chris W Miller      Jesse Clark         nonamebear          Victor Fontanez
 Christian           Jim Knowler         nullobject          Víctor Gomariz Ladrón de Guevara
 Christian Bailey    Jo Tomiyori         Oliver Jaksch       Xzarian
 Christopher Gelatt                                          yoaarond
+
+The following patrons supported the development of CPS2
+
+             049
+80's spaceman   Adam Small
+Adam Zorzin     Adrian Labastida
+Adrian Nabarro  Alan Shurvinton
+Alexander Lash  Alexander Upton
+Alfonso Clemente Alonso J.
+Alvaro Paniagua Andrea Chiavazza
+Andreas Micklei Andrew Boudreau
+Andrew Schmidt  Andy Palmer
+Angelo Kanaris  Anthony Monaco
+Anton Gale      Antwon
+Aquijacks (Flashjacks Aqy
+Arthur Blough   Arthur Fung
+BRCDEvg         Banane
+Bear S          Ben Toman
+Bitmap Bureau   Bliz 452
+Boogermann      Brandon Smith
+Brandon Thomas  Brent Fraser
+Brian Peek      Brian Plummer
+Bruno Freitas   C
+Cameron Tinker  Carrboroman
+Cesar Sandoval  Charles
+Choquer0        Chris Chung
+Chris Mzhickteno Chris Tuckwell
+Chris W         Chris smith
+Christian Bailey Clinton Cronin
+Cobra Clips     Coldheat007
+Colin Colehour  Colt83
+Dan             Daniel
+Daniel Casadevall Daniel Fowler
+Daniel Page     Daniel Zetterman
+Darren Wootton  Dasutin
+David Drury     David Filskov
+David Fleetwood David Jones
+Denis Brækhus   Diana Carolina
+Dimitris Zongas DrMnike
+Dre137          Drew Roberts
+Eric J          Eric Schlappi
+Eric Walklet    Five Year
+Flavio Real     Focux
+Francis B       Gluthecat
+GohanX          Gonzalo Lopez
+Goolio          Greg
+Gregory Val     HFSPlay
+Handheld Obsession Henry
+Ibrahim         ItsBobDudes
+JR              Jack Sammons
+Jacob Hoffman   Jacob Lawter
+James B         James Charnock
+James Dingo     James Kilgore
+Jason Nagy      Javier Rodas
+Jeff Roberts    Jeremy Hasse
+Jeremy Kelaher  Jesse Clark
+Jim Knowler     Jockel
+Johan Smolinski John Fletcher
+John Hood       John Silva
+John Wilson     Jonah Phillips
+Jonathan Brochu Jonathan Loor
+Jonathan Tuttle Jootec from
+Jorge           Jork Sonkinfield
+Joseph Milazzo  Josh Emery
+Josh Mayer      Josiah Wilson
+Justin D'Arcangelo Keith Gordon
+Kem Yos         Ken Scott
+Kevin Gudgeirsson Kevin finisterre
+KnC             Koala Software
+KrzysFR         L.Rapter
+LFT             Laurent Cooper
+Lee Grocott     Lee Osborne
+Lionel LENOBLE  Luc JOLY
+Mack H          Magnus Kvevlander
+Manuel Astudillo Mark Baffa
+Mark Davidson   Mark R
+MarthSR         Martin Ansin
+Matheus         Matsu
+Matt Elder      Matt Evans
+Matt Lichtenberg Matt McCarthy
+Matt ODonnell   Matthew Humphrey
+Matthew Woodford MechaGG
+Megan Alnico    MiSTerFPGA.co.uk
+Michael Berger  Michael C
+Michael Deshaies Michael Rea
+Mick Stone      Mike Jegenjan
+Mike Olson      Mike Parks
+Mottzilla       NINE
+Nailbomb        Narugawa
+Neil St         Nelson Jr
+NerdyNester     Nick Delia
+Nick G          Nico Stamp
+Nicolas Hurtado NonstopXiaowei
+OopsAllBerrys   Oriez
+Oskar Sigvardsson Parker Blackman
+Patrick Roman   Paul Cunningham
+Paul M          Paulo M.
+Paweł Mandes    PeFClic
+Per Ole         Philip Lai
+Philip Lawson   Pierre-Emmanuel Martin
+Rachael Netz    Rachel Schaeffer
+RandomRetro     Raph Furendo
+Raphael Melgar  RayGun
+Richard Eng     Richard Murillo
+Richard Simpson Rick Ochoa
+Ronald Dean     Ryan
+Ryan Fig        Ryan O'Malley
+Sam Hall        Samuel Warner
+Schnookums      Sofia Rose
+Spank Minister  SteelRush
+Stefan Krueger  Stephen R
+Steven Hansen   Steven Yedwab
+Stuart Morton   SuperBabyHix
+Taehyun Kim     Tales Dilli
+Tatton Partington Terse
+The Collector   The Video
+Thomas Attanasio Thomas Capetanakis
+Thomas Irwin    Tobias Dossin
+Travis Brown    Trifle
+Troy            Turboman UK
+Ty B            VickiViperZabel
+Victor Bly      Victor Fontanez
+William Clemens Yunus Soğukkanlı
+Zach Marquette  Zoltan Kovacs
+albertprime     alejandro carlos
+angel_killah    arcadebros
+blackwine       brian burney
+bruno_tapez     cbab
+chauviere benjamin dannahan
+deathwombat     derFunkenstein
+gunmakuma       kccheng
+kernelchagi     natalie
+nonamebear      olivier bernhard
+retrod00d       rsn8887
+scapeghost      taal.M
+tonitellezb     troy coberly
+yoaarond        종규 박
+
