@@ -1,0 +1,72 @@
+<!--          FPGA compatible core of arcade hardware by Jotego
+
+              This core is available for hardware compatible with MiST and MiSTer
+              Other FPGA systems may be supported by the time you read this.
+              This work is not mantained by the MiSTer project. Please contact the
+              core author for issues and updates.
+
+              (c) Jose Tejada, 2020. Please support the author
+              Patreon: https://patreon.com/topapate
+              Paypal:  https://paypal.me/topapate
+
+              The author does not endorse or participate in illegal distribution
+              of copyrighted material. This work can be used with legally
+              obtained ROM dumps or with compatible homebrew software
+
+              This file license is GNU GPLv2.
+              You can read the whole license file in
+              https://opensource.org/licenses/gpl-2.0.php
+
+-->
+
+<misterromdescription>
+    <about author="jotego" webpage="https://patreon.com/topapate" source="https://github.com/jotego" twitter="@topapate"/>
+    <name>Labyrinth Runner (World Ver. K)</name>
+    <setname>labyrunrk</setname>
+    <rbf>jtlabrun</rbf>
+    <rom index="0" zip="labyrunrk.zip|tricktrp.zip" type="merged" md5="None">
+        <!-- maincpu - starts at 0x0 -->
+        <interleave output="16">
+            <part name="771k04.10f" crc="9816ab35"  length="0x8000" offset="0x8000"  map="12"/>
+        </interleave>
+        <interleave output="16">
+            <part name="771k04.10f" crc="9816ab35"  length="0x8000" offset="0x0"  map="12"/>
+        </interleave>
+        <interleave output="16">
+            <part name="771k03.8f" crc="48d732ae" map="12"/>
+        </interleave>
+        <!-- gfx1 - starts at 0x20000 -->
+        <interleave output="16">
+            <part name="771d01c.13a" crc="d75521fe" map="01"/>
+            <part name="771d01a.13a" crc="0cd1ed1a" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="771d01d" crc="f6810a49" map="01"/>
+            <part name="771d01b" crc="07f2a71c" map="10"/>
+        </interleave>
+        <!-- proms - starts at 0x60000 -->
+        <part name="771d02.08d" crc="3d34bb5a"/>
+        <!-- Total 0x60100 bytes - 384 kBytes -->
+    </rom>
+    <!-- Vertical game -->
+    <rom index="1">
+        <part>01</part>
+    </rom>
+    <switches base="8" default="FF,FF,FF">
+        <!-- DSW1 -->
+        <dip name="Coin A" bits="0,3" ids="Free Play,4/3,4/1,3/4,3/2,3/1,2/5,2/3,2/1,1/7,1/6,1/5,1/4,1/3,1/2,1/1"/>
+        <dip name="Coin B" bits="4,7" ids="None,4/3,4/1,3/4,3/2,3/1,2/5,2/3,2/1,1/7,1/6,1/5,1/4,1/3,1/2,1/1"/>
+        <!-- DSW2 -->
+        <dip name="Lives" bits="8,9" ids="7,5,3,2"/>
+        <dip name="Cabinet" bits="10" ids="Upright,Cocktail"/>
+        <dip name="Bonus Life" bits="11,12" ids="50k,40k,40k 80k,30k 70k"/>
+        <dip name="Difficulty" bits="13,14" ids="Hardest,Hard,Normal,Easy"/>
+        <dip name="Demo Sounds" bits="15" ids="On,Off"/>
+        <!-- DSW3 -->
+        <dip name="Flip Screen" bits="16" ids="On,Off"/>
+        <dip name="Upright Controls" bits="17" ids="Dual,Single"/>
+        <dip name="Service Mode" bits="18" ids="On,Off"/>
+        <dip name="Allow Continue" bits="19" ids="5 Times,3 Times"/>
+    </switches>
+    <buttons names="Fire,Jump,Start,Coin,Pause" default="Y,X,R,L,Start"/>
+</misterromdescription>
