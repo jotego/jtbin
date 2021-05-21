@@ -27,6 +27,7 @@
     <mameversion>0229</mameversion>
     <year>1986</year>
     <manufacturer>Capcom (Tecfri license)</manufacturer>
+    <category>Shooter</category>
     <players>2</players>
     <joystick>8-way</joystick>
     <rotation>vertical</rotation>
