@@ -1,11 +1,11 @@
-<!--          FPGA compatible core of arcade hardware by Jotego
+<!--          FPGA compatible core for Taito arcade hardware by Jotego
 
               This core is available for hardware compatible with MiST and MiSTer
               Other FPGA systems may be supported by the time you read this.
               This work is not mantained by the MiSTer project. Please contact the
               core author for issues and updates.
 
-              (c) Jose Tejada, 2020. Please support the author
+              (c) Jose Tejada, 2021. Please support the author
               Patreon: https://patreon.com/topapate
               Paypal:  https://paypal.me/topapate
 
@@ -22,13 +22,18 @@
 <misterromdescription>
     <about author="jotego" webpage="https://patreon.com/topapate" source="https://github.com/jotego" twitter="@topapate"/>
     <name>Bubble Bobble (Japan, Ver 0.1)</name>
-    <mameversion>0217</mameversion>
     <setname>bublbobl</setname>
+    <rbf>jtbubl</rbf>
     <year>1986</year>
     <manufacturer>Taito</manufacturer>
-    <category>Platform</category>
-    <rbf>jtbubl</rbf>
-    <rom index="0" zip="bublbobl.zip" type="merged" md5="None">
+    <players>2</players>
+    <joystick>2-way</joystick>
+    <rotation>Horizontal</rotation>
+    <region>Japan</region>
+    <category>Platform / Run Jump</category>
+    <mameversion>0231</mameversion>
+    <mratimestamp>20210526</mratimestamp>
+    <rom index="0" zip="bublbobl.zip" type="merged|nonmerged|split" md5="None">
         <!-- maincpu - starts at 0x0 -->
         <interleave output="16">
             <part name="a78-06-1.51" crc="567934b6" map="12"/>
@@ -83,19 +88,26 @@
     <rom index="1">
         <part>00</part>
     </rom>
-    <switches default="FD,FF" base="16">
+    <switches default="FF,FF" base="16">
         <!-- DSW0 -->
+        <dip name="Language" bits="0" ids="English,Japanese"/>
         <dip name="Flip Screen" bits="1" ids="On,Off"/>
-        <dip name="Mode" bits="2,3" ids="Test /Pause,Test,Game, English,Game, Japanese"/>
+        <!-- To access test pattern screen, set Language: Japanese, Mode: Test, then reset -->
+        <!-- To access Test Mode for inputs and sound, press 1P Start at test pattern screen -->
+        <!-- Set Language: English and Mode: Test to pause game and perform a sound auto-test -->
+        <dip name="Mode" bits="2" ids="Test,Game"/>
         <dip name="Demo Sounds" bits="3" ids="Off,On"/>
-        <dip name="Coin A" bits="4,5" ids="2/3,2/1,1/2,1/1"/>
-        <dip name="Coin B" bits="6,7" ids="2/3,2/1,1/2,1/1"/>
+        <dip name="Coin A" bits="4,5" ids="2C/3Cr,2C/1Cr,1C/2Cr,1C/1Cr"/>
+        <dip name="Coin B" bits="6,7" ids="2C/3Cr,2C/1Cr,1C/2Cr,1C/1Cr"/>
         <!-- DSW1 -->
         <dip name="Difficulty" bits="8,9" ids="Very Hard,Hard,Easy,Normal"/>
+        <!-- Additional bonus lives at 1M 2M 3M 4M and 5M for all DIP switch settings -->
         <dip name="Bonus Life" bits="10,11" ids="50K 250K 500K,40K 200K 500K,20K 80K 300K,30K 100K 400K"/>
         <dip name="Lives" bits="12,13" ids="2,1,5,3"/>
+        <!-- Must be set to Off -->
         <dip name="Unknown" bits="14" ids="On,Off"/>
-        <dip name="ROM Type" bits="15" ids="IC52=256kb, IC53=256kb,IC52=512kb, IC53=none"/>
+        <!-- Will hang on startup if set to wrong type -->
+        <dip name="ROM Type" bits="15" ids="IC52=256/IC53=256,IC52=512/IC53=None"/>
     </switches>
-    <buttons names="Shoot,Jump,Start,Coin,Pause" default="Y,X,R,L,Start"/>
+    <buttons names="Bubble,Jump,Start,Coin,Pause" default="Y,X,R,L,Start" count="2"/>
 </misterromdescription>
