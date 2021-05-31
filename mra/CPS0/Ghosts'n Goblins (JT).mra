@@ -46,6 +46,11 @@
         <dip name="Level" bits="13,14" ids="Very Hard,Hard,Easy,Normal"></dip>
         <dip name="Unused" bits="15" ids="On,Off"></dip>
     </switches>
-    <buttons names="Fire,Jump,Start,Coin,Pause" 
+    <cheats>
+        <cheat name="Infinite Credits" bits="0" ids="No, Yes"/>
+        <cheat name="P1 Infinite Lives" bits="1" ids="No, Yes"/>
+        <cheat name="Starting Level" bits="2,3" ids="1,2,3,4"/>
+    </cheats>
+    <buttons names="Fire,Jump,Start,Coin,Pause"
         default="A,B,R,L,Start"/>
 </misterromdescription>
