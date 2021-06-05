@@ -54,6 +54,25 @@ Tiger Road        |      |  X  |   X   |      |   X     |        |   X    |   X
 Trojan            |      |  X  |       |      |   X     |        |        |   X
 Vulgus            |      |  X  |       |      |         |        |   X    |
 
+Games using 1943 scroll module
+
+* 1943 / Gun Smoke
+* Trojan
+* Tiger Road / F1 Dream
+* Side Arms
+
+Games re-writting the sprites to SDRAM
+
+* The Speed Rumbler
+* Tiger Road / F1 Dream
+* Bionic Commando
+
+Games using multiple SDRAM banks
+
+* Bionic Commando
+* Street Fighter
+* The Speed Rumbler
+
 
 ## Troubleshooting
 
