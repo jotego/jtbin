@@ -1,4 +1,4 @@
-name: MRA Tasks
+name: Folder check
 
 on:
   push:
