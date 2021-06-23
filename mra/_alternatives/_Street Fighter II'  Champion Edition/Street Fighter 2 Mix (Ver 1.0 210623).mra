@@ -20,14 +20,14 @@
     <about author="jotego" webpage="https://patreon.com/topapate"
                            source ="https://github.com/jotego/jtcps1"
                            twitter="@topapate"/>
-    <name>Street Fighter 2 Mix (Ver 0.99a 201230)</name>
-    <mameversion>0217</mameversion>
+    <name>Street Fighter 2 Mix (Ver 1.0 210623)</name>
+    <mameversion>0232</mameversion>
     <setname>sf2mix</setname>
-    <year>2020</year>
-    <manufacturer>ZERO800</manufacturer>
+    <year>2021</year>
+    <manufacturer>Zero800</manufacturer>
     <category>Fighting</category>
     <rbf>jtcps1</rbf>
-    <rom index="0" zip="sf2mix.zip" md5="734dd5b60b8a7353043c5ead7554b66d">
+    <rom index="0" zip="/hbmame/sf2mix.zip" md5="8057d4be6f1a80fd064d79c81aef4f0c">
         <!-- relative position of each ROM section in the file, discounting the header, in kilobytes -->
         <!-- Size of M68000 code 1536 kB -->
         <!-- Sound CPU size 64 kB -->
@@ -45,37 +45,37 @@
         <part repeat="24">FF</part>
         <!-- maincpu -->
         <interleave output="16">
-            <part name="s92e_23b.8f" crc="ac0ea126" map="21"/>
+            <part name="smxe_23b.8f" crc="316ddac7" map="21"/>
         </interleave>
         <interleave output="16">
-            <part name="s92_22b.7f" crc="aac9a601" map="21"/>
+            <part name="smx_22b.7f" crc="d3075211" map="21"/>
         </interleave>
         <interleave output="16">
-            <part name="s92_21a.6f" crc="60c3e417" map="21"/>
+            <part name="smx_21a.6f" crc="d7e6b35d" map="21"/>
         </interleave>
         <!-- audiocpu -->
-        <part name="s92_09.11a" crc="a379fdc5"/>
+        <part name="smx_09.11a" crc="a379fdc5"/>
         <!-- oki -->
-        <part name="s92_18.11c" crc="6aa5d7fa"/>
-        <part name="s92_19.12c" crc="f92f5a4f"/>
+        <part name="smx_18.11c" crc="6aa5d7fa"/>
+        <part name="smx_19.12c" crc="f92f5a4f"/>
         <!-- gfx -->
         <interleave output="64">
-            <part name="s92-1m.3a" crc="a8f70643"  map="00000021"/>
-            <part name="s92-3m.5a" crc="f73f1913"  map="00002100"/>
-            <part name="s92-2m.4a" crc="a80234b4"  map="00210000"/>
-            <part name="s92-4m.6a" crc="4d910b53"  map="21000000"/>
+            <part name="smx-1m.3a" crc="a8f70643"  map="00000021"/>
+            <part name="smx-3m.5a" crc="f73f1913"  map="00002100"/>
+            <part name="smx-2m.4a" crc="a80234b4"  map="00210000"/>
+            <part name="smx-4m.6a" crc="4d910b53"  map="21000000"/>
         </interleave>
         <interleave output="64">
-            <part name="s92-5m.7a" crc="10dbab9f"  map="00000021"/>
-            <part name="s92-7m.9a" crc="3f368031"  map="00002100"/>
-            <part name="s92-6m.8a" crc="94bf5b35"  map="00210000"/>
-            <part name="s92-8m.10a" crc="ae59521a"  map="21000000"/>
+            <part name="smx-5m.7a" crc="01ae6240"  map="00000021"/>
+            <part name="smx-7m.9a" crc="88dea20a"  map="00002100"/>
+            <part name="smx-6m.8a" crc="7ea140b2"  map="00210000"/>
+            <part name="smx-8m.10a" crc="fbc81a7e"  map="21000000"/>
         </interleave>
         <interleave output="64">
-            <part name="s92-10m.3c" crc="d4e75239"  map="00000021"/>
-            <part name="s92-12m.5c" crc="c66dc52c"  map="00002100"/>
-            <part name="s92-11m.4c" crc="416149f2"  map="00210000"/>
-            <part name="s92-13m.6c" crc="7316d4bc"  map="21000000"/>
+            <part name="smx-10m.3c" crc="78e86cf4"  map="00000021"/>
+            <part name="smx-12m.5c" crc="2f8e6dc9"  map="00002100"/>
+            <part name="smx-11m.4c" crc="70095fdc"  map="00210000"/>
+            <part name="smx-13m.6c" crc="d14d18e5"  map="21000000"/>
         </interleave>
     </rom>
 
