@@ -21,21 +21,21 @@
 
 <misterromdescription>
     <about author="jotego" webpage="https://patreon.com/topapate" source="https://github.com/jotego" twitter="@topapate"/>
-    <name>Shinobi (Set 6, World, S16A) [No Protection]</name>
-    <setname>shinobi</setname>
+    <name>Fantasy Zone (Prototype, S16A) [No Protection]</name>
+    <setname>fantzonepr</setname>
     <rbf>jts16</rbf>
     <mameversion>0232</mameversion>
-    <year>1987</year>
+    <year>1986</year>
     <manufacturer>Sega</manufacturer>
     <players>2</players>
     <joystick>8</joystick>
     <rotation>horizontal</rotation>
     <region>World</region>
-    <category>Hack &amp; Slash</category>
-    <catver>Platform/Fighter Scrolling</catver>
+    <category>Shoot&apos;em Up</category>
+    <catver>Shooter/Flying Horizontal</catver>
     <platform>Sega S16A</platform>
     <mraauthor>jotego,atrac17</mraauthor>
-    <rom index="0" zip="shinobi.zip" md5="None">
+    <rom index="0" zip="fantzonepr.zip|fantzone.zip" md5="None">
         <part>
             04 00 04 80 08 80 10 00
             18 00 18 20 18 40 18 44
@@ -44,50 +44,53 @@
         </part>
         <!-- maincpu - starts at 0x0 -->
         <interleave output="16">
-            <part name="epr-12008.26" crc="f5ae64cd" map="01"/>
-            <part name="epr-12010.43" crc="7df7f4a2" map="10"/>
+            <part name="ic26-prg20-658q.bin" crc="a0d53b86" map="01"/>
+            <part name="ic43-prg-dd2c.bin" crc="895436e1" map="10"/>
         </interleave>
         <interleave output="16">
-            <part name="epr-12009.25" crc="7961d07e" map="01"/>
-            <part name="epr-12011.42" crc="9d46e707" map="10"/>
+            <part name="ic25-prg15-2b8c.bin" crc="7e6fdae0" map="01"/>
+            <part name="ic42-prg13-eb1f.bin" crc="a08e9d65" map="10"/>
         </interleave>
+        <interleave output="16">
+            <part name="ic24-prg20-2f57.bin" crc="fd909341" map="01"/>
+            <part name="epr-7387.41" crc="0acd335d" map="10"/>
+        </interleave>
+        <part repeat="0x10000"> FF</part>
         <!-- soundcpu - starts at 0x40000 -->
-        <part name="epr-11267.12" crc="dd50b745"/>
+        <part name="ic12-sound-56-5.bin" crc="e62ddff6"/>
         <!-- n7751data - starts at 0x48000 -->
-        <part name="epr-11268.1" crc="6d7966da"/>
-        <part repeat="0x38000"> FF</part>
+        <part repeat="0x40000"> FF</part>
         <!-- gfx1 - starts at 0x88000 -->
         <interleave output="32">
-            <part name="epr-11264.95" crc="46627e7d" map="0001"/>
-            <part name="epr-11265.94" crc="87d0f321" map="0010"/>
-            <part name="epr-11266.93" crc="efb4af87" map="0100"/>
-            <part name="epr-11266.93" crc="efb4af87" map="1000"/>
+            <part name="ic95-1413.bin" crc="158af770" map="0001"/>
+            <part name="ic94-3e96.bin" crc="2fea4fe7" map="0010"/>
+            <part name="epr-7390.93" crc="d90609c6" map="0100"/>
+            <part name="epr-7390.93" crc="d90609c6" map="1000"/>
         </interleave>
-        <part repeat="0x38000"> FF</part>
+        <part repeat="0x58000"> FF</part>
         <!-- sprites - starts at 0x100000 -->
         <interleave output="16">
-            <part name="epr-11290.10" crc="611f413a" map="01"/>
-            <part name="epr-11294.11" crc="5eb00fc1" map="10"/>
+            <part name="epr-7392.10" crc="5bb7c8b6" map="01"/>
+            <part name="ic11-6235.bin" crc="74ae4b57" map="10"/>
         </interleave>
+        <part repeat="0x10000"> FF</part>
         <interleave output="16">
-            <part name="epr-11291.17" crc="3c0797c0" map="01"/>
-            <part name="epr-11295.18" crc="25307ef8" map="10"/>
+            <part name="epr-7393.17" crc="14fc7e82" map="01"/>
+            <part name="ic18-2614.bin" crc="e05a1e25" map="10"/>
         </interleave>
+        <part repeat="0x10000"> FF</part>
         <interleave output="16">
-            <part name="epr-11292.23" crc="c29ac34e" map="01"/>
-            <part name="epr-11296.24" crc="04a437f8" map="10"/>
+            <part name="ic23" crc="531ca13f" map="01"/>
+            <part name="ic24" crc="68807b49" map="10"/>
         </interleave>
-        <interleave output="16">
-            <part name="epr-11293.29" crc="41f41063" map="01"/>
-            <part name="epr-11297.30" crc="b6e1fd72" map="10"/>
-        </interleave>
+        <part repeat="0x30000"> FF</part>
         <!-- mcu - starts at 0x180000 -->
-        <part repeat="0x1000"> FF</part>
+        <part name="8751.bin" crc="c0d325e6"/>
         <part repeat="0x1000"> FF</part>
         <!-- maincpu:key - starts at 0x182000 -->
         <part repeat="0x2000"> FF</part>
         <!-- n7751 - starts at 0x184000 -->
-        <part name="7751.bin" crc="6a9534fc"/>
+        <part repeat="0x400"> FF</part>
         <!-- Total 0x184400 bytes - 1553 kBytes -->
     </rom>
     <rom index="16" zip="beta.zip" md5="None">
@@ -103,10 +106,9 @@
         <!-- DSW2 -->
         <dip name="Cabinet" bits="8" ids="Upright,Cocktail"/>
         <dip name="Demo Sounds" bits="9" ids="On,Off"/>
-        <dip name="Lives" bits="10,11" ids="Free Play,5,2,3"/>
-        <dip name="Difficulty" bits="12,13" ids="Hardest,Hard,Easy,Normal"/>
-        <dip name="Enemy Bullet Speed" bits="14" ids="Fast,Slow"/>
-        <dip name="Language" bits="15" ids="English,Japanese"/>
+        <dip name="Lives" bits="10,11" ids="240 ,4,2,3"/>
+        <dip name="Extra Ship Cost" bits="12,13" ids="20k,15000,10k,5000"/>
+        <dip name="Difficulty" bits="14,15" ids="Hardest,Hard,Easy,Normal"/>
     </switches>
-    <buttons names="Shuriken,Jump,Magic,-,Start,Coin,Core credits" default="Y,X,B,A,Start,Select,-" count="3"/>
+    <buttons names="Shot,Bomb,-,-,Start,Coin,Core credits" default="Y,X,B,A,Start,Select,-" count="2"/>
 </misterromdescription>
