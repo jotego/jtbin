@@ -133,5 +133,5 @@
         <dip name="Timer" bits="12,13" ids="150,160,170,180"/>
         <dip name="Difficulty" bits="14,15" ids="Hardest,Hard,Easy,Normal"/>
     </switches>
-    <buttons names="Shot,-,-,Start,Coin,Core credits" default="Y,X,B,A,Start,Select,-" count="1"/>
+    <buttons names="Shot,-,-,-,Start,Coin,Core credits" default="Y,X,B,A,Start,Select,-" count="1"/>
 </misterromdescription>
