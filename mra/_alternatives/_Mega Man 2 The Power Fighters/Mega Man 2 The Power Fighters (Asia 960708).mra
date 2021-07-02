@@ -33,7 +33,7 @@
     <region>Asia</region>
     <platform>CPS-2</platform>
     <category>Platformer</category>
-    <catver>Fighter/Versus Co-op</catver>
+    <catver>Fighter / Versus Co-op</catver>
     <mraauthor>jotego,atrac17</mraauthor>
     <rom index="0" zip="megaman2a.zip|megaman2.zip|qsound.zip" type="merged" md5="None" address="0x30000000">
         <part>
@@ -71,9 +71,6 @@
         <!-- QSound firmware - starts at 0x15C0014 -->
         <part name="dl-1425.bin" crc="d6cf5ef5" length="0x2000"/>
         <!-- Total 0x15C2014 bytes - 22280 kBytes -->
-    </rom>
-    <rom index="16" zip="beta.zip" md5="None">
-        <part name="beta.bin"/>
     </rom>
     <rom index="1">
         <part>00</part>

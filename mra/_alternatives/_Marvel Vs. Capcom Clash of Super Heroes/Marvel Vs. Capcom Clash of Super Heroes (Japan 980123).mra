@@ -33,7 +33,7 @@
     <region>Japan</region>
     <platform>CPS-2</platform>
     <category>Fighting</category>
-    <catver>Fighter/Versus</catver>
+    <catver>Fighter / Versus</catver>
     <mraauthor>jotego,atrac17</mraauthor>
     <rom index="0" zip="mvscj.zip|mvsc.zip|qsound.zip" type="merged" md5="None" address="0x30000000">
         <part>
@@ -81,9 +81,6 @@
         <!-- QSound firmware - starts at 0x2C40014 -->
         <part name="dl-1425.bin" crc="d6cf5ef5" length="0x2000"/>
         <!-- Total 0x2C42014 bytes - 45320 kBytes -->
-    </rom>
-    <rom index="16" zip="beta.zip" md5="None">
-        <part name="beta.bin"/>
     </rom>
     <rom index="1">
         <part>00</part>

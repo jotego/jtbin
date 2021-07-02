@@ -24,7 +24,7 @@
     <name>Mars Matrix: Hyper Solid Shooting (Asia 000412)</name>
     <setname>mmatrixa</setname>
     <rbf>jtcps2</rbf>
-    <mameversion>0229</mameversion>
+    <mameversion>0231</mameversion>
     <year>2000</year>
     <manufacturer>Takumi</manufacturer>
     <players>2</players>
@@ -33,7 +33,7 @@
     <region>Asia</region>
     <platform>CPS-2</platform>
     <category>Shoot&apos;em up</category>
-    <catver>Shooter/Flying Vertical</catver>
+    <catver>Shooter / Flying Vertical</catver>
     <mraauthor>jotego,atrac17</mraauthor>
     <rom index="0" zip="mmatrixa.zip|mmatrix.zip|qsound.zip" type="merged" md5="None" address="0x30000000">
         <part>
@@ -75,9 +75,6 @@
         <!-- QSound firmware - starts at 0x29A0014 -->
         <part name="dl-1425.bin" crc="d6cf5ef5" length="0x2000"/>
         <!-- Total 0x29A2014 bytes - 42632 kBytes -->
-    </rom>
-    <rom index="16" zip="beta.zip" md5="None">
-        <part name="beta.bin"/>
     </rom>
     <rom index="1">
         <part>00</part>

@@ -33,7 +33,7 @@
     <region>Japan</region>
     <platform>CPS-2</platform>
     <category>Beat&apos;em up</category>
-    <catver>Fighter/2.5D</catver>
+    <catver>Fighter / 2.5D</catver>
     <mraauthor>jotego,atrac17</mraauthor>
     <rom index="0" zip="avspj.zip|avsp.zip|qsound.zip" type="merged" md5="None" address="0x30000000">
         <part>
@@ -76,9 +76,6 @@
         <!-- QSound firmware - starts at 0x1620014 -->
         <part name="dl-1425.bin" crc="d6cf5ef5" length="0x2000"/>
         <!-- Total 0x1622014 bytes - 22664 kBytes -->
-    </rom>
-    <rom index="16" zip="beta.zip" md5="None">
-        <part name="beta.bin"/>
     </rom>
     <rom index="1">
         <part>00</part>

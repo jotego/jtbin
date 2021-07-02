@@ -33,7 +33,7 @@
     <region>USA</region>
     <platform>CPS-2</platform>
     <category>Shoot&apos;em up</category>
-    <catver>Shooter/Flying Horizontal</catver>
+    <catver>Shooter / Flying Horizontal</catver>
     <mraauthor>jotego,atrac17</mraauthor>
     <rom index="0" zip="ecofghtru1.zip|ecofghtr.zip|qsound.zip" type="merged" md5="None" address="0x30000000">
         <part>
@@ -76,9 +76,6 @@
         <!-- QSound firmware - starts at 0x1220014 -->
         <part name="dl-1425.bin" crc="d6cf5ef5" length="0x2000"/>
         <!-- Total 0x1222014 bytes - 18568 kBytes -->
-    </rom>
-    <rom index="16" zip="beta.zip" md5="None">
-        <part name="beta.bin"/>
     </rom>
     <rom index="1">
         <part>00</part>

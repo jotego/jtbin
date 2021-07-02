@@ -33,7 +33,7 @@
     <region>USA</region>
     <platform>CPS-2</platform>
     <category>Shoot&apos;em up</category>
-    <catver>Shooter/Flying Horizontal</catver>
+    <catver>Shooter / Flying Horizontal</catver>
     <mraauthor>jotego,atrac17</mraauthor>
     <rom index="0" zip="progear.zip|qsound.zip" type="merged" md5="None" address="0x30000000">
         <part>
@@ -79,9 +79,6 @@
         <part name="dl-1425.bin" crc="d6cf5ef5" length="0x2000"/>
         <!-- Total 0x1922014 bytes - 25736 kBytes -->
     </rom>
-    <rom index="16" zip="beta.zip" md5="None">
-        <part name="beta.bin"/>
-    </rom>
     <rom index="1">
         <part>00</part>
     </rom>
@@ -89,5 +86,5 @@
         <part>00 09 01 00 00 00 00 02 00 00 00 00 00 00 00 00 00 01 01 00 00 00 00 03 00 00 00 00 00 00 00 00 06 97 02 12 10 96 ff 01 52 50 47 4f 55 45 41 53 00 09 01 00 00 00 00 02 00 00 00 00 00 00 00 00 00 01 01 00 00 00 00 03 00 00 00 00 00 00 00 00 06 97 02 12 10 96 ff 01 52 50 47 4f 55 45 41 53 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00</part>
     </rom>
     <nvram index="2" size="128"/>
-    <buttons names="Shot,Bomb,Rapid Shot (Optional),-,-,-,Start,Coin,Core credits" default="Y,X,BALR,Select,Start,-" count="3"/>
+    <buttons names="Shot,Bomb,Rapid Shot,-,-,-,Start,Coin,Core credits" default="Y,X,BALR,Select,Start,-" count="3"/>
 </misterromdescription>

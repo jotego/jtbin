@@ -21,7 +21,7 @@
 
 <misterromdescription>
     <about author="jotego" webpage="https://patreon.com/topapate" source="https://github.com/jotego" twitter="@topapate"/>
-    <name>19XX: The War Against Destiny (Japan 960104, RENTAL)</name>
+    <name>19XX: The War Against Destiny (Japan 960104, Rental Version)</name>
     <setname>19xxj</setname>
     <rbf>jtcps2</rbf>
     <mameversion>0229</mameversion>
@@ -33,7 +33,7 @@
     <region>Japan</region>
     <platform>CPS-2</platform>
     <category>Shoot&apos;em up</category>
-    <catver>Shooter/Flying Vertical</catver>
+    <catver>Shooter / Flying Vertical</catver>
     <mraauthor>jotego,atrac17</mraauthor>
     <rom index="0" zip="19xxj.zip|19xx.zip|qsound.zip" type="merged" md5="None" address="0x30000000">
         <part>
@@ -114,9 +114,6 @@
         <!-- QSound firmware - starts at 0x16A0014 -->
         <part name="dl-1425.bin" crc="d6cf5ef5" length="0x2000"/>
         <!-- Total 0x16A2014 bytes - 23176 kBytes -->
-    </rom>
-    <rom index="16" zip="beta.zip" md5="None">
-        <part name="beta.bin"/>
     </rom>
     <!-- Vertical game -->
     <rom index="1">
