@@ -27,6 +27,8 @@ its submodules following standard git instructions. Go to the root folder and
 type `source setprj.sh`. Now you can compile the core with `jtcore contra -mist`
 Use `-mister` or `-sidi` if appropriate.
 
+Also check the instructions in [modules/jtframe/doc/compilation.md](JTFRAME)
+
 # ROM file
 
 Use the mra file in rom/mra for MiSTer. For MiST/SiDi, convert the mra to a rom
@@ -114,8 +116,9 @@ you will find me as *topapate*.
 
 Contact via:
 * https://twitter.com/topapate
-* https://github.com/discord
+* https://github.com/jotego
 
 You can show your appreciation through
+* Github:
 * Patreon: https://patreon.com/topapate
 * Paypal: https://paypal.me/topapate
