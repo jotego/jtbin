@@ -7,13 +7,14 @@ This repository contains only the binary files of my FPGA cores. Although I have
 * [MiST](https://github.com/mist-devel/mist-board/wiki)
 * [MiSTer](https://github.com/MiSTer-devel/Main_MiSTer/wiki)
 * [SiDi](https://github.com/ManuFerHi/SiDi-FPGA/wiki)
+* [neptUNO](https://www.antoniovillena.es/store/product/neptuno/)
+* [MultiCore 2(+)](https://gitlab.com/victor.trucco/Multicore_Bitstreams/-/tree/master/)
 
-## MiST & SiDi
-For these systems you can generate ROMs using batch files or the MRA-to-rom file converter. Note that you have to rename the RBF files in order to remove the timestamp. For instance:
+## MiST & related systems (SiDi, MultiCore 2(+) & Neptuno)
 
-`jt1942_20200728.rbf` ➜  `jt1942.rbf`
+For these systems you can generate ROMs using the MRA-to-rom file converter. The *README* file for each core can be found under the MiSTer folder or in the original repository.
 
-20200728 is the timestamp and stands for 28th of July 2020.
+If you want to access older versions of a file, use GitHub inherent control version capabilities.
 
 ## MiSTer
 
@@ -28,11 +29,12 @@ Normally each repository covers for many arcade games that share identical or si
 FPGA Core           | Source code
 --------------------|--------------------------
 CAPCOM CPS0         | https://www.github.com/jotego/jt_gng
-CAPCOM CPS1         | https://www.github.com/jotego/jtcps1
+CAPCOM CPS1/1.5/2   | https://www.github.com/jotego/jtcps1
 Double Dragon       | https://www.github.com/jotego/jtdd
 Popeye              | https://www.github.com/jotego/jtpopeye
 Contra              | https://www.github.com/jotego/jtcontra
 Bubble Bobble       | https://www.github.com/jotego/jtbubl
+System 16           | https://www.github.com/JTFPGA/jts16
 
 If you are a developer, don't miss these cores too:
 
