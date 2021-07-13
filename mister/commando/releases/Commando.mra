@@ -82,5 +82,5 @@
         <dip name="Flip Screen" bits="13" ids="Off,On"/>
         <dip name="Cabinet" bits="14,15" ids="Upright 1P,Upright 2P,Cocktail"/>
     </switches>
-    <buttons names="Machine Gun,Hand Grenade,Start,Coin,Pause" default="A,B,R,L,Start" count="2"/>
+    <buttons names="Fire Button,Grenade Button,Start,Coin,Pause" default="A,B,R,L,Start" count="2"/>
 </misterromdescription>

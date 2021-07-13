@@ -72,5 +72,5 @@
 		<dip name="Flip Screen" bits="16" ids="On,Off"/>
 		<dip name="Service Mode" bits="18" ids="On,Off"/>
 	</switches>
-	<buttons names="Fire,Jump,Start,Coin,Pause" default="A,B,R,L,Start"/>
+	<buttons names="Shoot/Attack,Jump,Start,Coin,Pause" default="A,B,R,L,Start"/>
 </misterromdescription>
