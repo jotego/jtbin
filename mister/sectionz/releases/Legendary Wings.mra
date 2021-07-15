@@ -63,5 +63,5 @@
         <dip name="Allow Continue" bits="12" ids="No,Yes"></dip>
         <dip name="Bonus Life" bits="13,15" ids="None,30k/60k,30k/80k,20k/60k,40k/10k0,20k/70k,30k/70k,20k/50k"></dip>
     </switches>
-    <buttons names="Shot,Bomb,Start,Coin,Pause" default="A,B,R,L,Start"/>
+    <buttons names="Fire,Missile/Jump,Start,Coin,Pause" default="A,B,R,L,Start"/>
 </misterromdescription>
