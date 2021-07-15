@@ -42,6 +42,6 @@
         <dip name="Level" bits="13,14" ids="Hard,Very Easy,Easy,Normal"></dip>
         <dip name="Allow Continue" bits="15" ids="No,Yes"></dip>
     </switches>
-    <buttons names="Fire,Jump,Start,Coin,Pause" 
+    <buttons names="Attack,Jump,Start,Coin,Pause" 
         default="A,B,R,L,Start"/>
 </misterromdescription>

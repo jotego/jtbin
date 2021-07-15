@@ -54,6 +54,6 @@
         <dip name="Bonus Life" bits="12,14" ids="None,10k 70k,20k 80k,10k 50k,30k 70k,10k 60k,20k 70k,20k 60k"></dip>
         <dip name="Cabinet" bits="15" ids="Upright,Cocktail"></dip>
     </switches>
-   	<buttons names="Shot,Missile,Start,Coin,Pause" 
+   	<buttons names="Fire,Missile,Start,Coin,Pause" 
         default="A,B,R,L,Start"/>
 </misterromdescription>

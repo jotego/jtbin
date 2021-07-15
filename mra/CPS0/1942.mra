@@ -54,6 +54,6 @@
         <dip name="Level" bits="13,14" ids="Very Hard,Difficult,Easy,Normal"></dip>
         <dip name="Screen Stop" bits="15" ids="On,Off"></dip>
     </switches>
-    <buttons names="Shot,Loop,Start,Coin,Pause" 
+    <buttons names="Fire,Loop,Start,Coin,Pause" 
         default="A,B,R,L,Start"/>
 </misterromdescription>
