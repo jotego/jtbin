@@ -49,7 +49,7 @@
     </rom>
     <!-- horizontal screen -->
     <rom index="1"><part> 00 </part></rom>
-    <buttons names="Fire,Turn around,Start,Coin,Pause" default="A,B,R,L,Start"/>
+    <buttons names="Fire,Direction,Start,Coin,Pause" default="A,B,R,L,Start"/>
     <switches page_id="1" page_name="Switches" default="FF,FE" base="0x10">
         <!-- A -->
         <dip bits="0"   name="Service Mode" ids="On,Off"/>

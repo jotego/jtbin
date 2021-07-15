@@ -108,5 +108,5 @@
         <dip name="Allow Continue" bits="14" ids="No,Yes"/>
         <dip name="Demo Sounds" bits="15" ids="Off,On"/>
     </switches>
-    <buttons names="Fire-left,Fire-right,Option,Start,Coin,Pause" default="Y,X,B,R,L,Start"/>
+    <buttons names="Fire-Left,Fire-Right,Power,Start,Coin,Pause" default="Y,X,B,R,L,Start"/>
 </misterromdescription>
