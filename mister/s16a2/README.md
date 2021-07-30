@@ -10,6 +10,19 @@ Some of the features needed for the rest of the games are already implemented bu
 
 Encrypted games don't work on the J68 CPU.
 
+## Missing Features
+
+This is the remaining to-do list
+
+**System 16A**
+-Column scroll
+-Video/audio disable bits
+
+**System 16B**
+-Row and column scroll
+-Alternate scroll layers (registers and tile/char info)
+-Sprite scaling
+
 ## System 16A
 
 Game           |  System            | Status
@@ -96,7 +109,9 @@ System                   |  Core
 16A no protection/FD1089 | jts16
 16A with MCU support     | jts16a1
 16A FD1094 protection    | jts16a2
-16B                      | jts16b
+16B FD1094               | jts16b
+16B FD1089               | jts16b1
+16B i8751                | jts16b2
 
 # PCB Check List
 
@@ -183,72 +198,76 @@ Apart from the directors and supported shown in the core credits screen,
 the following patrons also supported the development of JTS16:
 
                      80's spaceman        Adam Small           Adam Zorzin
-Adam is              Adan Jacquez         Adrian Labastida     Adrian Nabarro
-Alan Shurvinton      Alexander Lash       Alexander Upton      Alfonso Clemente
-Alonso J.            Alvaro Paniagua      Andrea Chiavazza     Andreas Micklei
-Andrew Boudreau      Andrew Schmidt       Angelo Kanaris       Anthony Monaco
-Anton Gale           Antwon               Aquijacks (Flashjacks Aqy
-Arend Pronk          Arthur Blough        Arthur Fung          BRCDEvg
-Banane               Bear S               Ben Toman            Bitmap Bureau
-Bitmaps Retro        Bliz 452             Brandon Peach        Brandon Smith
-Brandon Thomas       Brent Fraser         Brian Peek           Brian Plummer
-Bruno Freitas        Bruno M              C                    Cameron Tinker
-Carrboroman          Cesar Sandoval       Charles              Chris Chung
-Chris Mzhickteno     Chris Tuckwell       Chris W              Chris smith
-Christian Bailey     Clinton Cronin       Cobra Clips          Coldheat007
-Colin Colehour       Colt83               DARK WEB             Dan Doyle
-Daniel               Daniel Casadevall    Daniel Fowler        Daniel Page
-Daniel Zetterman     Darren Wootton       Dasutin              David Drury
-David Filskov        David Fleetwood      David Jones          Denis Brækhus
-Diana Carolina       Dimitris Zongas      DrMnike              Dre137
-Eric J               Eric Schlappi        Eric Walklet         Federico
-Five Year            Florian Raoult       Focux                Gluthecat
-GohanX               Gonzalo Lopez        Goolio               Greg
-Gregory Val          HFSPlay              Handheld Obsession   Henry
-Ibrahim              ItsBobDudes          JOSE LUIS            JR
-Jack Sammons         Jacob Hoffman        Jacob Lawter         James B
-James Dingo          James Kilgore        Javier Rodas         Jeff Roberts
-Jeremy Hasse         Jerry Suggs          Jesse Clark          Jesus Rodriguez
-Jim Knowler          Jockel               Johan Smolinski      John Figueroa
-John Fletcher        John Hood            John Silva           John T.
-John Wilson          Jonah Phillips       Jonathan Brochu      Jonathan Loor
-Jonathan Tuttle      Jootec from          Jorge                Jork Sonkinfield
+Adrian Labastida     Adrian Nabarro       Alan Shurvinton      Alexander Lash
+Alexander Upton      Alfonso Clemente     Alonso J.            Alvaro Paniagua
+Andrea Chiavazza     Andreas Micklei      Andrew Boudreau      Andrew Schmidt
+Angelo Kanaris       Anthony Monaco       Antoine Mariette     Anton Gale
+Antwon               Aquijacks            Aqy                  Arend Pronk
+Arthur Blough        Arthur Fung          BRCDEvg              Banane
+Bear S               Ben Toman            Bitmap Bureau        Bitmaps Retro
+Bliz 452             Brandon Peach        Brandon Smith        Brandon Thomas
+Brent Fraser         Brian Peek           Brian Plummer        Bruno Freitas
+Bruno M              C                    Cameron Tinker       Carrboroman
+Cesar Sandoval       Charles              Chris Chung          Chris Mzhickteno
+Chris Tuckwell       Chris W              Chris smith          Christian Bailey
+Clinton Cronin       Cobra Clips          Coldheat007          Colin Colehour
+Colt83               DARK WEB             Dan Doyle            Daniel
+Daniel Casadevall    Daniel Fowler        Daniel Page          Daniel Zetterman
+Darren Wootton       Dasutin              David Drury          David Filskov
+David Fleetwood      David Jones          Denis Brækhus        Diana Carolina
+Dimitris Zongas      Dr Catjail           DrMnike              Dre137
+Eren Kotan           Eric J               Eric Schlappi        Eric Walklet
+Federico             Five Year            Florian Raoult       Focux
+GeorgeSpinner        Gluthecat            GohanX               Gonzalo Lopez
+Goolio               Greg                 Gregory Val          HFSPlay
+Handheld Obsession   Henry                Ibrahim              ItsBobDudes
+JOSE LUIS            JR                   Jack Sammons         Jacob Hoffman
+Jacob Lawter         James B              James Dingo          James Kilgore
+Javier Rodas         Jeff Roberts         Jeremy Hasse         Jerry Suggs
+Jesse Clark          Jesus Rodriguez      Jim Knowler          Jimmy Dozier
+Jockel               Johan Smolinski      John Figueroa        John Fletcher
+John Hood            John Silva           John T.              John Wilson
+Jonah Phillips       Jonathan Brochu      Jonathan Loor        Jonathan Tuttle
+Jootec from          Jorge                Jork Sonkinfield     Joseph Kulinski
 Joseph Milazzo       Joseph Mogavero      Josh Emery           Josh Mayer
 Josiah Wilson        Justin D'Arcangelo   Kai Cherry           Keith Gordon
 Kem Yos              Ken Scott            Kendrick Hughes      Kevin Gudgeirsson
 KnC                  KrzysFR              L.Rapter             LFT
 Laurent Cooper       Lee Grocott          Lee Osborne          Luc JOLY
-Mack H               Magnus Kvevlander    Manuel Astudillo     Marco Emparan
-Mark Baffa           Mark Davidson        Mark R               MarthSR
-Martin Ansin         Matheus              Matsu                Matt Elder
+MaDDoG               Mack H               Magnus Kvevlander    Manuel Astudillo
+Marco Emparan        Mark Baffa           Mark Davidson        Mark R
+MarthSR              Martin Ansin         Matheus              Matt Elder
 Matt Evans           Matt Lichtenberg     Matt McCarthy        Matt ODonnell
 Matthew Humphrey     Matthew Woodford     MechaGG              Megan Alnico
-MiSTerFPGA.co.uk     Michael Anderson     Michael Berger       Michael C
-Michael Deshaies     Michael Rea          Mick Stone           Mike Holzinger
-Mike Jegenjan        Mike Olson           Mike Parks           Mottzilla
-NINE                 Nailbomb             Narugawa             Neil St
-NerdyNester          Nick Delia           Nick G               Nico Stamp
-Nicolas Hurtado      NonstopXiaowei       OopsAllBerrys        Oriez
-Oskar Sigvardsson    Parker Blackman      Patrick Roman        Paul Cunningham
-Paul M               Paulo M.             PeFClic              Per Ole
-Philip Lai           Philip Lawson        Piafoman             Pierre-Emmanuel Martin
-Pontus Nyholm        Rachael Netz         Rachel Schaeffer     RandomRetro
-Raph_friend          Raphael Melgar       RayGun               RetroRGB
-Richard Eng          Richard Murillo      Richard Simpson      Rick Ochoa
-Ronald Dean          Roro                 Ryan                 Ryan O'Malley
-Sam Hall             Samuel Warner        Schnookums           Sofia Rose
-Spank Minister       SteelRush            Stefan Krueger       Stephen R
-Steve Ikeguchi       Steve Skrzyniarz     Steven Hansen        Steven Yedwab
-Stuart Morton        SuperBabyHix         Taehyun Kim          Tales Dilli
-Tatton Partington    TealShark            Terse                The Collector
-The Video            Thomas Attanasio     Thomas Capetanakis   Thomas Irwin
-Tobias Dossin        Travis Brown         Trifle               Turboman UK
-Ty B                 VickiViperZabel      Victor Bly           Victor Fontanez
-Will Abbott          William Clemens      Yunus Soğukkanlı     Zach Marquette
-Zoltan Kovacs        albertprime          alejandro carlos     arcadebros
-blackwine            brian burney         cbab                 dannahan
-datajerk             deathwombat          derFunkenstein       gunmakuma
-joshewah777          juan jesus           kccheng              kernelchagi
-liphy                natalie              nonamebear           retrod00d
-rsn8887              scapeghost           slayer213            taal.M
-tonitellezb          troy coberly         yoaarond             종규 박
+Michael Anderson     Michael Berger       Michael C            Michael Deshaies
+Michael Rea          Mick Stone           Mike Holzinger       Mike Jegenjan
+Mike Olson           Mike Parks           Mottzilla            NINE
+Nailbomb             Narugawa             Neil St              NerdyNester
+Nick Delia           Nick G               Nico Stamp           Nicolas Hurtado
+Niko                 NonstopXiaowei       Norman Wehrle        OopsAllBerrys
+Oriez                Oskar Sigvardsson    Parker Blackman      Patrick Roman
+Paul Cunningham      Paul M               Paulo M.             Paweł Mandes
+PeFClic              Per Ole              Philip Lai           Philip Lawson
+Piafoman             Pierre-Emmanuel M.   Pontus Nyholm        Rachael Netz
+Rachel Schaeffer     RandomRetro          Raph_friend          Raphael Melgar
+RayGun               RetroRGB             Richard Eng          Richard Murillo
+Richard Simpson      Rick Ochoa           Romain Dijoux        Ronald Dean
+Ronan Amicel         Roro                 Ryan                 Ryan O'Malley
+Sam Hall             Samuel Warner        Schnookums           Sentient Beard
+Sofia Rose           Spank Minister       SteelRush            Stefan Krueger
+Stephen R            Steve Ikeguchi       Steve Skrzyniarz     Steven Hansen
+Steven Yedwab        Stuart Morton        SuperBabyHix         Taehyun Kim
+Tales Dilli          Tatton Partington    TealShark            Terse
+The Collector        The Video            TheLevelOfDetail     Thomas Attanasio
+Thomas Capetanakis   Thomas Irwin         Timothy Bearup       Tobias Dossin
+Travis Brown         Trifle               Turboman UK          Ty B
+VickiViperZabel      Victor Bly           Victor Fontanez      Will Abbott
+William Clemens      Yunus Soğukkanlı     Zach Marquette       Zoltan Kovacs
+albertprime          alejandro carlos     angel_killah         arcadebros
+benedict lindley     blackwine            brian burney         cbab
+chauviere benjamin   dannahan             datajerk             deathwombat
+derFunkenstein       gunmakuma            joshewah777          juan jesus
+kccheng              kernelchagi          liphy                natalie
+nonamebear           qzxcvbn              retrod00d            rsn8887
+scapeghost           slayer213            taal.M               tonitellezb
+troy coberly         yoaarond             종규 박

@@ -21,82 +21,82 @@
 
 <misterromdescription>
     <about author="jotego" webpage="https://patreon.com/topapate" source="https://github.com/jotego" twitter="@topapate"/>
-    <name>Alien Syndrome (Set 1, Japan, S16A) [FD1089A 317-0033]</name>
-    <setname>aliensynjo</setname>
-    <rbf>jts16</rbf>
+    <name>Alien Syndrome (set 3, System 16B, FD1089A 317-0033)</name>
+    <setname>aliensyn3</setname>
+    <rbf>jts16b1</rbf>
     <mameversion>0232</mameversion>
     <year>1987</year>
     <manufacturer>Sega</manufacturer>
     <players>2</players>
     <joystick>8</joystick>
     <rotation>horizontal</rotation>
-    <region>Japan</region>
-    <category>Run &amp; Gun</category>
-    <catver>Maze/Shooter Large</catver>
-    <platform>Sega S16A</platform>
+    <region>World</region>
     <mraauthor>jotego,atrac17</mraauthor>
-    <rom index="0" zip="aliensynjo.zip|aliensyn.zip" md5="None">
+    <rom index="0" zip="aliensyn3.zip|aliensyn.zip" md5="None">
         <part>
-            04 00 04 80 08 80 10 00
-            18 00 18 20 18 40 18 61
-            01 00 00 00 00 00 00 00
             00 00 00 00 00 00 00 00
+            00 00 00 00 00 00 00 00
+            01 00 00 00 00 00 00 00
+            11 00 00 00 00 00 00 00
         </part>
         <!-- maincpu - starts at 0x0 -->
         <interleave output="16">
-            <part name="epr-10696.26" crc="d734f19f" map="01"/>
-            <part name="epr-10699.43" crc="3fd38d17" map="10"/>
+            <part name="epr-10814.a1" crc="4cd134df" map="01"/>
+            <part name="epr-10816.a4" crc="17bf5304" map="10"/>
         </interleave>
         <interleave output="16">
-            <part name="epr-10697.25" crc="f2bc123d" map="01"/>
-            <part name="epr-10700.42" crc="3b04b252" map="10"/>
+            <part name="epr-10815.a2" crc="bdcf4a30" map="01"/>
+            <part name="epr-10817.a5" crc="c8b791b0" map="10"/>
         </interleave>
         <interleave output="16">
-            <part name="epr-10698.24" crc="c1e4fdc0" map="01"/>
-            <part name="epr-10701.41" crc="92171751" map="10"/>
+            <part name="epr-10819a.a3" crc="1e7586b7" map="01"/>
+            <part name="epr-10822a.a6" crc="1d0790aa" map="10"/>
         </interleave>
-        <part repeat="0x10000"> FF</part>
-        <!-- soundcpu - starts at 0x40000 -->
-        <part name="epr-10705.12" crc="777b749e"/>
-        <!-- n7751data - starts at 0x48000 -->
-        <part name="epr-10706.1" crc="aa114acc"/>
-        <part name="epr-10707.2" crc="800c1d82"/>
-        <part name="epr-10708.4" crc="5921ef52"/>
-        <part repeat="0x28000"> FF</part>
-        <!-- gfx1 - starts at 0x88000 -->
+        <part repeat="0x50000"> FF</part>
+        <!-- soundcpu - starts at 0x80000 -->
+        <part name="epr-10723.a7" crc="99953526"/>
+        <part repeat="0x8000"> FF</part>
+        <part name="epr-10724.a8" crc="f971a817"/>
+        <part repeat="0x8000"> FF</part>
+        <part name="epr-10725.a9" crc="6a50e08f"/>
+        <part repeat="0x8000"> FF</part>
+        <part name="epr-10726.a10" crc="d50b7736"/>
+        <part repeat="0x88000"> FF</part>
+        <!-- gfx1 - starts at 0x140000 -->
         <interleave output="32">
-            <part name="epr-10739.95" crc="a29ec207" map="0001"/>
-            <part name="epr-10740.94" crc="47f93015" map="0010"/>
-            <part name="epr-10741.93" crc="4970739c" map="0100"/>
-            <part name="epr-10741.93" crc="4970739c" map="1000"/>
+            <part name="epr-10702.b9" crc="393bc813" map="0001"/>
+            <part name="epr-10703.b10" crc="6b6dd9f5" map="0010"/>
+            <part name="epr-10704.b11" crc="911e7ebc" map="0100"/>
+            <part name="epr-10704.b11" crc="911e7ebc" map="1000"/>
         </interleave>
-        <part repeat="0x38000"> FF</part>
-        <!-- sprites - starts at 0x100000 -->
+        <part repeat="0xC0000"> FF</part>
+        <!-- sprites - starts at 0x240000 -->
         <interleave output="16">
-            <part name="epr-10709.10" crc="addf0a90" map="01"/>
-            <part name="epr-10713.11" crc="ececde3a" map="10"/>
-        </interleave>
-        <interleave output="16">
-            <part name="epr-10710.17" crc="992369eb" map="01"/>
-            <part name="epr-10714.18" crc="91bf42fb" map="10"/>
+            <part name="epr-10709.b1" crc="addf0a90" map="01"/>
+            <part name="epr-10713.b5" crc="ececde3a" map="10"/>
         </interleave>
         <interleave output="16">
-            <part name="epr-10711.23" crc="29166ef6" map="01"/>
-            <part name="epr-10715.24" crc="a7c57384" map="10"/>
+            <part name="epr-10710.b2" crc="992369eb" map="01"/>
+            <part name="epr-10714.b6" crc="91bf42fb" map="10"/>
         </interleave>
         <interleave output="16">
-            <part name="epr-10712.29" crc="876ad019" map="01"/>
-            <part name="epr-10716.30" crc="40ba1d48" map="10"/>
+            <part name="epr-10711.b3" crc="29166ef6" map="01"/>
+            <part name="epr-10715.b7" crc="a7c57384" map="10"/>
         </interleave>
-        <!-- mcu - starts at 0x180000 -->
+        <interleave output="16">
+            <part name="epr-10712.b4" crc="876ad019" map="01"/>
+            <part name="epr-10716.b8" crc="40ba1d48" map="10"/>
+        </interleave>
+        <part repeat="0x180000"> FF</part>
+        <!-- mcu - starts at 0x440000 -->
         <part repeat="0x1000"> FF</part>
         <part repeat="0x1000"> FF</part>
-        <!-- maincpu:key - starts at 0x182000 -->
+        <!-- maincpu:key - starts at 0x442000 -->
         <part name="317-0033.key" crc="68bb7745"/>
-        <!-- n7751 - starts at 0x184000 -->
-        <part name="7751.bin" crc="6a9534fc"/>
-        <part repeat="0x1C00"> FF</part>
-        <!-- FD1089 base table starts at 0x186000 -->
+        <part repeat="0x4000"> FF</part>
+        <!-- soundcpu:key - starts at 0x448000 -->
+        <part repeat="0x2000"> FF</part>
+        <!-- FD1089 base table starts at 0x44A000 -->
         <part>
             00 1C 76 6A 5E 42 24 38 4B 67 AD 81 E9 C5 03 2F
             45 69 AF 83 E7 CB 01 2D 02 1E 78 64 5C 40 2A 36
@@ -115,7 +115,7 @@
             12 0E 68 74 E2 FE 94 88 65 49 8F A3 99 B5 7F 53
             35 19 D3 FF C9 E5 23 0F BE A2 C8 D4 4E 52 34 28
         </part>
-        <!-- Total 0x186100 bytes - 1560 kBytes -->
+        <!-- Total 0x44A100 bytes - 4392 kBytes -->
     </rom>
     <rom index="16" zip="jtbeta.zip|beta.zip" md5="None">
         <part name="beta.bin"/>
@@ -125,12 +125,12 @@
     </rom>
     <switches base="16" default="ff,fd">
         <!-- DSW1 -->
-        <dip name="Coin A" bits="0,3" ids="Free Play or 1/1,1/1 2/3,1/1 4/5,1/1 5/6,2/1 4/3,2/1 5/3 6/4,2/3,4/1,3/1,2/1,1/6,1/5,1/4,1/3,1/2,1/1"/>
-        <dip name="Coin B" bits="4,7" ids="Free Play or 1/1,1/1 2/3,1/1 4/5,1/1 5/6,2/1 4/3,2/1 5/3 6/4,2/3,4/1,3/1,2/1,1/6,1/5,1/4,1/3,1/2,1/1"/>
+        <dip name="Coin A" bits="0,3" ids="Free Play or 1/1,1/1, 2/3,1/1, 4/5,1/1, 5/6,2/1, 4/3,2/1, 5/3, 6/4,2/3,4/1,3/1,2/1,1/6,1/5,1/4,1/3,1/2,1/1"/>
+        <dip name="Coin B" bits="4,7" ids="Free Play or 1/1,1/1, 2/3,1/1, 4/5,1/1, 5/6,2/1, 4/3,2/1, 5/3, 6/4,2/3,4/1,3/1,2/1,1/6,1/5,1/4,1/3,1/2,1/1"/>
         <!-- DSW2 -->
         <dip name="Demo Sounds" bits="9" ids="On,Off"/>
         <dip name="Lives" bits="10,11" ids="Free Play,4,2,3"/>
-        <dip name="Timer" bits="12,13" ids="150,160,170,180"/>
+        <dip name="Timer" bits="12,13" ids="120,130,140,150"/>
         <dip name="Difficulty" bits="14,15" ids="Hardest,Hard,Easy,Normal"/>
     </switches>
     <buttons names="Shot,-,-,-,Start,Coin,Core credits" default="Y,X,B,A,Start,Select,-" count="1"/>
