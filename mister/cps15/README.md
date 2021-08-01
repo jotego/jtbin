@@ -96,7 +96,7 @@ The core is compiled using jtcore from **JTFRAME**. Follow the instructions in t
 
 ```
 source setprj.sh
-jtcore cps1 -mister
+jtcore -mister
 ```
 
 This will produce the mister file.
