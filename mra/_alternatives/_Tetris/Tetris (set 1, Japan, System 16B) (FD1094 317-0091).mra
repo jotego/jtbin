@@ -72,8 +72,11 @@
         <part repeat="0x2000"> FF</part>
         <!-- Total 0x44A000 bytes - 4392 kBytes -->
     </rom>
-    <rom index="16" zip="jtbeta.zip|beta.zip" md5="None">
+    <rom index="17" zip="jtbeta.zip" md5="None">
         <part name="beta.bin"/>
+    </rom>
+    <rom index="16" zip="debug.zip" md5="None">
+        <part name="debug.bin"/>
     </rom>
     <rom index="1">
         <part>00</part>

@@ -73,6 +73,13 @@ Games using multiple SDRAM banks
 * Street Fighter
 * The Speed Rumbler
 
+Some modules identify the location of graphic bits, such as horizontal flip, with the help of a LAYOUT parameter. Here are the values:
+
+Layout  |  Game
+--------|---------
+10      | The Speed Rumbler
+11      | Exed Exes
+12      | Exed Exes (SCR2)
 
 ## Troubleshooting
 
@@ -202,12 +209,10 @@ The game itself in module jtgng_game. It is written using an arbitrary clock (ac
 
 The video output is a 256x256 screen. That is what you get from jtgng_game in a signal format that replicates the original hardware. jtgng_mist instantiates a module called jtgng_vga that converts the image to a standard VGA resolution without losing frame speed.
 
-# Simulation
-
 # Credits
 
 Jose Tejada Gomez. Twitter @topapate
-Project is hosted in http://www.github.com/jotego/jt_gng
+The project is hosted in http://www.github.com/jotego/jt_gng
 License: GPL3, you are obligued to publish your code if you use mine
 
 Special thanks to Greg Miller, Bruno Silva and Alexey Melnikov

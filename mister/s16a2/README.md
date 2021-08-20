@@ -197,26 +197,26 @@ Contact the author for special licensing needs. Otherwise follow the GPLv3 licen
 Apart from the directors and supported shown in the core credits screen,
 the following patrons also supported the development of JTS16:
 
-                     80's spaceman        Adam Small           Adam Zorzin
-Adrian Labastida     Adrian Nabarro       Alan Shurvinton      Alexander Lash
-Alexander Upton      Alfonso Clemente     Alonso J.            Alvaro Paniagua
-Andrea Chiavazza     Andreas Micklei      Andrew Boudreau      Andrew Schmidt
-Angelo Kanaris       Anthony Monaco       Antoine Mariette     Anton Gale
-Antwon               Aquijacks            Aqy                  Arend Pronk
-Arthur Blough        Arthur Fung          BRCDEvg              Banane
-Bear S               Ben Toman            Bitmap Bureau        Bitmaps Retro
-Bliz 452             Brandon Peach        Brandon Smith        Brandon Thomas
-Brent Fraser         Brian Peek           Brian Plummer        Bruno Freitas
-Bruno M              C                    Cameron Tinker       Carrboroman
-Cesar Sandoval       Charles              Chris Chung          Chris Mzhickteno
-Chris Tuckwell       Chris W              Chris smith          Christian Bailey
-Clinton Cronin       Cobra Clips          Coldheat007          Colin Colehour
-Colt83               DARK WEB             Dan Doyle            Daniel
-Daniel Casadevall    Daniel Fowler        Daniel Page          Daniel Zetterman
-Darren Wootton       Dasutin              David Drury          David Filskov
-David Fleetwood      David Jones          Denis Brækhus        Diana Carolina
-Dimitris Zongas      Dr Catjail           DrMnike              Dre137
-Eren Kotan           Eric J               Eric Schlappi        Eric Walklet
+                     "PSA New             80's spaceman        Adam Leslie
+Adam Small           Adam Zorzin          Adrian Labastida     Adrian Nabarro
+Alan Shurvinton      Alexander Lash       Alexander Upton      Alfonso Clemente
+Alvaro Paniagua      Andrea Chiavazza     Andreas Micklei      Andrew Boudreau
+Andrew Hannan        Andrew P             Andrew Schmidt       Angelo Kanaris
+Anthony Monaco       Antoine Mariette     Anton Gale           Antwon
+Aquijacks (Flashjacks Arend Pronk          Arthur Blough        Arthur Fung
+BRCDEvg              Banane               Bear S               Ben Toman
+Bitmap Bureau        Bitmaps Retro        Bliz 452             Brandon Peach
+Brandon Smith        Brandon Thomas       Brent Fraser         Brian Peek
+Brian Plummer        Bruno Freitas        Bruno M              C
+Cameron Tinker       Carrboroman          Cesar Sandoval       Charles
+Chris Chung          Chris Mzhickteno     Chris Tuckwell       Chris W
+Chris smith          Christian Bailey     Clinton Cronin       Cobra Clips
+Colin Colehour       Colt83               DARK WEB             Dan Doyle
+Daniel               Daniel Casadevall    Daniel Fowler        Daniel Page
+Daniel Zetterman     Darren Wootton       Dasutin              David Drury
+David Filskov        David Fleetwood      David Jones          Denis Brækhus
+Diana Carolina       Dimitris Zongas      Dr Catjail           DrMnike
+Dre137               Eren Kotan           Eric J               Eric Schlappi
 Federico             Five Year            Florian Raoult       Focux
 GeorgeSpinner        Gluthecat            GohanX               Gonzalo Lopez
 Goolio               Greg                 Gregory Val          HFSPlay
@@ -228,46 +228,46 @@ Jesse Clark          Jesus Rodriguez      Jim Knowler          Jimmy Dozier
 Jockel               Johan Smolinski      John Figueroa        John Fletcher
 John Hood            John Silva           John T.              John Wilson
 Jonah Phillips       Jonathan Brochu      Jonathan Loor        Jonathan Tuttle
-Jootec from          Jorge                Jork Sonkinfield     Joseph Kulinski
-Joseph Milazzo       Joseph Mogavero      Josh Emery           Josh Mayer
-Josiah Wilson        Justin D'Arcangelo   Kai Cherry           Keith Gordon
-Kem Yos              Ken Scott            Kendrick Hughes      Kevin Gudgeirsson
-KnC                  KrzysFR              L.Rapter             LFT
-Laurent Cooper       Lee Grocott          Lee Osborne          Luc JOLY
-MaDDoG               Mack H               Magnus Kvevlander    Manuel Astudillo
-Marco Emparan        Mark Baffa           Mark Davidson        Mark R
-MarthSR              Martin Ansin         Matheus              Matt Elder
-Matt Evans           Matt Lichtenberg     Matt McCarthy        Matt ODonnell
-Matthew Humphrey     Matthew Woodford     MechaGG              Megan Alnico
-Michael Anderson     Michael Berger       Michael C            Michael Deshaies
-Michael Rea          Mick Stone           Mike Holzinger       Mike Jegenjan
-Mike Olson           Mike Parks           Mottzilla            NINE
-Nailbomb             Narugawa             Neil St              NerdyNester
-Nick Delia           Nick G               Nico Stamp           Nicolas Hurtado
-Niko                 NonstopXiaowei       Norman Wehrle        OopsAllBerrys
-Oriez                Oskar Sigvardsson    Parker Blackman      Patrick Roman
-Paul Cunningham      Paul M               Paulo M.             Paweł Mandes
-PeFClic              Per Ole              Philip Lai           Philip Lawson
-Piafoman             Pierre-Emmanuel M.   Pontus Nyholm        Rachael Netz
-Rachel Schaeffer     RandomRetro          Raph_friend          Raphael Melgar
+Joost Peters         Jootec from          Jorge                Jork Sonkinfield
+Joseph Kulinski      Joseph Milazzo       Joseph Mogavero      Josh Emery
+Josh Mayer           Josiah Wilson        Justin D'Arcangelo   Kai Cherry
+Keith Gordon         Kem Yos              Ken Scott            Kendrick Hughes
+Kevin Gudgeirsson    KnC                  KrzysFR              L.Rapter
+LFT                  Laurent Cooper       Lee Grocott          Lee Osborne
+Luc JOLY             MaDDoG               Mack H               Madox
+Magnus Kvevlander    Manuel Astudillo     Marco Emparan        Mark Baffa
+Mark Davidson        MarthSR              Martin Ansin         Matheus
+Matt Elder           Matt Evans           Matt Lichtenberg     Matt McCarthy
+Matt ODonnell        Matthew Humphrey     Matthew Woodford     MechaGG
+Megan Alnico         Michael Anderson     Michael Berger       Michael C
+Michael Deshaies     Michael Rea          Mick Stone           Mike Holzinger
+Mike Jegenjan        Mike Olson           Mike Parks           Mottzilla
+NINE                 Nailbomb             Narugawa             Neil St
+NerdyNester          Nick Delia           Nick G               Nico Stamp
+Nicolas Hurtado      Niko                 NonstopXiaowei       Norman Wehrle
+OopsAllBerrys        Oriez                Oskar Sigvardsson    Parker Blackman
+Pascal Courtois      Patrick Roman        Paul Cunningham      Paul Hoggett
+Paul M               Paulo M.             Paweł Mandes         PeFClic
+Per Ole              Philip Lai           Philip Lawson        Piafoman
+Pierre-Emmanuel Martin Pontus Nyholm        Rachael Netz         Rachel Schaeffer
 RayGun               RetroRGB             Richard Eng          Richard Murillo
 Richard Simpson      Rick Ochoa           Romain Dijoux        Ronald Dean
 Ronan Amicel         Roro                 Ryan                 Ryan O'Malley
-Sam Hall             Samuel Warner        Schnookums           Sentient Beard
-Sofia Rose           Spank Minister       SteelRush            Stefan Krueger
-Stephen R            Steve Ikeguchi       Steve Skrzyniarz     Steven Hansen
+Sam Hall             Samuel Warner        Schnookums           Shannon King
+Spank Minister       SteelRush            Stefan Krueger       Stephen R
+Steve Ikeguchi       Steve Skrzyniarz     Steve Tack           Steven Hansen
 Steven Yedwab        Stuart Morton        SuperBabyHix         Taehyun Kim
-Tales Dilli          Tatton Partington    TealShark            Terse
-The Collector        The Video            TheLevelOfDetail     Thomas Attanasio
-Thomas Capetanakis   Thomas Irwin         Timothy Bearup       Tobias Dossin
-Travis Brown         Trifle               Turboman UK          Ty B
-VickiViperZabel      Victor Bly           Victor Fontanez      Will Abbott
-William Clemens      Yunus Soğukkanlı     Zach Marquette       Zoltan Kovacs
-albertprime          alejandro carlos     angel_killah         arcadebros
-benedict lindley     blackwine            brian burney         cbab
-chauviere benjamin   dannahan             datajerk             deathwombat
-derFunkenstein       gunmakuma            joshewah777          juan jesus
-kccheng              kernelchagi          liphy                natalie
-nonamebear           qzxcvbn              retrod00d            rsn8887
-scapeghost           slayer213            taal.M               tonitellezb
+Taiki Hosoda         Tales Dilli          Tatton Partington    TealShark
+Terse                The Collector        The Video            TheLevelOfDetail .
+Thomas Attanasio     Thomas Capetanakis   Thomas Irwin         Timothy Bearup
+Tobias Dossin        Travis Brown         Trifle               Turboman UK
+Ty B                 VickiViperZabel      Victor Bly           Victor Fontanez
+Will Abbott          William Clemens      Yunus Soğukkanlı     Zach Marquette
+Zoltan Kovacs        albertprime          alejandro carlos     angel_killah
+arcadebros           benedict lindley     blackwine            brian burney
+cbab                 chauviere benjamin   datajerk             deathwombat
+derFunkenstein       gunmakuma            joshewah777          kamel rasennadja
+kccheng              kernelchagi          liphy                meng po
+natalie              nonamebear           qzxcvbn              retrod00d
+rsn8887              slayer213            taal.M               tonitellezb
 troy coberly         yoaarond             종규 박
