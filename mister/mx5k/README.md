@@ -128,3 +128,82 @@ You can show your appreciation through
 * Github:
 * Patreon: https://patreon.com/topapate
 * Paypal: https://paypal.me/topapate
+
+# Thanks to September 2021 Patrons
+
+80's spaceman        Adam Leslie          Adam Small           Adam Zorzin
+Adrian Labastida     Adrian Nabarro       Alan Shurvinton      Alexander Lash
+Alexander Upton      Alfonso Clemente     Alvaro Paniagua      Andrea Chiavazza
+Andreas Micklei      Andrew Boudreau      Andrew Hannan        Andrew P Gibson
+Andrew Schmidt       Angelfred            Angelo Kanaris       Anthony Monaco
+Antoine Mariette     Anton Gale           Antwon               Aquijacks (Flashjacks
+Arend Pronk          Arthur Blough        Arthur Fung          BRCDEvg
+Banane               Bear S               Ben Toman            Bitmap Bureau
+Bitmaps Retro        Bliz 452             Brandon Peach        Brandon Smith
+Brandon Thomas       Brent Fraser         Brian Peek           Brian Plummer
+Bruno M              C                    Cameron Tinker       Carrboroman
+Cesar Sandoval       Charles              Chris Chung          Chris Mzhickteno
+Chris Tuckwell       Chris W Miller       Chris smith          Christian Bailey
+Clinton Cronin       Cobra Clips          Colin Colehour       Colt83
+DARK WEB DANGer      Dan Doyle            Daniel               Daniel Casadevall
+Daniel Fowler        Daniel Page          Daniel Tibi          Daniel Zetterman
+Darren Wootton       Dasutin              David Drury          David Filskov
+David Fleetwood      David Jones          Denis Brækhus        Diana Carolina
+Didier Touron        Dimitris Zongas      Dr Catjail           DrMnike
+Dre137               Eren Kotan           Eric J Faulkes       Eric Schlappi
+Federico             Five Year Guy        Florian Raoult       Focux
+GeorgeSpinner        Gluthecat            GohanX               Gonzalo Lopez
+Goolio               Greg                 Gregory Val          HFSPlay
+Handheld Obsession   Henry                Hugo Pinto           Ibrahim
+ItsBobDudes          JOSE LUIS            JR                   Jack Sammons
+Jacob Hoffman        Jacob Lawter         James B Ross         James Dingo
+James Kilgore        Javier Rodas         Jeff Roberts         Jeremy Hasse
+Jerry Suggs          Jesse Clark          Jim Knowler          JimLahey
+Jimmy Dozier         Jockel               Johan Smolinski      John Figueroa
+John Fletcher        John Hood            John Silva           John T. Keen
+John Wilson          Jonah Phillips       Jonathan Brochu      Jonathan Loor
+Jonathan Tuttle      Joost Peters         Jootec from          Jorge
+Jork Sonkinfield     Joseph Kulinski      Joseph Milazzo       Joseph Mogavero
+Josh Emery           Josh Mayer           Josiah Wilson        Justin D'Arcangelo
+Kai Cherry           Keith Gordon         Kem Yos              Ken Scott
+Kevin Gudgeirsson    KnC                  KrzysFR              L.Rapter
+LFT                  Lakeside             Laurent Cooper       Lee Grocott
+Lee Osborne          Luc JOLY             Luis F Giron         MaDDoG
+Mack H               Madox                Magnus Kvevlander    Manuel Astudillo
+Marco Emparan        Mark Baffa           Mark Davidson        MarthSR
+Martin Ansin         Matheus              Matt Elder           Matt Evans
+Matt Lichtenberg     Matt McCarthy        Matt ODonnell        Matthew Humphrey
+Matthew Woodford     Me getting           MechaGG              Megan Alnico
+Michael Anderson     Michael Berger       Michael C            Michael Deshaies
+Michael Rea          Michael_DKT          Mick Stone           Mike Holzinger
+Mike Jegenjan        Mike Olson           Mike Parks           Mottzilla
+NINE                 Nailbomb             Narugawa             Neil St Clair
+NerdyNester          Nick Delia           Nick G               Nico Stamp
+Nicolas Hurtado      Niko                 NonstopXiaowei       Norman Wehrle
+OopsAllBerrys        Oriez                Oskar Sigvardsson    Parker Blackman
+Pascal Courtois      Patrick Roman        Paul Cunningham      Paul Hoggett
+Paul M               Paulo M.             Paweł Mandes         PeFClic
+Per Ole              Philip Lai           Philip Lawson        Piafoman
+Pierre-Emmanuel M.   Pontus Nyholm        Rachael Netz         Rachel Schaeffer
+RayGun               RetroRGB             Richard Eng          Richard Murillo
+Richard Simpson      Rick Ochoa           Robert Daniel        Romain Dijoux
+Ronald Dean          Ronan Amicel         Roro                 Ryan
+Ryan O'Malley        Sam Hall             Samuel Warner        Schnookums
+Shannon King         Spank Minister       SteelRush            Stefan Krueger
+Stephen R Price      Steve Ikeguchi       Steve Skrzyniarz     Steve Tack
+Steven Hansen        Stuart Morton        SuperBabyHix         Syrotuck
+Taehyun Kim          Taiki Hosoda         Tales Dilli          Tarnjeet Bhachu
+Tatton Partington    TealShark            Terse                The Collector
+The Video            TheLevelOfDetail .   Thomas Attanasio     Thomas Capetanakis
+Thomas Irwin         Timothy Bearup       Tobias Dossin        Tom Milner
+Travis Brown         Trifle               Turboman UK          Ty B
+VickiViperZabel      Victor Bly           Victor Fontanez      Will Abbott
+William Clemens      Yunus Soğukkanlı     Zach Marquette       Zoltan Kovacs
+albertprime          alejandro carlos     angel_killah         arcadebros
+benedict lindley     blackwine            brian burney         cbab
+chauviere benjamin   datajerk             deathwombat          derFunkenstein
+gunmakuma            joshewah777          kamel rasennadja     kccheng
+kernelchagi          liphy                meng po              natalie
+nonamebear           qzxcvbn              retrod00d            rsn8887
+slayer213            taal.M               tonitellezb          troy coberly
+yoaarond
