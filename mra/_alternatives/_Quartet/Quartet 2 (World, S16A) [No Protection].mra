@@ -102,7 +102,7 @@
         <part name="7751.bin" crc="6a9534fc"/>
         <!-- Total 0x184400 bytes - 1553 kBytes -->
     </rom>
-    <rom index="17" zip="jtbeta.zip|beta.zip" md5="None">
+    <rom index="17" zip="jtbeta.zip" md5="None">
         <part name="beta.bin"/>
     </rom>
 	    <rom index="16" zip="debug.zip" md5="None">
