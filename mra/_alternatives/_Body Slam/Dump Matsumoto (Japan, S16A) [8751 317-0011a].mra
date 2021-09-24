@@ -94,7 +94,7 @@
         </interleave>
         <part repeat="0x10000"> FF</part>
         <!-- mcu - starts at 0x180000 -->
-        <part name="317-0011a.mcu" crc=""/>
+        <part name="317-0011a.mcu"/>
         <part repeat="0x1000"> FF</part>
         <!-- maincpu:key - starts at 0x182000 -->
         <part repeat="0x2000"> FF</part>

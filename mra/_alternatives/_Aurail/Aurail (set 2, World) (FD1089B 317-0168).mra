@@ -32,7 +32,7 @@
     <rotation>horizontal</rotation>
     <region>World</region>
     <mraauthor>jotego,atrac17</mraauthor>
-    <rom index="0" zip="aurail1.zip|aurail.zip" md5="None">
+    <rom index="0" zip="aurail1.zip|aurail.zip|s16mcu_alt.zip" md5="None">
         <part>
             00 00 00 00 00 00 00 00
             00 00 00 00 00 00 00 00
