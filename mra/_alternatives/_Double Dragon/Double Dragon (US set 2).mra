@@ -59,6 +59,7 @@
 		<part crc="fdb130a9" name="21j-k-0.101"/>
 		<part crc="46339529" name="21j-l-0.16"/>
 	</rom>
+	<rom index="1"><part> 00 </part></rom>
     <switches page_id="1" page_name="Switches" default="7F,FF" base="16">
         <!-- DSW0 -->
         <dip name="Coin A" bits="0,2" ids="4/1,3/1,2/1,1/5,1/4,1/3,1/2,1/1"/>
