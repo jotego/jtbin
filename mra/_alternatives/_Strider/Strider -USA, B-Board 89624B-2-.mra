@@ -79,8 +79,8 @@
          Set bit 2 for games using 4-way joysticks -->
     <rom index="1"><part> 00 </part></rom>
 
-    <buttons names="Shot,Jump,-,-,-,Start,Coin,Pause" 
-        default="A,B,X,R,L,Start"/>
+
+    <buttons names="Attack,Jump,-,-,-,-,Start,Coin,Core credits" default="Y,XBALR,Select,Start,-" count="3"/>
     <switches page_id="1" page_name="Switches" default="FF,FF,FF" base="8">
         <dip bits="0,2"	 name="Coin A" ids="4 Coins/1 Credit,3 Coins/1 Credit,2 Coins/1 Credit,1 Coin/6 Credits,1 Coin/4 Credits,1 Coin/3 Credits,1 Coin/2 Credits,1 Coin/1 Credit"/>
         <dip bits="3,5"	 name="Coin B" ids="4 Coins/1 Credit,3 Coins/1 Credit,2 Coins/1 Credit,1 Coin/6 Credits,1 Coin/4 Credits,1 Coin/3 Credits,1 Coin/2 Credits,1 Coin/1 Credit"/>
