@@ -1,0 +1,93 @@
+<!--          FPGA compatible core for bootleg arcade hardware by Jotego
+
+              This core is available for hardware compatible with MiST and MiSTer
+              Other FPGA systems may be supported by the time you read this.
+              This work is not mantained by the MiSTer project. Please contact the
+              core author for issues and updates.
+
+              (c) Jose Tejada, 2021. Please support the author
+              Patreon: https://patreon.com/topapate
+              Paypal:  https://paypal.me/topapate
+
+              The author does not endorse or participate in illegal distribution
+              of copyrighted material. This work can be used with legally
+              obtained ROM dumps or with compatible homebrew software.
+
+              This file license is GNU GPLv2.
+              You can read the whole license file in
+              https://opensource.org/licenses/gpl-2.0.php
+
+-->
+
+<misterromdescription>
+    <about author="jotego" webpage="https://patreon.com/topapate" source="https://github.com/jotego" twitter="@topapate"/>
+    <name>X-Men: Children of the Atom (Euro 950105 Phoenix Edition) (bootleg)</name>
+    <setname>xmcotar1d</setname>
+    <rbf>jtcps2</rbf>
+    <mameversion>0229</mameversion>
+    <year>1994</year>
+    <manufacturer>bootleg</manufacturer>
+    <players>2</players>
+    <joystick>8-way</joystick>
+    <rotation>horizontal</rotation>
+    <region>Europe</region>
+    <platform>CPS-2</platform>
+    <category>Fighting</category>
+    <catver>Fighter / Versus</catver>
+    <mraauthor>jotego,atrac17</mraauthor>
+    <rom index="0" zip="xmcotar1d.zip|xmcota.zip|qsound.zip" md5="None" address="0x30000000">
+        <part>
+        00 10 00 11 00 21 00 a1 
+        ff ff ff ff ff ff ff ff 
+        32 ff 00 02 04 06 26 28 
+        2a 2c 2e 00 00 30 02 04 
+        08 30 ff ff ff ff ff ff 
+        fc ff ff ff
+        </part>
+        <!-- key - starts at 0x0 -->
+        <part name="phoenix.key" crc="2cf772b0"/>
+        <!-- maincpu - starts at 0x14 -->
+        <part name="xmned.03e" crc="bef56003"/>
+        <part name="xmned.04e" crc="b1a21fa6"/>
+        <part name="xmn.05a" crc="ac0d7759"/>
+        <part name="xmn.06a" crc="1b86a328"/>
+        <part name="xmn.07a" crc="2c142a44"/>
+        <part name="xmn.08a" crc="f712d44f"/>
+        <part name="xmn.09a" crc="9241cae8"/>
+        <part name="xmn.10a" crc="53c0eab9"/>
+        <!-- audiocpu - starts at 0x400014 -->
+        <part name="xmn.01a" crc="40f479ea"/>
+        <part name="xmn.02a" crc="39d9b5ad"/>
+        <!-- qsound - starts at 0x440014 -->
+        <interleave output="16">
+            <part name="xmn.11m" crc="c848a6bc" map="12"/>
+        </interleave>
+        <interleave output="16">
+            <part name="xmn.12m" crc="729c188f" map="12"/>
+        </interleave>
+        <!-- gfx - starts at 0x840014 -->
+        <interleave output="64">
+            <part name="xmn.13m" crc="bf4df073" map="00000021"/>
+            <part name="xmn.15m" crc="4d7e4cef" map="00002100"/>
+            <part name="xmn.17m" crc="513eea17" map="00210000"/>
+            <part name="xmn.19m" crc="d23897fc" map="21000000"/>
+        </interleave>
+        <interleave output="64">
+            <part name="xmn.14m" crc="778237b7" map="00000021"/>
+            <part name="xmn.16m" crc="67b36948" map="00002100"/>
+            <part name="xmn.18m" crc="015a7c4c" map="00210000"/>
+            <part name="xmn.20m" crc="9dde2758" map="21000000"/>
+        </interleave>
+        <!-- QSound firmware - starts at 0x2840014 -->
+        <part name="dl-1425.bin" crc="d6cf5ef5" length="0x2000"/>
+        <!-- Total 0x2842014 bytes - 41224 kBytes -->
+    </rom>
+    <rom index="1">
+        <part>00</part>
+    </rom>
+    <rom index="2">
+        <part>00 00 01 00 00 00 00 02 00 00 00 00 00 00 00 00 03 03 01 03 00 00 00 00 00 00 00 00 00 00 00 00 09 94 04 17 10 93 ff 01 4d 58 4e 45 20 20 20 20 00 00 01 00 00 00 00 02 00 00 00 00 00 00 00 00 03 03 01 03 00 00 00 00 00 00 00 00 00 00 00 00 09 94 04 17 10 93 ff 01 4d 58 4e 45 20 20 20 20 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 02 1d</part>
+    </rom>
+    <nvram index="2" size="128"/>
+    <buttons names="Light Punch,Middle Punch,Heavy Punch,Light Kick,Middle Kick,Heavy Kick,Start,Coin,Core credits" default="Y,X,B,A,L,R,Select,Start,-" count="6"/>
+</misterromdescription>

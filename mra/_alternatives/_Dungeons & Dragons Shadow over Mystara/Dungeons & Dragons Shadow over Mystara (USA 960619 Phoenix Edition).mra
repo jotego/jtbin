@@ -1,0 +1,95 @@
+<!--          FPGA compatible core for bootleg arcade hardware by Jotego
+
+              This core is available for hardware compatible with MiST and MiSTer
+              Other FPGA systems may be supported by the time you read this.
+              This work is not mantained by the MiSTer project. Please contact the
+              core author for issues and updates.
+
+              (c) Jose Tejada, 2021. Please support the author
+              Patreon: https://patreon.com/topapate
+              Paypal:  https://paypal.me/topapate
+
+              The author does not endorse or participate in illegal distribution
+              of copyrighted material. This work can be used with legally
+              obtained ROM dumps or with compatible homebrew software.
+
+              This file license is GNU GPLv2.
+              You can read the whole license file in
+              https://opensource.org/licenses/gpl-2.0.php
+
+-->
+
+<misterromdescription>
+    <about author="jotego" webpage="https://patreon.com/topapate" source="https://github.com/jotego" twitter="@topapate"/>
+    <name>
+Dungeons &amp; Dragons: Shadow over Mystara (USA 960619 Phoenix Edition) (bootleg)
+</name>
+    <setname>ddsomud</setname>
+    <rbf>jtcps2</rbf>
+    <mameversion>0229</mameversion>
+    <year>1996</year>
+    <manufacturer>bootleg</manufacturer>
+    <players>4</players>
+    <joystick>8-way</joystick>
+    <rotation>horizontal</rotation>
+    <region>USA</region>
+    <platform>CPS-2</platform>
+    <category>Beat&apos;em up</category>
+    <catver>Fighter / 2.5D</catver>
+    <mraauthor>jotego,atrac17</mraauthor>
+    <rom index="0" zip="ddsomud.zip|ddsom.zip|qsound.zip" md5="None" address="0x30000000">
+        <part>
+        00 10 00 11 00 21 00 81 
+        ff ff ff ff ff ff ff ff 
+        32 ff 00 02 04 06 26 28 
+        2a 2c 2e 00 00 30 02 04 
+        08 30 ff ff ff ff ff ff 
+        ff ff ff ff
+        </part>
+        <!-- key - starts at 0x0 -->
+        <part name="phoenix.key" crc="2cf772b0"/>
+        <!-- maincpu - starts at 0x14 -->
+        <part name="dd2ud.03g" crc="816f695a"/>
+        <part name="dd2ud.04g" crc="7cc81c6b"/>
+        <part name="dd2.05g" crc="5eb1991c"/>
+        <part name="dd2.06g" crc="c26b5e55"/>
+        <part name="dd2.07" crc="909a0b8b"/>
+        <part name="dd2.08" crc="e53c4d01"/>
+        <part name="dd2.09" crc="5f86279f"/>
+        <part name="dd2d.10" crc="0c172f8f"/>
+        <!-- audiocpu - starts at 0x400014 -->
+        <part name="dd2.01" crc="99d657e5"/>
+        <part name="dd2.02" crc="117a3824"/>
+        <!-- qsound - starts at 0x440014 -->
+        <interleave output="16">
+            <part name="dd2.11m" crc="98d0c325" map="12"/>
+        </interleave>
+        <interleave output="16">
+            <part name="dd2.12m" crc="5ea2e7fa" map="12"/>
+        </interleave>
+        <!-- gfx - starts at 0x840014 -->
+        <interleave output="64">
+            <part name="dd2.13m" crc="a46b4e6e" map="00000021"/>
+            <part name="dd2.15m" crc="d5fc50fc" map="00002100"/>
+            <part name="dd2.17m" crc="837c0867" map="00210000"/>
+            <part name="dd2.19m" crc="bb0ec21c" map="21000000"/>
+        </interleave>
+        <interleave output="64">
+            <part name="dd2.14m" crc="6d824ce2" map="00000021"/>
+            <part name="dd2.16m" crc="79682ae5" map="00002100"/>
+            <part name="dd2.18m" crc="acddd149" map="00210000"/>
+            <part name="dd2.20m" crc="117fb0c0" map="21000000"/>
+        </interleave>
+        <!-- QSound firmware - starts at 0x2040014 -->
+        <part name="dl-1425.bin" crc="d6cf5ef5" length="0x2000"/>
+        <!-- Total 0x2042014 bytes - 33032 kBytes -->
+    </rom>
+    <rom index="1">
+        <part>00</part>
+    </rom>
+    <rom index="2">
+        <part>0b 00 00 01 01 01 02 00 00 00 00 00 00 00 00 00 03 03 00 00 00 00 00 00 00 00 00 00 00 00 00 00 02 96 02 01 00 00 00 00 26 44 32 44 55 20 41 53 0b 00 00 01 01 01 02 00 00 00 00 00 00 00 00 00 03 03 00 00 00 00 00 00 00 00 00 00 00 00 00 00 02 96 02 01 00 00 00 00 26 44 32 44 55 20 41 53 00 00 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 01 0c</part>
+    </rom>
+    <nvram index="2" size="128"/>
+    <buttons names="Attack,Jump,Select,Magic,-,-,Start,Coin,Core credits" default="Y,X,B,ALR,Select,Start,-" count="4"/>
+</misterromdescription>

@@ -1,0 +1,93 @@
+<!--          FPGA compatible core for bootleg arcade hardware by Jotego
+
+              This core is available for hardware compatible with MiST and MiSTer
+              Other FPGA systems may be supported by the time you read this.
+              This work is not mantained by the MiSTer project. Please contact the
+              core author for issues and updates.
+
+              (c) Jose Tejada, 2021. Please support the author
+              Patreon: https://patreon.com/topapate
+              Paypal:  https://paypal.me/topapate
+
+              The author does not endorse or participate in illegal distribution
+              of copyrighted material. This work can be used with legally
+              obtained ROM dumps or with compatible homebrew software.
+
+              This file license is GNU GPLv2.
+              You can read the whole license file in
+              https://opensource.org/licenses/gpl-2.0.php
+
+-->
+
+<misterromdescription>
+    <about author="jotego" webpage="https://patreon.com/topapate" source="https://github.com/jotego" twitter="@topapate"/>
+    <name>Armored Warriors (Euro 941011 Phoenix Edition) (bootleg)</name>
+    <setname>armwar1d</setname>
+    <rbf>jtcps2</rbf>
+    <mameversion>0229</mameversion>
+    <year>1994</year>
+    <manufacturer>bootleg</manufacturer>
+    <players>3</players>
+    <joystick>8-way</joystick>
+    <rotation>horizontal</rotation>
+    <region>Europe</region>
+    <platform>CPS-2</platform>
+    <category>Beat&apos;em up</category>
+    <catver>Platform / Fighter Scrolling</catver>
+    <mraauthor>jotego,atrac17</mraauthor>
+    <rom index="0" zip="armwar1d.zip|armwar.zip|qsound.zip" md5="None" address="0x30000000">
+        <part>
+        00 10 00 11 00 21 00 71 
+        ff ff ff ff ff ff ff ff 
+        32 ff 00 02 04 06 26 28 
+        2a 2c 2e 00 00 30 02 04 
+        08 30 ff ff ff ff ff ff 
+        ff ff ff ff
+        </part>
+        <!-- key - starts at 0x0 -->
+        <part name="phoenix.key" crc="2cf772b0"/>
+        <!-- maincpu - starts at 0x14 -->
+        <part name="pwged.03b" crc="496bd483"/>
+        <part name="pwged.04b" crc="9bd6a38f"/>
+        <part name="pwged.05a" crc="4c11d30f"/>
+        <part name="pwg.06" crc="87a60ce8"/>
+        <part name="pwg.07" crc="f7b148df"/>
+        <part name="pwg.08" crc="cc62823e"/>
+        <part name="pwg.09" crc="ddc85ca6"/>
+        <part name="pwg.10" crc="07c4fb28"/>
+        <!-- audiocpu - starts at 0x400014 -->
+        <part name="pwg.01" crc="18a5c0e4"/>
+        <part name="pwg.02" crc="c9dfffa6"/>
+        <!-- qsound - starts at 0x440014 -->
+        <interleave output="16">
+            <part name="pwg.11m" crc="a78f7433" map="12"/>
+        </interleave>
+        <interleave output="16">
+            <part name="pwg.12m" crc="77438ed0" map="12"/>
+        </interleave>
+        <!-- gfx - starts at 0x840014 -->
+        <interleave output="64">
+            <part name="pwg.13m" crc="ae8fe08e" map="00000021"/>
+            <part name="pwg.15m" crc="db560f58" map="00002100"/>
+            <part name="pwg.17m" crc="bc475b94" map="00210000"/>
+            <part name="pwg.19m" crc="07439ff7" map="21000000"/>
+        </interleave>
+        <interleave output="64">
+            <part name="pwg.14m" crc="c3f9ba63" map="00000021"/>
+            <part name="pwg.16m" crc="815b0e7b" map="00002100"/>
+            <part name="pwg.18m" crc="0109c71b" map="00210000"/>
+            <part name="pwg.20m" crc="eb75ffbe" map="21000000"/>
+        </interleave>
+        <!-- QSound firmware - starts at 0x1C40014 -->
+        <part name="dl-1425.bin" crc="d6cf5ef5" length="0x2000"/>
+        <!-- Total 0x1C42014 bytes - 28936 kBytes -->
+    </rom>
+    <rom index="1">
+        <part>00</part>
+    </rom>
+    <rom index="2">
+        <part>01 00 01 00 03 00 07 06 00 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 94 00 20 09 41 05 4d 52 52 4f 44 45 57 20 52 41 49 52 52 4f 00 53 00 00 01 00 01 00 03 00 07 06 00 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 94 00 20 09 41 05 4d 52 52 4f 44 45 57 20 52 41 49 52 52 4f 00 53 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 05 2d</part>
+    </rom>
+    <nvram index="2" size="128"/>
+    <buttons names="Attack,Jump,Sub Weapons,-,-,-,Start,Coin,Core credits" default="Y,X,BALR,Select,Start,-" count="3"/>
+</misterromdescription>

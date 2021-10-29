@@ -1,0 +1,92 @@
+<!--          FPGA compatible core for bootleg arcade hardware by Jotego
+
+              This core is available for hardware compatible with MiST and MiSTer
+              Other FPGA systems may be supported by the time you read this.
+              This work is not mantained by the MiSTer project. Please contact the
+              core author for issues and updates.
+
+              (c) Jose Tejada, 2021. Please support the author
+              Patreon: https://patreon.com/topapate
+              Paypal:  https://paypal.me/topapate
+
+              The author does not endorse or participate in illegal distribution
+              of copyrighted material. This work can be used with legally
+              obtained ROM dumps or with compatible homebrew software.
+
+              This file license is GNU GPLv2.
+              You can read the whole license file in
+              https://opensource.org/licenses/gpl-2.0.php
+
+-->
+
+<misterromdescription>
+    <about author="jotego" webpage="https://patreon.com/topapate" source="https://github.com/jotego" twitter="@topapate"/>
+    <name>X-Men Vs. Street Fighter (USA 961004 Phoenix Edition) (bootleg)</name>
+    <setname>xmvsfu1d</setname>
+    <rbf>jtcps2</rbf>
+    <mameversion>0229</mameversion>
+    <year>1996</year>
+    <manufacturer>bootleg</manufacturer>
+    <players>2</players>
+    <joystick>8-way</joystick>
+    <rotation>horizontal</rotation>
+    <region>USA</region>
+    <platform>CPS-2</platform>
+    <category>Fighting</category>
+    <catver>Fighter / Versus</catver>
+    <mraauthor>jotego,atrac17</mraauthor>
+    <rom index="0" zip="xmvsfu1d.zip|xmvsf.zip|qsound.zip" md5="None" address="0x30000000">
+        <part>
+        00 0e 00 0f 00 1f 00 9f 
+        ff ff ff ff ff ff ff ff 
+        32 ff 00 02 04 06 26 28 
+        2a 2c 2e 00 00 30 02 04 
+        08 30 ff ff ff ff ff ff 
+        fc ff ff ff
+        </part>
+        <!-- key - starts at 0x0 -->
+        <part name="phoenix.key" crc="2cf772b0"/>
+        <!-- maincpu - starts at 0x14 -->
+        <part name="xvsud.03h" crc="4e2e76b7"/>
+        <part name="xvsud.04h" crc="290c61a7"/>
+        <part name="xvs.05a" crc="7db6025d"/>
+        <part name="xvs.06a" crc="e8e2c75c"/>
+        <part name="xvs.07" crc="08f0abed"/>
+        <part name="xvs.08" crc="81929675"/>
+        <part name="xvs.09" crc="9641f36b"/>
+        <!-- audiocpu - starts at 0x380014 -->
+        <part name="xvs.01" crc="3999e93a"/>
+        <part name="xvs.02" crc="101bdee9"/>
+        <!-- qsound - starts at 0x3C0014 -->
+        <interleave output="16">
+            <part name="xvs.11m" crc="9cadcdbc" map="12"/>
+        </interleave>
+        <interleave output="16">
+            <part name="xvs.12m" crc="7b11e460" map="12"/>
+        </interleave>
+        <!-- gfx - starts at 0x7C0014 -->
+        <interleave output="64">
+            <part name="xvs.13m" crc="f6684efd" map="00000021"/>
+            <part name="xvs.15m" crc="29109221" map="00002100"/>
+            <part name="xvs.17m" crc="92db3474" map="00210000"/>
+            <part name="xvs.19m" crc="3733473c" map="21000000"/>
+        </interleave>
+        <interleave output="64">
+            <part name="xvs.14m" crc="bcac2e41" map="00000021"/>
+            <part name="xvs.16m" crc="ea04a272" map="00002100"/>
+            <part name="xvs.18m" crc="b0def86a" map="00210000"/>
+            <part name="xvs.20m" crc="4b40ff9f" map="21000000"/>
+        </interleave>
+        <!-- QSound firmware - starts at 0x27C0014 -->
+        <part name="dl-1425.bin" crc="d6cf5ef5" length="0x2000"/>
+        <!-- Total 0x27C2014 bytes - 40712 kBytes -->
+    </rom>
+    <rom index="1">
+        <part>00</part>
+    </rom>
+    <rom index="2">
+        <part>00 09 01 00 00 00 00 02 00 00 00 00 00 00 00 00 01 07 00 01 00 00 00 02 00 00 00 00 00 00 00 00 10 96 02 04 04 96 ff 01 56 58 20 53 20 20 20 20 00 09 01 00 00 00 00 02 00 00 00 00 00 00 00 00 01 07 00 01 00 00 00 02 00 00 00 00 00 00 00 00 10 96 02 04 04 96 ff 01 56 58 20 53 20 20 20 20 00 00 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 01 03</part>
+    </rom>
+    <nvram index="2" size="128"/>
+    <buttons names="Light Punch,Middle Punch,Heavy Punch,Light Kick,Middle Kick,Heavy Kick,Start,Coin,Core credits" default="Y,X,B,A,L,R,Select,Start,-" count="6"/>
+</misterromdescription>

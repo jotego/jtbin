@@ -1,0 +1,93 @@
+<!--          FPGA compatible core for bootleg arcade hardware by Jotego
+
+              This core is available for hardware compatible with MiST and MiSTer
+              Other FPGA systems may be supported by the time you read this.
+              This work is not mantained by the MiSTer project. Please contact the
+              core author for issues and updates.
+
+              (c) Jose Tejada, 2021. Please support the author
+              Patreon: https://patreon.com/topapate
+              Paypal:  https://paypal.me/topapate
+
+              The author does not endorse or participate in illegal distribution
+              of copyrighted material. This work can be used with legally
+              obtained ROM dumps or with compatible homebrew software.
+
+              This file license is GNU GPLv2.
+              You can read the whole license file in
+              https://opensource.org/licenses/gpl-2.0.php
+
+-->
+
+<misterromdescription>
+    <about author="jotego" webpage="https://patreon.com/topapate" source="https://github.com/jotego" twitter="@topapate"/>
+    <name>Vampire Hunter 2: Darkstalkers Revenge (Japan 970913 Phoenix Edition) (bootleg)</name>
+    <setname>vhunt2d</setname>
+    <rbf>jtcps2</rbf>
+    <mameversion>0229</mameversion>
+    <year>1997</year>
+    <manufacturer>bootleg</manufacturer>
+    <players>2</players>
+    <joystick>8-way</joystick>
+    <rotation>horizontal</rotation>
+    <region>Japan</region>
+    <platform>CPS-2</platform>
+    <category>Fighting</category>
+    <catver>Fighter / Versus</catver>
+    <mraauthor>jotego,atrac17</mraauthor>
+    <rom index="0" zip="vhunt2d.zip|vhunt2.zip|qsound.zip" md5="None" address="0x30000000">
+        <part>
+        00 10 00 11 00 31 00 b1 
+        ff ff ff ff ff ff ff ff 
+        32 ff 00 02 04 06 26 28 
+        2a 2c 2e 00 00 30 02 04 
+        08 30 ff ff ff ff ff ff 
+        fc ff ff ff
+        </part>
+        <!-- key - starts at 0x0 -->
+        <part name="phoenix.key" crc="2cf772b0"/>
+        <!-- maincpu - starts at 0x14 -->
+        <part name="vh2j_d.03a" crc="696e0157"/>
+        <part name="vh2j_d.04a" crc="ced9bba3"/>
+        <part name="vh2j.05" crc="de34f624"/>
+        <part name="vh2j.06" crc="6a3b9897"/>
+        <part name="vh2j.07" crc="b021c029"/>
+        <part name="vh2j.08" crc="ac873dff"/>
+        <part name="vh2j.09" crc="eaefce9c"/>
+        <part name="vh2j.10" crc="11730952"/>
+        <!-- audiocpu - starts at 0x400014 -->
+        <part name="vh2.01" crc="67b9f779"/>
+        <part name="vh2.02" crc="aaf15fcb"/>
+        <!-- qsound - starts at 0x440014 -->
+        <interleave output="16">
+            <part name="vh2.11m" crc="38922efd" map="12"/>
+        </interleave>
+        <interleave output="16">
+            <part name="vh2.12m" crc="6e2430af" map="12"/>
+        </interleave>
+        <!-- gfx - starts at 0xC40014 -->
+        <interleave output="64">
+            <part name="vh2.13m" crc="3b02ddaa" map="00000021"/>
+            <part name="vh2.15m" crc="4e40de66" map="00002100"/>
+            <part name="vh2.17m" crc="b31d00c9" map="00210000"/>
+            <part name="vh2.19m" crc="149be3ab" map="21000000"/>
+        </interleave>
+        <interleave output="64">
+            <part name="vh2.14m" crc="cd09bd63" map="00000021"/>
+            <part name="vh2.16m" crc="e0182c15" map="00002100"/>
+            <part name="vh2.18m" crc="778dc4f6" map="00210000"/>
+            <part name="vh2.20m" crc="605d9d1d" map="21000000"/>
+        </interleave>
+        <!-- QSound firmware - starts at 0x2C40014 -->
+        <part name="dl-1425.bin" crc="d6cf5ef5" length="0x2000"/>
+        <!-- Total 0x2C42014 bytes - 45320 kBytes -->
+    </rom>
+    <rom index="1">
+        <part>00</part>
+    </rom>
+    <rom index="2">
+        <part>01 00 01 00 00 01 00 00 00 00 00 00 00 00 00 00 01 01 06 01 00 01 00 01 00 00 00 00 00 00 00 00 09 97 00 12 48 56 4a 32 41 56 50 4d 52 49 32 45 01 00 01 00 00 01 00 00 00 00 00 00 00 00 00 00 01 01 06 01 00 01 00 01 00 00 00 00 00 00 00 00 09 97 00 12 48 56 4a 32 41 56 50 4d 52 49 32 45 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 37</part>
+    </rom>
+    <nvram index="2" size="128"/>
+    <buttons names="Light Punch,Middle Punch,Heavy Punch,Light Kick,Middle Kick,Heavy Kick,Start,Coin,Core credits" default="Y,X,B,A,L,R,Select,Start,-" count="6"/>
+</misterromdescription>

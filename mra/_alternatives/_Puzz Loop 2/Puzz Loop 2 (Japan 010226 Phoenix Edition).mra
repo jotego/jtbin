@@ -1,0 +1,86 @@
+<!--          FPGA compatible core for bootleg arcade hardware by Jotego
+
+              This core is available for hardware compatible with MiST and MiSTer
+              Other FPGA systems may be supported by the time you read this.
+              This work is not mantained by the MiSTer project. Please contact the
+              core author for issues and updates.
+
+              (c) Jose Tejada, 2021. Please support the author
+              Patreon: https://patreon.com/topapate
+              Paypal:  https://paypal.me/topapate
+
+              The author does not endorse or participate in illegal distribution
+              of copyrighted material. This work can be used with legally
+              obtained ROM dumps or with compatible homebrew software.
+
+              This file license is GNU GPLv2.
+              You can read the whole license file in
+              https://opensource.org/licenses/gpl-2.0.php
+
+-->
+
+<misterromdescription>
+    <about author="jotego" webpage="https://patreon.com/topapate" source="https://github.com/jotego" twitter="@topapate"/>
+    <name>Puzz Loop 2 (Japan 010226 Phoenix Edition) (bootleg)</name>
+    <setname>pzloop2jd</setname>
+    <rbf>jtcps2</rbf>
+    <mameversion>0229</mameversion>
+    <year>2001</year>
+    <manufacturer>bootleg</manufacturer>
+    <players>2</players>
+    <joystick>8-way</joystick>
+    <rotation>horizontal</rotation>
+    <region>Japan</region>
+    <platform>CPS-2</platform>
+    <category>Puzzle</category>
+    <catver>Puzzle / Toss</catver>
+    <mraauthor>jotego,atrac17</mraauthor>
+    <rom index="0" zip="pzloop2jd.zip|pzloop2.zip|qsound.zip" md5="None" address="0x30000000">
+        <part>
+        00 08 80 08 80 18 80 58 
+        ff ff ff ff ff ff ff ff 
+        32 ff 00 02 04 06 26 28 
+        2a 2c 2e 00 00 30 02 04 
+        08 30 ff ff ff ff ff ff 
+        ff ff ff ff
+        </part>
+        <!-- key - starts at 0x0 -->
+        <part name="phoenix.key" crc="2cf772b0"/>
+        <!-- maincpu - starts at 0x14 -->
+        <part name="pl2j_d.03a" crc="1f5d41c9"/>
+        <part name="pl2j_d.04a" crc="60721b73"/>
+        <part name="pl2j_d.05a" crc="0c39799f"/>
+        <part name="pl2j_d.06a" crc="f3974d76"/>
+        <!-- audiocpu - starts at 0x200014 -->
+        <part name="pl2.01" crc="35697569"/>
+        <!-- qsound - starts at 0x220014 -->
+        <interleave output="16">
+            <part name="pl2-simm.05a" crc="85d8fbe8" map="12"/>
+        </interleave>
+        <interleave output="16">
+            <part name="pl2-simm.05b" crc="1ed62584" map="12"/>
+        </interleave>
+        <!-- gfx - starts at 0x620014 -->
+        <interleave output="64">
+            <part name="pl2-simm.01c" crc="137b13a7" map="00000001"/>
+            <part name="pl2-simm.01d" crc="a2db1507" map="00000010"/>
+            <part name="pl2-simm.01a" crc="7e80ff8e" map="00000100"/>
+            <part name="pl2-simm.01b" crc="cd93e6ed" map="00001000"/>
+            <part name="pl2-simm.03c" crc="0f52bbca" map="00010000"/>
+            <part name="pl2-simm.03d" crc="a62712c3" map="00100000"/>
+            <part name="pl2-simm.03a" crc="b60c9f8e" map="01000000"/>
+            <part name="pl2-simm.03b" crc="83fef284" map="10000000"/>
+        </interleave>
+        <!-- QSound firmware - starts at 0x1620014 -->
+        <part name="dl-1425.bin" crc="d6cf5ef5" length="0x2000"/>
+        <!-- Total 0x1622014 bytes - 22664 kBytes -->
+    </rom>
+    <rom index="1">
+        <part>00</part>
+    </rom>
+    <rom index="2">
+        <part>01 00 01 00 00 01 00 00 00 00 00 00 00 00 00 00 01 03 00 01 00 00 00 00 00 00 00 00 00 00 00 00 02 01 00 1a 4c 50 4a 32 49 4d 43 54 45 48 4c 4c 01 00 01 00 00 01 00 00 00 00 00 00 00 00 00 00 01 03 00 01 00 00 00 00 00 00 00 00 00 00 00 00 02 01 00 1a 4c 50 4a 32 49 4d 43 54 45 48 4c 4c 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00</part>
+    </rom>
+    <nvram index="2" size="128"/>
+    <buttons names="Shot,-,-,-,-,-,Start,Coin,Core credits" default="YXBALR,Select,Start,-" count="1"/>
+</misterromdescription>

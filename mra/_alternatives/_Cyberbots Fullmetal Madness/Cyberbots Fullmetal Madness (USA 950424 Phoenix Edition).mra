@@ -1,0 +1,93 @@
+<!--          FPGA compatible core for bootleg arcade hardware by Jotego
+
+              This core is available for hardware compatible with MiST and MiSTer
+              Other FPGA systems may be supported by the time you read this.
+              This work is not mantained by the MiSTer project. Please contact the
+              core author for issues and updates.
+
+              (c) Jose Tejada, 2021. Please support the author
+              Patreon: https://patreon.com/topapate
+              Paypal:  https://paypal.me/topapate
+
+              The author does not endorse or participate in illegal distribution
+              of copyrighted material. This work can be used with legally
+              obtained ROM dumps or with compatible homebrew software.
+
+              This file license is GNU GPLv2.
+              You can read the whole license file in
+              https://opensource.org/licenses/gpl-2.0.php
+
+-->
+
+<misterromdescription>
+    <about author="jotego" webpage="https://patreon.com/topapate" source="https://github.com/jotego" twitter="@topapate"/>
+    <name>Cyberbots: Fullmetal Madness (USA 950424 Phoenix Edition) (bootleg)</name>
+    <setname>cybotsud</setname>
+    <rbf>jtcps2</rbf>
+    <mameversion>0229</mameversion>
+    <year>1995</year>
+    <manufacturer>bootleg</manufacturer>
+    <players>2</players>
+    <joystick>8-way</joystick>
+    <rotation>horizontal</rotation>
+    <region>USA</region>
+    <platform>CPS-2</platform>
+    <category>Fighting</category>
+    <catver>Fighter / Versus</catver>
+    <mraauthor>jotego,atrac17</mraauthor>
+    <rom index="0" zip="cybotsud.zip|cybots.zip|qsound.zip" md5="None" address="0x30000000">
+        <part>
+        00 10 00 11 00 21 00 a1 
+        ff ff ff ff ff ff ff ff 
+        32 ff 00 02 04 06 26 28 
+        2a 2c 2e 00 00 30 02 04 
+        08 30 ff ff ff ff ff ff 
+        ff ff ff ff
+        </part>
+        <!-- key - starts at 0x0 -->
+        <part name="phoenix.key" crc="2cf772b0"/>
+        <!-- maincpu - starts at 0x14 -->
+        <part name="cybu_d.03" crc="ee7560fb"/>
+        <part name="cybu_d.04" crc="7e7425a0"/>
+        <part name="cyb.05" crc="ec40408e"/>
+        <part name="cyb.06" crc="1ad0bed2"/>
+        <part name="cyb.07" crc="6245a39a"/>
+        <part name="cyb.08" crc="4b48e223"/>
+        <part name="cyb.09" crc="e15238f6"/>
+        <part name="cyb.10" crc="75f4003b"/>
+        <!-- audiocpu - starts at 0x400014 -->
+        <part name="cyb.01" crc="9c0fb079"/>
+        <part name="cyb.02" crc="51cb0c4e"/>
+        <!-- qsound - starts at 0x440014 -->
+        <interleave output="16">
+            <part name="cyb.11m" crc="362ccab2" map="12"/>
+        </interleave>
+        <interleave output="16">
+            <part name="cyb.12m" crc="7066e9cc" map="12"/>
+        </interleave>
+        <!-- gfx - starts at 0x840014 -->
+        <interleave output="64">
+            <part name="cyb.13m" crc="f0dce192" map="00000021"/>
+            <part name="cyb.15m" crc="187aa39c" map="00002100"/>
+            <part name="cyb.17m" crc="8a0e4b12" map="00210000"/>
+            <part name="cyb.19m" crc="34b62612" map="21000000"/>
+        </interleave>
+        <interleave output="64">
+            <part name="cyb.14m" crc="c1537957" map="00000021"/>
+            <part name="cyb.16m" crc="15349e86" map="00002100"/>
+            <part name="cyb.18m" crc="d83e977d" map="00210000"/>
+            <part name="cyb.20m" crc="77cdad5c" map="21000000"/>
+        </interleave>
+        <!-- QSound firmware - starts at 0x2840014 -->
+        <part name="dl-1425.bin" crc="d6cf5ef5" length="0x2000"/>
+        <!-- Total 0x2842014 bytes - 41224 kBytes -->
+    </rom>
+    <rom index="1">
+        <part>00</part>
+    </rom>
+    <rom index="2">
+        <part>00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 03 03 00 00 00 01 00 03 01 01 00 01 00 01 04 95 02 24 59 43 20 42 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 03 03 00 00 00 01 00 03 01 01 00 01 00 01 04 95 02 24 59 43 20 42 00 00 02 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 01 31</part>
+    </rom>
+    <nvram index="2" size="128"/>
+    <buttons names="Attack 1,Attack 2,Boost,Weapon,-,-,Start,Coin,Core credits" default="Y,X,B,ALR,Select,Start,-" count="4"/>
+</misterromdescription>

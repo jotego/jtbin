@@ -1,0 +1,93 @@
+<!--          FPGA compatible core for bootleg arcade hardware by Jotego
+
+              This core is available for hardware compatible with MiST and MiSTer
+              Other FPGA systems may be supported by the time you read this.
+              This work is not mantained by the MiSTer project. Please contact the
+              core author for issues and updates.
+
+              (c) Jose Tejada, 2021. Please support the author
+              Patreon: https://patreon.com/topapate
+              Paypal:  https://paypal.me/topapate
+
+              The author does not endorse or participate in illegal distribution
+              of copyrighted material. This work can be used with legally
+              obtained ROM dumps or with compatible homebrew software.
+
+              This file license is GNU GPLv2.
+              You can read the whole license file in
+              https://opensource.org/licenses/gpl-2.0.php
+
+-->
+
+<misterromdescription>
+    <about author="jotego" webpage="https://patreon.com/topapate" source="https://github.com/jotego" twitter="@topapate"/>
+    <name>Marvel Super Heroes (US 951024 Phoenix Edition) (bootleg)</name>
+    <setname>mshud</setname>
+    <rbf>jtcps2</rbf>
+    <mameversion>0229</mameversion>
+    <year>1995</year>
+    <manufacturer>bootleg</manufacturer>
+    <players>2</players>
+    <joystick>8-way</joystick>
+    <rotation>horizontal</rotation>
+    <region>World</region>
+    <platform>CPS-2</platform>
+    <category>Fighting</category>
+    <catver>Fighter / Versus</catver>
+    <mraauthor>jotego,atrac17</mraauthor>
+    <rom index="0" zip="mshud.zip|msh.zip|qsound.zip" md5="None" address="0x30000000">
+        <part>
+        00 10 00 11 00 21 00 a1 
+        ff ff ff ff ff ff ff ff 
+        32 ff 00 02 04 06 26 28 
+        2a 2c 2e 00 00 30 02 04 
+        08 30 ff ff ff ff ff ff 
+        fc ff ff ff
+        </part>
+        <!-- key - starts at 0x0 -->
+        <part name="phoenix.key" crc="2cf772b0"/>
+        <!-- maincpu - starts at 0x14 -->
+        <part name="mshud.03" crc="c1d8c4c6"/>
+        <part name="mshud.04" crc="e73dda16"/>
+        <part name="mshud.05" crc="3b493e84"/>
+        <part name="msh.06b" crc="803e3fa4"/>
+        <part name="msh.07a" crc="c45f8e27"/>
+        <part name="msh.08a" crc="9ca6f12c"/>
+        <part name="msh.09a" crc="82ec27af"/>
+        <part name="msh.10b" crc="8d931196"/>
+        <!-- audiocpu - starts at 0x400014 -->
+        <part name="msh.01" crc="c976e6f9"/>
+        <part name="msh.02" crc="ce67d0d9"/>
+        <!-- qsound - starts at 0x440014 -->
+        <interleave output="16">
+            <part name="msh.11m" crc="37ac6d30" map="12"/>
+        </interleave>
+        <interleave output="16">
+            <part name="msh.12m" crc="de092570" map="12"/>
+        </interleave>
+        <!-- gfx - starts at 0x840014 -->
+        <interleave output="64">
+            <part name="msh.13m" crc="09d14566" map="00000021"/>
+            <part name="msh.15m" crc="ee962057" map="00002100"/>
+            <part name="msh.17m" crc="604ece14" map="00210000"/>
+            <part name="msh.19m" crc="94a731e8" map="21000000"/>
+        </interleave>
+        <interleave output="64">
+            <part name="msh.14m" crc="4197973e" map="00000021"/>
+            <part name="msh.16m" crc="438da4a0" map="00002100"/>
+            <part name="msh.18m" crc="4db92d94" map="00210000"/>
+            <part name="msh.20m" crc="a2b0c6c0" map="21000000"/>
+        </interleave>
+        <!-- QSound firmware - starts at 0x2840014 -->
+        <part name="dl-1425.bin" crc="d6cf5ef5" length="0x2000"/>
+        <!-- Total 0x2842014 bytes - 41224 kBytes -->
+    </rom>
+    <rom index="1">
+        <part>00</part>
+    </rom>
+    <rom index="2">
+        <part>00 00 01 00 00 00 00 02 00 00 00 00 00 00 00 00 03 03 01 03 00 00 00 01 00 00 00 00 00 00 00 00 10 95 02 16 10 93 ff 01 53 4d 20 48 20 20 20 20 00 00 01 00 00 00 00 02 00 00 00 00 00 00 00 00 03 03 01 03 00 00 00 01 00 00 00 00 00 00 00 00 10 95 02 16 10 93 ff 01 53 4d 20 48 20 20 20 20 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 01 13</part>
+    </rom>
+    <nvram index="2" size="128"/>
+    <buttons names="Light Punch,Middle Punch,Heavy Punch,Light Kick,Middle Kick,Heavy Kick,Start,Coin,Core credits" default="Y,X,B,A,L,R,Select,Start,-" count="6"/>
+</misterromdescription>

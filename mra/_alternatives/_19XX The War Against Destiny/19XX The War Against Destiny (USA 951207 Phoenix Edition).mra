@@ -1,0 +1,91 @@
+<!--          FPGA compatible core for bootleg arcade hardware by Jotego
+
+              This core is available for hardware compatible with MiST and MiSTer
+              Other FPGA systems may be supported by the time you read this.
+              This work is not mantained by the MiSTer project. Please contact the
+              core author for issues and updates.
+
+              (c) Jose Tejada, 2021. Please support the author
+              Patreon: https://patreon.com/topapate
+              Paypal:  https://paypal.me/topapate
+
+              The author does not endorse or participate in illegal distribution
+              of copyrighted material. This work can be used with legally
+              obtained ROM dumps or with compatible homebrew software.
+
+              This file license is GNU GPLv2.
+              You can read the whole license file in
+              https://opensource.org/licenses/gpl-2.0.php
+
+-->
+
+<misterromdescription>
+    <about author="jotego" webpage="https://patreon.com/topapate" source="https://github.com/jotego" twitter="@topapate"/>
+    <name>19XX: The War Against Destiny (USA 951207 Phoenix Edition) (bootleg)</name>
+    <setname>19xxd</setname>
+    <rbf>jtcps2</rbf>
+    <mameversion>0229</mameversion>
+    <year>1996</year>
+    <manufacturer>bootleg</manufacturer>
+    <players>2</players>
+    <joystick>8-way</joystick>
+    <rotation>vertical</rotation>
+    <region>USA</region>
+    <platform>CPS-2</platform>
+    <category>Shoot&apos;em up</category>
+    <catver>Shooter / Flying Vertical</catver>
+    <mraauthor>jotego,atrac17</mraauthor>
+    <rom index="0" zip="19xxd.zip|19xx.zip|qsound.zip" md5="None" address="0x30000000">
+        <part>
+        00 0a 80 0a 80 1a 80 5a 
+        ff ff ff ff ff ff ff ff 
+        32 ff 00 02 04 06 26 28 
+        2a 2c 2e 00 00 30 02 04 
+        08 30 ff ff ff ff ff ff 
+        ff ff ff ff
+        </part>
+        <!-- key - starts at 0x0 -->
+        <part name="phoenix.key" crc="2cf772b0"/>
+        <!-- maincpu - starts at 0x14 -->
+        <part name="19xud.03" crc="f81b60e5"/>
+        <part name="19xud.04" crc="cc44638c"/>
+        <part name="19xud.05" crc="33a168de"/>
+        <part name="19xud.06" crc="e0111282"/>
+        <part name="19x.07" crc="61c0296c"/>
+        <!-- audiocpu - starts at 0x280014 -->
+        <part name="19x.01" crc="ef55195e"/>
+        <!-- qsound - starts at 0x2A0014 -->
+        <interleave output="16">
+            <part name="19x.11m" crc="d38beef3" map="12"/>
+        </interleave>
+        <interleave output="16">
+            <part name="19x.12m" crc="d47c96e2" map="12"/>
+        </interleave>
+        <!-- gfx - starts at 0x6A0014 -->
+        <interleave output="64">
+            <part name="19x.13m" crc="427aeb18" map="00000021"/>
+            <part name="19x.15m" crc="63bdbf54" map="00002100"/>
+            <part name="19x.17m" crc="2dfe18b5" map="00210000"/>
+            <part name="19x.19m" crc="cbef9579" map="21000000"/>
+        </interleave>
+        <part repeat="0x600000"> FF</part>
+        <interleave output="64">
+            <part name="19x.14m" crc="e916967c" map="00000021"/>
+            <part name="19x.16m" crc="6e75f3db" map="00002100"/>
+            <part name="19x.18m" crc="2213e798" map="00210000"/>
+            <part name="19x.20m" crc="ab9d5b96" map="21000000"/>
+        </interleave>
+        <!-- QSound firmware - starts at 0x16A0014 -->
+        <part name="dl-1425.bin" crc="d6cf5ef5" length="0x2000"/>
+        <!-- Total 0x16A2014 bytes - 23176 kBytes -->
+    </rom>
+    <!-- Vertical game -->
+    <rom index="1">
+        <part>01</part>
+    </rom>
+    <rom index="2">
+        <part>00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 03 01 00 03 00 01 01 03 01 01 00 01 00 01 12 95 02 06 39 31 20 58 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 03 01 00 03 00 01 01 03 01 01 00 01 00 01 12 95 02 06 39 31 20 58 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 01 17</part>
+    </rom>
+    <nvram index="2" size="128"/>
+    <buttons names="Shot,Bomb,-,-,-,-,Start,Coin,Core credits" default="Y,XBALR,Select,Start,-" count="2"/>
+</misterromdescription>

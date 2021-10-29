@@ -1,0 +1,81 @@
+<!--          FPGA compatible core for bootleg arcade hardware by Jotego
+
+              This core is available for hardware compatible with MiST and MiSTer
+              Other FPGA systems may be supported by the time you read this.
+              This work is not mantained by the MiSTer project. Please contact the
+              core author for issues and updates.
+
+              (c) Jose Tejada, 2021. Please support the author
+              Patreon: https://patreon.com/topapate
+              Paypal:  https://paypal.me/topapate
+
+              The author does not endorse or participate in illegal distribution
+              of copyrighted material. This work can be used with legally
+              obtained ROM dumps or with compatible homebrew software.
+
+              This file license is GNU GPLv2.
+              You can read the whole license file in
+              https://opensource.org/licenses/gpl-2.0.php
+
+-->
+
+<misterromdescription>
+    <about author="jotego" webpage="https://patreon.com/topapate" source="https://github.com/jotego" twitter="@topapate"/>
+    <name>Giga Wing (Japan 990223 Phoenix Edition) (bootleg)</name>
+    <setname>gigawingjd</setname>
+    <rbf>jtcps2</rbf>
+    <mameversion>0229</mameversion>
+    <year>1999</year>
+    <manufacturer>bootleg</manufacturer>
+    <players>2</players>
+    <joystick>8-way</joystick>
+    <rotation>horizontal</rotation>
+    <region>Japan</region>
+    <platform>CPS-2</platform>
+    <category>Shoot&apos;em up</category>
+    <catver>Shooter / Flying Vertical</catver>
+    <mraauthor>jotego,atrac17</mraauthor>
+    <rom index="0" zip="gigawingjd.zip|gigawing.zip|qsound.zip" md5="None" address="0x30000000">
+        <part>
+        00 06 80 06 80 26 80 66 
+        ff ff ff ff ff ff ff ff 
+        32 ff 00 02 04 06 26 28 
+        2a 2c 2e 00 00 30 02 04 
+        08 30 ff ff ff ff ff ff 
+        ff ff ff ff
+        </part>
+        <!-- key - starts at 0x0 -->
+        <part name="phoenix.key" crc="2cf772b0"/>
+        <!-- maincpu - starts at 0x14 -->
+        <part name="ggwjd.03a" crc="cb1c756e"/>
+        <part name="ggwjd.04a" crc="fa158e04"/>
+        <part name="ggwjd.05a" crc="1c5bc4e7"/>
+        <!-- audiocpu - starts at 0x180014 -->
+        <part name="ggw.01" crc="4c6351d5"/>
+        <!-- qsound - starts at 0x1A0014 -->
+        <interleave output="16">
+            <part name="ggw.11m" crc="e172acf5" map="12"/>
+        </interleave>
+        <interleave output="16">
+            <part name="ggw.12m" crc="4bee4e8f" map="12"/>
+        </interleave>
+        <!-- gfx - starts at 0x9A0014 -->
+        <interleave output="64">
+            <part name="ggw.13m" crc="105530a4" map="00000021"/>
+            <part name="ggw.15m" crc="9e774ab9" map="00002100"/>
+            <part name="ggw.17m" crc="466e0ba4" map="00210000"/>
+            <part name="ggw.19m" crc="840c8dea" map="21000000"/>
+        </interleave>
+        <!-- QSound firmware - starts at 0x19A0014 -->
+        <part name="dl-1425.bin" crc="d6cf5ef5" length="0x2000"/>
+        <!-- Total 0x19A2014 bytes - 26248 kBytes -->
+    </rom>
+    <rom index="1">
+        <part>00</part>
+    </rom>
+    <rom index="2">
+        <part>00 00 01 00 00 01 00 00 00 00 00 00 00 00 00 00 03 03 00 02 00 00 00 00 00 00 00 00 00 00 00 00 11 98 00 30 10 97 ff 31 41 43 47 50 4a 47 50 41 00 00 01 00 00 01 00 00 00 00 00 00 00 00 00 00 03 03 00 02 00 00 00 00 00 00 00 00 00 00 00 00 11 98 00 30 10 97 ff 31 41 43 47 50 4a 47 50 41 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 21</part>
+    </rom>
+    <nvram index="2" size="128"/>
+    <buttons names="Shot,Force Bomb,-,-,-,-,Start,Coin,Core credits" default="Y,XBALR,Select,Start,-" count="2"/>
+</misterromdescription>

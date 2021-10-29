@@ -1,0 +1,94 @@
+<!--          FPGA compatible core for bootleg arcade hardware by Jotego
+
+              This core is available for hardware compatible with MiST and MiSTer
+              Other FPGA systems may be supported by the time you read this.
+              This work is not mantained by the MiSTer project. Please contact the
+              core author for issues and updates.
+
+              (c) Jose Tejada, 2021. Please support the author
+              Patreon: https://patreon.com/topapate
+              Paypal:  https://paypal.me/topapate
+
+              The author does not endorse or participate in illegal distribution
+              of copyrighted material. This work can be used with legally
+              obtained ROM dumps or with compatible homebrew software.
+
+              This file license is GNU GPLv2.
+              You can read the whole license file in
+              https://opensource.org/licenses/gpl-2.0.php
+
+-->
+
+<misterromdescription>
+    <about author="jotego" webpage="https://patreon.com/topapate" source="https://github.com/jotego" twitter="@topapate"/>
+    <name>Super Street Fighter II Turbo (Asia 940223 Phoenix Edition) (bootleg)</name>
+    <setname>ssf2tad</setname>
+    <rbf>jtcps2</rbf>
+    <mameversion>0229</mameversion>
+    <year>1994</year>
+    <manufacturer>bootleg</manufacturer>
+    <players>2</players>
+    <joystick>8-way</joystick>
+    <rotation>horizontal</rotation>
+    <region>Asia</region>
+    <platform>CPS-2</platform>
+    <category>Fighting</category>
+    <catver>Fighter / Versus</catver>
+    <mraauthor>jotego,atrac17</mraauthor>
+    <rom index="0" zip="ssf2tad.zip|ssf2t.zip|qsound.zip" md5="None" address="0x30000000">
+        <part>
+        00 0e 00 0f 00 1f 00 5f 
+        ff ff ff ff ff ff ff ff 
+        32 ff 00 02 04 06 26 28 
+        2a 2c 2e 00 00 30 02 04 
+        08 30 ff ff ff ff ff ff 
+        fc ff ff ff
+        </part>
+        <!-- key - starts at 0x0 -->
+        <part name="phoenix.key" crc="2cf772b0"/>
+        <!-- maincpu - starts at 0x14 -->
+        <part name="sfxad.03c" crc="e3c92ece"/>
+        <part name="sfxad.04a" crc="9bf3bb2e"/>
+        <part name="sfxad.05" crc="c63358d0"/>
+        <part name="sfxad.06a" crc="ccb29808"/>
+        <part name="sfxad.07" crc="61f94982"/>
+        <part name="sfxad.08" crc="d399c36c"/>
+        <part name="sfxad.09" crc="436784ae"/>
+        <!-- audiocpu - starts at 0x380014 -->
+        <part name="sfx.01" crc="b47b8835"/>
+        <part name="sfx.02" crc="0022633f"/>
+        <!-- qsound - starts at 0x3C0014 -->
+        <part name="sfx.11m" crc="9bdbd476"/>
+        <part name="sfx.12m" crc="a05e3aab"/>
+        <!-- gfx - starts at 0x7C0014 -->
+        <interleave output="64">
+            <part name="sfx.13m" crc="cf94d275" map="00000021"/>
+            <part name="sfx.15m" crc="5eb703af" map="00002100"/>
+            <part name="sfx.17m" crc="ffa60e0f" map="00210000"/>
+            <part name="sfx.19m" crc="34e825c5" map="21000000"/>
+        </interleave>
+        <interleave output="64">
+            <part name="sfx.14m" crc="b7cc32e7" map="00000021"/>
+            <part name="sfx.16m" crc="8376ad18" map="00002100"/>
+            <part name="sfx.18m" crc="f5b1b336" map="00210000"/>
+            <part name="sfx.20m" crc="459d5c6b" map="21000000"/>
+        </interleave>
+        <interleave output="64">
+            <part name="sfx.21m" crc="e32854af" map="00000021"/>
+            <part name="sfx.23m" crc="760f2927" map="00002100"/>
+            <part name="sfx.25m" crc="1ee90208" map="00210000"/>
+            <part name="sfx.27m" crc="f814400f" map="21000000"/>
+        </interleave>
+        <!-- QSound firmware - starts at 0x17C0014 -->
+        <part name="dl-1425.bin" crc="d6cf5ef5" length="0x2000"/>
+        <!-- Total 0x17C2014 bytes - 24328 kBytes -->
+    </rom>
+    <rom index="1">
+        <part>00</part>
+    </rom>
+    <rom index="2">
+        <part>00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 02 00 03 01 00 01 01 00 00 02 94 41 17 46 53 41 58 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 02 00 03 01 00 01 01 00 00 02 94 41 17 46 53 41 58 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 04 52</part>
+    </rom>
+    <nvram index="2" size="128"/>
+    <buttons names="Light Punch,Middle Punch,Heavy Punch,Light Kick,Middle Kick,Heavy Kick,Start,Coin,Core credits" default="Y,X,B,A,L,R,Select,Start,-" count="6"/>
+</misterromdescription>

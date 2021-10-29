@@ -1,0 +1,93 @@
+<!--          FPGA compatible core for bootleg arcade hardware by Jotego
+
+              This core is available for hardware compatible with MiST and MiSTer
+              Other FPGA systems may be supported by the time you read this.
+              This work is not mantained by the MiSTer project. Please contact the
+              core author for issues and updates.
+
+              (c) Jose Tejada, 2021. Please support the author
+              Patreon: https://patreon.com/topapate
+              Paypal:  https://paypal.me/topapate
+
+              The author does not endorse or participate in illegal distribution
+              of copyrighted material. This work can be used with legally
+              obtained ROM dumps or with compatible homebrew software.
+
+              This file license is GNU GPLv2.
+              You can read the whole license file in
+              https://opensource.org/licenses/gpl-2.0.php
+
+-->
+
+<misterromdescription>
+    <about author="jotego" webpage="https://patreon.com/topapate" source="https://github.com/jotego" twitter="@topapate"/>
+    <name>Darkstalkers: The Night Warriors (USA 940705 Phoenix Edition) (bootleg)</name>
+    <setname>dstlku1d</setname>
+    <rbf>jtcps2</rbf>
+    <mameversion>0229</mameversion>
+    <year>1994</year>
+    <manufacturer>bootleg</manufacturer>
+    <players>2</players>
+    <joystick>8-way</joystick>
+    <rotation>horizontal</rotation>
+    <region>USA</region>
+    <platform>CPS-2</platform>
+    <category>Fighting</category>
+    <catver>Fighter / Versus</catver>
+    <mraauthor>jotego,atrac17</mraauthor>
+    <rom index="0" zip="dstlku1d.zip|dstlk.zip|qsound.zip" md5="None" address="0x30000000">
+        <part>
+        00 10 00 11 00 21 00 71 
+        ff ff ff ff ff ff ff ff 
+        32 ff 00 02 04 06 26 28 
+        2a 2c 2e 00 00 30 02 04 
+        08 30 ff ff ff ff ff ff 
+        fc ff ff ff
+        </part>
+        <!-- key - starts at 0x0 -->
+        <part name="phoenix.key" crc="2cf772b0"/>
+        <!-- maincpu - starts at 0x14 -->
+        <part name="vamud.03a" crc="47b7a680"/>
+        <part name="vamud.04a" crc="3b7a4939"/>
+        <part name="vamu.05a" crc="673ed50a"/>
+        <part name="vamu.06a" crc="f2377be7"/>
+        <part name="vamu.07a" crc="d8f498c4"/>
+        <part name="vamu.08a" crc="e6a8a1a0"/>
+        <part name="vamud.09a" crc="8b333a19"/>
+        <part name="vamu.10a" crc="c1a3d9be"/>
+        <!-- audiocpu - starts at 0x400014 -->
+        <part name="vam.01" crc="64b685d5"/>
+        <part name="vam.02" crc="cf7c97c7"/>
+        <!-- qsound - starts at 0x440014 -->
+        <interleave output="16">
+            <part name="vam.11m" crc="4a39deb2" map="12"/>
+        </interleave>
+        <interleave output="16">
+            <part name="vam.12m" crc="1a3e5c03" map="12"/>
+        </interleave>
+        <!-- gfx - starts at 0x840014 -->
+        <interleave output="64">
+            <part name="vam.13m" crc="c51baf99" map="00000021"/>
+            <part name="vam.15m" crc="3ce83c77" map="00002100"/>
+            <part name="vam.17m" crc="4f2408e0" map="00210000"/>
+            <part name="vam.19m" crc="9ff60250" map="21000000"/>
+        </interleave>
+        <interleave output="64">
+            <part name="vam.14m" crc="bd87243c" map="00000021"/>
+            <part name="vam.16m" crc="afec855f" map="00002100"/>
+            <part name="vam.18m" crc="3a033625" map="00210000"/>
+            <part name="vam.20m" crc="2bff6a89" map="21000000"/>
+        </interleave>
+        <!-- QSound firmware - starts at 0x1C40014 -->
+        <part name="dl-1425.bin" crc="d6cf5ef5" length="0x2000"/>
+        <!-- Total 0x1C42014 bytes - 28936 kBytes -->
+    </rom>
+    <rom index="1">
+        <part>00</part>
+    </rom>
+    <rom index="2">
+        <part>00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 03 00 04 00 01 01 00 03 00 01 00 01 00 00 00 06 94 02 20 41 56 50 4d 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 03 00 04 00 01 01 00 03 00 01 00 01 00 00 00 06 94 02 20 41 56 50 4d 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 01 2b</part>
+    </rom>
+    <nvram index="2" size="128"/>
+    <buttons names="Light Punch,Middle Punch,Heavy Punch,Light Kick,Middle Kick,Heavy Kick,Start,Coin,Core credits" default="Y,X,B,A,L,R,Select,Start,-" count="6"/>
+</misterromdescription>

@@ -1,0 +1,89 @@
+<!--          FPGA compatible core for bootleg arcade hardware by Jotego
+
+              This core is available for hardware compatible with MiST and MiSTer
+              Other FPGA systems may be supported by the time you read this.
+              This work is not mantained by the MiSTer project. Please contact the
+              core author for issues and updates.
+
+              (c) Jose Tejada, 2021. Please support the author
+              Patreon: https://patreon.com/topapate
+              Paypal:  https://paypal.me/topapate
+
+              The author does not endorse or participate in illegal distribution
+              of copyrighted material. This work can be used with legally
+              obtained ROM dumps or with compatible homebrew software.
+
+              This file license is GNU GPLv2.
+              You can read the whole license file in
+              https://opensource.org/licenses/gpl-2.0.php
+
+-->
+
+<misterromdescription>
+    <about author="jotego" webpage="https://patreon.com/topapate" source="https://github.com/jotego" twitter="@topapate"/>
+    <name>Dungeons &amp; Dragons: Tower of Doom (Euro 940412 Phoenix Edition) (bootleg)</name>
+    <setname>ddtodd</setname>
+    <rbf>jtcps2</rbf>
+    <mameversion>0229</mameversion>
+    <year>1993</year>
+    <manufacturer>bootleg</manufacturer>
+    <players>4</players>
+    <joystick>8-way</joystick>
+    <rotation>horizontal</rotation>
+    <region>Europe</region>
+    <platform>CPS-2</platform>
+    <category>Beat&apos;em up</category>
+    <catver>Fighter / 2.5D</catver>
+    <mraauthor>jotego,atrac17</mraauthor>
+    <rom index="0" zip="ddtodd.zip|ddtod.zip|qsound.zip" md5="None" address="0x30000000">
+        <part>
+        00 0a 80 0a 80 1a 80 4a 
+        ff ff ff ff ff ff ff ff 
+        32 ff 00 02 04 06 26 28 
+        2a 2c 2e 00 00 30 02 04 
+        08 30 ff ff ff ff ff ff 
+        ff ff ff ff
+        </part>
+        <!-- key - starts at 0x0 -->
+        <part name="phoenix.key" crc="2cf772b0"/>
+        <!-- maincpu - starts at 0x14 -->
+        <part name="daded.03c" crc="843330f4"/>
+        <part name="daded.04c" crc="306f14fc"/>
+        <part name="daded.05c" crc="8c6b8328"/>
+        <part name="dad.06a" crc="6225495a"/>
+        <part name="dadd.07a" crc="0f0df6cc"/>
+        <!-- audiocpu - starts at 0x280014 -->
+        <part name="dad.01" crc="3f5e2424"/>
+        <!-- qsound - starts at 0x2A0014 -->
+        <interleave output="16">
+            <part name="dad.11m" crc="0c499b67" map="12"/>
+        </interleave>
+        <interleave output="16">
+            <part name="dad.12m" crc="2f0b5a4e" map="12"/>
+        </interleave>
+        <!-- gfx - starts at 0x6A0014 -->
+        <interleave output="64">
+            <part name="dad.13m" crc="da3cb7d6" map="00000021"/>
+            <part name="dad.15m" crc="92b63172" map="00002100"/>
+            <part name="dad.17m" crc="b98757f5" map="00210000"/>
+            <part name="dad.19m" crc="8121ce46" map="21000000"/>
+        </interleave>
+        <interleave output="64">
+            <part name="dad.14m" crc="837e6f3f" map="00000021"/>
+            <part name="dad.16m" crc="f0916bdb" map="00002100"/>
+            <part name="dad.18m" crc="cef393ef" map="00210000"/>
+            <part name="dad.20m" crc="8953fe9e" map="21000000"/>
+        </interleave>
+        <!-- QSound firmware - starts at 0x12A0014 -->
+        <part name="dl-1425.bin" crc="d6cf5ef5" length="0x2000"/>
+        <!-- Total 0x12A2014 bytes - 19080 kBytes -->
+    </rom>
+    <rom index="1">
+        <part>00</part>
+    </rom>
+    <rom index="2">
+        <part>45 42 4f 48 45 42 4f 48 01 00 00 00 00 01 03 00 04 04 45 42 45 42 4f 48 45 42 4f 48 45 42 4f 48 45 42 4f 48 45 42 4f 48 04 94 00 12 20 20 20 20 75 44 67 6e 6f 65 73 6e 44 26 61 72 6f 67 73 6e 45 42 4f 48 45 42 4f 48 01 00 00 00 00 01 03 00 04 04 45 42 45 42 4f 48 45 42 4f 48 45 42 4f 48 45 42 4f 48 45 42 4f 48 04 94 00 12 20 20 20 20 75 44 67 6e 6f 65 73 6e 44 26 61 72 6f 67 04 32</part>
+    </rom>
+    <nvram index="2" size="128"/>
+    <buttons names="Attack,Jump,Item,Select,-,-,Start,Coin,Core credits" default="Y,X,B,ALR,Select,Start,-" count="4"/>
+</misterromdescription>
