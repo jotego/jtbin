@@ -79,20 +79,12 @@
         <part repeat="0x120000"> FF</part>
         <!-- mcu - starts at 0x440000 -->
         <part name="317-0098.c2"/>
-        <part repeat="0x1000"> FF</part>
-        <!-- maincpu:key - starts at 0x442000 -->
-        <part repeat="0x2000"> FF</part>
-        <part repeat="0x4000"> FF</part>
-        <!-- soundcpu:key - starts at 0x448000 -->
-        <part repeat="0x2000"> FF</part>
-        <!-- Total 0x44A000 bytes - 4392 kBytes -->
+        <!-- Total 0x441000 bytes - 4356 kBytes -->
     </rom>
     <rom index="17" zip="jtbeta.zip" md5="None">
         <part name="beta.bin"/>
     </rom>
-    <rom index="16" zip="debug.zip" md5="None">
-        <part name="debug.bin"/>
-    </rom>
+    <nvram index="2" size="75777"/>
     <rom index="1">
         <part>00</part>
     </rom>

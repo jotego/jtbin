@@ -87,15 +87,10 @@
             <part name="epr-10712.b4" crc="876ad019" map="01"/>
             <part name="epr-10716.b8" crc="40ba1d48" map="10"/>
         </interleave>
-        <part repeat="0x180000"> FF</part>
-        <!-- mcu - starts at 0x440000 -->
-        <part repeat="0x1000"> FF</part>
-        <part repeat="0x1000"> FF</part>
+        <part repeat="0x182000"> FF</part>
         <!-- maincpu:key - starts at 0x442000 -->
         <part name="317-0033.key" crc="68bb7745"/>
-        <part repeat="0x4000"> FF</part>
-        <!-- soundcpu:key - starts at 0x448000 -->
-        <part repeat="0x2000"> FF</part>
+        <part repeat="0x6000"> FF</part>
         <!-- FD1089 base table starts at 0x44A000 -->
         <part>
             00 1C 76 6A 5E 42 24 38 4B 67 AD 81 E9 C5 03 2F
@@ -120,9 +115,7 @@
     <rom index="17" zip="jtbeta.zip" md5="None">
         <part name="beta.bin"/>
     </rom>
-    <rom index="16" zip="debug.zip" md5="None">
-        <part name="debug.bin"/>
-    </rom>
+    <nvram index="2" size="75777"/>
     <rom index="1">
         <part>00</part>
     </rom>

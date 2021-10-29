@@ -84,15 +84,10 @@
             <part name="epr10043.bin" crc="645ccfb9" map="01"/>
             <part name="epr10047.bin" crc="84a49518" map="10"/>
         </interleave>
-        <part repeat="0x190000"> FF</part>
-        <!-- mcu - starts at 0x440000 -->
-        <part repeat="0x1000"> FF</part>
-        <part repeat="0x1000"> FF</part>
+        <part repeat="0x192000"> FF</part>
         <!-- maincpu:key - starts at 0x442000 -->
         <part name="317-0018.key" crc="65b5b1af"/>
-        <part repeat="0x4000"> FF</part>
-        <!-- soundcpu:key - starts at 0x448000 -->
-        <part repeat="0x2000"> FF</part>
+        <part repeat="0x6000"> FF</part>
         <!-- FD1089 base table starts at 0x44A000 -->
         <part>
             00 1C 76 6A 5E 42 24 38 4B 67 AD 81 E9 C5 03 2F
@@ -117,9 +112,7 @@
     <rom index="17" zip="jtbeta.zip" md5="None">
         <part name="beta.bin"/>
     </rom>
-    <rom index="16" zip="debug.zip" md5="None">
-        <part name="debug.bin"/>
-    </rom>
+    <nvram index="2" size="75777"/>
     <!-- Vertical game -->
     <rom index="1">
         <part>01</part>

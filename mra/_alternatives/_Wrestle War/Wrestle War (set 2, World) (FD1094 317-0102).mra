@@ -87,23 +87,15 @@
             <part name="opr-12142.a2" crc="12e38a5c" map="01"/>
             <part name="opr-12162.b11" crc="fa06fd24" map="10"/>
         </interleave>
-        <part repeat="0xA0000"> FF</part>
-        <!-- mcu - starts at 0x440000 -->
-        <part repeat="0x1000"> FF</part>
-        <part repeat="0x1000"> FF</part>
+        <part repeat="0xA2000"> FF</part>
         <!-- maincpu:key - starts at 0x442000 -->
         <part name="317-0102.key" crc="28ba1bf0"/>
-        <part repeat="0x4000"> FF</part>
-        <!-- soundcpu:key - starts at 0x448000 -->
-        <part repeat="0x2000"> FF</part>
-        <!-- Total 0x44A000 bytes - 4392 kBytes -->
+        <!-- Total 0x444000 bytes - 4368 kBytes -->
     </rom>
     <rom index="17" zip="jtbeta.zip" md5="None">
         <part name="beta.bin"/>
     </rom>
-    <rom index="16" zip="debug.zip" md5="None">
-        <part name="debug.bin"/>
-    </rom>
+    <nvram index="2" size="75777"/>
     <!-- Vertical game -->
     <rom index="1">
         <part>01</part>

@@ -61,23 +61,15 @@
             <part name="epr-12169.b1" crc="dacc6165" map="01"/>
             <part name="epr-12170.b5" crc="87354e42" map="10"/>
         </interleave>
-        <part repeat="0x1F0000"> FF</part>
-        <!-- mcu - starts at 0x440000 -->
-        <part repeat="0x1000"> FF</part>
-        <part repeat="0x1000"> FF</part>
+        <part repeat="0x1F2000"> FF</part>
         <!-- maincpu:key - starts at 0x442000 -->
         <part name="317-0091.key" crc="a7937661"/>
-        <part repeat="0x4000"> FF</part>
-        <!-- soundcpu:key - starts at 0x448000 -->
-        <part repeat="0x2000"> FF</part>
-        <!-- Total 0x44A000 bytes - 4392 kBytes -->
+        <!-- Total 0x444000 bytes - 4368 kBytes -->
     </rom>
     <rom index="17" zip="jtbeta.zip" md5="None">
         <part name="beta.bin"/>
     </rom>
-    <rom index="16" zip="debug.zip" md5="None">
-        <part name="debug.bin"/>
-    </rom>
+    <nvram index="2" size="75777"/>
     <rom index="1">
         <part>00</part>
     </rom>

@@ -88,23 +88,15 @@
             <part name="mpr-12382.b3" crc="81601c6f" map="01" length="0x20000" offset="0x20000"/>
             <part name="mpr-12383.b7" crc="5dbacf7a" map="10" length="0x20000" offset="0x20000"/>
         </interleave>
-        <part repeat="0x40000"> FF</part>
-        <!-- mcu - starts at 0x440000 -->
-        <part repeat="0x1000"> FF</part>
-        <part repeat="0x1000"> FF</part>
+        <part repeat="0x42000"> FF</part>
         <!-- maincpu:key - starts at 0x442000 -->
         <part name="317-0120.key" crc="946e9fa6"/>
-        <part repeat="0x4000"> FF</part>
-        <!-- soundcpu:key - starts at 0x448000 -->
-        <part repeat="0x2000"> FF</part>
-        <!-- Total 0x44A000 bytes - 4392 kBytes -->
+        <!-- Total 0x444000 bytes - 4368 kBytes -->
     </rom>
     <rom index="17" zip="jtbeta.zip" md5="None">
         <part name="beta.bin"/>
     </rom>
-    <rom index="16" zip="debug.zip" md5="None">
-        <part name="debug.bin"/>
-    </rom>
+    <nvram index="2" size="75777"/>
     <rom index="1">
         <part>00</part>
     </rom>
