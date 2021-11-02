@@ -60,8 +60,12 @@ Super Street Fighter II X: Grand Master Challenge (Japan 940223 Phoenix Edition)
         <part name="sfx.01" crc="b47b8835"/>
         <part name="sfx.02" crc="0022633f"/>
         <!-- qsound - starts at 0x3C0014 -->
-        <part name="sfx.11m" crc="9bdbd476"/>
-        <part name="sfx.12m" crc="a05e3aab"/>
+        <interleave output="16">
+            <part name="sfx.11m" crc="9bdbd476" map="12"/>
+        </interleave>
+        <interleave output="16">
+            <part name="sfx.12m" crc="a05e3aab" map="12"/>
+        </interleave>
         <!-- gfx - starts at 0x7C0014 -->
         <interleave output="64">
             <part name="sfx.13m" crc="cf94d275" map="00000021"/>
