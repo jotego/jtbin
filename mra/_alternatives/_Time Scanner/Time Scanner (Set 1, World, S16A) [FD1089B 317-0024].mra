@@ -38,7 +38,7 @@
     <rom index="0" zip="timescan1.zip|timescan.zip" md5="None">
         <part>
             04 00 04 80 08 80 10 00
-            18 00 18 20 18 40 18 61
+            00 00 18 20 18 40 18 61
             02 00 00 00 00 00 00 00
             00 00 00 00 00 00 00 00
         </part>
@@ -89,10 +89,7 @@
             <part name="epr-10551.29" crc="435d811f" map="01"/>
             <part name="epr-10555.30" crc="2143c471" map="10"/>
         </interleave>
-        <part repeat="0x10000"> FF</part>
-        <!-- mcu - starts at 0x180000 -->
-        <part repeat="0x1000"> FF</part>
-        <part repeat="0x1000"> FF</part>
+        <part repeat="0x12000"> FF</part>
         <!-- maincpu:key - starts at 0x182000 -->
         <part name="317-0024.key" crc="dcd41d24"/>
         <!-- n7751 - starts at 0x184000 -->

@@ -38,7 +38,7 @@
     <rom index="0" zip="aliensyn5.zip|aliensyn.zip" md5="None">
         <part>
             04 00 04 80 08 80 10 00
-            18 00 18 20 18 40 18 61
+            00 00 18 20 18 40 18 61
             02 00 00 00 00 00 00 00
             00 00 00 00 00 00 00 00
         </part>
@@ -88,9 +88,7 @@
             <part name="epr-10712.29" crc="876ad019" map="01"/>
             <part name="epr-10716.30" crc="40ba1d48" map="10"/>
         </interleave>
-        <!-- mcu - starts at 0x180000 -->
-        <part repeat="0x1000"> FF</part>
-        <part repeat="0x1000"> FF</part>
+        <part repeat="0x2000"> FF</part>
         <!-- maincpu:key - starts at 0x182000 -->
         <part name="317-0037.key" crc="68bb7745"/>
         <!-- n7751 - starts at 0x184000 -->

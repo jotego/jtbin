@@ -37,8 +37,8 @@
     <mraauthor>jotego,atrac17</mraauthor>
     <rom index="0" zip="afighterc.zip|afighter.zip" md5="None">
         <part>
-            04 00 04 80 08 80 10 00
-            18 00 18 20 18 40 18 61
+            04 00 00 00 08 80 10 00
+            00 00 18 20 00 00 18 61
             02 00 00 00 00 00 00 00
             00 00 00 00 00 00 00 00
         </part>
@@ -58,7 +58,6 @@
         <part repeat="0x10000"> FF</part>
         <!-- soundcpu - starts at 0x40000 -->
         <part name="epr-10284.12" crc="8ff09116"/>
-        <!-- n7751data - starts at 0x48000 -->
         <part repeat="0x40000"> FF</part>
         <!-- gfx1 - starts at 0x88000 -->
         <interleave output="32">
@@ -88,15 +87,10 @@
             <part name="epr-10288" crc="d3ce551a" map="01"/>
             <part name="epr-10292" crc="cef289a3" map="10"/>
         </interleave>
-        <part repeat="0x10000"> FF</part>
-        <!-- mcu - starts at 0x180000 -->
-        <part repeat="0x1000"> FF</part>
-        <part repeat="0x1000"> FF</part>
+        <part repeat="0x12000"> FF</part>
         <!-- maincpu:key - starts at 0x182000 -->
         <part name="317-0018.key" crc="65b5b1af"/>
-        <!-- n7751 - starts at 0x184000 -->
-        <part repeat="0x400"> FF</part>
-        <part repeat="0x1C00"> FF</part>
+        <part repeat="0x2000"> FF</part>
         <!-- FD1089 base table starts at 0x186000 -->
         <part>
             00 1C 76 6A 5E 42 24 38 4B 67 AD 81 E9 C5 03 2F

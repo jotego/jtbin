@@ -37,8 +37,8 @@
     <mraauthor>jotego,atrac17</mraauthor>
     <rom index="0" zip="tetris3.zip|tetris.zip" md5="None">
         <part>
-            04 00 04 80 08 80 10 00
-            18 00 18 20 18 40 18 44
+            04 00 00 00 08 80 10 00
+            00 00 18 20 00 00 18 40
             00 01 00 00 00 00 00 00
             00 00 00 00 00 00 00 00
         </part>
@@ -50,7 +50,6 @@
         <part repeat="0x30000"> FF</part>
         <!-- soundcpu - starts at 0x40000 -->
         <part name="epr-12205.rom" crc="6695dc99"/>
-        <!-- n7751data - starts at 0x48000 -->
         <part repeat="0x40000"> FF</part>
         <!-- gfx1 - starts at 0x88000 -->
         <interleave output="32">
@@ -65,15 +64,10 @@
             <part name="epr-12169.b1" crc="dacc6165" map="01"/>
             <part name="epr-12170.b5" crc="87354e42" map="10"/>
         </interleave>
-        <part repeat="0x70000"> FF</part>
-        <!-- mcu - starts at 0x180000 -->
-        <part repeat="0x1000"> FF</part>
-        <part repeat="0x1000"> FF</part>
+        <part repeat="0x72000"> FF</part>
         <!-- maincpu:key - starts at 0x182000 -->
         <part name="317-0093a.key" crc="7ca4a8ee"/>
-        <!-- n7751 - starts at 0x184000 -->
-        <part repeat="0x400"> FF</part>
-        <!-- Total 0x184400 bytes - 1553 kBytes -->
+        <!-- Total 0x184000 bytes - 1552 kBytes -->
     </rom>
     <rom index="17" zip="jtbeta.zip" md5="None">
         <part name="beta.bin"/>
