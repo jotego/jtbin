@@ -1,0 +1,148 @@
+<!--          FPGA compatible core for Sega / Westone arcade hardware by Jotego
+
+              This core is available for hardware compatible with MiST and MiSTer
+              Other FPGA systems may be supported by the time you read this.
+              This work is not mantained by the MiSTer project. Please contact the
+              core author for issues and updates.
+
+              (c) Jose Tejada, 2021. Please support the author
+              Patreon: https://patreon.com/topapate
+              Paypal:  https://paypal.me/topapate
+
+              The author does not endorse or participate in illegal distribution
+              of copyrighted material. This work can be used with legally
+              obtained ROM dumps or with compatible homebrew software.
+
+              This file license is GNU GPLv2.
+              You can read the whole license file in
+              https://opensource.org/licenses/gpl-2.0.php
+
+-->
+
+<misterromdescription>
+    <about author="jotego" webpage="https://patreon.com/topapate" source="https://github.com/jotego" twitter="@topapate"/>
+    <name>Aurail (set 1, Japan) (FD1089A 317-0167)</name>
+    <setname>aurailj</setname>
+    <rbf>jts16b1</rbf>
+    <mameversion>0232</mameversion>
+    <year>1990</year>
+    <manufacturer>Sega / Westone</manufacturer>
+    <players>2</players>
+    <joystick>8</joystick>
+    <rotation>horizontal</rotation>
+    <region>Japan</region>
+    <mraauthor>jotego,atrac17</mraauthor>
+    <rom index="0" zip="aurailj.zip|aurail.zip|s16mcu_alt.zip" md5="None">
+        <part>
+            00 00 00 00 00 00 00 00
+            00 00 00 00 00 00 00 00
+            01 00 00 00 00 00 00 00
+            40 00 00 00 00 00 00 00
+        </part>
+        <!-- maincpu - starts at 0x0 -->
+        <interleave output="16">
+            <part name="epr-13444.a5" crc="7a2b045f" map="01"/>
+            <part name="epr-13446.a7" crc="d1f57b2a" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="epr-13445.a6" crc="28dfc3dd" map="01"/>
+            <part name="epr-13447.a8" crc="70a52167" map="10"/>
+        </interleave>
+        <!-- soundcpu - starts at 0x80000 -->
+        <part name="epr-13448.a10" crc="b5183fb9"/>
+        <part repeat="0x8000"> FF</part>
+        <part name="mpr-13449.a11" crc="d3d9aaf9"/>
+        <part repeat="0x90000"> FF</part>
+        <!-- gfx1 - starts at 0x140000 -->
+        <interleave output="32">
+            <part name="mpr-13450.a14" crc="0fc4a7a8" map="0001"/>
+            <part name="mpr-13451.a15" crc="1c49852f" map="0010"/>
+            <part name="mpr-13452.a16" crc="047bde5e" map="0100"/>
+            <part name="mpr-13452.a16" crc="047bde5e" map="1000"/>
+        </interleave>
+        <interleave output="32">
+            <part name="mpr-13465.b14" crc="e08135e0" map="0001"/>
+            <part name="mpr-13466.b15" crc="e14c6684" map="0010"/>
+            <part name="mpr-13467.b16" crc="6309fec4" map="0100"/>
+            <part name="mpr-13467.b16" crc="6309fec4" map="1000"/>
+        </interleave>
+        <!-- sprites - starts at 0x240000 -->
+        <interleave output="16">
+            <part name="mpr-13453.b1" crc="5fa0a9f8" map="01"/>
+            <part name="mpr-13457.b5" crc="0d1b54da" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="mpr-13454.b2" crc="5f6b33b1" map="01"/>
+            <part name="mpr-13458.b6" crc="bad340c3" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="mpr-13455.b3" crc="4e80520b" map="01"/>
+            <part name="mpr-13459.b7" crc="7e9165ac" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="mpr-13456.b4" crc="5733c428" map="01"/>
+            <part name="mpr-13460.b8" crc="66b8f9b3" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="mpr-13440.a1" crc="4f370b2b" map="01"/>
+            <part name="mpr-13461.b10" crc="f76014bf" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="mpr-13441.a2" crc="37cf9cb4" map="01"/>
+            <part name="mpr-13462.b11" crc="1061e7da" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="mpr-13442.a3" crc="049698ef" map="01"/>
+            <part name="mpr-13463.b12" crc="7dbcfbf1" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="mpr-13443.a4" crc="77a8989e" map="01"/>
+            <part name="mpr-13464.b13" crc="551df422" map="10"/>
+        </interleave>
+        <part repeat="0x2000"> FF</part>
+        <!-- maincpu:key - starts at 0x442000 -->
+        <part name="317-0167.key" crc="fed38390"/>
+        <part repeat="0x6000"> FF</part>
+        <!-- FD1089 base table starts at 0x44A000 -->
+        <part>
+            00 1C 76 6A 5E 42 24 38 4B 67 AD 81 E9 C5 03 2F
+            45 69 AF 83 E7 CB 01 2D 02 1E 78 64 5C 40 2A 36
+            32 2E 44 58 E4 F8 9E 82 29 05 CF E3 93 BF 79 55
+            3F 13 D5 F9 85 A9 63 4F B8 A4 C2 DE 6E 72 18 04
+            0C 10 7A 66 FC E0 86 9A 47 6B A1 8D BB 97 51 7D
+            17 3B FD D1 EB C7 0D 21 A0 BC DA C6 50 4C 26 3A
+            3E 22 48 54 46 5A 3C 20 25 09 C3 EF C1 ED 2B 07
+            6D 41 87 AB 89 A5 6F 43 1A 06 60 7C 62 7E 14 08
+            0A 16 70 6C DC C0 AA B6 4D 61 A7 8B F7 DB 11 3D
+            5B 77 BD 91 E1 CD 0B 27 80 9C F6 EA 56 4A 2C 30
+            B0 AC CA D6 EE F2 98 84 37 1B DD F1 95 B9 73 5F
+            39 15 DF F3 9B B7 71 5D B2 AE C4 D8 EC F0 96 8A
+            A8 B4 D2 CE D0 CC A6 BA 1F 33 F5 D9 FB D7 1D 31
+            57 7B B1 9D B3 9F 59 75 8C 90 FA E6 F4 E8 8E 92
+            12 0E 68 74 E2 FE 94 88 65 49 8F A3 99 B5 7F 53
+            35 19 D3 FF C9 E5 23 0F BE A2 C8 D4 4E 52 34 28
+        </part>
+        <!-- Total 0x44A100 bytes - 4392 kBytes -->
+    </rom>
+    <rom index="17" zip="jtbeta.zip" md5="None">
+        <part name="beta.bin"/>
+    </rom>
+    <nvram index="2" size="75777"/>
+    <rom index="1">
+        <part>00</part>
+    </rom>
+    <switches base="16" default="ff,fd">
+        <!-- DSW1 -->
+        <dip name="Coin A" bits="0,3" ids="Free Play or 1/1,1/1,2/3,1/1,4/5,1/1,5/6,2/1,4/3,2/1,5/3,6/4,2/3,4/1,3/1,2/1,1/6,1/5,1/4,1/3,1/2,1/1"/>
+        <dip name="Coin B" bits="4,7" ids="Free Play or 1/1,1/1,2/3,1/1,4/5,1/1,5/6,2/1,4/3,2/1,5/3,6/4,2/3,4/1,3/1,2/1,1/6,1/5,1/4,1/3,1/2,1/1"/>
+        <!-- DSW2 -->
+        <dip name="Cabinet" bits="8" ids="Cocktail,Upright"/>
+        <dip name="Demo Sounds" bits="9" ids="On,Off"/>
+        <dip name="Lives" bits="10,11" ids="2,5,4,3"/>
+        <dip name="Bonus Life" bits="12" ids="100K/300K/700K/1000K,80K/200K/500K/1000K"/>
+        <dip name="Difficulty" bits="13" ids="Hard,Normal"/>
+        <dip name="Controller" bits="14" ids="2 Players Side,1 Player Side"/>
+        <dip name="Special Function Mode" bits="15" ids="On,Off"/>
+    </switches>
+    <buttons names="Rapid Shot,Kite/Turn,Shield,-,Start,Coin,Core credits" default="Y,X,B,A,Start,Select,-" count="3"/>
+</misterromdescription>
