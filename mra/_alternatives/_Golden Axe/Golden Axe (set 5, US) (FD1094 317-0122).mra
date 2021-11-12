@@ -31,6 +31,7 @@
     <joystick>8</joystick>
     <rotation>horizontal</rotation>
     <region>World</region>
+    <platform>SEGA S16B</platform>
     <mraauthor>jotego,atrac17</mraauthor>
     <rom index="0" zip="goldnaxeu.zip|goldnaxe.zip|s16mcu_alt.zip" md5="None">
         <part>

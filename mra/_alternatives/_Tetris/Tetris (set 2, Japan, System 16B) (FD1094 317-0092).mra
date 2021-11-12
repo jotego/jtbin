@@ -31,6 +31,7 @@
     <joystick>5 (half8)</joystick>
     <rotation>horizontal</rotation>
     <region>Japan</region>
+    <platform>SEGA S16B</platform>
     <mraauthor>jotego,atrac17</mraauthor>
     <rom index="0" zip="tetris2.zip|tetris.zip|s16mcu_alt.zip" md5="None">
         <part>
