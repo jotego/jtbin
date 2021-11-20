@@ -10,7 +10,7 @@ All this work has been produced thanks to the community support:
 * Paypal: https://paypal.me/topapate
 * Github: https://github.com/sponsors/jotego
 
-# MiST and Related Platforms
+# MiST and related platforms
 
 For non MiSTer users, you have the latest compilations in the folder with your system name. You then need to grab the MRA files (in the [mra](mra) folder) and use it to generate the ROM file based in a MAME ROM set. This is done using [this tool](https://github.com/sebdel/mra-tools-c). For MiST and SiDi, generate an ARC file too and copy everything.
 
@@ -27,7 +27,7 @@ I recommend setting up the MiSTer downloader tool to get the files for you. Add 
 db_url = https://raw.githubusercontent.com/jotego/jtcores_mister/main/jtbindb.json.zip
 ```
 
-## New Cores
+## New cores - The beta phase
 
 When I develop new cores, these are available for download during the beta phase only if you enable it. Follow the instructions in this [video](https://www.youtube.com/watch?v=alcKBAxl82k) to enable beta download.
 
