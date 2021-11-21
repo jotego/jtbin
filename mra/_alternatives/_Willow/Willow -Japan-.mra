@@ -104,28 +104,21 @@
 
     <buttons names="B0,B1,B2,-,-,-,Start,Coin,Pause" 
         default="A,B,X,R,L,Start"/>
-    <switches page_id="1" page_name="Switches" default="FF,FF,FF" base="8">
-        <dip bits="0,5"	 name="Free Play" ids="On,Off"/>
-        <dip bits="0,2"	 name="Coin A" ids="2 Coins/1 Credit (1 to continue),4 Coins/1 Credit,3 Coins/1 Credit,2 Coins/1 Credit,1 Coin/4 Credits,1 Coin/3 Credits,1 Coin/2 Credits,1 Coin/1 Credit"/>
-        <dip bits="3,5"	 name="Coin B" ids="2 Coins/1 Credit (1 to continue),4 Coins/1 Credit,3 Coins/1 Credit,2 Coins/1 Credit,1 Coin/4 Credits,1 Coin/3 Credits,1 Coin/2 Credits,1 Coin/1 Credit"/>
-        <dip bits="6"	 name="Cabinet" ids="Upright 2 Players,Upright 1 Player"/>
-        <dip bits="7"	 name="Max power" ids="On,Off"/>
-        <dip bits="6,7"	 name="Cabinet" ids="Cocktail,Upright 2 Players,Upright 1 Player"/>
-        <dip bits="9,12"	 name="Slow Motion" ids="17 Frames,16 Frames,15 Frames,14 Frames,13 Frames,12 Frames,11 Frames,10 Frames,9 Frames,8 Frames,7 Frames,6 Frames,5 Frames,4 Frames,3 Frames,2 Frames"/>
-        <dip bits="8,10"	 name="Difficulty" ids="8 (Hardest),7,6,5,1 (Easiest),2,3,4 (Normal)"/>
-        <dip bits="11,12"	 name="Nando Speed" ids="Very Fast,Fast,Slow,Normal"/>
-        <dip bits="13,15"	 name="Starting Level" ids="Level 6,Level 5,Level 4,Level 3,Level 2,Level 1"/>
-        <dip bits="15"	 name="Stage Continue" ids="On,Off"/>
-        <dip bits="16"	 name="Turbo Mode" ids="On,Off"/>
-        <dip bits="17"	 name="Freeze" ids="On,Off"/>
-        <dip bits="16,17"	 name="Lives" ids="4,3,1,2"/>
-        <dip bits="18"	 name="Slow Motion" ids="On,Off"/>
-        <dip bits="19"	 name="Invulnerability" ids="On,Off"/>
-        <dip bits="18,19"	 name="Health" ids="2,5,4,3"/>
-        <dip bits="20"	 name="Flip Screen" ids="On,Off"/>
-        <dip bits="21"	 name="Demo Sounds" ids="Off,On"/>
-        <dip bits="21"	 name="Debug Info" ids="Yes,No"/>
-        <dip bits="22"	 name="Continue" ids="No,Yes"/>
-        <dip bits="23"	 name="Game Mode" ids="Test,Game"/>
+    <switches page_id="1" page_name="Switches" default="3F,1f,de" base="8">
+        <!-- DSWA -->
+        <dip name="Coin A" bits="0,2" ids="2/1,4/1,3/1,2/1,1/4,1/3,1/2,1/1"/>
+        <dip name="Coin B" bits="3,5" ids="2/1,4/1,3/1,2/1,1/4,1/3,1/2,1/1"/>
+        <dip name="Cabinet" bits="6" ids="Upright 2 Players,Upright 1 Player"/>
+        <!-- DSWB -->
+        <dip name="Difficulty" bits="8,10" ids="8,7,6,5,1,2,3,4"/>
+        <dip name="Nando Speed" bits="11,12" ids="Very Fast,Fast,Slow,Normal"/>
+        <dip name="Power Ups" bits="15" ids="On,Off"/>
+        <!-- DSWC -->
+        <dip name="Lives" bits="16,17" ids="4,3,1,2"/>
+        <dip name="Vitality" bits="18,19" ids="2,5,4,3"/>
+        <dip name="Flip Screen" bits="20" ids="On,Off"/>
+        <dip name="Demo Sounds" bits="21" ids="Off,On"/>
+        <dip name="Allow Continue" bits="22" ids="No,Yes"/>
+        <dip name="Game Mode" bits="23" ids="Test,Game"/>
     </switches>
 </misterromdescription>
