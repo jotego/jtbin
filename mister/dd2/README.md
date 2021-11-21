@@ -1,161 +1,36 @@
-# JTDD FPGA Clone of Double Dragon 1/2 arcade PCBs by Jose Tejada (@topapate)
+# Arcade replicas for FPGA
 
-You can show your appreciation through
-    * Patreon: https://patreon.com/topapate
-    * Paypal: https://paypal.me/topapate
+This repository contains arcade cores for several FPGA platforms and hundreds of arcade titles. All these cores are written by Jose Tejada (aka JOTEGO), but some of the pieces come from other developers. Particularly the M68000, M6809 and Z80 CPUs, to name easy ones to spot.
 
-Yes, you always wanted to have a Double Dragon arcade board at home. First you couldn't get it because your parents somehow did not understand you. Then you grow up and your wife doesn't understand you either. Don't worry, MiST(er) is here to the rescue.
+The source code for each system can be found if you browse [my github account](https://github.com/jotego).
 
-What you get with this is an extremely accurate (allegedly 100% accurate) clone of the original hardware. Bus timing and minor details have been observed and you should notice quite a different feeling when comparing the game to an emulator.
+All this work has been produced thanks to the community support:
 
-I hope you will have as much fun with it as I had it while making it!
+* Patreon: https://patreon.com/topapate
+* Paypal: https://paypal.me/topapate
+* Github: https://github.com/sponsors/jotego
 
-# Troubleshooting
+# MiST and related platforms
 
-Note that Double Dragon 1 and 2 are 57Hz games. Some screens do not support this refresh rate.
-ADPCM sounds with less treble than in MAME. Upon comparison with the arcade PCB, I think
-this is correct.
+For non MiSTer users, you have the latest compilations in the folder with your system name. You then need to grab the MRA files (in the [mra](mra) folder) and use it to generate the ROM file based in a MAME ROM set. This is done using [this tool](https://github.com/sebdel/mra-tools-c). For MiST and SiDi, generate an ARC file too and copy everything.
 
-* If the game doesn't start up after loading the ROM press F3 (reset) or select reset from the OSD menu
-* Please post any issues to the github page. Click on the issues tab.
+Make sure you are using the latest firmware, as my cores often need the latest features to work.
 
-https://github.com/jotego/jtdd
+# MiSTer
 
-# Conversion Accuracy
+You can manually install the files by getting the files in the [MiSTer](mister) folder. But if it is a fresh installation, you can just download all files in a single zip [here](https://github.com/jotego/jtcores_mister/archive/refs/heads/main.zip).
 
-The HDL code respects all interaction between the different hardware subsystems. When the original signal names are used, those are in capitals. The handshaking between the main CPU and the MCU follows the original design as well. The M6801 core used for the MCU may or may not be cycle accurate. I have not checked it yet.
+I recommend setting up the MiSTer downloader tool to get the files for you. Add these lines to `/media/fat/downloader.ini`:
 
-Although some dual port memories have been used, they can actually be replaced by single port memories
-with none or minimum changes to the HDL. I moved to dual port memories while I was debugging some glitches,
-which eventually were not related to that, and I just didn't change them back. There is no bus arbitrion
-related to the original memories as bus access is just time interleaved without handshaking in the
-original design.
+```
+[jtcores]
+db_url = https://raw.githubusercontent.com/jotego/jtcores_mister/main/jtbindb.json.zip
+```
 
-The schematics of the original can be found in the doc folder.
+## New cores - The beta phase
 
-## Antialiasing Filters
+When I develop new cores, these are available for download during the beta phase only if you enable it. Follow the instructions in this [video](https://www.youtube.com/watch?v=alcKBAxl82k) to enable beta download.
 
-Double Dragon 1 has no antialiasing whatsoever for ADPCM audio, as can be seen in the schematics.
+Cores in beta phase have their inputs locked up unless you place the file **jtbeta.zip** in the folder `games/mame` of your SD card. The **jtbeta.zip** can be found in Patreon and our Discord server.
 
-I do not have the schematics of DD2, so I do not know what filter it may have had, if any.
-I have used a filter at 2xFs for it, which will preserve most of the aliasing and just removed
-very high frequencies.
-
-# Modules
-
-The FPGA clone uses the following modules:
-
-JT51:    For YM2151 sound synthesis. From the same author.
-JT5205:  For MSM5205 ADPCM sound synthesis. From the same author.
-JT6295:  For MSM6295 ADPCM sound synthesis. From the same author.
-JTFRAME: A common framework for MiST arcades. From the same author.
-MC6809:  from Greg Miller, slightly modified. Part of JTFRAME, the original can be found in github
-MC6801:  By Dukov, slightly modified. It is part of JTFRAME but the original can be found at
-         https://opencores.org/projects/mc6803
-
-When populating the git, remember to use:
-
-git submodule init
-git submodule update
-
-To get the needed modules. If you update git, you may need to manually update the
-submodules commits like this:
-
-git pull
-git submodule update
-
-# Compilation
-
-I use linux as my development system. This means that I use many bash scripts, environment variables and symbolic links. I recommend using linux to compile the cores. You need to have the C++ compiler installed in linux.
-
-Start by sourcing the setprj.sh script directly from the JTDD directory in order to get the environment variables set. Now type:
-
-jtcore dd
-
-That will compile the MiST version.
-
-jtcore dd2 -mr
-
-will compile Double Dragon 2 for MiSTer.
-
-once compilation is triggered, Quartus qpf and qsf files are created. These files are
-not part of the repository as they are considered output files, not input.
-
-In the bin folder there is a script called jtupdate which compiles DD1 and DD2 for
-MiST, MiSTer and SiDi.
-
-IMPORTANT:
-Double Dragon 2 may halt if compilation does not meet timing. Double Dragon 2 also needs to use the Verilog version of T80 module (Z80 IP). This is the effect of defining the macro TV80S in the file dd2/hdl/jtdd2.tcl. Using the VHDL version of T80 may result in the core freezing. The reason is not known.
-
-# Keyboard
-
-On MiSTer keyboard control is configured through the OSD.
-
-For MiST and MiSTer: games can be controlled with both game pads and keyboard. The keyboard follows the same layout as MAME's default.
-
-    F3      Game reset
-    P       Pause
-    1,2     1P, 2P start buttons
-    5,6     Left and right coin inputs
-
-    cursors 1P direction
-    CTRL    1P button 1
-    ALT     1P button 2
-    space   1P button 3
-
-    R,F,G,D 2P direction
-    Q,S,A   2P buttons 3,2 and 1
-
-    F7      Turn character layer on/off
-    F8      Turn second background layer on/off
-    F9      Turn object (sprite) layer on/off
-
-
-# ROM Generation
-
-The rom folder contains the batch files for both linux and windows to generate the ROM file starting from a MAME set. Follow the instructions of that file. There is also a MRA file to use directly in MiSTer with the MAME zipped ROM.
-
-# SD Card
-
-For MiST copy the file core.rbf to the SD card at the root directory. Copy also the rom you have generated with the name JTDD.rom. It will get loaded at start.
-
-# Extras
-
-You can press F12 to bring the OSD menu up. You can turn off music, or sound effects with it. By default, a screen filter makes the screen look closer to an old tube monitor. If you turn it off you will get sharp pixels. Note that if you switch from sharp to soft pixels you will need a couple of seconds to get your eyes used as the brain initially perceives this as an out of focus image compared to the old one.
-
-# Credits
-
-Jose Tejada Gomez. Twitter @topapate
-Project is hosted in http://www.github.com/jotego/jtdd
-License: GPL3, you are obligued to publish your code if you use mine
-
-Special thanks to Greg Miller, Bruno Silva
-
-
-Thank you all!
-
-+--------------------------------------------------------------------------------+
-|oooooooooooooooooooooooooooooooooo+++++++++++ooooooooooooooooooooooooooooooooooo|
-|ooooooooooooooooooooooooooooooooo+. .    . .+ooooooooooooooooooooooooooooooooooo|
-|ooooooooooooooooooooooooooooooooo~         :o++ooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooo+ooo+.        .++.:oo+oo+oooooo+o+oo+oooooo++ooooooo|
-|ooooooooooooooooooooooooo+.......          .. .............................:oooo|
-|oooooooooooooooooooooooo+.                                                .+o+oo|
-|oooooooooooooooooooooooo:                                                 :o:.+o|
-|ooooooooooooooooooooooo+.                                                .++.:oo|
-|ooooooooooooooooooooooo:.....           ...........          ....... ....:o~.+oo|
-|oooooooooooooooooooooooo+++++~         ~+++:++:++++.         ++++++++++++++.+ooo|
-|oooooooooooooooooooooooooo+:~         .++.~:::::::.         .o+.~:::::::::::+ooo|
-|oooooooooooooooooooooooooooo:         :o~.+oooooo+.         ++.~oooooooooooooooo|
-|ooo~........~oooooooooooooo+.        .++.:ooooooo+         ~o:.+oooooooooooooooo|
-|oo:         ~o++ooooooooooo.         +o~.ooooooo+.        .++.~ooooooooooooooooo|
-|oo.         :+.:ooooooooo+.         ~o+.+ooooooo:         ~o:.+ooooooooooooooooo|
-|oo.         ...~:::::::..          .++.~ooooooo+.        .o+.:oooooooooooooooooo|
-|oo~                               ~o+..+ooooooo~         +o~.+oooooooooooooooooo|
-|oo+.                           .~+o+..+ooooooo+.        .o+.+ooooooooooooooooooo|
-|oooo~.                       .:+o+..:+oooooooo.         +o..oooooooooooooooooooo|
-|ooooo+:...              ..~:+++:..:+ooooooooo+         .o+.+oooooooooooooooooooo|
-|ooooooo+++::::::::::++++++++~~.~++ooooooooooo+:+:::::+:++.~ooooooooooooooooooooo|
-|ooooooooo+++:::::::::~:~~~~:++oooooooooooooooooo+::::~::~.+ooooooooooooooooooooo|
-|oooooooooooooo+o+oo++++o+ooooooooooooooooooooooo+o+++o++o+oooooooooooooooooooooo|
-+--------------------------------------------------------------------------------+
+Beta testers provide feedback about the cores and also financial support thanks to the beta test program. Please join the beta group if you want to contribute to further development.
