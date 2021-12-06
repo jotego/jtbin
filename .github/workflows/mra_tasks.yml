@@ -12,8 +12,5 @@ jobs:
     steps:
     - uses: actions/checkout@v2
 
-    - name: mra/_alternatives to mister/MRA-Alternatives_MiSTer/releases/
-      run: ./.github/mister_alternatives.sh
-
     - name: Sync MRAs
       run: ./.github/mra_sync.sh
