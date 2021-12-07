@@ -17,6 +17,7 @@ jobs:
       with:
         workflow: update jtcores
         repo: jotego/jtcores_mister
+        ref: refs/heads/main
         token: ${{ secrets.JTBIN_UPDATER }}
 
     - name: Trigger jtpremium
@@ -24,4 +25,5 @@ jobs:
       with:
         workflow: update jtcores
         repo: jotego/jtpremium
+        ref: refs/heads/main
         token: ${{ secrets.JTBIN_UPDATER }}
