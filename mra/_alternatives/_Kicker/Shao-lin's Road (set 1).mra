@@ -62,9 +62,6 @@
         <part name="477j08.f16" crc="80009cf5"/>
         <!-- Total 0x1C500 bytes - 113 kBytes -->
     </rom>
-    <rom index="17" zip="jtbeta.zip" md5="None">
-        <part name="beta.bin"/>
-    </rom>
     <!-- Vertical game -->
     <rom index="1">
         <part>01</part>

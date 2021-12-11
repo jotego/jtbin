@@ -21,8 +21,8 @@
 
 <misterromdescription>
     <about author="jotego" webpage="https://patreon.com/topapate" source="https://github.com/jotego" twitter="@topapate"/>
-    <name>Kicker</name>
-    <setname>kicker</setname>
+    <name>Shao-lin&apos;s Road (set 2)</name>
+    <setname>shaolinb</setname>
     <rbf>jtkicker</rbf>
     <mameversion>0232</mameversion>
     <year>1985</year>
@@ -32,35 +32,35 @@
     <rotation>vertical</rotation>
     <region>World</region>
     <mraauthor>jotego</mraauthor>
-    <rom index="0" zip="kicker.zip" md5="None">
+    <rom index="0" zip="shaolinb.zip|kicker.zip" md5="None">
         <!-- maincpu - starts at 0x0 -->
         <part repeat="0x6000"> FF</part>
         <interleave output="16">
-            <part name="477l03.d9" crc="2598dfdd" map="12"/>
+            <part name="3.h4" crc="2598dfdd" map="12"/>
         </interleave>
         <interleave output="16">
-            <part name="477l04.d10" crc="0cf0351a" map="12"/>
+            <part name="4.i4" crc="0cf0351a" map="12"/>
         </interleave>
         <interleave output="16">
-            <part name="477l05.d11" crc="654037f8" map="12"/>
+            <part name="5.j4" crc="654037f8" map="12"/>
         </interleave>
         <!-- gfx1 - starts at 0x10000 -->
         <interleave output="16">
-            <part name="477k07.a11" crc="ff6ca5df" map="01"/>
-            <part name="477k06.a10" crc="4d156afc" map="10"/>
+            <part name="7.j1" crc="d9a7cff6" map="01"/>
+            <part name="6.i1" crc="ff18a7ed" map="10"/>
         </interleave>
-        <!-- gfx2 - starts at 0x14000 -->
+        <!-- gfx2 - starts at 0x16000 -->
         <interleave output="16">
-            <part name="477k01.h14" crc="61bbf797" map="01"/>
-            <part name="477k02.h15" crc="b94e645b" map="10"/>
+            <part name="1.l8" crc="a79959b2" map="01"/>
+            <part name="2.m8" crc="560521c7" map="10"/>
         </interleave>
-        <!-- proms - starts at 0x1C000 -->
-        <part name="477j10.a12" crc="b09db4b4"/>
-        <part name="477j11.a13" crc="270a2bf3"/>
-        <part name="477j12.a14" crc="83e95ea8"/>
-        <part name="477j09.b8" crc="aa900724"/>
-        <part name="477j08.f16" crc="80009cf5"/>
-        <!-- Total 0x1C500 bytes - 113 kBytes -->
+        <!-- proms - starts at 0x1E000 -->
+        <part name="3.k1" crc="b09db4b4"/>
+        <part name="4.l1" crc="270a2bf3"/>
+        <part name="5.m1" crc="83e95ea8"/>
+        <part name="2.g2" crc="aa900724"/>
+        <part name="1.o6" crc="80009cf5"/>
+        <!-- Total 0x1E500 bytes - 121 kBytes -->
     </rom>
     <!-- Vertical game -->
     <rom index="1">
