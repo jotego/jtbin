@@ -26,7 +26,7 @@
     <setname>punisher</setname>
      <year>1993</year>
     <manufacturer>Capcom</manufacturer>
-    <category>Beat em up</category>
+    <category>Beat 'em up</category>
     <rbf>jtcps15</rbf>
     <rom index="0" zip="punisher.zip|qsound.zip" type="merged" md5="None">
         <part>
