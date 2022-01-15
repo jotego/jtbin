@@ -5,7 +5,7 @@
               This work is not mantained by the MiSTer project. Please contact the
               core author for issues and updates.
 
-              (c) Jose Tejada, 2021. Please support the author
+              (c) Jose Tejada, 2022. Please support the author
               Patreon: https://patreon.com/topapate
               Paypal:  https://paypal.me/topapate
 
@@ -21,9 +21,9 @@
 
 <misterromdescription>
     <about author="jotego" webpage="https://patreon.com/topapate" source="https://github.com/jotego" twitter="@topapate"/>
-    <name>Super Basketball (version I, encrypted)</name>
-    <setname>sbasketb</setname>
-    <rbf>jtsbask1</rbf>
+    <name>Super Basketball (version H, unprotected)</name>
+    <setname>sbasketh</setname>
+    <rbf>jtsbaskt</rbf>
     <mameversion>0232</mameversion>
     <year>1984</year>
     <manufacturer>Konami</manufacturer>
@@ -32,12 +32,12 @@
     <rotation>vertical</rotation>
     <region>World</region>
     <mraauthor>jotego</mraauthor>
-    <rom index="0" zip="sbasketb.zip" md5="None">
+    <rom index="0" zip="sbasketh.zip|sbasketb.zip" md5="None">
         <!-- maincpu - starts at 0x0 -->
         <part repeat="0x6000"> FF</part>
-        <part name="405g05.14j" crc="336dc0ab"/>
-        <part name="405i03.11j" crc="d33b82dd"/>
-        <part name="405i01.9j" crc="1c09cc3f"/>
+        <part name="405h05.14j" crc="263ec36b"/>
+        <part name="405h03.11j" crc="0a4d7a82"/>
+        <part name="405h01.9j" crc="4f9dd9a0"/>
         <!-- audiocpu - starts at 0x10000 -->
         <part name="405e13.7a" crc="1ec7458b"/>
         <!-- gfx1 - starts at 0x12000 -->
@@ -55,9 +55,6 @@
         <part name="405e20.19d" crc="8ca6de2f"/>
         <part name="405e19.16d" crc="e0bc782f"/>
         <!-- Total 0x24500 bytes - 145 kBytes -->
-    </rom>
-    <rom index="17" zip="jtbeta.zip" md5="None">
-        <part name="beta.bin"/>
     </rom>
     <!-- Vertical game -->
     <rom index="1">

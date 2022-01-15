@@ -5,7 +5,7 @@
               This work is not mantained by the MiSTer project. Please contact the
               core author for issues and updates.
 
-              (c) Jose Tejada, 2021. Please support the author
+              (c) Jose Tejada, 2022. Please support the author
               Patreon: https://patreon.com/topapate
               Paypal:  https://paypal.me/topapate
 
@@ -62,9 +62,6 @@
         <!-- proms - starts at 0x26000 -->
         <part name="407c10.1g" crc="c283d71f"/>
         <!-- Total 0x26020 bytes - 152 kBytes -->
-    </rom>
-    <rom index="17" zip="jtbeta.zip" md5="None">
-        <part name="beta.bin"/>
     </rom>
     <rom index="1">
         <part>00</part>
