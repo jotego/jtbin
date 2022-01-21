@@ -1,36 +1,140 @@
-# Arcade replicas for FPGA
+# JTKICKER/JTYIEAR FPGA core compatible with Kicker/Yie Ar Kung-fu hardware
 
-This repository contains arcade cores for several FPGA platforms and hundreds of arcade titles. All these cores are written by Jose Tejada (aka JOTEGO), but some of the pieces come from other developers. Particularly the M68000, M6809 and Z80 CPUs, to name easy ones to spot.
+You have in your hands a faithful reproduction of Kicker's hardware. We have analysed the PCB and extracted full schematics from it. We burnt EPROMs with specific code designed to test the custom chips functionality. The discoveries found during this process have been reported to the MAME team. So we can improve the experience in emulators where possible too.
 
-The source code for each system can be found if you browse [my github account](https://github.com/jotego).
-
-All this work has been produced thanks to the community support:
-
+You can show your appreciation through
 * Patreon: https://patreon.com/topapate
 * Paypal: https://paypal.me/topapate
 * Github: https://github.com/sponsors/jotego
 
-# MiST and related platforms
+# Known Issues
 
-For non MiSTer users, you have the latest compilations in the folder with your system name. You then need to grab the MRA files (in the [mra](mra) folder) and use it to generate the ROM file based in a MAME ROM set. This is done using [this tool](https://github.com/sebdel/mra-tools-c). For MiST and SiDi, generate an ARC file too and copy everything.
+It hasn't been possible to assess whether the INTSHOW custom chip outputs the current scan line or the current vertical scroll position, as these values are the same for over a third of the line. And it is at that time when when the INTSHOW value is easy to read, as it is when the NMI interrupt comes in. In practice, it doesn't seem to matter.
 
-Make sure you are using the latest firmware, as my cores often need the latest features to work.
+The 60.5Hz vertical frequency seems problematic in MiSTer for some screens. This could be improved using a different PLL as the base clock. For now, there is a safe 60Hz mode that can be enabled in the OSD as a fall back option.
 
-# MiSTer
+Screen synchronization can be a problem with the original PCB too. Connecting using the OSSC (default configuration) didn't bring a stable image in my small monitors for Yie Ar Kungfu. Kicker seemed ok.
 
-You can manually install the files by getting the files in the [MiSTer](mister) folder. But if it is a fresh installation, you can just download all files in a single zip [here](https://github.com/jotego/jtcores_mister/archive/refs/heads/main.zip).
+# System Comparison
 
-I recommend setting up the MiSTer downloader tool to get the files for you. Add these lines to `/media/fat/downloader.ini`:
+Games based on 082, 083 and 503 graphic chips
 
-```
-[jtcores]
-db_url = https://raw.githubusercontent.com/jotego/jtcores_mister/main/jtbindb.json.zip
-```
+Game            | Date       | ID  | Palette PROM  | 085 | CPU1 | CPU2     | PSG   | VLM5030  | Sch                         | eBay price    |     YT views      |
+----------------|------------|-----|---------------|-----|------|----------|-------|----------|-----------------------------|---------------|-------------------|
+Mega Zone       |       1983 | No  |  Only output  | No  | 6809 | Z80+8039 | x1    | No       | Yes, only 083               |25€            |10.614(2016)       |
+Yie Ar Kungfu   |19/Nov/1984 |GX407|  Only output  | No  | 6809 |          | 74689 | Yes      | Yes, only 082,083           |15€ cart       |3.6 M (2013) NES   |
+Shaolin's Road  |22/Mar/1985 |GX477| All elements  | Yes | 6809 |          | 74689 | No       | Yes                         |97.13€         |27.664(2018)       |
+Track'n Field   |10/Oct/1983 | No  | All elements  | No  |      |          |       | Yes      | Partial-Blurred             |7 a 60€ cart   |2.7 M (2015) NES   |
+Hyper Sports    |31/May/1984 | No  | All elements  | Yes |      |          |       | Yes      | Yes blurred,with labels     |80€            |41.562(2012)       |
+Road Fighter    |            |     |               |     |      |          |       |          | No                          |15 a 70€ cart  |4 M (2010) NES     |
+Super Basketball|       1984 |GX405| All elements  | Yes | 6809 | Z80      | 74689 | Yes      | Yes,with labels             |159€           |23.494 (2014)      |
+Mikie           |15/Nov/1984 | No  | All elements  | Yes | 6809 | Z80      |2x74689| No       | Yes,with labels, small      |11€     cart   |50.381 (2010)      |
+Pandora's Palace|       1984 | No  | Only output   | Yes |      |          |       | No       | Yes,with labels             |      €        |14.167 (2010)      |
+Ping Pong       |            |     |               |     |      |          |       |          | No                          |60€            |8.530 (2012) NES   |
+Roc'n Rope      |       1984 | No  | Only output   | No  |      |          | 8910  | No       | Yes, only 082,083           |350€PCB 50€cart|43.873 (2011)      |
 
-## New cores - The beta phase
+# Test Mode
 
-When I develop new cores, these are available for download during the beta phase only if you enable it. Follow the instructions in this [video](https://www.youtube.com/watch?v=alcKBAxl82k) to enable beta download.
+* Super Basketball test mode is enabled by holding 1P and 2P while the game boots
 
-Cores in beta phase have their inputs locked up unless you place the file **jtbeta.zip** in the folder `games/mame` of your SD card. The **jtbeta.zip** can be found in Patreon and our Discord server.
+# Acknowledgement
 
-Beta testers provide feedback about the cores and also financial support thanks to the beta test program. Please join the beta group if you want to contribute to further development.
+This development has been possible thanks to the board donated by Brian Schinzel and the following patrons:
+
+8bits4ever             Adam Leslie            Adam Small             Adam Zorzin
+Adrian Labastida       Alan Shurvinton        Alda Alesio            Alden
+Alex Mandic            Alexander Lash         Alexander Upton        Alfonso Clemente
+Alvaro Paniagua        Andrea Bogazzi         Andrea Chiavazza       Andreas Micklei
+Andrew Boudreau        Andrew Hannan          Andrew P Gibson        Andrew Schmidt
+Angel Aguinaga         Angelfred              Angelo Kanaris         Anselmo Moreno
+Anthony Monaco         Antoine Mariette       Anton Gale             Antwon
+Aquijacks (Flashjacks  Arend Pronk            Arthur Blough          Arthur Fung
+Aurich Lawson          BRCDEvg                Banane                 Bear S
+Ben                    Ben Sanborn            Ben Toman              Bitmap Bureau
+Bitmaps Retro          Bliz 452               Blue Abs               Boris Pruessmann
+Brandon Lennie         Brandon Peach          Brandon Smith          Brandon Thomas
+Brent Fraser           Brian Peek             Brian Plummer          Bruno M
+Bryan Adams            Bryan Evans            C                      Cameron Berkenpas
+Cameron Tinker         Carrboroman            Cesar Sandoval         Charles
+Chris                  Chris Chung            Chris D                Chris Hoff
+Chris Maguire          Chris Mzhickteno       Chris Tuckwell         Chris W Miller
+Chris smith            Christian Bailey       Clinton Cronin         Cobra Clips
+Colin Colehour         Colin Edwards          Colt83                 Cory Stargel
+DARK WEB DANGer        Dan Doyle              Daniel                 Daniel .
+Daniel Casadevall      Daniel Dongil          Daniel Fowler          Daniel Page
+Daniel Tibi            Daniel Zetterman       Darren Newman          Darren Wootton
+Daryll David           Dasutin                Dave Douglas           Dave Test
+David Drury            David Filskov          David Fleetwood        David Jones
+Denis Brækhus          Denny Letourneau       Diana Carolina         Didgeridoo
+Didier Touron          Dimitris Zongas        Dr Catjail             Dr. Octagon
+DrMnike                Dre137                 Edward Mallett         Eren Kotan
+Eric                   Eric Gutt              Eric J Faulkes         Eric Walklet
+Fabio Michelin         Federico               Five Year Guy          Florian Raoult
+Frank Schwab           Fred Rojas             Geddon                 GeorgeSpinner
+Gluthecat              GohanX                 Goolio                 Grant McNaught
+Greg                   Greg Sargent           Gregory Val            HFSPlay
+Handheld Obsession     Henry                  Henry R                Hentai Joe
+Hugo Pinto             ItsBobDudes            JOSE LUIS              JR
+Jack Sammons           Jacob Hoffman          Jacob Lawter           James Dingo
+James Durden           James Kilgore          James Wilson           Jason Baker
+Jeff Roberts           Jeremy Hasse           Jerry Suggs            Jesse Clark
+Jim Knowler            JimLahey               Jimmy Dozier           Jimmy Richards
+Jockel                 Joel Albino            Johan Smolinski        John Figueroa
+John Fletcher          John Hood              John Silva             John T. Keen
+John Wilson            Johnny harvick         Jonah Phillips         Jonathan
+Jonathan Brochu        Jonathan Loor          Jonathan Tuttle        JonathanValls
+Joost Peters           Jootec from            Jorge                  Jork Sonkinfield
+Jose L                 Jose Lopez             Josep Barbie           Joseph Kulinski
+Joseph Milazzo         Joseph Mogavero        Josh Emery             Josh Mayer
+Josh Yates-Walker      Josiah Wilson          Julian Baptiste        Justin D'Arcangelo
+Kai Cherry             Kai Luotojoki          Keith Gordon           Kem Yos
+Ken Scott              Kevin Dayton           Kevin Gudgeirsson      KnC
+Kricys                 KrzysFR                Kyle Pedersen          L.Rapter
+Lakeside               Laurent Cooper         Lee Grocott            Lee Osborne
+Luis F Giron           M Reznor               MaDDoG                 Mack H
+Madox                  Magnus Kvevlander      Manuel Astudillo       Marco Emparan
+Mark Baffa             Mark DeRidder          MarthSR                Martin Ansin
+Matt Elder             Matt Evans             Matt Hargett           Matt Heinrich
+Matt Lichtenberg       Matt McCarthy          Matt Postema           Matthew Pollard
+Matthew Woodford       MechaGG                MiSTer Retro           Michael Anderson
+Michael Bariszlovits   Michael Berger         Michael C              Michael Eggers
+Michael Ferguson       Michael Rea            Michael_DKT            Mike Holzinger
+Mike Jegenjan          Mike Olson             Mike Parks             Mottzilla
+My War                 Nailbomb               Narugawa               Neil St Clair
+NerdyNester            Nic Kaiman             Nick Delia             Nick Gudauskas
+Nico Stamp             Nicolas Hurtado        Niko                   NonstopXiaowei
+Norman Wehrle          Obvious Fakename       OopsAllBerrys          Or even
+Oriez                  Oskar Sigvardsson      PANICKED SCREECHING.   Pascal Courtois
+Patrick Roman          Paul                   Paul Cunningham        Paul Hoggett
+Paulo M.               Paweł Mandes           PeFClic                Pedro Santiago
+Per Ole                Philip Lai             Philip Lawson          Piafoman
+Pierre-Emmanuel Martin Pontus Nyholm          Rachael Netz           Rachel Schaeffer
+Ramon Gamaliel         RandomRetro            Raphael Melgar         Raul3D
+RayGun                 RetroRGB               Rex Kung               Rex Willer
+Richard Eng            Richard Murillo        Richard Simpson        Rick Ochoa
+Riyad Twair            Robert Daniel          Robert Hayes           Romain Dijoux
+Ronald Dean            Ronan Amicel           Ruben                  Ryan
+Ryan O'Malley          SIDKidd64              Sam Hall               Samuel Warner
+Sang Hee               Sascha Zupanek         Schnookums             Ser Erris
+Shannon King           Simon Osborne          Spank Minister         SteelRush
+Stefan Krueger         Stephen R Price        Steve Ikeguchi         Steve Lin
+Steve Skrzyniarz       Steve Tack             Steven Hansen          Steven Yedwab
+Stuart Morton          Sunder Raj             SuperBabyHix           Synbios
+Syrotuck               Taehyun Kim            Taiki Hosoda           Tales Dilli
+Terse                  The Collector          The Video              TheLevelOfDetail .
+Thomas Attanasio       Thomas Irwin           Thorias                Timothy Bearup
+Tobias Dossin          Tom Milner             Topher Campbell        Travis Brown
+Trifle                 Turboman UK            Ty B                   VickiViperZabel
+Victor Bly             Victor Fontanez        Will Abbott            William Clemens
+William Tryon          Yunus Soğukkanlı       Zach Marquette         Zoltan Kovacs
+albertprime            alejandro carlos       angel_killah           arcadebros
+benedict lindley       blackwine              brian burney           cbab
+chauviere benjamin     circletheory           datajerk               deathr0w
+deathwombat            derFunkenstein         gunmakuma              jbrlll
+jim br                 joshewah777            kamel rasennadja       kccheng
+kernelchagi            keropi                 liphy                  meng po
+metal                  natalie                nonamebear             pacoarcade
+patrick pejic          qzxcvbn                retroPREZ              retrod00d
+rsn8887                slayer213              taal.M                 tonitellezb
+troy coberly           turbochop3300          type78                 yoaarond
+
