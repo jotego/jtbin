@@ -20,14 +20,14 @@
     <about author="jotego" webpage="https://patreon.com/topapate"
                            source ="https://github.com/jotego/jtcps1"
                            twitter="@topapate"/>
-    <name>Street Fighter 2 Mix (Ver 1.0 210623)</name>
-    <mameversion>0232</mameversion>
+    <name>Street Fighter 2 Mix (Ver 1.2 220126)</name>
+    <mameversion>0239</mameversion>
     <setname>sf2mix</setname>
-    <year>2021</year>
+    <year>2022</year>
     <manufacturer>Zero800</manufacturer>
     <category>Fighting</category>
     <rbf>jtcps1</rbf>
-    <rom index="0" zip="/hbmame/sf2mix.zip" md5="8057d4be6f1a80fd064d79c81aef4f0c">
+    <rom index="0" zip="/hbmame/sf2mix.zip" md5="3cfdf9c1ceed3e29abb0c6e65eb861e1">
         <!-- relative position of each ROM section in the file, discounting the header, in kilobytes -->
         <!-- Size of M68000 code 1536 kB -->
         <!-- Sound CPU size 64 kB -->
@@ -45,13 +45,13 @@
         <part repeat="24">FF</part>
         <!-- maincpu -->
         <interleave output="16">
-            <part name="smxe_23b.8f" crc="316ddac7" map="21"/>
+            <part name="smxe_23b.8f" crc="997f551e" map="21"/>
         </interleave>
         <interleave output="16">
-            <part name="smx_22b.7f" crc="d3075211" map="21"/>
+            <part name="smx_22b.7f" crc="414ab00b" map="21"/>
         </interleave>
         <interleave output="16">
-            <part name="smx_21a.6f" crc="d7e6b35d" map="21"/>
+            <part name="smx_21a.6f" crc="1221db31" map="21"/>
         </interleave>
         <!-- audiocpu -->
         <part name="smx_09.11a" crc="a379fdc5"/>
