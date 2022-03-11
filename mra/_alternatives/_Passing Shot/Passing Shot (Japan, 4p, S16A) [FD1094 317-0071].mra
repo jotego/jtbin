@@ -82,9 +82,6 @@
         <part name="7751.bin" crc="6a9534fc"/>
         <!-- Total 0x184400 bytes - 1553 kBytes -->
     </rom>
-    <rom index="17" zip="jtbeta.zip" md5="None">
-        <part name="beta.bin"/>
-    </rom>
     <nvram index="2" size="43008"/>
     <!-- Vertical game -->
     <rom index="1">

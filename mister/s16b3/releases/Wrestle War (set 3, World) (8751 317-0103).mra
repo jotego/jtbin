@@ -93,9 +93,6 @@
         <part name="317-0103.c2" crc="aa0710f5"/>
         <!-- Total 0x441000 bytes - 4356 kBytes -->
     </rom>
-    <rom index="17" zip="jtbeta.zip" md5="None">
-        <part name="beta.bin"/>
-    </rom>
     <nvram index="2" size="75777"/>
     <!-- Vertical game -->
     <rom index="1">

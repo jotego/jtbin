@@ -74,9 +74,6 @@
         <part name="317-0095.c2" crc="b06b4ca7"/>
         <!-- Total 0x441000 bytes - 4356 kBytes -->
     </rom>
-    <rom index="17" zip="jtbeta.zip" md5="None">
-        <part name="beta.bin"/>
-    </rom>
     <nvram index="2" size="75777"/>
     <rom index="1">
         <part>00</part>
