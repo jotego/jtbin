@@ -84,9 +84,9 @@
         <part name="beta.bin"/>
     </rom>
     <rom index="1">
-        <part>00</part>
+        <part>02</part>
     </rom>
-    <switches base="17" default="7f7f">
+    <switches base="16" default="7f7f">
         <!-- DSW -->
         <dip name="Coin A" bits="0,2" ids="3/1,2/1,1/6,1/5,1/4,1/3,1/2,1/1"/>
         <dip name="Coin B" bits="3,5" ids="3/1,2/1,1/6,1/5,1/4,1/3,1/2,1/1"/>
@@ -98,5 +98,5 @@
         <dip name="Allow Continue" bits="14" ids="No,Yes"/>
         <dip name="Demo Sounds" bits="15" ids="On,Off"/>
     </switches>
-    <buttons names="button 1,button 2,-,-,-,Start,Coin,Core credits" default="Y,X,B,A,R,Start,Select,-" count="2"/>
+    <buttons names="Squeeze Diamond,Escape,-,-,-,Start,Coin,Core credits" default="Y,X,B,A,R,Start,Select,-" count="2"/>
 </misterromdescription>
