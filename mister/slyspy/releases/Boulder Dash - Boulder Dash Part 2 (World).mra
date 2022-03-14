@@ -98,5 +98,5 @@
         <dip name="Allow Continue" bits="14" ids="No,Yes"/>
         <dip name="Demo Sounds" bits="15" ids="On,Off"/>
     </switches>
-    <buttons names="Sqeeze Diamond,Escape,-,-,-,Start,Coin,Core credits" default="Y,X,B,A,R,Start,Select,-" count="2"/>
+    <buttons names="Squeeze Diamond,Escape,-,-,-,Start,Coin,Core credits" default="Y,X,B,A,R,Start,Select,-" count="2"/>
 </misterromdescription>
