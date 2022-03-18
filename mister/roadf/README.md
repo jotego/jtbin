@@ -44,7 +44,7 @@ Road Fighter uses the same board as Hyper Sports, but a ROM jumper in the video 
 
 This development has been possible thanks to the board donated by Brian Schinzel and the following patrons:
 
-``
+```
 8bits4ever             Adam Leslie            Adam Small             Adam Zorzin
 Adrian Labastida       Alan Shurvinton        Alda Alesio            Alden
 Alex Mandic            Alexander Lash         Alexander Upton        Alfonso Clemente
