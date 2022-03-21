@@ -82,5 +82,5 @@
         <part>01 00 01 00 00 01 00 01 00 02 00 00 00 00 00 00 01 03 00 01 00 00 00 00 00 00 00 00 00 00 00 00 03 01 0a 02 4c 50 45 32 49 4d 43 54 45 48 4c 4c 01 00 01 00 00 01 00 01 00 02 00 00 00 00 00 00 01 03 00 01 00 00 00 00 00 00 00 00 00 00 00 00 03 01 0a 02 4c 50 45 32 49 4d 43 54 45 48 4c 4c 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00</part>
     </rom>
     <nvram index="2" size="128"/>
-    <buttons names="Shot,-,-,-,-,-,Start,Coin,Core credits" default="YXBALR,Select,Start,-" count="1"/>
+    <buttons names="Shot,-,-,-,-,-,Start,Coin,Core credits" default="Y,X,B,A,L,R,Select,Start,-" count="1"/>
 </misterromdescription>

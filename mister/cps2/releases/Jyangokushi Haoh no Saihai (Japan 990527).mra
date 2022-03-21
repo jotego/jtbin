@@ -77,5 +77,5 @@
         <part>01 00 01 00 02 00 00 00 00 00 00 00 00 00 00 00 00 02 00 02 01 01 00 00 00 00 00 00 00 00 00 00 05 99 00 27 41 4d 4a 4a 41 4d 59 4a 4e 41 20 33 01 00 01 00 02 00 00 00 00 00 00 00 00 00 00 00 00 02 00 02 01 01 00 00 00 00 00 00 00 00 00 00 05 99 00 27 41 4d 4a 4a 41 4d 59 4a 4e 41 20 33 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00</part>
     </rom>
     <nvram index="2" size="128"/>
-    <buttons names="Tsumo,Open Menu,-,-,-,-,Start,Coin,Core credits" default="Y,XBALR,Select,Start,-" count="2"/>
+    <buttons names="Tsumo,Open Menu,-,-,-,-,Start,Coin,Core credits" default="Y,X,B,A,L,R,Select,Start,-" count="2"/>
 </misterromdescription>

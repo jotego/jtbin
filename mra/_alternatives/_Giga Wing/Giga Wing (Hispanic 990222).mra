@@ -77,5 +77,5 @@
         <part>00 00 01 00 00 00 00 04 03 00 00 05 00 00 00 00 03 01 00 02 00 00 00 00 00 00 00 00 00 00 00 00 11 98 08 30 10 97 ff 31 41 43 47 50 48 47 53 49 00 00 01 00 00 00 00 04 03 00 00 05 00 00 00 00 03 01 00 02 00 00 00 00 00 00 00 00 00 00 00 00 11 98 08 30 10 97 ff 31 41 43 47 50 48 47 53 49 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00</part>
     </rom>
     <nvram index="2" size="128"/>
-    <buttons names="Shot,Force Bomb,-,-,-,-,Start,Coin,Core credits" default="Y,XBALR,Select,Start,-" count="2"/>
+    <buttons names="Shot,Force Bomb,-,-,-,-,Start,Coin,Core credits" default="Y,X,B,A,L,R,Select,Start,-" count="2"/>
 </misterromdescription>
