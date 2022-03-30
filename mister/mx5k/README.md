@@ -42,6 +42,14 @@ Games using the KONAMI-2 CPU:
 Binary RBF files for MiST, MiSTer and SiDi will be provided for in
 https://github.com/jotego/jtbin
 
+# Known Issues
+
+The score colour in Fast Lane might be wrong. I do not have the board and
+I have not found any original footage to verify it. However, the way the
+chips are connected is the most logical way and the chip count matches that
+seen in [PCB photos](doc/pcb/Fastlane.jpg). Thus, I think it is most likely
+right.
+
 # Compiling
 
 You need to have Quartus installed in a linux machine. Clone this repository and
