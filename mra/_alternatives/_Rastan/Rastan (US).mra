@@ -1,0 +1,94 @@
+<!--          FPGA compatible core for Taito America Corporation arcade hardware by Jotego
+
+              This core is available for hardware compatible with MiST and MiSTer
+              Other FPGA systems may be supported by the time you read this.
+              This work is not mantained by the MiSTer project. Please contact the
+              core author for issues and updates.
+
+              (c) Jose Tejada, 2022. Please support the author
+              Patreon: https://patreon.com/topapate
+              Paypal:  https://paypal.me/topapate
+
+              The author does not endorse or participate in illegal distribution
+              of copyrighted material. This work can be used with legally
+              obtained ROM dumps or with compatible homebrew software.
+
+              This file license is GNU GPLv2.
+              You can read the whole license file in
+              https://opensource.org/licenses/gpl-2.0.php
+
+-->
+
+<misterromdescription>
+    <about author="jotego" webpage="https://patreon.com/topapate" source="https://github.com/jotego" twitter="@topapate"/>
+    <name>Rastan (US)</name>
+    <setname>rastanua</setname>
+    <rbf>jtrastan</rbf>
+    <mameversion>0241</mameversion>
+    <year>1987</year>
+    <manufacturer>Taito America Corporation</manufacturer>
+    <players>2</players>
+    <joystick>8</joystick>
+    <rotation>horizontal</rotation>
+    <region>World</region>
+    <mraauthor>jotego</mraauthor>
+    <rom index="0" zip="rastanua.zip|rastan.zip" md5="None">
+        <!-- maincpu - starts at 0x0 -->
+        <interleave output="16">
+            <part name="b04-37.7" crc="ecf20bdd" map="01"/>
+            <part name="b04-38.19" crc="1c91dbb1" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="b04-44.8" crc="51cc5508" map="01"/>
+            <part name="b04-45.20" crc="362812dd" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="b04-41.9" crc="b44ca1c4" map="01"/>
+            <part name="b04-42.21" crc="1857a7cb" map="10"/>
+        </interleave>
+        <!-- audiocpu - starts at 0x60000 -->
+        <part name="b04-19.49" crc="ee81fdd8"/>
+        <!-- adpcm - starts at 0x70000 -->
+        <part name="b04-20.76" crc="fd1a34cc"/>
+        <!-- pc080sn - starts at 0x80000 -->
+        <interleave output="16">
+            <part name="b04-01.40" crc="cd30de19" map="01"/>
+            <part name="b04-02.67" crc="54040fec" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="b04-03.39" crc="ab67e064" map="01"/>
+            <part name="b04-04.66" crc="94737e93" map="10"/>
+        </interleave>
+        <!-- pc090oj - starts at 0x100000 -->
+        <interleave output="16">
+            <part name="b04-05.15" crc="c22d94ac" map="01"/>
+            <part name="b04-06.28" crc="002ccf39" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="b04-07.14" crc="b5632a51" map="01"/>
+            <part name="b04-08.27" crc="feafca05" map="10"/>
+        </interleave>
+        <!-- Total 0x180000 bytes - 1536 kBytes -->
+    </rom>
+    <rom index="17" zip="jtbeta.zip" md5="None">
+        <part name="beta.bin"/>
+    </rom>
+    <nvram index="2" size="2048"/>
+    <rom index="1">
+        <part>00</part>
+    </rom>
+    <switches base="16" default="fe,ff">
+        <!-- DSWA -->
+        <dip name="Cabinet" bits="0" ids="Upright,Cocktail"/>
+        <dip name="Flip Screen" bits="1" ids="On,Off"/>
+        <dip name="Service Mode" bits="2" ids="On,Off"/>
+        <dip name="Coin A" bits="4,5" ids="2/3,2/1,1/2,1/1"/>
+        <dip name="Coin B" bits="6,7" ids="2/3,2/1,1/2,1/1"/>
+        <!-- DSWB -->
+        <dip name="Difficulty" bits="8,9" ids="Hardest,Hard,Easy,Medium"/>
+        <dip name="Bonus Life" bits="10,11" ids="250k 500k 1000k 1500k 2000k,200k 400k 800k 1200k 1600k,150k 300k 600k 900k 1200k,100k 200k 400k 600k 800k"/>
+        <dip name="Lives" bits="12,13" ids="6,5,4,3"/>
+        <dip name="Allow Continue" bits="14" ids="Off,On"/>
+    </switches>
+    <buttons names="Slash,Jump,Start,Coin,Core credits" default="Y,X,Start,Select,-" count="2"/>
+</misterromdescription>
