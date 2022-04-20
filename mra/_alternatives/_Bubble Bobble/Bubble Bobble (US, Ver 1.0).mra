@@ -83,7 +83,7 @@
     <rom index="1">
         <part>00</part>
     </rom>
-    <switches default="FF,FF" base="16">
+    <switches default="FE,FF" base="16">
         <!-- DSW0 -->
         <dip name="Flip Screen" bits="1" ids="On,Off"/>
         <dip name="Mode" bits="0" ids="Test /Pause,Test,Game, English,Game, Japanese"/>
