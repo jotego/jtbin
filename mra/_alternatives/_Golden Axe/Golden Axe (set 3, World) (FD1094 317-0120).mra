@@ -105,7 +105,7 @@
         <!-- DSW2 -->
         <dip name="Credits Needed" bits="8" ids="2 To Start,1 To Start"/>
         <dip name="Demo Sounds" bits="9" ids="On,Off"/>
-        <dip name="Difficulty" bits="10,13" ids="Special,Easiest,Easier,Hardest,Harder,Easy,Hard,Normal"/>
+        <dip name="Difficulty" bits="10,13" ids="Special,-,-,-,-,Easiest,-,Easier,-,-,Hardest,Harder,-,Easy,Hard,Normal"/>
     </switches>
     <buttons names="Attack,Jump,Magic,-,Start,Coin,Core credits" default="Y,X,B,A,Start,Select,-" count="3"/>
 </misterromdescription>
