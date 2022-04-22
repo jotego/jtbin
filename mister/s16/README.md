@@ -29,14 +29,21 @@ Ace Attack     |    1     |            | inputs via CXD1095
 
 Because of the hardware variety, there are different cores targeted for each of them
 
-System                         |  Core
--------------------------------|---------
-16A no protection/FD1089/i8751 | jts16
-16A FD1094 protection          | jts16a2
-16B FD1094                     | jts16b
-16B FD1089                     | jts16b1
-16B 8123 encryption            | jts16b2
-16B i8751                      | jts16b3
+System               |  Core   | Logic Usage | BRAM Usage
+---------------------|---------|-------------|-------------
+16A                  | jts16   | 22,149      | 374,458
+16B (no i8751)       | jts16b  | 20,089      | 330,426
+16B i8751            | jts16b  | 23,073      | 364,218
+16B i8751            | jts16b3 | 22,206      | 251,578
+
+MiST has 608,256 memory bits and 24,624 logic elements.
+Although the MCU can be synthesized in MiST and SiDi, timings are usually broken and requires several runs with different seeds because the FPGA is almost full. For MiSTer it seems to gowell, but I prefer to keep the jts16b3 for all systems because:
+
+1. The same MRA files can be shared
+2. Even if MiSTer compilation times is doubled, with two cores instead of one; for the other platforms the separated cores synthesized correctly in first run
+
+To make JTS16B support i8751 games, it is enough to remove the `NOMCU` definition in the `.def` file.
+
 
 # PCB Check List
 
@@ -46,7 +53,9 @@ These items need double checking on the PCB
 
 # Clocks
 
-HSync/VSync (OSSC) 15.73kHz, 60.28Hz
+HSync (OSSC) 15.73kHz
+VSync (Analog Discovery) 60.042Hz
+Vblank: 2.427 ms (38 lines)
 
 Crystal Oscillators (System 16B)
 
@@ -59,8 +68,8 @@ G1       | 25.1748    | Video
 Pixel clock: 6.2937 MHz
 
 Estimated geometry:
-    400 pixels/line
-    261 lines/frame
+    400 pixels/line = 63.555us = 15.734 kHz
+    262 lines/frame
 
 Core clock: 50.3496 MHz
 

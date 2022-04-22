@@ -3,6 +3,7 @@
 You can show your appreciation through
 * Patreon: https://patreon.com/topapate
 * Paypal: https://paypal.me/topapate
+* Github: https://github.com/sponsors/jotego
 
 Yes, you always wanted to have a Ghosts'n Goblins arcade board at home. First you couldn't get it because your parents somehow did not understand you. Then you grow up and your wife doesn't understand you either. Don't worry, MiST(er) is here to the rescue.
 
@@ -14,45 +15,47 @@ I hope you will have as much fun with it as I had it while making it!
 
 In chronological order:
 
- 1. Vulgus            (doc/jtvulgus.txt)
- 2. Higemaru          (doc/jthige.txt)
- 3. 1942              (doc/jt1942.txt)
- 4. Commando          (doc/jtcommando.txt)
- 5. Ghosts'n Goblins  (doc/jtgng.txt)
- 6. SectionZ          (doc/jtsectionz.txt)
- 7. GunSmoke          (doc/jtgunsmoke.txt)
- 8. Legendary Wings   (doc/jtsectionz.txt)
- 9. Trojan            (doc/jttrojan.txt)
-10. The Speed Rumbler (doc/jtrumble.txt)
-11. 1943              (doc/jt1943.txt)
-12. Black Tiger       (doc/jtbtiger.txt)
-13. Side Arms         (doc/jtsarms.txt)
-14. Tiger Road        (doc/jttora.txt)
-15. F1-Dream          (doc/jtf1dream.txt)
-16. Bionic Commando   (doc/jtbiocom.txt)
-17. Street Fighter    (doc/jtsf.txt)
+ 1. [Vulgus           ](doc/jtvulgus.txt)
+ 2. [Higemaru         ](doc/jthige.txt)
+ 3. [1942             ](doc/jt1942.txt)
+ 4. [Commando         ](doc/jtcommando.txt)
+ 5. [Exed Exes        ](doc/jtexed.txt)
+ 6. [Ghosts'n Goblins ](doc/jtgng.txt)
+ 7. [SectionZ         ](doc/jtsectionz.txt)
+ 8. [GunSmoke         ](doc/jtgunsmoke.txt)
+ 9. [Legendary Wings  ](doc/jtsectionz.txt)
+10. [Trojan           ](doc/jttrojan.txt)
+11. [The Speed Rumbler](doc/jtrumble.txt)
+12. [1943             ](doc/jt1943.txt)
+13. [Black Tiger      ](doc/jtbtiger.txt)
+14. [Side Arms        ](doc/jtsarms.txt)
+15. [Tiger Road       ](doc/jttora.txt)
+16. [F1-Dream         ](doc/jtf1dream.txt)
+17. [Bionic Commando  ](doc/jtbiocom.txt)
+18. [Street Fighter   ](doc/jtsf.txt)
 
 ### Dependencies
 
-Game              | 6809 | Z80 | 68000 | MCU  | YM2203  | YM2151 | YM2149 | MSM5205
-------------------|------|-----|-------|------|---------|--------|--------|---------
-1942              |      |  X  |       |      |         |        |   X    |
-1943              |      |  X  |       |      |   X     |        |   X    |
-Bionic Commando   |      |  X  |   X   |  X   |         |   X    |        |
-Black Tiger       |      |  X  |       |  X   |   X     |        |   X    |
-Commando          |      |  X  |       |      |   X     |        |   X    |
-F1-Dream          |      |  X  |   X   |  X   |   X     |        |   X    |
-Ghosts'n Goblins  |  X   |  X  |       |      |   X     |        |   X    |
-Gun Smoke         |      |  X  |       |      |   X     |        |   X    |
-Higemaru          |      |  X  |       |      |         |        |   X    |
-Legendary Wings   |      |  X  |       |      |   X     |        |   X    |
-Section Z         |      |  X  |       |      |   X     |        |   X    |
-Side Arms         |      |  X  |       |      |   X     |        |   X    |
-Street Fighter    |      |  X  |   X   |  X   |         |   X    |        |   X
-The Speed Rumbler |  X   |  X  |       |      |   X     |        |   X    |
-Tiger Road        |      |  X  |   X   |      |   X     |        |   X    |   X
-Trojan            |      |  X  |       |      |   X     |        |        |   X
-Vulgus            |      |  X  |       |      |         |        |   X    |
+Game              | 6809 | Z80 | 68000 | MCU  | YM2203  | YM2151 | YM2149 | MSM5205 | SN76489AN
+------------------|------|-----|-------|------|---------|--------|--------|---------|-----------
+1942              |      |  X  |       |      |         |        |   X    |         |
+1943              |      |  X  |       |      |   X     |        |   X    |         |
+Bionic Commando   |      |  X  |   X   |  X   |         |   X    |        |         |
+Black Tiger       |      |  X  |       |  X   |   X     |        |   X    |         |
+Commando          |      |  X  |       |      |   X     |        |   X    |         |
+Exed Exes         |      |  X  |       |      |         |        |   X    |         |    X
+F1-Dream          |      |  X  |   X   |  X   |   X     |        |   X    |         |
+Ghosts'n Goblins  |  X   |  X  |       |      |   X     |        |   X    |         |
+Gun Smoke         |      |  X  |       |      |   X     |        |   X    |         |
+Higemaru          |      |  X  |       |      |         |        |   X    |         |
+Legendary Wings   |      |  X  |       |      |   X     |        |   X    |         |
+Section Z         |      |  X  |       |      |   X     |        |   X    |         |
+Side Arms         |      |  X  |       |      |   X     |        |   X    |         |
+Street Fighter    |      |  X  |   X   |  X   |         |   X    |        |   X     |
+The Speed Rumbler |  X   |  X  |       |      |   X     |        |   X    |         |
+Tiger Road        |      |  X  |   X   |      |   X     |        |   X    |   X     |
+Trojan            |      |  X  |       |      |   X     |        |        |   X     |
+Vulgus            |      |  X  |       |      |         |        |   X    |         |
 
 Games using 1943 scroll module
 
@@ -73,6 +76,45 @@ Games using multiple SDRAM banks
 * Street Fighter
 * The Speed Rumbler
 
+Some modules identify the location of graphic bits, such as horizontal flip, with the help of a LAYOUT parameter. Here are the values:
+
+Layout  |  Game
+--------|---------
+10      | The Speed Rumbler
+11      | Exed Exes
+12      | Exed Exes (SCR2)
+
+## Wait States
+
+Bus contention is similar across the different boards.
+
+Game              |   Char Access Ok  |  Scr Access Ok
+------------------|-------------------|-----------------
+GnG               |  H[2:1]!=3        | H[2:0]<2
+1942              |  H[2:1]!=2        | H[2:0]<3
+1943, Side Arms   |  After H[2:0]==4  | No SCR RAM
+Commando          |  After H[2:0]==4  | Wait until H[0]==0
+
+## YM2203 Clock Divider
+
+These are the settings for the internal clock divider in YM2203 games. Each number refers to a YM22003 chip. This information can be viewed on the *debug_view* bus when compiled with *JTFRAME_DEBUG*.
+
+Game              | Divider   | FM IRQ
+------------------|-----------|---------
+1943              |  0/0      | No
+Black Tiger       |  2/2      | Yes
+Commando          |  0/0      | No
+F1-Dream          |  2/2      | Yes
+Ghosts'n Goblins  |  3/3      | No
+Gun Smoke         |  3/3      | No
+Legendary Wings   |  3/3      | No
+Section Z         |  3/3      | No
+Side Arms         |  2/2      | Yes
+The Speed Rumbler |  2/2      | Yes
+Tiger Road        |  2/2      | Yes
+Trojan            |  3/3      | No
+
+Note that 2 is the default divider, so games using it may never set it explicitly.
 
 ## Troubleshooting
 
@@ -202,12 +244,10 @@ The game itself in module jtgng_game. It is written using an arbitrary clock (ac
 
 The video output is a 256x256 screen. That is what you get from jtgng_game in a signal format that replicates the original hardware. jtgng_mist instantiates a module called jtgng_vga that converts the image to a standard VGA resolution without losing frame speed.
 
-# Simulation
-
 # Credits
 
 Jose Tejada Gomez. Twitter @topapate
-Project is hosted in http://www.github.com/jotego/jt_gng
+The project is hosted in http://www.github.com/jotego/jt_gng
 License: GPL3, you are obligued to publish your code if you use mine
 
 Special thanks to Greg Miller, Bruno Silva and Alexey Melnikov

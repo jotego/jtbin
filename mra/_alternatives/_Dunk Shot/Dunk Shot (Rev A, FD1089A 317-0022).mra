@@ -23,7 +23,7 @@
     <about author="jotego" webpage="https://patreon.com/topapate" source="https://github.com/jotego" twitter="@topapate"/>
     <name>Dunk Shot (Rev A, FD1089A 317-0022)</name>
     <setname>dunkshota</setname>
-    <rbf>jts16b1</rbf>
+    <rbf>jts16b</rbf>
     <mameversion>0232</mameversion>
     <year>1987</year>
     <manufacturer>Sega</manufacturer>

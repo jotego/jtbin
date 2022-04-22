@@ -1,0 +1,94 @@
+<!--          FPGA compatible core for Philko arcade hardware by Jotego
+
+              This core is available for hardware compatible with MiST and MiSTer
+              Other FPGA systems may be supported by the time you read this.
+              This work is not mantained by the MiSTer project. Please contact the
+              core author for issues and updates.
+
+              (c) Jose Tejada, 2021-2022. Please support the author
+              Patreon: https://patreon.com/topapate
+              Paypal:  https://paypal.me/topapate
+
+              The author does not endorse or participate in illegal distribution
+              of copyrighted material. This work can be used with legally
+              obtained ROM dumps or with compatible homebrew software.
+
+              This file license is GNU GPLv2.
+              You can read the whole license file in
+              https://opensource.org/licenses/gpl-2.0.php
+
+-->
+
+<misterromdescription>
+    <about author="jotego" webpage="https://patreon.com/topapate" source="https://github.com/jotego" twitter="@topapate"/>
+    <name>Lock On (Philko)</name>
+    <setname>lockonph</setname>
+    <rbf>jts16b</rbf>
+    <mameversion>0232</mameversion>
+    <year>1991</year>
+    <manufacturer>Philko</manufacturer>
+    <players>2</players>
+    <joystick>8</joystick>
+    <rotation>horizontal</rotation>
+    <region>World</region>
+    <platform>SEGA S16B</platform>
+    <mraauthor>jotego,atrac17</mraauthor>
+    <rom index="0" zip="lockonph.zip|s16mcu_alt.zip" md5="None">
+        <part>
+            00 00 00 00 00 00 00 00
+            00 00 00 00 00 00 00 00
+            00 00 00 00 00 00 00 00
+            0A 00 00 00 00 00 00 00
+        </part>
+        <!-- maincpu - starts at 0x0 -->
+        <interleave output="16">
+            <part name="b2" crc="fc1c9f81" map="01"/>
+            <part name="b4" crc="fbb896f4" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="b1" crc="f11a72ac" map="01"/>
+            <part name="b3" crc="3f8c0215" map="10"/>
+        </interleave>
+        <!-- soundcpu - starts at 0xC0000 -->
+        <part name="b6" crc="aa7b1880"/>
+        <part repeat="0x70000"> FF</part>
+        <!-- gfx1 - starts at 0x140000 -->
+        <interleave output="32">
+            <part name="b7" crc="787c382e" map="0001"/>
+            <part name="b8" crc="cd30abe0" map="0010"/>
+            <part name="b9" crc="aae2cef1" map="0100"/>
+            <part name="b10" crc="d3a8bd15" map="1000"/>
+        </interleave>
+        <part repeat="0x80000"> FF</part>
+        <!-- sprites - starts at 0x240000 -->
+        <interleave output="16">
+            <part name="b14" crc="af943525" map="01"/>
+            <part name="b12" crc="9088d980" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="b13" crc="62f4b64f" map="01"/>
+            <part name="b11" crc="5da3dfcd" map="10"/>
+        </interleave>
+        <!-- oki - starts at 0x300000 -->
+        <part name="b5" crc="d6369a39"/>
+        <!-- Total 0x320000 bytes - 3200 kBytes -->
+    </rom>
+    <rom index="16" zip="debug.zip" md5="None">
+        <part name="debug.bin"/>
+    </rom>
+    <nvram index="2" size="75777"/>
+    <rom index="1">
+        <part>00</part>
+    </rom>
+    <switches base="16" default="ff,e4">
+        <!-- DSW1 -->
+        <dip name="Coin A" bits="0,2" ids="4/1,1/4,2/1,1/2,3/1,1/3,1/5,1/1"/>
+        <dip name="Coin B" bits="3,5" ids="4/1,1/4,2/1,1/2,3/1,1/3,1/5,1/1"/>
+        <dip name="Flip Screen" bits="7" ids="On,Off"/>
+        <!-- DSW2 -->
+        <dip name="Difficulty" bits="8,10" ids="0,1,2,3,4,5,6,7"/>
+        <dip name="Allow Continue" bits="11" ids="Yes,No"/>
+        <dip name="Region" bits="12" ids="Europe,Korea"/>
+    </switches>
+    <buttons names="Shot,Bomb,-,-,Start,Coin,Core credits" default="Y,X,B,A,Start,Select,-" count="2"/>
+</misterromdescription>

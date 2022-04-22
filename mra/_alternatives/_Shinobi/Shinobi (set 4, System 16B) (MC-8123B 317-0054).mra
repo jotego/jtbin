@@ -23,7 +23,7 @@
     <about author="jotego" webpage="https://patreon.com/topapate" source="https://github.com/jotego" twitter="@topapate"/>
     <name>Shinobi (set 4, System 16B) (MC-8123B 317-0054)</name>
     <setname>shinobi4</setname>
-    <rbf>jts16b2</rbf>
+    <rbf>jts16b</rbf>
     <mameversion>0232</mameversion>
     <year>1987</year>
     <manufacturer>Sega</manufacturer>

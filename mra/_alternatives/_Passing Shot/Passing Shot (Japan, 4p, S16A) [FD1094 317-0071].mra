@@ -23,7 +23,7 @@
     <about author="jotego" webpage="https://patreon.com/topapate" source="https://github.com/jotego" twitter="@topapate"/>
     <name>Passing Shot (Japan, 4p, S16A) [FD1094 317-0071]</name>
     <setname>passsht16a</setname>
-    <rbf>jts16a2</rbf>
+    <rbf>jts16</rbf>
     <mameversion>0232</mameversion>
     <year>1988</year>
     <manufacturer>Sega</manufacturer>

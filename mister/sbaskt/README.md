@@ -17,7 +17,7 @@ Screen synchronization can be a problem with the original PCB too. Connecting us
 
 # System Comparison
 
-Games based on 082, 083 and 503 graphic chips
+Games based on 082, 083 and 503 graphic chips. All have a pixel clock of 6.144MHz derived from a 18.432MHz oscillator.
 
 Game            | Date       | ID  | Palette PROM  | 085 | CPU1 | CPU2     | PSG   | VLM5030  | Sch                         | eBay price    |     YT views      |
 ----------------|------------|-----|---------------|-----|------|----------|-------|----------|-----------------------------|---------------|-------------------|
@@ -30,8 +30,9 @@ Road Fighter    |22/Nov/1984 |GX461| All elements  |     | 6809 | Z80      | 746
 Super Basketball|       1984 |GX405| All elements  | Yes | 6809 | Z80      | 74689 | Yes      | Yes,with labels             |159€           |23.494 (2014)      |
 Mikie           |15/Nov/1984 | No  | All elements  | Yes | 6809 | Z80      |2x74689| No       | Yes,with labels, small      |11€     cart   |50.381 (2010)      |
 Pandora's Palace|       1984 | No  | Only output   | Yes |      |          |       | No       | Yes,with labels             |      €        |14.167 (2010)      |
-Ping Pong       |            |GX555|               |     |      |          |       |          | No                          |60€            |8.530 (2012) NES   |
+Ping Pong       |            |GX555|               |     |      |          |       |          | Extracted by JOTEGO         |60€            |8.530 (2012) NES   |
 Roc'n Rope      |       1984 | No  | Only output   | No  |      |          | 8910  | No       | Yes, only 082,083           |350€PCB 50€cart|43.873 (2011)      |
+Circus Charlie  |       1984 |     |               | No  | 6809 | Z80      | 74689 | No       | Yes, 082, 602               |350€PCB 50€cart| 107k              |
 
 Road Fighter uses the same board as Hyper Sports, but a ROM jumper in the video board is different, changing the ROM mapping. Road Fighter does not have the VLM5030 section soldered.
 

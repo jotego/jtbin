@@ -1,0 +1,120 @@
+<!--          FPGA compatible core for Philko arcade hardware by Jotego
+
+              This core is available for hardware compatible with MiST and MiSTer
+              Other FPGA systems may be supported by the time you read this.
+              This work is not mantained by the MiSTer project. Please contact the
+              core author for issues and updates.
+
+              (c) Jose Tejada, 2021-2022. Please support the author
+              Patreon: https://patreon.com/topapate
+              Paypal:  https://paypal.me/topapate
+
+              The author does not endorse or participate in illegal distribution
+              of copyrighted material. This work can be used with legally
+              obtained ROM dumps or with compatible homebrew software.
+
+              This file license is GNU GPLv2.
+              You can read the whole license file in
+              https://opensource.org/licenses/gpl-2.0.php
+
+-->
+
+<misterromdescription>
+    <about author="jotego" webpage="https://patreon.com/topapate" source="https://github.com/jotego" twitter="@topapate"/>
+    <name>The Destroyer From Jail (Korea)</name>
+    <setname>dfjail</setname>
+    <rbf>jts16b</rbf>
+    <mameversion>0232</mameversion>
+    <year>199?</year>
+    <manufacturer>Philko</manufacturer>
+    <players>2</players>
+    <joystick>8</joystick>
+    <rotation>horizontal</rotation>
+    <region>World</region>
+    <platform>SEGA S16B</platform>
+    <mraauthor>jotego,atrac17</mraauthor>
+    <rom index="0" zip="dfjail.zip|s16mcu_alt.zip" md5="None">
+        <part>
+            00 00 00 00 00 00 00 00
+            00 00 00 00 00 00 00 00
+            00 00 00 00 00 00 00 00
+            08 00 00 00 00 00 00 00
+        </part>
+        <!-- maincpu - starts at 0x0 -->
+        <interleave output="16">
+            <part name="1.b15" crc="ee235fa5" map="01"/>
+            <part name="3.c15" crc="dc763979" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="2.b16" crc="49ff074d" map="01"/>
+            <part name="4.c16" crc="cdcbf6b1" map="10"/>
+        </interleave>
+        <!-- soundcpu - starts at 0x80000 -->
+        <part name="29.f3" crc="7f3ebb6a"/>
+        <part repeat="0x8000"> FF</part>
+        <part name="28.g3" crc="ed96d6b9"/>
+        <part name="27.g1" crc="7a88e1c1"/>
+        <part repeat="0x70000"> FF</part>
+        <!-- gfx1 - starts at 0x140000 -->
+        <interleave output="32">
+            <part name="5.f12" crc="9d00656d" map="0001"/>
+            <part name="6.f13" crc="37b7bf90" map="0010"/>
+            <part name="7.f14" crc="549af682" map="0100"/>
+            <part name="7.f14" crc="549af682" map="1000"/>
+        </interleave>
+        <interleave output="32">
+            <part name="8.f15" crc="625c118d" map="0001"/>
+            <part name="9.f16" crc="b2a49d12" map="0010"/>
+            <part name="10.f17" crc="7d9e8397" map="0100"/>
+            <part name="10.f17" crc="7d9e8397" map="1000"/>
+        </interleave>
+        <!-- sprites - starts at 0x240000 -->
+        <interleave output="16">
+            <part name="11.g12" crc="019662e6" map="01"/>
+            <part name="19.h12" crc="f84f472b" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="12.g13" crc="d222e52b" map="01"/>
+            <part name="20.h13" crc="f28bdf76" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="13.g14" crc="f125b5b0" map="01"/>
+            <part name="21.h14" crc="0508cb29" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="14.g15" crc="ca831a54" map="01"/>
+            <part name="22.h15" crc="7329f038" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="15.g16" crc="db426709" map="01"/>
+            <part name="23.h16" crc="94ca23e8" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="16.g17" crc="f7b2aad6" map="01"/>
+            <part name="24.h17" crc="6628becc" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="17.g19" crc="9302cfc3" map="01"/>
+            <part name="25.h19" crc="26ca591f" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="18.g20" crc="fc8aced0" map="01"/>
+            <part name="26.h20" crc="5828e0af" map="10"/>
+        </interleave>
+        <!-- Total 0x440000 bytes - 4352 kBytes -->
+    </rom>
+    <nvram index="2" size="75777"/>
+    <rom index="1">
+        <part>00</part>
+    </rom>
+    <switches base="16" default="df,fb">
+        <!-- DSW1 -->
+        <dip name="Coinage" bits="0,3" ids="Free Play,8/1,7/1,6/1,5/1,4/1,3/1,2/1,1/8,1/7,1/6,1/5,1/4,1/3,1/2,1/1"/>
+        <dip name="Lives" bits="4,6" ids="8,7,6,5,4,3,2,1"/>
+        <dip name="Service Mode" bits="7" ids="On,Off"/>
+        <!-- DSW2 -->
+        <dip name="Demo Sounds" bits="10" ids="On,Off"/>
+        <dip name="Flip Screen" bits="11" ids="On,Off"/>
+    </switches>
+    <buttons names="Assault Rifle,Jump,R.P.G,-,Start,Coin,Core credits" default="Y,X,B,A,Start,Select,-" count="3"/>
+</misterromdescription>

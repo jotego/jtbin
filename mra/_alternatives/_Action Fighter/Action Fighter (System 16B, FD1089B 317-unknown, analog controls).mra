@@ -23,7 +23,7 @@
     <about author="jotego" webpage="https://patreon.com/topapate" source="https://github.com/jotego" twitter="@topapate"/>
     <name>Action Fighter (System 16B, FD1089B 317-unknown, analog controls)</name>
     <setname>afighterf</setname>
-    <rbf>jts16b1</rbf>
+    <rbf>jts16b</rbf>
     <mameversion>0232</mameversion>
     <year>1986</year>
     <manufacturer>Sega</manufacturer>

@@ -1,0 +1,2876 @@
+<!-- JTCPS1 - FPGA compatible core of CAPCOM CPS hardware by Jotego
+
+              This core is available for hardware compatible with MiST and MiSTer
+              Other FPGA systems may be supported by the time you read this.
+              This work is not mantained by the MiSTer project. Please contact the
+              core author for issues and updates.
+
+              (c) Jose Tejada, 2020. Please support the author
+              Patreon: https://patreon.com/topapate
+              Paypal:  https://paypal.me/topapate
+
+              The author does not endorse or participate in illegal distribution
+              of CAPCOM copyrighted material. This work can be used with legally
+              obtained ROM dumps of CAPCOM games or with homework software for
+              the CPS platform.
+
+-->
+
+<misterromdescription>
+    <about author="jotego" webpage="https://patreon.com/topapate"
+                           source ="https://github.com/jotego/jtcps1"
+                           twitter="@topapate"/>
+    <name>Strider (USA, B-Board 89624B-2)</name>
+    <setname>strider</setname>
+    <year>1989</year>
+    <manufacturer>Capcom</manufacturer>
+    <rbf>jtcps1</rbf>
+    <rom index="0" zip="strider.zip" md5="none">
+        <!-- relative position of each ROM section in the file, discounting the header, in kilobytes -->
+        <!-- Size of M68000 code 1024 kB -->
+        <!-- Sound CPU size 64 kB -->
+        <part>00 04 </part>
+        <!-- OKI samples size 256 kB -->
+        <part>40 04 </part>
+        <!-- Graphics size 4096 kB -->
+        <part>40 05 </part>
+        <part repeat="10">FF</part>
+        <!-- CPS-B config for strider --> 
+        <part> FF 00 FF FF FF FF 26 28 2A 2C 2E 00 00 30 02 04 08 30 </part>
+        <!-- Mapper for  --> 
+        <part> 22 40 88 73 FF </part>
+        <part> 00 </part>
+        <part repeat="24">FF</part>
+        <!-- maincpu -->
+        <interleave output="16">
+            <part name="35.11h" crc="5463aaa3" map="01"/>
+            <part name="30.11f" crc="da997474" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="36.12h" crc="21aa2863" map="01"/>
+            <part name="31.12f" crc="d20786db" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="st-14.8h" crc="9b3cfc08" map="21"/>
+        </interleave>
+        <!-- audiocpu -->
+        <part name="09.12b" crc="2ed403bc"/>
+        <!-- oki -->
+        <part name="18.11c" crc="4386bc80"/>
+        <part name="19.12c" crc="444536d7"/>
+        <!-- gfx -->
+        <interleave output="64">
+            <part name="st-2.8a" crc="4eee9aea"  map="00000021"/>
+            <part name="st-11.10a" crc="2d7f21e4"  map="00002100"/>
+            <part name="st-5.4a" crc="7705aa46"  map="00210000"/>
+            <part name="st-9.6a" crc="5b18b722"  map="21000000"/>
+        </interleave>
+        <interleave output="64">
+            <part name="st-1.7a" crc="005f000b"  map="00000021"/>
+            <part name="st-10.9a" crc="b9441519"  map="00002100"/>
+            <part name="st-4.3a" crc="b7d04e8b"  map="00210000"/>
+            <part name="st-8.5a" crc="6b4713b4"  map="21000000"/>
+        </interleave>
+        <!-- Applies the patches made by NeoInvader
+             https://www.romhacking.net/hacks/6758/
+         -->
+        <patch offset="0x2696">
+             AE 49
+        </patch>
+        <patch offset="0xC382">
+             38 4A
+        </patch>
+        <patch offset="0x100082">
+             D5
+        </patch>
+        <patch offset="0x100085">
+             87
+        </patch>
+        <patch offset="0x100088">
+             FC
+        </patch>
+        <patch offset="0x100093">
+             ED 00
+        </patch>
+        <patch offset="0x100096">
+             E5
+        </patch>
+        <patch offset="0x100099">
+             22
+        </patch>
+        <patch offset="0x1000AC">
+             88
+        </patch>
+        <patch offset="0x1000B4">
+             52 0E 32 06 F0 CD CD 00 CD D5 00 CD
+             FE 00 CD ED 00 C3 09 00 3E 78 32 02 F0 16 00 3E
+             0F
+        </patch>
+        <patch offset="0x1000D2">
+             07 01 06 08 C5 3E 08 90 CD A1
+        </patch>
+        <patch offset="0x1000DD">
+             C1 10 F6
+             C9 F5 C6 60 06 04 C5 16 7F CD 07 01 16 FF C6 80
+             CD 07 01 D6 80 C6 08 C1 10 EC F1 F6 78 57 3E 08
+             CD 07 01 7A E6 07 57 3E 08 CD 07 01 C9 16 00 3E
+             14 CD 07 01 C9 3E 10 16 C8 CD
+        </patch>
+        <patch offset="0x10011B">
+             01
+        </patch>
+        <patch offset="0x10011D">
+             11 16 00
+             CD 07 01 16 0F CB E2 3E 14 CD 07 01 C9 3E 12 16
+             F2 CD 07 01 16 0F CB EA 3E 14 CD 07 01 C9 01 03
+             00 10 FE 0D 20 FB C9 01
+        </patch>
+        <patch offset="0x100149">
+             F0 F5 0A CB 7F 20 FB
+             F1 0D 02 0C F5 7A 02 F1 C9 06 08 29 30
+        </patch>
+        <patch offset="0x10015E">
+             19 10
+             FA C9 3A 00 D0 47 3A 08 F0 B8 C8 32 00 D0 47 E6
+             F0 FE F0 CA DD 02 78 CB 7F C2 C2 03 21 50 0E 11
+             53 0E 47 3E 00 32 04
+        </patch>
+        <patch offset="0x100188">
+             CD 5C 01 21 00 80 11 04
+             80 47 3E 01 32 04 F0 CD 5C 01 18 E0 78 46 04 B8
+             38 02 90 C9 C1 EB EF 1A CB 7F C2 23 02 47 E6 0F
+             4F 3A 11 D0 E6 0F B9 28 48 38 2D 3A 12 D0 E6 0F
+             B9 28 01 D0 78 32 12 D0 D5 21 00 D3 11 01 D3 01
+             7F 01 36 00 ED B0 D1 DD 21 00 D3 3E FF 32 1A D0
+             CD EA
+        </patch>
+        <patch offset="0x1001E3">
+             AF 32 1A D0 C9 3A 11 D0 32 12 D0 2A 15
+             D0 22 17 D0 D9 21 00 D1 11 00 D3 01 80 01 ED B0
+             D9 78 32 11 D0 AF 32 04
+        </patch>
+        <patch offset="0x100209">
+             32 03 D0 32 05 D0 3A
+             51 0E ED 44 32 10 D0 D5 21 00 D1 11 01
+        </patch>
+        <patch offset="0x10021E">
+             01 7F
+             01 36 00 ED B0 D1 DD 21 00 D1 06 08 C5 13 1A DD
+             77 01 13 1A DD 77 00
+        </patch>
+        <patch offset="0x100238">
+             B6 01 C4 06 02 01 30 00
+             DD 09 C1 10 E7 C9 3A 1A D0 B7 C0 D5 3E 08 90 FE
+             07 CC 19 02 CD A1 00 D1 C9 08 16 00 3E 0F CD 07
+             01 08 C9 08 3A 01 80 ED 44 32 20 D0 08 47 CB 77
+             20 42 E6 0F 4F 3A 21 D0 E6 0F B9 28 01 D0 D9 28
+             08 3A 21 D0 CB 6F C4 C3 02 16 00 3E 0F CD 07 01
+             16 00 3E 3F CD 07 01 3E 07 CD A1
+        </patch>
+        <patch offset="0x10029C">
+             21
+        </patch>
+        <patch offset="0x10029E">
+             D5 11
+             01 D5 01 1F 00 36 00 ED B0 D9 78 32 21 D0 DD 21
+             00 D5 18 39 E6 0F 4F 3A 23 D0 E6 0F B9 28 01 D0
+             D9 28 08 3A 23 D0 CB 6F C4 CE 02 16 00 3E 3E CD
+             07 01 3E 06 CD A1
+        </patch>
+        <patch offset="0x1002D7">
+             21 40 D5 11 41 D5 01 1F 00
+             36 00 ED B0 D9 78 32 23 D0
+        </patch>
+        <patch offset="0x1002EA">
+             21 40 D5 13 DD 72
+             00 DD 73 01 DD 72 18 DD 73 19 DD 36 08 80 DD 36
+             0B 80 C9
+        </patch>
+        <patch offset="0x100304">
+             22
+        </patch>
+        <patch offset="0x100307">
+             00
+        </patch>
+        <patch offset="0x10030A">
+             20
+        </patch>
+        <patch offset="0x10030C">
+             18 09 32 24
+             D0 21 40 D5 11 60 D5 01 20 00 ED B0 C9 78 E6 0F
+             F7 01 03 04 03 07 03 40 03 52 03 55 03 76 03 90
+             03 93 03 99 03 9F 03 B1
+        </patch>
+        <patch offset="0x100339">
+             C1 03 C1 03 C1 03 C1
+             03 CD 52 03 CD 40 03 DD 21 00 D1 06
+        </patch>
+        <patch offset="0x10034D">
+             C5 DD 7E
+        </patch>
+        <patch offset="0x100351">
+             DD B6 01 28 06 3E 08 90 CD A1 00 01 30 00 DD
+             09 C1 10 E9 3E FF 32 1B D0 2A 17 D0 22 15 D0 3A
+             12 D0 32 11 D0 21 00 D3 11 00 D1 01 80
+        </patch>
+        <patch offset="0x10037E">
+             ED B0
+             AF 32 12 D0 21 00 D3 11 01 D3 01 7F 01 36 00 ED
+             B0 C9 CD 76 03 16 00 3E 0F CD 07 01 3E 07 CD A1
+             00 AF 32 21 D0 32 22 D0 21 00 D5 11 01 D5 01 3F
+             00 36 00 ED B0 C9 3E 06 CD A1 00 AF 32 23 D0 32
+             24 D0 21 40 D5 11 41 D5 01 3F 00 36 00 ED B0 C9
+             CD 99 03 3E 08 32 02 F0 C9 3E 10 32 02 F0 C9 06
+             FF 3A 05 D0 CB 07 28 02 30 09 3E 7F 32 10 D0 18
+             02 06 01 AF 32 04 D0 3A 0A F0 32 03
+        </patch>
+        <patch offset="0x1003FD">
+             78 32 05
+             D0 C9 E6 7F C8 08 3A 32 0E 3C 47 08 B8 38 03 90
+             18 FA 57 CB FA 21 33 0E E7 5F E6 F0 0F
+        </patch>
+        <patch offset="0x10041E">
+             02 F0
+             ED 53 01 D0 C9 ED 5B 01 D0 7A B7 C8 7A 32 02 F0
+             7B 32 02 F0 11 00 00 ED 53 01 D0 C9 3E 00 32 04
+             F0 3A 03 D0 B7 28 32 21 04 D0 34 BE 20 2B 36
+        </patch>
+        <patch offset="0x100450">
+             3A 05 D0 47 3A 10 D0 80 FA 2F 04 CB 78 28 0B 08
+        </patch>
+        <patch offset="0x100461">
+             51 0E ED 44 47 08 B8 38 05 32 10 D0 18 0A AF
+             32 03 D0 32 04 D0 32 05 D0 3A 1B D0 B7 28 39 AF
+             32 1B D0 DD 21 00 D1 06 08 C5 3E 08 90 32 13 D0
+             DD 7E 00 DD B6 01 28 18 DD 66 21 DD 6E 22 CD 3E
+             0A DD CB 08 CE DD CB 08 56 CC AE 05 DD CB 08 8E
+             01 30 00 DD 09 C1 10 D1 21 14 D0 34 DD 21 00 D1
+             CD 92 04 3A 11 D0 CB 77 C8 3E FF 32 1A D0 DD 21
+             00 D3 06 08 3E 08 90 32 13 D0 C5 DD 7E 00 DD B6
+             01 C4 B1 04 01 30 00 DD 09 C1 10 E8 AF 32 1A D0
+             C9 DD 66 21 DD 6E 22 E5 FD E1 DD 7E 13 B7 28 30
+             DD 66 11 DD 6E 12 06 00 4F CB 7F 28 01 05 09 DD
+             74 11 DD 75 12 EB 3A 1A D0 B7 20 14 21 26 0B 7A
+             E7 57 3A 13 D0 C6 28 CD 07 01 C6
+        </patch>
+        <patch offset="0x10052C">
+             53 CD 07 01
+             DD 7E 09 B7 28 0A 3A 14 D0 E6 01 28 03 CD 00 05
+        </patch>
+        <patch offset="0x100542">
+             02
+        </patch>
+        <patch offset="0x100545">
+             03 7C B5 28 4D 2B 7C B5 28 48 DD
+             74 02 DD 75 03 DD 66 05 DD 6E 06 7C B5 C8 2B DD
+             74 05 DD 75 06 7C B5 20 0F 3A 1A D0 B7 C0 3A 13
+             D0 57 3E 08 CD 07 01 C9 3A 1A D0 B7 C0 3A 03 D0
+             B7 C8 3A 04 D0 B7 C0 CD 10 06 3A 13 D0 FD B6 07
+             57 3E 08 CD 07 01 C9 DD 7E 09 B7 28 03 DD 35 09
+             DD 7E 0A B7 28 08 3D DD 77 0A B7 CC 29 05 CD 16
+             0B E6 F0 FE 20 DA 37 09 FE 40 DA 18 09 C5 CD 91
+             08 C1 78 E6 1F 20 05 DD CB 08 D6 C9 DD CB 08 96
+        </patch>
+        <patch offset="0x1005D1">
+             86 10 FD 86 00 FA A1 05 FE 61 38
+        </patch>
+        <patch offset="0x1005DD">
+             D6 0C 18
+             F8 C6 0C FA A1 05 CD F6 05 3A 1A D0 B7 C0 CD 10
+             06 21 26 0B DD 7E 11 E7 57 3A 13 D0 C6 28 CD 07
+             01 DD 56 12 C6 08 CD 07 01 DD 7E 0A B7 28 09 DD
+             CB 08 4E C8 DD CB 08 8E 3A 13 D0 FD B6 07 57 3E
+             08 CD 07 01 FD CB 01 4E C8 16 02 3E 01 CD 07 01
+             16 00 CD 07 01 C9 47 DD 7E 0A B7 28 0B DD CB 08
+             4E 20 05 DD 7E 13 B7 C0 DD 70 11 DD 36 12 00 C9
+             21 26 0B DD 7E 11 E7 0F E6 3F 32 19 D0 FD 4E 09
+             FD 7E 0A CD 9B 06 FD 46 08 0E 00 57 1E 07 CD 6A
+             06 FD 4E 0C FD 7E 0D CD 9B 06 FD 46 0B 0E
+        </patch>
+        <patch offset="0x10067F">
+             57
+             1E
+        </patch>
+        <patch offset="0x100682">
+             CD 6A 06 FD 4E
+        </patch>
+        <patch offset="0x100688">
+             FD 7E 10 CD 9B 06 FD 46
+             0E 0E 10 57 1E 04 CD 6A 06 FD 4E 12 FD 7E 13 CD
+             9B 06 FD 46 11 0E 18 57 18 0B DD 7E 23 E6 07 BB
+             30 03 7A 18 13 3A 10 D0 82 38 14 FA 8F 06 57 DD
+             7E 24 82 38 0A FA 8F 06 80 57 38 03 F2 91 06 16
+             7F 3A 13 D0 C6 60 81 CD 07 01 C9 47 E6 0F 67 78
+             0F 0F 0F 0F E6 07 6F E5 CD DC 06 E1 84 67 E5 CB
+             25 65 DD 7E 18 CB 7F 20 07 2F 08 3E 0F 94 67 08
+             07 CD 85 07 E1 0F 0F 0F 0F E6 0F DD CB 18 7E 28
+             02 ED 44 C6 10 84 38 01 F0 3E 7F C9 3A 19 D0 CB
+             79 28 02 C6 40 21 05 07 E7 F5 61 CD 85 07 47 F1
+             61 07 07 07 07 CD 85 07 0F 0F 0F 0F E6 0F 80 0F
+             0F 0F E6 1F C9 00 00 00 00 00 00 00 05 0A 0F 14
+             19 1E 22 27 2C 31 36 3B 40 45 4A 4F 54 59 5E 62
+             67 6C 71 76 7B 80 85 8A 8F 94 99 9E A2 A7 AC B1
+             B6 BB C0 C5 CA CF D4 D9 DE E2 E7 EC F1 F6 FB FE
+             FF FF FF FF FF FF FF FF FF FF FF FF FF FE FD FC
+             FA F8 F6 F3 F0 EC E8 E4 DF DA D4 CF C8 C2 BB B3
+             AB A3 9B 92 89 7F 75 6C 63 5B 53 4B 43
+        </patch>
+        <patch offset="0x1007AE">
+             36 2F
+             2A 24 1F 1A 16 12 0E 0B 08 06 04 02 01 01 01 01
+             00
+        </patch>
+        <patch offset="0x1007C2">
+             00 00 00 E6 F0 6F 7C E6 0F B5 21 91 07 E7
+             C9
+        </patch>
+        <patch offset="0x1007D2">
+             00 00 00 00 00 00 00 00 00 00 00 00 00 00
+             00
+        </patch>
+        <patch offset="0x1007E2">
+             01 02 03 04 05 06 07 08 09 0A 0B 0C 0D 0E
+             0F
+        </patch>
+        <patch offset="0x1007F2">
+             02 04 06 08 0A 0C 0E 10 12 14 16 18 1A 1C
+             1E
+        </patch>
+        <patch offset="0x100802">
+             03 06 09 0C 0F 12 15 18 1B 1E 21 24 27 2A
+             2D
+        </patch>
+        <patch offset="0x100812">
+             04 08 0C 10 14 18 1C 20 24 28 2C 30 34 38
+             3C
+        </patch>
+        <patch offset="0x100822">
+             05 0A 0F 14 19 1E 23 28 2D 32 37 3C 41 46
+             4B
+        </patch>
+        <patch offset="0x100832">
+             06 0C 12 18 1E 24 2A 30 36 3C 42 48 4E 54
+             5A
+        </patch>
+        <patch offset="0x100842">
+             07 0E 15 1C 23 2A 31 38 3F 46 4D 54 5B 62
+             69 00 08 10 18 20 28 30 38 40 48 50 58 60 68 70
+             78 00 09 12 1B 24 2D 36 3F 48 51 5A 63 6C 75 7E
+             87 00 0A 14 1E 28 32 3C 46 50 5A 64 6E 78 82 8C
+             96 00 0B 16 21 2C 37 42 4D 58 63 6E 79 84 8F 9A
+             A5 00 0C 18 24 30 3C 48 54 60 6C 78 84 90 9C A8
+             B4 00 0D 1A 27 34 41 4E 5B 68 75 82 8F 9C A9 B6
+             C3
+        </patch>
+        <patch offset="0x1008B2">
+             0E 1C 2A 38 46 54 62 70 7E 8C 9A A8 B6 C4
+             D2 00 0F 1E 2D 3C 4B 5A 69 78 87 96 A5 B4 C3 D2
+             E1 50 3A 1A D0 B7 20 05 2A 15 D0 18 03 2A 17 D0
+             5D 6C 26 00
+        </patch>
+        <patch offset="0x1008E5">
+             07 07 07 E6 07 D6 02 28 09 47 CB
+             23 CB 15 CB 14 10 F8 01 00 00 DD CB 08 46 28 0C
+             DD CB
+        </patch>
+        <patch offset="0x100903">
+             86 44 4D CB 38 CB 19 CB 1B DD 7E 04
+        </patch>
+        <patch offset="0x100910">
+             ED 4A DD 74 02 DD 75 03 DD 77 04 DD 7E 0A B7 20
+             05 7A E6 1F 20 09 DD 36 05 00 DD 36 06 00 C9 EB
+             21 00 00 DD 7E 07 06 08 CB 3A CB 1B 07 30 01 19
+             10 F6 7A B3 28 06 06 01 3E FF 18 EC 7C B5 20 01
+             23 DD 74 05 DD 75 06 C9 CD 1E 09 C3 6E
+        </patch>
+        <patch offset="0x10095E">
+             FE 20
+             28 02 18 0C 78 E6 0F 3C DD 77 0A DD CB 08 CE C9
+             78 E6 0F DD 77 09 C9 CD 3D 09 C3 6E 05 78 F7 5F
+             09 7E 09 85 09 92 09 AA 09 C2 09 F7 09 FC 09 03
+             0A 0A 0A 11 0A 15 0A 1C 0A AF
+        </patch>
+        <patch offset="0x10099B">
+             B8 0A BC
+        </patch>
+        <patch offset="0x10099F">
+             CD
+             16 0B 3E 80 80 67 2E 00 CB 3C CB 3C CB 3C CB 1D
+             3A 1A D0 B7 20 04 22 15 D0 C9 22 17 D0 C9 CD 16
+             0B DD 77 07 C9 DD 7E 0D FE 01 20 5A DD 36 0D 00
+             18 46 CD 16 0B B7 28 40 DD 7E 0D B7 20 05 DD 70
+             0D 18 35 DD 35 0D 28 3E 18 2E CD 16 0B B7 28 28
+        </patch>
+        <patch offset="0x1009F1">
+             7E 0E B7 20 05 DD 70 0E 18 1D DD 35 0E 28 26
+             18 16 CD 16 0B B7 28 10 DD 7E 0F B7 20 05 DD 70
+             0F 18 05 DD 35 0F 28 0E CD 16 0B 5F CD 16 0B DD
+             77 00 DD 73 01 C9 DD 66 00 DD 6E
+        </patch>
+        <patch offset="0x100A2C">
+             11 02 00 19
+        </patch>
+        <patch offset="0x100A31">
+             74 00 DD 75 01 C9 DD CB 08 C6 C9 CD 16 0B DD
+             77 10 C9
+        </patch>
+        <patch offset="0x100A44">
+             16 0B DD 77 13 C9 CD 16 0B DD 77 18
+             C9 CD 16 0B C9
+        </patch>
+        <patch offset="0x100A56">
+             16 0B CD 16 0B C9 CD 16 0B DD
+             77 20 67 2E 00 16 00 1E 28 CD 19 01 11 B3 0E 19
+             DD 74 21 DD 75 22 E5 FD E1 3A 1A D0 B7 C0 23 CB
+             7E 20 06 11 03 00 19 18 26 7E 07 07 07 E6 03 57
+             3E 1B CD 07 01 23 56 7A 3E 18 CD 07 01 23 7E F6
+             80 57
+        </patch>
+        <patch offset="0x100AA3">
+             19 CD 07 01 23 56 7A 3E 19 CD 07 01 23
+             7E F6 C0 DD 77 23 57 3A 13 D0 C6 20 CD 07 01 23
+             56 3A 13 D0 C6 38 CD 07 01
+        </patch>
+        <patch offset="0x100ACA">
+             0E 00 09 3A 13 D0
+             C6 40 5F 06 14 C5 7B 56 CD 07 01 C6 08 5F E6 F0
+             FE 60 CC AA 0A 23 C1 10 EC C9 7B C6 20 5F C9 CD
+             16 0B ED 44 DD 77 24 C9 CD 16 0B C9 E1 E1 C1 3A
+             1A D0 B7 20 3C DD 21 00 D1 06 08 C5 3E 08 90 57
+             DD 7E 00 DD B6 01 28 05 3E 08 CD 07 01 01 30 00
+             DD 09 C1 10 E6 3E FF 32 1B D0 2A 17 D0 22 15 D0
+             3A 12 D0 32 11 D0 21 00 D3 11 00 D1 01 80 01 ED
+             B0 AF 32 12 D0 32 1A D0 21 00 D3 11 01 D3 01 7F
+             01 36 00 ED B0 C9 DD 66 00 DD 6E 01 7E 47 23 DD
+             74 00 DD 75 01 C9 0E 00 01 02 04 05 06 08 09 0A
+             0C 0D 0E 10 11 12 14 15 16 18 19 1A 1C 1D 1E 20
+             21 22 24 25 26 28 29 2A 2C 2D 2E 30 31 32 34 35
+             36 38 39 3A 3C 3D 3E 40 41 42 44 45 46 48 49 4A
+             4C 4D 4E 50 51 52 54 55 56 58 59 5A 5C 5D 5E 60
+             61 62 64 65 66 68 69 6A 6C 6D 6E 70 71 72 74 75
+             76 78 79 7A 7C 7D 7E 3E 01 32 04 F0 3E 07 32 25
+             D0 DD 21 00 D5 DD 7E 00 DD B6 01 C4 AE 0B 3E 06
+             32 25 D0 DD 21 40 D5 DD 7E 00 DD B6 01 C8
+        </patch>
+        <patch offset="0x100BEF">
+             66
+             02 DD 6E 03 7C B5 28 76 2B DD 74 02 DD 75 03 DD
+             66 04
+        </patch>
+        <patch offset="0x100C03">
+             6E 05 7C B5 28 14 2B DD 74 04 DD 75 05
+             7C B5 20 09 3A 25 D0 57 3E 08 CD 07 01 3A 25 D0
+             FE 06 28 1A DD 7E 12 B7 28 14 DD 86 11 DD 77 11
+             0F 0F 0F E6 1F DD B6 10 57 3E 0F CD 07 01 DD 7E
+             15 B7 C8 06
+        </patch>
+        <patch offset="0x100C45">
+             CB 7F 28 01 05 4F
+        </patch>
+        <patch offset="0x100C4C">
+             66 13 DD 6E
+             14 09 DD 74 13 DD 75 14 7C 5D 21 26 0B E7 57 3A
+             25 D0 C6 28 CD 07 01 53 C6 08 CD 07 01 C9 DD 66
+             09 DD 6E 0A E5 FD E1 CD 22 0E F7 43 0C 45 0C 53
+             0C 61 0C 18 79 DD 66 00 DD 6E 01 DD 74 18 DD 75
+             19 18 6B DD 66 18 DD 6E 19 DD 74 00 DD 75 01 18
+             5D 3A 25 D0 FE 06 28 2B 3A 22 D0 32 21 D0 21 20
+             D5 11 00 D5 01 20 00 ED B0 AF 32 22 D0 21 20 D5
+             11 21 D5 01 1F 00 36 00 ED B0 DD 36 08 80 DD 36
+             0B 80 C9 3A 24 D0 32 23 D0 21 60 D5 11 40 D5 01
+             20 00 ED B0 AF 32 24 D0 21 60 D5 11 61 D5
+        </patch>
+        <patch offset="0x100CEF">
+             1F
+             00 36 00 ED B0 DD 36 08 80 DD 36 0B 80 C9 CD 22
+             0E DD 77 02 CD 22 0E DD 77 03 CD 22 0E DD 56 02
+             DD 5E 03 21 00 00 06 08 CB 3A CB 1B 07 30 01 19
+             10 F6 7A B3 28 06
+        </patch>
+        <patch offset="0x100D27">
+             01 3E FF 18 EC 7C B5 20 01
+             23 DD 74 04 DD 75 05 CD 22 0E DD BE
+        </patch>
+        <patch offset="0x100D3D">
+             C4 02 0D
+             18 57 DD 77 08 DD 36 0B 80 67 2E 00 16 00 1E 1A
+             CD 19 01 3A 02 80 5F 3A 03 80 57 19 DD 74 09 DD
+             75 0A E5 FD E1 23 7E F6 C0 57 3A 25 D0 C6 20 CD
+             07 01 23 3A 25 D0 C6 40 5F 06 14 C5 7B 56 CD 07
+             01 C6 08 5F E6 F0 FE 60 CC 50 0D 23 C1 10 EC C9
+             7B C6 20 5F 01 04 00 09 C9 CD 22 0E DD BE 0B C4
+             64 0D 18 55 DD 77 0B FD 46 06 0E 00 1E 07 CD 8C
+             0D FD 46 08 0E 10 1E 04 CD 8C 0D FD 46 07 0E 08
+             1E 05 CD 8C 0D FD 46 09 0E 18 18 0B FD 7E 01 E6
+             07 BB 30 03 50 18 18 3A 20 D0 80 38 10 FA AD 0D
+             57 DD 7E 0B 82 38 06 FA AD 0D 57 18 02 16 7F 3A
+             25 D0 C6 60 81 CD 07 01 C9 3A 25 D0 FE 06 20 11
+             DD 66 00 DD 6E 01 23 23 23 DD 74 00 DD 75 01 18
+             21 CD 22 0E DD 77 10 CD 22 0E DD 77 12 CD 22 0E
+             07 07 07 E6 F8 DD 77 11 78 DD B6 10 57 3E 0F CD
+             07 01 CD 22 0E DD 77 15 CD 22 0E DD 77 13 21 26
+             0B E7 57 3A 25 D0 C6 28 CD 07 01 16 00 DD 72 14
+             C6 08 CD 07 01 3A 25 D0 FD B6 00 57 3E 08 CD 07
+             01 C9 DD 66 00 DD 6E 01 7E 47 23 DD 74 00 DD 75
+             01 C9 1C 10 10 10 10 10 10 10 10 10 10 10 10 10
+             20 10 10 10 20 10 10 10 10 10 10 21 10 10 10 10
+             2F F8 01 B3 22 BF 26 E3 28 5D 2B 5F 2C 79 2E 53
+             30 AF 31 3F 35 BB 39 10 3B C5 3B 85 3F 3C 44 A1
+             46 88 45 35 47 B2 48 B8 49 A5 4A 25 4C F9 4C 23
+             4E EC 4E AB 4F 56 53 D2 54 1A 56 D1 57 DF 59 B3
+             22 E0 5C 08 5E B3 22 BE 5E B3 22 B3 22 B3 22 B3
+             22 B3 22 B3 22 B3 22 B3 22 B3 22 B3 22 B3 22 B3
+             22 B3 22 00 C2 CD 7F 00 3C 30 78 17 02 50 15 03
+             50 00 00 73 00 00 73 31 73 33 71 1F 1F 0E 0E 9F
+             88 9F 9F 00
+        </patch>
+        <patch offset="0x100F15">
+             00 00 02 12 07 06 F4 C2 CD 7F
+        </patch>
+        <patch offset="0x100F20">
+             3C 30 78 16 00 30 1B 00 30 00 00 73 00 00 73 31
+             70 72 30 1F 1F 0D 0D 9F 9F 9F 9F
+        </patch>
+        <patch offset="0x100F3D">
+             00
+        </patch>
+        <patch offset="0x100F3F">
+             02
+             02 06 06 00 C2 CD 7F 00 3C 30 78 1B 00 30 11 00
+             30 02 00 73 00 00 73 32 71 74 32 1F 1F 0C 0C 8F
+             9F
+        </patch>
+        <patch offset="0x100F62">
+             80
+        </patch>
+        <patch offset="0x100F65">
+             00
+        </patch>
+        <patch offset="0x100F67">
+             01 01 06 05 F4 C2 CB 5A 00
+             39 40 78 14 03 20 22 03 20 20 03 70 00 03 70 03
+             04 04 02 14 14 14 14 91 85 83 9F 40 01 01 00 F9
+             33 38 07 00 C2 CD 64
+        </patch>
+        <patch offset="0x100F98">
+             2C 30 78 1B 05
+        </patch>
+        <patch offset="0x100F9E">
+             1B 05
+             00 00 00 77 00 00 77 74 34 72 32 1F 1F 0F 0F 80
+             80 88 88 00
+        </patch>
+        <patch offset="0x100FB5">
+             02 02 03 03 56 56 00
+        </patch>
+        <patch offset="0x100FBD">
+             00 00
+        </patch>
+        <patch offset="0x100FC0">
+             32
+        </patch>
+        <patch offset="0x100FC2">
+             78 0D 0F 60 0C 0F 60 11 0F 70 00 00 70 35
+             71
+        </patch>
+        <patch offset="0x100FD2">
+             01 9F 9F 9F 9F 85 89 86 89 04 06 05 03 25
+             26 25 15 F4 80 00
+        </patch>
+        <patch offset="0x100FE8">
+             28
+        </patch>
+        <patch offset="0x100FEA">
+             78 0E 05 30 0E 05
+             70 1B 04 50 00 00 70 06
+        </patch>
+        <patch offset="0x100FF9">
+             05 01 DF 9F DF 9F 8F
+             9F 8D 9F 07 05 06 02 23 03 23 06 F4 C0 CC
+        </patch>
+        <patch offset="0x101010">
+             3B 30 78 20 00 70 11 00 70 14 00 70 00 00 70 0F
+        </patch>
+        <patch offset="0x101021">
+             14
+        </patch>
+        <patch offset="0x101023">
+             1F 1F 1F 1F 8E 85 8C 9F 00
+        </patch>
+        <patch offset="0x10102D">
+             03 05 FA
+             37 FA 08 F4 C0 C5 7F
+        </patch>
+        <patch offset="0x101038">
+             3B 30 78 1B 0F 70 1B 00
+             70 1B 00 70 00 00 70 72 30 31 70 5F 1F 5F 1F 8E
+             85 8D 88 00 03 00 0A FA 37 FA 18 0C E2 DC 64
+        </patch>
+        <patch offset="0x101060">
+             07 60 78 00 00 77 00
+        </patch>
+        <patch offset="0x101068">
+             77 00 00 77 00 00 76 01
+             01 01 01 1F 5F DF 5F 8C 8C 8C 8C 00
+        </patch>
+        <patch offset="0x10107D">
+             00 00 F6
+             F6 F6 F6 00 C2 CE 7F
+        </patch>
+        <patch offset="0x101088">
+             3C 30 78 1B 00 70 1B 00
+             70 00 00 74 00 00 74 38 78 31 71 5F 5F 5F 5F 8E
+             8E 8D 8D 00
+        </patch>
+        <patch offset="0x1010A5">
+             00 00 F5 F5 F6 F6 00 C2 C8 7F
+        </patch>
+        <patch offset="0x1010B0">
+             3C 30 78 1B 00 70 1B 00 70 00 00 70 00 00 70 33
+             73 31 71 5F 5F 5F 5F 8E 8E 8A 8A 00
+        </patch>
+        <patch offset="0x1010CD">
+             00 00 F5
+             F5 F6 F6 E8 E2 FF 7F
+        </patch>
+        <patch offset="0x1010D8">
+             3A 70 78 1B 00 40 16 00
+             50 1B 00 40 00 00 70 0A 04 07
+        </patch>
+        <patch offset="0x1010EB">
+             DF 1F 1F 1F 9F
+             9F 9F 9F 00 CA 40 CD 03 03 03 07 ED C2 CD 7F
+        </patch>
+        <patch offset="0x101100">
+             05 30 78 1B
+        </patch>
+        <patch offset="0x101105">
+             50 1B
+        </patch>
+        <patch offset="0x101108">
+             70 00 00 70 00 00 70 76
+             36 33 72 1F 0F 0F 1F 8B 8E 8B 8E
+        </patch>
+        <patch offset="0x10111D">
+             00 40 56
+             06 06 F6
+        </patch>
+        <patch offset="0x101124">
+             C2 64 7F
+        </patch>
+        <patch offset="0x101128">
+             04 30 78 11
+        </patch>
+        <patch offset="0x10112D">
+             00 11
+        </patch>
+        <patch offset="0x101130">
+             00 00 00 76 00 00 70 7A 3E 72 32 12 12 12 12 8A
+             8A 8A 8A 40 00 00 00 F5 F5 F5 F5 00 C2 CA 7F 00
+             3C 30 78 11 0F 00 1B 0F 00 00 00 71 00 00 71 7B
+             3B 32 72 1F 1F 1F 1F 8A 8A 8A 8A
+        </patch>
+        <patch offset="0x10116D">
+             00
+        </patch>
+        <patch offset="0x10116F">
+             F5
+             F5 F5 F5
+        </patch>
+        <patch offset="0x101174">
+             C2 0A 7F
+        </patch>
+        <patch offset="0x101178">
+             00 03 78 1B 00 70 20 00
+             70 00 00 70 00 00 70 00 02 03
+        </patch>
+        <patch offset="0x10118B">
+             D9 1F DF 1F 92
+             94 91 8F 4A 0A 80 0D F3 F3 F6 F8 00 80 00
+        </patch>
+        <patch offset="0x1011A0">
+             38
+        </patch>
+        <patch offset="0x1011A2">
+             78 00 00 00 00 00 00 00 00 00 00 00 70 0F
+             0F 0F 0F 1F 1F 1F 0E 80 80 80 8A C0 40 80 D9 03
+             03 03 1A 0C C0 C3 0C 04 3C 12 78 19 00 70 1B 00
+             70 0C 81 70 00 82 70 35 33 21 31 59 59 59 59 97
+             94 8E 8E 0A 0B 0B 0C E8 E8 F8 F8 00
+        </patch>
+        <patch offset="0x1011ED">
+             00 00
+        </patch>
+        <patch offset="0x1011F0">
+             37
+        </patch>
+        <patch offset="0x1011F2">
+             78 0D 03 72 00 00 72 00 00 72 00 00 72 03
+             01 01 01 1F 1F 1F 1F 90 8E 8E 8E
+        </patch>
+        <patch offset="0x10120D">
+             00
+        </patch>
+        <patch offset="0x10120F">
+             F7
+             F7 F7 F7 00
+        </patch>
+        <patch offset="0x101218">
+             3C
+        </patch>
+        <patch offset="0x10121A">
+             78 20 00 50 1B 00
+             50 00 00 72 00 00 72 03 04 01 01 1F 1F 1F 1F 8A
+             8A 8C 8C 80 80 00 00 F3 F3 F6 F6
+        </patch>
+        <patch offset="0x10123C">
+             C2 C8 50 03
+             3A 21 78 09 05 30 11 00 30 1B 00 70 00 82 73 01
+             01 01 02 8D 07 07 52 89 80 80 83 01 02 02 00 52
+             02 02 28 00 C2 D2 7F
+        </patch>
+        <patch offset="0x101268">
+             3B 20 78 15 00 50 11 00
+             60 11 00 60 00 00 70 72 31 31 71 12 12 14 14 8E
+             8E 80 82 00
+        </patch>
+        <patch offset="0x101285">
+             00 01 1A 5A 0A 3A 00
+        </patch>
+        <patch offset="0x10128D">
+             00
+        </patch>
+        <patch offset="0x101290">
+             2C
+        </patch>
+        <patch offset="0x101292">
+             78 16 00 00 1B 00 00 00 00 70 00 00 70 78
+             34 72 32 1F 1F 1F 10 80 80 92 91
+        </patch>
+        <patch offset="0x1012AD">
+             0D 0A 00
+             00 C7 C7 F6 E2 FF 7F
+        </patch>
+        <patch offset="0x1012B8">
+             3F 70 78 1B 00 70 00 00
+             70 1B 00 70 00 00 70 02 01 0C 01 07 09 0A 08 80
+             80 80 80 85 49 08 0A 0A 0A 0A 0A 00 C2 CD 64
+        </patch>
+        <patch offset="0x1012E0">
+             00 40 78 1B 00 10 1B 0A 30 00 00 20 00 00 70 07
+             06 02 02 17 17 17 17 9F 9F 9F 9F 4D 0D 0E 0E 06
+             06 07 07 F4 C2 C8 64
+        </patch>
+        <patch offset="0x101308">
+             3C 30 78 13 00 70 0F 00
+             70 00 00 73 00 00 73 31 70 72 30 52 52 53 53 88
+             88 80 80 04 04 00
+        </patch>
+        <patch offset="0x101327">
+             14 12 07 06 3C
+        </patch>
+        <patch offset="0x101330">
+             34
+        </patch>
+        <patch offset="0x101332">
+             78 0E 00 00 0F 00 00 00 00 72 00 00 72 06
+             04 0F 0E 1F 1F 1F 1F 80 80 8B 8B C0 80 43 43 00
+        </patch>
+        <patch offset="0x101351">
+             F5 F4
+        </patch>
+        <patch offset="0x101354">
+             C2 CB 28
+        </patch>
+        <patch offset="0x101358">
+             3C 30 78 11 03 00 11 00
+             00 01 00 74 00 00 76 32 71 74 32 9F 9F 19 19 8F
+             80 80 80 00
+        </patch>
+        <patch offset="0x101375">
+             00 00 12 02 08 07
+        </patch>
+        <patch offset="0x10137D">
+             00
+        </patch>
+        <patch offset="0x101380">
+             37
+        </patch>
+        <patch offset="0x101382">
+             78 00 80 40 00
+        </patch>
+        <patch offset="0x101388">
+             77 00 00 77 00 00 7A 72
+             34 31 70 1F 1F 1F 1F 80 80 80 80 00
+        </patch>
+        <patch offset="0x10139D">
+             00 00 06
+             06 05 05 18 C2 00
+        </patch>
+        <patch offset="0x1013A8">
+             3C
+        </patch>
+        <patch offset="0x1013AA">
+             78 16 00 00 1B
+        </patch>
+        <patch offset="0x1013B0">
+             00 00 00 79 00 00 77 32 72 71 33 1F 1F 0B 0A 80
+             80 8A 8A
+        </patch>
+        <patch offset="0x1013C5">
+             00 03 04 03 05 66
+        </patch>
+        <patch offset="0x1013CC">
+             E2 C8 7F
+        </patch>
+        <patch offset="0x1013D0">
+             07 40 78 00 00 7A 00 00 7A 00 00 7A 00 00 7A 74
+             34 31 71 1F 1F 1F 1F 8A 8A 8A 8A
+        </patch>
+        <patch offset="0x1013ED">
+             00
+        </patch>
+        <patch offset="0x1013EF">
+             65
+             65 65 65 64 E2 C8 7F 00 07 70 78 00 00 73 00 00
+             73 00 00 73 00 00 73 01 01 01
+        </patch>
+        <patch offset="0x10140B">
+             1F 1F 1F 1F 8A
+             8A 8A 8A
+        </patch>
+        <patch offset="0x101415">
+             00
+        </patch>
+        <patch offset="0x101417">
+             F6 F6 F6 F6 F4 E2 B4 7F
+        </patch>
+        <patch offset="0x101420">
+             07 70 78 00 00 70
+        </patch>
+        <patch offset="0x101428">
+             70 00 00 70 00 00 70 01
+             01 01
+        </patch>
+        <patch offset="0x101433">
+             1F 1F 1F 1F 8A 8A 8A 8A
+        </patch>
+        <patch offset="0x10143D">
+             00
+        </patch>
+        <patch offset="0x10143F">
+             F6
+             F6 F6 F6 00 00 00 00 00 06
+        </patch>
+        <patch offset="0x10144A">
+             78 1B 00 00 00 85
+             71 09 00 71 00 00 71 7D 34 32 74 1F 1F 1F 1F 8D
+             8A 8A 8A 00 00 00
+        </patch>
+        <patch offset="0x101467">
+             F5 F5 F5 F5 00
+        </patch>
+        <patch offset="0x10146D">
+             00 00
+        </patch>
+        <patch offset="0x101470">
+             2C
+        </patch>
+        <patch offset="0x101472">
+             78 1B 05 00 1B 05 00 00 85 70 00 85 70 74
+             34 72 32 1F 1F 10 10 80 80 88 88 00 00 00 00 00
+             00 56 56 1E
+        </patch>
+        <patch offset="0x101495">
+             00 00
+        </patch>
+        <patch offset="0x101498">
+             38 00 78 25 00 70 20 00
+             70 1B 00 70 00 00 70 01
+        </patch>
+        <patch offset="0x1014AB">
+             1F 1F 1F 1F 94
+             94 94 94 80 40 00
+        </patch>
+        <patch offset="0x1014B7">
+             F3 F3 F3 FA
+        </patch>
+        <patch offset="0x1014BC">
+             C2 CB 00 00
+             3A
+        </patch>
+        <patch offset="0x1014C2">
+             78 07 0A 58 0C 0A 70 0C 0A 50 00 00 75 33
+             71 73 31 1F 5F 1F 18 94 9F 9E 9F 02 02 02
+        </patch>
+        <patch offset="0x1014DF">
+             03
+             03 03 08 F4 C2 C5 32 03 2A
+        </patch>
+        <patch offset="0x1014EA">
+             78 1B
+        </patch>
+        <patch offset="0x1014ED">
+             70 1A 00
+             70 2A 00 70 00 00 73 01 01 01 01 0E 0C 0E 0F 87
+             80 87 82 00
+        </patch>
+        <patch offset="0x101505">
+             01 00 05 05 05 08 F4 C2 CB 46 0A
+             06 41 78 1B 00 00 1B 00 70 09 00 70 09 00 70 11
+             52 12 52 14 0A 0A 0B 80 80 80 80 00 00 00 00 03
+             07 06 07 18 C2 CD 1D 64 3E
+        </patch>
+        <patch offset="0x10153A">
+             78 0F 0A 70 00 8F
+             72 16 8F 72 00 8F 72 36 33 71 71 1F 9F 9F 9F 91
+             85 85 85 80 80 00 00 FF F3 F3 F3 F4
+        </patch>
+        <patch offset="0x10155D">
+             00
+        </patch>
+        <patch offset="0x101560">
+             04
+        </patch>
+        <patch offset="0x101562">
+             78 1B 00
+        </patch>
+        <patch offset="0x101566">
+             1B 00 70 00 00 70 00 00 70 00
+             01 01 01 DF 1F 1F 1F 99 8A 8E 8C 54 80 C0 00 53
+             53 F5 F5 00 C2 CD 7F 00 3C 30 78 14 00 70 0F 00
+             00 00 00 70 00 00 70 31 70 72 30 9F 9F 9F 9F 9F
+             9F 9F 9F
+        </patch>
+        <patch offset="0x1015A5">
+             00
+        </patch>
+        <patch offset="0x1015A7">
+             05 05 08 F8
+        </patch>
+        <patch offset="0x1015AC">
+             C2 C8 50 04
+             3A 22 78 15 84 00 1B 04 00 20 04 00 00 82 70 04
+             04 04 02 8D 15 55 52 86 8E 88 83 02
+        </patch>
+        <patch offset="0x1015CD">
+             00 00 14
+             24 14 28
+        </patch>
+        <patch offset="0x1015D4">
+             C2 CD 7F 00 3C 30 78 13 00 30 0F 00
+             30 00 00 73 00 00 73 31 70 72 30 1F 1F 14 14 9F
+             9F 9F 9F
+        </patch>
+        <patch offset="0x1015F5">
+             00
+        </patch>
+        <patch offset="0x1015F7">
+             02 02 06 06 00 C2 CB 6D
+        </patch>
+        <patch offset="0x101600">
+             3C 21 78 14 01 00 12 00 70 00 83 75 00 83 75 32
+             72 71 31 15 1F 17 17 80 80 80 80
+        </patch>
+        <patch offset="0x10161D">
+             00
+        </patch>
+        <patch offset="0x10161F">
+             03
+             03 0A 0A F4 C2 C8 00
+        </patch>
+        <patch offset="0x101628">
+             3A
+        </patch>
+        <patch offset="0x10162A">
+             78 06 0F 30 0C 0F
+             70 05 0F 00 00 00 77 33 72 76 31 1F 1F 1F 19 8F
+             9F 9F 9F 05 05 05
+        </patch>
+        <patch offset="0x101647">
+             13 03 03 08 F4 C2 CB 64 00
+             3D 30 78 16 03 70 00 83 7A 00 83 70 00 83 70 32
+             74 74 74 8F 0D 0D 0D 80 88 85 85 00 01 01 01 02
+             2F 26 24 0C 00 00
+        </patch>
+        <patch offset="0x101678">
+             3B
+        </patch>
+        <patch offset="0x10167A">
+             78 0F 00 00 17 84
+             70 17 05 70 00 8C 70 03 01 56 54 5F 5F DF 9F 80
+             80 80 86
+        </patch>
+        <patch offset="0x101696">
+             04 0F 00 00 F7 00 82 00 00 00
+             3F
+        </patch>
+        <patch offset="0x1016A2">
+             78 00 00 38 00 00 70 07 00 78 00 00 70 74
+             32 30 71 12 12 12 12 80 80
+        </patch>
+        <patch offset="0x1016BA">
+             80
+        </patch>
+        <patch offset="0x1016BD">
+             00
+        </patch>
+        <patch offset="0x1016BF">
+             07
+             07 07 06 00 00 00 00 00 33
+        </patch>
+        <patch offset="0x1016CA">
+             78 0E 0F 70 17 0F
+             70 12 0F 70 00 00 70 35 71 03 01 9F 9F 9F 9F 85
+             89 86 89 04 06 05 03 25 26 25 15
+        </patch>
+        <patch offset="0x1016EC">
+             C0 C8 46 05
+             1F 21 78 07 01 65 00 01 60 00 00 65 00 00 70 66
+             73 31 22 1C 1F 98 1F 92 8F 8F 8F 00
+        </patch>
+        <patch offset="0x10170D">
+             00 00 F6
+             06 06 06
+        </patch>
+        <patch offset="0x101715">
+             00
+        </patch>
+        <patch offset="0x101718">
+             00
+        </patch>
+        <patch offset="0x10171A">
+             78 1B 0A 70 1B 02
+             70 1B 05 70 00 00 70 34 73 76 31 14 14 14 14 80
+             80 80 80 00
+        </patch>
+        <patch offset="0x101735">
+             00 00 03 03 03 07 F4 80 00 00
+        </patch>
+        <patch offset="0x101740">
+             28
+        </patch>
+        <patch offset="0x101742">
+             78 0F 05
+        </patch>
+        <patch offset="0x101746">
+             0F 05 70 1B 04 50 00 00 70 06
+        </patch>
+        <patch offset="0x101751">
+             05 01 DF 9F DF 9F 8F 9F 8D 9F 07
+        </patch>
+        <patch offset="0x10175D">
+             06 02 23
+             03 23 06 79
+        </patch>
+        <patch offset="0x101765">
+             00
+        </patch>
+        <patch offset="0x101768">
+             1B
+        </patch>
+        <patch offset="0x10176A">
+             78 22 00 70 00 00
+             70 00 00 70 00 00 70 06 03 05
+        </patch>
+        <patch offset="0x10177B">
+             1F 1F 1F 1F 80
+             94 87 92
+        </patch>
+        <patch offset="0x101784">
+             00 C8 C0 FF FF 87 FA 0C C2 C8 64
+        </patch>
+        <patch offset="0x101790">
+             1F 40 78 1B 0F 00 00 00 78 00 00 78 00 00 70 37
+             74 71 34 1F 1A 14 17 8A 8A 8A 8A 00 00 00 00 F5
+             F5 F5 F5 F4 C0 C5 7F 00 3A 30 78 12 0F 70 12 00
+             70 1B 00 70 00 00 70 72 30 31 70 5F 1F 5F 1F 8E
+             85 8D 88 00 03 00 0A FA 37 FA 18 DC C2 BE 00 05
+             3D 03 78 25 00 70 00 00 70 00 00 70 00 00 70 77
+             32 70 32 1F 1F 1F 1F 80 8A 8B 8A 00 00 00 00 00
+             F4 F5 F4 ED C2 DD
+        </patch>
+        <patch offset="0x101807">
+             06 00
+        </patch>
+        <patch offset="0x10180A">
+             78 00 00 70 00 00
+             00 00 00 76 00 00 76 30 71 31 71 1F 1F 1F 1F 8F
+             9F 8F 83 00
+        </patch>
+        <patch offset="0x101825">
+             00 00 0A 0A 1A 4B F4 C2 CB 56 0A
+             3D 41 78 16 03 30 00 83 70 00 83 74 00 83 70 32
+             74 74 74 8F 0D 0D 10 80 88 85 85
+        </patch>
+        <patch offset="0x10184C">
+             01 01 01 02
+             27 26 23
+        </patch>
+        <patch offset="0x101854">
+             C2 CB 28
+        </patch>
+        <patch offset="0x101858">
+             3C 30 78 12 03 70 12
+        </patch>
+        <patch offset="0x101860">
+             70 01
+        </patch>
+        <patch offset="0x101863">
+             74
+        </patch>
+        <patch offset="0x101866">
+             76 32 71 74 32 9F 9F 19 19 8F
+             80 80 80
+        </patch>
+        <patch offset="0x101877">
+             12 02 08 07 F4 C2 C6 28 03
+             3D 11 78 15 80 40
+        </patch>
+        <patch offset="0x101887">
+             04 70
+        </patch>
+        <patch offset="0x10188A">
+             04 70
+        </patch>
+        <patch offset="0x10188D">
+             82 70 01
+             01 02 01 8D 14 58 55 87 8E 88 83
+        </patch>
+        <patch offset="0x10189F">
+             14
+             18 18 1A
+        </patch>
+        <patch offset="0x1018A4">
+             E2 BE 7F
+        </patch>
+        <patch offset="0x1018A8">
+             04 70 78
+        </patch>
+        <patch offset="0x1018B3">
+             70
+        </patch>
+        <patch offset="0x1018B6">
+             70 01 04 01 01 1F 1F 1F 1F 8C
+             8C 8C 8D
+        </patch>
+        <patch offset="0x1018C7">
+             F6 F6 F6 F6
+        </patch>
+        <patch offset="0x101928">
+             00
+        </patch>
+        <patch offset="0x10192D">
+             0D
+        </patch>
+        <patch offset="0x1019AB">
+             0D
+        </patch>
+        <patch offset="0x101A82">
+             00
+        </patch>
+        <patch offset="0x101A8B">
+             00
+        </patch>
+        <patch offset="0x101B05">
+             0B
+        </patch>
+        <patch offset="0x101B0E">
+             0B
+        </patch>
+        <patch offset="0x101D0F">
+             00
+        </patch>
+        <patch offset="0x101D8A">
+             00
+        </patch>
+        <patch offset="0x101D92">
+             0B
+        </patch>
+        <patch offset="0x101E0D">
+             0B
+        </patch>
+        <patch offset="0x101ED9">
+             00
+        </patch>
+        <patch offset="0x101F5C">
+             0B
+        </patch>
+        <patch offset="0x101FDD">
+             00
+        </patch>
+        <patch offset="0x101FE6">
+             00
+        </patch>
+        <patch offset="0x102030">
+             00
+        </patch>
+        <patch offset="0x10205B">
+             00
+        </patch>
+        <patch offset="0x102060">
+             0B
+        </patch>
+        <patch offset="0x102069">
+             0B
+        </patch>
+        <patch offset="0x1020B3">
+             0D
+        </patch>
+        <patch offset="0x1020DE">
+             0B
+        </patch>
+        <patch offset="0x102159">
+             00
+        </patch>
+        <patch offset="0x1021DC">
+             0B
+        </patch>
+        <patch offset="0x102270">
+             00 00 00 00 00 00 00 00 00 00 00 00 00
+        </patch>
+        <patch offset="0x102282">
+             00 00 00 00 00 00 00 00
+        </patch>
+        <patch offset="0x10228B">
+             00 00 00
+        </patch>
+        <patch offset="0x10228F">
+             00
+             00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+             00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+             00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+             00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+             00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+             00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+             00 00 00 08 C4 22 7D 23 32 24 C1 24 E8 25 4F 26
+             00 00 00 00 00 EC 0A C0 09 F0 01 C8 0D 00 07 24
+             0C 00 E0 06 C0 6D 60 68 60 21 E7 87 66 68 6A 60
+             6C 60 33 AD AF B1 72 60 6D 72 21 F4 D4
+        </patch>
+        <patch offset="0x10232E">
+             60 71
+             60 21 F0 90 6F 71 72 60 74 60 33 B6 B7 B9 7B 60
+             76 7B 22 BD DD FD
+        </patch>
+        <patch offset="0x102347">
+             E0 0C 16 A0 71 71 71 71 B1
+             8F 8C A0 74 74 74 74 B4 93 8F 21 ED ED 02 36 23
+             A0 6F 6F 6F 6F AF 8D 8A AB 8A 86 88 8A 8B 8D 21
+             EF EF 03 01 0A 23 93 71 6D 74 60 B3 71 6D 94 73
+             6F 98 76 72 79 60 B8 76 72 76 78 79 7B 9D 7B 78
+             99 78 74 76 78 76 74 91 79 7B 9D 7B 78 99 78 74
+             76 78 76 74 91
+        </patch>
+        <patch offset="0x1023A6">
+             30 71 73 94 73 6F 91 71 73 94
+             76 74 73 74 73 6F 21 F1 F1 05 00 CE 22 0A C0 09
+             F0 01 C8 07 24 0D 00 0C 01 E0 06 C0 71 60 6D 60
+             EF 80 6A 6C 6D 60 6F 60 33 B1 B2 B4 79 60 72 79
+             21 F8 D8 79 60 74 60 F3 80 72 74 76 60 78 60 33
+             B9 BB BD 9E 7D 7B 22 FA DA BA E0 E0 0C 16 6A 6A
+             6A 6A 6A 6A 6A 6A 6A 60 AC 88 6D 6D 6D 6D 6D 6D
+             6D 6D 6D 60 AF 8A 21 E6 E6 02 FB 23 68 68 68 68
+             68 68 68 68 68 60 AA 86 07 18 8F 8B 8D 8F 8F 92
+             94 96 21 F7 F7 07 24 03 01 BE 23 8D 6A 67
+        </patch>
+        <patch offset="0x10243F">
+             60
+             6F 60 8D 6A 67 91 6F 6A 8F 6D 6A 72 60 B4 6F 6C
+             6D 6F 71 72 94 92 91
+        </patch>
+        <patch offset="0x102458">
+             8D 8C 8D 80 94 92 91 80
+             8D 8C 8D 96 98 96 94 93 B1 8F 96 21 F5 F5 05 00
+             87 23 0A C0 09 F0 01 C8 0D 00 07
+        </patch>
+        <patch offset="0x10247C">
+             0C 0E AA A0
+             C0 E0 07 18 0C 0B E0 A0 80 8A 80 8A 80 8A 03 02
+             46 24 07 0C 0C 0E EA EA CA CA 06 CA A0 07 18 0C
+             06 80 6A 6A 8A 80 A0
+        </patch>
+        <patch offset="0x1024A8">
+             6A
+        </patch>
+        <patch offset="0x1024AA">
+             03 05 61 24 07 24
+             0C 15 80 66 66 8B 33 66 6B 66 8F 33
+        </patch>
+        <patch offset="0x1024BD">
+             6F 6A 92
+             33 71 72 71 97 92 06 DB 0C 03 0D F4 60 80 78 79
+             80 78 79 80 78 79 78 76 78 79 80 7B 7D 60 7B 07
+             30 0D 00 73 74 76 74 73 71 73 71
+        </patch>
+        <patch offset="0x1024EC">
+             21 ED ED E0
+             E0 E0 E0 E0 07 00 0C 0E A0 C5 C5 C5 A5 05 00 3A
+             24 0A C0 09 F0 01 C8
+        </patch>
+        <patch offset="0x102508">
+             00 07 00 0C 0E AA A0 C0
+             E0 07 18 0C 16 6A 6A 6A 6A 6A 6A 6A 6A 6A 60 AA
+             6A 60 6A 60 6A 60 07 0C 0C 0B 6A 60 8A 6A 60 8A
+             6A 60 8A 07 18 0C 16 6A 6A 6A 6A 6A 6A 6A 6A 6A
+             60 AC 68 60 6A 60 65 60 07 0C 0C 0B 6A 60 8A 6A
+        </patch>
+        <patch offset="0x102551">
+             8A 6A 60 8A 07 18 0C 16 6A 6A 6A 6A 6A 6A 6A
+             6A 6A 60 AD 6A 60 6B 60 66 60 6B 60 6D 60 6F 60
+             72 60 77 60 7B 60 21 FD FD E0 E0 E0 E0 C0 07 24
+             0C 0F 0D F4 46 23 52 72 92 B2 0D F8 46 23 52 72
+             92 B2 0D FC 46 23 52 72 92 B2 0D 00 46 23 52 72
+             92 B2 C0 E0 0C 15 80 6B 6B 92 33 6B 72 6B 97 33
+             72 77 72 9B 33 77 7B 77 9E 33 7D 7E 7D 06 DB 07
+             30 0C 03 80 6C 6D 80 6C 6D 80 6C 6D 6C
+        </patch>
+        <patch offset="0x1025CE">
+             6C 6D
+             80 6F 71 60 6F 71 76 78 79 78 76 74 76 74 73 21
+             F1 F1 E0 07 24 0C 00 06 C0 80 6D 74 79 7B 79 78
+             76 78 76 74 72 74 72 6F 68 6D 71 74 79 7B 79 78
+             76 78 76 74 72 74 72 6F 68 6D 74 78 07 30 71 73
+             71 6F 6D 6F 6D 6C 6D 6F 6D 6C 6A 6C 6A 67 07 00
+             0C 0E E5 E5 05 00 C9 24 0A C0 09 F0 01 C8 0D 00
+             07 0C 0C 0E
+        </patch>
+        <patch offset="0x102635">
+             06 C0 07 00 0C 19 6A 60 80 6A 60
+             6A 60 6A 60 6A 60 6A 60 6A 60 03 0A FB 25 8A 6A
+             6A 8A 8A 8A 8A 6A 6A 8A 03 0B 0E 26 07 24 0C 07
+             8A A0 8A 8A A0 8A 8A A0 8A 80 8A 80 88 80 88 8A
+             80 80 88 8D 80 80 88 8A 80 80 88 8D 80 80 8C 8D
+             80 80 8A 80 8C 07 0C 0C 0E E5 E5 05
+        </patch>
+        <patch offset="0x10268D">
+             F0 25
+        </patch>
+        <patch offset="0x102695">
+             07 18 0D 00
+        </patch>
+        <patch offset="0x10269A">
+             06 4A 40 4A 40 4A
+             40 4A 40 4A 40 4A 40 4A 40 4A 40 6A 60 6A 60 6A
+             60 6A 60 03 07 5B 26 AA 03 0F 77 26 36 80 96 96
+             96 96 96 C0 03 0B 7C 26 33 80 96 96 A0 33 80 96
+             96 A0 33 80 96 96 A0 76 60 76 76 74 60 74 74 99
+             94 96 80 92 94 99 80 99 94 96 80 92 94 99 98 9D
+             98 99 80 B6 B8 0C 01 21 FD FD 05 00 59 26 0F 08
+             D0 26 1F 27 5D 27 96 27 42 28 B2 28 00 00 00 00
+             00 EC 0A C0 09 F0 01 C8 0D 00 07 30 0C 1A A3 A4
+             EB A3 A4 AB 8D 8F B1 8F 8B ED A0 8D 8F B1 8F 8B
+             B2 91 8D B4 92 8F 21 F1 F1 0C 16 A3 A4 EB A3 A4
+             AB 8D 8F B1 8F 8B ED A0 8D 8F B1 8F 8B B2 91 8D
+             B4 92 8F 21 F1 F1 23 F6 F6 F6 F6 05 00 DA 26 0A
+             C0 09 D0 01 C8 07 24 0D 00 0C 0B A3 03 17 2B 27
+             AA 03 07 30 27 0C 16 A0 A3 A8 B0 B7 B6 B4 B2 B4
+             96 97 B4 92 8F F1 A0 91 94 B9 B4 BB B6 BD B7 22
+             F6 D6 B6 B4 23 F3 F3 F3 F3 05 00 29 27 0A C0 09
+             D0 01 C8 0D 00 07 18 0C 0C 80 33 6A 6B 6D AF 03
+             0F 69 27 07 00 0C 0E A0 A3 A3 A3 A3 06 C0 03 02
+             77 27 A0 AA AA AA AA 06 C0 A0 C3 C3 C3 C3 C3 C3
+             C3 A3 05 00 65 27 0A C0 09 F0 01 C8 0D 00 07 18
+             0C 05 6A 60 68 60 6A 60 6B 60 6A 60 68 60 6A 60
+             6B 60 02 C9 27 6A
+        </patch>
+        <patch offset="0x1027F7">
+             68 60 6A 60 6B 60 6D 60 6F
+             60 6D 60 6B 60 03 02 A2 27 6A 60 68 60 6A 60 6B
+             60 6D 60 6B 60 6D 60 6F 60 71 60 6F 60 71 60 72
+             60 03 03 D9 27 0C 16 6A 60 68 60 6A 60 6B 60 6A
+             60 68 60 6A 60 6B 60 02 0E 28 6A 60 68 60 6A 60
+             6B 60 6D 60 6F 60 6D 60 6B 60 03 02 E7 27 6A 60
+             68 60 6A 60 6B 60 6D 60 6B 60 6D 60 6F 60 71 60
+             6F 60 71 60 72 60 03 03 1E 28 73 60 71 60 73 60
+             75 60 76 60 75 60 73 60 71 60 03 03 2A 28 05 00
+             9E 27 0A C0 09 D0 01 C8 0D 00 07 24 0C 01 21 E3
+             E3 21 E3 E3 21 E3 E3 21 EA EA 0C 07 09 D0 80 83
+             09 B0 80 83 09 D0 A3 A0 83 80 83 80 C0 80 83 09
+             B0 80 83 09 D0 83 A0 09 B0 83 09 D0 83 83 83 80
+             C0 80 83 80 83 A0 80 83 80 83 83 80 83 83 80 83
+             8A
+        </patch>
+        <patch offset="0x1028D2">
+             8A 80 C0 8A 8A 8A 80 C0 83 80 83
+        </patch>
+        <patch offset="0x1028DE">
+             C0 83
+             80 83 80 C0 83 80 83 80 C0 83 83 83 80 C0 05 00
+             4A 28 0A C0 09 D0 01 C8 07 18 0D 00 0C 01 21 E3
+             E3 21 E3 E3 21 E3 E3 21 EA EA 0C 06 A3 03 17 CC
+             28 AA AA AA AA AA AA AA AA A3 03 0F D9 28 05 00
+             BC 28 0F 08 F4 28 49 29 A6 29 20 2A 77 2A F0 2A
+             00 00 00 00 00 D4 0A C0 09 F0 01 C8 0D 00 07 18
+             0C 01 21 E5 E5 E0 E0 07 24 0C 1C 6C 60 73 60 C0
+             6C 60 73 60 80 33 73 73 73 06 93 73 73 60 73 60
+             80 73 60 06 94 74 22 F4 D4 B4 A1 A6 AA AD D2 D0
+             71 60 78 60 80 71 60 78 60 80 71 60 78 60 80 71
+             60 78 60 80 C0 05 00 09 29 0A C0 09 F0 01 C8 0D
+             00
+        </patch>
+        <patch offset="0x102992">
+             24 0C 1D 21 E5 E5 E0 E0 0C 1C 68
+        </patch>
+        <patch offset="0x10299E">
+             6F
+        </patch>
+        <patch offset="0x1029A0">
+             C0 68 60 6F 60 80 33 6F 6F 6F 06 8F 6F 6F
+        </patch>
+        <patch offset="0x1029AF">
+             6F
+             60 80 6F 60 06 B1 6F 6C 06 AD 6C 68 06 AA 68 65
+             06 A6 65 61 07 18 AA AD B2 B6 F9 07 24 6C 60 76
+             60 80 6C 60 76 60 80 6C 60 76 60 80 6C 60 76 60
+             80 C0 05 00 5A 29 0A C0 09 F0 01 C8 0D F8 07 30
+             0C 00 06 60 A0 60 76 74 73 71 73 71 6F 6D 6F 6D
+             6C 6A 6C 6A 68 67 68 67 65 64 65 64 61 07 24 6C
+             73 51 E0 E0 07 18 0D 00 0C 1C 71 60 78 60 C0
+        </patch>
+        <patch offset="0x102A20">
+             60 78 60 80 33 78 78 78 06 98 78 78 60 78 60 80
+             78 60 06 B9 78 74 06 B6 74 71 06 B2 71 6D 06 AF
+             6D 6A A6 AA AD B2 F6 76 60 7D 60 80 76 60 7D 60
+             80 76 60 7D 60 80 76 60 7D 60 80 C0 05 00 D4 29
+             0A C0 09 F0 01 C8 0D F8 07 30 0C 00 60 74 76 74
+             73 71 73 71 6F 6D 6F 6D 6C 6A 6C 6A 68 07 24 73
+             74 73 71 70 71 70 6D 6C 6D 6C 6A 68 6A 68 0D 00
+             0C 07 06 A5 85 03 03 52 2A 06 A5 85 03 0B 59 2A
+             80 71 71 6C 6C 65 60 71 71 6C 6C 65 60 6C 6C A5
+             80 85 C0 05
+        </patch>
+        <patch offset="0x102AB5">
+             59 2A 0A C0 09 F0 01 C8 0D 00 07
+             30 0C 00 A0 60 76 74 73 71 73 71 6F 6D 6F 6D 6C
+             6A 6C 6A 68 67 68 67 65 64 65 64 61 07 24 6C 73
+             71 6F 0C 06 65 60 03 0F A4 2A 0C 06 65 60 03 1F
+             AC 2A
+        </patch>
+        <patch offset="0x102AF3">
+             60 65 65 65 60 65 60 65 65 65 60 03 01
+             B2 2A 65 60 65 65 65 60 65 60 0C 0B 06 A5 06 A5
+             A5 80 06 A5 0D F4 33 65 65 65 0D F8 33 65 65 65
+             0D FC 33 65 65 65 0D
+        </patch>
+        <patch offset="0x102B28">
+             33 65 65 65 05 00 AA 2A
+             0A C0 09 F0 01 C8 0D 00
+        </patch>
+        <patch offset="0x102B39">
+             30 0C 00 74 76 74 73
+             71 73 71 6F 6D 6F 6D 6C 6A 6C 6A 68 07 24 73 74
+             73 71 70 71 70 6D 6C 6D 6C 6A 68 6A 68 67 07 18
+             0C 05 71 6F 6D 6C 6A 68 67 65 03 03 22 2B 71 6F
+             6D 6C 6A 68 67 65 03 0B 2E 2B 71 6F 6D
+        </patch>
+        <patch offset="0x102B7E">
+             80
+        </patch>
+        <patch offset="0x102B80">
+             6F 6D 6C 80 71 6F 6D 6C 71
+        </patch>
+        <patch offset="0x102B8A">
+             71
+        </patch>
+        <patch offset="0x102B8C">
+             6D 6F 6D 6C
+             6A 6C 6A 68 67 68 67 63 05 00 2E 2B 0F 08 6E 2B
+             B4 2B D6 2B F8 2B 1C 2C 40 2C 00 00 00 00 00 D0
+             0A C0 09 D0 01 C8 0D 00 07 18 0C 07 A0 36 6C 60
+             6C 60 6C 60 C0 A0 3B 6C
+        </patch>
+        <patch offset="0x102BC9">
+             6C 60 6C
+        </patch>
+        <patch offset="0x102BCD">
+             6C
+        </patch>
+        <patch offset="0x102BCF">
+             6C
+        </patch>
+        <patch offset="0x102BD1">
+             6C
+        </patch>
+        <patch offset="0x102BD3">
+             A0 A0 3B 6C 60 6C 60 6C 60 6C 60 6C 60
+             6C 60 36 6C 60 6C 60
+        </patch>
+        <patch offset="0x102BE9">
+             36 AC A0 AC A0 AC A0
+             05 00 7A 2B 0A C0 09 F0 01 C8 0D 00 07 18 0C 05
+             6C 60 71 60 73 60 78 70 76 60 71
+        </patch>
+        <patch offset="0x102C0C">
+             73 60 6F 60
+             71 60 05 00 BE 2B 0A C0 09 F0 01 C8 0D 00 07 0C
+             0C 05 6C 60 71 60 73 60 78 70 76 60 71 60 73 60
+             6F 60 71 60 05 00 E0 2B 0A C0 09 F0 01 C8 0D F8
+             07 18 06 80 0C 05 6C
+        </patch>
+        <patch offset="0x102C48">
+             71 60 73 60 78 70 76
+        </patch>
+        <patch offset="0x102C52">
+             73
+        </patch>
+        <patch offset="0x102C58">
+             05 00 04 2C 0A C0 09 F0
+             01 C8 0D F8 07 0C 06 80 0C 05 6C
+        </patch>
+        <patch offset="0x102C6C">
+             71 60 73 60
+        </patch>
+        <patch offset="0x102C71">
+             70 76 60 71 60 73
+        </patch>
+        <patch offset="0x102C78">
+             6F
+        </patch>
+        <patch offset="0x102C7A">
+             71 60 05 00 28 2C
+             0A C0 09 F0 01 C8 0D 00 07 18 0C 06 32 6C 60 03
+             2F 4C 2C 32 6D 60 03 2F 53 2C 05 00 4A 2C 0F 08
+             70 2C C4 2C 11 2D 6C 2D D9 2D 29 2E 00 00 00 00
+             00 DC 0A C0 09 F0 01 C8 0D 00 07 30 0C 15 E0 C0
+             0C 15 80 6A
+        </patch>
+        <patch offset="0x102CC5">
+             80 6D 60 80 6F 60 91 6F 60 68 60
+             8A 74 60 71 60 6D 60 6F 60 71 60 06 AF 80 78 60
+             80 78 60 80 78 60 80 33 56 58 21 59 79 76
+        </patch>
+        <patch offset="0x102CEF">
+             80
+             78 60 80 78
+        </patch>
+        <patch offset="0x102CF5">
+             80 78 60 9B 79 60 76 60 21 F8 98
+             05 00
+        </patch>
+        <patch offset="0x102D03">
+             2C 0A C0 09 D0 01 C8 0D 00 07 24 0C 15
+             E0 C0 0C 15 80 71 60 80 74 60 80 78 60 99 78 60
+             6F 60 91 7D 60 79 60 76 60 76 60 79 60 06 B8 80
+             74 60 80 74 60
+        </patch>
+        <patch offset="0x102D36">
+             74 60 80 92 72 60 80 74 60
+        </patch>
+        <patch offset="0x102D40">
+             74 60 80 74 60 96 76 60 71 60 21 F1 91 05 00 D2
+             2C 0A C0 09 D0 01 C8 0D 00 07 24 0C 15 E0 C0 0C
+             15 80 6F 60 80 71 60 80 72 60 94 74 60 6C 60 8F
+             79 60 76 60 74 60 74 60 76 60 06 B4 80 6F
+        </patch>
+        <patch offset="0x102D7F">
+             80
+             6F 60 80 6F
+        </patch>
+        <patch offset="0x102D85">
+             80 8D 6D 60
+        </patch>
+        <patch offset="0x102D8A">
+             6F 60
+        </patch>
+        <patch offset="0x102D8D">
+             6F 60
+        </patch>
+        <patch offset="0x102D90">
+             6F 60 91 71 60 6D 60 0C 07 6C 6C 8C 6A 6A 6C 6C
+             8C 6A
+        </patch>
+        <patch offset="0x102DA3">
+             6C 6C 8C 6A 71 05 00 1F 2D 0A C0 09 F0
+             01 C8 0D 00 07 18 0C 0B 80 AA 80 AA 80 AA 80 AA
+             0C 0B 80 6A 6A 8A 88 8A 80 80 8A 88 8A A0 80 6A
+             6A 88 8A 80 8A 80 85 80 85 80 85 07 00 0D F4 0C
+             20 61 60 0D 00 0C 20 61 60 80 07 18 0C 0B 80 85
+             80 85 80 85 07 00 0D F0 0C 20 61 60 0D F8 0C 20
+             61 60 0D 00 0C 20 61 60
+        </patch>
+        <patch offset="0x102E09">
+             18
+        </patch>
+        <patch offset="0x102E0B">
+             0B 80 85 83
+        </patch>
+        <patch offset="0x102E10">
+             85 83 80 85 88 05 00 80 2D 0A C0 09 F0 01 C8 0D
+             00 07 18 0C 06 6A 6A 96 74 68 03 03 E5 2D 0C 06
+             6A 6A 96 74 68 03 05 F0 2D 71 71 9D 7D 71 71 71
+             9D 91 6F 60 7B 60 80 71 71 9D 7D 71 71 71 9D 91
+             72 60 7E 60 72 60 71 71 9D 7B 6F 71 71 9D 7B 6F
+             71 71 9D 7B 78 05 00 EE 2D 0A C0 09 D0 01 C8 0D
+             00 07 24 0C 07 65 65 85 63 63 03 03 35 2E 07 24
+             0C 07 65 65 85 63 63 03 05 42 2E 07 30 0C 04 83
+             80 85 80 88 80 8C 6A 60 66 60 83 80 85 80 88 80
+             8C 6A 60 6F 60 94 73 60 6F 60 93 71 60 6D 60 91
+             6F 60 6C 60 05 00 3E 2E 0F 08 8A 2E DB 2E 32 2F
+             7B 2F DF 2F 06 30 00 00 00 00 00 D4 0A C0 09 F0
+             01 FF 0D 00 07 24 0C 16 79 23 77 97 B7 D7 72 23
+             74 94 B4 D4 79 23 B7 D7 77 7B 7E FD 03 01 98 2E
+             76 23 74 94 B4 D4 6F 23 71 91 B1 D1 76 23 B4 D4
+             74 78 7B 06 D9 78 79 78 74 06 D6 74 76 74 71 21
+             F2 F2 23 EA EA EA EA 05 00 96 2E 0A C0 09 F0 01
+             FF 0D 00 07 24 0C 16 74 23 72 92 B2 D2 6B 23 6D
+             8D AD CD 74 23 B2 D2 72 97 F9 74 23 72 92 B2 D2
+             6B 23 6D 8D AD CD 74 23 B2 D2 72 97 FA 72 23 71
+             91 B1 D1 6C 23 6D 8D AD CD 72 23 B1 D1 71 74 78
+             D2 D1 CF CD 21 EB EB 0C 1A 23 EA EA EA EA 05 00
+             E5 2E 0A C0 09
+        </patch>
+        <patch offset="0x102F76">
+             01 FF 0D 00 07 24 0C 1A 79 23
+             77 97
+        </patch>
+        <patch offset="0x102F83">
+             D7 72 23 74 94 B4 D4 79 23 B7 D7 77 7B
+             7E FD 03 01 3E 2F 76 23 74 94 B4 D4 6F 23 71 91
+             B1 D1 76 23 B4 D4 74 78 7B 07 30 D6 D4 D2 D1 21
+             EF EF 23 F1 F1 F1 F1 05 00 3A 2F 0A C0 09 F0 01
+             C8 0D 00 07 18 0C 0A 3B 80 6D 60 6D 60 6D 60 6D
+             60 6D 60 C0 03 06 87 2F 3B 80 6A 60 6A 60 6A 60
+             6A 60 6A 60 C0 03 05 98 2F 0C 1E 07 30 0D E4 27
+             B7 0D E8 B7 0D EC B7 0D F0 B7 0D F4 B7 0D F8 B7
+             0D FC B7 0D 00 B7 07 18 0C 0A 3B 80 6A 60 6A 60
+             6A 60 6A 60 6A 60 C0 03 03 CA 2F 05 00 85 2F 0A
+             C0 09
+        </patch>
+        <patch offset="0x103023">
+             01 C8 0D 00 07 18 0C 06 CD 03 0D EB 2F
+             CA 03 07 F0 2F D6 D4 D2 D1 CF CF CF CF CA 03 07
+             FD 2F 05 00 E9 2F 0A C0 09 F0 01 C8 0D 00 07 0C
+             0C 0E 61 22 61 81 A1 C1 03 06 12 30 07 00 6A 22
+             6A 8A AA CA 03 03 1E 30 07 0C 6A 22 6A 8A AA C8
+             66 22 66 86 A6 C5 63 22 63 83 A3 C3 63 22 63 83
+             A3 C3 07 00 6A 22 6A 8A AA CA 03 03 44 30 05 00
+             0E 30 0F 08 64 30 9A 30 CC 30 FE 30 39 31 73 31
+             00 00 00 00 00 F0 0A C0 09 F0 01 C8 0D 00 07 23
+             0C 0E B4 B2 AD 94 94 B2 AD B4 B2 AD 94 94 B2 AD
+             94 92 B9 B7 BC BB 99 80 D2 99 99 D2 99 80 B2 07
+             2F B7 B6 B5 B4 B3 05 00 6E 30 0A C0 09 F0 01 C8
+             0D 00 07 23 0C 0E AF AD A6 8F 8F AD A6 AF AD A6
+             8F 8F AD A6 8F 8D B2 B4 B5 B7 8E 80 CE 8E 8E CE
+             8E 80 AE BE BD BC BB BA 05 00 A4 30 0A C0 09 F0
+             01 C8 0D 00 07 23 0C 0E AB A9 A2 8B 8B A9 A2 AB
+             A9 A2 8B 8B A9 A2 8B 89 AD AF B0 B2 89 80 C9 89
+             89 C9 89 80 A9 B8 B7 B6 B5 B4 05 00 D6 30 0A C0
+             09 F0 01 C8 0D 00 07 17 0C 06 6D 22 6D 8D CD 80
+             8D C0 6D 22 6D 8D CD 80 8D C0 6D 06 8D AF B0 B2
+             B4 8B 80 D0 8B 8B D0 8B 80 B0 68 06 88 69 06 89
+             6A 06 8A AB AC 05 00 08 31 0A C0 09 F0 01 C8 0D
+             00 07 23 0C 0E 06 80
+        </patch>
+        <patch offset="0x103188">
+             23
+        </patch>
+        <patch offset="0x10318A">
+             0E B4 B2 AD 94 94
+             B2 AD B4 B2 AD 94 94 B2 AD 94 92 B9 B7 BC BB 99
+             80 D2 99 99 D2 99 80 B2 07 2F B7 B6 B5 B4 B3 05
+             00 47 31 0A C0 09 F0 01 C8 0D 00 07 0B 0C 0E 06
+             CD 80 8D C0 06 CD 80 8D C0 AD AF B0 B2 B4 8B 80
+             90 07 23 64 6B B4 07 0B 8B 8B 90 07 2F 64 6B B4
+             07 0B 8B 80 B0 A8 A9 AA AB AC 05 00 7D 31 0F 08
+             C0 31 94 32 71 33 18 34 59 34 E0 34 00 00 00 00
+             00 D0 0A C0 09 F0 01 C8 0D 00 07 24 0C 03 80 72
+             60 74 60 7E 60 E0 80 72 60 74 60 7E 60 E0 80 72
+             60 74 60 7E 60 71 60 72 60 74 60 7E 60 71 60 72
+             60 74 60 7E 60 0D E8 0C 04 36 7A 7B 7A 7B 7A 7B
+        </patch>
+        <patch offset="0x103241">
+             02 F9
+        </patch>
+        <patch offset="0x103244">
+             0D EC 33 7A 7B 7A 0D F0 33 7B 7A 7B
+             0D F4 33 7A 7B 7A 0D F8 33 7B 7A 7B 0D FC 33 7A
+             7B 7A 0D 00 33 7B 7A 7B BA E0 A0 07 30 0C 15 AA
+             8A 8A 8A 8A 8A 88 92 91 06 8D 4F 51 21 EF CF AA
+             33 8A 8A 8A 8A 8A 8A 88 92 91 06 8D 4F 51 21 EF
+             CF B2 92 92 92 91 B2 92 92 92 91 B2 92 92 36 92
+             91 94 92 91 8D CF B6 96 96 96 94 B6 96 96 96 94
+             B6 96 96 36 96 94 9B 99 98 94 06 B6 56 58 59 5B
+             06 C0 74 03 0B 82 32 B4 A0 6D 03 13 89 32 AD A0
+             05 00 82 32 0A C0 09 F0 01 C8 0D 00 07 24 0C 03
+             80 6F 60 72 60 7B 60 E0 80 6F 60 72 60 7B 60 E0
+             80 6F 60 72 60 7B 60 79 60 6F 60 72 60 7B 60 79
+             60 6F 60 72 60 7B 60 0D E8 0C 04 36 78 79 78 79
+             78 79 03 02 CB 32 0D EC 33 78 79 78 0D F0 33 79
+             78 79 0D F4 33 78 79 78 0D F8 33 79 78 79 0D FC
+             33 78 79 78
+        </patch>
+        <patch offset="0x103336">
+             33 79 78 79 B8 E0 A0 0C 15 AD
+             8D 8D 8D 8D 8D 8C 96 94 06 91 52 54 22 D6 96 76
+             58 59 06 D8 AD 33 8D 8D 8D 8D 8D 8D 8C 96 94 06
+             91 52 54 22 D6 96 76 58 59 06 D8 A0 36 99 99 99
+             99 98 9B 03 02 2B 33 33 99 98 94 D6 A0 36 9E 9E
+             9E 9E 9D 9E A0 36 9E 9E 9E 9E 9D 9E 07 30 A0 39
+             92 92 92 92 91 98 96 94 91 06 B2 52 54 56 58 80
+             72 03 15 60 33 92 6C 03 0D 66 33 AC A0 05 00 5F
+             33 0A C0 09 F0
+        </patch>
+        <patch offset="0x1033B6">
+             C8 0D 00 07 0C 0C 0E
+        </patch>
+        <patch offset="0x1033BE">
+             C8
+        </patch>
+        <patch offset="0x1033C0">
+             C0 07 00 C0 88 80 88 80 88 80 88 80 88 80 C0 E0
+             C0 07 24 0C 16 A0 66 68 72 71 6D 6F 77 22 76 D6
+             B6 0C 0A 6A 60 68 60 63 60 66 60 61 60 63 60 66
+             6A 68 60 63 60 66 60 61 60 63 60 66 60 03 03 A3
+             33 6A 60 68 60 80 72 76 74 60 6F 60 72 60 6D 60
+             03 03 C5 33 0C 25 80 33 79 78 74 06 96 7E BD 03
+             01 D6 33 80 33 79 78 76 06 96 7E 9D 92 94 9E 9D
+             92 74 7E 7D 72 E0 E0 E0 01 FF 0C 1A 06 B1 06 B2
+             06 BB 06 B9 06 B8 06 B9 06 B6 06 B8 06 B4 06 B6
+             06 B2 06 B4 05 00 F8 33 0A C0 09 F0 01 C8 0D 00
+             07 00 0C 0E 06 C8 06 C0 D4 0C 09 B4 B4 B4 B4 B4
+             C0 E0 E0 A0 0C 0B B4 B4 B4 B4 B4 B4 94 03 2F 3C
+             34 94 74 74 94 94 94 74 74 03 07 41 34 94 74
+        </patch>
+        <patch offset="0x103490">
+             94 94 74 74 94 05 00 4D 34 0A C0 09 F0 01 C8 0D
+             F8 07 24 0C 03 06 60 80 6F 60 72 60 7B
+        </patch>
+        <patch offset="0x1034AE">
+             80 40
+             06 C0 0D 00 07 18 0C 06 80 97 80 94 0C 09
+        </patch>
+        <patch offset="0x1034BF">
+             88
+             80 88
+        </patch>
+        <patch offset="0x1034C6">
+             88 0C 06 97 80 94 80
+        </patch>
+        <patch offset="0x1034CF">
+             97
+             94 80 94
+        </patch>
+        <patch offset="0x1034D4">
+             80 97
+        </patch>
+        <patch offset="0x1034D7">
+             80 97 94 97 94 80 97 94 80
+             B4 B4 B4 B4 B4 B4 80 94 80 6F 6F 8F 92 03 07 A6
+             34 74 60 6F 6F 6F 60 72 60 74 60 72 60 03 03 B1
+             34 74 60 6F 6F 6F 60 72 60 74 60 72 72 03 03 C1
+             34 80 74 74 74 60 6F 60 6F 60 72 60 05 00 D1 34
+             0A C0 09 F0 01 C8 0D F8 07 24 0C 03 06 60 80 72
+             60 74 60 7E 60 80 40 06 C0 0D 00 07 18 0C 07 80
+             97 80 94 0C 09 80 88 80 88 80 88 80 88 88 0C 07
+             97 80 94 80 97 80 97 94 80 94 97 80 97 94 80 97
+             94 97 94 80 97 94 80 0C 0E 07 0C A8 03 1D 2B 35
+             88 A8 A8 88 03 07 30 35 80 A8 05 00 38 35 0F 08
+             50 35 21 36 EA 36 BA 37 91 38 2F 39 00 00 00 00
+             00 DC 0A C0 09 F0 01 FF 0D 00 07 30 0C 16 D1 21
+             D3 B3 91 93 36 94 96 94 93 91 8F 33 91 98 96 22
+             BD DD FD 0C 02 C9 21 CA AA 89 8A 36 8C 8E 8C 8A
+             89 87 22 A8 88 68 73 21 D1 F1 CF 21 D1 B1 8F 91
+             33 92 94 92 D1 8F 91 33 92 94 92 71 72 33 74 76
+             78 21 F9 F9 0C 15 06 C0 6A 60 69
+        </patch>
+        <patch offset="0x1035EC">
+             C0 80 68 67
+             66 60 23 8D CD AD 6D 6F 71 6D A9 C0 6D 60 6C 60
+             C0 80 6B 6A 69 60 23 90 D0 B0 70 72 74 70 60 4C
+             4E 70 60 6F 60 80 6E 6D 8C 60 4F 51 73 60 72 60
+             80 71 70 8F 80 76 60 B4 78 60 76 60 03 01 E4 35
+             27 B7 0D FC B7 0D F8 B7 0D F4 B7 0D F0 B7 0D EC
+             B7 0D E8 B7 0D E4 B7 0D E8 26 B8 0D EC B8 0D F0
+             B8 0D F4 B8 0D F8 B8 0D FC B8 0D 00 D8 05 00 73
+             35 0A C0 09 F0 01 FF 0D F8 07 30 0C 16 06 60 D1
+             21 D3 B3 91 93 36 94 96 94 93 91 8F 33 91 98 96
+             22 DD FD 9D 5D
+        </patch>
+        <patch offset="0x103686">
+             00 07 30 0C 00 C5 C4 C3 C2 06
+             C1 68 6A 6C 68 33 47 48 21 47 67 65 63 22 85 65
+             33 45 47 48 CA CF CD CB CA A8 86 88 33 8A 8B 8A
+             68 6A 33 6B 6D 6F 21 F1 F1 0C 16 C3 E5 A3 C5 83
+             85 33 86 88 86 85 63 61 C6 E8 A6 C8 86 88 33 89
+             8B 89 88 66 64 07 00 0C 20 85 07 24 0C 16 95 B7
+             95 97 07 00 0C 20 85 07 24 0C 16 98 BA 98 9A B0
+             B2 B0 B2 90 B2 94 0C 0E 33 BA BE BA 0D FC 33 BE
+             BA BE 0D F8 33 BA BE BA 0D F4 33 BE BA BE 0D F0
+             33 B8 BC B8 0D EC 33 BC B8 BC 0D E8 33 B8 BC B8
+             0D E4 33 BC B8 BC 05 00 45 36 0A C0 09 F0 01 C8
+             0D 00 07 24 0C 0E 79 7B 79 78 76 78 76 74 73 74
+             73 71 6F 71 6F 6D 07 18 78 79 78 76 74 76 74 73
+             71 73 71 6F 6D 6F 6D 6C 4A 4C 4D 4F 51 53 54 56
+             07 24 6C 71 78 71 0D FC 6C 71 78 71 0D F8 6C 71
+             78 71 0D F4 6C 71 78 71 0D F0 6C 71 78 71 0D EC
+             6C 71 78 71 0D E8 6C 71 78 71 E0 E0 E0 E0 E0 E0
+             E0 E0 E0 0D 00 07 30 0C 1C 65 60 03 17 59 37 68
+             60 03 17 5F 37 6B 60 6B 60 6B 60 6B 60 6B 60 6B
+             60 6E 60 6E 60 6E 60 6E 60 6E 60 6E 60 80 70 60
+             B0 72 60 72 60 03 01 7D 37 27 B0 0D FC B0 0D F8
+             B0 0D F4 B0 0D F0 B0 0D EC B0 0D E8 B0 0D E4 B0
+             0D E8 26 B1 0D EC B1 0D F0 B1 0D F4 B1 0D F8 B1
+             0D FC B1 0D 00 D1 05 00 4A 37 0A C0 09 F0 01 FF
+             0D 00 07 30 0C 16 C8 06 CA 88 8A 36 8C 8D 8C 8A
+             88 87 33 8A 91 8D 22 B5 D5 F5 07 3C 0D E4 27 B1
+             0D E8 B1 0D EC B1 0D F0 B1 0D F4 B1 0D F8 B1 0D
+             FC B1 0D 00 B1 0D E4 27 B4 0D E8 B4 0D EC B4 0D
+             F0 B4 0D F4 B4 0D F8 B4 0D FC B4 0D 00 B4 0C 0E
+             A0 B2 B4 AD AB A6 A8 A1 07 30 AB 0C 02 8A 8B
+        </patch>
+        <patch offset="0x103861">
+             8F 8D 6A 6D 33 6F 71 72 21 F4 F4 07 24
+        </patch>
+        <patch offset="0x10386F">
+             1C
+             61 60 03 17 30 38 64 60 03 17 36 38 67 60 67 60
+             67 60 67 60 67 60 67 60 6A 60 6A 60 6A 60 6A 60
+             6A 60 6A 60 80 6B 60 AB 6D 60 6D 60 03 01 54 38
+             27 A8 0D FC A8 0D F8 A8 0D F4 A8 0D F0 A8 0D EC
+             A8 0D E8 A8 0D E4 A8 0D E8 26 A9 0D EC A9 0D F0
+             A9 0D F4 A9 0D F8 A9 0D FC A9 0D 00 C9 05 00 DA
+             37 0A C0 09 F0 01 C8 0D 00 07 24 0C 1A CD CF CD
+             B1 AF 33 8D 96 9D 22 B8 D8 F8 07 18 0C 06 A0 B1
+             B1 0C 11 06 80 7D 9D 80 0C 06 B1 B1 A0 07 00 0C
+             20 B6 07 18 0C 06 AA AA C0 AA AA C0 AB AB 0C 11
+             06 80 7D 9D 80 0C 06 AB AB A0 77 60 76 60 74 60
+             76 60 74 60 72 60 71 60 6D 60 07 24 63 80 63 03
+             13 EC 38 66 80 66 03 0B F3 38 69 80 69 60 80 69
+             60
+        </patch>
+        <patch offset="0x103942">
+             69 60 6C 80 6C 60
+        </patch>
+        <patch offset="0x103949">
+             6C
+        </patch>
+        <patch offset="0x10394B">
+             78 6C 60
+        </patch>
+        <patch offset="0x10394F">
+             80
+        </patch>
+        <patch offset="0x103952">
+             80
+        </patch>
+        <patch offset="0x103954">
+             6D 80 67 63 80 61 67 80 6F 6D 80 73
+             65 80 71 03 07 20 39 C5 C5 C5 C5 05 00 AA 38 0A
+             C0 09 F0 01 C8 0D 00 07 24 0C 07 AD CD AD AD CD
+             AB AA D1 D1 0D F8 D1 0D F4 B1 B1 B1 B1 A0 B1 B1
+             B1 A0 B6 B6 B6 A0 B6 B6 B6 A0 B7 B7 B7 A0 B7 B7
+             B7 A0 77 60 76 60 74 60 76 60 74 60 72 60 71 60
+             6D 60 6F 60 03 27 72 39 72 60 03 17 78 39 75 60
+             75 60 A0 80 75 60 78 60 78 60 A0 80 78 60 07 24
+             6F 6F 6D 6D 73 73 6F 6F 6D 6D 67 67 63 63 61 61
+             67 67 6F 6F 6D 6D 73 73 85 A5 A5 A5 A5 A5 A5 A5
+             21 85 A5 C5 C5 C5 A5 05 00 4A 39 08 CC 39 FC
+        </patch>
+        <patch offset="0x103A00">
+             2C 3A 43 3A A0 3A D1 3A 00 00 00 00 00 C8 0A C0
+             09 F0 01 C8 0D 00 07 24 0C 16 27 E1 E1 E1 E1 E1
+             E1 E1 E1 0C 00 23 E1 E1 E1 E1 21 E2 E2 E9 E6 23
+             E8 E8 E8 E8 E0 E0 E0 E0 05 00 D8 39 0A C0 09 F0
+             01 C8 0D 00 07 24 0C 00 E0 E0 21 E3 E3 21 E4 E4
+             21 E6 E6 0C 00 21 E8 E8 E4 EB 21 E9 E9 F2 EF 23
+             F1 F1 F1 F1 E0 E0 E0 E0 05 00 06 3A 0A C0 09 F0
+             01 C8 0D 00 07 24
+        </patch>
+        <patch offset="0x103A77">
+             06 61 23 61 81 A1 C1 E1 05
+             00 36 3A 0A C0 09 F0 01 C8 0D 00 07 24 0C 0F 06
+             C0 06 80 61 06 8D 0D F8 61 06 CD 0D 00 36 8B 8D
+             8B 8A 8B 8A C8
+        </patch>
+        <patch offset="0x103AA6">
+             03 02 4F 3A 06 C0 06 80 62 06
+             8E 0D F8 62 06 CE 0D 00 36 8D 8E 8D 8B 8D 8B C9
+        </patch>
+        <patch offset="0x103AC1">
+             06 C0 06 80 61 06 8D 0D F8 61 06 CD 0D 00 36
+             8B 8D 8B 8A 8B 8A C8 E0 03 01 81 3A 05
+        </patch>
+        <patch offset="0x103ADE">
+             4D 3A
+        </patch>
+        <patch offset="0x103AE9">
+             48
+        </patch>
+        <patch offset="0x103AEB">
+             18 E0 0C 18 22
+             E8 E8 E8 E0 E0 E0 E0 E0 E0 0C 18 22 E8 E8 E8 E0
+             E0 E0 0C 18 22 E8 E8 E8 E0 E0 E0 E0 E0 05 00 AA
+             3A 0A C0 09 F0 01 C8 0D 00 07 3C 0C 18 22 E6 E6
+             E6 E0 0C 18 22 E6 E6 E6 E0 0C 18 21 E6 E6 0C 18
+             21 E6 E6 0C 18 21 E6 E6 0C 18 21 E6 E6 0C 18 22
+             E6 E6 E6 E0 0C 18 22 E6 E6 E6 E0 05 00 DB 3A 0F
+             08 21 3B 49 3B 7A 3B 8E 3B A2 3B B3 3B 00 00 00
+             00 00 D8 0A C0 09 F0 01 C8 0D 00 07 24 0C 23 5B
+             5E 24 7D 9D BD DD FD 5B 5E 7D 33 7B 7D 7B 96 94
+             33 6F 71 6F 8A 88 83 E5 0F 0A C0 09 F0 01 C8 0D
+        </patch>
+        <patch offset="0x103B91">
+             0C 22 07 30 36 76 74 76 25 71 71 71 B1 D1 F1
+             07 24 0D F4 0C 23 06 60 5B 5E 7D 33 7B 7D 7B 96
+             94 33 6F 71 6F 8A 88 43 E5 0F 0A C0 09 F0 01 C8
+             0D 00 07 18 0C 18 06 C0 23 B6 F6 F6 F6 0F 0A C0
+             09 F0 01 C8 0D 00 07 24 0C 18 E0 A0 22 B4 D4 F4
+             E0 0F 0A C0 09 F0 01 C8 0D 00 07 18 0C 16 E0 E0
+             E0 E0 0F 0A C0 09 F0 01 C8 0D 00 07 18 0C 06 E0
+             E0 E0 E0 0F 0F 08 D6 3B 4F 3C D0 3C 38 3D A9 3D
+             7D 3E 00
+        </patch>
+        <patch offset="0x103C14">
+             00 00 00 F0 0A C0 09 F0 01 C8 0D 00
+             07 24 0C 10 51 22 4C 6C 8C A0 C0
+        </patch>
+        <patch offset="0x103C30">
+             A0 51 22 4C 6C 8C A0 51 22 4C 6C 8C 51 22 4C 6C
+             8C 51 22 4C
+        </patch>
+        <patch offset="0x103C45">
+             8C 51 22 4C 6C
+        </patch>
+        <patch offset="0x103C4B">
+             8C 91 60 6C 71
+             60 6C 60
+        </patch>
+        <patch offset="0x103C54">
+             71 60 71 6C 60 03 0F 0B 3C 06
+        </patch>
+        <patch offset="0x103C5F">
+             06
+             8C 8C 80 6C 71 60 71
+        </patch>
+        <patch offset="0x103C68">
+             60 03 03 1D 3C 80
+        </patch>
+        <patch offset="0x103C6F">
+             71
+             80 6C 71 80 6C 71 60 71 6C 60 36 8C 91 91 8C 91
+             91 39 8C 91
+        </patch>
+        <patch offset="0x103C85">
+             71 6C 6C 6C 71 71 05 00 0B 3C 0A
+             C0 09 F0 01 C8 0D 00 07 18 0C 13 51 22 4C 6C 8C
+             A0 C0 51 22 4C 6C 8C A0 51 22 4C 6C 8C A0 51 22
+             4C 6C 8C 51 22 4C 6C 8C 51 22 4C 6C 8C 51 22 4C
+             6C 8C 8C 91 6C 71 60 6C 60 6C 71 60 71 8C 6C 03
+             0F 82 3C AC A0 E0 6C
+        </patch>
+        <patch offset="0x103CD8">
+             8C A0 0D F0 80 AC 0D F4
+             21 8C 0D F8 33 8C 8C 8C 0D FC 6C 6C 0D 00 33 6C
+             6C 6C 6C 06 8C 06
+        </patch>
+        <patch offset="0x103CF7">
+             06 8C 06 8C 8C 06 8C 06 8C
+             8C 80 8C 80 91 36 8C 91 91 91 91 8C 05 00 82 3C
+             0A C0 09 F0 01 C8 0D 00 07 18 E0 E0 E0 07 18 0C
+             24 E0 E0 B6 D0 60 06 94 AF C0 60
+        </patch>
+        <patch offset="0x103D2C">
+             91 AD C0 60
+             06 8F AA C0 60 06 8D 80 6A 6D 80 6A 6D 80 6A 6D
+             80 6A 6D AA 06 C0 E0 E0 E0 E0 E0 E0 E0 E0 07 24
+             0C 12 6F 71 33 76 74 6F 06 D1 06 C0 6F 71 33 76
+             74 6F 33 71 74 23 71 81 B1 D1 06 C0 33 71 6F 71
+             21 8A EA E0 05 00 DD 3C 0A C0 09 F0 01 C8 0D 00
+             07 24 E0 E0 E0 07 18 0D 00 0C 13 E0 E0 B6 D0 60
+             06 94 AF C0 60 06 91 AD C0 60 06 8F AA C0 60 06
+             8D 80 6A 6D 80 6A 6D 80 6A 6D 80 6A 6D AA 06 C0
+             E0 E0 E0 E0 E0 E0 E0 E0 07 24 0D F4 0C 12 06 60
+             6F 71 33 76 74 6F 06 D1 06 C0 6F 71 33 76 74 6F
+             33 71 74 23 71 81 B1 D1 06 C0 33 71 6F 71 21 8A
+             EA 06 C0
+        </patch>
+        <patch offset="0x103DE4">
+             40 05 00 45 3D 0A C0 09
+        </patch>
+        <patch offset="0x103DED">
+             01 C8 0D
+             00 07 24 0C 12 A0 9D 9D 33 9D 9D 9D 7D 7D 33 7D
+             7D 7D 7D 06 9D 06 C0 0D F4 C0 45 45 45 45 0D F8
+             45 45 45 45
+        </patch>
+        <patch offset="0x103E15">
+             FC 45 45 45 45 0D 00 45 45 45 45
+             07 24 0C 12 A5 06 C0 E0 E0 E0 E0 E0 E0 0D F0 65
+             65 65 65 0D F4 65 65 65 65 0D F8 65 65 65 65 0D
+             FC 33 65 65 65 0D 00 33 65 65 65 65 80 65 80 65
+             60 80 65 60 80 65 60 E0 80 85 06 C0 06 C0 85 80
+             E0 60 65 80 60 65 80 60 65 80 65 80 65
+        </patch>
+        <patch offset="0x103E6E">
+             0D F0
+             65 65 65 65 0D F4 65 65 65 65 0D F8 65 65 65 65
+             0D FC 33 65 65 65 0D 00 33 65 65 65 A5 06 C0 E0
+             0C 11 0D F0 74 60 80 0D F4 74 60 80 0D F8 74 60
+             74 60 0D FC 74 74 74 74 74 74 80 06 C0 07 18 0C
+             14 AA A0 AA A0 AA AA AA AA 05 00 E0 3D 0A C0 09
+             F0 01 C8 0D 00 07 18 0C 12 E0 E0 C0 0D F4 45 45
+             45 45 0D F8 45 45 45 45 0D FC 45 45 45 45 0D 00
+             45 45 45 45 0C 14 07 0C E0 E0 6A 60 71 60 06 C0
+             E0 71 60 6A 60 06 C0 E0 6A 60 71 60 A0 71 60 6A
+             60 A0 6A 60 71 60 80 71 60 6A 60 80 6A 60 71 60
+             07 18 0C 12 65 80 65 80 65 60 80 65 60 80 65 60
+             E0 80 85 06 C0 E0 E0 E0 E0 0D F0 65 65 65 65 0D
+             F4 65 65 65 65 0D F8 65 65 65 65 0D FC 33 65 65
+             65 0D 00 33 65 65 65 A5 C0 07 24 0D E8 5D 5D 5D
+             5D 0D EC 5D 5D 5D 5D 0D
+        </patch>
+        <patch offset="0x103F59">
+             5D 5D 5D 5D 0D F4 5D
+             5D 5D 5D 0D F8 5D 5D 5D 5D 0D FC 5D 5D 5D 5D 0D
+             00 7D 06 9D A0 07 18 33 85 85 85 65 65 65 65 36
+             65 65 65 65 65 65 45 45 45 45 45 45 45 45 65 06
+             85 06 C0 0C 00 A5 A0 A5 A0 07 24 0C 12 0D EC 33
+             9D 9D 9D 0D F0 7D 7D 7D 7D 0D F4 36 7D 7D 7D 0D
+             F8 7D 7D 7D 0D FC 5D 5D 5D 5D 0D 00 5D 5D 5D 5D
+             05 00 A4 3E 0F 08
+        </patch>
+        <patch offset="0x103FC7">
+             3F 2E 40 CF 40 B0 41 95 42
+             99 43 00 00
+        </patch>
+        <patch offset="0x103FD5">
+             00 00 C8 0A C0 09 F0 01 FF 0D 00
+             0C 03 07 30 E0 06 C0 0C 03 91 33 6F 71 6F 23 EA
+             EA EA CA A0 8D 33 6C 6D 6C 23 E8 E8 E8 C8 A0 91
+             33 6F 71 6F 23 EA
+        </patch>
+        <patch offset="0x104008">
+             CA A0 8D 33 6C 6D 6C 23
+             EA EA EA 06 CA 0C 15 91 8F AA 06 C0 E0 E0 06 C0
+             8D 8C A8 06 C0 E0 E0 06 C0 91 8F AA 06 C0 E0 E0
+             06 C0 8D 8C CA F6 36 95 96 95 91 93 95 33 93 8E
+             91 22 B0 D0 F0 CA F6 36 95 96 95 91 93 95 33 93
+             8E 91 22 B8 D8 F8 0C 00 C8 F4 36 93 94 93 91 8C
+             8F 06 B1 8C EA D6 22 F8 F8 F8 05 00 A4 3F 0A C0
+             09 F0 01 FF 0D 00 0C 03 07 30 0D F4 06 60 E0 06
+             C0 0C 03 91 33 6F 71 6F 23 EA EA EA CA A0 8D 33
+             6C 6D 6C 23 E8 E8 E8 C8 A0 91 33 6F 71 6F 23 EA
+             EA EA CA A0 8D 33 6C 6D 6C 25 EA EA EA 8A CA 4A
+             0D 00 07 24 0C 15 96 91 AD 06 C0 E0 E0 06 C0 92
+             8D AC 06 C0 E0 E0 06 C0 96 91 AD 06 C0 E0 E0 06
+             C0 92 8D 07 30 C2 EE 36 91 93 91 89 8C 91 33 8E
+             87 8A 22 AC CC EC C2 EE 36 91 93 91 89 8C 91 33
+             8E 87 8A 22 B1 D1 F1 C5 F1 36 8F 91 8F 8C 87 8A
+             06 A8 85 C2 C1 AD AF 22 F1 F1 F1 05 00 38 40 0A
+             C0 09 D0 01 C8 0D 00 07 24 0C 0B AA AA 8A 8D 8A
+             8A AA AA 8A 8D 8A 8A A6 A6 86 8A 86 86 03 03 E7
+             40 AA AA 8A 8D 8A 8A 03 03 F1 40 04 01 E7 40 0C
+             1A 96 80 96 80 96 98 96 99 03 03 01 41 99 80 99
+             80 99 9B 99 9D 03 03 0D 41 96 80 96 80 96 98 96
+             99 03 03 19 41 0C 04
+        </patch>
+        <patch offset="0x104168">
+             A7 6C 70 06 AE 71 75 06
+             B3 78 7C 21 BA 33 9A 93 8E 02 4F 41 33 93 96 9A
+             D8 33 93 98 93 B0 33 93 90 93 CC 03 01 27 41 21
+             BA 7A 75 7A 75 AE 33 95 8E 95 A9 33 8E 89 8E C2
+             A5 33 8D 88 8D 06 D4 33 8D 94 8D A7 33 8F 8A 8F
+             A8 33 91 8C 91 AE 33 96 91 96 AD 33 96 91 96 BD
+             33 96 9D 96 07 30 0C 0E 94 33 73 74 73 8F 33
+        </patch>
+        <patch offset="0x1041D0">
+             6F 71 8A 33 6C 6A 6C 06 C5 0D F8 94 33 73 74 73
+             8F 33 71 6F 71 8A 33 6C 6A 6C 06 C5 05 00 D5 40
+             0A C0 09 D0 01 C8 0D 00 0D 00 07 24 0C 08 8A C0
+             8A 80 8A 8A C0 8A 80 8A 86 C0 86 80 86 80 86 A0
+             86 A0 86 03 01 C8 41 8A C0 8A 80 8A 80 8A A0 8A
+             A0 8A 03 01 D7 41 04 01 C8 41 07 18 0C 0B 86 80
+             86 86 03 07 EE 41
+        </patch>
+        <patch offset="0x104237">
+             80 8A 8A 03 07 F6 41 86 80
+             86 86 03 07 FE 41 0D F4 0C 04 06 60 06 A7 6C 70
+             06 AE 71 75 06 B3 78 7C 21 BA 33 9A 93 8E 02 34
+             42 33 93 96 9A D8 33 93 98 93 B0 33 93 90 93 CC
+             03 01 0C 42 21 BA 7A 75 7A 75 AE 33 95 8E 95 A9
+             33 8E 89 8E C2 A5 33 8D 88 8D 06 D4 33 8D 94 8D
+             A7 33 8F 8A 8F A8 33
+        </patch>
+        <patch offset="0x104298">
+             8C 91 AE 33 96 91 96 AD
+             33 96 91 96 BD 80 40 07 30 0C 0E 0D FC 06 C0 94
+             33 73 74 73 8F 33 71 6F 71 8A 33 6C 6A 6C 06 C5
+             0D F4 94 33 73 74 73 8F 33 71 6F 71 8A 33 6C 6A
+             6C 05 00 B8 41 0A C0 09 D0 01 C8 0D 00 07 24 0C
+             11 61 06 80 C0 80 61 60 03 09 A1 42 0C 04 22 AD
+             CD 8D 6F 74 22 B1 D1 71 6D 6F 6A 21 ED ED 22 B1
+             D1 91 76 79 07 30 22 AC CC 6C
+        </patch>
+        <patch offset="0x10430B">
+             74 6A 21 F1 F1
+             07 24 0C 1A 91 80 91 80 91 94 91 96 03 03 D4 42
+             94 80 94 80 94 98 94 99 03 03 E0 42 91 80 91 80
+             91 94 91 96 03 03 EC 42 07 18 0C 0B 3C 6E
+        </patch>
+        <patch offset="0x10433F">
+             71
+        </patch>
+        <patch offset="0x104341">
+             73
+        </patch>
+        <patch offset="0x104345">
+             6C
+        </patch>
+        <patch offset="0x104347">
+             6E 60 3C 6A 60 6C 60 67 60
+             6A 60 6C 60 67 60 03 05 FC 42 3C 75 60 78 60 7A
+             60 73 60 75 60 71 60 3C 71 60 73 60 6E 60 71 60
+             73 60 6E 60 03 01 1A 43 3C 71 60 74 60 76 60 6F
+             60 71 60 68 60 A0 3C 71 60 74 60 76 60 6F 60 71
+             60 68 60 A0 3C 71 60 74 60 76 60 6F 60 71 60 6A
+             60 3C 71 60 74 60 76 60 6F 60 71 60 6C 60 A0 3C
+             71 60 74 60 76 60 6F 60 71 60 6A 60 A0 3C 71 60
+             74 60 76 60 6F 60 71 60 6A 60 AC AF B1 AC A8 AA
+             A5 A8 A3 06 C5 05 00 9D 42 0A C0 09 F0 01 C8 0D
+             00 07 0C 0C 0A B6 C0 91 98 B6 C0 91 94 B2 C0 8D
+             94 B2 C0 8D 94 B2 C0 8D 94 B2 8D 94 80 8A AF B6
+             C0 91 98 B6 C0 91 98 B6 C0 91 98 B6 91 98 80 8F
+             B4 03 01 AD 43 07 18 0C 06 92 80 8D 94 03 07 D9
+             43 96 80 91 98 03 07 E1 43 92 80 8D
+        </patch>
+        <patch offset="0x10442D">
+             03 07 E9
+             43 06 80 73 B3 03 0B F1 43 06 80 6E AE 06 80 6E
+             AE 06 80 6E AE 06 80 6E AE 06 80 6D AD 06 80 6D
+             AD 06 80 6D AD 06 80 6F AF 06 80 71 B1 06 80 6A
+             AA 06 80 6A AA 06 80 6A AA 06 D1 0D FC 06 D1 0D
+             F8 06 D1 0D F4 06 D1 05 00 9F 43 0F 08 4D 44 93
+             44 C7 44 F7 44 27 45 57 45 00 00
+        </patch>
+        <patch offset="0x10448C">
+             00 00 D0 0A
+             C0 09 F0 01 C8 0D 00 07 24 0C 13 3C 8F 8D 8F 88
+             8D 8A 8F 8D 8F 94 8D 8F 3C 88 8D 8A 8F 8D 8F 94
+             8D 8F 88 8D 8A 3C 96 94 96 8F 94 91 96 94 96 9B
+             94 96 3C 8F 94 91 96 94 96 9B 94 96 8F 94 91 05
+             00 59 44 0A C0 09 F0 01 C8 0D 00 07 24 0C 13 36
+             8F 8F 88 88 8D 8D 03 02 9F 44 36 8F 8F 8D 8D 94
+             94 36 96 96 8F 8F 94 94 03 02 B1 44 36 96 96 94
+             94 9B 9B 05 00 9D 44 0A C0 09 F0 01 C8 0D 00 07
+             24 0C 12 A3 A0 33 80 83 80 A3 A3 A0 36 80 83 80
+             83 80 83 AA AA AA AA AA A0 33 80 8A 8A 6A 6A 33
+             6A 6A 6A 05 00 D1 44 0A C0 09 D0 01 C8 0D 00 07
+             18 0C 14 68 60 68 60 68 60 69 60 68 60 68 60 68
+             60 69 60 68 60 68 60 69 60 68 60 68 60 69 60 68
+             60 68 60 05 00 01 45 0A C0 09 D0 01 C8 0D 00 07
+             18 0C 14 63 60 63 60 63 60 64 60 63 60 63 60 63
+             60 64 60 63 60 63 60 64 60 63 60 63 60 64 60 63
+             60 63 60 05 00 31 45 0A C0 09 D0 01 C8 0D 00 07
+        </patch>
+        <patch offset="0x1045A1">
+             0C 14 68 60 68 60 68 60 69 60 68 60 68 60 68
+             60 69 60 68 60 68 60 69 60 68 60 68 60 69 60 68
+             60 68 60 05 00 61 45 0F 08 99 45 B7 45 CD 45 08
+             46 44 46 84 46 00 00 00 00 00 F0 0A C0 09 D0 01
+             C8 0D 00 07 30 0C 16 74 73 6F 71 21 D2 92 91 CD
+             AA B6 98 80 06 DA 0F 0A C0 09 D0 01 C8
+        </patch>
+        <patch offset="0x1045FF">
+             07
+             30 0C 16 AD CE AD
+        </patch>
+        <patch offset="0x104607">
+             A5 B2 B1 06 D5 0F 0A C0 09
+             D0 01 C8 0D 00 07 24 0C 16 B4 D5 B4 D1 AD B9 98
+             9B 07 31 0C 0F 5A 5C 5A 5C
+        </patch>
+        <patch offset="0x10462A">
+             F8 5A 5C 5A 5C 0D
+             F0 5A 5C 5A 5C 0D E8 5A 5C 5A 5C 0D E0 5A 5C 5A
+             5C 0D D8 5A 5C 5A 5C 0F 0A C0 09 F0 01 C8 0D 00
+             07 30 0C 02 B4 21 B2 72 70 69 6B AD 61 60 68 60
+             65 60 6C 60 6A 60 71 60 6F 60 76 60 94 80 0C 1E
+             0D EC 25 96 0D F0 96
+        </patch>
+        <patch offset="0x104678">
+             F4 96 0D F8 96 0D FC 96
+             0D 00 96 0F 0A C0 09 F0 01 C8 0D F8 07 30 0C 02
+             06 60 B4 21 B2 72 70 69 6B AD 61 60 68 60 65 60
+             6C 60 6A 60 71 60 6F 60 76 60 94 40
+        </patch>
+        <patch offset="0x1046AE">
+             0C 1E
+             0D EC 25 91 0D F0 91 0D F4 91 0D F8 91 0D FC 91
+             0D 00 91 0F 0A C0 09 F0 01 C8 0D 00 07 24 0C 1A
+             CD 6D 60 6D 60 80 6C 60 AA A8 C6 85 80 06 CA
+        </patch>
+        <patch offset="0x1046E0">
+             0F 08 B2 46 CC 46 E9 46 FC 46 0F 47 23 47 00 00
+             00 00 00 00 0A C0 09 F0 01 FF 0D 00 07 24 07 30
+             0C 02 98 96 96 94 B1 AD CF D4 F1 0F 0A C0 09 F0
+             01 FF 0D 00 07 24 0C 02 BD BB D8
+        </patch>
+        <patch offset="0x10471E">
+             0E 98
+             96 96 94 B1 AF 0C 02 ED 0F 0A C0 09 F0 01 FF 0D
+             00 07 24 0C 04 B9 B8 D6 D4 D8 F8 0F 0A C0 09 F0
+             01 FF 0D 00 07 24 0C 04 B8 B6 D2 D1 D2 F6 0F 0A
+             C0 09 F0 01 FF 0D 00 07 18 07 24 0C 1E F6 F4 0C
+             01 F1 0F 0A C0 09 F0 01 FF 0D 00 07 18 0C 01 21
+             EA EA EA 0F 0F 08 46 47 8A 47 DF 47 34 48 7A 48
+             9D 48 00 00 00 00 00 E8 0A C0 09 F0 01 C8 0D 00
+             07 0C 0C 02 80 0C 0E 81 A0 81 03 03 52 47 07 30
+             0C 27 21 E8 A8 21 E6 A6 21 E8 A8 21 EA AA 0C 02
+             A8 A6 88 21 CA 8A B2 B1 8F 21 D1 91 A3 A8 8D 21
+             D3 93 22 F4 F4 D4 05 00 50 47 0A C0 09 F0 01 C8
+             0D 00 07 18 0C 00 61 80 61 61 61 61 60 61 60 03
+             03 96 47 07 24 0C 27 32 40 23 75 75 F5 95 32 40
+             23 73 73 F3 93 32 40 23 75 75 F5 95 32 40 23 76
+             76 F6 96 0C 00 21 CE 8E 21 D1 91 21 D5 95 21 D8
+             98 A9 AE 93 21 DA 9A 22 F9 F9 D9 05 00 92 47 0A
+             C0 09 F0 01 C8 0D 00 07 18 0C 00 68 80 68 68 68
+             68 60 68 60 03 03 EB 47 07 24 0C 27 32 60 23 5C
+             7C FC 9C 32 60 23 5A 7A FA 9A 32 60 23 5C 7C FC
+             9C 32 60 23 5E 7E FE 9E 0C 00 21 C9 89 21 C6 86
+             21 CE 8E 21 CD 8D A4 A9 8E 21 D5 95 22 F4 F4 D4
+             05 00 E7 47 0A C0 09 F0 01 C8 0D 00 07 0C 0C
+        </patch>
+        <patch offset="0x104880">
+             66 80 66 66 66 66 60 66 60 03 03 40 48 07 24 0C
+             27 60 7B 21 FB 9B 60 79 21 F9 99 60 7B 21 FB 9B
+             60 7D 21 FD 9D 0C 0B 07 18 61 80 61 61 61 61 60
+             61 60 03 09 69 48 05 00 3C 48 0A C0 09 F0 01 C8
+             0D 00 07 18 0C 06 81 03 13 86 48 81 33 61 61 61
+             81 61 61 61 61 03 11 8B 48 05 00 84 48 0A
+        </patch>
+        <patch offset="0x1048DF">
+             09
+             F0 01 C8 0D 00
+        </patch>
+        <patch offset="0x1048E6">
+             24 0C 06 33 61 61 61 05 00 A7
+             48 0F 08 C3 48 EE 48 11 49 3D 49 69 49 84 49 00
+             00
+        </patch>
+        <patch offset="0x104902">
+             00 00 F0 0A C0 09 F0 01 FF 0D 00 07 30 07
+             2B 01 96 0C 15 8F 6D 6A 92 71 6D 01 FF 21 CF 8F
+             6F 71 92 94 33 B6 B8 B9 98 76 74 06 D6 0F 0A C0
+             09 F0 01 FF 0D 00 07 30 07 2B 0C 15 A0 8B 6A 66
+             21 C8 88 68 6A 8C 8D 33 AF B1 B2 B1 8F 6E 6C CE
+             0F 0A C0 09 F0 01 FF 0D 00 07 24
+        </patch>
+        <patch offset="0x10495D">
+             01 96 0C
+             26 C0 96 74 71 92 71 6D
+        </patch>
+        <patch offset="0x104969">
+             2B 01 FF 0C 00 92 71
+             6D 8F 6D 6A 8C 8F 94 96 98 91 06 D6 0F 0A C0 09
+             F0 01 FF 0D
+        </patch>
+        <patch offset="0x104985">
+             07 18 07 37 01 96 0C 26 C0 92 71
+             6D 8F 6D 6A 07 2B 01 FF 0C 00 9B 79 76 97 76 72
+             94 96 98 99 9B 98 06 DD 0F 0A C0 09 F0 01 FF 0D
+             00 07 24 07 2B 0C 01 06 CF AD 0C 01 AF B1 AF AD
+             AC 06 D1 0F 0A C0 09 F0 01 FF 0D 00 07 18 07 2B
+             0D F8 01 96 0C 15 06 60 8F 6D 6A 92 71 6D 07 37
+             0C 26 96 74 71 92 51 0D 00 01 FF 07 1F 0C 1A AB
+             AA A8 A6 A5 06 CA 0F 0F 08 C9 49 F6 49 21 4A 4C
+             4A 77 4A 8F 4A 00 00 00 00 00 28 0A C0 09 F0 01
+             FF 0D 00 07 0C 0C 0E B4 B2 AD B4 B2 B9 B8 BE 06
+             9D 0D FC 06 9D 0D F8 06 9D 0D F4 06 9D 0D F0 06
+             9D 0D EC 06 9D 0F 0A C0 09 F0 01 FF 0D 00 07 18
+             0C 0E B0 AE A0 B0 AE B2 B4 B3 06 96 0D FC 06 96
+             0D F8 06 96 0D F4 06 96 0D F0
+        </patch>
+        <patch offset="0x104A5B">
+             96 0D EC 06 96
+        </patch>
+        <patch offset="0x104A61">
+             0A C0 09 F0 01 FF 0D F4 07 0C 0C 0E 06 80 B4
+             B2 AD B4 B2 B9 B8 BE 9D 0D F0 06 9D 0D ED 06 9D
+             0D E8 06 9D 0D E4 06 9D 0D E0 9D 0F 0A C0 09 F0
+             01 FF 0D F4 07 18 0C 0E 06 80 B0 AE A0 B0 AE B2
+             B4 B3 96 0D F0 06 96 0D EC 06 96 0D E8 06 96 0D
+             E4 06 96 0D E0 96 0F 0A C0 09 F0 01 FF 0D 00 07
+             18 0C 0E B3 B5 BA B3 B5 AE B0 AB 21 EC CC 0F 0A
+             C0 09 F0 01 FF 0D 00 07 0C 0C 0E 06 C8 06 C8 C8
+             21 E1 C1 0F 0F 08 B6 4A 03 4B 34 4B 5C 4B 82 4B
+             D3 4B 00 00 00 00 00 B8 0A C0 09 F0 01 96 0D 00
+             07 24 0C 24 8A 8D 8F 91 8F 8C 8A 8D 8F 91 8F 8C
+             36 8A 8C 8F 91 8F 8C 03 02 C4 4A 8A 8D 8F 91 8F
+             8C 8A 8D 8F 91 8F 8C 00 E8 36
+        </patch>
+        <patch offset="0x104B2B">
+             8C 8F 00 08 91
+             8F 8C 0C 13 A0 00 D0 39 8C 91 91 91
+        </patch>
+        <patch offset="0x104B3D">
+             8C 8A 8A
+             8C C5 0F 0A C0 09 F0 01 96 0D F4 07 24 0C 24
+        </patch>
+        <patch offset="0x104B50">
+             60 8A 8D 8F 91 8F 8C 8A 8D 8F 91 8F 8C 36 8A 8C
+             8F 91 8F 8C 03 03 11 4B
+        </patch>
+        <patch offset="0x104B69">
+             40 0D 00 0C 10 80 A5
+             A5 85 C5 0F 0A C0 09 F0 01 96 0D 00 07 30 0C 24
+             36 8F 8D 8A 88 8A 8D 03 0F 40 4B 07 24 0C 13 A0
+             39 8B 90 90 90 8B 8B 89 89 8B C4 0F 0A C0 09 F0
+             01 96 0D F4 07 30 06 60 0C 24 36 8F 8D 8A 88 8A
+             8D 03 0F 6A 4B 0D 00 07 24 0C 10 80 40 AC AC 8C
+             CC 0F 0A C0 09 F0 01 FF 0D 00 07 24 0C 10 06 80
+             71 AC 06 80 6C B1 06 80 71 AC 37 A0 71 8C 60 71
+             8C 60 03 02 8E 4B 06 80 71 AC 06 80 6C B1 06 80
+             71 AC 39 71 8C 60 71 8C 60 71 8C 60 33 71 71 71
+             80 71 6C 80 71 6C 80 33 91 8C 8C 33 71 6C 22 71
+             91 B1 0F 0A C0 09 F0 01 FF 0D 00 07 24 0C 11 A0
+             74 60 80 A0 74
+        </patch>
+        <patch offset="0x104C26">
+             80 A0 74 60 80 74 60 80 74 60
+             80 03 02 DF 4B A0 74 60 80 A0 74 60 80 A0 74 60
+             80 3C 74 60 80 74 60 80 74 60 80 0C 10 33 71 71
+             71 80 71 6C 80 71 6C 80 33 91 8C 8C 33 71 6C 22
+             71 91 B1 0F 0F 4F 36 4C 59 4C 7F 4C 9F 4C C4 4C
+             DE 4C 00 00 00
+        </patch>
+        <patch offset="0x104C76">
+             00 E8 0A C0 09 F0 01 FF 0D 00
+             07 18 0C 0E 39 6D 70 6E 72 70 74 72 75 74 06 99
+             0D F0 06 99 0D E0 06 99 0F 0A C0 09 F0 01 FF 0D
+             00 07 18 0C 0E 0D F8 31 60 38 6D 70 6E 72 70 74
+             72 75 0D 00 06 99 0D F0 06 99 0D E0 06 99 0F 0A
+             C0 09 D0 01 FF 0D
+        </patch>
+        <patch offset="0x104CC7">
+             07 18 0C 0E 21 8D 36 6D 6B
+             6F 6D 70 6F 06 94 0D F0 06 94 0D E0 06 94 0F 0A
+             C0 09 D0 01 FF 0D 00 07 18 0C 0E 0D F8 31 60 21
+             8D 35 6D 6B 6F 6D 70 0D 00 06 94 0D F0 06 94 0D
+             E0 06 94 0F 0A C0 09 D0 01 FF 0D 00 07 18 0C 0E
+             94 92 90 06 8F 0D F0 06 8F 0D E0 06 8F 0F 0A C0
+             09 D0 01 FF 0D 00 07 18 0C 0E 8D 8B 89 06 88 0D
+             F0 06 88 0D E0 06 88 0F 0F 08 0A 4D 30 4D 3B 4D
+             7F 4D BC 4D F1 4D 00 00 00 00 00 D4 0A C0 09 F0
+             01 FF 0D 00 07 1B 0C 16
+        </patch>
+        <patch offset="0x104D5A">
+             74
+        </patch>
+        <patch offset="0x104D5C">
+             79 60 94 33
+             72 74 72 21 91 91 92 8F 91 21 AD 03 04 18 4D 0F
+             0D F8 0C 16 06 60 03 00 18 4D 0F 0A C0 09 F0 01
+             FF 0D 00 07 27 0C 16 22 ED 8D 6D 60 71 60 74 60
+             22 E9 89 69 60
+        </patch>
+        <patch offset="0x104D97">
+             70
+        </patch>
+        <patch offset="0x104D99">
+             22 E6 86 66 60 69 60
+             6D 60 21 ED 8D 6D 60 07 3F 72 60 75 60 07 1B 0C
+             29 8D 88 81 88 8D 88 81 88 8D 6D 68 81 80 0F 0A
+             C0 09 F0 01 FF 0D F8 07 27 0C 16 06 60 22 ED 8D
+             6D 60 71 60 74 60 22 E9 89 69
+        </patch>
+        <patch offset="0x104DDD">
+             70 60 22
+             E6 86 66 60 69 60
+        </patch>
+        <patch offset="0x104DE7">
+             0D 00
+        </patch>
+        <patch offset="0x104DEA">
+             E9 C9 0C 29 8D 88
+             81 88 8D 88 81 88 8D 6D 68 81 80 0F 0A C0 09 F0
+             01 FF 0D 00 07 33 0C 1A 21 E8 C8 21 F0 D0 21 F9
+             D9 07 27 0C 16 21 F2 D2 6D 60 74 60 79 60 94 33
+             72 74 72 21 91 71 60 72 60 6F 60 71 60 6D 60 80
+             0F 0A C0 09 F0 01 FF 0D 00 07 27 0C 1A 21 ED CD
+             21 F5 D5 21 FE DE 21 EE CE 6D 60 74 60 79 60 94
+             33 72 74 72 21 91 71 60 72 60 6F 60 71 60 6D 60
+             80 0F 0F 08 34 4E 5D 4E 6E 4E 8A 4E A4 4E C7 4E
+             00 00 00 00 00 D8 0A C0 09 F0 01 C8 0D 00 0C 16
+             07 18 6A 6F 71 74 76 7B 07 24 65 68 6A 6F 71 74
+        </patch>
+        <patch offset="0x104E91">
+             76 60 76 60 76 60 96 80 C0 07 18 0F 0A C0 09
+             F0 01 C8 0D 00 07 00 E0 80 0C 20 D6 80 0F 0A C0
+             09 F0 01 C8 0D 00 07 18 0C 0E AA 8A 8A 33 8A 8A
+             8A 07 0C 56 51 6A 8A 06 C0 0F 0A C0 09 F0 01 C8
+             0D 00 07 24 0C 10 AA 8A 8A
+        </patch>
+        <patch offset="0x104EDA">
+             8A 8A 8A 4A 4A 6A
+             8A A0 C0 0F 0A C0 09 F0 01 C8 0D 00 07 18
+        </patch>
+        <patch offset="0x104EEF">
+             16
+             39 80 85 8C 8A 91 8F 98 96 9D 07 24 36 78 60 78
+             60 78 60 98 80 C0 0F 0A C0 09 F0 01 C8 0D 00 07
+             18 0C 06 36 85 8C 8F 91 96 98 07 24 33 8F 91 96
+             36 7D 60 7D 60 7D 60 9D 80 C0 0F 0F 08 FD 4E 29
+             4F 5E 4F 73 4F 86 4F 98 4F 00 00 00 00 00 D8 0A
+             C0 09 F0 01 C8 0D 00 07 18 0C 23 5B 5E 24 7D 9D
+             BD DD FD 5B 5E 7D 33 7B 7D 7B 96 94 33 6F 71 6F
+             8A 88 83 07 0C 21 EA EA 0F 0A C0 09 F0 01 C8 0D
+        </patch>
+        <patch offset="0x104F71">
+             0C 22 07 24 36 76 74 76 25 71 71 71 B1 D1 F1
+             07 18 0D F4 0C 23 06 60 5B 5E 7D 33 7B 7D 7B 96
+             94 33 6F 71 6F 8A 88 43 07 0C 21 EA EA 0F 0A C0
+             09 F0 01 C8 0D
+        </patch>
+        <patch offset="0x104FA6">
+             07 18 0C 18 06 C0 23 B6 F6 F6
+             F6 E0 0F 0A C0 09 F0 01 C8 0D
+        </patch>
+        <patch offset="0x104FBB">
+             07 24 0C 18 E0
+             22 F4 F4 F4 E0 0F 0A C0 09 F0 01 C8 0D 00 07 18
+             0C 06 E0 E0 E0 E0 E0 0F 0A C0 09 F0 01 C8 0D 00
+             07 18 0C 06 E0 E0 E0 E0 E0 0F 0F 08 BC 4F 7D 50
+             42 51 EF 51 99 52 0B 53 00 00 00 00 00 D4 0A C0
+             09 F0 01 FA 0D 00 07 2F 0C 00 A0 32 A0 22 97 F7
+             B7 33 97 96 95 94 33 73 72 71 70 60 76 60 A0 03
+             03 D5 4F E0 E0 E0 07 23 0D 00 E0 E0 A0 06 CC E0
+             E0 A0 33 AF 0D F8 AF 0D F0 AF 0D E8 AF 03 01 E8
+             4F 0D 00 07 2F 06 DD 06 DB BD C0 E0 C0 07 23 C0
+             33 94 93 92 24 F1 F1 D1 B1 06 91 70 06 8F 7A 22
+             FA DA 06 9A 7B 21 DA 06 9A 7B 06 9A 7B 9A 94 93
+             99 98 92 91 97 96 90 8F 95 23 E8 E8 C8 A8 07 2F
+             33 94 93 92 33 71 6F 22 6D 8D ED AB 21 ED AD 33
+             8D 90 8E 21 ED AD AB 21 ED AD 33 8D 90 8E 07 47
+             22 F9 F9 F9 21 F8 D8 36 B8 0D FC B8 0D F8 B8 0D
+             F4 B8 0D F0 B8 0D EC B8 A0 05 00 C4 4F 0A C0 09
+             F0 01 FA 0D 00 07 2F 0C 00 A0 32 80 22 B0 F0 B0
+             33 90 90 90 AF 0C 16 91 94 72 60 7D 60 80 8F 91
+             94 72 60 7D 60 03 02 9D 50 E0 E0 E0 0C 00 0D 00
+             E0 C0 21 E1 C1 E0 C0 21 06 C5 33 A5 0D F8 A5 0D
+             F0 A5 0D E8 A5 03 01 AE 50 0D 00 21 F7 D7 B6 E0
+             E0 07 17 C0 33 93 92 91 24 F0 F0 B0 D0 06 90 6F
+             06 8E 79 22 F9 D9 06 99 7A 21 D9 06 99 7A 06 99
+             7A 99 93 92 98 97 91 90 96 95 8F 8E 94 23 E7 E7
+             C7 A7 07 2F 33 8A 89 88 22 E7 E7 E7 22 E6 E6 E6
+             21 D4 94 33 73 74 73 D1 96 54 56 54 53 21 D4 94
+             33 73 74 73 D1 33 93 91 93 22 F5 D5 36 B5 0D FC
+             B5 0D F8 B5 0D F4 B5 0D F0 B5 0D EC B5 A0 05 00
+             83 50 0A C0 09 F0 01 FA 0D 00 07 23 0C 00 A0 21
+             E7 C7 33 87 87 86 A5 0C 16 8A 8F 6C 60 77 60 80
+             85 8A 8F 6C 60 77 60 03 02 5F 51 E0 E0 E0 0C 00
+             0D 00 06 C0 22 EA EA AA 06 C0 22 EB CB 33 AB 0D
+             F8 AB 0D F0 AB 0D E8 AB 03 01 70 51 0D 00 21 FE
+             DE BD E0 E0 0D F8 06 80 C0 33 94 93 92 24 F1 F1
+             D1 B1 06 91 70 06 8F 7A 22 FA DA 06 9A 7B 21 DA
+             06 9A 7B 06 9A 7B 9A 94 93 99 98 92 91 97 96 90
+             8F 95 24 E8 E8 C8 A8 68 0D 00 22 E9 E9 E9 22 ED
+             ED ED 22 F9 F9 F9 22 F8 D8 36 B8 0D FC B8 0D F8
+             B8 0D F4 B8 0D F0 B8 0D EC B8 A0 05 00 48 51 0A
+             C0 09 F0 01 FA 0D 00 07 23 0C 00 32 A0 22 8B EB
+             CB 33 8B 8A 89 AA 69 60 70 60 A0 03 03 05 52 E0
+             E0 E0 0D 00 22 E8 E8 E8 23 E6 E6 A6 33 A6 0D F8
+             A6 0D F0 A6 0D E8 A6 03 01 12 52 0D 00 33 76 78
+             23 79 99 F9 B9 B1 E0 E0 0D F8 07 17 06 80 C0 33
+             93 92 91 24 F0 F0 B0 D0 06 90 6F 06 8E 79 22 F9
+             D9 06 99 7A 21 D9 06 99 7A 06 99 7A 99 93 92 98
+             97 91 90 96 95 8F 8E 94 24 E7 E7 C7 A7 67 0D 00
+             22 EB EB EB 22 E2 E2 E2 D1 AF CD B3 D1 AF CD AF
+             22 F1 D1 36 B1 0D FC B1 0D F8 B1 0D F4 B1 0D F0
+             B1 0D EC B1 A0 05 00 F5 51 0A C0 09 F0 01 FA 0D
+             00 07 17 0C 00 32 80 22 AF EF CF 33 8F 8E 8D AC
+             07
+        </patch>
+        <patch offset="0x1052F2">
+             0C 0E A1 07 17 0C 0B 8B 91 07
+        </patch>
+        <patch offset="0x1052FD">
+             0C 0E A0
+             0C 0E A1 07 17 0C 0B 8B 91 03 02 BB 52 0C 29 C0
+             0C 29 33 8D 8D 87 C0 33 8D 8D 87 AD 33 8D 8D 87
+             AD 33 8D 8D 87 AD 33 8D 8D 87 AC 8C 87 E0 03 07
+             EA 52 8C 87 A0 8C 87 A0 8C 87 33 8C 87 8C AA AA
+             AA 03 1F FE 52 E0 A0 05 00 9F 52 0A C0 09 F0 01
+             FA 0D 00 07 17 0C 01 22 E8 C8 A8 33 88 87 86 85
+             0C 0B 85 AB 89 83 80 85 AB 89 83 03 02 26 53 07
+             0B 8C AC AC AC AC AC 8C AC AC AC AC AC AC 8C 8C
+             8C 8C 8C 8C 03 11 3E 53 AA AA AA 03 1F 48 53 E0
+             A0 05 00 11 53 0F 08 67 53 95 53 C2 53 EA 53 30
+             54 67 54 00 00 00 00 00 40 0A C0 09 F0 01
+        </patch>
+        <patch offset="0x1053AF">
+             0D
+             00 07 23 0C 02 23 E3 E3 08 05 E3 E3 07 2F 08 00
+             B9 06 C0 E0 36 89 90 92 94 96 22 97 D7 F7 21 E8
+             E8 05 00 71 53 0A C0 09 F0 01
+        </patch>
+        <patch offset="0x1053DB">
+             0D 00 07 23 0C
+             02 23 E2 E2 08 05 E2 E2 07 2F 08 00 0C 15 B9 06
+             C0 E0 07 23 0C 02 06 C0 21 BE FE 21 E8 E8 05 00
+             9D 53 0A C0 09 F0 01
+        </patch>
+        <patch offset="0x105408">
+             0D 00 07 23 0C 02 23 E1
+             E1 08 05 E1 E1 08 00 0C 16 B9 06 C0 E0 0C 02 E0
+             FC 0C 01 21 E8 E8 05 00 CA 53 0A C0 09 F0 01
+        </patch>
+        <patch offset="0x105430">
+             0D 00 07 17 0C 02 23 EC EC 08 05 EC EC 08 00 0C
+             01 26 ED ED AD 0D FC 8D 0D F8 8D 0D F4 8D 0D F0
+             8D 0D EC 8D 0D E8 8D 0D E4 8D 0D E0 8D 0D 00 07
+             23 0C 02 06 D5 07 17 0C 01 21 E8 E8 05 00 F2 53
+             0A C0 09 F0 01
+        </patch>
+        <patch offset="0x105476">
+             0D 00 07 17 0C 02 23 EB EB 08
+             05 EB EB 08 00 0C 06 AD 06 C0 E0 07 2F 0C 02 0D
+             F4 06 80 36 89 90 92 94 96 22 97 F7 B7 77 0D 00
+             21 E8 E8 05 00 38 54 0A C0 09 F0 0D 00 01
+        </patch>
+        <patch offset="0x1054AF">
+             07
+             17 0C 02 23 EA EA 08 05 EA EA 08 00 0C 1A 21 F9
+             F9 07 3B 0D F8 01 96 0C 17 50 52 4F 50 4D 4F 4B
+             4D 03 07 89 54 54 4F 48 4F 03 07 95 54 0D FC 54
+             4F 48 4F 0D F8 54 4F 48 4F 0D F4 54 4F 48 4F 0D
+             F0 54 4F 48 4F 0D EC 54 4F 48 4F 0D E8 54 4F 48
+             4F 0D E4 54 4F 48 4F 0D E0 54 4F 48 4F 05 00 6B
+             54 0F 08 E3 54 29 55 59 55 93 55 BC 55 F2 55 00
+             00 00 00 00 DC 0A C0 09 F0 01 FA 0D 00 07 2F 0C
+             00 0D F8 06 80 06 98 72 06 98 7C 33 98 98 96 03
+             07 F5 54 06 98 72 06 98 7C 33 98 98 96 06 98 72
+             06 98 7C 33 98 98 96 06 98 72 78 0D 00 DD D8 DD
+             D8 DD D8 DD D8 05 00 EF 54 0A C0 09 F0 01 FA 0D
+             00 07 23 0C 1D 88 8B 89 8C 8A 8D 8B 8E 8C 8F 8D
+             90 8E 91 8F 92 03 03 35 55 07 2F 0C 00 D8 D5 D8
+             D5 D8 D5 D8 D5 05 00 31 55 0A C0 09 F0 01 FA 0D
+             00 07 2F 0C 1D 87 8A 88 8B 89 8C 8A 8D 8B 8E 8C
+             8F 8D 90 8E 91 8F 92 03 02 65 55 87 8A 88 8B 89
+             8C 8A 8D 8B 8E 0C 00 CF D1 CF D1 CF D1 CF D1 05
+             00 63 55 0A C0 09 F0 01 FA 0D 00 07 2F 0C 02 06
+             98 72 06 98 7C 33 98 98 96 03 09 9D 55 06 98 72
+             06 98 7C 23 E1 E1 E1 E1 05 00 9D 55 0A C0 09 F0
+             01 FA 0D 00 0C 06 07 17 06 80 0D F8 33 8A 95 07
+             2F 89 B3 03 0E CC 55 07 17 33 8A 95 07 2F 89 63
+             0D 00 07 23 0C 00 C8 CA C8 CA C8 CA C8 CA 05 00
+             C4 55 0A C0 09 F0 01 FA 0D 00 07 23 0C 06 07 17
+             33 8A 95 07 2F 89 B3 03 0F FC 55 0C 01 C1 C6 C1
+             C6 C1 C6 C1 C6 05 00 FC 55 0F 08 2B 56 84 56 D6
+             56 31 57 47 57 5D 57 00 00 00 00 00 DC 0A C0 09
+             F0 01 FA 0D 00 07 23 0C 00 DD BB B8 D9 B8 B4 D6
+             B4 B1 D2 B1 AD 23 EF EF EF EF D9 B8 B4 D6 B4 B1
+             D2 B1 CD AF AD AB 0C 16 89 69 69 69 69 69 69 69
+             69 69 69 89 6F 6F 6F 6F 6F 6F 6F 6F 6F 6F AF 69
+             69 69 69 03 03 56 56 07 17 0C 02 23 EA EA EA EA
+             05 00 35 56 0A C0 09 F0 01 FA 0D 00 07 23 0C 00
+             D6 B4 B1 D2 B1 AD ED EA 23 E8 E8 E8 E8 D2 B1 AD
+             CF AD AA CB AA A6 A8 AA 33 AB AD AF 0C 16 B1 80
+             77 77 77 77 77 77 77 77 77 77 77 77 77 77 77 77
+             77 77 7D 7D 7D 7D 7D 7D 7D 7D 03 03 AC 56 E0 E0
+             E0 E0 05 00 8E 56 0A C0 09 F0 01 FA 0D 00 07 17
+             0C 15 D6 06 D8 96 98 36 99 9B 99 98 96 94 21 B2
+             06 92 7E BD B1 21 AF 06 8F 7B B9 AD 21 EC AC 07
+             23 8C 8F B4 8F 94 98 33 76 78 76 22 F4 D4 B4 0C
+             03 B8 33 96 98 96 06 CF B8 33 96 98 96 AF B9 33
+             98 99 98 06 D1 AF AD AB E0 03 0B 28 57 05 00 DE
+             56 0A C0 09 F0 01 FA 0D 00 07 23 0C 1A AA AA 8A
+             8C 8A 8D 05 00 3B 57 0A C0 09 F0 01 FA 0D 00 07
+             23 0C 06 AA AA 8A 8C 8A 8D 05 00 51 57 0A C0 09
+             F0 01 FA 0D 00 07 17 0C 0E 8A 8A 8A 8A 8A 8A 8A
+             8A 8A 80 CC 88 80 8A 80 8A 80 C0 E0 8A 8A 8A 8A
+             8A 8A 8A 8A 8A 80 CC 88 80 8A 80 85 80 C0 E0 8A
+             8A 8A 8A 8A 8A 8A 8A 8A 80 CD 8A 80 8B 80 86 80
+             8B 80 8D 80 8F 80 92 80 97 80 9B 80 0C 0B 3C 8A
+             8D 8F 91 8D 8F 8A 8D 88 8A 85 88 03 07 AE 57 B6
+             B4 B6 B1 B4 AF B1 AD AF 22 AA CA EA 05 00 67 57
+             0F 08 E2 57 34 58 87 58 0C 59 99 59 C4 59 00 00
+             00 00 00 DC 0A C0 09 F0 01 FA 0D 00 07 23 0C 0A
+             01 AA A0 AA A0 AD A0 AF B1 8F 80 88 80 AA 94 80
+             91 80 8D 80 8F 80 91 80 33 AF 0D F8 AF 0D F0 AF
+             A0 0D 00 21 EA CA 0C 00 01 FA 21 E5 C5 21 E7 C7
+             21 E8 C8 21 EA CA 21 EC CC 21 EF CF 22 F1 F1 F1
+             05 00 EC 57 0A C0 09 F0 01 FA 0D 00 07 23 0C 0A
+             0D F8 01 AA 06 80 A0 AA A0 AD A0 AF B1 8F 80 88
+             80 AA 94 80 91 80 8D 80 8F 80 91 80 33 AF 0D F0
+             AF 0D E8 AF A0 0D F8 22 EA AA 6A 0C 00 01 FA 0D
+             00 27 E5 E5 E5 E5 E5 E5 E5 C5 21 E8 C8 21 EA CA
+             21 F6 D6 05 00 3C 58 0A C0 09 F0 01 FA 0D 00 07
+             17 0C 06 36 6A 60 6A 60 6A 60 B6 94 88 03 07 91
+             58 07 23 0C 0E 0D F8 06 80 06 C0 B6 C0 36 94 96
+             94 93 94 93 F1 06 C0 B6 C0 36 94 96 94 93 94 93
+             22 B1 D1 71 0D 00 06 C0 B4 C0 36 93 94 93 91 93
+             91 06 CF 33 8F 91 8F 21 EE CE 07 17 0C 06 0D E4
+             33 71 71 71 91 0D E8 33 71 71 71 91 0D EC 33 71
+             71 71 91 0D F0 33 71 71 71 91 0D F8 33 71 71 71
+             91 0D 00 33 71 71 71 91 05 00 91 58 0A C0 09 F0
+             01 FA 0D 00 07 23 0C 16 76 23 74 94 F4 B4 6F 23
+             71 91 F1 B1 76 23 74 94 F4 94 78 7B 21 FA DA 0C
+             0E 06 C0 B6 C0 36 94 96 94 93 94 93 F1 06 C0 B6
+             C0 36 94 96 94 93 94 93 F1 06 C0 B8 C0 36 96 98
+             96 94 96 94 06 D3 33 93 94 93 21 F1 D1 0C 06 0D
+             E4 36 71 71 71 71 71 71 0D E8 36 71 71 71 71 71
+             71 0D EC 36 71 71 71 71 71 71 0D F0 36 71 71 71
+             71 71 71 0D F8 36 71 71 71 71 71 71 0D 00 36 71
+             71 71 71 71 71 05 00 16 59 0A C0 09 F0 01 C8 0D
+             00 07 23 0C 0B 3C 8A 88 8A 83 88 85 8A 88 8A 8F
+             88 8A 3C 83 88 85 8A 88 8A 8F 88 8A 83 88 85 05
+             00 A3 59 0F 0A C0 09 F0 01 FA 0D 00 07 17 0C 07
+             36 6A 60 6A 60 6A 60 B6 94 88 05 00 CE 59 0F 08
+             F0 59 8A 5A 10 5B BD 5B 53 5C 97 5C 00 00 00 00
+             00 E8 0A C0 09 F0 01 EB 0D 00 07 17 0C 1D CF AE
+             B7 06 D6 AD AC D4 92 91 8F 8E 8F 91 92 94 96 98
+             D9 D8 99 9B 9D 9B 99 9B 99 98 D6 D5 96 98 99 96
+             BB B9 98 99 9B 98 BD BB 99 9B 9D 99 BE BD BB B9
+             B8 B6 95 91 93 95 B6 AD AC B6 AC B5 F6 00 D4 07
+             23 CF AE B7 06 D6 AD AC D4 92 91 8F 8E 8F 91 92
+             94 96 98 D9 D8 99 9B 9D 9B 99 9B 99 98 D6 D5 96
+             98 99 96 BB B9 98 99 9B 98 BD BB 99 9B 9D 99 BE
+             BD BB B9 B8 B6 95 91 93 95 B6 AD AC B6 AC B5 25
+             F6 F6 F6 F6 F6 F6 05 00 3D 5A 0A C0 09 F0 01 EB
+             0D 00 07 0B 0C 1D CF D1 D2 D3 B4 B2 B1 B6 B2 B1
+             AF B1 D6 B5 BE 06 DD B4 B3 DB 99 98 B6 B4 92 91
+             92 8F 21 D4 94 92 94 91 21 D6 96 94 96 92 B8 B6
+             B5 B3 B1 AF 8D 8C 8D 8A B2 AF B1 A5 EA CF D1 D2
+             D3 B4 B2 B1 B6 B2 B1 AF B1 D6 B5 BE 06 DD B4 B3
+             DB 99 98 B6 B4 92 91 92 8F 21 D4 94 92 94 91 21
+             D6 96 94 96 92 B8 B6 B5 B3 B1 AF 8D 8C 8D 8A B2
+             AF B1 A5 CA CC CD CE EF F1 21 EA EA 05 00 CD 5A
+             0A C0 09 F0 01 EB 0D 00 07 17 0C 1D 0D F4 06 80
+             CF AE B7 06 D6 AD AC D4 92 91 8F 8E 8F 91 92 94
+             96 98 D9 D8 99 9B 9D 9B 99 9B 99 98 D6 D5 96 98
+             99 96 BB B9 98 99 9B 98 BD BB 99 9B 9D 99 BE BD
+             BB B9 B8 B6 95 91 93 95 B6 AD AC B6 AC B5 22 B6
+             D6 76 0D 00 07 23 86 88 8A 86 88 8A 8B 88 8A 8B
+             8D 8A 8F 8A 8B 8A 8F 8D 8F 8C 8D 8C 8D 8E AF AE
+             AF AF A0 AD AC AF 8D 8C 8D 8C 8A 8C 06 CA CC 8D
+             8F 91 8D D2 8F 91 92 8F D4 91 92 94 91 D6 B6 B6
+             B1 B1 B1 B1 B1 B1 AC B2 AA AF CD CF B1 A8 AA AB
+             21 EA AA AD AC AF 21 EE EE 05 00 62 5B 0A C0 09
+             F0 01 EB 0D 00 07 0B 0C 1D 0D F4 06 80 CF D1 D2
+             D3 B4 B2 B1 B6 B2 B1 AF B1 D6 B5 BE 06 DD B4 B3
+             DB 99 98 B6 B4 92 91 92 8F 21 D4 94 92 94 91 21
+             D6 96 94 96 92 B8 B6 B5 B3 B1 AF 8D 8C 8D 8A B2
+             AF B1 A5 22 AA CA 6A 0D 00 07 23 83 85 86 83 85
+             86 88 85 86 88 8A 86 87 8A 88 87 88 8A 8C 88 A8
+             AA AA AA AA A9 A0 AA A5 A9 06 CA A5 A3 A7 C5 C5
+             CA C8 CC CA CD B2 B1 AF AD AC AC AA AA AA AC A5
+             AC CA A9 B2 D1 E8 A7 AF AD A5 A3 A9 21 EA EA 05
+             00 07 5C 0A C0 09 F0 01 96 0D 00 07 0B 0C 0E E0
+             03 0D 5F 5C E0 03 0C 64 5C 0C 0E 32 80 22 AA AA
+             CA E0 0C 0E 32 80 0C 0E 22 AA AA CA E0 0C 0E 32
+             80 21 AA AA 32 80 21 AA AA 32 80 21 AA AA 32 80
+             21 AA AA 05 00 64 5C 0A C0 09 F0 01 96 0D 00 07
+             0B 0C 0E E0 03 0D A3 5C E0 03 0C A8 5C 0D F8 06
+             80 0C 0E 32 80 22 AA AA CA E0 0C 0E 32 80 0C 0E
+             22 AA AA CA E0 0C 0E 32 80 21 AA AA 32 80 21 AA
+             AA 32 80 21 AA AA 32 80 21 AA 6A 05 00 A8 5C 0F
+             08 F1 5C 28 5D 5A 5D 8C 5D B5 5D DE 5D 00 00 00
+             00 00 F0 0A C0 09 F0 01 E6 0D 00 07 24 0C 12 AD
+             A0 AD A0 33 CD CD CD AD AD 33 AD AD AD 8D 8D 33
+             8D 8D 8D 6D 6D 6D 6D 33 6D 6D 6D 4D 4D 33 4D 4D
+             4D 00 00 AD AD AD AD 0F 0A C0 09 F0 01 E6 0D 00
+             07 24 0C 12 AD A0 AD A0 33 CD CD CD AD AD 33 AD
+             AD AD 8D 8D 33 8D 8D 8D 6D 6D 6D 6D 36 6D 6D 6D
+             6D 6D 6D 00 00 AD AD AD AD 0F 0A C0 09 F0 01 E6
+             0D 00 07 24 0C 12 AD A0 AD A0 33 CD CD CD AD AD
+             33 AD AD AD 8D 8D 33 8D 8D 8D 6D 6D 6D 6D 36 6D
+             6D 6D 6D 6D 6D 00 00 AD AD AD AD 0F 0A C0 09 F0
+             01 E6 0D 00 07 0C 0C 0E AD A0 AD A0 33 CD CD CD
+             AD AD 33 AD AD AD 8D 8D 8D 8D 8D 8D 33 8D 8D 8D
+             AD AD AD AD 0F 0A C0 09 F0 01 E6 0D 00 07 18 0C
+             13 AD A0 AD A0 33 CD CD CD AD AD 33 AD AD AD 8D
+             8D 8D 8D 8D 8D 33 8D 8D 8D AD AD AD AD 0F 0A C0
+             09 F0 01 E6 0D 00 07 18 0C 10 AD A0 AD A0 33 CD
+             CD CD AD AD 33 AD AD AD 8D 8D 8D 8D 8D 8D 33 8D
+             8D 8D AD AD AD AD 0F 0F 08 19 5E 30 5E 42 5E 55
+             5E 7E 5E AA 5E 00 00 00 00 00 00 0A C0 09 F0 01
+             E6 0D 00 07 21 0C 1E 06 D1 AD CF CD D6 D4 F6 0F
+             0A C0 09 F0 01 E6 0D 00 07 21 0C 1E F6 F4 F2 FB
+             FD 0F 0A C0 09 F0 01 E6 0D 00 07 21 0C 1E F1 EF
+             ED D6 D4 F6 0F 0A C0 09 F0 01 E6 0D F8 07 2D 0C
+             02 A0 80 21 96 D6 A0 80 21 94 F4 A0 80 21 92 F2
+             36 80 8F 91 92 94 96 97 99 9B 21 9D FD 0F 0A C0
+             09 F0 01 E6 0D F8 07 2D 0C 02 80 8D 07 D4 80 8C
+             06 D5 80 8A 06 D1 07 39 6B 72 77 79 07 2D 33 8F
+             91 92 94 96 97 99 BB 06 DA 0F 0A C0 09 F0 01 E6
+             0D F8 07 21 0C 02 F6 F5 F3 CB C5 EA 0F 0F 08 CF
+             5E 29 5F 7F 5F CE 5F 38 60 00 00 00 00 00 00 00
+             F0 0A C0 09 F0 01 E6 0D 00 07 30 0C 16 B1 06 B1
+             8F B1 06 B1 8D AF 06 AF 8D 06 8F 74 AF B1 B2 B4
+             B6 21 DB 9B 99 78 79 22 94 B4 F4 B1 06 B1 8F B1
+             06 B1 8D AF 06 AF 8D 06 8F 74 CF B0 06 B0 8F 70
+             72 94 B2 06 90 6F 21 CD ED 21 D7 F7 21 D4 F4 06
+             D9 DB BE 7D 7B 21 B9 F9 0F 0A C0 09 F0 01 E6 0D
+             00 07 30 0C 16 AD 06 AD 8B AD 06 AD 8D AB 06 AB
+             8A 06 8B 6F AB AB AD B1 B2 B9 B8 B6 74 72 22 91
+             B1 F1 AD 06 AD 8B AD 06 AD 8D AB 06 AB 8A 06 8B
+             6F CB AD 06 AD 8D 6D 6F 90 AF AC 21 C8 E8 21 D2
+             F2 21 D1 F1 06 D0 D2 B7 79 74 22 91 B1 F1 0F 0A
+             C0 09 F0 01 E6 0D 00 07 30 0C 16 A8 06 A8 88 A8
+             06 A8 88 A8 06 A8 88 A8 A8 A8 AA AD AD 06 D2 71
+             6F 22 8D AD ED A8 06 A8 88 A8 06 A8 88 A8 06 A8
+             88 A8 C8 AA 06 AA 8A A8 A8 A6 21 C5 E5 21 CD ED
+             21 CD ED 06 CD CF B2 71 6F 22 8D AD ED 0F 0A C0
+             09 F0 01 E6 0D 00 07 30 0C 04 21 C8 E8 E0 E0 E0
+             E0 C0 E5 A8 AD 21 CC 8C 33 6A 6C 6A 06 C8 CA AD
+             21 D4 94 72 74 72 21 D1 F1 21 AF EF B2 21 B1 F1
+             AD 90 33 6F 70 6F 8D 33 6B 6D 6B A9 92 33 70 72
+             70 8F 33 6D 6F 6D AB 94 33 72 74 72 91 33 6F 71
+             6F 8D 33 6B 6D 6B 94 33 72 74 72 91 33 6F 71 6F
+             07 24 8D 33 6B 6D 6B 0F 0A C0 09 F0 01 E6 0D 00
+             07 24 0C 1A AD AD 88 8F AD AD 81 85 A8 A8 83 8A
+             A8 A8 A1 A6 A5 A3 A8 A8 A8 AD AD 88 8F AD AD 88
+             8F AD AD 88 8F AD AD 81 85 A8 A8 83 8A A8 A8 88
+             83 A6 A6 A6 A8 A0 A8 AD AD 88 8F AD AD 88 8F AD
+             AD 88 8F AD AD 88 8F AD AD 88 8F AD AD 8D 8B A9
+             A9 84 89 AB AB 86 8B AD AD 88 8F AD AD 88 8F 0F
+             0A C0 09 F0 01 C8 0D 00 07 24 0C 1A 0F 0F 00 00
+             00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+             00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+             00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+             00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+             00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+        </patch>
+        <patch offset="0x160A40">
+             FF FF
+        </patch>
+        <patch offset="0x189AC4">
+             FF FF FF FF
+        </patch>
+        <patch offset="0x18DB40">
+             FF FF FF FF
+        </patch>
+        <patch offset="0x18DB48">
+             FF FF FF FF
+        </patch>
+        <patch offset="0x18DB50">
+             FF FF FF FF
+        </patch>
+        <patch offset="0x18DB58">
+             FF FF FF FF
+        </patch>
+        <patch offset="0x1F1B38">
+             FF FF FF FF
+        </patch>
+        <patch offset="0x1F6238">
+             FF FF FF FF
+        </patch>
+        <patch offset="0x20785C">
+             FF FF FF FF
+        </patch>
+        <patch offset="0x207861">
+             FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+             FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+             FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+             FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+             FF FF FF FF FF
+        </patch>
+        <patch offset="0x2078A6">
+             FF FF FF FF FF FF
+        </patch>
+        <patch offset="0x2078B0">
+             FF FF FF FF
+        </patch>
+        <patch offset="0x2078B8">
+             FF FF FF FF
+        </patch>
+        <patch offset="0x2078CC">
+             FF FF FF FF
+        </patch>
+        <patch offset="0x2078D4">
+             FF FF FF FF FF FF FF FF FF FF FF FF
+             FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+             FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+             FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+             FF FF FF FF FF FF FF FF FF FF FF FF FF
+        </patch>
+        <patch offset="0x20791E">
+             FF FF
+             FF FF FF FF
+        </patch>
+        <patch offset="0x207928">
+             FF FF FF FF
+        </patch>
+        <patch offset="0x207930">
+             FF FF FF FF
+        </patch>
+        <patch offset="0x207940">
+             FF FF
+        </patch>
+        <patch offset="0x207943">
+             FF
+        </patch>
+        <patch offset="0x207946">
+             FF FF FF
+        </patch>
+        <patch offset="0x20794A">
+             FF FF FF
+        </patch>
+        <patch offset="0x20794E">
+             FF FF
+             FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+             FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+             FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+             FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+             FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+             FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+             FF FF FF FF
+        </patch>
+        <patch offset="0x2079B6">
+             FF FF FF FF
+        </patch>
+        <patch offset="0x2079BB">
+             FF
+        </patch>
+        <patch offset="0x2DA06D">
+             FF FF
+        </patch>
+        <patch offset="0x2DA075">
+             FF FF
+        </patch>
+        <patch offset="0x2DA07D">
+             FF FF
+        </patch>
+        <patch offset="0x2DA085">
+             FF FF
+        </patch>
+        <patch offset="0x2DA08D">
+             FF FF
+        </patch>
+        <patch offset="0x2DA095">
+             FF FF
+        </patch>
+        <patch offset="0x2DA09D">
+             FF FF
+        </patch>
+        <patch offset="0x2DA0A5">
+             FF FF
+        </patch>
+        <patch offset="0x2DA0AD">
+             FF FF
+        </patch>
+    </rom>
+
+    <!-- Set bit 1 for vertical games.
+         Set bit 2 for games using 4-way joysticks -->
+    <rom index="1"><part> 00 </part></rom>
+
+    <buttons names="B0,B1,B2,-,-,-,Start,Coin,Pause" 
+        default="A,B,X,R,L,Start"/>
+    <switches default="FF,FF,FF" base="8">
+        <dip bits="0,2"	 name="Coin A" ids="4 Coins/1 Credit,3 Coins/1 Credit,2 Coins/1 Credit,1 Coin/6 Credits,1 Coin/4 Credits,1 Coin/3 Credits,1 Coin/2 Credits,1 Coin/1 Credit"/>
+        <dip bits="3,5"	 name="Coin B" ids="4 Coins/1 Credit,3 Coins/1 Credit,2 Coins/1 Credit,1 Coin/6 Credits,1 Coin/4 Credits,1 Coin/3 Credits,1 Coin/2 Credits,1 Coin/1 Credit"/>
+        <dip bits="6,7"	 name="Cabinet" ids="Cocktail,Upright 2 Players,Upright 1 Player"/>
+        <dip bits="8,10"	 name="Difficulty" ids="8 (Hardest),7,6,5,1 (Easiest),2,3,4 (Normal)"/>
+        <dip bits="12,13"	 name="Bonus Life" ids="30K &amp; 60K only,20K &amp; 60K only,30K, 50K then every 70K,20K, 40K then every 60K"/>
+        <dip bits="14,15"	 name="Diff. on Life Loss" ids="-1,Default,-3"/>
+        <dip bits="16,17"	 name="Lives" ids="2,5,4,3"/>
+        <dip bits="18"	 name="Freeze" ids="On,Off"/>
+        <dip bits="19"	 name="Free Play" ids="On,Off"/>
+        <dip bits="20"	 name="Flip Screen" ids="On,Off"/>
+        <dip bits="21"	 name="Demo Sounds" ids="Off,On"/>
+        <dip bits="22"	 name="Continue" ids="No,Yes"/>
+        <dip bits="23"	 name="Game Mode" ids="Test,Game"/>
+    </switches>
+</misterromdescription>
