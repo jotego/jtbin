@@ -19,9 +19,13 @@ None.
 
 Rastan Saga presents several regional differences, so please explore the different game versions.
 
+# Video Timing
+
+The original clock was based on a crystal oscillator at 26.686MHz. The video chips operate at 13.343MHz and the pixel clock is 6.6715
+
 # Acknowledgement
 
-This development has been possible thanks to the board donated by Brian Schinzel and the following patrons:
+This development has been possible thanks to the following patrons:
 
 ```
 8bits4ever             Adam Leslie            Adam Small             Adrian Labastida      
