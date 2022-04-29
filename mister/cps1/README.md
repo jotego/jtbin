@@ -1,4 +1,4 @@
-# jtcps1
+# jtcps
 
 Capcom System 1/1.5/2 compatible verilog core for FPGA by Jose Tejada (jotego).
 
@@ -46,10 +46,6 @@ Note that there is no screen rotation in MiST. Vertical games require you to tur
 Pang! 3 and all CPS 1.5/2 games did not use DIP switches to configure the game, but a small non-volatile RAM. You have to enter the test menu to configure it (via OSD). After you have configured the settings, save the contents using the OSD option *Save NVRAM*. A file will be created at the root of your SD card called game.RAM, where game will match the name of the .ROM file used with the game.
 
 # Issues
-
-Known issues:
-
--Fuel hoses in Carrier Airwing appear on top of the airplane. This may be a problem with MRA file, and not with the core itself.
 
 Please report issues (here)[https://github.com/jotego/jtbin/issues].
 

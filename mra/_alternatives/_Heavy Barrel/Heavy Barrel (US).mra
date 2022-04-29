@@ -105,9 +105,6 @@
         <part name="mb7122e.17e" crc="a5cda23e"/>
         <!-- Total 0x228600 bytes - 2209 kBytes -->
     </rom>
-    <rom index="17" zip="jtbeta.zip" md5="None">
-        <part name="beta.bin"/>
-    </rom>
     <!-- Vertical game -->
     <rom index="1">
         <part>01</part>

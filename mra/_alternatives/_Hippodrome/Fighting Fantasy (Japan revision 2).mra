@@ -101,9 +101,6 @@
         <patch offset="0x2101DB"> 60 </patch>
         <patch offset="0x21021A"> 60 </patch>
     </rom>
-    <rom index="17" zip="jtbeta.zip" md5="None">
-        <part name="beta.bin"/>
-    </rom>
     <rom index="1">
         <part>00</part>
     </rom>

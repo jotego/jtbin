@@ -11,9 +11,7 @@ You can show your appreciation through
 
 It hasn't been possible to assess whether the INTSHOW custom chip outputs the current scan line or the current vertical scroll position, as these values are the same for over a third of the line. And it is at that time when when the INTSHOW value is easy to read, as it is when the NMI interrupt comes in. In practice, it doesn't seem to matter.
 
-The 60.5Hz vertical frequency seems problematic in MiSTer for some screens. This could be improved using a different PLL as the base clock. For now, there is a safe 60Hz mode that can be enabled in the OSD as a fall back option.
-
-Screen synchronization can be a problem with the original PCB too. Connecting using the OSSC (default configuration) didn't bring a stable image in my small monitors for Yie Ar Kungfu. Kicker seemed ok.
+The relays used in the sound signal path in some games may be for altering the filter response or for shutting off a channel. The purpose is not clear and I still have to measure the effect on the board.
 
 # System Comparison
 
