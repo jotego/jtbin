@@ -1,0 +1,127 @@
+<!--          FPGA compatible core for bootleg arcade hardware by Jotego
+
+              This core is available for hardware compatible with MiST and MiSTer
+              Other FPGA systems may be supported by the time you read this.
+              This work is not mantained by the MiSTer project. Please contact the
+              core author for issues and updates.
+
+              (c) Jose Tejada, 2021. Please support the author
+              Patreon: https://patreon.com/topapate
+              Paypal:  https://paypal.me/topapate
+
+              The author does not endorse or participate in illegal distribution
+              of copyrighted material. This work can be used with legally
+              obtained ROM dumps or with compatible homebrew software.
+
+              This file license is GNU GPLv2.
+              You can read the whole license file in
+              https://opensource.org/licenses/gpl-2.0.php
+
+-->
+
+<misterromdescription>
+    <about author="jotego" webpage="https://patreon.com/topapate" source="https://github.com/jotego" twitter="@topapate"/>
+    <name>Dragonninja (bootleg)</name>
+    <setname>drgninjab</setname>
+    <rbf>jtcop</rbf>
+    <mameversion>0232</mameversion>
+    <year>1988</year>
+    <manufacturer>bootleg</manufacturer>
+    <players>2</players>
+    <joystick>8</joystick>
+    <rotation>horizontal</rotation>
+    <region>World</region>
+    <mraauthor>jotego</mraauthor>
+    <rom index="0" zip="drgninjab.zip|baddudes.zip" md5="None">
+        <!-- maincpu - starts at 0x0 -->
+        <interleave output="16">
+            <part name="n-11.a2" crc="3887eb92" map="01"/>
+            <part name="n-12.d2" crc="5a70eb52" map="10"/>
+        </interleave>
+        <part repeat="0x20000"> FF</part>
+        <interleave output="16">
+            <part name="eg03.6a" crc="c52c2e9d" map="01"/>
+            <part name="eg06.6c" crc="2b81faf7" map="10"/>
+        </interleave>
+        <part repeat="0x20000"> FF</part>
+        <!-- audiocpu - starts at 0x80000 -->
+        <part name="eg07.8a" crc="001d2f51"/>
+        <part repeat="0x8000"> FF</part>
+        <!-- oki - starts at 0x90000 -->
+        <part name="eg08.2c" crc="92f2c916"/>
+        <part repeat="0x10000"> FF</part>
+        <!-- gfx1 - starts at 0xB0000 -->
+        <interleave output="16">
+            <part name="eg25.bin" crc="dd557b19" map="01" length="0x4000"/>
+            <part name="eg26.16h" crc="5d75fc8f" map="10" length="0x4000"/>
+        </interleave>
+        <part repeat="0x8000"> FF</part>
+        <!-- ROM split at C0000 (10000) -->
+        <interleave output="16">
+            <part name="eg25.bin" crc="dd557b19" map="01" length="0x4000" offset="0x4000"/>
+            <part name="eg26.16h" crc="5d75fc8f" map="10" length="0x4000" offset="0x4000"/>
+        </interleave>
+        <part repeat="0x8000"> FF</part>
+        <!-- gfx2 - starts at 0xD0000 -->
+        <interleave output="16">
+            <part name="eg18.14d" crc="05cfc3e5" map="01"/>
+            <part name="eg22.14f" crc="b893d880" map="10"/>
+        </interleave>
+        <part repeat="0x20000"> FF</part>
+        <interleave output="16">
+            <part name="eg20.17d" crc="e11e988f" map="01"/>
+            <part name="eg24.17f" crc="6f226dda" map="10"/>
+        </interleave>
+        <part repeat="0x20000"> FF</part>
+        <!-- gfx3 - starts at 0x150000 -->
+        <interleave output="16">
+            <part name="eg30.9h" crc="2438e67e" map="01" length="0x8000"/>
+            <part name="eg28.9f" crc="5c692ab3" map="10" length="0x8000"/>
+        </interleave>
+        <part repeat="0x10000"> FF</part>
+        <!-- ROM split at 170000 (20000) -->
+        <interleave output="16">
+            <part name="eg30.9h" crc="2438e67e" map="01" length="0x8000" offset="0x8000"/>
+            <part name="eg28.9f" crc="5c692ab3" map="10" length="0x8000" offset="0x8000"/>
+        </interleave>
+        <part repeat="0x10000"> FF</part>
+        <!-- gfx4 - starts at 0x190000 -->
+        <interleave output="32">
+            <part name="eg15.16c" crc="5617d67f" map="0001"/>
+            <part name="eg11.16a" crc="ba83e8d8" map="0010"/>
+            <part name="eg13.13c" crc="fd91e08e" map="0100"/>
+            <part name="eg09.13a" crc="601b7b23" map="1000"/>
+        </interleave>
+        <interleave output="32">
+            <part name="eg16.17c" crc="17e42633" map="0001"/>
+            <part name="eg12.17a" crc="fea2a134" map="0010"/>
+            <part name="eg14.14c" crc="e83c760a" map="0100"/>
+            <part name="eg10.14a" crc="eeee8a1a" map="1000"/>
+        </interleave>
+        <part repeat="0x20000"> FF</part>
+        <!-- mcu - starts at 0x210000 -->
+        <part name="i8751"/>
+        <!-- Total 0x211000 bytes - 2116 kBytes -->
+    </rom>
+    <rom index="17" zip="jtbeta.zip" md5="None">
+        <part name="beta.bin"/>
+    </rom>
+    <rom index="16" zip="debug.zip" md5="None">
+        <part name="debug.bin"/>
+    </rom>
+    <rom index="1">
+        <part>00</part>
+    </rom>
+    <switches base="17" default="1f7f">
+        <!-- DSW -->
+        <dip name="Coin A" bits="0,1" ids="3/1,2/1,1/2,1/1"/>
+        <dip name="Coin B" bits="2,3" ids="3/1,2/1,1/2,1/1"/>
+        <dip name="Service Mode" bits="4" ids="On,Off"/>
+        <dip name="Demo Sounds" bits="5" ids="Off,On"/>
+        <dip name="Flip Screen" bits="6" ids="On,Off"/>
+        <dip name="Lives" bits="8,9" ids="Infinite ,2,4,3"/>
+        <dip name="Difficulty" bits="10,11" ids="Hardest,Hard,Easy,Normal"/>
+        <dip name="Allow Continue" bits="12" ids="No,Yes"/>
+    </switches>
+    <buttons names="Shot,Jump,-,-,-,Start,Coin,Core credits" default="Y,X,B,A,R,Start,Select,-" count="2"/>
+</misterromdescription>

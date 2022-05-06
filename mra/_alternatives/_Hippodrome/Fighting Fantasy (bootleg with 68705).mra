@@ -1,0 +1,115 @@
+<!--          FPGA compatible core for bootleg arcade hardware by Jotego
+
+              This core is available for hardware compatible with MiST and MiSTer
+              Other FPGA systems may be supported by the time you read this.
+              This work is not mantained by the MiSTer project. Please contact the
+              core author for issues and updates.
+
+              (c) Jose Tejada, 2021. Please support the author
+              Patreon: https://patreon.com/topapate
+              Paypal:  https://paypal.me/topapate
+
+              The author does not endorse or participate in illegal distribution
+              of copyrighted material. This work can be used with legally
+              obtained ROM dumps or with compatible homebrew software.
+
+              This file license is GNU GPLv2.
+              You can read the whole license file in
+              https://opensource.org/licenses/gpl-2.0.php
+
+-->
+
+<misterromdescription>
+    <about author="jotego" webpage="https://patreon.com/topapate" source="https://github.com/jotego" twitter="@topapate"/>
+    <name>Fighting Fantasy (bootleg with 68705)</name>
+    <setname>ffantasybl</setname>
+    <rbf>jtcop</rbf>
+    <mameversion>0232</mameversion>
+    <year>1989</year>
+    <manufacturer>bootleg</manufacturer>
+    <players>2</players>
+    <joystick>8</joystick>
+    <rotation>horizontal</rotation>
+    <region>World</region>
+    <mraauthor>jotego</mraauthor>
+    <rom index="0" zip="ffantasybl.zip|hippodrm.zip" md5="None">
+        <!-- maincpu - starts at 0x0 -->
+        <interleave output="16">
+            <part name="11.bin" crc="4df38e4b" map="01"/>
+            <part name="14.bin" crc="bd42bc66" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="10.bin" crc="7cdcf418" map="01"/>
+            <part name="13.bin" crc="eecb6bed" map="10"/>
+        </interleave>
+        <part repeat="0x40000"> FF</part>
+        <!-- audiocpu - starts at 0x80000 -->
+        <part name="15.bin" crc="9871b98d"/>
+        <part repeat="0x8000"> FF</part>
+        <!-- oki - starts at 0x90000 -->
+        <part name="30.bin" crc="b606924d"/>
+        <part repeat="0x10000"> FF</part>
+        <!-- gfx1 - starts at 0xB0000 -->
+        <interleave output="16">
+            <part name="22.bin" crc="686f72c1" map="01"/>
+            <part name="23.bin" crc="28e69371" map="10"/>
+        </interleave>
+        <!-- gfx2 - starts at 0xD0000 -->
+        <interleave output="16">
+            <part name="25.bin" crc="6b80d7a3" map="01"/>
+            <part name="27.bin" crc="78d3d764" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="24.bin" crc="ce9f5de3" map="01"/>
+            <part name="26.bin" crc="487a7ba2" map="10"/>
+        </interleave>
+        <part repeat="0x60000"> FF</part>
+        <!-- gfx3 - starts at 0x150000 -->
+        <interleave output="16">
+            <part name="29.bin" crc="4e1bc2a4" map="01"/>
+            <part name="28.bin" crc="9ecf479e" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="21.bin" crc="28b37d27" map="01"/>
+            <part name="20.bin" crc="b5ca8ed9" map="10"/>
+        </interleave>
+        <part repeat="0x10000"> FF</part>
+        <!-- gfx4 - starts at 0x190000 -->
+        <interleave output="32">
+            <part name="6.bin" crc="95423914" map="0001"/>
+            <part name="8.bin" crc="4c25dfe8" map="0010"/>
+            <part name="5.bin" crc="bc6028c4" map="0100"/>
+            <part name="7.bin" crc="8c97c757" map="1000"/>
+        </interleave>
+        <interleave output="32">
+            <part name="3.bin" crc="96233177" map="0001"/>
+            <part name="4.bin" crc="f2e007fc" map="0010"/>
+            <part name="1.bin" crc="470b6989" map="0100"/>
+            <part name="2.bin" crc="a2d244bc" map="1000"/>
+        </interleave>
+        <!-- mcu - starts at 0x210000 -->
+        <part name="68705u3.bin"/>
+        <!-- Total 0x211000 bytes - 2116 kBytes -->
+    </rom>
+    <rom index="17" zip="jtbeta.zip" md5="None">
+        <part name="beta.bin"/>
+    </rom>
+    <rom index="16" zip="debug.zip" md5="None">
+        <part name="debug.bin"/>
+    </rom>
+    <rom index="1">
+        <part>00</part>
+    </rom>
+    <switches base="17" default="7f6f">
+        <!-- DSW -->
+        <dip name="Coin A" bits="0,1" ids="3/1,2/1,1/2,1/1"/>
+        <dip name="Coin B" bits="2,3" ids="3/1,2/1,1/2,1/1"/>
+        <dip name="Demo Sounds" bits="5" ids="Off,On"/>
+        <dip name="Flip Screen" bits="6" ids="On,Off"/>
+        <dip name="Lives" bits="8,9" ids="5,1,3,2"/>
+        <dip name="Difficulty" bits="10,11" ids="Hardest,Hard,Easy,Normal"/>
+        <dip name="Player &amp; Enemy Energy" bits="12,13" ids="High,Very Low,Low,Medium"/>
+        <dip name="Enemy Power Decrease on Continue" bits="14" ids="None,2 Dots"/>
+    </switches>
+    <buttons names="Shot,Jump,-,-,-,Start,Coin,Core credits" default="Y,X,B,A,R,Start,Select,-" count="2"/>
+</misterromdescription>
