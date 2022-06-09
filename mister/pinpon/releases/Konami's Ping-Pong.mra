@@ -48,9 +48,6 @@
         <part name="555e07.11j" crc="09d96b08"/>
         <!-- Total 0xC220 bytes - 48 kBytes -->
     </rom>
-    <rom index="17" zip="jtbeta.zip" md5="None">
-        <part name="beta.bin"/>
-    </rom>
     <rom index="1">
         <part>00</part>
     </rom>
