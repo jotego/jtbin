@@ -5,7 +5,7 @@
               This work is not mantained by the MiSTer project. Please contact the
               core author for issues and updates.
 
-              (c) Jose Tejada, 2021. Please support the author
+              (c) Jose Tejada, 2022. Please support the author
               Patreon: https://patreon.com/topapate
               Paypal:  https://paypal.me/topapate
 
@@ -24,7 +24,7 @@
     <name>Shao-lin&apos;s Road (set 2)</name>
     <setname>shaolinb</setname>
     <rbf>jtkicker</rbf>
-    <mameversion>0232</mameversion>
+    <mameversion>0237</mameversion>
     <year>1985</year>
     <manufacturer>Konami</manufacturer>
     <players>2</players>
@@ -73,7 +73,7 @@
         <!-- DSW2 -->
         <dip name="Lives" bits="8,9" ids="7,5,3,2"/>
         <dip name="Cabinet" bits="10" ids="Upright,Cocktail"/>
-        <dip name="Bonus Life" bits="11,12" ids="50k,40k,40k and every 80k,30k and every 70k"/>
+        <dip name="Bonus" bits="11,12" ids="50k,40k,40k and every 80k,30k and every 70k"/>
         <dip name="Difficulty" bits="13,14" ids="Hardest,Hard,Medium,Easy"/>
         <dip name="Demo Sounds" bits="15" ids="On,Off"/>
         <!-- DSW3 -->
