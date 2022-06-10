@@ -71,9 +71,6 @@
         <part name="361b18.e15" crc="053e5861"/>
         <!-- Total 0x32220 bytes - 200 kBytes -->
     </rom>
-    <rom index="17" zip="jtbeta.zip" md5="None">
-        <part name="beta.bin"/>
-    </rom>
     <nvram index="2" size="2048"/>
     <rom index="1">
         <part>00</part>
