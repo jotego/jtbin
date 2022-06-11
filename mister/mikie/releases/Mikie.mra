@@ -56,9 +56,6 @@
         <part name="d18.f9" crc="7396b374"/>
         <!-- Total 0x30500 bytes - 193 kBytes -->
     </rom>
-    <rom index="17" zip="jtbeta.zip" md5="None">
-        <part name="beta.bin"/>
-    </rom>
     <!-- Vertical game -->
     <rom index="1">
         <part>01</part>

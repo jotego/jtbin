@@ -24,7 +24,7 @@
     <name>Shinnyuushain Tooru-kun</name>
     <setname>mikiej</setname>
     <rbf>jtmikie</rbf>
-    <mameversion>0232</mameversion>
+    <mameversion>0237</mameversion>
     <year>1984</year>
     <manufacturer>Konami</manufacturer>
     <players>2</players>
@@ -55,9 +55,6 @@
         <part name="d22.12h" crc="872be05c"/>
         <part name="d18.f9" crc="7396b374"/>
         <!-- Total 0x30500 bytes - 193 kBytes -->
-    </rom>
-    <rom index="17" zip="jtbeta.zip" md5="None">
-        <part name="beta.bin"/>
     </rom>
     <!-- Vertical game -->
     <rom index="1">
