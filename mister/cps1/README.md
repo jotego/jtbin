@@ -267,7 +267,7 @@ Contact the author for special licensing needs. Otherwise follow the GPLv3 licen
 # Patron Acknowledgement
 
 The following patrons supported the development of CPS1.5
-
+```
 3style              Chris Harvey        Joeri van Dooren    Oliver Wndmth
 80's spaceman       cohge               Johan Smolinski     Oriez
 Adam Davis          Coldheat007         John Casey          Oscar Laguna Garcia
@@ -311,9 +311,9 @@ Chris W Miller      Jesse Clark         nonamebear          Victor Fontanez
 Christian           Jim Knowler         nullobject          Víctor Gomariz Ladrón de Guevara
 Christian Bailey    Jo Tomiyori         Oliver Jaksch       Xzarian
 Christopher Gelatt                                          yoaarond
-
+```
 The following patrons supported the development of CPS2
-
+```
                      80's spaceman        Adam Small           Adam Zorzin
 Adam is              Adan Jacquez         Adrian Labastida     Adrian Nabarro
 Alan Shurvinton      Alexander Lash       Alexander Upton      Alfonso Clemente
@@ -384,4 +384,4 @@ kccheng              kernelchagi          liphy                natalie
 nonamebear           retrod00d            rsn8887              scapeghost
 slayer213            taal.M               tonitellezb          troy coberly
 yoaarond             종규 박
-
+```
