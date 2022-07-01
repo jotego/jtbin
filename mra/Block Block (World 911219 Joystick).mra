@@ -35,7 +35,7 @@
     <rom index="0" zip="block.zip" md5="None">
         <part>
             02 46 13 57 64 20 75 31
-            00 02 01 00 00 00 00 01
+            00 02 01 00 00 00 00 03
         </part>
         <!-- maincpu - starts at 0x0 -->
         <part name="ble_05b.14f" crc="fcdb7885"/>

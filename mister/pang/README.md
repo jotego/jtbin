@@ -58,7 +58,6 @@ This project uses the [JTFRAME](https://github.com/jotego/JTFRAME) framework. Pl
 
 # Special thanks to Patreon subscribers
 
-```
 8bits4ever             Adam Leslie            Adam Small             Adrian Labastida
 Alan Shurvinton        Alda Alesio            Alden                  Alex Mandic
 Alexander Facchini     Alexander Lash         Alexander Upton        Alfonso Clemente
@@ -105,7 +104,7 @@ Jootec from            Jorge                  Jork Sonkinfield       Jose Perez
 Josep Barbie           Joseph Kulinski        Joseph Milazzo         Joseph Mogavero
 Josh Mayer             Josh Yates-Walker      Josiah Wilson          Justin D'Arcangelo
 Justin Rudebaugh       Kai Cherry             Kai Luotojoki          Keith Gordon
-Ken                    Ken Scott              Kevin Dayton           Kike Alcor
+Ken B                  Ken Scott              Kevin Dayton           Kike Alcor
 KnC                    Kricys                 KrzysFR                Kyle Pedersen
 L.Rapter               Lakeside               Lee Grocott            Lee Osborne
 Lucius Bono            Luis F Giron           M Reznor               MaDDoG
@@ -125,15 +124,16 @@ Oskar Sigvardsson      Pascal Courtois        Patrick McCarron       Patrick Rom
 Paul                   Paul Cunningham        Paul Hoggett           Paulo M.
 Paweł Mandes           PeFClic                Pedro Santiago         Per Ole
 Peter Mehes            Philip Lai             Philip Lawson          Pierre-Emmanuel Martin
-Rachael Netz           Rachel Schaeffer       Ralph Barbagallo       Ramon Gamaliel
-RandomRetro            Raphael Melgar         Raul3D                 RayGun
-RetroRGB               Rex Kung               Rex Willer             Richard Eng
-Richard Murillo        Richard Simpson        Riyad Twair            Robert Daniel
-Robert Hayes           Romain Dijoux          Ronald Dean            Ronan Amicel
-Ruben                  Ryan                   Ryan O'Malley          SIDKidd64
-Saiyan                 Sam Hall               Samuel Pizarro         Samuel Warner
-Sang Hee               Sascha Zupanek         Schnookums             Ser Erris
-Seth Wickline          Shad Uttam             Shannon King           Sigmund68k
+ProfessorAnon          R D                    Rachael Netz           Rachel Schaeffer
+Ralph Barbagallo       Ramon Gamaliel         RandomRetro            Raphael Melgar
+Raul3D                 RayGun                 RetroRGB               Rex Kung
+Rex Willer             Richard Eng            Richard Murillo        Richard Simpson
+Riyad Twair            Robert Daniel          Robert Hayes           Romain Dijoux
+Ronald Dean            Ronan Amicel           Ruben                  Ryan
+Ryan O'Malley          SIDKidd64              Saiyan                 Sam Hall
+Samuel Pizarro         Samuel Warner          Sang Hee               Sascha Zupanek
+Sayit BELET            Schnookums             Ser Erris              Seth Wickline
+Shad Uttam             Shannon King           Sherwood Hachtman      Sigmund68k
 Skeletex               Spank Minister         Stadium ARTs           SteelRush
 Stefan Krueger         Stephen R Price        Steve Ikeguchi         Steve Lin
 Steve Skrzyniarz       Steve Tack             Steven A               Steven Hansen
@@ -141,19 +141,19 @@ Steven Yedwab          Stuart Morton          Sunder Raj             SuperBabyHi
 Synbios                Taehyun Kim            Tales Dilli            Terse
 The Collector          The Video              Thomas Attanasio       Thomas Irwin
 Thorias                Timothy Bearup         Tobias Dossin          Tom Milner
-Topher Campbell        Trifle                 Tulio Adriano          Two Bards
-Ty B                   VickiViperZabel        Victor Bly             Victor Fontanez
-Will Abbott            William Clemens        William Tryon          Yunus Soğukkanlı
-Zane                   Zoltan Kovacs          albertprime            alejandro carlos
-amdrgn                 angel_killah           arcadebros             benedict lindley
-blackwine              brian burney           cbab                   chauviere benjamin
-circletheory           dARKrEIGn              datajerk               deathr0w
-deathwombat            derFunkenstein         gunmakuma              jbrlll
-jim br                 jonathan capparelli    kamel rasennadja       kccheng
-kernelchagi            kerobaros              keropi                 liphy
-mattcurrie             meng po                metal                  natalie
-pacoarcade             raoulvp                retrod00d              rsn8887
-slayer213              sourdille              tim rogers             tonitellezb
-troy coberly           turbochop3300          twilitezoner           type78
-vampsthevampyre        yoaarond               Δlain
+Tony Shong             Topher Campbell        Trifle                 Tulio Adriano
+Two Bards              Ty B                   VickiViperZabel        Victor Bly
+Victor Fontanez        Will Abbott            William Clemens        William Tryon
+Yunus Soğukkanlı       Zane                   Zoltan Kovacs          albertprime
+alejandro carlos       amdrgn                 angel_killah           arcadebros
+benedict lindley       blackwine              brian burney           cbab
+chauviere benjamin     circletheory           dARKrEIGn              datajerk
+deathr0w               deathwombat            derFunkenstein         gunmakuma
+jbrlll                 jim br                 jonathan capparelli    kamel rasennadja
+kccheng                kernelchagi            kerobaros              keropi
+liphy                  mattcurrie             meng po                metal
+natalie                pacoarcade             raoulvp                retrod00d
+rsn8887                slayer213              sourdille              tim rogers
+tonitellezb            troy coberly           turbochop3300          twilitezoner
+type78                 vampsthevampyre        yoaarond               Δlain
 ```
