@@ -32,18 +32,10 @@ Because of the hardware variety, there are different cores targeted for each of 
 System               |  Core   | Logic Usage | BRAM Usage
 ---------------------|---------|-------------|-------------
 16A                  | jts16   | 22,149      | 374,458
-16B (no i8751)       | jts16b  | 20,089      | 330,426
 16B i8751            | jts16b  | 23,073      | 364,218
-16B i8751            | jts16b3 | 22,206      | 251,578
 
 MiST has 608,256 memory bits and 24,624 logic elements.
-Although the MCU can be synthesized in MiST and SiDi, timings are usually broken and requires several runs with different seeds because the FPGA is almost full. For MiSTer it seems to gowell, but I prefer to keep the jts16b3 for all systems because:
-
-1. The same MRA files can be shared
-2. Even if MiSTer compilation times is doubled, with two cores instead of one; for the other platforms the separated cores synthesized correctly in first run
-
-To make JTS16B support i8751 games, it is enough to remove the `NOMCU` definition in the `.def` file.
-
+Although the MCU can be synthesized in MiST and SiDi, timings are usually broken and requires several runs with different seeds because the FPGA is almost full. For MiSTer it seems to always go well.
 
 # PCB Check List
 

@@ -5,9 +5,8 @@
               This work is not mantained by the MiSTer project. Please contact the
               core author for issues and updates.
 
-              (c) Jose Tejada, 2021-2022. Please support the author
+              (c) Jose Tejada, 2022. Please support this research
               Patreon: https://patreon.com/topapate
-              Paypal:  https://paypal.me/topapate
 
               The author does not endorse or participate in illegal distribution
               of copyrighted material. This work can be used with legally
@@ -89,7 +88,7 @@
     <rom index="1">
         <part>00</part>
     </rom>
-    <switches base="16" default="ff,ff">
+    <switches page_id="1" page_name="Switches" base="16" default="ff,ff">
         <!-- DSW1 -->
         <!-- DSW2 -->
         <dip name="Lives" bits="10,11" ids="240,4,2,3"/>
