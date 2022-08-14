@@ -26,6 +26,7 @@
                            twitter="@topapate"/>
 	<name>Double Dragon II - The Revenge (World)</name>
 	<mameversion>0223</mameversion>
+	<setname>ddragon2</setname>
 	<mratimestamp>20210619</mratimestamp>
 	<year>1988</year>
 	<manufacturer>Technos Japan</manufacturer>
