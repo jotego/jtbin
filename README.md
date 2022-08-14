@@ -2,21 +2,28 @@
 
 This repository contains arcade cores for several FPGA platforms and hundreds of arcade titles. All these cores are written by Jose Tejada (aka JOTEGO), but some of the pieces come from other developers. Particularly the M68000, M6809 and Z80 CPUs, to name easy ones to spot.
 
-The source code for each system can be found if you browse [my github account](https://github.com/jotego).
+**RBF Files LICENSE**
+
+You are only allowed to use these FPGA cores with files (i.e. *ROMs*) you legally own. The license to use these FPGA files is thus based upon the condition of using legal software with them.
+
+**LICENCIA de los ficheros RBF**
+
+Se permite el uso de estos ficheros de configuración para FPGAs exclusivamente con ficheros (es decir, *ROMs*) que usted posea legalmente. La licencia de uso de estos cores FPGA está por tanto supeditada a su uso parejo con software legal
+
+The source code for each system can be found if you browse [Jotego's github account](https://github.com/jotego).
 
 All this work has been produced thanks to the community support:
 
 * Patreon: https://patreon.com/topapate
-* Paypal: https://paypal.me/topapate
 * Github: https://github.com/sponsors/jotego
 
-# MiST and related platforms
+## MiST and related platforms
 
 For non MiSTer users, you have the latest compilations in the folder with your system name. You then need to grab the MRA files (in the [mra](mra) folder) and use it to generate the ROM file based in a MAME ROM set. This is done using [this tool](https://github.com/sebdel/mra-tools-c). For MiST and SiDi, generate an ARC file too and copy everything.
 
 Make sure you are using the latest firmware, as my cores often need the latest features to work.
 
-# MiSTer
+## MiSTer
 
 You can manually install the files by getting the files in the [MiSTer](mister) folder. But if it is a fresh installation, you can just download all files in a single zip [here](https://github.com/jotego/jtcores_mister/archive/refs/heads/main.zip).
 
@@ -26,6 +33,10 @@ I recommend setting up the MiSTer downloader tool to get the files for you. Add 
 [jtcores]
 db_url = https://raw.githubusercontent.com/jotego/jtcores_mister/main/jtbindb.json.zip
 ```
+
+## Analogue Pocket
+
+At this stage, Analogue Pocket files are offered only via [Patreon](https://patreon.com/topapate)
 
 ## New cores - The beta phase
 
