@@ -2,7 +2,7 @@ JT_GNG FPGA Clone of early CAPCOM arcade games by Jose Tejada (@topapate)
 =========================================================================
 
 You can show your appreciation through
-    * Patreon: https://patreon.com/topapate
+    * Patreon: https://patreon.com/jotego
     * Paypal: https://paypal.me/topapate
 
 Yes, you always wanted to have a Ghosts'n Goblins arcade board at home. First you couldn't get it because your parents somehow did not understand you. Then you grow up and your wife doesn't understand you either. Don't worry, MiST(er) is here to the rescue.
