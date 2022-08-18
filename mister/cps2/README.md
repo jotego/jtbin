@@ -257,7 +257,7 @@ This will run the simulation for the folder *game* and looking for files with th
 # Support
 
 You can show your appreciation through
-* Patreon: https://patreon.com/topapate
+* Patreon: https://patreon.com/jotego
 * Paypal: https://paypal.me/topapate
 
 # Licensing

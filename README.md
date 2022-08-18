@@ -14,7 +14,7 @@ The source code for each system can be found if you browse [Jotego's github acco
 
 All this work has been produced thanks to the community support:
 
-* Patreon: https://patreon.com/topapate
+* Patreon: https://patreon.com/jotego
 * Github: https://github.com/sponsors/jotego
 
 ## MiST and related platforms
@@ -36,7 +36,7 @@ db_url = https://raw.githubusercontent.com/jotego/jtcores_mister/main/jtbindb.js
 
 ## Analogue Pocket
 
-At this stage, Analogue Pocket files are offered only via [Patreon](https://patreon.com/topapate)
+At this stage, Analogue Pocket files are offered only via [Patreon](https://patreon.com/jotego)
 
 ## New cores - The beta phase
 

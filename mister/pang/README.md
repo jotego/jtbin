@@ -1,7 +1,7 @@
 # FPGA Clone of Early Arcade Games by Jose Tejada (aka jotego - @topapate)
 
 You can show your appreciation through
-* Patreon: https://patreon.com/topapate
+* Patreon: https://patreon.com/jotego
 * Paypal: https://paypal.me/topapate
 * Github: https://github.com/sponsors/jotego
 

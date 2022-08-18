@@ -44,6 +44,6 @@ Contact via:
 * https://github.com/discord
 
 You can show your appreciation through
-* Patreon: https://patreon.com/topapate
+* Patreon: https://patreon.com/jotego
 * Paypal: https://paypal.me/topapate
 

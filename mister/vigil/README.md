@@ -3,7 +3,7 @@
 You have in your hands a faithful reproduction of Vigilante's hardware. We have analysed the PCB and the official schematics. This verilog implementation is compatible with all major retro FPGA platforms, particularly MiSTerFPGA.
 
 You can show your appreciation through
-* Patreon: https://patreon.com/topapate
+* Patreon: https://patreon.com/jotego
 * Paypal: https://paypal.me/topapate
 * Github: https://github.com/sponsors/jotego
 

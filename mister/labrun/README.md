@@ -134,7 +134,7 @@ Contact via:
 
 You can show your appreciation through
 * Github:
-* Patreon: https://patreon.com/topapate
+* Patreon: https://patreon.com/jotego
 * Paypal: https://paypal.me/topapate
 
 # Thanks to September 2021 Patrons
