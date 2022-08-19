@@ -1,8 +1,8 @@
 # JTDD FPGA Arcade Hardware Jose Tejada (@topapate)
 
 You can show your appreciation through
-    * Patreon: https://patreon.com/jotego
-    * Paypal: https://paypal.me/topapate
+* [Patreon](https://patreon.com/jotego)
+* [Paypal](https://paypal.me/topapate)
 
 Yes, you always wanted to have a Double Dragon arcade board at home. First you couldn't get it because your parents somehow did not understand you. Then you grow up and your wife doesn't understand you either. Don't worry, MiST(er) is here to the rescue.
 
