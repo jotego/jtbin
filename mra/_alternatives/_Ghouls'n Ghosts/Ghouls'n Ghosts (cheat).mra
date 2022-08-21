@@ -94,19 +94,20 @@
         <part name="ghouls.bin"/>
     </rom>
     <switches default="FF,FF,FF" base="8">
-        <dip bits="0,2"	 name="Coin A" ids="4 Coins/1 Credit,3 Coins/1 Credit,2 Coins/1 Credit,1 Coin/6 Credits,1 Coin/4 Credits,1 Coin/3 Credits,1 Coin/2 Credits,1 Coin/1 Credit"/>
-        <dip bits="3,5"	 name="Coin B" ids="4 Coins/1 Credit,3 Coins/1 Credit,2 Coins/1 Credit,1 Coin/6 Credits,1 Coin/4 Credits,1 Coin/3 Credits,1 Coin/2 Credits,1 Coin/1 Credit"/>
-        <dip bits="6,7"	 name="Cabinet" ids="Cocktail,Upright 2 Players,Upright 1 Player"/>
-        <dip bits="8,10"	 name="Difficulty" ids="8 (Hardest),7,6,5,1 (Easiest),2,3,4 (Normal)"/>
-        <dip bits="12,13"	 name="Bonus Life" ids="40K, 70K and every 80K,20K, 50K and every 70K,10K, 30K and every 30K,30K, 60K and every 70K"/>
+        <dip bits="0,2"	 name="Coin 1" ids="4 Coins 1 Credit,3 Coins 1 Credit,2 Coins 1 Credit,1 Coin 6 Credits,1 Coin 4 Credits,1 Coin 3 Credits,1 Coin 2 Credits,1 Coin 1 Credit"/>
+        <dip bits="3,5"	 name="Coin 2" ids="4 Coins 1 Credit,3 Coins 1 Credit,2 Coins 1 Credit,1 Coin 6 Credits,1 Coin 4 Credits,1 Coin 3 Credits,1 Coin 2 Credits,1 Coin 1 Credit"/>
+        <dip bits="6,7"	 name="Cabinet" ids="2 Players Table,2 Players Table,2 Players Upright,1 Player Upright"/>
+        <dip bits="8,10"	 name="Difficulty" ids="8 (Difficult),7,6,5,1 (Easy),2,3,4 (Normal)"/>
+        <dip bits="12,13"	 name="Extend" ids="40k 70k every 80k,20k 50k every 70k,10k 30k every 30k,30k 60k every 70k"/>
         <dip bits="16,17"	 name="Lives" ids="6,5,4,3"/>
-        <dip bits="20"	 name="Flip Screen" ids="On,Off"/>
-        <dip bits="22"	 name="Continue" ids="No,Yes"/>
-        <dip bits="23"	 name="Game Mode" ids="Test,Game"/>
+        <dip bits="20"	 name="Screen" ids="Flip,Normal"/>
+        <dip bits="21"	 name="Demo Sound" ids="Off,On"/>
+        <dip bits="22"	 name="Continue" ids="Off,On"/>
+        <dip bits="23"	 name="Test Mode" ids="On,Off"/>
     </switches>
     <cheats>
         <dip name="P1 Select Weapon" bits="0,2" ids="Disabled,Lance,Knife,Torch,Sword,Axe,Shield,Fireball"/>
     </cheats>
-    <buttons names="B0,B1,-,-,-,-,Start,Coin,Pause"
+    <buttons names="Fire,Jump,-,-,-,-,Start,Coin,Pause"
         default="A,B,R,L,Start"/>
 </misterromdescription>
