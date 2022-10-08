@@ -28,7 +28,7 @@
     <manufacturer>Sega</manufacturer>
     <players>2</players>
     <joystick>8</joystick>
-    <rotation>vertical</rotation>
+    <rotation>vertical (cw)</rotation>
     <region>World</region>
     <platform>SEGA S16B</platform>
     <mraauthor>jotego,atrac17</mraauthor>

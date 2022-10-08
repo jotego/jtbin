@@ -6,6 +6,7 @@
 	<year>1984</year>
 	<manufacturer>Capcom</manufacturer>
 	<category>Army / Airforce</category>
+	<rotation>vertical (cw)</rotation>
 	<rbf>jt1942</rbf>
 	<rom index="0" zip="1942b.zip" md5="df862aa587fda54c94d6762a8cfcc96c" type="nonmerged">
 		<part name="sr-03.m3"/>

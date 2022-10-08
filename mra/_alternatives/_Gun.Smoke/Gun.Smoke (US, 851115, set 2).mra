@@ -6,6 +6,7 @@
 	<year>1986</year>
 	<manufacturer>Capcom (Romstar license)</manufacturer>
 	<category>Adventure / Western</category>
+	<rotation>vertical (cw)</rotation>
 	<rbf>jtgunsmoke</rbf>
 	<rom index="0" zip="gunsmokeub.zip" md5="dc8ee9d839375d648795f74794bb70b6" type="nonmerged">
 		<part name="gsr_03.9n"/>

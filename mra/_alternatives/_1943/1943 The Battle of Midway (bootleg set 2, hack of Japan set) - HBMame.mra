@@ -6,6 +6,7 @@
 	<year>1987</year>
 	<manufacturer>bootleg</manufacturer>
 	<category>Army / Airforce</category>
+	<rotation>vertical (cw)</rotation>
 	<rbf>jt1943</rbf>
 	<rom index="0" zip="/hbmame/1943.zip" md5="dfda2fd57d15b4db52679088c23068d5" type="merged">
 		<part name="1943h/bme01addontext.12d"/>

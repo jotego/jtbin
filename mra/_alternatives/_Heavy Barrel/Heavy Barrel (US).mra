@@ -29,7 +29,7 @@
     <manufacturer>Data East USA</manufacturer>
     <players>2</players>
     <joystick>8</joystick>
-    <rotation>vertical</rotation>
+    <rotation>vertical (cw)</rotation>
     <region>World</region>
     <mraauthor>jotego</mraauthor>
     <rom index="0" zip="hbarrelu.zip|hbarrel.zip" md5="None">

@@ -6,6 +6,7 @@
 	<year>1984</year>
 	<manufacturer>Minwah</manufacturer>
 	<category>Army / Airforce</category>
+	<rotation>vertical (cw)</rotation>
 	<rbf>jt1942</rbf>
 	<rom index="0" zip="/hbmame/1942.zip" md5="06c2ac35650f07456fd078eaefcb463b" type="merged">
 		<part name="galagax/galagax1.n3"/>
