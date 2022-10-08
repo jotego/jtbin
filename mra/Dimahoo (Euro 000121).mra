@@ -29,7 +29,7 @@
     <manufacturer>Eighting / Raizing</manufacturer>
     <players>2</players>
     <joystick>8-way</joystick>
-    <rotation>vertical</rotation>
+    <rotation>vertical (cw)</rotation>
     <region>Europe</region>
     <platform>CPS-2</platform>
     <category>Shoot&apos;em up</category>

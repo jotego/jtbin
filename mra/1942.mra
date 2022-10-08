@@ -7,6 +7,7 @@
 	<manufacturer>Capcom</manufacturer>
 	<category>Army / Airforce</category>
     <mameversion>0217</mameversion>
+    <rotation>vertical (cw)</rotation>
 	<rbf>jt1942</rbf>
 	<rom index="0" zip="1942.zip" md5="b034856e2abf228761a3828c8c883b4c" >
 		<part name="srb-03.m3"/>

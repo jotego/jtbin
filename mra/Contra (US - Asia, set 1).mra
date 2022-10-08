@@ -29,7 +29,7 @@
     <manufacturer>Konami</manufacturer>
     <players>2</players>
     <joystick>8-way</joystick>
-    <rotation>vertical</rotation>
+    <rotation>vertical (cw)</rotation>
     <region>Asia</region>
     <category>Run &amp; Gun</category>
     <platform>Konami 007121 (Contra Based)</platform>

@@ -7,6 +7,7 @@
 	<manufacturer>Capcom</manufacturer>
 	<category>Army / Airforce</category>
     <mameversion>0217</mameversion>
+    <rotation>vertical (cw)</rotation>
 	<rbf>jt1943</rbf>
 	<rom index="0" zip="1943kai.zip" md5="a22833b3bf0c0bc6c95c53147f17b48f" >
 		<part name="bmk01.12d"/>

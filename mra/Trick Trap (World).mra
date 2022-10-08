@@ -26,6 +26,7 @@
     <year>1987</year>
 	<manufacturer>Konami</manufacturer>
 	<category>Shooter</category>
+    <rotation>vertical (cw)</rotation>
     <rbf>jtlabrun</rbf>
     <rom index="0" zip="tricktrp.zip" type="merged" md5="None">
         <!-- maincpu - starts at 0x0 -->
