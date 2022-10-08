@@ -29,7 +29,7 @@
     <manufacturer>Capcom (Memetron license)</manufacturer>
     <players>2</players>
     <joystick>8</joystick>
-    <rotation>vertical (cw)</rotation>
+    <rotation>vertical (ccw)</rotation>
     <region>World</region>
     <mraauthor>jotego</mraauthor>
     <rom index="0" zip="savgbees.zip|exedexes.zip" md5="None">

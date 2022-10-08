@@ -6,7 +6,7 @@
 	<year>1984</year>
 	<manufacturer>Jerky and Chris Moore</manufacturer>
 	<category>Army / Airforce</category>
-	<rotation>vertical (cw)</rotation>
+	<rotation>vertical (ccw)</rotation>
 	<rbf>jt1942</rbf>
 	<rom index="0" zip="/hbmame/1942.zip" md5="217e43305cb120a553cea32244439a18" type="merged">
 		<part name="galagax/galagax1.n3"/>

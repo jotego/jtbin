@@ -28,7 +28,7 @@
     <manufacturer>Capcom (Bootleg)</manufacturer>
     <players>2</players>
     <joystick>8-way</joystick>
-    <rotation>vertical (cw)</rotation>
+    <rotation>vertical (ccw)</rotation>
     <region>Europe</region>
     <category>Shooter / Walking</category>
     <mameversion>0230</mameversion>

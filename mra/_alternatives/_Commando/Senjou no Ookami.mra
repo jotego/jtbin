@@ -28,7 +28,7 @@
     <manufacturer>Capcom</manufacturer>
     <players>2</players>
     <joystick>8-way</joystick>
-    <rotation>vertical (cw)</rotation>
+    <rotation>vertical (ccw)</rotation>
     <region>Japan</region>
     <category>Shooter / Walking</category>
     <mameversion>0230</mameversion>
