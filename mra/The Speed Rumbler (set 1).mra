@@ -30,7 +30,7 @@
     <category>Shooter</category>
     <players>2</players>
     <joystick>8-way</joystick>
-    <rotation>vertical (cw)</rotation>
+    <rotation>vertical (ccw)</rotation>
     <region>World</region>
     <rom index="0" zip="srumbler.zip" type="merged" md5="None">
         <!-- user1 - starts at 0x0 -->
