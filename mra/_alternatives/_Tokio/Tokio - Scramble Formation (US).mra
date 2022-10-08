@@ -27,6 +27,7 @@
     <year>1986</year>
     <manufacturer>Taito</manufacturer>
     <category>Shoot em up</category>
+    <rotation>vertical (cw)</rotation>
     <rbf>jtbubl</rbf>
     <rom index="0" zip="tokiou.zip|tokio.zip" type="merged" md5="None">
         <!-- maincpu - starts at 0x0 -->

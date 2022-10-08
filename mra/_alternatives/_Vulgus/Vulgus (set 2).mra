@@ -6,6 +6,7 @@
 	<year>1984</year>
 	<manufacturer>Capcom</manufacturer>
 	<category>Space / Force</category>
+	<rotation>vertical (cw)</rotation>
 	<rbf>jtvulgus</rbf>
 	<rom index="0" zip="vulgusa.zip" md5="cc7ff45328905f65aa6866e90260d081" type="nonmerged">
 		<part name="v2"/>
