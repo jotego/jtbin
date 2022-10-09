@@ -28,7 +28,7 @@
     <manufacturer>Capcom (Hack)</manufacturer>
     <players>2</players>
     <joystick>8-way</joystick>
-    <rotation>Vertical</rotation>
+    <rotation>vertical (ccw)</rotation>
     <region>World</region>
     <category>Shooter / Walking</category>
     <mameversion>0230</mameversion>

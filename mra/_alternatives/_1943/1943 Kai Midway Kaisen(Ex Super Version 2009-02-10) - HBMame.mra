@@ -6,6 +6,7 @@
 	<year>2009</year>
 	<manufacturer>winux/pipi899</manufacturer>
 	<category>Army / Airforce</category>
+	<rotation>vertical (ccw)</rotation>
 	<rbf>jt1943</rbf>
 	<rom index="0" zip="/hbmame/1943kai.zip" md5="1e15ba96c05f857dc26b34a30b8a58f9" type="merged">
 		<part name="1943kais01/bmk01.12dhc01"/>

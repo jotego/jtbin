@@ -6,6 +6,7 @@
 	<year>2015</year>
 	<manufacturer>cmonkey</manufacturer>
 	<category>Army / Airforce</category>
+	<rotation>vertical (ccw)</rotation>
 	<rbf>jt1942</rbf>
 	<rom index="0" zip="/hbmame/1942.zip" md5="eb2454e91698958a0d3464442d9ad053" type="merged">
 		<part name="1942fpa/1942fpa.m3"/>

@@ -6,6 +6,7 @@
 	<year>1984</year>
 	<manufacturer>bootleg (ITISA)</manufacturer>
 	<category>Space / Force</category>
+	<rotation>vertical (ccw)</rotation>
 	<rbf>jtvulgus</rbf>
 	<rom index="0" zip="mach9.zip" md5="eb03683437787decdc1b80c689baff6d" type="nonmerged">
 		<part name="02_4n.bin"/>

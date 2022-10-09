@@ -4,6 +4,7 @@
     <year>1986</year>
     <manufacturer>Capcom</manufacturer>
     <category>Shooter</category>
+    <rotation>vertical (cw)</rotation>
     <mameversion>0217</mameversion>
     <rbf alt="jtsz">jtsectionz</rbf>
     <rom index="0" zip="lwings.zip|lwingsja.zip" type="merged|nonmerged|split" md5="none">

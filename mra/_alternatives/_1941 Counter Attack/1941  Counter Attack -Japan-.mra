@@ -26,6 +26,7 @@
     <year>1990</year>
     <manufacturer>Capcom</manufacturer>
     <category>Shoot em up</category>
+    <rotation>vertical (ccw)</rotation>
     <rbf>jtcps1</rbf>
     <rom index="0" zip="1941.zip|1941j.zip" md5="none">
         <!-- relative position of each ROM section in the file, discounting the header, in kilobytes -->

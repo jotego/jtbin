@@ -6,6 +6,7 @@
 	<year>2015</year>
 	<manufacturer>Minwah</manufacturer>
 	<category>Army / Airforce</category>
+	<rotation>vertical (ccw)</rotation>
 	<rbf>jt1942</rbf>
 	<rom index="0" zip="/hbmame/1942.zip" md5="787fafc8c9cc0288d8e6626f0bcb4188" type="merged">
 		<part name="srb-03.m3"/>

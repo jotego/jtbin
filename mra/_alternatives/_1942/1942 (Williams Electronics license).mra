@@ -6,6 +6,7 @@
 	<year>1985</year>
 	<manufacturer>Capcom (Williams Electronics license)</manufacturer>
 	<category>Army / Airforce</category>
+	<rotation>vertical (ccw)</rotation>
 	<rbf>jt1942</rbf>
 	<rom index="0" zip="1942w.zip" md5="87c218d3e44a36c0e7cb83a0516f0124" type="nonmerged">
 		<part name="sw-03.m3"/>

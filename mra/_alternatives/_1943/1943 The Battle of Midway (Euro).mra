@@ -6,6 +6,7 @@
 	<year>1987</year>
 	<manufacturer>Capcom</manufacturer>
 	<category>Army / Airforce</category>
+	<rotation>vertical (ccw)</rotation>
 	<rbf>jt1943</rbf>
 	<rom index="0" zip="1943.zip" md5="5006722f516b6fd1709046a542d3dd71" type="merged|nonmerged">
 		<part name="bme01.12d"/>

@@ -29,7 +29,7 @@
     <manufacturer>Capcom</manufacturer>
     <players>2</players>
     <joystick>2</joystick>
-    <rotation>vertical</rotation>
+    <rotation>vertical (ccw)</rotation>
     <region>World</region>
     <mraauthor>jotego</mraauthor>
     <rom index="0" zip="block.zip" md5="None">

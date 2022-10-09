@@ -29,7 +29,7 @@
     <manufacturer>Capcom (Bootleg)</manufacturer>
     <players>2</players>
     <joystick>8-way</joystick>
-    <rotation>Vertical</rotation>
+    <rotation>vertical (ccw)</rotation>
     <region>World</region>
     <platform>Capcom Z80</platform>
     <category>Run &apos;n Gun</category>
