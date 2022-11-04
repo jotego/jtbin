@@ -21,9 +21,9 @@
 
 <misterromdescription>
     <about author="jotego" webpage="https://patreon.com/jotego" source="https://github.com/jotego" twitter="@topapate"/>
-    <name>Super Hang-On (sitdown/upright) (unprotected)</name>
-    <setname>shangon</setname>
-    <rbf>jtoutrun</rbf>
+    <name>Super Hang-On (sitdown/upright) (FD1089B 317-0034)</name>
+    <setname>shangon3</setname>
+    <rbf>jtshanon</rbf>
     <mameversion>0232</mameversion>
     <year>1987</year>
     <manufacturer>Sega</manufacturer>
@@ -32,19 +32,19 @@
     <rotation>horizontal</rotation>
     <region>World</region>
     <mraauthor>jotego</mraauthor>
-    <rom index="0" zip="shangon.zip" md5="None">
+    <rom index="0" zip="shangon3.zip|shangon.zip" md5="None">
         <part>
-            00 01 00 00 00 00 00 00
+            03 01 00 00 00 00 00 00
             00 00 00 00 00 00 00 00
         </part>
         <!-- maincpu - starts at 0x0 -->
         <interleave output="16">
-            <part name="epr-10884.118" crc="cb06150d" map="01"/>
-            <part name="epr-10886.133" crc="8be3cd36" map="10"/>
+            <part name="epr-10788.118" crc="c3d8a1ea" map="01"/>
+            <part name="epr-10789.133" crc="6092c5ce" map="10"/>
         </interleave>
         <interleave output="16">
-            <part name="epr-10885.117" crc="70795f26" map="01"/>
-            <part name="epr-10887.132" crc="8d248bb0" map="10"/>
+            <part name="epr-10635a.117" crc="a2415595" map="01"/>
+            <part name="epr-10637a.132" crc="ad6c1308" map="10"/>
         </interleave>
         <part repeat="0x20000"> FF</part>
         <!-- subcpu - starts at 0x60000 -->
@@ -58,7 +58,7 @@
         </interleave>
         <part repeat="0x20000"> FF</part>
         <!-- soundcpu - starts at 0xC0000 -->
-        <part name="epr-10649c.88" crc="f6c1ce71"/>
+        <part name="epr-10649a.88" crc="bf38330f"/>
         <part repeat="0x8000"> FF</part>
         <!-- pcm - starts at 0xD0000 -->
         <part name="epr-10643.66" crc="06f55364"/>
@@ -80,21 +80,34 @@
         <part repeat="0x20000"> FF</part>
         <!-- sprites - starts at 0x170000 -->
         <interleave output="16">
-            <part name="mpr-10794.8" crc="7c958e63" map="01"/>
-            <part name="mpr-10798.16" crc="7d58f807" map="10"/>
+            <part name="epr-10675.8" crc="d6ac012b" map="01"/>
+            <part name="epr-10682.16" crc="d9d83250" map="10"/>
         </interleave>
         <interleave output="16">
-            <part name="mpr-10795.6" crc="d9d31f8c" map="01"/>
-            <part name="mpr-10799.14" crc="96d90d3d" map="10"/>
+            <part name="epr-10676.7" crc="25ebf2c5" map="01"/>
+            <part name="epr-10683.15" crc="6365d2e9" map="10"/>
         </interleave>
         <interleave output="16">
-            <part name="mpr-10796.4" crc="fb48957c" map="01"/>
-            <part name="mpr-10800.12" crc="feaff98e" map="10"/>
+            <part name="epr-10677.6" crc="8a57b8d6" map="01"/>
+            <part name="epr-10684.14" crc="3aff8910" map="10"/>
         </interleave>
         <interleave output="16">
-            <part name="mpr-10797.2" crc="27f2870d" map="01"/>
-            <part name="mpr-10801.10" crc="12781795" map="10"/>
+            <part name="epr-10678.5" crc="af473098" map="01"/>
+            <part name="epr-10685.13" crc="80bafeef" map="10"/>
         </interleave>
+        <interleave output="16">
+            <part name="epr-10679.4" crc="03bc4878" map="01"/>
+            <part name="epr-10686.12" crc="274b734e" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="epr-10680.3" crc="9f0677ed" map="01"/>
+            <part name="epr-10687.11" crc="508a4701" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="epr-10681.2" crc="b176ea72" map="01"/>
+            <part name="epr-10688.10" crc="42fcd51d" map="10"/>
+        </interleave>
+        <part repeat="0x20000"> FF</part>
         <!-- segaic16road - starts at 0x270000 -->
         <!-- Singleton region. The files are merged with themselves. -->
         <interleave output="16">
@@ -102,7 +115,29 @@
             <part name="epr-10642.47" crc="7836bcc3" map="10" length="0x4000" offset="0x4000"/>
         </interleave>
         <part name="epr-10642.47" crc="7836bcc3"/>
-        <!-- Total 0x278000 bytes - 2528 kBytes -->
+        <part repeat="0x20000"> FF</part>
+        <!-- maincpu:key - starts at 0x298000 -->
+        <part name="317-0034.key" crc="ad61539a"/>
+        <!-- FD1089 base table starts at 0x29A000 -->
+        <part>
+            00 1C 76 6A 5E 42 24 38 4B 67 AD 81 E9 C5 03 2F
+            45 69 AF 83 E7 CB 01 2D 02 1E 78 64 5C 40 2A 36
+            32 2E 44 58 E4 F8 9E 82 29 05 CF E3 93 BF 79 55
+            3F 13 D5 F9 85 A9 63 4F B8 A4 C2 DE 6E 72 18 04
+            0C 10 7A 66 FC E0 86 9A 47 6B A1 8D BB 97 51 7D
+            17 3B FD D1 EB C7 0D 21 A0 BC DA C6 50 4C 26 3A
+            3E 22 48 54 46 5A 3C 20 25 09 C3 EF C1 ED 2B 07
+            6D 41 87 AB 89 A5 6F 43 1A 06 60 7C 62 7E 14 08
+            0A 16 70 6C DC C0 AA B6 4D 61 A7 8B F7 DB 11 3D
+            5B 77 BD 91 E1 CD 0B 27 80 9C F6 EA 56 4A 2C 30
+            B0 AC CA D6 EE F2 98 84 37 1B DD F1 95 B9 73 5F
+            39 15 DF F3 9B B7 71 5D B2 AE C4 D8 EC F0 96 8A
+            A8 B4 D2 CE D0 CC A6 BA 1F 33 F5 D9 FB D7 1D 31
+            57 7B B1 9D B3 9F 59 75 8C 90 FA E6 F4 E8 8E 92
+            12 0E 68 74 E2 FE 94 88 65 49 8F A3 99 B5 7F 53
+            35 19 D3 FF C9 E5 23 0F BE A2 C8 D4 4E 52 34 28
+        </part>
+        <!-- Total 0x29A100 bytes - 2664 kBytes -->
     </rom>
     <rom index="17" zip="jtbeta.zip" md5="None">
         <part name="beta.bin"/>
