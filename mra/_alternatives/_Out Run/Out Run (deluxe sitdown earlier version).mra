@@ -21,8 +21,8 @@
 
 <misterromdescription>
     <about author="jotego" webpage="https://patreon.com/jotego" source="https://github.com/jotego" twitter="@topapate"/>
-    <name>Out Run (sitdown/upright, Rev B)</name>
-    <setname>outrun</setname>
+    <name>Out Run (deluxe sitdown earlier version)</name>
+    <setname>outrundxa</setname>
     <rbf>jtoutrun</rbf>
     <mameversion>0243</mameversion>
     <year>1986</year>
@@ -32,29 +32,45 @@
     <rotation>horizontal</rotation>
     <region>World</region>
     <mraauthor>jotego</mraauthor>
-    <rom index="0" zip="outrun.zip" md5="None">
+    <rom index="0" zip="outrundxa.zip|outrun.zip" md5="None">
         <part>
             00 00 00 00 00 00 00 00
             00 00 00 00 00 00 00 00
         </part>
         <!-- maincpu - starts at 0x0 -->
         <interleave output="16">
-            <part name="epr-10382b.118" crc="c4c3fa1a" map="01"/>
-            <part name="epr-10380b.133" crc="1f6cadad" map="10"/>
+            <part name="epr-10261.130" crc="1d034847" map="01"/>
+            <part name="epr-10183.115" crc="3d992396" map="10"/>
         </interleave>
         <interleave output="16">
-            <part name="epr-10383b.117" crc="10a2014a" map="01"/>
-            <part name="epr-10381b.132" crc="be8c412b" map="10"/>
+            <part name="epr-10262.131" crc="5386b6b3" map="01"/>
+            <part name="epr-10184.116" crc="1a73dc46" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="epr-10263.132" crc="eda65fd6" map="01"/>
+            <part name="epr-10258.117" crc="39408e4f" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="epr-10264.133" crc="cc94b102" map="01"/>
+            <part name="epr-10259.118" crc="95100b1a" map="10"/>
         </interleave>
         <part repeat="0x20000"> FF</part>
         <!-- subcpu - starts at 0x60000 -->
         <interleave output="16">
-            <part name="epr-10329a.58" crc="da131c81" map="01"/>
-            <part name="epr-10327a.76" crc="e28a5baf" map="10"/>
+            <part name="epr-10178.86" crc="6d36be05" map="01"/>
+            <part name="epr-10173.66" crc="6c2775c0" map="10"/>
         </interleave>
         <interleave output="16">
-            <part name="epr-10330a.57" crc="ba9ec82a" map="01"/>
-            <part name="epr-10328a.75" crc="d5ec5e5d" map="10"/>
+            <part name="epr-10179.87" crc="180fd041" map="01"/>
+            <part name="epr-10174.67" crc="aae7efad" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="epr-10180.88" crc="4713b264" map="01"/>
+            <part name="epr-10175.68" crc="31c76063" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="epr-10181.89" crc="e009a04d" map="01"/>
+            <part name="epr-10176.69" crc="a7811f90" map="10"/>
         </interleave>
         <part repeat="0x20000"> FF</part>
         <!-- soundcpu - starts at 0xC0000 -->
@@ -88,16 +104,52 @@
         </interleave>
         <!-- sprites - starts at 0x170000 -->
         <interleave output="32">
-            <part name="mpr-10371.9" crc="7cc86208" map="0001"/>
-            <part name="mpr-10373.10" crc="b0d26ac9" map="0010"/>
-            <part name="mpr-10375.11" crc="59b60bd7" map="0100"/>
-            <part name="mpr-10377.12" crc="17a1b04a" map="1000"/>
+            <part name="epr-10194.26" crc="f0eda3bd" map="0001"/>
+            <part name="epr-10203.38" crc="8445a622" map="0010"/>
+            <part name="epr-10212.52" crc="dee7e731" map="0100"/>
+            <part name="epr-10221.66" crc="43431387" map="1000"/>
         </interleave>
         <interleave output="32">
-            <part name="mpr-10372.13" crc="b557078c" map="0001"/>
-            <part name="mpr-10374.14" crc="8051e517" map="0010"/>
-            <part name="mpr-10376.15" crc="f3b8f318" map="0100"/>
-            <part name="mpr-10378.16" crc="a1062984" map="1000"/>
+            <part name="epr-10195.27" crc="0de75cdd" map="0001"/>
+            <part name="epr-10204.39" crc="5f4b5abb" map="0010"/>
+            <part name="epr-10213.53" crc="1d1b22f0" map="0100"/>
+            <part name="epr-10222.67" crc="a254c706" map="1000"/>
+        </interleave>
+        <interleave output="32">
+            <part name="epr-10196.28" crc="8688bb59" map="0001"/>
+            <part name="epr-10205.40" crc="74bd93ca" map="0010"/>
+            <part name="epr-10214.54" crc="57527e18" map="0100"/>
+            <part name="epr-10223.68" crc="3850690e" map="1000"/>
+        </interleave>
+        <interleave output="32">
+            <part name="epr-10197.29" crc="009165a6" map="0001"/>
+            <part name="epr-10206.41" crc="954542c5" map="0010"/>
+            <part name="epr-10215.55" crc="69be5a6c" map="0100"/>
+            <part name="epr-10224.69" crc="5cffc346" map="1000"/>
+        </interleave>
+        <interleave output="32">
+            <part name="epr-10198.30" crc="d894992e" map="0001"/>
+            <part name="epr-10207.42" crc="ca61cea4" map="0010"/>
+            <part name="epr-10216.56" crc="d394134d" map="0100"/>
+            <part name="epr-10225.70" crc="0a5d1f2b" map="1000"/>
+        </interleave>
+        <interleave output="32">
+            <part name="epr-10199.31" crc="86376af6" map="0001"/>
+            <part name="epr-10208.43" crc="6830b7fa" map="0010"/>
+            <part name="epr-10217.57" crc="bf2c9b76" map="0100"/>
+            <part name="epr-10226.71" crc="5a452474" map="1000"/>
+        </interleave>
+        <interleave output="32">
+            <part name="epr-10200.32" crc="1e5d4f73" map="0001"/>
+            <part name="epr-10209.44" crc="5c15419e" map="0010"/>
+            <part name="epr-10218.58" crc="db4bdb39" map="0100"/>
+            <part name="epr-10227.72" crc="c7def392" map="1000"/>
+        </interleave>
+        <interleave output="32">
+            <part name="epr-10201.33" crc="1d9d4b9c" map="0001"/>
+            <part name="epr-10210.45" crc="39422931" map="0010"/>
+            <part name="epr-10219.59" crc="e73b9224" map="0100"/>
+            <part name="epr-10228.73" crc="25803978" map="1000"/>
         </interleave>
         <!-- segaic16road - starts at 0x270000 -->
         <!-- Singleton region. The files are merged with themselves. -->
@@ -118,13 +170,13 @@
     <rom index="1">
         <part>00</part>
     </rom>
-    <switches page_id="1" page_name="Switches" base="16" default="ff,f9">
+    <switches page_id="1" page_name="Switches" base="16" default="ff,fd">
         <!-- COINAGE -->
         <dip name="Coin A" bits="0,3" ids="Free Play or 1/1,1/1 2/3,1/1 4/5,1/1 5/6,2/1 4/3,2/1 5/3 6/4,2/3,4/1,3/1,2/1,1/6,1/5,1/4,1/3,1/2,1/1"/>
         <dip name="Coin B" bits="4,7" ids="Free Play or 1/1,1/1 2/3,1/1 4/5,1/1 5/6,2/1 4/3,2/1 5/3 6/4,2/3,4/1,3/1,2/1,1/6,1/5,1/4,1/3,1/2,1/1"/>
         <!-- DSW -->
-        <dip name="Cabinet" bits="8,9" ids="Unused,Mini Up,Up Cockpit,Moving"/>
-        <dip name="Demo Sounds" bits="10" ids="On,Off"/>
+        <dip name="Cabinet" bits="8" ids="Not Moving,Moving"/>
+        <dip name="Demo Sounds" bits="9" ids="On,Off"/>
         <dip name="Time Adj." bits="12,13" ids="Hardest,Hard,Easy,Normal"/>
         <dip name="Difficulty" bits="14,15" ids="Hardest,Hard,Easy,Normal"/>
     </switches>

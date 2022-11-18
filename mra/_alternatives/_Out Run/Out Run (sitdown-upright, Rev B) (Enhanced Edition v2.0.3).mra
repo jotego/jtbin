@@ -21,30 +21,30 @@
 
 <misterromdescription>
     <about author="jotego" webpage="https://patreon.com/jotego" source="https://github.com/jotego" twitter="@topapate"/>
-    <name>Out Run (sitdown/upright, Rev B)</name>
-    <setname>outrun</setname>
+    <name>Out Run (sitdown/upright, Rev B) (Enhanced Edition v2.0.3)</name>
+    <setname>outruneh</setname>
     <rbf>jtoutrun</rbf>
     <mameversion>0243</mameversion>
-    <year>1986</year>
-    <manufacturer>Sega</manufacturer>
+    <year>2020</year>
+    <manufacturer>hack (Chris White)</manufacturer>
     <players>1</players>
     <joystick/>
     <rotation>horizontal</rotation>
     <region>World</region>
     <mraauthor>jotego</mraauthor>
-    <rom index="0" zip="outrun.zip" md5="None">
+    <rom index="0" zip="outruneh.zip|outrun.zip" md5="None">
         <part>
             00 00 00 00 00 00 00 00
             00 00 00 00 00 00 00 00
         </part>
         <!-- maincpu - starts at 0x0 -->
         <interleave output="16">
-            <part name="epr-10382b.118" crc="c4c3fa1a" map="01"/>
-            <part name="epr-10380b.133" crc="1f6cadad" map="10"/>
+            <part name="enhanced_203_epr-10382b.118" crc="ca324a4e" map="01"/>
+            <part name="enhanced_203_epr-10380b.133" crc="db563a0f" map="10"/>
         </interleave>
         <interleave output="16">
-            <part name="epr-10383b.117" crc="10a2014a" map="01"/>
-            <part name="epr-10381b.132" crc="be8c412b" map="10"/>
+            <part name="enhanced_203_epr-10383b.117" crc="cc1f2f75" map="01"/>
+            <part name="enhanced_203_epr-10381b.132" crc="d60be71f" map="10"/>
         </interleave>
         <part repeat="0x20000"> FF</part>
         <!-- subcpu - starts at 0x60000 -->
@@ -71,7 +71,7 @@
         <part repeat="0x8000"> FF</part>
         <part name="opr-10189.70" crc="01366b54"/>
         <part repeat="0x8000"> FF</part>
-        <part name="opr-10188.71" crc="bad30ad9"/>
+        <part name="enhanced_203_opr-10188.71" crc="c2de09b2"/>
         <part repeat="0x8000"> FF</part>
         <!-- gfx1 - starts at 0x130000 -->
         <interleave output="32">
@@ -125,6 +125,7 @@
         <!-- DSW -->
         <dip name="Cabinet" bits="8,9" ids="Unused,Mini Up,Up Cockpit,Moving"/>
         <dip name="Demo Sounds" bits="10" ids="On,Off"/>
+        <dip name="Speed Indicator" bits="11" ids="MPH,km/h"/>
         <dip name="Time Adj." bits="12,13" ids="Hardest,Hard,Easy,Normal"/>
         <dip name="Difficulty" bits="14,15" ids="Hardest,Hard,Easy,Normal"/>
     </switches>
