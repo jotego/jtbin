@@ -1,0 +1,89 @@
+<!--          FPGA arcade hardware by Jotego
+
+              This core is available for hardware compatible with MiST and MiSTer
+              Other FPGA systems may be supported by the time you read this.
+              This work is not mantained by the MiSTer project. Please contact the
+              core author for issues and updates.
+
+              (c) Jose Tejada, 2022. Please support this research
+              Patreon: https://patreon.com/jotego
+
+              The author does not endorse or participate in illegal distribution
+              of copyrighted material. This work can be used with compatible
+              software. This software can be homebrew projects or legally
+              obtained memory dumps of compatible games.
+
+              This file license is GNU GPLv2.
+              You can read the whole license file in
+              https://opensource.org/licenses/gpl-2.0.php
+
+-->
+
+<misterromdescription>
+    <about author="jotego" webpage="https://patreon.com/jotego" source="https://github.com/jotego" twitter="@topapate"/>
+    <name>Dyger (Korea set 1)</name>
+    <setname>dyger</setname>
+    <rbf>jtsarms</rbf>
+    <mameversion>0237</mameversion>
+    <year>1989</year>
+    <manufacturer>Philko</manufacturer>
+    <players>1</players>
+    <joystick>8</joystick>
+    <rotation>vertical (ccw)</rotation>
+    <region>World</region>
+    <mraauthor>jotego</mraauthor>
+    <rom index="0" zip="dyger.zip" md5="None">
+        <!-- maincpu - starts at 0x0 -->
+        <interleave output="16">
+            <part name="d-3.5g" crc="bae9882e" map="12"/>
+        </interleave>
+        <interleave output="16">
+            <part name="d-2.3g" crc="059ac4dc" map="12"/>
+        </interleave>
+        <interleave output="16">
+            <part name="d-1.3e" crc="d8440f66" map="12"/>
+        </interleave>
+        <!-- audiocpu - starts at 0x18000 -->
+        <interleave output="16">
+            <part name="d-4.8a" crc="8a256c09" map="12"/>
+        </interleave>
+        <!-- gfx1 - starts at 0x20000 -->
+        <part name="d-5.8k" crc="c4bc72a5"/>
+        <!-- gfx2 - starts at 0x28000 -->
+        <part name="d-10.1d" crc="9715880d"/>
+        <part name="d-9.3c" crc="628dae72"/>
+        <part name="d-11.3d" crc="23248db1"/>
+        <part repeat="0x10000"> FF</part>
+        <part name="d-6.1a" crc="4ba7a437"/>
+        <part name="d-8.1c" crc="6c0f0e0c"/>
+        <part name="d-7.3a" crc="2c50a229"/>
+        <!-- gfx3 - starts at 0x98000 -->
+        <part name="d-14.1i" crc="99c60b26"/>
+        <part name="d-15.3i" crc="d6475ecc"/>
+        <part name="d-12.1g" crc="e345705f"/>
+        <part name="d-13.3g" crc="faf4be3a"/>
+        <!-- gfx4 - starts at 0xD8000 -->
+        <part name="d-16.9f" crc="0792e8f2"/>
+        <!-- Total 0xE0000 bytes - 896 kBytes -->
+    </rom>
+    <!-- Vertical game -->
+    <rom index="1">
+        <part>01</part>
+    </rom>
+    <switches page_id="1" page_name="Switches" base="16" default="a0,e0,ff">
+        <!-- DSW0 -->
+        <dip name="Unused" bits="7" ids="On,Off"/>
+        <dip name="Allow Continue" bits="6" ids="Yes,No"/>
+        <dip name="Unused" bits="5" ids="On,Off"/>
+        <dip name="Flip Screen" bits="4" ids="On,Off"/>
+        <dip name="Difficulty" bits="3" ids="Hard,-,Easy"/>
+        <dip name="Lives" bits="0,2" ids="8,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,4,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,6,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,2,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,7,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,3,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,5,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,1"/>
+        <!-- DSW1 -->
+        <dip name="Service Mode" bits="15" ids="On,Off"/>
+        <dip name="Unused" bits="14" ids="On,Off"/>
+        <dip name="Bonus Life" bits="12,13" ids="Every 20k0,Every 150k,20k0 only,150k only"/>
+        <dip name="Demo Sounds" bits="11" ids="Off,-,On"/>
+        <dip name="Coinage" bits="8,10" ids="4/1,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,1/4,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,2/1,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,1/2,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,3/1,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,1/3,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,1/1"/>
+    </switches>
+    <buttons names="Fire-Left,Fire-Right,Power,Start,Coin,Core credits" default="Y,X,B,Start,Select,-" count="3"/>
+</misterromdescription>

@@ -65,14 +65,9 @@ jtsz_20220422	ea8ce9f
 jttora_20220422	ea8ce9f
 jttrojan_20220422	ea8ce9f
 jtvulgus_20220422	ea8ce9f
-jtmx5k_20220422	b2cb602
 jtdd2_20220422	487818f
 jtdd_20220422	487818f
 jtcomsc_20220422	65d6439
-jtcontra_20220422	65d6439
-jtflane_20220422	65d6439
-jtlabrun_20220422	65d6439
-jtmx5k_20220422	65d6439
 jtdd2_20220422	487818f
 jtdd_20220422	487818f
 jtninja_20220429	a4ef5ad
@@ -180,10 +175,6 @@ jtdd2_20220819	952307d
 jtdd_20220819	952307d
 jtkunio_20220819	952307d
 jtcomsc_20220819	4aaec0c
-jtcontra_20220819	4aaec0c
-jtflane_20220819	4aaec0c
-jtlabrun_20220819	4aaec0c
-jtmx5k_20220819	4aaec0c
 jtbubl_20220819	921baba
 jtcop_20220819	900ecff
 jtmidres_20220819	900ecff
@@ -192,3 +183,7 @@ jtslyspy_20220819	900ecff
 jtoutrun_20220930	1726bcd
 jts16_20221007	8728a4e
 jtroadf                  94d7c04
+jtflane                  992b15a
+jtlabrun                 992b15a
+jtmx5k                   992b15a
+jtcontra                 992b15a
