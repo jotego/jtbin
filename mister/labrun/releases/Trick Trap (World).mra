@@ -23,10 +23,6 @@
     <about author="jotego" webpage="https://patreon.com/jotego" source="https://github.com/jotego" twitter="@topapate"/>
     <name>Trick Trap (World?)</name>
     <setname>tricktrp</setname>
-    <year>1987</year>
-	<manufacturer>Konami</manufacturer>
-	<category>Shooter</category>
-    <rotation>vertical (cw)</rotation>
     <rbf>jtlabrun</rbf>
     <rom index="0" zip="tricktrp.zip" type="merged" md5="None">
         <!-- maincpu - starts at 0x0 -->
@@ -72,5 +68,5 @@
         <dip name="Service Mode" bits="18" ids="On,Off"/>
         <dip name="Allow Continue" bits="19" ids="5 Times,3 Times"/>
     </switches>
-    <buttons names="Attack Button,Select Button,Start,Coin,Pause" default="Y,X,R,L,Start"/>
+    <buttons names="Fire,Jump,Start,Coin,Pause" default="Y,X,R,L,Start"/>
 </misterromdescription>
