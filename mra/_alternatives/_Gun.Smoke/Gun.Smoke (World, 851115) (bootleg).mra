@@ -7,7 +7,7 @@
 	<manufacturer>bootleg</manufacturer>
 	<category>Adventure / Western</category>
 	<rotation>vertical (ccw)</rotation>
-	<rbf>jtgunsmoke</rbf>
+	<rbf>jtgunsmk</rbf>
 	<rom index="0" zip="gunsmokeb.zip" md5="c2dbd27e0a05e6575d1ff83831051a73" type="nonmerged">
 		<part name="3.ic85"/>
 		<part name="4.ic86"/>

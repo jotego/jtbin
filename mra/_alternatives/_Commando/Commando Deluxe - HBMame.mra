@@ -23,7 +23,7 @@
     <about author="jotego" webpage="https://patreon.com/jotego" source="https://github.com/jotego" twitter="@topapate"/>
     <name>Commando Deluxe - HBMAME</name>
     <setname>comdelux</setname>
-    <rbf alt="jtcom">jtcommando</rbf>
+    <rbf>jtcommnd</rbf>
     <year>2002</year>
     <manufacturer>Capcom (Hack)</manufacturer>
     <players>2</players>
