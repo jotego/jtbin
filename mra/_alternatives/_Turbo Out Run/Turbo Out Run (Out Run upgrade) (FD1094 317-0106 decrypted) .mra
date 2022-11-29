@@ -1,0 +1,126 @@
+<!--          FPGA arcade hardware by Jotego
+
+              This core is available for hardware compatible with MiST and MiSTer
+              Other FPGA systems may be supported by the time you read this.
+              This work is not mantained by the MiSTer project. Please contact the
+              core author for issues and updates.
+
+              (c) Jose Tejada, 2022. Please support this research
+              Patreon: https://patreon.com/jotego
+
+              The author does not endorse or participate in illegal distribution
+              of copyrighted material. This work can be used with compatible
+              software. This software can be homebrew projects or legally
+              obtained memory dumps of compatible games.
+
+              This file license is GNU GPLv2.
+              You can read the whole license file in
+              https://opensource.org/licenses/gpl-2.0.php
+
+-->
+
+<misterromdescription>
+    <about author="jotego" webpage="https://patreon.com/jotego" source="https://github.com/jotego" twitter="@topapate"/>
+    <name>Turbo Out Run (Out Run upgrade) (FD1094 317-0106 decrypted)</name>
+    <setname>toutrun2d</setname>
+    <rbf>jtoutrun</rbf>
+    <mameversion>0243</mameversion>
+    <year>1989</year>
+    <manufacturer>Sega</manufacturer>
+    <players>1</players>
+    <joystick/>
+    <rotation>horizontal</rotation>
+    <region>World</region>
+    <mraauthor>jotego</mraauthor>
+    <rom index="0" zip="toutrun.zip|toutrun2d.zip" md5="None">
+        <part>
+            04 02 00 00 00 00 00 00
+            00 00 00 00 00 00 00 00
+        </part>
+        <!-- maincpu - starts at 0x0 -->
+        <interleave output="16">
+            <part name="bootleg_epr-12396.118" crc="84484188" map="01"/>
+            <part name="bootleg_epr-12397.133" crc="815ec9af" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="bootleg_epr-12398.117" crc="6da9f13b" map="01"/>
+            <part name="bootleg_epr-12399.132" crc="27ef9e5d" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="epr-12292.116" crc="51d98af0" map="01"/>
+            <part name="epr-12293.131" crc="f4321eea" map="10"/>
+        </interleave>
+        <!-- subcpu - starts at 0x60000 -->
+        <interleave output="16">
+            <part name="opr-12294.58" crc="27cdcfd3" map="01"/>
+            <part name="opr-12295.76" crc="d43a3a84" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="opr-12296.57" crc="0a513671" map="01"/>
+            <part name="opr-12297.75" crc="1d9b5677" map="10"/>
+        </interleave>
+        <part repeat="0x20000"> FF</part>
+        <!-- soundcpu - starts at 0xC0000 -->
+        <part name="epr-12300.88" crc="e8ff7011"/>
+        <!-- pcm - starts at 0xD0000 -->
+        <part name="opr-12301.66" crc="6e78ad15"/>
+        <part name="opr-12302.67" crc="e72928af"/>
+        <part name="opr-12303.68" crc="8384205c"/>
+        <part name="opr-12304.69" crc="e1762ac3"/>
+        <part name="opr-12305.70" crc="ba9ce677"/>
+        <part name="opr-12306.71" crc="e49249fd"/>
+        <!-- gfx1 - starts at 0x130000 -->
+        <interleave output="32">
+            <part name="opr-12323.102" crc="4de43a6f" map="0001"/>
+            <part name="opr-12324.103" crc="24607a55" map="0010"/>
+            <part name="opr-12325.104" crc="1405137a" map="0100"/>
+            <part name="opr-12325.104" crc="1405137a" map="1000"/>
+        </interleave>
+        <!-- sprites - starts at 0x170000 -->
+        <interleave output="32">
+            <part name="mpr-12336.9" crc="dda465c7" map="0001"/>
+            <part name="mpr-12337.10" crc="828233d1" map="0010"/>
+            <part name="mpr-12338.11" crc="46b4b5f4" map="0100"/>
+            <part name="mpr-12339.12" crc="0d7e3bab" map="1000"/>
+        </interleave>
+        <interleave output="32">
+            <part name="mpr-12364.13" crc="a4b83e65" map="0001"/>
+            <part name="mpr-12365.14" crc="4a80b2a9" map="0010"/>
+            <part name="mpr-12366.15" crc="385cb3ab" map="0100"/>
+            <part name="mpr-12367.16" crc="4930254a" map="1000"/>
+        </interleave>
+        <!-- segaic16road - starts at 0x270000 -->
+        <!-- Singleton region. The files are merged with themselves. -->
+        <interleave output="16">
+            <part name="epr-12299.47" crc="fc9bc41b" map="01" length="0x4000"/>
+            <part name="epr-12299.47" crc="fc9bc41b" map="10" length="0x4000" offset="0x4000"/>
+        </interleave>
+        <interleave output="16">
+            <part name="epr-12298.11" crc="fc9bc41b" map="10" length="0x4000"/>
+            <part name="epr-12298.11" crc="fc9bc41b" map="01" length="0x4000" offset="0x4000"/>
+        </interleave>
+        <part repeat="0x18000"> FF</part>
+        <!-- maincpu:key - starts at 0x298000 -->
+        <part name="317-0118.key" crc="083d7d56"/>
+        <!-- Total 0x29A000 bytes - 2664 kBytes -->
+    </rom>
+    <rom index="17" zip="jtbeta.zip" md5="None">
+        <part name="beta.bin"/>
+    </rom>
+    <nvram index="2" size="12288"/>
+    <rom index="1">
+        <part>00</part>
+    </rom>
+    <switches page_id="1" page_name="Switches" base="16" default="ff,d9">
+        <!-- COINAGE -->
+        <dip name="Coin A" bits="0,3" ids="Free Play or 1/1,1/1 2/3,1/1 4/5,1/1 5/6,2/1 4/3,2/1 5/3 6/4,2/3,4/1,3/1,2/1,1/6,1/5,1/4,1/3,1/2,1/1"/>
+        <dip name="Coin B" bits="4,7" ids="Free Play or 1/1,1/1 2/3,1/1 4/5,1/1 5/6,2/1 4/3,2/1 5/3 6/4,2/3,4/1,3/1,2/1,1/6,1/5,1/4,1/3,1/2,1/1"/>
+        <!-- DSW -->
+        <dip name="Cabinet" bits="8,9" ids="Cockpit,Mini Up,Cockpit Conversion,Moving"/>
+        <dip name="Demo Sounds" bits="10" ids="On,Off"/>
+        <dip name="Turbo" bits="11" ids="Use Start Button,Use Turbo Shifter"/>
+        <dip name="Credits" bits="12,13" ids="2 to Start/2 to Continue,1 to Start/1 to Continue,3 to Start/2 to Continue,2 to Start/1 to Continue"/>
+        <dip name="Difficulty" bits="14,15" ids="Hardest,Hard,Easy,Normal"/>
+    </switches>
+    <buttons names="Accelerate,Brake,Gear (Low / High),Nitro,Start,Coin,Core credits" default="Y,X,B,A,Start,Select,-" count="4"/>
+</misterromdescription>
