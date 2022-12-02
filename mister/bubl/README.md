@@ -14,10 +14,20 @@ In chronological order:
 
  1. Tokio (Scrambled Formation)
  2. Bubble Bobble
+ 3. Extermination
+ 4. Insector X
+ 5. The New Zealand Story
 
 Some of the MRA files provided may not work as there is some variation in Bubble Bobble bootleg hardware which is not implemented. Official Tokio MRA file will not work because the MCU hardware is not yet implemented in the core. Only the bootleg MRA for Tokio works.
 
 Note for developers: Tokio hangs up after a life is lost if the RBF is compiled without sound.
+
+## PLD Data
+
+There are dumps of the PLD logic in
+
+1. [Insector X](https://wiki.pldarchive.co.uk/index.php?title=Insector_X)
+2. [The New Zealand Story](https://wiki.pldarchive.co.uk/index.php?title=The_New_Zealand_Story)
 
 ## Test Screen
 
@@ -80,32 +90,7 @@ Use `git clone --recurse-submodules` in order to get all submodules when you clo
 
 # Compilation
 
-I use linux as my development system. This means that I use many bash scripts, environment variables and symbolic links. I recommend using linux to compile the cores.
-
-## Requisites
-
-* Linux
-* Quartus 13 for MiST/SiDi compilation
-* Quartus 17 for MiSTer compilation
-* Add the path to quartus_sh to your PATH environment variable if JTCORE cannot automatically find it
-* PNG library for Python
-
-### Compilation Steps
-Go to the root directory of the repository and execute: `source set_prj.sh`
-
-That will create an alias called jtcore to directory modules/jtframe/bin/jtcore. This is a command line utility that will compile the cores. Like
-
-`jtcore bubl`
-
-will compile Ghosts'n Goblins for MiST.
-
-`jtcore bubl -mr`
-
-will compile it for MiSTer. And -sidi, will compile it for MiST. Support for Xilinx platforms is done by Neurorulez and is done through the GUI. Just check the files inside the cores folder for each game.
-
-Pnce compilation is triggered with jtcore, Quartus qpf and qsf files are created. This files are not part of the repository as they are considered output files, not input.
-
-There is another script called update_cores.sh that will run jtcore over all supported cores in parallel.
+Please check [the compilation guide in JTFRAME](modules/jframe/doc/compilation.md)
 
 # Credits
 
