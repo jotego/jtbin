@@ -1,0 +1,48 @@
+Place the following files in this folder:
+
+7toitsu.rom
+bbros.rom
+block.rom
+blockbl.rom
+blockj.rom
+blockr1.rom
+blockr2.rom
+cworld.rom
+dokaben.rom
+dokaben2.rom
+hatena.rom
+marukin.rom
+mgakuen.rom
+mgakuen2.rom
+pang.rom
+pangb.rom
+pangb2.rom
+pangbold.rom
+pangbp.rom
+pkladies.rom
+pkladsbl.rom
+pkladbl2.rom
+pkladesl.rom
+pkladsla.rom
+pompingw.rom
+qsangoku.rom
+qtono1.rom
+sbbros.rom
+spang.rom
+spangj.rom
+
+These files are generated using the mra tool in:
+https://github.com/sebdel/mra-tools-c/tree/master/release
+
+Boogermann's ORCA tool can also be used to generate the files:
+https://github.com/opengateware/tools-orca
+
+Check out the short tutorial in:
+https://github.com/jotego/jtbin/wiki/Analogue-Pocket-Cores
+
+There is also a video by Pixel Cherry Ninja:
+https://www.youtube.com/watch?v=PdcOtLS2KWE&t=98s
+
+DISCLAIMER: This PocketFPGA core is licensed to be used only
+with legally owned dumps of videogame data. It is also licensed
+to be used with freeware (homebrew) compatible with the platform.
