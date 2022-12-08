@@ -1,17 +1,17 @@
-<!--          FPGA compatible core of arcade hardware by Jotego
+<!--          FPGA arcade hardware by Jotego
 
               This core is available for hardware compatible with MiST and MiSTer
               Other FPGA systems may be supported by the time you read this.
               This work is not mantained by the MiSTer project. Please contact the
               core author for issues and updates.
 
-              (c) Jose Tejada, 2020. Please support the author
+              (c) Jose Tejada, 2022. Please support this research
               Patreon: https://patreon.com/jotego
-              Paypal:  https://paypal.me/topapate
 
               The author does not endorse or participate in illegal distribution
-              of copyrighted material. This work can be used with legally
-              obtained ROM dumps or with compatible homebrew software
+              of copyrighted material. This work can be used with compatible
+              software. This software can be homebrew projects or legally
+              obtained memory dumps of compatible games.
 
               This file license is GNU GPLv2.
               You can read the whole license file in
@@ -22,13 +22,17 @@
 <misterromdescription>
     <about author="jotego" webpage="https://patreon.com/jotego" source="https://github.com/jotego" twitter="@topapate"/>
     <name>Bubble Bobble (US, Ver 5.1)</name>
-	<mameversion>0217</mameversion>
     <setname>bublboblr</setname>
-    <year>1986</year>
-    <manufacturer>Taito</manufacturer>
-    <category>Platform</category>
     <rbf>jtbubl</rbf>
-    <rom index="0" zip="bublboblr.zip|bublbobl.zip" type="merged" md5="None">
+    <mameversion>0243</mameversion>
+    <year>1986</year>
+    <manufacturer>Taito America Corporation (Romstar license)</manufacturer>
+    <players>2</players>
+    <joystick>2</joystick>
+    <rotation>horizontal</rotation>
+    <region>World</region>
+    <mraauthor>jotego</mraauthor>
+    <rom index="0" zip="bublboblr.zip|bublbobl.zip" md5="None">
         <!-- maincpu - starts at 0x0 -->
         <interleave output="16">
             <part name="a78-25.51" crc="2d901c9d" map="12"/>
@@ -36,7 +40,7 @@
         <interleave output="16">
             <part name="a78-24.52" crc="b7afedc4" map="12"/>
         </interleave>
-        <part repeat="0x10000">FF</part>
+        <part repeat="0x10000"> FF</part>
         <!-- subcpu - starts at 0x28000 -->
         <interleave output="16">
             <part name="a78-08.37" crc="ae11a07b" map="12"/>
@@ -49,7 +53,7 @@
         <interleave output="16">
             <part name="a78-01.17" crc="b1bfb53d" map="12"/>
         </interleave>
-        <part repeat="0x7000">FF</part>
+        <part repeat="0x7000"> FF</part>
         <!-- gfx1 - starts at 0x40000 -->
         <interleave output="16">
             <part name="a78-09.12" crc="20358c22" map="01"/>
@@ -75,18 +79,18 @@
             <part name="a78-14.17" crc="7b5369a8" map="01"/>
             <part name="a78-20.35" crc="9ef863ad" map="10"/>
         </interleave>
-        <part repeat="0x20000">FF</part>
+        <part repeat="0x20000"> FF</part>
         <!-- proms - starts at 0xC0000 -->
         <part name="a71-25.41" crc="2d0f8545"/>
+        <!-- Skipping region  because there is no dump known -->
         <!-- Total 0xC0100 bytes - 768 kBytes -->
     </rom>
     <rom index="1">
         <part>00</part>
     </rom>
-    <switches default="FE,FF" base="16">
+    <switches page_id="1" page_name="Switches" base="16" default="fc,ff">
         <!-- DSW0 -->
         <dip name="Flip Screen" bits="1" ids="On,Off"/>
-        <dip name="Mode" bits="0" ids="Test /Pause,Test,Game, English,Game, Japanese"/>
         <dip name="Demo Sounds" bits="3" ids="Off,On"/>
         <dip name="Coin A" bits="4,5" ids="2/3,2/1,1/2,1/1"/>
         <dip name="Coin B" bits="6,7" ids="2/3,2/1,1/2,1/1"/>
@@ -94,8 +98,9 @@
         <dip name="Difficulty" bits="8,9" ids="Very Hard,Hard,Easy,Normal"/>
         <dip name="Bonus Life" bits="10,11" ids="50K 250K 500K,40K 200K 500K,20K 80K 300K,30K 100K 400K"/>
         <dip name="Lives" bits="12,13" ids="2,1,5,3"/>
-        <dip name="Unknown" bits="14" ids="On,Off"/>
-        <dip name="ROM Type" bits="15" ids="IC52=256kb, IC53=256kb,IC52=512kb, IC53=none"/>
+        <dip name="ROM Type" bits="15" ids="IC52=256kb IC53=256kb,IC52=512kb IC53=none"/>
+        <dip name="Language" ids="English,Japanese" bits="0"/>
+        <dip name="Operation" ids="Test,Game" bits="2"/>
     </switches>
-    <buttons names="Shoot,Jump,Start,Coin,Pause" default="Y,X,R,L,Start"/>
+    <buttons names="Shoot,Jump,Start,Coin,Core credits" default="Y,X,Start,Select,-" count="2"/>
 </misterromdescription>
