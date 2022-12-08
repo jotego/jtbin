@@ -50,6 +50,7 @@
             <part name="c22" crc="ed9271a0" map="10"/>
         </interleave>
         <part repeat="0x4000"> FF</part>
+        <!-- Blank ends at 0x1C000 -->
         <interleave output="16">
             <part name="c24" crc="5fb230c0" map="01"/>
             <part name="c20" crc="183f4324" map="10"/>

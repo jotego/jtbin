@@ -29,7 +29,7 @@
     <manufacturer>Konami</manufacturer>
     <players>2</players>
     <joystick>4</joystick>
-    <rotation>vertical</rotation>
+    <rotation>vertical (ccw)</rotation>
     <region>World</region>
     <mraauthor>jotego</mraauthor>
     <rom index="0" zip="rocnrope.zip" md5="None">
@@ -62,9 +62,6 @@
         <part name="a17_prom.bin" crc="22ad2c3e"/>
         <!-- Total 0x18220 bytes - 96 kBytes -->
         <patch offset="0x103D">BA</patch>
-    </rom>
-    <rom index="17" zip="jtbeta.zip" md5="None">
-        <part name="beta.bin"/>
     </rom>
     <!-- Vertical game -->
     <rom index="1">
