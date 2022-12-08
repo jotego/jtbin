@@ -66,9 +66,6 @@
         <part name="ta18-15.bin" crc="a5d61d01"/>
         <!-- Total 0xC8000 bytes - 800 kBytes -->
     </rom>
-    <rom index="17" zip="jtbeta.zip" md5="None">
-        <part name="beta.bin"/>
-    </rom>
     <rom index="1">
         <part>00</part>
     </rom>
