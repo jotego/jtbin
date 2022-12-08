@@ -80,9 +80,6 @@
         <!-- Total 0x60300 bytes - 384 kBytes -->
         <patch offset="0x0">69 6e B4</patch>
     </rom>
-    <rom index="17" zip="jtbeta.zip" md5="None">
-        <part name="beta.bin"/>
-    </rom>
     <!-- Vertical game -->
     <rom index="1">
         <part>01</part>
