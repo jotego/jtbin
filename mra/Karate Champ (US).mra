@@ -29,7 +29,7 @@
     <manufacturer>Data East USA</manufacturer>
     <players>2</players>
     <joystick>4</joystick>
-    <rotation>vertical</rotation>
+    <rotation>vertical (cw)</rotation>
     <region>World</region>
     <mraauthor>jotego</mraauthor>
     <rom index="0" zip="kchamp.zip" md5="None">
@@ -77,9 +77,6 @@
         <part name="br26" crc="3ddbb6c4"/>
         <part name="br25" crc="ba4a5651"/>
         <!-- Total 0x60300 bytes - 384 kBytes -->
-    </rom>
-    <rom index="17" zip="jtbeta.zip" md5="None">
-        <part name="beta.bin"/>
     </rom>
     <!-- Vertical game -->
     <rom index="1">
