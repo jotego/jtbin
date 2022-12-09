@@ -1,0 +1,68 @@
+<!--          FPGA arcade hardware by Jotego
+
+              This core is available for hardware compatible with MiST and MiSTer
+              Other FPGA systems may be supported by the time you read this.
+              This work is not mantained by the MiSTer project. Please contact the
+              core author for issues and updates.
+
+              (c) Jose Tejada, 2022. Please support this research
+              Patreon: https://patreon.com/jotego
+
+              The author does not endorse or participate in illegal distribution
+              of copyrighted material. This work can be used with compatible
+              software. This software can be homebrew projects or legally
+              obtained memory dumps of compatible games.
+
+              This file license is GNU GPLv2.
+              You can read the whole license file in
+              https://opensource.org/licenses/gpl-2.0.php
+
+-->
+
+<misterromdescription>
+    <about author="jotego" webpage="https://patreon.com/jotego" source="https://github.com/jotego" twitter="@topapate"/>
+    <name>Insector X (Japan)</name>
+    <setname>insectxj</setname>
+    <rbf>jtkiwi</rbf>
+    <mameversion>0243</mameversion>
+    <year>1989</year>
+    <manufacturer>Taito Corporation</manufacturer>
+    <players>2</players>
+    <joystick>8</joystick>
+    <rotation>horizontal</rotation>
+    <region>World</region>
+    <mraauthor>jotego</mraauthor>
+    <rom index="0" zip="insectxj.zip|insectx.zip" md5="None">
+        <!-- maincpu - starts at 0x0 -->
+        <part name="b97__03.u32" crc="18eef387"/>
+        <!-- sub - starts at 0x20000 -->
+        <part name="b97__04.u38" crc="dc4549e5"/>
+        <part repeat="0x20000"> FF</part>
+        <!-- gfx1 - starts at 0x50000 -->
+        <interleave output="16">
+            <part name="b97__01.u1" crc="d00294b1" map="01"/>
+            <part name="b97__02.u2" crc="db5a7434" map="10"/>
+        </interleave>
+        <!-- Total 0x150000 bytes - 1344 kBytes -->
+    </rom>
+    <rom index="17" zip="jtbeta.zip" md5="None">
+        <part name="beta.bin"/>
+    </rom>
+    <rom index="1">
+        <part>00</part>
+    </rom>
+    <switches page_id="1" page_name="Switches" base="16" default="fe,ff">
+        <!-- DSWA -->
+        <dip name="Cabinet" bits="0" ids="Upright,Cocktail"/>
+        <dip name="Flip Screen" bits="1" ids="On,Off"/>
+        <dip name="Service Mode" bits="2" ids="On,Off"/>
+        <dip name="Demo Sounds" bits="3" ids="Off,On"/>
+        <dip name="Coin A" bits="4,5" ids="2/3,2/1,1/2,1/1"/>
+        <dip name="Coin B" bits="6,7" ids="2/3,2/1,1/2,1/1"/>
+        <!-- DSWB -->
+        <dip name="Difficulty" bits="8,9" ids="Hardest,Easy,Hard,Medium"/>
+        <dip name="Bonus Life" bits="10,11" ids="150k 650k 500k+,100k 500k 400k+,40k 240k 200k+,60k 360k 300k+"/>
+        <dip name="Lives" bits="12,13" ids="1,2,4,3"/>
+    </switches>
+    <buttons names="Fire,Warp,-,Start,Coin,Core credits" default="Y,X,B,Start,Select,-" count="2"/>
+</misterromdescription>
