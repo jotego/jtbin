@@ -10,7 +10,7 @@ for i in `git tag`; do
     if [ ! -e pocket/zip/$ZIPNAME ]; then
         echo "Creating $ZIPNAME"
         cd pocket/raw
-        zip -jr $ZIPNAME *
+        zip -r $ZIPNAME *
         mv $ZIPNAME ../zip
         cd ../zip
         git config --global user.email "miki.saito@jotego.es"
