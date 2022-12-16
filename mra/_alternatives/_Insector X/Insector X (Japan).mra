@@ -33,6 +33,8 @@
     <region>World</region>
     <mraauthor>jotego</mraauthor>
     <rom index="0" zip="insectxj.zip|insectx.zip" md5="None">
+        <part>
+            00 00 </part>
         <!-- maincpu - starts at 0x0 -->
         <part name="b97__03.u32" crc="18eef387"/>
         <!-- sub - starts at 0x20000 -->

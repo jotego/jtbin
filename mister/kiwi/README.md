@@ -24,6 +24,20 @@ Some of the MRA files provided may not work as there is some variation in Bubble
 
 Note for developers: Tokio hangs up after a life is lost if the RBF is compiled without sound.
 
+## Documentation
+
+The cores have been developed by combining information in the MAME drivers with PLD dumps from the PLD archive and with full schematic extraction from the PCBs.
+
+## Schematics
+
+Schematics have been extracted from PCB and are available in the several sch folders. Schematic are drawn using KiCAD 5.
+
+PCB                    |  sch location          | Author
+-----------------------|------------------------|----------
+Extermination          | cores/exterm/sch       | JOTEGO (E. Triana)
+Insector X             | cores/kiwi/sch/insectx | Skutis
+The New Zealand Story  | cores/kiwi/sch/tnzs    | Skutis
+
 ## PLD Data
 
 There are dumps of the PLD logic in
