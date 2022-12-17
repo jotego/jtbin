@@ -20,19 +20,11 @@ jobs:
         CORES=$(tree -J -d -L 1 | jq -c '.[0].contents | map(.name)')
         echo $CORES
         echo "cores=${CORES}" >> $GITHUB_OUTPUT
-  my_echo:
-    runs-on: ubuntu-latest
-    needs:
-      - list_cores
-    steps:
-      - name: Echo previous outputs
-        run: echo "${{ fromJSON(needs.list_cores.outputs.cores) }}"
 
 
   zip_cores:
     runs-on: ubuntu-latest
     needs:
-      - my_echo
       - list_cores
     strategy:
       matrix:
@@ -46,8 +38,6 @@ jobs:
           prefix="jotego."
           CORE=${string#"$prefix"}
           echo "shortname=${CORE}" >> $GITHUB_OUTPUT
-      - name: echo core name
-        run: echo ${{ steps.core_name.outputs.* }}
       - id: files_and_folders
         run: |
           shortname=${{ steps.core_name.outputs.shortname }}
