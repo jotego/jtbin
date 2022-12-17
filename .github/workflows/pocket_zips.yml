@@ -1,0 +1,140 @@
+name: Pocket ZIP files
+
+on:
+  push:
+    branches:
+      - master
+    paths:
+      - pocket/raw
+
+jobs:
+  list_cores:
+    runs-on: ubuntu-latest
+    outputs:
+      cores: ${{ steps.generate-matrix.outputs.cores }}
+    steps:
+    - uses: actions/checkout@v2
+    - id: generate-matrix
+      run: |
+        cd pocket/raw/Cores
+        CORES=$(tree -J -d -L 1 | jq -c '.[0].contents | map(.name)')
+        echo $CORES
+        echo "cores=${CORES}" >> $GITHUB_OUTPUT
+  my_echo:
+    runs-on: ubuntu-latest
+    needs:
+      - list_cores
+    steps:
+      - name: Echo previous outputs
+        run: echo "${{ fromJSON(needs.list_cores.outputs.cores) }}"
+
+
+  zip_cores:
+    runs-on: ubuntu-latest
+    needs:
+      - my_echo
+      - list_cores
+    strategy:
+      matrix:
+        core: ${{ fromJSON(needs.list_cores.outputs.cores) }}
+    steps:
+      - uses: actions/checkout@v2
+      - id: core_name
+        run: |
+          string=${{ matrix.core }}
+          echo "longname=${{ matrix.core }}" >> $GITHUB_OUTPUT
+          prefix="jotego."
+          CORE=${string#"$prefix"}
+          echo "shortname=${CORE}" >> $GITHUB_OUTPUT
+      - name: echo core name
+        run: echo ${{ steps.core_name.outputs.* }}
+      - id: files_and_folders
+        run: |
+          shortname=${{ steps.core_name.outputs.shortname }}
+          longname=${{ steps.core_name.outputs.longname }}
+
+          echo "${shortname}.txt" > file_list.txt
+          echo "Cores/${longname}" >> file_list.txt
+          echo "Presets/${longname}" >> file_list.txt
+          echo "Assets/${shortname}" >> file_list.txt
+          echo "Platforms/${shortname}.json" >> file_list.txt
+          echo "Platforms/_images/${shortname}.bin" >> file_list.txt
+      - name: echo files
+        run: cat file_list.txt
+      - name: get version
+        id: get_version
+        working-directory: ./pocket/raw
+        run: |
+          # Read the file "file_list.txt" and store the paths in an array
+          paths=()
+          while IFS= read -r line; do
+            paths+=("$line")
+          done < ../../file_list.txt
+
+          # Iterate through the paths and find the most recent git hash for each path
+          most_recent_hash=""
+          most_recent_timestamp=0
+          for path in "${paths[@]}"; do
+            # Check if the path is a directory
+            if [ -d "$path" ]; then
+              # Navigate to the directory
+              cd "$path"
+
+              # Check if the directory is a Git repository
+              if git rev-parse --git-dir > /dev/null 2>&1; then
+                # Get the most recent commit hash and timestamp
+                hash=$(git rev-parse HEAD)
+                timestamp=$(git show -s --format=%ct HEAD)
+
+                # Update the most recent hash and timestamp if necessary
+                if [ "$timestamp" -gt "$most_recent_timestamp" ]; then
+                  most_recent_hash="$hash"
+                  most_recent_timestamp="$timestamp"
+                fi
+              fi
+
+              # Navigate back to the original directory
+              cd - > /dev/null
+            fi
+          done
+
+          # Print the most recent git hash
+          echo "version=$most_recent_hash" >> $GITHUB_OUTPUT
+      - name: change version
+        working-directory: pocket/raw/Cores/${{ steps.core_name.outputs.longname }}
+        run: |
+          version=${{ steps.get_version.outputs.version }}
+          short_version=${version:0:7}
+          sed -i "s/noversion/$short_version/g" ./core.json
+      - name: make zip
+        working-directory: ./pocket/raw
+        run: |
+          zip -r ../${{ steps.core_name.outputs.longname }}.zip $(cat ../../file_list.txt)
+      - name: validate zip
+        run: npx openfpga-validator check ./pocket/${{ steps.core_name.outputs.longname }}.zip
+      - uses: actions/upload-artifact@v3
+        with:
+          name: built_zips
+          path: ./pocket/${{ steps.core_name.outputs.longname }}.zip
+
+
+  commit_zips:
+    runs-on: ubuntu-latest
+    if: ${{ always() }}
+    needs:
+      - zip_cores
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/download-artifact@v3
+        with:
+          name: built_zips
+          path: pocket/zips
+      - run: ls pocket/zips
+      - name: commit zips
+        working_directory: pocket/zips
+        run: |
+          git config --global user.email "miki.saito@jotego.es"
+          git config --global user.name "The CI/CD Bot"
+          git add *
+          git commit -m "BOT: adding Pocket release files"
+          git push origin master
