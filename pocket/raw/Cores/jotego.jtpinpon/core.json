@@ -7,7 +7,7 @@
 			],
 			"shortname": "jtpinpon",
 			"description": "Arcade hardware",
-			"author": "JOTEGO",
+			"author": "jotego",
 			"url": "https://patreon.com/jotego",
 			"version": "noversion",
 			"date_release": "2022-12-02"
@@ -29,7 +29,7 @@
 			{
 				"name": "jtpinpon",
 				"id": 0,
-				"filename": "JTPINPON.rbf_r"
+				"filename": "jtpinpon.rbf_r"
 			}
 		]
 	}

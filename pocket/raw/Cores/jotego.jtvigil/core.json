@@ -7,7 +7,7 @@
 			],
 			"shortname": "jtvigil",
 			"description": "Arcade hardware",
-			"author": "JOTEGO",
+			"author": "jotego",
 			"url": "https://patreon.com/jotego",
 			"version": "noversion",
 			"date_release": "2022-12-02"
@@ -29,7 +29,7 @@
 			{
 				"name": "jtvigil",
 				"id": 0,
-				"filename": "JTVIGIL.rbf_r"
+				"filename": "jtvigil.rbf_r"
 			}
 		]
 	}
