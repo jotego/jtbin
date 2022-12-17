@@ -19,6 +19,7 @@ In chronological order:
  3. Extermination
  4. Insector X
  5. The New Zealand Story
+ 6. Kageki
 
 Some of the MRA files provided may not work as there is some variation in Bubble Bobble bootleg hardware which is not implemented. Official Tokio MRA file will not work because the MCU hardware is not yet implemented in the core. Only the bootleg MRA for Tokio works.
 
