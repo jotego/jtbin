@@ -1,4 +1,4 @@
-name: Pocket ZIP files
+name: Pocket per core ZIP files
 
 on:
   push:
