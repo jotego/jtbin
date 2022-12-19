@@ -121,7 +121,7 @@ jobs:
           path: pocket/zips
       - run: ls pocket/zips
       - name: commit zips
-        working_directory: pocket/zips
+        working-directory: pocket/zips
         run: |
           git config --global user.email "miki.saito@jotego.es"
           git config --global user.name "The CI/CD Bot"
