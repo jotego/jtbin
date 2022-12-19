@@ -5,7 +5,7 @@ on:
     branches:
       - master
     paths:
-      - pocket/raw
+      - pocket/raw/**
 
 jobs:
   list_cores:
