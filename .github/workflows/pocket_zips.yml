@@ -101,7 +101,7 @@ jobs:
         run: |
           zip -r ../${{ steps.core_name.outputs.longname }}.zip $(cat ../../file_list.txt)
       - name: validate zip
-        run: npx openfpga-validator check ./pocket/${{ steps.core_name.outputs.longname }}.zip
+        run: npx openfpga-validator@latest check ./pocket/${{ steps.core_name.outputs.longname }}.zip
       - uses: actions/upload-artifact@v3
         with:
           name: built_zips
