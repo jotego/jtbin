@@ -27,6 +27,7 @@ jobs:
     needs:
       - list_cores
     strategy:
+      fail-fast: false
       matrix:
         core: ${{ fromJSON(needs.list_cores.outputs.cores) }}
     steps:
