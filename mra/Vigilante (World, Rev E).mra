@@ -81,7 +81,7 @@
         <dip name="Demo Sounds" bits="11" ids="Off,On"/>
         <dip name="Allow Continue" bits="12" ids="No,Yes"/>
         <dip name="Stop Mode (Cheat)" bits="13" ids="On,Off"/>
-        <dip name="Invulnerability (Cheat)" bits="14" ids="On,Off"/>
+        <dip name="God Mode (Cheat)" bits="14" ids="On,Off"/>
     </switches>
     <buttons names="Punch, Kick ,Start,Coin,Core credits" default="Y,X,Start,Select,-" count="2"/>
 </misterromdescription>
