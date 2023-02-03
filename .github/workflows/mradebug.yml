@@ -1,0 +1,17 @@
+name: Check that no MRA loads debug.zip
+
+on:
+  push:
+
+jobs:
+
+  generate_arc:
+  
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: check out
+        uses: actions/checkout@v2
+      - name: check MRA files
+        run: test `find -name "*.mra" -print0 | xargs -0 grep debug.zip | wc -l` = 0; echo $?
+  

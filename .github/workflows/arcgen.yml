@@ -1,0 +1,23 @@
+name: ARC file generation check
+
+on:
+  push:
+
+jobs:
+
+  generate_arc:
+  
+    runs-on: ubuntu-latest
+    
+    container:
+      image: jotego/mracheck
+      credentials:
+        username: jotego
+        password: ${{ secrets.DOCKER_LOGIN }}
+    
+    steps:
+      - name: check out
+        uses: actions/checkout@v2
+      - name: convert MRA
+        run: find -name "*.mra" -print0 | xargs -0 -l1 mra -A -s
+  
