@@ -1,0 +1,208 @@
+{
+	"interact":{
+		"magic": "APF_VER_1",
+		"variables": [
+			{
+				"name": "Version",
+				"id": 1000,
+				"type": "number_u32",
+				"enabled": false,
+				"persist": false,
+				"address": "0xFF000000",
+				"value": 0
+			},
+			{
+				"name": "Lives",
+				"id": 1,
+				"type": "list",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 3,
+				"value": 0,
+				"mask": "0xFFFFFFFC",
+				"options": [
+					{
+						"name": "5",
+						"value": "0x0"
+					},
+					{
+						"name": "4",
+						"value": "0x1"
+					},
+					{
+						"name": "2",
+						"value": "0x2"
+					},
+					{
+						"name": "3",
+						"value": "0x3"
+					}
+				]
+			},
+			{
+				"name": "Difficulty",
+				"id": 2,
+				"type": "list",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 1,
+				"value": 0,
+				"mask": "0xFFFFFFFB",
+				"options": [
+					{
+						"name": "Hard",
+						"value": "0x0"
+					},
+					{
+						"name": "Normal",
+						"value": "0x4"
+					}
+				]
+			},
+			{
+				"name": "Decrease of Energy",
+				"id": 3,
+				"type": "list",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 1,
+				"value": 0,
+				"mask": "0xFFFFFFF7",
+				"options": [
+					{
+						"name": "Fast",
+						"value": "0x0"
+					},
+					{
+						"name": "Slow",
+						"value": "0x8"
+					}
+				]
+			},
+			{
+				"name": "Flip Screen",
+				"id": 4,
+				"type": "check",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 256,
+				"value": 0,
+				"value_off": 256,
+				"mask": "0xFFFFFEFF"
+			},
+			{
+				"name": "Cabinet",
+				"id": 5,
+				"type": "list",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"value": 0,
+				"mask": "0xFFFFFDFF",
+				"options": [
+					{
+						"name": "Upright",
+						"value": "0x0"
+					},
+					{
+						"name": "Cocktail",
+						"value": "0x200"
+					}
+				]
+			},
+			{
+				"name": "Coin Mode",
+				"id": 6,
+				"type": "list",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 1,
+				"value": 0,
+				"mask": "0xFFFFFBFF",
+				"options": [
+					{
+						"name": "Mode 2",
+						"value": "0x0"
+					},
+					{
+						"name": "Mode 1",
+						"value": "0x400"
+					}
+				]
+			},
+			{
+				"name": "Demo Sounds",
+				"id": 7,
+				"type": "check",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 2048,
+				"value": 2048,
+				"mask": "0xFFFFF7FF"
+			},
+			{
+				"name": "Allow Continue",
+				"id": 8,
+				"type": "list",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 1,
+				"value": 0,
+				"mask": "0xFFFFEFFF",
+				"options": [
+					{
+						"name": "No",
+						"value": "0x0"
+					},
+					{
+						"name": "Yes",
+						"value": "0x1000"
+					}
+				]
+			},
+			{
+				"name": "Stop Mode (Cheat)",
+				"id": 9,
+				"type": "check",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 8192,
+				"value": 0,
+				"value_off": 8192,
+				"mask": "0xFFFFDFFF"
+			},
+			{
+				"name": "Invulnerability (Cheat)",
+				"id": 10,
+				"type": "check",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 16384,
+				"value": 0,
+				"value_off": 16384,
+				"mask": "0xFFFFBFFF"
+			},
+			{
+				"name": "Default",
+				"id": 1015,
+				"type": "number_u32",
+				"enabled": false,
+				"persist": false,
+				"writeonly": true,
+				"address": "0xfa000000",
+				"defaultval": 4093,
+				"value": 0
+			}
+		],
+		"messages": []
+	}
+}

@@ -1,0 +1,119 @@
+<!--          FPGA compatible core for Sega arcade hardware by Jotego
+
+              This core is available for hardware compatible with MiST and MiSTer
+              Other FPGA systems may be supported by the time you read this.
+              This work is not mantained by the MiSTer project. Please contact the
+              core author for issues and updates.
+
+              (c) Jose Tejada, 2022. Please support this research
+              Patreon: https://patreon.com/jotego
+
+              The author does not endorse or participate in illegal distribution
+              of copyrighted material. This work can be used with legally
+              obtained ROM dumps or with compatible homebrew software.
+
+              This file license is GNU GPLv2.
+              You can read the whole license file in
+              https://opensource.org/licenses/gpl-2.0.php
+
+-->
+
+<misterromdescription>
+    <about author="jotego" webpage="https://patreon.com/jotego" source="https://github.com/jotego" twitter="@topapate"/>
+    <name>E-Swat - Cyber Police (set 1, Japan) (FD1094 317-0131)</name>
+    <setname>eswatj1</setname>
+    <rbf>jts16b</rbf>
+    <mameversion>0232</mameversion>
+    <year>1989</year>
+    <manufacturer>Sega</manufacturer>
+    <players>2</players>
+    <joystick>8</joystick>
+    <rotation>horizontal</rotation>
+    <region>Japan</region>
+    <platform>SEGA S16B</platform>
+    <mraauthor>jotego,atrac17</mraauthor>
+    <rom index="0" zip="eswatj1.zip|eswat.zip|s16mcu_alt.zip" md5="None">
+        <part>
+            00 00 00 00 00 00 00 00
+            00 00 00 00 00 00 00 00
+            00 01 00 00 00 00 00 00
+            40 00 00 00 00 00 00 00
+        </part>
+        <!-- maincpu - starts at 0x0 -->
+        <interleave output="16">
+            <part name="epr-12681.a5" crc="6b2feb09" map="01"/>
+            <part name="epr-12683.a7" crc="33c34cfd" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="epr-12682.a6" crc="8e1f57d2" map="01"/>
+            <part name="epr-12684.a8" crc="2e5b866b" map="10"/>
+        </interleave>
+        <!-- soundcpu - starts at 0x80000 -->
+        <part name="epr-12685.a10" crc="5d0c16d7"/>
+        <part repeat="0x8000"> FF</part>
+        <part name="mpr-12686.a11" crc="f451705e"/>
+        <part name="mpr-12687.a12" crc="9e87571f"/>
+        <part repeat="0x70000"> FF</part>
+        <!-- gfx1 - starts at 0x140000 -->
+        <interleave output="32">
+            <part name="epr-12688.a14" crc="12f898db" map="0001"/>
+            <part name="epr-12689.a15" crc="339746d0" map="0010"/>
+            <part name="epr-12690.a16" crc="33cf7a55" map="0100"/>
+            <part name="epr-12690.a16" crc="33cf7a55" map="1000"/>
+        </interleave>
+        <interleave output="32">
+            <part name="epr-12700.b14" crc="37a721c7" map="0001"/>
+            <part name="epr-12701.b15" crc="703bf496" map="0010"/>
+            <part name="epr-12702.b16" crc="70b70211" map="0100"/>
+            <part name="epr-12702.b16" crc="70b70211" map="1000"/>
+        </interleave>
+        <part repeat="0x40000"> FF</part>
+        <!-- sprites - starts at 0x240000 -->
+        <interleave output="16">
+            <part name="epr-12691.b1" crc="2ff5cb9e" map="01"/>
+            <part name="epr-12694.b5" crc="10a27526" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="epr-12692.b2" crc="01b2e832" map="01"/>
+            <part name="epr-12695.b6" crc="ba3ba6fd" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="epr-12693.b3" crc="d12ef57a" map="01"/>
+            <part name="epr-12696.b7" crc="54b51ca4" map="10"/>
+        </interleave>
+        <part repeat="0x40000"> FF</part>
+        <interleave output="16">
+            <part name="epr-12678.a1" crc="a8afd649" map="01"/>
+            <part name="epr-12697.b10" crc="6ac4cbfb" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="epr-12679.a2" crc="b4c4a2ab" map="01"/>
+            <part name="epr-12698.b11" crc="99784b36" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="epr-12680.a3" crc="f321452c" map="01"/>
+            <part name="epr-12699.b12" crc="ac329586" map="10"/>
+        </interleave>
+        <part repeat="0x42000"> FF</part>
+        <!-- maincpu:key - starts at 0x442000 -->
+        <part name="317-0131.key" crc="8f71726d"/>
+        <!-- Total 0x444000 bytes - 4368 kBytes -->
+    </rom>
+    <nvram index="2" size="75777"/>
+    <rom index="1">
+        <part>00</part>
+    </rom>
+    <switches page_id="1" page_name="Switches" base="16" default="ff,fd">
+        <!-- DSW1 -->
+        <dip name="Coin A" bits="0,3" ids="Free Play or 1/1,1/1 2/3,1/1 4/5,1/1 5/6,2/1 4/3,2/1 5/3 6/4,2/3,4/1,3/1,2/1,1/6,1/5,1/4,1/3,1/2,1/1"/>
+        <dip name="Coin B" bits="4,7" ids="Free Play or 1/1,1/1 2/3,1/1 4/5,1/1 5/6,2/1 4/3,2/1 5/3 6/4,2/3,4/1,3/1,2/1,1/6,1/5,1/4,1/3,1/2,1/1"/>
+        <!-- DSW2 -->
+        <dip name="Credits To Start" bits="8" ids="2,1"/>
+        <dip name="Demo Sounds" bits="9" ids="On,Off"/>
+        <dip name="Flip Screen" bits="10" ids="On,Off"/>
+        <dip name="Timer" bits="11" ids="Hard,Normal"/>
+        <dip name="Difficulty" bits="12,13" ids="Hardest,Hard,Easy,Normal"/>
+        <dip name="Lives" bits="14,15" ids="1,2,4,3"/>
+    </switches>
+    <buttons names="Shot,Jump,Special Weapons,-,Start,Coin,Core credits" default="Y,X,B,A,Start,Select,-" count="3"/>
+</misterromdescription>

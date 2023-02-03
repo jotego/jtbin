@@ -1,0 +1,113 @@
+<!--          FPGA compatible core for Sega arcade hardware by Jotego
+
+              This core is available for hardware compatible with MiST and MiSTer
+              Other FPGA systems may be supported by the time you read this.
+              This work is not mantained by the MiSTer project. Please contact the
+              core author for issues and updates.
+
+              (c) Jose Tejada, 2022. Please support this research
+              Patreon: https://patreon.com/jotego
+
+              The author does not endorse or participate in illegal distribution
+              of copyrighted material. This work can be used with legally
+              obtained ROM dumps or with compatible homebrew software.
+
+              This file license is GNU GPLv2.
+              You can read the whole license file in
+              https://opensource.org/licenses/gpl-2.0.php
+
+-->
+
+<misterromdescription>
+    <about author="jotego" webpage="https://patreon.com/jotego" source="https://github.com/jotego" twitter="@topapate"/>
+    <name>Time Scanner (set 2, System 16B)</name>
+    <setname>timescan</setname>
+    <rbf>jts16b</rbf>
+    <mameversion>0232</mameversion>
+    <year>1987</year>
+    <manufacturer>Sega</manufacturer>
+    <players>2</players>
+    <joystick>5 (half8)</joystick>
+    <rotation>vertical (ccw)</rotation>
+    <region>World</region>
+    <platform>SEGA S16B</platform>
+    <mraauthor>jotego,atrac17</mraauthor>
+    <rom index="0" zip="timescan.zip|s16mcu_alt.zip" md5="None">
+        <part>
+            00 00 00 00 00 00 00 00
+            00 00 00 00 00 00 00 00
+            00 00 00 00 00 00 00 00
+            1C 00 00 00 00 00 00 00
+        </part>
+        <!-- maincpu - starts at 0x0 -->
+        <interleave output="16">
+            <part name="epr-10850.a1" crc="f1575732" map="01"/>
+            <part name="epr-10853.a4" crc="24d7c5fb" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="epr-10851.a2" crc="f5ce271b" map="01"/>
+            <part name="epr-10854.a5" crc="82d0b237" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="epr-10852.a3" crc="7cd1382b" map="01"/>
+            <part name="epr-10855.a6" crc="63e95a53" map="10"/>
+        </interleave>
+        <part repeat="0x50000"> FF</part>
+        <!-- soundcpu - starts at 0x80000 -->
+        <part name="epr-10562.a7" crc="3f5028bf"/>
+        <part repeat="0x8000"> FF</part>
+        <part name="epr-10563.a8" crc="9db7eddf"/>
+        <part repeat="0xA8000"> FF</part>
+        <!-- gfx1 - starts at 0x140000 -->
+        <interleave output="32">
+            <part name="epr-10543.b9" crc="07dccc37" map="0001"/>
+            <part name="epr-10544.b10" crc="84fb9a3a" map="0010"/>
+            <part name="epr-10545.b11" crc="c8694bc0" map="0100"/>
+            <part name="epr-10545.b11" crc="c8694bc0" map="1000"/>
+        </interleave>
+        <part repeat="0xE0000"> FF</part>
+        <!-- sprites - starts at 0x240000 -->
+        <interleave output="16">
+            <part name="epr-10548.b1" crc="aa150735" map="01"/>
+            <part name="epr-10552.b5" crc="6fcbb9f7" map="10"/>
+        </interleave>
+        <part repeat="0x10000"> FF</part>
+        <interleave output="16">
+            <part name="epr-10549.b2" crc="2f59f067" map="01"/>
+            <part name="epr-10553.b6" crc="8a220a9f" map="10"/>
+        </interleave>
+        <part repeat="0x10000"> FF</part>
+        <interleave output="16">
+            <part name="epr-10550.b3" crc="f05069ff" map="01"/>
+            <part name="epr-10554.b7" crc="dc64f809" map="10"/>
+        </interleave>
+        <part repeat="0x10000"> FF</part>
+        <interleave output="16">
+            <part name="epr-10551.b4" crc="435d811f" map="01"/>
+            <part name="epr-10555.b8" crc="2143c471" map="10"/>
+        </interleave>
+        <!-- Total 0x2B0000 bytes - 2752 kBytes -->
+    </rom>
+    <nvram index="2" size="75777"/>
+    <!-- Vertical game -->
+    <rom index="1">
+        <part>01</part>
+    </rom>
+    <switches page_id="1" page_name="Switches" base="16" default="ff,ff,ff">
+        <!-- DSW1 -->
+        <dip name="Coin A" bits="0,3" ids="Free Play or 1/1,1/1 2/3,1/1 4/5,1/1 5/6,2/1 4/3,2/1 5/3 6/4,2/3,4/1,3/1,2/1,1/6,1/5,1/4,1/3,1/2,1/1"/>
+        <dip name="Coin B" bits="4,7" ids="Free Play or 1/1,1/1 2/3,1/1 4/5,1/1 5/6,2/1 4/3,2/1 5/3 6/4,2/3,4/1,3/1,2/1,1/6,1/5,1/4,1/3,1/2,1/1"/>
+        <!-- DSW2 -->
+        <dip name="Cabinet" bits="8" ids="Cocktail,Upright"/>
+        <dip name="Extended Score" bits="9,12" ids="None,Ball 70k0,Ball 60k0,Ball 50k0,Ball 40k0,Ball 30k0,Ball 20k0,Ball 10k0,Credit 20k00/40k00,Credit 150k0/30k00,Credit 120k0/250k0,Credit 10k00/20k00,Credit 180k0,Credit 150k0,Credit 10k00,Credit 120k0"/>
+        <dip name="Number Match" bits="13" ids="No,Yes"/>
+        <dip name="Pin Rebound" bits="14" ids="A Little,Well"/>
+        <dip name="Lives" bits="15" ids="5,3"/>
+        <!-- UNUSED -->
+        <dip name="Flip Screen" bits="16" ids="On,Off"/>
+        <dip name="Out Lane Pin" bits="17" ids="Far,Near"/>
+        <dip name="Special" bits="18,19" ids="20k00 Points,1,3,2"/>
+        <dip name="Allow Continue" bits="20" ids="No,Yes"/>
+    </switches>
+    <buttons names="L. Flipper/Ball Start,R. Flipper/Lane Shift,-,-,Start,Coin,Core credits" default="Y,X,B,A,Start,Select,-" count="2"/>
+</misterromdescription>

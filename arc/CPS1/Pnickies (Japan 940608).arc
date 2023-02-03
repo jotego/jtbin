@@ -1,0 +1,24 @@
+[ARC]
+RBF=JTCPS1
+MOD=0
+NAME=PNICKJ
+DEFAULT=0xFFFFFF00
+CONF="O8A,Coinage,4 Coins/1 Credit,3 Coins/1 Credit,2 Coins/1 Credit,1 Coin/6 Credits,1 Coin/4 Credits,1 Coin/3 Credits,1 Coin/2 Credits,1 Coin/1 Credit"
+CONF="OB,Coin Slots,2,1"
+CONF="OC,Unknown,On,Off"
+CONF="OD,Unknown,On,Off"
+CONF="OE,Unknown,On,Off"
+CONF="OF,Unknown,On,Off"
+CONF="OGI,Difficulty,7 (Hardest),6,5,4,3 (Normal),2,1,0 (Easiest)"
+CONF="OJ,Unknown,On,Off"
+CONF="OK,Unknown,On,Off"
+CONF="OL,Unknown,On,Off"
+CONF="OMN,Vs Play Mode,7 Games Match,5 Games Match,3 Games Match,1 Game Match"
+CONF="OO,Unknown,On,Off"
+CONF="OP,Unknown,On,Off"
+CONF="OQ,Unknown,On,Off"
+CONF="OR,Freeze,On,Off"
+CONF="OS,Flip Screen,On,Off"
+CONF="OT,Demo Sounds,On,Off"
+CONF="OU,Unknown,On,Off"
+CONF="OV,Game Mode,Test,Game"

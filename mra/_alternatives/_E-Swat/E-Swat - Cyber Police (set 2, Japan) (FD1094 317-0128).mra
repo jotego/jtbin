@@ -1,0 +1,108 @@
+<!--          FPGA compatible core for Sega arcade hardware by Jotego
+
+              This core is available for hardware compatible with MiST and MiSTer
+              Other FPGA systems may be supported by the time you read this.
+              This work is not mantained by the MiSTer project. Please contact the
+              core author for issues and updates.
+
+              (c) Jose Tejada, 2022. Please support this research
+              Patreon: https://patreon.com/jotego
+
+              The author does not endorse or participate in illegal distribution
+              of copyrighted material. This work can be used with legally
+              obtained ROM dumps or with compatible homebrew software.
+
+              This file license is GNU GPLv2.
+              You can read the whole license file in
+              https://opensource.org/licenses/gpl-2.0.php
+
+-->
+
+<misterromdescription>
+    <about author="jotego" webpage="https://patreon.com/jotego" source="https://github.com/jotego" twitter="@topapate"/>
+    <name>E-Swat - Cyber Police (set 2, Japan) (FD1094 317-0128)</name>
+    <setname>eswatj</setname>
+    <rbf>jts16b</rbf>
+    <mameversion>0232</mameversion>
+    <year>1989</year>
+    <manufacturer>Sega</manufacturer>
+    <players>2</players>
+    <joystick>8</joystick>
+    <rotation>horizontal</rotation>
+    <region>Japan</region>
+    <platform>SEGA S16B</platform>
+    <mraauthor>jotego,atrac17</mraauthor>
+    <rom index="0" zip="eswatj.zip|eswat.zip|s16mcu_alt.zip" md5="None">
+        <part>
+            00 00 00 00 00 00 00 00
+            00 00 00 00 00 00 00 00
+            00 01 00 00 00 00 00 00
+            20 00 00 00 00 00 00 00
+        </part>
+        <!-- maincpu - starts at 0x0 -->
+        <interleave output="16">
+            <part name="epr-12614.a1" crc="d5f0fb47" map="01"/>
+            <part name="epr-12615.a2" crc="388c2ea7" map="10"/>
+        </interleave>
+        <!-- soundcpu - starts at 0x80000 -->
+        <part name="epr-12617.a13" crc="7efecf23"/>
+        <part repeat="0x8000"> FF</part>
+        <part name="mpr-12616.a11" crc="254347c2"/>
+        <part repeat="0x70000"> FF</part>
+        <!-- gfx1 - starts at 0x140000 -->
+        <interleave output="32">
+            <part name="mpr-12624.b11" crc="375a5ec4" map="0001"/>
+            <part name="mpr-12625.b12" crc="3b8c757e" map="0010"/>
+            <part name="mpr-12626.b13" crc="3efca25c" map="0100"/>
+            <part name="mpr-12626.b13" crc="3efca25c" map="1000"/>
+        </interleave>
+        <!-- sprites - starts at 0x240000 -->
+        <interleave output="16">
+            <part name="mpr-12618.b1" crc="0d1530bf" map="01" length="0x20000"/>
+            <part name="mpr-12621.b4" crc="18ff0799" map="10" length="0x20000"/>
+        </interleave>
+        <interleave output="16">
+            <part name="mpr-12619.b2" crc="32069246" map="01" length="0x20000"/>
+            <part name="mpr-12622.b5" crc="a3dfe436" map="10" length="0x20000"/>
+        </interleave>
+        <interleave output="16">
+            <part name="mpr-12620.b3" crc="f6b096e0" map="01" length="0x20000"/>
+            <part name="mpr-12623.b6" crc="6773fef6" map="10" length="0x20000"/>
+        </interleave>
+        <part repeat="0x40000"> FF</part>
+        <!-- ROM split at 340000 (100000) -->
+        <interleave output="16">
+            <part name="mpr-12618.b1" crc="0d1530bf" map="01" length="0x20000" offset="0x20000"/>
+            <part name="mpr-12621.b4" crc="18ff0799" map="10" length="0x20000" offset="0x20000"/>
+        </interleave>
+        <interleave output="16">
+            <part name="mpr-12619.b2" crc="32069246" map="01" length="0x20000" offset="0x20000"/>
+            <part name="mpr-12622.b5" crc="a3dfe436" map="10" length="0x20000" offset="0x20000"/>
+        </interleave>
+        <interleave output="16">
+            <part name="mpr-12620.b3" crc="f6b096e0" map="01" length="0x20000" offset="0x20000"/>
+            <part name="mpr-12623.b6" crc="6773fef6" map="10" length="0x20000" offset="0x20000"/>
+        </interleave>
+        <part repeat="0x42000"> FF</part>
+        <!-- maincpu:key - starts at 0x442000 -->
+        <part name="317-0128.key" crc="95f96277"/>
+        <!-- Total 0x444000 bytes - 4368 kBytes -->
+    </rom>
+    <nvram index="2" size="75777"/>
+    <rom index="1">
+        <part>00</part>
+    </rom>
+    <switches page_id="1" page_name="Switches" base="16" default="ff,fd">
+        <!-- DSW1 -->
+        <dip name="Coin A" bits="0,3" ids="Free Play or 1/1,1/1 2/3,1/1 4/5,1/1 5/6,2/1 4/3,2/1 5/3 6/4,2/3,4/1,3/1,2/1,1/6,1/5,1/4,1/3,1/2,1/1"/>
+        <dip name="Coin B" bits="4,7" ids="Free Play or 1/1,1/1 2/3,1/1 4/5,1/1 5/6,2/1 4/3,2/1 5/3 6/4,2/3,4/1,3/1,2/1,1/6,1/5,1/4,1/3,1/2,1/1"/>
+        <!-- DSW2 -->
+        <dip name="Credits To Start" bits="8" ids="2,1"/>
+        <dip name="Demo Sounds" bits="9" ids="On,Off"/>
+        <dip name="Flip Screen" bits="10" ids="On,Off"/>
+        <dip name="Timer" bits="11" ids="Hard,Normal"/>
+        <dip name="Difficulty" bits="12,13" ids="Hardest,Hard,Easy,Normal"/>
+        <dip name="Lives" bits="14,15" ids="1,2,4,3"/>
+    </switches>
+    <buttons names="Shot,Jump,Special Weapons,-,Start,Coin,Core credits" default="Y,X,B,A,Start,Select,-" count="3"/>
+</misterromdescription>

@@ -1,0 +1,83 @@
+<!--          FPGA arcade hardware by Jotego
+
+              This core is available for hardware compatible with MiST and MiSTer
+              Other FPGA systems may be supported by the time you read this.
+              This work is not mantained by the MiSTer project. Please contact the
+              core author for issues and updates.
+
+              (c) Jose Tejada, 2023. Please support this research
+              Patreon: https://patreon.com/jotego
+
+              The author does not endorse or participate in illegal distribution
+              of copyrighted material. This work can be used with compatible
+              software. This software can be homebrew projects or legally
+              obtained memory dumps of compatible games.
+
+              This file license is GNU GPLv2.
+              You can read the whole license file in
+              https://opensource.org/licenses/gpl-2.0.php
+
+-->
+
+<misterromdescription>
+    <about author="jotego" webpage="https://patreon.com/jotego" source="https://github.com/jotego" twitter="@topapate"/>
+    <name>Kageki (US)</name>
+    <setname>kagekiu</setname>
+    <rbf>jtkiwi</rbf>
+    <mameversion>0248</mameversion>
+    <year>1988</year>
+    <manufacturer>Kaneko / Taito America Corporation (Romstar license)</manufacturer>
+    <players>2</players>
+    <joystick>8</joystick>
+    <rotation>vertical (cw)</rotation>
+    <region>World</region>
+    <mraauthor>jotego</mraauthor>
+    <rom index="0" zip="kagekiu.zip|kageki.zip" md5="None">
+        <part>
+            08 00 </part>
+        <!-- maincpu - starts at 0x0 - length 0x20000 (17 bits) -->
+        <part name="b35-16.11c" crc="a4e6fd58"/>
+        <part name="b35-10.9c" crc="b150457d"/>
+        <!-- JTFRAME_BA1_START -->
+        <!-- sub - starts at 0x20000 - length 0x20000 (17 bits) -->
+        <part name="b35-17.43e" crc="fdd9c246"/>
+        <part repeat="0x10000"> FF</part>
+        <!-- PCM_START -->
+        <!-- samples - starts at 0x40000 - length 0x10000 (16 bits) -->
+        <part name="b35-15.98g" crc="e6212a0f"/>
+        <!-- JTFRAME_BA3_START -->
+        <!-- gfx1 - starts at 0x50000 - length 0x100000 (20 bits) -->
+        <interleave output="32">
+            <part name="b35__05.7a" crc="a4e20c08" map="0001"/>
+            <part name="b35__01.13a" crc="01d83a69" map="0010"/>
+            <part name="b35__07.4a" crc="1b4af049" map="0100"/>
+            <part name="b35__03.10a" crc="3cb68797" map="1000"/>
+        </interleave>
+        <interleave output="32">
+            <part name="b35__06.5a" crc="3f8ab658" map="0001"/>
+            <part name="b35__02.12a" crc="d8af47ac" map="0010"/>
+            <part name="b35__08.2a" crc="deb2268c" map="0100"/>
+            <part name="b35__04.8a" crc="71c03f91" map="1000"/>
+        </interleave>
+        <!-- Total 0x150000 bytes - 1344 kBytes -->
+    </rom>
+    <rom index="17" zip="jtbeta.zip" md5="None">
+        <part name="beta.bin"/>
+    </rom>
+    <!-- Vertical game -->
+    <rom index="1">
+        <part>01</part>
+    </rom>
+    <switches page_id="1" page_name="Switches" base="16" default="ff,ff">
+        <!-- DSWA -->
+        <dip name="Flip Screen" bits="1" ids="On,Off"/>
+        <dip name="Service Mode" bits="2" ids="On,Off"/>
+        <dip name="Demo Sounds" bits="3" ids="Off,On"/>
+        <dip name="Coin A" bits="4,5" ids="2/3,2/1,1/2,1/1"/>
+        <dip name="Coin B" bits="6,7" ids="2/3,2/1,1/2,1/1"/>
+        <!-- DSWB -->
+        <dip name="Difficulty" bits="8,9" ids="Hardest,Hard,Easy,Medium"/>
+        <dip name="Allow Continue" bits="15" ids="No,Yes"/>
+    </switches>
+    <buttons names="Left jab,Right hook,-,Start,Coin,Core credits" default="Y,X,B,Start,Select,-" count="2"/>
+</misterromdescription>

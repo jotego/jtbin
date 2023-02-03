@@ -1,0 +1,37 @@
+{
+	"core":{
+		"magic": "APF_VER_1",
+		"metadata": {
+			"platform_ids": [
+				"jtgng"
+			],
+			"shortname": "jtgng",
+			"description": "Arcade hardware",
+			"author": "jotego",
+			"url": "https://patreon.com/jotego",
+			"date_release": "2022-12-07",
+			"version": "noversion"
+
+		},
+		"framework": {
+			"target_product": "Analogue Pocket",
+			"version_required": "1.1",
+			"sleep_supported": false,
+			"dock": {
+				"supported": true,
+				"analog_output": false
+			},
+			"hardware": {
+				"link_port": false,
+				"cartridge_adapter": -1
+			}
+		},
+		"cores": [
+			{
+				"name": "jtgng",
+				"id": 0,
+				"filename": "jtgng.rbf_r"
+			}
+		]
+	}
+}

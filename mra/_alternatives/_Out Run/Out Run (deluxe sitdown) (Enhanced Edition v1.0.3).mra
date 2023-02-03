@@ -1,0 +1,169 @@
+<!--          FPGA arcade hardware by Jotego
+
+              This core is available for hardware compatible with MiST and MiSTer
+              Other FPGA systems may be supported by the time you read this.
+              This work is not mantained by the MiSTer project. Please contact the
+              core author for issues and updates.
+
+              (c) Jose Tejada, 2022. Please support this research
+              Patreon: https://patreon.com/jotego
+
+              The author does not endorse or participate in illegal distribution
+              of copyrighted material. This work can be used with compatible
+              software. This software can be homebrew projects or legally
+              obtained memory dumps of compatible games.
+
+              This file license is GNU GPLv2.
+              You can read the whole license file in
+              https://opensource.org/licenses/gpl-2.0.php
+
+-->
+
+<misterromdescription>
+    <about author="jotego" webpage="https://patreon.com/jotego" source="https://github.com/jotego" twitter="@topapate"/>
+    <name>Out Run (deluxe sitdown) (Enhanced Edition v1.0.3)</name>
+    <setname>outrundxeha</setname>
+    <rbf>jtoutrun</rbf>
+    <mameversion>0243</mameversion>
+    <year>2013</year>
+    <manufacturer>hack (Chris White)</manufacturer>
+    <players>1</players>
+    <joystick/>
+    <rotation>horizontal</rotation>
+    <region>World</region>
+    <mraauthor>jotego</mraauthor>
+    <rom index="0" zip="outrundxeha.zip|outrun.zip" md5="None">
+        <part>
+            00 00 00 00 00 00 00 00
+            00 00 00 00 00 00 00 00
+        </part>
+        <!-- maincpu - starts at 0x0 -->
+        <interleave output="16">
+            <part name="enhanced_103_epr-10382.118" crc="4e1ded90" map="01"/>
+            <part name="enhanced_103_epr-10380.133" crc="0e7db21f" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="enhanced_103_epr-10383.117" crc="9794985b" map="01"/>
+            <part name="enhanced_103_epr-10381.132" crc="5f8ef718" map="10"/>
+        </interleave>
+        <part repeat="0x20000"> FF</part>
+        <!-- subcpu - starts at 0x60000 -->
+        <interleave output="16">
+            <part name="epr-10329.58" crc="fe0fa5e2" map="01"/>
+            <part name="epr-10327.76" crc="da99d855" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="epr-10330.57" crc="59786e99" map="01"/>
+            <part name="epr-10328.75" crc="3c0e9a7f" map="10"/>
+        </interleave>
+        <part repeat="0x20000"> FF</part>
+        <!-- soundcpu - starts at 0xC0000 -->
+        <part name="epr-10187.88" crc="a10abaa9"/>
+        <part repeat="0x8000"> FF</part>
+        <!-- pcm - starts at 0xD0000 -->
+        <part name="opr-10193.66" crc="bcd10dde"/>
+        <part repeat="0x8000"> FF</part>
+        <part name="opr-10192.67" crc="770f1270"/>
+        <part repeat="0x8000"> FF</part>
+        <part name="opr-10191.68" crc="20a284ab"/>
+        <part repeat="0x8000"> FF</part>
+        <part name="opr-10190.69" crc="7cab70e2"/>
+        <part repeat="0x8000"> FF</part>
+        <part name="opr-10189.70" crc="01366b54"/>
+        <part repeat="0x8000"> FF</part>
+        <part name="enhanced_103_opr-10188.71" crc="37598616"/>
+        <part repeat="0x8000"> FF</part>
+        <!-- gfx1 - starts at 0x130000 -->
+        <interleave output="32">
+            <part name="opr-10268.99" crc="95344b04" map="0001"/>
+            <part name="opr-10267.100" crc="a85bb823" map="0010"/>
+            <part name="opr-10266.101" crc="9f6f1a74" map="0100"/>
+            <part name="opr-10266.101" crc="9f6f1a74" map="1000"/>
+        </interleave>
+        <interleave output="32">
+            <part name="opr-10232.102" crc="776ba1eb" map="0001"/>
+            <part name="opr-10231.103" crc="8908bcbf" map="0010"/>
+            <part name="opr-10230.104" crc="686f5e50" map="0100"/>
+            <part name="opr-10230.104" crc="686f5e50" map="1000"/>
+        </interleave>
+        <!-- sprites - starts at 0x170000 -->
+        <interleave output="32">
+            <part name="epr-10194.26" crc="f0eda3bd" map="0001"/>
+            <part name="epr-10203.38" crc="8445a622" map="0010"/>
+            <part name="epr-10212.52" crc="dee7e731" map="0100"/>
+            <part name="epr-10221.66" crc="43431387" map="1000"/>
+        </interleave>
+        <interleave output="32">
+            <part name="epr-10195.27" crc="0de75cdd" map="0001"/>
+            <part name="epr-10204.39" crc="5f4b5abb" map="0010"/>
+            <part name="epr-10213.53" crc="1d1b22f0" map="0100"/>
+            <part name="epr-10222.67" crc="a254c706" map="1000"/>
+        </interleave>
+        <interleave output="32">
+            <part name="epr-10196.28" crc="8688bb59" map="0001"/>
+            <part name="epr-10205.40" crc="74bd93ca" map="0010"/>
+            <part name="epr-10214.54" crc="57527e18" map="0100"/>
+            <part name="epr-10223.68" crc="3850690e" map="1000"/>
+        </interleave>
+        <interleave output="32">
+            <part name="epr-10197.29" crc="009165a6" map="0001"/>
+            <part name="epr-10206.41" crc="954542c5" map="0010"/>
+            <part name="epr-10215.55" crc="69be5a6c" map="0100"/>
+            <part name="epr-10224.69" crc="5cffc346" map="1000"/>
+        </interleave>
+        <interleave output="32">
+            <part name="epr-10198.30" crc="d894992e" map="0001"/>
+            <part name="epr-10207.42" crc="ca61cea4" map="0010"/>
+            <part name="epr-10216.56" crc="d394134d" map="0100"/>
+            <part name="epr-10225.70" crc="0a5d1f2b" map="1000"/>
+        </interleave>
+        <interleave output="32">
+            <part name="epr-10199.31" crc="86376af6" map="0001"/>
+            <part name="epr-10208.43" crc="6830b7fa" map="0010"/>
+            <part name="epr-10217.57" crc="bf2c9b76" map="0100"/>
+            <part name="epr-10226.71" crc="5a452474" map="1000"/>
+        </interleave>
+        <interleave output="32">
+            <part name="epr-10200.32" crc="1e5d4f73" map="0001"/>
+            <part name="epr-10209.44" crc="5c15419e" map="0010"/>
+            <part name="epr-10218.58" crc="db4bdb39" map="0100"/>
+            <part name="epr-10227.72" crc="c7def392" map="1000"/>
+        </interleave>
+        <interleave output="32">
+            <part name="epr-10201.33" crc="1d9d4b9c" map="0001"/>
+            <part name="epr-10210.45" crc="39422931" map="0010"/>
+            <part name="epr-10219.59" crc="e73b9224" map="0100"/>
+            <part name="epr-10228.73" crc="25803978" map="1000"/>
+        </interleave>
+        <!-- segaic16road - starts at 0x270000 -->
+        <!-- Singleton region. The files are merged with themselves. -->
+        <interleave output="16">
+            <part name="opr-10186.47" crc="22794426" map="01" length="0x4000"/>
+            <part name="opr-10186.47" crc="22794426" map="10" length="0x4000" offset="0x4000"/>
+        </interleave>
+        <interleave output="16">
+            <part name="opr-10185.11" crc="22794426" map="10" length="0x4000"/>
+            <part name="opr-10185.11" crc="22794426" map="01" length="0x4000" offset="0x4000"/>
+        </interleave>
+        <!-- Total 0x280000 bytes - 2560 kBytes -->
+    </rom>
+    <rom index="17" zip="jtbeta.zip" md5="None">
+        <part name="beta.bin"/>
+    </rom>
+    <nvram index="2" size="12288"/>
+    <rom index="1">
+        <part>00</part>
+    </rom>
+    <switches page_id="1" page_name="Switches" base="16" default="ff,fd">
+        <!-- COINAGE -->
+        <dip name="Coin A" bits="0,3" ids="Free Play or 1/1,1/1 2/3,1/1 4/5,1/1 5/6,2/1 4/3,2/1 5/3 6/4,2/3,4/1,3/1,2/1,1/6,1/5,1/4,1/3,1/2,1/1"/>
+        <dip name="Coin B" bits="4,7" ids="Free Play or 1/1,1/1 2/3,1/1 4/5,1/1 5/6,2/1 4/3,2/1 5/3 6/4,2/3,4/1,3/1,2/1,1/6,1/5,1/4,1/3,1/2,1/1"/>
+        <!-- DSW -->
+        <dip name="Cabinet" bits="8" ids="Not Moving,Moving"/>
+        <dip name="Demo Sounds" bits="9" ids="On,Off"/>
+        <dip name="Speed Indicator" bits="11" ids="MPH,km/h"/>
+        <dip name="Time Adj." bits="12,13" ids="Hardest,Hard,Easy,Normal"/>
+        <dip name="Difficulty" bits="14,15" ids="Hardest,Hard,Easy,Normal"/>
+    </switches>
+    <buttons names="Accelerate,Brake,Gear (Low / High),-,Start,Coin,Core credits" default="Y,X,B,A,Start,Select,-" count="3"/>
+</misterromdescription>

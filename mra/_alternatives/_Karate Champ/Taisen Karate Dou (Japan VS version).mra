@@ -1,0 +1,96 @@
+<!--          FPGA arcade hardware by Jotego
+
+              This core is available for hardware compatible with MiST and MiSTer
+              Other FPGA systems may be supported by the time you read this.
+              This work is not mantained by the MiSTer project. Please contact the
+              core author for issues and updates.
+
+              (c) Jose Tejada, 2022. Please support this research
+              Patreon: https://patreon.com/jotego
+
+              The author does not endorse or participate in illegal distribution
+              of copyrighted material. This work can be used with compatible
+              software. This software can be homebrew projects or legally
+              obtained memory dumps of compatible games.
+
+              This file license is GNU GPLv2.
+              You can read the whole license file in
+              https://opensource.org/licenses/gpl-2.0.php
+
+-->
+
+<misterromdescription>
+    <about author="jotego" webpage="https://patreon.com/jotego" source="https://github.com/jotego" twitter="@topapate"/>
+    <name>Taisen Karate Dou (Japan VS version)</name>
+    <setname>karatevs</setname>
+    <rbf>jtkchamp</rbf>
+    <mameversion>0243</mameversion>
+    <year>1984</year>
+    <manufacturer>Data East Corporation</manufacturer>
+    <players>2</players>
+    <joystick>4</joystick>
+    <rotation>vertical (cw)</rotation>
+    <region>World</region>
+    <mraauthor>jotego</mraauthor>
+    <rom index="0" zip="karatevs.zip|kchamp.zip" md5="None">
+        <!-- maincpu - starts at 0x0 -->
+        <part name="br24.d13" crc="ea9cda49"/>
+        <part name="br23.d11" crc="46074489"/>
+        <part name="br22.d10" crc="294f67ba"/>
+        <part name="br21.d8" crc="934ea874"/>
+        <part name="br20.d7" crc="97d7816a"/>
+        <part name="br19.d6" crc="dd2239d2" length="0x2000"/>
+        <part repeat="0x2000"> FF</part>
+        <part name="br19.d6" crc="dd2239d2" length="0x2000" offset="0x2000"/>
+        <!-- audiocpu - starts at 0x10000 -->
+        <part name="br18.d4" crc="00ccb8ea"/>
+        <part name="bs17.d2" crc="d71031ad"/>
+        <part name="br16.d1" crc="2512d961"/>
+        <part repeat="0xA000"> FF</part>
+        <!-- gfx1 - starts at 0x20000 -->
+        <interleave output="16">
+            <part name="br12.k1" crc="9ed6f00d" map="01"/>
+            <part name="br14.k5" crc="fc399229" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="bs13.k3" crc="750b66af" map="01"/>
+            <part name="bs15.k6" crc="3b6d5de5" map="10"/>
+        </interleave>
+        <part repeat="0x18000"> FF</part>
+        <!-- gfx2 - starts at 0x40000 -->
+        <part name="br00.a1" crc="c46a8b88"/>
+        <part name="br06.c1" crc="cf8982ff"/>
+        <part name="bs01.a3" crc="b4842ea9"/>
+        <part name="bs07.c3" crc="8cd166a5"/>
+        <part name="bs02.a5" crc="4cbd3aa3"/>
+        <part name="bs08.c5" crc="6be342a6"/>
+        <part repeat="0x4000"> FF</part>
+        <!-- Blank ends at 0x50000 -->
+        <part name="br03.a6" crc="bde8a52b"/>
+        <part name="br09.c6" crc="e9a5f945"/>
+        <part name="bs04.a8" crc="7346db8a"/>
+        <part name="bs10.c8" crc="b78714fc"/>
+        <part name="bs05.a10" crc="b2557102"/>
+        <part name="bs11.c10" crc="c85aba0e"/>
+        <part repeat="0x4000"> FF</part>
+        <!-- proms - starts at 0x60000 -->
+        <part name="br27.k10" crc="f683c54a"/>
+        <part name="br26.k9" crc="3ddbb6c4"/>
+        <part name="br25.k8" crc="ba4a5651"/>
+        <!-- Total 0x60300 bytes - 384 kBytes -->
+        <patch offset="0x0">69 6e B4</patch>
+    </rom>
+    <!-- Vertical game -->
+    <rom index="1">
+        <part>01</part>
+    </rom>
+    <switches page_id="1" page_name="Switches" base="16" default="9f">
+        <!-- DSW -->
+        <dip name="Coin B" bits="0,1" ids="3/1,2/1,1/2,1/1"/>
+        <dip name="Coin A" bits="2,3" ids="3/1,2/1,1/2,1/1"/>
+        <dip name="Difficulty" bits="4,5" ids="Hardest,Hard,Medium,Easy"/>
+        <dip name="Demo Sounds" bits="6" ids="On,Off"/>
+        <dip name="Free Play" bits="7" ids="On,Off"/>
+    </switches>
+    <buttons names="left(2),right(2),up(2),bottom(2),Start,Coin,Core credits" default="Y,X,B,A,Start,Select,-" count="4"/>
+</misterromdescription>

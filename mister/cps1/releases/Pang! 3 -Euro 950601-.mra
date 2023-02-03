@@ -1,0 +1,77 @@
+<!-- JTCPS1 - FPGA compatible core of CAPCOM CPS hardware by Jotego
+
+              This core is available for hardware compatible with MiST and MiSTer
+              Other FPGA systems may be supported by the time you read this.
+              This work is not mantained by the MiSTer project. Please contact the
+              core author for issues and updates.
+
+              (c) Jose Tejada, 2020. Please support the author
+              Patreon: https://patreon.com/jotego
+              Paypal:  https://paypal.me/topapate
+
+              The author does not endorse or participate in illegal distribution
+              of CAPCOM copyrighted material. This work can be used with legally
+              obtained ROM dumps of CAPCOM games or with homework software for
+              the CPS platform.
+
+-->
+
+<misterromdescription>
+    <about author="jotego" webpage="https://patreon.com/jotego"
+                           source ="https://github.com/jotego/jtcps1"
+                           twitter="@topapate"/>
+    <name>Pang! 3 (Euro 950601)</name>
+	<mameversion>0217</mameversion>
+    <setname>pang3</setname>
+    <year>1995</year>
+    <manufacturer>Mitchell</manufacturer>
+    <category>Puzzle</category>
+    <rbf>jtcps1</rbf>
+    <rom index="0" zip="pang3.zip" md5="none">
+        <!-- relative position of each ROM section in the file, discounting the header, in kilobytes -->
+        <!-- Size of M68000 code 1024 kB -->
+        <!-- Sound CPU size 128 kB -->
+        <part>00 04 </part>
+        <!-- OKI samples size 256 kB -->
+        <part>80 04 </part>
+        <!-- Graphics size 4096 kB -->
+        <part>80 05 </part>
+        <part repeat="10">FF</part>
+        <!-- CPS-B config for pang3 -->
+        <part> 32 FF 00 02 04 06 26 28 2A 2C 2E 00 00 30 02 04 08 30 </part>
+        <!-- Mapper for  -->
+        <part> 14 40 88 73 FF </part>
+        <part> C1 </part>
+        <part repeat="24">FF</part>
+        <!-- maincpu -->
+        <interleave output="16">
+            <part name="pa3e_17a.11l" crc="a213fa80" map="21"/>
+        </interleave>
+        <interleave output="16">
+            <part name="pa3e_16a.10l" crc="7169ea67" map="21"/>
+        </interleave>
+        <!-- audiocpu -->
+        <part name="pa3_11.11f" crc="cb1423a2"/>
+        <!-- oki -->
+        <part name="pa3_05.10d" crc="73a10d5d"/>
+        <part name="pa3_06.11d" crc="affa4f82"/>
+        <!-- gfx -->
+        <interleave output="64">
+            <part name="pa3-01m.2c" crc="068a152c" map="00000021" length="0x100000" offset="0"/>
+            <part name="pa3-07m.2f" crc="3a4a619d" map="00002100" length="0x100000" offset="0"/>
+            <part name="pa3-01m.2c" crc="068a152c" map="00210000" length="0x100000" offset="0x100000"/>
+            <part name="pa3-07m.2f" crc="3a4a619d" map="21000000" length="0x100000" offset="0x100000"/>
+        </interleave>
+    </rom>
+
+    <!-- Set bit 1 for vertical games.
+         Set bit 2 for games using 4-way joysticks -->
+    <rom index="1"><part> 02 </part></rom>
+    <nvram index="2" size="128"/>
+
+    <buttons names="B0,B1,-,-,-,-,Start,Coin,Pause"
+        default="A,B,R,L,Start"/>
+    <switches default="FF,FF,FF" base="8">
+        <dip bits="23"	 name="Service Mode" ids="On,Off"/>
+    </switches>
+</misterromdescription>
