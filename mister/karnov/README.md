@@ -40,8 +40,10 @@ Birdie Try                      | i8751      |   0
 
 # Schematics
 
-- [Karnov's original schematics](https://www.gamesdatabase.org/Media/SYSTEM/Arcade/Manual/formated/Karnov_-_1987_-_Data_East.pdf)
+The KiCAD schematics for Sly Spy developed by us are in the slyspy core folder. A link to a PDF version is available below.
 
+- [Karnov's original schematics](https://www.gamesdatabase.org/Media/SYSTEM/Arcade/Manual/formated/Karnov_-_1987_-_Data_East.pdf)
+- [JOTEGO's schematics for Sly Spy](https://github.com/jotego/jtbin/tree/master/sch/slyspy.pdf)
 
 ## Heavy Barrel
 

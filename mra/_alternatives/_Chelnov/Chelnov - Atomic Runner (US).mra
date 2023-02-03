@@ -84,9 +84,6 @@
         <part name="ee-16.l6" crc="41816132"/>
         <!-- Total 0x139800 bytes - 1254 kBytes -->
     </rom>
-    <rom index="17" zip="jtbeta.zip" md5="None">
-        <part name="beta.bin"/>
-    </rom>
     <rom index="1">
         <part>00</part>
     </rom>
