@@ -24,7 +24,7 @@
     <name>1942 (Revision A)</name>
     <setname>1942a</setname>
     <rbf>jt1942</rbf>
-    <mameversion>0248</mameversion>
+    <mameversion>0251</mameversion>
     <year>1984</year>
     <manufacturer>Capcom</manufacturer>
     <players>2</players>
@@ -32,7 +32,7 @@
     <rotation>vertical (ccw)</rotation>
     <region>World</region>
     <mraauthor>jotego</mraauthor>
-    <rom index="0" zip="1942a.zip|1942.zip" md5="None">
+    <rom index="0" zip="1942a.zip|1942.zip" md5="None" asm_md5="20696092e95feca8f35188629143171e">
         <!-- maincpu - starts at 0x0 - length 0x14000 (17 bits) -->
         <part name="sra-03.m3" crc="40201bab"/>
         <part name="sr-04.m4" crc="a60ac644"/>

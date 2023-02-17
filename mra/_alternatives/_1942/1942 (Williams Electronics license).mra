@@ -24,7 +24,7 @@
     <name>1942 (Williams Electronics license)</name>
     <setname>1942w</setname>
     <rbf>jt1942</rbf>
-    <mameversion>0248</mameversion>
+    <mameversion>0251</mameversion>
     <year>1985</year>
     <manufacturer>Capcom (Williams Electronics license)</manufacturer>
     <players>2</players>
@@ -32,7 +32,7 @@
     <rotation>vertical (ccw)</rotation>
     <region>World</region>
     <mraauthor>jotego</mraauthor>
-    <rom index="0" zip="1942w.zip|1942.zip" md5="None">
+    <rom index="0" zip="1942w.zip|1942.zip" md5="None" asm_md5="f6e77be10e8d6f1e8b3bfc58c9992afe">
         <!-- maincpu - starts at 0x0 - length 0x14000 (17 bits) -->
         <part name="sw-03.m3" crc="afd79770"/>
         <part name="sw-04.m4" crc="933d9910"/>
