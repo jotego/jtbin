@@ -31,7 +31,9 @@ jobs:
       matrix:
         core: ${{ fromJSON(needs.list_cores.outputs.cores) }}
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
       - id: core_name
         run: |
           string=${{ matrix.core }}
@@ -61,34 +63,19 @@ jobs:
           while IFS= read -r line; do
             paths+=("$line")
           done < ../../file_list.txt
-
           # Iterate through the paths and find the most recent git hash for each path
           most_recent_hash=""
           most_recent_timestamp=0
           for path in "${paths[@]}"; do
-            # Check if the path is a directory
-            if [ -d "$path" ]; then
-              # Navigate to the directory
-              cd "$path"
-
-              # Check if the directory is a Git repository
-              if git rev-parse --git-dir > /dev/null 2>&1; then
-                # Get the most recent commit hash and timestamp
-                hash=$(git rev-parse HEAD)
-                timestamp=$(git show -s --format=%ct HEAD)
-
-                # Update the most recent hash and timestamp if necessary
-                if [ "$timestamp" -gt "$most_recent_timestamp" ]; then
-                  most_recent_hash="$hash"
-                  most_recent_timestamp="$timestamp"
-                fi
-              fi
-
-              # Navigate back to the original directory
-              cd - > /dev/null
+            # Get the most recent commit hash and timestamp
+            hash=$(git log -1 --pretty="format:%h" "$path")
+            timestamp=$(git log -1 --pretty="format:%at" "$path")
+            # Update the most recent hash and timestamp if necessary
+            if [ "$timestamp" -gt "$most_recent_timestamp" ]; then
+              most_recent_hash="$hash"
+              most_recent_timestamp="$timestamp"
             fi
           done
-
           # Print the most recent git hash
           echo "version=$most_recent_hash" >> $GITHUB_OUTPUT
       - name: change version
