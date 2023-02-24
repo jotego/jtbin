@@ -1,17 +1,17 @@
-<!--          FPGA compatible core for Capcom arcade hardware by Jotego
+<!--          FPGA arcade hardware by Jotego
 
               This core is available for hardware compatible with MiST and MiSTer
               Other FPGA systems may be supported by the time you read this.
               This work is not mantained by the MiSTer project. Please contact the
               core author for issues and updates.
 
-              (c) Jose Tejada, 2021. Please support the author
+              (c) Jose Tejada, 2023. Please support this research
               Patreon: https://patreon.com/jotego
-              Paypal:  https://paypal.me/topapate
 
               The author does not endorse or participate in illegal distribution
-              of copyrighted material. This work can be used with legally
-              obtained ROM dumps or with compatible homebrew software.
+              of copyrighted material. This work can be used with compatible
+              software. This software can be homebrew projects or legally
+              obtained memory dumps of compatible games.
 
               This file license is GNU GPLv2.
               You can read the whole license file in
@@ -24,45 +24,52 @@
     <name>Exed Exes</name>
     <setname>exedexes</setname>
     <rbf>jtexed</rbf>
-    <mameversion>0232</mameversion>
+    <mameversion>0251</mameversion>
     <year>1985</year>
     <manufacturer>Capcom</manufacturer>
     <players>2</players>
     <joystick>8</joystick>
-    <rotation>vertical</rotation>
+    <rotation>vertical (ccw)</rotation>
     <region>World</region>
     <mraauthor>jotego</mraauthor>
-    <rom index="0" zip="exedexes.zip" md5="None">
-        <!-- maincpu - starts at 0x0 -->
+    <rom index="0" zip="exedexes.zip" md5="None" asm_md5="4d4e52e7c8d9d82bdd32a196955d8f04">
+        <!-- maincpu - starts at 0x0 - length 0xC000 (16 bits) -->
         <part name="11m_ee04.bin" crc="44140dbd"/>
         <part name="10m_ee03.bin" crc="bf72cfba"/>
         <part name="09m_ee02.bin" crc="7ad95e2f"/>
-        <!-- soundcpu - starts at 0xC000 -->
+        <!-- SND_START -->
+        <!-- soundcpu - starts at 0xC000 - length 0x4000 (14 bits) -->
         <part name="11e_ee01.bin" crc="73cdf3b2"/>
-        <!-- maps - starts at 0x10000 -->
+        <!-- MAP_START -->
+        <!-- maps - starts at 0x10000 - length 0x8000 (15 bits) -->
         <part name="c01_ee07.bin" crc="3625a68d"/>
         <part name="h04_ee09.bin" crc="6057c907"/>
         <part repeat="0x2000"> FF</part>
-        <!-- char - starts at 0x18000 -->
+        <!-- CHAR_START -->
+        <!-- chars - starts at 0x18000 - length 0x8000 (15 bits) -->
         <interleave output="16">
             <part name="05c_ee00.bin" crc="cadb75bd" map="12"/>
         </interleave>
         <part repeat="0x6000"> FF</part>
-        <!-- scr1 - starts at 0x20000 -->
+        <!-- SCR1_START -->
+        <!-- 16x16tiles - starts at 0x20000 - length 0x20000 (17 bits) -->
         <interleave output="16">
             <part name="a02_ee05.bin" crc="b32d8252" map="01"/>
             <part name="a03_ee06.bin" crc="6039bdd1" map="10"/>
         </interleave>
         <part repeat="0x18000"> FF</part>
-        <!-- scr2 - starts at 0x40000 -->
+        <!-- SCR2_START -->
+        <!-- 32x32tiles - starts at 0x40000 - length 0x20000 (17 bits) -->
         <part name="h01_ee08.bin" crc="96a65c1d"/>
         <part repeat="0x1C000"> FF</part>
-        <!-- object - starts at 0x60000 -->
+        <!-- OBJ_START -->
+        <!-- sprites - starts at 0x60000 - length 0x8000 (15 bits) -->
         <interleave output="16">
             <part name="j12_ee11.bin" crc="0e0f300d" map="01"/>
             <part name="j11_ee10.bin" crc="bc83e265" map="10"/>
         </interleave>
-        <!-- proms - starts at 0x68000 -->
+        <!-- PROM_START -->
+        <!-- proms - starts at 0x68000 - length 0xB20 (12 bits) -->
         <part name="02d_e-02.bin" crc="8d0d5935"/>
         <part name="03d_e-03.bin" crc="d3c17efc"/>
         <part name="04d_e-04.bin" crc="58ba964c"/>
@@ -75,14 +82,13 @@
         <part name="k06_e-08.bin" crc="0eaf5158"/>
         <part name="l03_e-09.bin" crc="0d968558"/>
         <part name="03e_e-01.bin" crc="1acee376"/>
-        <part repeat="0xE0"> FF</part>
-        <!-- Total 0x68C00 bytes - 419 kBytes -->
+        <!-- Total 0x68B20 bytes - 418 kBytes -->
     </rom>
     <!-- Vertical game -->
     <rom index="1">
-        <part>01</part>
+        <part>05</part>
     </rom>
-    <switches base="16" default="df,ff">
+    <switches page_id="1" page_name="Switches" base="16" default="df,ff">
         <!-- DSW0 -->
         <dip name="Difficulty" bits="0,1" ids="Hardest,Hard,Easy,Normal"/>
         <dip name="Lives" bits="2,3" ids="5,2,1,3"/>

@@ -21,70 +21,70 @@
 
 <misterromdescription>
     <about author="jotego" webpage="https://patreon.com/jotego" source="https://github.com/jotego" twitter="@topapate"/>
-    <name>Mach-9 (bootleg of Vulgus)</name>
-    <setname>mach9</setname>
+    <name>Vulgus (Japan?)</name>
+    <setname>vulgusj</setname>
     <rbf>jtvulgus</rbf>
     <mameversion>0251</mameversion>
     <year>1984</year>
-    <manufacturer>bootleg (ITISA)</manufacturer>
+    <manufacturer>Capcom</manufacturer>
     <players>2</players>
     <joystick>8</joystick>
     <rotation>vertical (ccw)</rotation>
     <region>World</region>
     <mraauthor>jotego</mraauthor>
-    <rom index="0" zip="mach9.zip|vulgus.zip" md5="None" asm_md5="a0aa39d1cb955ea84c82da5403ac321b">
+    <rom index="0" zip="vulgusj.zip|vulgus.zip" md5="None" asm_md5="eacb8932ec110b2e0c1eb258df5ea214">
         <!-- maincpu - starts at 0x0 - length 0x14000 (17 bits) -->
-        <part name="02_4n.bin" crc="b3310b0c"/>
-        <part name="03_5n.bin" crc="51acef76"/>
-        <part name="04_6n.bin" crc="489e7f60"/>
-        <part name="05_7n.bin" crc="ef3e4278"/>
-        <part name="06_8n.bin" crc="6ca5ca41"/>
+        <part name="1-4n.bin" crc="fe5a5ca5"/>
+        <part name="1-5n.bin" crc="847e437f"/>
+        <part name="1-6n.bin" crc="4666c436"/>
+        <part name="1-7n.bin" crc="ff2097f9"/>
+        <part name="1-8n.bin" crc="6ca5ca41"/>
         <part repeat="0xA000"> FF</part>
         <!-- JTFRAME_BA1_START -->
         <!-- audiocpu - starts at 0x14000 - length 0x4000 (14 bits) -->
-        <part name="07_11c.bin" crc="3bd2acf4"/>
+        <part name="1-11c.bin" crc="3bd2acf4"/>
         <part repeat="0x2000"> FF</part>
         <!-- JTFRAME_BA2_START -->
         <!-- chars - starts at 0x18000 - length 0x2000 (13 bits) -->
         <interleave output="16">
-            <part name="01_3d.bin" crc="be556775" map="12"/>
+            <part name="1-3d.bin" crc="8bc5d7a5" map="12"/>
         </interleave>
         <!-- sprites - starts at 0x1A000 - length 0x10000 (16 bits) -->
         <interleave output="16">
-            <part name="14_2n.bin" crc="6db1b10d" map="01"/>
-            <part name="16_4n.bin" crc="0071a2e3" map="10"/>
+            <part name="2-2n.bin" crc="6db1b10d" map="01"/>
+            <part name="2-4n.bin" crc="0071a2e3" map="10"/>
         </interleave>
         <interleave output="16">
-            <part name="15_3n.bin" crc="5d8c34ec" map="01"/>
-            <part name="17_5n.bin" crc="4023a1ec" map="10"/>
+            <part name="2-3n.bin" crc="5d8c34ec" map="01"/>
+            <part name="2-5n.bin" crc="4023a1ec" map="10"/>
         </interleave>
         <part repeat="0x8000"> FF</part>
         <!-- JTFRAME_BA3_START -->
         <!-- tiles - starts at 0x2A000 - length 0x10000 (16 bits) -->
         <interleave output="32">
-            <part name="08_2a.bin" crc="e10aaca1" map="0001"/>
-            <part name="10_4a.bin" crc="206a13f1" map="0010"/>
-            <part name="12_6a.bin" crc="5a26b38f" map="0100"/>
-            <part name="12_6a.bin" crc="5a26b38f" map="1000"/>
+            <part name="2-2a.bin" crc="e10aaca1" map="0001"/>
+            <part name="2-4a.bin" crc="206a13f1" map="0010"/>
+            <part name="2-6a.bin" crc="5a26b38f" map="0100"/>
+            <part name="2-6a.bin" crc="5a26b38f" map="1000"/>
         </interleave>
         <interleave output="32">
-            <part name="09_3a.bin" crc="9193f2f1" map="0001"/>
-            <part name="11_5a.bin" crc="d729b5b7" map="0010"/>
-            <part name="13_7a.bin" crc="8033cd4f" map="0100"/>
-            <part name="13_7a.bin" crc="8033cd4f" map="1000"/>
+            <part name="2-3a.bin" crc="8da520da" map="0001"/>
+            <part name="2-5a.bin" crc="b6d81984" map="0010"/>
+            <part name="2-7a.bin" crc="1e1ca773" map="0100"/>
+            <part name="2-7a.bin" crc="1e1ca773" map="1000"/>
         </interleave>
         <!-- JTFRAME_PROM_START -->
         <!-- proms - starts at 0x3A000 - length 0xA00 (12 bits) -->
-        <part name="82s129_8e.bin" crc="06a83606"/>
-        <part name="82s129_9e.bin" crc="beacf13c"/>
-        <part name="82s129_10e.bin" crc="8404067c"/>
-        <part name="82s129_1d.bin" crc="7179080d"/>
-        <part name="82s129_9c.bin" crc="7a1f0bd6"/>
-        <part name="82s129_2j.bin" crc="d0842029"/>
-        <part name="82s129_8e.bin" crc="06a83606"/>
-        <part name="82s129_8e.bin" crc="06a83606"/>
-        <part name="82s129_9k.bin" crc="32b10521"/>
-        <part name="82s129_8n.bin" crc="4921635c"/>
+        <part name="e8.bin" crc="06a83606"/>
+        <part name="e9.bin" crc="beacf13c"/>
+        <part name="e10.bin" crc="de1fb621"/>
+        <part name="d1.bin" crc="7179080d"/>
+        <part name="c9.bin" crc="7a1f0bd6"/>
+        <part name="j2.bin" crc="d0842029"/>
+        <part name="e8.bin" crc="06a83606"/>
+        <part name="e8.bin" crc="06a83606"/>
+        <part name="82s126.9k" crc="32b10521"/>
+        <part name="82s129.8n" crc="4921635c"/>
         <!-- Total 0x3AA00 bytes - 234 kBytes -->
     </rom>
     <!-- Vertical game -->
