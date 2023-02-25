@@ -18,10 +18,10 @@
 				"type": "check",
 				"enabled": true,
 				"persist": true,
-				"writeonly": true,
 				"address": "0xfb000000",
 				"defaultval": 4,
-				"value": 4
+				"value": 4,
+				"mask": "0xFFFFFFFB"
 			},
 			{
 				"name": "Coin A",
