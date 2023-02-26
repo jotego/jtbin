@@ -1,17 +1,17 @@
-<!--          FPGA compatible core for Mitchell arcade hardware by Jotego
+<!--          FPGA arcade hardware by Jotego
 
               This core is available for hardware compatible with MiST and MiSTer
               Other FPGA systems may be supported by the time you read this.
               This work is not mantained by the MiSTer project. Please contact the
               core author for issues and updates.
 
-              (c) Jose Tejada, 2021. Please support the author
+              (c) Jose Tejada, 2023. Please support this research
               Patreon: https://patreon.com/jotego
-              Paypal:  https://paypal.me/topapate
 
               The author does not endorse or participate in illegal distribution
-              of copyrighted material. This work can be used with legally
-              obtained ROM dumps or with compatible homebrew software.
+              of copyrighted material. This work can be used with compatible
+              software. This software can be homebrew projects or legally
+              obtained memory dumps of compatible games.
 
               This file license is GNU GPLv2.
               You can read the whole license file in
@@ -19,46 +19,42 @@
 
 -->
 
-<misterromdescription>
+<misterromdescription default="ff,ff">
     <about author="jotego" webpage="https://patreon.com/jotego" source="https://github.com/jotego" twitter="@topapate"/>
     <name>Mighty! Pang (Asia 001010)</name>
     <setname>mpanga</setname>
     <rbf>jtcps2</rbf>
-    <mameversion>0229</mameversion>
+    <mameversion>0251</mameversion>
     <year>2000</year>
-    <manufacturer>Mitchell</manufacturer>
+    <manufacturer>Mitchell (Capcom license)</manufacturer>
     <players>2</players>
-    <joystick>8-way</joystick>
+    <joystick>8</joystick>
     <rotation>horizontal</rotation>
-    <region>Asia</region>
-    <platform>CPS-2</platform>
-    <category>Platformer</category>
-    <catver>Shooter / 3rd Person</catver>
+    <region>World</region>
     <mraauthor>jotego,atrac17</mraauthor>
-    <rom index="0" zip="mpanga.zip|mpang.zip|qsound.zip" type="merged" md5="None" address="0x30000000">
+    <rom index="0" zip="mpanga.zip|mpang.zip|qsound.zip" md5="None" address="0x30000000" asm_md5="65499c3ba743992e2f0f7f1a4ddbdc48">
         <part>
-        00 04 80 04 80 14 80 54 
-        ff ff ff ff ff ff ff ff 
-        32 ff 00 02 04 06 26 28 
-        2a 2c 2e 00 00 30 02 04 
-        08 30 ff ff ff ff ff ff 
-        ff ff ff ff
-        </part>
-        <!-- key - starts at 0x0 -->
+            00 04 80 04 80 14 80 54
+            FF FF FF FF FF FF FF FF
+            32 FF 00 02 04 06 26 28
+            2A 2C 2E 00 00 30 02 04
+            08 30 FF FF FF FF FF FF
+            FF FF FF FF </part>
+        <!-- key - starts at 0x0 - length 0x14 (5 bits) -->
         <part name="mpang.key" crc="95354b0f"/>
-        <!-- maincpu - starts at 0x14 -->
+        <!-- maincpu - starts at 0x14 - length 0x100000 (20 bits) -->
         <part name="mpn_03a.6a" crc="b05ebc34"/>
         <part name="mpn_04a.7a" crc="8e4814b4"/>
-        <!-- audiocpu - starts at 0x100014 -->
+        <!-- audiocpu - starts at 0x100014 - length 0x20000 (17 bits) -->
         <part name="mpn.01" crc="90c7adb6"/>
-        <!-- qsound - starts at 0x120014 -->
+        <!-- qsound - starts at 0x120014 - length 0x400000 (22 bits) -->
         <interleave output="16">
             <part name="mpn-simm.05a" crc="318a2e21" map="12"/>
         </interleave>
         <interleave output="16">
             <part name="mpn-simm.05b" crc="5462f4e8" map="12"/>
         </interleave>
-        <!-- gfx - starts at 0x520014 -->
+        <!-- gfx - starts at 0x520014 - length 0x1000000 (24 bits) -->
         <interleave output="64">
             <part name="mpn-simm.01c" crc="388db66b" map="00000001"/>
             <part name="mpn-simm.01d" crc="aff1b494" map="00000010"/>
@@ -69,16 +65,23 @@
             <part name="mpn-simm.03a" crc="c2aea4ec" map="01000000"/>
             <part name="mpn-simm.03b" crc="84d6dc33" map="10000000"/>
         </interleave>
-        <!-- QSound firmware - starts at 0x1520014 -->
+        <!-- firmware - starts at 0x1520014 - length 0x2000 (13 bits) -->
         <part name="dl-1425.bin" crc="d6cf5ef5" length="0x2000"/>
         <!-- Total 0x1522014 bytes - 21640 kBytes -->
     </rom>
+    <rom index="2">
+01 00 01 00 00 01 00 01 00 02 00 00 00 00 00 00
+03 03 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+05 20 0A 07 41 50 45 34 50 20 4E 41 20 47 20 34
+01 00 01 00 00 01 00 01 00 02 00 00 00 00 00 00
+03 03 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+05 20 0A 07 41 50 45 34 50 20 4E 41 20 47 20 34
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+</rom>
+    <nvram index="2" size="128"/>
     <rom index="1">
         <part>00</part>
     </rom>
-    <rom index="2">
-        <part>01 00 01 00 00 01 00 01 00 02 00 00 00 00 00 00 02 05 00 00 00 00 00 00 00 00 00 00 00 00 00 00 05 20 08 07 41 50 41 34 50 20 6e 61 20 47 20 34 01 00 01 00 00 01 00 01 00 02 00 00 00 00 00 00 02 05 00 00 00 00 00 00 00 00 00 00 00 00 00 00 05 20 08 07 41 50 41 34 50 20 6e 61 20 47 20 34 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00</part>
-    </rom>
-    <nvram index="2" size="128"/>
-    <buttons names="Shot,-,-,-,-,-,Start,Coin,Core credits" default="Y,X,B,A,L,R,Select,Start,-" count="1"/>
+    <buttons names="Shot,-,-,-,-,-,Start,Coin,Core credits" default="Y,X,B,A,R,L,Start,Select,-" count="1"/>
 </misterromdescription>

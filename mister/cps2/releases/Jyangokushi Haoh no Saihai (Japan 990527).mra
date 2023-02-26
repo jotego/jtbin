@@ -1,17 +1,17 @@
-<!--          FPGA compatible core for Capcom arcade hardware by Jotego
+<!--          FPGA arcade hardware by Jotego
 
               This core is available for hardware compatible with MiST and MiSTer
               Other FPGA systems may be supported by the time you read this.
               This work is not mantained by the MiSTer project. Please contact the
               core author for issues and updates.
 
-              (c) Jose Tejada, 2021. Please support the author
+              (c) Jose Tejada, 2023. Please support this research
               Patreon: https://patreon.com/jotego
-              Paypal:  https://paypal.me/topapate
 
               The author does not endorse or participate in illegal distribution
-              of copyrighted material. This work can be used with legally
-              obtained ROM dumps or with compatible homebrew software.
+              of copyrighted material. This work can be used with compatible
+              software. This software can be homebrew projects or legally
+              obtained memory dumps of compatible games.
 
               This file license is GNU GPLv2.
               You can read the whole license file in
@@ -19,43 +19,39 @@
 
 -->
 
-<misterromdescription>
+<misterromdescription default="ff,ff">
     <about author="jotego" webpage="https://patreon.com/jotego" source="https://github.com/jotego" twitter="@topapate"/>
     <name>Jyangokushi: Haoh no Saihai (Japan 990527)</name>
     <setname>jyangoku</setname>
     <rbf>jtcps2</rbf>
-    <mameversion>0229</mameversion>
+    <mameversion>0251</mameversion>
     <year>1999</year>
     <manufacturer>Capcom</manufacturer>
     <players>1</players>
-    <joystick>8-way</joystick>
+    <joystick>8</joystick>
     <rotation>horizontal</rotation>
-    <region>Japan</region>
-    <platform>CPS-2</platform>
-    <category>Puzzle</category>
-    <catver>Tabletop / Mahjong</catver>
-    <mraauthor>jotego,atrac17,MJY71</mraauthor>
-    <rom index="0" zip="jyangoku.zip|qsound.zip" type="merged" md5="None" address="0x30000000">
+    <region>World</region>
+    <mraauthor>jotego,atrac17</mraauthor>
+    <rom index="0" zip="jyangoku.zip|qsound.zip" md5="None" address="0x30000000" asm_md5="7ae7b0471ea7dde0b0ff13962bfddcc8">
         <part>
-        00 02 80 02 80 12 80 52 
-        ff ff ff ff ff ff ff ff 
-        32 ff 00 02 04 06 26 28 
-        2a 2c 2e 00 00 30 02 04 
-        08 30 ff ff ff ff ff ff 
-        ff ff ff ff
-        </part>
-        <!-- key - starts at 0x0 -->
+            00 02 80 02 80 12 80 52
+            FF FF FF FF FF FF FF FF
+            32 FF 00 02 04 06 26 28
+            2A 2C 2E 00 00 30 02 04
+            08 30 FF FF FF FF FF FF
+            FF FF FF FF </part>
+        <!-- key - starts at 0x0 - length 0x14 (5 bits) -->
         <part name="jyangoku.key" crc="95b0a560"/>
-        <!-- maincpu - starts at 0x14 -->
+        <!-- maincpu - starts at 0x14 - length 0x80000 (19 bits) -->
         <part name="majj.03" crc="4614a3b2"/>
-        <!-- audiocpu - starts at 0x80014 -->
+        <!-- audiocpu - starts at 0x80014 - length 0x20000 (17 bits) -->
         <part name="maj.01" crc="1fe8c213"/>
-        <!-- qsound - starts at 0xA0014 -->
+        <!-- qsound - starts at 0xA0014 - length 0x400000 (22 bits) -->
         <interleave output="16">
             <part name="maj5_a.simm5" crc="5ad9ee53" map="01"/>
             <part name="maj5_b.simm5" crc="efb3dbfb" map="10"/>
         </interleave>
-        <!-- gfx - starts at 0x4A0014 -->
+        <!-- gfx - starts at 0x4A0014 - length 0x1000000 (24 bits) -->
         <interleave output="64">
             <part name="maj1_d.simm1" crc="ba0fe27b" map="00000001"/>
             <part name="maj1_c.simm1" crc="2cd141bf" map="00000010"/>
@@ -66,16 +62,23 @@
             <part name="maj3_b.simm3" crc="ec737d9d" map="01000000"/>
             <part name="maj3_a.simm3" crc="c23b6f22" map="10000000"/>
         </interleave>
-        <!-- QSound firmware - starts at 0x14A0014 -->
+        <!-- firmware - starts at 0x14A0014 - length 0x2000 (13 bits) -->
         <part name="dl-1425.bin" crc="d6cf5ef5" length="0x2000"/>
         <!-- Total 0x14A2014 bytes - 21128 kBytes -->
     </rom>
+    <rom index="2">
+01 00 01 00 02 00 00 00 00 00 00 00 00 00 00 00
+00 02 00 02 01 01 00 00 00 00 00 00 00 00 00 00
+05 99 00 27 41 4D 4A 4A 41 4D 59 4A 4E 41 20 33
+01 00 01 00 02 00 00 00 00 00 00 00 00 00 00 00
+00 02 00 02 01 01 00 00 00 00 00 00 00 00 00 00
+05 99 00 27 41 4D 4A 4A 41 4D 59 4A 4E 41 20 33
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+</rom>
+    <nvram index="2" size="128"/>
     <rom index="1">
         <part>00</part>
     </rom>
-    <rom index="2">
-        <part>01 00 01 00 02 00 00 00 00 00 00 00 00 00 00 00 00 02 00 02 01 01 00 00 00 00 00 00 00 00 00 00 05 99 00 27 41 4d 4a 4a 41 4d 59 4a 4e 41 20 33 01 00 01 00 02 00 00 00 00 00 00 00 00 00 00 00 00 02 00 02 01 01 00 00 00 00 00 00 00 00 00 00 05 99 00 27 41 4d 4a 4a 41 4d 59 4a 4e 41 20 33 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00</part>
-    </rom>
-    <nvram index="2" size="128"/>
-    <buttons names="Tsumo,Open Menu,-,-,-,-,Start,Coin,Core credits" default="Y,X,B,A,L,R,Select,Start,-" count="2"/>
+    <buttons names="Tsumo,Open Menu,-,-,-,-,Start,Coin,Core credits" default="Y,X,B,A,R,L,Start,Select,-" count="2"/>
 </misterromdescription>

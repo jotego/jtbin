@@ -1,17 +1,17 @@
-<!--          FPGA compatible core for Capcom arcade hardware by Jotego
+<!--          FPGA arcade hardware by Jotego
 
               This core is available for hardware compatible with MiST and MiSTer
               Other FPGA systems may be supported by the time you read this.
               This work is not mantained by the MiSTer project. Please contact the
               core author for issues and updates.
 
-              (c) Jose Tejada, 2021. Please support the author
+              (c) Jose Tejada, 2023. Please support this research
               Patreon: https://patreon.com/jotego
-              Paypal:  https://paypal.me/topapate
 
               The author does not endorse or participate in illegal distribution
-              of copyrighted material. This work can be used with legally
-              obtained ROM dumps or with compatible homebrew software.
+              of copyrighted material. This work can be used with compatible
+              software. This software can be homebrew projects or legally
+              obtained memory dumps of compatible games.
 
               This file license is GNU GPLv2.
               You can read the whole license file in
@@ -19,34 +19,30 @@
 
 -->
 
-<misterromdescription>
+<misterromdescription default="ff,ff">
     <about author="jotego" webpage="https://patreon.com/jotego" source="https://github.com/jotego" twitter="@topapate"/>
     <name>Vampire Savior: The Lord of Vampire (USA 970519)</name>
     <setname>vsavu</setname>
     <rbf>jtcps2</rbf>
-    <mameversion>0229</mameversion>
+    <mameversion>0251</mameversion>
     <year>1997</year>
     <manufacturer>Capcom</manufacturer>
     <players>2</players>
-    <joystick>8-way</joystick>
+    <joystick>8</joystick>
     <rotation>horizontal</rotation>
-    <region>USA</region>
-    <platform>CPS-2</platform>
-    <category>Fighting</category>
-    <catver>Fighter / Versus</catver>
+    <region>World</region>
     <mraauthor>jotego,atrac17</mraauthor>
-    <rom index="0" zip="vsavu.zip|vsav.zip|qsound.zip" type="merged" md5="None" address="0x30000000">
+    <rom index="0" zip="vsavu.zip|vsav.zip|qsound.zip" md5="None" address="0x30000000" asm_md5="373328b8965cf472a864c8459544c7e5">
         <part>
-        00 10 00 11 00 31 00 b1 
-        ff ff ff ff ff ff ff ff 
-        32 ff 00 02 04 06 26 28 
-        2a 2c 2e 00 00 30 02 04 
-        08 30 ff ff ff ff ff ff 
-        fc ff ff ff
-        </part>
-        <!-- key - starts at 0x0 -->
+            00 10 00 11 00 31 00 B1
+            FF FF FF FF FF FF FF FF
+            32 FF 00 02 04 06 26 28
+            2A 2C 2E 00 00 30 02 04
+            08 30 FF FF FF FF FF FF
+            FC FF FF FF </part>
+        <!-- key - starts at 0x0 - length 0x14 (5 bits) -->
         <part name="vsavu.key" crc="ff21b9d7"/>
-        <!-- maincpu - starts at 0x14 -->
+        <!-- maincpu - starts at 0x14 - length 0x400000 (22 bits) -->
         <part name="vm3u.03d" crc="1f295274"/>
         <part name="vm3u.04d" crc="c46adf81"/>
         <part name="vm3.05a" crc="4118e00f"/>
@@ -55,17 +51,17 @@
         <part name="vm3.08a" crc="6ca47259"/>
         <part name="vm3.09b" crc="f4a339e3"/>
         <part name="vm3.10b" crc="fffbb5b8"/>
-        <!-- audiocpu - starts at 0x400014 -->
+        <!-- audiocpu - starts at 0x400014 - length 0x40000 (18 bits) -->
         <part name="vm3.01" crc="f778769b"/>
         <part name="vm3.02" crc="cc09faa1"/>
-        <!-- qsound - starts at 0x440014 -->
+        <!-- qsound - starts at 0x440014 - length 0x800000 (23 bits) -->
         <interleave output="16">
             <part name="vm3.11m" crc="e80e956e" map="12"/>
         </interleave>
         <interleave output="16">
             <part name="vm3.12m" crc="9cd71557" map="12"/>
         </interleave>
-        <!-- gfx - starts at 0xC40014 -->
+        <!-- gfx - starts at 0xC40014 - length 0x2000000 (25 bits) -->
         <interleave output="64">
             <part name="vm3.13m" crc="fd8a11eb" map="00000021"/>
             <part name="vm3.15m" crc="dd1e7d4e" map="00002100"/>
@@ -78,16 +74,23 @@
             <part name="vm3.18m" crc="df9a9f47" map="00210000"/>
             <part name="vm3.20m" crc="c22fc3d9" map="21000000"/>
         </interleave>
-        <!-- QSound firmware - starts at 0x2C40014 -->
+        <!-- firmware - starts at 0x2C40014 - length 0x2000 (13 bits) -->
         <part name="dl-1425.bin" crc="d6cf5ef5" length="0x2000"/>
         <!-- Total 0x2C42014 bytes - 45320 kBytes -->
     </rom>
+    <rom index="2">
+01 09 01 00 00 01 00 01 00 02 00 00 00 00 00 00
+01 01 05 01 00 01 00 00 00 00 00 00 00 00 00 00
+05 97 0A 19 4D 56 45 33 65 72 73 20 76 61 6F 69
+01 09 01 00 00 01 00 01 00 02 00 00 00 00 00 00
+01 01 05 01 00 01 00 00 00 00 00 00 00 00 00 00
+05 97 0A 19 4D 56 45 33 65 72 73 20 76 61 6F 69
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+</rom>
+    <nvram index="2" size="128"/>
     <rom index="1">
         <part>00</part>
     </rom>
-    <rom index="2">
-        <part>01 09 01 00 00 01 00 01 00 02 00 00 00 00 00 00 01 01 05 00 00 01 00 00 00 00 00 00 00 00 00 00 05 97 02 19 4d 56 55 33 41 53 49 56 52 4f 54 20 01 09 01 00 00 01 00 01 00 02 00 00 00 00 00 00 01 01 05 00 00 01 00 00 00 00 00 00 00 00 00 00 05 97 02 19 4d 56 55 33 41 53 49 56 52 4f 54 20 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00</part>
-    </rom>
-    <nvram index="2" size="128"/>
-    <buttons names="Light Punch,Middle Punch,Heavy Punch,Light Kick,Middle Kick,Heavy Kick,Start,Coin,Core credits" default="Y,X,B,A,L,R,Select,Start,-" count="6"/>
+    <buttons names="Light Punch,Middle Punch,Heavy Punch,Light Kick,Middle Kick,Heavy Kick,Start,Coin,Core credits" default="Y,X,B,A,R,L,Start,Select,-" count="6"/>
 </misterromdescription>

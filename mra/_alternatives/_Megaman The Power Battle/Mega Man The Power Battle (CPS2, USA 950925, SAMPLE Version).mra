@@ -1,0 +1,111 @@
+<!--          FPGA arcade hardware by Jotego
+
+              This core is available for hardware compatible with MiST and MiSTer
+              Other FPGA systems may be supported by the time you read this.
+              This work is not mantained by the MiSTer project. Please contact the
+              core author for issues and updates.
+
+              (c) Jose Tejada, 2023. Please support this research
+              Patreon: https://patreon.com/jotego
+
+              The author does not endorse or participate in illegal distribution
+              of copyrighted material. This work can be used with compatible
+              software. This software can be homebrew projects or legally
+              obtained memory dumps of compatible games.
+
+              This file license is GNU GPLv2.
+              You can read the whole license file in
+              https://opensource.org/licenses/gpl-2.0.php
+
+-->
+
+<misterromdescription default="ff,ff">
+    <about author="jotego" webpage="https://patreon.com/jotego" source="https://github.com/jotego" twitter="@topapate"/>
+    <name>Mega Man: The Power Battle (CPS2, USA 950925, SAMPLE Version)</name>
+    <setname>mmancp2ur2</setname>
+    <rbf>jtcps2</rbf>
+    <mameversion>0251</mameversion>
+    <year>1995</year>
+    <manufacturer>Capcom</manufacturer>
+    <players>2</players>
+    <joystick>8</joystick>
+    <rotation>horizontal</rotation>
+    <region>World</region>
+    <mraauthor>jotego,atrac17</mraauthor>
+    <rom index="0" zip="mmancp2ur2.zip|megaman.zip|qsound.zip" md5="None" address="0x30000000" asm_md5="f8489c0cd77b19c0d70b7b79d23fc16d">
+        <part>
+            00 06 80 06 80 16 80 56
+            FF FF FF FF FF FF FF FF
+            32 FF 00 02 04 06 26 28
+            2A 2C 2E 00 00 30 02 04
+            08 30 FF FF FF FF FF FF
+            FF FF FF FF </part>
+        <!-- key - starts at 0x0 - length 0x14 (5 bits) -->
+        <part name="mmancp2u.key" crc="17ca6659"/>
+        <!-- maincpu - starts at 0x14 - length 0x180000 (21 bits) -->
+        <part name="rcmu.03" crc="3cfdb1bb"/>
+        <part name="rcmu.04" crc="169bf5e8"/>
+        <part name="rcmu.05" crc="4376ea95"/>
+        <!-- audiocpu - starts at 0x180014 - length 0x20000 (17 bits) -->
+        <part name="rcm.01" crc="d60cf8a3"/>
+        <!-- qsound - starts at 0x1A0014 - length 0x400000 (22 bits) -->
+        <interleave output="16">
+            <part name="rcm.51" crc="b6d07080" map="12"/>
+        </interleave>
+        <interleave output="16">
+            <part name="rcm.52" crc="dfddc493" map="12"/>
+        </interleave>
+        <interleave output="16">
+            <part name="rcm.53" crc="6062ae3a" map="12"/>
+        </interleave>
+        <interleave output="16">
+            <part name="rcm.54" crc="08c6f3bf" map="12"/>
+        </interleave>
+        <interleave output="16">
+            <part name="rcm.55" crc="f97dfccc" map="12"/>
+        </interleave>
+        <interleave output="16">
+            <part name="rcm.56" crc="ade475bc" map="12"/>
+        </interleave>
+        <interleave output="16">
+            <part name="rcm.57" crc="075effb3" map="12"/>
+        </interleave>
+        <interleave output="16">
+            <part name="rcm.58" crc="f6c1f87b" map="12"/>
+        </interleave>
+        <!-- gfx - starts at 0x5A0014 - length 0x1000000 (24 bits) -->
+        <part repeat="0x800000"> FF</part>
+        <interleave output="64">
+            <part name="rcm.73" crc="774c6e04" map="00000021"/>
+            <part name="rcm.63" crc="acad7c62" map="00002100"/>
+            <part name="rcm.83" crc="6af30499" map="00210000"/>
+            <part name="rcm.93" crc="7a5a5166" map="21000000"/>
+        </interleave>
+        <interleave output="64">
+            <part name="rcm.74" crc="004ec725" map="00000021"/>
+            <part name="rcm.64" crc="65c0464e" map="00002100"/>
+            <part name="rcm.84" crc="fb3097cc" map="00210000"/>
+            <part name="rcm.94" crc="2e16557a" map="21000000"/>
+        </interleave>
+        <interleave output="64">
+            <part name="rcm.75" crc="70a73f99" map="00000021"/>
+            <part name="rcm.65" crc="ecedad3d" map="00002100"/>
+            <part name="rcm.85" crc="3d6186d8" map="00210000"/>
+            <part name="rcm.95" crc="8c7700f1" map="21000000"/>
+        </interleave>
+        <interleave output="64">
+            <part name="rcm.76" crc="89a889ad" map="00000021"/>
+            <part name="rcm.66" crc="1300eb7b" map="00002100"/>
+            <part name="rcm.86" crc="6d974ebd" map="00210000"/>
+            <part name="rcm.96" crc="7da4cd24" map="21000000"/>
+        </interleave>
+        <!-- firmware - starts at 0x15A0014 - length 0x2000 (13 bits) -->
+        <part name="dl-1425.bin" crc="d6cf5ef5" length="0x2000"/>
+        <!-- Total 0x15A2014 bytes - 22152 kBytes -->
+    </rom>
+    <nvram index="2" size="128"/>
+    <rom index="1">
+        <part>00</part>
+    </rom>
+    <buttons names="Light Punch,Middle Punch,Heavy Punch,Light Kick,Middle Kick,Heavy Kick,Start,Coin,Core credits" default="Y,X,B,A,R,L,Start,Select,-" count="6"/>
+</misterromdescription>

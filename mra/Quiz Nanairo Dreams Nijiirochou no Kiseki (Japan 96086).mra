@@ -1,17 +1,17 @@
-<!--          FPGA compatible core for Capcom arcade hardware by Jotego
+<!--          FPGA arcade hardware by Jotego
 
               This core is available for hardware compatible with MiST and MiSTer
               Other FPGA systems may be supported by the time you read this.
               This work is not mantained by the MiSTer project. Please contact the
               core author for issues and updates.
 
-              (c) Jose Tejada, 2021. Please support the author
+              (c) Jose Tejada, 2023. Please support this research
               Patreon: https://patreon.com/jotego
-              Paypal:  https://paypal.me/topapate
 
               The author does not endorse or participate in illegal distribution
-              of copyrighted material. This work can be used with legally
-              obtained ROM dumps or with compatible homebrew software.
+              of copyrighted material. This work can be used with compatible
+              software. This software can be homebrew projects or legally
+              obtained memory dumps of compatible games.
 
               This file license is GNU GPLv2.
               You can read the whole license file in
@@ -19,48 +19,44 @@
 
 -->
 
-<misterromdescription>
+<misterromdescription default="ff,ff">
     <about author="jotego" webpage="https://patreon.com/jotego" source="https://github.com/jotego" twitter="@topapate"/>
     <name>Quiz Nanairo Dreams: Nijiirochou no Kiseki (Japan 96086)</name>
     <setname>qndream</setname>
     <rbf>jtcps2</rbf>
-    <mameversion>0229</mameversion>
+    <mameversion>0251</mameversion>
     <year>1996</year>
     <manufacturer>Capcom</manufacturer>
     <players>2</players>
-    <joystick>4-way</joystick>
+    <joystick/>
     <rotation>horizontal</rotation>
-    <region>Japan</region>
-    <platform>CPS-2</platform>
-    <category>Quiz</category>
-    <catver>Quiz / Questions in Japanese</catver>
+    <region>World</region>
     <mraauthor>jotego,atrac17</mraauthor>
-    <rom index="0" zip="qndream.zip|qsound.zip" type="merged" md5="None" address="0x30000000">
+    <rom index="0" zip="qndream.zip|qsound.zip" md5="None" address="0x30000000" asm_md5="2521df036b8be8e2bc699cb7f771927b">
         <part>
-        00 08 80 08 80 18 80 58 
-        ff ff ff ff ff ff ff ff 
-        32 ff 00 02 04 06 26 28 
-        2a 2c 2e 00 00 30 02 04 
-        08 30 ff ff ff ff ff ff 
-        ff ff ff ff
-        </part>
-        <!-- key - starts at 0x0 -->
+            00 08 80 08 80 18 80 58
+            FF FF FF FF FF FF FF FF
+            32 FF 00 02 04 06 26 28
+            2A 2C 2E 00 00 30 02 04
+            08 30 FF FF FF FF FF FF
+            FF FF FF FF </part>
+        <!-- key - starts at 0x0 - length 0x14 (5 bits) -->
         <part name="qndream.key" crc="97eee4ff"/>
-        <!-- maincpu - starts at 0x14 -->
+        <!-- maincpu - starts at 0x14 - length 0x200000 (21 bits) -->
         <part name="tqzj.03a" crc="7acf3e30"/>
         <part name="tqzj.04" crc="f1044a87"/>
         <part name="tqzj.05" crc="4105ba0e"/>
         <part name="tqzj.06" crc="c371e8a5"/>
-        <!-- audiocpu - starts at 0x200014 -->
+        <!-- audiocpu - starts at 0x200014 - length 0x20000 (17 bits) -->
         <part name="tqz.01" crc="e9ce9d0a"/>
-        <!-- qsound - starts at 0x220014 -->
+        <!-- qsound - starts at 0x220014 - length 0x400000 (22 bits) -->
         <interleave output="16">
             <part name="tqz.11m" crc="78e7884f" map="12"/>
         </interleave>
         <interleave output="16">
             <part name="tqz.12m" crc="2e049b13" map="12"/>
         </interleave>
-        <!-- gfx - starts at 0x620014 -->
+        <!-- gfx - starts at 0x620014 - length 0x1000000 (24 bits) -->
         <part repeat="0x800000"> FF</part>
         <interleave output="64">
             <part name="tqz.14m" crc="98af88a2" map="00000021"/>
@@ -68,16 +64,23 @@
             <part name="tqz.18m" crc="42f132ff" map="00210000"/>
             <part name="tqz.20m" crc="b2e128a3" map="21000000"/>
         </interleave>
-        <!-- QSound firmware - starts at 0x1620014 -->
+        <!-- firmware - starts at 0x1620014 - length 0x2000 (13 bits) -->
         <part name="dl-1425.bin" crc="d6cf5ef5" length="0x2000"/>
         <!-- Total 0x1622014 bytes - 22664 kBytes -->
     </rom>
+    <rom index="2">
+00 00 01 00 00 00 00 00 00 00 00 00 00 00 00 00
+02 02 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+08 96 00 23 12 95 FF 01 41 4E 41 4E 52 49 20 4F
+00 00 01 00 00 00 00 00 00 00 00 00 00 00 00 00
+02 02 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+08 96 00 23 12 95 FF 01 41 4E 41 4E 52 49 20 4F
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+</rom>
+    <nvram index="2" size="128"/>
     <rom index="1">
         <part>00</part>
     </rom>
-    <rom index="2">
-        <part>00 00 01 00 00 00 00 00 00 00 00 00 00 00 00 00 02 02 00 00 00 00 00 00 00 00 00 00 00 00 00 00 08 96 00 23 12 95 ff 01 41 4e 41 4e 52 49 20 4f 00 00 01 00 00 00 00 00 00 00 00 00 00 00 00 00 02 02 00 00 00 00 00 00 00 00 00 00 00 00 00 00 08 96 00 23 12 95 ff 01 41 4e 41 4e 52 49 20 4f 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00</part>
-    </rom>
-    <nvram index="2" size="128"/>
-    <buttons names="Button 1,Button 2,Button 3,Button 4,-,-,Start,Coin,Core credits" default="Y,X,B,ALR,Select,Start,-" count="4"/>
+    <buttons names="Button 1,Button 2,Button 3,Button 4,-,-,Start,Coin,Core credits" default="Y,X,B,A,R,L,Start,Select,-" count="4"/>
 </misterromdescription>

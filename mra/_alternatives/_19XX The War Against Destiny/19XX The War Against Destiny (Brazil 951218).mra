@@ -1,17 +1,17 @@
-<!--          FPGA compatible core for Capcom arcade hardware by Jotego
+<!--          FPGA arcade hardware by Jotego
 
               This core is available for hardware compatible with MiST and MiSTer
               Other FPGA systems may be supported by the time you read this.
               This work is not mantained by the MiSTer project. Please contact the
               core author for issues and updates.
 
-              (c) Jose Tejada, 2021. Please support the author
+              (c) Jose Tejada, 2023. Please support this research
               Patreon: https://patreon.com/jotego
-              Paypal:  https://paypal.me/topapate
 
               The author does not endorse or participate in illegal distribution
-              of copyrighted material. This work can be used with legally
-              obtained ROM dumps or with compatible homebrew software.
+              of copyrighted material. This work can be used with compatible
+              software. This software can be homebrew projects or legally
+              obtained memory dumps of compatible games.
 
               This file license is GNU GPLv2.
               You can read the whole license file in
@@ -19,49 +19,45 @@
 
 -->
 
-<misterromdescription>
+<misterromdescription default="ff,ff">
     <about author="jotego" webpage="https://patreon.com/jotego" source="https://github.com/jotego" twitter="@topapate"/>
     <name>19XX: The War Against Destiny (Brazil 951218)</name>
     <setname>19xxb</setname>
     <rbf>jtcps2</rbf>
-    <mameversion>0229</mameversion>
+    <mameversion>0251</mameversion>
     <year>1996</year>
     <manufacturer>Capcom</manufacturer>
     <players>2</players>
-    <joystick>8-way</joystick>
+    <joystick>8</joystick>
     <rotation>vertical (ccw)</rotation>
     <region>World</region>
-    <platform>CPS-2</platform>
-    <category>Shoot&apos;em up</category>
-    <catver>Shooter / Flying Vertical</catver>
     <mraauthor>jotego,atrac17</mraauthor>
-    <rom index="0" zip="19xxb.zip|19xx.zip|qsound.zip" type="merged" md5="None" address="0x30000000">
+    <rom index="0" zip="19xxb.zip|19xx.zip|qsound.zip" md5="None" address="0x30000000" asm_md5="4394816c7af2ab78621a7f1df5599802">
         <part>
-        00 0a 80 0a 80 1a 80 5a 
-        ff ff ff ff ff ff ff ff 
-        32 ff 00 02 04 06 26 28 
-        2a 2c 2e 00 00 30 02 04 
-        08 30 ff ff ff ff ff ff 
-        ff ff ff ff
-        </part>
-        <!-- key - starts at 0x0 -->
+            00 0A 80 0A 80 1A 80 5A
+            FF FF FF FF FF FF FF FF
+            32 FF 00 02 04 06 26 28
+            2A 2C 2E 00 00 30 02 04
+            08 30 FF FF FF FF FF FF
+            FF FF FF FF </part>
+        <!-- key - starts at 0x0 - length 0x14 (5 bits) -->
         <part name="19xxb.key" crc="4200e334"/>
-        <!-- maincpu - starts at 0x14 -->
+        <!-- maincpu - starts at 0x14 - length 0x280000 (22 bits) -->
         <part name="19xb.03a" crc="341bdf4a"/>
         <part name="19xb.04a" crc="dff8069e"/>
         <part name="19xb.05a" crc="a47a92a8"/>
         <part name="19xb.06a" crc="c52df10d"/>
         <part name="19x.07" crc="61c0296c"/>
-        <!-- audiocpu - starts at 0x280014 -->
+        <!-- audiocpu - starts at 0x280014 - length 0x20000 (17 bits) -->
         <part name="19x.01" crc="ef55195e"/>
-        <!-- qsound - starts at 0x2A0014 -->
+        <!-- qsound - starts at 0x2A0014 - length 0x400000 (22 bits) -->
         <interleave output="16">
             <part name="19x.11m" crc="d38beef3" map="12"/>
         </interleave>
         <interleave output="16">
             <part name="19x.12m" crc="d47c96e2" map="12"/>
         </interleave>
-        <!-- gfx - starts at 0x6A0014 -->
+        <!-- gfx - starts at 0x6A0014 - length 0x1000000 (24 bits) -->
         <interleave output="64">
             <part name="19x.13m" crc="427aeb18" map="00000021"/>
             <part name="19x.15m" crc="63bdbf54" map="00002100"/>
@@ -75,17 +71,24 @@
             <part name="19x.18m" crc="2213e798" map="00210000"/>
             <part name="19x.20m" crc="ab9d5b96" map="21000000"/>
         </interleave>
-        <!-- QSound firmware - starts at 0x16A0014 -->
+        <!-- firmware - starts at 0x16A0014 - length 0x2000 (13 bits) -->
         <part name="dl-1425.bin" crc="d6cf5ef5" length="0x2000"/>
         <!-- Total 0x16A2014 bytes - 23176 kBytes -->
     </rom>
+    <rom index="2">
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 03 01 00 03 00 00
+01 03 01 01 00 01 00 01 01 96 08 04 39 31 20 58
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 03 01 00 03 00 00
+01 03 01 01 00 01 00 01 01 96 08 04 39 31 20 58
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+</rom>
+    <nvram index="2" size="128"/>
     <!-- Vertical game -->
     <rom index="1">
-        <part>01</part>
+        <part>05</part>
     </rom>
-    <rom index="2">
-        <part>00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 03 01 00 03 00 00 01 03 01 01 00 01 00 01 12 95 0a 18 39 31 20 58 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 03 01 00 03 00 00 01 03 01 01 00 01 00 01 12 95 0a 18 39 31 20 58 00 00 00 00 00 00 00 00 00 00 00 00 39 31 20 58 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00</part>
-    </rom>
-    <nvram index="2" size="128"/>
-    <buttons names="Shot,Bomb,-,-,-,-,Start,Coin,Core credits" default="Y,X,B,A,L,R,Select,Start,-" count="2"/>
+    <buttons names="Shot,Bomb,-,-,-,-,Start,Coin,Core credits" default="Y,X,B,A,R,L,Start,Select,-" count="2"/>
 </misterromdescription>

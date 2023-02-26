@@ -1,0 +1,90 @@
+<!--          FPGA arcade hardware by Jotego
+
+              This core is available for hardware compatible with MiST and MiSTer
+              Other FPGA systems may be supported by the time you read this.
+              This work is not mantained by the MiSTer project. Please contact the
+              core author for issues and updates.
+
+              (c) Jose Tejada, 2023. Please support this research
+              Patreon: https://patreon.com/jotego
+
+              The author does not endorse or participate in illegal distribution
+              of copyrighted material. This work can be used with compatible
+              software. This software can be homebrew projects or legally
+              obtained memory dumps of compatible games.
+
+              This file license is GNU GPLv2.
+              You can read the whole license file in
+              https://opensource.org/licenses/gpl-2.0.php
+
+-->
+
+<misterromdescription>
+    <about author="jotego" webpage="https://patreon.com/jotego" source="https://github.com/jotego" twitter="@topapate"/>
+    <name>Tenchi wo Kurau (Japan Resale Ver.)</name>
+    <setname>dynwarjr</setname>
+    <rbf>jtcps1</rbf>
+    <mameversion>0251</mameversion>
+    <year>1989</year>
+    <manufacturer>Capcom</manufacturer>
+    <players>2</players>
+    <joystick>8</joystick>
+    <rotation>horizontal</rotation>
+    <region>World</region>
+    <mraauthor>jotego</mraauthor>
+    <rom index="0" zip="dynwarjr.zip|dynwar.zip" md5="None" asm_md5="1d45144b53742c93aa571a9c471317d6">
+        <part>
+            00 04 80 04 80 05 FF FF
+            FF FF FF FF FF FF FF FF
+            32 FF 00 02 04 06 26 28
+            2A 2C 2E 00 00 30 02 04
+            08 30 24 20 64 31 33 01
+            FF FF FF FF FF FF FF FF
+            FF FF FF FF FF FF FF FF
+            FF FF FF FF FF FF FF FF
+        </part>
+        <!-- maincpu - starts at 0x0 - length 0x100000 (20 bits) -->
+        <part name="tk1j_23.8f" crc="088a3009"/>
+        <part name="tk1j_22.7f" crc="93654bcf"/>
+        <!-- audiocpu - starts at 0x100000 - length 0x20000 (17 bits) -->
+        <part name="tk1_09.12a" crc="db77d899"/>
+        <!-- oki - starts at 0x120000 - length 0x40000 (18 bits) -->
+        <part name="tk1_18.11c" crc="7e5f6cb4"/>
+        <part name="tk1_19.12c" crc="4a30c737"/>
+        <!-- gfx - starts at 0x160000 - length 0x400000 (22 bits) -->
+        <interleave output="64">
+            <part name="tk1_01.3a" crc="f64bb6a0" map="00000021"/>
+            <part name="tk1_02.4a" crc="21fe6274" map="00002100"/>
+            <part name="tk1_03.5a" crc="0bf228cb" map="00210000"/>
+            <part name="tk1_04.6a" crc="1255dfb1" map="21000000"/>
+        </interleave>
+        <interleave output="64">
+            <part name="tk1_05.7a" crc="44f7661e" map="00000021"/>
+            <part name="tk1_06.8a" crc="a54c515d" map="00002100"/>
+            <part name="tk1_07.9a" crc="ca5c687c" map="00210000"/>
+            <part name="tk1_08.10a" crc="f9fe6591" map="21000000"/>
+        </interleave>
+        <!-- Total 0x560000 bytes - 5504 kBytes -->
+    </rom>
+    <rom index="1">
+        <part>00</part>
+    </rom>
+    <switches page_id="1" page_name="Switches" base="8" default="ff,ff,ff,ff">
+        <!-- DSWA -->
+        <dip name="Coin A" bits="0,2" ids="2/1,4/1,3/1,2/1,1/4,1/3,1/2,1/1"/>
+        <dip name="Coin B" bits="3,5" ids="2/1,4/1,3/1,2/1,1/4,1/3,1/2,1/1"/>
+        <dip name="Free Play" bits="7" ids="On,Off"/>
+        <!-- DSWB -->
+        <dip name="Difficulty" bits="8,10" ids="8,7,6,5,1,2,3,4 "/>
+        <!-- DSWC -->
+        <dip name="Freeze" bits="16" ids="On,Off"/>
+        <dip name="Turbo Mode" bits="17" ids="On,Off"/>
+        <dip name="Flip Screen" bits="20" ids="On,Off"/>
+        <dip name="Demo Sounds" bits="21" ids="Off,On"/>
+        <dip name="Allow Continue" bits="22" ids="No,Yes"/>
+        <dip name="Game Mode" bits="23" ids="Test,Game"/>
+        <!-- IN0 -->
+        <dip name="Service Mode" bits="30" ids="On,Off"/>
+    </switches>
+    <buttons names="button 1,button 2,-,-,-,-,Start,Coin,Core credits" default="Y,X,B,A,R,L,Start,Select,-" count="2"/>
+</misterromdescription>

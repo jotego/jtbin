@@ -1,17 +1,17 @@
-<!--          FPGA compatible core for Capcom arcade hardware by Jotego
+<!--          FPGA arcade hardware by Jotego
 
               This core is available for hardware compatible with MiST and MiSTer
               Other FPGA systems may be supported by the time you read this.
               This work is not mantained by the MiSTer project. Please contact the
               core author for issues and updates.
 
-              (c) Jose Tejada, 2021. Please support the author
+              (c) Jose Tejada, 2023. Please support this research
               Patreon: https://patreon.com/jotego
-              Paypal:  https://paypal.me/topapate
 
               The author does not endorse or participate in illegal distribution
-              of copyrighted material. This work can be used with legally
-              obtained ROM dumps or with compatible homebrew software.
+              of copyrighted material. This work can be used with compatible
+              software. This software can be homebrew projects or legally
+              obtained memory dumps of compatible games.
 
               This file license is GNU GPLv2.
               You can read the whole license file in
@@ -19,51 +19,47 @@
 
 -->
 
-<misterromdescription>
+<misterromdescription default="ff,ff">
     <about author="jotego" webpage="https://patreon.com/jotego" source="https://github.com/jotego" twitter="@topapate"/>
     <name>Street Fighter Zero 2 (Brazil 960531)</name>
     <setname>sfz2b</setname>
     <rbf>jtcps2</rbf>
-    <mameversion>0229</mameversion>
+    <mameversion>0251</mameversion>
     <year>1996</year>
     <manufacturer>Capcom</manufacturer>
     <players>2</players>
-    <joystick>8-way</joystick>
+    <joystick>8</joystick>
     <rotation>horizontal</rotation>
     <region>World</region>
-    <platform>CPS-2</platform>
-    <category>Fighting</category>
-    <catver>Fighter / Versus</catver>
     <mraauthor>jotego,atrac17</mraauthor>
-    <rom index="0" zip="sfz2b.zip|sfa2.zip|qsound.zip" type="merged" md5="None" address="0x30000000">
+    <rom index="0" zip="sfz2b.zip|sfa2.zip|qsound.zip" md5="None" address="0x30000000" asm_md5="a9eb074ea2c8a173da11ebc29097ffc2">
         <part>
-        00 0c 00 0d 00 1d 00 6d 
-        ff ff ff ff ff ff ff ff 
-        32 ff 00 02 04 06 26 28 
-        2a 2c 2e 00 00 30 02 04 
-        08 30 ff ff ff ff ff ff 
-        fc ff ff ff
-        </part>
-        <!-- key - starts at 0x0 -->
+            00 0C 00 0D 00 1D 00 6D
+            FF FF FF FF FF FF FF FF
+            32 FF 00 02 04 06 26 28
+            2A 2C 2E 00 00 30 02 04
+            08 30 FF FF FF FF FF FF
+            FC FF FF FF </part>
+        <!-- key - starts at 0x0 - length 0x14 (5 bits) -->
         <part name="sfz2b.key" crc="35b1df07"/>
-        <!-- maincpu - starts at 0x14 -->
+        <!-- maincpu - starts at 0x14 - length 0x300000 (22 bits) -->
         <part name="sz2b.03b" crc="1ac12812"/>
         <part name="sz2b.04b" crc="e4ffaf68"/>
         <part name="sz2b.05a" crc="dd224156"/>
         <part name="sz2b.06a" crc="a45a75a6"/>
         <part name="sz2b.07a" crc="7d19d5ec"/>
         <part name="sz2b.08" crc="92b66e01"/>
-        <!-- audiocpu - starts at 0x300014 -->
+        <!-- audiocpu - starts at 0x300014 - length 0x40000 (18 bits) -->
         <part name="sz2.01a" crc="1bc323cf"/>
         <part name="sz2.02a" crc="ba6a5013"/>
-        <!-- qsound - starts at 0x340014 -->
+        <!-- qsound - starts at 0x340014 - length 0x400000 (22 bits) -->
         <interleave output="16">
             <part name="sz2.11m" crc="aa47a601" map="12"/>
         </interleave>
         <interleave output="16">
             <part name="sz2.12m" crc="2237bc53" map="12"/>
         </interleave>
-        <!-- gfx - starts at 0x740014 -->
+        <!-- gfx - starts at 0x740014 - length 0x1400000 (25 bits) -->
         <interleave output="64">
             <part name="sz2.13m" crc="4d1f1f22" map="00000021"/>
             <part name="sz2.15m" crc="19cea680" map="00002100"/>
@@ -76,16 +72,23 @@
             <part name="sz2.18m" crc="4bc3c8bc" map="00210000"/>
             <part name="sz2.20m" crc="39e674c0" map="21000000"/>
         </interleave>
-        <!-- QSound firmware - starts at 0x1B40014 -->
+        <!-- firmware - starts at 0x1B40014 - length 0x2000 (13 bits) -->
         <part name="dl-1425.bin" crc="d6cf5ef5" length="0x2000"/>
         <!-- Total 0x1B42014 bytes - 27912 kBytes -->
     </rom>
+    <rom index="2">
+01 09 01 00 00 01 02 00 00 00 00 00 00 00 00 00
+01 01 04 01 00 02 00 00 00 00 00 00 00 00 00 00
+02 96 0A 29 22 96 FF 15 69 66 68 67 65 74 20 72
+01 09 01 00 00 01 02 00 00 00 00 00 00 00 00 00
+01 01 04 01 00 02 00 00 00 00 00 00 00 00 00 00
+02 96 0A 29 22 96 FF 15 69 66 68 67 65 74 20 72
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+</rom>
+    <nvram index="2" size="128"/>
     <rom index="1">
         <part>00</part>
     </rom>
-    <rom index="2">
-        <part>01 00 01 00 00 01 06 00 02 00 00 04 00 00 00 00 01 01 04 01 00 02 00 00 00 00 00 00 00 00 00 00 05 96 0c 31 10 72 ff 27 65 7a 6f 72 32 20 20 20 01 00 01 00 00 01 06 00 02 00 00 04 00 00 00 00 01 01 04 01 00 02 00 00 00 00 00 00 00 00 00 00 05 96 0c 31 10 72 ff 27 65 7a 6f 72 32 20 20 20 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00</part>
-    </rom>
-    <nvram index="2" size="128"/>
-    <buttons names="Light Punch,Middle Punch,Heavy Punch,Light Kick,Middle Kick,Heavy Kick,Start,Coin,Core credits" default="Y,X,B,A,L,R,Select,Start,-" count="6"/>
+    <buttons names="Light Punch,Middle Punch,Heavy Punch,Light Kick,Middle Kick,Heavy Kick,Start,Coin,Core credits" default="Y,X,B,A,R,L,Start,Select,-" count="6"/>
 </misterromdescription>

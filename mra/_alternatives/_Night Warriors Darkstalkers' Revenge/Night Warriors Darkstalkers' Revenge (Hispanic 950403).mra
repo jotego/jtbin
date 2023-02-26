@@ -1,0 +1,96 @@
+<!--          FPGA arcade hardware by Jotego
+
+              This core is available for hardware compatible with MiST and MiSTer
+              Other FPGA systems may be supported by the time you read this.
+              This work is not mantained by the MiSTer project. Please contact the
+              core author for issues and updates.
+
+              (c) Jose Tejada, 2023. Please support this research
+              Patreon: https://patreon.com/jotego
+
+              The author does not endorse or participate in illegal distribution
+              of copyrighted material. This work can be used with compatible
+              software. This software can be homebrew projects or legally
+              obtained memory dumps of compatible games.
+
+              This file license is GNU GPLv2.
+              You can read the whole license file in
+              https://opensource.org/licenses/gpl-2.0.php
+
+-->
+
+<misterromdescription default="ff,ff">
+    <about author="jotego" webpage="https://patreon.com/jotego" source="https://github.com/jotego" twitter="@topapate"/>
+    <name>Night Warriors: Darkstalkers&apos; Revenge (Hispanic 950403)</name>
+    <setname>nwarrh</setname>
+    <rbf>jtcps2</rbf>
+    <mameversion>0251</mameversion>
+    <year>1995</year>
+    <manufacturer>Capcom</manufacturer>
+    <players>2</players>
+    <joystick>8</joystick>
+    <rotation>horizontal</rotation>
+    <region>World</region>
+    <mraauthor>jotego,atrac17</mraauthor>
+    <rom index="0" zip="nwarrh.zip|nwarr.zip|qsound.zip" md5="None" address="0x30000000" asm_md5="7c51e5ceb41ef1354902dabbce64f56d">
+        <part>
+            00 10 00 11 00 21 00 A1
+            FF FF FF FF FF FF FF FF
+            32 FF 00 02 04 06 26 28
+            2A 2C 2E 00 00 30 02 04
+            08 30 FF FF FF FF FF FF
+            FC FF FF FF </part>
+        <!-- key - starts at 0x0 - length 0x14 (5 bits) -->
+        <part name="nwarrh.key" crc="5fb16b23"/>
+        <!-- maincpu - starts at 0x14 - length 0x400000 (22 bits) -->
+        <part name="vphh.03d" crc="6029c7be"/>
+        <part name="vphh.04a" crc="d26625ee"/>
+        <part name="vphh.05c" crc="73ee0b8a"/>
+        <part name="vphh.06a" crc="a5b3a50a"/>
+        <part name="vphh.07" crc="5fc2bdc1"/>
+        <part name="vphh.08" crc="e65588d9"/>
+        <part name="vphh.09" crc="a2ce6d63"/>
+        <part name="vphh.10" crc="e2f4f4b9"/>
+        <!-- audiocpu - starts at 0x400014 - length 0x40000 (18 bits) -->
+        <part name="vph.01" crc="5045dcac"/>
+        <part name="vph.02" crc="86b60e59"/>
+        <!-- qsound - starts at 0x440014 - length 0x400000 (22 bits) -->
+        <interleave output="16">
+            <part name="vph.11m" crc="e1837d33" map="12"/>
+        </interleave>
+        <interleave output="16">
+            <part name="vph.12m" crc="fbd3cd90" map="12"/>
+        </interleave>
+        <!-- gfx - starts at 0x840014 - length 0x2000000 (25 bits) -->
+        <interleave output="64">
+            <part name="vph.13m" crc="c51baf99" map="00000021"/>
+            <part name="vph.15m" crc="3ce83c77" map="00002100"/>
+            <part name="vph.17m" crc="4f2408e0" map="00210000"/>
+            <part name="vph.19m" crc="9ff60250" map="21000000"/>
+        </interleave>
+        <interleave output="64">
+            <part name="vph.14m" crc="7a0e1add" map="00000021"/>
+            <part name="vph.16m" crc="2f41ca75" map="00002100"/>
+            <part name="vph.18m" crc="64498eed" map="00210000"/>
+            <part name="vph.20m" crc="17f2433f" map="21000000"/>
+        </interleave>
+        <!-- firmware - starts at 0x2840014 - length 0x2000 (13 bits) -->
+        <part name="dl-1425.bin" crc="d6cf5ef5" length="0x2000"/>
+        <!-- Total 0x2842014 bytes - 41224 kBytes -->
+    </rom>
+    <rom index="2">
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 01 00 00 01 00 02 00 04 00 01 01 00
+03 00 03 00 01 00 00 00 03 95 0A 16 41 56 48 4D
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 01 00 00 01 00 02 00 04 00 01 01 00
+03 00 03 00 01 00 00 00 03 95 0A 16 41 56 48 4D
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+</rom>
+    <nvram index="2" size="128"/>
+    <rom index="1">
+        <part>00</part>
+    </rom>
+    <buttons names="Light Punch,Middle Punch,Heavy Punch,Light Kick,Middle Kick,Heavy Kick,Start,Coin,Core credits" default="Y,X,B,A,R,L,Start,Select,-" count="6"/>
+</misterromdescription>

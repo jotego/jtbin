@@ -1,0 +1,132 @@
+<!--          FPGA arcade hardware by Jotego
+
+              This core is available for hardware compatible with MiST and MiSTer
+              Other FPGA systems may be supported by the time you read this.
+              This work is not mantained by the MiSTer project. Please contact the
+              core author for issues and updates.
+
+              (c) Jose Tejada, 2023. Please support this research
+              Patreon: https://patreon.com/jotego
+
+              The author does not endorse or participate in illegal distribution
+              of copyrighted material. This work can be used with compatible
+              software. This software can be homebrew projects or legally
+              obtained memory dumps of compatible games.
+
+              This file license is GNU GPLv2.
+              You can read the whole license file in
+              https://opensource.org/licenses/gpl-2.0.php
+
+-->
+
+<misterromdescription>
+    <about author="jotego" webpage="https://patreon.com/jotego" source="https://github.com/jotego" twitter="@topapate"/>
+    <name>Knights of the Round (Japan 911127, B-Board 89625B-1)</name>
+    <setname>knightsja</setname>
+    <rbf>jtcps1</rbf>
+    <mameversion>0251</mameversion>
+    <year>1991</year>
+    <manufacturer>Capcom</manufacturer>
+    <players>3</players>
+    <joystick>8</joystick>
+    <rotation>horizontal</rotation>
+    <region>World</region>
+    <mraauthor>jotego</mraauthor>
+    <rom index="0" zip="knightsja.zip|knights.zip" md5="None" asm_md5="7fb330ad2b2cd8359fe5bddb40728960">
+        <part>
+            00 04 40 04 40 05 FF FF
+            FF FF FF FF FF FF FF FF
+            FF FF 06 04 02 00 28 26
+            24 22 20 36 00 30 20 10
+            02 00 0D 40 88 73 FF 02
+            FF FF FF FF FF FF FF FF
+            FF FF FF FF FF FF FF FF
+            FF FF FF FF FF FF FF FF
+        </part>
+        <!-- maincpu - starts at 0x0 - length 0x100000 (20 bits) -->
+        <interleave output="16">
+            <part name="krj_42.12h" crc="e694a491" map="01"/>
+            <part name="krj_36.12f" crc="ad3d1a8e" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="krj_43.13h" crc="9198bf8f" map="01"/>
+            <part name="krj_37.13f" crc="85596094" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="kr_40.10h" crc="1172806d" map="01"/>
+            <part name="kr_34.10f" crc="fe6eb08d" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="kr_41.11h" crc="eb52e78d" map="01"/>
+            <part name="kr_35.11f" crc="f854b020" map="10"/>
+        </interleave>
+        <!-- audiocpu - starts at 0x100000 - length 0x10000 (16 bits) -->
+        <part name="kr_23.13b" crc="5e44d9ee"/>
+        <!-- oki - starts at 0x110000 - length 0x40000 (18 bits) -->
+        <part name="kr_30.12c" crc="da69d15f"/>
+        <part name="kr_31.13c" crc="bfc654e9"/>
+        <!-- gfx - starts at 0x150000 - length 0x400000 (22 bits) -->
+        <interleave output="64">
+            <part name="kr_09.4b" crc="08b76e10" map="00000001"/>
+            <part name="kr_01.4a" crc="40cecf5c" map="00000010"/>
+            <part name="kr_13.9b" crc="435aaa03" map="00000100"/>
+            <part name="kr_05.9a" crc="5b8a615b" map="00001000"/>
+            <part name="kr_24.5e" crc="de65153e" map="00010000"/>
+            <part name="kr_17.5c" crc="b171c968" map="00100000"/>
+            <part name="kr_38.8h" crc="f4466bf4" map="01000000"/>
+            <part name="kr_32.8f" crc="87380ddd" map="10000000"/>
+        </interleave>
+        <interleave output="64">
+            <part name="kr_10.5b" crc="37006d66" map="00000001"/>
+            <part name="kr_02.5a" crc="b54612e3" map="00000010"/>
+            <part name="kr_14.10b" crc="0ae88766" map="00000100"/>
+            <part name="kr_06.10a" crc="ecb1a09a" map="00001000"/>
+            <part name="kr_25.7e" crc="9aace189" map="00010000"/>
+            <part name="kr_18.7c" crc="09fa14a5" map="00100000"/>
+            <part name="kr_39.9h" crc="fd8a9aeb" map="01000000"/>
+            <part name="kr_33.9f" crc="11803e95" map="10000000"/>
+        </interleave>
+        <interleave output="64">
+            <part name="kr_11.7b" crc="a967ceb3" map="00000001"/>
+            <part name="kr_03.7a" crc="ea10db07" map="00000010"/>
+            <part name="kr_15.11b" crc="8140b83b" map="00000100"/>
+            <part name="kr_07.11a" crc="6af10648" map="00001000"/>
+            <part name="kr_26.8e" crc="8865d86b" map="00010000"/>
+            <part name="kr_19.8c" crc="029f4abe" map="00100000"/>
+            <part name="kr_28.10e" crc="5f84f92f" map="01000000"/>
+            <part name="kr_21.10c" crc="01b35065" map="10000000"/>
+        </interleave>
+        <interleave output="64">
+            <part name="kr_12.8b" crc="03d945b1" map="00000001"/>
+            <part name="kr_04.8a" crc="e30c8388" map="00000010"/>
+            <part name="kr_16.12b" crc="40c39d1b" map="00000100"/>
+            <part name="kr_08.12a" crc="d310c9e8" map="00001000"/>
+            <part name="kr_27.9e" crc="3e041444" map="00010000"/>
+            <part name="kr_20.9c" crc="bd4bffb8" map="00100000"/>
+            <part name="kr_29.11e" crc="1387a076" map="01000000"/>
+            <part name="kr_22.11c" crc="fd351922" map="10000000"/>
+        </interleave>
+        <!-- Total 0x550000 bytes - 5440 kBytes -->
+    </rom>
+    <rom index="1">
+        <part>00</part>
+    </rom>
+    <switches page_id="1" page_name="Switches" base="8" default="ff,fc,9f">
+        <!-- DSWA -->
+        <dip name="2 to start, 1 continue" bits="6" ids="On,Off"/>
+        <!-- DSWB -->
+        <dip name="Enemy&apos;s attack frequency" bits="8,10" ids="8,7,6,5,4,3,2,1 "/>
+        <dip name="Enemy&apos;s attack power" bits="11,13" ids="1,2,3,8,7,6,5,4 "/>
+        <dip name="Coin Slots" bits="14" ids="1,3"/>
+        <dip name="Play Mode" bits="15" ids="2 Players,3 Players"/>
+        <!-- DSWC -->
+        <dip name="Lives" bits="16,17" ids="1,4,3,2"/>
+        <dip name="Free Play" bits="18" ids="On,Off"/>
+        <dip name="Freeze" bits="19" ids="On,Off"/>
+        <dip name="Flip Screen" bits="20" ids="On,Off"/>
+        <dip name="Demo Sounds" bits="21" ids="On,Off"/>
+        <dip name="Allow Continue" bits="22" ids="Yes,No"/>
+        <dip name="Game Mode" bits="23" ids="Test,Game"/>
+    </switches>
+    <buttons names="Slay,Jump,-,-,-,-,Start,Coin,Core credits" default="Y,X,B,A,R,L,Start,Select,-" count="2"/>
+</misterromdescription>

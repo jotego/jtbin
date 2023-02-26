@@ -1,17 +1,17 @@
-<!--          FPGA compatible core for Capcom arcade hardware by Jotego
+<!--          FPGA arcade hardware by Jotego
 
               This core is available for hardware compatible with MiST and MiSTer
               Other FPGA systems may be supported by the time you read this.
               This work is not mantained by the MiSTer project. Please contact the
               core author for issues and updates.
 
-              (c) Jose Tejada, 2021. Please support the author
+              (c) Jose Tejada, 2023. Please support this research
               Patreon: https://patreon.com/jotego
-              Paypal:  https://paypal.me/topapate
 
               The author does not endorse or participate in illegal distribution
-              of copyrighted material. This work can be used with legally
-              obtained ROM dumps or with compatible homebrew software.
+              of copyrighted material. This work can be used with compatible
+              software. This software can be homebrew projects or legally
+              obtained memory dumps of compatible games.
 
               This file license is GNU GPLv2.
               You can read the whole license file in
@@ -19,34 +19,30 @@
 
 -->
 
-<misterromdescription>
+<misterromdescription default="ff,ff">
     <about author="jotego" webpage="https://patreon.com/jotego" source="https://github.com/jotego" twitter="@topapate"/>
     <name>X-Men: Children of the Atom (Japan 941222)</name>
     <setname>xmcotaj1</setname>
     <rbf>jtcps2</rbf>
-    <mameversion>0229</mameversion>
+    <mameversion>0251</mameversion>
     <year>1994</year>
     <manufacturer>Capcom</manufacturer>
     <players>2</players>
-    <joystick>8-way</joystick>
+    <joystick>8</joystick>
     <rotation>horizontal</rotation>
-    <region>Japan</region>
-    <platform>CPS-2</platform>
-    <category>Fighting</category>
-    <catver>Fighter / Versus</catver>
+    <region>World</region>
     <mraauthor>jotego,atrac17</mraauthor>
-    <rom index="0" zip="xmcotaj1.zip|xmcota.zip|qsound.zip" type="merged" md5="None" address="0x30000000">
+    <rom index="0" zip="xmcotaj1.zip|xmcota.zip|qsound.zip" md5="None" address="0x30000000" asm_md5="da5daadf80e1f442fb5b8d39372ba002">
         <part>
-        00 10 00 11 00 21 00 a1 
-        ff ff ff ff ff ff ff ff 
-        32 ff 00 02 04 06 26 28 
-        2a 2c 2e 00 00 30 02 04 
-        08 30 ff ff ff ff ff ff 
-        fc ff ff ff
-        </part>
-        <!-- key - starts at 0x0 -->
+            00 10 00 11 00 21 00 A1
+            FF FF FF FF FF FF FF FF
+            32 FF 00 02 04 06 26 28
+            2A 2C 2E 00 00 30 02 04
+            08 30 FF FF FF FF FF FF
+            FC FF FF FF </part>
+        <!-- key - starts at 0x0 - length 0x14 (5 bits) -->
         <part name="xmcotaj.key" crc="d278b4ac"/>
-        <!-- maincpu - starts at 0x14 -->
+        <!-- maincpu - starts at 0x14 - length 0x400000 (22 bits) -->
         <part name="xmnj.03d" crc="79086d62"/>
         <part name="xmnj.04d" crc="38eed613"/>
         <part name="xmn.05" crc="c3ed62a2"/>
@@ -55,17 +51,17 @@
         <part name="xmn.08" crc="7194ea10"/>
         <part name="xmn.09" crc="ae946df3"/>
         <part name="xmn.10" crc="32a6be1d"/>
-        <!-- audiocpu - starts at 0x400014 -->
+        <!-- audiocpu - starts at 0x400014 - length 0x40000 (18 bits) -->
         <part name="xmn.01a" crc="40f479ea"/>
         <part name="xmn.02a" crc="39d9b5ad"/>
-        <!-- qsound - starts at 0x440014 -->
+        <!-- qsound - starts at 0x440014 - length 0x400000 (22 bits) -->
         <interleave output="16">
             <part name="xmn.11m" crc="c848a6bc" map="12"/>
         </interleave>
         <interleave output="16">
             <part name="xmn.12m" crc="729c188f" map="12"/>
         </interleave>
-        <!-- gfx - starts at 0x840014 -->
+        <!-- gfx - starts at 0x840014 - length 0x2000000 (25 bits) -->
         <interleave output="64">
             <part name="xmn.13m" crc="bf4df073" map="00000021"/>
             <part name="xmn.15m" crc="4d7e4cef" map="00002100"/>
@@ -78,16 +74,23 @@
             <part name="xmn.18m" crc="015a7c4c" map="00210000"/>
             <part name="xmn.20m" crc="9dde2758" map="21000000"/>
         </interleave>
-        <!-- QSound firmware - starts at 0x2840014 -->
+        <!-- firmware - starts at 0x2840014 - length 0x2000 (13 bits) -->
         <part name="dl-1425.bin" crc="d6cf5ef5" length="0x2000"/>
         <!-- Total 0x2842014 bytes - 41224 kBytes -->
     </rom>
+    <rom index="2">
+00 00 01 00 00 00 00 02 00 00 00 00 00 00 00 00
+03 03 01 03 00 00 00 00 00 00 00 00 00 00 00 00
+09 94 04 17 10 93 FF 01 4D 58 4E 45 20 20 20 20
+00 00 01 00 00 00 00 02 00 00 00 00 00 00 00 00
+03 03 01 03 00 00 00 00 00 00 00 00 00 00 00 00
+09 94 04 17 10 93 FF 01 4D 58 4E 45 20 20 20 20
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+</rom>
+    <nvram index="2" size="128"/>
     <rom index="1">
         <part>00</part>
     </rom>
-    <rom index="2">
-        <part>01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 03 03 01 03 00 00 00 00 00 00 00 00 00 00 00 00 09 94 00 17 10 93 ff 01 4d 58 4e 45 20 20 20 20 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 03 03 01 03 00 00 00 00 00 00 00 00 00 00 00 00 09 94 00 17 10 93 ff 01 4d 58 4e 45 20 20 20 20 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00</part>
-    </rom>
-    <nvram index="2" size="128"/>
-    <buttons names="Light Punch,Middle Punch,Heavy Punch,Light Kick,Middle Kick,Heavy Kick,Start,Coin,Core credits" default="Y,X,B,A,L,R,Select,Start,-" count="6"/>
+    <buttons names="Light Punch,Middle Punch,Heavy Punch,Light Kick,Middle Kick,Heavy Kick,Start,Coin,Core credits" default="Y,X,B,A,R,L,Start,Select,-" count="6"/>
 </misterromdescription>

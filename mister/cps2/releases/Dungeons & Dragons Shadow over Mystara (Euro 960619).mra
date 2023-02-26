@@ -1,17 +1,17 @@
-<!--          FPGA compatible core for Capcom arcade hardware by Jotego
+<!--          FPGA arcade hardware by Jotego
 
               This core is available for hardware compatible with MiST and MiSTer
               Other FPGA systems may be supported by the time you read this.
               This work is not mantained by the MiSTer project. Please contact the
               core author for issues and updates.
 
-              (c) Jose Tejada, 2021. Please support the author
+              (c) Jose Tejada, 2023. Please support this research
               Patreon: https://patreon.com/jotego
-              Paypal:  https://paypal.me/topapate
 
               The author does not endorse or participate in illegal distribution
-              of copyrighted material. This work can be used with legally
-              obtained ROM dumps or with compatible homebrew software.
+              of copyrighted material. This work can be used with compatible
+              software. This software can be homebrew projects or legally
+              obtained memory dumps of compatible games.
 
               This file license is GNU GPLv2.
               You can read the whole license file in
@@ -19,34 +19,30 @@
 
 -->
 
-<misterromdescription>
+<misterromdescription default="ff,ff">
     <about author="jotego" webpage="https://patreon.com/jotego" source="https://github.com/jotego" twitter="@topapate"/>
     <name>Dungeons &amp; Dragons: Shadow over Mystara (Euro 960619)</name>
     <setname>ddsom</setname>
     <rbf>jtcps2</rbf>
-    <mameversion>0229</mameversion>
+    <mameversion>0251</mameversion>
     <year>1996</year>
     <manufacturer>Capcom</manufacturer>
     <players>4</players>
-    <joystick>8-way</joystick>
+    <joystick>8</joystick>
     <rotation>horizontal</rotation>
-    <region>Europe</region>
-    <platform>CPS-2</platform>
-    <category>Beat&apos;em up</category>
-    <catver>Fighter / 2.5D</catver>
+    <region>World</region>
     <mraauthor>jotego,atrac17</mraauthor>
-    <rom index="0" zip="ddsom.zip|qsound.zip" type="merged" md5="None" address="0x30000000">
+    <rom index="0" zip="ddsom.zip|qsound.zip" md5="None" address="0x30000000" asm_md5="e23626e398ef135e535e3a71aca0e64d">
         <part>
-        00 10 00 11 00 21 00 81 
-        ff ff ff ff ff ff ff ff 
-        32 ff 00 02 04 06 26 28 
-        2a 2c 2e 00 00 30 02 04 
-        08 30 ff ff ff ff ff ff 
-        ff ff ff ff
-        </part>
-        <!-- key - starts at 0x0 -->
+            00 10 00 11 00 21 00 81
+            FF FF FF FF FF FF FF FF
+            32 FF 00 02 04 06 26 28
+            2A 2C 2E 00 00 30 02 04
+            08 30 FF FF FF FF FF FF
+            FF FF FF FF </part>
+        <!-- key - starts at 0x0 - length 0x14 (5 bits) -->
         <part name="ddsom.key" crc="541e425d"/>
-        <!-- maincpu - starts at 0x14 -->
+        <!-- maincpu - starts at 0x14 - length 0x400000 (22 bits) -->
         <part name="dd2e.03e" crc="449361af"/>
         <part name="dd2e.04e" crc="5b7052b6"/>
         <part name="dd2e.05e" crc="788d5f60"/>
@@ -55,17 +51,17 @@
         <part name="dd2e.08" crc="30970890"/>
         <part name="dd2e.09" crc="99e2194d"/>
         <part name="dd2e.10" crc="e198805e"/>
-        <!-- audiocpu - starts at 0x400014 -->
+        <!-- audiocpu - starts at 0x400014 - length 0x40000 (18 bits) -->
         <part name="dd2.01" crc="99d657e5"/>
         <part name="dd2.02" crc="117a3824"/>
-        <!-- qsound - starts at 0x440014 -->
+        <!-- qsound - starts at 0x440014 - length 0x400000 (22 bits) -->
         <interleave output="16">
             <part name="dd2.11m" crc="98d0c325" map="12"/>
         </interleave>
         <interleave output="16">
             <part name="dd2.12m" crc="5ea2e7fa" map="12"/>
         </interleave>
-        <!-- gfx - starts at 0x840014 -->
+        <!-- gfx - starts at 0x840014 - length 0x1800000 (25 bits) -->
         <interleave output="64">
             <part name="dd2.13m" crc="a46b4e6e" map="00000021"/>
             <part name="dd2.15m" crc="d5fc50fc" map="00002100"/>
@@ -78,16 +74,23 @@
             <part name="dd2.18m" crc="acddd149" map="00210000"/>
             <part name="dd2.20m" crc="117fb0c0" map="21000000"/>
         </interleave>
-        <!-- QSound firmware - starts at 0x2040014 -->
+        <!-- firmware - starts at 0x2040014 - length 0x2000 (13 bits) -->
         <part name="dl-1425.bin" crc="d6cf5ef5" length="0x2000"/>
         <!-- Total 0x2042014 bytes - 33032 kBytes -->
     </rom>
+    <rom index="2">
+0B 00 00 01 01 01 02 00 00 00 00 00 00 00 00 00
+03 03 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+02 96 08 01 00 00 00 00 26 44 32 44 45 20 52 55
+0B 00 00 01 01 01 02 00 00 00 00 00 00 00 00 00
+03 03 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+02 96 08 01 00 00 00 00 26 44 32 44 45 20 52 55
+00 00 01 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+</rom>
+    <nvram index="2" size="128"/>
     <rom index="1">
         <part>00</part>
     </rom>
-    <rom index="2">
-        <part>0b 00 00 01 01 01 02 00 00 00 00 00 00 00 00 00 03 03 00 00 00 00 00 00 00 00 00 00 00 00 00 00 02 96 08 01 00 00 00 00 26 44 32 44 45 20 52 55 0b 00 00 01 01 01 02 00 00 00 00 00 00 00 00 00 03 03 00 00 00 00 00 00 00 00 00 00 00 00 00 00 02 96 08 01 00 00 00 00 26 44 32 44 45 20 52 55 00 00 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00</part>
-    </rom>
-    <nvram index="2" size="128"/>
-    <buttons names="Attack,Jump,Select,Magic,-,-,Start,Coin,Core credits" default="Y,X,B,ALR,Select,Start,-" count="4"/>
+    <buttons names="Attack,Jump,Select,Magic,-,-,Start,Coin,Core credits" default="Y,X,B,A,R,L,Start,Select,-" count="4"/>
 </misterromdescription>

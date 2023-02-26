@@ -1,17 +1,17 @@
-<!--          FPGA compatible core for Eighting / Raizing arcade hardware by Jotego
+<!--          FPGA arcade hardware by Jotego
 
               This core is available for hardware compatible with MiST and MiSTer
               Other FPGA systems may be supported by the time you read this.
               This work is not mantained by the MiSTer project. Please contact the
               core author for issues and updates.
 
-              (c) Jose Tejada, 2021. Please support the author
+              (c) Jose Tejada, 2023. Please support this research
               Patreon: https://patreon.com/jotego
-              Paypal:  https://paypal.me/topapate
 
               The author does not endorse or participate in illegal distribution
-              of copyrighted material. This work can be used with legally
-              obtained ROM dumps or with compatible homebrew software.
+              of copyrighted material. This work can be used with compatible
+              software. This software can be homebrew projects or legally
+              obtained memory dumps of compatible games.
 
               This file license is GNU GPLv2.
               You can read the whole license file in
@@ -19,66 +19,69 @@
 
 -->
 
-<misterromdescription>
+<misterromdescription default="ff,ff">
     <about author="jotego" webpage="https://patreon.com/jotego" source="https://github.com/jotego" twitter="@topapate"/>
     <name>Dimahoo (Euro 000121)</name>
     <setname>dimahoo</setname>
     <rbf>jtcps2</rbf>
-    <mameversion>0229</mameversion>
+    <mameversion>0251</mameversion>
     <year>2000</year>
-    <manufacturer>Eighting / Raizing</manufacturer>
+    <manufacturer>Eighting / Raizing (Capcom license)</manufacturer>
     <players>2</players>
-    <joystick>8-way</joystick>
+    <joystick>8</joystick>
     <rotation>vertical (ccw)</rotation>
-    <region>Europe</region>
-    <platform>CPS-2</platform>
-    <category>Shoot&apos;em up</category>
-    <catver>Shooter / Flying Vertical</catver>
+    <region>World</region>
     <mraauthor>jotego,atrac17</mraauthor>
-    <rom index="0" zip="dimahoo.zip|qsound.zip" type="merged" md5="None" address="0x30000000">
+    <rom index="0" zip="dimahoo.zip|qsound.zip" md5="None" address="0x30000000" asm_md5="b01f52a0737ffb56bd63131189b7583f">
         <part>
-        00 08 00 09 00 29 00 69 
-        ff ff ff ff ff ff ff ff 
-        32 ff 00 02 04 06 26 28 
-        2a 2c 2e 00 00 30 02 04 
-        08 30 ff ff ff ff ff ff 
-        ff ff ff ff
-        </part>
-        <!-- key - starts at 0x0 -->
+            00 08 00 09 00 29 00 69
+            FF FF FF FF FF FF FF FF
+            32 FF 00 02 04 06 26 28
+            2A 2C 2E 00 00 30 02 04
+            08 30 FF FF FF FF FF FF
+            FF FF FF FF </part>
+        <!-- key - starts at 0x0 - length 0x14 (5 bits) -->
         <part name="dimahoo.key" crc="7d6d2db9"/>
-        <!-- maincpu - starts at 0x14 -->
+        <!-- maincpu - starts at 0x14 - length 0x200000 (21 bits) -->
         <part name="gmde.03" crc="968fcecd"/>
         <part name="gmd.04" crc="37485567"/>
         <part name="gmd.05" crc="da269ffb"/>
         <part name="gmd.06" crc="55b483c9"/>
-        <!-- audiocpu - starts at 0x200014 -->
+        <!-- audiocpu - starts at 0x200014 - length 0x40000 (18 bits) -->
         <part name="gmd.01" crc="3f9bc985"/>
         <part name="gmd.02" crc="3fd39dde"/>
-        <!-- qsound - starts at 0x240014 -->
+        <!-- qsound - starts at 0x240014 - length 0x800000 (23 bits) -->
         <interleave output="16">
             <part name="gmd.11m" crc="06a65542" map="12"/>
         </interleave>
         <interleave output="16">
             <part name="gmd.12m" crc="50bc7a31" map="12"/>
         </interleave>
-        <!-- gfx - starts at 0xA40014 -->
+        <!-- gfx - starts at 0xA40014 - length 0x1000000 (24 bits) -->
         <interleave output="64">
             <part name="gmd.13m" crc="80dd19f0" map="00000021"/>
             <part name="gmd.15m" crc="dfd93a78" map="00002100"/>
             <part name="gmd.17m" crc="16356520" map="00210000"/>
             <part name="gmd.19m" crc="dfc33031" map="21000000"/>
         </interleave>
-        <!-- QSound firmware - starts at 0x1A40014 -->
+        <!-- firmware - starts at 0x1A40014 - length 0x2000 (13 bits) -->
         <part name="dl-1425.bin" crc="d6cf5ef5" length="0x2000"/>
         <!-- Total 0x1A42014 bytes - 26888 kBytes -->
     </rom>
+    <rom index="2">
+00 00 01 80 00 00 00 02 00 00 00 00 00 00 00 00
+02 03 00 03 00 00 00 00 00 00 00 00 00 00 00 00
+06 97 08 12 10 96 FF 01 4D 47 48 41 45 4F 52 55
+00 00 01 80 00 00 00 02 00 00 00 00 00 00 00 00
+02 03 00 03 00 00 00 00 00 00 00 00 00 00 00 00
+06 97 08 12 10 96 FF 01 4D 47 48 41 45 4F 52 55
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+</rom>
+    <nvram index="2" size="128"/>
     <!-- Vertical game -->
     <rom index="1">
-        <part>01</part>
+        <part>05</part>
     </rom>
-    <rom index="2">
-        <part>00 00 01 80 00 00 00 02 00 00 00 00 00 00 00 00 02 03 00 03 00 00 00 00 00 00 00 00 00 00 00 00 06 97 08 12 10 96 ff 01 4d 47 48 41 45 4f 52 55 00 00 01 80 00 00 00 02 00 00 00 00 00 00 00 00 02 03 00 03 00 00 00 00 00 00 00 00 00 00 00 00 06 97 08 12 10 96 ff 01 4d 47 48 41 45 4f 52 55 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00</part>
-    </rom>
-    <nvram index="2" size="128"/>
-    <buttons names="Main Shot,Bomb,Rapid Main Shot,-,-,-,Start,Coin,Core credits" default="Y,X,BALR,Select,Start,-" count="3"/>
+    <buttons names="Main Shot,Bomb,Rapid Main Shot,-,-,-,Start,Coin,Core credits" default="Y,X,B,A,R,L,Start,Select,-" count="3"/>
 </misterromdescription>
