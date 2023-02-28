@@ -32,7 +32,7 @@
     <rotation>horizontal</rotation>
     <region>World</region>
     <mraauthor>jotego</mraauthor>
-    <rom index="0" zip="wof.zip|qsound.zip" md5="None" asm_md5="d900967cc3dfb03a3e2563536b31ddef">
+    <rom index="0" zip="wof.zip|qsound.zip" md5="None" asm_md5="0e41c840a0f9d1c443c0e388c73dc11c">
         <part>
             00 04 80 04 80 0C 80 1C
             FF FF FF FF FF FF FF FF
@@ -44,12 +44,8 @@
             51 51 51 FF FF FF FF FF
         </part>
         <!-- maincpu - starts at 0x0 - length 0x100000 (20 bits) -->
-        <interleave output="16">
-            <part name="tk2e_23c.8f" crc="0d708505" map="12"/>
-        </interleave>
-        <interleave output="16">
-            <part name="tk2e_22c.7f" crc="608c17e3" map="12"/>
-        </interleave>
+        <part name="tk2e_23c.8f" crc="0d708505"/>
+        <part name="tk2e_22c.7f" crc="608c17e3"/>
         <!-- audiocpu - starts at 0x100000 - length 0x20000 (17 bits) -->
         <part name="tk2_qa.5k" crc="c9183a0d"/>
         <!-- qsound - starts at 0x120000 - length 0x200000 (21 bits) -->

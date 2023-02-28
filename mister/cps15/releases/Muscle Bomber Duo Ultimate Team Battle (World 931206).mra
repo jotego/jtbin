@@ -32,7 +32,7 @@
     <rotation>horizontal</rotation>
     <region>World</region>
     <mraauthor>jotego</mraauthor>
-    <rom index="0" zip="mbombrd.zip|qsound.zip" md5="None" asm_md5="bd95a82bb1bef0cf87d0c65e71429b67">
+    <rom index="0" zip="mbombrd.zip|qsound.zip" md5="None" asm_md5="b2222a07181b228d155a47c93e3cb110">
         <part>
             00 08 80 08 80 18 80 30
             FF FF FF FF FF FF FF FF
@@ -60,12 +60,8 @@
             <part name="mbde_29.10f" crc="3f52d5e5" map="01"/>
             <part name="mbde_25.10e" crc="9bdb6b11" map="10"/>
         </interleave>
-        <interleave output="16">
-            <part name="mbde_21.6f" crc="690c026a" map="12"/>
-        </interleave>
-        <interleave output="16">
-            <part name="mbde_20.5f" crc="b8b2139b" map="12"/>
-        </interleave>
+        <part name="mbde_21.6f" crc="690c026a"/>
+        <part name="mbde_20.5f" crc="b8b2139b"/>
         <!-- audiocpu - starts at 0x200000 - length 0x20000 (17 bits) -->
         <part name="mb_q.5k" crc="d6fa76d1"/>
         <!-- qsound - starts at 0x220000 - length 0x400000 (22 bits) -->
