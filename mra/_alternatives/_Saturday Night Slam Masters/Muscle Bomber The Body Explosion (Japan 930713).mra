@@ -32,7 +32,7 @@
     <rotation>horizontal</rotation>
     <region>World</region>
     <mraauthor>jotego</mraauthor>
-    <rom index="0" zip="mbomberj.zip|slammast.zip|qsound.zip" md5="None" asm_md5="0d1616f684184b7be87142d516b7bc29">
+    <rom index="0" zip="mbomberj.zip|slammast.zip|qsound.zip" md5="None" asm_md5="56c6bded6b8144d83b003ead2952ddd9">
         <part>
             00 08 80 08 80 18 80 30
             FF FF FF FF FF FF FF FF
@@ -44,18 +44,10 @@
             31 31 19 FF FF FF FF FF
         </part>
         <!-- maincpu - starts at 0x0 - length 0x200000 (21 bits) -->
-        <interleave output="16">
-            <part name="mbj_23e.8f" crc="0d06036a" map="12"/>
-        </interleave>
-        <interleave output="16">
-            <part name="mbj_22b.7f" crc="acd38478" map="12"/>
-        </interleave>
-        <interleave output="16">
-            <part name="mbj_21a.6f" crc="d5007b05" map="12"/>
-        </interleave>
-        <interleave output="16">
-            <part name="mbj_20a.5f" crc="aeb557b0" map="12"/>
-        </interleave>
+        <part name="mbj_23e.8f" crc="0d06036a"/>
+        <part name="mbj_22b.7f" crc="acd38478"/>
+        <part name="mbj_21a.6f" crc="d5007b05"/>
+        <part name="mbj_20a.5f" crc="aeb557b0"/>
         <!-- audiocpu - starts at 0x200000 - length 0x20000 (17 bits) -->
         <part name="mb_qa.5k" crc="e21a03c4"/>
         <!-- qsound - starts at 0x220000 - length 0x400000 (22 bits) -->

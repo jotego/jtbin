@@ -32,7 +32,7 @@
     <rotation>horizontal</rotation>
     <region>World</region>
     <mraauthor>jotego</mraauthor>
-    <rom index="0" zip="dinoj.zip|dino.zip|qsound.zip" md5="None" asm_md5="8c37e38958de3461f8550038474b8db2">
+    <rom index="0" zip="dinoj.zip|dino.zip|qsound.zip" md5="None" asm_md5="5b16a312e8da3d2963860f26d8bb21a5">
         <part>
             00 06 80 06 80 0E 80 1E
             FF FF FF FF FF FF FF FF
@@ -44,15 +44,9 @@
             43 43 43 FF FF FF FF FF
         </part>
         <!-- maincpu - starts at 0x0 - length 0x180000 (21 bits) -->
-        <interleave output="16">
-            <part name="cdj_23a.8f" crc="5f3ece96" map="12"/>
-        </interleave>
-        <interleave output="16">
-            <part name="cdj_22a.7f" crc="a0d8de29" map="12"/>
-        </interleave>
-        <interleave output="16">
-            <part name="cdj_21a.6f" crc="66d23de2" map="12"/>
-        </interleave>
+        <part name="cdj_23a.8f" crc="5f3ece96"/>
+        <part name="cdj_22a.7f" crc="a0d8de29"/>
+        <part name="cdj_21a.6f" crc="66d23de2"/>
         <!-- audiocpu - starts at 0x180000 - length 0x20000 (17 bits) -->
         <part name="cd_q.5k" crc="605fdb0b"/>
         <!-- qsound - starts at 0x1A0000 - length 0x200000 (21 bits) -->

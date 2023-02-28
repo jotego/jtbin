@@ -32,7 +32,7 @@
     <rotation>horizontal</rotation>
     <region>World</region>
     <mraauthor>jotego</mraauthor>
-    <rom index="0" zip="punisheru.zip|punisher.zip|qsound.zip" md5="None" asm_md5="a920e59654aa80f785294bf5335a9a6b">
+    <rom index="0" zip="punisheru.zip|punisher.zip|qsound.zip" md5="None" asm_md5="a0fbdd47a572dc50488fa84e5ddd0c92">
         <part>
             00 06 80 06 80 0E 80 1E
             FF FF FF FF FF FF FF FF
@@ -60,9 +60,7 @@
             <part name="psu_29.10f" crc="52dce1ca" map="01"/>
             <part name="psu_25.10e" crc="c51acc94" map="10"/>
         </interleave>
-        <interleave output="16">
-            <part name="ps_21.6f" crc="8affa5a9" map="12"/>
-        </interleave>
+        <part name="ps_21.6f" crc="8affa5a9"/>
         <!-- audiocpu - starts at 0x180000 - length 0x20000 (17 bits) -->
         <part name="ps_q.5k" crc="49ff4446"/>
         <!-- qsound - starts at 0x1A0000 - length 0x200000 (21 bits) -->
