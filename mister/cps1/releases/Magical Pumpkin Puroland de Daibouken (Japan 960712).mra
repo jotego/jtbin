@@ -32,14 +32,14 @@
     <rotation>horizontal</rotation>
     <region>World</region>
     <mraauthor>jotego</mraauthor>
-    <rom index="0" zip="mpumpkin.zip" md5="None" asm_md5="40b2d6d25fd4986d80ab249cc7989592">
+    <rom index="0" zip="mpumpkin.zip" md5="None" asm_md5="bce61e3b5079a60c89eb310ec5947167">
         <part>
             00 02 40 02 40 03 FF FF
             FF FF FF FF FF FF FF FF
             32 FF 00 02 04 06 26 28
             2A 2C 2E 00 00 30 02 04
             08 30 20 00 00 FF FF 00
-            FF FF FF FF FF FF FF FF
+            FE FF FF FF FF FF FF FF
             FF FF FF FF FF FF FF FF
             FF FF FF FF FF FF FF FF
         </part>
@@ -72,7 +72,7 @@
         <!-- Total 0x6D0000 bytes - 6976 kBytes -->
     </rom>
     <rom index="1">
-        <part>00</part>
+        <part>18</part>
     </rom>
     <switches page_id="1" page_name="Switches" base="8" default="be,fb,ff,ff">
         <!-- DSWA -->
@@ -90,5 +90,5 @@
         <!-- IN0 -->
         <dip name="Service Mode" bits="30" ids="On,Off"/>
     </switches>
-    <buttons names="button 1,button 2,-,-,-,-,Start,Coin,Core credits" default="Y,X,B,A,R,L,Start,Select,-" count="2"/>
+    <buttons names="Kitty,Keroppi,Badtz-Maru,-,-,-,Start,Coin,Core credits" default="Y,X,B,A,R,L,Start,Select,-" count="3"/>
 </misterromdescription>

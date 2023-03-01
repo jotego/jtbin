@@ -93,5 +93,5 @@
         <!-- IN0 -->
         <dip name="Service Mode" bits="30" ids="On,Off"/>
     </switches>
-    <buttons names="button 1,button 2,-,-,-,-,Start,Coin,Core credits" default="Y,X,B,A,R,L,Start,Select,-" count="2"/>
+    <buttons names="Attack left,Attack right,Special,-,-,-,Start,Coin,Core credits" default="Y,X,B,A,R,L,Start,Select,-" count="3"/>
 </misterromdescription>

@@ -101,5 +101,5 @@
         <dip name="Allow Continue" bits="22" ids="Yes,No"/>
         <dip name="Game Mode" bits="23" ids="Test,Game"/>
     </switches>
-    <buttons names="button 1,button 2,-,-,-,-,Start,Coin,Core credits" default="Y,X,B,A,R,L,Start,Select,-" count="2"/>
+    <buttons names="Attack/Shot/P.Block,Jump/T.Shot/P.Block,-,-,-,-,Start,Coin,Core credits" default="Y,X,B,A,R,L,Start,Select,-" count="2"/>
 </misterromdescription>

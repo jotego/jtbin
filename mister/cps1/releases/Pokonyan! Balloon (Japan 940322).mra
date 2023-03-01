@@ -32,14 +32,14 @@
     <rotation>horizontal</rotation>
     <region>World</region>
     <mraauthor>jotego</mraauthor>
-    <rom index="0" zip="pokonyan.zip" md5="None" asm_md5="07049b2057e8f09aeafc70733b451371">
+    <rom index="0" zip="pokonyan.zip" md5="None" asm_md5="0c22b6a35a4c7dcf7ee3d42b04a1f1df">
         <part>
             00 02 40 02 40 03 FF FF
             FF FF FF FF FF FF FF FF
             32 FF 00 02 04 06 26 28
             2A 2C 2E 36 00 30 02 04
             08 30 16 40 C8 73 F7 00
-            FE FF FF FF FF FF FF FF
+            FF FF FF FF FF FF FF FF
             FF FF FF FF FF FF FF FF
             FF FF FF FF FF FF FF FF
         </part>
