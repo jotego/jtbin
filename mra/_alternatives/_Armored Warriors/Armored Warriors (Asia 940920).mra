@@ -92,5 +92,5 @@
     <rom index="1">
         <part>00</part>
     </rom>
-    <buttons names="Light Punch,Middle Punch,Heavy Punch,Light Kick,Middle Kick,Heavy Kick,Start,Coin,Core credits" default="Y,X,B,A,R,L,Start,Select,-" count="6"/>
+    <buttons names="Attack,Jump,Sub Weapons,-,-,-,Start,Coin,Core credits" default="Y,X,B,A,R,L,Start,Select,-" count="3"/>
 </misterromdescription>

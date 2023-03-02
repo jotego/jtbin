@@ -21,18 +21,18 @@
 
 <misterromdescription default="ff,ff">
     <about author="jotego" webpage="https://patreon.com/jotego" source="https://github.com/jotego" twitter="@topapate"/>
-    <name>Progear (Asia 010117)</name>
-    <setname>progeara</setname>
+    <name>Progear no Arashi (Japan 010117 Phoenix Edition) (bootleg)</name>
+    <setname>progearjd</setname>
     <rbf>jtcps2</rbf>
     <mameversion>0251</mameversion>
     <year>2001</year>
-    <manufacturer>Cave (Capcom license)</manufacturer>
+    <manufacturer>bootleg</manufacturer>
     <players>2</players>
     <joystick>8</joystick>
     <rotation>horizontal</rotation>
     <region>World</region>
     <mraauthor>jotego,atrac17</mraauthor>
-    <rom index="0" zip="progeara.zip|progear.zip|qsound.zip" md5="None" address="0x30000000" asm_md5="a45b4075d1a07daaa99074082f3de434">
+    <rom index="0" zip="progearjd.zip|progear.zip|qsound.zip" md5="None" address="0x30000000" asm_md5="0015d7f2ee628aae2841245617e2240a">
         <part>
             00 04 80 04 80 24 80 64
             FF FF FF FF FF FF FF FF
@@ -41,10 +41,10 @@
             08 30 FF FF FF FF FF FF
             FF FF FF FF </part>
         <!-- key - starts at 0x0 - length 0x14 (5 bits) -->
-        <part name="progeara.key" crc="30a0fab6"/>
+        <part name="phoenix.key" crc="2cf772b0"/>
         <!-- maincpu - starts at 0x14 - length 0x100000 (20 bits) -->
-        <part name="pgaa.03" crc="25e6e2ce"/>
-        <part name="pgaa.04" crc="8104307e"/>
+        <part name="pgaj_d.03" crc="0271f3a3"/>
+        <part name="pgaj_d.04" crc="be4b7799"/>
         <!-- audiocpu - starts at 0x100014 - length 0x20000 (17 bits) -->
         <part name="pga.01" crc="bdbfa992"/>
         <!-- qsound - starts at 0x120014 - length 0x800000 (23 bits) -->

@@ -21,18 +21,18 @@
 
 <misterromdescription default="ff,ff">
     <about author="jotego" webpage="https://patreon.com/jotego" source="https://github.com/jotego" twitter="@topapate"/>
-    <name>Armored Warriors (Euro 941011)</name>
-    <setname>armwarr1</setname>
+    <name>Armored Warriors (Euro 941011 Phoenix Edition) (bootleg)</name>
+    <setname>armwar1d</setname>
     <rbf>jtcps2</rbf>
     <mameversion>0251</mameversion>
     <year>1994</year>
-    <manufacturer>Capcom</manufacturer>
+    <manufacturer>bootleg</manufacturer>
     <players>3</players>
     <joystick>8</joystick>
     <rotation>horizontal</rotation>
     <region>World</region>
     <mraauthor>jotego,atrac17</mraauthor>
-    <rom index="0" zip="armwarr1.zip|armwar.zip|qsound.zip" md5="None" address="0x30000000" asm_md5="c74f6a4dad2d00cf722f9f1cbfe8cb62">
+    <rom index="0" zip="armwar1d.zip|armwar.zip|qsound.zip" md5="None" address="0x30000000" asm_md5="dc408b599312ac9640944be3d42452b6">
         <part>
             00 10 00 11 00 21 00 71
             FF FF FF FF FF FF FF FF
@@ -41,11 +41,11 @@
             08 30 FF FF FF FF FF FF
             FF FF FF FF </part>
         <!-- key - starts at 0x0 - length 0x14 (5 bits) -->
-        <part name="armwar.key" crc="fe979382"/>
+        <part name="phoenix.key" crc="2cf772b0"/>
         <!-- maincpu - starts at 0x14 - length 0x400000 (22 bits) -->
-        <part name="pwge.03b" crc="e822e3e9"/>
-        <part name="pwge.04b" crc="4f89de39"/>
-        <part name="pwge.05a" crc="83df24e5"/>
+        <part name="pwged.03b" crc="496bd483"/>
+        <part name="pwged.04b" crc="9bd6a38f"/>
+        <part name="pwged.05a" crc="4c11d30f"/>
         <part name="pwg.06" crc="87a60ce8"/>
         <part name="pwg.07" crc="f7b148df"/>
         <part name="pwg.08" crc="cc62823e"/>

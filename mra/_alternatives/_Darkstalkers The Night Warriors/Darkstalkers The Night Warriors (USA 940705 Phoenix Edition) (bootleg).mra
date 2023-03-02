@@ -21,70 +21,70 @@
 
 <misterromdescription default="ff,ff">
     <about author="jotego" webpage="https://patreon.com/jotego" source="https://github.com/jotego" twitter="@topapate"/>
-    <name>Armored Warriors (Euro 941011)</name>
-    <setname>armwarr1</setname>
+    <name>Darkstalkers: The Night Warriors (USA 940705 Phoenix Edition) (bootleg)</name>
+    <setname>dstlku1d</setname>
     <rbf>jtcps2</rbf>
     <mameversion>0251</mameversion>
     <year>1994</year>
-    <manufacturer>Capcom</manufacturer>
-    <players>3</players>
+    <manufacturer>bootleg</manufacturer>
+    <players>2</players>
     <joystick>8</joystick>
     <rotation>horizontal</rotation>
     <region>World</region>
     <mraauthor>jotego,atrac17</mraauthor>
-    <rom index="0" zip="armwarr1.zip|armwar.zip|qsound.zip" md5="None" address="0x30000000" asm_md5="c74f6a4dad2d00cf722f9f1cbfe8cb62">
+    <rom index="0" zip="dstlku1d.zip|dstlk.zip|qsound.zip" md5="None" address="0x30000000" asm_md5="14ffe31d01569ae85c4afa380c405126">
         <part>
             00 10 00 11 00 21 00 71
             FF FF FF FF FF FF FF FF
             32 FF 00 02 04 06 26 28
             2A 2C 2E 00 00 30 02 04
             08 30 FF FF FF FF FF FF
-            FF FF FF FF </part>
+            FC FF FF FF </part>
         <!-- key - starts at 0x0 - length 0x14 (5 bits) -->
-        <part name="armwar.key" crc="fe979382"/>
+        <part name="phoenix.key" crc="2cf772b0"/>
         <!-- maincpu - starts at 0x14 - length 0x400000 (22 bits) -->
-        <part name="pwge.03b" crc="e822e3e9"/>
-        <part name="pwge.04b" crc="4f89de39"/>
-        <part name="pwge.05a" crc="83df24e5"/>
-        <part name="pwg.06" crc="87a60ce8"/>
-        <part name="pwg.07" crc="f7b148df"/>
-        <part name="pwg.08" crc="cc62823e"/>
-        <part name="pwg.09" crc="ddc85ca6"/>
-        <part name="pwg.10" crc="07c4fb28"/>
+        <part name="vamud.03a" crc="47b7a680"/>
+        <part name="vamud.04a" crc="3b7a4939"/>
+        <part name="vamu.05a" crc="673ed50a"/>
+        <part name="vamu.06a" crc="f2377be7"/>
+        <part name="vamu.07a" crc="d8f498c4"/>
+        <part name="vamu.08a" crc="e6a8a1a0"/>
+        <part name="vamud.09a" crc="8b333a19"/>
+        <part name="vamu.10a" crc="c1a3d9be"/>
         <!-- audiocpu - starts at 0x400014 - length 0x40000 (18 bits) -->
-        <part name="pwg.01" crc="18a5c0e4"/>
-        <part name="pwg.02" crc="c9dfffa6"/>
+        <part name="vam.01" crc="64b685d5"/>
+        <part name="vam.02" crc="cf7c97c7"/>
         <!-- qsound - starts at 0x440014 - length 0x400000 (22 bits) -->
         <interleave output="16">
-            <part name="pwg.11m" crc="a78f7433" map="12"/>
+            <part name="vam.11m" crc="4a39deb2" map="12"/>
         </interleave>
         <interleave output="16">
-            <part name="pwg.12m" crc="77438ed0" map="12"/>
+            <part name="vam.12m" crc="1a3e5c03" map="12"/>
         </interleave>
         <!-- gfx - starts at 0x840014 - length 0x1400000 (25 bits) -->
         <interleave output="64">
-            <part name="pwg.13m" crc="ae8fe08e" map="00000021"/>
-            <part name="pwg.15m" crc="db560f58" map="00002100"/>
-            <part name="pwg.17m" crc="bc475b94" map="00210000"/>
-            <part name="pwg.19m" crc="07439ff7" map="21000000"/>
+            <part name="vam.13m" crc="c51baf99" map="00000021"/>
+            <part name="vam.15m" crc="3ce83c77" map="00002100"/>
+            <part name="vam.17m" crc="4f2408e0" map="00210000"/>
+            <part name="vam.19m" crc="9ff60250" map="21000000"/>
         </interleave>
         <interleave output="64">
-            <part name="pwg.14m" crc="c3f9ba63" map="00000021"/>
-            <part name="pwg.16m" crc="815b0e7b" map="00002100"/>
-            <part name="pwg.18m" crc="0109c71b" map="00210000"/>
-            <part name="pwg.20m" crc="eb75ffbe" map="21000000"/>
+            <part name="vam.14m" crc="bd87243c" map="00000021"/>
+            <part name="vam.16m" crc="afec855f" map="00002100"/>
+            <part name="vam.18m" crc="3a033625" map="00210000"/>
+            <part name="vam.20m" crc="2bff6a89" map="21000000"/>
         </interleave>
         <!-- firmware - starts at 0x1C40014 - length 0x2000 (13 bits) -->
         <part name="dl-1425.bin" crc="d6cf5ef5" length="0x2000"/>
         <!-- Total 0x1C42014 bytes - 28936 kBytes -->
     </rom>
     <rom index="2">
-01 00 01 00 03 00 07 06 00 01 00 00 00 00 00 00
-00 00 00 00 00 00 00 00 94 00 24 10 41 05 4D 52
-52 4F 44 45 57 20 52 41 49 52 52 4F 00 53 00 00
-01 00 01 00 03 00 07 06 00 01 00 00 00 00 00 00
-00 00 00 00 00 00 00 00 94 00 24 10 41 05 4D 52
-52 4F 44 45 57 20 52 41 49 52 52 4F 00 53 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 03 00 04 00 01 01 00
+03 00 01 00 01 00 00 00 06 94 08 20 41 56 50 4D
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 03 00 04 00 01 01 00
+03 00 01 00 01 00 00 00 06 94 08 20 41 56 50 4D
 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 </rom>
@@ -92,5 +92,5 @@
     <rom index="1">
         <part>00</part>
     </rom>
-    <buttons names="Attack,Jump,Sub Weapons,-,-,-,Start,Coin,Core credits" default="Y,X,B,A,R,L,Start,Select,-" count="3"/>
+    <buttons names="Light Punch,Middle Punch,Heavy Punch,Light Kick,Middle Kick,Heavy Kick,Start,Coin,Core credits" default="Y,X,B,A,R,L,Start,Select,-" count="6"/>
 </misterromdescription>

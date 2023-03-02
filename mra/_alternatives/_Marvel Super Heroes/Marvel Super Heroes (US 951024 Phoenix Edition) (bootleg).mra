@@ -21,70 +21,70 @@
 
 <misterromdescription default="ff,ff">
     <about author="jotego" webpage="https://patreon.com/jotego" source="https://github.com/jotego" twitter="@topapate"/>
-    <name>Armored Warriors (Euro 941011)</name>
-    <setname>armwarr1</setname>
+    <name>Marvel Super Heroes (US 951024 Phoenix Edition) (bootleg)</name>
+    <setname>mshud</setname>
     <rbf>jtcps2</rbf>
     <mameversion>0251</mameversion>
-    <year>1994</year>
-    <manufacturer>Capcom</manufacturer>
-    <players>3</players>
+    <year>1995</year>
+    <manufacturer>bootleg</manufacturer>
+    <players>2</players>
     <joystick>8</joystick>
     <rotation>horizontal</rotation>
     <region>World</region>
     <mraauthor>jotego,atrac17</mraauthor>
-    <rom index="0" zip="armwarr1.zip|armwar.zip|qsound.zip" md5="None" address="0x30000000" asm_md5="c74f6a4dad2d00cf722f9f1cbfe8cb62">
+    <rom index="0" zip="mshud.zip|msh.zip|qsound.zip" md5="None" address="0x30000000" asm_md5="c681ef7978a6810e021853f3ccb31cb8">
         <part>
-            00 10 00 11 00 21 00 71
+            00 10 00 11 00 21 00 A1
             FF FF FF FF FF FF FF FF
             32 FF 00 02 04 06 26 28
             2A 2C 2E 00 00 30 02 04
             08 30 FF FF FF FF FF FF
-            FF FF FF FF </part>
+            FC FF FF FF </part>
         <!-- key - starts at 0x0 - length 0x14 (5 bits) -->
-        <part name="armwar.key" crc="fe979382"/>
+        <part name="phoenix.key" crc="2cf772b0"/>
         <!-- maincpu - starts at 0x14 - length 0x400000 (22 bits) -->
-        <part name="pwge.03b" crc="e822e3e9"/>
-        <part name="pwge.04b" crc="4f89de39"/>
-        <part name="pwge.05a" crc="83df24e5"/>
-        <part name="pwg.06" crc="87a60ce8"/>
-        <part name="pwg.07" crc="f7b148df"/>
-        <part name="pwg.08" crc="cc62823e"/>
-        <part name="pwg.09" crc="ddc85ca6"/>
-        <part name="pwg.10" crc="07c4fb28"/>
+        <part name="mshud.03" crc="c1d8c4c6"/>
+        <part name="mshud.04" crc="e73dda16"/>
+        <part name="mshud.05" crc="3b493e84"/>
+        <part name="msh.06b" crc="803e3fa4"/>
+        <part name="msh.07a" crc="c45f8e27"/>
+        <part name="msh.08a" crc="9ca6f12c"/>
+        <part name="msh.09a" crc="82ec27af"/>
+        <part name="msh.10b" crc="8d931196"/>
         <!-- audiocpu - starts at 0x400014 - length 0x40000 (18 bits) -->
-        <part name="pwg.01" crc="18a5c0e4"/>
-        <part name="pwg.02" crc="c9dfffa6"/>
+        <part name="msh.01" crc="c976e6f9"/>
+        <part name="msh.02" crc="ce67d0d9"/>
         <!-- qsound - starts at 0x440014 - length 0x400000 (22 bits) -->
         <interleave output="16">
-            <part name="pwg.11m" crc="a78f7433" map="12"/>
+            <part name="msh.11m" crc="37ac6d30" map="12"/>
         </interleave>
         <interleave output="16">
-            <part name="pwg.12m" crc="77438ed0" map="12"/>
+            <part name="msh.12m" crc="de092570" map="12"/>
         </interleave>
-        <!-- gfx - starts at 0x840014 - length 0x1400000 (25 bits) -->
+        <!-- gfx - starts at 0x840014 - length 0x2000000 (25 bits) -->
         <interleave output="64">
-            <part name="pwg.13m" crc="ae8fe08e" map="00000021"/>
-            <part name="pwg.15m" crc="db560f58" map="00002100"/>
-            <part name="pwg.17m" crc="bc475b94" map="00210000"/>
-            <part name="pwg.19m" crc="07439ff7" map="21000000"/>
+            <part name="msh.13m" crc="09d14566" map="00000021"/>
+            <part name="msh.15m" crc="ee962057" map="00002100"/>
+            <part name="msh.17m" crc="604ece14" map="00210000"/>
+            <part name="msh.19m" crc="94a731e8" map="21000000"/>
         </interleave>
         <interleave output="64">
-            <part name="pwg.14m" crc="c3f9ba63" map="00000021"/>
-            <part name="pwg.16m" crc="815b0e7b" map="00002100"/>
-            <part name="pwg.18m" crc="0109c71b" map="00210000"/>
-            <part name="pwg.20m" crc="eb75ffbe" map="21000000"/>
+            <part name="msh.14m" crc="4197973e" map="00000021"/>
+            <part name="msh.16m" crc="438da4a0" map="00002100"/>
+            <part name="msh.18m" crc="4db92d94" map="00210000"/>
+            <part name="msh.20m" crc="a2b0c6c0" map="21000000"/>
         </interleave>
-        <!-- firmware - starts at 0x1C40014 - length 0x2000 (13 bits) -->
+        <!-- firmware - starts at 0x2840014 - length 0x2000 (13 bits) -->
         <part name="dl-1425.bin" crc="d6cf5ef5" length="0x2000"/>
-        <!-- Total 0x1C42014 bytes - 28936 kBytes -->
+        <!-- Total 0x2842014 bytes - 41224 kBytes -->
     </rom>
     <rom index="2">
-01 00 01 00 03 00 07 06 00 01 00 00 00 00 00 00
-00 00 00 00 00 00 00 00 94 00 24 10 41 05 4D 52
-52 4F 44 45 57 20 52 41 49 52 52 4F 00 53 00 00
-01 00 01 00 03 00 07 06 00 01 00 00 00 00 00 00
-00 00 00 00 00 00 00 00 94 00 24 10 41 05 4D 52
-52 4F 44 45 57 20 52 41 49 52 52 4F 00 53 00 00
+00 00 01 00 00 00 00 02 00 00 00 00 00 00 00 00
+03 03 01 03 00 00 00 01 00 00 00 00 00 00 00 00
+10 95 08 16 10 93 FF 01 53 4D 20 48 20 20 20 20
+00 00 01 00 00 00 00 02 00 00 00 00 00 00 00 00
+03 03 01 03 00 00 00 01 00 00 00 00 00 00 00 00
+10 95 08 16 10 93 FF 01 53 4D 20 48 20 20 20 20
 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 </rom>
@@ -92,5 +92,5 @@
     <rom index="1">
         <part>00</part>
     </rom>
-    <buttons names="Attack,Jump,Sub Weapons,-,-,-,Start,Coin,Core credits" default="Y,X,B,A,R,L,Start,Select,-" count="3"/>
+    <buttons names="Light Punch,Middle Punch,Heavy Punch,Light Kick,Middle Kick,Heavy Kick,Start,Coin,Core credits" default="Y,X,B,A,R,L,Start,Select,-" count="6"/>
 </misterromdescription>

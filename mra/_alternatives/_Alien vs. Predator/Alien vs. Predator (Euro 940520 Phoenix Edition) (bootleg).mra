@@ -1,0 +1,91 @@
+<!--          FPGA arcade hardware by Jotego
+
+              This core is available for hardware compatible with MiST and MiSTer
+              Other FPGA systems may be supported by the time you read this.
+              This work is not mantained by the MiSTer project. Please contact the
+              core author for issues and updates.
+
+              (c) Jose Tejada, 2023. Please support this research
+              Patreon: https://patreon.com/jotego
+
+              The author does not endorse or participate in illegal distribution
+              of copyrighted material. This work can be used with compatible
+              software. This software can be homebrew projects or legally
+              obtained memory dumps of compatible games.
+
+              This file license is GNU GPLv2.
+              You can read the whole license file in
+              https://opensource.org/licenses/gpl-2.0.php
+
+-->
+
+<misterromdescription default="ff,ff">
+    <about author="jotego" webpage="https://patreon.com/jotego" source="https://github.com/jotego" twitter="@topapate"/>
+    <name>Alien vs. Predator (Euro 940520 Phoenix Edition) (bootleg)</name>
+    <setname>avspd</setname>
+    <rbf>jtcps2</rbf>
+    <mameversion>0251</mameversion>
+    <year>1994</year>
+    <manufacturer>bootleg</manufacturer>
+    <players>3</players>
+    <joystick>8</joystick>
+    <rotation>horizontal</rotation>
+    <region>World</region>
+    <mraauthor>jotego,atrac17</mraauthor>
+    <rom index="0" zip="avspd.zip|avsp.zip|qsound.zip" md5="None" address="0x30000000" asm_md5="1a0c720bc66ba16c74d8d79e14e487af">
+        <part>
+            00 08 80 08 80 18 80 48
+            FF FF FF FF FF FF FF FF
+            32 FF 00 02 04 06 26 28
+            2A 2C 2E 00 00 30 02 04
+            08 30 FF FF FF FF FF FF
+            FF FF FF FF </part>
+        <!-- key - starts at 0x0 - length 0x14 (5 bits) -->
+        <part name="phoenix.key" crc="2cf772b0"/>
+        <!-- maincpu - starts at 0x14 - length 0x200000 (21 bits) -->
+        <part name="avped.03d" crc="66aa8aad"/>
+        <part name="avped.04d" crc="579306c2"/>
+        <part name="avp.05d" crc="fbfb5d7a"/>
+        <part name="avpd.06" crc="63094539"/>
+        <!-- audiocpu - starts at 0x200014 - length 0x20000 (17 bits) -->
+        <part name="avp.01" crc="2d3b4220"/>
+        <!-- qsound - starts at 0x220014 - length 0x400000 (22 bits) -->
+        <interleave output="16">
+            <part name="avp.11m" crc="83499817" map="12"/>
+        </interleave>
+        <interleave output="16">
+            <part name="avp.12m" crc="f4110d49" map="12"/>
+        </interleave>
+        <!-- gfx - starts at 0x620014 - length 0xC00000 (24 bits) -->
+        <interleave output="64">
+            <part name="avp.13m" crc="8f8b5ae4" map="00000021"/>
+            <part name="avp.15m" crc="b00280df" map="00002100"/>
+            <part name="avp.17m" crc="94403195" map="00210000"/>
+            <part name="avp.19m" crc="e1981245" map="21000000"/>
+        </interleave>
+        <interleave output="64">
+            <part name="avp.14m" crc="39933b1e" map="00000021"/>
+            <part name="avp.16m" crc="85412860" map="00002100"/>
+            <part name="avp.18m" crc="2e2beb06" map="00210000"/>
+            <part name="avp.20m" crc="e4798d1a" map="21000000"/>
+        </interleave>
+        <!-- firmware - starts at 0x1220014 - length 0x2000 (13 bits) -->
+        <part name="dl-1425.bin" crc="d6cf5ef5" length="0x2000"/>
+        <!-- Total 0x1222014 bytes - 18568 kBytes -->
+    </rom>
+    <rom index="2">
+01 00 01 00 00 01 01 AC 02 00 00 00 00 00 00 00
+01 03 00 04 00 00 00 00 00 00 00 00 00 00 00 00
+05 94 08 20 10 92 FF 06 72 50 64 65 74 61 72 6F
+01 00 01 00 00 01 01 AC 02 00 00 00 00 00 00 00
+01 03 00 04 00 00 00 00 00 00 00 00 00 00 00 00
+05 94 08 20 10 92 FF 06 72 50 64 65 74 61 72 6F
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+</rom>
+    <nvram index="2" size="128"/>
+    <rom index="1">
+        <part>00</part>
+    </rom>
+    <buttons names="Shoot,Attack,Jump/Dash,-,-,-,Start,Coin,Core credits" default="Y,X,B,A,R,L,Start,Select,-" count="3"/>
+</misterromdescription>

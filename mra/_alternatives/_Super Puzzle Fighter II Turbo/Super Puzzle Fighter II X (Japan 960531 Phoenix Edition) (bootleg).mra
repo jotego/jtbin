@@ -1,0 +1,85 @@
+<!--          FPGA arcade hardware by Jotego
+
+              This core is available for hardware compatible with MiST and MiSTer
+              Other FPGA systems may be supported by the time you read this.
+              This work is not mantained by the MiSTer project. Please contact the
+              core author for issues and updates.
+
+              (c) Jose Tejada, 2023. Please support this research
+              Patreon: https://patreon.com/jotego
+
+              The author does not endorse or participate in illegal distribution
+              of copyrighted material. This work can be used with compatible
+              software. This software can be homebrew projects or legally
+              obtained memory dumps of compatible games.
+
+              This file license is GNU GPLv2.
+              You can read the whole license file in
+              https://opensource.org/licenses/gpl-2.0.php
+
+-->
+
+<misterromdescription default="ff,ff">
+    <about author="jotego" webpage="https://patreon.com/jotego" source="https://github.com/jotego" twitter="@topapate"/>
+    <name>Super Puzzle Fighter II X (Japan 960531 Phoenix Edition) (bootleg)</name>
+    <setname>spf2xjd</setname>
+    <rbf>jtcps2</rbf>
+    <mameversion>0251</mameversion>
+    <year>1996</year>
+    <manufacturer>bootleg</manufacturer>
+    <players>2</players>
+    <joystick>8</joystick>
+    <rotation>horizontal</rotation>
+    <region>World</region>
+    <mraauthor>jotego,atrac17</mraauthor>
+    <rom index="0" zip="spf2xjd.zip|spf2t.zip|qsound.zip" md5="None" address="0x30000000" asm_md5="8da65e97a9927ed5339918540cc99f67">
+        <part>
+            00 04 00 05 00 15 00 45
+            FF FF FF FF FF FF FF FF
+            32 FF 00 02 04 06 26 28
+            2A 2C 2E 00 00 30 02 04
+            08 30 FF FF FF FF FF FF
+            FF FF FF FF </part>
+        <!-- key - starts at 0x0 - length 0x14 (5 bits) -->
+        <part name="phoenix.key" crc="2cf772b0"/>
+        <!-- maincpu - starts at 0x14 - length 0x100000 (20 bits) -->
+        <part name="pzfjd.03a" crc="5e85ed08"/>
+        <part name="pzf.04" crc="b80649e2"/>
+        <!-- audiocpu - starts at 0x100014 - length 0x40000 (18 bits) -->
+        <part name="pzf.01" crc="600fb2a3"/>
+        <part name="pzf.02" crc="496076e0"/>
+        <!-- qsound - starts at 0x140014 - length 0x400000 (22 bits) -->
+        <interleave output="16">
+            <part name="pzf.11m" crc="78442743" map="12"/>
+        </interleave>
+        <interleave output="16">
+            <part name="pzf.12m" crc="399d2c7b" map="12"/>
+        </interleave>
+        <!-- gfx - starts at 0x540014 - length 0xC00000 (24 bits) -->
+        <part repeat="0x800000"> FF</part>
+        <interleave output="64">
+            <part name="pzf.14m" crc="2d4881cb" map="00000021"/>
+            <part name="pzf.16m" crc="4b0fd1be" map="00002100"/>
+            <part name="pzf.18m" crc="e43aac33" map="00210000"/>
+            <part name="pzf.20m" crc="7f536ff1" map="21000000"/>
+        </interleave>
+        <!-- firmware - starts at 0x1140014 - length 0x2000 (13 bits) -->
+        <part name="dl-1425.bin" crc="d6cf5ef5" length="0x2000"/>
+        <!-- Total 0x1142014 bytes - 17672 kBytes -->
+    </rom>
+    <rom index="2">
+01 00 01 00 00 01 02 00 00 00 00 00 00 00 00 00
+01 03 01 01 02 01 01 01 00 00 00 00 00 00 00 00
+05 96 0A 30 12 88 FF 44 75 73 65 70 20 72 20 20
+01 00 01 00 00 01 02 00 00 00 00 00 00 00 00 00
+01 03 01 01 02 01 01 01 00 00 00 00 00 00 00 00
+05 96 0A 30 12 88 FF 44 75 73 65 70 20 72 20 20
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+</rom>
+    <nvram index="2" size="128"/>
+    <rom index="1">
+        <part>00</part>
+    </rom>
+    <buttons names="Rotate Left,Rotate Right,-,-,-,-,Start,Coin,Core credits" default="Y,X,B,A,R,L,Start,Select,-" count="2"/>
+</misterromdescription>
