@@ -1,266 +1,177 @@
-# JTGNG FPGA Arcade Hardware by Jose Tejada (@topapate)
-
-You can show your appreciation through
-* [Patreon](https://patreon.com/jotego)
-* [Paypal](https://paypal.me/topapate)
-* [Github](https://github.com/sponsors/jotego)
-
-Yes, you always wanted to have a Ghosts'n Goblins arcade board at home. First you couldn't get it because your parents somehow did not understand you. Then you grow up and your wife doesn't understand you either. Don't worry, MiST(er) is here to the rescue.
-
-What you get with this is an extremely accurate (allegedly 100% accurate) clone of the original hardware. You will notice differences from MAME if you compare. For instance, on Ghosts'n Goblins try resetting it and compare those screens for a start! Original hardware handled sound and graphics in a different way from the emulator. There were delays in CPU bus access and other details that will make the experience different from an emulator.
-
-I hope you will have as much fun with it as I had it while making it!
-
-## Supported Games
-
-In chronological order:
-
- 1. [Vulgus           ](doc/jtvulgus.txt)
- 2. [Higemaru         ](doc/jthige.txt)
- 3. [1942             ](doc/jt1942.txt)
- 4. [Commando         ](doc/jtcommando.txt)
- 5. [Exed Exes        ](doc/jtexed.txt)
- 6. [Ghosts'n Goblins ](doc/jtgng.txt)
- 7. [SectionZ         ](doc/jtsectionz.txt)
- 8. [GunSmoke         ](doc/jtgunsmoke.txt)
- 9. [Legendary Wings  ](doc/jtsectionz.txt)
-10. [Trojan           ](doc/jttrojan.txt)
-11. [The Speed Rumbler](doc/jtrumble.txt)
-12. [1943             ](doc/jt1943.txt)
-13. [Black Tiger      ](doc/jtbtiger.txt)
-14. [Side Arms        ](doc/jtsarms.txt)
-15. [Tiger Road       ](doc/jttora.txt)
-16. [F1-Dream         ](doc/jtf1dream.txt)
-17. [Bionic Commando  ](doc/jtbiocom.txt)
-18. [Street Fighter   ](doc/jtsf.txt)
-
-# Schematics
-
-The KiCAD schematics developed by JOTEGO's team are in the sch folder of each core. Some of them only reproduce one aspect of the board that we needed to double check. A link to PDF versions is available below.
-
-- [JOTEGO's schematics for Exed Exes](https://github.com/jotego/jtbin/tree/master/sch/exed.pdf)
-- [JOTEGO's partial schematics for The Speed Rumbler](https://github.com/jotego/jtbin/tree/master/sch/rumble.pdf)
-- [JOTEGO's partial schematics for Side Arms](https://github.com/jotego/jtbin/tree/master/sch/sarms.pdf)
-
-### Dependencies
-
-Game              | 6809 | Z80 | 68000 | MCU  | YM2203  | YM2151 | YM2149 | MSM5205 | SN76489AN
-------------------|------|-----|-------|------|---------|--------|--------|---------|-----------
-1942              |      |  X  |       |      |         |        |   X    |         |
-1943              |      |  X  |       |      |   X     |        |   X    |         |
-Bionic Commando   |      |  X  |   X   |  X   |         |   X    |        |         |
-Black Tiger       |      |  X  |       |  X   |   X     |        |   X    |         |
-Commando          |      |  X  |       |      |   X     |        |   X    |         |
-Exed Exes         |      |  X  |       |      |         |        |   X    |         |    X
-F1-Dream          |      |  X  |   X   |  X   |   X     |        |   X    |         |
-Ghosts'n Goblins  |  X   |  X  |       |      |   X     |        |   X    |         |
-Gun Smoke         |      |  X  |       |      |   X     |        |   X    |         |
-Higemaru          |      |  X  |       |      |         |        |   X    |         |
-Legendary Wings   |      |  X  |       |      |   X     |        |   X    |         |
-Section Z         |      |  X  |       |      |   X     |        |   X    |         |
-Side Arms         |      |  X  |       |      |   X     |        |   X    |         |
-Street Fighter    |      |  X  |   X   |  X   |         |   X    |        |   X     |
-The Speed Rumbler |  X   |  X  |       |      |   X     |        |   X    |         |
-Tiger Road        |      |  X  |   X   |      |   X     |        |   X    |   X     |
-Trojan            |      |  X  |       |      |   X     |        |        |   X     |
-Vulgus            |      |  X  |       |      |         |        |   X    |         |
+JT1943 FPGA clone of 1943 arcade faithful to original hardware
+==============================================================
+
+Please, read the main README file too.
+
+You have just got an expensive $500 PCB according to eBay. You have in your hands
+a faithful conversion of the circuits on the 1943 PCB to FPGA. If you come from
+the emulation world here are some of the things different from emulators:
+
+-Real CPU/GPU bus sharing with delays
+-Sprites handled with DMA exactly as in the original hardware
+-Palettes determined by the original PROMs
+-Graphics priority handled by the original PROM
+-No lag between image and input. Data is being sent to the screen in real time.
+-3 button input (although the game seems to use only two buttons)
+-Sound sampling rate: 41.663 kHz (original, 125/3 kHz)
+
+These technical aspects mean that the game play will be different from an emulator
+in a number of ways and that some hardware tricks that were not emulated will work
+here as in the original hardware.
+
+GAME PLAY
+=========
+
+It is obvious what you have to do except:
+
+-Press fire 1 and 2 to roll
+-Hold the coin button during power up to test mode in order to be
+ able to access al test options
+-Hold fire 1 at the end of an air carrier phase to receive a weapon at the
+ beginning of the next phase
+
+ Because rolling by pressing two buttons is hard; the FPGA core uses the 
+ 3rd button to roll. That is not the original behaviour. If you want to play
+ like the original, just don't use the 3rd button.
+
+CHEAT
+=====
+If you enable the test mode after the game has already started, it is possible
+to start at any level by altering the value of the coin slot settings.
+
+Note that you can reset the game by pressing F3 or selecting RST in the OSD menu.
+
+RELEASE HISTORY
+===============
+1st  Dec 2019
+    - Flip mode partially fixed
+
+21st Nov 2019
+    - Fixes bug in SDRAM controller
+    - Fixes flip screen mode (still glitchy though)
+13th  Nov 2019
+    * Fixed occasional sprite glitching
+    * Updated to latest JT12 sound module. Fixes bug in JT49 envelope duration
+    * Set JT49 compression to level 1 (29.1dB)
+
+20th Oct 2019
+    * Increased sprites per line to 32.
+            Changed object to 8MHz as per schematics.
+            In the same time, we can produce 32 objects:
+                32*16/8MHz = 24*16/6MHz
+            This is the approach of Bionic Commando, which also
+            uses 8MHz instead of 6MHz.
+7th Oct 2019
+    * Added FLIP option, although it is a bit glitchy. Original hardware
+      did not fully implemented it so it is a bit of a hack.
+    * Updated to latest JT49 sound module. Fixes many bugs in SFX.
+    * Added 128MB RAM module support (MiSTer only)
+
+CREDITS
+=======
+
+Brought to you by Jose Tejada, aka jotego. Meet me in twitter @topapate
+Checkout my patreon page here: http://patreon.com/jotego
+
+Special thanks to all March '19 patrons.
+
+Tier +3 Patrons Thanks!!
+========================
+Suvodip Mitra
+Scralings 
+Phillip McMahon
+Brian Sallee
+Jo Tomiyori
+Dustin Hubbard
+Oliver Jaksch
+Dave Ross
+Andrew Moore
+Ultrarobotninja 
+Víctor Gomariz Ladrón de Guevara
+Andyways 
+Mark Kohler (NML32)
+Mary Marshall
+Oscar Laguna Garcia
+Leslie Law
+SmokeMonster 
+Don Gafford
+furrtek 
+Fred Fryolator
+40wattrange 
+Stephen Marshall
+Chris Toast
+Geert Oost 
+Michael Troelsen
+Mads Troest
+Jan Beta
+Neil Maguire
+Filip Kindt
+Jeremy Glass
+Daniel Hochman
+Mike Holzinger
+Obiwantje 
+Oliver Wndmth
+Carl Hagström
+Johannes Reß
+QcRetro 
+Kevin Bidwell
+robert fisher
+type78 
+Manuel Astudillo
+Joshua Witt
+Duane Hembrick
+UKShark 
+Javier Martínez
+Frank Wolf
+Thomas Tahsin-Bey
+Miguel Angel Rodriguez Jodar
+Manuel Antoni
+Peter Edwards
+Keith Kelly
+Funkycochise 
+Marco Tavian
+Jérôme Moreau
+Owlnonymous 
+Eoin Gibney
+crashman 
+Christian Bailey
+James DeRose
+Rob Young
+Gonzalo López
+Nicolas Hamel
+Gregory Hogan
+Joe Kalwitz
+Manuelfx 
+Alan Steremberg
+StalkS 
+DarkStar7 
+RetroShop.pt 
+Marcos 
+Matthew Langtry
+Travis Brown
+Porkchop Express
+Violeta Martin Fernandez
+SJohansson 
+JD 
+loloC2C 
+PsyFX 
+Darren Newman
+Fredrik Berglind
+Matt Charlesworth
+John Klimek
+remowilliams 
+Rysha 
+Popov 
+Dag J.
+Michael Stegen
+Carlos Del Alamo
+albconde 
+Fay Dek
+Manuel Fernández
+Blue1597 
+Bruno Silva
+Ed Balan
+Manuel 
+Salvador Perugorria Lorente
 
-Games using 1943 scroll module
 
-* 1943 / Gun Smoke
-* Trojan
-* Tiger Road / F1 Dream
-* Side Arms
-
-Games re-writting the sprites to SDRAM
-
-* The Speed Rumbler
-* Tiger Road / F1 Dream
-* Bionic Commando
-
-Games using multiple SDRAM banks
-
-* Bionic Commando
-* Street Fighter
-* The Speed Rumbler
-
-Some modules identify the location of graphic bits, such as horizontal flip, with the help of a LAYOUT parameter. Here are the values:
-
-Layout  |  Game
---------|---------
-10      | The Speed Rumbler
-11      | Exed Exes
-12      | Exed Exes (SCR2)
-
-## Wait States
-
-Bus contention is similar across the different boards.
-
-Game              |   Char Access Ok  |  Scr Access Ok
-------------------|-------------------|-----------------
-GnG               |  H[2:1]!=3        | H[2:0]<2
-1942              |  H[2:1]!=2        | H[2:0]<3
-1943, Side Arms   |  After H[2:0]==4  | No SCR RAM
-Commando          |  After H[2:0]==4  | Wait until H[0]==0
-
-## YM2203 Clock Divider
-
-These are the settings for the internal clock divider in YM2203 games. Each number refers to a YM22003 chip. This information can be viewed on the *debug_view* bus when compiled with *JTFRAME_DEBUG*.
-
-Game              | Divider   | FM IRQ
-------------------|-----------|---------
-1943              |  0/0      | No
-Black Tiger       |  2/2      | Yes
-Commando          |  0/0      | No
-F1-Dream          |  2/2      | Yes
-Ghosts'n Goblins  |  3/3      | No
-Gun Smoke         |  3/3      | No
-Legendary Wings   |  3/3      | No
-Section Z         |  3/3      | No
-Side Arms         |  2/2      | Yes
-The Speed Rumbler |  2/2      | Yes
-Tiger Road        |  2/2      | Yes
-Trojan            |  3/3      | No
-
-Note that 2 is the default divider, so games using it may never set it explicitly.
-
-## Troubleshooting
-
-* If you have in-game problems, please read the text file specific to that core. Sometimes it's just that the games has more buttons than you think.
-
-* F1-Dream and Black Tiger are using an IP for the MCU that does not synthesize correctly at 48MHz because of a setup timing violation. Using the clock enable signal to operate it seems to remove the problem. Ideally, the IP should be edited to increase its frequency performance.
-
-* How to continue the game: many CAPCOM games of this era require to hold the fire button while pressing 1P to continue the game.
-
-## Keyboard
-
-On MiSTer keyboard control is configured through the OSD.
-
-For MiST and MiSTer: games can be controlled with both game pads and keyboard. The keyboard follows the same layout as MAME's default.
-
-    F3      Game reset
-    P       Pause (in some games, you can disable the credits screen by pressing 1P)
-    1,2     1P, 2P start buttons
-    5,6     Left and right coin inputs
-
-    cursors 1P direction
-    CTRL    1P button 1
-    ALT     1P button 2
-    space   1P button 3
-
-    R,F,G,D 2P direction
-    Q,S,A   2P buttons 3,2 and 1
-
-    F7      Turn character layer on/off
-    F8      Turn second background layer on/off
-    F9      Turn first  background layer on/off
-    F10     Turn object (sprite) layer on/off
-
-# ROM Generation
-
-Each core in the releases folder continues files for linux and windows to generate the ROM file starting from a MAME set. Follow the instructions of that file. There are also MRA files available in the [JTBIN](https://github.com/jotego(jtbin)). MRA files are the recommended way. Use the MRA-to-ROM converter from Sebdel if your device does not accept MRA files natively.
-
-# SD Card
-
-For MiST copy the file core.rbf to the SD card at the root directory. Copy also the rom you have generated with the name JTGNG.rom. It will get loaded at start. Make sure to have a recent version of MiST/SiDi firmware.
-
-# Extras
-
-You can press F12 to bring the OSD menu up. You can turn off music, or sound effects with it. By default, a screen filter makes the screen look closer to an old tube monitor. If you turn it off you will get sharp pixels. Note that if you switch from sharp to soft pixels you will need a couple of seconds to get your eyes used as the brain initially perceives this as an out of focus image compared to the old one.
-
-# Misc
-
-Original filter for sound (GnG)
-    -high pass filter with cut-off freq. at 1.6Hz
-    -low pass filter with cut-off freq. at 32.3kHz
-
-## Modules
-
-The FPGA clone uses the following modules:
-
-JT12:   For YM2203 sound synthesis. From the same author.
-JT51:   For YM2151 sound synthesis. From the same author.
-JT5205: For MSM5205 ADPCM sound. From the same author.
-JTFRAME: A common framework for MiST arcades. From the same author.
-MC6809 from Greg Miller
-T80: originally from Daniel Wallner, with edits from Alexey Melnikov (Mister)
-hybrid_pwm_sd.v copied from FPGAgen source code. Unknown author
-
-Use `git clone --recurse-submodules` in order to get all submodules when you clone the repository.
-
-# Compilation
-
-Refer to [JTFRAME](https://github.com/jotego/jtframe) for compilation instructions.
-
-# Directory Structure
-
-model/gng/hdl/  replica of original PCB schematics
-model/gng/ver/  simulation files for original PCB
-modules         files shared by several games and external files
-modules/mist
-doc             documents related to original PCB
-doc/74          74' series data sheets
-rom             script to convert from MAME rom files to the required format
-                simulation files expect the rom files here
-cores/gng/        MiST board version of Ghosts'n Goblins.
-                  Latest core version is located in this folder and called core.rbf
-cores/gng/hdl     Verilog files of the clone for MiST
-cores/gng/doc     documents related to MiST clone or MiST hardware
-cores/gng/quartus project to synthesize the clone
-cores/gng/ver     simulation files of MiST clone
-
-cores/1942        MiST board version of 1942 arcade game
-cores/1942/hdl    Verilog files of the clone for MiST
-cores/1942/zxuno  files for ZX-UNO version
-cores/1942/mist   Quartus files for MiST version
-
-cores/1943        MiST board version of 1943 arcade game
-cores/1943/hdl    Verilog files of the clone for MiST
-cores/1943/mist   Quartus files for MiST version
-etc.
-
-# HDL Code Structure
-
-The top level module is called jtgng_mist. This is the module that is really dependent on the board. If you want to port jtgng to a different FPGA board you will need to modify this file. Most other files will likely stay the same
-
-The game itself in module jtgng_game. It is written using an arbitrary clock (active on positive edge) and a clock enable signal (switching on the negative edge). From jtgng_game down the hierarchy, everything should be highly portable.
-
-The video output is a 256x256 screen. That is what you get from jtgng_game in a signal format that replicates the original hardware. jtgng_mist instantiates a module called jtgng_vga that converts the image to a standard VGA resolution without losing frame speed.
-
-# Credits
-
-Jose Tejada Gomez. Twitter @topapate
-The project is hosted in http://www.github.com/jotego/jt_gng
-License: GPL3, you are obligued to publish your code if you use mine
-
-Special thanks to Greg Miller, Bruno Silva and Alexey Melnikov
-
-
-Thank you all!
-```
-+--------------------------------------------------------------------------------+
-|oooooooooooooooooooooooooooooooooo+++++++++++ooooooooooooooooooooooooooooooooooo|
-|ooooooooooooooooooooooooooooooooo+. .    . .+ooooooooooooooooooooooooooooooooooo|
-|ooooooooooooooooooooooooooooooooo~         :o++ooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooo+ooo+.        .++.:oo+oo+oooooo+o+oo+oooooo++ooooooo|
-|ooooooooooooooooooooooooo+.......          .. .............................:oooo|
-|oooooooooooooooooooooooo+.                                                .+o+oo|
-|oooooooooooooooooooooooo:                                                 :o:.+o|
-|ooooooooooooooooooooooo+.                                                .++.:oo|
-|ooooooooooooooooooooooo:.....           ...........          ....... ....:o~.+oo|
-|oooooooooooooooooooooooo+++++~         ~+++:++:++++.         ++++++++++++++.+ooo|
-|oooooooooooooooooooooooooo+:~         .++.~:::::::.         .o+.~:::::::::::+ooo|
-|oooooooooooooooooooooooooooo:         :o~.+oooooo+.         ++.~oooooooooooooooo|
-|ooo~........~oooooooooooooo+.        .++.:ooooooo+         ~o:.+oooooooooooooooo|
-|oo:         ~o++ooooooooooo.         +o~.ooooooo+.        .++.~ooooooooooooooooo|
-|oo.         :+.:ooooooooo+.         ~o+.+ooooooo:         ~o:.+ooooooooooooooooo|
-|oo.         ...~:::::::..          .++.~ooooooo+.        .o+.:oooooooooooooooooo|
-|oo~                               ~o+..+ooooooo~         +o~.+oooooooooooooooooo|
-|oo+.                           .~+o+..+ooooooo+.        .o+.+ooooooooooooooooooo|
-|oooo~.                       .:+o+..:+oooooooo.         +o..oooooooooooooooooooo|
-|ooooo+:...              ..~:+++:..:+ooooooooo+         .o+.+oooooooooooooooooooo|
-|ooooooo+++::::::::::++++++++~~.~++ooooooooooo+:+:::::+:++.~ooooooooooooooooooooo|
-|ooooooooo+++:::::::::~:~~~~:++oooooooooooooooooo+::::~::~.+ooooooooooooooooooooo|
-|oooooooooooooo+o+oo++++o+ooooooooooooooooooooooo+o+++o++o+oooooooooooooooooooooo|
-+--------------------------------------------------------------------------------+
-```
