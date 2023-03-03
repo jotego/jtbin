@@ -1,0 +1,99 @@
+<!--          FPGA arcade hardware by Jotego
+
+              This core is available for hardware compatible with MiST and MiSTer
+              Other FPGA systems may be supported by the time you read this.
+              This work is not mantained by the MiSTer project. Please contact the
+              core author for issues and updates.
+
+              (c) Jose Tejada, 2023. Please support this research
+              Patreon: https://patreon.com/jotego
+
+              The author does not endorse or participate in illegal distribution
+              of copyrighted material. This work can be used with compatible
+              software. This software can be homebrew projects or legally
+              obtained memory dumps of compatible games.
+
+              This file license is GNU GPLv2.
+              You can read the whole license file in
+              https://opensource.org/licenses/gpl-2.0.php
+
+-->
+
+<misterromdescription>
+    <about author="jotego" webpage="https://patreon.com/jotego" source="https://github.com/jotego" twitter="@topapate"/>
+    <name>Karate Dou (Arfyc bootleg)</name>
+    <setname>karateda</setname>
+    <rbf>jtkchamp</rbf>
+    <mameversion>0251</mameversion>
+    <year>1984</year>
+    <manufacturer>bootleg (Arfyc)</manufacturer>
+    <players>2</players>
+    <joystick>4</joystick>
+    <rotation>vertical (cw)</rotation>
+    <region>World</region>
+    <mraauthor>jotego</mraauthor>
+    <rom index="0" zip="karateda.zip|kchamp.zip" md5="None" asm_md5="278b40c5a7797bdfd700d59cab41adab">
+        <!-- maincpu - starts at 0x0 - length 0x10000 (16 bits) -->
+        <part name="k-14_2764.d1" crc="44e60aa0"/>
+        <part name="k-15_2764.d2" crc="a65e3793"/>
+        <part name="k-16_2764.d4" crc="151d8872"/>
+        <part name="k-17_2764.d5" crc="8f393b6a"/>
+        <part name="k-18_2764.d6" crc="a09046ad"/>
+        <part name="k-19_2764.d7" crc="0cdc4da9"/>
+        <part repeat="0x4000"> FF</part>
+        <!-- SND_START -->
+        <!-- audiocpu - starts at 0x10000 - length 0x10000 (16 bits) -->
+        <part name="k-26_2764.e10" crc="645232ba"/>
+        <part name="k-25_2764.e9" crc="253bf0da"/>
+        <part name="k-24_2764.e8" crc="e2c188af"/>
+        <part name="k-23_2764.e6" crc="25262de1"/>
+        <part name="k-22_2764.e5" crc="38055c48"/>
+        <part name="k-21_2764.e4" crc="5f0efbe7"/>
+        <part name="k-20_2764.e2" crc="cbe8a533"/>
+        <part repeat="0x2000"> FF</part>
+        <!-- CHAR_START -->
+        <!-- gfx1 - starts at 0x20000 - length 0x20000 (17 bits) -->
+        <interleave output="16">
+            <part name="k-0_2764.h3" crc="cec020f2" map="01"/>
+            <part name="k-1_2764.h6" crc="cd96271c" map="10"/>
+        </interleave>
+        <part repeat="0x1C000"> FF</part>
+        <!-- OBJ_START -->
+        <!-- gfx2 - starts at 0x40000 - length 0x20000 (17 bits) -->
+        <part name="k-13_2764.k15" crc="fb358707"/>
+        <part name="k-4_2764.j15" crc="48372bf8"/>
+        <part name="k-12_2764.k13" crc="b4842ea9"/>
+        <part name="k-3_2764.j13" crc="8cd166a5"/>
+        <part name="k-11_2764.k12" crc="4cbd3aa3"/>
+        <part name="k-2_2764.j12" crc="6be342a6"/>
+        <part repeat="0x4000"> FF</part>
+        <!-- Blank ends at 0x50000 -->
+        <part name="k-7_2764.k4" crc="40f2b6fb"/>
+        <part name="k-10_2764.k9" crc="325c0a97"/>
+        <part name="k-6_2764.k2" crc="7346db8a"/>
+        <part name="k-9_2764.k8" crc="b78714fc"/>
+        <part name="k-5_2764.k1" crc="b2557102"/>
+        <part name="k-8_2764.k7" crc="c85aba0e"/>
+        <part repeat="0x4000"> FF</part>
+        <!-- JTFRAME_PROM_START -->
+        <!-- proms - starts at 0x60000 - length 0x300 (10 bits) -->
+        <part name="1_dm74s287_82s129.f11" crc="f05bda76"/>
+        <part name="2_dm74s287_82s129.f12" crc="d26d6fa9"/>
+        <part name="3_dm74s287_82s129.f13" crc="111ccb15"/>
+        <!-- Total 0x60300 bytes - 384 kBytes -->
+    </rom>
+    <!-- Vertical game -->
+    <rom index="1">
+        <part>01</part>
+    </rom>
+    <switches page_id="1" page_name="Switches" base="16" default="3f">
+        <!-- DSW -->
+        <dip name="Coin B" bits="0,1" ids="3/1,2/1,1/2,1/1"/>
+        <dip name="Coin A" bits="2,3" ids="3/1,2/1,1/2,1/1"/>
+        <dip name="Difficulty" bits="4" ids="Hard,Normal"/>
+        <dip name="Free Play" bits="5" ids="On,Off"/>
+        <dip name="Demo Sounds" bits="6" ids="On,Off"/>
+        <dip name="Cabinet" bits="7" ids="Upright,Cocktail"/>
+    </switches>
+    <buttons names="left(2),right(2),up(2),bottom(2),Start,Coin,Core credits" default="Y,X,B,A,Start,Select,-" count="4"/>
+</misterromdescription>

@@ -1,0 +1,99 @@
+<!--          FPGA arcade hardware by Jotego
+
+              This core is available for hardware compatible with MiST and MiSTer
+              Other FPGA systems may be supported by the time you read this.
+              This work is not mantained by the MiSTer project. Please contact the
+              core author for issues and updates.
+
+              (c) Jose Tejada, 2023. Please support this research
+              Patreon: https://patreon.com/jotego
+
+              The author does not endorse or participate in illegal distribution
+              of copyrighted material. This work can be used with compatible
+              software. This software can be homebrew projects or legally
+              obtained memory dumps of compatible games.
+
+              This file license is GNU GPLv2.
+              You can read the whole license file in
+              https://opensource.org/licenses/gpl-2.0.php
+
+-->
+
+<misterromdescription>
+    <about author="jotego" webpage="https://patreon.com/jotego" source="https://github.com/jotego" twitter="@topapate"/>
+    <name>Karate Champ (Tecfri bootleg)</name>
+    <setname>kchamptec</setname>
+    <rbf>jtkchamp</rbf>
+    <mameversion>0251</mameversion>
+    <year>1984</year>
+    <manufacturer>bootleg (Tecfri)</manufacturer>
+    <players>2</players>
+    <joystick>4</joystick>
+    <rotation>vertical (cw)</rotation>
+    <region>World</region>
+    <mraauthor>jotego</mraauthor>
+    <rom index="0" zip="kchamptec.zip|kchamp.zip" md5="None" asm_md5="c38508385b3035f9bd237a931923adb1">
+        <!-- maincpu - starts at 0x0 - length 0x10000 (16 bits) -->
+        <part name="13.bin" crc="0000d1a0"/>
+        <part name="12.bin" crc="03fae67e"/>
+        <part name="11.bin" crc="3b6e1d08"/>
+        <part name="10.bin" crc="53036ef7"/>
+        <part name="9.bin" crc="b824abc7"/>
+        <part name="8.bin" crc="18cd5a0c"/>
+        <part repeat="0x4000"> FF</part>
+        <!-- SND_START -->
+        <!-- audiocpu - starts at 0x10000 - length 0x10000 (16 bits) -->
+        <part name="1.bin" crc="999ed2c7"/>
+        <part name="2.bin" crc="33171e07"/>
+        <part name="3.bin" crc="d5501588"/>
+        <part name="4.bin" crc="47f66aac"/>
+        <part name="5.bin" crc="5928e749"/>
+        <part name="6.bin" crc="ca17e3ba"/>
+        <part name="7.bin" crc="ada4f2cd"/>
+        <part repeat="0x2000"> FF</part>
+        <!-- CHAR_START -->
+        <!-- gfx1 - starts at 0x20000 - length 0x20000 (17 bits) -->
+        <interleave output="16">
+            <part name="27.bin" crc="a4fa98a1" map="01"/>
+            <part name="26.bin" crc="fea09f7c" map="10"/>
+        </interleave>
+        <part repeat="0x1C000"> FF</part>
+        <!-- OBJ_START -->
+        <!-- gfx2 - starts at 0x40000 - length 0x20000 (17 bits) -->
+        <part name="14.bin" crc="eaad4168"/>
+        <part name="23.bin" crc="10a47e2d"/>
+        <part name="15.bin" crc="b4842ea9"/>
+        <part name="24.bin" crc="8cd166a5"/>
+        <part name="16.bin" crc="4cbd3aa3"/>
+        <part name="25.bin" crc="6be342a6"/>
+        <part repeat="0x4000"> FF</part>
+        <!-- Blank ends at 0x50000 -->
+        <part name="20.bin" crc="cb91d16b"/>
+        <part name="17.bin" crc="489c9c04"/>
+        <part name="21.bin" crc="7346db8a"/>
+        <part name="18.bin" crc="b78714fc"/>
+        <part name="22.bin" crc="b2557102"/>
+        <part name="19.bin" crc="c85aba0e"/>
+        <part repeat="0x4000"> FF</part>
+        <!-- JTFRAME_PROM_START -->
+        <!-- proms - starts at 0x60000 - length 0x300 (10 bits) -->
+        <part name="br27.1" crc="f683c54a"/>
+        <part name="br26.2" crc="3ddbb6c4"/>
+        <part name="br25.3" crc="ba4a5651"/>
+        <!-- Total 0x60300 bytes - 384 kBytes -->
+    </rom>
+    <!-- Vertical game -->
+    <rom index="1">
+        <part>01</part>
+    </rom>
+    <switches page_id="1" page_name="Switches" base="16" default="3f">
+        <!-- DSW -->
+        <dip name="Coin B" bits="0,1" ids="3/1,2/1,1/2,1/1"/>
+        <dip name="Coin A" bits="2,3" ids="3/1,2/1,1/2,1/1"/>
+        <dip name="Difficulty" bits="4" ids="Hard,Normal"/>
+        <dip name="Free Play" bits="5" ids="On,Off"/>
+        <dip name="Demo Sounds" bits="6" ids="On,Off"/>
+        <dip name="Cabinet" bits="7" ids="Upright,Cocktail"/>
+    </switches>
+    <buttons names="left(2),right(2),up(2),bottom(2),Start,Coin,Core credits" default="Y,X,B,A,Start,Select,-" count="4"/>
+</misterromdescription>

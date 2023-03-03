@@ -1,17 +1,17 @@
-<!--          FPGA compatible core of arcade hardware by Jotego
+<!--          FPGA arcade hardware by Jotego
 
               This core is available for hardware compatible with MiST and MiSTer
               Other FPGA systems may be supported by the time you read this.
               This work is not mantained by the MiSTer project. Please contact the
               core author for issues and updates.
 
-              (c) Jose Tejada, 2020. Please support the author
+              (c) Jose Tejada, 2023. Please support this research
               Patreon: https://patreon.com/jotego
-              Paypal:  https://paypal.me/topapate
 
               The author does not endorse or participate in illegal distribution
-              of copyrighted material. This work can be used with legally
-              obtained ROM dumps or with compatible homebrew software
+              of copyrighted material. This work can be used with compatible
+              software. This software can be homebrew projects or legally
+              obtained memory dumps of compatible games.
 
               This file license is GNU GPLv2.
               You can read the whole license file in
@@ -23,26 +23,22 @@
     <about author="jotego" webpage="https://patreon.com/jotego" source="https://github.com/jotego" twitter="@topapate"/>
     <name>Labyrinth Runner (Japan)</name>
     <setname>labyrunr</setname>
-     <year>1987</year>
-	<manufacturer>Konami</manufacturer>
-	<category>Shooter</category>
     <rbf>jtlabrun</rbf>
-    <rom index="0" zip="labyrunr.zip|tricktrp.zip" type="merged" md5="None">
-        <!-- maincpu - starts at 0x0 -->
-        <interleave output="16">
-            <part name="771j04.10f" crc="354a41d0"  length="0x8000" offset="0x8000"  map="12"/>
-        </interleave>
-        <interleave output="16">
-            <part name="771j04.10f" crc="354a41d0"  length="0x8000" offset="0x0"  map="12"/>
-        </interleave>
-        <interleave output="16">
-            <part name="771j03.8f" crc="12b49044" map="12"/>
-        </interleave>
-        <!-- gfx1 - starts at 0x20000 -->
-        <interleave output="16">
-            <part name="771d01.14a" crc="15c8f5f9" map="12"/>
-        </interleave>
-        <!-- proms - starts at 0x60000 -->
+    <mameversion>0251</mameversion>
+    <year>1987</year>
+    <manufacturer>Konami</manufacturer>
+    <players>2</players>
+    <joystick>8</joystick>
+    <rotation>vertical (cw)</rotation>
+    <region>World</region>
+    <mraauthor>jotego</mraauthor>
+    <rom index="0" zip="labyrunr.zip|tricktrp.zip" md5="None" asm_md5="7432285ff67a0ccdda24a8b3857c73ea">
+        <!-- maincpu - starts at 0x0 - length 0x20000 (17 bits) -->
+        <part name="771j04.10f" crc="354a41d0"/>
+        <part name="771j03.08f" crc="12b49044"/>
+        <!-- gfx - starts at 0x20000 - length 0x40000 (18 bits) -->
+        <part name="771d01.14a" crc="15c8f5f9"/>
+        <!-- proms - starts at 0x60000 - length 0x100 (8 bits) -->
         <part name="771d02.08d" crc="3d34bb5a"/>
         <!-- Total 0x60100 bytes - 384 kBytes -->
     </rom>
@@ -50,7 +46,7 @@
     <rom index="1">
         <part>01</part>
     </rom>
-    <switches base="8" default="FF,FF,FF">
+    <switches page_id="1" page_name="Switches" base="8" default="ff,5a,f7">
         <!-- DSW1 -->
         <dip name="Coin A" bits="0,3" ids="Free Play,4/3,4/1,3/4,3/2,3/1,2/5,2/3,2/1,1/7,1/6,1/5,1/4,1/3,1/2,1/1"/>
         <dip name="Coin B" bits="4,7" ids="None,4/3,4/1,3/4,3/2,3/1,2/5,2/3,2/1,1/7,1/6,1/5,1/4,1/3,1/2,1/1"/>
@@ -66,5 +62,5 @@
         <dip name="Service Mode" bits="18" ids="On,Off"/>
         <dip name="Allow Continue" bits="19" ids="5 Times,3 Times"/>
     </switches>
-    <buttons names="Fire,Jump,Start,Coin,Pause" default="Y,X,R,L,Start"/>
+    <buttons names="Shoot,Bomb,Start,Coin,Core credits" default="Y,X,Start,Select,-" count="2"/>
 </misterromdescription>

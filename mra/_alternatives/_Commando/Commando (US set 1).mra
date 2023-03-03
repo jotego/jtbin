@@ -1,17 +1,17 @@
-<!--          FPGA compatible core for Capcom arcade hardware by Jotego
+<!--          FPGA arcade hardware by Jotego
 
               This core is available for hardware compatible with MiST and MiSTer
               Other FPGA systems may be supported by the time you read this.
               This work is not mantained by the MiSTer project. Please contact the
               core author for issues and updates.
 
-              (c) Jose Tejada, 2021. Please support the author
+              (c) Jose Tejada, 2023. Please support this research
               Patreon: https://patreon.com/jotego
-              Paypal:  https://paypal.me/topapate
 
               The author does not endorse or participate in illegal distribution
-              of copyrighted material. This work can be used with legally
-              obtained ROM dumps or with compatible homebrew software.
+              of copyrighted material. This work can be used with compatible
+              software. This software can be homebrew projects or legally
+              obtained memory dumps of compatible games.
 
               This file license is GNU GPLv2.
               You can read the whole license file in
@@ -21,67 +21,81 @@
 
 <misterromdescription>
     <about author="jotego" webpage="https://patreon.com/jotego" source="https://github.com/jotego" twitter="@topapate"/>
-    <name>Commando (US Set 1)</name>
+    <name>Commando (US set 1)</name>
     <setname>commandou</setname>
     <rbf>jtcommnd</rbf>
+    <mameversion>0251</mameversion>
     <year>1985</year>
     <manufacturer>Capcom (Data East USA license)</manufacturer>
     <players>2</players>
-    <joystick>8-way</joystick>
+    <joystick>8</joystick>
     <rotation>vertical (ccw)</rotation>
-    <region>USA</region>
-    <category>Shooter / Walking</category>
-    <mameversion>0230</mameversion>
-    <mratimestamp>20210418</mratimestamp>
-    <rom index="0" zip="commando.zip|commandou.zip" type="merged|nonmerged|split" md5="none">
-        <!-- maincpu -->
+    <region>World</region>
+    <mraauthor>jotego</mraauthor>
+    <rom index="0" zip="commandou.zip|commando.zip" md5="None" asm_md5="fa7f7fa618a6e367246611c748d186a9">
+        <!-- maincpu - starts at 0x0 - length 0xC000 (16 bits) -->
         <part name="u4-f.9m" crc="a6118935"/>
         <part name="u3-f.8m" crc="24f49684"/>
-        <!-- audiocpu -->
+        <!-- JTFRAME_BA1_START -->
+        <!-- audiocpu - starts at 0xC000 - length 0x4000 (14 bits) -->
         <part name="cm02.9f" crc="f9cc4a74"/>
-        <!-- gfx1 -->
-        <part name="vt01.5d" crc="505726e0"/>
-        <!-- gfx2 -->
-        <part name="vt11.5a" crc="7b2e1b48"/>
-        <part name="vt12.6a" crc="81b417d3"/>
-        <part name="vt15.9a" crc="de70babf"/>
-        <part name="vt16.10a" crc="14178237"/>
-        <part name="vt13.7a" crc="5612dbd2"/>
-        <part name="vt14.8a" crc="2b2dee36"/>
-        <part name="vt15.9a" crc="de70babf"/>
-        <part name="vt16.10a" crc="14178237"/>
-        <!-- gfx3 -->
-        <part name="vt05.7e" crc="79f16e3d"/>
-        <part name="vt06.8e" crc="26fee521"/>
-        <part name="vt07.9e" crc="ca88bdfd"/>
-        <part name="vt08.7h" crc="2019c883"/>
-        <part name="vt09.8h" crc="98703982"/>
-        <part name="vt10.9h" crc="f069d2f8"/>
-        <!-- proms -->
+        <!-- JTFRAME_BA2_START -->
+        <!-- chars - starts at 0x10000 - length 0x4000 (14 bits) -->
+        <interleave output="16">
+            <part name="vt01.5d" crc="505726e0" map="12"/>
+        </interleave>
+        <!-- sprites - starts at 0x14000 - length 0x18000 (17 bits) -->
+        <interleave output="16">
+            <part name="vt08.7h" crc="2019c883" map="01"/>
+            <part name="vt05.7e" crc="79f16e3d" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="vt09.8h" crc="98703982" map="01"/>
+            <part name="vt06.8e" crc="26fee521" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="vt10.9h" crc="f069d2f8" map="01"/>
+            <part name="vt07.9e" crc="ca88bdfd" map="10"/>
+        </interleave>
+        <!-- JTFRAME_BA3_START -->
+        <!-- tiles - starts at 0x2C000 - length 0x20000 (17 bits) -->
+        <interleave output="32">
+            <part name="vt11.5a" crc="7b2e1b48" map="0001"/>
+            <part name="vt13.7a" crc="5612dbd2" map="0010"/>
+            <part name="vt15.9a" crc="de70babf" map="0100"/>
+            <part name="vt15.9a" crc="de70babf" map="1000"/>
+        </interleave>
+        <interleave output="32">
+            <part name="vt12.6a" crc="81b417d3" map="0001"/>
+            <part name="vt14.8a" crc="2b2dee36" map="0010"/>
+            <part name="vt16.10a" crc="14178237" map="0100"/>
+            <part name="vt16.10a" crc="14178237" map="1000"/>
+        </interleave>
+        <!-- JTFRAME_PROM_START -->
+        <!-- proms - starts at 0x4C000 - length 0x600 (11 bits) -->
         <part name="vtb1.1d" crc="3aba15a1"/>
         <part name="vtb2.2d" crc="88865754"/>
         <part name="vtb3.3d" crc="4c14c3f6"/>
         <part name="vtb4.1h" crc="b388c246"/>
         <part name="vtb5.6l" crc="712ac508"/>
         <part name="vtb6.6e" crc="0eaf5158"/>
+        <!-- Total 0x4C600 bytes - 305 kBytes -->
     </rom>
+    <!-- Vertical game -->
     <rom index="1">
-        <part>01</part>
+        <part>05</part>
     </rom>
-    <switches page_id="1" page_name="DIP Switches" default="FF,3F" base="16">
-        <!-- SW1 -->
-        <dip name="Starting Area" bits="0,1" ids="7 (Desert 2),3 (Desert 1),5 (Forest 2),1 (Forest 1)"/>
+    <switches page_id="1" page_name="Switches" base="16" default="ff,1f">
+        <!-- DSW1 -->
+        <dip name="Starting Area" bits="0,1" ids="6,2,4,0 "/>
         <dip name="Lives" bits="2,3" ids="5,2,4,3"/>
-        <dip name="Coin B" bits="4,5" ids="2/1,1/2,1/3,1/1"/>
+        <dip name="Coin B" bits="4,5" ids="4/1,2/1,3/1,1/1"/>
         <dip name="Coin A" bits="6,7" ids="2/1,1/2,1/3,1/1"/>
-        <!-- SW2 -->
+        <!-- DSW2 -->
         <dip name="Bonus Life" bits="8,10" ids="None,20K 70K+,30K 80K+,10K 60K+,40K 100K+,20K 60K+,30K 70K+,10K 50K+"/>
-        <dip name="Demo Sounds" bits="11" ids="Off,On"/>
-        <!-- Demo Sounds enables/disables Service Mode in opposite position -->
         <dip name="Service Mode" bits="11" ids="On,Off"/>
         <dip name="Difficulty" bits="12" ids="Difficult,Normal"/>
         <dip name="Flip Screen" bits="13" ids="Off,On"/>
-        <dip name="Cabinet" bits="14,15" ids="Upright 1P,Upright 2P,Cocktail"/>
     </switches>
-    <buttons names="Machine Gun,Hand Grenade,Start,Coin,Pause" default="A,B,R,L,Start" count="2"/>
+    <buttons names="Shoot,Grenade,Start,Coin,Core credits" default="Y,X,Start,Select,-" count="2"/>
 </misterromdescription>

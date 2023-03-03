@@ -5,7 +5,7 @@
               This work is not mantained by the MiSTer project. Please contact the
               core author for issues and updates.
 
-              (c) Jose Tejada, 2022. Please support this research
+              (c) Jose Tejada, 2023. Please support this research
               Patreon: https://patreon.com/jotego
 
               The author does not endorse or participate in illegal distribution
@@ -24,7 +24,7 @@
     <name>Karate Champ (US VS version, set 2)</name>
     <setname>kchampvs2</setname>
     <rbf>jtkchamp</rbf>
-    <mameversion>0243</mameversion>
+    <mameversion>0251</mameversion>
     <year>1984</year>
     <manufacturer>Data East USA</manufacturer>
     <players>2</players>
@@ -32,8 +32,8 @@
     <rotation>vertical (cw)</rotation>
     <region>World</region>
     <mraauthor>jotego</mraauthor>
-    <rom index="0" zip="kchampvs2.zip|kchamp.zip" md5="None">
-        <!-- maincpu - starts at 0x0 -->
+    <rom index="0" zip="kchampvs2.zip|kchamp.zip" md5="None" asm_md5="188a54e52be3732f001088f98ce2613f">
+        <!-- maincpu - starts at 0x0 - length 0x10000 (16 bits) -->
         <part name="lt.d13" crc="eef41aa8"/>
         <part name="lt.d11" crc="091f810e"/>
         <part name="lt.d10" crc="d4df2a52"/>
@@ -42,12 +42,14 @@
         <part name="lt.d6" crc="c3bc6e46" length="0x2000"/>
         <part repeat="0x2000"> FF</part>
         <part name="lt.d6" crc="c3bc6e46" length="0x2000" offset="0x2000"/>
-        <!-- audiocpu - starts at 0x10000 -->
+        <!-- SND_START -->
+        <!-- audiocpu - starts at 0x10000 - length 0x10000 (16 bits) -->
         <part name="lt.d4" crc="eaa646eb"/>
         <part name="lt.d2" crc="d71031ad"/>
         <part name="lt.d1" crc="6f811c43"/>
         <part repeat="0xA000"> FF</part>
-        <!-- gfx1 - starts at 0x20000 -->
+        <!-- CHAR_START -->
+        <!-- gfx1 - starts at 0x20000 - length 0x20000 (17 bits) -->
         <interleave output="16">
             <part name="lt.k1" crc="4c574ecd" map="01"/>
             <part name="lt.k5" crc="9ad6227c" map="10"/>
@@ -57,7 +59,8 @@
             <part name="lt.k6" crc="3b6d5de5" map="10"/>
         </interleave>
         <part repeat="0x18000"> FF</part>
-        <!-- gfx2 - starts at 0x40000 -->
+        <!-- OBJ_START -->
+        <!-- gfx2 - starts at 0x40000 - length 0x20000 (17 bits) -->
         <part name="lt.a1" crc="51eda56c"/>
         <part name="lt.c1" crc="593264cf"/>
         <part name="lt.a3" crc="b4842ea9"/>
@@ -73,7 +76,8 @@
         <part name="lt.a10" crc="b2557102"/>
         <part name="lt.c10" crc="c85aba0e"/>
         <part repeat="0x4000"> FF</part>
-        <!-- proms - starts at 0x60000 -->
+        <!-- JTFRAME_PROM_START -->
+        <!-- proms - starts at 0x60000 - length 0x300 (10 bits) -->
         <part name="lt.k10" crc="f683c54a"/>
         <part name="lt.k9" crc="3ddbb6c4"/>
         <part name="lt.k8" crc="ba4a5651"/>

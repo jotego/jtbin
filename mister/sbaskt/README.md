@@ -1,3 +1,4 @@
+*This repository has been consolidated in [JTGNG](https://github.com/jtgng)*
 # JTKICKER/JTYIEAR FPGA core compatible with Kicker/Yie Ar Kung-fu hardware
 
 You have in your hands a faithful reproduction of Kicker's hardware. We have analysed the PCB and extracted full schematics from it. We burnt EPROMs with specific code designed to test the custom chips functionality. The discoveries found during this process have been reported to the MAME team. So we can improve the experience in emulators where possible too.

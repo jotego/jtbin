@@ -76,26 +76,7 @@ git submodule update
 
 # Compilation
 
-I use linux as my development system. This means that I use many bash scripts, environment variables and symbolic links. I recommend using linux to compile the cores. You need to have the C++ compiler installed in linux.
-
-Start by sourcing the setprj.sh script directly from the JTDD directory in order to get the environment variables set. Now type:
-
-jtcore dd
-
-That will compile the MiST version.
-
-jtcore dd2 -mr
-
-will compile Double Dragon 2 for MiSTer.
-
-once compilation is triggered, Quartus qpf and qsf files are created. These files are
-not part of the repository as they are considered output files, not input.
-
-In the bin folder there is a script called jtupdate which compiles DD1 and DD2 for
-MiST, MiSTer and SiDi.
-
-IMPORTANT:
-Double Dragon 2 may halt if compilation does not meet timing. Double Dragon 2 also needs to use the Verilog version of T80 module (Z80 IP). This is the effect of defining the macro TV80S in the file dd2/hdl/jtdd2.tcl. Using the VHDL version of T80 may result in the core freezing. The reason is not known.
+Refer to [JTFRAME](https://github.com/jotego/jtframe) for compilation instructions.
 
 # Keyboard
 
