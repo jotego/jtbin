@@ -97,5 +97,5 @@
         <!-- DSWC -->
         <dip name="Freeze" bits="3" ids="On,Off"/>
     </switches>
-    <buttons names="Grab,Attack,Jump,-,-,-,Start,Coin,Core credits" default="Y,X,B,A,R,L,Start,Select,-" count="3"/>
+    <buttons names="Grab/Attack,Jump,-,-,-,-,Start,Coin,Core credits" default="Y,X,B,A,R,L,Start,Select,-" count="2"/>
 </misterromdescription>
