@@ -1,0 +1,36 @@
+jtoutrun - Arcade compatible hardware for Pocket FPGA
+Developed by JOTEGO - https://patreon.com/jotego
+
+The following arcade titles are compatible with this core. Generate
+the required .rom file using the mra tool (read below).
+Place the *.rom files in Assets/jtoutrun/common
+
+Out Run (sitdown/upright, Rev B) --> outrun.rom
+Out Run (deluxe sitdown) --> outrundx.rom
+Out Run (deluxe sitdown earlier version) --> outrudxa.rom
+Out Run (deluxe sitdown) (Enhanced Edition v2.0.3) --> outruxeh.rom
+Out Run (deluxe sitdown) (Enhanced Edition v1.0.3) --> outrueha.rom
+Out Run (Japan, deluxe sitdown) (FD1089A 317-0019) --> outrudxj.rom
+Out Run (sitdown/upright, Rev B) (Enhanced Edition v2.0.3) --> outruneh.rom
+Out Run (sitdown/upright, Rev B) (Enhanced Edition v1.1.0) --> outrueha.rom
+Out Run (sitdown/upright, Rev A) --> outrunra.rom
+Turbo Out Run (Out Run upgrade) (FD1094 317-0118) --> toutrun.rom
+Turbo Out Run (deluxe cockpit) (FD1094 317-0109) --> toutrun1.rom
+Turbo Out Run (cockpit) (FD1094 317-0106) --> toutrun2.rom
+Turbo Out Run (cockpit) (FD1094 317-0107) --> toutrun3.rom
+Turbo Out Run (Japan, Out Run upgrade) (FD1094 317-0117) --> toutrunj.rom
+Turbo Out Run (Japan, cockpit) (FD1094 317-0101) --> toutrnj1.rom
+
+
+These files are generated using the mra tool in:
+https://github.com/sebdel/mra-tools-c/tree/master/release
+
+Boogermann's ORCA tool can also be used to generate the files:
+https://github.com/opengateware/tools-orca
+
+Check out the short tutorial in:
+https://github.com/jotego/jtbin/wiki/Analogue-Pocket-Cores
+
+DISCLAIMER: This PocketFPGA core is licensed to be used only
+with legally owned dumps of videogame data. It is also licensed
+to be used with freeware (homebrew) compatible with the platform.
