@@ -5,7 +5,7 @@
               This work is not mantained by the MiSTer project. Please contact the
               core author for issues and updates.
 
-              (c) Jose Tejada, 2022. Please support this research
+              (c) Jose Tejada, 2023. Please support this research
               Patreon: https://patreon.com/jotego
 
               The author does not endorse or participate in illegal distribution
@@ -24,7 +24,7 @@
     <name>Out Run (deluxe sitdown earlier version)</name>
     <setname>outrundxa</setname>
     <rbf>jtoutrun</rbf>
-    <mameversion>0243</mameversion>
+    <mameversion>0251</mameversion>
     <year>1986</year>
     <manufacturer>Sega</manufacturer>
     <players>1</players>
@@ -32,12 +32,12 @@
     <rotation>horizontal</rotation>
     <region>World</region>
     <mraauthor>jotego</mraauthor>
-    <rom index="0" zip="outrundxa.zip|outrun.zip" md5="None">
+    <rom index="0" zip="outrundxa.zip|outrun.zip" md5="None" asm_md5="25622e22e367cd497bb2902361dce034">
         <part>
             00 00 00 00 00 00 00 00
             00 00 00 00 00 00 00 00
         </part>
-        <!-- maincpu - starts at 0x0 -->
+        <!-- maincpu - starts at 0x0 - length 0x60000 (19 bits) -->
         <interleave output="16">
             <part name="epr-10261.130" crc="1d034847" map="01"/>
             <part name="epr-10183.115" crc="3d992396" map="10"/>
@@ -55,7 +55,8 @@
             <part name="epr-10259.118" crc="95100b1a" map="10"/>
         </interleave>
         <part repeat="0x20000"> FF</part>
-        <!-- subcpu - starts at 0x60000 -->
+        <!-- JTFRAME_BA1_START -->
+        <!-- subcpu - starts at 0x60000 - length 0x60000 (19 bits) -->
         <interleave output="16">
             <part name="epr-10178.86" crc="6d36be05" map="01"/>
             <part name="epr-10173.66" crc="6c2775c0" map="10"/>
@@ -73,23 +74,26 @@
             <part name="epr-10176.69" crc="a7811f90" map="10"/>
         </interleave>
         <part repeat="0x20000"> FF</part>
-        <!-- soundcpu - starts at 0xC0000 -->
+        <!-- SND_START -->
+        <!-- soundcpu - starts at 0xC0000 - length 0x10000 (16 bits) -->
         <part name="epr-10187.88" crc="a10abaa9"/>
         <part repeat="0x8000"> FF</part>
-        <!-- pcm - starts at 0xD0000 -->
+        <!-- PCM_START -->
+        <!-- pcm - starts at 0xD0000 - length 0x60000 (19 bits) -->
         <part name="opr-10193.66" crc="bcd10dde"/>
-        <part repeat="0x8000"> FF</part>
+        <part name="opr-10193.66" crc="bcd10dde"/>
         <part name="opr-10192.67" crc="770f1270"/>
-        <part repeat="0x8000"> FF</part>
+        <part name="opr-10192.67" crc="770f1270"/>
         <part name="opr-10191.68" crc="20a284ab"/>
-        <part repeat="0x8000"> FF</part>
+        <part name="opr-10191.68" crc="20a284ab"/>
         <part name="opr-10190.69" crc="7cab70e2"/>
-        <part repeat="0x8000"> FF</part>
+        <part name="opr-10190.69" crc="7cab70e2"/>
         <part name="opr-10189.70" crc="01366b54"/>
-        <part repeat="0x8000"> FF</part>
+        <part name="opr-10189.70" crc="01366b54"/>
         <part name="opr-10188.71" crc="bad30ad9"/>
-        <part repeat="0x8000"> FF</part>
-        <!-- gfx1 - starts at 0x130000 -->
+        <part name="opr-10188.71" crc="bad30ad9"/>
+        <!-- JTFRAME_BA2_START -->
+        <!-- gfx1 - starts at 0x130000 - length 0x40000 (18 bits) -->
         <interleave output="32">
             <part name="opr-10268.99" crc="95344b04" map="0001"/>
             <part name="opr-10267.100" crc="a85bb823" map="0010"/>
@@ -102,7 +106,8 @@
             <part name="opr-10230.104" crc="686f5e50" map="0100"/>
             <part name="opr-10230.104" crc="686f5e50" map="1000"/>
         </interleave>
-        <!-- sprites - starts at 0x170000 -->
+        <!-- JTFRAME_BA3_START -->
+        <!-- sprites - starts at 0x170000 - length 0x100000 (20 bits) -->
         <interleave output="32">
             <part name="epr-10194.26" crc="f0eda3bd" map="0001"/>
             <part name="epr-10203.38" crc="8445a622" map="0010"/>
@@ -151,20 +156,22 @@
             <part name="epr-10219.59" crc="e73b9224" map="0100"/>
             <part name="epr-10228.73" crc="25803978" map="1000"/>
         </interleave>
-        <!-- segaic16road - starts at 0x270000 -->
+        <!-- ROAD_START -->
+        <!-- segaic16road - starts at 0x270000 - length 0x28000 (18 bits) -->
         <!-- Singleton region. The files are merged with themselves. -->
         <interleave output="16">
-            <part name="opr-10186.47" crc="22794426" map="01" length="0x4000"/>
-            <part name="opr-10186.47" crc="22794426" map="10" length="0x4000" offset="0x4000"/>
+            <part name="opr-10186.47" crc="22794426" offset="0x0000" map="01" length="0x4000"/>
+            <part name="opr-10186.47" crc="22794426" offset="0x4000" map="10" length="0x4000"/>
         </interleave>
         <interleave output="16">
-            <part name="opr-10185.11" crc="22794426" map="10" length="0x4000"/>
-            <part name="opr-10185.11" crc="22794426" map="01" length="0x4000" offset="0x4000"/>
+            <part name="opr-10185.11" crc="22794426" offset="0x0000" map="01" length="0x4000"/>
+            <part name="opr-10185.11" crc="22794426" offset="0x4000" map="10" length="0x4000"/>
         </interleave>
-        <!-- Total 0x280000 bytes - 2560 kBytes -->
-    </rom>
-    <rom index="17" zip="jtbeta.zip" md5="None">
-        <part name="beta.bin"/>
+        <part repeat="0x18000"> FF</part>
+        <!-- JTFRAME_PROM_START -->
+        <!-- maincpu:key - starts at 0x298000 - length 0x2000 (13 bits) -->
+        <part repeat="0x2000"> FF</part>
+        <!-- Total 0x29A000 bytes - 2664 kBytes -->
     </rom>
     <nvram index="2" size="12288"/>
     <rom index="1">

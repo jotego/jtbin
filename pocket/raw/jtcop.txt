@@ -1,0 +1,31 @@
+jtcop - Arcade compatible hardware for Pocket FPGA
+Developed by JOTEGO - https://patreon.com/jotego
+
+The following arcade titles are compatible with this core. Generate
+the required .rom file using the mra tool (read below).
+Place the *.rom files in Assets/jtcop/common
+
+Fighting Fantasy (Japan revision 3) --> ffantasy.rom
+Fighting Fantasy (Japan) --> ffantsya.rom
+Fighting Fantasy (Japan revision ?) --> ffantsyb.rom
+Fighting Fantasy (Japan revision 2) --> ffantsyj.rom
+Hippodrome (US) --> hippodrm.rom
+Robocop (World revision 4) --> robocop.rom
+Robocop (Japan) --> robocopj.rom
+Robocop (US revision 1) --> robocopu.rom
+Robocop (US revision 0) --> robocpu0.rom
+Robocop (World revision 3) --> robocopw.rom
+
+
+These files are generated using the mra tool in:
+https://github.com/sebdel/mra-tools-c/tree/master/release
+
+Boogermann's ORCA tool can also be used to generate the files:
+https://github.com/opengateware/tools-orca
+
+Check out the short tutorial in:
+https://github.com/jotego/jtbin/wiki/Analogue-Pocket-Cores
+
+DISCLAIMER: This PocketFPGA core is licensed to be used only
+with legally owned dumps of videogame data. It is also licensed
+to be used with freeware (homebrew) compatible with the platform.

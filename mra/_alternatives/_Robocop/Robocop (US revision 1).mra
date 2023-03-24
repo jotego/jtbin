@@ -5,7 +5,7 @@
               This work is not mantained by the MiSTer project. Please contact the
               core author for issues and updates.
 
-              (c) Jose Tejada, 2022. Please support this research
+              (c) Jose Tejada, 2023. Please support this research
               Patreon: https://patreon.com/jotego
 
               The author does not endorse or participate in illegal distribution
@@ -24,7 +24,7 @@
     <name>Robocop (US revision 1)</name>
     <setname>robocopu</setname>
     <rbf>jtcop</rbf>
-    <mameversion>0237</mameversion>
+    <mameversion>0251</mameversion>
     <year>1988</year>
     <manufacturer>Data East USA</manufacturer>
     <players>2</players>
@@ -32,7 +32,7 @@
     <rotation>horizontal</rotation>
     <region>World</region>
     <mraauthor>jotego</mraauthor>
-    <rom index="0" zip="robocopu.zip|robocop.zip" md5="None">
+    <rom index="0" zip="robocopu.zip|robocop.zip" md5="None" asm_md5="753cdab2b0c71016b4b7b597d70b0edb">
         <!-- maincpu - starts at 0x0 - length 0x80000 (19 bits) -->
         <interleave output="16">
             <part name="ep01-1" crc="b3c6bc02" map="01"/>
@@ -43,17 +43,21 @@
             <part name="ep04" crc="c38b9d18" map="10"/>
         </interleave>
         <part repeat="0x40000"> FF</part>
+        <!-- SND_START -->
         <!-- audiocpu - starts at 0x80000 - length 0x10000 (16 bits) -->
         <part name="ep03" crc="1089eab8"/>
         <part repeat="0x8000"> FF</part>
+        <!-- PCM_START -->
         <!-- oki - starts at 0x90000 - length 0x20000 (17 bits) -->
         <part name="ep02" crc="711ce46f"/>
         <part repeat="0x10000"> FF</part>
+        <!-- BA2_START -->
         <!-- gfx1 - starts at 0xB0000 - length 0x20000 (17 bits) -->
         <interleave output="16">
             <part name="ep23" crc="a77e4ab1" map="01"/>
             <part name="ep22" crc="9fbd6903" map="10"/>
         </interleave>
+        <!-- GFX2_START -->
         <!-- gfx2 - starts at 0xD0000 - length 0x80000 (19 bits) -->
         <interleave output="16">
             <part name="ep20" crc="1d8d38b8" map="01"/>
@@ -66,6 +70,7 @@
             <part name="ep19" crc="9bad01c7" map="10"/>
         </interleave>
         <part repeat="0x20000"> FF</part>
+        <!-- GFX3_START -->
         <!-- gfx3 - starts at 0x150000 - length 0x40000 (18 bits) -->
         <interleave output="16">
             <part name="ep15" crc="a945269c" map="01"/>
@@ -78,6 +83,7 @@
             <part name="ep16" crc="e7fa4d58" map="10"/>
         </interleave>
         <part repeat="0x10000"> FF</part>
+        <!-- BA3_START -->
         <!-- gfx4 - starts at 0x190000 - length 0x80000 (19 bits) -->
         <interleave output="32">
             <part name="ep07" crc="495d75cf" map="0001"/>
@@ -92,15 +98,20 @@
             <part name="ep12" crc="3cd1d0c3" map="1000"/>
         </interleave>
         <part repeat="0x20000"> FF</part>
+        <!-- MCU_START -->
+        <!-- mcu - starts at 0x210000 -->
+        <!-- MCU_START -->
         <!-- sub - starts at 0x210000 - length 0x18000 (17 bits) -->
         <part repeat="0x1E00"> FF</part>
         <part name="en_24.a2" crc="b8e2ca98"/>
         <part repeat="0x16000"> FF</part>
+        <!-- JTFRAME_PROM_START -->
         <!-- proms - starts at 0x228000 - length 0x600 (11 bits) -->
         <part name="mb7116e_a-1.12c" crc="86e775f8"/>
         <part name="mb7122e_a-2.17e" crc="a5cda23e"/>
         <!-- Total 0x228600 bytes - 2209 kBytes -->
     </rom>
+    <nvram index="2" size="63552"/>
     <rom index="1">
         <part>00</part>
     </rom>
