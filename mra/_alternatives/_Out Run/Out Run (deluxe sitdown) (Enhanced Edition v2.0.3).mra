@@ -64,18 +64,18 @@
         <part repeat="0x8000"> FF</part>
         <!-- PCM_START -->
         <!-- pcm - starts at 0xD0000 - length 0x60000 (19 bits) -->
-        <part name="opr-10193.66" crc="bcd10dde"/>
-        <part name="opr-10193.66" crc="bcd10dde"/>
-        <part name="opr-10192.67" crc="770f1270"/>
-        <part name="opr-10192.67" crc="770f1270"/>
-        <part name="opr-10191.68" crc="20a284ab"/>
-        <part name="opr-10191.68" crc="20a284ab"/>
-        <part name="opr-10190.69" crc="7cab70e2"/>
-        <part name="opr-10190.69" crc="7cab70e2"/>
-        <part name="opr-10189.70" crc="01366b54"/>
-        <part name="opr-10189.70" crc="01366b54"/>
-        <part name="enhanced_203_opr-10188.71" crc="c2de09b2"/>
-        <part name="enhanced_203_opr-10188.71" crc="c2de09b2"/>
+        <part name="opr-10193.66" crc="bcd10dde" length="0x10000"/>
+        <part name="opr-10193.66" crc="bcd10dde" length="0x10000"/>
+        <part name="opr-10192.67" crc="770f1270" length="0x10000"/>
+        <part name="opr-10192.67" crc="770f1270" length="0x10000"/>
+        <part name="opr-10191.68" crc="20a284ab" length="0x10000"/>
+        <part name="opr-10191.68" crc="20a284ab" length="0x10000"/>
+        <part name="opr-10190.69" crc="7cab70e2" length="0x10000"/>
+        <part name="opr-10190.69" crc="7cab70e2" length="0x10000"/>
+        <part name="opr-10189.70" crc="01366b54" length="0x10000"/>
+        <part name="opr-10189.70" crc="01366b54" length="0x10000"/>
+        <part name="enhanced_203_opr-10188.71" crc="c2de09b2" length="0x10000"/>
+        <part name="enhanced_203_opr-10188.71" crc="c2de09b2" length="0x10000"/>
         <!-- JTFRAME_BA2_START -->
         <!-- gfx1 - starts at 0x130000 - length 0x40000 (18 bits) -->
         <interleave output="32">

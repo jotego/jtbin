@@ -66,12 +66,12 @@
         <part name="epr-12300.ic88" crc="e8ff7011"/>
         <!-- PCM_START -->
         <!-- pcm - starts at 0xD0000 - length 0x60000 (19 bits) -->
-        <part name="epr-12301.ic66" crc="6e78ad15"/>
-        <part name="epr-12302.ic67" crc="e72928af"/>
-        <part name="epr-12303.ic68" crc="8384205c"/>
-        <part name="epr-12304.ic69" crc="e1762ac3"/>
-        <part name="epr-12305.ic70" crc="ba9ce677"/>
-        <part name="epr-12306.ic71" crc="e49249fd"/>
+        <part name="epr-12301.ic66" crc="6e78ad15" length="0x10000"/>
+        <part name="epr-12302.ic67" crc="e72928af" length="0x10000"/>
+        <part name="epr-12303.ic68" crc="8384205c" length="0x10000"/>
+        <part name="epr-12304.ic69" crc="e1762ac3" length="0x10000"/>
+        <part name="epr-12305.ic70" crc="ba9ce677" length="0x10000"/>
+        <part name="epr-12306.ic71" crc="e49249fd" length="0x10000"/>
         <!-- JTFRAME_BA2_START -->
         <!-- gfx1 - starts at 0x130000 - length 0x40000 (18 bits) -->
         <interleave output="32">
