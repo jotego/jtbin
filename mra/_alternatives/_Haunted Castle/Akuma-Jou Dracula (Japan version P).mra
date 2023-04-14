@@ -1,0 +1,121 @@
+<!--          FPGA arcade hardware by Jotego
+
+              This core is available for hardware compatible with MiST and MiSTer
+              Other FPGA systems may be supported by the time you read this.
+              This work is not mantained by the MiSTer project. Please contact the
+              core author for issues and updates.
+
+              (c) Jose Tejada, 2023. Please support this research
+              Patreon: https://patreon.com/jotego
+
+              The author does not endorse or participate in illegal distribution
+              of copyrighted material. This work can be used with compatible
+              software. This software can be homebrew projects or legally
+              obtained memory dumps of compatible games.
+
+              This file license is GNU GPLv2.
+              You can read the whole license file in
+              https://opensource.org/licenses/gpl-2.0.php
+
+-->
+
+<misterromdescription>
+    <about author="jotego" webpage="https://patreon.com/jotego" source="https://github.com/jotego" twitter="@topapate"/>
+    <name>Akuma-Jou Dracula (Japan version P)</name>
+    <setname>akumajou</setname>
+    <rbf>jtcastle</rbf>
+    <mameversion>0251</mameversion>
+    <year>1988</year>
+    <manufacturer>Konami</manufacturer>
+    <players>2</players>
+    <joystick>4</joystick>
+    <rotation>horizontal</rotation>
+    <region>World</region>
+    <mraauthor>jotego</mraauthor>
+    <rom index="0" zip="akumajou.zip|hcastle.zip" md5="None" asm_md5="859530c99173bd7c47b85af4b230a1de">
+        <!-- maincpu - starts at 0x0 - length 0x28000 (18 bits) -->
+        <part name="768j06.k8" crc="42283c3e"/>
+        <part name="768p03.k12" crc="d509e340"/>
+        <!-- JTFRAME_BA1_START -->
+        <!-- audiocpu - starts at 0x28000 - length 0x8000 (15 bits) -->
+        <part name="768e01.e4" crc="b9fff184"/>
+        <!-- PCM_START -->
+        <!-- k007232 - starts at 0x30000 - length 0x80000 (19 bits) -->
+        <part name="768c07.e17" crc="01f9889c"/>
+        <!-- JTFRAME_BA2_START -->
+        <!-- k007121_1 - starts at 0xB0000 - length 0x100000 (20 bits) -->
+        <part name="768c09.g21" crc="e3be3fdd"/>
+        <part name="768c08.g19" crc="9633db8b"/>
+        <!-- JTFRAME_BA3_START -->
+        <!-- k007121_2 - starts at 0x1B0000 - length 0x100000 (20 bits) -->
+        <part name="768c04.j5" crc="2960680e"/>
+        <part name="768c05.j6" crc="65a2f227"/>
+        <!-- JTFRAME_PROM_START -->
+        <!-- proms - starts at 0x2B0000 - length 0x500 (11 bits) -->
+        <part name="768c13.j21" crc="f5de80cb"/>
+        <part name="768c14.j22" crc="b32071b7"/>
+        <part name="768c11.i4" crc="f5de80cb"/>
+        <part name="768c10.i3" crc="b32071b7"/>
+        <part name="768b12.d20" crc="362544b8"/>
+        <!-- Total 0x2B0500 bytes - 2753 kBytes -->
+    </rom>
+    <rom index="17" zip="jtbeta.zip" md5="None">
+        <part name="beta.bin"/>
+    </rom>
+    <!-- Machine code for the Picoblaze CPU -->
+    <rom index="16">
+        <part>
+            78 10 B0 44 02 10 5D 00 D8 01 90 05 80 0D B0 C1 02 AC 80 90 04 40 C3 06 F2 0E AC 60 00 02 41 0B
+            08 09 08 0C 12 20 63 80 08 10 0B 48 34 18 20 03 C0 AB 01 60 03 88 00 F0 36 80 C8 02 09 00 74 1E
+            60 07 6C 94 03 2B 00 05 6E 13 FC 00 98 04 2B 00 05 8E 13 FC 00 98 05 2B 00 05 AE 13 FC 00 98 06
+            2B 00 05 CE 13 FC 00 08 68 89 80 35 35 20 27 C2 1A 40 01 CB 04 3F 00 26 C2 0A 40 01 FB 04 3F 00
+            66 C2 1A 40 01 C3 04 3F 00 1A 6C 0B 00 25 00 04 30 44 82 48 86 00 AD 82 B4 01 10 81 40 07 00 71
+            C0 44 00 34 01 81 88 00 2D 84 00 0E 42 39 08 E5 20 94 83 50 57 00 06 40 84 00 2D 84 00 57 00 06
+            40 04 00 E5 83 0C 0A D2 75 81 DF 05 32 84 44 5E 20 5E 48 A4 20 2D 00 94 31 10 C4 44 00 20 41 4C
+            04 08 D0 26 44 AB 20 6D 40 64 65 E0 07 40 36 06 3E 00 94 40 D0 B2 81 08 22 21 88 84 20 12 82 48
+            88 22 E1 98 84 29 12 82 48 A8 24 E1 9B 84 74 12 96 49 78 26 E1 9B 84 20 12 CA 48 08 23 A1 8C 84
+            33 12 82 48 08 22 21 88 84 20 12 82 48 08 22 21 88 84 20 12 82 48 08 22 21 88 84 20 12 82 48 08
+            22 21 88 84 20 12 82 48 48 25 21 9A 84 69 12 CE 49 08 22 E1 98 84 6F 12 CA 49 58 26 21 88 84 69
+            12 CE 49 08 22 61 9A 84 6E 12 82 48 28 26 61 99 84 74 12 86 49 08 22 21 9C 84 68 12 86 49 38 27
+            61 99 84 20 12 82 48 08 22 21 88 84 20 12 82 48 A8 24 E1 9B 84 69 12 BA 49 08 22 21 9D 84 68 12
+            96 49 08 22 A1 98 84 65 12 D2 49 18 26 21 88 84 74 12 96 49 38 27 21 9D 84 20 12 D2 49 58 26 61
+            98 84 6D 12 82 48 18 26 21 9D 84 20 12 82 48 08 22 21 88 84 20 12 A2 49 48 27 21 9D 84 70 12 CE
+            49 A8 23 E1 8B 84 2F 12 C2 49 18 26 21 9D 84 72 12 96 49 F8 26 A1 9B 84 2E 12 8E 49 F8 26 61 9B
+            84 2F 12 AA 49 F8 26 21 9D 84 65 12 9E 49 F8 26 21 88 84 20 12 82 48 08 22 21 88 84 50 12 B2 49
+            18 26 E1 98 84 65 12 82 48 48 27 21 9A 84 65 12 82 48 68 26 61 9A 84 6C 12 96 49 08 22 A1 9A 84
+            74 12 8A 49 58 26 21 9D 84 61 12 BA 48 A8 27 61 9A 84 70 12 82 48 08 22 21 88 84 20 12 82 48 08
+            22 21 88 84 69 12 BA 49 08 22 21 9D 84 68 12 96 49 08 22 A1 99 84 6F 12 B2 49 48 26 61 99 84 72
+            12 82 48 78 26 61 98 84 6D 12 96 49 38 27 E1 8B 84 6D 12 86 49 D8 26 61 99 84 20 12 82 48 08 22
+            21 88 84 20 12 82 48 08 22 21 88 84 54 12 A2 49 98 26 E1 9C 84 20 12 8A 49 58 26 21 9D 84 61 12
+            82 48 28 25 A1 90 84 46 12 82 48 88 26 61 98 84 73 12 82 48 58 26 21 9E 84 70 12 A6 49 28 27 61
+            99 84 64 12 82 48 08 22 21 88 84 4C 21 32 85 C8 14 22 53 88 4C 21 32 85 C8 14 22 53 88 4C 21 32
+            85 C8 14 22 53 88 4C 21 32 85 C8 14 22 53 88 4C 21 32 85 C8 14 22 53 88 4C 21 32 85 C8 14 22 53
+            88 4C 21 32 85 C8 14 22 53 88 4C 21 32 85 C8 14 22 53 88 4C 21 32 85 C8 14 22 53 88 4C 21 32 85
+            C8 14 22 53 88 4C 21 32 85 C8 14 22 53 88 4C 21 32 85 C8 14 22 53 88 4C 21 32 85 C8 14 22 53 88
+            4C 21 32 85 C8 14 22 53 88 4C 21 32 85 C8 14 22 53 88 4C 21 32 85 C8 14 22 53 88 4C 21 32 85 C8
+            14 22 53 88 4C 21 32 85 C8 14 22 53 88 4C 21 32 85 C8 14 22 53 88 4C 21 32 85 C8 14 22 53 88 4C
+            21 32 85 C8 14 22 53 88 4C 21 32 85 C8 14 22 53 88 4C 21 32 85 C8 14 22 53 88 4C 21 32 85 C8 14
+            22 53 88 4C 21 32 85 C8 14 22 53 88 4C 21 32 85 C8 14 22 53 88 4C 21 32 85 C8 14 22 53 88 4C 21
+            32 85 C8 14 22 53 88 4C 21 32 85 C8 14 22 53 88 4C 21 32 85 C8 14 22 53 88 4C 21 32 85 C8 14 22
+        </part>
+    </rom>
+    <rom index="1">
+        <part>00</part>
+    </rom>
+    <switches page_id="1" page_name="Switches" base="8" default="ff,53,ff">
+        <!-- DSW1 -->
+        <dip name="Coin A" bits="0,3" ids="Free Play,4/3,4/1,3/4,3/2,3/1,2/5,2/3,2/1,1/7,1/6,1/5,1/4,1/3,1/2,1/1"/>
+        <dip name="Coin B" bits="4,7" ids="Invalid,4/3,4/1,3/4,3/2,3/1,2/5,2/3,2/1,1/7,1/6,1/5,1/4,1/3,1/2,1/1"/>
+        <!-- DSW2 -->
+        <dip name="Cabinet" bits="10" ids="Upright,Cocktail"/>
+        <dip name="Gameplay" bits="11,12" ids="Very Difficult,Difficult,Normal,Easy"/>
+        <dip name="Strength" bits="13,14" ids="Very Weak,Weak,Normal,Strong"/>
+        <dip name="Demo Sounds" bits="15" ids="On,Off"/>
+        <!-- DSW3 -->
+        <dip name="Flip Screen" bits="16" ids="On,Off"/>
+        <dip name="Upright Controls" bits="17" ids="Dual,Single"/>
+        <dip name="Service Mode" bits="18" ids="On,Off"/>
+        <dip name="Continue" bits="19" ids="No,Up to 3 Times"/>
+    </switches>
+    <buttons names="Attack,Jump,-,Start,Coin,Core credits" default="Y,X,B,Start,Select,-" count="2"/>
+</misterromdescription>
