@@ -82,7 +82,7 @@
     <rom index="1">
         <part>00</part>
     </rom>
-    <switches page_id="1" page_name="Switches" base="8" default="ff,fe,ff">
+    <switches page_id="1" page_name="Switches" base="8" default="ff,fa,ff">
         <!-- DSWA -->
         <dip name="Coin slots" bits="5,6" ids="-,1 Common,2 Individual,2 Common"/>
         <!-- DSWB -->
@@ -95,5 +95,5 @@
         <dip name="Allow Continue" bits="18" ids="No,Yes"/>
         <dip name="Game Mode" bits="23" ids="Test,Game"/>
     </switches>
-    <buttons names="Attack,Jump,-,-,-,-,Start,Coin,Core credits" default="Y,X,B,A,R,L,Start,Select,-" count="2"/>
+    <buttons names="Attack,Jump,Weapon Change,-,-,-,Start,Coin,Core credits" default="Y,X,B,A,R,L,Start,Select,-" count="3"/>
 </misterromdescription>
