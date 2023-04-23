@@ -32,7 +32,7 @@
     <rotation>vertical (cw)</rotation>
     <region>World</region>
     <mraauthor>jotego</mraauthor>
-    <rom index="0" zip="tokiob.zip|tokio.zip" md5="None" asm_md5="804cd63d2bdba9f2a28e7a0a998a1e7f">
+    <rom index="0" zip="tokiob.zip|tokio.zip" md5="None" asm_md5="70ab1af82540ba36c58772aa7dde649a">
         <!-- maincpu - starts at 0x0 - length 0x28000 (18 bits) -->
         <interleave output="16">
             <part name="2.ic4" crc="f583b1ef" map="12"/>
@@ -89,11 +89,11 @@
             <part name="a71-21.ic35" crc="33cde9b2" map="10"/>
         </interleave>
         <interleave output="16">
-            <part name="a71-20.ic34" crc="65acb265" map="01"/>
-            <part name="a71-21.ic35" crc="33cde9b2" map="10"/>
+            <part name="a71-14.ic18" crc="c574b7b2" map="01"/>
+            <part name="a71-22.ic36" crc="fb98eac0" map="10"/>
         </interleave>
         <interleave output="16">
-            <part name="a71-22.ic36" crc="fb98eac0" map="01"/>
+            <part name="a71-15.ic19" crc="12d87e7f" map="01"/>
             <part name="a71-23.ic37" crc="30bd46ad" map="10"/>
         </interleave>
         <!-- JTFRAME_PROM_START -->
