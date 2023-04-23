@@ -1,17 +1,17 @@
-<!--          FPGA compatible core of arcade hardware by Jotego
+<!--          FPGA arcade hardware by Jotego
 
               This core is available for hardware compatible with MiST and MiSTer
               Other FPGA systems may be supported by the time you read this.
               This work is not mantained by the MiSTer project. Please contact the
               core author for issues and updates.
 
-              (c) Jose Tejada, 2020. Please support the author
+              (c) Jose Tejada, 2023. Please support this research
               Patreon: https://patreon.com/jotego
-              Paypal:  https://paypal.me/topapate
 
               The author does not endorse or participate in illegal distribution
-              of copyrighted material. This work can be used with legally
-              obtained ROM dumps or with compatible homebrew software
+              of copyrighted material. This work can be used with compatible
+              software. This software can be homebrew projects or legally
+              obtained memory dumps of compatible games.
 
               This file license is GNU GPLv2.
               You can read the whole license file in
@@ -22,16 +22,20 @@
 <misterromdescription>
     <about author="jotego" webpage="https://patreon.com/jotego" source="https://github.com/jotego" twitter="@topapate"/>
     <name>Side Arms - Hyper Dyne (US, 861202)</name>
-    <mameversion>0217</mameversion>
     <setname>sidearmsu</setname>
-     <year>1986</year>
-    <manufacturer>Capcom</manufacturer>
-    <category>Shoot em up</category>
     <rbf>jtsarms</rbf>
-    <rom index="0" zip="sidearmsu.zip|sidearms.zip" type="merged" md5="None">
-        <!-- maincpu - starts at 0x0 -->
+    <mameversion>0251</mameversion>
+    <year>1986</year>
+    <manufacturer>Capcom (Romstar license)</manufacturer>
+    <players>2</players>
+    <joystick>8</joystick>
+    <rotation>horizontal</rotation>
+    <region>World</region>
+    <mraauthor>jotego</mraauthor>
+    <rom index="0" zip="sidearmsu.zip|sidearms.zip" md5="None" asm_md5="60925902ee7cca5fd4cf7083ada3e665">
+        <!-- maincpu - starts at 0x0 - length 0x18000 (17 bits) -->
         <interleave output="16">
-            <part name="SAA_03.15E" crc="32ef2739" map="12"/>
+            <part name="saa_03.15e" crc="32ef2739" map="12"/>
         </interleave>
         <interleave output="16">
             <part name="a_14e.rom" crc="4925ed03" map="12"/>
@@ -39,17 +43,17 @@
         <interleave output="16">
             <part name="a_12e.rom" crc="81d0ece7" map="12"/>
         </interleave>
-        <!-- audiocpu - starts at 0x18000 -->
+        <!-- audiocpu - starts at 0x18000 - length 0x8000 (15 bits) -->
         <interleave output="16">
             <part name="a_04k.rom" crc="34efe2d2" map="12"/>
         </interleave>
-        <!-- starfield - starts at 0x20000 -->
+        <!-- user1 - starts at 0x20000 - length 0x8000 (15 bits) -->
         <interleave output="16">
             <part name="b_11j.rom" crc="134dc35b" map="12"/>
         </interleave>
-        <!-- gfx1 - starts at 0x28000 -->
+        <!-- gfx1 - starts at 0x28000 - length 0x4000 (14 bits) -->
         <part name="a_10j.rom" crc="651fef75"/>
-        <!-- gfx2 - starts at 0x2C000 -->
+        <!-- gfx2 - starts at 0x2C000 - length 0x40000 (18 bits) -->
         <interleave output="16">
             <part name="b_13d.rom" crc="3c59afe1" map="01"/>
             <part name="b_14d.rom" crc="826e8a97" map="10"/>
@@ -66,7 +70,7 @@
             <part name="b_13g.rom" crc="c71a3053" map="01"/>
             <part name="b_14g.rom" crc="ef6af630" map="10"/>
         </interleave>
-        <!-- gfx3 - starts at 0x6C000 -->
+        <!-- gfx3 - starts at 0x6C000 - length 0x40000 (18 bits) -->
         <interleave output="16">
             <part name="b_11b.rom" crc="eb6f278c" map="01"/>
             <part name="b_12b.rom" crc="86e43eda" map="10"/>
@@ -83,9 +87,9 @@
             <part name="b_13a.rom" crc="3e8a9f75" map="01"/>
             <part name="b_14a.rom" crc="dba06076" map="10"/>
         </interleave>
-        <!-- gfx4 - starts at 0xAC000 -->
+        <!-- gfx4 - starts at 0xAC000 - length 0x8000 (15 bits) -->
         <part name="b_03d.rom" crc="6f348008"/>
-        <!-- proms - starts at 0xB4000 -->
+        <!-- proms - starts at 0xB4000 - length 0x320 (10 bits) -->
         <part name="63s141.16h" crc="75af3553"/>
         <part name="63s141.11h" crc="a6e4d68f"/>
         <part name="63s141.15h" crc="c47c182a"/>
@@ -95,11 +99,11 @@
     <rom index="1">
         <part>00</part>
     </rom>
-    <switches base="16" default="FF,FF">
+    <switches page_id="1" page_name="Switches" base="16" default="fc,ff,ff">
         <!-- DSW0 -->
         <dip name="Difficulty" bits="0,2" ids="7,6,5,4,3,2,1,0"/>
         <dip name="Lives" bits="3" ids="5,3"/>
-        <dip name="Bonus Life" bits="4,5" ids="20k0 20k0,150k 150k,10k0 10k0,10k0"/>
+        <dip name="Bonus Life" bits="4,5" ids="200k 200k,150k 150k,100k 100k,100k"/>
         <dip name="Flip Screen" bits="6" ids="On,Off"/>
         <dip name="Service Mode" bits="7" ids="On,Off"/>
         <!-- DSW1 -->
@@ -107,6 +111,8 @@
         <dip name="Coin B" bits="11,13" ids="4/1,3/1,2/1,1/6,1/4,1/3,1/2,1/1"/>
         <dip name="Allow Continue" bits="14" ids="No,Yes"/>
         <dip name="Demo Sounds" bits="15" ids="Off,On"/>
+        <!-- SYSTEM -->
+        <dip name="Freeze" bits="19" ids="On,Off"/>
     </switches>
-    <buttons names="Fire-left,Fire-right,Option,Start,Coin,Pause" default="Y,X,B,R,L,Start"/>
+    <buttons names="Fire-Left,Fire-Right,Power,Start,Coin,Core credits" default="Y,X,B,Start,Select,-" count="3"/>
 </misterromdescription>
