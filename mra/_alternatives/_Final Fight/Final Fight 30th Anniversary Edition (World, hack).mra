@@ -32,7 +32,7 @@
     <rotation>horizontal</rotation>
     <region>World</region>
     <mraauthor>jotego</mraauthor>
-    <rom index="0" zip="ffightae.zip|ffight.zip" md5="None">
+    <rom index="0" zip="ffightae.zip|ffight.zip" md5="None" asm_md5="09bb8684d066501c0a82d78a02de529a">
         <part>
             00 04 40 04 40 05 FF FF
             FF FF FF FF FF FF FF FF
