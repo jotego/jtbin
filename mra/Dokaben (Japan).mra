@@ -5,7 +5,7 @@
               This work is not mantained by the MiSTer project. Please contact the
               core author for issues and updates.
 
-              (c) Jose Tejada, 2022. Please support this research
+              (c) Jose Tejada, 2023. Please support this research
               Patreon: https://patreon.com/jotego
 
               The author does not endorse or participate in illegal distribution
@@ -24,7 +24,7 @@
     <name>Dokaben (Japan)</name>
     <setname>dokaben</setname>
     <rbf>jtpang</rbf>
-    <mameversion>0237</mameversion>
+    <mameversion>0251</mameversion>
     <year>1989</year>
     <manufacturer>Capcom</manufacturer>
     <players>2</players>
@@ -32,20 +32,22 @@
     <rotation>horizontal</rotation>
     <region>World</region>
     <mraauthor>jotego</mraauthor>
-    <rom index="0" zip="dokaben.zip" md5="None">
+    <rom index="0" zip="dokaben.zip" md5="None" asm_md5="aed01410541f90abb2ae92f2a2dab45f">
         <part>
             76 54 32 10 01 23 45 67
             AA 55 A5 00 00 00 00 00
         </part>
-        <!-- maincpu - starts at 0x0 -->
+        <!-- maincpu - starts at 0x0 - length 0x80000 (19 bits) -->
         <part name="db_06.11h" crc="413e0886"/>
         <part name="db_07.13h" crc="8bdcf49e"/>
         <part name="db_08.14h" crc="1643bdd9"/>
         <part repeat="0x38000"> FF</part>
-        <!-- oki - starts at 0x80000 -->
+        <!-- PCM_START -->
+        <!-- oki - starts at 0x80000 - length 0x80000 (19 bits) -->
         <part name="db_01.1d" crc="62fa6b81"/>
         <part repeat="0x60000"> FF</part>
-        <!-- gfx1 - starts at 0x100000 -->
+        <!-- CHAR_START -->
+        <!-- chars - starts at 0x100000 - length 0x200000 (21 bits) -->
         <interleave output="16">
             <part name="db_02.1e" crc="9aa8470c" map="01"/>
             <part name="db_04.1g" crc="c0c5b6c2" map="10"/>
@@ -55,11 +57,13 @@
             <part name="db_05.2g" crc="d2ab25f2" map="10"/>
         </interleave>
         <part repeat="0x180000"> FF</part>
-        <!-- gfx2 - starts at 0x300000 -->
+        <!-- OBJ_START -->
+        <!-- sprites - starts at 0x300000 - length 0x40000 (18 bits) -->
         <interleave output="16">
             <part name="db_10.2k" crc="9e70f7ae" map="01"/>
             <part name="db_09.1k" crc="2d9263f7" map="10"/>
         </interleave>
+        <!-- eeprom - starts at 0x340000 -->
         <!-- Total 0x340000 bytes - 3328 kBytes -->
     </rom>
     <nvram index="2" size="128"/>

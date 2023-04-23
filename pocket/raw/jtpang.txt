@@ -5,7 +5,6 @@ The following arcade titles are compatible with this core. Generate
 the required .rom file using the mra tool (read below).
 Place the *.rom files in Assets/jtpang/common
 
-Chi-Toitsu --> 7toitsu.rom
 Buster Bros. (USA) --> bbros.rom
 Block Block (World 911219 Joystick) --> block.rom
 Block Block (Japan 910910) --> blockj.rom
@@ -13,20 +12,12 @@ Block Block (World 911106 Joystick) --> blockr1.rom
 Block Block (World 910910) --> blockr2.rom
 Capcom World (Japan) --> cworld.rom
 Dokaben (Japan) --> dokaben.rom
-Mahjong Gakuen --> mgakuen.rom
 Pang (World) --> pang.rom
-Pang (bootleg, set 1) --> pangb.rom
-Pang (bootleg, set 4) --> pangb2.rom
-Pang (bootleg, set 2) --> pangbold.rom
-Pang (bootleg, set 6) --> pangbp.rom
-Poker Ladies (Censored bootleg, encrypted) --> pkladsbl.rom
-Poker Ladies (Censored bootleg, not encrypted) --> pkladbl2.rom
-Poker Ladies (Leprechaun ver. 510) --> pkladesl.rom
-Poker Ladies (Leprechaun ver. 401) --> pkladsla.rom
 Pomping World (Japan) --> pompingw.rom
 Super Buster Bros. (USA 901001) --> sbbros.rom
 Super Pang (World 900914) --> spang.rom
 Super Pang (Japan 901023) --> spangj.rom
+
 
 These files are generated using the mra tool in:
 https://github.com/sebdel/mra-tools-c/tree/master/release
@@ -36,9 +27,6 @@ https://github.com/opengateware/tools-orca
 
 Check out the short tutorial in:
 https://github.com/jotego/jtbin/wiki/Analogue-Pocket-Cores
-
-There is also a video by Pixel Cherry Ninja:
-https://www.youtube.com/watch?v=PdcOtLS2KWE&t=98s
 
 DISCLAIMER: This PocketFPGA core is licensed to be used only
 with legally owned dumps of videogame data. It is also licensed

@@ -9,6 +9,7 @@
 				"enabled": false,
 				"persist": false,
 				"address": "0xFF000000",
+				"defaultval": 0,
 				"value": 0
 			}
 		],

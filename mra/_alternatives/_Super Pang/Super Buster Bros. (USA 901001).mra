@@ -5,7 +5,7 @@
               This work is not mantained by the MiSTer project. Please contact the
               core author for issues and updates.
 
-              (c) Jose Tejada, 2022. Please support this research
+              (c) Jose Tejada, 2023. Please support this research
               Patreon: https://patreon.com/jotego
 
               The author does not endorse or participate in illegal distribution
@@ -24,7 +24,7 @@
     <name>Super Buster Bros. (USA 901001)</name>
     <setname>sbbros</setname>
     <rbf>jtpang</rbf>
-    <mameversion>0237</mameversion>
+    <mameversion>0251</mameversion>
     <year>1990</year>
     <manufacturer>Mitchell (Capcom license)</manufacturer>
     <players>2</players>
@@ -32,20 +32,22 @@
     <rotation>horizontal</rotation>
     <region>World</region>
     <mraauthor>jotego</mraauthor>
-    <rom index="0" zip="sbbros.zip|spang.zip" md5="None">
+    <rom index="0" zip="sbbros.zip|spang.zip" md5="None" asm_md5="c5df99210dd5f2b764165b0e9a899825">
         <part>
             45 67 01 23 45 67 01 23
             21 30 12 00 00 00 00 00
         </part>
-        <!-- maincpu - starts at 0x0 -->
+        <!-- maincpu - starts at 0x0 - length 0x80000 (19 bits) -->
         <part name="spu_06.11h" crc="292eee6a"/>
         <part name="spu_07.13h" crc="f46b698d"/>
         <part name="spu_08.14h" crc="a75e7fbe"/>
         <part repeat="0x38000"> FF</part>
-        <!-- oki - starts at 0x80000 -->
+        <!-- PCM_START -->
+        <!-- oki - starts at 0x80000 - length 0x80000 (19 bits) -->
         <part name="spj_01.1d" crc="b96ea126"/>
         <part repeat="0x60000"> FF</part>
-        <!-- gfx1 - starts at 0x100000 -->
+        <!-- CHAR_START -->
+        <!-- chars - starts at 0x100000 - length 0x200000 (21 bits) -->
         <interleave output="16">
             <part name="spu_02.1e" crc="0c22ffc6" map="01"/>
             <part name="spu_04.1g" crc="bb3dee5b" map="10"/>
@@ -55,12 +57,13 @@
             <part name="spj_05.2g" crc="4a060884" map="10"/>
         </interleave>
         <part repeat="0x180000"> FF</part>
-        <!-- gfx2 - starts at 0x300000 -->
+        <!-- OBJ_START -->
+        <!-- sprites - starts at 0x300000 - length 0x40000 (18 bits) -->
         <interleave output="16">
             <part name="spu_10.2k" crc="d6675d8f" map="01"/>
             <part name="spu_09.1k" crc="8f678bc8" map="10"/>
         </interleave>
-        <!-- eeprom - starts at 0x340000 -->
+        <!-- eeprom - starts at 0x340000 - length 0x80 (7 bits) -->
         <part name="eeprom-sbbros.bin" crc="ed69d3cd"/>
         <!-- Total 0x340080 bytes - 3328 kBytes -->
     </rom>
