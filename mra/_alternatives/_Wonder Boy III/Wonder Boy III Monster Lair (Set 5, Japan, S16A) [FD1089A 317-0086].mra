@@ -1,16 +1,17 @@
-<!--          FPGA compatible core for Sega / Westone arcade hardware by Jotego
+<!--          FPGA arcade hardware by Jotego
 
               This core is available for hardware compatible with MiST and MiSTer
               Other FPGA systems may be supported by the time you read this.
               This work is not mantained by the MiSTer project. Please contact the
               core author for issues and updates.
 
-              (c) Jose Tejada, 2022. Please support this research
+              (c) Jose Tejada, 2023. Please support this research
               Patreon: https://patreon.com/jotego
 
               The author does not endorse or participate in illegal distribution
-              of copyrighted material. This work can be used with legally
-              obtained ROM dumps or with compatible homebrew software.
+              of copyrighted material. This work can be used with compatible
+              software. This software can be homebrew projects or legally
+              obtained memory dumps of compatible games.
 
               This file license is GNU GPLv2.
               You can read the whole license file in
@@ -23,23 +24,22 @@
     <name>Wonder Boy III Monster Lair (Set 5, Japan, S16A) [FD1089A 317-0086]</name>
     <setname>wb35</setname>
     <rbf>jts16</rbf>
-    <mameversion>0232</mameversion>
+    <mameversion>0251</mameversion>
     <year>1988</year>
     <manufacturer>Sega / Westone</manufacturer>
     <players>2</players>
     <joystick>8</joystick>
     <rotation>horizontal</rotation>
     <region>Japan</region>
-    <platform>SEGA S16A</platform>
     <mraauthor>jotego,atrac17</mraauthor>
-    <rom index="0" zip="wb35.zip|wb3.zip" md5="None">
+    <rom index="0" zip="wb35.zip|wb3.zip" md5="None" asm_md5="94712db4f9ad4b34282ec310796c314b">
         <part>
-            04 00 00 00 08 80 10 00
-            00 00 18 20 00 00 18 61
+            00 00 00 00 00 00 00 00
+            00 00 00 00 00 00 00 00
             01 00 00 00 00 00 00 00
             00 00 00 00 00 00 00 00
         </part>
-        <!-- maincpu - starts at 0x0 -->
+        <!-- maincpu - starts at 0x0 - length 0x40000 (18 bits) -->
         <interleave output="16">
             <part name="epr-12118.26" crc="e9a3280c" map="01"/>
             <part name="epr-12120.43" crc="cbd8c99b" map="10"/>
@@ -48,10 +48,14 @@
             <part name="epr-12119.25" crc="01ed3ef9" map="01"/>
             <part name="epr-12121.42" crc="5e44c0a9" map="10"/>
         </interleave>
-        <!-- soundcpu - starts at 0x40000 -->
+        <!-- JTFRAME_BA1_START -->
+        <!-- soundcpu - starts at 0x40000 - length 0x8000 (15 bits) -->
         <part name="epr-12089.12" crc="8321eb0b"/>
+        <!-- PCM_START -->
+        <!-- n7751data - starts at 0x48000 - length 0x40000 (18 bits) -->
         <part repeat="0x40000"> FF</part>
-        <!-- gfx1 - starts at 0x88000 -->
+        <!-- JTFRAME_BA2_START -->
+        <!-- gfx1 - starts at 0x88000 - length 0x78000 (19 bits) -->
         <interleave output="32">
             <part name="epr-12086.95" crc="45b949df" map="0001"/>
             <part name="epr-12087.94" crc="6f0396b7" map="0010"/>
@@ -59,7 +63,8 @@
             <part name="epr-12088.83" crc="ba8c0749" map="1000"/>
         </interleave>
         <part repeat="0x38000"> FF</part>
-        <!-- sprites - starts at 0x100000 -->
+        <!-- JTFRAME_BA3_START -->
+        <!-- sprites - starts at 0x100000 - length 0x80000 (19 bits) -->
         <interleave output="16">
             <part name="epr-12090.10" crc="aeeecfca" map="01"/>
             <part name="epr-12094.11" crc="615e4927" map="10"/>
@@ -76,10 +81,18 @@
             <part name="epr-12093.29" crc="4891e7bb" map="01"/>
             <part name="epr-12097.30" crc="e645902c" map="10"/>
         </interleave>
-        <part repeat="0x2000"> FF</part>
-        <!-- maincpu:key - starts at 0x182000 -->
+        <!-- MCU_START -->
+        <!-- JTFRAME_PROM_START -->
+        <!-- mcu - starts at 0x180000 - length 0x2000 (13 bits) -->
+        <part repeat="0x1000"> FF</part>
+        <part repeat="0x1000"> FF</part>
+        <!-- MAINKEY_START -->
+        <!-- maincpu:key - starts at 0x182000 - length 0x2000 (13 bits) -->
         <part name="317-0086.key" crc="5b8e7076"/>
-        <part repeat="0x2000"> FF</part>
+        <!-- N7751_START -->
+        <!-- n7751 - starts at 0x184000 - length 0x400 (10 bits) -->
+        <part repeat="0x400"> FF</part>
+        <part repeat="0x1C00"> FF</part>
         <!-- FD1089 base table starts at 0x186000 -->
         <part>
             00 1C 76 6A 5E 42 24 38 4B 67 AD 81 E9 C5 03 2F
@@ -101,7 +114,6 @@
         </part>
         <!-- Total 0x186100 bytes - 1560 kBytes -->
     </rom>
-    <nvram index="2" size="43008"/>
     <rom index="1">
         <part>00</part>
     </rom>
@@ -112,7 +124,7 @@
         <!-- DSW2 -->
         <dip name="Demo Sounds" bits="9" ids="On,Off"/>
         <dip name="Lives" bits="10,11" ids="2,5,4,3"/>
-        <dip name="Bonus Life" bits="12" ids="50k/150k/300k,50k/100k/180k/300k"/>
+        <dip name="Bonus" bits="12" ids="50k/150k/300k,50k/100k/180k/300k"/>
         <dip name="Difficulty" bits="13" ids="Hard,Normal"/>
         <dip name="Test Mode" bits="14" ids="Yes,No"/>
     </switches>

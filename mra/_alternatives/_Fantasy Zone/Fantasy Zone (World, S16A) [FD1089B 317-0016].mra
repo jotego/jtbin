@@ -1,16 +1,17 @@
-<!--          FPGA compatible core for Sega arcade hardware by Jotego
+<!--          FPGA arcade hardware by Jotego
 
               This core is available for hardware compatible with MiST and MiSTer
               Other FPGA systems may be supported by the time you read this.
               This work is not mantained by the MiSTer project. Please contact the
               core author for issues and updates.
 
-              (c) Jose Tejada, 2022. Please support this research
+              (c) Jose Tejada, 2023. Please support this research
               Patreon: https://patreon.com/jotego
 
               The author does not endorse or participate in illegal distribution
-              of copyrighted material. This work can be used with legally
-              obtained ROM dumps or with compatible homebrew software.
+              of copyrighted material. This work can be used with compatible
+              software. This software can be homebrew projects or legally
+              obtained memory dumps of compatible games.
 
               This file license is GNU GPLv2.
               You can read the whole license file in
@@ -23,23 +24,22 @@
     <name>Fantasy Zone (World, S16A) [FD1089B 317-0016]</name>
     <setname>fantzonee</setname>
     <rbf>jts16</rbf>
-    <mameversion>0232</mameversion>
+    <mameversion>0251</mameversion>
     <year>1986</year>
     <manufacturer>Sega</manufacturer>
     <players>2</players>
     <joystick>8</joystick>
     <rotation>horizontal</rotation>
     <region>World</region>
-    <platform>SEGA S16A</platform>
     <mraauthor>jotego,atrac17</mraauthor>
-    <rom index="0" zip="fantzonee.zip|fantzone.zip" md5="None">
+    <rom index="0" zip="fantzonee.zip|fantzone.zip" md5="None" asm_md5="9295aa34da608c0b16cdcc87c7cb1406">
         <part>
-            04 00 00 00 08 80 10 00
-            00 00 18 20 00 00 18 61
+            00 00 00 00 00 00 00 00
+            00 00 00 00 00 00 00 00
             02 00 00 00 00 00 00 00
             00 00 00 00 00 00 00 00
         </part>
-        <!-- maincpu - starts at 0x0 -->
+        <!-- maincpu - starts at 0x0 - length 0x40000 (18 bits) -->
         <interleave output="16">
             <part name="epr-10167.26" crc="0ee190b0" map="01"/>
             <part name="epr-10170.43" crc="063c6d76" map="10"/>
@@ -53,10 +53,14 @@
             <part name="epr-10172.41" crc="b5b624f0" map="10"/>
         </interleave>
         <part repeat="0x10000"> FF</part>
-        <!-- soundcpu - starts at 0x40000 -->
+        <!-- JTFRAME_BA1_START -->
+        <!-- soundcpu - starts at 0x40000 - length 0x8000 (15 bits) -->
         <part name="epr-7535a.12" crc="bc1374fa"/>
+        <!-- PCM_START -->
+        <!-- n7751data - starts at 0x48000 - length 0x40000 (18 bits) -->
         <part repeat="0x40000"> FF</part>
-        <!-- gfx1 - starts at 0x88000 -->
+        <!-- JTFRAME_BA2_START -->
+        <!-- gfx1 - starts at 0x88000 - length 0x78000 (19 bits) -->
         <interleave output="32">
             <part name="epr-7388.95" crc="8eb02f6b" map="0001"/>
             <part name="epr-7389.94" crc="2f4f71b8" map="0010"/>
@@ -64,7 +68,8 @@
             <part name="epr-7390.93" crc="d90609c6" map="1000"/>
         </interleave>
         <part repeat="0x58000"> FF</part>
-        <!-- sprites - starts at 0x100000 -->
+        <!-- JTFRAME_BA3_START -->
+        <!-- sprites - starts at 0x100000 - length 0x80000 (19 bits) -->
         <interleave output="16">
             <part name="epr-7392.10" crc="5bb7c8b6" map="01"/>
             <part name="epr-7396.11" crc="74ae4b57" map="10"/>
@@ -79,10 +84,19 @@
             <part name="epr-7394.23" crc="531ca13f" map="01"/>
             <part name="epr-7398.24" crc="68807b49" map="10"/>
         </interleave>
-        <part repeat="0x32000"> FF</part>
-        <!-- maincpu:key - starts at 0x182000 -->
+        <part repeat="0x30000"> FF</part>
+        <!-- JTFRAME_PROM_START -->
+        <!-- MCU_START -->
+        <!-- mcu - starts at 0x180000 - length 0x2000 (13 bits) -->
+        <part repeat="0x1000"> FF</part>
+        <part repeat="0x1000"> FF</part>
+        <!-- MAINKEY_START -->
+        <!-- maincpu:key - starts at 0x182000 - length 0x2000 (13 bits) -->
         <part name="317-0016.key" crc="16869a2c"/>
-        <part repeat="0x2000"> FF</part>
+        <!-- N7751_START -->
+        <!-- n7751 - starts at 0x184000 - length 0x400 (10 bits) -->
+        <part repeat="0x400"> FF</part>
+        <part repeat="0x1C00"> FF</part>
         <!-- FD1089 base table starts at 0x186000 -->
         <part>
             00 1C 76 6A 5E 42 24 38 4B 67 AD 81 E9 C5 03 2F
@@ -104,7 +118,6 @@
         </part>
         <!-- Total 0x186100 bytes - 1560 kBytes -->
     </rom>
-    <nvram index="2" size="43008"/>
     <rom index="1">
         <part>00</part>
     </rom>
