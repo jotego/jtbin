@@ -5,7 +5,7 @@
               This work is not mantained by the MiSTer project. Please contact the
               core author for issues and updates.
 
-              (c) Jose Tejada, 2022. Please support this research
+              (c) Jose Tejada, 2023. Please support this research
               Patreon: https://patreon.com/jotego
 
               The author does not endorse or participate in illegal distribution
@@ -24,7 +24,7 @@
     <name>Bubble Bobble: Lost Cave V1.2</name>
     <setname>bublcave</setname>
     <rbf>jtbubl</rbf>
-    <mameversion>0243</mameversion>
+    <mameversion>0251</mameversion>
     <year>2013</year>
     <manufacturer>hack (Bisboch and Aladar)</manufacturer>
     <players>2</players>
@@ -32,8 +32,8 @@
     <rotation>horizontal</rotation>
     <region>World</region>
     <mraauthor>jotego</mraauthor>
-    <rom index="0" zip="bublcave.zip|bublbobl.zip" md5="None">
-        <!-- maincpu - starts at 0x0 -->
+    <rom index="0" zip="bublcave.zip|bublbobl.zip" md5="None" asm_md5="4ca044606c5071fe0a140f12f510564a">
+        <!-- maincpu - starts at 0x0 - length 0x28000 (18 bits) -->
         <interleave output="16">
             <part name="bublcave-06.51" crc="e8b9af5e" map="12"/>
         </interleave>
@@ -41,20 +41,24 @@
             <part name="bublcave-05.52" crc="cfe14cb8" map="12"/>
         </interleave>
         <part repeat="0x10000"> FF</part>
-        <!-- subcpu - starts at 0x28000 -->
+        <!-- SUB_START -->
+        <!-- subcpu - starts at 0x28000 - length 0x8000 (15 bits) -->
         <interleave output="16">
             <part name="bublcave-08.37" crc="a9384086" map="12"/>
         </interleave>
-        <!-- audiocpu - starts at 0x30000 -->
+        <!-- SND_START -->
+        <!-- audiocpu - starts at 0x30000 - length 0x8000 (15 bits) -->
         <interleave output="16">
             <part name="a78-07.46" crc="4f9a26e8" map="12"/>
         </interleave>
-        <!-- mcu - starts at 0x38000 -->
+        <!-- MCU_START -->
+        <!-- mcu - starts at 0x38000 - length 0x8000 (15 bits) -->
         <interleave output="16">
             <part name="a78-01.17" crc="b1bfb53d" map="12"/>
         </interleave>
         <part repeat="0x7000"> FF</part>
-        <!-- gfx1 - starts at 0x40000 -->
+        <!-- GFX_START -->
+        <!-- gfx1 - starts at 0x40000 - length 0x80000 (19 bits) -->
         <interleave output="16">
             <part name="bublcave-09.12" crc="b90b7eef" map="01"/>
             <part name="bublcave-15.30" crc="c253c73a" map="10"/>
@@ -80,14 +84,15 @@
             <part name="bublcave-20.35" crc="64322e24" map="10"/>
         </interleave>
         <part repeat="0x20000"> FF</part>
-        <!-- proms - starts at 0xC0000 -->
+        <!-- JTFRAME_PROM_START -->
+        <!-- proms - starts at 0xC0000 - length 0x100 (8 bits) -->
         <part name="a71-25.41" crc="2d0f8545"/>
         <!-- Total 0xC0100 bytes - 768 kBytes -->
     </rom>
     <rom index="1">
         <part>00</part>
     </rom>
-    <switches page_id="1" page_name="Switches" base="16" default="fc,ff">
+    <switches page_id="1" page_name="Switches" base="16" default="ff,ff">
         <!-- DSW0 -->
         <dip name="Flip Screen" bits="1" ids="On,Off"/>
         <dip name="Demo Sounds" bits="3" ids="Off,On"/>
@@ -97,7 +102,7 @@
         <dip name="Difficulty" bits="8,9" ids="Very Hard,Hard,Easy,Normal"/>
         <dip name="Bonus Life" bits="10,11" ids="50K 250K 500K,40K 200K 500K,20K 80K 300K,30K 100K 400K"/>
         <dip name="Lives" bits="12,13" ids="2,1,5,3"/>
-        <dip name="ROM Type" bits="15" ids="IC52=256kb IC53=256kb,IC52=512kb IC53=none"/>
+        <dip name="Type" bits="15" ids="IC52=256kb IC53=256kb,IC52=512kb IC53=none"/>
         <dip name="Language" ids="English,Japanese" bits="0"/>
         <dip name="Operation" ids="Test,Game" bits="2"/>
     </switches>

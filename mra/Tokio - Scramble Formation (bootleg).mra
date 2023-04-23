@@ -1,17 +1,17 @@
-<!--          FPGA compatible core of arcade hardware by Jotego
+<!--          FPGA arcade hardware by Jotego
 
               This core is available for hardware compatible with MiST and MiSTer
               Other FPGA systems may be supported by the time you read this.
               This work is not mantained by the MiSTer project. Please contact the
               core author for issues and updates.
 
-              (c) Jose Tejada, 2020. Please support the author
+              (c) Jose Tejada, 2023. Please support this research
               Patreon: https://patreon.com/jotego
-              Paypal:  https://paypal.me/topapate
 
               The author does not endorse or participate in illegal distribution
-              of copyrighted material. This work can be used with legally
-              obtained ROM dumps or with compatible homebrew software
+              of copyrighted material. This work can be used with compatible
+              software. This software can be homebrew projects or legally
+              obtained memory dumps of compatible games.
 
               This file license is GNU GPLv2.
               You can read the whole license file in
@@ -22,15 +22,18 @@
 <misterromdescription>
     <about author="jotego" webpage="https://patreon.com/jotego" source="https://github.com/jotego" twitter="@topapate"/>
     <name>Tokio / Scramble Formation (bootleg)</name>
-	<mameversion>0217</mameversion>
     <setname>tokiob</setname>
-     <year>1986</year>
-    <manufacturer>Taito</manufacturer>
-    <category>Platform</category>
-    <rotation>vertical (cw)</rotation>
     <rbf>jtbubl</rbf>
-    <rom index="0" zip="tokiob.zip|tokio.zip" type="merged" md5="None">
-        <!-- maincpu - starts at 0x0 -->
+    <mameversion>0251</mameversion>
+    <year>1986</year>
+    <manufacturer>bootleg</manufacturer>
+    <players>2</players>
+    <joystick>8</joystick>
+    <rotation>vertical (cw)</rotation>
+    <region>World</region>
+    <mraauthor>jotego</mraauthor>
+    <rom index="0" zip="tokiob.zip|tokio.zip" md5="None" asm_md5="804cd63d2bdba9f2a28e7a0a998a1e7f">
+        <!-- maincpu - starts at 0x0 - length 0x28000 (18 bits) -->
         <interleave output="16">
             <part name="2.ic4" crc="f583b1ef" map="12"/>
         </interleave>
@@ -46,16 +49,21 @@
         <interleave output="16">
             <part name="6.ic8" crc="1490e95b" map="12"/>
         </interleave>
-        <!-- subcpu - starts at 0x28000 -->
+        <!-- SUB_START -->
+        <!-- subcpu - starts at 0x28000 - length 0x8000 (15 bits) -->
         <interleave output="16">
             <part name="a71-01.ic1" crc="0867c707" map="12"/>
         </interleave>
-        <!-- audiocpu - starts at 0x30000 -->
+        <!-- SND_START -->
+        <!-- audiocpu - starts at 0x30000 - length 0x8000 (15 bits) -->
         <interleave output="16">
             <part name="a71-07.ic10" crc="f298cc7b" map="12"/>
         </interleave>
-        <part repeat="0x8000">FF</part>
-        <!-- gfx1 - starts at 0x40000 -->
+        <!-- MCU_START -->
+        <!-- mcu - starts at 0x38000 - length 0x8000 (15 bits) -->
+        <part repeat="0x8000"> FF</part>
+        <!-- GFX_START -->
+        <!-- gfx1 - starts at 0x40000 - length 0x80000 (19 bits) -->
         <interleave output="16">
             <part name="a71-08.ic12" crc="0439ab13" map="01"/>
             <part name="a71-16.ic30" crc="0bce35b6" map="10"/>
@@ -81,14 +89,15 @@
             <part name="a71-21.ic35" crc="33cde9b2" map="10"/>
         </interleave>
         <interleave output="16">
-            <part name="a71-14.ic18" crc="c574b7b2" map="01"/>
-            <part name="a71-22.ic36" crc="fb98eac0" map="10"/>
+            <part name="a71-20.ic34" crc="65acb265" map="01"/>
+            <part name="a71-21.ic35" crc="33cde9b2" map="10"/>
         </interleave>
         <interleave output="16">
-            <part name="a71-15.ic19" crc="12d87e7f" map="01"/>
+            <part name="a71-22.ic36" crc="fb98eac0" map="01"/>
             <part name="a71-23.ic37" crc="30bd46ad" map="10"/>
         </interleave>
-        <!-- proms - starts at 0xC0000 -->
+        <!-- JTFRAME_PROM_START -->
+        <!-- proms - starts at 0xC0000 - length 0x100 (8 bits) -->
         <part name="a71-25.ic41" crc="2d0f8545"/>
         <!-- Total 0xC0100 bytes - 768 kBytes -->
     </rom>
@@ -96,7 +105,7 @@
     <rom index="1">
         <part>01</part>
     </rom>
-    <switches default="FF,FF" base="16">
+    <switches page_id="1" page_name="Switches" base="16" default="ff,ff">
         <!-- DSW0 -->
         <dip name="Cabinet" bits="0" ids="Upright,Cocktail"/>
         <dip name="Flip Screen" bits="1" ids="On,Off"/>
@@ -105,12 +114,11 @@
         <dip name="Coin A" bits="4,5" ids="2/3,2/1,1/2,1/1"/>
         <dip name="Coin B" bits="6,7" ids="2/3,2/1,1/2,1/1"/>
         <!-- DSW1 -->
-        <dip name="Enemies" bits="8" ids="Many,Few"/>
-        <dip name="Enemy Shots" bits="9" ids="Many,Few"/>
+        <dip name="Enemies" bits="8" ids="Many,Few "/>
+        <dip name="Enemy Shots" bits="9" ids="Many,Few "/>
         <dip name="Bonus Life" bits="10,11" ids="400K 400K,300K 400K,200K 400K,100K 400K"/>
         <dip name="Lives" bits="12,13" ids="99,5,4,3"/>
-        <dip name="Unused" bits="14" ids="On,Off"/>
         <dip name="Language" bits="15" ids="English,Japanese"/>
     </switches>
-    <buttons names="Shoot,Formation,Start,Coin,Pause" default="Y,X,R,L,Start"/>
+    <buttons names="Shoot,Jump,Start,Coin,Core credits" default="Y,X,Start,Select,-" count="2"/>
 </misterromdescription>
