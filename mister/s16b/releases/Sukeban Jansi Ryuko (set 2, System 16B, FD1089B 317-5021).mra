@@ -21,95 +21,82 @@
 
 <misterromdescription>
     <about author="jotego" webpage="https://patreon.com/jotego" source="https://github.com/jotego" twitter="@topapate"/>
-    <name>Aurail (set 2, World) (FD1089B 317-0168)</name>
-    <setname>aurail1</setname>
+    <name>Sukeban Jansi Ryuko (set 2, System 16B, FD1089B 317-5021)</name>
+    <setname>sjryuko</setname>
     <rbf>jts16b</rbf>
     <mameversion>0251</mameversion>
-    <year>1990</year>
-    <manufacturer>Sega / Westone</manufacturer>
-    <players>2</players>
-    <joystick>8</joystick>
+    <year>1988</year>
+    <manufacturer>White Board</manufacturer>
+    <players>1</players>
+    <joystick/>
     <rotation>horizontal</rotation>
     <region>World</region>
     <mraauthor>jotego,atrac17</mraauthor>
-    <rom index="0" zip="aurail1.zip|aurail.zip" md5="None" asm_md5="946db3c1eebdcb619b58bfa7ade63943">
+    <rom index="0" zip="sjryuko.zip" md5="None" asm_md5="d796598dc8a8e8d5b5315bf1358051fa">
         <part>
             00 00 00 00 00 00 00 00
             00 00 00 00 00 00 00 00
             02 00 00 00 00 00 00 00
-            40 00 00 00 00 00 00 00
+            1B 00 00 00 00 00 00 00
         </part>
         <!-- maincpu - starts at 0x0 - length 0x80000 (19 bits) -->
         <interleave output="16">
-            <part name="epr-13468.a5" crc="ce092218" map="01"/>
-            <part name="epr-13469.a7" crc="c628b69d" map="10"/>
+            <part name="epr-12253.a1" crc="26a822df" map="01"/>
+            <part name="epr-12256.a4" crc="5987ee1b" map="10"/>
         </interleave>
         <interleave output="16">
-            <part name="epr-13445.a6" crc="28dfc3dd" map="01"/>
-            <part name="epr-13447.a8" crc="70a52167" map="10"/>
+            <part name="epr-12254.a2" crc="7e908217" map="01"/>
+            <part name="epr-12257.a5" crc="3a2acc3f" map="10"/>
         </interleave>
+        <part repeat="0x60000"> FF</part>
         <!-- JTFRAME_BA1_START -->
         <!-- soundcpu - starts at 0x80000 - length 0xC0000 (20 bits) -->
-        <part name="epr-13448.a10" crc="b5183fb9"/>
+        <part name="epr-12244.a7" crc="cb2a47e5"/>
         <part repeat="0x8000"> FF</part>
-        <part name="mpr-13449.a11" crc="d3d9aaf9"/>
-        <part repeat="0x90000"> FF</part>
+        <part name="epr-12245.a8" crc="66164134"/>
+        <part repeat="0x8000"> FF</part>
+        <part name="epr-12246.a9" crc="f1242582"/>
+        <part repeat="0x8000"> FF</part>
+        <part name="epr-12247.a10" crc="ef8a64c6"/>
+        <part repeat="0x8000"> FF</part>
+        <part name="epr-12248.a11" crc="d1eabdab"/>
+        <part repeat="0x78000"> FF</part>
         <!-- JTFRAME_BA2_START -->
         <!-- gfx1 - starts at 0x140000 - length 0x100000 (20 bits) -->
         <interleave output="32">
-            <part name="mpr-13450.a14" crc="0fc4a7a8" map="0001"/>
-            <part name="mpr-13451.a15" crc="1c49852f" map="0010"/>
-            <part name="mpr-13452.a16" crc="047bde5e" map="0100"/>
-            <part name="mpr-13452.a16" crc="047bde5e" map="1000"/>
+            <part name="epr-12224-95.b9" crc="eac17ba1" map="0001"/>
+            <part name="epr-12225-94.b10" crc="2310fc98" map="0010"/>
+            <part name="epr-12226-93.b11" crc="210e6999" map="0100"/>
+            <part name="epr-12226-93.b11" crc="210e6999" map="1000"/>
         </interleave>
-        <interleave output="32">
-            <part name="mpr-13465.b14" crc="e08135e0" map="0001"/>
-            <part name="mpr-13466.b15" crc="e14c6684" map="0010"/>
-            <part name="mpr-13467.b16" crc="6309fec4" map="0100"/>
-            <part name="mpr-13467.b16" crc="6309fec4" map="1000"/>
-        </interleave>
+        <part repeat="0xE0000"> FF</part>
         <!-- JTFRAME_BA3_START -->
         <!-- sprites - starts at 0x240000 - length 0x200000 (21 bits) -->
         <interleave output="16">
-            <part name="mpr-13453.b1" crc="5fa0a9f8" map="01"/>
-            <part name="mpr-13457.b5" crc="0d1b54da" map="10"/>
+            <part name="epr-12232-10.b1" crc="0adec62b" map="01"/>
+            <part name="epr-12236-11.b5" crc="286b9af8" map="10"/>
         </interleave>
         <interleave output="16">
-            <part name="mpr-13454.b2" crc="5f6b33b1" map="01"/>
-            <part name="mpr-13458.b6" crc="bad340c3" map="10"/>
+            <part name="epr-12233-17.b2" crc="3e45969c" map="01"/>
+            <part name="epr-12237-18.b6" crc="e5058e96" map="10"/>
         </interleave>
         <interleave output="16">
-            <part name="mpr-13455.b3" crc="4e80520b" map="01"/>
-            <part name="mpr-13459.b7" crc="7e9165ac" map="10"/>
+            <part name="epr-12234-23.b3" crc="8c8d54ef" map="01"/>
+            <part name="epr-12238-24.b7" crc="7ada3304" map="10"/>
         </interleave>
         <interleave output="16">
-            <part name="mpr-13456.b4" crc="5733c428" map="01"/>
-            <part name="mpr-13460.b8" crc="66b8f9b3" map="10"/>
+            <part name="epr-12235-29.b4" crc="fa45d511" map="01"/>
+            <part name="epr-12239-30.b8" crc="91f70c8b" map="10"/>
         </interleave>
-        <interleave output="16">
-            <part name="mpr-13440.a1" crc="4f370b2b" map="01"/>
-            <part name="mpr-13461.b10" crc="f76014bf" map="10"/>
-        </interleave>
-        <interleave output="16">
-            <part name="mpr-13441.a2" crc="37cf9cb4" map="01"/>
-            <part name="mpr-13462.b11" crc="1061e7da" map="10"/>
-        </interleave>
-        <interleave output="16">
-            <part name="mpr-13442.a3" crc="049698ef" map="01"/>
-            <part name="mpr-13463.b12" crc="7dbcfbf1" map="10"/>
-        </interleave>
-        <interleave output="16">
-            <part name="mpr-13443.a4" crc="77a8989e" map="01"/>
-            <part name="mpr-13464.b13" crc="551df422" map="10"/>
-        </interleave>
-        <!-- JTFRAME_PROM_START -->
+        <part repeat="0x180000"> FF</part>
         <!-- MCU_START -->
+        <!-- JTFRAME_PROM_START -->
         <!-- mcu - starts at 0x440000 - length 0x2000 (13 bits) -->
         <part repeat="0x1000"> FF</part>
         <part repeat="0x1000"> FF</part>
         <!-- MAINKEY_START -->
         <!-- maincpu:key - starts at 0x442000 - length 0x6000 (15 bits) -->
-        <part name="317-0168.key" crc="fed38390"/>
+        <part name="317-5021.key" crc="8e40b2ab"/>
         <part repeat="0x4000"> FF</part>
         <!-- SNDKEY_START -->
         <!-- soundcpu:key - starts at 0x448000 - length 0x2000 (13 bits) -->
@@ -138,18 +125,13 @@
     <rom index="1">
         <part>00</part>
     </rom>
-    <switches page_id="1" page_name="Switches" base="16" default="ff,fd">
+    <switches page_id="1" page_name="Switches" base="16" default="ff,fb">
         <!-- DSW1 -->
-        <dip name="Coin A" bits="0,3" ids="Free Play or 1/1,1/1 2/3,1/1 4/5,1/1 5/6,2/1 4/3,2/1 5/3 6/4,2/3,4/1,3/1,2/1,1/6,1/5,1/4,1/3,1/2,1/1"/>
-        <dip name="Coin B" bits="4,7" ids="Free Play or 1/1,1/1 2/3,1/1 4/5,1/1 5/6,2/1 4/3,2/1 5/3 6/4,2/3,4/1,3/1,2/1,1/6,1/5,1/4,1/3,1/2,1/1"/>
+        <dip name="Coin A" bits="0,3" ids="1/1,None,None,None,None,None,2/3,4/1,3/1,2/1,1/6,1/5,1/4,1/3,1/2,1/1"/>
+        <dip name="Coin B" bits="4,7" ids="1/1,None,None,None,None,None,2/3,4/1,3/1,2/1,1/6,1/5,1/4,1/3,1/2,1/1"/>
         <!-- DSW2 -->
-        <dip name="Cabinet" bits="8" ids="Cocktail,Upright"/>
-        <dip name="Demo Sounds" bits="9" ids="On,Off"/>
-        <dip name="Lives" bits="10,11" ids="2,5,4,3"/>
-        <dip name="Bonus" bits="12" ids="100K/300K/700K/1000K,80K/200K/500K/1000K"/>
-        <dip name="Difficulty" bits="13" ids="Hard,Normal"/>
-        <dip name="Controller" bits="14" ids="2 Players Side,1 Player Side"/>
-        <dip name="Special Function Mode" bits="15" ids="On,Off"/>
+        <dip name="CPU Level" bits="8,9" ids="Strong,Medium Strong,Medium Weak,Weak"/>
+        <dip name="Demo Sounds" bits="10" ids="On,Off"/>
     </switches>
-    <buttons names="Rapid Shot,Kite/Turn,Shield,-,Start,Coin,Core credits" default="Y,X,B,A,Start,Select,-" count="3"/>
+    <buttons names="none,-,-,-,Start,Coin,Core credits" default="Y,X,B,A,Start,Select,-" count="1"/>
 </misterromdescription>

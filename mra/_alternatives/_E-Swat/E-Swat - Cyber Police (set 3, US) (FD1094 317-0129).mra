@@ -1,16 +1,17 @@
-<!--          FPGA compatible core for Sega arcade hardware by Jotego
+<!--          FPGA arcade hardware by Jotego
 
               This core is available for hardware compatible with MiST and MiSTer
               Other FPGA systems may be supported by the time you read this.
               This work is not mantained by the MiSTer project. Please contact the
               core author for issues and updates.
 
-              (c) Jose Tejada, 2022. Please support this research
+              (c) Jose Tejada, 2023. Please support this research
               Patreon: https://patreon.com/jotego
 
               The author does not endorse or participate in illegal distribution
-              of copyrighted material. This work can be used with legally
-              obtained ROM dumps or with compatible homebrew software.
+              of copyrighted material. This work can be used with compatible
+              software. This software can be homebrew projects or legally
+              obtained memory dumps of compatible games.
 
               This file license is GNU GPLv2.
               You can read the whole license file in
@@ -23,40 +24,42 @@
     <name>E-Swat - Cyber Police (set 3, US) (FD1094 317-0129)</name>
     <setname>eswatu</setname>
     <rbf>jts16b</rbf>
-    <mameversion>0232</mameversion>
+    <mameversion>0251</mameversion>
     <year>1989</year>
     <manufacturer>Sega</manufacturer>
     <players>2</players>
     <joystick>8</joystick>
     <rotation>horizontal</rotation>
     <region>World</region>
-    <platform>SEGA S16B</platform>
     <mraauthor>jotego,atrac17</mraauthor>
-    <rom index="0" zip="eswatu.zip|eswat.zip|s16mcu_alt.zip" md5="None">
+    <rom index="0" zip="eswatu.zip|eswat.zip" md5="None" asm_md5="b5483c042484243a0b667901220e88ca">
         <part>
             00 00 00 00 00 00 00 00
             00 00 00 00 00 00 00 00
             00 01 00 00 00 00 00 00
             20 00 00 00 00 00 00 00
         </part>
-        <!-- maincpu - starts at 0x0 -->
+        <!-- maincpu - starts at 0x0 - length 0x80000 (19 bits) -->
         <interleave output="16">
             <part name="epr-12656.a1" crc="5f018967" map="01"/>
             <part name="epr-12657.a2" crc="43ca72aa" map="10"/>
         </interleave>
-        <!-- soundcpu - starts at 0x80000 -->
+        <!-- JTFRAME_BA1_START -->
+        <!-- soundcpu - starts at 0x80000 - length 0xC0000 (20 bits) -->
         <part name="epr-12617.a13" crc="7efecf23"/>
         <part repeat="0x8000"> FF</part>
         <part name="mpr-12616.a11" crc="254347c2"/>
         <part repeat="0x70000"> FF</part>
-        <!-- gfx1 - starts at 0x140000 -->
+        <!-- JTFRAME_BA2_START -->
+        <!-- gfx1 - starts at 0x140000 - length 0x100000 (20 bits) -->
         <interleave output="32">
             <part name="mpr-12624.b11" crc="375a5ec4" map="0001"/>
             <part name="mpr-12625.b12" crc="3b8c757e" map="0010"/>
             <part name="mpr-12626.b13" crc="3efca25c" map="0100"/>
             <part name="mpr-12626.b13" crc="3efca25c" map="1000"/>
         </interleave>
-        <!-- sprites - starts at 0x240000 -->
+        <!-- JTFRAME_BA3_START -->
+        <!-- sprites - starts at 0x240000 - length 0x200000 (21 bits) -->
         <interleave output="16">
             <part name="mpr-12618.b1" crc="0d1530bf" map="01" length="0x20000"/>
             <part name="mpr-12621.b4" crc="18ff0799" map="10" length="0x20000"/>
@@ -70,7 +73,6 @@
             <part name="mpr-12623.b6" crc="6773fef6" map="10" length="0x20000"/>
         </interleave>
         <part repeat="0x40000"> FF</part>
-        <!-- ROM split at 340000 (100000) -->
         <interleave output="16">
             <part name="mpr-12618.b1" crc="0d1530bf" map="01" length="0x20000" offset="0x20000"/>
             <part name="mpr-12621.b4" crc="18ff0799" map="10" length="0x20000" offset="0x20000"/>
@@ -83,12 +85,21 @@
             <part name="mpr-12620.b3" crc="f6b096e0" map="01" length="0x20000" offset="0x20000"/>
             <part name="mpr-12623.b6" crc="6773fef6" map="10" length="0x20000" offset="0x20000"/>
         </interleave>
-        <part repeat="0x42000"> FF</part>
-        <!-- maincpu:key - starts at 0x442000 -->
+        <part repeat="0x40000"> FF</part>
+        <!-- JTFRAME_PROM_START -->
+        <!-- MCU_START -->
+        <!-- mcu - starts at 0x440000 - length 0x2000 (13 bits) -->
+        <part repeat="0x1000"> FF</part>
+        <part repeat="0x1000"> FF</part>
+        <!-- MAINKEY_START -->
+        <!-- maincpu:key - starts at 0x442000 - length 0x6000 (15 bits) -->
         <part name="317-0129.key" crc="128302c7"/>
-        <!-- Total 0x444000 bytes - 4368 kBytes -->
+        <part repeat="0x4000"> FF</part>
+        <!-- SNDKEY_START -->
+        <!-- soundcpu:key - starts at 0x448000 - length 0x2000 (13 bits) -->
+        <part repeat="0x2000"> FF</part>
+        <!-- Total 0x44A000 bytes - 4392 kBytes -->
     </rom>
-    <nvram index="2" size="75777"/>
     <rom index="1">
         <part>00</part>
     </rom>

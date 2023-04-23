@@ -1,16 +1,17 @@
-<!--          FPGA compatible core for Sega arcade hardware by Jotego
+<!--          FPGA arcade hardware by Jotego
 
               This core is available for hardware compatible with MiST and MiSTer
               Other FPGA systems may be supported by the time you read this.
               This work is not mantained by the MiSTer project. Please contact the
               core author for issues and updates.
 
-              (c) Jose Tejada, 2022. Please support this research
+              (c) Jose Tejada, 2023. Please support this research
               Patreon: https://patreon.com/jotego
 
               The author does not endorse or participate in illegal distribution
-              of copyrighted material. This work can be used with legally
-              obtained ROM dumps or with compatible homebrew software.
+              of copyrighted material. This work can be used with compatible
+              software. This software can be homebrew projects or legally
+              obtained memory dumps of compatible games.
 
               This file license is GNU GPLv2.
               You can read the whole license file in
@@ -23,33 +24,34 @@
     <name>Golden Axe (set 5, US) (FD1094 317-0122)</name>
     <setname>goldnaxeu</setname>
     <rbf>jts16b</rbf>
-    <mameversion>0232</mameversion>
+    <mameversion>0251</mameversion>
     <year>1989</year>
     <manufacturer>Sega</manufacturer>
     <players>2</players>
     <joystick>8</joystick>
     <rotation>horizontal</rotation>
     <region>World</region>
-    <platform>SEGA S16B</platform>
     <mraauthor>jotego,atrac17</mraauthor>
-    <rom index="0" zip="goldnaxeu.zip|goldnaxe.zip|s16mcu_alt.zip" md5="None">
+    <rom index="0" zip="goldnaxeu.zip|goldnaxe.zip" md5="None" asm_md5="58f320ad62fba5b276b28005a51878d7">
         <part>
             00 00 00 00 00 00 00 00
             00 00 00 00 00 00 00 00
             00 01 00 00 00 00 00 00
             20 00 00 00 00 00 00 00
         </part>
-        <!-- maincpu - starts at 0x0 -->
+        <!-- maincpu - starts at 0x0 - length 0x80000 (19 bits) -->
         <interleave output="16">
             <part name="epr-12542.ic1" crc="b7994d3c" map="01"/>
             <part name="epr-12543.ic2" crc="b0df9ca4" map="10"/>
         </interleave>
-        <!-- soundcpu - starts at 0x80000 -->
+        <!-- JTFRAME_BA1_START -->
+        <!-- soundcpu - starts at 0x80000 - length 0xC0000 (20 bits) -->
         <part name="epr-12390.ic8" crc="399fc5f5"/>
         <part repeat="0x8000"> FF</part>
         <part name="mpr-12384.ic6" crc="6218d8e7"/>
         <part repeat="0x90000"> FF</part>
-        <!-- gfx1 - starts at 0x140000 -->
+        <!-- JTFRAME_BA2_START -->
+        <!-- gfx1 - starts at 0x140000 - length 0x100000 (20 bits) -->
         <interleave output="32">
             <part name="epr-12385.ic19" crc="b8a4e7e0" map="0001"/>
             <part name="epr-12386.ic20" crc="25d7d779" map="0010"/>
@@ -57,7 +59,8 @@
             <part name="epr-12387.ic21" crc="c7fcadf3" map="1000"/>
         </interleave>
         <part repeat="0x80000"> FF</part>
-        <!-- sprites - starts at 0x240000 -->
+        <!-- JTFRAME_BA3_START -->
+        <!-- sprites - starts at 0x240000 - length 0x200000 (21 bits) -->
         <interleave output="16">
             <part name="mpr-12378.ic9" crc="119e5a82" map="01" length="0x20000"/>
             <part name="mpr-12379.ic12" crc="1a0e8c57" map="10" length="0x20000"/>
@@ -71,7 +74,6 @@
             <part name="mpr-12383.ic14" crc="5dbacf7a" map="10" length="0x20000"/>
         </interleave>
         <part repeat="0x40000"> FF</part>
-        <!-- ROM split at 340000 (100000) -->
         <interleave output="16">
             <part name="mpr-12378.ic9" crc="119e5a82" map="01" length="0x20000" offset="0x20000"/>
             <part name="mpr-12379.ic12" crc="1a0e8c57" map="10" length="0x20000" offset="0x20000"/>
@@ -84,12 +86,21 @@
             <part name="mpr-12382.ic11" crc="81601c6f" map="01" length="0x20000" offset="0x20000"/>
             <part name="mpr-12383.ic14" crc="5dbacf7a" map="10" length="0x20000" offset="0x20000"/>
         </interleave>
-        <part repeat="0x42000"> FF</part>
-        <!-- maincpu:key - starts at 0x442000 -->
+        <part repeat="0x40000"> FF</part>
+        <!-- JTFRAME_PROM_START -->
+        <!-- MCU_START -->
+        <!-- mcu - starts at 0x440000 - length 0x2000 (13 bits) -->
+        <part repeat="0x1000"> FF</part>
+        <part repeat="0x1000"> FF</part>
+        <!-- MAINKEY_START -->
+        <!-- maincpu:key - starts at 0x442000 - length 0x6000 (15 bits) -->
         <part name="317-0122.key" crc="f123c2fb"/>
-        <!-- Total 0x444000 bytes - 4368 kBytes -->
+        <part repeat="0x4000"> FF</part>
+        <!-- SNDKEY_START -->
+        <!-- soundcpu:key - starts at 0x448000 - length 0x2000 (13 bits) -->
+        <part repeat="0x2000"> FF</part>
+        <!-- Total 0x44A000 bytes - 4392 kBytes -->
     </rom>
-    <nvram index="2" size="75777"/>
     <rom index="1">
         <part>00</part>
     </rom>
@@ -100,7 +111,7 @@
         <!-- DSW2 -->
         <dip name="Credits Needed" bits="8" ids="2 To Start,1 To Start"/>
         <dip name="Demo Sounds" bits="9" ids="On,Off"/>
-        <dip name="Difficulty" bits="10,13" ids="Special,-,-,-,-,Easiest,-,Easier,-,-,Hardest,Harder,-,Easy,Hard,Normal"/>
+        <dip name="Difficulty" bits="10,12" ids="Special,-,-,-,-,Easiest,-,Easy,-,-,Hardest,Harder,-,Easier,Hard,Normal"/>
     </switches>
     <buttons names="Attack,Jump,Magic,-,Start,Coin,Core credits" default="Y,X,B,A,Start,Select,-" count="3"/>
 </misterromdescription>

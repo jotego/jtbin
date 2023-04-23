@@ -1,16 +1,17 @@
-<!--          FPGA compatible core for Sega arcade hardware by Jotego
+<!--          FPGA arcade hardware by Jotego
 
               This core is available for hardware compatible with MiST and MiSTer
               Other FPGA systems may be supported by the time you read this.
               This work is not mantained by the MiSTer project. Please contact the
               core author for issues and updates.
 
-              (c) Jose Tejada, 2022. Please support this research
+              (c) Jose Tejada, 2023. Please support this research
               Patreon: https://patreon.com/jotego
 
               The author does not endorse or participate in illegal distribution
-              of copyrighted material. This work can be used with legally
-              obtained ROM dumps or with compatible homebrew software.
+              of copyrighted material. This work can be used with compatible
+              software. This software can be homebrew projects or legally
+              obtained memory dumps of compatible games.
 
               This file license is GNU GPLv2.
               You can read the whole license file in
@@ -23,23 +24,22 @@
     <name>Dynamite Dux (set 3, World) (FD1094 317-0096)</name>
     <setname>ddux</setname>
     <rbf>jts16b</rbf>
-    <mameversion>0232</mameversion>
+    <mameversion>0251</mameversion>
     <year>1988</year>
     <manufacturer>Sega</manufacturer>
     <players>2</players>
     <joystick>8</joystick>
     <rotation>horizontal</rotation>
     <region>World</region>
-    <platform>SEGA S16B</platform>
     <mraauthor>jotego,atrac17</mraauthor>
-    <rom index="0" zip="ddux.zip|s16mcu_alt.zip" md5="None">
+    <rom index="0" zip="ddux.zip" md5="None" asm_md5="1d36e57702864c09db0957687734f52e">
         <part>
             00 00 00 00 00 00 00 00
             00 00 00 00 00 00 00 00
             00 01 00 00 00 00 00 00
             00 00 00 00 00 00 00 00
         </part>
-        <!-- maincpu - starts at 0x0 -->
+        <!-- maincpu - starts at 0x0 - length 0x80000 (19 bits) -->
         <interleave output="16">
             <part name="epr-11190.a5" crc="2a698308" map="01"/>
             <part name="epr-11191.a7" crc="500e400a" map="10"/>
@@ -48,10 +48,12 @@
             <part name="epr-11913.a6" crc="30c6cb92" map="01"/>
             <part name="epr-11915.a8" crc="d8ed3132" map="10"/>
         </interleave>
-        <!-- soundcpu - starts at 0x80000 -->
+        <!-- JTFRAME_BA1_START -->
+        <!-- soundcpu - starts at 0x80000 - length 0xC0000 (20 bits) -->
         <part name="epr-11916.a10" crc="7ab541cf"/>
         <part repeat="0xB8000"> FF</part>
-        <!-- gfx1 - starts at 0x140000 -->
+        <!-- JTFRAME_BA2_START -->
+        <!-- gfx1 - starts at 0x140000 - length 0x100000 (20 bits) -->
         <interleave output="32">
             <part name="mpr-11917.a14" crc="6f772190" map="0001"/>
             <part name="mpr-11918.a15" crc="c731db95" map="0010"/>
@@ -59,7 +61,8 @@
             <part name="mpr-11919.a16" crc="64d5a491" map="1000"/>
         </interleave>
         <part repeat="0xC0000"> FF</part>
-        <!-- sprites - starts at 0x240000 -->
+        <!-- JTFRAME_BA3_START -->
+        <!-- sprites - starts at 0x240000 - length 0x200000 (21 bits) -->
         <interleave output="16">
             <part name="mpr-11920.b1" crc="e5d1e3cd" map="01"/>
             <part name="mpr-11922.b5" crc="70b0c4dd" map="10"/>
@@ -68,12 +71,21 @@
             <part name="mpr-11921.b2" crc="61d2358c" map="01"/>
             <part name="mpr-11923.b6" crc="c9ffe47d" map="10"/>
         </interleave>
-        <part repeat="0x182000"> FF</part>
-        <!-- maincpu:key - starts at 0x442000 -->
+        <part repeat="0x180000"> FF</part>
+        <!-- JTFRAME_PROM_START -->
+        <!-- MCU_START -->
+        <!-- mcu - starts at 0x440000 - length 0x2000 (13 bits) -->
+        <part repeat="0x1000"> FF</part>
+        <part repeat="0x1000"> FF</part>
+        <!-- MAINKEY_START -->
+        <!-- maincpu:key - starts at 0x442000 - length 0x6000 (15 bits) -->
         <part name="317-0096.key" crc="6fd7d26e"/>
-        <!-- Total 0x444000 bytes - 4368 kBytes -->
+        <part repeat="0x4000"> FF</part>
+        <!-- SNDKEY_START -->
+        <!-- soundcpu:key - starts at 0x448000 - length 0x2000 (13 bits) -->
+        <part repeat="0x2000"> FF</part>
+        <!-- Total 0x44A000 bytes - 4392 kBytes -->
     </rom>
-    <nvram index="2" size="75777"/>
     <rom index="1">
         <part>00</part>
     </rom>
@@ -85,7 +97,7 @@
         <dip name="Demo Sounds" bits="8" ids="On,Off"/>
         <dip name="Difficulty" bits="9,10" ids="Hardest,Hard,Easy,Normal"/>
         <dip name="Lives" bits="11,12" ids="5,4,2,3"/>
-        <dip name="Bonus Life" bits="13,14" ids="400k,300k,150k,200k"/>
+        <dip name="Bonus" bits="13,14" ids="400k,300k,150k,200k"/>
     </switches>
     <buttons names="Shot,Jump,-,-,Start,Coin,Core credits" default="Y,X,B,A,Start,Select,-" count="2"/>
 </misterromdescription>

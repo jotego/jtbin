@@ -1,16 +1,17 @@
-<!--          FPGA compatible core for Sega arcade hardware by Jotego
+<!--          FPGA arcade hardware by Jotego
 
               This core is available for hardware compatible with MiST and MiSTer
               Other FPGA systems may be supported by the time you read this.
               This work is not mantained by the MiSTer project. Please contact the
               core author for issues and updates.
 
-              (c) Jose Tejada, 2022. Please support this research
+              (c) Jose Tejada, 2023. Please support this research
               Patreon: https://patreon.com/jotego
 
               The author does not endorse or participate in illegal distribution
-              of copyrighted material. This work can be used with legally
-              obtained ROM dumps or with compatible homebrew software.
+              of copyrighted material. This work can be used with compatible
+              software. This software can be homebrew projects or legally
+              obtained memory dumps of compatible games.
 
               This file license is GNU GPLv2.
               You can read the whole license file in
@@ -23,23 +24,22 @@
     <name>Wrestle War (set 3, World) (8751 317-0103)</name>
     <setname>wrestwar</setname>
     <rbf>jts16b</rbf>
-    <mameversion>0232</mameversion>
+    <mameversion>0251</mameversion>
     <year>1989</year>
     <manufacturer>Sega</manufacturer>
     <players>2</players>
     <joystick>8</joystick>
-    <rotation>vertical</rotation>
+    <rotation>vertical (ccw)</rotation>
     <region>World</region>
-    <platform>SEGA S16B</platform>
     <mraauthor>jotego,atrac17</mraauthor>
-    <rom index="0" zip="wrestwar.zip|s16mcu_alt.zip" md5="None">
+    <rom index="0" zip="wrestwar.zip" md5="None" asm_md5="2b5f95a8e696e54ed21149606b6ae9b0">
         <part>
             00 00 00 00 00 00 00 00
             00 00 00 00 00 00 00 00
             00 00 00 01 00 00 00 00
             40 00 00 00 00 00 00 00
         </part>
-        <!-- maincpu - starts at 0x0 -->
+        <!-- maincpu - starts at 0x0 - length 0x80000 (19 bits) -->
         <interleave output="16">
             <part name="epr-12371.a5" crc="6714600a" map="01"/>
             <part name="epr-12372.a7" crc="eeaba126" map="10"/>
@@ -48,13 +48,15 @@
             <part name="epr-12144.a6" crc="ddf075cb" map="01"/>
             <part name="epr-12146.a8" crc="b77ba665" map="10"/>
         </interleave>
-        <!-- soundcpu - starts at 0x80000 -->
+        <!-- JTFRAME_BA1_START -->
+        <!-- soundcpu - starts at 0x80000 - length 0xC0000 (20 bits) -->
         <part name="epr-12147.a10" crc="c3609607"/>
         <part repeat="0x8000"> FF</part>
         <part name="mpr-12148.a11" crc="fb9a7f29"/>
         <part name="mpr-12149.a12" crc="d6617b19"/>
         <part repeat="0x70000"> FF</part>
-        <!-- gfx1 - starts at 0x140000 -->
+        <!-- JTFRAME_BA2_START -->
+        <!-- gfx1 - starts at 0x140000 - length 0x100000 (20 bits) -->
         <interleave output="32">
             <part name="mpr-12150.a14" crc="6a821ab9" map="0001"/>
             <part name="mpr-12151.a15" crc="2b1a0751" map="0010"/>
@@ -62,7 +64,8 @@
             <part name="mpr-12152.a16" crc="f6e190fe" map="1000"/>
         </interleave>
         <part repeat="0x80000"> FF</part>
-        <!-- sprites - starts at 0x240000 -->
+        <!-- JTFRAME_BA3_START -->
+        <!-- sprites - starts at 0x240000 - length 0x200000 (21 bits) -->
         <interleave output="16">
             <part name="mpr-12153.b1" crc="ffa7d368" map="01"/>
             <part name="mpr-12157.b5" crc="8d7794c1" map="10"/>
@@ -88,14 +91,23 @@
             <part name="opr-12162.b11" crc="fa06fd24" map="10"/>
         </interleave>
         <part repeat="0xA0000"> FF</part>
-        <!-- mcu - starts at 0x440000 -->
+        <!-- JTFRAME_PROM_START -->
+        <!-- MCU_START -->
+        <!-- mcu - starts at 0x440000 - length 0x2000 (13 bits) -->
         <part name="317-0103.c2" crc="aa0710f5"/>
-        <!-- Total 0x441000 bytes - 4356 kBytes -->
+        <part repeat="0x1000"> FF</part>
+        <!-- MAINKEY_START -->
+        <!-- maincpu:key - starts at 0x442000 - length 0x6000 (15 bits) -->
+        <part repeat="0x2000"> FF</part>
+        <part repeat="0x4000"> FF</part>
+        <!-- SNDKEY_START -->
+        <!-- soundcpu:key - starts at 0x448000 - length 0x2000 (13 bits) -->
+        <part repeat="0x2000"> FF</part>
+        <!-- Total 0x44A000 bytes - 4392 kBytes -->
     </rom>
-    <nvram index="2" size="75777"/>
     <!-- Vertical game -->
     <rom index="1">
-        <part>01</part>
+        <part>05</part>
     </rom>
     <switches page_id="1" page_name="Switches" base="16" default="ff,fd">
         <!-- DSW1 -->

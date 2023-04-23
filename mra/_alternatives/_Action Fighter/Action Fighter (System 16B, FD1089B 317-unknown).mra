@@ -1,16 +1,17 @@
-<!--          FPGA compatible core for Sega arcade hardware by Jotego
+<!--          FPGA arcade hardware by Jotego
 
               This core is available for hardware compatible with MiST and MiSTer
               Other FPGA systems may be supported by the time you read this.
               This work is not mantained by the MiSTer project. Please contact the
               core author for issues and updates.
 
-              (c) Jose Tejada, 2022. Please support this research
+              (c) Jose Tejada, 2023. Please support this research
               Patreon: https://patreon.com/jotego
 
               The author does not endorse or participate in illegal distribution
-              of copyrighted material. This work can be used with legally
-              obtained ROM dumps or with compatible homebrew software.
+              of copyrighted material. This work can be used with compatible
+              software. This software can be homebrew projects or legally
+              obtained memory dumps of compatible games.
 
               This file license is GNU GPLv2.
               You can read the whole license file in
@@ -23,23 +24,22 @@
     <name>Action Fighter (System 16B, FD1089B 317-unknown)</name>
     <setname>afighterg</setname>
     <rbf>jts16b</rbf>
-    <mameversion>0232</mameversion>
+    <mameversion>0251</mameversion>
     <year>1986</year>
     <manufacturer>Sega</manufacturer>
     <players>2</players>
     <joystick>8</joystick>
     <rotation>vertical (ccw)</rotation>
     <region>World</region>
-    <platform>SEGA S16B</platform>
     <mraauthor>jotego,atrac17</mraauthor>
-    <rom index="0" zip="afighterg.zip|afighter.zip|s16mcu_alt.zip" md5="None">
+    <rom index="0" zip="afighterg.zip|afighter.zip" md5="None" asm_md5="c4dccd35f3bbbbbc23e07a298d0eeceb">
         <part>
             00 00 00 00 00 00 00 00
             00 00 00 00 00 00 00 00
             02 00 00 00 00 00 00 00
             11 00 00 00 00 00 00 00
         </part>
-        <!-- maincpu - starts at 0x0 -->
+        <!-- maincpu - starts at 0x0 - length 0x80000 (19 bits) -->
         <interleave output="16">
             <part name="epr10160.bin" crc="86f020da" map="01"/>
             <part name="epr10163.bin" crc="6d62eccd" map="10"/>
@@ -53,10 +53,12 @@
             <part name="epr10165.bin" crc="cc68a82d" map="10"/>
         </interleave>
         <part repeat="0x50000"> FF</part>
-        <!-- soundcpu - starts at 0x80000 -->
+        <!-- JTFRAME_BA1_START -->
+        <!-- soundcpu - starts at 0x80000 - length 0xC0000 (20 bits) -->
         <part name="epr10039.bin" crc="b04757b0"/>
         <part repeat="0xB8000"> FF</part>
-        <!-- gfx1 - starts at 0x140000 -->
+        <!-- JTFRAME_BA2_START -->
+        <!-- gfx1 - starts at 0x140000 - length 0x100000 (20 bits) -->
         <interleave output="32">
             <part name="epr10048.bin" crc="643ca883" map="0001"/>
             <part name="epr10049.bin" crc="f8b5058b" map="0010"/>
@@ -64,7 +66,8 @@
             <part name="epr10050.bin" crc="0ffb48dd" map="1000"/>
         </interleave>
         <part repeat="0xC0000"> FF</part>
-        <!-- sprites - starts at 0x240000 -->
+        <!-- JTFRAME_BA3_START -->
+        <!-- sprites - starts at 0x240000 - length 0x200000 (21 bits) -->
         <interleave output="16">
             <part name="epr10040.bin" crc="5a9f81f9" map="01"/>
             <part name="epr10044.bin" crc="71d0db1f" map="10"/>
@@ -84,10 +87,19 @@
             <part name="epr10043.bin" crc="645ccfb9" map="01"/>
             <part name="epr10047.bin" crc="84a49518" map="10"/>
         </interleave>
-        <part repeat="0x192000"> FF</part>
-        <!-- maincpu:key - starts at 0x442000 -->
+        <part repeat="0x190000"> FF</part>
+        <!-- JTFRAME_PROM_START -->
+        <!-- MCU_START -->
+        <!-- mcu - starts at 0x440000 - length 0x2000 (13 bits) -->
+        <part repeat="0x1000"> FF</part>
+        <part repeat="0x1000"> FF</part>
+        <!-- MAINKEY_START -->
+        <!-- maincpu:key - starts at 0x442000 - length 0x6000 (15 bits) -->
         <part name="317-0018.key" crc="65b5b1af"/>
-        <part repeat="0x6000"> FF</part>
+        <part repeat="0x4000"> FF</part>
+        <!-- SNDKEY_START -->
+        <!-- soundcpu:key - starts at 0x448000 - length 0x2000 (13 bits) -->
+        <part repeat="0x2000"> FF</part>
         <!-- FD1089 base table starts at 0x44A000 -->
         <part>
             00 1C 76 6A 5E 42 24 38 4B 67 AD 81 E9 C5 03 2F
@@ -109,10 +121,9 @@
         </part>
         <!-- Total 0x44A100 bytes - 4392 kBytes -->
     </rom>
-    <nvram index="2" size="75777"/>
     <!-- Vertical game -->
     <rom index="1">
-        <part>01</part>
+        <part>05</part>
     </rom>
     <switches page_id="1" page_name="Switches" base="16" default="ff,fc">
         <!-- DSW1 -->
@@ -122,7 +133,7 @@
         <dip name="Cabinet" bits="8" ids="Upright,Cocktail"/>
         <dip name="Demo Sounds" bits="9" ids="On,Off"/>
         <dip name="Lives" bits="10,11" ids="Infinite,4,2,3"/>
-        <dip name="Bonus Life" bits="12,13" ids="40k - 80k,30k - 60k,20k - 40k,10k - 20k"/>
+        <dip name="Bonus" bits="12,13" ids="40k - 80k,30k - 60k,20k - 40k,10k - 20k"/>
         <dip name="Difficulty" bits="14" ids="Hard,Normal"/>
         <dip name="Allow Continue" bits="15" ids="No,Yes"/>
     </switches>

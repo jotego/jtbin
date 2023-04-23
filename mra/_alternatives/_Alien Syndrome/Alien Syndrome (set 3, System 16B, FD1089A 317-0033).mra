@@ -1,16 +1,17 @@
-<!--          FPGA compatible core for Sega arcade hardware by Jotego
+<!--          FPGA arcade hardware by Jotego
 
               This core is available for hardware compatible with MiST and MiSTer
               Other FPGA systems may be supported by the time you read this.
               This work is not mantained by the MiSTer project. Please contact the
               core author for issues and updates.
 
-              (c) Jose Tejada, 2022. Please support this research
+              (c) Jose Tejada, 2023. Please support this research
               Patreon: https://patreon.com/jotego
 
               The author does not endorse or participate in illegal distribution
-              of copyrighted material. This work can be used with legally
-              obtained ROM dumps or with compatible homebrew software.
+              of copyrighted material. This work can be used with compatible
+              software. This software can be homebrew projects or legally
+              obtained memory dumps of compatible games.
 
               This file license is GNU GPLv2.
               You can read the whole license file in
@@ -23,23 +24,22 @@
     <name>Alien Syndrome (set 3, System 16B, FD1089A 317-0033)</name>
     <setname>aliensyn3</setname>
     <rbf>jts16b</rbf>
-    <mameversion>0232</mameversion>
+    <mameversion>0251</mameversion>
     <year>1987</year>
     <manufacturer>Sega</manufacturer>
     <players>2</players>
     <joystick>8</joystick>
     <rotation>horizontal</rotation>
     <region>World</region>
-    <platform>SEGA S16B</platform>
     <mraauthor>jotego,atrac17</mraauthor>
-    <rom index="0" zip="aliensyn3.zip|aliensyn.zip|s16mcu_alt.zip" md5="None">
+    <rom index="0" zip="aliensyn3.zip|aliensyn.zip" md5="None" asm_md5="4c83a7a5e5c404664c37a5c3818cfa92">
         <part>
             00 00 00 00 00 00 00 00
             00 00 00 00 00 00 00 00
             01 00 00 00 00 00 00 00
             11 00 00 00 00 00 00 00
         </part>
-        <!-- maincpu - starts at 0x0 -->
+        <!-- maincpu - starts at 0x0 - length 0x80000 (19 bits) -->
         <interleave output="16">
             <part name="epr-10814.a1" crc="4cd134df" map="01"/>
             <part name="epr-10816.a4" crc="17bf5304" map="10"/>
@@ -53,7 +53,8 @@
             <part name="epr-10822a.a6" crc="1d0790aa" map="10"/>
         </interleave>
         <part repeat="0x50000"> FF</part>
-        <!-- soundcpu - starts at 0x80000 -->
+        <!-- JTFRAME_BA1_START -->
+        <!-- soundcpu - starts at 0x80000 - length 0xC0000 (20 bits) -->
         <part name="epr-10723.a7" crc="99953526"/>
         <part repeat="0x8000"> FF</part>
         <part name="epr-10724.a8" crc="f971a817"/>
@@ -62,7 +63,8 @@
         <part repeat="0x8000"> FF</part>
         <part name="epr-10726.a10" crc="d50b7736"/>
         <part repeat="0x88000"> FF</part>
-        <!-- gfx1 - starts at 0x140000 -->
+        <!-- JTFRAME_BA2_START -->
+        <!-- gfx1 - starts at 0x140000 - length 0x100000 (20 bits) -->
         <interleave output="32">
             <part name="epr-10702.b9" crc="393bc813" map="0001"/>
             <part name="epr-10703.b10" crc="6b6dd9f5" map="0010"/>
@@ -70,7 +72,8 @@
             <part name="epr-10704.b11" crc="911e7ebc" map="1000"/>
         </interleave>
         <part repeat="0xC0000"> FF</part>
-        <!-- sprites - starts at 0x240000 -->
+        <!-- JTFRAME_BA3_START -->
+        <!-- sprites - starts at 0x240000 - length 0x200000 (21 bits) -->
         <interleave output="16">
             <part name="epr-10709.b1" crc="addf0a90" map="01"/>
             <part name="epr-10713.b5" crc="ececde3a" map="10"/>
@@ -87,10 +90,19 @@
             <part name="epr-10712.b4" crc="876ad019" map="01"/>
             <part name="epr-10716.b8" crc="40ba1d48" map="10"/>
         </interleave>
-        <part repeat="0x182000"> FF</part>
-        <!-- maincpu:key - starts at 0x442000 -->
+        <part repeat="0x180000"> FF</part>
+        <!-- JTFRAME_PROM_START -->
+        <!-- MCU_START -->
+        <!-- mcu - starts at 0x440000 - length 0x2000 (13 bits) -->
+        <part repeat="0x1000"> FF</part>
+        <part repeat="0x1000"> FF</part>
+        <!-- MAINKEY_START -->
+        <!-- maincpu:key - starts at 0x442000 - length 0x6000 (15 bits) -->
         <part name="317-0033.key" crc="68bb7745"/>
-        <part repeat="0x6000"> FF</part>
+        <part repeat="0x4000"> FF</part>
+        <!-- SNDKEY_START -->
+        <!-- soundcpu:key - starts at 0x448000 - length 0x2000 (13 bits) -->
+        <part repeat="0x2000"> FF</part>
         <!-- FD1089 base table starts at 0x44A000 -->
         <part>
             00 1C 76 6A 5E 42 24 38 4B 67 AD 81 E9 C5 03 2F
@@ -112,7 +124,6 @@
         </part>
         <!-- Total 0x44A100 bytes - 4392 kBytes -->
     </rom>
-    <nvram index="2" size="75777"/>
     <rom index="1">
         <part>00</part>
     </rom>
