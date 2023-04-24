@@ -89,7 +89,7 @@
         <dip name="Play Mode" bits="4" ids="2 Players,3 Players"/>
         <dip name="2 to start, 1 continue" bits="6" ids="On,Off"/>
         <!-- DSWB -->
-        <dip name="Difficulty" bits="8,10" ids="7,6,5,4,3,2,1,0 "/>
+        <dip name="Difficulty" bits="8,10" ids="7,6,5,4,3,2,1,0"/>
         <dip name="Lives" bits="11,13" ids="8,7,6,5,4,3,1,2"/>
         <dip name="Bonus" bits="14,15" ids="None,160k &amp; *450k,80k &amp; *400k,200k &amp; *450k"/>
         <!-- DSWC -->

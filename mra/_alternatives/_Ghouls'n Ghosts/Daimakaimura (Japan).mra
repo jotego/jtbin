@@ -116,7 +116,7 @@
         <dip name="Coin B" bits="3,5" ids="4/1,3/1,2/1,1/6,1/4,1/3,1/2,1/1"/>
         <dip name="Cabinet" bits="6,7" ids="Cocktail,-,Upright 2 Players,Upright 1 Player"/>
         <!-- DSWB -->
-        <dip name="Difficulty" bits="8,10" ids="8,7,6,5,1,2,3,4 "/>
+        <dip name="Difficulty" bits="8,10" ids="8,7,6,5,1,2,3,4"/>
         <dip name="Bonus" bits="12,13" ids="40K 70K &amp; *80K,20K 50K &amp; *70K,10K 30K &amp; *30K,30K 60K &amp; *70K"/>
         <dip name="Freeze" bits="15" ids="On,Off"/>
         <!-- DSWC -->

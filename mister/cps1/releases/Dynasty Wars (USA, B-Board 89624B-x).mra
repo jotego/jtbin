@@ -82,7 +82,7 @@
         <dip name="Coin B" bits="3,5" ids="2/1,4/1,3/1,2/1,1/4,1/3,1/2,1/1"/>
         <dip name="Free Play" bits="7" ids="On,Off"/>
         <!-- DSWB -->
-        <dip name="Difficulty" bits="8,10" ids="8,7,6,5,1,2,3,4 "/>
+        <dip name="Difficulty" bits="8,10" ids="8,7,6,5,1,2,3,4"/>
         <!-- DSWC -->
         <dip name="Freeze" bits="16" ids="On,Off"/>
         <dip name="Turbo Mode" bits="17" ids="On,Off"/>

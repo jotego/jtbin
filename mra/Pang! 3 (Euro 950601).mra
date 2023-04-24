@@ -21,62 +21,52 @@
 
 <misterromdescription>
     <about author="jotego" webpage="https://patreon.com/jotego" source="https://github.com/jotego" twitter="@topapate"/>
-    <name>Area 88 (Japan Resale Ver.)</name>
-    <setname>area88r</setname>
+    <name>Pang! 3 (Euro 950601)</name>
+    <setname>pang3</setname>
     <rbf>jtcps1</rbf>
     <mameversion>0251</mameversion>
-    <year>1989</year>
-    <manufacturer>Capcom</manufacturer>
+    <year>1995</year>
+    <manufacturer>Mitchell</manufacturer>
     <players>2</players>
-    <joystick>8</joystick>
+    <joystick>4</joystick>
     <rotation>horizontal</rotation>
     <region>World</region>
     <mraauthor>jotego</mraauthor>
-    <rom index="0" zip="area88r.zip|unsquad.zip" md5="None" asm_md5="8781a8fb123ef1850338fb732ecbb42c">
+    <rom index="0" zip="pang3.zip" md5="None" asm_md5="e53b10d4f19c2deec4d94c28fcedf066">
         <part>
             00 04 80 04 80 05 FF FF
             FF FF FF FF FF FF FF FF
             32 FF 00 02 04 06 26 28
             2A 2C 2E 00 00 30 02 04
-            08 30 00 20 44 31 FF 01
+            08 30 14 40 88 73 FF C1
             FF FF FF FF FF FF FF FF
             FF FF FF FF FF FF FF FF
             FF FF FF FF FF FF FF FF
         </part>
         <!-- maincpu - starts at 0x0 - length 0x100000 (20 bits) -->
-        <part name="araj_23.8f" crc="7045d6cb"/>
-        <part name="araj_22.7f" crc="9913002e"/>
+        <part name="pa3e_17a.11l" crc="a213fa80"/>
+        <part name="pa3e_16a.10l" crc="7169ea67"/>
         <!-- audiocpu - starts at 0x100000 - length 0x20000 (17 bits) -->
-        <part name="ara_09.12a" crc="af88359c"/>
+        <part name="pa3_11.11f" crc="cb1423a2"/>
         <!-- oki - starts at 0x120000 - length 0x40000 (18 bits) -->
-        <part name="ara_18.11c" crc="584b43a9"/>
-        <part repeat="0x20000"> FF</part>
-        <!-- gfx - starts at 0x160000 - length 0x200000 (21 bits) -->
+        <part name="pa3_05.10d" crc="73a10d5d"/>
+        <part name="pa3_06.11d" crc="affa4f82"/>
+        <!-- gfx - starts at 0x160000 - length 0x400000 (22 bits) -->
         <interleave output="64">
-            <part name="ara_01.3a" crc="bf4575d8" map="00000021"/>
-            <part name="ara_02.4a" crc="a02945f4" map="00002100"/>
-            <part name="ara_03.5a" crc="5965ca8d" map="00210000"/>
-            <part name="ara_04.6a" crc="ac6db17d" map="21000000"/>
+            <part name="pa3-01m.2c" crc="068a152c" map="00000021" length="0x100000"/>
+            <part name="pa3-07m.2f" crc="3a4a619d" map="00002100" length="0x100000"/>
+            <part name="pa3-01m.2c" crc="068a152c" map="00210000" length="0x100000" offset="0x100000"/>
+            <part name="pa3-07m.2f" crc="3a4a619d" map="21000000" length="0x100000" offset="0x100000"/>
         </interleave>
-        <!-- Total 0x360000 bytes - 3456 kBytes -->
+        <!-- Total 0x560000 bytes - 5504 kBytes -->
     </rom>
+    <nvram index="2" size="128"/>
     <rom index="1">
         <part>00</part>
     </rom>
-    <switches page_id="1" page_name="Switches" base="8" default="ff,fc,9f">
-        <!-- DSWA -->
-        <dip name="Coin A" bits="0,2" ids="2/1,4/1,3/1,2/1,1/4,1/3,1/2,1/1"/>
-        <dip name="Coin B" bits="3,5" ids="2/1,4/1,3/1,2/1,1/4,1/3,1/2,1/1"/>
-        <!-- DSWB -->
-        <dip name="Difficulty" bits="8,10" ids="7,6,5,4,3,2,1,0"/>
-        <dip name="Damage" bits="11,12" ids="Biggest,Big,Small,Normal"/>
+    <switches page_id="1" page_name="Switches" base="8" default="ff,ff,ff">
         <!-- DSWC -->
-        <dip name="Free Play" bits="18" ids="On,Off"/>
-        <dip name="Freeze" bits="19" ids="On,Off"/>
-        <dip name="Flip Screen" bits="20" ids="On,Off"/>
-        <dip name="Demo Sounds" bits="21" ids="On,Off"/>
-        <dip name="Allow Continue" bits="22" ids="Yes,No"/>
-        <dip name="Game Mode" bits="23" ids="Test,Game"/>
+        <dip name="Freeze" ids="On,Off" bits="23"/>
     </switches>
-    <buttons names="Shoot,Bomb,-,-,-,-,Start,Coin,Core credits" default="Y,X,B,A,R,L,Start,Select,-" count="2"/>
+    <buttons names="Shoot,-,-,-,-,-,Start,Coin,Core credits" default="Y,X,B,A,R,L,Start,Select,-" count="1"/>
 </misterromdescription>
