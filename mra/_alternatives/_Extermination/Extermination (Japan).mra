@@ -40,7 +40,10 @@
              bit 4 = banked RAM
              bit 5 = coin XOR
              bit 6 = dip_flip XOR
-             bit 7 = HB delay                             -->
+             bit 7 = HB delay
+             Byte 1:
+             bit 0 = service XOR
+             bit 1 = button aid                           -->
         <part>
             03 00 </part>
         <!-- maincpu - starts at 0x0 - length 0x20000 (17 bits) -->

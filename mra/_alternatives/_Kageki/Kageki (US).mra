@@ -32,7 +32,7 @@
     <rotation>vertical (cw)</rotation>
     <region>World</region>
     <mraauthor>jotego</mraauthor>
-    <rom index="0" zip="kagekiu.zip|kageki.zip" md5="None" asm_md5="0817ea4593152eef65d9980062cc26a0">
+    <rom index="0" zip="kagekiu.zip|kageki.zip" md5="None" asm_md5="4a25631020453d423cb083d6d055e632">
         <!-- bit 0 = MCU
              bit 1 = color PROM
              bit 2 = Kabuzi Z (specific sound features)
@@ -40,7 +40,10 @@
              bit 4 = banked RAM
              bit 5 = coin XOR
              bit 6 = dip_flip XOR
-             bit 7 = HB delay                             -->
+             bit 7 = HB delay
+             Byte 1:
+             bit 0 = service XOR
+             bit 1 = button aid                           -->
         <part>
             08 00 </part>
         <!-- maincpu - starts at 0x0 - length 0x20000 (17 bits) -->
@@ -74,8 +77,9 @@
         <!-- proms - starts at 0x250000 - length 0x1000 (12 bits) -->
         <part repeat="0x1000"> FF</part>
         <!-- MCU_START -->
-        <!-- mcu - starts at 0x251000 -->
-        <!-- Total 0x251000 bytes - 2372 kBytes -->
+        <!-- mcu - starts at 0x251000 - length 0x800 (11 bits) -->
+        <part repeat="0x800"> FF</part>
+        <!-- Total 0x251800 bytes - 2374 kBytes -->
     </rom>
     <rom index="17" zip="jtbeta.zip" md5="None">
         <part name="beta.bin"/>

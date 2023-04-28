@@ -21,18 +21,18 @@
 
 <misterromdescription>
     <about author="jotego" webpage="https://patreon.com/jotego" source="https://github.com/jotego" twitter="@topapate"/>
-    <name>Dr. Toppel&apos;s Tankentai (Japan)</name>
-    <setname>drtoppelj</setname>
+    <name>Arkanoid - Revenge of DOH (Japan bootleg)</name>
+    <setname>arknoid2b</setname>
     <rbf>jtkiwi</rbf>
     <mameversion>0251</mameversion>
     <year>1987</year>
-    <manufacturer>Kaneko / Taito Corporation</manufacturer>
+    <manufacturer>bootleg</manufacturer>
     <players>2</players>
-    <joystick>8</joystick>
-    <rotation>vertical (cw)</rotation>
+    <joystick/>
+    <rotation>vertical (ccw)</rotation>
     <region>World</region>
     <mraauthor>jotego</mraauthor>
-    <rom index="0" zip="drtoppelj.zip|drtoppel.zip" md5="None" asm_md5="acbc28b7b1d5708046ea4d60bfaacf1e">
+    <rom index="0" zip="arknoid2b.zip|arknoid2.zip" md5="None" asm_md5="6902667b3b35e254783f8ea1df68b55c">
         <!-- bit 0 = MCU
              bit 1 = color PROM
              bit 2 = Kabuzi Z (specific sound features)
@@ -45,13 +45,13 @@
              bit 0 = service XOR
              bit 1 = button aid                           -->
         <part>
-            03 00 </part>
+            03 03 </part>
         <!-- maincpu - starts at 0x0 - length 0x20000 (17 bits) -->
-        <part name="b19__09.11c" crc="3e654f82"/>
-        <part name="b19__10.9c" crc="7e72fd25"/>
+        <part name="boot.11c" crc="3847dfb0"/>
+        <part repeat="0x10000"> FF</part>
         <!-- JTFRAME_BA1_START -->
         <!-- sub - starts at 0x20000 - length 0x10000 (16 bits) -->
-        <part name="b19__11.3e" crc="524dc249"/>
+        <part name="b08_13.3e" crc="e8035ef1"/>
         <!-- JTFRAME_BA2_START -->
         <!-- audiocpu - starts at 0x30000 - length 0x10000 (16 bits) -->
         <part repeat="0x10000"> FF</part>
@@ -61,26 +61,33 @@
         <!-- JTFRAME_BA3_START -->
         <!-- gfx1 - starts at 0x50000 - length 0x200000 (21 bits) -->
         <interleave output="32">
-            <part name="b19-05.23c1000.7a" crc="49f2b1a5" map="0001"/>
-            <part name="b19-01.23c1000.13a" crc="a7e8a0c1" map="0010"/>
-            <part name="b19-07.23c1000.4a" crc="8bb06f41" map="0100"/>
-            <part name="b19-03.23c1000.10a" crc="495c4c5a" map="1000"/>
+            <part name="b08-03.7a" crc="274a795f" map="0001"/>
+            <part name="b08-01.13a" crc="2ccc86b4" map="0010"/>
+            <part name="b08-04.4a" crc="9754f703" map="0100"/>
+            <part name="b08-02.10a" crc="056a985f" map="1000"/>
         </interleave>
-        <interleave output="32">
-            <part name="b19-06.23c1000.5a" crc="2d39f1d0" map="0001"/>
-            <part name="b19-02.23c1000.12a" crc="790ae654" map="0010"/>
-            <part name="b19-08.23c1000.2a" crc="3584b491" map="0100"/>
-            <part name="b19-04.23c1000.8a" crc="647007a0" map="1000"/>
-        </interleave>
-        <part repeat="0x100000"> FF</part>
+        <part repeat="0x180000"> FF</part>
         <!-- JTFRAME_PROM_START -->
         <!-- proms - starts at 0x250000 - length 0x1000 (12 bits) -->
-        <part name="b19-13.am27s29.15f" crc="6a547980"/>
-        <part name="b19-12.am27s29.16f" crc="5754e9d8"/>
+        <part name="b08-08.15f" crc="a4f7ebd9"/>
+        <part name="b08-07.16f" crc="ea34d9f7"/>
         <part repeat="0xC00"> FF</part>
         <!-- MCU_START -->
         <!-- mcu - starts at 0x251000 - length 0x800 (11 bits) -->
-        <part name="b06__14.1g" crc="28907072"/>
+        <!-- Using custom firmware (no known dump) -->
+        <part>
+            04 07 00 93 00 00 93 23 00 D7 15 35 65 85 A5 23
+            55 90 23 55 02 86 15 B8 20 B9 60 23 00 A0 18 E9
+            1D 23 AA 90 23 AA 02 86 27 B8 30 B9 04 D6 2D 22
+            A5 A0 18 E9 2D 23 5A 90 23 5A 02 86 3B BF 00 86
+            43 04 6D D6 3F 22 76 54 A8 FC 03 BF 96 3F FF 68
+            AF 02 04 3F A5 AC 03 3F 96 62 BD 00 14 82 FF 02
+            04 3F FC 03 EB 96 3F FF C6 6D CF 04 3F 23 04 3A
+            09 43 0F A8 23 05 3A 09 77 77 77 77 43 F0 58 02
+            04 3F 23 00 26 88 43 10 46 8C 43 20 A8 C6 9C DE
+            C6 9C FF 03 F7 F6 9C 1F F8 90 AE 83 F8 AE 23 00
+            90 83 </part>
+        <part repeat="0x75E"> FF</part>
         <!-- Total 0x251800 bytes - 2374 kBytes -->
     </rom>
     <rom index="17" zip="jtbeta.zip" md5="None">
@@ -125,9 +132,9 @@
     </rom>
     <!-- Vertical game -->
     <rom index="1">
-        <part>01</part>
+        <part>05</part>
     </rom>
-    <switches page_id="1" page_name="Switches" base="16" default="fe,ff">
+    <switches page_id="1" page_name="Switches" base="16" default="fe,7f">
         <!-- DSWA -->
         <dip name="Cabinet" bits="0" ids="Upright,Cocktail"/>
         <dip name="Flip Screen" bits="1" ids="On,Off"/>
@@ -137,8 +144,9 @@
         <dip name="Coin B" bits="6,7" ids="2/3,2/1,1/2,1/1"/>
         <!-- DSWB -->
         <dip name="Difficulty" bits="8,9" ids="Hardest,Hard,Easy,Medium"/>
-        <dip name="Bonus Life" bits="10,11" ids="50 100 200 200k+,30k 100k,30k only,30 100 200 100k+"/>
+        <dip name="Bonus Life" bits="10,11" ids="50k 150k 150k+,50k only,100k only,100k 200k 200k+"/>
         <dip name="Lives" bits="12,13" ids="5,4,2,3"/>
+        <dip name="Allow Continue" bits="15" ids="Yes,No"/>
     </switches>
-    <buttons names="button 1,button 2,-,Start,Coin,Core credits" default="Y,X,B,Start,Select,-" count="2"/>
+    <buttons names="Shoot,-,-,Start,Coin,Core credits" default="Y,X,B,Start,Select,-" count="1"/>
 </misterromdescription>
