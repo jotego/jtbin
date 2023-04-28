@@ -5,8 +5,7 @@ gunsmkeb.rom
 gunsmkeg.rom
 gunsmkej.rom
 gunsmkeu.rom
-gunsmeua.rom
-gunsmeub.rom
+gunsmeuc.rom
 
 These files are generated using the mra tool in:
 https://github.com/sebdel/mra-tools-c/tree/master/release

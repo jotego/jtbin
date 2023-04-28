@@ -5,9 +5,9 @@ The following arcade titles are compatible with this core. Generate
 the required .rom file using the mra tool (read below).
 Place the *.rom files in Assets/jtcontra/common
 
-Contra (US / Asia, set 1) --> contra.rom
-Contra (US / Asia, set 2) --> contra1.rom
-Contra (US / Asia, set 3) --> contrae.rom
+Contra (US - Asia, set 1) --> contra.rom
+Contra (US - Asia, set 2) --> contra1.rom
+Contra (US - Asia, set 3) --> contrae.rom
 Contra (Japan, set 1) --> contraj.rom
 Contra (Japan, set 2) --> contraj1.rom
 Gryzor (set 1) --> gryzor.rom

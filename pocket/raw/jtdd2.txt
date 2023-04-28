@@ -5,9 +5,10 @@ The following arcade titles are compatible with this core. Generate
 the required .rom file using the mra tool (read below).
 Place the *.rom files in Assets/jtdd2/common
 
-Double Dragon II - The Revenge (World) --> ddragon2.rom
-Double Dragon II - The Revenge (Japan) --> ddragn2j.rom
-Double Dragon II - The Revenge (US) --> ddragn2u.rom
+Double Dragon II: The Revenge (World) --> ddragon2.rom
+Double Dragon II: The Revenge (US, bootleg) --> ddragn2b.rom
+Double Dragon II: The Revenge (Japan) --> ddragn2j.rom
+Double Dragon II: The Revenge (US) --> ddragn2u.rom
 
 
 These files are generated using the mra tool in:

@@ -5,13 +5,12 @@ The following arcade titles are compatible with this core. Generate
 the required .rom file using the mra tool (read below).
 Place the *.rom files in Assets/jtgunsmk/common
 
-Gun.Smoke (World, 851115) --> gunsmoke.rom
-Gun.Smoke (World, 851115) (bootleg) --> gunsmkeb.rom
-Gun.Smoke (Germany, censored) --> gunsmkeg.rom
-Gun.Smoke (Japan, 851115) --> gunsmkej.rom
-Gun.Smoke (US, 860408) --> gunsmkeu.rom
-Gun.Smoke (US, 851115, set 1) --> gunsmeua.rom
-Gun.Smoke (US, 851115, set 2) --> gunsmeub.rom
+Gun.Smoke (World, 1985-11-15) --> gunsmoke.rom
+Gun.Smoke (World, 1985-11-15) (bootleg) --> gunsmkeb.rom
+Gun.Smoke (Germany, 1985-11-15, censored) --> gunsmkeg.rom
+Gun.Smoke (Japan, 1985-11-15) --> gunsmkej.rom
+Gun.Smoke (USA and Canada, 1986-04-08) --> gunsmkeu.rom
+Gun.Smoke (USA and Canada, 1985-11-15, set 2) --> gunsmeuc.rom
 
 
 These files are generated using the mra tool in:

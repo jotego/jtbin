@@ -7,7 +7,6 @@ Place the *.rom files in Assets/jtvulgus/common
 
 Mach-9 (bootleg of Vulgus) --> mach9.rom
 Vulgus (set 1) --> vulgus.rom
-Vulgus (set 2) --> vulgusa.rom
 Vulgus (Japan?) --> vulgusj.rom
 
 
