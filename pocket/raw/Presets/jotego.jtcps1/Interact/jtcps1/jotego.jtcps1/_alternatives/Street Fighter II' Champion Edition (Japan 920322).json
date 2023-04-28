@@ -1,0 +1,278 @@
+{
+	"interact":{
+		"magic": "APF_VER_1",
+		"variables": [
+			{
+				"name": "Version",
+				"id": 1000,
+				"type": "number_u32",
+				"enabled": false,
+				"persist": false,
+				"address": "0xFF000000",
+				"defaultval": 0,
+				"value": 0
+			},
+			{
+				"name": "Coin A",
+				"id": 1,
+				"type": "list",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 7,
+				"value": 0,
+				"mask": "0xFFFFFFF8",
+				"options": [
+					{
+						"name": "4 Coins/1 Credit",
+						"value": "0x0"
+					},
+					{
+						"name": "3 Coins/1 Credit",
+						"value": "0x1"
+					},
+					{
+						"name": "2 Coins/1 Credit",
+						"value": "0x2"
+					},
+					{
+						"name": "1 Coin/6 Credits",
+						"value": "0x3"
+					},
+					{
+						"name": "1 Coin/4 Credits",
+						"value": "0x4"
+					},
+					{
+						"name": "1 Coin/3 Credits",
+						"value": "0x5"
+					},
+					{
+						"name": "1 Coin/2 Credits",
+						"value": "0x6"
+					},
+					{
+						"name": "1 Coin/1 Credit",
+						"value": "0x7"
+					}
+				]
+			},
+			{
+				"name": "Coin B",
+				"id": 2,
+				"type": "list",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 7,
+				"value": 0,
+				"mask": "0xFFFFFFC7",
+				"options": [
+					{
+						"name": "4 Coins/1 Credit",
+						"value": "0x0"
+					},
+					{
+						"name": "3 Coins/1 Credit",
+						"value": "0x8"
+					},
+					{
+						"name": "2 Coins/1 Credit",
+						"value": "0x10"
+					},
+					{
+						"name": "1 Coin/6 Credits",
+						"value": "0x18"
+					},
+					{
+						"name": "1 Coin/4 Credits",
+						"value": "0x20"
+					},
+					{
+						"name": "1 Coin/3 Credits",
+						"value": "0x28"
+					},
+					{
+						"name": "1 Coin/2 Credits",
+						"value": "0x30"
+					},
+					{
+						"name": "1 Coin/1 Credit",
+						"value": "0x38"
+					}
+				]
+			},
+			{
+				"name": "2 Coins to Start, 1 to Continue",
+				"id": 3,
+				"type": "check",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 0,
+				"value": 0,
+				"value_off": 64,
+				"mask": "0xFFFFFFBF"
+			},
+			{
+				"name": "Difficulty",
+				"id": 4,
+				"type": "list",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 4,
+				"value": 0,
+				"mask": "0xFFFFF8FF",
+				"options": [
+					{
+						"name": "7 (Hardest)",
+						"value": "0x0"
+					},
+					{
+						"name": "6",
+						"value": "0x100"
+					},
+					{
+						"name": "5",
+						"value": "0x200"
+					},
+					{
+						"name": "4",
+						"value": "0x300"
+					},
+					{
+						"name": "3 (Normal)",
+						"value": "0x400"
+					},
+					{
+						"name": "2",
+						"value": "0x500"
+					},
+					{
+						"name": "1",
+						"value": "0x600"
+					},
+					{
+						"name": "0 (Easiest)",
+						"value": "0x700"
+					}
+				]
+			},
+			{
+				"name": "2 Players Game",
+				"id": 5,
+				"type": "list",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 1,
+				"value": 0,
+				"mask": "0xFFFFF7FF",
+				"options": [
+					{
+						"name": "1 Credit/No Continue",
+						"value": "0x0"
+					},
+					{
+						"name": "2 Credits/Winner Continue",
+						"value": "0x800"
+					}
+				]
+			},
+			{
+				"name": "Free Play",
+				"id": 6,
+				"type": "check",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 0,
+				"value": 0,
+				"value_off": 262144,
+				"mask": "0xFFFBFFFF"
+			},
+			{
+				"name": "Freeze",
+				"id": 7,
+				"type": "check",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 0,
+				"value": 0,
+				"value_off": 524288,
+				"mask": "0xFFF7FFFF"
+			},
+			{
+				"name": "Flip Screen",
+				"id": 8,
+				"type": "check",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 0,
+				"value": 0,
+				"value_off": 1048576,
+				"mask": "0xFFEFFFFF"
+			},
+			{
+				"name": "Demo Sounds",
+				"id": 9,
+				"type": "check",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 1,
+				"value": 0,
+				"value_off": 2097152,
+				"mask": "0xFFDFFFFF"
+			},
+			{
+				"name": "Allow Continue",
+				"id": 10,
+				"type": "check",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 1,
+				"value": 0,
+				"value_off": 4194304,
+				"mask": "0xFFBFFFFF"
+			},
+			{
+				"name": "Game Mode",
+				"id": 11,
+				"type": "list",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 1,
+				"value": 0,
+				"mask": "0xFF7FFFFF",
+				"options": [
+					{
+						"name": "Test",
+						"value": "0x0"
+					},
+					{
+						"name": "Game",
+						"value": "0x800000"
+					}
+				]
+			},
+			{
+				"name": "Default",
+				"id": 1015,
+				"type": "number_u32",
+				"enabled": false,
+				"persist": false,
+				"writeonly": true,
+				"address": "0xfa000000",
+				"defaultval": 16776351,
+				"value": 0
+			}
+		],
+		"messages": []
+	}
+}

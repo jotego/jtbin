@@ -1,0 +1,199 @@
+{
+	"interact":{
+		"magic": "APF_VER_1",
+		"variables": [
+			{
+				"name": "Version",
+				"id": 1000,
+				"type": "number_u32",
+				"enabled": false,
+				"persist": false,
+				"address": "0xFF000000",
+				"defaultval": 0,
+				"value": 0
+			},
+			{
+				"name": "Rotate screen",
+				"id": 1,
+				"type": "check",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfb000000",
+				"defaultval": 4,
+				"value": 4,
+				"mask": "0xFFFFFFFB"
+			},
+			{
+				"name": "2 Coins to Start, 1 to Continue",
+				"id": 2,
+				"type": "check",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 0,
+				"value": 0,
+				"value_off": 64,
+				"mask": "0xFFFFFFBF"
+			},
+			{
+				"name": "Difficulty",
+				"id": 3,
+				"type": "list",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 4,
+				"value": 0,
+				"mask": "0xFFFFF8FF",
+				"options": [
+					{
+						"name": "7 (Hardest)",
+						"value": "0x0"
+					},
+					{
+						"name": "6",
+						"value": "0x100"
+					},
+					{
+						"name": "5",
+						"value": "0x200"
+					},
+					{
+						"name": "4",
+						"value": "0x300"
+					},
+					{
+						"name": "3 (Normal)",
+						"value": "0x400"
+					},
+					{
+						"name": "2",
+						"value": "0x500"
+					},
+					{
+						"name": "1",
+						"value": "0x600"
+					},
+					{
+						"name": "0 (Easiest)",
+						"value": "0x700"
+					}
+				]
+			},
+			{
+				"name": "Coin Slots",
+				"id": 4,
+				"type": "list",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 1,
+				"value": 0,
+				"mask": "0xFFFFF7FF",
+				"options": [
+					{
+						"name": "1",
+						"value": "0x0"
+					},
+					{
+						"name": "3",
+						"value": "0x800"
+					}
+				]
+			},
+			{
+				"name": "Play Mode",
+				"id": 5,
+				"type": "list",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 1,
+				"value": 0,
+				"mask": "0xFFFFEFFF",
+				"options": [
+					{
+						"name": "2 Players",
+						"value": "0x0"
+					},
+					{
+						"name": "3 Players",
+						"value": "0x1000"
+					}
+				]
+			},
+			{
+				"name": "Freeze",
+				"id": 6,
+				"type": "check",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 0,
+				"value": 0,
+				"value_off": 524288,
+				"mask": "0xFFF7FFFF"
+			},
+			{
+				"name": "Flip Screen",
+				"id": 7,
+				"type": "check",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 0,
+				"value": 0,
+				"value_off": 1048576,
+				"mask": "0xFFEFFFFF"
+			},
+			{
+				"name": "Demo Sounds",
+				"id": 8,
+				"type": "check",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 1,
+				"value": 0,
+				"value_off": 2097152,
+				"mask": "0xFFDFFFFF"
+			},
+			{
+				"name": "Allow Continue",
+				"id": 9,
+				"type": "check",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 1,
+				"value": 0,
+				"value_off": 4194304,
+				"mask": "0xFFBFFFFF"
+			},
+			{
+				"name": "Service Mode",
+				"id": 10,
+				"type": "check",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 0,
+				"value": 0,
+				"value_off": 8388608,
+				"mask": "0xFF7FFFFF"
+			},
+			{
+				"name": "Default",
+				"id": 1015,
+				"type": "number_u32",
+				"enabled": false,
+				"persist": false,
+				"writeonly": true,
+				"address": "0xfa000000",
+				"defaultval": 16776351,
+				"value": 0
+			}
+		],
+		"messages": []
+	}
+}

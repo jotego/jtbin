@@ -1,0 +1,184 @@
+{
+	"interact":{
+		"magic": "APF_VER_1",
+		"variables": [
+			{
+				"name": "Version",
+				"id": 1000,
+				"type": "number_u32",
+				"enabled": false,
+				"persist": false,
+				"address": "0xFF000000",
+				"defaultval": 0,
+				"value": 0
+			},
+			{
+				"name": "Demo Sounds",
+				"id": 1,
+				"type": "list",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 3,
+				"value": 0,
+				"mask": "0xFFFFFCFF",
+				"options": [
+					{
+						"name": "Off",
+						"value": "0x0"
+					},
+					{
+						"name": "Every 4",
+						"value": "0x100"
+					},
+					{
+						"name": "Every 2",
+						"value": "0x200"
+					},
+					{
+						"name": "On",
+						"value": "0x300"
+					}
+				]
+			},
+			{
+				"name": "Prize Mode",
+				"id": 2,
+				"type": "list",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 0,
+				"value": 0,
+				"mask": "0xFFFFFBFF",
+				"options": [
+					{
+						"name": "Not Used",
+						"value": "0x0"
+					},
+					{
+						"name": "Used",
+						"value": "0x400"
+					}
+				]
+			},
+			{
+				"name": "Credit Mode",
+				"id": 3,
+				"type": "check",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 0,
+				"value": 0,
+				"value_off": 2048,
+				"mask": "0xFFFFF7FF"
+			},
+			{
+				"name": "Max Stage",
+				"id": 4,
+				"type": "list",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 1,
+				"value": 0,
+				"mask": "0xFFFFEFFF",
+				"options": [
+					{
+						"name": "2",
+						"value": "0x0"
+					},
+					{
+						"name": "3",
+						"value": "0x1000"
+					}
+				]
+			},
+			{
+				"name": "Card Check",
+				"id": 5,
+				"type": "check",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 0,
+				"value": 0,
+				"value_off": 8192,
+				"mask": "0xFFFFDFFF"
+			},
+			{
+				"name": "Body Check",
+				"id": 6,
+				"type": "check",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 0,
+				"value": 0,
+				"value_off": 131072,
+				"mask": "0xFFFDFFFF"
+			},
+			{
+				"name": "Screen Stop",
+				"id": 7,
+				"type": "check",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 0,
+				"value": 0,
+				"value_off": 524288,
+				"mask": "0xFFF7FFFF"
+			},
+			{
+				"name": "Flip Screen",
+				"id": 8,
+				"type": "check",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 0,
+				"value": 0,
+				"value_off": 1048576,
+				"mask": "0xFFEFFFFF"
+			},
+			{
+				"name": "Service Mode",
+				"id": 9,
+				"type": "check",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 0,
+				"value": 0,
+				"value_off": 8388608,
+				"mask": "0xFF7FFFFF"
+			},
+			{
+				"name": "Service Mode",
+				"id": 10,
+				"type": "check",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 0,
+				"value": 0,
+				"value_off": 1073741824,
+				"mask": "0xBFFFFFFF"
+			},
+			{
+				"name": "Default",
+				"id": 1015,
+				"type": "number_u32",
+				"enabled": false,
+				"persist": false,
+				"writeonly": true,
+				"address": "0xfa000000",
+				"defaultval": 2147483647,
+				"value": 0
+			}
+		],
+		"messages": []
+	}
+}
