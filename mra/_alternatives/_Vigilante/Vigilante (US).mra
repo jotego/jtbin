@@ -32,7 +32,7 @@
     <rotation>horizontal</rotation>
     <region>World</region>
     <mraauthor>jotego</mraauthor>
-    <rom index="0" zip="vigilanto.zip|vigilant.zip" md5="None">
+    <rom index="0" zip="vigilanto.zip|vigilant.zip" md5="None" asm_md5="96f203c2b9dafd289200c67e6dd705d7">
         <!-- maincpu - starts at 0x0 - length 0x20000 (17 bits) -->
         <part name="vg_a-8h-.ic55" crc="8d15109e"/>
         <part name="vg_a-8l-.ic57" crc="7f95799b"/>

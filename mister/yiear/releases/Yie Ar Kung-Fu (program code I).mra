@@ -5,7 +5,7 @@
               This work is not mantained by the MiSTer project. Please contact the
               core author for issues and updates.
 
-              (c) Jose Tejada, 2022. Please support this research
+              (c) Jose Tejada, 2023. Please support this research
               Patreon: https://patreon.com/jotego
 
               The author does not endorse or participate in illegal distribution
@@ -24,7 +24,7 @@
     <name>Yie Ar Kung-Fu (program code I)</name>
     <setname>yiear</setname>
     <rbf>jtyiear</rbf>
-    <mameversion>0237</mameversion>
+    <mameversion>0251</mameversion>
     <year>1985</year>
     <manufacturer>Konami</manufacturer>
     <players>2</players>
@@ -32,8 +32,8 @@
     <rotation>horizontal</rotation>
     <region>World</region>
     <mraauthor>jotego</mraauthor>
-    <rom index="0" zip="yiear.zip" md5="None">
-        <!-- maincpu - starts at 0x0 -->
+    <rom index="0" zip="yiear.zip" md5="None" asm_md5="afb55d95baedbc4da89fc628d6586861">
+        <!-- maincpu - starts at 0x0 - length 0x10000 (16 bits) -->
         <part repeat="0x8000"> FF</part>
         <interleave output="16">
             <part name="407_i08.10d" crc="e2d7458b" map="12"/>
@@ -41,12 +41,14 @@
         <interleave output="16">
             <part name="407_i07.8d" crc="7db7442e" map="12"/>
         </interleave>
-        <!-- gfx1 - starts at 0x10000 -->
+        <!-- SCR_START -->
+        <!-- tiles - starts at 0x10000 - length 0x4000 (14 bits) -->
         <interleave output="16">
             <part name="407_c01.6h" crc="b68fd91d" map="01"/>
             <part name="407_c02.7h" crc="d9b167c6" map="10"/>
         </interleave>
-        <!-- gfx2 - starts at 0x14000 -->
+        <!-- OBJ_START -->
+        <!-- sprites - starts at 0x14000 - length 0x10000 (16 bits) -->
         <interleave output="16">
             <part name="407_d05.16h" crc="45109b29" map="01"/>
             <part name="407_d03.14h" crc="e6aa945b" map="10"/>
@@ -55,11 +57,13 @@
             <part name="407_d06.17h" crc="1d650790" map="01"/>
             <part name="407_d04.15h" crc="cc187c22" map="10"/>
         </interleave>
-        <!-- vlm - starts at 0x24000 -->
+        <!-- PCM_START -->
+        <!-- vlm - starts at 0x24000 - length 0x2000 (13 bits) -->
         <interleave output="16">
             <part name="407_c09.8b" crc="f75a1539" map="12"/>
         </interleave>
-        <!-- proms - starts at 0x26000 -->
+        <!-- JTFRAME_PROM_START -->
+        <!-- proms - starts at 0x26000 - length 0x20 (5 bits) -->
         <part name="407c10.1g" crc="c283d71f"/>
         <!-- Total 0x26020 bytes - 152 kBytes -->
     </rom>

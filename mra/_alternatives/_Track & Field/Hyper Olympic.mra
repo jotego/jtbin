@@ -5,7 +5,7 @@
               This work is not mantained by the MiSTer project. Please contact the
               core author for issues and updates.
 
-              (c) Jose Tejada, 2022. Please support this research
+              (c) Jose Tejada, 2023. Please support this research
               Patreon: https://patreon.com/jotego
 
               The author does not endorse or participate in illegal distribution
@@ -24,7 +24,7 @@
     <name>Hyper Olympic</name>
     <setname>hyprolym</setname>
     <rbf>jttrack</rbf>
-    <mameversion>0237</mameversion>
+    <mameversion>0251</mameversion>
     <year>1983</year>
     <manufacturer>Konami</manufacturer>
     <players>4</players>
@@ -32,17 +32,19 @@
     <rotation>horizontal</rotation>
     <region>World</region>
     <mraauthor>jotego</mraauthor>
-    <rom index="0" zip="hyprolym.zip|trackfld.zip" md5="None">
-        <!-- maincpu - starts at 0x0 -->
+    <rom index="0" zip="hyprolym.zip|trackfld.zip" md5="None" asm_md5="04fc8923e60a5b5aff5ac48f2371b903">
+        <!-- maincpu - starts at 0x0 - length 0x10000 (16 bits) -->
         <part repeat="0x6000"> FF</part>
         <part name="361-d01.a01" crc="82257fb7"/>
         <part name="361-d02.a02" crc="15b83099"/>
         <part name="361-d03.a03" crc="e54cc960"/>
         <part name="361-d04.a04" crc="d099b1e8"/>
         <part name="361-d05.a05" crc="974ff815"/>
-        <!-- audiocpu - starts at 0x10000 -->
+        <!-- SND_START -->
+        <!-- audiocpu - starts at 0x10000 - length 0x2000 (13 bits) -->
         <part name="c2_d13.bin" crc="95bf79b6"/>
-        <!-- gfx2 - starts at 0x12000 -->
+        <!-- SCR_START -->
+        <!-- gfx2 - starts at 0x12000 - length 0xE000 (16 bits) -->
         <interleave output="16">
             <part name="361-d12.h16" crc="768bb63d" map="12"/>
         </interleave>
@@ -53,7 +55,8 @@
             <part name="h14_e10.bin" crc="c2166a5c" map="12"/>
         </interleave>
         <part repeat="0x8000"> FF</part>
-        <!-- gfx1 - starts at 0x20000 -->
+        <!-- OBJ_START -->
+        <!-- gfx1 - starts at 0x20000 - length 0x10000 (16 bits) -->
         <interleave output="16">
             <part name="c11_d06.bin" crc="82e2185a" map="01"/>
             <part name="c13_d08.bin" crc="d9faf183" map="10"/>
@@ -63,9 +66,11 @@
             <part name="c14_d09.bin" crc="5886c802" map="10"/>
         </interleave>
         <part repeat="0x8000"> FF</part>
-        <!-- vlm - starts at 0x30000 -->
+        <!-- PCM_START -->
+        <!-- vlm - starts at 0x30000 - length 0x2000 (13 bits) -->
         <part name="c9_d15.bin" crc="f546a56b"/>
-        <!-- proms - starts at 0x32000 -->
+        <!-- JTFRAME_PROM_START -->
+        <!-- proms - starts at 0x32000 - length 0x220 (10 bits) -->
         <part name="361b16.f1" crc="d55f30b5"/>
         <part name="361b17.b16" crc="d2ba4d32"/>
         <part name="361b18.e15" crc="053e5861"/>
@@ -83,7 +88,7 @@
         <dip name="Lives" bits="8" ids="2,1"/>
         <dip name="After ending" bits="9" ids="Game Continues,Game Over"/>
         <dip name="Cabinet" bits="10" ids="Upright,Cocktail"/>
-        <dip name="Bonus Life" bits="11" ids="10k0,None"/>
+        <dip name="Bonus Life" bits="11" ids="100k,None"/>
         <dip name="Records" bits="12" ids="Erase on Reset,Don&apos;t Erase"/>
         <dip name="Difficulty" bits="13,14" ids="Difficult,Hard,Normal,Easy"/>
         <dip name="Demo Sounds" bits="15" ids="On,Off"/>

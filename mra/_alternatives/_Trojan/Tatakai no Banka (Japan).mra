@@ -1,17 +1,17 @@
-<!--          FPGA compatible core of arcade hardware by Jotego
+<!--          FPGA arcade hardware by Jotego
 
               This core is available for hardware compatible with MiST and MiSTer
               Other FPGA systems may be supported by the time you read this.
               This work is not mantained by the MiSTer project. Please contact the
               core author for issues and updates.
 
-              (c) Jose Tejada, 2020. Please support the author
+              (c) Jose Tejada, 2023. Please support this research
               Patreon: https://patreon.com/jotego
-              Paypal:  https://paypal.me/topapate
 
               The author does not endorse or participate in illegal distribution
-              of copyrighted material. This work can be used with legally
-              obtained ROM dumps or with compatible homebrew software
+              of copyrighted material. This work can be used with compatible
+              software. This software can be homebrew projects or legally
+              obtained memory dumps of compatible games.
 
               This file license is GNU GPLv2.
               You can read the whole license file in
@@ -22,40 +22,45 @@
 <misterromdescription>
     <about author="jotego" webpage="https://patreon.com/jotego" source="https://github.com/jotego" twitter="@topapate"/>
     <name>Tatakai no Banka (Japan)</name>
-    <mameversion>0217</mameversion>
     <setname>trojanj</setname>
+    <rbf>jttrojan</rbf>
+    <mameversion>0251</mameversion>
     <year>1986</year>
     <manufacturer>Capcom</manufacturer>
-    <category>Hack n Slash</category>
-    <rbf>jttrojan</rbf>
-    <rom index="0" zip="trojanj.zip|trojan.zip" type="merged" md5="None">
+    <players>2</players>
+    <joystick>8</joystick>
+    <rotation>horizontal</rotation>
+    <region>World</region>
+    <mraauthor>jotego</mraauthor>
+    <rom index="0" zip="trojanj.zip|trojan.zip" md5="None" asm_md5="df7d169ef609f4991cecf6f08fce2f98">
         <part>
-        02 00 00 00 00 00 00 00 
-        01 80 04 00 04 40 08 40 
-        0c 40 00 00 00 00 00 00 
-        00 00 00 00 00 00 00 00 
+            02 00 00 00 00 00 00 00
+            01 80 04 00 04 40 08 40
+            0C 40 00 00 00 00 00 00
+            00 00 00 00 00 00 00 00
         </part>
-        <!-- maincpu - starts at 0x0 -->
+        <!-- maincpu - starts at 0x0 - length 0x18000 (17 bits) -->
         <part name="troj-06.13n" crc="dee6ed92"/>
         <part name="tb05.12n" crc="9273b264"/>
         <part name="troj-04.10n" crc="0b5a7f49"/>
-        <!-- soundcpu - starts at 0x18000 -->
+        <!-- soundcpu - starts at 0x18000 - length 0x8000 (15 bits) -->
         <part name="tb02.15h" crc="21154797"/>
-        <!-- adpcm - starts at 0x20000 -->
+        <!-- adpcm - starts at 0x20000 - length 0x4000 (14 bits) -->
         <part name="tb01.6d" crc="1c0f91b2"/>
-        <!-- gfx5 - starts at 0x24000 -->
+        <!-- gfx5 - starts at 0x24000 - length 0x8000 (15 bits) -->
         <interleave output="16">
             <part name="tb23.9n" crc="eda13c0e" map="12"/>
         </interleave>
-        <!-- gfx4 - starts at 0x2C000 -->
+        <!-- gfx4 - starts at 0x2C000 - length 0x14000 (17 bits) -->
         <interleave output="16">
             <part name="tb25.15n" crc="6e38c6fa" map="01"/>
             <part name="tb24.13n" crc="14fc6cf2" map="10"/>
         </interleave>
-        <part repeat="0x4000">FF</part>
-        <!-- gfx1 - starts at 0x40000 -->
+        <part repeat="0x4000"> FF</part>
+        <!-- CHAR_START -->
+        <!-- gfx1 - starts at 0x40000 - length 0x4000 (14 bits) -->
         <part name="tb03.8k" crc="581a2b4c"/>
-        <!-- gfx2 - starts at 0x44000 -->
+        <!-- gfx2 - starts at 0x44000 - length 0x40000 (18 bits) -->
         <interleave output="32">
             <part name="tb14.8b" crc="14bfac18" map="0001"/>
             <part name="tb11.3b" crc="00f0f4fd" map="0010"/>
@@ -68,7 +73,7 @@
             <part name="tb08.4a" crc="d3a4c9d1" map="0100"/>
             <part name="tb09.6a" crc="aeb693f7" map="1000"/>
         </interleave>
-        <!-- gfx3 - starts at 0x84000 -->
+        <!-- gfx3 - starts at 0x84000 - length 0x40000 (18 bits) -->
         <interleave output="16">
             <part name="tb18.7l" crc="862c4713" map="01"/>
             <part name="tb22.7n" crc="39daafd4" map="10"/>
@@ -85,7 +90,7 @@
             <part name="tb15.2l" crc="bb1a2769" map="01"/>
             <part name="tb19.2n" crc="81d5ab36" map="10"/>
         </interleave>
-        <!-- proms - starts at 0xC4000 -->
+        <!-- proms - starts at 0xC4000 - length 0x200 (9 bits) -->
         <part name="tbp24s10.7j" crc="d96bcc98"/>
         <part name="mb7114e.1e" crc="5052fa9d"/>
         <!-- Total 0xC4200 bytes - 784 kBytes -->
@@ -93,11 +98,11 @@
     <rom index="1">
         <part>00</part>
     </rom>
-    <switches default="FF,FF" base="16">
+    <switches page_id="1" page_name="Switches" base="16" default="fc,ff">
         <!-- DSWA -->
-        <dip name="Cabinet" bits="0,1" ids="Upright 1 Player,Upright 2 Players,Cocktail"/>
+        <dip name="Cabinet" bits="0,1" ids="Upright 1 Player,-,Upright 2 Players,Cocktail"/>
         <dip name="Bonus Life" bits="2,4" ids="None,40k 80k,20k 80k,20k 70k,20k 60k,30k 80k,30k 70k,30k 60k"/>
-        <dip name="Starting Level" bits="5,7" ids="6,5,4,3,2,1"/>
+        <dip name="Starting Level" bits="5,7" ids="-,-,6,5,4,3,2,1"/>
         <!-- DSWB -->
         <dip name="Coin A" bits="8,9" ids="2/1,1/3,1/2,1/1"/>
         <dip name="Coin B" bits="10,11" ids="4/1,3/1,2/1,1/1"/>
@@ -105,5 +110,5 @@
         <dip name="Flip Screen" bits="14" ids="On,Off"/>
         <dip name="Allow Continue" bits="15" ids="No,Yes"/>
     </switches>
-    <buttons names="Fire,Jump,Start,Coin,Pause" default="Y,X,R,L,Start"/>
+    <buttons names="Attack,Jump,Start,Coin,Core credits" default="Y,X,Start,Select,-" count="2"/>
 </misterromdescription>

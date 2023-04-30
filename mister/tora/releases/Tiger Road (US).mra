@@ -95,7 +95,7 @@
         <dip name="Service Mode" bits="6" ids="On,Off"/>
         <dip name="Lives" bits="8,9" ids="7,5,4,3"/>
         <dip name="Bonus Life" bits="11,12" ids="30k 90k 90k,30k 80k 80k,20k 80k 80k,20k 70k 70k"/>
-        <dip name="Difficulty" bits="13,14" ids="Difficult,Very Easy,Easy,Normal "/>
+        <dip name="Difficulty" bits="13,14" ids="Difficult,Very Easy,Easy,Normal"/>
         <dip name="Allow Continue" bits="15" ids="No,Yes"/>
     </switches>
     <buttons names="Attack,Jump,Start,Coin,Core credits" default="Y,X,Start,Select,-" count="2"/>
