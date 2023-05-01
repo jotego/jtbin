@@ -5,7 +5,7 @@
               This work is not mantained by the MiSTer project. Please contact the
               core author for issues and updates.
 
-              (c) Jose Tejada, 2022. Please support this research
+              (c) Jose Tejada, 2023. Please support this research
               Patreon: https://patreon.com/jotego
 
               The author does not endorse or participate in illegal distribution
@@ -21,10 +21,10 @@
 
 <misterromdescription>
     <about author="jotego" webpage="https://patreon.com/jotego" source="https://github.com/jotego" twitter="@topapate"/>
-    <name>Boulder Dash / Boulder Dash Part 2 (World)</name>
+    <name>Boulder Dash - Boulder Dash Part 2 (World)</name>
     <setname>bouldash</setname>
     <rbf>jtslyspy</rbf>
-    <mameversion>0237</mameversion>
+    <mameversion>0251</mameversion>
     <year>1990</year>
     <manufacturer>Data East Corporation (licensed from First Star)</manufacturer>
     <players>2</players>
@@ -32,7 +32,7 @@
     <rotation>horizontal</rotation>
     <region>World</region>
     <mraauthor>jotego</mraauthor>
-    <rom index="0" zip="bouldash.zip" md5="None">
+    <rom index="0" zip="bouldash.zip" md5="None" asm_md5="8b470f64f4920165a6461f9ca169c933">
         <!-- maincpu - starts at 0x0 - length 0x80000 (19 bits) -->
         <interleave output="16">
             <part name="fw-12-2.9l" crc="242bdc2a" map="01"/>
@@ -47,39 +47,52 @@
             <part name="fw-17-2.20l" crc="78a632a1" map="10"/>
         </interleave>
         <part repeat="0x20000"> FF</part>
+        <!-- SND_START -->
         <!-- audiocpu - starts at 0x80000 - length 0x10000 (16 bits) -->
         <part name="fn-10" crc="c74106e7"/>
+        <!-- PCM_START -->
         <!-- oki - starts at 0x90000 - length 0x20000 (17 bits) -->
         <part name="fn-11" crc="990fd8d9"/>
         <part repeat="0x10000"> FF</part>
+        <!-- BA2_START -->
         <!-- gfx1 - starts at 0xB0000 - length 0x20000 (17 bits) -->
         <interleave output="16">
             <part name="fn-04" crc="40f5a760" map="01"/>
             <part name="fn-05" crc="824f2168" map="10"/>
         </interleave>
+        <!-- GFX2_START -->
         <!-- gfx2 - starts at 0xD0000 - length 0x80000 (19 bits) -->
         <interleave output="16">
             <part name="fn-07" crc="eac6a3b3" map="01"/>
             <part name="fn-06" crc="3feee292" map="10"/>
         </interleave>
         <part repeat="0x60000"> FF</part>
+        <!-- GFX3_START -->
         <!-- gfx3 - starts at 0x150000 - length 0x40000 (18 bits) -->
         <interleave output="16">
             <part name="fn-09" crc="c2b27bd2" map="01"/>
             <part name="fn-08" crc="5ac97178" map="10"/>
         </interleave>
-        <!-- gfx4 - starts at 0x190000 - length 0x98000 (20 bits) -->
+        <!-- BA3_START -->
+        <!-- gfx4 - starts at 0x190000 - length 0x80000 (19 bits) -->
         <interleave output="32">
             <part name="fn-01" crc="9333121b" map="0001"/>
             <part name="fn-00" crc="ec18d098" map="0010"/>
             <part name="fn-03" crc="254ba60f" map="0100"/>
             <part name="fn-02" crc="4f060cba" map="1000"/>
         </interleave>
-        <part repeat="0x58000"> FF</part>
+        <part repeat="0x40000"> FF</part>
+        <!-- MCU_START -->
+        <!-- mcu - starts at 0x210000 -->
+        <!-- MCU_START -->
+        <!-- sub - starts at 0x210000 - length 0x18000 (17 bits) -->
+        <part repeat="0x18000"> FF</part>
+        <!-- JTFRAME_PROM_START -->
         <!-- proms - starts at 0x228000 - length 0x100 (8 bits) -->
         <part name="ta-16.21k" crc="ad26e8d4"/>
         <!-- Total 0x228100 bytes - 2208 kBytes -->
     </rom>
+    <nvram index="2" size="63552"/>
     <rom index="1">
         <part>00</part>
     </rom>
@@ -95,5 +108,5 @@
         <dip name="Allow Continue" bits="14" ids="No,Yes"/>
         <dip name="Demo Sounds" bits="15" ids="On,Off"/>
     </switches>
-    <buttons names="button 1,button 2,-,-,-,Start,Coin,Core credits" default="Y,X,B,A,R,Start,Select,-" count="2"/>
+    <buttons names="Shot,Jump,-,-,-,Start,Coin,Core credits" default="Y,X,B,A,R,Start,Select,-" count="2"/>
 </misterromdescription>
