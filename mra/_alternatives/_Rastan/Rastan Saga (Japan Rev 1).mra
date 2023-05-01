@@ -5,7 +5,7 @@
               This work is not mantained by the MiSTer project. Please contact the
               core author for issues and updates.
 
-              (c) Jose Tejada, 2022. Please support this research
+              (c) Jose Tejada, 2023. Please support this research
               Patreon: https://patreon.com/jotego
 
               The author does not endorse or participate in illegal distribution
@@ -24,7 +24,7 @@
     <name>Rastan Saga (Japan Rev 1)</name>
     <setname>rastsaga</setname>
     <rbf>jtrastan</rbf>
-    <mameversion>0237</mameversion>
+    <mameversion>0251</mameversion>
     <year>1987</year>
     <manufacturer>Taito Corporation</manufacturer>
     <players>2</players>
@@ -32,7 +32,7 @@
     <rotation>horizontal</rotation>
     <region>World</region>
     <mraauthor>jotego</mraauthor>
-    <rom index="0" zip="rastsaga.zip|rastan.zip" md5="None">
+    <rom index="0" zip="rastsaga.zip|rastan.zip" md5="None" asm_md5="7fdd1b89b170b25228033a3064f3d6e5">
         <!-- maincpu - starts at 0x0 - length 0x60000 (19 bits) -->
         <interleave output="16">
             <part name="b04-31.7" crc="4c62e89e" map="01"/>
@@ -46,10 +46,13 @@
             <part name="b04-35.9" crc="ee5ec5bc" map="01"/>
             <part name="b04-36.21" crc="32e286c0" map="10"/>
         </interleave>
+        <!-- SND_START -->
         <!-- audiocpu - starts at 0x60000 - length 0x10000 (16 bits) -->
         <part name="b04-19.49" crc="ee81fdd8"/>
+        <!-- PCM_START -->
         <!-- adpcm - starts at 0x70000 - length 0x10000 (16 bits) -->
         <part name="b04-20.76" crc="fd1a34cc"/>
+        <!-- SCR_START -->
         <!-- pc080sn - starts at 0x80000 - length 0x80000 (19 bits) -->
         <interleave output="16">
             <part name="b04-01.40" crc="cd30de19" map="01"/>
@@ -59,6 +62,7 @@
             <part name="b04-03.39" crc="ab67e064" map="01"/>
             <part name="b04-04.66" crc="94737e93" map="10"/>
         </interleave>
+        <!-- OBJ_START -->
         <!-- pc090oj - starts at 0x100000 - length 0x80000 (19 bits) -->
         <interleave output="16">
             <part name="b04-05.15" crc="c22d94ac" map="01"/>
@@ -70,7 +74,6 @@
         </interleave>
         <!-- Total 0x180000 bytes - 1536 kBytes -->
     </rom>
-    <nvram index="2" size="2048"/>
     <rom index="1">
         <part>00</part>
     </rom>
@@ -83,7 +86,7 @@
         <dip name="Coin B" bits="6,7" ids="2/3,2/1,1/2,1/1"/>
         <!-- DSWB -->
         <dip name="Difficulty" bits="8,9" ids="Hardest,Hard,Easy,Medium"/>
-        <dip name="Bonus Life" bits="10,11" ids="250k 500k 1000k 1500k 2000k,200k 400k 800k 1200k 1600k,150k 300k 600k 900k 1200k,100k 200k 400k 600k 800k"/>
+        <dip name="1PUP" bits="10,11" ids="250 500 1000 1500 2000,200 400 800 1200 1600,150 300 600 900 1200,100 200 400 600 800"/>
         <dip name="Lives" bits="12,13" ids="6,5,4,3"/>
         <dip name="Allow Continue" bits="14" ids="Off,On"/>
     </switches>

@@ -21,30 +21,30 @@
 
 <misterromdescription>
     <about author="jotego" webpage="https://patreon.com/jotego" source="https://github.com/jotego" twitter="@topapate"/>
-    <name>Rastan (World)</name>
-    <setname>rastana</setname>
+    <name>Rastan (US, earlier code base)</name>
+    <setname>rastanub</setname>
     <rbf>jtrastan</rbf>
     <mameversion>0251</mameversion>
     <year>1987</year>
-    <manufacturer>Taito Corporation Japan</manufacturer>
+    <manufacturer>Taito America Corporation</manufacturer>
     <players>2</players>
     <joystick>8</joystick>
     <rotation>horizontal</rotation>
     <region>World</region>
     <mraauthor>jotego</mraauthor>
-    <rom index="0" zip="rastana.zip|rastan.zip" md5="None" asm_md5="6148baf634a68bea12bff06df7027469">
+    <rom index="0" zip="rastanub.zip|rastan.zip" md5="None" asm_md5="8e91337be3271303c15d0ac7e5299c4a">
         <!-- maincpu - starts at 0x0 - length 0x60000 (19 bits) -->
         <interleave output="16">
-            <part name="b04-37.7" crc="ecf20bdd" map="01"/>
-            <part name="b04-38.19" crc="1c91dbb1" map="10"/>
+            <part name="b04-21.7" crc="7c8dde9a" map="01"/>
+            <part name="b04-14.19" crc="a38ac909" map="10"/>
         </interleave>
         <interleave output="16">
-            <part name="b04-39.8" crc="d95ade5e" map="01"/>
-            <part name="b04-40.20" crc="0930d4b3" map="10"/>
+            <part name="b04-22.8" crc="98e8edcf" map="01"/>
+            <part name="b04-23.20" crc="254b3dce" map="10"/>
         </interleave>
         <interleave output="16">
-            <part name="b04-43.9" crc="c34b9152" map="01"/>
-            <part name="b04-42.21" crc="1857a7cb" map="10"/>
+            <part name="b04-24.9" crc="a3dcc106" map="01"/>
+            <part name="b04-25.21" crc="d1e5adee" map="10"/>
         </interleave>
         <!-- SND_START -->
         <!-- audiocpu - starts at 0x60000 - length 0x10000 (16 bits) -->
