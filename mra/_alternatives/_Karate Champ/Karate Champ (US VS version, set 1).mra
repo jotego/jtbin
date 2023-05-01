@@ -82,6 +82,7 @@
         <part name="br26.k9" crc="3ddbb6c4"/>
         <part name="br25.k8" crc="ba4a5651"/>
         <!-- Total 0x60300 bytes - 384 kBytes -->
+        <patch offset="0x0">69 6e B4</patch>
     </rom>
     <!-- Vertical game -->
     <rom index="1">
