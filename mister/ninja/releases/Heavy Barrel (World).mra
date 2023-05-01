@@ -5,7 +5,7 @@
               This work is not mantained by the MiSTer project. Please contact the
               core author for issues and updates.
 
-              (c) Jose Tejada, 2022. Please support this research
+              (c) Jose Tejada, 2023. Please support this research
               Patreon: https://patreon.com/jotego
 
               The author does not endorse or participate in illegal distribution
@@ -24,7 +24,7 @@
     <name>Heavy Barrel (World)</name>
     <setname>hbarrel</setname>
     <rbf>jtninja</rbf>
-    <mameversion>0237</mameversion>
+    <mameversion>0251</mameversion>
     <year>1987</year>
     <manufacturer>Data East Corporation</manufacturer>
     <players>2</players>
@@ -32,7 +32,7 @@
     <rotation>vertical (ccw)</rotation>
     <region>World</region>
     <mraauthor>jotego</mraauthor>
-    <rom index="0" zip="hbarrel.zip" md5="None">
+    <rom index="0" zip="hbarrel.zip" md5="None" asm_md5="c064f3fc2e628fa68953a5a81700539b">
         <!-- maincpu - starts at 0x0 - length 0x80000 (19 bits) -->
         <interleave output="16">
             <part name="ec01-e.3a" crc="6756f8ae" map="01"/>
@@ -47,17 +47,21 @@
             <part name="ec06.6c" crc="61ec20d8" map="10"/>
         </interleave>
         <part repeat="0x20000"> FF</part>
+        <!-- SND_START -->
         <!-- audiocpu - starts at 0x80000 - length 0x10000 (16 bits) -->
         <part name="ec07.8a" crc="16a5a1aa"/>
         <part repeat="0x8000"> FF</part>
+        <!-- PCM_START -->
         <!-- oki - starts at 0x90000 - length 0x20000 (17 bits) -->
         <part name="ec08.2c" crc="2159a609"/>
         <part repeat="0x10000"> FF</part>
+        <!-- BA2_START -->
         <!-- gfx1 - starts at 0xB0000 - length 0x20000 (17 bits) -->
         <interleave output="16">
             <part name="ec25.15h" crc="2e5732a2" map="01"/>
             <part name="ec26.16h" crc="161a2c4d" map="10"/>
         </interleave>
+        <!-- GFX2_START -->
         <!-- gfx2 - starts at 0xD0000 - length 0x80000 (19 bits) -->
         <interleave output="16">
             <part name="ec18.14d" crc="ef664373" map="01"/>
@@ -75,6 +79,7 @@
             <part name="ec19.15d" crc="d6b47869" map="01"/>
             <part name="ec23.15f" crc="bbdaf771" map="10"/>
         </interleave>
+        <!-- GFX3_START -->
         <!-- gfx3 - starts at 0x150000 - length 0x40000 (18 bits) -->
         <interleave output="16">
             <part name="ec30.9h" crc="5855e8ef" map="01"/>
@@ -84,6 +89,7 @@
             <part name="ec29.8h" crc="5514b296" map="01"/>
             <part name="ec27.8f" crc="99db7b9c" map="10"/>
         </interleave>
+        <!-- BA3_START -->
         <!-- gfx4 - starts at 0x190000 - length 0x80000 (19 bits) -->
         <interleave output="32">
             <part name="ec15.16c" crc="21816707" map="0001"/>
@@ -97,17 +103,57 @@
             <part name="ec14.14c" crc="bedfe7f3" map="0100"/>
             <part name="ec10.14a" crc="47d95447" map="1000"/>
         </interleave>
+        <!-- MCU_START -->
         <!-- mcu - starts at 0x210000 - length 0x18000 (17 bits) -->
         <part name="ec31-e.9a" crc="bf93a2ec"/>
         <part repeat="0x17000"> FF</part>
+        <!-- JTFRAME_PROM_START -->
         <!-- proms - starts at 0x228000 - length 0x600 (11 bits) -->
         <part name="mb7116e.12c" crc="86e775f8"/>
         <part name="mb7122e.17e" crc="a5cda23e"/>
         <!-- Total 0x228600 bytes - 2209 kBytes -->
     </rom>
+    <!-- Machine code for the Picoblaze CPU -->
+    <rom index="16">
+        <part>
+            00 1B 04 40 B0 00 6D 38 80 00 10 04 C0 0B 04 2D 20 24 20 30 2C 80 1C 01 22 40 2C 20 D1 44 80 0C
+            00 EF 04 80 06 20 02 C0 6B 00 22 8B 06 00 DA 5D 80 1D B0 51 0E AC 00 17 80 02 98 04 2B C2 05 A0
+            00 66 C1 0A 71 01 28 80 69 B0 0A 40 F0 10 C9 32 80 2C 9A C0 68 C7 02 76 80 2E 04 DA B1 80 1C A0
+            51 80 BE 01 BA 10 68 57 03 36 84 04 11 11 0C 43 00 41 01 C4 04 02 15 40 68 22 B0 0B E8 72 43 20
+            0B E8 1B A0 DD 10 D8 10 12 04 44 B0 00 C1 3F 05 FF 13 00 54 D0 0E 20 80 04 00 11 04 40 80 0F 60
+            1E AC 01 10 C0 05 B0 0C 20 58 00 CB 00 92 58 B7 06 76 1A AC 06 10 70 44 B2 0C 60 47 24 CB 00 72
+            48 D2 31 49 1B 80 10 12 00 44 30 03 01 04 2D FF D4 81 81 1C 50 41 3B 80 4C 92 34 4D D2 06 20 84
+            04 00 11 54 41 00 41 CB 3F 75 6B 20 07 54 D0 0E A0 C1 B6 00 50 82 00 00 08 03 1D D8 20 00 00 41
+            37 08 FE 1D 88 20 00 00 43 F7 08 3A 0C 00 C0 D0 6D 82 0F 08 83 1F C8 00 10 78 82 08 03 00 10 74
+            9B A0 43 40 E0 09 22 0C 00 80 30 34 82 0D 03 00 10 74 8B A0 33 40 E0 09 22 02 04 9E 20 12 40 E0
+            09 22 0C 00 80 30 64 82 0D 03 00 10 74 97 A0 53 40 E0 09 22 06 04 9E 20 72 40 E0 09 E2 3F 04 10
+            F0 02 40 09 01 2F 00 94 02 10 14 4C 00 37 50 2E 80 02 10 1D 4C 00 37 50 2E 80 04 10 01 4C 00 37
+            50 31 80 01 10 05 4C 00 37 50 31 80 01 10 09 4C 00 37 50 31 80 01 10 0D 4C 00 37 50 31 80 00 50
+            32 4C 0B 30 11 C0 44 0D 91 2C 03 18 30 19 C3 B4 00 13 01 4C D4 10 C9 32 80 00 50 32 4C 0B 30 11
+            C0 44 0D 91 2C 03 08 00 25 02 B4 10 02 38 08 E5 20 94 83 50 0E 42 61 03 18 00 11 02 B4 10 02 60
+            03 18 00 11 00 94 0F 32 28 48 E7 0D BE 37 C8 10 12 7D 83 78 21 91 82 B4 00 50 C6 40 10 13 01 80
+            04 31 11 20 40 9B 10 AD 82 B4 01 91 99 83 1F 00 19 39 F8 00 50 16 54 4B 40 ED C0 B4 02 D2 06 44
+            0B 00 2D 70 B4 80 9F 00 7F 03 00 31 3D 88 02 D2 06 44 0B 00 2D 60 B4 80 9F 00 7F C3 0F B6 81 25
+            07 97 00 40 29 10 A2 40 88 02 21 0A 84 28 10 A2 40 88 02 21 0A 84 28 10 A2 40 88 02 21 0A 84 28
+            10 A2 40 88 02 21 0A 84 28 10 A2 40 88 02 21 0A 84 28 10 A2 40 88 02 21 0A 84 28 10 A2 40 88 02
+            21 0A 84 28 10 A2 40 88 02 21 0A 84 28 10 A2 40 88 02 21 0A 84 28 10 A2 40 88 02 21 0A 84 28 10
+            A2 40 88 02 21 0A 84 28 10 A2 40 88 02 21 0A 84 28 10 A2 40 88 02 21 0A 84 28 10 A2 40 88 02 21
+            0A 84 28 10 A2 40 88 02 21 0A 84 28 10 A2 40 88 02 21 0A 84 28 10 A2 40 88 02 21 0A 84 28 10 A2
+            40 88 02 21 0A 84 28 10 A2 40 88 02 21 0A 84 28 10 A2 40 88 02 21 0A 84 28 10 A2 40 88 02 21 0A
+            84 28 10 A2 40 88 02 21 0A 84 28 10 A2 40 88 02 21 0A 84 28 10 A2 40 88 02 21 0A 84 28 10 A2 40
+            88 02 21 0A 84 28 10 A2 40 88 02 21 0A 84 28 10 A2 40 88 02 21 0A 84 28 10 A2 40 88 02 21 0A 84
+            28 10 A2 40 88 02 21 0A 84 28 10 A2 40 88 02 21 0A 84 28 10 A2 40 88 02 21 0A 84 28 10 A2 40 88
+            02 21 0A 84 28 10 A2 40 88 02 21 0A 84 28 10 A2 40 88 02 21 0A 84 28 10 A2 40 88 02 21 0A 84 28
+            10 A2 40 88 02 21 0A 84 28 10 A2 40 88 02 21 0A 84 28 10 A2 40 88 02 21 0A 84 28 10 A2 40 88 02
+            21 0A 84 28 10 A2 40 88 02 21 0A 84 28 10 A2 40 88 02 21 0A 84 28 10 A2 40 88 02 21 0A 84 28 10
+            A2 40 88 02 21 0A 84 28 10 A2 40 88 02 21 0A 84 28 10 A2 40 88 02 21 0A 84 28 10 A2 40 88 02 21
+            0A 84 28 10 A2 40 88 02 21 0A 84 28 10 A2 40 88 02 21 0A 84 28 10 A2 40 88 02 21 0A 84 28 10 A2
+        </part>
+    </rom>
+    <nvram index="2" size="63552"/>
     <!-- Vertical game -->
     <rom index="1">
-        <part>01</part>
+        <part>05</part>
     </rom>
     <switches page_id="1" page_name="Switches" base="17" default="bfff">
         <!-- DSW -->

@@ -5,7 +5,7 @@
               This work is not mantained by the MiSTer project. Please contact the
               core author for issues and updates.
 
-              (c) Jose Tejada, 2022. Please support this research
+              (c) Jose Tejada, 2023. Please support this research
               Patreon: https://patreon.com/jotego
 
               The author does not endorse or participate in illegal distribution
@@ -24,7 +24,7 @@
     <name>Dragonninja (Japan revision 1)</name>
     <setname>drgninja</setname>
     <rbf>jtninja</rbf>
-    <mameversion>0237</mameversion>
+    <mameversion>0251</mameversion>
     <year>1988</year>
     <manufacturer>Data East Corporation</manufacturer>
     <players>2</players>
@@ -32,7 +32,7 @@
     <rotation>horizontal</rotation>
     <region>World</region>
     <mraauthor>jotego</mraauthor>
-    <rom index="0" zip="drgninja.zip|baddudes.zip" md5="None">
+    <rom index="0" zip="drgninja.zip|baddudes.zip" md5="None" asm_md5="7f8184d0612bdffb26c41b399e6f2428">
         <!-- maincpu - starts at 0x0 - length 0x80000 (19 bits) -->
         <interleave output="16">
             <part name="eg01-1.3a" crc="e08e6885" map="01"/>
@@ -44,24 +44,27 @@
             <part name="eg06.6c" crc="2b81faf7" map="10"/>
         </interleave>
         <part repeat="0x20000"> FF</part>
+        <!-- SND_START -->
         <!-- audiocpu - starts at 0x80000 - length 0x10000 (16 bits) -->
         <part name="eg07.8a" crc="001d2f51"/>
         <part repeat="0x8000"> FF</part>
+        <!-- PCM_START -->
         <!-- oki - starts at 0x90000 - length 0x20000 (17 bits) -->
         <part name="eg08.2c" crc="92f2c916"/>
         <part repeat="0x10000"> FF</part>
+        <!-- BA2_START -->
         <!-- gfx1 - starts at 0xB0000 - length 0x20000 (17 bits) -->
         <interleave output="16">
             <part name="eg25.15h" crc="6791bc20" map="01" length="0x4000"/>
             <part name="eg26.16h" crc="5d75fc8f" map="10" length="0x4000"/>
         </interleave>
         <part repeat="0x8000"> FF</part>
-        <!-- ROM split at C0000 (10000) -->
         <interleave output="16">
             <part name="eg25.15h" crc="6791bc20" map="01" length="0x4000" offset="0x4000"/>
             <part name="eg26.16h" crc="5d75fc8f" map="10" length="0x4000" offset="0x4000"/>
         </interleave>
         <part repeat="0x8000"> FF</part>
+        <!-- GFX2_START -->
         <!-- gfx2 - starts at 0xD0000 - length 0x80000 (19 bits) -->
         <interleave output="16">
             <part name="eg18.14d" crc="05cfc3e5" map="01"/>
@@ -74,18 +77,25 @@
             <part name="eg24.17f" crc="6f226dda" map="10"/>
         </interleave>
         <part repeat="0x20000"> FF</part>
+        <!-- GFX3_START -->
         <!-- gfx3 - starts at 0x150000 - length 0x40000 (18 bits) -->
         <interleave output="16">
             <part name="eg30.9h" crc="2438e67e" map="01" length="0x8000"/>
             <part name="eg28.9f" crc="5c692ab3" map="10" length="0x8000"/>
         </interleave>
-        <part repeat="0x10000"> FF</part>
-        <!-- ROM split at 170000 (20000) -->
+        <interleave output="16">
+            <part name="eg30.9h" crc="2438e67e" map="01" length="0x8000"/>
+            <part name="eg30.9h" crc="2438e67e" map="10" length="0x8000"/>
+        </interleave>
         <interleave output="16">
             <part name="eg30.9h" crc="2438e67e" map="01" length="0x8000" offset="0x8000"/>
             <part name="eg28.9f" crc="5c692ab3" map="10" length="0x8000" offset="0x8000"/>
         </interleave>
-        <part repeat="0x10000"> FF</part>
+        <interleave output="16">
+            <part name="eg30.9h" crc="2438e67e" map="01" length="0x8000" offset="0x8000"/>
+            <part name="eg30.9h" crc="2438e67e" map="10" length="0x8000" offset="0x8000"/>
+        </interleave>
+        <!-- BA3_START -->
         <!-- gfx4 - starts at 0x190000 - length 0x80000 (19 bits) -->
         <interleave output="32">
             <part name="eg15.16c" crc="5617d67f" map="0001"/>
@@ -100,14 +110,17 @@
             <part name="eg10.14a" crc="eeee8a1a" map="1000"/>
         </interleave>
         <part repeat="0x20000"> FF</part>
+        <!-- MCU_START -->
         <!-- mcu - starts at 0x210000 - length 0x18000 (17 bits) -->
         <part name="eg31.9a" crc="657aab2d"/>
         <part repeat="0x17000"> FF</part>
+        <!-- JTFRAME_PROM_START -->
         <!-- proms - starts at 0x228000 - length 0x600 (11 bits) -->
         <part name="mb7116e.12c" crc="86e775f8"/>
         <part name="mb7122e.17e" crc="a5cda23e"/>
         <!-- Total 0x228600 bytes - 2209 kBytes -->
     </rom>
+    <nvram index="2" size="63552"/>
     <rom index="1">
         <part>00</part>
     </rom>
