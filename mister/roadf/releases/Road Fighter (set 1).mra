@@ -5,7 +5,7 @@
               This work is not mantained by the MiSTer project. Please contact the
               core author for issues and updates.
 
-              (c) Jose Tejada, 2022. Please support this research
+              (c) Jose Tejada, 2023. Please support this research
               Patreon: https://patreon.com/jotego
 
               The author does not endorse or participate in illegal distribution
@@ -24,7 +24,7 @@
     <name>Road Fighter (set 1)</name>
     <setname>roadf</setname>
     <rbf>jtroadf</rbf>
-    <mameversion>0237</mameversion>
+    <mameversion>0251</mameversion>
     <year>1984</year>
     <manufacturer>Konami</manufacturer>
     <players>2</players>
@@ -32,8 +32,8 @@
     <rotation>vertical (cw)</rotation>
     <region>World</region>
     <mraauthor>jotego</mraauthor>
-    <rom index="0" zip="roadf.zip" md5="None">
-        <!-- maincpu - starts at 0x0 -->
+    <rom index="0" zip="roadf.zip" md5="None" asm_md5="ce8139f73f8b2c3ec8e7d0f082e84ff8">
+        <!-- maincpu - starts at 0x0 - length 0x10000 (16 bits) -->
         <part repeat="0x4000"> FF</part>
         <part name="g05_g01.bin" crc="e2492a06"/>
         <part name="g07_f02.bin" crc="0bf75165"/>
@@ -41,10 +41,12 @@
         <part name="g11_f04.bin" crc="b1283c77"/>
         <part name="g13_f05.bin" crc="0ad4d796"/>
         <part name="g15_f06.bin" crc="fa42e0ed"/>
-        <!-- audiocpu - starts at 0x10000 -->
+        <!-- SND_START -->
+        <!-- audiocpu - starts at 0x10000 - length 0x4000 (14 bits) -->
         <part name="a17_d10.bin" crc="c33c927e"/>
         <part repeat="0x2000"> FF</part>
-        <!-- gfx2 - starts at 0x14000 -->
+        <!-- SCR_START -->
+        <!-- tiles - starts at 0x14000 - length 0xC000 (16 bits) -->
         <interleave output="16">
             <part name="a14_e26.bin" crc="f5c738e2" map="01"/>
             <part name="c14_e22.bin" crc="fbcfbeb9" map="10"/>
@@ -53,13 +55,18 @@
             <part name="a12_d24.bin" crc="2d82c930" map="01"/>
             <part name="c12_d20.bin" crc="5e0cf994" map="10"/>
         </interleave>
-        <!-- gfx1 - starts at 0x20000 -->
+        <!-- OBJ_START -->
+        <!-- sprites - starts at 0x20000 - length 0x10000 (16 bits) -->
         <interleave output="16">
             <part name="j19_e14.bin" crc="16d2bcff" map="01"/>
             <part name="g19_e18.bin" crc="490685ff" map="10"/>
         </interleave>
-        <part repeat="0xA000"> FF</part>
-        <!-- proms - starts at 0x32000 -->
+        <part repeat="0x8000"> FF</part>
+        <!-- PCM_START -->
+        <!-- vlm - starts at 0x30000 - length 0x2000 (13 bits) -->
+        <part repeat="0x2000"> FF</part>
+        <!-- JTFRAME_PROM_START -->
+        <!-- proms - starts at 0x32000 - length 0x220 (10 bits) -->
         <part name="c03_c27.bin" crc="45d5e352"/>
         <part name="j12_c28.bin" crc="2955e01f"/>
         <part name="a09_c29.bin" crc="5b3b5f2a"/>

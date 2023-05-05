@@ -5,7 +5,7 @@
               This work is not mantained by the MiSTer project. Please contact the
               core author for issues and updates.
 
-              (c) Jose Tejada, 2022. Please support this research
+              (c) Jose Tejada, 2023. Please support this research
               Patreon: https://patreon.com/jotego
 
               The author does not endorse or participate in illegal distribution
@@ -24,7 +24,7 @@
     <name>Hyper Sports</name>
     <setname>hyperspt</setname>
     <rbf>jtroadf</rbf>
-    <mameversion>0237</mameversion>
+    <mameversion>0251</mameversion>
     <year>1984</year>
     <manufacturer>Konami (Centuri license)</manufacturer>
     <players>4</players>
@@ -32,8 +32,8 @@
     <rotation>horizontal</rotation>
     <region>World</region>
     <mraauthor>jotego</mraauthor>
-    <rom index="0" zip="hyperspt.zip" md5="None">
-        <!-- maincpu - starts at 0x0 -->
+    <rom index="0" zip="hyperspt.zip" md5="None" asm_md5="9b198e87c36290f37f2d1ae2208f81bd">
+        <!-- maincpu - starts at 0x0 - length 0x10000 (16 bits) -->
         <part repeat="0x4000"> FF</part>
         <part name="c01" crc="0c720eeb"/>
         <part name="c02" crc="560258e0"/>
@@ -41,10 +41,12 @@
         <part name="c04" crc="10d7e9a2"/>
         <part name="c05" crc="b105a8cd"/>
         <part name="c06" crc="1a34a849"/>
-        <!-- audiocpu - starts at 0x10000 -->
+        <!-- SND_START -->
+        <!-- audiocpu - starts at 0x10000 - length 0x4000 (14 bits) -->
         <part name="c10" crc="3dc1a6ff"/>
         <part name="c09" crc="9b525c3e"/>
-        <!-- gfx2 - starts at 0x14000 -->
+        <!-- SCR_START -->
+        <!-- tiles - starts at 0x14000 - length 0xC000 (16 bits) -->
         <interleave output="16">
             <part name="c26" crc="a6897eac" map="01"/>
             <part name="c22" crc="ed9271a0" map="10"/>
@@ -55,7 +57,8 @@
             <part name="c24" crc="5fb230c0" map="01"/>
             <part name="c20" crc="183f4324" map="10"/>
         </interleave>
-        <!-- gfx1 - starts at 0x20000 -->
+        <!-- OBJ_START -->
+        <!-- sprites - starts at 0x20000 - length 0x10000 (16 bits) -->
         <interleave output="16">
             <part name="c14" crc="c72d63be" map="01"/>
             <part name="c18" crc="ed25e669" map="10"/>
@@ -72,9 +75,11 @@
             <part name="c11" crc="66cbcb4d" map="01"/>
             <part name="c15" crc="f3d454e6" map="10"/>
         </interleave>
-        <!-- vlm - starts at 0x30000 -->
+        <!-- PCM_START -->
+        <!-- vlm - starts at 0x30000 - length 0x2000 (13 bits) -->
         <part name="c08" crc="e8f8ea78"/>
-        <!-- proms - starts at 0x32000 -->
+        <!-- JTFRAME_PROM_START -->
+        <!-- proms - starts at 0x32000 - length 0x220 (10 bits) -->
         <part name="c03_c27.bin" crc="bc8a5956"/>
         <part name="j12_c28.bin" crc="2c891d59"/>
         <part name="a09_c29.bin" crc="811a3f3f"/>
