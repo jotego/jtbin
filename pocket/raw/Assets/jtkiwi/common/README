@@ -1,0 +1,35 @@
+Place the following files in this folder:
+
+arknoid2.rom
+arknod2b.rom
+arknod2j.rom
+arknod2u.rom
+drtoppel.rom
+drtopelj.rom
+drtopelu.rom
+extrmatn.rom
+extrmtnj.rom
+extrmtnu.rom
+extrmnur.rom
+insectx.rom
+insecxbl.rom
+insectxj.rom
+kageki.rom
+kagekih.rom
+kagekij.rom
+kagekiu.rom
+tnzsjo.rom
+tnzso.rom
+tnzsoa.rom
+tnzsop.rom
+tnzsuo.rom
+
+These files are generated using the mra tool in:
+https://github.com/sebdel/mra-tools-c/tree/master/release
+
+Check out the short tutorial in:
+https://github.com/jotego/jtbin/wiki/Analogue-Pocket-Cores
+
+DISCLAIMER: This PocketFPGA core is licensed to be used only
+with legally owned dumps of videogame data. It is also licensed
+to be used with freeware (homebrew) compatible with the platform.

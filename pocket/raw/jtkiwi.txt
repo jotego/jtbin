@@ -1,0 +1,44 @@
+jtkiwi - Arcade compatible hardware for Pocket FPGA
+Developed by JOTEGO - https://patreon.com/jotego
+
+The following arcade titles are compatible with this core. Generate
+the required .rom file using the mra tool (read below).
+Place the *.rom files in Assets/jtkiwi/common
+
+Arkanoid - Revenge of DOH (World) --> arknoid2.rom
+Arkanoid - Revenge of DOH (Japan bootleg) --> arknod2b.rom
+Arkanoid - Revenge of DOH (Japan) --> arknod2j.rom
+Arkanoid - Revenge of DOH (US) --> arknod2u.rom
+Dr. Toppel's Adventure (World) --> drtoppel.rom
+Dr. Toppel's Tankentai (Japan) --> drtopelj.rom
+Dr. Toppel's Adventure (US) --> drtopelu.rom
+Extermination (World) --> extrmatn.rom
+Extermination (Japan) --> extrmtnj.rom
+Extermination (US, World Games) --> extrmtnu.rom
+Extermination (US, Romstar) --> extrmnur.rom
+Insector X (World) --> insectx.rom
+Insector X (bootleg) --> insecxbl.rom
+Insector X (Japan) --> insectxj.rom
+Kageki (World) --> kageki.rom
+Kageki (hack) --> kagekih.rom
+Kageki (Japan) --> kagekij.rom
+Kageki (US) --> kagekiu.rom
+The NewZealand Story (Japan, old version) (P0-041A PCB) --> tnzsjo.rom
+The NewZealand Story (World, old version) (P0-041A PCB) --> tnzso.rom
+The NewZealand Story (World, unknown version) (P0-041A PCB) --> tnzsoa.rom
+The NewZealand Story (World, prototype) (P0-041-1 PCB) --> tnzsop.rom
+The NewZealand Story (US, old version) (P0-041A PCB) --> tnzsuo.rom
+
+
+These files are generated using the mra tool in:
+https://github.com/sebdel/mra-tools-c/tree/master/release
+
+Boogermann's ORCA tool can also be used to generate the files:
+https://github.com/opengateware/tools-orca
+
+Check out the short tutorial in:
+https://github.com/jotego/jtbin/wiki/Analogue-Pocket-Cores
+
+DISCLAIMER: This PocketFPGA core is licensed to be used only
+with legally owned dumps of videogame data. It is also licensed
+to be used with freeware (homebrew) compatible with the platform.
