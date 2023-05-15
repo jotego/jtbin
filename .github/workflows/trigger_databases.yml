@@ -1,6 +1,7 @@
 name: Trigger Databases
 
 on:
+  gollum:
   push:
     branches:
       - master
