@@ -43,7 +43,8 @@
              bit 7 = HB delay
              Byte 1:
              bit 0 = service XOR
-             bit 1 = button aid                           -->
+             bit 1 = button aid
+             bit 2 = 3 MHz for FM module                  -->
         <part>
             40 00 </part>
         <!-- maincpu - starts at 0x0 - length 0x20000 (17 bits) -->
@@ -83,6 +84,7 @@
         <!-- mcu - starts at 0x251000 - length 0x800 (11 bits) -->
         <part repeat="0x800"> FF</part>
         <!-- Total 0x251800 bytes - 2374 kBytes -->
+        <!-- Adding 2 bytes to the patch offset to make up for the MRA header -->
     </rom>
     <rom index="1">
         <part>00</part>

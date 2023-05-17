@@ -32,7 +32,7 @@
     <rotation>horizontal</rotation>
     <region>World</region>
     <mraauthor>jotego</mraauthor>
-    <rom index="0" zip="tnzsjo.zip|tnzs.zip" md5="None" asm_md5="a8d36fd1c079439cfd689b6f72bc3c01">
+    <rom index="0" zip="tnzsjo.zip|tnzs.zip" md5="None" asm_md5="dffe3357450e76e7a5ea4599fb004916">
         <!-- bit 0 = MCU
              bit 1 = color PROM
              bit 2 = Kabuzi Z (specific sound features)
@@ -43,9 +43,10 @@
              bit 7 = HB delay
              Byte 1:
              bit 0 = service XOR
-             bit 1 = button aid                           -->
+             bit 1 = button aid
+             bit 2 = 3 MHz for FM module                  -->
         <part>
-            B1 00 </part>
+            B1 04 </part>
         <!-- maincpu - starts at 0x0 - length 0x20000 (17 bits) -->
         <part name="b53-10.27c1001d.u32" crc="a73745c6"/>
         <!-- JTFRAME_BA1_START -->
@@ -79,6 +80,7 @@
         <!-- mcu - starts at 0x251000 - length 0x800 (11 bits) -->
         <part name="b53-09.u46" crc="a4bfce19"/>
         <!-- Total 0x251800 bytes - 2374 kBytes -->
+        <!-- Adding 2 bytes to the patch offset to make up for the MRA header -->
     </rom>
     <rom index="1">
         <part>00</part>
