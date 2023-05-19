@@ -61,6 +61,7 @@ Beta testers provide feedback about the cores and also financial support thanks 
 
 ## Schematics
 
+- [Arkanoid Revenge of Doh](sch/arknoid2.pdf)
 - [CAPCOM Bowling](sch/bowl.pdf)
 - [Exed Exes](sch/exed.pdf)
 - [Extermination](sch/exterm.pdf)
