@@ -32,11 +32,11 @@
     <rotation>vertical (cw)</rotation>
     <region>World</region>
     <mraauthor>jotego</mraauthor>
-    <rom index="0" zip="scontra.zip" md5="None" asm_md5="ed7a20b772e8b27cdea7bfc50667d7c3">
-        <!--     bit   0 = sound config, 0=Aliens, 1=Super Contra
-                 bits 2:1 = main config,  0=Aliens, 1=Super Contra, 2=Thunder Cross -->
+    <rom index="0" zip="scontra.zip" md5="None" asm_md5="ffd37f90245d65425a36c8447a534517">
+        <!--     bit   0 = ignored
+                 bits 2:1 = PCB config -> 0=Aliens, 1=Super Contra, 2=Thunder Cross -->
         <part>
-            03 00 00 00 00 00 00 00
+            02 00 00 00 00 00 00 00
         </part>
         <!-- maincpu - starts at 0x0 - length 0x30000 (18 bits) -->
         <part name="775-e02.k11" crc="a61c0ead"/>
@@ -150,6 +150,7 @@
             32 85 C8 14 22 53 88 4C 21 32 85 C8 14 22 53 88 4C 21 32 85 C8 14 22 53 88 4C 21 32 85 C8 14 22
         </part>
     </rom>
+    <nvram index="2" size="19472"/>
     <!-- Vertical game -->
     <rom index="1">
         <part>01</part>
@@ -164,6 +165,7 @@
         <dip name="Difficulty" bits="13,14" ids="Very Difficult,Difficult,Normal,Easy"/>
         <dip name="Demo Sounds" bits="15" ids="On,Off"/>
         <!-- DSW3 -->
+        <dip name="Flip Screen" bits="16" ids="On,Off"/>
         <dip name="Service Mode" bits="18" ids="On,Off"/>
         <dip name="Max cont" bits="19" ids="5 and 4,3 and 2"/>
     </switches>

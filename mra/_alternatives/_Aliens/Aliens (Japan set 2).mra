@@ -33,8 +33,8 @@
     <region>World</region>
     <mraauthor>jotego</mraauthor>
     <rom index="0" zip="aliensj2.zip|aliens.zip" md5="None" asm_md5="580fba2da02b54c3ea8fd259edaa87be">
-        <!--     bit   0 = sound config, 0=Aliens, 1=Super Contra
-                 bits 2:1 = main config,  0=Aliens, 1=Super Contra, 2=Thunder Cross -->
+        <!--     bit   0 = ignored
+                 bits 2:1 = PCB config -> 0=Aliens, 1=Super Contra, 2=Thunder Cross -->
         <part>
             00 00 00 00 00 00 00 00
         </part>
@@ -115,6 +115,7 @@
             32 85 C8 14 22 53 88 4C 21 32 85 C8 14 22 53 88 4C 21 32 85 C8 14 22 53 88 4C 21 32 85 C8 14 22
         </part>
     </rom>
+    <nvram index="2" size="19472"/>
     <rom index="1">
         <part>00</part>
     </rom>
@@ -127,6 +128,7 @@
         <dip name="Difficulty" bits="13,14" ids="Very Hard,Hard,Normal,Easy"/>
         <dip name="Demo Sounds" bits="15" ids="On,Off"/>
         <!-- DSW3 -->
+        <dip name="Flip Screen" bits="16" ids="On,Off"/>
         <dip name="Service Mode" bits="18" ids="On,Off"/>
     </switches>
     <buttons names="Shoot standing,Shoot crouching,-,Start,Coin,Core credits" default="Y,X,B,Start,Select,-" count="2"/>
