@@ -108,7 +108,7 @@
             32 85 C8 14 22 53 88 4C 21 32 85 C8 14 22 53 88 4C 21 32 85 C8 14 22 53 88 4C 21 32 85 C8 14 22
         </part>
     </rom>
-    <nvram index="2" size="19472"/>
+    <nvram index="2" size="2048"/>
     <!-- Vertical game -->
     <rom index="1">
         <part>01</part>
