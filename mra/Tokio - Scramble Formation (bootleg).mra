@@ -21,7 +21,7 @@
 
 <misterromdescription>
     <about author="jotego" webpage="https://patreon.com/jotego" source="https://github.com/jotego" twitter="@topapate"/>
-    <name>Tokio / Scramble Formation (bootleg)</name>
+    <name>Tokio - Scramble Formation (bootleg)</name>
     <setname>tokiob</setname>
     <rbf>jtbubl</rbf>
     <mameversion>0251</mameversion>
@@ -32,69 +32,55 @@
     <rotation>vertical (cw)</rotation>
     <region>World</region>
     <mraauthor>jotego</mraauthor>
-    <rom index="0" zip="tokiob.zip|tokio.zip" md5="None" asm_md5="70ab1af82540ba36c58772aa7dde649a">
+    <rom index="0" zip="tokiob.zip|tokio.zip" md5="None" asm_md5="f54968678d65f25402400a019d4a369e">
         <!-- maincpu - starts at 0x0 - length 0x28000 (18 bits) -->
-        <interleave output="16">
-            <part name="2.ic4" crc="f583b1ef" map="12"/>
-        </interleave>
-        <interleave output="16">
-            <part name="a71-03.ic5" crc="69dacf44" map="12"/>
-        </interleave>
-        <interleave output="16">
-            <part name="a71-04.ic6" crc="a0a4ce0e" map="12"/>
-        </interleave>
-        <interleave output="16">
-            <part name="a71-05.ic7" crc="6da0b945" map="12"/>
-        </interleave>
-        <interleave output="16">
-            <part name="6.ic8" crc="1490e95b" map="12"/>
-        </interleave>
+        <part name="2.ic4" crc="f583b1ef"/>
+        <part name="a71-03.ic5" crc="69dacf44"/>
+        <part name="a71-04.ic6" crc="a0a4ce0e"/>
+        <part name="a71-05.ic7" crc="6da0b945"/>
+        <part name="6.ic8" crc="1490e95b"/>
         <!-- SUB_START -->
         <!-- subcpu - starts at 0x28000 - length 0x8000 (15 bits) -->
-        <interleave output="16">
-            <part name="a71-01.ic1" crc="0867c707" map="12"/>
-        </interleave>
-        <!-- SND_START -->
+        <part name="a71-01.ic1" crc="0867c707"/>
+        <!-- JTFRAME_BA1_START -->
         <!-- audiocpu - starts at 0x30000 - length 0x8000 (15 bits) -->
-        <interleave output="16">
-            <part name="a71-07.ic10" crc="f298cc7b" map="12"/>
-        </interleave>
-        <!-- MCU_START -->
+        <part name="a71-07.ic10" crc="f298cc7b"/>
+        <!-- JTFRAME_BA2_START -->
         <!-- mcu - starts at 0x38000 - length 0x8000 (15 bits) -->
         <part repeat="0x8000"> FF</part>
-        <!-- GFX_START -->
+        <!-- JTFRAME_BA3_START -->
         <!-- gfx1 - starts at 0x40000 - length 0x80000 (19 bits) -->
         <interleave output="16">
-            <part name="a71-08.ic12" crc="0439ab13" map="01"/>
-            <part name="a71-16.ic30" crc="0bce35b6" map="10"/>
+            <part name="a71-16.ic30" crc="0bce35b6" map="01"/>
+            <part name="a71-08.ic12" crc="0439ab13" map="10"/>
         </interleave>
         <interleave output="16">
-            <part name="a71-09.ic13" crc="edb3d2ff" map="01"/>
-            <part name="a71-17.ic31" crc="deda6387" map="10"/>
+            <part name="a71-17.ic31" crc="deda6387" map="01"/>
+            <part name="a71-09.ic13" crc="edb3d2ff" map="10"/>
         </interleave>
         <interleave output="16">
-            <part name="a71-10.ic14" crc="69f0888c" map="01"/>
-            <part name="a71-18.ic32" crc="330cd9d7" map="10"/>
+            <part name="a71-18.ic32" crc="330cd9d7" map="01"/>
+            <part name="a71-10.ic14" crc="69f0888c" map="10"/>
         </interleave>
         <interleave output="16">
-            <part name="a71-11.ic15" crc="4ae07c31" map="01"/>
-            <part name="a71-19.ic33" crc="fc4b29e0" map="10"/>
+            <part name="a71-19.ic33" crc="fc4b29e0" map="01"/>
+            <part name="a71-11.ic15" crc="4ae07c31" map="10"/>
         </interleave>
         <interleave output="16">
-            <part name="a71-12.ic16" crc="3f6bd706" map="01"/>
-            <part name="a71-20.ic34" crc="65acb265" map="10"/>
+            <part name="a71-20.ic34" crc="65acb265" map="01"/>
+            <part name="a71-12.ic16" crc="3f6bd706" map="10"/>
         </interleave>
         <interleave output="16">
-            <part name="a71-13.ic17" crc="f2c92aaa" map="01"/>
-            <part name="a71-21.ic35" crc="33cde9b2" map="10"/>
+            <part name="a71-21.ic35" crc="33cde9b2" map="01"/>
+            <part name="a71-13.ic17" crc="f2c92aaa" map="10"/>
         </interleave>
         <interleave output="16">
-            <part name="a71-14.ic18" crc="c574b7b2" map="01"/>
-            <part name="a71-22.ic36" crc="fb98eac0" map="10"/>
+            <part name="a71-22.ic36" crc="fb98eac0" map="01"/>
+            <part name="a71-14.ic18" crc="c574b7b2" map="10"/>
         </interleave>
         <interleave output="16">
-            <part name="a71-15.ic19" crc="12d87e7f" map="01"/>
-            <part name="a71-23.ic37" crc="30bd46ad" map="10"/>
+            <part name="a71-23.ic37" crc="30bd46ad" map="01"/>
+            <part name="a71-15.ic19" crc="12d87e7f" map="10"/>
         </interleave>
         <!-- JTFRAME_PROM_START -->
         <!-- proms - starts at 0xC0000 - length 0x100 (8 bits) -->
@@ -114,11 +100,11 @@
         <dip name="Coin A" bits="4,5" ids="2/3,2/1,1/2,1/1"/>
         <dip name="Coin B" bits="6,7" ids="2/3,2/1,1/2,1/1"/>
         <!-- DSW1 -->
-        <dip name="Enemies" bits="8" ids="Many,Few "/>
-        <dip name="Enemy Shots" bits="9" ids="Many,Few "/>
+        <dip name="Enemies" bits="8" ids="Many,Few"/>
+        <dip name="Enemy Shots" bits="9" ids="Many,Few"/>
         <dip name="Bonus Life" bits="10,11" ids="400K 400K,300K 400K,200K 400K,100K 400K"/>
         <dip name="Lives" bits="12,13" ids="99,5,4,3"/>
         <dip name="Language" bits="15" ids="English,Japanese"/>
     </switches>
-    <buttons names="Shoot,Jump,Start,Coin,Core credits" default="Y,X,Start,Select,-" count="2"/>
+    <buttons names="Jump,Shoot,Start,Coin,Core credits" default="Y,X,Start,Select,-" count="2"/>
 </misterromdescription>

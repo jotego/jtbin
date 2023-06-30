@@ -32,56 +32,46 @@
     <rotation>horizontal</rotation>
     <region>World</region>
     <mraauthor>jotego</mraauthor>
-    <rom index="0" zip="bublboblr1.zip|bublbobl.zip" md5="None" asm_md5="22624c0aa8f6715c8e47d95aa574b4ee">
+    <rom index="0" zip="bublboblr1.zip|bublbobl.zip" md5="None" asm_md5="25cf23dd03f2776eae2d8efb63f8db20">
         <!-- maincpu - starts at 0x0 - length 0x28000 (18 bits) -->
-        <interleave output="16">
-            <part name="a78-06.51" crc="32c8305b" map="12"/>
-        </interleave>
-        <interleave output="16">
-            <part name="a78-21.52" crc="2844033d" map="12"/>
-        </interleave>
+        <part name="a78-06.51" crc="32c8305b"/>
+        <part name="a78-21.52" crc="2844033d"/>
         <part repeat="0x10000"> FF</part>
         <!-- SUB_START -->
         <!-- subcpu - starts at 0x28000 - length 0x8000 (15 bits) -->
-        <interleave output="16">
-            <part name="a78-08.37" crc="ae11a07b" map="12"/>
-        </interleave>
-        <!-- SND_START -->
+        <part name="a78-08.37" crc="ae11a07b"/>
+        <!-- JTFRAME_BA1_START -->
         <!-- audiocpu - starts at 0x30000 - length 0x8000 (15 bits) -->
-        <interleave output="16">
-            <part name="a78-07.46" crc="4f9a26e8" map="12"/>
-        </interleave>
-        <!-- MCU_START -->
+        <part name="a78-07.46" crc="4f9a26e8"/>
+        <!-- JTFRAME_BA2_START -->
         <!-- mcu - starts at 0x38000 - length 0x8000 (15 bits) -->
-        <interleave output="16">
-            <part name="a78-01.17" crc="b1bfb53d" map="12"/>
-        </interleave>
+        <part name="a78-01.17" crc="b1bfb53d"/>
         <part repeat="0x7000"> FF</part>
-        <!-- GFX_START -->
+        <!-- JTFRAME_BA3_START -->
         <!-- gfx1 - starts at 0x40000 - length 0x80000 (19 bits) -->
         <interleave output="16">
-            <part name="a78-09.12" crc="20358c22" map="01"/>
-            <part name="a78-15.30" crc="6b61a413" map="10"/>
+            <part name="a78-15.30" crc="6b61a413" map="01"/>
+            <part name="a78-09.12" crc="20358c22" map="10"/>
         </interleave>
         <interleave output="16">
-            <part name="a78-10.13" crc="930168a9" map="01"/>
-            <part name="a78-16.31" crc="b5492d97" map="10"/>
+            <part name="a78-16.31" crc="b5492d97" map="01"/>
+            <part name="a78-10.13" crc="930168a9" map="10"/>
         </interleave>
         <interleave output="16">
-            <part name="a78-11.14" crc="9773e512" map="01"/>
-            <part name="a78-17.32" crc="d69762d5" map="10"/>
+            <part name="a78-17.32" crc="d69762d5" map="01"/>
+            <part name="a78-11.14" crc="9773e512" map="10"/>
         </interleave>
         <interleave output="16">
-            <part name="a78-12.15" crc="d045549b" map="01"/>
-            <part name="a78-18.33" crc="9f243b68" map="10"/>
+            <part name="a78-18.33" crc="9f243b68" map="01"/>
+            <part name="a78-12.15" crc="d045549b" map="10"/>
         </interleave>
         <interleave output="16">
-            <part name="a78-13.16" crc="d0af35c5" map="01"/>
-            <part name="a78-19.34" crc="66e9438c" map="10"/>
+            <part name="a78-19.34" crc="66e9438c" map="01"/>
+            <part name="a78-13.16" crc="d0af35c5" map="10"/>
         </interleave>
         <interleave output="16">
-            <part name="a78-14.17" crc="7b5369a8" map="01"/>
-            <part name="a78-20.35" crc="9ef863ad" map="10"/>
+            <part name="a78-20.35" crc="9ef863ad" map="01"/>
+            <part name="a78-14.17" crc="7b5369a8" map="10"/>
         </interleave>
         <part repeat="0x20000"> FF</part>
         <!-- JTFRAME_PROM_START -->
@@ -106,5 +96,5 @@
         <dip name="Language" ids="English,Japanese" bits="0"/>
         <dip name="Operation" ids="Test,Game" bits="2"/>
     </switches>
-    <buttons names="Shoot,Jump,Start,Coin,Core credits" default="Y,X,Start,Select,-" count="2"/>
+    <buttons names="Jump,Shoot,Start,Coin,Core credits" default="Y,X,Start,Select,-" count="2"/>
 </misterromdescription>
