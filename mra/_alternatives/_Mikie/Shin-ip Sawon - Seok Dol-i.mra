@@ -5,7 +5,7 @@
               This work is not mantained by the MiSTer project. Please contact the
               core author for issues and updates.
 
-              (c) Jose Tejada, 2022. Please support this research
+              (c) Jose Tejada, 2023. Please support this research
               Patreon: https://patreon.com/jotego
 
               The author does not endorse or participate in illegal distribution
@@ -24,7 +24,7 @@
     <name>Shin-ip Sawon - Seok Dol-i</name>
     <setname>mikiek</setname>
     <rbf>jtmikie</rbf>
-    <mameversion>0237</mameversion>
+    <mameversion>0251</mameversion>
     <year>1984</year>
     <manufacturer>bootleg</manufacturer>
     <players>2</players>
@@ -32,23 +32,27 @@
     <rotation>vertical (ccw)</rotation>
     <region>World</region>
     <mraauthor>jotego</mraauthor>
-    <rom index="0" zip="mikiek.zip|mikie.zip" md5="None">
-        <!-- maincpu - starts at 0x0 -->
+    <rom index="0" zip="mikiek.zip|mikie.zip" md5="None" asm_md5="90ce43ef3e94543e5eda9ca5e06bcae5">
+        <!-- maincpu - starts at 0x0 - length 0x10000 (16 bits) -->
         <part repeat="0x6000"> FF</part>
         <part name="n14.11c" crc="f698e6dd"/>
         <part name="o13.12a" crc="826e7035"/>
         <part name="o17.12d" crc="161c25c8"/>
-        <!-- audiocpu - starts at 0x10000 -->
+        <!-- SND_START -->
+        <!-- audiocpu - starts at 0x10000 - length 0x2000 (13 bits) -->
         <part name="n10.6e" crc="2cf9d670"/>
-        <!-- gfx1 - starts at 0x12000 -->
+        <!-- SCR_START -->
+        <!-- tiles - starts at 0x12000 - length 0xE000 (16 bits) -->
         <part name="q11.8i" crc="29286fce"/>
         <part repeat="0xA000"> FF</part>
-        <!-- gfx2 - starts at 0x20000 -->
+        <!-- OBJ_START -->
+        <!-- sprites - starts at 0x20000 - length 0x10000 (16 bits) -->
         <part name="q01.f1" crc="31551987"/>
         <part name="q05.h1" crc="f9e1ebb1"/>
         <part name="q03.f3" crc="707cc98e"/>
         <part name="q07.h3" crc="44502ca9"/>
-        <!-- proms - starts at 0x30000 -->
+        <!-- JTFRAME_PROM_START -->
+        <!-- proms - starts at 0x30000 - length 0x500 (11 bits) -->
         <part name="d19.1i" crc="8b83e7cf"/>
         <part name="d21.3i" crc="3556304a"/>
         <part name="d20.2i" crc="676a0669"/>
@@ -58,7 +62,7 @@
     </rom>
     <!-- Vertical game -->
     <rom index="1">
-        <part>01</part>
+        <part>05</part>
     </rom>
     <switches page_id="1" page_name="Switches" base="16" default="ff,7b,fe">
         <!-- DSW1 -->
