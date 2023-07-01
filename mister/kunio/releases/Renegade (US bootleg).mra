@@ -5,7 +5,7 @@
               This work is not mantained by the MiSTer project. Please contact the
               core author for issues and updates.
 
-              (c) Jose Tejada, 2022. Please support this research
+              (c) Jose Tejada, 2023. Please support this research
               Patreon: https://patreon.com/jotego
 
               The author does not endorse or participate in illegal distribution
@@ -24,7 +24,7 @@
     <name>Renegade (US bootleg)</name>
     <setname>renegadeb</setname>
     <rbf>jtkunio</rbf>
-    <mameversion>0237</mameversion>
+    <mameversion>0251</mameversion>
     <year>1986</year>
     <manufacturer>bootleg</manufacturer>
     <players>2</players>
@@ -32,26 +32,30 @@
     <rotation>horizontal</rotation>
     <region>World</region>
     <mraauthor>jotego</mraauthor>
-    <rom index="0" zip="renegadeb.zip|renegade.zip" md5="None">
-        <!-- maincpu - starts at 0x0 -->
+    <rom index="0" zip="renegadeb.zip|renegade.zip" md5="None" asm_md5="9a8390b8c1ce1b3ab5b50383140c67af">
+        <!-- maincpu - starts at 0x0 - length 0x10000 (16 bits) -->
         <part name="na-5.ic52" crc="de7e7df4"/>
         <part name="40.ic51" crc="3dbaac11"/>
-        <!-- audiocpu - starts at 0x10000 -->
+        <!-- BA1_START -->
+        <!-- audiocpu - starts at 0x10000 - length 0x8000 (15 bits) -->
         <part name="n0-5.ic13" crc="3587de3b"/>
-        <!-- adpcm - starts at 0x18000 -->
+        <!-- adpcm - starts at 0x18000 - length 0x18000 (17 bits) -->
         <part name="n3-5.ic33" crc="78fd6190"/>
         <part name="n4-5.ic32" crc="6557564c"/>
         <part name="n5-5.ic31" crc="7ee43a3c"/>
-        <!-- chars - starts at 0x30000 -->
+        <!-- BA2_START -->
+        <!-- chars - starts at 0x30000 - length 0x8000 (15 bits) -->
         <part name="nc-5.bin" crc="9adfaa5d"/>
-        <!-- tiles - starts at 0x38000 -->
+        <!-- SCR_START -->
+        <!-- tiles - starts at 0x38000 - length 0x30000 (18 bits) -->
         <part name="n1-5.ic1" crc="4a9f47f3"/>
         <part name="n6-5.ic28" crc="d62a0aa8"/>
         <part name="n7-5.ic27" crc="7ca5a532"/>
         <part name="n2-5.ic14" crc="8d2e7982"/>
         <part name="n8-5.ic26" crc="0dba31d3"/>
         <part name="n9-5.ic25" crc="5b621b6a"/>
-        <!-- sprites - starts at 0x68000 -->
+        <!-- BA3_START -->
+        <!-- sprites - starts at 0x68000 - length 0x60000 (19 bits) -->
         <part name="nh-5.bin" crc="dcd7857c"/>
         <part name="nd-5.bin" crc="2de1717c"/>
         <part name="nj-5.bin" crc="0f96a18e"/>
@@ -64,6 +68,8 @@
         <part name="no-5.bin" crc="147dd23b"/>
         <part name="ng-5.bin" crc="a8ee3720"/>
         <part name="nm-5.bin" crc="c100258e"/>
+        <!-- PROM_START -->
+        <!-- mcu:mcu - starts at 0xC8000 -->
         <!-- Total 0xC8000 bytes - 800 kBytes -->
     </rom>
     <rom index="1">

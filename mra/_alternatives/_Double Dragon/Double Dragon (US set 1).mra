@@ -1,18 +1,17 @@
-<!-- JTDD   - FPGA compatible core of TECHNOS Double Dragon hardware by Jotego
+<!--          FPGA arcade hardware by Jotego
 
               This core is available for hardware compatible with MiST and MiSTer
               Other FPGA systems may be supported by the time you read this.
               This work is not mantained by the MiSTer project. Please contact the
               core author for issues and updates.
 
-              (c) Jose Tejada, 2020. Please support the author
+              (c) Jose Tejada, 2023. Please support this research
               Patreon: https://patreon.com/jotego
-              Paypal:  https://paypal.me/topapate
 
               The author does not endorse or participate in illegal distribution
-              of TECHNOS copyrighted material. This work can be used with legally
-              obtained ROM dumps of TECHNOS games or with homework software for
-              the DD platform.
+              of copyrighted material. This work can be used with compatible
+              software. This software can be homebrew projects or legally
+              obtained memory dumps of compatible games.
 
               This file license is GNU GPLv2.
               You can read the whole license file in
@@ -21,57 +20,70 @@
 -->
 
 <misterromdescription>
-    <about author="jotego" webpage="https://patreon.com/jotego"
-                           source ="https://github.com/jotego/jtdd"
-                           twitter="@topapate"/>
-	<name>Double Dragon (US set 1)</name>
-	<mameversion>0223</mameversion>
-	<setname>ddragonu</setname>
-	<mratimestamp>20210619</mratimestamp>
-	<year>1987</year>
-	<manufacturer>Technos Japan (Taito America license)</manufacturer>
-	<category>Fighter / Hero</category>
-	<rbf>jtdd</rbf>
-	<rom index="0" zip="ddragon.zip|ddragonu.zip" md5="fc2d3196041c11c0a29ffc883b20d48d">
-		<part crc="5779705e" name="21j-2-3.25"/>
-		<part crc="dbf24897" name="21a-3.24"/>
-		<part crc="6ea16072" name="21a-4.23"/>
-		<part crc="6ea16072" name="21a-4.23"/>
-		<part crc="e24a6e11" name="21a-1-5.26"/>
-		<part crc="9efa95bb" name="21j-0-1"/>
-		<part crc="34755de3" name="21j-6"/>
-		<part crc="904de6f8" name="21j-7"/>
-		<part crc="7a8b8db4" name="21j-5"/>
-		<part crc="7a8b8db4" name="21j-5"/>
-		<part crc="7c435887" name="21j-8"/>
-		<part crc="c6640aed" name="21j-9"/>
-		<part crc="5effb0a0" name="21j-i"/>
-		<part crc="5fb42e7c" name="21j-j"/>
-		<part crc="574face3" name="21j-a"/>
-		<part crc="40507a76" name="21j-b"/>
-		<part crc="bb0bc76f" name="21j-c"/>
-		<part crc="cb4f231b" name="21j-d"/>
-		<part crc="a0a0c261" name="21j-e"/>
-		<part crc="6ba152f6" name="21j-f"/>
-		<part crc="3220a0b6" name="21j-g"/>
-		<part crc="65c7517d" name="21j-h"/>
-		<part crc="f5232d03" name="21jm-0.ic55"/>
-		<part crc="fdb130a9" name="21j-k-0.101"/>
-		<part crc="46339529" name="21j-l-0.16"/>
-	</rom>
-	<rom index="1"><part> 00 </part></rom>
-    <switches page_id="1" page_name="Switches" default="7F,FF" base="16">
+    <about author="jotego" webpage="https://patreon.com/jotego" source="https://github.com/jotego" twitter="@topapate"/>
+    <name>Double Dragon (US set 1)</name>
+    <setname>ddragonu</setname>
+    <rbf>jtdd</rbf>
+    <mameversion>0251</mameversion>
+    <year>1987</year>
+    <manufacturer>Technos Japan (Taito America license)</manufacturer>
+    <players>2</players>
+    <joystick>8</joystick>
+    <rotation>horizontal</rotation>
+    <region>World</region>
+    <mraauthor>jotego</mraauthor>
+    <rom index="0" zip="ddragonu.zip|ddragon.zip" md5="None" asm_md5="fc2d3196041c11c0a29ffc883b20d48d">
+        <!-- maincpu - starts at 0x0 - length 0x28000 (18 bits) -->
+        <part name="21j-2-3.25" crc="5779705e"/>
+        <part name="21a-3.24" crc="dbf24897"/>
+        <part name="21a-4.23" crc="6ea16072"/>
+        <part name="21a-4.23" crc="6ea16072"/>
+        <part name="21a-1-5.26" crc="e24a6e11"/>
+        <!-- soundcpu - starts at 0x28000 - length 0x8000 (15 bits) -->
+        <part name="21j-0-1" crc="9efa95bb"/>
+        <!-- adpcm1 - starts at 0x30000 - length 0x10000 (16 bits) -->
+        <part name="21j-6" crc="34755de3"/>
+        <!-- adpcm2 - starts at 0x40000 - length 0x10000 (16 bits) -->
+        <part name="21j-7" crc="904de6f8"/>
+        <!-- gfx1 - starts at 0x50000 - length 0x10000 (16 bits) -->
+        <part name="21j-5" crc="7a8b8db4"/>
+        <part name="21j-5" crc="7a8b8db4"/>
+        <!-- gfx3 - starts at 0x60000 - length 0x40000 (18 bits) -->
+        <part name="21j-8" crc="7c435887"/>
+        <part name="21j-9" crc="c6640aed"/>
+        <part name="21j-i" crc="5effb0a0"/>
+        <part name="21j-j" crc="5fb42e7c"/>
+        <!-- gfx2 - starts at 0xA0000 - length 0x80000 (19 bits) -->
+        <part name="21j-a" crc="574face3"/>
+        <part name="21j-b" crc="40507a76"/>
+        <part name="21j-c" crc="bb0bc76f"/>
+        <part name="21j-d" crc="cb4f231b"/>
+        <part name="21j-e" crc="a0a0c261"/>
+        <part name="21j-f" crc="6ba152f6"/>
+        <part name="21j-g" crc="3220a0b6"/>
+        <part name="21j-h" crc="65c7517d"/>
+        <!-- sub - starts at 0x120000 - length 0x4000 (14 bits) -->
+        <part name="21jm-0.ic55" crc="f5232d03"/>
+        <!-- JTFRAME_PROM_START -->
+        <!-- proms - starts at 0x124000 - length 0x300 (10 bits) -->
+        <part name="21j-k-0.101" crc="fdb130a9"/>
+        <part name="21j-l-0.16" crc="46339529"/>
+        <!-- Total 0x124300 bytes - 1168 kBytes -->
+    </rom>
+    <rom index="1">
+        <part>00</part>
+    </rom>
+    <switches page_id="1" page_name="Switches" base="16" default="ff,ff">
         <!-- DSW0 -->
         <dip name="Coin A" bits="0,2" ids="4/1,3/1,2/1,1/5,1/4,1/3,1/2,1/1"/>
         <dip name="Coin B" bits="3,5" ids="4/1,3/1,2/1,1/5,1/4,1/3,1/2,1/1"/>
         <dip name="Cabinet" bits="6" ids="Cocktail,Upright"/>
+        <dip name="Flip Screen" bits="7" ids="On,Off"/>
         <!-- DSW1 -->
         <dip name="Difficulty" bits="8,9" ids="Hardest,Easy,Hard,Medium"/>
         <dip name="Demo Sounds" bits="10" ids="Off,On"/>
-        <dip name="Unused" bits="11" ids="On,Off"/>
-        <dip name="Bonus Life" bits="12,13" ids="40k,20k,40k/80k*,30k/60k*"/>
+        <dip name="Bonus" bits="12,13" ids="40k,20k,40k &amp; *80k,30k &amp; *60k"/>
         <dip name="Lives" bits="14,15" ids="Infinite,4,3,2"/>
     </switches>
-	<buttons names="Kick,Jump,Punch,Start,Coin,Pause" 
-		default="Y,X,A,R,L,Start"/>
+    <buttons names="Kick,Jump,Punch,Start,Coin,Core credits" default="Y,X,B,Start,Select,-" count="3"/>
 </misterromdescription>

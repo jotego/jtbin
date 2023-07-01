@@ -1,0 +1,93 @@
+<!--          FPGA arcade hardware by Jotego
+
+              This core is available for hardware compatible with MiST and MiSTer
+              Other FPGA systems may be supported by the time you read this.
+              This work is not mantained by the MiSTer project. Please contact the
+              core author for issues and updates.
+
+              (c) Jose Tejada, 2023. Please support this research
+              Patreon: https://patreon.com/jotego
+
+              The author does not endorse or participate in illegal distribution
+              of copyrighted material. This work can be used with compatible
+              software. This software can be homebrew projects or legally
+              obtained memory dumps of compatible games.
+
+              This file license is GNU GPLv2.
+              You can read the whole license file in
+              https://opensource.org/licenses/gpl-2.0.php
+
+-->
+
+<misterromdescription>
+    <about author="jotego" webpage="https://patreon.com/jotego" source="https://github.com/jotego" twitter="@topapate"/>
+    <name>Double Dragon II: The Revenge (US, bootleg)</name>
+    <setname>ddragon2b</setname>
+    <rbf>jtdd2</rbf>
+    <mameversion>0251</mameversion>
+    <year>1988</year>
+    <manufacturer>bootleg</manufacturer>
+    <players>2</players>
+    <joystick>8</joystick>
+    <rotation>horizontal</rotation>
+    <region>World</region>
+    <mraauthor>jotego</mraauthor>
+    <rom index="0" zip="ddragon2b.zip|ddragon2.zip" md5="None" asm_md5="35bec6d7dcf106d79c080990b6b0f176">
+        <!-- maincpu - starts at 0x0 - length 0x28000 (18 bits) -->
+        <part name="4" crc="78750947"/>
+        <part name="5" crc="49ddddcd"/>
+        <part name="6" crc="097eaf26"/>
+        <part name="6" crc="097eaf26"/>
+        <part name="3" crc="5cc38bad"/>
+        <!-- soundcpu - starts at 0x28000 - length 0x8000 (15 bits) -->
+        <part name="11" crc="75e36cd6"/>
+        <!-- sub - starts at 0x30000 - length 0x10000 (16 bits) -->
+        <part name="2" crc="ea437867"/>
+        <!-- oki - starts at 0x40000 - length 0x40000 (18 bits) -->
+        <part name="7" crc="6d9e3f0f"/>
+        <part name="9" crc="0c15dec9"/>
+        <part name="8" crc="151b22b4"/>
+        <part name="10" crc="ae2fc028"/>
+        <!-- gfx1 - starts at 0x80000 - length 0x10000 (16 bits) -->
+        <part name="1" crc="3ad1049c"/>
+        <!-- gfx3 - starts at 0x90000 - length 0x40000 (18 bits) -->
+        <part name="15" crc="3c3f16f6"/>
+        <part name="13" crc="7c21be72"/>
+        <part name="14" crc="e92f91f4"/>
+        <part name="12" crc="6896e2f7"/>
+        <!-- gfx2 - starts at 0xD0000 - length 0xC0000 (20 bits) -->
+        <part name="27" crc="fe42df5d"/>
+        <part name="26" crc="42f582c6"/>
+        <part name="23" crc="e157319f"/>
+        <part name="22" crc="82e952c9"/>
+        <part name="25" crc="4a4a085d"/>
+        <part name="24" crc="c9d52536"/>
+        <part name="21" crc="32ab0897"/>
+        <part name="20" crc="a68e168f"/>
+        <part name="17" crc="882f99b1"/>
+        <part name="16" crc="e2fe3eca"/>
+        <part name="18" crc="0e1c6c63"/>
+        <part name="19" crc="0e21eae0"/>
+        <!-- proms - starts at 0x190000 - length 0x300 (10 bits) -->
+        <part name="21j-k-0" crc="fdb130a9"/>
+        <part name="prom.16" crc="46339529"/>
+        <!-- Total 0x190300 bytes - 1600 kBytes -->
+    </rom>
+    <rom index="1">
+        <part>00</part>
+    </rom>
+    <switches page_id="1" page_name="Switches" base="16" default="ff,96">
+        <!-- DSW0 -->
+        <dip name="Coin A" bits="0,2" ids="4/1,3/1,2/1,1/5,1/4,1/3,1/2,1/1"/>
+        <dip name="Coin B" bits="3,5" ids="4/1,3/1,2/1,1/5,1/4,1/3,1/2,1/1"/>
+        <dip name="Cabinet" bits="6" ids="Cocktail,Upright"/>
+        <dip name="Flip Screen" bits="7" ids="On,Off"/>
+        <!-- DSW1 -->
+        <dip name="Difficulty" bits="8,9" ids="Hardest,Easy,Hard,Medium"/>
+        <dip name="Demo Sounds" bits="10" ids="Off,On"/>
+        <dip name="Hurricane Kick" bits="11" ids="Easy,Normal"/>
+        <dip name="Timer" bits="12,13" ids="Very Fast,Fast,Slow,Normal"/>
+        <dip name="Lives" bits="14,15" ids="4,3,2,1"/>
+    </switches>
+    <buttons names="Left Attack,Jump,Right Attack,Start,Coin,Core credits" default="Y,X,B,Start,Select,-" count="3"/>
+</misterromdescription>

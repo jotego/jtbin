@@ -5,7 +5,7 @@
               This work is not mantained by the MiSTer project. Please contact the
               core author for issues and updates.
 
-              (c) Jose Tejada, 2022. Please support this research
+              (c) Jose Tejada, 2023. Please support this research
               Patreon: https://patreon.com/jotego
 
               The author does not endorse or participate in illegal distribution
@@ -24,7 +24,7 @@
     <name>Nekketsu Kouha Kunio-kun (Japan bootleg)</name>
     <setname>kuniokunb</setname>
     <rbf>jtkunio</rbf>
-    <mameversion>0237</mameversion>
+    <mameversion>0251</mameversion>
     <year>1986</year>
     <manufacturer>bootleg</manufacturer>
     <players>2</players>
@@ -32,26 +32,30 @@
     <rotation>horizontal</rotation>
     <region>World</region>
     <mraauthor>jotego</mraauthor>
-    <rom index="0" zip="kuniokunb.zip|renegade.zip" md5="None">
-        <!-- maincpu - starts at 0x0 -->
+    <rom index="0" zip="kuniokunb.zip|renegade.zip" md5="None" asm_md5="528dc7d21a8640bc053a980bd8d253f8">
+        <!-- maincpu - starts at 0x0 - length 0x10000 (16 bits) -->
         <part name="ta18-11.bin" crc="f240f5cd"/>
         <part name="ta18-10.bin" crc="a90cf44a"/>
-        <!-- audiocpu - starts at 0x10000 -->
+        <!-- BA1_START -->
+        <!-- audiocpu - starts at 0x10000 - length 0x8000 (15 bits) -->
         <part name="n0-5.bin" crc="3587de3b"/>
-        <!-- adpcm - starts at 0x18000 -->
+        <!-- adpcm - starts at 0x18000 - length 0x18000 (17 bits) -->
         <part name="ta18-09.bin" crc="07ed4705"/>
         <part name="ta18-08.bin" crc="c9312613"/>
         <part name="ta18-07.bin" crc="02e3f3ed"/>
-        <!-- chars - starts at 0x30000 -->
+        <!-- BA2_START -->
+        <!-- chars - starts at 0x30000 - length 0x8000 (15 bits) -->
         <part name="ta18-25.bin" crc="9bd2bea3"/>
-        <!-- tiles - starts at 0x38000 -->
+        <!-- SCR_START -->
+        <!-- tiles - starts at 0x38000 - length 0x30000 (18 bits) -->
         <part name="ta18-01.bin" crc="daf15024"/>
         <part name="ta18-06.bin" crc="1f59a248"/>
         <part name="n7-5.bin" crc="7ca5a532"/>
         <part name="ta18-02.bin" crc="994c0021"/>
         <part name="ta18-04.bin" crc="55b9e8aa"/>
         <part name="ta18-03.bin" crc="0475c99a"/>
-        <!-- sprites - starts at 0x68000 -->
+        <!-- BA3_START -->
+        <!-- sprites - starts at 0x68000 - length 0x60000 (19 bits) -->
         <part name="ta18-20.bin" crc="c7d54139"/>
         <part name="ta18-24.bin" crc="84677d45"/>
         <part name="ta18-18.bin" crc="1c770853"/>
@@ -64,6 +68,8 @@
         <part name="ta18-13.bin" crc="b6b14d46"/>
         <part name="ta18-21.bin" crc="c95e009b"/>
         <part name="ta18-15.bin" crc="a5d61d01"/>
+        <!-- PROM_START -->
+        <!-- mcu:mcu - starts at 0xC8000 -->
         <!-- Total 0xC8000 bytes - 800 kBytes -->
     </rom>
     <rom index="1">
