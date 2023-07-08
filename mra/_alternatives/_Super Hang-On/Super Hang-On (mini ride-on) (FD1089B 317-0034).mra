@@ -144,6 +144,7 @@
         </part>
         <!-- Total 0x29A100 bytes - 2664 kBytes -->
     </rom>
+    <nvram index="2" size="18432"/>
     <rom index="1">
         <part>00</part>
     </rom>

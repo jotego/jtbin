@@ -21,7 +21,7 @@
 
 <misterromdescription>
     <about author="jotego" webpage="https://patreon.com/jotego" source="https://github.com/jotego" twitter="@topapate"/>
-    <name>Super Hang-On (sitdown/upright) (FD1089B 317-0034)</name>
+    <name>Super Hang-On (sitdown-upright) (FD1089B 317-0034)</name>
     <setname>shangon3</setname>
     <rbf>jtshanon</rbf>
     <mameversion>0251</mameversion>
@@ -144,6 +144,7 @@
         </part>
         <!-- Total 0x29A100 bytes - 2664 kBytes -->
     </rom>
+    <nvram index="2" size="18432"/>
     <rom index="1">
         <part>00</part>
     </rom>
