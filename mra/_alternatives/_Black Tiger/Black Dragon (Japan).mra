@@ -1,48 +1,85 @@
+<!--          FPGA arcade hardware by Jotego
+
+              This core is available for hardware compatible with MiST and MiSTer
+              Other FPGA systems may be supported by the time you read this.
+              This work is not mantained by the MiSTer project. Please contact the
+              core author for issues and updates.
+
+              (c) Jose Tejada, 2023. Please support this research
+              Patreon: https://patreon.com/jotego
+
+              The author does not endorse or participate in illegal distribution
+              of copyrighted material. This work can be used with compatible
+              software. This software can be homebrew projects or legally
+              obtained memory dumps of compatible games.
+
+              This file license is GNU GPLv2.
+              You can read the whole license file in
+              https://opensource.org/licenses/gpl-2.0.php
+
+-->
+
 <misterromdescription>
-	<name>Black Dragon (Japan)</name>
-	<mameversion>0216</mameversion>
-	<setname>blkdrgon</setname>
-	<mratimestamp>201911270000</mratimestamp>
-	<year>1987</year>
-	<manufacturer>Capcom</manufacturer>
-	<category>Fighter / Warriors</category>
-	<rbf>jtbtiger</rbf>
-	<rom index='0' md5='27b235d9b6c835f4cc1c1b04f66c0cc1' type='merged|nonmerged|split' zip='blkdrgon.zip|blktiger.zip'>
-		<part crc='7d39c26f' name='bd_02.6e'/>
-		<part crc='d1bf3757' name='bd_03.8e'/>
-		<part crc='4d1d6680' name='bd_04.9e'/>
-		<part crc='c8d0c45e' name='bd_05.10e'/>
-		<part crc='27ccdfbc' name='bd_01.5e'/>
-		<part crc='2cf54274' name='bd_06.1l'/>
-		<part crc='3821ab29' name='bd_15.2n'/>
-		<part crc='3821ab29' name='bd_15.2n'/>
-		<part crc='9498c378' name='bd_14.9b'/>
-		<part crc='5b0df8ce' name='bd_13.8b'/>
-		<part crc='22d0a4b0' name='bd_12.5b'/>
-		<part crc='c8b5fc52' name='bd_11.4b'/>
-		<part crc='e2f17438' name='bd_08.5a'/>
-		<part crc='5fccbd27' name='bd_07.4a'/>
-		<part crc='fc33ccc6' name='bd_10.9a'/>
-		<part crc='f449de01' name='bd_09.8a'/>
-		<part crc='ac7d14f1' name='bd.6k'/>
-		<part crc='29b459e5' name='bd01.8j'/>
-		<part crc='8b741e66' name='bd02.9j'/>
-		<part crc='27201c75' name='bd03.11k'/>
-		<part crc='e5490b68' name='bd04.11l'/>
-	</rom>
-	<switches page_id="1" page_name="Switches" default="FF,FF" base="16">
+    <about author="jotego" webpage="https://patreon.com/jotego" source="https://github.com/jotego" twitter="@topapate"/>
+    <name>Black Dragon (Japan)</name>
+    <setname>blkdrgon</setname>
+    <rbf>jtbtiger</rbf>
+    <mameversion>0251</mameversion>
+    <year>1987</year>
+    <manufacturer>Capcom</manufacturer>
+    <players>2</players>
+    <joystick>8</joystick>
+    <rotation>horizontal</rotation>
+    <region>World</region>
+    <mraauthor>jotego</mraauthor>
+    <rom index="0" zip="blkdrgon.zip|blktiger.zip" md5="None" asm_md5="27b235d9b6c835f4cc1c1b04f66c0cc1">
+        <!-- maincpu - starts at 0x0 - length 0x48000 (19 bits) -->
+        <part name="bd_02.6e" crc="7d39c26f"/>
+        <part name="bd_03.8e" crc="d1bf3757"/>
+        <part name="bd_04.9e" crc="4d1d6680"/>
+        <part name="bd_05.10e" crc="c8d0c45e"/>
+        <part name="bd_01.5e" crc="27ccdfbc"/>
+        <!-- audiocpu - starts at 0x48000 - length 0x8000 (15 bits) -->
+        <part name="bd_06.1l" crc="2cf54274"/>
+        <!-- chars - starts at 0x50000 - length 0x10000 (16 bits) -->
+        <part name="bd_15.2n" crc="3821ab29"/>
+        <part name="bd_15.2n" crc="3821ab29"/>
+        <!-- tiles - starts at 0x60000 - length 0x40000 (18 bits) -->
+        <part name="bd_14.9b" crc="9498c378"/>
+        <part name="bd_13.8b" crc="5b0df8ce"/>
+        <part name="bd_12.5b" crc="22d0a4b0"/>
+        <part name="bd_11.4b" crc="c8b5fc52"/>
+        <!-- sprites - starts at 0xA0000 - length 0x40000 (18 bits) -->
+        <part name="bd_08.5a" crc="e2f17438"/>
+        <part name="bd_07.4a" crc="5fccbd27"/>
+        <part name="bd_10.9a" crc="fc33ccc6"/>
+        <part name="bd_09.8a" crc="f449de01"/>
+        <!-- mcu - starts at 0xE0000 - length 0x1000 (12 bits) -->
+        <part name="bd.6k" crc="ac7d14f1"/>
+        <!-- proms - starts at 0xE1000 - length 0x400 (10 bits) -->
+        <part name="bd01.8j" crc="29b459e5"/>
+        <part name="bd02.9j" crc="8b741e66"/>
+        <part name="bd03.11k" crc="27201c75"/>
+        <part name="bd04.11l" crc="e5490b68"/>
+        <!-- Total 0xE1400 bytes - 901 kBytes -->
+    </rom>
+    <rom index="1">
+        <part>00</part>
+    </rom>
+    <switches page_id="1" page_name="Switches" base="16" default="ff,6f">
         <!-- DSW0 -->
-        <dip name="Coin A" bits="0,2" ids="4/1,3/1,2/1,1/5,1/4,1/3,1/2,1/1"></dip>
-        <dip name="Coin B" bits="3,5" ids="4/1,3/1,2/1,1/5,1/4,1/3,1/2,1/1"></dip>
-        <dip name="Flip Screen" bits="6" ids="On,Off"></dip>
-        <dip name="Test" bits="7" ids="On,Off"></dip>
+        <dip name="Coin A" bits="0,2" ids="4/1,3/1,2/1,1/5,1/4,1/3,1/2,1/1"/>
+        <dip name="Coin B" bits="3,5" ids="4/1,3/1,2/1,1/5,1/4,1/3,1/2,1/1"/>
+        <dip name="Flip Screen" bits="6" ids="On,Off"/>
+        <dip name="Test" bits="7" ids="On,Off"/>
         <!-- DSW1 -->
-        <dip name="Lives" bits="8,9" ids="7,5,2,3"></dip>
-        <dip name="Level" bits="10,12" ids="8,7,6,5,4,3,2,1"></dip>
-        <dip name="Demo Sounds" bits="13" ids="Off,On"></dip>
-        <dip name="Allow Continue" bits="14" ids="No,Yes"></dip>
-        <dip name="Cabinet" bits="15" ids="Upright,Cocktail"></dip>
+        <dip name="Lives" bits="8,9" ids="7,5,2,3"/>
+        <dip name="Difficulty" bits="10,12" ids="8,7,6,5,4,3,2,1"/>
+        <dip name="Demo Sounds" bits="13" ids="Off,On"/>
+        <dip name="Allow Continue" bits="14" ids="No,Yes"/>
+        <dip name="Cabinet" bits="15" ids="Upright,Cocktail"/>
+        <!-- FREEZE -->
+        <dip name="Freeze" bits="16" ids="On,Off"/>
     </switches>
-    <buttons names="Attack,Jump,Start,Coin,Pause" 
-        default="A,B,R,L,Start"/>
+    <buttons names="Attack,Jump,Start,Coin,Core credits" default="Y,X,Start,Select,-" count="2"/>
 </misterromdescription>
