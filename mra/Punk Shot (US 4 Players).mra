@@ -21,67 +21,51 @@
 
 <misterromdescription>
     <about author="jotego" webpage="https://patreon.com/jotego" source="https://github.com/jotego" twitter="@topapate"/>
-    <name>Teenage Mutant Ninja Turtles (Japan 2 Players, version 1)</name>
-    <setname>tmnt2pj</setname>
+    <name>Punk Shot (US 4 Players)</name>
+    <setname>punkshot</setname>
     <rbf>jttmnt</rbf>
     <mameversion>0251</mameversion>
     <year>1990</year>
     <manufacturer>Konami</manufacturer>
-    <players>2</players>
+    <players>4</players>
     <joystick>8</joystick>
     <rotation>horizontal</rotation>
     <region>World</region>
     <mraauthor>jotego</mraauthor>
-    <rom index="0" zip="tmnt2pj.zip|tmnt.zip" md5="None" asm_md5="b3c94b6477a2d11275c7283c55389dc4">
+    <rom index="0" zip="punkshot.zip" md5="None" asm_md5="01c4c11af76256003b7597056b5be5e2">
         <!--     byte 0: 00 = TMNT
             01 = MIA
             02 = Punk Shot -->
         <part>
-            00 00 00 00 00 00 00 00
+            02 00 00 00 00 00 00 00
         </part>
         <!-- maincpu - starts at 0x0 - length 0x60000 (19 bits) -->
         <interleave output="16">
-            <part name="963-124.k17" crc="2c4bfa15" map="01"/>
-            <part name="963-123.j17" crc="6a3527c9" map="10"/>
+            <part name="907-j03.i10" crc="2151d1ab" map="01"/>
+            <part name="907-j02.i7" crc="dbb3a23b" map="10"/>
         </interleave>
-        <interleave output="16">
-            <part name="963-122.k15" crc="c64eb5ff" map="01"/>
-            <part name="963-121.j15" crc="4181b733" map="10"/>
-        </interleave>
+        <part repeat="0x20000"> FF</part>
         <!-- JTFRAME_BA1_START -->
         <!-- audiocpu - starts at 0x60000 - length 0x8000 (15 bits) -->
-        <part name="963e20.g13" crc="1692a6d6"/>
+        <part name="907f01.e8" crc="f040c484"/>
         <!-- PCM_START -->
-        <!-- k007232 - starts at 0x68000 - length 0x20000 (17 bits) -->
-        <part name="963a26.c13" crc="e2ac3063"/>
-        <!-- UPD_START -->
-        <!-- upd - starts at 0x88000 - length 0x20000 (17 bits) -->
-        <part name="963a27.d18" crc="2dfd674b"/>
-        <!-- TITLE_START -->
-        <!-- title - starts at 0xA8000 - length 0x80000 (19 bits) -->
-        <part name="963a25.d5" crc="fca078c7"/>
+        <!-- k053260 - starts at 0x68000 - length 0xC0000 (20 bits) -->
+        <part name="907d04.d3" crc="090feb5e"/>
+        <part repeat="0x40000"> FF</part>
         <!-- JTFRAME_BA2_START -->
         <!-- k052109 - starts at 0x128000 - length 0x100000 (20 bits) -->
         <interleave output="32">
-            <part name="963a28.h27" crc="db4769a8" map="0021"/>
-            <part name="963a29.k27" crc="8069cd2e" map="2100"/>
+            <part name="907d06.e23" crc="f5cc38f4" map="0021"/>
+            <part name="907d05.e22" crc="e25774c1" map="2100"/>
         </interleave>
+        <part repeat="0x80000"> FF</part>
         <!-- JTFRAME_BA3_START -->
         <!-- k051960 - starts at 0x228000 - length 0x200000 (21 bits) -->
         <interleave output="32">
-            <part name="963a15.k4" crc="1f324eed" map="0012"/>
-            <part name="963a17.h4" crc="b5239a44" map="1200"/>
+            <part name="907d07.k2" crc="b0fe4543" map="0021"/>
+            <part name="907d08.k7" crc="d5ac8d9d" map="2100"/>
         </interleave>
-        <interleave output="32">
-            <part name="963a16.k6" crc="d4bd9984" map="0012"/>
-            <part name="963a18.h6" crc="dd51adef" map="1200"/>
-        </interleave>
-        <!-- JTFRAME_PROM_START -->
-        <!-- proms - starts at 0x428000 - length 0x200 (9 bits) -->
-        <part name="963a30.g7" crc="abd82680"/>
-        <part name="963a31.g19" crc="f8004a1c"/>
-        <!-- Total 0x428200 bytes - 4256 kBytes -->
-        <patch offset="0x1076">71 4E 71 4E 71 4E</patch>
+        <!-- Total 0x428000 bytes - 4256 kBytes -->
     </rom>
     <rom index="17" zip="jtbeta.zip" md5="None">
         <part name="beta.bin"/>
@@ -127,17 +111,18 @@
     <rom index="1">
         <part>00</part>
     </rom>
-    <switches page_id="1" page_name="Switches" base="8" default="ff,ff,ff,ff,ff">
-        <!-- DSW1 -->
-        <dip name="Coin A" bits="0,3" ids="Free Play,4/3,4/1,3/4,3/2,3/1,2/5,2/3,2/1,1/7,1/6,1/5,1/4,1/3,1/2,1/1"/>
-        <dip name="Coin B" bits="4,7" ids="No B,4/3,4/1,3/4,3/2,3/1,2/5,2/3,2/1,1/7,1/6,1/5,1/4,1/3,1/2,1/1"/>
-        <!-- DSW2 -->
-        <dip name="Lives" bits="8,9" ids="5,3,2,1"/>
-        <dip name="Difficulty" bits="13,14" ids="Very Difficult,Difficult,Normal,Easy"/>
-        <dip name="Demo Sounds" bits="15" ids="On,Off"/>
-        <!-- DSW3 -->
+    <switches page_id="1" page_name="Switches" base="8" default="ff,7bff,ff">
+        <!-- COINS_DSW3 -->
         <dip name="Flip Screen" bits="16" ids="On,Off"/>
         <dip name="Service Mode" bits="18" ids="On,Off"/>
+        <dip name="Freeze" bits="19" ids="On,Off"/>
+        <!-- DSW1_DSW2 -->
+        <dip name="Coinage" bits="0,3" ids="5/1,4/3,4/1,3/4,3/2,3/1,2/5,2/3,2/1,1/7,1/6,1/5,1/4,1/3,1/2,1/1"/>
+        <dip name="Continue" bits="4" ids="1,Normal"/>
+        <dip name="Energy" bits="8,9" ids="60,50,40,30"/>
+        <dip name="Period Length" bits="10,11" ids="5 Minutes,4 Minutes,3 Minutes,2 Minutes"/>
+        <dip name="Difficulty" bits="13,14" ids="Very Difficult,Difficult,Normal,Easy"/>
+        <dip name="Demo Sounds" bits="15" ids="On,Off"/>
     </switches>
-    <buttons names="Jump, Attack,-,Start,Coin,Core credits" default="Y,X,B,Start,Select,-" count="2"/>
+    <buttons names="Pass, Shoot,-,Start,Coin,Core credits" default="Y,X,B,Start,Select,-" count="2"/>
 </misterromdescription>
