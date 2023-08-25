@@ -66,7 +66,6 @@
         <!-- proms - starts at 0x3C0000 - length 0x100 (8 bits) -->
         <part name="821a08.i15" crc="7da55800"/>
         <!-- Total 0x3C0100 bytes - 3840 kBytes -->
-        <!-- Adding 8 bytes to the patch offset to make up for the MRA header -->
     </rom>
     <rom index="17" zip="jtbeta.zip" md5="None">
         <part name="beta.bin"/>
@@ -108,7 +107,7 @@
             32 85 C8 14 22 53 88 4C 21 32 85 C8 14 22 53 88 4C 21 32 85 C8 14 22 53 88 4C 21 32 85 C8 14 22
         </part>
     </rom>
-    <nvram index="2" size="2048"/>
+    <nvram index="2" size="4096"/>
     <rom index="1">
         <part>00</part>
     </rom>
