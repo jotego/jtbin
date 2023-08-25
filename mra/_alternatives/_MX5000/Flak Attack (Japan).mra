@@ -1,17 +1,17 @@
-<!--          FPGA compatible core for Konami arcade hardware by Jotego
+<!--          FPGA arcade hardware by Jotego
 
               This core is available for hardware compatible with MiST and MiSTer
               Other FPGA systems may be supported by the time you read this.
               This work is not mantained by the MiSTer project. Please contact the
               core author for issues and updates.
 
-              (c) Jose Tejada, 2022. Please support the author
+              (c) Jose Tejada, 2023. Please support this research
               Patreon: https://patreon.com/jotego
-              Paypal:  https://paypal.me/topapate
 
               The author does not endorse or participate in illegal distribution
-              of copyrighted material. This work can be used with legally
-              obtained ROM dumps or with compatible homebrew software.
+              of copyrighted material. This work can be used with compatible
+              software. This software can be homebrew projects or legally
+              obtained memory dumps of compatible games.
 
               This file license is GNU GPLv2.
               You can read the whole license file in
@@ -24,7 +24,7 @@
     <name>Flak Attack (Japan)</name>
     <setname>flkatck</setname>
     <rbf>jtmx5k</rbf>
-    <mameversion>0237</mameversion>
+    <mameversion>0251</mameversion>
     <year>1987</year>
     <manufacturer>Konami</manufacturer>
     <players>2</players>
@@ -32,15 +32,18 @@
     <rotation>vertical (cw)</rotation>
     <region>World</region>
     <mraauthor>jotego</mraauthor>
-    <rom index="0" zip="flkatck.zip|mx5000.zip" md5="None">
-        <!-- maincpu - starts at 0x0 -->
+    <rom index="0" zip="flkatck.zip|mx5000.zip" md5="None" asm_md5="7ca93f929eed63fc55bc6a8522be2574">
+        <!-- maincpu - starts at 0x0 - length 0x10000 (16 bits) -->
         <part name="669_p01.16c" crc="c5cd2807"/>
-        <!-- audiocpu - starts at 0x10000 -->
+        <!-- SND_START -->
+        <!-- audiocpu - starts at 0x10000 - length 0x10000 (16 bits) -->
         <part name="669_m02.16b" crc="7e11e6b9"/>
         <part repeat="0x8000"> FF</part>
-        <!-- gfx1 - starts at 0x20000 -->
+        <!-- GFX_START -->
+        <!-- gfx - starts at 0x20000 - length 0x80000 (19 bits) -->
         <part name="gx669f03.5e" crc="ff1d718b"/>
-        <!-- k007232 - starts at 0xA0000 -->
+        <!-- PCM_START -->
+        <!-- k007232 - starts at 0xA0000 - length 0x40000 (18 bits) -->
         <part name="gx669f04.11a" crc="6d1ea61c"/>
         <!-- Total 0xE0000 bytes - 896 kBytes -->
     </rom>
@@ -48,7 +51,7 @@
     <rom index="1">
         <part>01</part>
     </rom>
-    <switches base="16" default="ff,51,ff">
+    <switches page_id="1" page_name="Switches" base="8" default="ff,51,ff">
         <!-- DSW1 -->
         <dip name="Coin A" bits="0,3" ids="Free Play,4/3,4/1,3/4,3/2,3/1,2/5,2/3,2/1,1/7,1/6,1/5,1/4,1/3,1/2,1/1"/>
         <dip name="Coin B" bits="4,7" ids="Invalid,4/3,4/1,3/4,3/2,3/1,2/5,2/3,2/1,1/7,1/6,1/5,1/4,1/3,1/2,1/1"/>
