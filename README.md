@@ -61,18 +61,4 @@ Beta testers provide feedback about the cores and also financial support thanks 
 
 ## Schematics
 
-- [Arkanoid Revenge of Doh](sch/arknoid2.pdf) by Skutis
-- [CAPCOM Bowling](sch/bowl.pdf)
-- [Exed Exes](sch/exed.pdf)
-- [Extermination](sch/exterm.pdf)
-- [Gun Bird II](sch/bird.pdf)
-- [Insector X](sch/insectx.pdf)
-- [Kicker/Shaolin's Road](sch/kicker.pdf)
-- [Konami's Ping Pong](sch/pinpon.pdf)
-- [Kyukyoku Tiger/Twin Cobra](sch/ktiger.pdf)
-- [Renegade/Kunio-kun](sch/kunio.pdf)
-- [SEGA System 18](sch/s18.pdf)
-- [Side Arms](sch/sarms.pdf)
-- [Sly Spy](sch/slyspy.pdf)
-- [The New Zealand Story](sch/tnzs.pdf) by Skutis
-- [The Speed Rumbler](sch/rumble.pdf)
+We have developed schematics for PCB repair and maintenance when those were not available by the original publisher. Check them out [here](sch/README.md)

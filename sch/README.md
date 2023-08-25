@@ -1,6 +1,6 @@
  # KiCAD Schematics
 
-These are schematics drawn directly from original PCBs to be used for maintenance. The KiCAD files are in [JTCORES](https://github.com/jotego/jtcores). Some of these schematics have been authored by the JT team and others by Skutis
+These are schematics drawn directly from original PCBs to be used for maintenance. The KiCAD files are in [JTCORES](https://github.com/jotego/jtcores). Some of these schematics have been authored by the JT team and others by Skutis.
 
 | Game                     | File                     |
 |:-------------------------|:-------------------------|
@@ -19,3 +19,4 @@ These are schematics drawn directly from original PCBs to be used for maintenanc
 | Side Arms                | [sarms](sarms.pdf)       |
 | Sly Spy                  | [slyspy](slyspy.pdf)     |
 | The New Zealand Story    | [tnzs](tnzs.pdf)         |
+| X-Men (Konami)           | [xmen](xmen.pdf)         |
