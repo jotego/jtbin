@@ -1,0 +1,21 @@
+Place the following files in this folder:
+
+simpsons.rom
+simpss2p.rom
+simps2p2.rom
+simps2p3.rom
+simps2pa.rom
+simps2pj.rom
+simps4pa.rom
+simps4pe.rom
+simpspe2.rom
+
+These files are generated using the mra tool in:
+https://github.com/sebdel/mra-tools-c/tree/master/release
+
+Check out the short tutorial in:
+https://github.com/jotego/jtbin/wiki/Analogue-Pocket-Cores
+
+DISCLAIMER: This PocketFPGA core is licensed to be used only
+with legally owned dumps of videogame data. It is also licensed
+to be used with freeware (homebrew) compatible with the platform.
