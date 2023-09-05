@@ -20,11 +20,3 @@ jobs:
         repo: jotego/jtcores_mister
         ref: refs/heads/main
         token: ${{ secrets.JTBIN_UPDATER }}
-
-    - name: Trigger jtpremium
-      uses: benc-uk/workflow-dispatch@v1
-      with:
-        workflow: update jtcores
-        repo: jotego/jtpremium
-        ref: refs/heads/main
-        token: ${{ secrets.JTBIN_UPDATER }}
