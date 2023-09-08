@@ -1,0 +1,262 @@
+{
+	"interact":{
+		"magic": "APF_VER_1",
+		"variables": [
+			{
+				"name": "Version",
+				"id": 1000,
+				"type": "number_u32",
+				"enabled": false,
+				"persist": false,
+				"address": "0xFF000000",
+				"defaultval": 0,
+				"value": 0
+			},
+			{
+				"name": "Flip Screen",
+				"id": 1,
+				"type": "check",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 0,
+				"value": 0,
+				"value_off": 4096,
+				"mask": "0xFFFFEFFF"
+			},
+			{
+				"name": "Service Mode",
+				"id": 2,
+				"type": "check",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 0,
+				"value": 0,
+				"value_off": 16384,
+				"mask": "0xFFFFBFFF"
+			},
+			{
+				"name": "Freeze",
+				"id": 3,
+				"type": "check",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 0,
+				"value": 0,
+				"value_off": 32768,
+				"mask": "0xFFFF7FFF"
+			},
+			{
+				"name": "Coinage",
+				"id": 4,
+				"type": "list",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 15,
+				"value": 0,
+				"mask": "0xFFFFF0FF",
+				"options": [
+					{
+						"name": "5 Coins/1 Credit",
+						"value": "0x0"
+					},
+					{
+						"name": "4 Coins/3 Credits",
+						"value": "0x100"
+					},
+					{
+						"name": "4 Coins/1 Credit",
+						"value": "0x200"
+					},
+					{
+						"name": "3 Coins/4 Credits",
+						"value": "0x300"
+					},
+					{
+						"name": "3 Coins/2 Credits",
+						"value": "0x400"
+					},
+					{
+						"name": "3 Coins/1 Credit",
+						"value": "0x500"
+					},
+					{
+						"name": "2 Coins/5 Credits",
+						"value": "0x600"
+					},
+					{
+						"name": "2 Coins/3 Credits",
+						"value": "0x700"
+					},
+					{
+						"name": "2 Coins/1 Credit",
+						"value": "0x800"
+					},
+					{
+						"name": "1 Coin/7 Credits",
+						"value": "0x900"
+					},
+					{
+						"name": "1 Coin/6 Credits",
+						"value": "0xA00"
+					},
+					{
+						"name": "1 Coin/5 Credits",
+						"value": "0xB00"
+					},
+					{
+						"name": "1 Coin/4 Credits",
+						"value": "0xC00"
+					},
+					{
+						"name": "1 Coin/3 Credits",
+						"value": "0xD00"
+					},
+					{
+						"name": "1 Coin/2 Credits",
+						"value": "0xE00"
+					},
+					{
+						"name": "1 Coin/1 Credit",
+						"value": "0xF00"
+					}
+				]
+			},
+			{
+				"name": "Continue",
+				"id": 5,
+				"type": "list",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 1,
+				"value": 0,
+				"mask": "0xFFFFEFFF",
+				"options": [
+					{
+						"name": "1 Coin",
+						"value": "0x0"
+					},
+					{
+						"name": "Normal",
+						"value": "0x1000"
+					}
+				]
+			},
+			{
+				"name": "Energy",
+				"id": 6,
+				"type": "list",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 3,
+				"value": 0,
+				"mask": "0xFFFCFFFF",
+				"options": [
+					{
+						"name": "70",
+						"value": "0x0"
+					},
+					{
+						"name": "60",
+						"value": "0x10000"
+					},
+					{
+						"name": "50",
+						"value": "0x20000"
+					},
+					{
+						"name": "40",
+						"value": "0x30000"
+					}
+				]
+			},
+			{
+				"name": "Period Length",
+				"id": 7,
+				"type": "list",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 3,
+				"value": 0,
+				"mask": "0xFFF3FFFF",
+				"options": [
+					{
+						"name": "6 Minutes",
+						"value": "0x0"
+					},
+					{
+						"name": "5 Minutes",
+						"value": "0x40000"
+					},
+					{
+						"name": "4 Minutes",
+						"value": "0x80000"
+					},
+					{
+						"name": "3 Minutes",
+						"value": "0xC0000"
+					}
+				]
+			},
+			{
+				"name": "Difficulty",
+				"id": 8,
+				"type": "list",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 3,
+				"value": 0,
+				"mask": "0xFF9FFFFF",
+				"options": [
+					{
+						"name": "Very Difficult",
+						"value": "0x0"
+					},
+					{
+						"name": "Difficult",
+						"value": "0x200000"
+					},
+					{
+						"name": "Normal",
+						"value": "0x400000"
+					},
+					{
+						"name": "Easy",
+						"value": "0x600000"
+					}
+				]
+			},
+			{
+				"name": "Demo Sounds",
+				"id": 9,
+				"type": "check",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 1,
+				"value": 0,
+				"value_off": 8388608,
+				"mask": "0xFF7FFFFF"
+			},
+			{
+				"name": "Default",
+				"id": 1015,
+				"type": "number_u32",
+				"enabled": false,
+				"persist": false,
+				"writeonly": true,
+				"address": "0xfa000000",
+				"defaultval": 13598719,
+				"value": 0
+			}
+		],
+		"messages": []
+	}
+}

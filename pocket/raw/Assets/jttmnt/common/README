@@ -1,0 +1,32 @@
+Place the following files in this folder:
+
+mia.rom
+mia2.rom
+punkshot.rom
+punksot2.rom
+punkst2e.rom
+punksotj.rom
+tmht.rom
+tmht2p.rom
+tmht2pa.rom
+tmhta.rom
+tmhtb.rom
+tmnt.rom
+tmnt2pj.rom
+tmnt2po.rom
+tmnta.rom
+tmntj.rom
+tmntu.rom
+tmntua.rom
+tmntub.rom
+tmntuc.rom
+
+These files are generated using the mra tool in:
+https://github.com/sebdel/mra-tools-c/tree/master/release
+
+Check out the short tutorial in:
+https://github.com/jotego/jtbin/wiki/Analogue-Pocket-Cores
+
+DISCLAIMER: This PocketFPGA core is licensed to be used only
+with legally owned dumps of videogame data. It is also licensed
+to be used with freeware (homebrew) compatible with the platform.

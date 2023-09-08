@@ -1,0 +1,318 @@
+{
+	"interact":{
+		"magic": "APF_VER_1",
+		"variables": [
+			{
+				"name": "Version",
+				"id": 1000,
+				"type": "number_u32",
+				"enabled": false,
+				"persist": false,
+				"address": "0xFF000000",
+				"defaultval": 0,
+				"value": 0
+			},
+			{
+				"name": "Coin A",
+				"id": 1,
+				"type": "list",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 15,
+				"value": 0,
+				"mask": "0xFFFFFFF0",
+				"options": [
+					{
+						"name": "Free Play",
+						"value": "0x0"
+					},
+					{
+						"name": "4 Coins/3 Credits",
+						"value": "0x1"
+					},
+					{
+						"name": "4 Coins/1 Credit",
+						"value": "0x2"
+					},
+					{
+						"name": "3 Coins/4 Credits",
+						"value": "0x3"
+					},
+					{
+						"name": "3 Coins/2 Credits",
+						"value": "0x4"
+					},
+					{
+						"name": "3 Coins/1 Credit",
+						"value": "0x5"
+					},
+					{
+						"name": "2 Coins/5 Credits",
+						"value": "0x6"
+					},
+					{
+						"name": "2 Coins/3 Credits",
+						"value": "0x7"
+					},
+					{
+						"name": "2 Coins/1 Credit",
+						"value": "0x8"
+					},
+					{
+						"name": "1 Coin/7 Credits",
+						"value": "0x9"
+					},
+					{
+						"name": "1 Coin/6 Credits",
+						"value": "0xA"
+					},
+					{
+						"name": "1 Coin/5 Credits",
+						"value": "0xB"
+					},
+					{
+						"name": "1 Coin/4 Credits",
+						"value": "0xC"
+					},
+					{
+						"name": "1 Coin/3 Credits",
+						"value": "0xD"
+					},
+					{
+						"name": "1 Coin/2 Credits",
+						"value": "0xE"
+					},
+					{
+						"name": "1 Coin/1 Credit",
+						"value": "0xF"
+					}
+				]
+			},
+			{
+				"name": "Coin B",
+				"id": 2,
+				"type": "list",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 15,
+				"value": 0,
+				"mask": "0xFFFFFF0F",
+				"options": [
+					{
+						"name": "Invalid",
+						"value": "0x0"
+					},
+					{
+						"name": "4 Coins/3 Credits",
+						"value": "0x10"
+					},
+					{
+						"name": "4 Coins/1 Credit",
+						"value": "0x20"
+					},
+					{
+						"name": "3 Coins/4 Credits",
+						"value": "0x30"
+					},
+					{
+						"name": "3 Coins/2 Credits",
+						"value": "0x40"
+					},
+					{
+						"name": "3 Coins/1 Credit",
+						"value": "0x50"
+					},
+					{
+						"name": "2 Coins/5 Credits",
+						"value": "0x60"
+					},
+					{
+						"name": "2 Coins/3 Credits",
+						"value": "0x70"
+					},
+					{
+						"name": "2 Coins/1 Credit",
+						"value": "0x80"
+					},
+					{
+						"name": "1 Coin/7 Credits",
+						"value": "0x90"
+					},
+					{
+						"name": "1 Coin/6 Credits",
+						"value": "0xA0"
+					},
+					{
+						"name": "1 Coin/5 Credits",
+						"value": "0xB0"
+					},
+					{
+						"name": "1 Coin/4 Credits",
+						"value": "0xC0"
+					},
+					{
+						"name": "1 Coin/3 Credits",
+						"value": "0xD0"
+					},
+					{
+						"name": "1 Coin/2 Credits",
+						"value": "0xE0"
+					},
+					{
+						"name": "1 Coin/1 Credit",
+						"value": "0xF0"
+					}
+				]
+			},
+			{
+				"name": "Lives",
+				"id": 3,
+				"type": "list",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 2,
+				"value": 0,
+				"mask": "0xFFFFFCFF",
+				"options": [
+					{
+						"name": "7",
+						"value": "0x0"
+					},
+					{
+						"name": "5",
+						"value": "0x100"
+					},
+					{
+						"name": "3",
+						"value": "0x200"
+					},
+					{
+						"name": "2",
+						"value": "0x300"
+					}
+				]
+			},
+			{
+				"name": "Bonus Life",
+				"id": 4,
+				"type": "list",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 1,
+				"value": 0,
+				"mask": "0xFFFFE7FF",
+				"options": [
+					{
+						"name": "100K Only",
+						"value": "0x0"
+					},
+					{
+						"name": "50K Only",
+						"value": "0x800"
+					},
+					{
+						"name": "50K, Every 100K",
+						"value": "0x1000"
+					},
+					{
+						"name": "30K, Every 80K",
+						"value": "0x1800"
+					}
+				]
+			},
+			{
+				"name": "Difficulty",
+				"id": 5,
+				"type": "list",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 1,
+				"value": 0,
+				"mask": "0xFFFF9FFF",
+				"options": [
+					{
+						"name": "Very Difficult",
+						"value": "0x0"
+					},
+					{
+						"name": "Difficult",
+						"value": "0x2000"
+					},
+					{
+						"name": "Normal",
+						"value": "0x4000"
+					},
+					{
+						"name": "Easy",
+						"value": "0x6000"
+					}
+				]
+			},
+			{
+				"name": "Demo Sounds",
+				"id": 6,
+				"type": "check",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 1,
+				"value": 0,
+				"value_off": 32768,
+				"mask": "0xFFFF7FFF"
+			},
+			{
+				"name": "Flip Screen",
+				"id": 7,
+				"type": "check",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 0,
+				"value": 0,
+				"value_off": 65536,
+				"mask": "0xFFFEFFFF"
+			},
+			{
+				"name": "VRAM Character Check",
+				"id": 8,
+				"type": "check",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 0,
+				"value": 0,
+				"value_off": 131072,
+				"mask": "0xFFFDFFFF"
+			},
+			{
+				"name": "Service Mode",
+				"id": 9,
+				"type": "check",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 0,
+				"value": 0,
+				"value_off": 262144,
+				"mask": "0xFFFBFFFF"
+			},
+			{
+				"name": "Default",
+				"id": 1015,
+				"type": "number_u32",
+				"enabled": false,
+				"persist": false,
+				"writeonly": true,
+				"address": "0xfa000000",
+				"defaultval": 16723711,
+				"value": 0
+			}
+		],
+		"messages": []
+	}
+}

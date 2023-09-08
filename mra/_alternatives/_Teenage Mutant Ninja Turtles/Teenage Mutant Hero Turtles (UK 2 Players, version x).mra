@@ -55,6 +55,7 @@
         <!-- k007232 - starts at 0x68000 - length 0x20000 (17 bits) -->
         <part name="963a26.c13" crc="e2ac3063"/>
         <!-- UPD_START -->
+        <!-- k053260 - starts at 0x88000 -->
         <!-- upd - starts at 0x88000 - length 0x20000 (17 bits) -->
         <part name="963a27.d18" crc="2dfd674b"/>
         <!-- TITLE_START -->

@@ -49,9 +49,15 @@
         <!-- audiocpu - starts at 0x60000 - length 0x8000 (15 bits) -->
         <part name="808e03.f4" crc="3d93a7cd"/>
         <!-- PCM_START -->
-        <!-- k007232 - starts at 0x68000 - length 0xC0000 (20 bits) -->
+        <!-- k007232 - starts at 0x68000 - length 0x20000 (17 bits) -->
         <part name="808d01.d4" crc="fd4d37c0"/>
-        <part repeat="0xA0000"> FF</part>
+        <!-- UPD_START -->
+        <!-- k053260 - starts at 0x88000 -->
+        <!-- upd - starts at 0x88000 - length 0x20000 (17 bits) -->
+        <part repeat="0x20000"> FF</part>
+        <!-- TITLE_START -->
+        <!-- title - starts at 0xA8000 - length 0x80000 (19 bits) -->
+        <part repeat="0x80000"> FF</part>
         <!-- JTFRAME_BA2_START -->
         <!-- k052109 - starts at 0x128000 - length 0x100000 (20 bits) -->
         <interleave output="32">
@@ -117,7 +123,7 @@
     <rom index="1">
         <part>00</part>
     </rom>
-    <switches page_id="1" page_name="Switches" base="8" default="ff,7f,ff">
+    <switches page_id="1" page_name="Switches" base="8" default="ff,2e,ff">
         <!-- DSW1 -->
         <dip name="Coin A" bits="0,3" ids="Free Play,4/3,4/1,3/4,3/2,3/1,2/5,2/3,2/1,1/7,1/6,1/5,1/4,1/3,1/2,1/1"/>
         <dip name="Coin B" bits="4,7" ids="Invalid,4/3,4/1,3/4,3/2,3/1,2/5,2/3,2/1,1/7,1/6,1/5,1/4,1/3,1/2,1/1"/>

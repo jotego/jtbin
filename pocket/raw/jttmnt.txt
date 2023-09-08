@@ -1,0 +1,41 @@
+jttmnt - Arcade compatible hardware for Pocket FPGA
+Developed by JOTEGO - https://patreon.com/jotego
+
+The following arcade titles are compatible with this core. Generate
+the required .rom file using the mra tool (read below).
+Place the *.rom files in Assets/jttmnt/common
+
+M.I.A. - Missing in Action (version T) --> mia.rom
+M.I.A. - Missing in Action (version S) --> mia2.rom
+Punk Shot (US 4 Players) --> punkshot.rom
+Punk Shot (US 2 Players) --> punksot2.rom
+Punk Shot (World 2 Players) --> punkst2e.rom
+Punk Shot (Japan 2 Players) --> punksotj.rom
+Teenage Mutant Hero Turtles (UK 4 Players, version F) --> tmht.rom
+Teenage Mutant Hero Turtles (UK 2 Players, version U) --> tmht2p.rom
+Teenage Mutant Hero Turtles (UK 2 Players, version ?) --> tmht2pa.rom
+Teenage Mutant Hero Turtles (UK 4 Players, version S) --> tmhta.rom
+Teenage Mutant Hero Turtles (UK 4 Players, version ?) --> tmhtb.rom
+Teenage Mutant Ninja Turtles (World 4 Players, version X) --> tmnt.rom
+Teenage Mutant Ninja Turtles (Japan 2 Players, version 1) --> tmnt2pj.rom
+Teenage Mutant Ninja Turtles (Oceania 2 Players, version ?) --> tmnt2po.rom
+Teenage Mutant Ninja Turtles (Asia 4 Players, version ?) --> tmnta.rom
+Teenage Mutant Ninja Turtles (Japan 4 Players, version 2) --> tmntj.rom
+Teenage Mutant Ninja Turtles (US 4 Players, version R) --> tmntu.rom
+Teenage Mutant Ninja Turtles (US 4 Players, version N) --> tmntua.rom
+Teenage Mutant Ninja Turtles (US 4 Players, version J) --> tmntub.rom
+Teenage Mutant Ninja Turtles (US 4 Players, version H) --> tmntuc.rom
+
+
+These files are generated using the mra tool in:
+https://github.com/sebdel/mra-tools-c/tree/master/release
+
+Boogermann's ORCA tool can also be used to generate the files:
+https://github.com/opengateware/tools-orca
+
+Check out the short tutorial in:
+https://github.com/jotego/jtbin/wiki/Analogue-Pocket-Cores
+
+DISCLAIMER: This PocketFPGA core is licensed to be used only
+with legally owned dumps of videogame data. It is also licensed
+to be used with freeware (homebrew) compatible with the platform.
