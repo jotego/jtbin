@@ -32,7 +32,7 @@
     <rotation>vertical (ccw)</rotation>
     <region>World</region>
     <mraauthor>jotego,atrac17</mraauthor>
-    <rom index="0" zip="afighterd.zip|afighter.zip" md5="None" asm_md5="871dea8ad97745ec4906d972feb96006">
+    <rom index="0" zip="afighterd.zip|afighter.zip" md5="None">
         <part>
             00 00 00 00 00 00 00 00
             00 00 00 00 00 00 00 00

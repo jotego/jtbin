@@ -32,7 +32,7 @@
     <rotation>horizontal</rotation>
     <region>World</region>
     <mraauthor>jotego,atrac17</mraauthor>
-    <rom index="0" zip="sdi.zip" md5="None" asm_md5="ed4e3c4a952505271874a0076c4089fd">
+    <rom index="0" zip="sdi.zip" md5="None">
         <part>
             00 00 00 00 00 00 00 00
             00 00 00 00 00 00 00 00

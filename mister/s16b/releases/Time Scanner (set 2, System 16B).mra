@@ -90,8 +90,8 @@
             <part name="epr-10555.b8" crc="2143c471" map="10"/>
         </interleave>
         <part repeat="0x190000"> FF</part>
-        <!-- MCU_START -->
         <!-- JTFRAME_PROM_START -->
+        <!-- MCU_START -->
         <!-- mcu - starts at 0x440000 - length 0x2000 (13 bits) -->
         <part repeat="0x1000"> FF</part>
         <part repeat="0x1000"> FF</part>
@@ -108,7 +108,7 @@
     <rom index="1">
         <part>05</part>
     </rom>
-    <switches page_id="1" page_name="Switches" base="16" default="ff,ff,ff">
+    <switches page_id="1" page_name="Switches" base="16" default="ff,ff">
         <!-- DSW1 -->
         <dip name="Coin A" bits="0,3" ids="Free Play or 1/1,1/1 2/3,1/1 4/5,1/1 5/6,2/1 4/3,2/1 5/3 6/4,2/3,4/1,3/1,2/1,1/6,1/5,1/4,1/3,1/2,1/1"/>
         <dip name="Coin B" bits="4,7" ids="Free Play or 1/1,1/1 2/3,1/1 4/5,1/1 5/6,2/1 4/3,2/1 5/3 6/4,2/3,4/1,3/1,2/1,1/6,1/5,1/4,1/3,1/2,1/1"/>
@@ -118,11 +118,6 @@
         <dip name="Number Match" bits="13" ids="No,Yes"/>
         <dip name="Pin Rebound" bits="14" ids="A Little,Well"/>
         <dip name="Lives" bits="15" ids="5,3"/>
-        <!-- UNUSED -->
-        <dip name="Flip Screen" bits="16" ids="On,Off"/>
-        <dip name="Out Lane Pin" bits="17" ids="Far,Near"/>
-        <dip name="Special" bits="18,19" ids="200k0 Points,1,3,2"/>
-        <dip name="Allow Continue" bits="20" ids="No,Yes"/>
     </switches>
     <buttons names="L. Flipper/Ball Start,R. Flipper/Lane Shift,-,-,Start,Coin,Core credits" default="Y,X,B,A,Start,Select,-" count="2"/>
 </misterromdescription>

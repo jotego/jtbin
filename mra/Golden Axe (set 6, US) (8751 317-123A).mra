@@ -87,8 +87,8 @@
             <part name="mpr-12383.ic14" crc="5dbacf7a" map="10" length="0x20000" offset="0x20000"/>
         </interleave>
         <part repeat="0x40000"> FF</part>
-        <!-- MCU_START -->
         <!-- JTFRAME_PROM_START -->
+        <!-- MCU_START -->
         <!-- mcu - starts at 0x440000 - length 0x2000 (13 bits) -->
         <part name="317-0123a.c2" crc="cf19e7d4"/>
         <part repeat="0x1000"> FF</part>
@@ -111,7 +111,6 @@
         <!-- DSW2 -->
         <dip name="Credits Needed" bits="8" ids="2 To Start,1 To Start"/>
         <dip name="Demo Sounds" bits="9" ids="On,Off"/>
-        <dip name="Difficulty" bits="10,12" ids="Special,-,-,-,-,Easiest,-,Easy,-,-,Hardest,Harder,-,Easier,Hard,Normal"/>
     </switches>
     <buttons names="Attack,Jump,Magic,-,Start,Coin,Core credits" default="Y,X,B,A,Start,Select,-" count="3"/>
 </misterromdescription>

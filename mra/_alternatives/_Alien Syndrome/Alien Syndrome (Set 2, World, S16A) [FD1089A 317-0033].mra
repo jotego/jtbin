@@ -32,7 +32,7 @@
     <rotation>horizontal</rotation>
     <region>World</region>
     <mraauthor>jotego,atrac17</mraauthor>
-    <rom index="0" zip="aliensyn2.zip|aliensyn.zip" md5="None" asm_md5="3fb70dea14c612d0a040900dfd3a15af">
+    <rom index="0" zip="aliensyn2.zip|aliensyn.zip" md5="None">
         <part>
             00 00 00 00 00 00 00 00
             00 00 00 00 00 00 00 00
@@ -89,8 +89,8 @@
             <part name="epr-10712.c8" crc="876ad019" map="01"/>
             <part name="epr-10716.b5" crc="40ba1d48" map="10"/>
         </interleave>
-        <!-- JTFRAME_PROM_START -->
         <!-- MCU_START -->
+        <!-- JTFRAME_PROM_START -->
         <!-- mcu - starts at 0x180000 - length 0x2000 (13 bits) -->
         <part repeat="0x1000"> FF</part>
         <part repeat="0x1000"> FF</part>
