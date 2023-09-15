@@ -32,43 +32,62 @@
     <rotation>horizontal</rotation>
     <region>World</region>
     <mraauthor>jotego</mraauthor>
-    <rom index="0" zip="ddragonw.zip|ddragon.zip" md5="None" asm_md5="0abbb6e9f3c531db1fb6e7335c38536d">
+    <rom index="0" zip="ddragonw.zip|ddragon.zip" md5="None" asm_md5="6bab0e99f8048e411fd7e1cdc97c73e4">
         <!-- maincpu - starts at 0x0 - length 0x28000 (18 bits) -->
         <part name="21j-2-3.25" crc="5779705e"/>
         <part name="21a-3.24" crc="dbf24897"/>
         <part name="21j-4.23" crc="6c9f46fa"/>
         <part name="21j-4.23" crc="6c9f46fa"/>
         <part name="21j-1.26" crc="ae714964"/>
+        <!-- JTFRAME_BA1_START -->
         <!-- soundcpu - starts at 0x28000 - length 0x8000 (15 bits) -->
         <part name="21j-0-1" crc="9efa95bb"/>
+        <!-- ADPCM0_START -->
         <!-- adpcm1 - starts at 0x30000 - length 0x10000 (16 bits) -->
         <part name="21j-6" crc="34755de3"/>
+        <!-- ADPCM1_START -->
         <!-- adpcm2 - starts at 0x40000 - length 0x10000 (16 bits) -->
         <part name="21j-7" crc="904de6f8"/>
-        <!-- gfx1 - starts at 0x50000 - length 0x10000 (16 bits) -->
+        <!-- CHAR_START -->
+        <!-- JTFRAME_BA2_START -->
+        <!-- gfx1 - starts at 0x50000 - length 0x8000 (15 bits) -->
         <part name="21j-5" crc="7a8b8db4"/>
-        <part name="21j-5" crc="7a8b8db4"/>
-        <!-- gfx3 - starts at 0x60000 - length 0x40000 (18 bits) -->
-        <part name="21j-8" crc="7c435887"/>
-        <part name="21j-9" crc="c6640aed"/>
-        <part name="21j-i" crc="5effb0a0"/>
-        <part name="21j-j" crc="5fb42e7c"/>
-        <!-- gfx2 - starts at 0xA0000 - length 0x80000 (19 bits) -->
-        <part name="21j-a" crc="574face3"/>
-        <part name="21j-b" crc="40507a76"/>
-        <part name="21j-c" crc="bb0bc76f"/>
-        <part name="21j-d" crc="cb4f231b"/>
-        <part name="21j-e" crc="a0a0c261"/>
-        <part name="21j-f" crc="6ba152f6"/>
-        <part name="21j-g" crc="3220a0b6"/>
-        <part name="21j-h" crc="65c7517d"/>
-        <!-- sub - starts at 0x120000 - length 0x4000 (14 bits) -->
+        <!-- SCR_START -->
+        <!-- gfx3 - starts at 0x58000 - length 0x40000 (18 bits) -->
+        <interleave output="16">
+            <part name="21j-8" crc="7c435887" map="01"/>
+            <part name="21j-i" crc="5effb0a0" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="21j-9" crc="c6640aed" map="01"/>
+            <part name="21j-j" crc="5fb42e7c" map="10"/>
+        </interleave>
+        <!-- OBJ_START -->
+        <!-- JTFRAME_BA3_START -->
+        <!-- gfx2 - starts at 0x98000 - length 0x80000 (19 bits) -->
+        <interleave output="16">
+            <part name="21j-a" crc="574face3" map="01"/>
+            <part name="21j-e" crc="a0a0c261" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="21j-b" crc="40507a76" map="01"/>
+            <part name="21j-f" crc="6ba152f6" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="21j-c" crc="bb0bc76f" map="01"/>
+            <part name="21j-g" crc="3220a0b6" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="21j-d" crc="cb4f231b" map="01"/>
+            <part name="21j-h" crc="65c7517d" map="10"/>
+        </interleave>
+        <!-- MCU_START -->
+        <!-- sub - starts at 0x118000 - length 0x4000 (14 bits) -->
         <part name="21jm-0.ic55" crc="f5232d03"/>
         <!-- JTFRAME_PROM_START -->
-        <!-- proms - starts at 0x124000 - length 0x300 (10 bits) -->
+        <!-- proms - starts at 0x11C000 - length 0x100 (8 bits) -->
         <part name="21j-k-0.101" crc="fdb130a9"/>
-        <part name="21j-l-0.16" crc="46339529"/>
-        <!-- Total 0x124300 bytes - 1168 kBytes -->
+        <!-- Total 0x11C100 bytes - 1136 kBytes -->
     </rom>
     <rom index="1">
         <part>00</part>

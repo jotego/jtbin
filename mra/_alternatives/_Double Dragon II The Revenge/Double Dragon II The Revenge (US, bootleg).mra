@@ -32,46 +32,73 @@
     <rotation>horizontal</rotation>
     <region>World</region>
     <mraauthor>jotego</mraauthor>
-    <rom index="0" zip="ddragon2b.zip|ddragon2.zip" md5="None" asm_md5="35bec6d7dcf106d79c080990b6b0f176">
+    <rom index="0" zip="ddragon2b.zip|ddragon2.zip" md5="None" asm_md5="e3726956c80d97b424f254c127e85b7c">
         <!-- maincpu - starts at 0x0 - length 0x28000 (18 bits) -->
         <part name="4" crc="78750947"/>
         <part name="5" crc="49ddddcd"/>
         <part name="6" crc="097eaf26"/>
         <part name="6" crc="097eaf26"/>
         <part name="3" crc="5cc38bad"/>
+        <!-- JTFRAME_BA1_START -->
         <!-- soundcpu - starts at 0x28000 - length 0x8000 (15 bits) -->
         <part name="11" crc="75e36cd6"/>
-        <!-- sub - starts at 0x30000 - length 0x10000 (16 bits) -->
-        <part name="2" crc="ea437867"/>
-        <!-- oki - starts at 0x40000 - length 0x40000 (18 bits) -->
+        <!-- ADPCM0_START -->
+        <!-- oki - starts at 0x30000 - length 0x50000 (19 bits) -->
         <part name="7" crc="6d9e3f0f"/>
         <part name="9" crc="0c15dec9"/>
         <part name="8" crc="151b22b4"/>
         <part name="10" crc="ae2fc028"/>
+        <part repeat="0x10000"> FF</part>
+        <!-- CHAR_START -->
+        <!-- JTFRAME_BA2_START -->
         <!-- gfx1 - starts at 0x80000 - length 0x10000 (16 bits) -->
         <part name="1" crc="3ad1049c"/>
-        <!-- gfx3 - starts at 0x90000 - length 0x40000 (18 bits) -->
-        <part name="15" crc="3c3f16f6"/>
-        <part name="13" crc="7c21be72"/>
-        <part name="14" crc="e92f91f4"/>
-        <part name="12" crc="6896e2f7"/>
-        <!-- gfx2 - starts at 0xD0000 - length 0xC0000 (20 bits) -->
-        <part name="27" crc="fe42df5d"/>
-        <part name="26" crc="42f582c6"/>
-        <part name="23" crc="e157319f"/>
-        <part name="22" crc="82e952c9"/>
-        <part name="25" crc="4a4a085d"/>
-        <part name="24" crc="c9d52536"/>
-        <part name="21" crc="32ab0897"/>
-        <part name="20" crc="a68e168f"/>
-        <part name="17" crc="882f99b1"/>
-        <part name="16" crc="e2fe3eca"/>
-        <part name="18" crc="0e1c6c63"/>
-        <part name="19" crc="0e21eae0"/>
-        <!-- proms - starts at 0x190000 - length 0x300 (10 bits) -->
+        <!-- SCR_START -->
+        <!-- gfx3 - starts at 0x90000 - length 0x80000 (19 bits) -->
+        <interleave output="16">
+            <part name="15" crc="3c3f16f6" map="01"/>
+            <part name="14" crc="e92f91f4" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="13" crc="7c21be72" map="01"/>
+            <part name="12" crc="6896e2f7" map="10"/>
+        </interleave>
+        <part repeat="0x40000"> FF</part>
+        <!-- JTFRAME_BA3_START -->
+        <!-- OBJ_START -->
+        <!-- gfx2 - starts at 0x110000 - length 0x100000 (20 bits) -->
+        <interleave output="16">
+            <part name="27" crc="fe42df5d" map="01"/>
+            <part name="21" crc="32ab0897" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="26" crc="42f582c6" map="01"/>
+            <part name="20" crc="a68e168f" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="23" crc="e157319f" map="01"/>
+            <part name="17" crc="882f99b1" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="22" crc="82e952c9" map="01"/>
+            <part name="16" crc="e2fe3eca" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="25" crc="4a4a085d" map="01"/>
+            <part name="18" crc="0e1c6c63" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="24" crc="c9d52536" map="01"/>
+            <part name="19" crc="0e21eae0" map="10"/>
+        </interleave>
+        <part repeat="0x40000"> FF</part>
+        <!-- MCU_START -->
+        <!-- sub - starts at 0x210000 - length 0x10000 (16 bits) -->
+        <part name="2" crc="ea437867"/>
+        <!-- JTFRAME_PROM_START -->
+        <!-- proms - starts at 0x220000 - length 0x100 (8 bits) -->
         <part name="21j-k-0" crc="fdb130a9"/>
-        <part name="prom.16" crc="46339529"/>
-        <!-- Total 0x190300 bytes - 1600 kBytes -->
+        <!-- Total 0x220100 bytes - 2176 kBytes -->
     </rom>
     <rom index="1">
         <part>00</part>
