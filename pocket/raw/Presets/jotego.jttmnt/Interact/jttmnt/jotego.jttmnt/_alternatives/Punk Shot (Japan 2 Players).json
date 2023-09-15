@@ -21,8 +21,8 @@
 				"address": "0xfa000000",
 				"defaultval": 0,
 				"value": 0,
-				"value_off": 4096,
-				"mask": "0xFFFFEFFF"
+				"value_off": 1048576,
+				"mask": "0xFFEFFFFF"
 			},
 			{
 				"name": "Service Mode",
@@ -33,8 +33,8 @@
 				"address": "0xfa000000",
 				"defaultval": 0,
 				"value": 0,
-				"value_off": 16384,
-				"mask": "0xFFFFBFFF"
+				"value_off": 4194304,
+				"mask": "0xFFBFFFFF"
 			},
 			{
 				"name": "Freeze",
@@ -45,8 +45,8 @@
 				"address": "0xfa000000",
 				"defaultval": 0,
 				"value": 0,
-				"value_off": 32768,
-				"mask": "0xFFFF7FFF"
+				"value_off": 8388608,
+				"mask": "0xFF7FFFFF"
 			},
 			{
 				"name": "Coin A",
@@ -57,7 +57,7 @@
 				"address": "0xfa000000",
 				"defaultval": 15,
 				"value": 0,
-				"mask": "0xFFFFF0FF",
+				"mask": "0xFFFFFFF0",
 				"options": [
 					{
 						"name": "Free Play",
@@ -65,63 +65,63 @@
 					},
 					{
 						"name": "4 Coins/3 Credits",
-						"value": "0x100"
+						"value": "0x1"
 					},
 					{
 						"name": "4 Coins/1 Credit",
-						"value": "0x200"
+						"value": "0x2"
 					},
 					{
 						"name": "3 Coins/4 Credits",
-						"value": "0x300"
+						"value": "0x3"
 					},
 					{
 						"name": "3 Coins/2 Credits",
-						"value": "0x400"
+						"value": "0x4"
 					},
 					{
 						"name": "3 Coins/1 Credit",
-						"value": "0x500"
+						"value": "0x5"
 					},
 					{
 						"name": "2 Coins/5 Credits",
-						"value": "0x600"
+						"value": "0x6"
 					},
 					{
 						"name": "2 Coins/3 Credits",
-						"value": "0x700"
+						"value": "0x7"
 					},
 					{
 						"name": "2 Coins/1 Credit",
-						"value": "0x800"
+						"value": "0x8"
 					},
 					{
 						"name": "1 Coin/7 Credits",
-						"value": "0x900"
+						"value": "0x9"
 					},
 					{
 						"name": "1 Coin/6 Credits",
-						"value": "0xA00"
+						"value": "0xA"
 					},
 					{
 						"name": "1 Coin/5 Credits",
-						"value": "0xB00"
+						"value": "0xB"
 					},
 					{
 						"name": "1 Coin/4 Credits",
-						"value": "0xC00"
+						"value": "0xC"
 					},
 					{
 						"name": "1 Coin/3 Credits",
-						"value": "0xD00"
+						"value": "0xD"
 					},
 					{
 						"name": "1 Coin/2 Credits",
-						"value": "0xE00"
+						"value": "0xE"
 					},
 					{
 						"name": "1 Coin/1 Credit",
-						"value": "0xF00"
+						"value": "0xF"
 					}
 				]
 			},
@@ -134,7 +134,7 @@
 				"address": "0xfa000000",
 				"defaultval": 15,
 				"value": 0,
-				"mask": "0xFFFF0FFF",
+				"mask": "0xFFFFFF0F",
 				"options": [
 					{
 						"name": "No Coin B",
@@ -142,63 +142,63 @@
 					},
 					{
 						"name": "4 Coins/3 Credits",
-						"value": "0x1000"
+						"value": "0x10"
 					},
 					{
 						"name": "4 Coins/1 Credit",
-						"value": "0x2000"
+						"value": "0x20"
 					},
 					{
 						"name": "3 Coins/4 Credits",
-						"value": "0x3000"
+						"value": "0x30"
 					},
 					{
 						"name": "3 Coins/2 Credits",
-						"value": "0x4000"
+						"value": "0x40"
 					},
 					{
 						"name": "3 Coins/1 Credit",
-						"value": "0x5000"
+						"value": "0x50"
 					},
 					{
 						"name": "2 Coins/5 Credits",
-						"value": "0x6000"
+						"value": "0x60"
 					},
 					{
 						"name": "2 Coins/3 Credits",
-						"value": "0x7000"
+						"value": "0x70"
 					},
 					{
 						"name": "2 Coins/1 Credit",
-						"value": "0x8000"
+						"value": "0x80"
 					},
 					{
 						"name": "1 Coin/7 Credits",
-						"value": "0x9000"
+						"value": "0x90"
 					},
 					{
 						"name": "1 Coin/6 Credits",
-						"value": "0xA000"
+						"value": "0xA0"
 					},
 					{
 						"name": "1 Coin/5 Credits",
-						"value": "0xB000"
+						"value": "0xB0"
 					},
 					{
 						"name": "1 Coin/4 Credits",
-						"value": "0xC000"
+						"value": "0xC0"
 					},
 					{
 						"name": "1 Coin/3 Credits",
-						"value": "0xD000"
+						"value": "0xD0"
 					},
 					{
 						"name": "1 Coin/2 Credits",
-						"value": "0xE000"
+						"value": "0xE0"
 					},
 					{
 						"name": "1 Coin/1 Credit",
-						"value": "0xF000"
+						"value": "0xF0"
 					}
 				]
 			},
@@ -211,7 +211,7 @@
 				"address": "0xfa000000",
 				"defaultval": 2,
 				"value": 0,
-				"mask": "0xFFF3FFFF",
+				"mask": "0xFFFFF3FF",
 				"options": [
 					{
 						"name": "4 Minutes",
@@ -219,15 +219,15 @@
 					},
 					{
 						"name": "3 Minutes",
-						"value": "0x40000"
+						"value": "0x400"
 					},
 					{
 						"name": "2 Minutes",
-						"value": "0x80000"
+						"value": "0x800"
 					},
 					{
 						"name": "1 Minutes",
-						"value": "0xC0000"
+						"value": "0xC00"
 					}
 				]
 			},
@@ -240,7 +240,7 @@
 				"address": "0xfa000000",
 				"defaultval": 2,
 				"value": 0,
-				"mask": "0xFF9FFFFF",
+				"mask": "0xFFFF9FFF",
 				"options": [
 					{
 						"name": "Very Difficult",
@@ -248,15 +248,15 @@
 					},
 					{
 						"name": "Difficult",
-						"value": "0x200000"
+						"value": "0x2000"
 					},
 					{
 						"name": "Normal",
-						"value": "0x400000"
+						"value": "0x4000"
 					},
 					{
 						"name": "Easy",
-						"value": "0x600000"
+						"value": "0x6000"
 					}
 				]
 			},
@@ -269,8 +269,8 @@
 				"address": "0xfa000000",
 				"defaultval": 1,
 				"value": 0,
-				"value_off": 8388608,
-				"mask": "0xFF7FFFFF"
+				"value_off": 32768,
+				"mask": "0xFFFF7FFF"
 			},
 			{
 				"name": "Default",
@@ -280,7 +280,7 @@
 				"persist": false,
 				"writeonly": true,
 				"address": "0xfa000000",
-				"defaultval": 13598719,
+				"defaultval": 16735231,
 				"value": 0
 			}
 		],

@@ -1,0 +1,100 @@
+jts16b - Arcade compatible hardware for Pocket FPGA
+Developed by JOTEGO - https://patreon.com/jotego
+
+The following arcade titles are compatible with this core. Generate
+the required .rom file using the mra tool (read below).
+Place the *.rom files in Assets/jts16b/common
+
+Action Fighter (System 16B, unprotected, analog controls) --> afighere.rom
+Action Fighter (System 16B, FD1089B 317-unknown, analog controls) --> afigherf.rom
+Action Fighter (System 16B, FD1089B 317-unknown) --> afigherg.rom
+Action Fighter (System 16B, FD1089A 317-0018) --> afigherh.rom
+Alien Syndrome (set 4, System 16B, unprotected) --> aliensyn.rom
+Alien Syndrome (set 3, System 16B, FD1089A 317-0033) --> alienyn3.rom
+Alien Syndrome (set 7, System 16B, MC-8123B 317-00xx) --> alienyn7.rom
+Alien Syndrome (set 6, Japan, new, System 16B, FD1089A 317-0033) --> alienynj.rom
+Altered Beast (set 8) (8751 317-0078) --> altbeast.rom
+Altered Beast (set 2) (MC-8123B 317-0066) --> altbest2.rom
+Altered Beast (set 4) (MC-8123B 317-0066) --> altbest4.rom
+Altered Beast (set 5) (FD1094 317-0069) --> altbest5.rom
+Altered Beast (set 6) (8751 317-0076) --> altbest6.rom
+Juuouki (set 7, Japan) (8751 317-0077) --> altbestj.rom
+Juuouki (set 1, Japan) (FD1094 317-0065) --> altbetj1.rom
+Juuouki (set 3, Japan) (FD1094 317-0068) --> altbetj3.rom
+Aurail (set 3, US) (unprotected) --> aurail.rom
+Aurail (set 2, World) (FD1089B 317-0168) --> aurail1.rom
+Aurail (set 1, Japan) (FD1089A 317-0167) --> aurailj.rom
+Bay Route (set 3, World) (FD1094 317-0116) --> bayroute.rom
+Bay Route (set 1, US) (unprotected) --> bayrote1.rom
+Bay Route (set 2, Japan) (FD1094 317-0115) --> bayrotej.rom
+Bullet (FD1094 317-0041) --> bullet.rom
+Center Court (World, 4 Players, prototype) (MC-8123B) --> cencourt.rom
+Cotton (set 4, World) (FD1094 317-0181a) --> cotton.rom
+Cotton (set 2, Japan, Rev B) (FD1094 317-0179b) --> cottonj.rom
+Cotton (set 1, Japan, Rev A) (FD1094 317-0179a) --> cottonja.rom
+Cotton (set 3, US) (FD1094 317-0180) --> cottonu.rom
+Dynamite Dux (set 3, World) (FD1094 317-0096) --> ddux.rom
+Dynamite Dux (set 1, World) (8751 317-0095) --> ddux1.rom
+Dynamite Dux (set 2, Japan) (FD1094 317-0094) --> dduxj.rom
+Defense (System 16B, FD1089A 317-0028) --> defense.rom
+Dunk Shot (Rev C, FD1089A 317-0022) --> dunkshot.rom
+Dunk Shot (Rev A, FD1089A 317-0022) --> dunksota.rom
+Dunk Shot (FD1089A 317-0022) --> dunksoto.rom
+E-Swat - Cyber Police (set 4, World) (FD1094 317-0130) --> eswat.rom
+E-Swat - Cyber Police (set 2, Japan) (FD1094 317-0128) --> eswatj.rom
+E-Swat - Cyber Police (set 1, Japan) (FD1094 317-0131) --> eswatj1.rom
+E-Swat - Cyber Police (set 3, US) (FD1094 317-0129) --> eswatu.rom
+Excite League (FD1094 317-0079) --> exctleag.rom
+Fantasy Zone II - The Tears of Opa-Opa (System 16C version) --> fantzn2x.rom
+Fantasy Zone II - The Tears of Opa-Opa (System 16C version, prototype) --> fantz2xp.rom
+Flash Point (set 2, Japan) (FD1094 317-0127A) --> fpoint.rom
+Flash Point (set 1, Japan) (FD1094 317-0127A) --> fpoint1.rom
+Golden Axe (set 6, US) (8751 317-123A) --> goldnaxe.rom
+Golden Axe (set 1, World) (FD1094 317-0110) --> goldnxe1.rom
+Golden Axe (set 2, US) (8751 317-0112) --> goldnxe2.rom
+Golden Axe (set 3, World) (FD1094 317-0120) --> goldnxe3.rom
+Golden Axe (set 4, Japan) (FD1094 317-0121) --> goldnxej.rom
+Golden Axe (set 5, US) (FD1094 317-0122) --> goldnxeu.rom
+MVP (set 2, US) (FD1094 317-0143) --> mvp.rom
+MVP (set 1, Japan) (FD1094 317-0142) --> mvpj.rom
+Passing Shot (World, 2 Players) (FD1094 317-0080) --> passsht.rom
+Passing Shot (World, 4 Players) (FD1094 317-0074) --> passshta.rom
+Passing Shot (Japan, 4 Players) (FD1094 317-0070) --> passshtj.rom
+Riot City (Japan) --> riotcity.rom
+RyuKyu (Rev A, Japan) (FD1094 317-5023A) --> ryukyu.rom
+RyuKyu (Japan) (FD1094 317-5023) --> ryukyua.rom
+SDI - Strategic Defense Initiative (System 16B, FD1089A 317-0028) --> sdib.rom
+Shinobi (set 2, System 16B) (FD1094 317-0049) --> shinobi2.rom
+Shinobi (set 3, System 16B) (MC-8123B 317-0054) --> shinobi3.rom
+Shinobi (set 4, System 16B) (MC-8123B 317-0054) --> shinobi4.rom
+Shinobi (set 5, System 16B) (unprotected) --> shinobi5.rom
+Shinobi (set 6, System 16B) (unprotected) --> shinobi6.rom
+Sukeban Jansi Ryuko (set 2, System 16B, FD1089B 317-5021) --> sjryuko.rom
+Sonic Boom (FD1094 317-0053) --> sonicbom.rom
+Super League (FD1094 317-0045) --> suprleag.rom
+Tetris (set 1, Japan, System 16B) (FD1094 317-0091) --> tetris1.rom
+Tetris (set 2, Japan, System 16B) (FD1094 317-0092) --> tetris2.rom
+Time Scanner (set 2, System 16B) --> timescan.rom
+Toryumon --> toryumon.rom
+Tough Turf (set 1, US) (8751 317-0099) --> tturfu.rom
+Wonder Boy III - Monster Lair (set 6, World, System 16B) (8751 317-0098) --> wb3.rom
+Wonder Boy III - Monster Lair (set 2, Japan, System 16B) (FD1094 317-0085) --> wb32.rom
+Wonder Boy III - Monster Lair (set 3, World, System 16B) (FD1094 317-0089) --> wb33.rom
+Wonder Boy III - Monster Lair (set 4, Japan, System 16B) (FD1094 317-0087) --> wb34.rom
+Wrestle War (set 3, World) (8751 317-0103) --> wrestwar.rom
+Wrestle War (set 1, Japan) (FD1094 317-0090) --> wrestar1.rom
+Wrestle War (set 2, World) (FD1094 317-0102) --> wrestar2.rom
+
+
+These files are generated using the mra tool in:
+https://github.com/sebdel/mra-tools-c/tree/master/release
+
+Boogermann's ORCA tool can also be used to generate the files:
+https://github.com/opengateware/tools-orca
+
+Check out the short tutorial in:
+https://github.com/jotego/jtbin/wiki/Analogue-Pocket-Cores
+
+DISCLAIMER: This PocketFPGA core is licensed to be used only
+with legally owned dumps of videogame data. It is also licensed
+to be used with freeware (homebrew) compatible with the platform.

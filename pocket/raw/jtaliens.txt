@@ -1,0 +1,35 @@
+jtaliens - Arcade compatible hardware for Pocket FPGA
+Developed by JOTEGO - https://patreon.com/jotego
+
+The following arcade titles are compatible with this core. Generate
+the required .rom file using the mra tool (read below).
+Place the *.rom files in Assets/jtaliens/common
+
+Aliens (World set 1) --> aliens.rom
+Aliens (World set 2) --> aliens2.rom
+Aliens (World set 3) --> aliens3.rom
+Aliens (World set 4) --> aliens4.rom
+Aliens (Asia) --> aliensa.rom
+Aliens (Japan set 1) --> aliensj.rom
+Aliens (Japan set 2) --> aliensj2.rom
+Aliens (US) --> aliensu.rom
+Crime Fighters (World 2 players) --> crimfght.rom
+Crime Fighters (Japan 2 Players) --> crimfhtj.rom
+Crime Fighters (US 4 Players) --> crimfhtu.rom
+Super Contra (set 1) --> scontra.rom
+Super Contra (set 2) --> scontraa.rom
+Super Contra - Alien no Gyakushuu (Japan) --> scontraj.rom
+
+
+These files are generated using the mra tool in:
+https://github.com/sebdel/mra-tools-c/tree/master/release
+
+Boogermann's ORCA tool can also be used to generate the files:
+https://github.com/opengateware/tools-orca
+
+Check out the short tutorial in:
+https://github.com/jotego/jtbin/wiki/Analogue-Pocket-Cores
+
+DISCLAIMER: This PocketFPGA core is licensed to be used only
+with legally owned dumps of videogame data. It is also licensed
+to be used with freeware (homebrew) compatible with the platform.

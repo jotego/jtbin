@@ -1,0 +1,26 @@
+Place the following files in this folder:
+
+aliens.rom
+aliens2.rom
+aliens3.rom
+aliens4.rom
+aliensa.rom
+aliensj.rom
+aliensj2.rom
+aliensu.rom
+crimfght.rom
+crimfhtj.rom
+crimfhtu.rom
+scontra.rom
+scontraa.rom
+scontraj.rom
+
+These files are generated using the mra tool in:
+https://github.com/sebdel/mra-tools-c/tree/master/release
+
+Check out the short tutorial in:
+https://github.com/jotego/jtbin/wiki/Analogue-Pocket-Cores
+
+DISCLAIMER: This PocketFPGA core is licensed to be used only
+with legally owned dumps of videogame data. It is also licensed
+to be used with freeware (homebrew) compatible with the platform.
