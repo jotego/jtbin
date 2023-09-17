@@ -220,31 +220,31 @@
 				"address": "0xfa000000",
 				"defaultval": 5,
 				"value": 0,
-				"mask": "0xFFFFF8FF",
+				"mask": "0xFFF8FFFF",
 				"options": [
 					{
 						"name": "None",
-						"value": "0x200"
+						"value": "0x20000"
 					},
 					{
 						"name": "1st Stage Maximum",
-						"value": "0x300"
+						"value": "0x30000"
 					},
 					{
 						"name": "2nd Stage Maximum",
-						"value": "0x400"
+						"value": "0x40000"
 					},
 					{
 						"name": "3rd Stage Maximum",
-						"value": "0x500"
+						"value": "0x50000"
 					},
 					{
 						"name": "4th Stage Maximum",
-						"value": "0x600"
+						"value": "0x60000"
 					},
 					{
 						"name": "5th Stage Maximum",
-						"value": "0x700"
+						"value": "0x70000"
 					}
 				]
 			},
@@ -257,7 +257,7 @@
 				"address": "0xfa000000",
 				"defaultval": 3,
 				"value": 0,
-				"mask": "0xFFFFE7FF",
+				"mask": "0xFFE7FFFF",
 				"options": [
 					{
 						"name": "250",
@@ -265,15 +265,15 @@
 					},
 					{
 						"name": "200",
-						"value": "0x800"
+						"value": "0x80000"
 					},
 					{
 						"name": "150",
-						"value": "0x1000"
+						"value": "0x100000"
 					},
 					{
 						"name": "100",
-						"value": "0x1800"
+						"value": "0x180000"
 					}
 				]
 			},
@@ -286,7 +286,7 @@
 				"address": "0xfa000000",
 				"defaultval": 3,
 				"value": 0,
-				"mask": "0xFFFF9FFF",
+				"mask": "0xFF9FFFFF",
 				"options": [
 					{
 						"name": "Very Difficult",
@@ -294,65 +294,28 @@
 					},
 					{
 						"name": "Difficult",
-						"value": "0x2000"
+						"value": "0x200000"
 					},
 					{
 						"name": "Easy",
-						"value": "0x4000"
+						"value": "0x400000"
 					},
 					{
 						"name": "Normal",
-						"value": "0x6000"
-					}
-				]
-			},
-			{
-				"name": "Buy-In Feature",
-				"id": 13,
-				"type": "list",
-				"enabled": true,
-				"persist": true,
-				"address": "0xfa000000",
-				"defaultval": 5,
-				"value": 0,
-				"mask": "0xFFFC7FFF",
-				"options": [
-					{
-						"name": "None",
-						"value": "0x8000"
-					},
-					{
-						"name": "1st Stage Maximum",
-						"value": "0x18000"
-					},
-					{
-						"name": "2nd Stage Maximum",
-						"value": "0x20000"
-					},
-					{
-						"name": "3rd Stage Maximum",
-						"value": "0x28000"
-					},
-					{
-						"name": "4th Stage Maximum",
-						"value": "0x30000"
-					},
-					{
-						"name": "5th Stage Maximum",
-						"value": "0x38000"
+						"value": "0x600000"
 					}
 				]
 			},
 			{
 				"name": "Number of Countries Selected",
-				"id": 14,
+				"id": 13,
 				"type": "list",
 				"enabled": true,
 				"persist": true,
 				"address": "0xfa000000",
 				"defaultval": 1,
 				"value": 0,
-				"mask": "0xFFFBFFFF",
+				"mask": "0xFBFFFFFF",
 				"options": [
 					{
 						"name": "4",
@@ -360,7 +323,7 @@
 					},
 					{
 						"name": "2",
-						"value": "0x40000"
+						"value": "0x4000000"
 					}
 				]
 			},

@@ -10,7 +10,8 @@
 				"extensions": [
 					"json"
 				],
-				"address": ""
+				"address": "",
+				"nonvolatile": false
 			},
 			{
 				"name": "ROM",
@@ -20,7 +21,19 @@
 				"extensions": [
 					"rom"
 				],
-				"address": "0x00000000"
+				"address": "0x00000000",
+				"nonvolatile": false
+			},
+			{
+				"name": "NVRAM",
+				"id": 2,
+				"required": false,
+				"parameters": "0x100",
+				"extensions": [
+					"sav"
+				],
+				"address": "0x00000000",
+				"nonvolatile": true
 			}
 		]
 	}

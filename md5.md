@@ -577,7 +577,7 @@
 | secretagj    | jtslyspy   | 730e7a6151751257d98935cca45c9dd5 | ff7f         |
 | sectionz     | jtsectnz   |                                  | FF,FE        |
 | sectionza    | jtsectnz   | d38a7bb9e9b4e665791e2857b2f2fe70 | ff,3f        |
-| sf           | jtsf       |                                  | FF,DF,F5,02  |
+| sf           | jtsf       | 04af14d331248eca94dd9abb72678c4c | ff,df,ff,ff  |
 | sf2          | jtcps1     | 616854344835ba6e5d2b121a732fe007 | ff,fc,9f     |
 | sf2ce        | jtcps1     | 9f337ec25f61299721c8c7b5b54b1e7e | ff,fc,9f     |
 | sf2ceea      | jtcps1     | d076883dd32ea9cebfc308f68c41db70 | ff,fc,9f     |
@@ -630,9 +630,9 @@
 | sfar2        | jtcps2     | 2558dee640adbc24df0f3e5e17087fe5 |              |
 | sfar3        | jtcps2     | 68632c920386dfe9eb0b7b33c726d53c |              |
 | sfau         | jtcps2     | f00a450b1f76652d196915ab4b56a2fa |              |
-| sfj          | jtsf       |                                  | FF,DD,F5,02  |
-| sfua         | jtsf       |                                  | FF,DD,F5,02  |
-| sfw          | jtsf       |                                  | FF,DD,F5,02  |
+| sfj          | jtsf       | ed5301ca90d1d1abd44e64330242d6f4 | ff,df,ff,ff  |
+| sfua         | jtsf       | 605c1e24fe4599b7d56dc13f69ae47f6 | ff,df,ff,ff  |
+| sfw          | jtsf       | 73d615de5a2a4810f3be75714f36a746 | ff,df,ff,ff  |
 | sfz2a        | jtcps2     | 34599182b0cc663775441621dbdc670d |              |
 | sfz2ad       | jtcps2     | faddf7e00ac6cf4108abd3811f96e5d9 |              |
 | sfz2al       | jtcps2     | 1cba5b29579e3f7a245abea519ca8b47 |              |

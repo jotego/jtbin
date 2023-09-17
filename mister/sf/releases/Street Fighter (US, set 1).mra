@@ -1,17 +1,17 @@
-<!--          FPGA compatible core for Capcom arcade hardware by Jotego
+<!--          FPGA arcade hardware by Jotego
 
               This core is available for hardware compatible with MiST and MiSTer
               Other FPGA systems may be supported by the time you read this.
               This work is not mantained by the MiSTer project. Please contact the
               core author for issues and updates.
 
-              (c) Jose Tejada, 2021. Please support the author
+              (c) Jose Tejada, 2023. Please support this research
               Patreon: https://patreon.com/jotego
-              Paypal:  https://paypal.me/topapate
 
               The author does not endorse or participate in illegal distribution
-              of copyrighted material. This work can be used with legally
-              obtained ROM dumps or with compatible homebrew software.
+              of copyrighted material. This work can be used with compatible
+              software. This software can be homebrew projects or legally
+              obtained memory dumps of compatible games.
 
               This file license is GNU GPLv2.
               You can read the whole license file in
@@ -24,19 +24,16 @@
     <name>Street Fighter (US, set 1)</name>
     <setname>sf</setname>
     <rbf>jtsf</rbf>
-    <mameversion>0234</mameversion>
+    <mameversion>0251</mameversion>
     <year>1987</year>
     <manufacturer>Capcom</manufacturer>
     <players>2</players>
-    <joystick>8-way</joystick>
+    <joystick>8</joystick>
     <rotation>horizontal</rotation>
     <region>World</region>
-    <platform>Capcom M68000</platform>
-    <category>Fighting</category>
-    <catver>Fighter / Versus</catver>
     <mraauthor>jotego,atrac17</mraauthor>
-    <rom index="0" zip="sf.zip" md5="None">
-        <!-- maincpu - starts at 0x0 -->
+    <rom index="0" zip="sf.zip" md5="None" asm_md5="04af14d331248eca94dd9abb72678c4c">
+        <!-- maincpu - starts at 0x0 - length 0x60000 (19 bits) -->
         <interleave output="16">
             <part name="sfd-19.2a" crc="faaf6255" map="01"/>
             <part name="sfd-22.2c" crc="e1fe3519" map="10"/>
@@ -49,18 +46,18 @@
             <part name="sfd-21.4a" crc="e8db799b" map="01"/>
             <part name="sfd-24.4c" crc="466a3440" map="10"/>
         </interleave>
-        <!-- audiocpu - starts at 0x60000 -->
+        <!-- audiocpu - starts at 0x60000 - length 0x8000 (15 bits) -->
         <interleave output="16">
             <part name="sf-02.7k" crc="4a9ac534" map="12"/>
         </interleave>
-        <!-- audio2 - starts at 0x68000 -->
+        <!-- audio2 - starts at 0x68000 - length 0x40000 (18 bits) -->
         <interleave output="16">
             <part name="sfu-00.1h" crc="a7cce903" map="12"/>
         </interleave>
         <interleave output="16">
             <part name="sf-01.1k" crc="86e0f0d5" map="12"/>
         </interleave>
-        <!-- tilerom - starts at 0xA8000 -->
+        <!-- tilerom - starts at 0xA8000 - length 0x40000 (18 bits) -->
         <interleave output="16">
             <part name="sf-33.4g" crc="3e99d3d5" map="01"/>
             <part name="sf-32.3g" crc="72df2bd9" map="10"/>
@@ -69,9 +66,9 @@
             <part name="sf-36.3h" crc="ea16df6c" map="01"/>
             <part name="sf-37.4h" crc="23d09d3d" map="10"/>
         </interleave>
-        <!-- gfx4 - starts at 0xE8000 -->
+        <!-- gfx4 - starts at 0xE8000 - length 0x4000 (14 bits) -->
         <part name="sf-27.4d" crc="2b09b36d"/>
-        <!-- gfx2 - starts at 0xEC000 -->
+        <!-- gfx2 - starts at 0xEC000 - length 0x100000 (20 bits) -->
         <interleave output="16">
             <part name="sf-26.2d" crc="54ede9f5" map="01"/>
             <part name="sf-25.1d" crc="7f23042e" map="10"/>
@@ -88,7 +85,7 @@
             <part name="sf-35.2h" crc="70c00fb4" map="01"/>
             <part name="sf-34.1h" crc="96b6ae2e" map="10"/>
         </interleave>
-        <!-- gfx1 - starts at 0x1EC000 -->
+        <!-- gfx1 - starts at 0x1EC000 - length 0x80000 (19 bits) -->
         <interleave output="16">
             <part name="sf-41.4k" crc="e0280495" map="01"/>
             <part name="sf-39.2k" crc="cee3d292" map="10"/>
@@ -97,7 +94,7 @@
             <part name="sf-40.3k" crc="c70b30de" map="01"/>
             <part name="sf-38.1k" crc="2ea99676" map="10"/>
         </interleave>
-        <!-- gfx3 - starts at 0x26C000 -->
+        <!-- gfx3 - starts at 0x26C000 - length 0x1C0000 (21 bits) -->
         <interleave output="16">
             <part name="sf-17.3m" crc="69fac48e" map="01"/>
             <part name="sf-15.1m" crc="fc0113db" map="10"/>
@@ -126,29 +123,27 @@
             <part name="sf-05.3f" crc="538c7cbe" map="01"/>
             <part name="sf-03.1f" crc="5ca05781" map="10"/>
         </interleave>
+        <!-- protcpu - starts at 0x42C000 -->
         <!-- Total 0x42C000 bytes - 4272 kBytes -->
     </rom>
     <rom index="1">
         <part>00</part>
     </rom>
-    <switches page_id="1" page_name="Switches" base="32" default="FF,DF,F5,02">
+    <switches page_id="1" page_name="Switches" base="8" default="ff,df,ff,ff">
         <!-- DSW1 -->
         <dip name="Coin A" bits="0,2" ids="4/1,3/1,2/1,1/6,1/4,1/3,1/2,1/1"/>
         <dip name="Coin B" bits="3,5" ids="4/1,3/1,2/1,1/6,1/4,1/3,1/2,1/1"/>
-        <!-- DSW2 -->
         <dip name="Flip Screen" bits="8" ids="On,Off"/>
         <dip name="Attract Music" bits="9" ids="Off,On"/>
         <dip name="Speed" bits="12" ids="Slow,Normal"/>
         <dip name="Demo Sounds" bits="13" ids="On,Off"/>
-        <dip name="Screen Stop" bits="14" ids="On,Off"/>
+        <dip name="Freeze" bits="14" ids="On,Off"/>
         <dip name="Service Mode" bits="15" ids="On,Off"/>
-        <!-- DSW3 -->
-        <dip name="Cont." bits="16,18" ids="None,1st Stage Max,2nd Stage Max,3rd Stage Max,4th Stage Max,5th Stage Max"/>
-        <dip name="Time" bits="19,20" ids="250,150,100"/>
+        <!-- DSW2 -->
+        <dip name="Continue" bits="16,18" ids="None,1st Stage Maximum,2nd Stage Maximum,3rd Stage Maximum,4th Stage Maximum,5th Stage Maximum"/>
+        <dip name="Time" bits="19,20" ids="250,200,150,100"/>
         <dip name="Difficulty" bits="21,22" ids="Very Difficult,Difficult,Easy,Normal"/>
-        <!-- DSW4 -->
-        <dip name="Buy-In" bits="23,25" ids="None,1st Stage Max,2nd Stage Max,3rd Stage Max,4th Stage Max,5th Stage Max"/>
         <dip name="Countries" bits="26" ids="4,2"/>
     </switches>
-    <buttons names="Light Punch,Middle Punch,Heavy Punch,Light Kick,Middle Kick,Heavy Kick,Start,Coin,Core credits" default="Y,X,B,A,L,R,Select,Start,-" count="6"/>
+    <buttons names="Light Punch,Middle Punch,Heavy Punch,Light Kick,Middle Kick,Heavy Kick,Start,Coin,Core credits" default="Y,X,B,A,R,L,Start,Select,-" count="6"/>
 </misterromdescription>
