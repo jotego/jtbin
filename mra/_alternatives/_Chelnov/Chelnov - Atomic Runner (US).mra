@@ -24,7 +24,7 @@
     <name>Chelnov - Atomic Runner (US)</name>
     <setname>chelnovu</setname>
     <rbf>jtkarnov</rbf>
-    <mameversion>0248</mameversion>
+    <mameversion>0251</mameversion>
     <year>1988</year>
     <manufacturer>Data East USA</manufacturer>
     <players>2</players>
@@ -32,7 +32,7 @@
     <rotation>horizontal</rotation>
     <region>World</region>
     <mraauthor>jotego</mraauthor>
-    <rom index="0" zip="chelnovu.zip|chelnov.zip" md5="None">
+    <rom index="0" zip="chelnovu.zip|chelnov.zip" md5="None" asm_md5="45fc84d27ce7c849ba529902214c5d1a">
         <!-- maincpu - starts at 0x0 - length 0x60000 (19 bits) -->
         <interleave output="16">
             <part name="ee11-a.j20" crc="f306d05f" map="01"/>
@@ -87,7 +87,7 @@
     <rom index="1">
         <part>00</part>
     </rom>
-    <switches page_id="1" page_name="Switches" base="16" default="ff7f">
+    <switches page_id="1" page_name="Switches" base="16" default="7f,ff">
         <!-- DSW -->
         <dip name="Coin A" bits="0,1" ids="2/1,1/3,1/2,1/1"/>
         <dip name="Coin B" bits="2,3" ids="2/1,1/3,1/2,1/1"/>

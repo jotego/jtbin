@@ -138,9 +138,9 @@
 | cawingu      | jtcps1     | cfa75c843b567b2767c71de8e1223492 | ff,fc,bf     |
 | cawingur1    | jtcps1     | 0c44231618c31346561314a1cd0643fe | ff,fc,bf     |
 | cencourt     | jts16b     | 70727fdaf089b1c5eee7fe65023fcddf | ff,f1        |
-| chelnov      | jtkarnov   |                                  | ff7f         |
-| chelnovj     | jtkarnov   |                                  | ff7f         |
-| chelnovu     | jtkarnov   |                                  | ff7f         |
+| chelnov      | jtkarnov   | 6b24c21d8b1d893729ca06d3b0b0733c | 7f,ff        |
+| chelnovj     | jtkarnov   | 61104ecba2f52f57183ef45d12226ae6 | 7f,ff        |
+| chelnovu     | jtkarnov   | 45fc84d27ce7c849ba529902214c5d1a | 7f,ff        |
 | chikij       | jtcps1     | eb05493f72a6199e051ff4542ef300a6 | ff,fc,bf     |
 | choko        | jtcps2     | 9f42ff25fd71993cd48aa2948345f78e |              |
 | combatsc     | jtcomsc    | 632210364566c4af623d44a003eb95a4 | ff,7b,5f     |
@@ -360,9 +360,9 @@
 | karateda     | jtkchamp   | 278b40c5a7797bdfd700d59cab41adab | 3f           |
 | karatedo     | jtkchamp   | 5f4c4ef4a25eee6df5893aafa5fbdb47 | 3f           |
 | karatevs     | jtkchamp   | 7bb5607f428ff08fb073e017b087747a | 9f           |
-| karnov       | jtkarnov   |                                  | ffbf         |
-| karnova      | jtkarnov   |                                  | ffbf         |
-| karnovj      | jtkarnov   |                                  | ffbf         |
+| karnov       | jtkarnov   | 2fdde2cddc577125a3a2b733eb7f42ec | bf,ff        |
+| karnova      | jtkarnov   | 70cd2348f0ea85174bd06c46952fdb55 | bf,ff        |
+| karnovj      | jtkarnov   | f4109bdf6c6a1dfc16b2324055f5c43a | bf,ff        |
 | kchamp       | jtkchamp   | efdeaf8ffe3311b115ffe8f9923c8c4f | 3f           |
 | kchamptec    | jtkchamp   | c38508385b3035f9bd237a931923adb1 | 3f           |
 | kchampvs     | jtkchamp   | 1dbaac84702dfbf0ee036d5a89918226 | 9f           |
@@ -846,7 +846,7 @@
 | willowj      | jtcps1     | 527ad7df6f60a5129f1669522532c45e | 7f,ff,ff     |
 | willowu      | jtcps1     | b692e6ca608e1704249ec551f4d1242d | ff,ff,fa     |
 | willowuo     | jtcps1     | f44bb34ad35e743c894a070f2ecbc3f3 | ff,ff,fa     |
-| wndrplnt     | jtkarnov   |                                  | ff7f         |
+| wndrplnt     | jtkarnov   | e81ae47504db6a4446676dfb39dfbab0 | 7f,ff        |
 | wof          | jtcps15    | 0e41c840a0f9d1c443c0e388c73dc11c | ff           |
 | wofa         | jtcps15    | b1195cc3c6b7c878873d081f13c1ed6a | ff           |
 | wofch        | jtcps15    | 48b77e2085ef0341442f2629dda27346 | ff,ff        |
