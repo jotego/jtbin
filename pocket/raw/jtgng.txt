@@ -7,6 +7,7 @@ Place the *.rom files in Assets/jtgng/common
 
 Ghosts'n Goblins (World? set 1) --> gng.rom
 Ghosts'n Goblins (World? set 2) --> gnga.rom
+Ghosts'n Goblins (bootleg with Cross) --> gngbl.rom
 Ghosts'n Goblins (Italian bootleg, harder) --> gngblita.rom
 Ghosts'n Goblins (World? set 3) --> gngc.rom
 Ghosts'n Goblins (prototype) --> gngprot.rom

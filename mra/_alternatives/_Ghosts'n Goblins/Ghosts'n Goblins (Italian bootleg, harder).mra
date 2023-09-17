@@ -1,17 +1,17 @@
-<!--          FPGA compatible core for Capcom arcade hardware by Jotego
+<!--          FPGA arcade hardware by Jotego
 
               This core is available for hardware compatible with MiST and MiSTer
               Other FPGA systems may be supported by the time you read this.
               This work is not mantained by the MiSTer project. Please contact the
               core author for issues and updates.
 
-              (c) Jose Tejada, 2021. Please support the author
+              (c) Jose Tejada, 2023. Please support this research
               Patreon: https://patreon.com/jotego
-              Paypal:  https://paypal.me/topapate
 
               The author does not endorse or participate in illegal distribution
-              of copyrighted material. This work can be used with legally
-              obtained ROM dumps or with compatible homebrew software.
+              of copyrighted material. This work can be used with compatible
+              software. This software can be homebrew projects or legally
+              obtained memory dumps of compatible games.
 
               This file license is GNU GPLv2.
               You can read the whole license file in
@@ -21,30 +21,27 @@
 
 <misterromdescription>
     <about author="jotego" webpage="https://patreon.com/jotego" source="https://github.com/jotego" twitter="@topapate"/>
-    <name>Ghosts&apos;n Goblins (Italian Bootleg, Harder)</name>
+    <name>Ghosts&apos;n Goblins (Italian bootleg, harder)</name>
     <setname>gngblita</setname>
     <rbf>jtgng</rbf>
-    <mameversion>0234</mameversion>
+    <mameversion>0251</mameversion>
     <year>1985</year>
-    <manufacturer>Capcom</manufacturer>
+    <manufacturer>bootleg</manufacturer>
     <players>2</players>
-    <joystick>8-way</joystick>
+    <joystick>8</joystick>
     <rotation>horizontal</rotation>
     <region>World</region>
-    <platform>Capcom Z80</platform>
-    <category>Platformer</category>
-    <catver>Platform / Fighter Scrolling</catver>
-    <mraauthor>jotego,atrac17</mraauthor>
-    <rom index="0" zip="gngblita.zip|gng.zip" md5="None">
-        <!-- maincpu - starts at 0x0 -->
+    <mraauthor>jotego</mraauthor>
+    <rom index="0" zip="gngblita.zip|gng.zip" md5="None" asm_md5="3da9708518bfb1b90ba960b22f71e0c9">
+        <!-- maincpu - starts at 0x0 - length 0x14000 (17 bits) -->
         <part name="4-5" crc="233a4589"/>
         <part name="3" crc="4859d068"/>
         <part name="1-2" crc="ed28e86e"/>
-        <!-- gfx1 - starts at 0x14000 -->
+        <!-- chars - starts at 0x14000 - length 0x4000 (14 bits) -->
         <part name="gg1.bin" crc="ecfccf07"/>
-        <!-- audiocpu - starts at 0x18000 -->
+        <!-- audiocpu - starts at 0x18000 - length 0x8000 (15 bits) -->
         <part name="gg2.bin" crc="615f5b6f"/>
-        <!-- gfx2 - starts at 0x20000 -->
+        <!-- tiles - starts at 0x20000 - length 0x20000 (17 bits) -->
         <part name="gg9.bin" crc="20035bda"/>
         <part name="gg8.bin" crc="f12ba271"/>
         <part name="gg7.bin" crc="e525207d"/>
@@ -53,7 +50,7 @@
         <part name="gg10.bin" crc="7302529d"/>
         <part name="gg11.bin" crc="ddd56fa9"/>
         <part name="gg10.bin" crc="7302529d"/>
-        <!-- gfx3 - starts at 0x40000 -->
+        <!-- sprites - starts at 0x40000 - length 0x20000 (17 bits) -->
         <part name="gg17.bin" crc="93e50a8f"/>
         <part name="gg16.bin" crc="06d7e5ca"/>
         <part name="gg15.bin" crc="bc1fe02d"/>
@@ -67,7 +64,7 @@
     <rom index="1">
         <part>00</part>
     </rom>
-    <switches page_id="1" page_name="Switches" base="16" default="5f,7b">
+    <switches page_id="1" page_name="Switches" base="16" default="df,fb">
         <!-- DSW1 -->
         <dip name="Coinage" bits="0,3" ids="Free Play,4/3,4/1,3/4,3/2,3/1,2/5,2/3,2/1,1/7,1/6,1/5,1/4,1/3,1/2,1/1"/>
         <dip name="Coinage affects" bits="4" ids="Coin B,Coin A"/>
@@ -77,8 +74,8 @@
         <!-- DSW2 -->
         <dip name="Lives" bits="8,9" ids="7,5,4,3"/>
         <dip name="Cabinet" bits="10" ids="Upright,Cocktail"/>
-        <dip name="Extend" bits="11,12" ids="30 80K,20 80K,30 80 80K(E),20 70 70K(E)"/>
+        <dip name="Bonus" bits="11,12" ids="30K and 80K Only,20K and 80K Only,30K 80K Every 80K,20K 70K Every 70K"/>
         <dip name="Difficulty" bits="13,14" ids="Very Difficult,Difficult,Easy,Normal"/>
     </switches>
-    <buttons names="Fire,Jump,Start,Coin,Core credits" default="Y,X,R,L,Start" count="2"/>
+    <buttons names="Fire,Jump,Start,Coin,Core credits" default="Y,X,Start,Select,-" count="2"/>
 </misterromdescription>

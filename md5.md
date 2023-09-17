@@ -312,13 +312,13 @@
 | gigawingj    | jtcps2     | c571194944d0f14c69a9a5e55187bb42 |              |
 | gigawingjd   | jtcps2     | 35a91a708bec512a9687bf1455af5e1f |              |
 | gmahou       | jtcps2     | fbf2c537cbdb9de26f34c884a39afc56 |              |
-| gng          | jtgng      |                                  | df,fb        |
-| gnga         | jtgng      |                                  | df,fb        |
-| gngbl        | jtgng      |                                  | 5f,7b        |
-| gngblita     | jtgng      |                                  | 5f,7b        |
-| gngc         | jtgng      |                                  | df,fb        |
-| gngprot      | jtgng      |                                  | df,fb        |
-| gngt         | jtgng      |                                  | df,fb        |
+| gng          | jtgng      | 41a39ea05a8bf15526ca05e0894c248f | df,fb        |
+| gnga         | jtgng      | ea92dcc98df0252769ba50d8bc1935a4 | df,fb        |
+| gngbl        | jtgng      | 1f9a21a942a3669a79cae7937119bf19 | df,fb        |
+| gngblita     | jtgng      | 3da9708518bfb1b90ba960b22f71e0c9 | df,fb        |
+| gngc         | jtgng      | 682b65e318744430685085daf95eb899 | df,fb        |
+| gngprot      | jtgng      | 451a54f00c2874e1cb902832e1df9232 | df,fb        |
+| gngt         | jtgng      | 205229cb8941ae2ab651777018f91826 | df,fb        |
 | goldnaxe     | jts16b     | ccc80682e6dc090585aa70f383665909 | ff,fd        |
 | goldnaxe1    | jts16b     | abd9d5b3d93655dd627ea565163825f0 | ff,fd        |
 | goldnaxe2    | jts16b     | 9b49d0be22ca087cbe54501e998a9348 | ff,fd        |
@@ -391,9 +391,9 @@
 | lwingsj      | jtsectnz   | 950dd727263854d144dcbe41af9d60ed | ff,ff        |
 | lwingsja     | jtsectnz   | 9e0923b69d3c9816f842ec40ce022dec | ff,ff        |
 | mach9        | jtvulgus   | a0aa39d1cb955ea84c82da5403ac321b | ff,7f        |
-| makaimur     | jtgng      |                                  | 5f,7b        |
-| makaimurc    | jtgng      |                                  | 5f,7b        |
-| makaimurg    | jtgng      |                                  | 5f,7b        |
+| makaimur     | jtgng      | f80a619acf3e03db0b5c38e1559d9932 | df,fb        |
+| makaimurc    | jtgng      | 4986f3d2522f8461206db2bd3bc5bc6b | df,fb        |
+| makaimurg    | jtgng      | b2c45890c22b282f6a1e799cfdc4c700 | df,fb        |
 | mbomberj     | jtcps15    | 56c6bded6b8144d83b003ead2952ddd9 | ff           |
 | mbombrd      | jtcps15    | b2222a07181b228d155a47c93e3cb110 | ff           |
 | mbombrdj     | jtcps15    | 90fcbbb144969081ffa8a4c3a1e81c60 | ff           |

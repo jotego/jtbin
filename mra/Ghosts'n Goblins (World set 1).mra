@@ -5,7 +5,7 @@
               This work is not mantained by the MiSTer project. Please contact the
               core author for issues and updates.
 
-              (c) Jose Tejada, 2022. Please support this research
+              (c) Jose Tejada, 2023. Please support this research
               Patreon: https://patreon.com/jotego
 
               The author does not endorse or participate in illegal distribution
@@ -21,10 +21,10 @@
 
 <misterromdescription>
     <about author="jotego" webpage="https://patreon.com/jotego" source="https://github.com/jotego" twitter="@topapate"/>
-    <name>Ghosts&apos;n Goblins (prototype)</name>
-    <setname>gngprot</setname>
+    <name>Ghosts&apos;n Goblins (World? set 1)</name>
+    <setname>gng</setname>
     <rbf>jtgng</rbf>
-    <mameversion>0237</mameversion>
+    <mameversion>0251</mameversion>
     <year>1985</year>
     <manufacturer>Capcom</manufacturer>
     <players>2</players>
@@ -32,35 +32,33 @@
     <rotation>horizontal</rotation>
     <region>World</region>
     <mraauthor>jotego</mraauthor>
-    <rom index="0" zip="gngprot.zip|gng.zip" md5="None">
+    <rom index="0" zip="gng.zip" md5="None" asm_md5="41a39ea05a8bf15526ca05e0894c248f">
         <!-- maincpu - starts at 0x0 - length 0x14000 (17 bits) -->
-        <part name="gg9n.bin" crc="30eb183d"/>
-        <part name="gg8n.bin" crc="4b5e2145"/>
-        <part name="gg10n.bin" crc="5d2a2c90"/>
-        <part name="gg13n.bin" crc="2664aae6"/>
-        <part name="gg12n.bin" crc="c7ef4ae8"/>
-        <!-- gfx1 - starts at 0x14000 - length 0x4000 (14 bits) -->
-        <part name="gg11e.bin" crc="ccea9365"/>
+        <part name="gg3.bin" crc="9e01c65e"/>
+        <part name="gg4.bin" crc="66606beb"/>
+        <part name="gg5.bin" crc="d6397b2b"/>
+        <!-- chars - starts at 0x14000 - length 0x4000 (14 bits) -->
+        <part name="gg1.bin" crc="ecfccf07"/>
         <!-- audiocpu - starts at 0x18000 - length 0x8000 (15 bits) -->
-        <part name="gg14h.bin" crc="55cfb196"/>
-        <!-- gfx2 - starts at 0x20000 - length 0x20000 (17 bits) -->
-        <part name="gg3c.bin" crc="7a158323"/>
-        <part name="gg1c.bin" crc="7314d095"/>
-        <part name="gg3b.bin" crc="03a96d9b"/>
-        <part name="gg1b.bin" crc="7b9899bc"/>
-        <part name="gg3e.bin" crc="68db22c8"/>
-        <part name="gg1e.bin" crc="dad8dd2f"/>
-        <part name="gg3e.bin" crc="68db22c8"/>
-        <part name="gg1e.bin" crc="dad8dd2f"/>
-        <!-- gfx3 - starts at 0x40000 - length 0x20000 (17 bits) -->
-        <part name="gg4l.bin" crc="49cf81b4"/>
-        <part name="gg3l.bin" crc="e61437b1"/>
-        <part name="gg1l.bin" crc="bc1fe02d"/>
-        <part name="gg1l.bin" crc="bc1fe02d"/>
-        <part name="gg4n.bin" crc="d5aff5a7"/>
-        <part name="gg3n.bin" crc="d589caeb"/>
-        <part name="gg1n.bin" crc="7780a925"/>
-        <part name="gg1n.bin" crc="7780a925"/>
+        <part name="gg2.bin" crc="615f5b6f"/>
+        <!-- tiles - starts at 0x20000 - length 0x20000 (17 bits) -->
+        <part name="gg9.bin" crc="20035bda"/>
+        <part name="gg8.bin" crc="f12ba271"/>
+        <part name="gg7.bin" crc="e525207d"/>
+        <part name="gg6.bin" crc="2d77e9b2"/>
+        <part name="gg11.bin" crc="ddd56fa9"/>
+        <part name="gg10.bin" crc="7302529d"/>
+        <part name="gg11.bin" crc="ddd56fa9"/>
+        <part name="gg10.bin" crc="7302529d"/>
+        <!-- sprites - starts at 0x40000 - length 0x20000 (17 bits) -->
+        <part name="gg17.bin" crc="93e50a8f"/>
+        <part name="gg16.bin" crc="06d7e5ca"/>
+        <part name="gg15.bin" crc="bc1fe02d"/>
+        <part name="gg15.bin" crc="bc1fe02d"/>
+        <part name="gg14.bin" crc="6aaf12f9"/>
+        <part name="gg13.bin" crc="e80c3fca"/>
+        <part name="gg12.bin" crc="7780a925"/>
+        <part name="gg12.bin" crc="7780a925"/>
         <!-- Total 0x60000 bytes - 384 kBytes -->
     </rom>
     <rom index="1">
@@ -78,7 +76,6 @@
         <dip name="Cabinet" bits="10" ids="Upright,Cocktail"/>
         <dip name="Bonus" bits="11,12" ids="30K and 80K Only,20K and 80K Only,30K 80K Every 80K,20K 70K Every 70K"/>
         <dip name="Difficulty" bits="13,14" ids="Very Difficult,Difficult,Easy,Normal"/>
-        <dip name="Unused" bits="15" ids="On,Off"/>
     </switches>
     <buttons names="Fire,Jump,Start,Coin,Core credits" default="Y,X,Start,Select,-" count="2"/>
 </misterromdescription>
