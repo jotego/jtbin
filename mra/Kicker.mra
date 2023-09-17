@@ -5,7 +5,7 @@
               This work is not mantained by the MiSTer project. Please contact the
               core author for issues and updates.
 
-              (c) Jose Tejada, 2022. Please support this research
+              (c) Jose Tejada, 2023. Please support this research
               Patreon: https://patreon.com/jotego
 
               The author does not endorse or participate in illegal distribution
@@ -24,7 +24,7 @@
     <name>Kicker</name>
     <setname>kicker</setname>
     <rbf>jtkicker</rbf>
-    <mameversion>0237</mameversion>
+    <mameversion>0251</mameversion>
     <year>1985</year>
     <manufacturer>Konami</manufacturer>
     <players>2</players>
@@ -32,8 +32,8 @@
     <rotation>vertical (cw)</rotation>
     <region>World</region>
     <mraauthor>jotego</mraauthor>
-    <rom index="0" zip="kicker.zip" md5="None">
-        <!-- maincpu - starts at 0x0 -->
+    <rom index="0" zip="kicker.zip" md5="None" asm_md5="9d9079374cb0bda26a02c1747f8a500b">
+        <!-- maincpu - starts at 0x0 - length 0x10000 (16 bits) -->
         <part repeat="0x6000"> FF</part>
         <interleave output="16">
             <part name="477l03.d9" crc="2598dfdd" map="12"/>
@@ -44,17 +44,21 @@
         <interleave output="16">
             <part name="477l05.d11" crc="654037f8" map="12"/>
         </interleave>
-        <!-- gfx1 - starts at 0x10000 -->
+        <!-- SCR_START -->
+        <!-- tiles - starts at 0x10000 - length 0x4000 (14 bits) -->
         <interleave output="16">
             <part name="477k07.a11" crc="ff6ca5df" map="01"/>
             <part name="477k06.a10" crc="4d156afc" map="10"/>
         </interleave>
-        <!-- gfx2 - starts at 0x14000 -->
+        <!-- OBJ_START -->
+        <!-- sprites - starts at 0x14000 - length 0x8000 (15 bits) -->
         <interleave output="16">
             <part name="477k01.h14" crc="61bbf797" map="01"/>
             <part name="477k02.h15" crc="b94e645b" map="10"/>
         </interleave>
-        <!-- proms - starts at 0x1C000 -->
+        <!-- PCM_START -->
+        <!-- JTFRAME_PROM_START -->
+        <!-- proms - starts at 0x1C000 - length 0x500 (11 bits) -->
         <part name="477j10.a12" crc="b09db4b4"/>
         <part name="477j11.a13" crc="270a2bf3"/>
         <part name="477j12.a14" crc="83e95ea8"/>
@@ -74,7 +78,7 @@
         <!-- DSW2 -->
         <dip name="Lives" bits="8,9" ids="7,5,3,2"/>
         <dip name="Cabinet" bits="10" ids="Upright,Cocktail"/>
-        <dip name="Bonus" bits="11,12" ids="50k,40k,40k and every 80k,30k and every 70k"/>
+        <dip name="Bonus" bits="11,12" ids="50k,40k,40k &amp; *80k,30k &amp; *70k"/>
         <dip name="Difficulty" bits="13,14" ids="Hardest,Hard,Medium,Easy"/>
         <dip name="Demo Sounds" bits="15" ids="On,Off"/>
         <!-- DSW3 -->
