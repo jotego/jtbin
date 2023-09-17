@@ -1,17 +1,17 @@
-<!--          FPGA compatible core for Capcom (Tecfri license) arcade hardware by Jotego
+<!--          FPGA arcade hardware by Jotego
 
               This core is available for hardware compatible with MiST and MiSTer
               Other FPGA systems may be supported by the time you read this.
               This work is not mantained by the MiSTer project. Please contact the
               core author for issues and updates.
 
-              (c) Jose Tejada, 2021. Please support the author
+              (c) Jose Tejada, 2023. Please support this research
               Patreon: https://patreon.com/jotego
-              Paypal:  https://paypal.me/topapate
 
               The author does not endorse or participate in illegal distribution
-              of copyrighted material. This work can be used with legally
-              obtained ROM dumps or with compatible homebrew software.
+              of copyrighted material. This work can be used with compatible
+              software. This software can be homebrew projects or legally
+              obtained memory dumps of compatible games.
 
               This file license is GNU GPLv2.
               You can read the whole license file in
@@ -24,16 +24,16 @@
     <name>The Speed Rumbler (set 3)</name>
     <setname>srumbler3</setname>
     <rbf>jtrumble</rbf>
-    <mameversion>0229</mameversion>
+    <mameversion>0251</mameversion>
     <year>1986</year>
     <manufacturer>Capcom (Tecfri license)</manufacturer>
-    <category>Shooter</category>
     <players>2</players>
-    <joystick>8-way</joystick>
+    <joystick>8</joystick>
     <rotation>vertical (ccw)</rotation>
     <region>World</region>
-    <rom index="0" zip="srumbler3.zip|srumbler.zip" type="merged" md5="None">
-        <!-- user1 - starts at 0x0 -->
+    <mraauthor>jotego</mraauthor>
+    <rom index="0" zip="srumbler3.zip|srumbler.zip" md5="None" asm_md5="1f8f4f4c2aee65f726b85b0494a178e7">
+        <!-- maincpu - starts at 0x0 - length 0x40000 (18 bits) -->
         <part name="rc04.14e" crc="a68ce89c"/>
         <part name="rc03.13e" crc="0a21992b"/>
         <part name="rc02.12e" crc="009a62d8"/>
@@ -42,13 +42,15 @@
         <part name="rc08.13f" crc="e361b55c"/>
         <part name="rc07.12f" crc="de785076"/>
         <part name="rc06.11f" crc="a70f4fd4"/>
-        <!-- audiocpu - starts at 0x40000 -->
+        <!-- BA1_START -->
+        <!-- audiocpu - starts at 0x40000 - length 0x8000 (15 bits) -->
         <part name="rc05.2f" crc="ea04fa07"/>
-        <!-- char - starts at 0x48000 -->
+        <!-- BA2_START -->
+        <!-- chars - starts at 0x48000 - length 0x4000 (14 bits) -->
         <interleave output="16">
             <part name="rc10.6g" crc="adabe271" map="12"/>
         </interleave>
-        <!-- scr - starts at 0x4C000 -->
+        <!-- tiles - starts at 0x4C000 - length 0x40000 (18 bits) -->
         <interleave output="16">
             <part name="rc15.11c" crc="ca3a3af3" map="01"/>
             <part name="rc11.11a" crc="5fa042ba" map="10"/>
@@ -65,7 +67,8 @@
             <part name="rc18.15c" crc="ce67868e" map="01"/>
             <part name="rc14.15a" crc="b22b31b3" map="10"/>
         </interleave>
-        <!-- obj - starts at 0x8C000 -->
+        <!-- BA3_START -->
+        <!-- sprites - starts at 0x8C000 - length 0x40000 (18 bits) -->
         <interleave output="32">
             <part name="rc26.15j" crc="d4f1732f" map="0001"/>
             <part name="rc24.15h" crc="c972af3e" map="0010"/>
@@ -78,7 +81,8 @@
             <part name="rc21.14f" crc="fd64bcd1" map="0100"/>
             <part name="rc19.14e" crc="ff8f9129" map="1000"/>
         </interleave>
-        <!-- proms - starts at 0xCC000 -->
+        <!-- PROM_START -->
+        <!-- proms - starts at 0xCC000 - length 0x300 (10 bits) -->
         <part name="63s141.12a" crc="8421786f"/>
         <part name="63s141.13a" crc="6048583f"/>
         <part name="63s141.8j" crc="1a89a7ff"/>
@@ -86,9 +90,9 @@
     </rom>
     <!-- Vertical game -->
     <rom index="1">
-        <part>01</part>
+        <part>05</part>
     </rom>
-    <switches base="16" default="FF,FF">
+    <switches page_id="1" page_name="Switches" base="16" default="ff,73">
         <!-- DSW1 -->
         <dip name="Coin B" bits="0,2" ids="4/1,3/1,2/1,1/6,1/4,1/3,1/2,1/1"/>
         <dip name="Coin A" bits="3,5" ids="4/1,3/1,2/1,1/6,1/4,1/3,1/2,1/1"/>
@@ -97,9 +101,9 @@
         <!-- DSW2 -->
         <dip name="Lives" bits="8,9" ids="7,5,4,3"/>
         <dip name="Cabinet" bits="10" ids="Upright,Cocktail"/>
-        <dip name="Bonus Life" bits="11,12" ids="30k 80k,20k 80k,30k 80k and every 80k,20k 70k and every 70k"/>
+        <dip name="Bonus" bits="11,12" ids="30k 80k,20k 80k,30k 80k &amp; *80k,20k 70k &amp; *70k"/>
         <dip name="Difficulty" bits="13,14" ids="Very Difficult,Difficult,Easy,Normal"/>
         <dip name="Allow Continue" bits="15" ids="No,Yes"/>
     </switches>
-    <buttons names="Shoot,Exit car,Start,Coin,Core credits" default="Y,X,R,L,Start" count="2"/>
+    <buttons names="Fire,Escape,Start,Coin,Core credits" default="Y,X,Start,Select,-" count="2"/>
 </misterromdescription>
