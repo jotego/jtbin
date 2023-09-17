@@ -32,7 +32,7 @@
     <rotation>horizontal</rotation>
     <region>Japan</region>
     <mraauthor>jotego,atrac17</mraauthor>
-    <rom index="0" zip="tetris.zip" md5="None">
+    <rom index="0" zip="tetris.zip" md5="None" asm_md5="a66fee2c280d67b2820db8dda291719e">
         <part>
             00 00 00 00 00 00 00 00
             00 00 00 00 00 00 00 00

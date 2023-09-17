@@ -32,7 +32,7 @@
     <rotation>horizontal</rotation>
     <region>World</region>
     <mraauthor>jotego,atrac17</mraauthor>
-    <rom index="0" zip="shinobi1.zip|shinobi.zip" md5="None">
+    <rom index="0" zip="shinobi1.zip|shinobi.zip" md5="None" asm_md5="2c6ca20fe0a6c0cadd7c8cfee6238d89">
         <part>
             00 00 00 00 00 00 00 00
             00 00 00 00 00 00 00 00
@@ -82,8 +82,8 @@
             <part name="epr-11293.29" crc="41f41063" map="01"/>
             <part name="epr-11297.30" crc="b6e1fd72" map="10"/>
         </interleave>
-        <!-- JTFRAME_PROM_START -->
         <!-- MCU_START -->
+        <!-- JTFRAME_PROM_START -->
         <!-- mcu - starts at 0x180000 - length 0x2000 (13 bits) -->
         <part repeat="0x1000"> FF</part>
         <part repeat="0x1000"> FF</part>

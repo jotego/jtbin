@@ -32,7 +32,7 @@
     <rotation>horizontal</rotation>
     <region>Japan</region>
     <mraauthor>jotego,atrac17</mraauthor>
-    <rom index="0" zip="wb31.zip|wb3.zip" md5="None">
+    <rom index="0" zip="wb31.zip|wb3.zip" md5="None" asm_md5="60351f24d4ed05826bfc0f948c081c3b">
         <part>
             00 00 00 00 00 00 00 00
             00 00 00 00 00 00 00 00

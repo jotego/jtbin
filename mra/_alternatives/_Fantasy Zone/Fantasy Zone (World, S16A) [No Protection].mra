@@ -32,7 +32,7 @@
     <rotation>horizontal</rotation>
     <region>World</region>
     <mraauthor>jotego,atrac17</mraauthor>
-    <rom index="0" zip="fantzone1.zip|fantzone.zip" md5="None">
+    <rom index="0" zip="fantzone1.zip|fantzone.zip" md5="None" asm_md5="28778fea6ec5061248d8f3d2400bcf07">
         <part>
             00 00 00 00 00 00 00 00
             00 00 00 00 00 00 00 00
@@ -85,8 +85,8 @@
             <part name="epr-7398.24" crc="68807b49" map="10"/>
         </interleave>
         <part repeat="0x30000"> FF</part>
-        <!-- MCU_START -->
         <!-- JTFRAME_PROM_START -->
+        <!-- MCU_START -->
         <!-- mcu - starts at 0x180000 - length 0x2000 (13 bits) -->
         <part repeat="0x1000"> FF</part>
         <part repeat="0x1000"> FF</part>

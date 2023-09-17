@@ -32,7 +32,7 @@
     <rotation>vertical (ccw)</rotation>
     <region>World</region>
     <mraauthor>jotego,atrac17</mraauthor>
-    <rom index="0" zip="passsht16a.zip|passsht.zip" md5="None">
+    <rom index="0" zip="passsht16a.zip|passsht.zip" md5="None" asm_md5="d05f1d8fcc42dc8c87bb6b4467e6adf5">
         <part>
             00 00 00 00 00 00 00 00
             00 00 00 00 00 00 00 00
@@ -79,8 +79,8 @@
             <part name="epr-11847.24" crc="81e49697" map="10"/>
         </interleave>
         <part repeat="0x20000"> FF</part>
-        <!-- MCU_START -->
         <!-- JTFRAME_PROM_START -->
+        <!-- MCU_START -->
         <!-- mcu - starts at 0x180000 - length 0x2000 (13 bits) -->
         <part repeat="0x1000"> FF</part>
         <part repeat="0x1000"> FF</part>
