@@ -5,7 +5,7 @@
               This work is not mantained by the MiSTer project. Please contact the
               core author for issues and updates.
 
-              (c) Jose Tejada, 2022. Please support this research
+              (c) Jose Tejada, 2023. Please support this research
               Patreon: https://patreon.com/jotego
 
               The author does not endorse or participate in illegal distribution
@@ -24,7 +24,7 @@
     <name>Super Basketball (version G, encrypted)</name>
     <setname>sbasketg</setname>
     <rbf>jtsbask1</rbf>
-    <mameversion>0237</mameversion>
+    <mameversion>0251</mameversion>
     <year>1984</year>
     <manufacturer>Konami</manufacturer>
     <players>2</players>
@@ -32,28 +32,33 @@
     <rotation>vertical (cw)</rotation>
     <region>World</region>
     <mraauthor>jotego</mraauthor>
-    <rom index="0" zip="sbasketg.zip|sbasketb.zip" md5="None">
-        <!-- maincpu - starts at 0x0 -->
+    <rom index="0" zip="sbasketg.zip|sbasketb.zip" md5="None" asm_md5="89944ff60c58588a12a1bf1fa522bd88">
+        <!-- maincpu - starts at 0x0 - length 0x10000 (16 bits) -->
         <part repeat="0x6000"> FF</part>
         <part name="405g05.14j" crc="336dc0ab"/>
         <part name="405g04.13j" crc="f064a9bc"/>
         <part name="405g03.11j" crc="b9de7d53"/>
         <part name="405g02.10j" crc="e98470a0"/>
         <part name="405g01.9j" crc="1bd0cd2e"/>
-        <!-- audiocpu - starts at 0x10000 -->
+        <!-- SND_START -->
+        <!-- audiocpu - starts at 0x10000 - length 0x2000 (13 bits) -->
         <part name="405e13.7a" crc="1ec7458b"/>
-        <!-- gfx1 - starts at 0x12000 -->
+        <!-- SCR_START -->
+        <!-- tiles - starts at 0x12000 - length 0x4000 (14 bits) -->
         <part name="405e12.22f" crc="e02c54da"/>
-        <!-- gfx2 - starts at 0x16000 -->
+        <!-- OBJ_START -->
+        <!-- sprites - starts at 0x16000 - length 0xC000 (16 bits) -->
         <part name="405e06.14g" crc="7e2f5bb2"/>
         <part name="405e07.16g" crc="963a44f9"/>
         <part name="405e08.17g" crc="63901deb"/>
         <part name="405e09.19g" crc="e1873677"/>
         <part name="405e10.20g" crc="824815e8"/>
         <part name="405e11.22g" crc="dca9b447"/>
-        <!-- vlm - starts at 0x22000 -->
+        <!-- PCM_START -->
+        <!-- vlm - starts at 0x22000 - length 0x2000 (13 bits) -->
         <part name="405e15.11f" crc="01bb5ce9"/>
-        <!-- proms - starts at 0x24000 -->
+        <!-- JTFRAME_PROM_START -->
+        <!-- proms - starts at 0x24000 - length 0x500 (11 bits) -->
         <part name="405e17.5a" crc="b4c36d57"/>
         <part name="405e16.4a" crc="0b7b03b8"/>
         <part name="405e18.6a" crc="9e533bad"/>

@@ -562,9 +562,9 @@
 | ryukyu       | jts16b     | 8f2e0276190a2c18150cc7da4a25583f | ff,fa        |
 | ryukyua      | jts16b     | a588e0ceab5e1d557cc0188a38385750 | ff,fa        |
 | savgbees     | jtexed     | 0ef5c619ff89dc56a6bfeeecbeb3bbba | df,ff        |
-| sbasketb     | jtsbask1   |                                  | ff,68        |
-| sbaskete     | jtsbask1   |                                  | ff,68        |
-| sbasketg     | jtsbask1   |                                  | ff,68        |
+| sbasketb     | jtsbask1   | 89944ff60c58588a12a1bf1fa522bd88 | ff,68        |
+| sbaskete     | jtsbask1   | c9d87deda703975fc0a1be7ea55b320c | ff,68        |
+| sbasketg     | jtsbask1   | 89944ff60c58588a12a1bf1fa522bd88 | ff,68        |
 | sbasketh     | jtsbaskt   | 329dd1723105c7c9d8d54a2488698091 | ff,68        |
 | sbbros       | jtpang     | c5df99210dd5f2b764165b0e9a899825 |              |
 | scontra      | jtaliens   | ffd37f90245d65425a36c8447a534517 | ff,5a,f7     |
