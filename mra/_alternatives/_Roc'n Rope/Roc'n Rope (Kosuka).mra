@@ -5,7 +5,7 @@
               This work is not mantained by the MiSTer project. Please contact the
               core author for issues and updates.
 
-              (c) Jose Tejada, 2022. Please support this research
+              (c) Jose Tejada, 2023. Please support this research
               Patreon: https://patreon.com/jotego
 
               The author does not endorse or participate in illegal distribution
@@ -24,30 +24,34 @@
     <name>Roc&apos;n Rope (Kosuka)</name>
     <setname>rocnropek</setname>
     <rbf>jtroc</rbf>
-    <mameversion>0237</mameversion>
+    <mameversion>0251</mameversion>
     <year>1983</year>
     <manufacturer>Konami (Kosuka license)</manufacturer>
     <players>2</players>
     <joystick>4</joystick>
-    <rotation>vertical (ccw)</rotation>
+    <rotation>vertical (cw)</rotation>
     <region>World</region>
     <mraauthor>jotego</mraauthor>
-    <rom index="0" zip="rocnropek.zip|rocnrope.zip" md5="None">
-        <!-- maincpu - starts at 0x0 -->
+    <rom index="0" zip="rocnropek.zip|rocnrope.zip" md5="None" asm_md5="9a7b2a4292da9248e666abe317edf768">
+        <!-- maincpu - starts at 0x0 - length 0xA000 (16 bits) -->
         <part name="rnr_h1.vid" crc="0fddc1f6"/>
         <part name="rnr_h2.vid" crc="ce9db49a"/>
         <part name="rnr_h3.vid" crc="6d278459"/>
         <part name="rnr_h4.vid" crc="9b2e5f2a"/>
         <part name="rnr_h5.vid" crc="150a6264"/>
-        <!-- timeplt_audio:tpsound - starts at 0xA000 -->
+        <!-- SND_START -->
+        <!-- timeplt_audio:tpsound - starts at 0xA000 - length 0x2000 (13 bits) -->
         <part name="rnr_7a.snd" crc="75d2c4e2"/>
         <part name="rnr_8a.snd" crc="ca4325ae"/>
-        <!-- gfx2 - starts at 0xC000 -->
+        <!-- SCR_START -->
+        <!-- JTFRAME_MCLK -->
+        <!-- tiles - starts at 0xC000 - length 0x4000 (14 bits) -->
         <interleave output="16">
             <part name="rnr_h12.vid" crc="e2114539" map="01"/>
             <part name="rnr_h11.vid" crc="169a8f3f" map="10"/>
         </interleave>
-        <!-- gfx1 - starts at 0x10000 -->
+        <!-- OBJ_START -->
+        <!-- sprites - starts at 0x10000 - length 0x8000 (15 bits) -->
         <interleave output="16">
             <part name="rnr_a11.vid" crc="afdaba5e" map="01"/>
             <part name="rnr_a9.vid" crc="9d2166b2" map="10"/>
@@ -56,7 +60,8 @@
             <part name="rnr_a12.vid" crc="054cafeb" map="01"/>
             <part name="rnr_a10.vid" crc="aff6e22f" map="10"/>
         </interleave>
-        <!-- proms - starts at 0x18000 -->
+        <!-- JTFRAME_PROM_START -->
+        <!-- proms - starts at 0x18000 - length 0x220 (10 bits) -->
         <part name="b16_prom.bin" crc="750a9677"/>
         <part name="rocnrope.pr3" crc="b5c75a27"/>
         <part name="a17_prom.bin" crc="22ad2c3e"/>
@@ -73,7 +78,7 @@
         <!-- DSW2 -->
         <dip name="Lives" bits="8,9" ids="255,5,4,3"/>
         <dip name="Cabinet" bits="10" ids="Upright,Cocktail"/>
-        <dip name="Difficulty" bits="11,14" ids="16,15,14,13,12,11,10,9,8,7,6,5,4,3,2,1 "/>
+        <dip name="Difficulty" bits="11,14" ids="16,15,14,13,12,11,10,9,8,7,6,5,4,3,2,1"/>
         <dip name="Demo Sounds" bits="15" ids="On,Off"/>
         <!-- DSW3 -->
         <dip name="First Bonus" bits="16,18" ids="80k,70k,60k,50k,40k,30k,20k,20k"/>

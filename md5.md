@@ -556,8 +556,8 @@
 | robocopw     | jtcop      | f840565e5bbc0150b540e14a3983199c | ff7f         |
 | rockman2j    | jtcps2     | 947a8ef6dd75a535d030faf144d8dc2e |              |
 | rockmanj     | jtcps1     | 6c5699d3d2215256f970a3e9d27a86cc | ff,fa,ff     |
-| rocnrope     | jtroc      |                                  | ff,5b,96     |
-| rocnropek    | jtroc      |                                  | ff,5b,96     |
+| rocnrope     | jtroc      | 3ea1ddb56be848aecc0b3b64f295ad3e | ff,5b,96     |
+| rocnropek    | jtroc      | 9a7b2a4292da9248e666abe317edf768 | ff,5b,96     |
 | rushcrsh     | jtrumble   | 572a3c6f951284f3d3aa988f2bc0e39e | ff,73        |
 | ryukyu       | jts16b     | 8f2e0276190a2c18150cc7da4a25583f | ff,fa        |
 | ryukyua      | jts16b     | a588e0ceab5e1d557cc0188a38385750 | ff,fa        |
