@@ -124,7 +124,7 @@
     <rom index="1">
         <part>00</part>
     </rom>
-    <switches page_id="1" page_name="Switches" base="17" default="ffff">
+    <switches page_id="1" page_name="Switches" base="17" default="ff,ff">
         <!-- DSW -->
         <dip name="Coin A" bits="0,1" ids="3/1,2/1,1/2,1/1"/>
         <dip name="Coin B" bits="2,3" ids="3/1,2/1,1/2,1/1"/>

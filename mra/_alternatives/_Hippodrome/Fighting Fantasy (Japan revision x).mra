@@ -99,7 +99,6 @@
         </interleave>
         <!-- MCU_START -->
         <!-- mcu - starts at 0x210000 -->
-        <!-- MCU_START -->
         <!-- sub - starts at 0x210000 - length 0x18000 (17 bits) -->
         <part name="ex08" crc="53010534"/>
         <part repeat="0x8000"> FF</part>
@@ -117,7 +116,7 @@
     <rom index="1">
         <part>00</part>
     </rom>
-    <switches page_id="1" page_name="Switches" base="17" default="ffff">
+    <switches page_id="1" page_name="Switches" base="17" default="ff,ff">
         <!-- DSW -->
         <dip name="Coin A" bits="0,1" ids="3/1,2/1,1/2,1/1"/>
         <dip name="Coin B" bits="2,3" ids="3/1,2/1,1/2,1/1"/>

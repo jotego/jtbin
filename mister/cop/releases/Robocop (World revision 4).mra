@@ -100,7 +100,6 @@
         <part repeat="0x20000"> FF</part>
         <!-- MCU_START -->
         <!-- mcu - starts at 0x210000 -->
-        <!-- MCU_START -->
         <!-- sub - starts at 0x210000 - length 0x18000 (17 bits) -->
         <part repeat="0x1E00"> FF</part>
         <part name="en_24_mb7124e.a2" crc="b8e2ca98"/>
@@ -115,7 +114,7 @@
     <rom index="1">
         <part>00</part>
     </rom>
-    <switches page_id="1" page_name="Switches" base="17" default="ff7f">
+    <switches page_id="1" page_name="Switches" base="17" default="7f,ff">
         <!-- DSW -->
         <dip name="Coin A" bits="0,1" ids="3/1,2/1,1/2,1/1"/>
         <dip name="Coin B" bits="2,3" ids="3/1,2/1,1/2,1/1"/>
