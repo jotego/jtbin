@@ -47,7 +47,6 @@
         <part name="ic37.bin" crc="a20337a2"/>
         <!-- adpcm - starts at 0x20000 -->
         <!-- gfx5 - starts at 0x20000 -->
-        <!-- gfx4 - starts at 0x20000 -->
         <!-- gfx1 - starts at 0x20000 - length 0x4000 (14 bits) -->
         <part name="ic60.bin" crc="091d923c"/>
         <!-- gfx2 - starts at 0x24000 - length 0x40000 (18 bits) -->

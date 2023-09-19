@@ -47,7 +47,6 @@
         <part name="11e_sz04.bin" crc="a6073566"/>
         <!-- adpcm - starts at 0x20000 -->
         <!-- gfx5 - starts at 0x20000 -->
-        <!-- gfx4 - starts at 0x20000 -->
         <!-- gfx1 - starts at 0x20000 - length 0x4000 (14 bits) -->
         <part name="9h_sz05.bin" crc="3173ba2e"/>
         <!-- gfx2 - starts at 0x24000 - length 0x40000 (18 bits) -->

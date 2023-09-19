@@ -86,7 +86,7 @@
     </rom>
     <switches page_id="1" page_name="Switches" base="16" default="f8,ff">
         <!-- DSWA -->
-        <dip name="Difficulty" bits="0,3" ids="16,15,14,13,12,11,10,9,8,7,6,5,4,3,2,1 "/>
+        <dip name="Difficulty" bits="0,3" ids="16,15,14,13,12,11,10,9,8,7,6,5,4,3,2,1"/>
         <dip name="2 Player Game" bits="4" ids="1/2 Players,2/2 Players"/>
         <dip name="Cabinet" bits="5" ids="Cocktail,Upright"/>
         <dip name="Screen Stop" bits="6" ids="On,Off"/>

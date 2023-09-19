@@ -21,8 +21,8 @@
 
 <misterromdescription>
     <about author="jotego" webpage="https://patreon.com/jotego" source="https://github.com/jotego" twitter="@topapate"/>
-    <name>Legendary Wings (US set 2)</name>
-    <setname>lwings2</setname>
+    <name>Legendary Wings (US set 1)</name>
+    <setname>lwings</setname>
     <rbf>jtsectnz</rbf>
     <mameversion>0251</mameversion>
     <year>1986</year>
@@ -32,7 +32,7 @@
     <rotation>vertical (cw)</rotation>
     <region>World</region>
     <mraauthor>jotego</mraauthor>
-    <rom index="0" zip="lwings2.zip|lwings.zip" md5="None" asm_md5="ba6804d682090b0896ef14b7997aaeee">
+    <rom index="0" zip="lwings.zip" md5="None" asm_md5="651efc4855d015293e02e45e6b59bc09">
         <part>
             01 00 00 00 00 00 00 00
             01 80 02 00 02 40 06 40
@@ -40,9 +40,9 @@
             00 00 00 00 00 00 00 00
         </part>
         <!-- maincpu - starts at 0x0 - length 0x18000 (17 bits) -->
-        <part name="u14-k" crc="5d91c828"/>
+        <part name="7c_lw02.bin" crc="a5efbb1b"/>
         <part name="9c_lw03.bin" crc="ec5cc201"/>
-        <part name="u13-l" crc="3069c01c"/>
+        <part name="6c_lw01.bin" crc="b55a7f60"/>
         <!-- soundcpu - starts at 0x18000 - length 0x8000 (15 bits) -->
         <part name="11e_lw04.bin" crc="a20337a2"/>
         <!-- adpcm - starts at 0x20000 -->
@@ -51,25 +51,25 @@
         <part name="9h_lw05.bin" crc="091d923c"/>
         <!-- gfx2 - starts at 0x24000 - length 0x40000 (18 bits) -->
         <interleave output="32">
-            <part name="b_03f.rom" crc="9b374dcc" map="0001"/>
-            <part name="b_03b.rom" crc="4f8182e9" map="0010"/>
-            <part name="b_03d.rom" crc="001caa35" map="0100"/>
-            <part name="b_03e.rom" crc="176e3027" map="1000"/>
+            <part name="3f_lw15.bin" crc="99e134ba" map="0001"/>
+            <part name="3b_lw12.bin" crc="32e17b3c" map="0010"/>
+            <part name="3d_lw13.bin" crc="fdd1908a" map="0100"/>
+            <part name="3e_lw14.bin" crc="5436392c" map="1000"/>
         </interleave>
         <interleave output="32">
-            <part name="b_01f.rom" crc="23654e0a" map="0001"/>
-            <part name="b_01b.rom" crc="f1617374" map="0010"/>
-            <part name="b_01d.rom" crc="0ba008c3" map="0100"/>
-            <part name="b_01e.rom" crc="f5d25623" map="1000"/>
+            <part name="1f_lw09.bin" crc="c8f28777" map="0001"/>
+            <part name="1b_lw06.bin" crc="52e533c1" map="0010"/>
+            <part name="1d_lw07.bin" crc="5c73d406" map="0100"/>
+            <part name="1e_lw08.bin" crc="b491bbbb" map="1000"/>
         </interleave>
         <!-- gfx3 - starts at 0x64000 - length 0x20000 (17 bits) -->
         <interleave output="16">
-            <part name="b_03j.rom" crc="8f3c763a" map="01"/>
-            <part name="b_03h.rom" crc="7d58f532" map="10"/>
+            <part name="3j_lw17.bin" crc="5ed1bc9b" map="01"/>
+            <part name="3h_lw16.bin" crc="e8834006" map="10"/>
         </interleave>
         <interleave output="16">
-            <part name="b_01j.rom" crc="7cc90a1d" map="01"/>
-            <part name="b_01h.rom" crc="3e396eda" map="10"/>
+            <part name="1j_lw11.bin" crc="2a0790d6" map="01"/>
+            <part name="1h_lw10.bin" crc="b693f5a5" map="10"/>
         </interleave>
         <!-- Total 0x84000 bytes - 528 kBytes -->
     </rom>

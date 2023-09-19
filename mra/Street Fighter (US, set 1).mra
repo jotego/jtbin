@@ -140,7 +140,7 @@
         <dip name="Freeze" bits="14" ids="On,Off"/>
         <dip name="Service Mode" bits="15" ids="On,Off"/>
         <!-- DSW2 -->
-        <dip name="Continue" bits="16,18" ids="None,1st Stage Maximum,2nd Stage Maximum,3rd Stage Maximum,4th Stage Maximum,5th Stage Maximum"/>
+        <dip name="Continue" bits="16,18" ids="-,-,None,1st Stage Maximum,2nd Stage Maximum,3rd Stage Maximum,4th Stage Maximum,5th Stage Maximum"/>
         <dip name="Time" bits="19,20" ids="250,200,150,100"/>
         <dip name="Difficulty" bits="21,22" ids="Very Difficult,Difficult,Easy,Normal"/>
         <dip name="Countries" bits="26" ids="4,2"/>
