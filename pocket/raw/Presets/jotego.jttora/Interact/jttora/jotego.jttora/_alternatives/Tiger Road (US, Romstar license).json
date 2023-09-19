@@ -249,7 +249,7 @@
 				"persist": false,
 				"writeonly": true,
 				"address": "0xfa000000",
-				"defaultval": 2147483647,
+				"defaultval": 65535,
 				"value": 0
 			}
 		],
