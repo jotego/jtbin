@@ -10,6 +10,10 @@
 			{
 				"id": 1,
 				"filename": "pompingw.rom"
+			},
+			{
+				"id": 2,
+				"filename": "pompingw.sav"
 			}
 		],
 		"memory_writes": [

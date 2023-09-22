@@ -10,6 +10,10 @@
 			{
 				"id": 1,
 				"filename": "dokaben.rom"
+			},
+			{
+				"id": 2,
+				"filename": "dokaben.sav"
 			}
 		],
 		"memory_writes": [

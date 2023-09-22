@@ -10,6 +10,10 @@
 			{
 				"id": 1,
 				"filename": "cworld.rom"
+			},
+			{
+				"id": 2,
+				"filename": "cworld.sav"
 			}
 		],
 		"memory_writes": [
