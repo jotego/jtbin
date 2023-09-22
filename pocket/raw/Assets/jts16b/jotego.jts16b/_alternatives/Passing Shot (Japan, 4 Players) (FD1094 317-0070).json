@@ -10,10 +10,6 @@
 			{
 				"id": 1,
 				"filename": "passshtj.rom"
-			},
-			{
-				"id": 17,
-				"filename": "beta.bin"
 			}
 		],
 		"memory_writes": [

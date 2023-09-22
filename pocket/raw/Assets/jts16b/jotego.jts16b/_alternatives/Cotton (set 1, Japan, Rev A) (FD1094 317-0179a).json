@@ -10,10 +10,6 @@
 			{
 				"id": 1,
 				"filename": "cottonja.rom"
-			},
-			{
-				"id": 17,
-				"filename": "beta.bin"
 			}
 		],
 		"memory_writes": [

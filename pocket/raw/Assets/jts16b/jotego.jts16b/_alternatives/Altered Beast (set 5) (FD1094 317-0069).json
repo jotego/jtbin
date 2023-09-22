@@ -10,10 +10,6 @@
 			{
 				"id": 1,
 				"filename": "altbest5.rom"
-			},
-			{
-				"id": 17,
-				"filename": "beta.bin"
 			}
 		],
 		"memory_writes": [

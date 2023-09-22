@@ -10,10 +10,6 @@
 			{
 				"id": 1,
 				"filename": "goldnxeu.rom"
-			},
-			{
-				"id": 17,
-				"filename": "beta.bin"
 			}
 		],
 		"memory_writes": [

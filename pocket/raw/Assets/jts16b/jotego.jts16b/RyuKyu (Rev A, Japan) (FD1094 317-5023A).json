@@ -10,10 +10,6 @@
 			{
 				"id": 1,
 				"filename": "ryukyu.rom"
-			},
-			{
-				"id": 17,
-				"filename": "beta.bin"
 			}
 		],
 		"memory_writes": [

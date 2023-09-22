@@ -10,10 +10,6 @@
 			{
 				"id": 1,
 				"filename": "cotton.rom"
-			},
-			{
-				"id": 17,
-				"filename": "beta.bin"
 			}
 		],
 		"memory_writes": [

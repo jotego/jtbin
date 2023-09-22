@@ -358,6 +358,79 @@
 				]
 			},
 			{
+				"name": "Flip Screen",
+				"id": 10,
+				"type": "check",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 0,
+				"value": 0,
+				"value_off": 65536,
+				"mask": "0xFFFEFFFF"
+			},
+			{
+				"name": "Out Lane Pin",
+				"id": 11,
+				"type": "list",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 1,
+				"value": 0,
+				"mask": "0xFFFDFFFF",
+				"options": [
+					{
+						"name": "Far",
+						"value": "0x0"
+					},
+					{
+						"name": "Near",
+						"value": "0x20000"
+					}
+				]
+			},
+			{
+				"name": "Special",
+				"id": 12,
+				"type": "list",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 3,
+				"value": 0,
+				"mask": "0xFFF3FFFF",
+				"options": [
+					{
+						"name": "2000000 Points",
+						"value": "0x0"
+					},
+					{
+						"name": "1 Credit",
+						"value": "0x40000"
+					},
+					{
+						"name": "3 Credits",
+						"value": "0x80000"
+					},
+					{
+						"name": "2 Credits",
+						"value": "0xC0000"
+					}
+				]
+			},
+			{
+				"name": "Allow Continue",
+				"id": 13,
+				"type": "check",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 1,
+				"value": 1048576,
+				"mask": "0xFFEFFFFF"
+			},
+			{
 				"name": "Default",
 				"id": 1015,
 				"type": "number_u32",
@@ -365,7 +438,7 @@
 				"persist": false,
 				"writeonly": true,
 				"address": "0xfa000000",
-				"defaultval": 65535,
+				"defaultval": 16777215,
 				"value": 0
 			}
 		],
