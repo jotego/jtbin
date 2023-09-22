@@ -10,6 +10,10 @@
 			{
 				"id": 1,
 				"filename": "sf2ceua.rom"
+			},
+			{
+				"id": 2,
+				"filename": "sf2ceua.sav"
 			}
 		],
 		"memory_writes": [

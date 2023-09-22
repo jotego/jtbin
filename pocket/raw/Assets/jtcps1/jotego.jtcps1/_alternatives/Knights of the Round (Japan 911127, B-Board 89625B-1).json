@@ -10,6 +10,10 @@
 			{
 				"id": 1,
 				"filename": "knighsja.rom"
+			},
+			{
+				"id": 2,
+				"filename": "knightsja.sav"
 			}
 		],
 		"memory_writes": [

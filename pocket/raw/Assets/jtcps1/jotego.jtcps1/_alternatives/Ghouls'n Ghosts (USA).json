@@ -10,6 +10,10 @@
 			{
 				"id": 1,
 				"filename": "ghoulsu.rom"
+			},
+			{
+				"id": 2,
+				"filename": "ghoulsu.sav"
 			}
 		],
 		"memory_writes": [

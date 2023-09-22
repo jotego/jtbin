@@ -10,6 +10,10 @@
 			{
 				"id": 1,
 				"filename": "dynwarjr.rom"
+			},
+			{
+				"id": 2,
+				"filename": "dynwarjr.sav"
 			}
 		],
 		"memory_writes": [

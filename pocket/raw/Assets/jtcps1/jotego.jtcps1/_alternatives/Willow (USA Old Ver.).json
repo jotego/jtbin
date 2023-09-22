@@ -10,6 +10,10 @@
 			{
 				"id": 1,
 				"filename": "willowuo.rom"
+			},
+			{
+				"id": 2,
+				"filename": "willowuo.sav"
 			}
 		],
 		"memory_writes": [

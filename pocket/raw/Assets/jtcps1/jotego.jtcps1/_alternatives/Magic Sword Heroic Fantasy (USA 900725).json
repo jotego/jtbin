@@ -10,6 +10,10 @@
 			{
 				"id": 1,
 				"filename": "mswordu.rom"
+			},
+			{
+				"id": 2,
+				"filename": "mswordu.sav"
 			}
 		],
 		"memory_writes": [

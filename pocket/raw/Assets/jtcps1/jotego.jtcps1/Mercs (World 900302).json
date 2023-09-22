@@ -10,6 +10,10 @@
 			{
 				"id": 1,
 				"filename": "mercs.rom"
+			},
+			{
+				"id": 2,
+				"filename": "mercs.sav"
 			}
 		],
 		"memory_writes": [

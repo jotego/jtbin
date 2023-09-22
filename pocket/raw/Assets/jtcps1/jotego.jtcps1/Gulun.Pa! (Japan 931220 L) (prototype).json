@@ -10,6 +10,10 @@
 			{
 				"id": 1,
 				"filename": "gulunpa.rom"
+			},
+			{
+				"id": 2,
+				"filename": "gulunpa.sav"
 			}
 		],
 		"memory_writes": [

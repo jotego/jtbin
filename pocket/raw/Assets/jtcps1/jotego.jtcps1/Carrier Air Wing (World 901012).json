@@ -10,6 +10,10 @@
 			{
 				"id": 1,
 				"filename": "cawing.rom"
+			},
+			{
+				"id": 2,
+				"filename": "cawing.sav"
 			}
 		],
 		"memory_writes": [

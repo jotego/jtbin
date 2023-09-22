@@ -10,6 +10,10 @@
 			{
 				"id": 1,
 				"filename": "daimaair.rom"
+			},
+			{
+				"id": 2,
+				"filename": "daimakair.sav"
 			}
 		],
 		"memory_writes": [

@@ -10,6 +10,10 @@
 			{
 				"id": 1,
 				"filename": "ffight.rom"
+			},
+			{
+				"id": 2,
+				"filename": "ffight.sav"
 			}
 		],
 		"memory_writes": [

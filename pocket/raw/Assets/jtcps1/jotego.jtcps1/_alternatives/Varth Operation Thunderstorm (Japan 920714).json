@@ -10,6 +10,10 @@
 			{
 				"id": 1,
 				"filename": "varthj.rom"
+			},
+			{
+				"id": 2,
+				"filename": "varthj.sav"
 			}
 		],
 		"memory_writes": [

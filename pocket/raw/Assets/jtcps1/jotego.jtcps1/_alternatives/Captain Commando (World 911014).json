@@ -10,6 +10,10 @@
 			{
 				"id": 1,
 				"filename": "captcmr1.rom"
+			},
+			{
+				"id": 2,
+				"filename": "captcommr1.sav"
 			}
 		],
 		"memory_writes": [

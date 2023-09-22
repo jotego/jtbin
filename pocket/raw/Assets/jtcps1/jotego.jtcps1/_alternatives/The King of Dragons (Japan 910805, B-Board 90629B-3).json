@@ -10,6 +10,10 @@
 			{
 				"id": 1,
 				"filename": "kodj.rom"
+			},
+			{
+				"id": 2,
+				"filename": "kodj.sav"
 			}
 		],
 		"memory_writes": [

@@ -13,8 +13,37 @@
 				"value": 0
 			},
 			{
-				"name": "Coin slots",
+				"name": "FX Volume",
 				"id": 1,
+				"type": "list",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfb000000",
+				"defaultval": 0,
+				"value": 0,
+				"mask": "0xFFFFFF3F",
+				"options": [
+					{
+						"name": "high",
+						"value": "0x00"
+					},
+					{
+						"name": "very high",
+						"value": "0x40"
+					},
+					{
+						"name": "very low",
+						"value": "0x80"
+					},
+					{
+						"name": "low",
+						"value": "0xc0"
+					}
+				]
+			},
+			{
+				"name": "Coin slots",
+				"id": 2,
 				"type": "list",
 				"enabled": true,
 				"persist": true,
@@ -39,7 +68,7 @@
 			},
 			{
 				"name": "Difficulty",
-				"id": 2,
+				"id": 3,
 				"type": "list",
 				"enabled": true,
 				"persist": true,
@@ -68,7 +97,7 @@
 			},
 			{
 				"name": "Time",
-				"id": 3,
+				"id": 4,
 				"type": "list",
 				"enabled": true,
 				"persist": true,
@@ -97,7 +126,7 @@
 			},
 			{
 				"name": "Voice",
-				"id": 4,
+				"id": 5,
 				"type": "check",
 				"enabled": true,
 				"persist": true,
@@ -108,7 +137,7 @@
 			},
 			{
 				"name": "Flip Screen",
-				"id": 5,
+				"id": 6,
 				"type": "check",
 				"enabled": true,
 				"persist": true,
@@ -120,7 +149,7 @@
 			},
 			{
 				"name": "Demo Sounds",
-				"id": 6,
+				"id": 7,
 				"type": "check",
 				"enabled": true,
 				"persist": true,
@@ -131,7 +160,7 @@
 			},
 			{
 				"name": "Allow Continue",
-				"id": 7,
+				"id": 8,
 				"type": "check",
 				"enabled": true,
 				"persist": true,
@@ -142,7 +171,7 @@
 			},
 			{
 				"name": "Game Mode",
-				"id": 8,
+				"id": 9,
 				"type": "list",
 				"enabled": true,
 				"persist": true,

@@ -10,6 +10,10 @@
 			{
 				"id": 1,
 				"filename": "sf2jf.rom"
+			},
+			{
+				"id": 2,
+				"filename": "sf2jf.sav"
 			}
 		],
 		"memory_writes": [

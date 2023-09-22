@@ -10,6 +10,10 @@
 			{
 				"id": 1,
 				"filename": "pang3j.rom"
+			},
+			{
+				"id": 2,
+				"filename": "pang3j.sav"
 			}
 		],
 		"memory_writes": [

@@ -5,24 +5,24 @@
 			{
 				"width": 384,
 				"height": 224,
-				"aspect_w": 4,
-				"aspect_h": 3,
+				"aspect_w": 1280,
+				"aspect_h": 973,
 				"rotation": 0,
 				"mirror": 0
 			},
 			{
 				"width": 384,
 				"height": 224,
-				"aspect_w": 4,
-				"aspect_h": 3,
+				"aspect_w": 1280,
+				"aspect_h": 973,
 				"rotation": 270,
 				"mirror": 0
 			},
 			{
 				"width": 384,
 				"height": 224,
-				"aspect_w": 4,
-				"aspect_h": 3,
+				"aspect_w": 1280,
+				"aspect_h": 973,
 				"rotation": 90,
 				"mirror": 0
 			}

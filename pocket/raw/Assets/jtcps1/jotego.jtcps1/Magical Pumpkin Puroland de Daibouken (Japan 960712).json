@@ -10,6 +10,10 @@
 			{
 				"id": 1,
 				"filename": "mpumpkin.rom"
+			},
+			{
+				"id": 2,
+				"filename": "mpumpkin.sav"
 			}
 		],
 		"memory_writes": [

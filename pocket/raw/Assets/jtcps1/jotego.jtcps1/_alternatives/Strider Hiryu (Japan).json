@@ -10,6 +10,10 @@
 			{
 				"id": 1,
 				"filename": "striderj.rom"
+			},
+			{
+				"id": 2,
+				"filename": "striderj.sav"
 			}
 		],
 		"memory_writes": [

@@ -10,6 +10,10 @@
 			{
 				"id": 1,
 				"filename": "1941u.rom"
+			},
+			{
+				"id": 2,
+				"filename": "1941u.sav"
 			}
 		],
 		"memory_writes": [

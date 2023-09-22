@@ -10,6 +10,10 @@
 			{
 				"id": 1,
 				"filename": "sfzch.rom"
+			},
+			{
+				"id": 2,
+				"filename": "sfzch.sav"
 			}
 		],
 		"memory_writes": [

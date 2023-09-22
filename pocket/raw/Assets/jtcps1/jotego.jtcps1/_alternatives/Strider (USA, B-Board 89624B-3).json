@@ -10,6 +10,10 @@
 			{
 				"id": 1,
 				"filename": "stridrua.rom"
+			},
+			{
+				"id": 2,
+				"filename": "striderua.sav"
 			}
 		],
 		"memory_writes": [

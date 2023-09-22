@@ -10,6 +10,10 @@
 			{
 				"id": 1,
 				"filename": "dynwar.rom"
+			},
+			{
+				"id": 2,
+				"filename": "dynwar.sav"
 			}
 		],
 		"memory_writes": [

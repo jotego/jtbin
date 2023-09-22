@@ -10,6 +10,10 @@
 			{
 				"id": 1,
 				"filename": "cworl2ja.rom"
+			},
+			{
+				"id": 2,
+				"filename": "cworld2ja.sav"
 			}
 		],
 		"memory_writes": [

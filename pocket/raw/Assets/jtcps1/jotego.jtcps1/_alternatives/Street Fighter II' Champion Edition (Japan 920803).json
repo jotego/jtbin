@@ -10,6 +10,10 @@
 			{
 				"id": 1,
 				"filename": "sf2cejc.rom"
+			},
+			{
+				"id": 2,
+				"filename": "sf2cejc.sav"
 			}
 		],
 		"memory_writes": [

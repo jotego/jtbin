@@ -10,6 +10,10 @@
 			{
 				"id": 1,
 				"filename": "forgonue.rom"
+			},
+			{
+				"id": 2,
+				"filename": "forgottnue.sav"
 			}
 		],
 		"memory_writes": [

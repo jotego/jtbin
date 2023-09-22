@@ -10,6 +10,10 @@
 			{
 				"id": 1,
 				"filename": "nemo.rom"
+			},
+			{
+				"id": 2,
+				"filename": "nemo.sav"
 			}
 		],
 		"memory_writes": [
