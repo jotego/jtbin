@@ -10,6 +10,10 @@
 			{
 				"id": 1,
 				"filename": "outrueha.rom"
+			},
+			{
+				"id": 2,
+				"filename": "outruneha.sav"
 			}
 		],
 		"memory_writes": [

@@ -21,7 +21,7 @@
 
 <misterromdescription>
     <about author="jotego" webpage="https://patreon.com/jotego" source="https://github.com/jotego" twitter="@topapate"/>
-    <name>Out Run (sitdown/upright, Rev B) (Enhanced Edition v1.1.0)</name>
+    <name>Out Run (sitdown-upright, Rev B) (Enhanced Edition v1.1.0)</name>
     <setname>outruneha</setname>
     <rbf>jtoutrun</rbf>
     <mameversion>0251</mameversion>
@@ -121,7 +121,7 @@
         <part repeat="0x2000"> FF</part>
         <!-- Total 0x29A000 bytes - 2664 kBytes -->
     </rom>
-    <nvram index="2" size="12288"/>
+    <nvram index="2" size="18432"/>
     <rom index="1">
         <part>00</part>
     </rom>

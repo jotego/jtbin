@@ -10,6 +10,10 @@
 			{
 				"id": 1,
 				"filename": "outrun.rom"
+			},
+			{
+				"id": 2,
+				"filename": "outrun.sav"
 			}
 		],
 		"memory_writes": [

@@ -123,11 +123,11 @@
         <part name="317-0107.key" crc="33e632ae"/>
         <!-- Total 0x29A000 bytes - 2664 kBytes -->
     </rom>
-    <nvram index="2" size="12288"/>
+    <nvram index="2" size="18432"/>
     <rom index="1">
         <part>00</part>
     </rom>
-    <switches page_id="1" page_name="Switches" base="16" default="ff,d8">
+    <switches page_id="1" page_name="Switches" base="16" default="ff,f8">
         <!-- COINAGE -->
         <dip name="Coin A" bits="0,3" ids="Free Play or 1/1,1/1 2/3,1/1 4/5,1/1 5/6,2/1 4/3,2/1 5/3 6/4,2/3,4/1,3/1,2/1,1/6,1/5,1/4,1/3,1/2,1/1"/>
         <dip name="Coin B" bits="4,7" ids="Free Play or 1/1,1/1 2/3,1/1 4/5,1/1 5/6,2/1 4/3,2/1 5/3 6/4,2/3,4/1,3/1,2/1,1/6,1/5,1/4,1/3,1/2,1/1"/>

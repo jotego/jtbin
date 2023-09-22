@@ -123,7 +123,7 @@
         <part name="317-0101.key" crc="eb636314"/>
         <!-- Total 0x29A000 bytes - 2664 kBytes -->
     </rom>
-    <nvram index="2" size="12288"/>
+    <nvram index="2" size="18432"/>
     <rom index="1">
         <part>00</part>
     </rom>

@@ -1,0 +1,27 @@
+jtshanon - Arcade compatible hardware for Pocket FPGA
+Developed by JOTEGO - https://patreon.com/jotego
+
+The following arcade titles are compatible with this core. Generate
+the required .rom file using the mra tool (read below).
+Place the *.rom files in Assets/jtshanon/common
+
+Super Hang-On (sitdown-upright) (unprotected) --> shangon.rom
+Super Hang-On (mini ride-on) (FD1089B 317-0034) --> shangon1.rom
+Super Hang-On (mini ride-on, Rev A) (FD1089B 317-0034) --> shangon2.rom
+Super Hang-On (sitdown-upright) (FD1089B 317-0034) --> shangon3.rom
+Super Hang-On (sitdown-upright) (bootleg of FD1089B 317-0034 set) --> shangn3d.rom
+Limited Edition Hang-On --> shangnle.rom
+
+
+These files are generated using the mra tool in:
+https://github.com/sebdel/mra-tools-c/tree/master/release
+
+Boogermann's ORCA tool can also be used to generate the files:
+https://github.com/opengateware/tools-orca
+
+Check out the short tutorial in:
+https://github.com/jotego/jtbin/wiki/Analogue-Pocket-Cores
+
+DISCLAIMER: This PocketFPGA core is licensed to be used only
+with legally owned dumps of videogame data. It is also licensed
+to be used with freeware (homebrew) compatible with the platform.

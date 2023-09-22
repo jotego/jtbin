@@ -10,6 +10,10 @@
 			{
 				"id": 1,
 				"filename": "outrudxj.rom"
+			},
+			{
+				"id": 2,
+				"filename": "outrundxj.sav"
 			}
 		],
 		"memory_writes": [
