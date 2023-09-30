@@ -104,7 +104,6 @@
         <dip name="Difficulty" bits="8,10" ids="7,6,5,4,3,2,1,0"/>
         <dip name="Service Mode" bits="14" ids="On,Off"/>
         <dip name="Freeze" bits="15" ids="On,Off"/>
-        <!-- DSWC -->
     </switches>
     <buttons names="Shoot,Rotate left,Rotate right,-,-,-,Start,Coin,Core credits" default="Y,X,B,A,R,L,Start,Select,-" count="3"/>
 </misterromdescription>

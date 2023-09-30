@@ -68,7 +68,7 @@
         <dip name="2 to start, 1 continue" bits="6" ids="On,Off"/>
         <dip name="Extended Test Mode" bits="7" ids="On,Off"/>
         <!-- DSWB -->
-        <dip name="Difficulty" bits="8,10" ids="-,-,4,3,2,1,0"/>
+        <dip name="Difficulty" bits="8,10" ids="-,-,4,3,2,1,0,-"/>
         <dip name="Extend" bits="11,12" ids="D,-,E,N"/>
         <dip name="Lives" bits="13,15" ids="1,-,-,-,2,4,5,3"/>
         <!-- DSWC -->

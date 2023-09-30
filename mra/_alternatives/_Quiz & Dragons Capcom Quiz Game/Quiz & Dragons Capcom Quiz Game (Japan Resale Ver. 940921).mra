@@ -68,7 +68,7 @@
         <dip name="2 to start, 1 continue" bits="6" ids="On,Off"/>
         <!-- DSWB -->
         <dip name="Difficulty" bits="8,10" ids="-,-,-,4,3,2,1,0"/>
-        <dip name="Lives" bits="13,14" ids="-,-,-,-,-,1,2,3"/>
+        <dip name="Lives" bits="13,15" ids="-,-,-,-,-,1,2,3"/>
         <!-- DSWC -->
         <dip name="Free Play" bits="18" ids="On,Off"/>
         <dip name="Freeze" bits="19" ids="On,Off"/>
@@ -77,5 +77,5 @@
         <dip name="Allow Continue" bits="22" ids="No,Yes"/>
         <dip name="Game Mode" bits="23" ids="Test,Game"/>
     </switches>
-    <buttons names="button 1,button 2,-,-,-,-,Start,Coin,Core credits" default="Y,X,B,A,R,L,Start,Select,-" count="2"/>
+    <buttons names="Button 1, Button 2, Button 3, Button 4,-,-,Start,Coin,Core credits" default="Y,X,B,A,R,L,Start,Select,-" count="4"/>
 </misterromdescription>

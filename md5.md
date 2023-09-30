@@ -430,7 +430,7 @@
 | mpangj       | jtcps2     | aac1cba300d84bba2f488c24474e4283 |              |
 | mpangr1      | jtcps2     | 00f1ea8b3b18b311abdb66e9332a213c |              |
 | mpangu       | jtcps2     | 22246db29d51880ccaf009d64b3bb4e4 |              |
-| mpumpkin     | jtcps1     | bce61e3b5079a60c89eb310ec5947167 | be,fb,ff,ff  |
+| mpumpkin     | jtcps1     | bce61e3b5079a60c89eb310ec5947167 | ff,fb,ff,ff  |
 | msh          | jtcps2     | 66bda571decfcff604693badae921c6d |              |
 | msha         | jtcps2     | aa8043d2edb61b02b57b9fd971c96f6b |              |
 | mshb         | jtcps2     | 5701f3786ed15d557929842968741e7d |              |
@@ -503,7 +503,7 @@
 | pgearr1      | jtcps2     | 0005502bf24103341c096a807ddfa0e6 |              |
 | pingpong     | jtpinpon   |                                  | f0,1f,07     |
 | pnickj       | jtcps1     | 39d46d81dfc6c10c94b02cf812bfd817 | ff,fc,ff     |
-| pokonyan     | jtcps1     | 0c22b6a35a4c7dcf7ee3d42b04a1f1df | be,fb,ff,ff  |
+| pokonyan     | jtcps1     | 0c22b6a35a4c7dcf7ee3d42b04a1f1df | ff,fb,ff,ff  |
 | pompingw     | jtpang     | 6be48a4c0844f8c6737f13d6e239a358 |              |
 | progear      | jtcps2     | 1104d941c107b26220d065299c2b15d6 |              |
 | progeara     | jtcps2     | a45b4075d1a07daaa99074082f3de434 |              |

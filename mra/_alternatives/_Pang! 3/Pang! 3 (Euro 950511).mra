@@ -64,7 +64,6 @@
         <part>00</part>
     </rom>
     <switches page_id="1" page_name="Switches" base="8" default="ff,ff,ff">
-        <!-- DSWC -->
         <dip name="Freeze" ids="On,Off" bits="23"/>
     </switches>
     <buttons names="Shoot,-,-,-,-,-,Start,Coin,Core credits" default="Y,X,B,A,R,L,Start,Select,-" count="1"/>

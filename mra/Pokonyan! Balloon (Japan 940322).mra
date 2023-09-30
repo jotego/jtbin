@@ -83,8 +83,7 @@
     <rom index="1">
         <part>00</part>
     </rom>
-    <switches page_id="1" page_name="Switches" base="8" default="be,fb,ff,ff">
-        <!-- DSWA -->
+    <switches page_id="1" page_name="Switches" base="8" default="ff,fb,ff,ff">
         <!-- DSWB -->
         <dip name="Demo Sounds" bits="8,9" ids="Off,Every 4,Every 2,On"/>
         <dip name="Prize Mode" bits="10" ids="Not Used,Used"/>

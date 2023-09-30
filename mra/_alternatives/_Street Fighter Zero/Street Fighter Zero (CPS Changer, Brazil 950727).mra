@@ -83,10 +83,6 @@
     <rom index="1">
         <part>00</part>
     </rom>
-    <switches page_id="1" page_name="Switches" base="8" default="ff,ff">
-        <!-- DSWA -->
-        <!-- DSWB -->
-        <!-- DSWC -->
-    </switches>
+    <switches page_id="1" page_name="Switches" base="8" default="ff,ff"/>
     <buttons names="LP,MP,SP,LK,MK,HK,Start,Coin,Core credits" default="Y,X,B,A,R,L,Start,Select,-" count="6"/>
 </misterromdescription>
