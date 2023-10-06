@@ -1,0 +1,249 @@
+{
+	"interact":{
+		"magic": "APF_VER_1",
+		"variables": [
+			{
+				"name": "Version",
+				"id": 1000,
+				"type": "number_u32",
+				"enabled": false,
+				"persist": false,
+				"address": "0xFF000000",
+				"defaultval": 0,
+				"value": 0
+			},
+			{
+				"name": "FX Volume",
+				"id": 1,
+				"type": "list",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfb000000",
+				"defaultval": 0,
+				"value": 0,
+				"mask": "0xFFFFFF3F",
+				"options": [
+					{
+						"name": "high",
+						"value": "0x00"
+					},
+					{
+						"name": "very high",
+						"value": "0x40"
+					},
+					{
+						"name": "very low",
+						"value": "0x80"
+					},
+					{
+						"name": "low",
+						"value": "0xc0"
+					}
+				]
+			},
+			{
+				"name": "Dial sensitivity",
+				"id": 2,
+				"type": "list",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfb000004",
+				"defaultval": 3,
+				"value": 0,
+				"mask": "0xFFFFFFFC",
+				"options": [
+					{
+						"name": "very high",
+						"value": "0x1"
+					},
+					{
+						"name": "high",
+						"value": "0x0"
+					},
+					{
+						"name": "low",
+						"value": "0x3"
+					},
+					{
+						"name": "very low",
+						"value": "0x2"
+					}
+				]
+			},
+			{
+				"name": "Coin A",
+				"id": 3,
+				"type": "list",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 3,
+				"value": 0,
+				"mask": "0xFFFFFFFC",
+				"options": [
+					{
+						"name": "3 Coins/1 Credit",
+						"value": "0x0"
+					},
+					{
+						"name": "2 Coins/1 Credit",
+						"value": "0x1"
+					},
+					{
+						"name": "1 Coin/2 Credits",
+						"value": "0x2"
+					},
+					{
+						"name": "1 Coin/1 Credit",
+						"value": "0x3"
+					}
+				]
+			},
+			{
+				"name": "Coin B",
+				"id": 4,
+				"type": "list",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 3,
+				"value": 0,
+				"mask": "0xFFFFFFF3",
+				"options": [
+					{
+						"name": "3 Coins/1 Credit",
+						"value": "0x0"
+					},
+					{
+						"name": "2 Coins/1 Credit",
+						"value": "0x4"
+					},
+					{
+						"name": "1 Coin/2 Credits",
+						"value": "0x8"
+					},
+					{
+						"name": "1 Coin/1 Credit",
+						"value": "0xC"
+					}
+				]
+			},
+			{
+				"name": "Service Mode",
+				"id": 5,
+				"type": "check",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 0,
+				"value": 0,
+				"value_off": 16,
+				"mask": "0xFFFFFFEF"
+			},
+			{
+				"name": "Demo Sounds",
+				"id": 6,
+				"type": "check",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 1,
+				"value": 32,
+				"mask": "0xFFFFFFDF"
+			},
+			{
+				"name": "Flip Screen",
+				"id": 7,
+				"type": "check",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 0,
+				"value": 0,
+				"value_off": 64,
+				"mask": "0xFFFFFFBF"
+			},
+			{
+				"name": "Lives",
+				"id": 8,
+				"type": "list",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 3,
+				"value": 0,
+				"mask": "0xFFFFFCFF",
+				"options": [
+					{
+						"name": "Infinite (Cheat)",
+						"value": "0x0"
+					},
+					{
+						"name": "2",
+						"value": "0x100"
+					},
+					{
+						"name": "4",
+						"value": "0x200"
+					},
+					{
+						"name": "3",
+						"value": "0x300"
+					}
+				]
+			},
+			{
+				"name": "Difficulty",
+				"id": 9,
+				"type": "list",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 3,
+				"value": 0,
+				"mask": "0xFFFFF3FF",
+				"options": [
+					{
+						"name": "Hardest",
+						"value": "0x0"
+					},
+					{
+						"name": "Hard",
+						"value": "0x400"
+					},
+					{
+						"name": "Easy",
+						"value": "0x800"
+					},
+					{
+						"name": "Normal",
+						"value": "0xC00"
+					}
+				]
+			},
+			{
+				"name": "Allow Continue",
+				"id": 10,
+				"type": "check",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 1,
+				"value": 4096,
+				"mask": "0xFFFFEFFF"
+			},
+			{
+				"name": "Default",
+				"id": 1015,
+				"type": "number_u32",
+				"enabled": false,
+				"persist": false,
+				"writeonly": true,
+				"address": "0xfa000000",
+				"defaultval": 65535,
+				"value": 0
+			}
+		],
+		"messages": []
+	}
+}

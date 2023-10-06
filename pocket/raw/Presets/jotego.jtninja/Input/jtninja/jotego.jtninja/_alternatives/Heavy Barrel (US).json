@@ -1,0 +1,32 @@
+{
+	"input":{
+		"magic": "APF_VER_1",
+		"controllers": [
+			{
+				"type": "default",
+				"mappings": [
+					{
+						"id": 0,
+						"name": "Shot",
+						"key": "pad_btn_a"
+					},
+					{
+						"id": 1,
+						"name": "Bomb",
+						"key": "pad_btn_b"
+					},
+					{
+						"id": 2,
+						"name": "Turn left",
+						"key": "pad_btn_x"
+					},
+					{
+						"id": 3,
+						"name": "Turn right",
+						"key": "pad_btn_y"
+					}
+				]
+			}
+		]
+	}
+}
