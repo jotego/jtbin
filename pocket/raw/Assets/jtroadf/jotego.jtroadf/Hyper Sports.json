@@ -10,6 +10,10 @@
 			{
 				"id": 1,
 				"filename": "hyperspt.rom"
+			},
+			{
+				"id": 2,
+				"filename": "hyperspt.sav"
 			}
 		],
 		"memory_writes": [

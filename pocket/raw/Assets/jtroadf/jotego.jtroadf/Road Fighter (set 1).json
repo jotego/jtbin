@@ -10,6 +10,10 @@
 			{
 				"id": 1,
 				"filename": "roadf.rom"
+			},
+			{
+				"id": 2,
+				"filename": "roadf.sav"
 			}
 		],
 		"memory_writes": [

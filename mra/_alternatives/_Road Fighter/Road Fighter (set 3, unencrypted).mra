@@ -53,12 +53,15 @@
             <part name="c12_d20.bin" crc="5e0cf994" map="10"/>
         </interleave>
         <!-- OBJ_START -->
-        <!-- sprites - starts at 0x20000 - length 0x12000 (17 bits) -->
+        <!-- sprites - starts at 0x20000 - length 0x10000 (16 bits) -->
         <interleave output="16">
             <part name="j19_e14.bin" crc="16d2bcff" map="01"/>
             <part name="g19_e18.bin" crc="490685ff" map="10"/>
         </interleave>
-        <part repeat="0xA000"> FF</part>
+        <part repeat="0x8000"> FF</part>
+        <!-- PCM_START -->
+        <!-- vlm - starts at 0x30000 - length 0x2000 (13 bits) -->
+        <part repeat="0x2000"> FF</part>
         <!-- JTFRAME_PROM_START -->
         <!-- proms - starts at 0x32000 - length 0x220 (10 bits) -->
         <part name="c03_c27.bin" crc="45d5e352"/>
