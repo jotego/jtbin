@@ -1,0 +1,31 @@
+Place the following files in this folder:
+
+dino.rom
+dinoa.rom
+dinoj.rom
+dinou.rom
+mbomberj.rom
+mbombrd.rom
+mbombrdj.rom
+punisher.rom
+puniserh.rom
+puniserj.rom
+puniseru.rom
+slammast.rom
+slammstu.rom
+wof.rom
+wofa.rom
+wofch.rom
+wofj.rom
+wofr1.rom
+wofu.rom
+
+These files are generated using the mra tool in:
+https://github.com/sebdel/mra-tools-c/tree/master/release
+
+Check out the short tutorial in:
+https://github.com/jotego/jtbin/wiki/Analogue-Pocket-Cores
+
+DISCLAIMER: This PocketFPGA core is licensed to be used only
+with legally owned dumps of videogame data. It is also licensed
+to be used with freeware (homebrew) compatible with the platform.

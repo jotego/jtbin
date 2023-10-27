@@ -1,0 +1,40 @@
+jtcps15 - Arcade compatible hardware for Pocket FPGA
+Developed by JOTEGO - https://patreon.com/jotego
+
+The following arcade titles are compatible with this core. Generate
+the required .rom file using the mra tool (read below).
+Place the *.rom files in Assets/jtcps15/common
+
+Cadillacs and Dinosaurs (World 930201) --> dino.rom
+Cadillacs and Dinosaurs (Asia TW 930223) --> dinoa.rom
+Cadillacs: Kyouryuu Shin Seiki (Japan 930201) --> dinoj.rom
+Cadillacs and Dinosaurs (USA 930201) --> dinou.rom
+Muscle Bomber: The Body Explosion (Japan 930713) --> mbomberj.rom
+Muscle Bomber Duo: Ultimate Team Battle (World 931206) --> mbombrd.rom
+Muscle Bomber Duo: Heat Up Warriors (Japan 931206) --> mbombrdj.rom
+The Punisher (World 930422) --> punisher.rom
+The Punisher (Hispanic 930422) --> puniserh.rom
+The Punisher (Japan 930422) --> puniserj.rom
+The Punisher (USA 930422) --> puniseru.rom
+Saturday Night Slam Masters (World 930713) --> slammast.rom
+Saturday Night Slam Masters (USA 930713) --> slammstu.rom
+Warriors of Fate (World 921031) --> wof.rom
+Sangokushi II (Asia 921005) --> wofa.rom
+Tenchi wo Kurau II: Sekiheki no Tatakai (CPS Changer, Japan 921031) --> wofch.rom
+Tenchi wo Kurau II: Sekiheki no Tatakai (Japan 921031) --> wofj.rom
+Warriors of Fate (World 921002) --> wofr1.rom
+Warriors of Fate (USA 921031) --> wofu.rom
+
+
+These files are generated using the mra tool in:
+https://github.com/sebdel/mra-tools-c/tree/master/release
+
+Boogermann's ORCA tool can also be used to generate the files:
+https://github.com/opengateware/tools-orca
+
+Check out the short tutorial in:
+https://github.com/jotego/jtbin/wiki/Analogue-Pocket-Cores
+
+DISCLAIMER: This PocketFPGA core is licensed to be used only
+with legally owned dumps of videogame data. It is also licensed
+to be used with freeware (homebrew) compatible with the platform.
