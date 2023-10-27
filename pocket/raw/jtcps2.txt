@@ -1,0 +1,337 @@
+jtcps2 - Arcade compatible hardware for Pocket FPGA
+Developed by JOTEGO - https://patreon.com/jotego
+
+The following arcade titles are compatible with this core. Generate
+the required .rom file using the mra tool (read below).
+Place the *.rom files in Assets/jtcps2/common
+
+1944: The Loop Master (Euro 000620) --> 1944.rom
+1944: The Loop Master (USA 000620 Phoenix Edition) (bootleg) --> 1944d.rom
+1944: The Loop Master (Japan 000620) --> 1944j.rom
+1944: The Loop Master (USA 000620) --> 1944u.rom
+19XX: The War Against Destiny (Euro 960104) --> 19xx.rom
+19XX: The War Against Destiny (Asia 960104) --> 19xxa.rom
+19XX: The War Against Destiny (Asia 951207) --> 19xxar1.rom
+19XX: The War Against Destiny (Brazil 951218) --> 19xxb.rom
+19XX: The War Against Destiny (USA 951207 Phoenix Edition) (bootleg) --> 19xxd.rom
+19XX: The War Against Destiny (Hispanic 951218) --> 19xxh.rom
+19XX: The War Against Destiny (Japan 960104, yellow case) --> 19xxj.rom
+19XX: The War Against Destiny (Japan 951225) --> 19xxjr1.rom
+19XX: The War Against Destiny (Japan 951207) --> 19xxjr2.rom
+19XX: The War Against Destiny (USA 951207) --> 19xxu.rom
+Armored Warriors (Euro 941024) --> armwar.rom
+Armored Warriors (Euro 941011 Phoenix Edition) (bootleg) --> armwar1d.rom
+Armored Warriors (Asia 941024) --> armwara.rom
+Armored Warriors (Asia 940920) --> armwaar1.rom
+Armored Warriors (Brazil 941024) --> armwarb.rom
+Armored Warriors (Euro 941011) --> armwarr1.rom
+Armored Warriors (USA 941024) --> armwaru.rom
+Armored Warriors (USA 940920) --> armwaru1.rom
+Alien vs. Predator (Euro 940520) --> avsp.rom
+Alien vs. Predator (Asia 940520) --> avspa.rom
+Alien vs. Predator (Euro 940520 Phoenix Edition) (bootleg) --> avspd.rom
+Alien vs. Predator (Hispanic 940520) --> avsph.rom
+Alien vs. Predator (Japan 940520) --> avspj.rom
+Alien vs. Predator (USA 940520) --> avspu.rom
+Battle Circuit (Euro 970319) --> batcir.rom
+Battle Circuit (Asia 970319) --> batcira.rom
+Battle Circuit (Euro 970319 Phoenix Edition) (bootleg) --> batcird.rom
+Battle Circuit (Japan 970319) --> batcirj.rom
+Janpai Puzzle Choukou (Japan 010820) --> choko.rom
+Capcom Sports Club (Euro 971017) --> csclub.rom
+Capcom Sports Club (Euro 970722) --> csclub1.rom
+Capcom Sports Club (Euro 970722 Phoenix Edition) (bootleg) --> csclub1d.rom
+Capcom Sports Club (Asia 970722) --> cscluba.rom
+Capcom Sports Club (Hispanic 970722) --> csclubh.rom
+Capcom Sports Club (Japan 970722) --> csclubj.rom
+Capcom Sports Club (Japan 970722, yellow case) --> csclubjy.rom
+Cyberbots: Fullmetal Madness (Euro 950424) --> cybots.rom
+Cyberbots: Fullmetal Madness (Japan 950420) --> cybotsj.rom
+Cyberbots: Fullmetal Madness (Japan 950424) (decrypted bootleg) --> cybotsjd.rom
+Cyberbots: Fullmetal Madness (USA 950424) --> cybotsu.rom
+Cyberbots: Fullmetal Madness (USA 950424 Phoenix Edition) (bootleg) --> cybotsud.rom
+Dungeons & Dragons: Shadow over Mystara (Euro 960619) --> ddsom.rom
+Dungeons & Dragons: Shadow over Mystara (Asia 960619) --> ddsoma.rom
+Dungeons & Dragons: Shadow over Mystara (Asia 960208) --> ddsomar1.rom
+Dungeons & Dragons: Shadow over Mystara (Brazil 960223) --> ddsomb.rom
+Dungeons & Dragons: Shadow over Mystara (Hispanic 960223) --> ddsomh.rom
+Dungeons & Dragons: Shadow over Mystara (Japan 960619) --> ddsomj.rom
+Dungeons & Dragons: Shadow over Mystara (Japan 960206) --> ddsomjr1.rom
+Dungeons & Dragons: Shadow over Mystara (Japan 960223) --> ddsomjr2.rom
+Dungeons & Dragons: Shadow over Mystara (Euro 960223) --> ddsomr1.rom
+Dungeons & Dragons: Shadow over Mystara (Euro 960209) --> ddsomr2.rom
+Dungeons & Dragons: Shadow over Mystara (Euro 960208) --> ddsomr3.rom
+Dungeons & Dragons: Shadow over Mystara (USA 960619) --> ddsomu.rom
+Dungeons & Dragons: Shadow over Mystara (USA 960619 Phoenix Edition) (bootleg) --> ddsomud.rom
+Dungeons & Dragons: Shadow over Mystara (USA 960209) --> ddsomur1.rom
+Dungeons & Dragons: Tower of Doom (Euro 940412) --> ddtod.rom
+Dungeons & Dragons: Tower of Doom (Asia 940412) --> ddtoda.rom
+Dungeons & Dragons: Tower of Doom (Asia 940113) --> ddtodar1.rom
+Dungeons & Dragons: Tower of Doom (Euro 940412 Phoenix Edition) (bootleg) --> ddtodd.rom
+Dungeons & Dragons: Tower of Doom (Hispanic 940412) --> ddtodh.rom
+Dungeons & Dragons: Tower of Doom (Hispanic 940125) --> ddtodhr1.rom
+Dungeons & Dragons: Tower of Doom (Hispanic 940113) --> ddtodhr2.rom
+Dungeons & Dragons: Tower of Doom (Japan 940412) --> ddtodj.rom
+Dungeons & Dragons: Tower of Doom (Japan 940125) --> ddtodjr1.rom
+Dungeons & Dragons: Tower of Doom (Japan 940113) --> ddtodjr2.rom
+Dungeons & Dragons: Tower of Doom (Euro 940113) --> ddtodr1.rom
+Dungeons & Dragons: Tower of Doom (USA 940125) --> ddtodu.rom
+Dungeons & Dragons: Tower of Doom (USA 940113) --> ddtodur1.rom
+Dimahoo (Euro 000121) --> dimahoo.rom
+Dimahoo (USA 000121) --> dimahoou.rom
+Dimahoo (USA 000121 Phoenix Edition) (bootleg) --> dimahoud.rom
+Darkstalkers: The Night Warriors (Euro 940705) --> dstlk.rom
+Darkstalkers: The Night Warriors (Asia 940705) --> dstlka.rom
+Darkstalkers: The Night Warriors (Hispanic 940818) --> dstlkh.rom
+Darkstalkers: The Night Warriors (USA 940818) --> dstlku.rom
+Darkstalkers: The Night Warriors (USA 940705 Phoenix Edition) (bootleg) --> dstlku1d.rom
+Darkstalkers: The Night Warriors (USA 940705) --> dstlkur1.rom
+Eco Fighters (World 931203) --> ecofghtr.rom
+Eco Fighters (Asia 931203) --> ecofgtra.rom
+Eco Fighters (World 931203 Phoenix Edition) (bootleg) --> ecofgtrd.rom
+Eco Fighters (Hispanic 931203) --> ecofgtrh.rom
+Eco Fighters (USA 940215) --> ecofgtru.rom
+Eco Fighters (USA 931203) --> ecofgru1.rom
+Giga Wing (USA 990222) --> gigawing.rom
+Giga Wing (Asia 990222) --> gigawnga.rom
+Giga Wing (Brazil 990222) --> gigawngb.rom
+Giga Wing (USA 990222 Phoenix Edition) (bootleg) --> gigawngd.rom
+Giga Wing (Hispanic 990222) --> gigawngh.rom
+Giga Wing (Japan 990223) --> gigawngj.rom
+Giga Wing (Japan 990223 Phoenix Edition) (bootleg) --> gigawgjd.rom
+Great Mahou Daisakusen (Japan 000121) --> gmahou.rom
+Hyper Street Fighter II: The Anniversary Edition (USA 040202) --> hsf2.rom
+Hyper Street Fighter II: The Anniversary Edition (Asia 040202) --> hsf2a.rom
+Hyper Street Fighter II: The Anniversary Edition (Asia 040202 Phoenix Edition) (bootleg) --> hsf2d.rom
+Hyper Street Fighter II: The Anniversary Edition (Japan 040202) --> hsf2j.rom
+Hyper Street Fighter II: The Anniversary Edition (Japan 031222) --> hsf2j1.rom
+Jyangokushi: Haoh no Saihai (Japan 990527) --> jyangoku.rom
+Mega Man 2: The Power Fighters (USA 960708) --> megaman2.rom
+Mega Man 2: The Power Fighters (Asia 960708) --> megamn2a.rom
+Mega Man 2: The Power Fighters (Hispanic 960712) --> megamn2h.rom
+Mega Man 2: The Power Fighters (USA 960708 Phoenix Edition) (bootleg) --> megamn2d.rom
+Mega Man: The Power Battle (CPS2, USA 951006, SAMPLE Version) --> mmancp2u.rom
+Mega Man: The Power Battle (CPS2, USA 950926, SAMPLE Version) --> mmancur1.rom
+Mega Man: The Power Battle (CPS2, USA 950925, SAMPLE Version) --> mmancur2.rom
+Mars Matrix: Hyper Solid Shooting (USA 000412) --> mmatrix.rom
+Mars Matrix: Hyper Solid Shooting (Asia 000412) --> mmatrixa.rom
+Mars Matrix: Hyper Solid Shooting (USA 000412 Phoenix Edition) (bootleg) --> mmatrixd.rom
+Mars Matrix: Hyper Solid Shooting (Japan 000412) --> mmatrixj.rom
+Mighty! Pang (Euro 001010) --> mpang.rom
+Mighty! Pang (Asia 001010) --> mpanga.rom
+Mighty! Pang (Japan 001011) --> mpangj.rom
+Mighty! Pang (Euro 000925) --> mpangr1.rom
+Mighty! Pang (USA 001010) --> mpangu.rom
+Marvel Super Heroes (Euro 951024) --> msh.rom
+Marvel Super Heroes (Asia 951024) --> msha.rom
+Marvel Super Heroes (Brazil 951117) --> mshb.rom
+Marvel Super Heroes (Brazil 951024) --> mshbr1.rom
+Marvel Super Heroes (Hispanic 951117) --> mshh.rom
+Marvel Super Heroes (Japan 951117) --> mshj.rom
+Marvel Super Heroes (Japan 951024) --> mshjr1.rom
+Marvel Super Heroes (USA 951024) --> mshu.rom
+Marvel Super Heroes (US 951024 Phoenix Edition) (bootleg) --> mshud.rom
+Marvel Super Heroes Vs. Street Fighter (Euro 970625) --> mshvsf.rom
+Marvel Super Heroes Vs. Street Fighter (Asia 970625) --> mshvsfa.rom
+Marvel Super Heroes Vs. Street Fighter (Asia 970620) --> mshvsfa1.rom
+Marvel Super Heroes Vs. Street Fighter (Brazil 970827) --> mshvsfb.rom
+Marvel Super Heroes Vs. Street Fighter (Brazil 970625) --> mshvsfb1.rom
+Marvel Super Heroes Vs. Street Fighter (Hispanic 970625) --> mshvsfh.rom
+Marvel Super Heroes Vs. Street Fighter (Japan 970707) --> mshvsfj.rom
+Marvel Super Heroes Vs. Street Fighter (Japan 970702) --> mshvsfj1.rom
+Marvel Super Heroes Vs. Street Fighter (Japan 970625) --> mshvsfj2.rom
+Marvel Super Heroes Vs. Street Fighter (USA 970827) --> mshvsfu.rom
+Marvel Super Heroes Vs. Street Fighter (USA 970625) --> mshvsfu1.rom
+Marvel Super Heroes Vs. Street Fighter (USA 970625 Phoenix Edition) (bootleg) --> mshvsu1d.rom
+Marvel Vs. Capcom: Clash of Super Heroes (Euro 980123) --> mvsc.rom
+Marvel Vs. Capcom: Clash of Super Heroes (Asia 980123) --> mvsca.rom
+Marvel Vs. Capcom: Clash of Super Heroes (Asia 980112) --> mvscar1.rom
+Marvel Vs. Capcom: Clash of Super Heroes (Brazil 980123) --> mvscb.rom
+Marvel Vs. Capcom: Clash of Super Heroes (Hispanic 980123) --> mvsch.rom
+Marvel Vs. Capcom: Clash of Super Heroes (Japan 980123) --> mvscj.rom
+Marvel Vs. Capcom: Clash of Super Heroes (Japan 980112) --> mvscjr1.rom
+Marvel Vs. Capcom: Clash of Super Heroes (Japan 980123) (Single PCB) --> mvscjing.rom
+Marvel Vs. Capcom: Clash of Super Heroes (Euro 980112) --> mvscr1.rom
+Marvel Vs. Capcom: Clash of Super Heroes (USA 980123) --> mvscu.rom
+Marvel Vs. Capcom: Clash of Super Heroes (USA 980123 Phoenix Edition) (bootleg) --> mvscud.rom
+Marvel Vs. Capcom: Clash of Super Heroes (USA 971222) --> mvscur1.rom
+Night Warriors: Darkstalkers' Revenge (Euro 950316) --> nwarr.rom
+Night Warriors: Darkstalkers' Revenge (Asia 950302) --> nwarra.rom
+Night Warriors: Darkstalkers' Revenge (Brazil 950403) --> nwarrb.rom
+Night Warriors: Darkstalkers' Revenge (Hispanic 950403) --> nwarrh.rom
+Night Warriors: Darkstalkers' Revenge (USA 950406) --> nwarru.rom
+Night Warriors: Darkstalkers' Revenge (USA 950406 Phoenix Edition) (bootleg) --> nwarrud.rom
+Pocket Fighter (Japan 970904) --> pfghtj.rom
+Powered Gear: Strategic Variant Armor Equipment (Japan 941024) --> pgear.rom
+Powered Gear: Strategic Variant Armor Equipment (Japan 940916) --> pgearr1.rom
+Progear (USA 010117) --> progear.rom
+Progear (Asia 010117) --> progeara.rom
+Progear no Arashi (Japan 010117) --> progearj.rom
+Progear no Arashi (Japan 010117) (decrypted bootleg) --> progejbl.rom
+Progear no Arashi (Japan 010117 Phoenix Edition) (bootleg) --> progerjd.rom
+Progear (USA 010117 Phoenix Edition) (bootleg) --> progerud.rom
+Puzz Loop 2 (Euro 010302) --> pzloop2.rom
+Puzz Loop 2 (Japan 010226) --> pzloop2j.rom
+Puzz Loop 2 (Japan 010226 Phoenix Edition) (bootleg) --> pzloo2jd.rom
+Puzz Loop 2 (Japan 010205) --> pzloojr1.rom
+Quiz Nanairo Dreams: Nijiirochou no Kiseki (Japan 96086) --> qndream.rom
+Ring of Destruction: Slammasters II (Euro 940902) --> ringdest.rom
+Ring of Destruction: Slammasters II (Asia 940831) --> ringdsta.rom
+Ring of Destruction: Slammasters II (Brazil 940902) --> ringdstb.rom
+Ring of Destruction: Slammasters II (Hispanic 940902) --> ringdsth.rom
+Ring of Destruction: Slammasters II (Euro 940902 Phoenix Edition) (bootleg) --> ringdstd.rom
+Rockman: The Power Battle (CPS2, Japan 950922) --> rmancp2j.rom
+Rockman 2: The Power Fighters (Japan 960708) --> rockmn2j.rom
+Street Fighter Alpha: Warriors' Dreams (Euro 950727) --> sfa.rom
+Street Fighter Alpha 2 (Euro 960229) --> sfa2.rom
+Street Fighter Alpha 2 (USA 960430) --> sfa2u.rom
+Street Fighter Alpha 2 (USA 960306) --> sfa2ur1.rom
+Street Fighter Alpha 3 (Euro 980904) --> sfa3.rom
+Street Fighter Alpha 3 (Brazil 980629) --> sfa3b.rom
+Street Fighter Alpha 3 (Hispanic 980904) --> sfa3h.rom
+Street Fighter Alpha 3 (Hispanic 980629) --> sfa3hr1.rom
+Street Fighter Alpha 3 (USA 980904) --> sfa3u.rom
+Street Fighter Alpha 3 (USA 980904 Phoenix Edition) (bootleg) --> sfa3ud.rom
+Street Fighter Alpha 3 (USA 980629) --> sfa3ur1.rom
+Street Fighter Alpha 3 (USA 980616, SAMPLE Version) --> sfa3us.rom
+Street Fighter Alpha: Warriors' Dreams (Euro 950727 Phoenix Edition) (bootleg) --> sfad.rom
+Street Fighter Alpha: Warriors' Dreams (Euro 950718) --> sfar1.rom
+Street Fighter Alpha: Warriors' Dreams (Euro 950627) --> sfar2.rom
+Street Fighter Alpha: Warriors' Dreams (Euro 950605) --> sfar3.rom
+Street Fighter Alpha: Warriors' Dreams (USA 950627) --> sfau.rom
+Street Fighter Zero 2 (Asia 960227) --> sfz2a.rom
+Street Fighter Zero 2 (Asia 960227 Phoenix Edition) (bootleg) --> sfz2ad.rom
+Street Fighter Zero 2 Alpha (Asia 960826) --> sfz2al.rom
+Street Fighter Zero 2 Alpha (Brazil 960813) --> sfz2alb.rom
+Street Fighter Zero 2 Alpha (Asia 960826 Phoenix Edition) (bootleg) --> sfz2ald.rom
+Street Fighter Zero 2 Alpha (Hispanic 960813) --> sfz2alh.rom
+Street Fighter Zero 2 Alpha (Japan 960805) --> sfz2alj.rom
+Street Fighter Zero 2 Alpha (Asia 960805) --> sfz2alr1.rom
+Street Fighter Zero 2 (Brazil 960531) --> sfz2b.rom
+Street Fighter Zero 2 (Brazil 960304) --> sfz2br1.rom
+Street Fighter Zero 2 (Hispanic 960304) --> sfz2h.rom
+Street Fighter Zero 2 (Japan 960430) --> sfz2j.rom
+Street Fighter Zero 2 (Japan 960227 Phoenix Edition) (bootleg) --> sfz2jd.rom
+Street Fighter Zero 2 (Japan 960227) --> sfz2jr1.rom
+Street Fighter Zero 2 (Oceania 960229) --> sfz2n.rom
+Street Fighter Zero 3 (Asia 980904) --> sfz3a.rom
+Street Fighter Zero 3 (Asia 980701) --> sfz3ar1.rom
+Street Fighter Zero 3 (Japan 980904) --> sfz3j.rom
+Street Fighter Zero 3 (Japan 980727) --> sfz3jr1.rom
+Street Fighter Zero 3 (Japan 980629) --> sfz3jr2.rom
+Street Fighter Zero 3 (Japan 980629 Phoenix Edition) (bootleg) --> sfz3jr2d.rom
+Street Fighter Zero (Asia 950627) --> sfza.rom
+Street Fighter Zero (Asia 950605) --> sfzar1.rom
+Street Fighter Zero (Brazil 951109) --> sfzb.rom
+Street Fighter Zero (Brazil 950727) --> sfzbr1.rom
+Street Fighter Zero (Hispanic 950718) --> sfzh.rom
+Street Fighter Zero (Hispanic 950627) --> sfzhr1.rom
+Street Fighter Zero (Japan 950727) --> sfzj.rom
+Street Fighter Zero (Japan 950627) --> sfzjr1.rom
+Street Fighter Zero (Japan 950605) --> sfzjr2.rom
+Super Gem Fighter Mini Mix (USA 970904) --> sgemf.rom
+Super Gem Fighter: Mini Mix (Asia 970904) --> sgemfa.rom
+Super Gem Fighter Mini Mix (USA 970904 Phoenix Edition) (bootleg) --> sgemfd.rom
+Super Gem Fighter: Mini Mix (Hispanic 970904) --> sgemfh.rom
+Super Muscle Bomber: The International Blowout (Japan 940831) --> smbomb.rom
+Super Muscle Bomber: The International Blowout (Japan 940808) --> smbombr1.rom
+Super Puzzle Fighter II Turbo (Euro 960529) --> spf2t.rom
+Super Puzzle Fighter II Turbo (Asia 960529) --> spf2ta.rom
+Super Puzzle Fighter II Turbo (USA 960620 Phoenix Edition) (bootleg) --> spf2td.rom
+Super Puzzle Fighter II Turbo (Hispanic 960531) --> spf2th.rom
+Super Puzzle Fighter II Turbo (USA 960620) --> spf2tu.rom
+Super Puzzle Fighter II X (Japan 960531) --> spf2xj.rom
+Super Puzzle Fighter II X (Japan 960531 Phoenix Edition) (bootleg) --> spf2xjd.rom
+Super Street Fighter II: The New Challengers (World 931005) --> ssf2.rom
+Super Street Fighter II: The New Challengers (Asia 931005) --> ssf2a.rom
+Super Street Fighter II: The New Challengers (Asia 930914) --> ssf2ar1.rom
+Super Street Fighter II: The New Challengers (Hispanic 930911) --> ssf2h.rom
+Super Street Fighter II: The New Challengers (Japan 931005) --> ssf2j.rom
+Super Street Fighter II: The New Challengers (Japan 930911) --> ssf2jr1.rom
+Super Street Fighter II: The New Challengers (Japan 930910) --> ssf2jr2.rom
+Super Street Fighter II: The New Challengers (World 930911) --> ssf2r1.rom
+Super Street Fighter II Turbo (World 940223) --> ssf2t.rom
+Super Street Fighter II Turbo (Asia 940223) --> ssf2ta.rom
+Super Street Fighter II Turbo (Asia 940223 Phoenix Edition) (bootleg) --> ssf2tad.rom
+Super Street Fighter II: The Tournament Battle (World 931119) --> ssf2tb.rom
+Super Street Fighter II: The Tournament Battle (Asia 931005) --> ssf2tba.rom
+Super Street Fighter II: The Tournament Battle (World 931119 Phoenix Edition) (bootleg) --> ssf2tbd.rom
+Super Street Fighter II: The Tournament Battle (Hispanic 931005) --> ssf2tbh.rom
+Super Street Fighter II: The Tournament Battle (Japan 931005) --> ssf2tbj.rom
+Super Street Fighter II: The Tournament Battle (Japan 930911) --> ssf2tbj1.rom
+Super Street Fighter II: The Tournament Battle (World 930911) --> ssf2tbr1.rom
+Super Street Fighter II: The Tournament Battle (USA 930911) --> ssf2tbu.rom
+Super Street Fighter II Turbo (Hispanic 940223) --> ssf2th.rom
+Super Street Fighter II Turbo (USA 940323) --> ssf2tu.rom
+Super Street Fighter II Turbo (USA 940223) --> ssf2tur1.rom
+Super Street Fighter II: The New Challengers (USA 930911) --> ssf2u.rom
+Super Street Fighter II: The New Challengers (USA 930911 Phoenix Edition) (bootleg) --> ssf2ud.rom
+Super Street Fighter II X: Grand Master Challenge (Japan 940311) --> ssf2xj.rom
+Super Street Fighter II X: Grand Master Challenge (Japan 940223) --> ssf2xjr1.rom
+Super Street Fighter II X: Grand Master Challenge (Japan 940223 Phoenix Edition) (bootleg) --> ssf2xr1d.rom
+Super Street Fighter II X: Grand Master Challenge (Japan 940223 rent version) --> ssf2xr1r.rom
+Ultimate Ecology (Japan 931203) --> uecology.rom
+Vampire: The Night Warriors (Japan 940705) --> vampj.rom
+Vampire: The Night Warriors (Japan 940705 alt) --> vampja.rom
+Vampire: The Night Warriors (Japan 940630) --> vampjr1.rom
+Vampire Hunter 2: Darkstalkers Revenge (Japan 970929) --> vhunt2.rom
+Vampire Hunter 2: Darkstalkers Revenge (Japan 970913 Phoenix Edition) (bootleg) --> vhunt2d.rom
+Vampire Hunter 2: Darkstalkers Revenge (Japan 970913) --> vhunt2r1.rom
+Vampire Hunter: Darkstalkers' Revenge (Japan 950316) --> vhuntj.rom
+Vampire Hunter: Darkstalkers' Revenge (Japan 950307) --> vhuntjr1.rom
+Vampire Hunter: Darkstalkers' Revenge (Japan 950307 stop version) --> vhuntr1s.rom
+Vampire Hunter: Darkstalkers' Revenge (Japan 950302) --> vhuntjr2.rom
+Vampire Savior: The Lord of Vampire (Euro 970519) --> vsav.rom
+Vampire Savior 2: The Lord of Vampire (Japan 970913) --> vsav2.rom
+Vampire Savior 2: The Lord of Vampire (Japan 970913 Phoenix Edition) (bootleg) --> vsav2d.rom
+Vampire Savior: The Lord of Vampire (Asia 970519) --> vsava.rom
+Vampire Savior: The Lord of Vampire (Brazil 970519) --> vsavb.rom
+Vampire Savior: The Lord of Vampire (Euro 970519 Phoenix Edition) (bootleg) --> vsavd.rom
+Vampire Savior: The Lord of Vampire (Hispanic 970519) --> vsavh.rom
+Vampire Savior: The Lord of Vampire (Japan 970519) --> vsavj.rom
+Vampire Savior: The Lord of Vampire (USA 970519) --> vsavu.rom
+X-Men: Children of the Atom (Euro 950331) --> xmcota.rom
+X-Men: Children of the Atom (Asia 950105) --> xmcotaa.rom
+X-Men: Children of the Atom (Asia 941219) --> xmcotar1.rom
+X-Men: Children of the Atom (Asia 941217) --> xmcotar2.rom
+X-Men: Children of the Atom (Brazil 950331) --> xmcotab.rom
+X-Men: Children of the Atom (Hispanic 950331) --> xmcotah.rom
+X-Men: Children of the Atom (Hispanic 950105) --> xmcothr1.rom
+X-Men: Children of the Atom (Japan 950105) --> xmcotaj.rom
+X-Men: Children of the Atom (Japan 941222) --> xmcotaj1.rom
+X-Men: Children of the Atom (Japan 941219) --> xmcotaj2.rom
+X-Men: Children of the Atom (Japan 941217) --> xmcotaj3.rom
+X-Men: Children of the Atom (Japan 941208 rent version) --> xmcotajr.rom
+X-Men: Children of the Atom (Euro 950105) --> xmcotar1.rom
+X-Men: Children of the Atom (Euro 950105 Phoenix Edition) (bootleg) --> xmcotr1d.rom
+X-Men: Children of the Atom (USA 950105) --> xmcotau.rom
+X-Men Vs. Street Fighter (Euro 961004) --> xmvsf.rom
+X-Men Vs. Street Fighter (Asia 961023) --> xmvsfa.rom
+X-Men Vs. Street Fighter (Asia 961004) --> xmvsfar1.rom
+X-Men Vs. Street Fighter (Asia 960919) --> xmvsfar2.rom
+X-Men Vs. Street Fighter (Asia 960910) --> xmvsfar3.rom
+X-Men Vs. Street Fighter (Brazil 961023) --> xmvsfb.rom
+X-Men Vs. Street Fighter (Hispanic 961004) --> xmvsfh.rom
+X-Men Vs. Street Fighter (Japan 961023) --> xmvsfj.rom
+X-Men Vs. Street Fighter (Japan 961004) --> xmvsfjr1.rom
+X-Men Vs. Street Fighter (Japan 960910) --> xmvsfjr2.rom
+X-Men Vs. Street Fighter (Japan 960909) --> xmvsfjr3.rom
+X-Men Vs. Street Fighter (Euro 960910) --> xmvsfr1.rom
+X-Men Vs. Street Fighter (USA 961023) --> xmvsfu.rom
+X-Men Vs. Street Fighter (USA 961004 Phoenix Edition) (bootleg) --> xmvsfu1d.rom
+X-Men Vs. Street Fighter (USA 961004) --> xmvsfur1.rom
+X-Men Vs. Street Fighter (USA 960910) --> xmvsfur2.rom
+
+
+These files are generated using the mra tool in:
+https://github.com/sebdel/mra-tools-c/tree/master/release
+
+Boogermann's ORCA tool can also be used to generate the files:
+https://github.com/opengateware/tools-orca
+
+Check out the short tutorial in:
+https://github.com/jotego/jtbin/wiki/Analogue-Pocket-Cores
+
+DISCLAIMER: This PocketFPGA core is licensed to be used only
+with legally owned dumps of videogame data. It is also licensed
+to be used with freeware (homebrew) compatible with the platform.
