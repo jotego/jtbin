@@ -300,8 +300,8 @@
 | forgottnue   | jtcps1     | d08b3d57deced2a4e2c6ee981e369bba | ff,fc,ff     |
 | fpoint       | jts16b     | dd85fdc30eae58cea7353c49688eb719 | ff,fd        |
 | fpoint1      | jts16b     | 104febb82ea083d44525f317992142d3 | ff,fd        |
-| fround       | jttwin16   | 0824f8ea07f0f330628fa9373dc13021 | ff,5e,ff     |
-| froundl      | jttwin16   | b4f7a1b2506094c98fddf820462f5653 | ff,5e,ff     |
+| fround       | jtfround   | 0824f8ea07f0f330628fa9373dc13021 | ff,5e,ff     |
+| froundl      | jtfround   | b4f7a1b2506094c98fddf820462f5653 | ff,5e,ff     |
 | ghouls       | jtcps1     | 6ca0a8f1265eca0c99f28ac9e645e2eb | ff,fd,ff     |
 | ghoulsu      | jtcps1     | 3dbf285eda000132f55e31ce9ae667da | ff,fd,ff     |
 | gigawing     | jtcps2     | 671ca8537efef8e426c1e665c76a0340 |              |
@@ -515,10 +515,10 @@
 | punisherh    | jtcps15    | 68975f8d997bdef8ab75b7c9344fc53e | ff           |
 | punisherj    | jtcps15    | 69188d91acf77e22d0a0cd39f347e74e | ff           |
 | punisheru    | jtcps15    | a0fbdd47a572dc50488fa84e5ddd0c92 | ff           |
-| punkshot     | jttmnt     | 01c4c11af76256003b7597056b5be5e2 | cf,7f,ff     |
-| punkshot2    | jttmnt     | 41478b4df5797ff07fc417d4b5e0619c | cf,7f,ff     |
-| punkshot2e   | jttmnt     | 8d2b8dfc39d766cacab19301b16e9cc7 | cf,7f,ff     |
-| punkshotj    | jttmnt     | 6b1aa3acf549131e7992df9e4aa6d44b | cf,7f,ff     |
+| punkshot     | jttmnt     | 01c4c11af76256003b7597056b5be5e2 | ff,7b,ff     |
+| punkshot2    | jttmnt     | 41478b4df5797ff07fc417d4b5e0619c | ff,7f,ff     |
+| punkshot2e   | jttmnt     | 8d2b8dfc39d766cacab19301b16e9cc7 | ff,7f,ff     |
+| punkshotj    | jttmnt     | 6b1aa3acf549131e7992df9e4aa6d44b | ff,5b,ff     |
 | pzloop2      | jtcps2     | 1e52a337b3145823c43122abad5ab2db |              |
 | pzloop2j     | jtcps2     | 2005f74ca24858fb5511c48a77c6ae5d |              |
 | pzloop2jd    | jtcps2     | 6545381800fad4f7278d119f319944c0 |              |
@@ -567,9 +567,9 @@
 | sbasketg     | jtsbask1   | 89944ff60c58588a12a1bf1fa522bd88 | ff,68        |
 | sbasketh     | jtsbaskt   | 329dd1723105c7c9d8d54a2488698091 | ff,68        |
 | sbbros       | jtpang     | c5df99210dd5f2b764165b0e9a899825 |              |
-| scontra      | jtaliens   | ffd37f90245d65425a36c8447a534517 | ff,5a,f7     |
-| scontraa     | jtaliens   | a8dac14ae9cd77f5246decf52977d4ac | ff,5a,f7     |
-| scontraj     | jtaliens   | 9d3146814b363a91629a0e2a0c87586e | ff,5a,f7     |
+| scontra      | jtaliens   | ffd37f90245d65425a36c8447a534517 | ff,5e,f7     |
+| scontraa     | jtaliens   | a8dac14ae9cd77f5246decf52977d4ac | ff,5e,f7     |
+| scontraj     | jtaliens   | 9d3146814b363a91629a0e2a0c87586e | ff,5e,f7     |
 | sdi          | jts16      | ed4e3c4a952505271874a0076c4089fd | ff,fd        |
 | sdia         | jts16      | f728c6163c6a5a2150820dc62668450a | ff,fd        |
 | sdib         | jts16b     | f7f5e7d5ca410726ecaa2af134da1913 | ff,fd        |
@@ -717,6 +717,9 @@
 | spf2tu       | jtcps2     | e14f9c04be77eec8123f32304ec377ac |              |
 | spf2xj       | jtcps2     | 88c1d220a0693a1126adfb418089afe6 |              |
 | spf2xjd      | jtcps2     | 8da65e97a9927ed5339918540cc99f67 |              |
+| splatter     | jtshouse   | 1e5918a0657787602d9c002385ffa46d | ff           |
+| splatter2    | jtshouse   | 41e360fa9bcd4805ad031ec8b0881d67 | ff           |
+| splatterj    | jtshouse   | 6d6b7cde5517f7eee3b8b1d291e622ba | ff           |
 | srumbler     | jtrumble   | 1c980900d9b0996859ebd0c104f41dd9 | ff,73        |
 | srumbler2    | jtrumble   | 9b6968578af1534c6ade8adcb0a198bc | ff,73        |
 | srumbler3    | jtrumble   | 1f8f4f4c2aee65f726b85b0494a178e7 | ff,73        |
