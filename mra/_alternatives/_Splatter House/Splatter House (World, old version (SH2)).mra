@@ -1,0 +1,147 @@
+<!--          FPGA arcade hardware by Jotego
+
+              This core is available for hardware compatible with MiST and MiSTer
+              Other FPGA systems may be supported by the time you read this.
+              This work is not mantained by the MiSTer project. Please contact the
+              core author for issues and updates.
+
+              (c) Jose Tejada, 2023. Please support this research
+              Patreon: https://patreon.com/jotego
+
+              The author does not endorse or participate in illegal distribution
+              of copyrighted material. This work can be used with compatible
+              software. This software can be homebrew projects or legally
+              obtained memory dumps of compatible games.
+
+              This file license is GNU GPLv2.
+              You can read the whole license file in
+              https://opensource.org/licenses/gpl-2.0.php
+
+-->
+
+<misterromdescription>
+    <about author="jotego" webpage="https://patreon.com/jotego" source="https://github.com/jotego" twitter="@topapate"/>
+    <name>Splatter House (World, old version (SH2))</name>
+    <setname>splatter2</setname>
+    <rbf>jtshouse</rbf>
+    <mameversion>0251</mameversion>
+    <year>1988</year>
+    <manufacturer>Namco</manufacturer>
+    <players>2</players>
+    <joystick>8</joystick>
+    <rotation>horizontal</rotation>
+    <region>World</region>
+    <rom index="0" zip="splatter2.zip|splatter.zip" md5="None" asm_md5="41e360fa9bcd4805ad031ec8b0881d67">
+        <!-- Byte 0: protection type -->
+        <part>
+            03 B5 03 04 00 00 00 00
+        </part>
+        <!-- user1 - starts at 0x0 - length 0x3A0000 (22 bits) -->
+        <part name="sh1_prg0.bin" crc="4e07e6d9"/>
+        <part repeat="0x70000"> FF</part>
+        <part name="sh1_prg1.bin" crc="7a3efe09"/>
+        <part repeat="0x70000"> FF</part>
+        <part name="sh1_prg2.bin" crc="434dbe7d"/>
+        <part repeat="0x70000"> FF</part>
+        <part name="sh1_prg3.bin" crc="955ce93f"/>
+        <part repeat="0x70000"> FF</part>
+        <part name="sh1_prg4.bin" crc="350dee5b"/>
+        <part repeat="0x70000"> FF</part>
+        <part name="sh1_prg5.bin" crc="0187de9a"/>
+        <part repeat="0x70000"> FF</part>
+        <part name="sh2_prg6.bin" crc="054d6275"/>
+        <part repeat="0x70000"> FF</part>
+        <part name="sh2_prg7.bin" crc="942cb61e"/>
+        <part repeat="0x10000"> FF</part>
+        <!-- JTFRAME_BA1_START -->
+        <!-- audiocpu - starts at 0x3A0000 - length 0x20000 (17 bits) -->
+        <part name="sh1_snd0.bin" crc="90abd4ad"/>
+        <part name="sh1_snd1.bin" crc="8ece9e0a"/>
+        <!-- PCM_START -->
+        <!-- voice - starts at 0x3C0000 - length 0xB0000 (20 bits) -->
+        <part name="sh_voi-0.bin" crc="2199cb66"/>
+        <part name="sh_voi-1.bin" crc="9b6472af"/>
+        <part name="sh_voi-2.bin" crc="25ea75b6"/>
+        <part name="sh_voi-3.bin" crc="5eebcdb4"/>
+        <part repeat="0x30000"> FF</part>
+        <!-- JTFRAME_BA2_START -->
+        <!-- c123tmap:mask - starts at 0x470000 - length 0x20000 (17 bits) -->
+        <part name="sh_chr-8.bin" crc="321f483b"/>
+        <!-- SCR_START -->
+        <!-- c123tmap - starts at 0x490000 - length 0x100000 (20 bits) -->
+        <part name="sh_chr-0.bin" crc="4dd2ef05"/>
+        <part name="sh_chr-1.bin" crc="7a764999"/>
+        <part name="sh_chr-2.bin" crc="6e6526ee"/>
+        <part name="sh_chr-3.bin" crc="8d05abdb"/>
+        <part name="sh_chr-4.bin" crc="1e1f8488"/>
+        <part name="sh_chr-5.bin" crc="684cf554"/>
+        <part repeat="0x40000"> FF</part>
+        <!-- JTFRAME_BA3_START -->
+        <!-- sprite - starts at 0x590000 - length 0x100000 (20 bits) -->
+        <part name="sh_obj-0.bin" crc="1cedbbae"/>
+        <part name="sh_obj-1.bin" crc="e56e91ee"/>
+        <part name="sh_obj-2.bin" crc="3dfb0230"/>
+        <part name="sh_obj-3.bin" crc="e4e5a581"/>
+        <part name="sh_obj-4.bin" crc="b2422182"/>
+        <part name="sh_obj-5.bin" crc="24d0266f"/>
+        <part name="sh_obj-6.bin" crc="80830b0e"/>
+        <part name="sh_obj-7.bin" crc="08b1953a"/>
+        <!-- JTFRAME_PROM_START -->
+        <!-- mcu - starts at 0x690000 - length 0x1000 (12 bits) -->
+        <part name="cus64-64a1.mcu" crc="ffb5c0bd"/>
+        <!-- Total 0x691000 bytes - 6724 kBytes -->
+    </rom>
+    <rom index="17" zip="jtbeta.zip" md5="None">
+        <part name="beta.bin"/>
+    </rom>
+    <!-- Machine code for the Picoblaze CPU -->
+    <rom index="16">
+        <part>
+            78 10 B0 44 02 10 5D 00 D8 01 90 05 80 0D B0 C1 02 AC 80 90 04 40 C3 06 F2 0E AC 60 00 02 41 0B
+            08 09 08 0C 12 20 63 80 08 10 0B 48 34 18 20 03 C0 AB 01 60 03 88 00 F0 36 80 C8 02 09 00 74 1E
+            60 07 6C 94 03 2B 00 05 6E 13 FC 00 98 04 2B 00 05 8E 13 FC 00 98 05 2B 00 05 AE 13 FC 00 98 06
+            2B 00 05 CE 13 FC 00 08 68 89 80 35 35 20 27 C2 1A 40 01 CB 04 3F 00 26 C2 0A 40 01 FB 04 3F 00
+            66 C2 1A 40 01 C3 04 3F 00 1A 6C 0B 00 25 00 04 30 44 82 48 86 00 AD 82 B4 01 10 81 40 07 00 71
+            C0 44 00 34 01 81 88 00 2D 84 00 0E 42 39 08 E5 20 94 83 50 57 00 06 40 84 00 2D 84 00 57 00 06
+            40 04 00 E5 83 0C 0A D2 75 81 DF 05 32 84 44 5E 20 5E 48 A4 20 2D 00 94 31 10 C4 44 00 20 41 4C
+            04 08 D0 26 44 AB 20 6D 40 64 65 E0 07 40 36 06 3E 00 94 40 D0 B2 81 08 22 21 88 84 20 12 82 48
+            88 22 E1 98 84 29 12 82 48 A8 24 E1 9B 84 74 12 96 49 78 26 E1 9B 84 20 12 CA 48 08 23 A1 8C 84
+            33 12 82 48 08 22 21 88 84 20 12 82 48 08 22 21 88 84 20 12 82 48 08 22 21 88 84 20 12 82 48 08
+            22 21 88 84 20 12 82 48 48 25 21 9A 84 69 12 CE 49 08 22 E1 98 84 6F 12 CA 49 58 26 21 88 84 69
+            12 CE 49 08 22 61 9A 84 6E 12 82 48 28 26 61 99 84 74 12 86 49 08 22 21 9C 84 68 12 86 49 38 27
+            61 99 84 20 12 82 48 08 22 21 88 84 20 12 82 48 A8 24 E1 9B 84 69 12 BA 49 08 22 21 9D 84 68 12
+            96 49 08 22 A1 98 84 65 12 D2 49 18 26 21 88 84 74 12 96 49 38 27 21 9D 84 20 12 D2 49 58 26 61
+            98 84 6D 12 82 48 18 26 21 9D 84 20 12 82 48 08 22 21 88 84 20 12 A2 49 48 27 21 9D 84 70 12 CE
+            49 A8 23 E1 8B 84 2F 12 C2 49 18 26 21 9D 84 72 12 96 49 F8 26 A1 9B 84 2E 12 8E 49 F8 26 61 9B
+            84 2F 12 AA 49 F8 26 21 9D 84 65 12 9E 49 F8 26 21 88 84 20 12 82 48 08 22 21 88 84 50 12 B2 49
+            18 26 E1 98 84 65 12 82 48 48 27 21 9A 84 65 12 82 48 68 26 61 9A 84 6C 12 96 49 08 22 A1 9A 84
+            74 12 8A 49 58 26 21 9D 84 61 12 BA 48 A8 27 61 9A 84 70 12 82 48 08 22 21 88 84 20 12 82 48 08
+            22 21 88 84 69 12 BA 49 08 22 21 9D 84 68 12 96 49 08 22 A1 99 84 6F 12 B2 49 48 26 61 99 84 72
+            12 82 48 78 26 61 98 84 6D 12 96 49 38 27 E1 8B 84 6D 12 86 49 D8 26 61 99 84 20 12 82 48 08 22
+            21 88 84 20 12 82 48 08 22 21 88 84 54 12 A2 49 98 26 E1 9C 84 20 12 8A 49 58 26 21 9D 84 61 12
+            82 48 28 25 A1 90 84 46 12 82 48 88 26 61 98 84 73 12 82 48 58 26 21 9E 84 70 12 A6 49 28 27 61
+            99 84 64 12 82 48 08 22 21 88 84 4C 21 32 85 C8 14 22 53 88 4C 21 32 85 C8 14 22 53 88 4C 21 32
+            85 C8 14 22 53 88 4C 21 32 85 C8 14 22 53 88 4C 21 32 85 C8 14 22 53 88 4C 21 32 85 C8 14 22 53
+            88 4C 21 32 85 C8 14 22 53 88 4C 21 32 85 C8 14 22 53 88 4C 21 32 85 C8 14 22 53 88 4C 21 32 85
+            C8 14 22 53 88 4C 21 32 85 C8 14 22 53 88 4C 21 32 85 C8 14 22 53 88 4C 21 32 85 C8 14 22 53 88
+            4C 21 32 85 C8 14 22 53 88 4C 21 32 85 C8 14 22 53 88 4C 21 32 85 C8 14 22 53 88 4C 21 32 85 C8
+            14 22 53 88 4C 21 32 85 C8 14 22 53 88 4C 21 32 85 C8 14 22 53 88 4C 21 32 85 C8 14 22 53 88 4C
+            21 32 85 C8 14 22 53 88 4C 21 32 85 C8 14 22 53 88 4C 21 32 85 C8 14 22 53 88 4C 21 32 85 C8 14
+            22 53 88 4C 21 32 85 C8 14 22 53 88 4C 21 32 85 C8 14 22 53 88 4C 21 32 85 C8 14 22 53 88 4C 21
+            32 85 C8 14 22 53 88 4C 21 32 85 C8 14 22 53 88 4C 21 32 85 C8 14 22 53 88 4C 21 32 85 C8 14 22
+        </part>
+    </rom>
+    <nvram index="2" size="63528"/>
+    <rom index="1">
+        <part>00</part>
+    </rom>
+    <switches page_id="1" page_name="Switches" base="16" default="ff">
+        <!-- DIPSW -->
+        <dip name="Service Mode" bits="0" ids="On,Off"/>
+        <dip name="Debug IRQ 1/2" bits="3" ids="Yes,No"/>
+        <dip name="Debug IRQ 1/2" bits="5" ids="Yes,No"/>
+        <dip name="Debug IRQ 2/2" bits="6" ids="Yes,No"/>
+        <dip name="Debug IRQ 2/2" bits="7" ids="Yes,No"/>
+    </switches>
+    <buttons names="Attack,Jump,-,Start,Coin,Core credits" default="Y,X,B,Start,Select,-" count="2"/>
+</misterromdescription>

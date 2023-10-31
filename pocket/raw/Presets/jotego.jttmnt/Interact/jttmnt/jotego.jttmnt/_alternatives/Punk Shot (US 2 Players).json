@@ -21,8 +21,8 @@
 				"address": "0xfa000000",
 				"defaultval": 0,
 				"value": 0,
-				"value_off": 1048576,
-				"mask": "0xFFEFFFFF"
+				"value_off": 65536,
+				"mask": "0xFFFEFFFF"
 			},
 			{
 				"name": "Service Mode",
@@ -33,8 +33,8 @@
 				"address": "0xfa000000",
 				"defaultval": 0,
 				"value": 0,
-				"value_off": 4194304,
-				"mask": "0xFFBFFFFF"
+				"value_off": 262144,
+				"mask": "0xFFFBFFFF"
 			},
 			{
 				"name": "Freeze",
@@ -45,8 +45,8 @@
 				"address": "0xfa000000",
 				"defaultval": 0,
 				"value": 0,
-				"value_off": 8388608,
-				"mask": "0xFF7FFFFF"
+				"value_off": 524288,
+				"mask": "0xFFF7FFFF"
 			},
 			{
 				"name": "Coinage",

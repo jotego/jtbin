@@ -74,10 +74,6 @@
     <rom index="1">
         <part>00</part>
     </rom>
-    <switches page_id="1" page_name="Switches" base="16" default="ff,ff">
-        <!-- DSWA -->
-        <!-- DSWB -->
-        <!-- DSWC -->
-    </switches>
+    <switches page_id="1" page_name="Switches" base="16" default="ff,ff"/>
     <buttons names="Attack,Jump,-,-,-,-,Start,Coin,Core credits" default="Y,X,B,A,R,L,Start,Select,-" count="2"/>
 </misterromdescription>

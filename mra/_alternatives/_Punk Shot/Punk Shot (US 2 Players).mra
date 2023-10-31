@@ -115,7 +115,7 @@
     <rom index="1">
         <part>00</part>
     </rom>
-    <switches page_id="1" page_name="Switches" base="8" default="cf,7f,ff">
+    <switches page_id="1" page_name="Switches" base="8" default="ff,7f,ff">
         <!-- COINS_DSW3 -->
         <dip name="Flip Screen" bits="16" ids="On,Off"/>
         <dip name="Service Mode" bits="18" ids="On,Off"/>
