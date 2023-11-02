@@ -83,7 +83,6 @@
         <!-- mcu - starts at 0x251000 - length 0x800 (11 bits) -->
         <part name="b06__14.1g" crc="28907072"/>
         <!-- Total 0x251800 bytes - 2374 kBytes -->
-        <!-- Adding 2 bytes to the patch offset to make up for the MRA header -->
     </rom>
     <!-- Vertical game -->
     <rom index="1">

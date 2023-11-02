@@ -90,7 +90,6 @@
             90 83 </part>
         <part repeat="0x75E"> FF</part>
         <!-- Total 0x251800 bytes - 2374 kBytes -->
-        <!-- Adding 2 bytes to the patch offset to make up for the MRA header -->
     </rom>
     <!-- Vertical game -->
     <rom index="1">
