@@ -14,6 +14,10 @@
 			{
 				"id": 2,
 				"filename": "simpsons2p.sav"
+			},
+			{
+				"id": 17,
+				"filename": "beta.bin"
 			}
 		],
 		"memory_writes": [
