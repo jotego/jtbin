@@ -3,14 +3,15 @@
 		"magic": "APF_VER_1",
 		"metadata": {
 			"platform_ids": [
-				"jtsbaskt"
+				"jtsbaskt",
+				"jtpatreon"
 			],
 			"shortname": "jtsbaskt",
 			"description": "Arcade hardware",
 			"author": "jotego",
 			"url": "https://patreon.com/jotego",
 			"version": "noversion",
-			"date_release": "2023-05-05"
+			"date_release": "2023-11-02"
 		},
 		"framework": {
 			"target_product": "Analogue Pocket",

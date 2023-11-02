@@ -53,8 +53,37 @@
 				]
 			},
 			{
-				"name": "Flip Screen",
+				"name": "Dial sensitivity",
 				"id": 3,
+				"type": "list",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfb000004",
+				"defaultval": 3,
+				"value": 0,
+				"mask": "0xFFFFFFFC",
+				"options": [
+					{
+						"name": "very high",
+						"value": "0x1"
+					},
+					{
+						"name": "high",
+						"value": "0x0"
+					},
+					{
+						"name": "low",
+						"value": "0x3"
+					},
+					{
+						"name": "very low",
+						"value": "0x2"
+					}
+				]
+			},
+			{
+				"name": "Flip Screen",
+				"id": 4,
 				"type": "check",
 				"enabled": true,
 				"persist": true,
@@ -66,7 +95,7 @@
 			},
 			{
 				"name": "Service Mode",
-				"id": 4,
+				"id": 5,
 				"type": "check",
 				"enabled": true,
 				"persist": true,
@@ -78,7 +107,7 @@
 			},
 			{
 				"name": "Coin A",
-				"id": 5,
+				"id": 6,
 				"type": "list",
 				"enabled": true,
 				"persist": true,
@@ -107,7 +136,7 @@
 			},
 			{
 				"name": "Coin B",
-				"id": 6,
+				"id": 7,
 				"type": "list",
 				"enabled": true,
 				"persist": true,
@@ -136,7 +165,7 @@
 			},
 			{
 				"name": "Difficulty",
-				"id": 7,
+				"id": 8,
 				"type": "list",
 				"enabled": true,
 				"persist": true,
@@ -165,7 +194,7 @@
 			},
 			{
 				"name": "Damage Multiplier",
-				"id": 8,
+				"id": 9,
 				"type": "list",
 				"enabled": true,
 				"persist": true,
