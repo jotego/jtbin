@@ -1,0 +1,447 @@
+{
+	"interact":{
+		"magic": "APF_VER_1",
+		"variables": [
+			{
+				"name": "Version",
+				"id": 1000,
+				"type": "number_u32",
+				"enabled": false,
+				"persist": false,
+				"address": "0xFF000000",
+				"defaultval": 0,
+				"value": 0
+			},
+			{
+				"name": "Rotate screen",
+				"id": 1,
+				"type": "check",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfb000000",
+				"defaultval": 4,
+				"value": 4,
+				"mask": "0xFFFFFFFB"
+			},
+			{
+				"name": "FX Volume",
+				"id": 2,
+				"type": "list",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfb000000",
+				"defaultval": 0,
+				"value": 0,
+				"mask": "0xFFFFFF3F",
+				"options": [
+					{
+						"name": "high",
+						"value": "0x00"
+					},
+					{
+						"name": "very high",
+						"value": "0x40"
+					},
+					{
+						"name": "very low",
+						"value": "0x80"
+					},
+					{
+						"name": "low",
+						"value": "0xc0"
+					}
+				]
+			},
+			{
+				"name": "Coin A",
+				"id": 3,
+				"type": "list",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 15,
+				"value": 0,
+				"mask": "0xFFFFFFF0",
+				"options": [
+					{
+						"name": "Free Play (if Coin B too) or 1/1",
+						"value": "0x0"
+					},
+					{
+						"name": "1 Coin/1 Credit, 2/3",
+						"value": "0x1"
+					},
+					{
+						"name": "1 Coin/1 Credit, 4/5",
+						"value": "0x2"
+					},
+					{
+						"name": "1 Coin/1 Credit, 5/6",
+						"value": "0x3"
+					},
+					{
+						"name": "2 Coins/1 Credit, 4/3",
+						"value": "0x4"
+					},
+					{
+						"name": "2 Coins/1 Credit, 5/3, 6/4",
+						"value": "0x5"
+					},
+					{
+						"name": "2 Coins/3 Credits",
+						"value": "0x6"
+					},
+					{
+						"name": "4 Coins/1 Credit",
+						"value": "0x7"
+					},
+					{
+						"name": "3 Coins/1 Credit",
+						"value": "0x8"
+					},
+					{
+						"name": "2 Coins/1 Credit",
+						"value": "0x9"
+					},
+					{
+						"name": "1 Coin/6 Credits",
+						"value": "0xA"
+					},
+					{
+						"name": "1 Coin/5 Credits",
+						"value": "0xB"
+					},
+					{
+						"name": "1 Coin/4 Credits",
+						"value": "0xC"
+					},
+					{
+						"name": "1 Coin/3 Credits",
+						"value": "0xD"
+					},
+					{
+						"name": "1 Coin/2 Credits",
+						"value": "0xE"
+					},
+					{
+						"name": "1 Coin/1 Credit",
+						"value": "0xF"
+					}
+				]
+			},
+			{
+				"name": "Coin B",
+				"id": 4,
+				"type": "list",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 15,
+				"value": 0,
+				"mask": "0xFFFFFF0F",
+				"options": [
+					{
+						"name": "Free Play (if Coin A too) or 1/1",
+						"value": "0x0"
+					},
+					{
+						"name": "1 Coin/1 Credit, 2/3",
+						"value": "0x10"
+					},
+					{
+						"name": "1 Coin/1 Credit, 4/5",
+						"value": "0x20"
+					},
+					{
+						"name": "1 Coin/1 Credit, 5/6",
+						"value": "0x30"
+					},
+					{
+						"name": "2 Coins/1 Credit, 4/3",
+						"value": "0x40"
+					},
+					{
+						"name": "2 Coins/1 Credit, 5/3, 6/4",
+						"value": "0x50"
+					},
+					{
+						"name": "2 Coins/3 Credits",
+						"value": "0x60"
+					},
+					{
+						"name": "4 Coins/1 Credit",
+						"value": "0x70"
+					},
+					{
+						"name": "3 Coins/1 Credit",
+						"value": "0x80"
+					},
+					{
+						"name": "2 Coins/1 Credit",
+						"value": "0x90"
+					},
+					{
+						"name": "1 Coin/6 Credits",
+						"value": "0xA0"
+					},
+					{
+						"name": "1 Coin/5 Credits",
+						"value": "0xB0"
+					},
+					{
+						"name": "1 Coin/4 Credits",
+						"value": "0xC0"
+					},
+					{
+						"name": "1 Coin/3 Credits",
+						"value": "0xD0"
+					},
+					{
+						"name": "1 Coin/2 Credits",
+						"value": "0xE0"
+					},
+					{
+						"name": "1 Coin/1 Credit",
+						"value": "0xF0"
+					}
+				]
+			},
+			{
+				"name": "Cabinet",
+				"id": 5,
+				"type": "list",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 1,
+				"value": 0,
+				"mask": "0xFFFFFEFF",
+				"options": [
+					{
+						"name": "Cocktail",
+						"value": "0x0"
+					},
+					{
+						"name": "Upright",
+						"value": "0x100"
+					}
+				]
+			},
+			{
+				"name": "Extended Score",
+				"id": 6,
+				"type": "list",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 15,
+				"value": 0,
+				"mask": "0xFFFFE1FF",
+				"options": [
+					{
+						"name": "None",
+						"value": "0x0"
+					},
+					{
+						"name": "Ball 700000",
+						"value": "0x200"
+					},
+					{
+						"name": "Ball 600000",
+						"value": "0x400"
+					},
+					{
+						"name": "Ball 500000",
+						"value": "0x600"
+					},
+					{
+						"name": "Ball 400000",
+						"value": "0x800"
+					},
+					{
+						"name": "Ball 300000",
+						"value": "0xA00"
+					},
+					{
+						"name": "Ball 200000",
+						"value": "0xC00"
+					},
+					{
+						"name": "Ball 100000",
+						"value": "0xE00"
+					},
+					{
+						"name": "Credit 2000000/4000000",
+						"value": "0x1000"
+					},
+					{
+						"name": "Credit 1500000/3000000",
+						"value": "0x1200"
+					},
+					{
+						"name": "Credit 1200000/2500000",
+						"value": "0x1400"
+					},
+					{
+						"name": "Credit 1000000/2000000",
+						"value": "0x1600"
+					},
+					{
+						"name": "Credit 1800000",
+						"value": "0x1800"
+					},
+					{
+						"name": "Credit 1500000",
+						"value": "0x1A00"
+					},
+					{
+						"name": "Credit 1000000",
+						"value": "0x1C00"
+					},
+					{
+						"name": "Credit 1200000",
+						"value": "0x1E00"
+					}
+				]
+			},
+			{
+				"name": "Number Match",
+				"id": 7,
+				"type": "check",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 1,
+				"value": 8192,
+				"mask": "0xFFFFDFFF"
+			},
+			{
+				"name": "Pin Rebound",
+				"id": 8,
+				"type": "list",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 1,
+				"value": 0,
+				"mask": "0xFFFFBFFF",
+				"options": [
+					{
+						"name": "A Little",
+						"value": "0x0"
+					},
+					{
+						"name": "Well",
+						"value": "0x4000"
+					}
+				]
+			},
+			{
+				"name": "Lives",
+				"id": 9,
+				"type": "list",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 1,
+				"value": 0,
+				"mask": "0xFFFF7FFF",
+				"options": [
+					{
+						"name": "5",
+						"value": "0x0"
+					},
+					{
+						"name": "3",
+						"value": "0x8000"
+					}
+				]
+			},
+			{
+				"name": "Flip Screen",
+				"id": 10,
+				"type": "check",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 0,
+				"value": 0,
+				"value_off": 65536,
+				"mask": "0xFFFEFFFF"
+			},
+			{
+				"name": "Out Lane Pin",
+				"id": 11,
+				"type": "list",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 1,
+				"value": 0,
+				"mask": "0xFFFDFFFF",
+				"options": [
+					{
+						"name": "Far",
+						"value": "0x0"
+					},
+					{
+						"name": "Near",
+						"value": "0x20000"
+					}
+				]
+			},
+			{
+				"name": "Special",
+				"id": 12,
+				"type": "list",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 3,
+				"value": 0,
+				"mask": "0xFFF3FFFF",
+				"options": [
+					{
+						"name": "2000000 Points",
+						"value": "0x0"
+					},
+					{
+						"name": "1 Credit",
+						"value": "0x40000"
+					},
+					{
+						"name": "3 Credits",
+						"value": "0x80000"
+					},
+					{
+						"name": "2 Credits",
+						"value": "0xC0000"
+					}
+				]
+			},
+			{
+				"name": "Allow Continue",
+				"id": 13,
+				"type": "check",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 1,
+				"value": 1048576,
+				"mask": "0xFFEFFFFF"
+			},
+			{
+				"name": "Default",
+				"id": 1015,
+				"type": "number_u32",
+				"enabled": false,
+				"persist": false,
+				"writeonly": true,
+				"address": "0xfa000000",
+				"defaultval": 16777215,
+				"value": 0
+			}
+		],
+		"messages": []
+	}
+}

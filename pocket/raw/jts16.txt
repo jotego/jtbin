@@ -1,0 +1,50 @@
+jts16 - Arcade compatible hardware for Pocket FPGA
+Developed by JOTEGO - https://patreon.com/jotego
+
+The following arcade titles are compatible with this core. Generate
+the required .rom file using the mra tool (read below).
+Place the *.rom files in Assets/jts16/common
+
+Ace Attacker (Japan, System 16A, FD1094 317-0060) --> aceattaca.rom
+Action Fighter (FD1089A 317-0018) --> afighter.rom
+Action Fighter (unprotected) --> afightera.rom
+Action Fighter (unprotected, analog controls) --> afighterb.rom
+Action Fighter (FD1089B 317-unknown) --> afighterc.rom
+Action Fighter (FD1089B 317-unknown, analog controls) --> afighterd.rom
+Alex Kidd: The Lost Stars (set 2, unprotected) --> alexkidd.rom
+Alex Kidd: The Lost Stars (set 1, FD1089A 317-0021) --> alexkidd1.rom
+Alien Syndrome (set 2, System 16A, FD1089A 317-0033) --> aliensyn2.rom
+Alien Syndrome (set 5, System 16A, FD1089B 317-0037) --> aliensyn5.rom
+Alien Syndrome (set 1, Japan, old, System 16A, FD1089A 317-0033) --> aliensynjo.rom
+Fantasy Zone (Rev A, unprotected) --> fantzone.rom
+Fantasy Zone (unprotected) --> fantzone1.rom
+Fantasy Zone (FD1089B 317-0016) --> fantzonee.rom
+Fantasy Zone (317-5000) --> fantzonep.rom
+Fantasy Zone (prototype) --> fantzonepr.rom
+Major League --> mjleague.rom
+Passing Shot (Japan, 4 Players, System 16A) (FD1094 317-0071) --> passsht16a.rom
+Quartet 2 (unprotected) --> quartet2a.rom
+SDI - Strategic Defense Initiative (Japan, newer, System 16A, FD1089B 317-0027) --> sdi.rom
+SDI - Strategic Defense Initiative (Japan, old, System 16A, FD1089B 317-0027) --> sdia.rom
+Shinobi (set 6, System 16A) (unprotected) --> shinobi.rom
+Shinobi (set 1, System 16A) (FD1094 317-0050) --> shinobi1.rom
+Sukeban Jansi Ryuko (set 1, System 16A, FD1089B 317-5021) --> sjryuko1.rom
+Tetris (set 4, Japan, System 16A) (FD1094 317-0093) --> tetris.rom
+Tetris (set 3, Japan, System 16A) (FD1094 317-0093a) --> tetris3.rom
+Time Scanner (set 1, System 16A, FD1089B 317-0024) --> timescan1.rom
+Wonder Boy III - Monster Lair (set 1, Japan, System 16A) (FD1094 317-0084) --> wb31.rom
+Wonder Boy III - Monster Lair (set 5, Japan, System 16A) (FD1089A 317-0086) --> wb35.rom
+
+
+These files are generated using the mra tool in:
+https://github.com/sebdel/mra-tools-c/tree/master/release
+
+Boogermann's ORCA tool can also be used to generate the files:
+https://github.com/opengateware/tools-orca
+
+Check out the short tutorial in:
+https://github.com/jotego/jtbin/wiki/Analogue-Pocket-Cores
+
+DISCLAIMER: This PocketFPGA core is licensed to be used only
+with legally owned dumps of videogame data. It is also licensed
+to be used with freeware (homebrew) compatible with the platform.

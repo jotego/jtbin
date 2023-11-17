@@ -767,7 +767,7 @@
 | tigeroad     | jttora     | 83fe4481829c121f4e299d9a0535166e | ff,ff        |
 | tigeroadu    | jttora     | 9cd527af2dc43b4204e5e6375613d11a | ff,ff        |
 | timescan     | jts16b     | 9096991c6f3aab9fe5a4fffc38d927be | ff,ff,ff     |
-| timescan1    | jts16      | ddad0a50989197d365b6daabaca2152f | ff,ff        |
+| timescan1    | jts16      | ddad0a50989197d365b6daabaca2152f | ff,ff,ff     |
 | tmht         | jttmnt     | ee4c5a737803a7cb7125d93811bdd6a6 | ff,5e,ff     |
 | tmht2p       | jttmnt     | a811b40a134905af07e43d841f9c08f3 | ff,5e,ff     |
 | tmht2pa      | jttmnt     | 160dd7b0f135466298a7eb5771f2d836 | ff,5e,ff     |

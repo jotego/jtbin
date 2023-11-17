@@ -1,0 +1,16 @@
+name: Missing RBF files
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Check missing files
+      run: ./.github/norbf.sh
