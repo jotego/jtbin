@@ -9,7 +9,8 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "mswordj.rom"
+				"filename": "mswordj.rom",
+				"md5": "076aa2d126fff85fa16ff884efea725e"
 			},
 			{
 				"id": 2,

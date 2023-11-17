@@ -10,26 +10,26 @@ Place the *.rom files in Assets/jtcps1/common
 1941: Counter Attack (World) --> 1941r1.rom
 1941: Counter Attack (USA 900227) --> 1941u.rom
 Three Wonders (World 910520) --> 3wonders.rom
-Three Wonders (hack) --> 3wondrsh.rom
-Three Wonders (World 910513) --> 3wondsr1.rom
+Three Wonders (hack) --> 3wondersh.rom
+Three Wonders (World 910513) --> 3wondersr1.rom
 Area 88 (Japan) --> area88.rom
 Area 88 (Japan Resale Ver.) --> area88r.rom
 Captain Commando (World 911202) --> captcomm.rom
-Captain Commando (Japan 911202) --> captcmmj.rom
-Captain Commando (Japan 910928) --> captcjr1.rom
-Captain Commando (World 911014) --> captcmr1.rom
-Captain Commando (USA 910928) --> captcmmu.rom
+Captain Commando (Japan 911202) --> captcommj.rom
+Captain Commando (Japan 910928) --> captcommjr1.rom
+Captain Commando (World 911014) --> captcommr1.rom
+Captain Commando (USA 910928) --> captcommu.rom
 Carrier Air Wing (World 901012) --> cawing.rom
 U.S. Navy (Japan 901012) --> cawingj.rom
 Carrier Air Wing (World 901009) --> cawingr1.rom
 Carrier Air Wing (USA 901130) --> cawingu.rom
-Carrier Air Wing (USA 901012) --> cawinur1.rom
+Carrier Air Wing (USA 901012) --> cawingur1.rom
 Chiki Chiki Boys (Japan 900619) --> chikij.rom
 Adventure Quiz Capcom World 2 (Japan 920611) --> cworld2j.rom
-Adventure Quiz Capcom World 2 (Japan 920611, B-Board 90629B-3, no battery) --> cworl2ja.rom
-Adventure Quiz Capcom World 2 (Japan 920611, B-Board 91634B-2) --> cworl2jb.rom
+Adventure Quiz Capcom World 2 (Japan 920611, B-Board 90629B-3, no battery) --> cworld2ja.rom
+Adventure Quiz Capcom World 2 (Japan 920611, B-Board 91634B-2) --> cworld2jb.rom
 Daimakaimura (Japan) --> daimakai.rom
-Daimakaimura (Japan Resale Ver.) --> daimaair.rom
+Daimakaimura (Japan Resale Ver.) --> daimakair.rom
 Dynasty Wars (USA, B-Board 89624B-?) --> dynwar.rom
 Dynasty Wars (USA, B-Board 88622B-3) --> dynwara.rom
 Tenchi wo Kurau (Japan) --> dynwarj.rom
@@ -48,19 +48,19 @@ Final Fight (USA 900112) --> ffightua.rom
 Final Fight (USA 900424) --> ffightub.rom
 Final Fight (USA 900613) --> ffightuc.rom
 Forgotten Worlds (World, newer) --> forgottn.rom
-Forgotten Worlds (World) --> forgotna.rom
-Forgotten Worlds (Japan) (English prototype) --> forgotnj.rom
-Forgotten Worlds (USA, B-Board 88621B-2, Rev. C) --> forgotnu.rom
-Forgotten Worlds (USA, B-Board 88618B-2, Rev. A) --> forgonua.rom
-Forgotten Worlds (USA, B-Board 88618B-2, Rev. AA) --> forgouaa.rom
-Forgotten Worlds (USA, B-Board 88618B-2, Rev. C) --> forgonuc.rom
-Forgotten Worlds (USA, B-Board 88618B-2, Rev. E) --> forgonue.rom
+Forgotten Worlds (World) --> forgottna.rom
+Forgotten Worlds (Japan) (English prototype) --> forgottnj.rom
+Forgotten Worlds (USA, B-Board 88621B-2, Rev. C) --> forgottnu.rom
+Forgotten Worlds (USA, B-Board 88618B-2, Rev. A) --> forgottnua.rom
+Forgotten Worlds (USA, B-Board 88618B-2, Rev. AA) --> forgottnuaa.rom
+Forgotten Worlds (USA, B-Board 88618B-2, Rev. C) --> forgottnuc.rom
+Forgotten Worlds (USA, B-Board 88618B-2, Rev. E) --> forgottnue.rom
 Ghouls'n Ghosts (World) --> ghouls.rom
 Ghouls'n Ghosts (USA) --> ghoulsu.rom
 Gulun.Pa! (Japan 931220 L) (prototype) --> gulunpa.rom
 Knights of the Round (World 911127) --> knights.rom
 Knights of the Round (Japan 911127, B-Board 91634B-2) --> knightsj.rom
-Knights of the Round (Japan 911127, B-Board 89625B-1) --> knighsja.rom
+Knights of the Round (Japan 911127, B-Board 89625B-1) --> knightsja.rom
 Knights of the Round (USA 911127) --> knightsu.rom
 The King of Dragons (World 910805) --> kod.rom
 The King of Dragons (Japan 910805, B-Board 90629B-3) --> kodj.rom
@@ -69,7 +69,7 @@ The King of Dragons (World 910711) --> kodr1.rom
 The King of Dragons (World 910731) --> kodr2.rom
 The King of Dragons (USA 910910) --> kodu.rom
 Lost Worlds (Japan) --> lostwrld.rom
-Lost Worlds (Japan Old Ver.) --> lostwldo.rom
+Lost Worlds (Japan Old Ver.) --> lostwrldo.rom
 Mega Man: The Power Battle (CPS1, USA 951006) --> megaman.rom
 Mega Man: The Power Battle (CPS1, Asia 951006) --> megamana.rom
 Mercs (World 900302) --> mercs.rom
@@ -133,9 +133,9 @@ Street Fighter Zero (CPS Changer, Brazil 950727) --> sfzbch.rom
 Street Fighter Zero (CPS Changer, Japan 951020) --> sfzch.rom
 Strider (USA, B-Board 89624B-2) --> strider.rom
 Strider Hiryu (Japan) --> striderj.rom
-Strider Hiryu (Japan Resale Ver.) --> stridrjr.rom
-Strider (USA, B-Board 89624B-3) --> stridrua.rom
-Strider (USA, B-Board 90629B-3, buggy Street Fighter II conversion) --> stridruc.rom
+Strider Hiryu (Japan Resale Ver.) --> striderjr.rom
+Strider (USA, B-Board 89624B-3) --> striderua.rom
+Strider (USA, B-Board 90629B-3, buggy Street Fighter II conversion) --> strideruc.rom
 U.N. Squadron (USA) --> unsquad.rom
 Varth: Operation Thunderstorm (World 920714) --> varth.rom
 Varth: Operation Thunderstorm (Japan 920714) --> varthj.rom

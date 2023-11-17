@@ -9,7 +9,8 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "goldnxeu.rom"
+				"filename": "goldnaxeu.rom",
+				"md5": "58f320ad62fba5b276b28005a51878d7"
 			}
 		],
 		"memory_writes": [

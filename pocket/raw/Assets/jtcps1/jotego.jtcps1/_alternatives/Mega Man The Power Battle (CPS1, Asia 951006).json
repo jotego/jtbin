@@ -9,7 +9,8 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "megamana.rom"
+				"filename": "megamana.rom",
+				"md5": "7fce1fe09da1d3a8b6b5f0427c7c0f2c"
 			},
 			{
 				"id": 2,

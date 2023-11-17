@@ -9,7 +9,8 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "akumajou.rom"
+				"filename": "akumajou.rom",
+				"md5": "859530c99173bd7c47b85af4b230a1de"
 			}
 		],
 		"memory_writes": [

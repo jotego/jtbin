@@ -9,7 +9,8 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "gunsmkeg.rom"
+				"filename": "gunsmokeg.rom",
+				"md5": "c26792ea61d7f2fd4f6b28463c536212"
 			}
 		],
 		"memory_writes": [

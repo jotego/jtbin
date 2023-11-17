@@ -9,7 +9,8 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "sfa3ud.rom"
+				"filename": "sfa3ud.rom",
+				"md5": "641cc76ce4f4c430219511f96dfd84e6"
 			},
 			{
 				"id": 2,

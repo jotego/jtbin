@@ -9,11 +9,13 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "tmnt.rom"
+				"filename": "tmnt.rom",
+				"md5": "0cb03fa627e8bd4c0b09618325ee144a"
 			},
 			{
 				"id": 17,
-				"filename": "beta.bin"
+				"filename": "beta.bin",
+				"md5": "93d32ed43855da0a7fa1fbd0ceb8863e"
 			}
 		],
 		"memory_writes": [

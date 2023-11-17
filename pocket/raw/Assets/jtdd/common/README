@@ -2,10 +2,10 @@ Place the following files in this folder:
 
 ddragon.rom
 ddragonu.rom
-ddragnua.rom
-ddragnub.rom
+ddragonua.rom
+ddragonub.rom
 ddragonw.rom
-ddragnw1.rom
+ddragonw1.rom
 
 These files are generated using the mra tool in:
 https://github.com/sebdel/mra-tools-c/tree/master/release

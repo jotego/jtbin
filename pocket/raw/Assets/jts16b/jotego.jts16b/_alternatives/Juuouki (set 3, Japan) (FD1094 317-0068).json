@@ -9,7 +9,8 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "altbetj3.rom"
+				"filename": "altbeastj3.rom",
+				"md5": "6cc4f8fb4472788a79a68b23fc3fa2de"
 			}
 		],
 		"memory_writes": [

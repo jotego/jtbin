@@ -9,7 +9,8 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "riotcity.rom"
+				"filename": "riotcity.rom",
+				"md5": "08bfc797d5cba7541167df3e38a2a33f"
 			}
 		],
 		"memory_writes": [

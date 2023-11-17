@@ -9,7 +9,8 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "stridruc.rom"
+				"filename": "strideruc.rom",
+				"md5": "d1d52503d329441ea51b411e6009f4e2"
 			},
 			{
 				"id": 2,

@@ -9,7 +9,8 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "puniserh.rom"
+				"filename": "punisherh.rom",
+				"md5": "68975f8d997bdef8ab75b7c9344fc53e"
 			},
 			{
 				"id": 2,
@@ -17,7 +18,8 @@
 			},
 			{
 				"id": 17,
-				"filename": "beta.bin"
+				"filename": "beta.bin",
+				"md5": "93d32ed43855da0a7fa1fbd0ceb8863e"
 			}
 		],
 		"memory_writes": [

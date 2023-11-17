@@ -9,7 +9,8 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "ghoulsu.rom"
+				"filename": "ghoulsu.rom",
+				"md5": "3dbf285eda000132f55e31ce9ae667da"
 			},
 			{
 				"id": 2,

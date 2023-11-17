@@ -4,8 +4,8 @@ shangon.rom
 shangon1.rom
 shangon2.rom
 shangon3.rom
-shangn3d.rom
-shangnle.rom
+shangon3d.rom
+shangonle.rom
 
 These files are generated using the mra tool in:
 https://github.com/sebdel/mra-tools-c/tree/master/release

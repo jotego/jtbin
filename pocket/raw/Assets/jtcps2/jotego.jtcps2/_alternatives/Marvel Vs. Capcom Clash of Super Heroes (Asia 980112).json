@@ -9,7 +9,8 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "mvscar1.rom"
+				"filename": "mvscar1.rom",
+				"md5": "cecd25923bb7db933c2adc3bd6e48457"
 			},
 			{
 				"id": 2,

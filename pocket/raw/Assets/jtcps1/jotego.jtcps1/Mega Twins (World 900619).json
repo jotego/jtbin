@@ -9,7 +9,8 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "mtwins.rom"
+				"filename": "mtwins.rom",
+				"md5": "f60b14e19d52490bd893b61ffcf7f063"
 			},
 			{
 				"id": 2,

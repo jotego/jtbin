@@ -6,12 +6,12 @@ the required .rom file using the mra tool (read below).
 Place the *.rom files in Assets/jtbubl/common
 
 Bubble Bobble (Japan, Ver 0.1) --> bublbobl.rom
-Bubble Bobble (Japan, Ver 0.0) --> bublbbl1.rom
-Bubble Bobble (US, Ver 5.1) --> bublbblr.rom
-Bubble Bobble (US, Ver 1.0) --> bublblr1.rom
+Bubble Bobble (Japan, Ver 0.0) --> bublbobl1.rom
+Bubble Bobble (US, Ver 5.1) --> bublboblr.rom
+Bubble Bobble (US, Ver 1.0) --> bublboblr1.rom
 Bubble Bobble: Lost Cave V1.2 --> bublcave.rom
-Bubble Bobble: Lost Cave V1.0 --> bublce10.rom
-Bubble Bobble: Lost Cave V1.1 --> bublce11.rom
+Bubble Bobble: Lost Cave V1.0 --> bublcave10.rom
+Bubble Bobble: Lost Cave V1.1 --> bublcave11.rom
 Tokio - Scramble Formation (bootleg) --> tokiob.rom
 
 

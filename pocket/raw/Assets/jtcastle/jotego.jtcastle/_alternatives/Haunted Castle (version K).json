@@ -9,7 +9,8 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "hcastlek.rom"
+				"filename": "hcastlek.rom",
+				"md5": "792920a9d62f4c492e6b05968e1d5d33"
 			}
 		],
 		"memory_writes": [

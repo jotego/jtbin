@@ -9,11 +9,13 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "tmht.rom"
+				"filename": "tmht.rom",
+				"md5": "ee4c5a737803a7cb7125d93811bdd6a6"
 			},
 			{
 				"id": 17,
-				"filename": "beta.bin"
+				"filename": "beta.bin",
+				"md5": "93d32ed43855da0a7fa1fbd0ceb8863e"
 			}
 		],
 		"memory_writes": [

@@ -1,0 +1,32 @@
+{
+	"instance":{
+		"magic": "APF_VER_1",
+		"variant_select": {
+			"id": 0,
+			"select": false
+		},
+		"data_path": "",
+		"data_slots": [
+			{
+				"id": 1,
+				"filename": "gbustersa.rom",
+				"md5": "a039c0483e4977911a9683590ae316bd"
+			},
+			{
+				"id": 2,
+				"filename": "gbustersa.sav"
+			},
+			{
+				"id": 17,
+				"filename": "beta.bin",
+				"md5": "93d32ed43855da0a7fa1fbd0ceb8863e"
+			}
+		],
+		"memory_writes": [
+			{
+				"address": "0xf9000000",
+				"data": "0x1"
+			}
+		]
+	}
+}

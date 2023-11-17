@@ -9,7 +9,8 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "insectx.rom"
+				"filename": "insectx.rom",
+				"md5": "20345f84fa333191ee55b69a1e7e4b24"
 			}
 		],
 		"memory_writes": [

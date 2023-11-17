@@ -9,7 +9,8 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "eswatu.rom"
+				"filename": "eswatu.rom",
+				"md5": "b5483c042484243a0b667901220e88ca"
 			}
 		],
 		"memory_writes": [

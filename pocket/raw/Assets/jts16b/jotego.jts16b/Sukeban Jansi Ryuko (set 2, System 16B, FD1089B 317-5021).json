@@ -9,7 +9,8 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "sjryuko.rom"
+				"filename": "sjryuko.rom",
+				"md5": "d796598dc8a8e8d5b5315bf1358051fa"
 			}
 		],
 		"memory_writes": [

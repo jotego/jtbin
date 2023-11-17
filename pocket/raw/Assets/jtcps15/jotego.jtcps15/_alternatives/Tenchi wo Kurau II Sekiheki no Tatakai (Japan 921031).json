@@ -9,7 +9,8 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "wofj.rom"
+				"filename": "wofj.rom",
+				"md5": "86b9b805367cf1470739b3a563c2d00d"
 			},
 			{
 				"id": 2,
@@ -17,7 +18,8 @@
 			},
 			{
 				"id": 17,
-				"filename": "beta.bin"
+				"filename": "beta.bin",
+				"md5": "93d32ed43855da0a7fa1fbd0ceb8863e"
 			}
 		],
 		"memory_writes": [

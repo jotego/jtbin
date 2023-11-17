@@ -9,7 +9,8 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "nemo.rom"
+				"filename": "nemo.rom",
+				"md5": "96c82493c2ddea4093a27f9a1c187333"
 			},
 			{
 				"id": 2,

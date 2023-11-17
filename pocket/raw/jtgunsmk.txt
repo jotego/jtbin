@@ -6,11 +6,11 @@ the required .rom file using the mra tool (read below).
 Place the *.rom files in Assets/jtgunsmk/common
 
 Gun.Smoke (World, 1985-11-15) --> gunsmoke.rom
-Gun.Smoke (World, 1985-11-15) (bootleg) --> gunsmkeb.rom
-Gun.Smoke (Germany, 1985-11-15, censored) --> gunsmkeg.rom
-Gun.Smoke (Japan, 1985-11-15) --> gunsmkej.rom
-Gun.Smoke (USA and Canada, 1986-04-08) --> gunsmkeu.rom
-Gun.Smoke (USA and Canada, 1985-11-15, set 2) --> gunsmeuc.rom
+Gun.Smoke (World, 1985-11-15) (bootleg) --> gunsmokeb.rom
+Gun.Smoke (Germany, 1985-11-15, censored) --> gunsmokeg.rom
+Gun.Smoke (Japan, 1985-11-15) --> gunsmokej.rom
+Gun.Smoke (USA and Canada, 1986-04-08) --> gunsmokeu.rom
+Gun.Smoke (USA and Canada, 1985-11-15, set 2) --> gunsmokeuc.rom
 
 
 These files are generated using the mra tool in:

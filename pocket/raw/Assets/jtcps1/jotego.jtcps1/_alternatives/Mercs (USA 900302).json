@@ -9,7 +9,8 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "mercsur1.rom"
+				"filename": "mercsur1.rom",
+				"md5": "04c9aebe115e425e22e73fae1c3bf9d8"
 			},
 			{
 				"id": 2,

@@ -9,7 +9,8 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "unsquad.rom"
+				"filename": "unsquad.rom",
+				"md5": "d0a58d408b392b4f2051a9a7db890bda"
 			},
 			{
 				"id": 2,

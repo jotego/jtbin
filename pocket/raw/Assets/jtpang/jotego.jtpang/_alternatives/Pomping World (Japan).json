@@ -9,7 +9,8 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "pompingw.rom"
+				"filename": "pompingw.rom",
+				"md5": "6be48a4c0844f8c6737f13d6e239a358"
 			},
 			{
 				"id": 2,

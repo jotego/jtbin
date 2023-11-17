@@ -9,7 +9,8 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "ffight.rom"
+				"filename": "ffight.rom",
+				"md5": "aca5a28ec2d82513caa50fdbe0b1973a"
 			},
 			{
 				"id": 2,

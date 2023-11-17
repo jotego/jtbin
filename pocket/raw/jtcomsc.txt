@@ -6,7 +6,7 @@ the required .rom file using the mra tool (read below).
 Place the *.rom files in Assets/jtcomsc/common
 
 Boot Camp (set 1) --> bootcamp.rom
-Boot Camp (set 2) --> bootcmpa.rom
+Boot Camp (set 2) --> bootcampa.rom
 Combat School (joystick) --> combatsc.rom
 
 

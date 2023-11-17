@@ -32,7 +32,13 @@
     <rotation>vertical (ccw)</rotation>
     <region>World</region>
     <mraauthor>jotego</mraauthor>
-    <rom index="0" zip="1942.zip" md5="None" asm_md5="fe0810d51c98a68e0c4d572de8ae4dd9">
+    <rom index="0" zip="1942.zip" md5="None" asm_md5="9a52c815180d2671682f610ebe031e52">
+        <!--  Header to identify the PCB type
+        Byte 0 = 0 for 1942, 1 for Vulgus, 2 for Higemaru
+        Byte 1 = XOR with flip
+ -->
+        <part>
+            00 00 </part>
         <!-- maincpu - starts at 0x0 - length 0x14000 (17 bits) -->
         <part name="srb-03.m3" crc="d9dafcc3"/>
         <part name="srb-04.m4" crc="da0cf924"/>

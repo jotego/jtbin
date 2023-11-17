@@ -9,7 +9,8 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "progeara.rom"
+				"filename": "progeara.rom",
+				"md5": "a45b4075d1a07daaa99074082f3de434"
 			},
 			{
 				"id": 2,

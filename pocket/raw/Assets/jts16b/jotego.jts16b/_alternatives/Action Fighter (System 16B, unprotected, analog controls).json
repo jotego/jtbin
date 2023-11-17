@@ -9,7 +9,8 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "afighere.rom"
+				"filename": "afightere.rom",
+				"md5": "7fdc08f80bf2c1f8bce7a1b98b395584"
 			}
 		],
 		"memory_writes": [

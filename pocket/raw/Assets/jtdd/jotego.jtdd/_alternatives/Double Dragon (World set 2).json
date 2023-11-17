@@ -9,7 +9,8 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "ddragnw1.rom"
+				"filename": "ddragonw1.rom",
+				"md5": "1ad0b8f13ffb42924fbc05b349c9e8fa"
 			}
 		],
 		"memory_writes": [

@@ -9,15 +9,12 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "hbarrelu.rom"
+				"filename": "hbarrelu.rom",
+				"md5": "2b1e251a9a99f04b47169625acb208ef"
 			},
 			{
 				"id": 2,
 				"filename": "hbarrelu.sav"
-			},
-			{
-				"id": 17,
-				"filename": "beta.bin"
 			}
 		],
 		"memory_writes": [

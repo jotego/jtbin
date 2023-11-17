@@ -9,11 +9,13 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "bublbobl.rom"
+				"filename": "bublbobl.rom",
+				"md5": "bec8577036a5a00bc951d46874015443"
 			},
 			{
 				"id": 17,
-				"filename": "beta.bin"
+				"filename": "beta.bin",
+				"md5": "93d32ed43855da0a7fa1fbd0ceb8863e"
 			}
 		],
 		"memory_writes": [

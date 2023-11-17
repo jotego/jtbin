@@ -9,7 +9,8 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "cybotsud.rom"
+				"filename": "cybotsud.rom",
+				"md5": "1d24397adb133647b22766e9e6ca112e"
 			},
 			{
 				"id": 2,

@@ -9,11 +9,13 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "tmntj.rom"
+				"filename": "tmntj.rom",
+				"md5": "2b9a9abd4af4dc4e75222a64f94f6ab8"
 			},
 			{
 				"id": 17,
-				"filename": "beta.bin"
+				"filename": "beta.bin",
+				"md5": "93d32ed43855da0a7fa1fbd0ceb8863e"
 			}
 		],
 		"memory_writes": [

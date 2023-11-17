@@ -9,15 +9,12 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "drgninja.rom"
+				"filename": "drgninja.rom",
+				"md5": "7f8184d0612bdffb26c41b399e6f2428"
 			},
 			{
 				"id": 2,
 				"filename": "drgninja.sav"
-			},
-			{
-				"id": 17,
-				"filename": "beta.bin"
 			}
 		],
 		"memory_writes": [

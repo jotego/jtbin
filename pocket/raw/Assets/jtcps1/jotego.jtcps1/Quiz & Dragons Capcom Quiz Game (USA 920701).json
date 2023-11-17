@@ -9,7 +9,8 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "qad.rom"
+				"filename": "qad.rom",
+				"md5": "20103ec43fdf4f1ed00174b931adfee1"
 			},
 			{
 				"id": 2,

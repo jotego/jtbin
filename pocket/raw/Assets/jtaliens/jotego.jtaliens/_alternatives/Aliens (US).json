@@ -9,7 +9,8 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "aliensu.rom"
+				"filename": "aliensu.rom",
+				"md5": "7458d38926ecc5f7048a72e34c06f27b"
 			},
 			{
 				"id": 2,
@@ -17,7 +18,8 @@
 			},
 			{
 				"id": 17,
-				"filename": "beta.bin"
+				"filename": "beta.bin",
+				"md5": "93d32ed43855da0a7fa1fbd0ceb8863e"
 			}
 		],
 		"memory_writes": [

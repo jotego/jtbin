@@ -1,14 +1,14 @@
 Place the following files in this folder:
 
 simpsons.rom
-simpss2p.rom
-simps2p2.rom
-simps2p3.rom
-simps2pa.rom
-simps2pj.rom
-simps4pa.rom
-simps4pe.rom
-simpspe2.rom
+simpsons2p.rom
+simpsons2p2.rom
+simpsons2p3.rom
+simpsons2pa.rom
+simpsons2pj.rom
+simpsons4pa.rom
+simpsons4pe.rom
+simpsons4pe2.rom
 
 These files are generated using the mra tool in:
 https://github.com/sebdel/mra-tools-c/tree/master/release

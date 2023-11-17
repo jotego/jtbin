@@ -9,7 +9,8 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "batcir.rom"
+				"filename": "batcir.rom",
+				"md5": "5de9f32085af030e5915310ef8dabd84"
 			},
 			{
 				"id": 2,

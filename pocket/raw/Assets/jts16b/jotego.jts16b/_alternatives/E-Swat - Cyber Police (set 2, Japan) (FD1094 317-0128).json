@@ -9,7 +9,8 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "eswatj.rom"
+				"filename": "eswatj.rom",
+				"md5": "486798c31678dea81c2c318db62aaad6"
 			}
 		],
 		"memory_writes": [

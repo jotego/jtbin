@@ -9,7 +9,8 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "chelnovu.rom"
+				"filename": "chelnovu.rom",
+				"md5": "45fc84d27ce7c849ba529902214c5d1a"
 			}
 		],
 		"memory_writes": [

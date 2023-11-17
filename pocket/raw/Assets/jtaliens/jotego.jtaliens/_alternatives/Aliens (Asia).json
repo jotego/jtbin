@@ -9,7 +9,8 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "aliensa.rom"
+				"filename": "aliensa.rom",
+				"md5": "6a9a9bb2588e06c5717e172595ae8f5b"
 			},
 			{
 				"id": 2,
@@ -17,7 +18,8 @@
 			},
 			{
 				"id": 17,
-				"filename": "beta.bin"
+				"filename": "beta.bin",
+				"md5": "93d32ed43855da0a7fa1fbd0ceb8863e"
 			}
 		],
 		"memory_writes": [

@@ -9,7 +9,8 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "pang3.rom"
+				"filename": "pang3.rom",
+				"md5": "e53b10d4f19c2deec4d94c28fcedf066"
 			},
 			{
 				"id": 2,

@@ -9,7 +9,12 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "rastan.rom"
+				"filename": "rastan.rom",
+				"md5": "8b958b5f7dea436d104db5529fc516a0"
+			},
+			{
+				"id": 2,
+				"filename": "rastan.sav"
 			}
 		],
 		"memory_writes": [

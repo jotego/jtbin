@@ -23,7 +23,7 @@
     <about author="jotego" webpage="https://patreon.com/jotego" source="https://github.com/jotego" twitter="@topapate"/>
     <name>Mach-9 (bootleg of Vulgus)</name>
     <setname>mach9</setname>
-    <rbf>jtvulgus</rbf>
+    <rbf>jt1942</rbf>
     <mameversion>0251</mameversion>
     <year>1984</year>
     <manufacturer>bootleg (ITISA)</manufacturer>
@@ -32,7 +32,13 @@
     <rotation>vertical (ccw)</rotation>
     <region>World</region>
     <mraauthor>jotego</mraauthor>
-    <rom index="0" zip="mach9.zip|vulgus.zip" md5="None" asm_md5="a0aa39d1cb955ea84c82da5403ac321b">
+    <rom index="0" zip="mach9.zip|vulgus.zip" md5="None" asm_md5="cb4a105e9d43c639c3cd72055315defb">
+        <!--  Header to identify the PCB type
+        Byte 0 = 0 for 1942, 1 for Vulgus, 2 for Higemaru
+        Byte 1 = XOR with flip
+ -->
+        <part>
+            01 00 </part>
         <!-- maincpu - starts at 0x0 - length 0x14000 (17 bits) -->
         <part name="02_4n.bin" crc="b3310b0c"/>
         <part name="03_5n.bin" crc="51acef76"/>
@@ -45,11 +51,11 @@
         <part name="07_11c.bin" crc="3bd2acf4"/>
         <part repeat="0x2000"> FF</part>
         <!-- JTFRAME_BA2_START -->
-        <!-- chars - starts at 0x18000 - length 0x2000 (13 bits) -->
+        <!-- gfx1 - starts at 0x18000 - length 0x2000 (13 bits) -->
         <interleave output="16">
             <part name="01_3d.bin" crc="be556775" map="12"/>
         </interleave>
-        <!-- sprites - starts at 0x1A000 - length 0x10000 (16 bits) -->
+        <!-- gfx3 - starts at 0x1A000 - length 0x10000 (16 bits) -->
         <interleave output="16">
             <part name="14_2n.bin" crc="6db1b10d" map="01"/>
             <part name="16_4n.bin" crc="0071a2e3" map="10"/>
@@ -60,7 +66,7 @@
         </interleave>
         <part repeat="0x8000"> FF</part>
         <!-- JTFRAME_BA3_START -->
-        <!-- tiles - starts at 0x2A000 - length 0x10000 (16 bits) -->
+        <!-- gfx2 - starts at 0x2A000 - length 0x10000 (16 bits) -->
         <interleave output="32">
             <part name="08_2a.bin" crc="e10aaca1" map="0001"/>
             <part name="10_4a.bin" crc="206a13f1" map="0010"/>
@@ -74,6 +80,10 @@
             <part name="13_7a.bin" crc="8033cd4f" map="1000"/>
         </interleave>
         <!-- JTFRAME_PROM_START -->
+        <!-- palproms - starts at 0x3A000 -->
+        <!-- charprom - starts at 0x3A000 -->
+        <!-- tileprom - starts at 0x3A000 -->
+        <!-- sprprom - starts at 0x3A000 -->
         <!-- proms - starts at 0x3A000 - length 0xA00 (12 bits) -->
         <part name="82s129_8e.bin" crc="06a83606"/>
         <part name="82s129_9e.bin" crc="beacf13c"/>
@@ -101,6 +111,7 @@
         <dip name="Demo Sounds" bits="11" ids="Off,On"/>
         <dip name="Bonus Life" bits="12,14" ids="None,10k 70k,20k 80k,10k 50k,30k 70k,10k 60k,20k 70k,20k 60k"/>
         <dip name="Cabinet" bits="15" ids="Upright,Cocktail"/>
+        <dip name="Flip Screen" ids="Off,On" bits="16"/>
     </switches>
     <buttons names="Shoot,Bomb,Start,Coin,Core credits" default="Y,X,Start,Select,-" count="2"/>
 </misterromdescription>

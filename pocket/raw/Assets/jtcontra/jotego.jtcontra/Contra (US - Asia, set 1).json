@@ -9,7 +9,8 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "contra.rom"
+				"filename": "contra.rom",
+				"md5": "bb925cb753830f2a852903e0e155085b"
 			}
 		],
 		"memory_writes": [

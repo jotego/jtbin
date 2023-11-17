@@ -9,7 +9,8 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "shangon3.rom"
+				"filename": "shangon3.rom",
+				"md5": "9da98cae4f35abee9531bae161dcaadb"
 			},
 			{
 				"id": 2,

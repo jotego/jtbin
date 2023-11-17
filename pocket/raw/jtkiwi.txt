@@ -6,18 +6,18 @@ the required .rom file using the mra tool (read below).
 Place the *.rom files in Assets/jtkiwi/common
 
 Arkanoid - Revenge of DOH (World) --> arknoid2.rom
-Arkanoid - Revenge of DOH (Japan bootleg) --> arknod2b.rom
-Arkanoid - Revenge of DOH (Japan) --> arknod2j.rom
-Arkanoid - Revenge of DOH (US) --> arknod2u.rom
+Arkanoid - Revenge of DOH (Japan bootleg) --> arknoid2b.rom
+Arkanoid - Revenge of DOH (Japan) --> arknoid2j.rom
+Arkanoid - Revenge of DOH (US) --> arknoid2u.rom
 Dr. Toppel's Adventure (World) --> drtoppel.rom
-Dr. Toppel's Tankentai (Japan) --> drtopelj.rom
-Dr. Toppel's Adventure (US) --> drtopelu.rom
+Dr. Toppel's Tankentai (Japan) --> drtoppelj.rom
+Dr. Toppel's Adventure (US) --> drtoppelu.rom
 Extermination (World) --> extrmatn.rom
-Extermination (Japan) --> extrmtnj.rom
-Extermination (US, World Games) --> extrmtnu.rom
-Extermination (US, Romstar) --> extrmnur.rom
+Extermination (Japan) --> extrmatnj.rom
+Extermination (US, World Games) --> extrmatnu.rom
+Extermination (US, Romstar) --> extrmatnur.rom
 Insector X (World) --> insectx.rom
-Insector X (bootleg) --> insecxbl.rom
+Insector X (bootleg) --> insectxbl.rom
 Insector X (Japan) --> insectxj.rom
 Kageki (World) --> kageki.rom
 Kageki (hack) --> kagekih.rom

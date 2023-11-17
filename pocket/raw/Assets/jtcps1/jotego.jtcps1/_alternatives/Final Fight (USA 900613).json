@@ -9,7 +9,8 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "ffightuc.rom"
+				"filename": "ffightuc.rom",
+				"md5": "4bba0c070f459d2d7261417c037c8068"
 			},
 			{
 				"id": 2,

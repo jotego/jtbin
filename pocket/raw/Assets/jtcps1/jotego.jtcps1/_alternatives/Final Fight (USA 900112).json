@@ -9,7 +9,8 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "ffightua.rom"
+				"filename": "ffightua.rom",
+				"md5": "c8d9e27331fe8917669dade4341799dc"
 			},
 			{
 				"id": 2,

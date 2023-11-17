@@ -9,7 +9,8 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "bbros.rom"
+				"filename": "bbros.rom",
+				"md5": "9de58b1f2f1bb6b871befa9cfb569ac6"
 			},
 			{
 				"id": 2,

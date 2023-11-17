@@ -6,7 +6,7 @@ the required .rom file using the mra tool (read below).
 Place the *.rom files in Assets/jtroc/common
 
 Roc'n Rope --> rocnrope.rom
-Roc'n Rope (Kosuka) --> rocnrpek.rom
+Roc'n Rope (Kosuka) --> rocnropek.rom
 
 
 These files are generated using the mra tool in:

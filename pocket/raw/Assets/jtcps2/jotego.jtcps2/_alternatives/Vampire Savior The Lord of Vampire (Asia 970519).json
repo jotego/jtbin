@@ -9,7 +9,8 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "vsava.rom"
+				"filename": "vsava.rom",
+				"md5": "c020c3b5a5b037183913d7f0919b8031"
 			},
 			{
 				"id": 2,

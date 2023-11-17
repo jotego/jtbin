@@ -9,7 +9,8 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "xmcota.rom"
+				"filename": "xmcota.rom",
+				"md5": "1525d27aa5956ab9307eca7a669be2b2"
 			},
 			{
 				"id": 2,

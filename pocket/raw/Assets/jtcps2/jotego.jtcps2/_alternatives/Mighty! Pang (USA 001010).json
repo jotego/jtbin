@@ -9,7 +9,8 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "mpangu.rom"
+				"filename": "mpangu.rom",
+				"md5": "22246db29d51880ccaf009d64b3bb4e4"
 			},
 			{
 				"id": 2,

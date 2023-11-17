@@ -9,7 +9,8 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "ddragnub.rom"
+				"filename": "ddragonub.rom",
+				"md5": "c56c079a914912eb1d3d9a04cbc6c425"
 			}
 		],
 		"memory_writes": [

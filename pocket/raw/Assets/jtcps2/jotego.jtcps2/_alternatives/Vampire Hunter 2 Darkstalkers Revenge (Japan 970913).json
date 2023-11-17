@@ -9,7 +9,8 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "vhunt2r1.rom"
+				"filename": "vhunt2r1.rom",
+				"md5": "e7bdeaf02253ad52ed36dbbc7d799698"
 			},
 			{
 				"id": 2,

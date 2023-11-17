@@ -9,7 +9,8 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "shinobi2.rom"
+				"filename": "shinobi2.rom",
+				"md5": "aa4d18f8a2e598ba07c6b68a724a1b57"
 			}
 		],
 		"memory_writes": [

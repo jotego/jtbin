@@ -9,7 +9,8 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "robocopu.rom"
+				"filename": "robocopu.rom",
+				"md5": "753cdab2b0c71016b4b7b597d70b0edb"
 			},
 			{
 				"id": 2,

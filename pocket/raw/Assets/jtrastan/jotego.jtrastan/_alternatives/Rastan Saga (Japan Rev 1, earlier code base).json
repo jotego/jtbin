@@ -9,7 +9,12 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "rastsgaa.rom"
+				"filename": "rastsagaa.rom",
+				"md5": "ef4e52889856332024d6bda1789d7a23"
+			},
+			{
+				"id": 2,
+				"filename": "rastsagaa.sav"
 			}
 		],
 		"memory_writes": [

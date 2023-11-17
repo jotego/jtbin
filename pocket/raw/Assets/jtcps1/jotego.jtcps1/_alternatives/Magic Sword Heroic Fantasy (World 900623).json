@@ -9,7 +9,8 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "mswordr1.rom"
+				"filename": "mswordr1.rom",
+				"md5": "1fbaf7c606da3cac099baf66c2796db0"
 			},
 			{
 				"id": 2,

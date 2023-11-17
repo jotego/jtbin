@@ -53,8 +53,37 @@
 				]
 			},
 			{
-				"name": "Coin A",
+				"name": "Dial sensitivity",
 				"id": 3,
+				"type": "list",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfb000004",
+				"defaultval": 3,
+				"value": 0,
+				"mask": "0xFFFFFFFC",
+				"options": [
+					{
+						"name": "very high",
+						"value": "0x1"
+					},
+					{
+						"name": "high",
+						"value": "0x0"
+					},
+					{
+						"name": "low",
+						"value": "0x3"
+					},
+					{
+						"name": "very low",
+						"value": "0x2"
+					}
+				]
+			},
+			{
+				"name": "Coin A",
+				"id": 4,
 				"type": "list",
 				"enabled": true,
 				"persist": true,
@@ -99,7 +128,7 @@
 			},
 			{
 				"name": "Coin B",
-				"id": 4,
+				"id": 5,
 				"type": "list",
 				"enabled": true,
 				"persist": true,
@@ -144,7 +173,7 @@
 			},
 			{
 				"name": "2 Coins to Start, 1 to Continue",
-				"id": 5,
+				"id": 6,
 				"type": "check",
 				"enabled": true,
 				"persist": true,
@@ -156,7 +185,7 @@
 			},
 			{
 				"name": "Difficulty",
-				"id": 6,
+				"id": 7,
 				"type": "list",
 				"enabled": true,
 				"persist": true,
@@ -201,7 +230,7 @@
 			},
 			{
 				"name": "Level Up Timer",
-				"id": 7,
+				"id": 8,
 				"type": "list",
 				"enabled": true,
 				"persist": true,
@@ -230,7 +259,7 @@
 			},
 			{
 				"name": "Bullet's Speed",
-				"id": 8,
+				"id": 9,
 				"type": "list",
 				"enabled": true,
 				"persist": true,
@@ -259,7 +288,7 @@
 			},
 			{
 				"name": "Initial Vitality",
-				"id": 9,
+				"id": 10,
 				"type": "list",
 				"enabled": true,
 				"persist": true,
@@ -280,7 +309,7 @@
 			},
 			{
 				"name": "Throttle Game Speed",
-				"id": 10,
+				"id": 11,
 				"type": "check",
 				"enabled": true,
 				"persist": true,
@@ -291,7 +320,7 @@
 			},
 			{
 				"name": "Free Play",
-				"id": 11,
+				"id": 12,
 				"type": "check",
 				"enabled": true,
 				"persist": true,
@@ -303,7 +332,7 @@
 			},
 			{
 				"name": "Freeze",
-				"id": 12,
+				"id": 13,
 				"type": "check",
 				"enabled": true,
 				"persist": true,
@@ -315,7 +344,7 @@
 			},
 			{
 				"name": "Flip Screen",
-				"id": 13,
+				"id": 14,
 				"type": "check",
 				"enabled": true,
 				"persist": true,
@@ -324,18 +353,6 @@
 				"value": 0,
 				"value_off": 1048576,
 				"mask": "0xFFEFFFFF"
-			},
-			{
-				"name": "Demo Sounds",
-				"id": 14,
-				"type": "check",
-				"enabled": true,
-				"persist": true,
-				"address": "0xfa000000",
-				"defaultval": 1,
-				"value": 0,
-				"value_off": 2097152,
-				"mask": "0xFFDFFFFF"
 			},
 			{
 				"name": "Default",

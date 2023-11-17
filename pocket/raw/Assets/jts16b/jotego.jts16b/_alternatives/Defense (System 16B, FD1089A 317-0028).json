@@ -9,7 +9,8 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "defense.rom"
+				"filename": "defense.rom",
+				"md5": "5a842e24f6f65ea50e5bb79c840e1b16"
 			}
 		],
 		"memory_writes": [

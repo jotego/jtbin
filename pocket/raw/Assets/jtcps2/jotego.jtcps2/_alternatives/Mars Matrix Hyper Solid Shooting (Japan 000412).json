@@ -9,7 +9,8 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "mmatrixj.rom"
+				"filename": "mmatrixj.rom",
+				"md5": "54cabd177d8a461131e37fed6564976d"
 			},
 			{
 				"id": 2,

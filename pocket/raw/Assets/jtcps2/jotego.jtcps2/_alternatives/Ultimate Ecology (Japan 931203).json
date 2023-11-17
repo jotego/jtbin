@@ -9,7 +9,8 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "uecology.rom"
+				"filename": "uecology.rom",
+				"md5": "6b282bbb2210a2cd48a15b7370a24986"
 			},
 			{
 				"id": 2,

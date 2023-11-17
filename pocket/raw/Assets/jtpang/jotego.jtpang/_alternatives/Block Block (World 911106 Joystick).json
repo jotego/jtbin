@@ -9,7 +9,8 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "blockr1.rom"
+				"filename": "blockr1.rom",
+				"md5": "e09a193172ef3ee6478eaa3c1c199477"
 			},
 			{
 				"id": 2,

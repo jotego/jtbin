@@ -9,7 +9,8 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "tigeradu.rom"
+				"filename": "tigeroadu.rom",
+				"md5": "9cd527af2dc43b4204e5e6375613d11a"
 			}
 		],
 		"memory_writes": [

@@ -6,8 +6,8 @@ the required .rom file using the mra tool (read below).
 Place the *.rom files in Assets/jtshouse/common
 
 Splatter House (World, new version (SH3)) --> splatter.rom
-Splatter House (World, old version (SH2)) --> splater2.rom
-Splatter House (Japan, SH1) --> splaterj.rom
+Splatter House (World, old version (SH2)) --> splatter2.rom
+Splatter House (Japan, SH1) --> splatterj.rom
 
 
 These files are generated using the mra tool in:

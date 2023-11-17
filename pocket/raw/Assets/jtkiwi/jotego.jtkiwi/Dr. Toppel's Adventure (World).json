@@ -9,7 +9,8 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "drtoppel.rom"
+				"filename": "drtoppel.rom",
+				"md5": "26a345a1a4a28bc73eeae9d0649c155c"
 			}
 		],
 		"memory_writes": [

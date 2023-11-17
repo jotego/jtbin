@@ -71,7 +71,7 @@
     <rom index="1">
         <part>00</part>
     </rom>
-    <switches page_id="1" page_name="Switches" base="16" default="0f,fd">
+    <switches page_id="1" page_name="Switches" base="16" default="ff,fd">
         <!-- DSW1 -->
         <dip name="Lives" bits="0,1" ids="5,4,2,3"/>
         <dip name="Difficulty" bits="2" ids="Hard,Normal"/>

@@ -9,7 +9,8 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "batcirj.rom"
+				"filename": "batcirj.rom",
+				"md5": "5caf845422d018c4de33eed6ff05a231"
 			},
 			{
 				"id": 2,

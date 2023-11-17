@@ -94,6 +94,7 @@
         <dip name="Difficulty" bits="4,5" ids="Hardest,Hard,Medium,Easy"/>
         <dip name="Demo Sounds" bits="6" ids="On,Off"/>
         <dip name="Free Play" bits="7" ids="On,Off"/>
+        <dip name="Link joysticks" ids="Off,On" bits="8"/>
     </switches>
     <buttons names="left(2),right(2),up(2),bottom(2),Start,Coin,Core credits" default="Y,X,B,A,Start,Select,-" count="4"/>
 </misterromdescription>

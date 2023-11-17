@@ -104,7 +104,6 @@
         <part>00</part>
     </rom>
     <switches page_id="1" page_name="Switches" base="16" default="ff,ff">
-        <!-- DSW1 -->
         <!-- DSW2 -->
         <dip name="Lives" bits="10,11" ids="240,4,2,3"/>
         <dip name="Difficulty" bits="14,15" ids="Hardest,Hard,Easy,Normal"/>

@@ -9,7 +9,8 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "wrestwar.rom"
+				"filename": "wrestwar.rom",
+				"md5": "2b5f95a8e696e54ed21149606b6ae9b0"
 			}
 		],
 		"memory_writes": [

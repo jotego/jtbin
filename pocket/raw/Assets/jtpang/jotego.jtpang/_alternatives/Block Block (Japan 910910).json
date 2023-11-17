@@ -9,7 +9,8 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "blockj.rom"
+				"filename": "blockj.rom",
+				"md5": "efce4cc299fe5a5339917bd839bede6e"
 			},
 			{
 				"id": 2,

@@ -9,7 +9,8 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "smbomb.rom"
+				"filename": "smbomb.rom",
+				"md5": "9da8a24cba721adbd6e1e4a265d76260"
 			},
 			{
 				"id": 2,

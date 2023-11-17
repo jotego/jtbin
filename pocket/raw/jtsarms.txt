@@ -6,9 +6,9 @@ the required .rom file using the mra tool (read below).
 Place the *.rom files in Assets/jtsarms/common
 
 Side Arms - Hyper Dyne (World, 861129) --> sidearms.rom
-Side Arms - Hyper Dyne (Japan, 861128) --> sideamsj.rom
-Side Arms - Hyper Dyne (US, 861202) --> sideamsu.rom
-Side Arms - Hyper Dyne (US, 861128) --> sideaur1.rom
+Side Arms - Hyper Dyne (Japan, 861128) --> sidearmsj.rom
+Side Arms - Hyper Dyne (US, 861202) --> sidearmsu.rom
+Side Arms - Hyper Dyne (US, 861128) --> sidearmsur1.rom
 
 
 These files are generated using the mra tool in:

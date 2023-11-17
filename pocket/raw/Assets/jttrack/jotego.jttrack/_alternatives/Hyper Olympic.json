@@ -9,7 +9,8 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "hyprolym.rom"
+				"filename": "hyprolym.rom",
+				"md5": "04fc8923e60a5b5aff5ac48f2371b903"
 			},
 			{
 				"id": 2,

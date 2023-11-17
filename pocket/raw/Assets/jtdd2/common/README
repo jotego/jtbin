@@ -1,9 +1,9 @@
 Place the following files in this folder:
 
 ddragon2.rom
-ddragn2b.rom
-ddragn2j.rom
-ddragn2u.rom
+ddragon2b.rom
+ddragon2j.rom
+ddragon2u.rom
 
 These files are generated using the mra tool in:
 https://github.com/sebdel/mra-tools-c/tree/master/release

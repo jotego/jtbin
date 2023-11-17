@@ -9,7 +9,8 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "mvscr1.rom"
+				"filename": "mvscr1.rom",
+				"md5": "6a7ed0cf3b88e163ed1b92eeae8c7e95"
 			},
 			{
 				"id": 2,

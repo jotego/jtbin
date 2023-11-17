@@ -13,8 +13,8 @@ Ghosts'n Goblins (World? set 3) --> gngc.rom
 Ghosts'n Goblins (prototype) --> gngprot.rom
 Ghosts'n Goblins (US) --> gngt.rom
 Makaimura (Japan) --> makaimur.rom
-Makaimura (Japan Revision C) --> makaiurc.rom
-Makaimura (Japan Revision G) --> makaiurg.rom
+Makaimura (Japan Revision C) --> makaimurc.rom
+Makaimura (Japan Revision G) --> makaimurg.rom
 
 
 These files are generated using the mra tool in:

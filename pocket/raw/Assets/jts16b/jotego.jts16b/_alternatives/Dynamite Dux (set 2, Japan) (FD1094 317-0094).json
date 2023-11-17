@@ -9,7 +9,8 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "dduxj.rom"
+				"filename": "dduxj.rom",
+				"md5": "1c402be71147979ef55a574566457149"
 			}
 		],
 		"memory_writes": [

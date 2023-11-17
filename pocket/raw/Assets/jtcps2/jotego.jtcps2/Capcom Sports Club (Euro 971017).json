@@ -9,7 +9,8 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "csclub.rom"
+				"filename": "csclub.rom",
+				"md5": "9ad9e43e075769b0fad1712ae36a59bf"
 			},
 			{
 				"id": 2,

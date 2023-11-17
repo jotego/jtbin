@@ -9,7 +9,8 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "rockmn2j.rom"
+				"filename": "rockman2j.rom",
+				"md5": "947a8ef6dd75a535d030faf144d8dc2e"
 			},
 			{
 				"id": 2,

@@ -9,7 +9,8 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "roadfu.rom"
+				"filename": "roadfu.rom",
+				"md5": "126e04711b1cb90c6dea6313f9eac2b5"
 			},
 			{
 				"id": 2,

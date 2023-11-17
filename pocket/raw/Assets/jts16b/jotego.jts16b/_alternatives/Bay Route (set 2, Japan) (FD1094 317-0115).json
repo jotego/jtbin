@@ -9,7 +9,8 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "bayrotej.rom"
+				"filename": "bayroutej.rom",
+				"md5": "2c03630c997951b067f5bdc89459c2e4"
 			}
 		],
 		"memory_writes": [

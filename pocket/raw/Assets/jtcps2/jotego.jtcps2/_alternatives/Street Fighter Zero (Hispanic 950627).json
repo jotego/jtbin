@@ -9,7 +9,8 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "sfzhr1.rom"
+				"filename": "sfzhr1.rom",
+				"md5": "ac98a19c5795e39db96ea9894bcd468b"
 			},
 			{
 				"id": 2,

@@ -5,8 +5,9 @@ The following arcade titles are compatible with this core. Generate
 the required .rom file using the mra tool (read below).
 Place the *.rom files in Assets/jttora/common
 
+F-1 Dream --> f1dream.rom
 Tiger Road (US) --> tigeroad.rom
-Tiger Road (US, Romstar license) --> tigeradu.rom
+Tiger Road (US, Romstar license) --> tigeroadu.rom
 Tora e no Michi (Japan) --> toramich.rom
 
 

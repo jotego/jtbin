@@ -4,11 +4,11 @@
 | 1941j        | jtcps1     | d27face50516999f3665556ab7e3749a | ff,fc,9f     |
 | 1941r1       | jtcps1     | 46c46faf9476eaba782a0053e5b0a830 | ff,fc,9f     |
 | 1941u        | jtcps1     | dfda0fc5d186e07b2785e9f6977ab405 | ff,fc,9f     |
-| 1942         | jt1942     | fe0810d51c98a68e0c4d572de8ae4dd9 | 77,ff        |
-| 1942a        | jt1942     | 20696092e95feca8f35188629143171e | 77,ff        |
-| 1942b        | jt1942     | eaa5bd4ecbc94a364698d06b2077ccf8 | 77,ff        |
-| 1942h        | jt1942     | ff3645018dfee3199b72df5d7c29f929 | 77,ff        |
-| 1942w        | jt1942     | f6e77be10e8d6f1e8b3bfc58c9992afe | 77,ff        |
+| 1942         | jt1942     | 9a52c815180d2671682f610ebe031e52 | 77,ff        |
+| 1942a        | jt1942     | 4f33149c661385b9e6878f3f8abe85b9 | 77,ff        |
+| 1942b        | jt1942     | 3468b76264e1ec8f1a7f0a3363bcc3b2 | 77,ff        |
+| 1942h        | jt1942     | 2ad2328e32c4b316f96b5ca502e33196 | 77,ff        |
+| 1942w        | jt1942     | 660d8d045d44323a42c906eb239c2379 | 77,ff        |
 | 1943         | jt1943     | 5006722f516b6fd1709046a542d3dd71 | f8,ff        |
 | 1943j        | jt1943     | ed51564a2680da2172a4a3203a7d6768 | f8,ff        |
 | 1943ja       | jt1943     | 42fc270d829ccb930b734d9f76ce704b | f8,ff        |
@@ -115,8 +115,8 @@
 | blockj       | jtpang     | efce4cc299fe5a5339917bd839bede6e |              |
 | blockr1      | jtpang     | e09a193172ef3ee6478eaa3c1c199477 |              |
 | blockr2      | jtpang     | c37a1f43e34f7ba59ba34c44a67f719d |              |
-| bootcamp     | jtcomsc    | a83efc086b5e9a1a1ce0cc1d93ba8706 | ff,7b,5f     |
-| bootcampa    | jtcomsc    | baaa45c8f5484ad876680676b0dc8bb1 | ff,7b,5f     |
+| bootcamp     | jtcomsc    | a83efc086b5e9a1a1ce0cc1d93ba8706 | ff,7b,ff     |
+| bootcampa    | jtcomsc    | baaa45c8f5484ad876680676b0dc8bb1 | ff,7b,ff     |
 | bouldash     | jtslyspy   | 8b470f64f4920165a6461f9ca169c933 | 7f7f         |
 | bouldashj    | jtslyspy   | 85af95beecf462c540bc75d74abec09c | 7f7f         |
 | bublbobl     | jtbubl     | bec8577036a5a00bc951d46874015443 | ff,ff        |
@@ -143,22 +143,23 @@
 | chelnovu     | jtkarnov   | 45fc84d27ce7c849ba529902214c5d1a | 7f,ff        |
 | chikij       | jtcps1     | eb05493f72a6199e051ff4542ef300a6 | ff,fc,bf     |
 | choko        | jtcps2     | 9f42ff25fd71993cd48aa2948345f78e |              |
-| combatsc     | jtcomsc    | 632210364566c4af623d44a003eb95a4 | ff,7b,5f     |
+| combatsc     | jtcomsc    | 632210364566c4af623d44a003eb95a4 | ff,7b,ff     |
 | commando     | jtcommnd   | 34d5dc4ee95a5d25046f02441f424af1 | ff,1f        |
 | commandob2   | jtcommnd   | 1f32592edb0816226f515e477dcd1451 | ff,1f        |
 | commandob3   | jtcommnd   | 34d5dc4ee95a5d25046f02441f424af1 | ff,1f        |
 | commandoj    | jtcommnd   | f858e0e3d9eddd3eab6fd25a8dbc6839 | ff,1f        |
 | commandou    | jtcommnd   | fa7f7fa618a6e367246611c748d186a9 | ff,1f        |
 | commandou2   | jtcommnd   | 66183e93b466fab74c44c48fe15abcbf | ff,1f        |
-| contra       | jtcontra   | bb925cb753830f2a852903e0e155085b | ff,7a,ff     |
-| contra1      | jtcontra   | 8872f2c3dddd650bdd40257346104762 | ff,7a,ff     |
-| contrae      | jtcontra   | 75c2b0f6b68a4c35d293d9b0199964fc | ff,7a,ff     |
-| contraj      | jtcontra   | 006e186a5e1177a68fc38a5052cd6fe7 | ff,7a,ff     |
-| contraj1     | jtcontra   | 2e0f55e205ea39765601334d211f3d04 | ff,7a,ff     |
+| contra       | jtcontra   | bb925cb753830f2a852903e0e155085b | ff,7e,ff     |
+| contra1      | jtcontra   | 8872f2c3dddd650bdd40257346104762 | ff,7e,ff     |
+| contrae      | jtcontra   | 75c2b0f6b68a4c35d293d9b0199964fc | ff,7e,ff     |
+| contraj      | jtcontra   | 006e186a5e1177a68fc38a5052cd6fe7 | ff,7e,ff     |
+| contraj1     | jtcontra   | 2e0f55e205ea39765601334d211f3d04 | ff,7e,ff     |
 | cotton       | jts16b     | 26cd2fc0aac8ec28f715afe419a04ac6 | ff,fe        |
 | cottonj      | jts16b     | c5084165059e42a24446adfa41244b8a | ff,fe        |
 | cottonja     | jts16b     | 08ca2260697c55b1d31cc79480e0676d | ff,fe        |
 | cottonu      | jts16b     | 5a611de9bc8520954c41dd3374f8fd40 | ff,fe        |
+| crazycop     | jtaliens   | 78ad83d877fe97d24df37bd449b4f4fc | ff,56,ff     |
 | crimfght     | jtaliens   | a60fc1b7d6bf7e14f99abc9f8044ca52 | ff,5d,ff     |
 | crimfghtj    | jtaliens   | 983bf4ffe2b5d6a98f7cdc3d4e89b1c7 | ff,5d,ff     |
 | crimfghtu    | jtaliens   | eae04c550fb951a807b03b90c0a64e54 | 0f,5f,ff     |
@@ -262,7 +263,7 @@
 | extrmatnj    | jtkiwi     | 2b12878a00c3069ac6ad72a6fa7f2cd2 | ff,ff        |
 | extrmatnu    | jtkiwi     | eb20cc729490d42b7e767bd75e6cea61 | ff,ff        |
 | extrmatnur   | jtkiwi     | 18d0f9c1845d27ddc82ff49817f4ac10 | ff,ff        |
-| f1dream      | jtf1drm    | aa5ff5d877156ba57a3d024a76db97e5 | fb,ff        |
+| f1dream      | jttora     | 3282f0dbf6f907b629166484d96c0b95 | ff,bf        |
 | fantzn2x     | jts16b     | ac119bf42d19e581a31ecbf3e60418fc | ff,ff        |
 | fantzn2xp    | jts16b     | 813dcb28e6554253ab2718870302c812 | ff,ff        |
 | fantzone     | jts16      | a4721e6639defe60c00a62ef7b5b5020 | ff,fc        |
@@ -302,6 +303,8 @@
 | fpoint1      | jts16b     | 104febb82ea083d44525f317992142d3 | ff,fd        |
 | fround       | jtfround   | 0824f8ea07f0f330628fa9373dc13021 | ff,5e,ff     |
 | froundl      | jtfround   | b4f7a1b2506094c98fddf820462f5653 | ff,5e,ff     |
+| gbusters     | jtaliens   | 10dbc0128069fa05df7b4ce997b53fd5 | ff,56,ff     |
+| gbustersa    | jtaliens   | a039c0483e4977911a9683590ae316bd | ff,56,ff     |
 | ghouls       | jtcps1     | 6ca0a8f1265eca0c99f28ac9e645e2eb | ff,fd,ff     |
 | ghoulsu      | jtcps1     | 3dbf285eda000132f55e31ce9ae667da | ff,fd,ff     |
 | gigawing     | jtcps2     | 671ca8537efef8e426c1e665c76a0340 |              |
@@ -339,7 +342,7 @@
 | hcastle      | jtcastle   | fa57e3e98d64b6ec7ae38c38eec37dba | ff,53,ff     |
 | hcastlee     | jtcastle   | aee30d1dcb3e2bb48ed1359eed549bf9 | ff,53,ff     |
 | hcastlek     | jtcastle   | 792920a9d62f4c492e6b05968e1d5d33 | ff,53,ff     |
-| higemaru     | jthige     | 41906989cb0d6c56b55f040c8d0c3703 | ff,fe        |
+| higemaru     | jt1942     | 67d447936957650efcb64fc22ff1c7b4 | ff,fe        |
 | hippodrm     | jtcop      | a8bf65155b3daa5dcb5a00a268a09447 | ff,ff        |
 | hpolym84     | jtroadf    | dc79deff45991fd69bd6bf0fdc66a138 | ff,49,ff     |
 | hsf2         | jtcps2     | 88b106b19af3f0b9670729d6be1e1ef8 |              |
@@ -380,7 +383,7 @@
 | kodr1        | jtcps1     | afe8e010fb9b89b2d1a4eda0b6f034ee | ff,fc,bf     |
 | kodr2        | jtcps1     | 7558b2d5197f46234e2e3c53f4a0f13a | ff,fc,bf     |
 | kodu         | jtcps1     | afdd82f2b6afa54cc9ddf529142028c3 | ff,fc,9f     |
-| kuniokunb    | jtkunio    | 528dc7d21a8640bc053a980bd8d253f8 | bf,03        |
+| kuniokunb    | jtkunio    | 528dc7d21a8640bc053a980bd8d253f8 | ff,ff        |
 | labyrunr     | jtlabrun   | 7432285ff67a0ccdda24a8b3857c73ea | ff,5a,f7     |
 | labyrunrk    | jtlabrun   | 2e65ac5cc154346d24d55bbdb63fe371 | ff,5a,f7     |
 | lostwrld     | jtcps1     | 4f822f40f9abcec0592ace9f41079bf4 | ff,fc,ff     |
@@ -390,7 +393,7 @@
 | lwingsb      | jtsectnz   | 7499589dc889a8e8f49b87255a73958c | ff,ff        |
 | lwingsj      | jtsectnz   | 950dd727263854d144dcbe41af9d60ed | ff,ff        |
 | lwingsja     | jtsectnz   | 9e0923b69d3c9816f842ec40ce022dec | ff,ff        |
-| mach9        | jtvulgus   | a0aa39d1cb955ea84c82da5403ac321b | ff,7f        |
+| mach9        | jt1942     | cb4a105e9d43c639c3cd72055315defb | ff,7f        |
 | makaimur     | jtgng      | f80a619acf3e03db0b5c38e1559d9932 | df,fb        |
 | makaimurc    | jtgng      | 4986f3d2522f8461206db2bd3bc5bc6b | df,fb        |
 | makaimurg    | jtgng      | b2c45890c22b282f6a1e799cfdc4c700 | df,fb        |
@@ -501,7 +504,7 @@
 | pfghtj       | jtcps2     | 15a248764f2a5389ab6d2036b1f3d728 |              |
 | pgear        | jtcps2     | 860523a37f3cac75f3133f1f71586c19 |              |
 | pgearr1      | jtcps2     | 0005502bf24103341c096a807ddfa0e6 |              |
-| pingpong     | jtpinpon   |                                  | f0,1f,07     |
+| pingpong     | jtpinpon   | 3c6eaf0db6cb96ab18e8c5ca63aed2a9 | ff,fa,ff     |
 | pnickj       | jtcps1     | 39d46d81dfc6c10c94b02cf812bfd817 | ff,fc,ff     |
 | pokonyan     | jtcps1     | 0c22b6a35a4c7dcf7ee3d42b04a1f1df | ff,fb,ff,ff  |
 | pompingw     | jtpang     | 6be48a4c0844f8c6737f13d6e239a358 |              |
@@ -538,7 +541,7 @@
 | rastsagaa    | jtrastan   | ef4e52889856332024d6bda1789d7a23 | fe,ff        |
 | rastsagaabl  | jtrastan   | b58fd892743e1bde971615553cf66349 | fe,ff        |
 | rastsagab    | jtrastan   | f5650d6ddf071dc003936c4d8d71d004 | fe,ff        |
-| renegadeb    | jtkunio    | 9a8390b8c1ce1b3ab5b50383140c67af | bf,03        |
+| renegadeb    | jtkunio    | 9a8390b8c1ce1b3ab5b50383140c67af | ff,ff        |
 | ringdest     | jtcps2     | 50e7406316328c41e215bbe0a5e89556 |              |
 | ringdesta    | jtcps2     | 646b54f33a4b80909e244a7fc55ba0b1 |              |
 | ringdestb    | jtcps2     | 219cbb62576abe53dcdaa10a53ef2743 |              |
@@ -562,10 +565,10 @@
 | ryukyu       | jts16b     | 8f2e0276190a2c18150cc7da4a25583f | ff,fa        |
 | ryukyua      | jts16b     | a588e0ceab5e1d557cc0188a38385750 | ff,fa        |
 | savgbees     | jtexed     | 0ef5c619ff89dc56a6bfeeecbeb3bbba | df,ff        |
-| sbasketb     | jtsbask1   | 89944ff60c58588a12a1bf1fa522bd88 | ff,68        |
-| sbaskete     | jtsbask1   | c9d87deda703975fc0a1be7ea55b320c | ff,68        |
-| sbasketg     | jtsbask1   | 89944ff60c58588a12a1bf1fa522bd88 | ff,68        |
-| sbasketh     | jtsbaskt   | 329dd1723105c7c9d8d54a2488698091 | ff,68        |
+| sbasketb     | jtsbaskt   | 6684f7487515fc3a2e3ac6d6c68adf1b | ff,68        |
+| sbaskete     | jtsbaskt   | 7c28b7d507fd6791a34f73f6df065f23 | ff,68        |
+| sbasketg     | jtsbaskt   | 6684f7487515fc3a2e3ac6d6c68adf1b | ff,68        |
+| sbasketh     | jtsbaskt   | 745c18d17ed37f72a6af27e918436fea | ff,68        |
 | sbbros       | jtpang     | c5df99210dd5f2b764165b0e9a899825 |              |
 | scontra      | jtaliens   | ffd37f90245d65425a36c8447a534517 | ff,5e,f7     |
 | scontraa     | jtaliens   | a8dac14ae9cd77f5246decf52977d4ac | ff,5e,f7     |
@@ -761,9 +764,9 @@
 | tetris1      | jts16b     | e9cca35f63ff528a07057065e30c5d0d | ff,fd        |
 | tetris2      | jts16b     | 91eeb6e782d0812f8c9fa0ea9e993ff9 | ff,fd        |
 | tetris3      | jts16      | 087b6c2e4d938e9d703895c6665a6f92 | ff,fd        |
-| tigeroad     | jttora     | b4e185029189fc14df629af79a32fca7 | ff,ff        |
-| tigeroadu    | jttora     | 786c469bfd44c8f7186c2503b1f6f2b9 | ff,ff        |
-| timescan     | jts16b     | 9096991c6f3aab9fe5a4fffc38d927be | ff,ff        |
+| tigeroad     | jttora     | 83fe4481829c121f4e299d9a0535166e | ff,ff        |
+| tigeroadu    | jttora     | 9cd527af2dc43b4204e5e6375613d11a | ff,ff        |
+| timescan     | jts16b     | 9096991c6f3aab9fe5a4fffc38d927be | ff,ff,ff     |
 | timescan1    | jts16      | ddad0a50989197d365b6daabaca2152f | ff,ff        |
 | tmht         | jttmnt     | ee4c5a737803a7cb7125d93811bdd6a6 | ff,5e,ff     |
 | tmht2p       | jttmnt     | a811b40a134905af07e43d841f9c08f3 | ff,5e,ff     |
@@ -787,7 +790,7 @@
 | tokiob       | jtbubl     | f54968678d65f25402400a019d4a369e | ff,ff        |
 | topsecrt     | jtbiocom   | 685ea63491f6d89e485d0d5619c4bd23 | ff,df        |
 | topsecrt2    | jtbiocom   | a0e127acf4aa7292fdc1c37f4bd721e6 | ff,df        |
-| toramich     | jttora     | 27654359c7c36522bdc57ef7aa4ced3f | ff,ff        |
+| toramich     | jttora     | 7b4faa750fccb642b53ea5f0a8a6c207 | ff,ff        |
 | toryumon     | jts16b     | 1af2f900df45b579cdbd5afab88def89 | ff,fe        |
 | toutrun      | jtoutrun   | 44219ddaa2201c084697f4adb2ea80ce | ff,f9        |
 | toutrun1     | jtoutrun   | 8876c7a4830f0af811c4580ac403198d | ff,fb        |
@@ -821,13 +824,13 @@
 | vhuntjr1     | jtcps2     | c8b09531117f16ac6e9921a3207b28e4 |              |
 | vhuntjr1s    | jtcps2     | 0b32aa7d2331c00d712c97f373b5d570 |              |
 | vhuntjr2     | jtcps2     | 9635726bef4f7c1c9398c589e629f489 |              |
-| vigilant     | jtvigil    | f702564e5e3919efcd90863604729da9 | 0f,fd        |
-| vigilanta    | jtvigil    | 2e48039fa8c97c7453c0fd92559bc224 | 0f,fd        |
-| vigilantb    | jtvigil    | 931bfa43ef0f61abc76f642f30d03a56 | 0f,fd        |
-| vigilantc    | jtvigil    | ae9a07af3298f7bc8498c11b97583126 | 0f,fd        |
-| vigilantd    | jtvigil    | 824e97759ad723d3cd5546c43c11f821 | 0f,fd        |
-| vigilantg    | jtvigil    | 8ef8671a0b58b008995a29d539586c32 | 0f,fd        |
-| vigilanto    | jtvigil    | 96f203c2b9dafd289200c67e6dd705d7 | 0f,fd        |
+| vigilant     | jtvigil    | f702564e5e3919efcd90863604729da9 | ff,fd        |
+| vigilanta    | jtvigil    | 2e48039fa8c97c7453c0fd92559bc224 | ff,fd        |
+| vigilantb    | jtvigil    | 931bfa43ef0f61abc76f642f30d03a56 | ff,fd        |
+| vigilantc    | jtvigil    | ae9a07af3298f7bc8498c11b97583126 | ff,fd        |
+| vigilantd    | jtvigil    | 824e97759ad723d3cd5546c43c11f821 | ff,fd        |
+| vigilantg    | jtvigil    | 8ef8671a0b58b008995a29d539586c32 | ff,fd        |
+| vigilanto    | jtvigil    | 96f203c2b9dafd289200c67e6dd705d7 | ff,fd        |
 | vsav         | jtcps2     | 969ac9f7b8019cd7b3552bfeb95d00e2 |              |
 | vsav2        | jtcps2     | 7c1593eb99c7aa2176e7c7ca18461b98 |              |
 | vsav2d       | jtcps2     | cc44629c15463525ac6f67a1be94ac20 |              |
@@ -837,8 +840,9 @@
 | vsavh        | jtcps2     | 9d982a042e7792842558d25b24d63787 |              |
 | vsavj        | jtcps2     | 2047782a5797472463bb9855a93d8a8d |              |
 | vsavu        | jtcps2     | 373328b8965cf472a864c8459544c7e5 |              |
-| vulgus       | jtvulgus   | a7924b23a813fb9b41945a18b62ff12e | ff,7f        |
-| vulgusj      | jtvulgus   | eacb8932ec110b2e0c1eb258df5ea214 | ff,7f        |
+| vulgus       | jt1942     | 03901c9be772595223f33b84f29b7ef1 | ff,7f        |
+| vulgusa      | jt1942     | 13a67fa205fe876ce79f92865a05952d | ff,7f        |
+| vulgusj      | jt1942     | f77cab8253283265a61200fe3457d9d0 | ff,7f        |
 | wb3          | jts16b     | f3e0c4dbf684ce6212e5eaf89545f0e9 | ff,fd        |
 | wb31         | jts16      | 60351f24d4ed05826bfc0f948c081c3b | ff,fd        |
 | wb32         | jts16b     | bf3916c9bf199b8006f8dba5e3272f86 | ff,fd        |

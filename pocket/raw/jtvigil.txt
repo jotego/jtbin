@@ -6,12 +6,12 @@ the required .rom file using the mra tool (read below).
 Place the *.rom files in Assets/jtvigil/common
 
 Vigilante (World, Rev E) --> vigilant.rom
-Vigilante (World, Rev A) --> vigilnta.rom
-Vigilante (US, Rev B) --> vigilntb.rom
-Vigilante (World, Rev C) --> vigilntc.rom
-Vigilante (Japan, Rev D) --> vigilntd.rom
-Vigilante (US, Rev G) --> vigilntg.rom
-Vigilante (US) --> vigilnto.rom
+Vigilante (World, Rev A) --> vigilanta.rom
+Vigilante (US, Rev B) --> vigilantb.rom
+Vigilante (World, Rev C) --> vigilantc.rom
+Vigilante (Japan, Rev D) --> vigilantd.rom
+Vigilante (US, Rev G) --> vigilantg.rom
+Vigilante (US) --> vigilanto.rom
 
 
 These files are generated using the mra tool in:

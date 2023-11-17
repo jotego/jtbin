@@ -9,7 +9,8 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "fpoint1.rom"
+				"filename": "fpoint1.rom",
+				"md5": "104febb82ea083d44525f317992142d3"
 			}
 		],
 		"memory_writes": [

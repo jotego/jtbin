@@ -11,7 +11,7 @@ Legendary Wings (bootleg) --> lwingsb.rom
 Ares no Tsubasa (Japan) --> lwingsj.rom
 Ares no Tsubasa (Japan, rev. A) --> lwingsja.rom
 Section Z (set 1) --> sectionz.rom
-Section Z (set 2) --> sectinza.rom
+Section Z (set 2) --> sectionza.rom
 
 
 These files are generated using the mra tool in:

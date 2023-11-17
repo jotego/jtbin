@@ -9,7 +9,8 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "ringdsta.rom"
+				"filename": "ringdesta.rom",
+				"md5": "646b54f33a4b80909e244a7fc55ba0b1"
 			},
 			{
 				"id": 2,

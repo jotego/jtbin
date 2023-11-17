@@ -5,28 +5,6 @@ The following arcade titles are compatible with this core. Generate
 the required .rom file using the mra tool (read below).
 Place the *.rom files in Assets/jtsf/common
 
-Legendary Wings (US set 1) --> lwings.rom
-Legendary Wings (US set 2) --> lwings2.rom
-Legendary Wings (bootleg) --> lwingsb.rom
-Ares no Tsubasa (Japan) --> lwingsj.rom
-Ares no Tsubasa (Japan, rev. A) --> lwingsja.rom
-Section Z (set 1) --> sectionz.rom
-Section Z (set 2) --> sectinza.rom
-Bionic Commando (Euro) --> bionicc.rom
-Bionic Commando (US set 1) --> bionicc1.rom
-Bionic Commando (US set 2) --> bionicc2.rom
-Bionic Commandos (bootleg, set 1) --> bionicbl.rom
-Bionic Commandos (bootleg, set 2) --> bionibl2.rom
-Top Secret (Japan, old revision) --> topsecrt.rom
-Top Secret (Japan, revision B) --> topsert2.rom
-1943: The Battle of Midway (Euro) --> 1943.rom
-1943: Midway Kaisen (Japan, Rev B) --> 1943j.rom
-1943: Midway Kaisen (Japan) --> 1943ja.rom
-1943: Midway Kaisen (Japan, no protection hack) --> 1943jah.rom
-1943 Kai: Midway Kaisen (Japan) --> 1943kai.rom
-1943: The Battle of Midway Mark II (US) --> 1943mii.rom
-1943: The Battle of Midway (US, Rev C) --> 1943u.rom
-1943: The Battle of Midway (US) --> 1943ua.rom
 Street Fighter (US, set 1) --> sf.rom
 Street Fighter (Japan) (protected) --> sfj.rom
 Street Fighter (US, set 2) (protected) --> sfua.rom

@@ -7,19 +7,19 @@ Place the *.rom files in Assets/jtoutrun/common
 
 Out Run (sitdown-upright, Rev B) --> outrun.rom
 Out Run (deluxe sitdown) --> outrundx.rom
-Out Run (deluxe sitdown earlier version) --> outrudxa.rom
-Out Run (deluxe sitdown) (Enhanced Edition v2.0.3) --> outruxeh.rom
-Out Run (deluxe sitdown) (Enhanced Edition v1.0.3) --> outrueha.rom
-Out Run (Japan, deluxe sitdown) (FD1089A 317-0019) --> outrudxj.rom
+Out Run (deluxe sitdown earlier version) --> outrundxa.rom
+Out Run (deluxe sitdown) (Enhanced Edition v2.0.3) --> outrundxeh.rom
+Out Run (deluxe sitdown) (Enhanced Edition v1.0.3) --> outrundxeha.rom
+Out Run (Japan, deluxe sitdown) (FD1089A 317-0019) --> outrundxj.rom
 Out Run (sitdown-upright, Rev B) (Enhanced Edition v2.0.3) --> outruneh.rom
-Out Run (sitdown-upright, Rev B) (Enhanced Edition v1.1.0) --> outrueha.rom
+Out Run (sitdown-upright, Rev B) (Enhanced Edition v1.1.0) --> outruneha.rom
 Out Run (sitdown-upright, Rev A) --> outrunra.rom
 Turbo Out Run (Out Run upgrade) (FD1094 317-0118) --> toutrun.rom
 Turbo Out Run (deluxe cockpit) (FD1094 317-0109) --> toutrun1.rom
 Turbo Out Run (cockpit) (FD1094 317-0106) --> toutrun2.rom
 Turbo Out Run (cockpit) (FD1094 317-0107) --> toutrun3.rom
 Turbo Out Run (Japan, Out Run upgrade) (FD1094 317-0117) --> toutrunj.rom
-Turbo Out Run (Japan, cockpit) (FD1094 317-0101) --> toutrnj1.rom
+Turbo Out Run (Japan, cockpit) (FD1094 317-0101) --> toutrunj1.rom
 
 
 These files are generated using the mra tool in:

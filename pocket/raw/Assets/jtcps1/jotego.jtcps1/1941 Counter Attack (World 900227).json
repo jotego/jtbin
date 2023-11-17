@@ -9,7 +9,8 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "1941.rom"
+				"filename": "1941.rom",
+				"md5": "f46af2ef83e0d4359e13290208828664"
 			},
 			{
 				"id": 2,

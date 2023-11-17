@@ -9,7 +9,8 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "outrun.rom"
+				"filename": "outrun.rom",
+				"md5": "712e0ad688ad6072ee01230780aabb78"
 			},
 			{
 				"id": 2,

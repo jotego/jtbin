@@ -9,7 +9,8 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "karnova.rom"
+				"filename": "karnova.rom",
+				"md5": "70cd2348f0ea85174bd06c46952fdb55"
 			}
 		],
 		"memory_writes": [

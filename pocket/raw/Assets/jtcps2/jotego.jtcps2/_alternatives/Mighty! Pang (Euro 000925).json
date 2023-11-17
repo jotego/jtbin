@@ -9,7 +9,8 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "mpangr1.rom"
+				"filename": "mpangr1.rom",
+				"md5": "00f1ea8b3b18b311abdb66e9332a213c"
 			},
 			{
 				"id": 2,

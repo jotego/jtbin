@@ -9,7 +9,8 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "xmcotah.rom"
+				"filename": "xmcotah.rom",
+				"md5": "e33199d90ba57f622cec76889a3e0731"
 			},
 			{
 				"id": 2,

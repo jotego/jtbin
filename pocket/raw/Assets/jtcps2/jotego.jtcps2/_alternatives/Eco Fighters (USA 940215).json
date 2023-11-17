@@ -9,7 +9,8 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "ecofgtru.rom"
+				"filename": "ecofghtru.rom",
+				"md5": "eaf77e47cca677daa96d6d5cef43273c"
 			},
 			{
 				"id": 2,

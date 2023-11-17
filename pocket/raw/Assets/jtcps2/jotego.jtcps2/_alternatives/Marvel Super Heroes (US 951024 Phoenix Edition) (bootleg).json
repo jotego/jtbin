@@ -9,7 +9,8 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "mshud.rom"
+				"filename": "mshud.rom",
+				"md5": "c681ef7978a6810e021853f3ccb31cb8"
 			},
 			{
 				"id": 2,

@@ -9,7 +9,8 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "captcmmu.rom"
+				"filename": "captcommu.rom",
+				"md5": "8f86943af3b78618df0d103597b0c453"
 			},
 			{
 				"id": 2,

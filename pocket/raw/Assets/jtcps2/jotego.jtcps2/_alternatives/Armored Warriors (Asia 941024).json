@@ -9,7 +9,8 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "armwara.rom"
+				"filename": "armwara.rom",
+				"md5": "6a1324ffbd99e23076462d8b18f1b81d"
 			},
 			{
 				"id": 2,

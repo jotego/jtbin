@@ -9,7 +9,8 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "sgemf.rom"
+				"filename": "sgemf.rom",
+				"md5": "45489beb40f96c723e08837f8087584c"
 			},
 			{
 				"id": 2,

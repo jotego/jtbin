@@ -9,7 +9,8 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "progerud.rom"
+				"filename": "progearud.rom",
+				"md5": "70c2305d7e3ce1388fd6c7c37bd58ca0"
 			},
 			{
 				"id": 2,

@@ -9,7 +9,8 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "alienyn3.rom"
+				"filename": "aliensyn3.rom",
+				"md5": "4c83a7a5e5c404664c37a5c3818cfa92"
 			}
 		],
 		"memory_writes": [

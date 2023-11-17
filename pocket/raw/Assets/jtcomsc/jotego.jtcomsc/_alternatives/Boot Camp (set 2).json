@@ -9,7 +9,8 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "bootcmpa.rom"
+				"filename": "bootcampa.rom",
+				"md5": "baaa45c8f5484ad876680676b0dc8bb1"
 			}
 		],
 		"memory_writes": [

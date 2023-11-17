@@ -9,7 +9,8 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "vsavh.rom"
+				"filename": "vsavh.rom",
+				"md5": "9d982a042e7792842558d25b24d63787"
 			},
 			{
 				"id": 2,

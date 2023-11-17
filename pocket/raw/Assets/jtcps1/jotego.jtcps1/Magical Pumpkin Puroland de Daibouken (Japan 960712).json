@@ -9,7 +9,8 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "mpumpkin.rom"
+				"filename": "mpumpkin.rom",
+				"md5": "bce61e3b5079a60c89eb310ec5947167"
 			},
 			{
 				"id": 2,

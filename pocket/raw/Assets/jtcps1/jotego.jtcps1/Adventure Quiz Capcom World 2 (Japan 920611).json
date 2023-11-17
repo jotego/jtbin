@@ -9,7 +9,8 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "cworld2j.rom"
+				"filename": "cworld2j.rom",
+				"md5": "d6ba5c2165ed4fbf889e6cec6e50ee99"
 			},
 			{
 				"id": 2,

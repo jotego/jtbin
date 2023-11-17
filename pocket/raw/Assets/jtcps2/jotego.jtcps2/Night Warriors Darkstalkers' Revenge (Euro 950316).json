@@ -9,7 +9,8 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "nwarr.rom"
+				"filename": "nwarr.rom",
+				"md5": "035ba6522df30974258799303e42c4dd"
 			},
 			{
 				"id": 2,

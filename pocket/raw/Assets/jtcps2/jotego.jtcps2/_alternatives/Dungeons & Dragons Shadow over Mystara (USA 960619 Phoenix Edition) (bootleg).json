@@ -9,7 +9,8 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "ddsomud.rom"
+				"filename": "ddsomud.rom",
+				"md5": "9bd5492f9dbb1234093ceb914638eff3"
 			},
 			{
 				"id": 2,

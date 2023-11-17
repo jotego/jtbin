@@ -9,7 +9,8 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "dunksota.rom"
+				"filename": "dunkshota.rom",
+				"md5": "ab32bd9d5826cf58dcfcd657f652bbb8"
 			}
 		],
 		"memory_writes": [

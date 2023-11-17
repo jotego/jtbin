@@ -9,7 +9,8 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "ddragon2.rom"
+				"filename": "ddragon2.rom",
+				"md5": "ee5ff67deb739a89fc27b6fc0ca78e2b"
 			}
 		],
 		"memory_writes": [

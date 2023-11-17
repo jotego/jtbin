@@ -1,7 +1,7 @@
 Place the following files in this folder:
 
 rocnrope.rom
-rocnrpek.rom
+rocnropek.rom
 
 These files are generated using the mra tool in:
 https://github.com/sebdel/mra-tools-c/tree/master/release

@@ -9,7 +9,8 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "shaolinb.rom"
+				"filename": "shaolinb.rom",
+				"md5": "71b16453cbd863d7da365c04dc95894d"
 			}
 		],
 		"memory_writes": [

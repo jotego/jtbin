@@ -9,7 +9,8 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "choko.rom"
+				"filename": "choko.rom",
+				"md5": "9f42ff25fd71993cd48aa2948345f78e"
 			},
 			{
 				"id": 2,

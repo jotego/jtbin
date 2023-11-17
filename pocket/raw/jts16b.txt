@@ -5,28 +5,28 @@ The following arcade titles are compatible with this core. Generate
 the required .rom file using the mra tool (read below).
 Place the *.rom files in Assets/jts16b/common
 
-Action Fighter (System 16B, unprotected, analog controls) --> afighere.rom
-Action Fighter (System 16B, FD1089B 317-unknown, analog controls) --> afigherf.rom
-Action Fighter (System 16B, FD1089B 317-unknown) --> afigherg.rom
-Action Fighter (System 16B, FD1089A 317-0018) --> afigherh.rom
+Action Fighter (System 16B, unprotected, analog controls) --> afightere.rom
+Action Fighter (System 16B, FD1089B 317-unknown, analog controls) --> afighterf.rom
+Action Fighter (System 16B, FD1089B 317-unknown) --> afighterg.rom
+Action Fighter (System 16B, FD1089A 317-0018) --> afighterh.rom
 Alien Syndrome (set 4, System 16B, unprotected) --> aliensyn.rom
-Alien Syndrome (set 3, System 16B, FD1089A 317-0033) --> alienyn3.rom
-Alien Syndrome (set 7, System 16B, MC-8123B 317-00xx) --> alienyn7.rom
-Alien Syndrome (set 6, Japan, new, System 16B, FD1089A 317-0033) --> alienynj.rom
+Alien Syndrome (set 3, System 16B, FD1089A 317-0033) --> aliensyn3.rom
+Alien Syndrome (set 7, System 16B, MC-8123B 317-00xx) --> aliensyn7.rom
+Alien Syndrome (set 6, Japan, new, System 16B, FD1089A 317-0033) --> aliensynj.rom
 Altered Beast (set 8) (8751 317-0078) --> altbeast.rom
-Altered Beast (set 2) (MC-8123B 317-0066) --> altbest2.rom
-Altered Beast (set 4) (MC-8123B 317-0066) --> altbest4.rom
-Altered Beast (set 5) (FD1094 317-0069) --> altbest5.rom
-Altered Beast (set 6) (8751 317-0076) --> altbest6.rom
-Juuouki (set 7, Japan) (8751 317-0077) --> altbestj.rom
-Juuouki (set 1, Japan) (FD1094 317-0065) --> altbetj1.rom
-Juuouki (set 3, Japan) (FD1094 317-0068) --> altbetj3.rom
+Altered Beast (set 2) (MC-8123B 317-0066) --> altbeast2.rom
+Altered Beast (set 4) (MC-8123B 317-0066) --> altbeast4.rom
+Altered Beast (set 5) (FD1094 317-0069) --> altbeast5.rom
+Altered Beast (set 6) (8751 317-0076) --> altbeast6.rom
+Juuouki (set 7, Japan) (8751 317-0077) --> altbeastj.rom
+Juuouki (set 1, Japan) (FD1094 317-0065) --> altbeastj1.rom
+Juuouki (set 3, Japan) (FD1094 317-0068) --> altbeastj3.rom
 Aurail (set 3, US) (unprotected) --> aurail.rom
 Aurail (set 2, World) (FD1089B 317-0168) --> aurail1.rom
 Aurail (set 1, Japan) (FD1089A 317-0167) --> aurailj.rom
 Bay Route (set 3, World) (FD1094 317-0116) --> bayroute.rom
-Bay Route (set 1, US) (unprotected) --> bayrote1.rom
-Bay Route (set 2, Japan) (FD1094 317-0115) --> bayrotej.rom
+Bay Route (set 1, US) (unprotected) --> bayroute1.rom
+Bay Route (set 2, Japan) (FD1094 317-0115) --> bayroutej.rom
 Bullet (FD1094 317-0041) --> bullet.rom
 Center Court (World, 4 Players, prototype) (MC-8123B) --> cencourt.rom
 Cotton (set 4, World) (FD1094 317-0181a) --> cotton.rom
@@ -38,23 +38,23 @@ Dynamite Dux (set 1, World) (8751 317-0095) --> ddux1.rom
 Dynamite Dux (set 2, Japan) (FD1094 317-0094) --> dduxj.rom
 Defense (System 16B, FD1089A 317-0028) --> defense.rom
 Dunk Shot (Rev C, FD1089A 317-0022) --> dunkshot.rom
-Dunk Shot (Rev A, FD1089A 317-0022) --> dunksota.rom
-Dunk Shot (FD1089A 317-0022) --> dunksoto.rom
+Dunk Shot (Rev A, FD1089A 317-0022) --> dunkshota.rom
+Dunk Shot (FD1089A 317-0022) --> dunkshoto.rom
 E-Swat - Cyber Police (set 4, World) (FD1094 317-0130) --> eswat.rom
 E-Swat - Cyber Police (set 2, Japan) (FD1094 317-0128) --> eswatj.rom
 E-Swat - Cyber Police (set 1, Japan) (FD1094 317-0131) --> eswatj1.rom
 E-Swat - Cyber Police (set 3, US) (FD1094 317-0129) --> eswatu.rom
 Excite League (FD1094 317-0079) --> exctleag.rom
 Fantasy Zone II - The Tears of Opa-Opa (System 16C version) --> fantzn2x.rom
-Fantasy Zone II - The Tears of Opa-Opa (System 16C version, prototype) --> fantz2xp.rom
+Fantasy Zone II - The Tears of Opa-Opa (System 16C version, prototype) --> fantzn2xp.rom
 Flash Point (set 2, Japan) (FD1094 317-0127A) --> fpoint.rom
 Flash Point (set 1, Japan) (FD1094 317-0127A) --> fpoint1.rom
 Golden Axe (set 6, US) (8751 317-123A) --> goldnaxe.rom
-Golden Axe (set 1, World) (FD1094 317-0110) --> goldnxe1.rom
-Golden Axe (set 2, US) (8751 317-0112) --> goldnxe2.rom
-Golden Axe (set 3, World) (FD1094 317-0120) --> goldnxe3.rom
-Golden Axe (set 4, Japan) (FD1094 317-0121) --> goldnxej.rom
-Golden Axe (set 5, US) (FD1094 317-0122) --> goldnxeu.rom
+Golden Axe (set 1, World) (FD1094 317-0110) --> goldnaxe1.rom
+Golden Axe (set 2, US) (8751 317-0112) --> goldnaxe2.rom
+Golden Axe (set 3, World) (FD1094 317-0120) --> goldnaxe3.rom
+Golden Axe (set 4, Japan) (FD1094 317-0121) --> goldnaxej.rom
+Golden Axe (set 5, US) (FD1094 317-0122) --> goldnaxeu.rom
 MVP (set 2, US) (FD1094 317-0143) --> mvp.rom
 MVP (set 1, Japan) (FD1094 317-0142) --> mvpj.rom
 Passing Shot (World, 2 Players) (FD1094 317-0080) --> passsht.rom
@@ -82,8 +82,8 @@ Wonder Boy III - Monster Lair (set 2, Japan, System 16B) (FD1094 317-0085) --> w
 Wonder Boy III - Monster Lair (set 3, World, System 16B) (FD1094 317-0089) --> wb33.rom
 Wonder Boy III - Monster Lair (set 4, Japan, System 16B) (FD1094 317-0087) --> wb34.rom
 Wrestle War (set 3, World) (8751 317-0103) --> wrestwar.rom
-Wrestle War (set 1, Japan) (FD1094 317-0090) --> wrestar1.rom
-Wrestle War (set 2, World) (FD1094 317-0102) --> wrestar2.rom
+Wrestle War (set 1, Japan) (FD1094 317-0090) --> wrestwar1.rom
+Wrestle War (set 2, World) (FD1094 317-0102) --> wrestwar2.rom
 
 
 These files are generated using the mra tool in:

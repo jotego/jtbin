@@ -9,7 +9,8 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "sidearms.rom"
+				"filename": "sidearms.rom",
+				"md5": "b5ba00ff5cc7967aa17239f39b8e6194"
 			}
 		],
 		"memory_writes": [

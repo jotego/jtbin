@@ -5,6 +5,9 @@ The following arcade titles are compatible with this core. Generate
 the required .rom file using the mra tool (read below).
 Place the *.rom files in Assets/jtsbaskt/common
 
+Super Basketball (version I, encrypted) --> sbasketb.rom
+Super Basketball (version E, encrypted) --> sbaskete.rom
+Super Basketball (version G, encrypted) --> sbasketg.rom
 Super Basketball (version H, unprotected) --> sbasketh.rom
 
 

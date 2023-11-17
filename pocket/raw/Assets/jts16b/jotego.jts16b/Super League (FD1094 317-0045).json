@@ -9,7 +9,8 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "suprleag.rom"
+				"filename": "suprleag.rom",
+				"md5": "60eac3924d5353c0ba872b74d0bb8242"
 			}
 		],
 		"memory_writes": [

@@ -9,7 +9,8 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "bullet.rom"
+				"filename": "bullet.rom",
+				"md5": "f90ca9abd612f8446da2f62d90790bbc"
 			}
 		],
 		"memory_writes": [

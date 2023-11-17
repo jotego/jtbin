@@ -9,7 +9,8 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "spf2ta.rom"
+				"filename": "spf2ta.rom",
+				"md5": "eebbfd7f56b87b5793d97ca30381b80b"
 			},
 			{
 				"id": 2,

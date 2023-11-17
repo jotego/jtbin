@@ -9,7 +9,8 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "qndream.rom"
+				"filename": "qndream.rom",
+				"md5": "2521df036b8be8e2bc699cb7f771927b"
 			},
 			{
 				"id": 2,

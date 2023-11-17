@@ -38,10 +38,10 @@
         <part name="ee03e.10m" crc="9cd70ae1"/>
         <part name="ee02e.9m" crc="a04e6368"/>
         <!-- SND_START -->
-        <!-- soundcpu - starts at 0xC000 - length 0x4000 (14 bits) -->
+        <!-- audiocpu - starts at 0xC000 - length 0x4000 (14 bits) -->
         <part name="ee01e.11e" crc="93d3f952"/>
         <!-- MAP_START -->
-        <!-- maps - starts at 0x10000 - length 0x8000 (15 bits) -->
+        <!-- tilerom - starts at 0x10000 - length 0x8000 (15 bits) -->
         <part name="c01_ee07.bin" crc="3625a68d"/>
         <part name="h04_ee09.bin" crc="6057c907"/>
         <part repeat="0x2000"> FF</part>

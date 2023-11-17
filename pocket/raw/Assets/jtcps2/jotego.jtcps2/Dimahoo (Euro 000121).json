@@ -9,7 +9,8 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "dimahoo.rom"
+				"filename": "dimahoo.rom",
+				"md5": "b01f52a0737ffb56bd63131189b7583f"
 			},
 			{
 				"id": 2,

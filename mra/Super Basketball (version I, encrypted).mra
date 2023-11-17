@@ -23,7 +23,7 @@
     <about author="jotego" webpage="https://patreon.com/jotego" source="https://github.com/jotego" twitter="@topapate"/>
     <name>Super Basketball (version I, encrypted)</name>
     <setname>sbasketb</setname>
-    <rbf>jtsbask1</rbf>
+    <rbf>jtsbaskt</rbf>
     <mameversion>0251</mameversion>
     <year>1984</year>
     <manufacturer>Konami</manufacturer>
@@ -32,7 +32,12 @@
     <rotation>vertical (cw)</rotation>
     <region>World</region>
     <mraauthor>jotego</mraauthor>
-    <rom index="0" zip="sbasketb.zip" md5="None" asm_md5="89944ff60c58588a12a1bf1fa522bd88">
+    <rom index="0" zip="sbasketb.zip" md5="None" asm_md5="6684f7487515fc3a2e3ac6d6c68adf1b">
+        <!--  Header to identify the PCB type
+        Byte 0 = 0 for M6809 CPU, 1 for KONAMI-1 CPU
+ -->
+        <part>
+            01 00 </part>
         <!-- maincpu - starts at 0x0 - length 0x10000 (16 bits) -->
         <part repeat="0x6000"> FF</part>
         <part name="405g05.14j" crc="336dc0ab"/>

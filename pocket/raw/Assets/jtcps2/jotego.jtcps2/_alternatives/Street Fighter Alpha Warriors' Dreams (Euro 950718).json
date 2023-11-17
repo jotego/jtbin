@@ -9,7 +9,8 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "sfar1.rom"
+				"filename": "sfar1.rom",
+				"md5": "03f21380f0c4a4f33a4fb9c70ae86b77"
 			},
 			{
 				"id": 2,

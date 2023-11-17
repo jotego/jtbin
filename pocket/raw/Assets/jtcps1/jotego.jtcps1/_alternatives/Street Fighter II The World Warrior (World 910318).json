@@ -9,7 +9,8 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "sf2ed.rom"
+				"filename": "sf2ed.rom",
+				"md5": "7e6ef6a9bc4d6b9e2be239ecd679a4bd"
 			},
 			{
 				"id": 2,

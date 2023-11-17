@@ -9,7 +9,8 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "dynwar.rom"
+				"filename": "dynwar.rom",
+				"md5": "38c64741d4ce69186c4eed0a0599e2ae"
 			},
 			{
 				"id": 2,

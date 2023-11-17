@@ -9,7 +9,8 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "afigherg.rom"
+				"filename": "afighterg.rom",
+				"md5": "c4dccd35f3bbbbbc23e07a298d0eeceb"
 			}
 		],
 		"memory_writes": [

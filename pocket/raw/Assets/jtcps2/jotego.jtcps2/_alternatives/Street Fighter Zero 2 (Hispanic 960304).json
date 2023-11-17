@@ -9,7 +9,8 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "sfz2h.rom"
+				"filename": "sfz2h.rom",
+				"md5": "7e2165684b2ef078c239eb41e90859ca"
 			},
 			{
 				"id": 2,

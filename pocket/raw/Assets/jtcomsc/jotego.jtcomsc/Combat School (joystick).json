@@ -9,7 +9,8 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "combatsc.rom"
+				"filename": "combatsc.rom",
+				"md5": "632210364566c4af623d44a003eb95a4"
 			}
 		],
 		"memory_writes": [

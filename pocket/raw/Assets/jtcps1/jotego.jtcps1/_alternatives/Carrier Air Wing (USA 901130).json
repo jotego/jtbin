@@ -9,7 +9,8 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "cawingu.rom"
+				"filename": "cawingu.rom",
+				"md5": "cfa75c843b567b2767c71de8e1223492"
 			},
 			{
 				"id": 2,

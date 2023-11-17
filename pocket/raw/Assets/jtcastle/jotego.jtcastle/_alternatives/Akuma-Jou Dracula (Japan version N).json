@@ -9,7 +9,8 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "akumaoun.rom"
+				"filename": "akumajoun.rom",
+				"md5": "5b4cfc76c4e5b30762d872bf639bd19d"
 			}
 		],
 		"memory_writes": [

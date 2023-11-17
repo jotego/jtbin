@@ -9,7 +9,8 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "hsf2j1.rom"
+				"filename": "hsf2j1.rom",
+				"md5": "15eacc24016637db1b358744e2c14bb1"
 			},
 			{
 				"id": 2,

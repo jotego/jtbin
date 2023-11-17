@@ -9,7 +9,8 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "cottonj.rom"
+				"filename": "cottonj.rom",
+				"md5": "c5084165059e42a24446adfa41244b8a"
 			}
 		],
 		"memory_writes": [

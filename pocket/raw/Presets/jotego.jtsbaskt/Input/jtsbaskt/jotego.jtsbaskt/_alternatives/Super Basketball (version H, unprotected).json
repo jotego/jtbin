@@ -1,0 +1,27 @@
+{
+	"input":{
+		"magic": "APF_VER_1",
+		"controllers": [
+			{
+				"type": "default",
+				"mappings": [
+					{
+						"id": 0,
+						"name": "Bounce",
+						"key": "pad_btn_a"
+					},
+					{
+						"id": 1,
+						"name": "Throw",
+						"key": "pad_btn_b"
+					},
+					{
+						"id": 2,
+						"name": "Pass",
+						"key": "pad_btn_x"
+					}
+				]
+			}
+		]
+	}
+}

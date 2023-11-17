@@ -9,7 +9,12 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "rastana.rom"
+				"filename": "rastana.rom",
+				"md5": "6148baf634a68bea12bff06df7027469"
+			},
+			{
+				"id": 2,
+				"filename": "rastana.sav"
 			}
 		],
 		"memory_writes": [

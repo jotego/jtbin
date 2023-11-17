@@ -9,7 +9,8 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "ffightae.rom"
+				"filename": "ffightae.rom",
+				"md5": "09bb8684d066501c0a82d78a02de529a"
 			},
 			{
 				"id": 2,

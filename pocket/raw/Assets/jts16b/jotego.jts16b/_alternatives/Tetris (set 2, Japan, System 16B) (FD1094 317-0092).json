@@ -9,7 +9,8 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "tetris2.rom"
+				"filename": "tetris2.rom",
+				"md5": "91eeb6e782d0812f8c9fa0ea9e993ff9"
 			}
 		],
 		"memory_writes": [

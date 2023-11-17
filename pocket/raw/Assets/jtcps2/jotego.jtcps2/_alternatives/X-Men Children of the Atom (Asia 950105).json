@@ -9,7 +9,8 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "xmcotaa.rom"
+				"filename": "xmcotaa.rom",
+				"md5": "407571cb28ffec3202edfb31e2a0dfc0"
 			},
 			{
 				"id": 2,

@@ -9,7 +9,8 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "mshj.rom"
+				"filename": "mshj.rom",
+				"md5": "4bd9cb87e0c6c01751ef75474e991d0d"
 			},
 			{
 				"id": 2,

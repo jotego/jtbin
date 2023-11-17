@@ -42,8 +42,37 @@
 				]
 			},
 			{
-				"name": "Coin A",
+				"name": "Dial sensitivity",
 				"id": 2,
+				"type": "list",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfb000004",
+				"defaultval": 3,
+				"value": 0,
+				"mask": "0xFFFFFFFC",
+				"options": [
+					{
+						"name": "very high",
+						"value": "0x1"
+					},
+					{
+						"name": "high",
+						"value": "0x0"
+					},
+					{
+						"name": "low",
+						"value": "0x3"
+					},
+					{
+						"name": "very low",
+						"value": "0x2"
+					}
+				]
+			},
+			{
+				"name": "Coin A",
+				"id": 3,
 				"type": "list",
 				"enabled": true,
 				"persist": true,
@@ -88,7 +117,7 @@
 			},
 			{
 				"name": "Coin B",
-				"id": 3,
+				"id": 4,
 				"type": "list",
 				"enabled": true,
 				"persist": true,
@@ -133,7 +162,7 @@
 			},
 			{
 				"name": "Difficulty",
-				"id": 4,
+				"id": 5,
 				"type": "list",
 				"enabled": true,
 				"persist": true,
@@ -178,7 +207,7 @@
 			},
 			{
 				"name": "Lives",
-				"id": 5,
+				"id": 6,
 				"type": "list",
 				"enabled": true,
 				"persist": true,
@@ -207,7 +236,7 @@
 			},
 			{
 				"name": "Free Play",
-				"id": 6,
+				"id": 7,
 				"type": "check",
 				"enabled": true,
 				"persist": true,
@@ -219,7 +248,7 @@
 			},
 			{
 				"name": "Freeze",
-				"id": 7,
+				"id": 8,
 				"type": "check",
 				"enabled": true,
 				"persist": true,
@@ -231,7 +260,7 @@
 			},
 			{
 				"name": "Flip Screen",
-				"id": 8,
+				"id": 9,
 				"type": "check",
 				"enabled": true,
 				"persist": true,
@@ -243,7 +272,7 @@
 			},
 			{
 				"name": "Demo Sounds",
-				"id": 9,
+				"id": 10,
 				"type": "check",
 				"enabled": true,
 				"persist": true,
@@ -255,7 +284,7 @@
 			},
 			{
 				"name": "Allow Continue",
-				"id": 10,
+				"id": 11,
 				"type": "check",
 				"enabled": true,
 				"persist": true,
@@ -267,7 +296,7 @@
 			},
 			{
 				"name": "Game Mode",
-				"id": 11,
+				"id": 12,
 				"type": "list",
 				"enabled": true,
 				"persist": true,

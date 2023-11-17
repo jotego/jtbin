@@ -9,7 +9,8 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "spangj.rom"
+				"filename": "spangj.rom",
+				"md5": "5823bbd86a21da56f948655b6ab31dd4"
 			},
 			{
 				"id": 2,

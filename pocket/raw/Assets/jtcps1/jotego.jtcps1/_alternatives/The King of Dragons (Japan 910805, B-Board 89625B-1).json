@@ -9,7 +9,8 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "kodja.rom"
+				"filename": "kodja.rom",
+				"md5": "2010f2e8f9467b2af86ecea9bf052900"
 			},
 			{
 				"id": 2,

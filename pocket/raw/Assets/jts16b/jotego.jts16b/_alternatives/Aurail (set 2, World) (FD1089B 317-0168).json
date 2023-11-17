@@ -9,7 +9,8 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "aurail1.rom"
+				"filename": "aurail1.rom",
+				"md5": "946db3c1eebdcb619b58bfa7ade63943"
 			}
 		],
 		"memory_writes": [

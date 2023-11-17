@@ -32,7 +32,12 @@
     <rotation>horizontal</rotation>
     <region>World</region>
     <mraauthor>jotego</mraauthor>
-    <rom index="0" zip="tigeroad.zip" md5="None" asm_md5="b4e185029189fc14df629af79a32fca7">
+    <rom index="0" zip="tigeroad.zip" md5="None" asm_md5="83fe4481829c121f4e299d9a0535166e">
+        <!--  Header to identify the PCB type
+        Byte 0 = 0 for Tiger Road, 1 for F1-Dream, 2 for Tora e no michi
+ -->
+        <part>
+            00 00 </part>
         <!-- maincpu - starts at 0x0 - length 0x40000 (18 bits) -->
         <interleave output="16">
             <part name="tre_04.6k" crc="73bfbf4a" map="01"/>

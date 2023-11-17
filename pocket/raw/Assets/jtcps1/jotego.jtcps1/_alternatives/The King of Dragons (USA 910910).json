@@ -9,7 +9,8 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "kodu.rom"
+				"filename": "kodu.rom",
+				"md5": "afdd82f2b6afa54cc9ddf529142028c3"
 			},
 			{
 				"id": 2,

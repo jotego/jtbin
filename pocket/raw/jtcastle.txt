@@ -6,7 +6,7 @@ the required .rom file using the mra tool (read below).
 Place the *.rom files in Assets/jtcastle/common
 
 Akuma-Jou Dracula (Japan version P) --> akumajou.rom
-Akuma-Jou Dracula (Japan version N) --> akumaoun.rom
+Akuma-Jou Dracula (Japan version N) --> akumajoun.rom
 Haunted Castle (version M) --> hcastle.rom
 Haunted Castle (version E) --> hcastlee.rom
 Haunted Castle (version K) --> hcastlek.rom

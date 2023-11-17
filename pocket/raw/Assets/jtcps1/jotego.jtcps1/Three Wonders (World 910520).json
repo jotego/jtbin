@@ -9,7 +9,8 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "3wonders.rom"
+				"filename": "3wonders.rom",
+				"md5": "b39387a71b81384e59317ba421c767d8"
 			},
 			{
 				"id": 2,

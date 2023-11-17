@@ -9,7 +9,8 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "wonder3.rom"
+				"filename": "wonder3.rom",
+				"md5": "cf05172a2bac132869872f0f00aa62ee"
 			},
 			{
 				"id": 2,

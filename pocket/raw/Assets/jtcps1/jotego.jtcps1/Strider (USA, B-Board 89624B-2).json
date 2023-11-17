@@ -9,7 +9,8 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "strider.rom"
+				"filename": "strider.rom",
+				"md5": "0de57eaedbb520fcb4c938b667808061"
 			},
 			{
 				"id": 2,

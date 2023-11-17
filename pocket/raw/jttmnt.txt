@@ -8,9 +8,9 @@ Place the *.rom files in Assets/jttmnt/common
 M.I.A. - Missing in Action (version T) --> mia.rom
 M.I.A. - Missing in Action (version S) --> mia2.rom
 Punk Shot (US 4 Players) --> punkshot.rom
-Punk Shot (US 2 Players) --> punksot2.rom
-Punk Shot (World 2 Players) --> punkst2e.rom
-Punk Shot (Japan 2 Players) --> punksotj.rom
+Punk Shot (US 2 Players) --> punkshot2.rom
+Punk Shot (World 2 Players) --> punkshot2e.rom
+Punk Shot (Japan 2 Players) --> punkshotj.rom
 Teenage Mutant Hero Turtles (UK 4 Players, version F) --> tmht.rom
 Teenage Mutant Hero Turtles (UK 2 Players, version U) --> tmht2p.rom
 Teenage Mutant Hero Turtles (UK 2 Players, version ?) --> tmht2pa.rom

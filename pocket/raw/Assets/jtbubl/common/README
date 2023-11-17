@@ -1,12 +1,12 @@
 Place the following files in this folder:
 
 bublbobl.rom
-bublbbl1.rom
-bublbblr.rom
-bublblr1.rom
+bublbobl1.rom
+bublboblr.rom
+bublboblr1.rom
 bublcave.rom
-bublce10.rom
-bublce11.rom
+bublcave10.rom
+bublcave11.rom
 tokiob.rom
 
 These files are generated using the mra tool in:

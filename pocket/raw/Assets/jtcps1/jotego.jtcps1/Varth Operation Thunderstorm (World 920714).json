@@ -9,7 +9,8 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "varth.rom"
+				"filename": "varth.rom",
+				"md5": "77cb793841b0336c769da0f216595ed1"
 			},
 			{
 				"id": 2,

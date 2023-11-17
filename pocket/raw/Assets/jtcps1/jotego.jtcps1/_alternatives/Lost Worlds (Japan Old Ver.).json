@@ -9,7 +9,8 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "lostwldo.rom"
+				"filename": "lostwrldo.rom",
+				"md5": "d00971c0579013041fcfc1ad83ac0035"
 			},
 			{
 				"id": 2,

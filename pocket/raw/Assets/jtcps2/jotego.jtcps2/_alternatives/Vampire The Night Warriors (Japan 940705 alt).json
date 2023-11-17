@@ -9,7 +9,8 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "vampja.rom"
+				"filename": "vampja.rom",
+				"md5": "8a11c65280dfd51f2afa6986b5dc26d6"
 			},
 			{
 				"id": 2,

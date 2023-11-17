@@ -9,7 +9,8 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "extrmtnj.rom"
+				"filename": "extrmatnj.rom",
+				"md5": "2b12878a00c3069ac6ad72a6fa7f2cd2"
 			}
 		],
 		"memory_writes": [

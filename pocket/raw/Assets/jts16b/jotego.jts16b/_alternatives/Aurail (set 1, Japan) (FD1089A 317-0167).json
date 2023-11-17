@@ -9,7 +9,8 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "aurailj.rom"
+				"filename": "aurailj.rom",
+				"md5": "c177237cada99fcbd0764f0b3cde1981"
 			}
 		],
 		"memory_writes": [

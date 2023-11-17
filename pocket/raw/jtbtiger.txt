@@ -7,7 +7,7 @@ Place the *.rom files in Assets/jtbtiger/common
 
 Black Dragon (Japan) --> blkdrgon.rom
 Black Tiger --> blktiger.rom
-Black Tiger (older) --> blktiera.rom
+Black Tiger (older) --> blktigera.rom
 
 
 These files are generated using the mra tool in:

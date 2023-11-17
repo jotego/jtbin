@@ -7,10 +7,10 @@ Place the *.rom files in Assets/jtdd/common
 
 Double Dragon (Japan) --> ddragon.rom
 Double Dragon (US set 1) --> ddragonu.rom
-Double Dragon (US set 2) --> ddragnua.rom
-Double Dragon (US set 3) --> ddragnub.rom
+Double Dragon (US set 2) --> ddragonua.rom
+Double Dragon (US set 3) --> ddragonub.rom
 Double Dragon (World set 1) --> ddragonw.rom
-Double Dragon (World set 2) --> ddragnw1.rom
+Double Dragon (World set 2) --> ddragonw1.rom
 
 
 These files are generated using the mra tool in:

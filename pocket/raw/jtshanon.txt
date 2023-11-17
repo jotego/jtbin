@@ -9,8 +9,8 @@ Super Hang-On (sitdown-upright) (unprotected) --> shangon.rom
 Super Hang-On (mini ride-on) (FD1089B 317-0034) --> shangon1.rom
 Super Hang-On (mini ride-on, Rev A) (FD1089B 317-0034) --> shangon2.rom
 Super Hang-On (sitdown-upright) (FD1089B 317-0034) --> shangon3.rom
-Super Hang-On (sitdown-upright) (bootleg of FD1089B 317-0034 set) --> shangn3d.rom
-Limited Edition Hang-On --> shangnle.rom
+Super Hang-On (sitdown-upright) (bootleg of FD1089B 317-0034 set) --> shangon3d.rom
+Limited Edition Hang-On --> shangonle.rom
 
 
 These files are generated using the mra tool in:

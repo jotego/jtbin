@@ -9,7 +9,8 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "gnga.rom"
+				"filename": "gnga.rom",
+				"md5": "ea92dcc98df0252769ba50d8bc1935a4"
 			}
 		],
 		"memory_writes": [

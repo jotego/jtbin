@@ -1,7 +1,7 @@
 Place the following files in this folder:
 
 bootcamp.rom
-bootcmpa.rom
+bootcampa.rom
 combatsc.rom
 
 These files are generated using the mra tool in:

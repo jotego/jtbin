@@ -9,7 +9,8 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "kodr2.rom"
+				"filename": "kodr2.rom",
+				"md5": "7558b2d5197f46234e2e3c53f4a0f13a"
 			},
 			{
 				"id": 2,

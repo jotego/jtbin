@@ -9,7 +9,8 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "xmcotajr.rom"
+				"filename": "xmcotajr.rom",
+				"md5": "07f12f564f8aa4f62611d634b2d05b20"
 			},
 			{
 				"id": 2,

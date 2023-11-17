@@ -9,7 +9,8 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "mshvsfb.rom"
+				"filename": "mshvsfb.rom",
+				"md5": "045d8195611d3056b1fabd84a06c44b0"
 			},
 			{
 				"id": 2,

@@ -12,9 +12,9 @@ Rastan (US Rev 1) --> rastanu.rom
 Rastan (US) --> rastanua.rom
 Rastan (US, earlier code base) --> rastanub.rom
 Rastan Saga (Japan Rev 1) --> rastsaga.rom
-Rastan Saga (Japan Rev 1, earlier code base) --> rastsgaa.rom
-Rastan Saga (bootleg, Japan Rev 1, earlier code base) --> rastsabl.rom
-Rastan Saga (Japan, earlier code base) --> rastsgab.rom
+Rastan Saga (Japan Rev 1, earlier code base) --> rastsagaa.rom
+Rastan Saga (bootleg, Japan Rev 1, earlier code base) --> rastsagaabl.rom
+Rastan Saga (Japan, earlier code base) --> rastsagab.rom
 
 
 These files are generated using the mra tool in:

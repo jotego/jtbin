@@ -9,7 +9,8 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "wndrplnt.rom"
+				"filename": "wndrplnt.rom",
+				"md5": "e81ae47504db6a4446676dfb39dfbab0"
 			}
 		],
 		"memory_writes": [

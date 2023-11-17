@@ -1,12 +1,12 @@
 Place the following files in this folder:
 
 vigilant.rom
-vigilnta.rom
-vigilntb.rom
-vigilntc.rom
-vigilntd.rom
-vigilntg.rom
-vigilnto.rom
+vigilanta.rom
+vigilantb.rom
+vigilantc.rom
+vigilantd.rom
+vigilantg.rom
+vigilanto.rom
 
 These files are generated using the mra tool in:
 https://github.com/sebdel/mra-tools-c/tree/master/release

@@ -9,7 +9,8 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "progear.rom"
+				"filename": "progear.rom",
+				"md5": "1104d941c107b26220d065299c2b15d6"
 			},
 			{
 				"id": 2,

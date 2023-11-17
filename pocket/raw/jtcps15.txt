@@ -13,11 +13,11 @@ Muscle Bomber: The Body Explosion (Japan 930713) --> mbomberj.rom
 Muscle Bomber Duo: Ultimate Team Battle (World 931206) --> mbombrd.rom
 Muscle Bomber Duo: Heat Up Warriors (Japan 931206) --> mbombrdj.rom
 The Punisher (World 930422) --> punisher.rom
-The Punisher (Hispanic 930422) --> puniserh.rom
-The Punisher (Japan 930422) --> puniserj.rom
-The Punisher (USA 930422) --> puniseru.rom
+The Punisher (Hispanic 930422) --> punisherh.rom
+The Punisher (Japan 930422) --> punisherj.rom
+The Punisher (USA 930422) --> punisheru.rom
 Saturday Night Slam Masters (World 930713) --> slammast.rom
-Saturday Night Slam Masters (USA 930713) --> slammstu.rom
+Saturday Night Slam Masters (USA 930713) --> slammastu.rom
 Warriors of Fate (World 921031) --> wof.rom
 Sangokushi II (Asia 921005) --> wofa.rom
 Tenchi wo Kurau II: Sekiheki no Tatakai (CPS Changer, Japan 921031) --> wofch.rom

@@ -9,7 +9,8 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "hippodrm.rom"
+				"filename": "hippodrm.rom",
+				"md5": "a8bf65155b3daa5dcb5a00a268a09447"
 			},
 			{
 				"id": 2,

@@ -9,7 +9,8 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "bootcamp.rom"
+				"filename": "bootcamp.rom",
+				"md5": "a83efc086b5e9a1a1ce0cc1d93ba8706"
 			}
 		],
 		"memory_writes": [

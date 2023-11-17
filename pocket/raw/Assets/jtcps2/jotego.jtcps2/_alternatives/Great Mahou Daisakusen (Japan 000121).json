@@ -9,7 +9,8 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "gmahou.rom"
+				"filename": "gmahou.rom",
+				"md5": "fbf2c537cbdb9de26f34c884a39afc56"
 			},
 			{
 				"id": 2,

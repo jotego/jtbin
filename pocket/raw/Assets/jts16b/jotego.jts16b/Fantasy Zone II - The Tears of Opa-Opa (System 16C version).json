@@ -9,7 +9,8 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "fantzn2x.rom"
+				"filename": "fantzn2x.rom",
+				"md5": "ac119bf42d19e581a31ecbf3e60418fc"
 			}
 		],
 		"memory_writes": [

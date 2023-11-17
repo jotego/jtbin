@@ -9,7 +9,8 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "avspj.rom"
+				"filename": "avspj.rom",
+				"md5": "7545a022ef849b82e814813fe1b67bc1"
 			},
 			{
 				"id": 2,

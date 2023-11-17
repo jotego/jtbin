@@ -99,6 +99,7 @@
         </interleave>
         <!-- Total 0x170000 bytes - 1472 kBytes -->
     </rom>
+    <nvram index="2" size="1024"/>
     <rom index="1">
         <part>00</part>
     </rom>

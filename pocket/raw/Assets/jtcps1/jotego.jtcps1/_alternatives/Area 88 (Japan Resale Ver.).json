@@ -9,7 +9,8 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "area88r.rom"
+				"filename": "area88r.rom",
+				"md5": "8781a8fb123ef1850338fb732ecbb42c"
 			},
 			{
 				"id": 2,

@@ -13,9 +13,12 @@ Aliens (Asia) --> aliensa.rom
 Aliens (Japan set 1) --> aliensj.rom
 Aliens (Japan set 2) --> aliensj2.rom
 Aliens (US) --> aliensu.rom
+Crazy Cop (Japan) --> crazycop.rom
 Crime Fighters (World 2 players) --> crimfght.rom
-Crime Fighters (Japan 2 Players) --> crimfhtj.rom
-Crime Fighters (US 4 Players) --> crimfhtu.rom
+Crime Fighters (Japan 2 Players) --> crimfghtj.rom
+Crime Fighters (US 4 Players) --> crimfghtu.rom
+Gang Busters (set 1) --> gbusters.rom
+Gang Busters (set 2) --> gbustersa.rom
 Super Contra (set 1) --> scontra.rom
 Super Contra (set 2) --> scontraa.rom
 Super Contra - Alien no Gyakushuu (Japan) --> scontraj.rom

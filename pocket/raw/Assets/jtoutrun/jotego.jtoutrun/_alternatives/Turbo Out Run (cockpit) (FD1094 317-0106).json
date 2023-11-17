@@ -9,7 +9,8 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "toutrun2.rom"
+				"filename": "toutrun2.rom",
+				"md5": "944284233d5158d190b96ab6726c3925"
 			},
 			{
 				"id": 2,

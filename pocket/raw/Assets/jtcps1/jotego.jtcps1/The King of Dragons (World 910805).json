@@ -9,7 +9,8 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "kod.rom"
+				"filename": "kod.rom",
+				"md5": "76d1507e465c0f609a4f88f0f4d0302a"
 			},
 			{
 				"id": 2,

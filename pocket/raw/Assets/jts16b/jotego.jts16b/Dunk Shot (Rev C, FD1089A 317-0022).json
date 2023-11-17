@@ -9,7 +9,8 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "dunkshot.rom"
+				"filename": "dunkshot.rom",
+				"md5": "e5da57362d10b3368619f43c7d88b2f0"
 			}
 		],
 		"memory_writes": [

@@ -1,14 +1,14 @@
 Place the following files in this folder:
 
 ffantasy.rom
-ffantsya.rom
-ffantsyb.rom
-ffantsyj.rom
+ffantasya.rom
+ffantasyb.rom
+ffantasyj.rom
 hippodrm.rom
 robocop.rom
 robocopj.rom
 robocopu.rom
-robocpu0.rom
+robocopu0.rom
 robocopw.rom
 
 These files are generated using the mra tool in:

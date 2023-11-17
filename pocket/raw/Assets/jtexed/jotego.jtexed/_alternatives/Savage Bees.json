@@ -9,7 +9,8 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "savgbees.rom"
+				"filename": "savgbees.rom",
+				"md5": "0ef5c619ff89dc56a6bfeeecbeb3bbba"
 			}
 		],
 		"memory_writes": [

@@ -9,11 +9,8 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "froundl.rom"
-			},
-			{
-				"id": 17,
-				"filename": "beta.bin"
+				"filename": "froundl.rom",
+				"md5": "b4f7a1b2506094c98fddf820462f5653"
 			}
 		],
 		"memory_writes": [

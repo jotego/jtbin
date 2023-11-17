@@ -6,14 +6,14 @@ the required .rom file using the mra tool (read below).
 Place the *.rom files in Assets/jtsimson/common
 
 The Simpsons (4 Players World, set 1) --> simpsons.rom
-The Simpsons (2 Players World, set 1) --> simpss2p.rom
-The Simpsons (2 Players World, set 2) --> simps2p2.rom
-The Simpsons (2 Players World, set 3) --> simps2p3.rom
-The Simpsons (2 Players Asia) --> simps2pa.rom
-The Simpsons (2 Players Japan) --> simps2pj.rom
-The Simpsons (4 Players Asia) --> simps4pa.rom
-The Simpsons (4 Players World, set 2) --> simps4pe.rom
-The Simpsons (4 Players World, set 3) --> simpspe2.rom
+The Simpsons (2 Players World, set 1) --> simpsons2p.rom
+The Simpsons (2 Players World, set 2) --> simpsons2p2.rom
+The Simpsons (2 Players World, set 3) --> simpsons2p3.rom
+The Simpsons (2 Players Asia) --> simpsons2pa.rom
+The Simpsons (2 Players Japan) --> simpsons2pj.rom
+The Simpsons (4 Players Asia) --> simpsons4pa.rom
+The Simpsons (4 Players World, set 2) --> simpsons4pe.rom
+The Simpsons (4 Players World, set 3) --> simpsons4pe2.rom
 
 
 These files are generated using the mra tool in:

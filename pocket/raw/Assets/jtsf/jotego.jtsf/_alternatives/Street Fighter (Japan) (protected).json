@@ -9,7 +9,8 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "sfj.rom"
+				"filename": "sfj.rom",
+				"md5": "ed5301ca90d1d1abd44e64330242d6f4"
 			}
 		],
 		"memory_writes": [

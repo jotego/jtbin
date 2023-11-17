@@ -9,7 +9,8 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "xmvsfr1.rom"
+				"filename": "xmvsfr1.rom",
+				"md5": "8a6a063d3381d9c1cc1542a59fd41dd2"
 			},
 			{
 				"id": 2,

@@ -1,7 +1,7 @@
 Place the following files in this folder:
 
-kuniounb.rom
-renegdeb.rom
+kuniokunb.rom
+renegadeb.rom
 
 These files are generated using the mra tool in:
 https://github.com/sebdel/mra-tools-c/tree/master/release

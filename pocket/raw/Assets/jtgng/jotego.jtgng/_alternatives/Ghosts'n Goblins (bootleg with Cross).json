@@ -9,7 +9,8 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "gngbl.rom"
+				"filename": "gngbl.rom",
+				"md5": "1f9a21a942a3669a79cae7937119bf19"
 			}
 		],
 		"memory_writes": [

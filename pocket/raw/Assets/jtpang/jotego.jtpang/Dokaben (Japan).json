@@ -9,7 +9,8 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "dokaben.rom"
+				"filename": "dokaben.rom",
+				"md5": "aed01410541f90abb2ae92f2a2dab45f"
 			},
 			{
 				"id": 2,
