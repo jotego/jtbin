@@ -110,7 +110,7 @@
         <dip name="Demo Sounds" bits="8" ids="On,Off"/>
         <dip name="Starting Points" bits="9,11" ids="9000,8000,7000,2000,6000,3000,4000,5000"/>
         <dip name="Point Table" bits="12,13" ids="Hardest,Hard,Easy,Normal"/>
-        <dip name="Difficulty" bits="14,15" ids="Easy,Hard,Hardest,Normal"/>
+        <dip name="Difficulty" bits="14,15" ids="Hardest,-,-,Normal"/>
     </switches>
     <buttons names="button 1,button 2,-,-,Start,Coin,Core credits" default="Y,X,B,A,Start,Select,-" count="2"/>
 </misterromdescription>
