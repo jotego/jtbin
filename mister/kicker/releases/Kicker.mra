@@ -32,7 +32,7 @@
     <rotation>vertical (cw)</rotation>
     <region>World</region>
     <mraauthor>jotego</mraauthor>
-    <rom index="0" zip="kicker.zip" md5="None" asm_md5="9d9079374cb0bda26a02c1747f8a500b">
+    <rom index="0" zip="kicker.zip" md5="None" asm_md5="12553f64903b980db89f7615c00cf622">
         <!-- maincpu - starts at 0x0 - length 0x10000 (16 bits) -->
         <part repeat="0x6000"> FF</part>
         <interleave output="16">
@@ -45,26 +45,26 @@
             <part name="477l05.d11" crc="654037f8" map="12"/>
         </interleave>
         <!-- SCR_START -->
-        <!-- tiles - starts at 0x10000 - length 0x4000 (14 bits) -->
+        <!-- tiles - starts at 0x10000 - length 0x6000 (15 bits) -->
         <interleave output="16">
             <part name="477k07.a11" crc="ff6ca5df" map="01"/>
             <part name="477k06.a10" crc="4d156afc" map="10"/>
         </interleave>
+        <part repeat="0x2000"> FF</part>
         <!-- OBJ_START -->
-        <!-- sprites - starts at 0x14000 - length 0x8000 (15 bits) -->
+        <!-- sprites - starts at 0x16000 - length 0x8000 (15 bits) -->
         <interleave output="16">
             <part name="477k01.h14" crc="61bbf797" map="01"/>
             <part name="477k02.h15" crc="b94e645b" map="10"/>
         </interleave>
-        <!-- JTFRAME_PROM_START -->
         <!-- PCM_START -->
-        <!-- proms - starts at 0x1C000 - length 0x500 (11 bits) -->
+        <!-- proms - starts at 0x1E000 - length 0x500 (11 bits) -->
         <part name="477j10.a12" crc="b09db4b4"/>
         <part name="477j11.a13" crc="270a2bf3"/>
         <part name="477j12.a14" crc="83e95ea8"/>
         <part name="477j09.b8" crc="aa900724"/>
         <part name="477j08.f16" crc="80009cf5"/>
-        <!-- Total 0x1C500 bytes - 113 kBytes -->
+        <!-- Total 0x1E500 bytes - 121 kBytes -->
         <patch offset="0x58C6">3d 3d</patch>
     </rom>
     <!-- Vertical game -->

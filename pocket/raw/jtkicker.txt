@@ -6,7 +6,6 @@ the required .rom file using the mra tool (read below).
 Place the *.rom files in Assets/jtkicker/common
 
 Kicker --> kicker.rom
-Shao-lin's Road (set 2) --> shaolinb.rom
 Shao-lin's Road (set 1) --> shaolins.rom
 
 

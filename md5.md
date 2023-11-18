@@ -372,7 +372,7 @@
 | kchampvs2    | jtkchamp   | 188a54e52be3732f001088f98ce2613f | 9f           |
 | kchampvs3    | jtkchamp   | ca007de1df155ee90f8ca7c189d5d28a | 9f           |
 | kchampvs4    | jtkchamp   | 504c52d8eeaf105393be75574cc8c12d | 9f           |
-| kicker       | jtkicker   | 9d9079374cb0bda26a02c1747f8a500b | ff,5a,ff     |
+| kicker       | jtkicker   | 12553f64903b980db89f7615c00cf622 | ff,5a,ff     |
 | knights      | jtcps1     | 28d67adc3f399d60f904d6bee5669c86 | ff,fc,bf     |
 | knightsj     | jtcps1     | 7fb330ad2b2cd8359fe5bddb40728960 | ff,fc,bf     |
 | knightsja    | jtcps1     | 7fb330ad2b2cd8359fe5bddb40728960 | ff,fc,bf     |
@@ -678,8 +678,7 @@
 | shangon3     | jtshanon   | 9da98cae4f35abee9531bae161dcaadb | ff,fe        |
 | shangon3d    | jtshanon   | 49f4eb68bede0b67f071290135e0ac15 | ff,fe        |
 | shangonle    | jtshanon   | 44ac751a829223f70ada912c66ec1107 | ff,fe        |
-| shaolinb     | jtkicker   | 71b16453cbd863d7da365c04dc95894d | ff,5a,ff     |
-| shaolins     | jtkicker   | 1c659292b39f123844c9f8523af2d5af | ff,5a,ff     |
+| shaolins     | jtkicker   | 298df92593d7f8ee9d16710345fd47a2 | ff,5a,ff     |
 | shinobi      | jts16      | 637b1a03a438168d577ee2ce15f0585b | ff,fc        |
 | shinobi1     | jts16      | 2c6ca20fe0a6c0cadd7c8cfee6238d89 | ff,fc        |
 | shinobi2     | jts16b     | aa4d18f8a2e598ba07c6b68a724a1b57 | ff,fc        |
