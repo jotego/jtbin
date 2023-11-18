@@ -53,162 +53,8 @@
 				]
 			},
 			{
-				"name": "Coin A",
-				"id": 3,
-				"type": "list",
-				"enabled": true,
-				"persist": true,
-				"address": "0xfa000000",
-				"defaultval": 15,
-				"value": 0,
-				"mask": "0xFFFFFFF0",
-				"options": [
-					{
-						"name": "Free Play (if Coin B too) or 1/1",
-						"value": "0x0"
-					},
-					{
-						"name": "1 Coin/1 Credit, 2/3",
-						"value": "0x1"
-					},
-					{
-						"name": "1 Coin/1 Credit, 4/5",
-						"value": "0x2"
-					},
-					{
-						"name": "1 Coin/1 Credit, 5/6",
-						"value": "0x3"
-					},
-					{
-						"name": "2 Coins/1 Credit, 4/3",
-						"value": "0x4"
-					},
-					{
-						"name": "2 Coins/1 Credit, 5/3, 6/4",
-						"value": "0x5"
-					},
-					{
-						"name": "2 Coins/3 Credits",
-						"value": "0x6"
-					},
-					{
-						"name": "4 Coins/1 Credit",
-						"value": "0x7"
-					},
-					{
-						"name": "3 Coins/1 Credit",
-						"value": "0x8"
-					},
-					{
-						"name": "2 Coins/1 Credit",
-						"value": "0x9"
-					},
-					{
-						"name": "1 Coin/6 Credits",
-						"value": "0xA"
-					},
-					{
-						"name": "1 Coin/5 Credits",
-						"value": "0xB"
-					},
-					{
-						"name": "1 Coin/4 Credits",
-						"value": "0xC"
-					},
-					{
-						"name": "1 Coin/3 Credits",
-						"value": "0xD"
-					},
-					{
-						"name": "1 Coin/2 Credits",
-						"value": "0xE"
-					},
-					{
-						"name": "1 Coin/1 Credit",
-						"value": "0xF"
-					}
-				]
-			},
-			{
-				"name": "Coin B",
-				"id": 4,
-				"type": "list",
-				"enabled": true,
-				"persist": true,
-				"address": "0xfa000000",
-				"defaultval": 15,
-				"value": 0,
-				"mask": "0xFFFFFF0F",
-				"options": [
-					{
-						"name": "Free Play (if Coin A too) or 1/1",
-						"value": "0x0"
-					},
-					{
-						"name": "1 Coin/1 Credit, 2/3",
-						"value": "0x10"
-					},
-					{
-						"name": "1 Coin/1 Credit, 4/5",
-						"value": "0x20"
-					},
-					{
-						"name": "1 Coin/1 Credit, 5/6",
-						"value": "0x30"
-					},
-					{
-						"name": "2 Coins/1 Credit, 4/3",
-						"value": "0x40"
-					},
-					{
-						"name": "2 Coins/1 Credit, 5/3, 6/4",
-						"value": "0x50"
-					},
-					{
-						"name": "2 Coins/3 Credits",
-						"value": "0x60"
-					},
-					{
-						"name": "4 Coins/1 Credit",
-						"value": "0x70"
-					},
-					{
-						"name": "3 Coins/1 Credit",
-						"value": "0x80"
-					},
-					{
-						"name": "2 Coins/1 Credit",
-						"value": "0x90"
-					},
-					{
-						"name": "1 Coin/6 Credits",
-						"value": "0xA0"
-					},
-					{
-						"name": "1 Coin/5 Credits",
-						"value": "0xB0"
-					},
-					{
-						"name": "1 Coin/4 Credits",
-						"value": "0xC0"
-					},
-					{
-						"name": "1 Coin/3 Credits",
-						"value": "0xD0"
-					},
-					{
-						"name": "1 Coin/2 Credits",
-						"value": "0xE0"
-					},
-					{
-						"name": "1 Coin/1 Credit",
-						"value": "0xF0"
-					}
-				]
-			},
-			{
 				"name": "Cabinet",
-				"id": 5,
+				"id": 3,
 				"type": "list",
 				"enabled": true,
 				"persist": true,
@@ -229,7 +75,7 @@
 			},
 			{
 				"name": "Extended Score",
-				"id": 6,
+				"id": 4,
 				"type": "list",
 				"enabled": true,
 				"persist": true,
@@ -306,7 +152,7 @@
 			},
 			{
 				"name": "Number Match",
-				"id": 7,
+				"id": 5,
 				"type": "check",
 				"enabled": true,
 				"persist": true,
@@ -317,7 +163,7 @@
 			},
 			{
 				"name": "Pin Rebound",
-				"id": 8,
+				"id": 6,
 				"type": "list",
 				"enabled": true,
 				"persist": true,
@@ -338,7 +184,7 @@
 			},
 			{
 				"name": "Lives",
-				"id": 9,
+				"id": 7,
 				"type": "list",
 				"enabled": true,
 				"persist": true,
@@ -359,7 +205,7 @@
 			},
 			{
 				"name": "Flip Screen",
-				"id": 10,
+				"id": 8,
 				"type": "check",
 				"enabled": true,
 				"persist": true,
@@ -371,7 +217,7 @@
 			},
 			{
 				"name": "Out Lane Pin",
-				"id": 11,
+				"id": 9,
 				"type": "list",
 				"enabled": true,
 				"persist": true,
@@ -392,7 +238,7 @@
 			},
 			{
 				"name": "Special",
-				"id": 12,
+				"id": 10,
 				"type": "list",
 				"enabled": true,
 				"persist": true,
@@ -421,7 +267,7 @@
 			},
 			{
 				"name": "Allow Continue",
-				"id": 13,
+				"id": 11,
 				"type": "check",
 				"enabled": true,
 				"persist": true,
