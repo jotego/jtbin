@@ -22,6 +22,10 @@ Gang Busters (set 2) --> gbustersa.rom
 Super Contra (set 1) --> scontra.rom
 Super Contra (set 2) --> scontraa.rom
 Super Contra - Alien no Gyakushuu (Japan) --> scontraj.rom
+Thunder Cross (set 1) --> thunderx.rom
+Thunder Cross (set 2) --> thunderxa.rom
+Thunder Cross (set 3) --> thunderxb.rom
+Thunder Cross (Japan) --> thunderxj.rom
 
 
 These files are generated using the mra tool in:

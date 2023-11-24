@@ -364,27 +364,6 @@
 				"mask": "0xFFBFFFFF"
 			},
 			{
-				"name": "Game Mode",
-				"id": 14,
-				"type": "list",
-				"enabled": true,
-				"persist": true,
-				"address": "0xfa000000",
-				"defaultval": 1,
-				"value": 0,
-				"mask": "0xFF7FFFFF",
-				"options": [
-					{
-						"name": "Test",
-						"value": "0x0"
-					},
-					{
-						"name": "Game",
-						"value": "0x800000"
-					}
-				]
-			},
-			{
 				"name": "Default",
 				"id": 1015,
 				"type": "number_u32",

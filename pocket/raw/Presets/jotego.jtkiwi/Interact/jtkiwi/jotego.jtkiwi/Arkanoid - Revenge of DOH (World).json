@@ -283,18 +283,6 @@
 				]
 			},
 			{
-				"name": "Allow Continue",
-				"id": 13,
-				"type": "check",
-				"enabled": true,
-				"persist": true,
-				"address": "0xfa000000",
-				"defaultval": 1,
-				"value": 0,
-				"value_off": 32768,
-				"mask": "0xFFFF7FFF"
-			},
-			{
 				"name": "Default",
 				"id": 1015,
 				"type": "number_u32",

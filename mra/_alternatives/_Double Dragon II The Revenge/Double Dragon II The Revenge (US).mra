@@ -47,8 +47,8 @@
         <part name="26j6-0.bin" crc="a84b2a29"/>
         <part name="26j7-0.bin" crc="bc6a48d5"/>
         <part repeat="0x10000"> FF</part>
-        <!-- CHAR_START -->
         <!-- JTFRAME_BA2_START -->
+        <!-- CHAR_START -->
         <!-- gfx1 - starts at 0x80000 - length 0x10000 (16 bits) -->
         <part name="26a8-0.bin" crc="3ad1049c"/>
         <!-- SCR_START -->

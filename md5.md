@@ -763,6 +763,10 @@
 | tetris1      | jts16b     | e9cca35f63ff528a07057065e30c5d0d | ff,fd        |
 | tetris2      | jts16b     | 91eeb6e782d0812f8c9fa0ea9e993ff9 | ff,fd        |
 | tetris3      | jts16      | 087b6c2e4d938e9d703895c6665a6f92 | ff,fd        |
+| thunderx     | jtaliens   | 719a5706ab5e24f82b68c5d7ab7b671d | ff,7a,ff     |
+| thunderxa    | jtaliens   | 70bd6648995047cd65d5c551e75a3bf3 | ff,7a,ff     |
+| thunderxb    | jtaliens   | 3c74200b62e7eb71d91b1f09046fb50d | ff,7a,ff     |
+| thunderxj    | jtaliens   | a2ecc81bf6a562bd8225ebbf624221c7 | ff,7e,ff     |
 | tigeroad     | jttora     | 83fe4481829c121f4e299d9a0535166e | ff,ff        |
 | tigeroadu    | jttora     | 9cd527af2dc43b4204e5e6375613d11a | ff,ff        |
 | timescan     | jts16b     | 9096991c6f3aab9fe5a4fffc38d927be | ff,ff,ff     |

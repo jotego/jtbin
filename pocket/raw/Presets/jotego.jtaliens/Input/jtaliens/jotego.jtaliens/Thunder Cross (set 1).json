@@ -7,18 +7,13 @@
 				"mappings": [
 					{
 						"id": 0,
-						"name": "Bounce",
+						"name": "Shoot",
 						"key": "pad_btn_a"
 					},
 					{
 						"id": 1,
-						"name": "Throw",
+						"name": "Option adjust",
 						"key": "pad_btn_b"
-					},
-					{
-						"id": 2,
-						"name": "Pass",
-						"key": "pad_btn_x"
 					}
 				]
 			}

@@ -10,8 +10,8 @@
 			"description": "Arcade hardware",
 			"author": "jotego",
 			"url": "https://patreon.com/jotego",
-			"version": "noversion",
-			"date_release": "2023-11-17"
+			"version": "1.5.0",
+			"date_release": "2023-11-24"
 		},
 		"framework": {
 			"target_product": "Analogue Pocket",
