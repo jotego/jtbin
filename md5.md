@@ -117,8 +117,8 @@
 | blockr2      | jtpang     | c37a1f43e34f7ba59ba34c44a67f719d |              |
 | bootcamp     | jtcomsc    | a83efc086b5e9a1a1ce0cc1d93ba8706 | ff,7b,ff     |
 | bootcampa    | jtcomsc    | baaa45c8f5484ad876680676b0dc8bb1 | ff,7b,ff     |
-| bouldash     | jtslyspy   | 8b470f64f4920165a6461f9ca169c933 | 7f7f         |
-| bouldashj    | jtslyspy   | 85af95beecf462c540bc75d74abec09c | 7f7f         |
+| bouldash     | jtslyspy   | 8b470f64f4920165a6461f9ca169c933 | 7f,7f        |
+| bouldashj    | jtslyspy   | 85af95beecf462c540bc75d74abec09c | 7f,7f        |
 | bublbobl     | jtbubl     | bec8577036a5a00bc951d46874015443 | ff,ff        |
 | bublbobl1    | jtbubl     | 1e6a665089893631de4c424e278e7e75 | ff,ff        |
 | bublboblr    | jtbubl     | 69f6e08c8f29e4ef3cdec59b34cb8863 | ff,ff        |
@@ -576,8 +576,8 @@
 | sdi          | jts16      | ed4e3c4a952505271874a0076c4089fd | ff,fd        |
 | sdia         | jts16      | f728c6163c6a5a2150820dc62668450a | ff,fd        |
 | sdib         | jts16b     | f7f5e7d5ca410726ecaa2af134da1913 | ff,fd        |
-| secretag     | jtslyspy   | 8eb03cffa519d64ac64dc3c84792d5ad | ff7f         |
-| secretagj    | jtslyspy   | 730e7a6151751257d98935cca45c9dd5 | ff7f         |
+| secretag     | jtslyspy   | 8eb03cffa519d64ac64dc3c84792d5ad | 7f,ff        |
+| secretagj    | jtslyspy   | 730e7a6151751257d98935cca45c9dd5 | 7f,ff        |
 | sectionz     | jtsectnz   | de77ec79f7b238bec57a5af46ada624b | ff,3f        |
 | sectionza    | jtsectnz   | d38a7bb9e9b4e665791e2857b2f2fe70 | ff,3f        |
 | sf           | jtsf       | 04af14d331248eca94dd9abb72678c4c | ff,df,ff,ff  |
@@ -704,9 +704,9 @@
 | sjryuko1     | jts16      | 7735c267ab3a53c5a032f5c49183fc14 | ff,fb        |
 | slammast     | jtcps15    | 313b1b55f32092e408b79fd7a34a0962 | ff           |
 | slammastu    | jtcps15    | ce1b77141ec7606bd656100d9a41e0e2 | ff           |
-| slyspy       | jtslyspy   | e497455caff76c29998aeff151420b06 | ff7f         |
-| slyspy2      | jtslyspy   | b1ec16993f4b8d6d34022313f26f469b | ff7f         |
-| slyspy3      | jtslyspy   | 0e9c749b8b2930fdcdb48636f70cc24b | ff7f         |
+| slyspy       | jtslyspy   | e497455caff76c29998aeff151420b06 | 7f,ff        |
+| slyspy2      | jtslyspy   | b1ec16993f4b8d6d34022313f26f469b | 7f,ff        |
+| slyspy3      | jtslyspy   | 0e9c749b8b2930fdcdb48636f70cc24b | 7f,ff        |
 | smbomb       | jtcps2     | 9da8a24cba721adbd6e1e4a265d76260 |              |
 | smbombr1     | jtcps2     | 856d3565f8c5379e3b8a9f661e837ed1 |              |
 | sonicbom     | jts16b     | cf53c5348b3217efeefadfb5612757fa | ff,7f        |
