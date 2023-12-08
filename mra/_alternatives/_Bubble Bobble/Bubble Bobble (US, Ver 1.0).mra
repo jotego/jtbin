@@ -32,7 +32,7 @@
     <rotation>horizontal</rotation>
     <region>World</region>
     <mraauthor>jotego</mraauthor>
-    <rom index="0" zip="bublboblr1.zip|bublbobl.zip" md5="None" asm_md5="db317ac6596d65573c1d176a3990bd76">
+    <rom index="0" zip="bublboblr1.zip|bublbobl.zip" md5="None" asm_md5="653f66c974f48040c2406cdc8e787e66">
         <!--  Header to identify the PCB type
         Byte 0 = 0 for Bubble Bobble (MC6801 MCU)
                  1 for Tokio (MC68705 MCU)
@@ -51,11 +51,7 @@
         <!-- audiocpu - starts at 0x30000 - length 0x8000 (15 bits) -->
         <part name="a78-07.46" crc="4f9a26e8"/>
         <!-- JTFRAME_BA2_START -->
-        <!-- mcu - starts at 0x38000 - length 0x8000 (15 bits) -->
-        <part name="a78-01.17" crc="b1bfb53d"/>
-        <part repeat="0x7000"> FF</part>
-        <!-- JTFRAME_BA3_START -->
-        <!-- gfx1 - starts at 0x40000 - length 0x80000 (19 bits) -->
+        <!-- gfx1 - starts at 0x38000 - length 0x80000 (19 bits) -->
         <interleave output="16">
             <part name="a78-15.30" crc="6b61a413" map="01"/>
             <part name="a78-09.12" crc="20358c22" map="10"/>
@@ -81,6 +77,10 @@
             <part name="a78-14.17" crc="7b5369a8" map="10"/>
         </interleave>
         <part repeat="0x20000"> FF</part>
+        <!-- MCU_START -->
+        <!-- mcu - starts at 0xB8000 - length 0x8000 (15 bits) -->
+        <part name="a78-01.17" crc="b1bfb53d"/>
+        <part repeat="0x7000"> FF</part>
         <!-- JTFRAME_PROM_START -->
         <!-- proms - starts at 0xC0000 - length 0x100 (8 bits) -->
         <part name="a71-25.41" crc="2d0f8545"/>

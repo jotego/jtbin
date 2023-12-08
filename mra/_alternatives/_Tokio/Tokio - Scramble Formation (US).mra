@@ -32,7 +32,7 @@
     <rotation>vertical (cw)</rotation>
     <region>World</region>
     <mraauthor>jotego</mraauthor>
-    <rom index="0" zip="tokiou.zip|tokio.zip" md5="None" asm_md5="354f92872122644a18cbb9d68e96d656">
+    <rom index="0" zip="tokiou.zip|tokio.zip" md5="None" asm_md5="c87772c6742663ad846c0b22d7f0d8a5">
         <!--  Header to identify the PCB type
         Byte 0 = 0 for Bubble Bobble (MC6801 MCU)
                  1 for Tokio (MC68705 MCU)
@@ -53,11 +53,7 @@
         <!-- audiocpu - starts at 0x30000 - length 0x8000 (15 bits) -->
         <part name="a71-07.ic10" crc="f298cc7b"/>
         <!-- JTFRAME_BA2_START -->
-        <!-- mcu - starts at 0x38000 - length 0x8000 (15 bits) -->
-        <part name="a71__24.ic57" crc="0f4b25de"/>
-        <part repeat="0x7800"> FF</part>
-        <!-- JTFRAME_BA3_START -->
-        <!-- gfx1 - starts at 0x40000 - length 0x80000 (19 bits) -->
+        <!-- gfx1 - starts at 0x38000 - length 0x80000 (19 bits) -->
         <interleave output="16">
             <part name="a71-16.ic30" crc="0bce35b6" map="01"/>
             <part name="a71-08.ic12" crc="0439ab13" map="10"/>
@@ -90,6 +86,10 @@
             <part name="a71-23.ic37" crc="30bd46ad" map="01"/>
             <part name="a71-15.ic19" crc="12d87e7f" map="10"/>
         </interleave>
+        <!-- MCU_START -->
+        <!-- mcu - starts at 0xB8000 - length 0x8000 (15 bits) -->
+        <part name="a71__24.ic57" crc="0f4b25de"/>
+        <part repeat="0x7800"> FF</part>
         <!-- JTFRAME_PROM_START -->
         <!-- proms - starts at 0xC0000 - length 0x100 (8 bits) -->
         <part name="a71-25.ic41" crc="2d0f8545"/>
