@@ -5,7 +5,9 @@ The following arcade titles are compatible with this core. Generate
 the required .rom file using the mra tool (read below).
 Place the *.rom files in Assets/jtkunio/common
 
+Nekketsu Kouha Kunio-kun (Japan) --> kuniokun.rom
 Nekketsu Kouha Kunio-kun (Japan bootleg) --> kuniokunb.rom
+Renegade (US) --> renegade.rom
 Renegade (US bootleg) --> renegadeb.rom
 
 

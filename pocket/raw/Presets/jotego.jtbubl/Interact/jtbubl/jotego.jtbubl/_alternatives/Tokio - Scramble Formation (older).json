@@ -1,0 +1,283 @@
+{
+	"interact":{
+		"magic": "APF_VER_1",
+		"variables": [
+			{
+				"name": "Version",
+				"id": 1000,
+				"type": "number_u32",
+				"enabled": false,
+				"persist": false,
+				"address": "0xFF000000",
+				"defaultval": 0,
+				"value": 0
+			},
+			{
+				"name": "Rotate screen",
+				"id": 1,
+				"type": "check",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfb000000",
+				"defaultval": 4,
+				"value": 4,
+				"mask": "0xFFFFFFFB"
+			},
+			{
+				"name": "FX Volume",
+				"id": 2,
+				"type": "list",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfb000000",
+				"defaultval": 0,
+				"value": 0,
+				"mask": "0xFFFFFF3F",
+				"options": [
+					{
+						"name": "high",
+						"value": "0x00"
+					},
+					{
+						"name": "very high",
+						"value": "0x40"
+					},
+					{
+						"name": "very low",
+						"value": "0x80"
+					},
+					{
+						"name": "low",
+						"value": "0xc0"
+					}
+				]
+			},
+			{
+				"name": "Cabinet",
+				"id": 3,
+				"type": "list",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 0,
+				"value": 0,
+				"mask": "0xFFFFFFFE",
+				"options": [
+					{
+						"name": "Upright",
+						"value": "0x0"
+					},
+					{
+						"name": "Cocktail",
+						"value": "0x1"
+					}
+				]
+			},
+			{
+				"name": "Flip Screen",
+				"id": 4,
+				"type": "check",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 0,
+				"value": 0,
+				"value_off": 2,
+				"mask": "0xFFFFFFFD"
+			},
+			{
+				"name": "Service Mode",
+				"id": 5,
+				"type": "check",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 0,
+				"value": 0,
+				"value_off": 4,
+				"mask": "0xFFFFFFFB"
+			},
+			{
+				"name": "Demo Sounds",
+				"id": 6,
+				"type": "check",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 1,
+				"value": 8,
+				"mask": "0xFFFFFFF7"
+			},
+			{
+				"name": "Coin A",
+				"id": 7,
+				"type": "list",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 3,
+				"value": 0,
+				"mask": "0xFFFFFFCF",
+				"options": [
+					{
+						"name": "2 Coins/3 Credits",
+						"value": "0x0"
+					},
+					{
+						"name": "2 Coins/1 Credit",
+						"value": "0x10"
+					},
+					{
+						"name": "1 Coin/2 Credits",
+						"value": "0x20"
+					},
+					{
+						"name": "1 Coin/1 Credit",
+						"value": "0x30"
+					}
+				]
+			},
+			{
+				"name": "Coin B",
+				"id": 8,
+				"type": "list",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 3,
+				"value": 0,
+				"mask": "0xFFFFFF3F",
+				"options": [
+					{
+						"name": "2 Coins/3 Credits",
+						"value": "0x0"
+					},
+					{
+						"name": "2 Coins/1 Credit",
+						"value": "0x40"
+					},
+					{
+						"name": "1 Coin/2 Credits",
+						"value": "0x80"
+					},
+					{
+						"name": "1 Coin/1 Credit",
+						"value": "0xC0"
+					}
+				]
+			},
+			{
+				"name": "Enemies",
+				"id": 9,
+				"type": "list",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 0,
+				"value": 0,
+				"mask": "0xFFFFFEFF",
+				"options": [
+					{
+						"name": "Many (Hard)",
+						"value": "0x0"
+					},
+					{
+						"name": "Few (Easy)",
+						"value": "0x100"
+					}
+				]
+			},
+			{
+				"name": "Enemy Shots",
+				"id": 10,
+				"type": "list",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 1,
+				"value": 0,
+				"mask": "0xFFFFFDFF",
+				"options": [
+					{
+						"name": "Many (Hard)",
+						"value": "0x0"
+					},
+					{
+						"name": "Few (Easy)",
+						"value": "0x200"
+					}
+				]
+			},
+			{
+				"name": "Bonus Life",
+				"id": 11,
+				"type": "list",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 3,
+				"value": 0,
+				"mask": "0xFFFFF3FF",
+				"options": [
+					{
+						"name": "400K 400K",
+						"value": "0x0"
+					},
+					{
+						"name": "300K 400K",
+						"value": "0x400"
+					},
+					{
+						"name": "200K 400K",
+						"value": "0x800"
+					},
+					{
+						"name": "100K 400K",
+						"value": "0xC00"
+					}
+				]
+			},
+			{
+				"name": "Lives",
+				"id": 12,
+				"type": "list",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 3,
+				"value": 0,
+				"mask": "0xFFFFCFFF",
+				"options": [
+					{
+						"name": "99 (Cheat)",
+						"value": "0x0"
+					},
+					{
+						"name": "5",
+						"value": "0x1000"
+					},
+					{
+						"name": "4",
+						"value": "0x2000"
+					},
+					{
+						"name": "3",
+						"value": "0x3000"
+					}
+				]
+			},
+			{
+				"name": "Default",
+				"id": 1015,
+				"type": "number_u32",
+				"enabled": false,
+				"persist": false,
+				"writeonly": true,
+				"address": "0xfa000000",
+				"defaultval": 65535,
+				"value": 0
+			}
+		],
+		"messages": []
+	}
+}

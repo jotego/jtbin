@@ -36,14 +36,15 @@
         <!-- maincpu - starts at 0x0 - length 0x10000 (16 bits) -->
         <part name="ta18-11.bin" crc="f240f5cd"/>
         <part name="ta18-10.bin" crc="a90cf44a"/>
-        <!-- BA1_START -->
+        <!-- JTFRAME_BA1_START -->
         <!-- audiocpu - starts at 0x10000 - length 0x8000 (15 bits) -->
         <part name="n0-5.bin" crc="3587de3b"/>
+        <!-- PCM_START -->
         <!-- adpcm - starts at 0x18000 - length 0x18000 (17 bits) -->
         <part name="ta18-09.bin" crc="07ed4705"/>
         <part name="ta18-08.bin" crc="c9312613"/>
         <part name="ta18-07.bin" crc="02e3f3ed"/>
-        <!-- BA2_START -->
+        <!-- JTFRAME_BA2_START -->
         <!-- chars - starts at 0x30000 - length 0x8000 (15 bits) -->
         <part name="ta18-25.bin" crc="9bd2bea3"/>
         <!-- SCR_START -->
@@ -54,7 +55,7 @@
         <part name="ta18-02.bin" crc="994c0021"/>
         <part name="ta18-04.bin" crc="55b9e8aa"/>
         <part name="ta18-03.bin" crc="0475c99a"/>
-        <!-- BA3_START -->
+        <!-- JTFRAME_BA3_START -->
         <!-- sprites - starts at 0x68000 - length 0x60000 (19 bits) -->
         <part name="ta18-20.bin" crc="c7d54139"/>
         <part name="ta18-24.bin" crc="84677d45"/>
@@ -68,7 +69,6 @@
         <part name="ta18-13.bin" crc="b6b14d46"/>
         <part name="ta18-21.bin" crc="c95e009b"/>
         <part name="ta18-15.bin" crc="a5d61d01"/>
-        <!-- PROM_START -->
         <!-- mcu:mcu - starts at 0xC8000 -->
         <!-- Total 0xC8000 bytes - 800 kBytes -->
     </rom>

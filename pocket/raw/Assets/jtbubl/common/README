@@ -2,12 +2,16 @@ Place the following files in this folder:
 
 bublbobl.rom
 bublbobl1.rom
+bublboblp.rom
 bublboblr.rom
 bublboblr1.rom
 bublcave.rom
 bublcave10.rom
 bublcave11.rom
+tokio.rom
 tokiob.rom
+tokioo.rom
+tokiou.rom
 
 These files are generated using the mra tool in:
 https://github.com/sebdel/mra-tools-c/tree/master/release

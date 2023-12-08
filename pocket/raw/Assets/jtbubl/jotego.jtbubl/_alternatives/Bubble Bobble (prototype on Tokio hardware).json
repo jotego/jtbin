@@ -1,0 +1,28 @@
+{
+	"instance":{
+		"magic": "APF_VER_1",
+		"variant_select": {
+			"id": 0,
+			"select": false
+		},
+		"data_path": "",
+		"data_slots": [
+			{
+				"id": 1,
+				"filename": "bublboblp.rom",
+				"md5": "30f84440dea34a798beb527253d74be5"
+			},
+			{
+				"id": 17,
+				"filename": "beta.bin",
+				"md5": "93d32ed43855da0a7fa1fbd0ceb8863e"
+			}
+		],
+		"memory_writes": [
+			{
+				"address": "0xf9000000",
+				"data": "0x0"
+			}
+		]
+	}
+}

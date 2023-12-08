@@ -119,13 +119,14 @@
 | bootcampa    | jtcomsc    | baaa45c8f5484ad876680676b0dc8bb1 | ff,7b,ff     |
 | bouldash     | jtslyspy   | 8b470f64f4920165a6461f9ca169c933 | 7f,7f        |
 | bouldashj    | jtslyspy   | 85af95beecf462c540bc75d74abec09c | 7f,7f        |
-| bublbobl     | jtbubl     | bec8577036a5a00bc951d46874015443 | ff,ff        |
-| bublbobl1    | jtbubl     | 1e6a665089893631de4c424e278e7e75 | ff,ff        |
-| bublboblr    | jtbubl     | 69f6e08c8f29e4ef3cdec59b34cb8863 | ff,ff        |
-| bublboblr1   | jtbubl     | 25cf23dd03f2776eae2d8efb63f8db20 | ff,ff        |
-| bublcave     | jtbubl     | c8c976fad292859a37f6ce7c536f0a03 | ff,ff        |
-| bublcave10   | jtbubl     | b4afa4452c54ffd6889e2ce90ed78283 | ff,ff        |
-| bublcave11   | jtbubl     | b873a60530d36ca7e05d6c559df414d2 | ff,ff        |
+| bublbobl     | jtbubl     | fd5465f0bf65766f1318ac95c51629cc | ff,ff        |
+| bublbobl1    | jtbubl     | b26744f0d7c19dfbfc69656e1f353f69 | ff,ff        |
+| bublboblp    | jtbubl     | 30f84440dea34a798beb527253d74be5 | ff,ff        |
+| bublboblr    | jtbubl     | 2075bf8c3a8ed43dbe879eab5e3f9e99 | ff,ff        |
+| bublboblr1   | jtbubl     | db317ac6596d65573c1d176a3990bd76 | ff,ff        |
+| bublcave     | jtbubl     | 969c3185a02e0682ed3af7ab78116a16 | ff,ff        |
+| bublcave10   | jtbubl     | e73d3673abef3ac06a09fad9d2411d9f | ff,ff        |
+| bublcave11   | jtbubl     | d6f646ea07bfe9a7e70cf455df429002 | ff,ff        |
 | bullet       | jts16b     | f90ca9abd612f8446da2f62d90790bbc | ff,fd        |
 | captcomm     | jtcps1     | 6544482d4fdffd3567d47e75daf0c42f | ff,f4,bf     |
 | captcommj    | jtcps1     | 14b7f6326731641ab30f448963553ed3 | ff,f4,bf     |
@@ -383,6 +384,7 @@
 | kodr1        | jtcps1     | afe8e010fb9b89b2d1a4eda0b6f034ee | ff,fc,bf     |
 | kodr2        | jtcps1     | 7558b2d5197f46234e2e3c53f4a0f13a | ff,fc,bf     |
 | kodu         | jtcps1     | afdd82f2b6afa54cc9ddf529142028c3 | ff,fc,9f     |
+| kuniokun     | jtkunio    | 01ec6ae252b989a7fd9f1f611899141a | ff,ff        |
 | kuniokunb    | jtkunio    | 528dc7d21a8640bc053a980bd8d253f8 | ff,ff        |
 | labyrunr     | jtlabrun   | 7432285ff67a0ccdda24a8b3857c73ea | ff,5a,f7     |
 | labyrunrk    | jtlabrun   | 2e65ac5cc154346d24d55bbdb63fe371 | ff,5a,f7     |
@@ -541,6 +543,7 @@
 | rastsagaa    | jtrastan   | ef4e52889856332024d6bda1789d7a23 | fe,ff        |
 | rastsagaabl  | jtrastan   | b58fd892743e1bde971615553cf66349 | fe,ff        |
 | rastsagab    | jtrastan   | f5650d6ddf071dc003936c4d8d71d004 | fe,ff        |
+| renegade     | jtkunio    | 2129de6d1efcbc2e10912dbcd3814279 | ff,ff        |
 | renegadeb    | jtkunio    | 9a8390b8c1ce1b3ab5b50383140c67af | ff,ff        |
 | ringdest     | jtcps2     | 50e7406316328c41e215bbe0a5e89556 |              |
 | ringdesta    | jtcps2     | 646b54f33a4b80909e244a7fc55ba0b1 |              |
@@ -790,7 +793,10 @@
 | tnzsoa       | jtkiwi     | 284384eca7fc36c6935f6bf6999550c8 | fe,ff        |
 | tnzsop       | jtkiwi     | 917ca11410b3f0c12b2c45c2dde4f2fa | fe,ff        |
 | tnzsuo       | jtkiwi     | e1314539726641d6cae72f8b3537793b | fe,ff        |
-| tokiob       | jtbubl     | f54968678d65f25402400a019d4a369e | ff,ff        |
+| tokio        | jtbubl     | 3d13fa906ab80adcfe0c43c3a3bab46b | ff,ff        |
+| tokiob       | jtbubl     | f688a375eb0e7ac60de7174c2b0a9df3 | ff,ff        |
+| tokioo       | jtbubl     | ce1634691ff6a9900b07a53d6888b493 | ff,ff        |
+| tokiou       | jtbubl     | 354f92872122644a18cbb9d68e96d656 | ff,ff        |
 | topsecrt     | jtbiocom   | 685ea63491f6d89e485d0d5619c4bd23 | ff,df        |
 | topsecrt2    | jtbiocom   | a0e127acf4aa7292fdc1c37f4bd721e6 | ff,df        |
 | toramich     | jttora     | 7b4faa750fccb642b53ea5f0a8a6c207 | ff,ff        |

@@ -32,7 +32,14 @@
     <rotation>horizontal</rotation>
     <region>World</region>
     <mraauthor>jotego</mraauthor>
-    <rom index="0" zip="bublcave.zip|bublbobl.zip" md5="None" asm_md5="c8c976fad292859a37f6ce7c536f0a03">
+    <rom index="0" zip="bublcave.zip|bublbobl.zip" md5="None" asm_md5="969c3185a02e0682ed3af7ab78116a16">
+        <!--  Header to identify the PCB type
+        Byte 0 = 0 for Bubble Bobble (MC6801 MCU)
+                 1 for Tokio (MC68705 MCU)
+                 3 for Tokio bootleg (no MCU but a fixed value fed into CPU)
+ -->
+        <part>
+            00 00 </part>
         <!-- maincpu - starts at 0x0 - length 0x28000 (18 bits) -->
         <part name="bublcave-06.51" crc="e8b9af5e"/>
         <part name="bublcave-05.52" crc="cfe14cb8"/>
