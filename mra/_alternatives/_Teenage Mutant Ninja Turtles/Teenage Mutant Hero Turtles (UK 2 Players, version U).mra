@@ -5,7 +5,7 @@
               This work is not mantained by the MiSTer project. Please contact the
               core author for issues and updates.
 
-              (c) Jose Tejada, 2023. Please support this research
+              (c) Jose Tejada, 2024. Please support this research
               Patreon: https://patreon.com/jotego
 
               The author does not endorse or participate in illegal distribution
@@ -84,8 +84,8 @@
         <!-- Total 0x428200 bytes - 4256 kBytes -->
         <patch offset="0x1076">71 4E 71 4E 71 4E</patch>
     </rom>
-    <rom index="17" zip="jtbeta.zip" md5="None" asm_md5="93d32ed43855da0a7fa1fbd0ceb8863e">
-        <part name="beta.bin" crc="b9d7985"/>
+    <rom index="17" zip="jtbeta.zip" md5="None" asm_md5="71035230a15ff988e5823bc00a8efc50">
+        <part name="beta.bin" crc="f1b63018"/>
     </rom>
     <rom index="1">
         <part>00</part>

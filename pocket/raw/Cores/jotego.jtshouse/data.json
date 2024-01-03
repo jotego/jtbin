@@ -40,6 +40,7 @@
 				"id": 17,
 				"required": false,
 				"parameters": "0x1000000",
+				"filename": "beta.bin",
 				"extensions": [
 					"bin"
 				],
