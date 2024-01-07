@@ -72,8 +72,8 @@
         <!-- proms - starts at 0x428000 -->
         <!-- Total 0x428000 bytes - 4256 kBytes -->
     </rom>
-    <rom index="17" zip="jtbeta.zip" md5="None" asm_md5="71035230a15ff988e5823bc00a8efc50">
-        <part name="beta.bin" crc="f1b63018"/>
+    <rom index="17" zip="jtbeta.zip" md5="None" asm_md5="e9e3a04852aba10a005a7b60912c4309">
+        <part name="beta.bin" crc="53a10d8c"/>
     </rom>
     <rom index="1">
         <part>00</part>
