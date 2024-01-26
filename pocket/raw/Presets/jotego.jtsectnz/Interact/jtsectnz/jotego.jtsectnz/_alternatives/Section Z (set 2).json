@@ -3,18 +3,8 @@
 		"magic": "APF_VER_1",
 		"variables": [
 			{
-				"name": "Version",
-				"id": 1000,
-				"type": "number_u32",
-				"enabled": false,
-				"persist": false,
-				"address": "0xFF000000",
-				"defaultval": 0,
-				"value": 0
-			},
-			{
 				"name": "FX Volume",
-				"id": 1,
+				"id": 0,
 				"type": "list",
 				"enabled": true,
 				"persist": true,
@@ -43,7 +33,7 @@
 			},
 			{
 				"name": "Service Mode",
-				"id": 2,
+				"id": 1,
 				"type": "check",
 				"enabled": true,
 				"persist": true,
@@ -55,7 +45,7 @@
 			},
 			{
 				"name": "Flip Screen",
-				"id": 3,
+				"id": 2,
 				"type": "check",
 				"enabled": true,
 				"persist": true,
@@ -67,7 +57,7 @@
 			},
 			{
 				"name": "Lives",
-				"id": 4,
+				"id": 3,
 				"type": "list",
 				"enabled": true,
 				"persist": true,
@@ -96,7 +86,7 @@
 			},
 			{
 				"name": "Coin A",
-				"id": 5,
+				"id": 4,
 				"type": "list",
 				"enabled": true,
 				"persist": true,
@@ -125,7 +115,7 @@
 			},
 			{
 				"name": "Coin B",
-				"id": 6,
+				"id": 5,
 				"type": "list",
 				"enabled": true,
 				"persist": true,
@@ -154,7 +144,7 @@
 			},
 			{
 				"name": "Allow Continue",
-				"id": 7,
+				"id": 6,
 				"type": "check",
 				"enabled": true,
 				"persist": true,
@@ -165,7 +155,7 @@
 			},
 			{
 				"name": "Difficulty",
-				"id": 8,
+				"id": 7,
 				"type": "list",
 				"enabled": true,
 				"persist": true,
@@ -194,7 +184,7 @@
 			},
 			{
 				"name": "Bonus Life",
-				"id": 9,
+				"id": 8,
 				"type": "list",
 				"enabled": true,
 				"persist": true,
@@ -239,7 +229,7 @@
 			},
 			{
 				"name": "Cabinet",
-				"id": 10,
+				"id": 9,
 				"type": "list",
 				"enabled": true,
 				"persist": true,

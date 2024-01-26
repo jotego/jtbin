@@ -1,0 +1,90 @@
+<!--          FPGA arcade hardware by Jotego
+
+              This core is available for hardware compatible with MiST and MiSTer
+              Other FPGA systems may be supported by the time you read this.
+              This work is not mantained by the MiSTer project. Please contact the
+              core author for issues and updates.
+
+              (c) Jose Tejada, 2024. Please support this research
+              Patreon: https://patreon.com/jotego
+
+              The author does not endorse or participate in illegal distribution
+              of copyrighted material. This work can be used with compatible
+              software. This software can be homebrew projects or legally
+              obtained memory dumps of compatible games.
+
+              This file license is GNU GPLv2.
+              You can read the whole license file in
+              https://opensource.org/licenses/gpl-2.0.php
+
+-->
+
+<misterromdescription>
+    <about author="jotego" webpage="https://patreon.com/jotego" source="https://github.com/jotego" twitter="@topapate"/>
+    <name>Street Fighter II: The World Warrior (Quicken Pt-I, bootleg)</name>
+    <setname>sf2qp1</setname>
+    <rbf>jtcps1</rbf>
+    <mameversion>0251</mameversion>
+    <year>1991</year>
+    <manufacturer>bootleg</manufacturer>
+    <players>2</players>
+    <joystick>8</joystick>
+    <rotation>horizontal</rotation>
+    <region>World</region>
+    <mraauthor>jotego</mraauthor>
+    <rom index="0" zip="sf2qp1.zip|sf2.zip" md5="None" asm_md5="fd85442e1702605fd49989f27b0929c0">
+        <part>
+            00 04 40 04 40 05 FF FF
+            FF FF FF FF FF FF FF FF
+            08 47 FF FF FF FF 14 12
+            10 0E 0C 36 00 0A 08 14
+            02 00 23 40 C8 73 F7 08
+            FF FF FF FF FF FF FF FF
+            FF FF FF FF FF FF FF FF
+            FF FF FF FF FF FF FF FF
+        </part>
+        <!-- maincpu - starts at 0x0 - length 0x100000 (20 bits) -->
+        <part name="stfii-qkn-cps-17.33" crc="3a9458ee"/>
+        <part name="stfii-qkn-cps-17.34" crc="4ed215d8"/>
+        <!-- audiocpu - starts at 0x100000 - length 0x10000 (16 bits) -->
+        <part name="sf2_09.bin" crc="a4823a1b"/>
+        <!-- oki - starts at 0x110000 - length 0x40000 (18 bits) -->
+        <part name="sf2_18.bin" crc="7f162009"/>
+        <part name="sf2_19.bin" crc="beade53f"/>
+        <!-- gfx - starts at 0x150000 - length 0x600000 (23 bits) -->
+        <interleave output="64">
+            <part name="sf2_06.bin" crc="22c9cc8e" map="00000021"/>
+            <part name="sf2_08.bin" crc="57213be8" map="00002100"/>
+            <part name="sf2_05.bin" crc="ba529b4f" map="00210000"/>
+            <part name="sf2_07.bin" crc="4b1b33a8" map="21000000"/>
+        </interleave>
+        <interleave output="64">
+            <part name="sf2_15.bin" crc="2c7e2229" map="00000021"/>
+            <part name="sf2_17.bin" crc="b5548f17" map="00002100"/>
+            <part name="sf2_14.bin" crc="14b84312" map="00210000"/>
+            <part name="sf2_16.bin" crc="5e9cd89a" map="21000000"/>
+        </interleave>
+        <interleave output="64">
+            <part name="sf2_25.bin" crc="994bfa58" map="00000021"/>
+            <part name="sf2_27.bin" crc="3e66ad9d" map="00002100"/>
+            <part name="sf2_24.bin" crc="c1befaa8" map="00210000"/>
+            <part name="sf2_26.bin" crc="0627c831" map="21000000"/>
+        </interleave>
+        <!-- Total 0x750000 bytes - 7488 kBytes -->
+    </rom>
+    <rom index="1">
+        <part>00</part>
+    </rom>
+    <switches page_id="1" page_name="Switches" base="8" default="ff,fc,9f">
+        <!-- DSWB -->
+        <dip name="Difficulty" bits="8,10" ids="7,6,5,4,3,2,1,0"/>
+        <!-- DSWC -->
+        <dip name="Free Play" bits="18" ids="On,Off"/>
+        <dip name="Freeze" bits="19" ids="On,Off"/>
+        <dip name="Flip Screen" bits="20" ids="On,Off"/>
+        <dip name="Demo Sounds" bits="21" ids="On,Off"/>
+        <dip name="Allow Continue" bits="22" ids="Yes,No"/>
+        <dip name="Game Mode" bits="23" ids="Test,Game"/>
+    </switches>
+    <buttons names="LP,MP,SP,LK,MK,HK,Start,Coin,Core credits" default="A,B,X,Y,L,R,Start,Select,-" count="6"/>
+</misterromdescription>

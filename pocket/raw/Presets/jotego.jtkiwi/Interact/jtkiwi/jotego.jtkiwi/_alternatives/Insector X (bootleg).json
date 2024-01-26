@@ -3,18 +3,8 @@
 		"magic": "APF_VER_1",
 		"variables": [
 			{
-				"name": "Version",
-				"id": 1000,
-				"type": "number_u32",
-				"enabled": false,
-				"persist": false,
-				"address": "0xFF000000",
-				"defaultval": 0,
-				"value": 0
-			},
-			{
 				"name": "FX Volume",
-				"id": 1,
+				"id": 0,
 				"type": "list",
 				"enabled": true,
 				"persist": true,
@@ -42,37 +32,8 @@
 				]
 			},
 			{
-				"name": "Dial sensitivity",
-				"id": 2,
-				"type": "list",
-				"enabled": true,
-				"persist": true,
-				"address": "0xfb000004",
-				"defaultval": 3,
-				"value": 0,
-				"mask": "0xFFFFFFFC",
-				"options": [
-					{
-						"name": "very high",
-						"value": "0x1"
-					},
-					{
-						"name": "high",
-						"value": "0x0"
-					},
-					{
-						"name": "low",
-						"value": "0x3"
-					},
-					{
-						"name": "very low",
-						"value": "0x2"
-					}
-				]
-			},
-			{
 				"name": "Cabinet",
-				"id": 3,
+				"id": 1,
 				"type": "list",
 				"enabled": true,
 				"persist": true,
@@ -93,7 +54,7 @@
 			},
 			{
 				"name": "Flip Screen",
-				"id": 4,
+				"id": 2,
 				"type": "check",
 				"enabled": true,
 				"persist": true,
@@ -105,7 +66,7 @@
 			},
 			{
 				"name": "Service Mode",
-				"id": 5,
+				"id": 3,
 				"type": "check",
 				"enabled": true,
 				"persist": true,
@@ -117,7 +78,7 @@
 			},
 			{
 				"name": "Demo Sounds",
-				"id": 6,
+				"id": 4,
 				"type": "check",
 				"enabled": true,
 				"persist": true,
@@ -128,7 +89,7 @@
 			},
 			{
 				"name": "Coin A",
-				"id": 7,
+				"id": 5,
 				"type": "list",
 				"enabled": true,
 				"persist": true,
@@ -157,7 +118,7 @@
 			},
 			{
 				"name": "Coin B",
-				"id": 8,
+				"id": 6,
 				"type": "list",
 				"enabled": true,
 				"persist": true,
@@ -186,7 +147,7 @@
 			},
 			{
 				"name": "Difficulty",
-				"id": 9,
+				"id": 7,
 				"type": "list",
 				"enabled": true,
 				"persist": true,
@@ -215,7 +176,7 @@
 			},
 			{
 				"name": "Bonus Life",
-				"id": 10,
+				"id": 8,
 				"type": "list",
 				"enabled": true,
 				"persist": true,
@@ -244,7 +205,7 @@
 			},
 			{
 				"name": "Lives",
-				"id": 11,
+				"id": 9,
 				"type": "list",
 				"enabled": true,
 				"persist": true,

@@ -79,5 +79,5 @@
         <dip name="Bonus" bits="11,12" ids="30K and 80K Only,20K and 80K Only,30K 80K Every 80K,20K 70K Every 70K"/>
         <dip name="Difficulty" bits="13,14" ids="Very Difficult,Difficult,Easy,Normal"/>
     </switches>
-    <buttons names="Fire,Jump,Start,Coin,Core credits" default="Y,X,Start,Select,-" count="2"/>
+    <buttons names="Fire,Jump,Start,Coin,Core credits" default="A,B,Start,Select,-" count="2"/>
 </misterromdescription>

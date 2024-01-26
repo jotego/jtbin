@@ -9,8 +9,7 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "contrae.rom",
-				"md5": "75c2b0f6b68a4c35d293d9b0199964fc"
+				"filename": "contrae.rom"
 			}
 		],
 		"memory_writes": [

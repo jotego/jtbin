@@ -32,14 +32,14 @@
     <rotation>horizontal</rotation>
     <region>World</region>
     <mraauthor>jotego</mraauthor>
-    <rom index="0" zip="bublbobl.zip" md5="None" asm_md5="297b9c7d6048cb7f551b460c52c2a1ff">
+    <rom index="0" zip="bublbobl.zip" md5="None" asm_md5="fcbcd7500f6a7421e827373cfa8890d3">
         <!--  Header to identify the PCB type
         Byte 0 = 0 for Bubble Bobble (MC6801 MCU)
                  1 for Tokio (MC68705 MCU)
                  3 for Tokio bootleg (no MCU but a fixed value fed into CPU)
  -->
         <part>
-            00 00 </part>
+            00 00 00 00 </part>
         <!-- maincpu - starts at 0x0 - length 0x28000 (18 bits) -->
         <part name="a78-06-1.51" crc="567934b6"/>
         <part name="a78-05-1.52" crc="9f8ee242"/>
@@ -103,5 +103,5 @@
         <dip name="Language" ids="English,Japanese" bits="0"/>
         <dip name="Operation" ids="Test,Game" bits="2"/>
     </switches>
-    <buttons names="Jump,Shoot,Start,Coin,Core credits" default="Y,X,Start,Select,-" count="2"/>
+    <buttons names="Jump,Shoot,Start,Coin,Core credits" default="A,B,Start,Select,-" count="2"/>
 </misterromdescription>

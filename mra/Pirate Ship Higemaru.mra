@@ -32,13 +32,13 @@
     <rotation>horizontal</rotation>
     <region>World</region>
     <mraauthor>jotego</mraauthor>
-    <rom index="0" zip="higemaru.zip" md5="None" asm_md5="67d447936957650efcb64fc22ff1c7b4">
+    <rom index="0" zip="higemaru.zip" md5="None" asm_md5="da45a9005c48d673d1d0fb1d2bc7c746">
         <!--  Header to identify the PCB type
         Byte 0 = 0 for 1942, 1 for Vulgus, 2 for Higemaru
         Byte 1 = XOR with flip
  -->
         <part>
-            02 00 </part>
+            02 00 00 00 </part>
         <!-- maincpu - starts at 0x0 - length 0x18000 (17 bits) -->
         <part name="hg4.p12" crc="dc67a7f9"/>
         <part name="hg5.m12" crc="f65a4b68"/>
@@ -86,5 +86,5 @@
         <dip name="Demo Music" bits="13" ids="Off,On"/>
         <dip name="Flip Screen" bits="14" ids="On,Off"/>
     </switches>
-    <buttons names="Action,-,Start,Coin,Core credits" default="Y,X,Start,Select,-" count="1"/>
+    <buttons names="Action,-,Start,Coin,Core credits" default="A,Start,Select,-" count="1"/>
 </misterromdescription>

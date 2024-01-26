@@ -5,7 +5,7 @@
               This work is not mantained by the MiSTer project. Please contact the
               core author for issues and updates.
 
-              (c) Jose Tejada, 2023. Please support this research
+              (c) Jose Tejada, 2024. Please support this research
               Patreon: https://patreon.com/jotego
 
               The author does not endorse or participate in illegal distribution
@@ -32,12 +32,12 @@
     <rotation>horizontal</rotation>
     <region>World</region>
     <mraauthor>jotego</mraauthor>
-    <rom index="0" zip="f1dream.zip" md5="None" asm_md5="3282f0dbf6f907b629166484d96c0b95">
+    <rom index="0" zip="f1dream.zip" md5="None" asm_md5="c2f66b62e2a60145566d4375733ee079">
         <!--  Header to identify the PCB type
         Byte 0 = 0 for Tiger Road, 1 for F1-Dream, 2 for Tora e no michi
  -->
         <part>
-            01 00 </part>
+            01 00 00 00 </part>
         <!-- maincpu - starts at 0x0 - length 0x40000 (18 bits) -->
         <interleave output="16">
             <part name="f1_03.6k" crc="85ebad91" map="01"/>
@@ -106,5 +106,5 @@
         <dip name="Version" bits="14" ids="World,Japan"/>
         <dip name="Allow Continue" bits="15" ids="No,Yes"/>
     </switches>
-    <buttons names="Low Gear,High Gear,Start,Coin,Core credits" default="Y,X,Start,Select,-" count="2"/>
+    <buttons names="Low Gear,High Gear,Start,Coin,Core credits" default="A,B,Start,Select,-" count="2"/>
 </misterromdescription>

@@ -9,8 +9,7 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "fantzonep.rom",
-				"md5": "10cc378f6632b242f06d1ec80d15bc9c"
+				"filename": "fantzonep.rom"
 			}
 		],
 		"memory_writes": [

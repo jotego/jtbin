@@ -68,5 +68,5 @@
     <rom index="1">
         <part>00</part>
     </rom>
-    <buttons names="Attack,Jump,-,Start,Coin,Core credits" default="Y,X,B,Start,Select,-" count="2"/>
+    <buttons names="Attack,Jump,-,Start,Coin,Core credits" default="A,B,X,Start,Select,-" count="2"/>
 </misterromdescription>

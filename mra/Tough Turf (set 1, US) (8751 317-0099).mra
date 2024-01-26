@@ -5,7 +5,7 @@
               This work is not mantained by the MiSTer project. Please contact the
               core author for issues and updates.
 
-              (c) Jose Tejada, 2023. Please support this research
+              (c) Jose Tejada, 2024. Please support this research
               Patreon: https://patreon.com/jotego
 
               The author does not endorse or participate in illegal distribution
@@ -89,8 +89,8 @@
             <part name="epr-12283.b8" crc="ae0fa085" map="10"/>
         </interleave>
         <part repeat="0x180000"> FF</part>
-        <!-- MCU_START -->
         <!-- JTFRAME_PROM_START -->
+        <!-- MCU_START -->
         <!-- mcu - starts at 0x440000 - length 0x2000 (13 bits) -->
         <part name="317-0099.c2" crc="f676e3e4"/>
         <part repeat="0x1000"> FF</part>
@@ -117,5 +117,5 @@
         <dip name="Demo Sounds" bits="14" ids="On,Off"/>
         <dip name="Bonus Energy" bits="15" ids="2,1"/>
     </switches>
-    <buttons names="Punch,Kick,Jump,-,Start,Coin,Core credits" default="Y,X,B,A,Start,Select,-" count="3"/>
+    <buttons names="Punch,Kick,Jump,-,Start,Coin,Core credits" default="A,B,X,Start,Select,-" count="3"/>
 </misterromdescription>

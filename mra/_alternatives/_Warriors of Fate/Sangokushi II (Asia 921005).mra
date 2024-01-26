@@ -32,13 +32,13 @@
     <rotation>horizontal</rotation>
     <region>World</region>
     <mraauthor>jotego</mraauthor>
-    <rom index="0" zip="wofa.zip|wof.zip|qsound.zip" md5="None" asm_md5="b1195cc3c6b7c878873d081f13c1ed6a">
+    <rom index="0" zip="wofa.zip|wof.zip|qsound.zip" md5="None" asm_md5="62ace165f74e3b5e07cd788edea93b67">
         <part>
             00 04 80 04 80 0C 80 1C
             FF FF FF FF FF FF FF FF
-            FF FF FF FF FF FF 22 24
-            26 28 2A 00 00 2C 10 08
-            04 00 25 40 88 73 FF 20
+            32 FF 00 02 04 06 26 28
+            2A 2C 2E 36 30 30 02 04
+            08 30 25 40 88 73 FF 20
             FF FF FF FF FF FF FF FF
             01 23 45 67 54 16 30 72
             51 51 51 FF FF FF FF FF
@@ -78,5 +78,5 @@
         <!-- DSWC -->
         <dip name="Freeze" bits="3" ids="On,Off"/>
     </switches>
-    <buttons names="Attack,Jump,-,-,-,-,Start,Coin,Core credits" default="Y,X,B,A,R,L,Start,Select,-" count="2"/>
+    <buttons names="Attack,Jump,-,-,-,-,Start,Coin,Core credits" default="A,B,Start,Select,-" count="2"/>
 </misterromdescription>

@@ -5,7 +5,7 @@
               This work is not mantained by the MiSTer project. Please contact the
               core author for issues and updates.
 
-              (c) Jose Tejada, 2023. Please support this research
+              (c) Jose Tejada, 2024. Please support this research
               Patreon: https://patreon.com/jotego
 
               The author does not endorse or participate in illegal distribution
@@ -48,8 +48,8 @@
         <!-- ADPCM1_START -->
         <!-- adpcm2 - starts at 0x40000 - length 0x10000 (16 bits) -->
         <part name="21j-7" crc="904de6f8"/>
-        <!-- JTFRAME_BA2_START -->
         <!-- CHAR_START -->
+        <!-- JTFRAME_BA2_START -->
         <!-- gfx1 - starts at 0x50000 - length 0x8000 (15 bits) -->
         <part name="21j-5" crc="7a8b8db4"/>
         <!-- SCR_START -->
@@ -104,5 +104,5 @@
         <dip name="Bonus" bits="12,13" ids="40k,20k,40k &amp; *80k,30k &amp; *60k"/>
         <dip name="Lives" bits="14,15" ids="Infinite,4,3,2"/>
     </switches>
-    <buttons names="Kick,Jump,Punch,Start,Coin,Core credits" default="Y,X,B,Start,Select,-" count="3"/>
+    <buttons names="Kick,Jump,Punch,Start,Coin,Core credits" default="A,B,X,Start,Select,-" count="3"/>
 </misterromdescription>

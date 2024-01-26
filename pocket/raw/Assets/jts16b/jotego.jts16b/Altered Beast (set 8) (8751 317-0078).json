@@ -9,8 +9,7 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "altbeast.rom",
-				"md5": "2af9520a396cab835f837678719bc312"
+				"filename": "altbeast.rom"
 			}
 		],
 		"memory_writes": [

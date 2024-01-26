@@ -130,5 +130,5 @@
         <dip name="Service Mode" bits="18" ids="On,Off"/>
         <dip name="Max cont" bits="19" ids="5 and 4,3 and 2"/>
     </switches>
-    <buttons names="Shoot,Jump,-,Start,Coin,Core credits" default="Y,X,B,Start,Select,-" count="2"/>
+    <buttons names="Shoot,Jump,-,Start,Coin,Core credits" default="A,B,Start,Select,-" count="2"/>
 </misterromdescription>

@@ -9,8 +9,7 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "blktigera.rom",
-				"md5": "9ae346b9d842ed19197fcc743cf672f0"
+				"filename": "blktigera.rom"
 			}
 		],
 		"memory_writes": [

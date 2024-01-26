@@ -1,8 +1,8 @@
 {
 	"platform":{
-		"category": "Arcade compatible",
+		"category": "Arcade",
 		"name": "jtvigil",
-		"year": 2022,
+		"year": 2024,
 		"manufacturer": "JT FPGA"
 	}
 }

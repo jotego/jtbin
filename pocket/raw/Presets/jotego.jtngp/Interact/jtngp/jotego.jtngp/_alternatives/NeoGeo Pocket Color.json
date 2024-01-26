@@ -1,18 +1,7 @@
 {
 	"interact":{
 		"magic": "APF_VER_1",
-		"variables": [
-			{
-				"name": "Version",
-				"id": 1000,
-				"type": "number_u32",
-				"enabled": false,
-				"persist": false,
-				"address": "0xFF000000",
-				"defaultval": 0,
-				"value": 0
-			}
-		],
+		"variables": [],
 		"messages": []
 	}
 }

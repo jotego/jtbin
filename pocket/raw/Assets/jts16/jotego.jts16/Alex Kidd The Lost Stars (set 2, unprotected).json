@@ -9,8 +9,7 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "alexkidd.rom",
-				"md5": "0473183f9a3116bd99b9066032dc7cf3"
+				"filename": "alexkidd.rom"
 			}
 		],
 		"memory_writes": [

@@ -9,8 +9,7 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "wb3.rom",
-				"md5": "f3e0c4dbf684ce6212e5eaf89545f0e9"
+				"filename": "wb3.rom"
 			}
 		],
 		"memory_writes": [

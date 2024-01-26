@@ -5,7 +5,7 @@
               This work is not mantained by the MiSTer project. Please contact the
               core author for issues and updates.
 
-              (c) Jose Tejada, 2023. Please support this research
+              (c) Jose Tejada, 2024. Please support this research
               Patreon: https://patreon.com/jotego
 
               The author does not endorse or participate in illegal distribution
@@ -49,8 +49,8 @@
         <part name="8" crc="151b22b4"/>
         <part name="10" crc="ae2fc028"/>
         <part repeat="0x10000"> FF</part>
-        <!-- JTFRAME_BA2_START -->
         <!-- CHAR_START -->
+        <!-- JTFRAME_BA2_START -->
         <!-- gfx1 - starts at 0x80000 - length 0x10000 (16 bits) -->
         <part name="1" crc="3ad1049c"/>
         <!-- SCR_START -->
@@ -116,5 +116,5 @@
         <dip name="Timer" bits="12,13" ids="Very Fast,Fast,Slow,Normal"/>
         <dip name="Lives" bits="14,15" ids="4,3,2,1"/>
     </switches>
-    <buttons names="Left Attack,Jump,Right Attack,Start,Coin,Core credits" default="Y,X,B,Start,Select,-" count="3"/>
+    <buttons names="Left Attack,Jump,Right Attack,Start,Coin,Core credits" default="A,B,X,Start,Select,-" count="3"/>
 </misterromdescription>

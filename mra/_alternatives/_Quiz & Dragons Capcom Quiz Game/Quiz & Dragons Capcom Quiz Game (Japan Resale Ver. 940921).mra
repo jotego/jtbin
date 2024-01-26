@@ -5,7 +5,7 @@
               This work is not mantained by the MiSTer project. Please contact the
               core author for issues and updates.
 
-              (c) Jose Tejada, 2023. Please support this research
+              (c) Jose Tejada, 2024. Please support this research
               Patreon: https://patreon.com/jotego
 
               The author does not endorse or participate in illegal distribution
@@ -64,8 +64,6 @@
         <part>00</part>
     </rom>
     <switches page_id="1" page_name="Switches" base="8" default="ff,fd,ff">
-        <!-- DSWA -->
-        <dip name="2 to start, 1 continue" bits="6" ids="On,Off"/>
         <!-- DSWB -->
         <dip name="Difficulty" bits="8,10" ids="-,-,-,4,3,2,1,0"/>
         <dip name="Lives" bits="13,15" ids="-,-,-,-,-,1,2,3"/>
@@ -77,5 +75,5 @@
         <dip name="Allow Continue" bits="22" ids="No,Yes"/>
         <dip name="Game Mode" bits="23" ids="Test,Game"/>
     </switches>
-    <buttons names="Button 1, Button 2, Button 3, Button 4,-,-,Start,Coin,Core credits" default="Y,X,B,A,R,L,Start,Select,-" count="4"/>
+    <buttons names="Button 1, Button 2, Button 3, Button 4,-,-,Start,Coin,Core credits" default="A,B,X,Y,Start,Select,-" count="4"/>
 </misterromdescription>

@@ -9,8 +9,7 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "mjleague.rom",
-				"md5": "105cf9008e7a85a1cc33f6386a793f7e"
+				"filename": "mjleague.rom"
 			}
 		],
 		"memory_writes": [

@@ -5,7 +5,7 @@
               This work is not mantained by the MiSTer project. Please contact the
               core author for issues and updates.
 
-              (c) Jose Tejada, 2023. Please support this research
+              (c) Jose Tejada, 2024. Please support this research
               Patreon: https://patreon.com/jotego
 
               The author does not endorse or participate in illegal distribution
@@ -32,7 +32,7 @@
     <rotation>vertical (ccw)</rotation>
     <region>World</region>
     <mraauthor>jotego</mraauthor>
-    <rom index="0" zip="arknoid2j.zip|arknoid2.zip" md5="None" asm_md5="5b0e28167a0d3a83f59a125c02f20436">
+    <rom index="0" zip="arknoid2j.zip|arknoid2.zip" md5="None" asm_md5="3b1b71635490e9763db799bad848b4f9">
         <!-- bit 0 = MCU
              bit 1 = color PROM
              bit 2 = Kabuzi Z (specific sound features)
@@ -46,7 +46,7 @@
              bit 1 = button aid
              bit 2 = 3 MHz for FM module                  -->
         <part>
-            03 03 </part>
+            03 03 00 00 </part>
         <!-- maincpu - starts at 0x0 - length 0x20000 (17 bits) -->
         <part name="b08_05.11c" crc="136edf9d"/>
         <part repeat="0x10000"> FF</part>
@@ -109,5 +109,5 @@
         <dip name="Lives" bits="12,13" ids="5,4,2,3"/>
         <dip name="Allow Continue" bits="15" ids="Yes,No"/>
     </switches>
-    <buttons names="Shoot,-,-,Start,Coin,Core credits" default="Y,X,B,Start,Select,-" count="1"/>
+    <buttons names="Shoot,-,-,Start,Coin,Core credits" default="A,Start,Select,-" count="1"/>
 </misterromdescription>

@@ -5,7 +5,7 @@
               This work is not mantained by the MiSTer project. Please contact the
               core author for issues and updates.
 
-              (c) Jose Tejada, 2023. Please support this research
+              (c) Jose Tejada, 2024. Please support this research
               Patreon: https://patreon.com/jotego
 
               The author does not endorse or participate in illegal distribution
@@ -58,8 +58,8 @@
             <part name="26j5-0.bin" crc="ee555237" map="10"/>
         </interleave>
         <part repeat="0x40000"> FF</part>
-        <!-- JTFRAME_BA3_START -->
         <!-- OBJ_START -->
+        <!-- JTFRAME_BA3_START -->
         <!-- gfx2 - starts at 0x110000 - length 0x100000 (20 bits) -->
         <interleave output="16">
             <part name="26j0-0.bin" crc="db309c84" map="01"/>
@@ -98,5 +98,5 @@
         <dip name="Timer" bits="12,13" ids="Very Fast,Fast,Slow,Normal"/>
         <dip name="Lives" bits="14,15" ids="4,3,2,1"/>
     </switches>
-    <buttons names="Left Attack,Jump,Right Attack,Start,Coin,Core credits" default="Y,X,B,Start,Select,-" count="3"/>
+    <buttons names="Left Attack,Jump,Right Attack,Start,Coin,Core credits" default="A,B,X,Start,Select,-" count="3"/>
 </misterromdescription>

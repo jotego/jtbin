@@ -5,7 +5,7 @@
               This work is not mantained by the MiSTer project. Please contact the
               core author for issues and updates.
 
-              (c) Jose Tejada, 2023. Please support this research
+              (c) Jose Tejada, 2024. Please support this research
               Patreon: https://patreon.com/jotego
 
               The author does not endorse or participate in illegal distribution
@@ -90,8 +90,8 @@
             <part name="epr-10555.b8" crc="2143c471" map="10"/>
         </interleave>
         <part repeat="0x190000"> FF</part>
-        <!-- JTFRAME_PROM_START -->
         <!-- MCU_START -->
+        <!-- JTFRAME_PROM_START -->
         <!-- mcu - starts at 0x440000 - length 0x2000 (13 bits) -->
         <part repeat="0x1000"> FF</part>
         <part repeat="0x1000"> FF</part>
@@ -121,5 +121,5 @@
         <dip name="Special" bits="18,19" ids="200k0 Points,1,3,2"/>
         <dip name="Allow Continue" bits="20" ids="No,Yes"/>
     </switches>
-    <buttons names="L. Flipper/Ball Start,R. Flipper/Lane Shift,-,-,Start,Coin,Core credits" default="Y,X,B,A,Start,Select,-" count="2"/>
+    <buttons names="L. Flipper/Ball Start,R. Flipper/Lane Shift,-,-,Start,Coin,Core credits" default="A,B,Start,Select,-" count="2"/>
 </misterromdescription>

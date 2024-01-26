@@ -9,8 +9,7 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "sfa.rom",
-				"md5": "c5587ecd48bc077e6cbfc7fe180d2985"
+				"filename": "sfa.rom"
 			},
 			{
 				"id": 2,

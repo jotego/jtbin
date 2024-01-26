@@ -9,8 +9,7 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "rocnrope.rom",
-				"md5": "3ea1ddb56be848aecc0b3b64f295ad3e"
+				"filename": "rocnrope.rom"
 			}
 		],
 		"memory_writes": [

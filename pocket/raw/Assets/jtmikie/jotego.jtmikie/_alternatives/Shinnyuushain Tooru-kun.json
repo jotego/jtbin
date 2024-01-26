@@ -9,8 +9,7 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "mikiej.rom",
-				"md5": "30bf0b835c604f57f3113108760487be"
+				"filename": "mikiej.rom"
 			}
 		],
 		"memory_writes": [

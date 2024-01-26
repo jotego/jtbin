@@ -78,5 +78,5 @@
         <dip name="Difficulty" bits="13,14" ids="Very Difficult,Difficult,Easy,Normal"/>
         <dip name="Cheat" bits="15" ids="On,Off"/>
     </switches>
-    <buttons names="Fire,Jump,Start,Coin,Core credits" default="Y,X,Start,Select,-" count="2"/>
+    <buttons names="Fire,Jump,Start,Coin,Core credits" default="A,B,Start,Select,-" count="2"/>
 </misterromdescription>

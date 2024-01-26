@@ -9,8 +9,7 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "block.rom",
-				"md5": "ade60f22d41f074ea4ff215c16fa0971"
+				"filename": "block.rom"
 			},
 			{
 				"id": 2,

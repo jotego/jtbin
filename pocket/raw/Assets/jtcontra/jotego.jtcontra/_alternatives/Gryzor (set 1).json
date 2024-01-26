@@ -9,8 +9,7 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "gryzor.rom",
-				"md5": "8a84bae46d2d2a4cdb7a2364f7239841"
+				"filename": "gryzor.rom"
 			}
 		],
 		"memory_writes": [

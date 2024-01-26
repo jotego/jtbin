@@ -100,5 +100,5 @@
         <dip name="VRAM Character Check" bits="17" ids="On,Off"/>
         <dip name="Service Mode" bits="18" ids="On,Off"/>
     </switches>
-    <buttons names="Knife, Weapon, Weapon select,Start,Coin,Core credits" default="Y,X,B,Start,Select,-" count="3"/>
+    <buttons names="Knife, Weapon, Weapon select,Start,Coin,Core credits" default="A,B,X,Start,Select,-" count="3"/>
 </misterromdescription>

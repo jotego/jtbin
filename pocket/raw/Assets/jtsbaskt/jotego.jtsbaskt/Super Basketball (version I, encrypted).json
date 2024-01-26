@@ -9,8 +9,7 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "sbasketb.rom",
-				"md5": "6684f7487515fc3a2e3ac6d6c68adf1b"
+				"filename": "sbasketb.rom"
 			}
 		],
 		"memory_writes": [

@@ -3,47 +3,8 @@
 		"magic": "APF_VER_1",
 		"variables": [
 			{
-				"name": "Version",
-				"id": 1000,
-				"type": "number_u32",
-				"enabled": false,
-				"persist": false,
-				"address": "0xFF000000",
-				"defaultval": 0,
-				"value": 0
-			},
-			{
-				"name": "FX Volume",
-				"id": 1,
-				"type": "list",
-				"enabled": true,
-				"persist": true,
-				"address": "0xfb000000",
-				"defaultval": 0,
-				"value": 0,
-				"mask": "0xFFFFFF3F",
-				"options": [
-					{
-						"name": "high",
-						"value": "0x00"
-					},
-					{
-						"name": "very high",
-						"value": "0x40"
-					},
-					{
-						"name": "very low",
-						"value": "0x80"
-					},
-					{
-						"name": "low",
-						"value": "0xc0"
-					}
-				]
-			},
-			{
 				"name": "Dial sensitivity",
-				"id": 2,
+				"id": 0,
 				"type": "list",
 				"enabled": true,
 				"persist": true,
@@ -72,7 +33,7 @@
 			},
 			{
 				"name": "Difficulty",
-				"id": 3,
+				"id": 1,
 				"type": "list",
 				"enabled": true,
 				"persist": true,
@@ -117,7 +78,7 @@
 			},
 			{
 				"name": "Service Mode",
-				"id": 4,
+				"id": 2,
 				"type": "check",
 				"enabled": true,
 				"persist": true,
@@ -128,98 +89,8 @@
 				"mask": "0xFFFFFF7F"
 			},
 			{
-				"name": "Coin A",
-				"id": 5,
-				"type": "list",
-				"enabled": true,
-				"persist": true,
-				"address": "0xfa000000",
-				"defaultval": 7,
-				"value": 0,
-				"mask": "0xFFFFF8FF",
-				"options": [
-					{
-						"name": "4 Coins/1 Credit",
-						"value": "0x0"
-					},
-					{
-						"name": "3 Coins/1 Credit",
-						"value": "0x100"
-					},
-					{
-						"name": "2 Coins/1 Credit",
-						"value": "0x200"
-					},
-					{
-						"name": "1 Coin/6 Credits",
-						"value": "0x300"
-					},
-					{
-						"name": "1 Coin/4 Credits",
-						"value": "0x400"
-					},
-					{
-						"name": "1 Coin/3 Credits",
-						"value": "0x500"
-					},
-					{
-						"name": "2 Coins / 2 Credits",
-						"value": "0x600"
-					},
-					{
-						"name": "1 Coin/1 Credit",
-						"value": "0x700"
-					}
-				]
-			},
-			{
-				"name": "Coin B",
-				"id": 6,
-				"type": "list",
-				"enabled": true,
-				"persist": true,
-				"address": "0xfa000000",
-				"defaultval": 7,
-				"value": 0,
-				"mask": "0xFFFFC7FF",
-				"options": [
-					{
-						"name": "4 Coins/1 Credit",
-						"value": "0x0"
-					},
-					{
-						"name": "3 Coins/1 Credit",
-						"value": "0x800"
-					},
-					{
-						"name": "2 Coins/1 Credit",
-						"value": "0x1000"
-					},
-					{
-						"name": "1 Coin/6 Credits",
-						"value": "0x1800"
-					},
-					{
-						"name": "1 Coin/4 Credits",
-						"value": "0x2000"
-					},
-					{
-						"name": "1 Coin/3 Credits",
-						"value": "0x2800"
-					},
-					{
-						"name": "2 Coins / 2 Credits",
-						"value": "0x3000"
-					},
-					{
-						"name": "1 Coin/1 Credit",
-						"value": "0x3800"
-					}
-				]
-			},
-			{
 				"name": "Speed up",
-				"id": 7,
+				"id": 3,
 				"type": "check",
 				"enabled": true,
 				"persist": true,
@@ -231,7 +102,7 @@
 			},
 			{
 				"name": "Flip Screen",
-				"id": 8,
+				"id": 4,
 				"type": "check",
 				"enabled": true,
 				"persist": true,
@@ -243,7 +114,7 @@
 			},
 			{
 				"name": "Slow Motion",
-				"id": 9,
+				"id": 5,
 				"type": "check",
 				"enabled": true,
 				"persist": true,
@@ -255,7 +126,7 @@
 			},
 			{
 				"name": "Slowest Motion",
-				"id": 10,
+				"id": 6,
 				"type": "check",
 				"enabled": true,
 				"persist": true,
@@ -264,35 +135,6 @@
 				"value": 0,
 				"value_off": 131072,
 				"mask": "0xFFFDFFFF"
-			},
-			{
-				"name": "Freeze",
-				"id": 11,
-				"type": "list",
-				"enabled": true,
-				"persist": true,
-				"address": "0xfa000000",
-				"defaultval": 3,
-				"value": 0,
-				"mask": "0xFF3FFFFF",
-				"options": [
-					{
-						"name": "On with Alignment Character",
-						"value": "0x0"
-					},
-					{
-						"name": "On",
-						"value": "0x400000"
-					},
-					{
-						"name": "Off",
-						"value": "0x800000"
-					},
-					{
-						"name": "Off",
-						"value": "0xC00000"
-					}
-				]
 			},
 			{
 				"name": "Default",

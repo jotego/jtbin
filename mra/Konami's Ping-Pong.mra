@@ -5,7 +5,7 @@
               This work is not mantained by the MiSTer project. Please contact the
               core author for issues and updates.
 
-              (c) Jose Tejada, 2023. Please support this research
+              (c) Jose Tejada, 2024. Please support this research
               Patreon: https://patreon.com/jotego
 
               The author does not endorse or participate in illegal distribution
@@ -45,8 +45,8 @@
         <!-- OBJ_START -->
         <!-- sprites - starts at 0xA000 - length 0x2000 (13 bits) -->
         <part name="555_e02.12c" crc="33c687e0"/>
-        <!-- JTFRAME_MCLK -->
         <!-- JTFRAME_PROM_START -->
+        <!-- JTFRAME_MCLK -->
         <!-- proms - starts at 0xC000 - length 0x220 (10 bits) -->
         <part name="555e06.3j" crc="3e04f06e"/>
         <part name="555e05.5h" crc="8456046a"/>
@@ -65,5 +65,5 @@
         <!-- SYSTEM -->
         <dip name="Service Mode" bits="13" ids="On,Off"/>
     </switches>
-    <buttons names="Button 1, button 2,Start,Coin,Core credits" default="Y,X,Start,Select,-" count="2"/>
+    <buttons names="Button 1, button 2,Start,Coin,Core credits" default="A,B,Start,Select,-" count="2"/>
 </misterromdescription>

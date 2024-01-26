@@ -32,13 +32,13 @@
     <rotation>vertical (ccw)</rotation>
     <region>World</region>
     <mraauthor>jotego</mraauthor>
-    <rom index="0" zip="mach9.zip|vulgus.zip" md5="None" asm_md5="cb4a105e9d43c639c3cd72055315defb">
+    <rom index="0" zip="mach9.zip|vulgus.zip" md5="None" asm_md5="d470962fb542b92432b24e558f7d3374">
         <!--  Header to identify the PCB type
         Byte 0 = 0 for 1942, 1 for Vulgus, 2 for Higemaru
         Byte 1 = XOR with flip
  -->
         <part>
-            01 00 </part>
+            01 00 00 00 </part>
         <!-- maincpu - starts at 0x0 - length 0x14000 (17 bits) -->
         <part name="02_4n.bin" crc="b3310b0c"/>
         <part name="03_5n.bin" crc="51acef76"/>
@@ -113,5 +113,5 @@
         <dip name="Cabinet" bits="15" ids="Upright,Cocktail"/>
         <dip name="Flip Screen" ids="Off,On" bits="16"/>
     </switches>
-    <buttons names="Shoot,Bomb,Start,Coin,Core credits" default="Y,X,Start,Select,-" count="2"/>
+    <buttons names="Shoot,Bomb,Start,Coin,Core credits" default="A,B,Start,Select,-" count="2"/>
 </misterromdescription>

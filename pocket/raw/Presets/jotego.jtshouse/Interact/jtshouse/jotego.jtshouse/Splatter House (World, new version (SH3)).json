@@ -3,18 +3,8 @@
 		"magic": "APF_VER_1",
 		"variables": [
 			{
-				"name": "Version",
-				"id": 1000,
-				"type": "number_u32",
-				"enabled": false,
-				"persist": false,
-				"address": "0xFF000000",
-				"defaultval": 0,
-				"value": 0
-			},
-			{
 				"name": "Rotate screen",
-				"id": 1,
+				"id": 0,
 				"type": "check",
 				"enabled": true,
 				"persist": true,
@@ -25,7 +15,7 @@
 			},
 			{
 				"name": "Service Mode",
-				"id": 2,
+				"id": 1,
 				"type": "check",
 				"enabled": true,
 				"persist": true,
@@ -37,7 +27,7 @@
 			},
 			{
 				"name": "Stage Select",
-				"id": 3,
+				"id": 2,
 				"type": "check",
 				"enabled": true,
 				"persist": true,
@@ -49,7 +39,7 @@
 			},
 			{
 				"name": "CPU #0 Kick Watchdog in IRQ (step1of2)",
-				"id": 4,
+				"id": 3,
 				"type": "check",
 				"enabled": true,
 				"persist": true,
@@ -61,7 +51,7 @@
 			},
 			{
 				"name": "CPU #0\u00261 Kick Watchdog in IRQ (step1of2)",
-				"id": 5,
+				"id": 4,
 				"type": "check",
 				"enabled": true,
 				"persist": true,
@@ -73,7 +63,7 @@
 			},
 			{
 				"name": "CPU #0\u00261 Kick Watchdog in IRQ (step2of2)",
-				"id": 6,
+				"id": 5,
 				"type": "check",
 				"enabled": true,
 				"persist": true,
@@ -85,7 +75,7 @@
 			},
 			{
 				"name": "CPU #0 Kick Watchdog in IRQ (step2of2)",
-				"id": 7,
+				"id": 6,
 				"type": "check",
 				"enabled": true,
 				"persist": true,

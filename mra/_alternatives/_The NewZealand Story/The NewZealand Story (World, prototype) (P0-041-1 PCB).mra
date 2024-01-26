@@ -5,7 +5,7 @@
               This work is not mantained by the MiSTer project. Please contact the
               core author for issues and updates.
 
-              (c) Jose Tejada, 2023. Please support this research
+              (c) Jose Tejada, 2024. Please support this research
               Patreon: https://patreon.com/jotego
 
               The author does not endorse or participate in illegal distribution
@@ -32,7 +32,7 @@
     <rotation>horizontal</rotation>
     <region>World</region>
     <mraauthor>jotego</mraauthor>
-    <rom index="0" zip="tnzsop.zip|tnzs.zip" md5="None" asm_md5="917ca11410b3f0c12b2c45c2dde4f2fa">
+    <rom index="0" zip="tnzsop.zip|tnzs.zip" md5="None" asm_md5="8f0223d475a84ce98ccf5c8a0a3d0905">
         <!-- bit 0 = MCU
              bit 1 = color PROM
              bit 2 = Kabuzi Z (specific sound features)
@@ -46,7 +46,7 @@
              bit 1 = button aid
              bit 2 = 3 MHz for FM module                  -->
         <part>
-            B1 04 </part>
+            B1 04 00 00 </part>
         <!-- maincpu - starts at 0x0 - length 0x20000 (17 bits) -->
         <part name="c-11__6-24__1959h.d27c1000d-15.u32" crc="3c1dae7b"/>
         <!-- JTFRAME_BA1_START -->
@@ -97,5 +97,5 @@
         <dip name="Lives" bits="12,13" ids="4,5,2,3"/>
         <dip name="Allow Continue" bits="14" ids="No,Yes"/>
     </switches>
-    <buttons names="Shoot,Jump,-,Start,Coin,Core credits" default="Y,X,B,Start,Select,-" count="2"/>
+    <buttons names="Shoot,Jump,-,Start,Coin,Core credits" default="A,B,Start,Select,-" count="2"/>
 </misterromdescription>

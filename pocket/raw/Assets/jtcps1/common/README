@@ -81,6 +81,7 @@ nemo.rom
 nemoj.rom
 nemor1.rom
 pang3.rom
+pang3b.rom
 pang3j.rom
 pang3r1.rom
 pnickj.rom
@@ -90,7 +91,11 @@ qadjr.rom
 qtono2j.rom
 rockmanj.rom
 sf2.rom
+sf2acc.rom
+sf2acca.rom
+sf2accp2.rom
 sf2ce.rom
+sf2cebltw.rom
 sf2ceea.rom
 sf2ceja.rom
 sf2cejb.rom
@@ -99,6 +104,7 @@ sf2cet.rom
 sf2ceua.rom
 sf2ceub.rom
 sf2ceuc.rom
+sf2ceupl.rom
 sf2ea.rom
 sf2eb.rom
 sf2ed.rom
@@ -114,6 +120,11 @@ sf2jc.rom
 sf2jf.rom
 sf2jh.rom
 sf2jl.rom
+sf2qp1.rom
+sf2qp2.rom
+sf2rb3.rom
+sf2red.rom
+sf2redp2.rom
 sf2ua.rom
 sf2ub.rom
 sf2uc.rom
@@ -123,6 +134,8 @@ sf2ug.rom
 sf2uh.rom
 sf2ui.rom
 sf2uk.rom
+sf2v004.rom
+sf2yyc.rom
 sfach.rom
 sfzbch.rom
 sfzch.rom

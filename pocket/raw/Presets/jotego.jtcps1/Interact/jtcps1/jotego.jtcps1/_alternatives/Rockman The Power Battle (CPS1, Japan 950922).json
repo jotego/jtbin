@@ -3,101 +3,8 @@
 		"magic": "APF_VER_1",
 		"variables": [
 			{
-				"name": "Version",
-				"id": 1000,
-				"type": "number_u32",
-				"enabled": false,
-				"persist": false,
-				"address": "0xFF000000",
-				"defaultval": 0,
-				"value": 0
-			},
-			{
-				"name": "FX Volume",
-				"id": 1,
-				"type": "list",
-				"enabled": true,
-				"persist": true,
-				"address": "0xfb000000",
-				"defaultval": 0,
-				"value": 0,
-				"mask": "0xFFFFFF3F",
-				"options": [
-					{
-						"name": "high",
-						"value": "0x00"
-					},
-					{
-						"name": "very high",
-						"value": "0x40"
-					},
-					{
-						"name": "very low",
-						"value": "0x80"
-					},
-					{
-						"name": "low",
-						"value": "0xc0"
-					}
-				]
-			},
-			{
-				"name": "Dial sensitivity",
-				"id": 2,
-				"type": "list",
-				"enabled": true,
-				"persist": true,
-				"address": "0xfb000004",
-				"defaultval": 3,
-				"value": 0,
-				"mask": "0xFFFFFFFC",
-				"options": [
-					{
-						"name": "very high",
-						"value": "0x1"
-					},
-					{
-						"name": "high",
-						"value": "0x0"
-					},
-					{
-						"name": "low",
-						"value": "0x3"
-					},
-					{
-						"name": "very low",
-						"value": "0x2"
-					}
-				]
-			},
-			{
-				"name": "Coin slots",
-				"id": 3,
-				"type": "list",
-				"enabled": true,
-				"persist": true,
-				"address": "0xfa000000",
-				"defaultval": 2,
-				"value": 0,
-				"mask": "0xFFFFFF9F",
-				"options": [
-					{
-						"name": "1, Common",
-						"value": "0x20"
-					},
-					{
-						"name": "2, Individual",
-						"value": "0x40"
-					},
-					{
-						"name": "2, Common",
-						"value": "0x60"
-					}
-				]
-			},
-			{
 				"name": "Difficulty",
-				"id": 4,
+				"id": 0,
 				"type": "list",
 				"enabled": true,
 				"persist": true,
@@ -126,7 +33,7 @@
 			},
 			{
 				"name": "Time",
-				"id": 5,
+				"id": 1,
 				"type": "list",
 				"enabled": true,
 				"persist": true,
@@ -155,7 +62,7 @@
 			},
 			{
 				"name": "Flip Screen",
-				"id": 6,
+				"id": 2,
 				"type": "check",
 				"enabled": true,
 				"persist": true,
@@ -167,7 +74,7 @@
 			},
 			{
 				"name": "Demo Sounds",
-				"id": 7,
+				"id": 3,
 				"type": "check",
 				"enabled": true,
 				"persist": true,
@@ -178,7 +85,7 @@
 			},
 			{
 				"name": "Allow Continue",
-				"id": 8,
+				"id": 4,
 				"type": "check",
 				"enabled": true,
 				"persist": true,
@@ -189,7 +96,7 @@
 			},
 			{
 				"name": "Game Mode",
-				"id": 9,
+				"id": 5,
 				"type": "list",
 				"enabled": true,
 				"persist": true,

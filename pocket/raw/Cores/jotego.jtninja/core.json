@@ -7,11 +7,11 @@
 				"jtpatreon"
 			],
 			"shortname": "jtninja",
-			"description": "Arcade hardware",
+			"description": "Arcade",
 			"author": "jotego",
 			"url": "https://patreon.com/jotego",
-			"version": "1.5.0",
-			"date_release": "2023-11-24"
+			"version": "internal",
+			"date_release": "2024-01-26"
 		},
 		"framework": {
 			"target_product": "Analogue Pocket",

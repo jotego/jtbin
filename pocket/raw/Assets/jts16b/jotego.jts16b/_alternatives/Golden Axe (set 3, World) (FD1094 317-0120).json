@@ -9,8 +9,7 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "goldnaxe3.rom",
-				"md5": "3bd9b9b2d3ecdfee18f25283d232f395"
+				"filename": "goldnaxe3.rom"
 			}
 		],
 		"memory_writes": [

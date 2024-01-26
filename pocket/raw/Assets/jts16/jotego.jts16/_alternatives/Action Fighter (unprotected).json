@@ -9,8 +9,7 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "afightera.rom",
-				"md5": "b74941cddeabdbf21b6a939c5a059a84"
+				"filename": "afightera.rom"
 			}
 		],
 		"memory_writes": [

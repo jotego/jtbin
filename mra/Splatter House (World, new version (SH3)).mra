@@ -107,5 +107,5 @@
         <dip name="Debug IRQ 2/2" bits="6" ids="Yes,No"/>
         <dip name="Debug IRQ 2/2" bits="7" ids="Yes,No"/>
     </switches>
-    <buttons names="Attack,Jump,-,Start,Coin,Core credits" default="Y,X,B,Start,Select,-" count="2"/>
+    <buttons names="Attack,Jump,-,Start,Coin,Core credits" default="A,B,Start,Select,-" count="2"/>
 </misterromdescription>

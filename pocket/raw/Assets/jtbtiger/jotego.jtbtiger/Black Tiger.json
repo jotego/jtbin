@@ -9,8 +9,7 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "blktiger.rom",
-				"md5": "5d864c2ff5386bf87ecc66d99a29e06d"
+				"filename": "blktiger.rom"
 			}
 		],
 		"memory_writes": [

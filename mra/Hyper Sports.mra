@@ -5,7 +5,7 @@
               This work is not mantained by the MiSTer project. Please contact the
               core author for issues and updates.
 
-              (c) Jose Tejada, 2023. Please support this research
+              (c) Jose Tejada, 2024. Please support this research
               Patreon: https://patreon.com/jotego
 
               The author does not endorse or participate in illegal distribution
@@ -32,7 +32,11 @@
     <rotation>horizontal</rotation>
     <region>World</region>
     <mraauthor>jotego</mraauthor>
-    <rom index="0" zip="hyperspt.zip" md5="None" asm_md5="9b198e87c36290f37f2d1ae2208f81bd">
+    <rom index="0" zip="hyperspt.zip" md5="None" asm_md5="5964cd567bdc916f1f80c348ff922f43">
+        <!--  Header to identify the game -->
+        <part>
+            01 00 00 00 00 00 00 00
+        </part>
         <!-- maincpu - starts at 0x0 - length 0x10000 (16 bits) -->
         <part repeat="0x4000"> FF</part>
         <part name="c01" crc="0c720eeb"/>
@@ -100,5 +104,5 @@
         <dip name="Records" bits="11" ids="Erase on Reset,Don&apos;t Erase"/>
         <dip name="Difficulty" bits="12,15" ids="Difficult 4,Difficult 3,Difficult 2,Difficult 1,Normal 8,Normal 7,Normal 6,Normal 5,Normal 4,Normal 3,Normal 2,Normal 1,Easy 4,Easy 3,Easy 2,Easy 1"/>
     </switches>
-    <buttons names="Left button, Centre button, Right button,Start,Coin,Core credits" default="Y,X,B,Start,Select,-" count="3"/>
+    <buttons names="Left button, Centre button, Right button,Start,Coin,Core credits" default="A,B,X,Start,Select,-" count="3"/>
 </misterromdescription>

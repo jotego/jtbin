@@ -9,8 +9,7 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "ryukyua.rom",
-				"md5": "a588e0ceab5e1d557cc0188a38385750"
+				"filename": "ryukyua.rom"
 			}
 		],
 		"memory_writes": [

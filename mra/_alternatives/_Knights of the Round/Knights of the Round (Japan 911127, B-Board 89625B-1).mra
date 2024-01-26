@@ -5,7 +5,7 @@
               This work is not mantained by the MiSTer project. Please contact the
               core author for issues and updates.
 
-              (c) Jose Tejada, 2023. Please support this research
+              (c) Jose Tejada, 2024. Please support this research
               Patreon: https://patreon.com/jotego
 
               The author does not endorse or participate in illegal distribution
@@ -112,12 +112,9 @@
         <part>00</part>
     </rom>
     <switches page_id="1" page_name="Switches" base="8" default="ff,fc,bf">
-        <!-- DSWA -->
-        <dip name="2 to start, 1 continue" bits="6" ids="On,Off"/>
         <!-- DSWB -->
         <dip name="Enemy&apos;s attack frequency" bits="8,10" ids="8,7,6,5,4,3,2,1"/>
         <dip name="Enemy&apos;s attack power" bits="11,13" ids="1,2,3,8,7,6,5,4"/>
-        <dip name="Coin Slots" bits="14" ids="1,3"/>
         <dip name="Play Mode" bits="15" ids="2 Players,3 Players"/>
         <!-- DSWC -->
         <dip name="Lives" bits="16,17" ids="1,4,3,2"/>
@@ -128,5 +125,5 @@
         <dip name="Allow Continue" bits="22" ids="Yes,No"/>
         <dip name="Game Mode" bits="23" ids="Test,Game"/>
     </switches>
-    <buttons names="Slay,Jump,-,-,-,-,Start,Coin,Core credits" default="Y,X,B,A,R,L,Start,Select,-" count="2"/>
+    <buttons names="Slay,Jump,-,-,-,-,Start,Coin,Core credits" default="A,B,Start,Select,-" count="2"/>
 </misterromdescription>

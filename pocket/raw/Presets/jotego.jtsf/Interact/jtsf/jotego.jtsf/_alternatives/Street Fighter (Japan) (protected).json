@@ -3,18 +3,8 @@
 		"magic": "APF_VER_1",
 		"variables": [
 			{
-				"name": "Version",
-				"id": 1000,
-				"type": "number_u32",
-				"enabled": false,
-				"persist": false,
-				"address": "0xFF000000",
-				"defaultval": 0,
-				"value": 0
-			},
-			{
 				"name": "FX Volume",
-				"id": 1,
+				"id": 0,
 				"type": "list",
 				"enabled": true,
 				"persist": true,
@@ -43,7 +33,7 @@
 			},
 			{
 				"name": "Coin A",
-				"id": 2,
+				"id": 1,
 				"type": "list",
 				"enabled": true,
 				"persist": true,
@@ -88,7 +78,7 @@
 			},
 			{
 				"name": "Coin B",
-				"id": 3,
+				"id": 2,
 				"type": "list",
 				"enabled": true,
 				"persist": true,
@@ -133,7 +123,7 @@
 			},
 			{
 				"name": "Flip Screen",
-				"id": 4,
+				"id": 3,
 				"type": "check",
 				"enabled": true,
 				"persist": true,
@@ -145,7 +135,7 @@
 			},
 			{
 				"name": "Attract Music",
-				"id": 5,
+				"id": 4,
 				"type": "check",
 				"enabled": true,
 				"persist": true,
@@ -156,7 +146,7 @@
 			},
 			{
 				"name": "Speed",
-				"id": 6,
+				"id": 5,
 				"type": "list",
 				"enabled": true,
 				"persist": true,
@@ -177,7 +167,7 @@
 			},
 			{
 				"name": "Demo Sounds",
-				"id": 7,
+				"id": 6,
 				"type": "check",
 				"enabled": true,
 				"persist": true,
@@ -189,7 +179,7 @@
 			},
 			{
 				"name": "Freeze",
-				"id": 8,
+				"id": 7,
 				"type": "check",
 				"enabled": true,
 				"persist": true,
@@ -201,7 +191,7 @@
 			},
 			{
 				"name": "Service Mode",
-				"id": 9,
+				"id": 8,
 				"type": "check",
 				"enabled": true,
 				"persist": true,
@@ -213,7 +203,7 @@
 			},
 			{
 				"name": "Game Continuation",
-				"id": 10,
+				"id": 9,
 				"type": "list",
 				"enabled": true,
 				"persist": true,
@@ -250,7 +240,7 @@
 			},
 			{
 				"name": "Round Time Count",
-				"id": 11,
+				"id": 10,
 				"type": "list",
 				"enabled": true,
 				"persist": true,
@@ -279,7 +269,7 @@
 			},
 			{
 				"name": "Difficulty",
-				"id": 12,
+				"id": 11,
 				"type": "list",
 				"enabled": true,
 				"persist": true,
@@ -308,7 +298,7 @@
 			},
 			{
 				"name": "Number of Countries Selected",
-				"id": 13,
+				"id": 12,
 				"type": "list",
 				"enabled": true,
 				"persist": true,

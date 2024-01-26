@@ -9,8 +9,7 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "sectionz.rom",
-				"md5": "de77ec79f7b238bec57a5af46ada624b"
+				"filename": "sectionz.rom"
 			}
 		],
 		"memory_writes": [

@@ -9,8 +9,7 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "contraj.rom",
-				"md5": "006e186a5e1177a68fc38a5052cd6fe7"
+				"filename": "contraj.rom"
 			}
 		],
 		"memory_writes": [

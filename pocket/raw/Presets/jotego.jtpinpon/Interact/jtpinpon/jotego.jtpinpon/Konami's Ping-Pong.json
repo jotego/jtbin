@@ -3,18 +3,8 @@
 		"magic": "APF_VER_1",
 		"variables": [
 			{
-				"name": "Version",
-				"id": 1000,
-				"type": "number_u32",
-				"enabled": false,
-				"persist": false,
-				"address": "0xFF000000",
-				"defaultval": 0,
-				"value": 0
-			},
-			{
 				"name": "Coin B",
-				"id": 1,
+				"id": 0,
 				"type": "list",
 				"enabled": true,
 				"persist": true,
@@ -91,7 +81,7 @@
 			},
 			{
 				"name": "Demo Sounds",
-				"id": 2,
+				"id": 1,
 				"type": "check",
 				"enabled": true,
 				"persist": true,
@@ -103,7 +93,7 @@
 			},
 			{
 				"name": "Difficulty",
-				"id": 3,
+				"id": 2,
 				"type": "list",
 				"enabled": true,
 				"persist": true,
@@ -132,7 +122,7 @@
 			},
 			{
 				"name": "Service Mode",
-				"id": 4,
+				"id": 3,
 				"type": "check",
 				"enabled": true,
 				"persist": true,

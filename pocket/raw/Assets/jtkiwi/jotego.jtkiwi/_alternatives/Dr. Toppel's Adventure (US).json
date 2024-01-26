@@ -9,8 +9,7 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "drtoppelu.rom",
-				"md5": "208f748681712e069cfbe9ac76588f0a"
+				"filename": "drtoppelu.rom"
 			}
 		],
 		"memory_writes": [

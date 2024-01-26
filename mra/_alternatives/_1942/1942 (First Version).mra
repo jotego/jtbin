@@ -32,13 +32,13 @@
     <rotation>vertical (ccw)</rotation>
     <region>World</region>
     <mraauthor>jotego</mraauthor>
-    <rom index="0" zip="1942b.zip|1942.zip" md5="None" asm_md5="3468b76264e1ec8f1a7f0a3363bcc3b2">
+    <rom index="0" zip="1942b.zip|1942.zip" md5="None" asm_md5="bc959a4c6e8ca06dd6739f4487e7bc3d">
         <!--  Header to identify the PCB type
         Byte 0 = 0 for 1942, 1 for Vulgus, 2 for Higemaru
         Byte 1 = XOR with flip
  -->
         <part>
-            00 00 </part>
+            00 00 00 00 </part>
         <!-- maincpu - starts at 0x0 - length 0x14000 (17 bits) -->
         <part name="sr-03.m3" crc="612975f2"/>
         <part name="sr-04.m4" crc="a60ac644"/>
@@ -112,5 +112,5 @@
         <dip name="Difficulty" bits="13,14" ids="Very Difficult,Difficult,Easy,Normal"/>
         <dip name="Screen Stop" bits="15" ids="On,Off"/>
     </switches>
-    <buttons names="Shoot,Roll,Start,Coin,Core credits" default="Y,X,Start,Select,-" count="2"/>
+    <buttons names="Shoot,Roll,Start,Coin,Core credits" default="A,B,Start,Select,-" count="2"/>
 </misterromdescription>

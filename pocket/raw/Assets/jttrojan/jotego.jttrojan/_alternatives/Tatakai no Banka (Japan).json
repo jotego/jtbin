@@ -9,8 +9,7 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "trojanj.rom",
-				"md5": "df7d169ef609f4991cecf6f08fce2f98"
+				"filename": "trojanj.rom"
 			}
 		],
 		"memory_writes": [

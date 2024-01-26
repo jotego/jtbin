@@ -17,7 +17,7 @@
 				"name": "ROM",
 				"id": 1,
 				"required": true,
-				"parameters": "0x109",
+				"parameters": "0x108",
 				"extensions": [
 					"rom"
 				],
@@ -40,6 +40,7 @@
 				"id": 17,
 				"required": false,
 				"parameters": "0x1000000",
+				"filename": "beta.bin",
 				"extensions": [
 					"bin"
 				],

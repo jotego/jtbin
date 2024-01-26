@@ -9,8 +9,7 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "blkdrgon.rom",
-				"md5": "27b235d9b6c835f4cc1c1b04f66c0cc1"
+				"filename": "blkdrgon.rom"
 			}
 		],
 		"memory_writes": [

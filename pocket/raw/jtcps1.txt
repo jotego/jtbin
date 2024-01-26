@@ -86,6 +86,7 @@ Nemo (World 901130) --> nemo.rom
 Nemo (Japan 901120) --> nemoj.rom
 Nemo (World 901109) --> nemor1.rom
 Pang! 3 (Euro 950601) --> pang3.rom
+Pang! 3 (bootleg, set 1) --> pang3b.rom
 Pang! 3: Kaitou Tachi no Karei na Gogo (Japan 950511) --> pang3j.rom
 Pang! 3 (Euro 950511) --> pang3r1.rom
 Pnickies (Japan 940608) --> pnickj.rom
@@ -95,7 +96,11 @@ Quiz & Dragons: Capcom Quiz Game (Japan Resale Ver. 940921) --> qadjr.rom
 Quiz Tonosama no Yabou 2: Zenkoku-ban (Japan 950123) --> qtono2j.rom
 Rockman: The Power Battle (CPS1, Japan 950922) --> rockmanj.rom
 Street Fighter II: The World Warrior (World 910522) --> sf2.rom
+Street Fighter II': Champion Edition (Accelerator!, bootleg, set 1) --> sf2acc.rom
+Street Fighter II': Champion Edition (Accelerator!, bootleg, set 2) --> sf2acca.rom
+Street Fighter II': Champion Edition (Accelerator Pt.II, bootleg) --> sf2accp2.rom
 Street Fighter II': Champion Edition (World 920513) --> sf2ce.rom
+Street Fighter II': Champion Edition ('Taiwan' bootleg with PAL) --> sf2cebltw.rom
 Street Fighter II': Champion Edition (World 920313) --> sf2ceea.rom
 Street Fighter II': Champion Edition (Japan 920322) --> sf2ceja.rom
 Street Fighter II': Champion Edition (Japan 920513) --> sf2cejb.rom
@@ -104,6 +109,7 @@ Street Fighter II': Champion Edition (Taiwan 920313) --> sf2cet.rom
 Street Fighter II': Champion Edition (USA 920313) --> sf2ceua.rom
 Street Fighter II': Champion Edition (USA 920513) --> sf2ceub.rom
 Street Fighter II': Champion Edition (USA 920803) --> sf2ceuc.rom
+Street Fighter II': Champion Edition (UPL bootleg) --> sf2ceupl.rom
 Street Fighter II: The World Warrior (World 910204) --> sf2ea.rom
 Street Fighter II: The World Warrior (World 910214) --> sf2eb.rom
 Street Fighter II: The World Warrior (World 910318) --> sf2ed.rom
@@ -119,6 +125,11 @@ Street Fighter II: The World Warrior (Japan 910306) --> sf2jc.rom
 Street Fighter II: The World Warrior (Japan 910411) --> sf2jf.rom
 Street Fighter II: The World Warrior (Japan 910522) --> sf2jh.rom
 Street Fighter II: The World Warrior (Japan 920312) --> sf2jl.rom
+Street Fighter II: The World Warrior (Quicken Pt-I, bootleg) --> sf2qp1.rom
+Street Fighter II: The World Warrior (Quicken, bootleg) --> sf2qp2.rom
+Street Fighter II': Champion Edition (Rainbow, bootleg, set 3) --> sf2rb3.rom
+Street Fighter II': Champion Edition (Red Wave, bootleg, set 1) --> sf2red.rom
+Street Fighter II': Champion Edition (Red Wave PtII, bootleg) --> sf2redp2.rom
 Street Fighter II: The World Warrior (USA 910206) --> sf2ua.rom
 Street Fighter II: The World Warrior (USA 910214) --> sf2ub.rom
 Street Fighter II: The World Warrior (USA 910306) --> sf2uc.rom
@@ -128,6 +139,8 @@ Street Fighter II: The World Warrior (USA 910522, Rev. G) --> sf2ug.rom
 Street Fighter II: The World Warrior (USA 910522, Rev. H) --> sf2uh.rom
 Street Fighter II: The World Warrior (USA 910522, Rev. I) --> sf2ui.rom
 Street Fighter II: The World Warrior (USA 911101) --> sf2uk.rom
+Street Fighter II': Champion Edition (V004, bootleg) --> sf2v004.rom
+Street Fighter II': Champion Edition (YYC, bootleg) --> sf2yyc.rom
 Street Fighter Alpha: Warriors' Dreams (CPS Changer, Publicity USA 950727) --> sfach.rom
 Street Fighter Zero (CPS Changer, Brazil 950727) --> sfzbch.rom
 Street Fighter Zero (CPS Changer, Japan 951020) --> sfzch.rom

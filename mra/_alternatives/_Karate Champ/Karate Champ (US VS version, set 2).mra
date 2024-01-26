@@ -5,7 +5,7 @@
               This work is not mantained by the MiSTer project. Please contact the
               core author for issues and updates.
 
-              (c) Jose Tejada, 2023. Please support this research
+              (c) Jose Tejada, 2024. Please support this research
               Patreon: https://patreon.com/jotego
 
               The author does not endorse or participate in illegal distribution
@@ -96,5 +96,5 @@
         <dip name="Free Play" bits="7" ids="On,Off"/>
         <dip name="Link joysticks" ids="Off,On" bits="8"/>
     </switches>
-    <buttons names="left(2),right(2),up(2),bottom(2),Start,Coin,Core credits" default="Y,X,B,A,Start,Select,-" count="4"/>
+    <buttons names="left(2),right(2),up(2),bottom(2),Start,Coin,Core credits" default="A,B,X,Y,Start,Select,-" count="4"/>
 </misterromdescription>

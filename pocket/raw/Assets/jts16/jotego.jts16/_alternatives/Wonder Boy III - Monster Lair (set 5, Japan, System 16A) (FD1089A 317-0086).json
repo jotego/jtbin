@@ -9,8 +9,7 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "wb35.rom",
-				"md5": "94712db4f9ad4b34282ec310796c314b"
+				"filename": "wb35.rom"
 			}
 		],
 		"memory_writes": [

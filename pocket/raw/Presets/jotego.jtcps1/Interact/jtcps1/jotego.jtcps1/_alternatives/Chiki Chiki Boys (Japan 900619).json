@@ -3,166 +3,8 @@
 		"magic": "APF_VER_1",
 		"variables": [
 			{
-				"name": "Version",
-				"id": 1000,
-				"type": "number_u32",
-				"enabled": false,
-				"persist": false,
-				"address": "0xFF000000",
-				"defaultval": 0,
-				"value": 0
-			},
-			{
-				"name": "FX Volume",
-				"id": 1,
-				"type": "list",
-				"enabled": true,
-				"persist": true,
-				"address": "0xfb000000",
-				"defaultval": 0,
-				"value": 0,
-				"mask": "0xFFFFFF3F",
-				"options": [
-					{
-						"name": "high",
-						"value": "0x00"
-					},
-					{
-						"name": "very high",
-						"value": "0x40"
-					},
-					{
-						"name": "very low",
-						"value": "0x80"
-					},
-					{
-						"name": "low",
-						"value": "0xc0"
-					}
-				]
-			},
-			{
-				"name": "Dial sensitivity",
-				"id": 2,
-				"type": "list",
-				"enabled": true,
-				"persist": true,
-				"address": "0xfb000004",
-				"defaultval": 3,
-				"value": 0,
-				"mask": "0xFFFFFFFC",
-				"options": [
-					{
-						"name": "very high",
-						"value": "0x1"
-					},
-					{
-						"name": "high",
-						"value": "0x0"
-					},
-					{
-						"name": "low",
-						"value": "0x3"
-					},
-					{
-						"name": "very low",
-						"value": "0x2"
-					}
-				]
-			},
-			{
-				"name": "Coin A",
-				"id": 3,
-				"type": "list",
-				"enabled": true,
-				"persist": true,
-				"address": "0xfa000000",
-				"defaultval": 7,
-				"value": 0,
-				"mask": "0xFFFFFFF8",
-				"options": [
-					{
-						"name": "4 Coins/1 Credit",
-						"value": "0x0"
-					},
-					{
-						"name": "3 Coins/1 Credit",
-						"value": "0x1"
-					},
-					{
-						"name": "2 Coins/1 Credit",
-						"value": "0x2"
-					},
-					{
-						"name": "1 Coin/6 Credits",
-						"value": "0x3"
-					},
-					{
-						"name": "1 Coin/4 Credits",
-						"value": "0x4"
-					},
-					{
-						"name": "1 Coin/3 Credits",
-						"value": "0x5"
-					},
-					{
-						"name": "1 Coin/2 Credits",
-						"value": "0x6"
-					},
-					{
-						"name": "1 Coin/1 Credit",
-						"value": "0x7"
-					}
-				]
-			},
-			{
-				"name": "Coin B",
-				"id": 4,
-				"type": "list",
-				"enabled": true,
-				"persist": true,
-				"address": "0xfa000000",
-				"defaultval": 7,
-				"value": 0,
-				"mask": "0xFFFFFFC7",
-				"options": [
-					{
-						"name": "4 Coins/1 Credit",
-						"value": "0x0"
-					},
-					{
-						"name": "3 Coins/1 Credit",
-						"value": "0x8"
-					},
-					{
-						"name": "2 Coins/1 Credit",
-						"value": "0x10"
-					},
-					{
-						"name": "1 Coin/6 Credits",
-						"value": "0x18"
-					},
-					{
-						"name": "1 Coin/4 Credits",
-						"value": "0x20"
-					},
-					{
-						"name": "1 Coin/3 Credits",
-						"value": "0x28"
-					},
-					{
-						"name": "1 Coin/2 Credits",
-						"value": "0x30"
-					},
-					{
-						"name": "1 Coin/1 Credit",
-						"value": "0x38"
-					}
-				]
-			},
-			{
 				"name": "Difficulty",
-				"id": 5,
+				"id": 0,
 				"type": "list",
 				"enabled": true,
 				"persist": true,
@@ -207,7 +49,7 @@
 			},
 			{
 				"name": "Lives",
-				"id": 6,
+				"id": 1,
 				"type": "list",
 				"enabled": true,
 				"persist": true,
@@ -236,7 +78,7 @@
 			},
 			{
 				"name": "Free Play",
-				"id": 7,
+				"id": 2,
 				"type": "check",
 				"enabled": true,
 				"persist": true,
@@ -248,7 +90,7 @@
 			},
 			{
 				"name": "Freeze",
-				"id": 8,
+				"id": 3,
 				"type": "check",
 				"enabled": true,
 				"persist": true,
@@ -260,7 +102,7 @@
 			},
 			{
 				"name": "Flip Screen",
-				"id": 9,
+				"id": 4,
 				"type": "check",
 				"enabled": true,
 				"persist": true,
@@ -272,7 +114,7 @@
 			},
 			{
 				"name": "Demo Sounds",
-				"id": 10,
+				"id": 5,
 				"type": "check",
 				"enabled": true,
 				"persist": true,
@@ -284,7 +126,7 @@
 			},
 			{
 				"name": "Allow Continue",
-				"id": 11,
+				"id": 6,
 				"type": "check",
 				"enabled": true,
 				"persist": true,
@@ -296,7 +138,7 @@
 			},
 			{
 				"name": "Game Mode",
-				"id": 12,
+				"id": 7,
 				"type": "list",
 				"enabled": true,
 				"persist": true,

@@ -9,8 +9,7 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "f1dream.rom",
-				"md5": "3282f0dbf6f907b629166484d96c0b95"
+				"filename": "f1dream.rom"
 			}
 		],
 		"memory_writes": [

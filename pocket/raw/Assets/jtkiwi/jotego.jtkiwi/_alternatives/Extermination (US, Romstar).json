@@ -9,8 +9,7 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "extrmatnur.rom",
-				"md5": "18d0f9c1845d27ddc82ff49817f4ac10"
+				"filename": "extrmatnur.rom"
 			}
 		],
 		"memory_writes": [

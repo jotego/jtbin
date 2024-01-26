@@ -5,7 +5,7 @@
               This work is not mantained by the MiSTer project. Please contact the
               core author for issues and updates.
 
-              (c) Jose Tejada, 2023. Please support this research
+              (c) Jose Tejada, 2024. Please support this research
               Patreon: https://patreon.com/jotego
 
               The author does not endorse or participate in illegal distribution
@@ -79,5 +79,5 @@
         <dip name="Service Mode" bits="18" ids="On,Off"/>
         <dip name="Sound" bits="19" ids="Mono,Stereo"/>
     </switches>
-    <buttons names="Shoot,Jump,Start,Coin,Core credits" default="Y,X,Start,Select,-" count="2"/>
+    <buttons names="Shoot,Jump,Start,Coin,Core credits" default="A,B,Start,Select,-" count="2"/>
 </misterromdescription>

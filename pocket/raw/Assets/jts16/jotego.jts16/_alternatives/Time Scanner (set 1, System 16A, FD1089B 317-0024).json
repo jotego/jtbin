@@ -9,8 +9,7 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "timescan1.rom",
-				"md5": "ddad0a50989197d365b6daabaca2152f"
+				"filename": "timescan1.rom"
 			}
 		],
 		"memory_writes": [

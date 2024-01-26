@@ -5,7 +5,7 @@
               This work is not mantained by the MiSTer project. Please contact the
               core author for issues and updates.
 
-              (c) Jose Tejada, 2023. Please support this research
+              (c) Jose Tejada, 2024. Please support this research
               Patreon: https://patreon.com/jotego
 
               The author does not endorse or participate in illegal distribution
@@ -32,12 +32,12 @@
     <rotation>vertical (cw)</rotation>
     <region>World</region>
     <mraauthor>jotego</mraauthor>
-    <rom index="0" zip="sbasketh.zip|sbasketb.zip" md5="None" asm_md5="745c18d17ed37f72a6af27e918436fea">
+    <rom index="0" zip="sbasketh.zip|sbasketb.zip" md5="None" asm_md5="72bb713a945f8716af2bbfd378b674cb">
         <!--  Header to identify the PCB type
         Byte 0 = 0 for M6809 CPU, 1 for KONAMI-1 CPU
  -->
         <part>
-            00 00 </part>
+            00 00 00 00 </part>
         <!-- maincpu - starts at 0x0 - length 0x10000 (16 bits) -->
         <part repeat="0x6000"> FF</part>
         <part name="405h05.14j" crc="263ec36b"/>
@@ -82,5 +82,5 @@
         <dip name="Difficulty" bits="13,14" ids="Hardest,Hard,Medium,Easy"/>
         <dip name="Demo Sounds" bits="15" ids="On,Off"/>
     </switches>
-    <buttons names="Bounce,Throw,Pass,Start,Coin,Core credits" default="Y,X,B,Start,Select,-" count="3"/>
+    <buttons names="Bounce,Throw,Pass,Start,Coin,Core credits" default="A,B,X,Start,Select,-" count="3"/>
 </misterromdescription>

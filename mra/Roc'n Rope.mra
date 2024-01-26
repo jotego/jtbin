@@ -5,7 +5,7 @@
               This work is not mantained by the MiSTer project. Please contact the
               core author for issues and updates.
 
-              (c) Jose Tejada, 2023. Please support this research
+              (c) Jose Tejada, 2024. Please support this research
               Patreon: https://patreon.com/jotego
 
               The author does not endorse or participate in illegal distribution
@@ -43,8 +43,8 @@
         <!-- timeplt_audio:tpsound - starts at 0xA000 - length 0x2000 (13 bits) -->
         <part name="rnr_7a.snd" crc="75d2c4e2"/>
         <part name="rnr_8a.snd" crc="ca4325ae"/>
-        <!-- JTFRAME_MCLK -->
         <!-- SCR_START -->
+        <!-- JTFRAME_MCLK -->
         <!-- tiles - starts at 0xC000 - length 0x4000 (14 bits) -->
         <interleave output="16">
             <part name="rnr_h12.vid" crc="e2114539" map="01"/>
@@ -86,5 +86,5 @@
         <dip name="Repeated Bonus" bits="19,21" ids="80k,70k,60k,50k,40k,40k,40k,40k"/>
         <dip name="Grant Repeated Bonus" bits="22" ids="Yes,No"/>
     </switches>
-    <buttons names="Rope,Flash,Start,Coin,Core credits" default="Y,X,Start,Select,-" count="2"/>
+    <buttons names="Rope,Flash,Start,Coin,Core credits" default="A,B,Start,Select,-" count="2"/>
 </misterromdescription>

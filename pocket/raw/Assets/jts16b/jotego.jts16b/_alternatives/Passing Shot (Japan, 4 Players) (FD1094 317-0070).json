@@ -9,8 +9,7 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "passshtj.rom",
-				"md5": "82f1844775534726ce9900b102370359"
+				"filename": "passshtj.rom"
 			}
 		],
 		"memory_writes": [

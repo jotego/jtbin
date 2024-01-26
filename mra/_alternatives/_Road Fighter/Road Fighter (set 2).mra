@@ -5,7 +5,7 @@
               This work is not mantained by the MiSTer project. Please contact the
               core author for issues and updates.
 
-              (c) Jose Tejada, 2023. Please support this research
+              (c) Jose Tejada, 2024. Please support this research
               Patreon: https://patreon.com/jotego
 
               The author does not endorse or participate in illegal distribution
@@ -32,7 +32,11 @@
     <rotation>vertical (cw)</rotation>
     <region>World</region>
     <mraauthor>jotego</mraauthor>
-    <rom index="0" zip="roadf2.zip|roadf.zip" md5="None" asm_md5="bb61020c7e1a3261b500f639a0abddaf">
+    <rom index="0" zip="roadf2.zip|roadf.zip" md5="None" asm_md5="6c292e9a66128e2de629be87dd0e4893">
+        <!--  Header to identify the game -->
+        <part>
+            00 00 00 00 00 00 00 00
+        </part>
         <!-- maincpu - starts at 0x0 - length 0x10000 (16 bits) -->
         <part repeat="0x4000"> FF</part>
         <part name="5g" crc="d8070d30"/>
@@ -90,5 +94,5 @@
         <dip name="Demo Sounds" bits="15" ids="On,Off"/>
         <dip name="Flip" ids="Off,On" bits="16"/>
     </switches>
-    <buttons names="Low gear,High gear,-,Start,Coin,Core credits" default="Y,X,B,Start,Select,-" count="2"/>
+    <buttons names="Low gear,High gear,-,Start,Coin,Core credits" default="A,B,Start,Select,-" count="2"/>
 </misterromdescription>

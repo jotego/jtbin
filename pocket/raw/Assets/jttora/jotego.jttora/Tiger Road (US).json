@@ -9,8 +9,7 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "tigeroad.rom",
-				"md5": "83fe4481829c121f4e299d9a0535166e"
+				"filename": "tigeroad.rom"
 			}
 		],
 		"memory_writes": [

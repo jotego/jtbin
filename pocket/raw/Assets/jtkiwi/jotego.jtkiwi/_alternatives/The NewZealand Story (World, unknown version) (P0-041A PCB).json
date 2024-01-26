@@ -9,8 +9,7 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "tnzsoa.rom",
-				"md5": "284384eca7fc36c6935f6bf6999550c8"
+				"filename": "tnzsoa.rom"
 			}
 		],
 		"memory_writes": [

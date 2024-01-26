@@ -9,8 +9,7 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "tturfu.rom",
-				"md5": "56ff0f22b78e17f55709141a47654c27"
+				"filename": "tturfu.rom"
 			}
 		],
 		"memory_writes": [

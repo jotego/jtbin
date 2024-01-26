@@ -5,7 +5,7 @@
               This work is not mantained by the MiSTer project. Please contact the
               core author for issues and updates.
 
-              (c) Jose Tejada, 2023. Please support this research
+              (c) Jose Tejada, 2024. Please support this research
               Patreon: https://patreon.com/jotego
 
               The author does not endorse or participate in illegal distribution
@@ -32,7 +32,7 @@
     <rotation>vertical (cw)</rotation>
     <region>World</region>
     <mraauthor>jotego</mraauthor>
-    <rom index="0" zip="drtoppel.zip" md5="None" asm_md5="26a345a1a4a28bc73eeae9d0649c155c">
+    <rom index="0" zip="drtoppel.zip" md5="None" asm_md5="3c672dd2cd71cc489382ba09aa732b34">
         <!-- bit 0 = MCU
              bit 1 = color PROM
              bit 2 = Kabuzi Z (specific sound features)
@@ -46,7 +46,7 @@
              bit 1 = button aid
              bit 2 = 3 MHz for FM module                  -->
         <part>
-            03 00 </part>
+            03 00 00 00 </part>
         <!-- maincpu - starts at 0x0 - length 0x20000 (17 bits) -->
         <part name="b19__09.11c" crc="3e654f82"/>
         <part name="b19__10.9c" crc="7e72fd25"/>
@@ -101,5 +101,5 @@
         <dip name="Bonus Life" bits="10,11" ids="50 100 200 200k+,30k 100k,30k only,30 100 200 100k+"/>
         <dip name="Lives" bits="12,13" ids="5,4,2,3"/>
     </switches>
-    <buttons names="button 1,button 2,-,Start,Coin,Core credits" default="Y,X,B,Start,Select,-" count="2"/>
+    <buttons names="button 1,button 2,-,Start,Coin,Core credits" default="A,B,Start,Select,-" count="2"/>
 </misterromdescription>
