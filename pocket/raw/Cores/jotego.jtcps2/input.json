@@ -3,8 +3,49 @@
 		"magic": "APF_VER_1",
 		"controllers": [
 			{
-				"type": "default",
-				"mappings": []
+                "type": "default",
+				"mappings": [
+					{
+						"id": 0,
+						"name": "Light Punch",
+						"key": "pad_btn_a"
+					},
+					{
+						"id": 1,
+						"name": "Medium Punch",
+						"key": "pad_btn_b"
+					},
+					{
+						"id": 2,
+						"name": "Heavy Punch",
+						"key": "pad_btn_x"
+					},
+					{
+						"id": 3,
+						"name": "Light Kick",
+						"key": "pad_btn_y"
+					},
+					{
+						"id": 4,
+						"name": "Medium Kick",
+						"key": "pad_trig_l"
+					},
+					{
+						"id": 5,
+						"name": "Heavy Kick",
+						"key": "pad_trig_r"
+					},
+					{
+						"id": 6,
+						"name": "Start",
+						"key": "pad_btn_start"
+					},
+					{
+						"id": 7,
+						"name": "Coin",
+						"key": "pad_btn_select"
+					}
+				]
 			}
 		]
 	}
