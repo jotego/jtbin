@@ -14,11 +14,6 @@
 						"id": 1,
 						"name": "Jump",
 						"key": "pad_btn_b"
-					},
-					{
-						"id": 2,
-						"name": "-",
-						"key": "pad_btn_x"
 					}
 				]
 			}

@@ -31,7 +31,13 @@
     <joystick>8</joystick>
     <rotation>horizontal</rotation>
     <region>World</region>
-    <rom index="0" zip="simpsons.zip" md5="None" asm_md5="bdd765815280073d4b141191d3e2d8d8">
+    <rom index="0" zip="simpsons.zip" md5="None" asm_md5="e9c0cc9cfe06e76ea2260419358b184d">
+        <!--  Header to identify the PCB type
+        Byte 0 = 0 - The Simpsons
+                 1 - Parodius
+ -->
+        <part>
+            00 00 00 00 </part>
         <!-- maincpu - starts at 0x0 - length 0x80000 (19 bits) -->
         <part name="072-g02.16c" crc="580ce1d6"/>
         <part name="072-j13.13c" crc="aade2abd"/>
@@ -59,7 +65,7 @@
             <part name="072-b11.16l" crc="55fab05d" map="21000000"/>
         </interleave>
         <!-- Total 0x6E0000 bytes - 7040 kBytes -->
-        <patch offset="0x787FB">68 00 a9</patch>
+        <patch offset="0x787FF">68 00 a9</patch>
     </rom>
     <rom index="17" zip="jtbeta.zip" md5="None" asm_md5="71035230a15ff988e5823bc00a8efc50">
         <part name="beta.bin" crc="f1b63018"/>
@@ -68,5 +74,5 @@
     <rom index="1">
         <part>00</part>
     </rom>
-    <buttons names="Attack,Jump,-,Start,Coin,Core credits" default="A,B,X,Start,Select,-" count="2"/>
+    <buttons names="Attack,Jump,-,Start,Coin,Core credits" default="A,B,Start,Select,-" count="2"/>
 </misterromdescription>

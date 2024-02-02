@@ -31,7 +31,13 @@
     <joystick>8</joystick>
     <rotation>horizontal</rotation>
     <region>Japan</region>
-    <rom index="0" zip="simpsons2pj.zip|simpsons.zip" md5="None" asm_md5="4693920c4d2091d819c0e13d4aaae353">
+    <rom index="0" zip="simpsons2pj.zip|simpsons.zip" md5="None" asm_md5="dd359e11750cac6ee3594fc7ebbdaf39">
+        <!--  Header to identify the PCB type
+        Byte 0 = 0 - The Simpsons
+                 1 - Parodius
+ -->
+        <part>
+            00 00 00 00 </part>
         <!-- maincpu - starts at 0x0 - length 0x80000 (19 bits) -->
         <part name="072-s02.16c" crc="265f7a47"/>
         <part name="072-213.13c" crc="b326a9ae"/>
@@ -67,5 +73,5 @@
     <rom index="1">
         <part>00</part>
     </rom>
-    <buttons names="Attack,Jump,-,Start,Coin,Core credits" default="A,B,X,Start,Select,-" count="2"/>
+    <buttons names="Attack,Jump,-,Start,Coin,Core credits" default="A,B,Start,Select,-" count="2"/>
 </misterromdescription>

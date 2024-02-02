@@ -16,6 +16,8 @@ Alex Kidd: The Lost Stars (set 1, FD1089A 317-0021) --> alexkidd1.rom
 Alien Syndrome (set 2, System 16A, FD1089A 317-0033) --> aliensyn2.rom
 Alien Syndrome (set 5, System 16A, FD1089B 317-0037) --> aliensyn5.rom
 Alien Syndrome (set 1, Japan, old, System 16A, FD1089A 317-0033) --> aliensynjo.rom
+Body Slam (8751 317-0015) --> bodyslam.rom
+Dump Matsumoto (Japan, 8751 317-0011a) --> dumpmtmt.rom
 Fantasy Zone (Rev A, unprotected) --> fantzone.rom
 Fantasy Zone (unprotected) --> fantzone1.rom
 Fantasy Zone (FD1089B 317-0016) --> fantzonee.rom
@@ -23,7 +25,10 @@ Fantasy Zone (317-5000) --> fantzonep.rom
 Fantasy Zone (prototype) --> fantzonepr.rom
 Major League --> mjleague.rom
 Passing Shot (Japan, 4 Players, System 16A) (FD1094 317-0071) --> passsht16a.rom
+Quartet (Rev A, 8751 315-5194) --> quartet.rom
+Quartet 2 (8751 317-0010) --> quartet2.rom
 Quartet 2 (unprotected) --> quartet2a.rom
+Quartet (8751 315-5194) --> quarteta.rom
 SDI - Strategic Defense Initiative (Japan, newer, System 16A, FD1089B 317-0027) --> sdi.rom
 SDI - Strategic Defense Initiative (Japan, old, System 16A, FD1089B 317-0027) --> sdia.rom
 Shinobi (set 6, System 16A) (unprotected) --> shinobi.rom

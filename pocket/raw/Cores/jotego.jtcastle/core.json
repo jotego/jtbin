@@ -10,8 +10,8 @@
 			"description": "Arcade",
 			"author": "jotego",
 			"url": "https://patreon.com/jotego",
-			"version": "internal",
-			"date_release": "2024-01-26"
+			"version": "659baa4",
+			"date_release": "2024-02-02"
 		},
 		"framework": {
 			"target_product": "Analogue Pocket",

@@ -115,6 +115,7 @@
 | blockj       | jtpang     | efce4cc299fe5a5339917bd839bede6e |              |
 | blockr1      | jtpang     | e09a193172ef3ee6478eaa3c1c199477 |              |
 | blockr2      | jtpang     | c37a1f43e34f7ba59ba34c44a67f719d |              |
+| bodyslam     | jts16      | 95c7c8e42469e939eb64e7c9008b7972 | ff,fd        |
 | bootcamp     | jtcomsc    | a83efc086b5e9a1a1ce0cc1d93ba8706 | ff,7b,ff     |
 | bootcampa    | jtcomsc    | baaa45c8f5484ad876680676b0dc8bb1 | ff,7b,ff     |
 | bouldash     | jtslyspy   | 8b470f64f4920165a6461f9ca169c933 | 7f,7f        |
@@ -241,6 +242,7 @@
 | dstlku       | jtcps2     | c2dba6562e5630fd897b9e79091376ed |              |
 | dstlku1d     | jtcps2     | 14ffe31d01569ae85c4afa380c405126 |              |
 | dstlkur1     | jtcps2     | 80c4230a53d13f1eb0662d5e53c12228 |              |
+| dumpmtmt     | jts16      | 8141d8babe5c2deb1bdc12896636b522 | ff,fd        |
 | dunkshot     | jts16b     | e5da57362d10b3368619f43c7d88b2f0 | ff,7c        |
 | dunkshota    | jts16b     | ab32bd9d5826cf58dcfcd657f652bbb8 | ff,7c        |
 | dunkshoto    | jts16b     | 38545bde4fe1d03df7b5afcd23f26433 | ff,fd        |
@@ -535,7 +537,10 @@
 | qadjr        | jtcps1     | f047bde15138d76ff9743659b144e3f8 | ff,fd,ff     |
 | qndream      | jtcps2     | 2521df036b8be8e2bc699cb7f771927b |              |
 | qtono2j      | jtcps1     | 1fc1cbaf01b7834908c9058afaaf4578 | ff,fc,ff     |
+| quartet      | jts16      | e050e9908f4a2f31af39064094d03f93 | ff,fe        |
+| quartet2     | jts16      | bedc4b35472ccc089b80c15cbfbc8b8c | ff,fe        |
 | quartet2a    | jts16      | 86cddb335eb3851cedf9ae7d47a70470 | ff,fe        |
+| quarteta     | jts16      | 5f1a0fbbfd7bc9929ef3f8c79e31cdcd | ff,fe        |
 | rastan       | jtrastan   | 8b958b5f7dea436d104db5529fc516a0 | fe,ff        |
 | rastana      | jtrastan   | 6148baf634a68bea12bff06df7027469 | fe,ff        |
 | rastanb      | jtrastan   | 11730c745ba58632959253e15d6fbb5a | fe,ff        |
@@ -708,15 +713,15 @@
 | sidearmsj    | jtsarms    | 3a22c05edef9fcf3476468a7a569fd41 | fc,ff,ff     |
 | sidearmsu    | jtsarms    | 60925902ee7cca5fd4cf7083ada3e665 | fc,ff,ff     |
 | sidearmsur1  | jtsarms    | 784ae56ee88f2a9dcb44daeff1d60ebd | fc,ff,ff     |
-| simpsons     | jtsimson   | bdd765815280073d4b141191d3e2d8d8 |              |
-| simpsons2p   | jtsimson   | 39a2028a23845df4b236c740601717bf |              |
-| simpsons2p2  | jtsimson   | 7e6c8f94c12e3c02b11087a9de553beb |              |
-| simpsons2p3  | jtsimson   | d8430e53f3dc2ff2742b3330c3af5d07 |              |
-| simpsons2pa  | jtsimson   | 08d190ebbd018065ccf0898fdca5d4b7 |              |
-| simpsons2pj  | jtsimson   | 4693920c4d2091d819c0e13d4aaae353 |              |
-| simpsons4pa  | jtsimson   | cf0cc6aaf2ab8ca7e7077ffa93016dc1 |              |
-| simpsons4pe  | jtsimson   | de282b1034c638caca0f640de715be1a |              |
-| simpsons4pe2 | jtsimson   | 779fbd94c013e762f41638b5f47bf4c6 |              |
+| simpsons     | jtsimson   | e9c0cc9cfe06e76ea2260419358b184d |              |
+| simpsons2p   | jtsimson   | 37f8fec68d2d1b0122413065f2ca5f1d |              |
+| simpsons2p2  | jtsimson   | 9f4c8a029a840a0a32371020d144f176 |              |
+| simpsons2p3  | jtsimson   | 55527ee092429e31a618a1056c022cec |              |
+| simpsons2pa  | jtsimson   | 2c7f579e800deb00fe9d6fac040ae559 |              |
+| simpsons2pj  | jtsimson   | dd359e11750cac6ee3594fc7ebbdaf39 |              |
+| simpsons4pa  | jtsimson   | 47e6df3ff442c572cf49c54e8ca53229 |              |
+| simpsons4pe  | jtsimson   | 7a3fe37c59d3a1c3a0586e8048d0f10c |              |
+| simpsons4pe2 | jtsimson   | eea84781838508e6e2199add603bd6b7 |              |
 | sinvasn      | jtcommnd   | e87eba48664693b5d77e293a5cf91a3c | ff,df        |
 | sjryuko      | jts16b     | d796598dc8a8e8d5b5315bf1358051fa | ff,fb        |
 | sjryuko1     | jts16      | 7735c267ab3a53c5a032f5c49183fc14 | ff,fb        |

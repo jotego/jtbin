@@ -17,13 +17,8 @@
 					},
 					{
 						"id": 2,
-						"name": "-",
-						"key": "pad_btn_x"
-					},
-					{
-						"id": 3,
 						"name": "Supercharger",
-						"key": "pad_btn_y"
+						"key": "pad_btn_x"
 					}
 				]
 			}
