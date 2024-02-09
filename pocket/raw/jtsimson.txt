@@ -5,6 +5,10 @@ The following arcade titles are compatible with this core. Generate
 the required .rom file using the mra tool (read below).
 Place the *.rom files in Assets/jtsimson/common
 
+Parodius Da!: Shinwa kara Owarai e (World, set 1) --> parodius.rom
+Parodius Da!: Shinwa kara Owarai e (Asia) --> parodiusa.rom
+Parodius Da!: Shinwa kara Owarai e (World, set 2) --> parodiuse.rom
+Parodius Da!: Shinwa kara Owarai e (Japan) --> parodiusj.rom
 The Simpsons (4 Players World, set 1) --> simpsons.rom
 The Simpsons (2 Players World, set 1) --> simpsons2p.rom
 The Simpsons (2 Players World, set 2) --> simpsons2p2.rom

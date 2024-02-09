@@ -504,6 +504,10 @@
 | pang3b       | jtcps1     | 7bc4743339f322fe222befc1a06fd74d | ff,ff,ff     |
 | pang3j       | jtcps1     | 410670f7df493e707368d21994199c30 | ff,ff,ff     |
 | pang3r1      | jtcps1     | 9350d49c0a081371ce364bc62b153c7f | ff,ff,ff     |
+| parodius     | jtsimson   | 780fc966591b7cf66cadc1d580049b0d | ff,52,ff     |
+| parodiusa    | jtsimson   | 81c77d3000c49656cef677b1224bc6d7 | ff,52,ff     |
+| parodiuse    | jtsimson   | f2715277d32ad3f3678d4344c9fdc8ae | ff,52,ff     |
+| parodiusj    | jtsimson   | 17ae9144a8e0d8878766602745ba7440 | ff,52,ff     |
 | passsht      | jts16b     | 6c8d0964b2bab6718ef1ddd588286f9e | ff,fe        |
 | passsht16a   | jts16      | d05f1d8fcc42dc8c87bb6b4467e6adf5 | ff,fe        |
 | passshta     | jts16b     | 322e32482d647b21e2f971f8c3ec660d | ff,f0        |

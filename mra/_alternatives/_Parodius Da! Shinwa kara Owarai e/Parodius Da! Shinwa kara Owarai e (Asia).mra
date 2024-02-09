@@ -1,0 +1,91 @@
+<!--          FPGA arcade hardware by Jotego
+
+              This core is available for hardware compatible with MiST and MiSTer
+              Other FPGA systems may be supported by the time you read this.
+              This work is not mantained by the MiSTer project. Please contact the
+              core author for issues and updates.
+
+              (c) Jose Tejada, 2024. Please support this research
+              Patreon: https://patreon.com/jotego
+
+              The author does not endorse or participate in illegal distribution
+              of copyrighted material. This work can be used with compatible
+              software. This software can be homebrew projects or legally
+              obtained memory dumps of compatible games.
+
+              This file license is GNU GPLv2.
+              You can read the whole license file in
+              https://opensource.org/licenses/gpl-2.0.php
+
+-->
+
+<misterromdescription>
+    <about author="jotego" webpage="https://patreon.com/jotego" source="https://github.com/jotego" twitter="@topapate"/>
+    <name>Parodius Da!: Shinwa kara Owarai e (Asia)</name>
+    <setname>parodiusa</setname>
+    <rbf>jtsimson</rbf>
+    <mameversion>0251</mameversion>
+    <year>1990</year>
+    <manufacturer>Konami</manufacturer>
+    <players>2</players>
+    <joystick>8</joystick>
+    <rotation>horizontal</rotation>
+    <region>World</region>
+    <rom index="0" zip="parodiusa.zip|parodius.zip" md5="None" asm_md5="81c77d3000c49656cef677b1224bc6d7">
+        <!--  Header to identify the PCB type
+        Byte 0 = 0 - The Simpsons
+                 1 - Parodius
+ -->
+        <part>
+            01 00 00 00 </part>
+        <!-- maincpu - starts at 0x0 - length 0x80000 (19 bits) -->
+        <part name="b-18.f5" crc="006356cd"/>
+        <part name="b-19.h5" crc="e5a16417"/>
+        <part repeat="0x40000"> FF</part>
+        <!-- JTFRAME_BA1_START -->
+        <!-- audiocpu - starts at 0x80000 - length 0x20000 (17 bits) -->
+        <part name="955e03.d14" crc="940aa356"/>
+        <part repeat="0x10000"> FF</part>
+        <!-- PCM_START -->
+        <!-- pcm - starts at 0xA0000 - length 0x140000 (21 bits) -->
+        <part name="955d04.c5" crc="e671491a"/>
+        <part name="955d04.c5" crc="e671491a"/>
+        <part repeat="0x40000"> FF</part>
+        <!-- JTFRAME_BA2_START -->
+        <!-- tiles - starts at 0x1E0000 - length 0x100000 (20 bits) -->
+        <interleave output="32">
+            <part name="955d07.k19" crc="89473fec" map="0021"/>
+            <part name="955d08.k24" crc="43d5cda1" map="2100"/>
+        </interleave>
+        <!-- JTFRAME_BA3_START -->
+        <!-- obj - starts at 0x2E0000 - length 0x100000 (20 bits) -->
+        <interleave output="32">
+            <part name="955d05.k13" crc="7a1e55e0" map="0021"/>
+            <part name="955d06.k8" crc="f4252875" map="2100"/>
+        </interleave>
+        <!-- Total 0x3E0000 bytes - 3968 kBytes -->
+    </rom>
+    <rom index="17" zip="jtbeta.zip" md5="None" asm_md5="71035230a15ff988e5823bc00a8efc50">
+        <part name="beta.bin" crc="f1b63018"/>
+    </rom>
+    <nvram index="2" size="128"/>
+    <rom index="1">
+        <part>00</part>
+    </rom>
+    <switches page_id="1" page_name="Switches" base="16" default="ff,52,ff">
+        <!-- DSW1 -->
+        <dip name="Coin A" bits="0,3" ids="Free Play,4/3,4/1,3/4,3/2,3/1,2/5,2/3,2/1,1/7,1/6,1/5,1/4,1/3,1/2,1/1"/>
+        <dip name="Coin B" bits="4,7" ids="No B,4/3,4/1,3/4,3/2,3/1,2/5,2/3,2/1,1/7,1/6,1/5,1/4,1/3,1/2,1/1"/>
+        <!-- DSW2 -->
+        <dip name="Lives" bits="8,9" ids="7,4,3,2"/>
+        <dip name="Cabinet" bits="10" ids="Upright,Cocktail"/>
+        <dip name="Bonus Life" bits="11,12" ids="70k,20k,30k 100k,20k 80k"/>
+        <dip name="Difficulty" bits="13,14" ids="Very Difficult,Difficult,Normal,Easy"/>
+        <dip name="Demo Sounds" bits="15" ids="On,Off"/>
+        <!-- DSW3 -->
+        <dip name="Flip Screen" bits="20" ids="On,Off"/>
+        <dip name="Upright Controls" bits="21" ids="Dual,Single"/>
+        <dip name="Service Mode" bits="22" ids="On,Off"/>
+    </switches>
+    <buttons names="shoot,missile/bell,power-up,Start,Coin,Core credits" default="A,B,X,Start,Select,-" count="3"/>
+</misterromdescription>
