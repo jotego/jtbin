@@ -18,6 +18,17 @@ The Simpsons (2 Players Japan) --> simpsons2pj.rom
 The Simpsons (4 Players Asia) --> simpsons4pa.rom
 The Simpsons (4 Players World, set 2) --> simpsons4pe.rom
 The Simpsons (4 Players World, set 3) --> simpsons4pe2.rom
+Vendetta (World, 4 Players, ver. T) --> vendetta.rom
+Vendetta (Asia, 2 Players, ver. D) --> vendetta2pd.rom
+Vendetta (World, 2 Players, ver. EB-A?) --> vendetta2peba.rom
+Crime Fighters 2 (Japan, 2 Players, ver. P) --> vendetta2pp.rom
+Vendetta (Asia, 2 Players, ver. U) --> vendetta2pu.rom
+Vendetta (World, 2 Players, ver. ?) --> vendetta2pun.rom
+Vendetta (World, 2 Players, ver. W) --> vendetta2pw.rom
+Crime Fighters 2 (Japan, 4 Players, ver. N) --> vendettan.rom
+Vendetta (US, 4 Players, ver. R) --> vendettar.rom
+Vendetta (World, 4 Players, ver. ?) --> vendettaun.rom
+Vendetta (Asia, 4 Players, ver. Z) --> vendettaz.rom
 
 
 These files are generated using the mra tool in:

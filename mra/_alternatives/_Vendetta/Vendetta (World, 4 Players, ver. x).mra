@@ -1,0 +1,76 @@
+<!--          FPGA arcade hardware by Jotego
+
+              This core is available for hardware compatible with MiST and MiSTer
+              Other FPGA systems may be supported by the time you read this.
+              This work is not mantained by the MiSTer project. Please contact the
+              core author for issues and updates.
+
+              (c) Jose Tejada, 2024. Please support this research
+              Patreon: https://patreon.com/jotego
+
+              The author does not endorse or participate in illegal distribution
+              of copyrighted material. This work can be used with compatible
+              software. This software can be homebrew projects or legally
+              obtained memory dumps of compatible games.
+
+              This file license is GNU GPLv2.
+              You can read the whole license file in
+              https://opensource.org/licenses/gpl-2.0.php
+
+-->
+
+<misterromdescription>
+    <about author="jotego" webpage="https://patreon.com/jotego" source="https://github.com/jotego" twitter="@topapate"/>
+    <name>Vendetta (World, 4 Players, ver. ?)</name>
+    <setname>vendettaun</setname>
+    <rbf>jtsimson</rbf>
+    <mameversion>0251</mameversion>
+    <year>1991</year>
+    <manufacturer>Konami</manufacturer>
+    <players>4</players>
+    <joystick>8</joystick>
+    <rotation>horizontal</rotation>
+    <region>World</region>
+    <rom index="0" zip="vendettaun.zip|vendetta.zip" md5="None" asm_md5="504d2bf2c991abb97b9fe06943c99142">
+        <!--  Header to identify the PCB type
+        Byte 0 = 0 - The Simpsons
+                 1 - Parodius
+                 2 - Vendetta -->
+        <part>
+            02 00 00 00 </part>
+        <!-- maincpu - starts at 0x0 - length 0x80000 (19 bits) -->
+        <part name="1.17c" crc="1a7ceb1b"/>
+        <part repeat="0x40000"> FF</part>
+        <!-- JTFRAME_BA1_START -->
+        <!-- audiocpu - starts at 0x80000 - length 0x20000 (17 bits) -->
+        <part name="081b02" crc="4c604d9b"/>
+        <part repeat="0x10000"> FF</part>
+        <!-- PCM_START -->
+        <!-- pcm - starts at 0xA0000 - length 0x140000 (21 bits) -->
+        <part name="081a03" crc="14b6baea"/>
+        <part repeat="0x40000"> FF</part>
+        <!-- JTFRAME_BA2_START -->
+        <!-- tiles - starts at 0x1E0000 - length 0x100000 (20 bits) -->
+        <interleave output="32">
+            <part name="081a09" crc="b4c777a9" map="0021"/>
+            <part name="081a08" crc="272ac8d9" map="2100"/>
+        </interleave>
+        <!-- JTFRAME_BA3_START -->
+        <!-- obj - starts at 0x2E0000 - length 0x400000 (22 bits) -->
+        <interleave output="64">
+            <part name="081a04" crc="464b9aa4" map="00000021"/>
+            <part name="081a05" crc="4e173759" map="00002100"/>
+            <part name="081a06" crc="e9fe6d80" map="00210000"/>
+            <part name="081a07" crc="8a22b29a" map="21000000"/>
+        </interleave>
+        <!-- Total 0x6E0000 bytes - 7040 kBytes -->
+    </rom>
+    <rom index="17" zip="jtbeta.zip" md5="None" asm_md5="71035230a15ff988e5823bc00a8efc50">
+        <part name="beta.bin" crc="f1b63018"/>
+    </rom>
+    <nvram index="2" size="128"/>
+    <rom index="1">
+        <part>00</part>
+    </rom>
+    <buttons names="Punch,Kick,-,Start,Coin,Core credits" default="A,B,Start,Select,-" count="2"/>
+</misterromdescription>

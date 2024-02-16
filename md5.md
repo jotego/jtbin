@@ -850,6 +850,17 @@
 | varthjr      | jtcps1     | 24afdc70340b3f5a63387c9c34d6f91c | ff,f4,bf     |
 | varthr1      | jtcps1     | 4535ba8f74f54c4ae7de56a9f9406e6e | ff,f4,bf     |
 | varthu       | jtcps1     | fef9e2c5962208623efe2249e813fdbc | ff,f4,bf     |
+| vendetta     | jtsimson   | 359653a2b2e7dd54a195352bb8f2de87 |              |
+| vendetta2pd  | jtsimson   | 20a1f79c3bdaf76f50dd5a156ef739d9 |              |
+| vendetta2peba | jtsimson   | e5f3156ae7b910aa43f98be0f10e7cac |              |
+| vendetta2pp  | jtsimson   | b0ba0ea2123b99c86a68ca7d5a7ae1f8 |              |
+| vendetta2pu  | jtsimson   | c02f50b067dcc205530ce22fb0aa4165 |              |
+| vendetta2pun | jtsimson   | ac37777a8ec9352a1a82c1a3e3850957 |              |
+| vendetta2pw  | jtsimson   | efcdab9beee0a62b01e3444e0780b58f |              |
+| vendettan    | jtsimson   | 81c619369eb62011b4dc65504d3272ba |              |
+| vendettar    | jtsimson   | 2f7f9b61fca5f7368ad27f7ea4998290 |              |
+| vendettaun   | jtsimson   | 504d2bf2c991abb97b9fe06943c99142 |              |
+| vendettaz    | jtsimson   | d0dd96eca9bfdd51e54adbb8299202e4 |              |
 | vhunt2       | jtcps2     | 7788ced3931d1ba923ab5e27b2c329bc |              |
 | vhunt2d      | jtcps2     | 552c047565156c651fc6eea8f9e0ec96 |              |
 | vhunt2r1     | jtcps2     | e7bdeaf02253ad52ed36dbbc7d799698 |              |

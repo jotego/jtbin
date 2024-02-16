@@ -32,7 +32,13 @@
     <rotation>horizontal</rotation>
     <region>World</region>
     <rom index="0" zip="splatter2.zip|splatter.zip" md5="None" asm_md5="41e360fa9bcd4805ad031ec8b0881d67">
-        <!-- Byte 0: protection type -->
+        <!-- Byte 0: protection type
+Byte 1: key ID
+Byte 2: addr for key ID
+Byte 3: addr for RNG
+Byte 4: addr for nibble swap data write
+Byte 5: addr for nibble swap read
+ -->
         <part>
             03 B5 03 04 00 00 00 00
         </part>
