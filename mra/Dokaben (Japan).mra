@@ -42,11 +42,11 @@
         <part name="db_07.13h" crc="8bdcf49e"/>
         <part name="db_08.14h" crc="1643bdd9"/>
         <part repeat="0x38000"> FF</part>
-        <!-- PCM_START -->
+        <!-- JTFRAME_BA1_START -->
         <!-- oki - starts at 0x80000 - length 0x80000 (19 bits) -->
         <part name="db_01.1d" crc="62fa6b81"/>
         <part repeat="0x60000"> FF</part>
-        <!-- CHAR_START -->
+        <!-- JTFRAME_BA2_START -->
         <!-- chars - starts at 0x100000 - length 0x200000 (21 bits) -->
         <interleave output="16">
             <part name="db_02.1e" crc="9aa8470c" map="01"/>
@@ -57,7 +57,7 @@
             <part name="db_05.2g" crc="d2ab25f2" map="10"/>
         </interleave>
         <part repeat="0x180000"> FF</part>
-        <!-- OBJ_START -->
+        <!-- JTFRAME_BA3_START -->
         <!-- sprites - starts at 0x300000 - length 0x40000 (18 bits) -->
         <interleave output="16">
             <part name="db_10.2k" crc="9e70f7ae" map="01"/>

@@ -42,13 +42,13 @@
         <part name="bs19.d6" crc="43e196c4" length="0x2000"/>
         <part repeat="0x2000"> FF</part>
         <part name="bs19.d6" crc="43e196c4" length="0x2000" offset="0x2000"/>
-        <!-- SND_START -->
+        <!-- JTFRAME_BA1_START -->
         <!-- audiocpu - starts at 0x10000 - length 0x10000 (16 bits) -->
         <part name="bs18.d4" crc="eaa646eb"/>
         <part name="bs17.d2" crc="d71031ad"/>
         <part name="bs16.d1" crc="6f811c43"/>
         <part repeat="0xA000"> FF</part>
-        <!-- CHAR_START -->
+        <!-- JTFRAME_BA2_START -->
         <!-- gfx1 - starts at 0x20000 - length 0x20000 (17 bits) -->
         <interleave output="16">
             <part name="bs12.k1" crc="4c574ecd" map="01"/>
@@ -59,7 +59,7 @@
             <part name="bs15.k6" crc="3b6d5de5" map="10"/>
         </interleave>
         <part repeat="0x18000"> FF</part>
-        <!-- OBJ_START -->
+        <!-- JTFRAME_BA3_START -->
         <!-- gfx2 - starts at 0x40000 - length 0x20000 (17 bits) -->
         <part name="bs00.a1" crc="c46a8b88"/>
         <part name="bs06.c1" crc="cf8982ff"/>

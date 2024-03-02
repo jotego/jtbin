@@ -32,10 +32,10 @@
     <rotation>horizontal</rotation>
     <region>World</region>
     <mraauthor>jotego</mraauthor>
-    <rom index="0" zip="sectionza.zip|sectionz.zip" md5="None" asm_md5="d38a7bb9e9b4e665791e2857b2f2fe70">
+    <rom index="0" zip="sectionza.zip|sectionz.zip" md5="None" asm_md5="a5e7eb50e997ca464164a14778caf02d">
         <part>
             00 00 00 00 00 00 00 00
-            01 80 02 00 02 40 06 40
+            01 80 02 00 04 00 08 00
             00 00 00 00 00 00 00 00
             00 00 00 00 00 00 00 00
         </part>
@@ -43,13 +43,18 @@
         <part name="7c_sz02.bin" crc="22f161b8"/>
         <part name="sz-03j.bin" crc="94547abf"/>
         <part name="sz-01a.bin" crc="98df49fd"/>
+        <!-- JTFRAME_BA1_START -->
         <!-- soundcpu - starts at 0x18000 - length 0x8000 (15 bits) -->
         <part name="11e_sz04.bin" crc="a6073566"/>
+        <!-- CHAR_START -->
         <!-- adpcm - starts at 0x20000 -->
-        <!-- gfx5 - starts at 0x20000 -->
-        <!-- gfx1 - starts at 0x20000 - length 0x4000 (14 bits) -->
-        <part name="9h_sz05.bin" crc="3173ba2e"/>
-        <!-- gfx2 - starts at 0x24000 - length 0x40000 (18 bits) -->
+        <!-- gfx1 - starts at 0x20000 - length 0x20000 (17 bits) -->
+        <interleave output="16">
+            <part name="9h_sz05.bin" crc="3173ba2e" map="12"/>
+        </interleave>
+        <part repeat="0x1C000"> FF</part>
+        <!-- JTFRAME_BA2_START -->
+        <!-- gfx2 - starts at 0x40000 - length 0x40000 (18 bits) -->
         <interleave output="32">
             <part name="3f_sz15.bin" crc="36bb9bf7" map="0001"/>
             <part name="3b_sz12.bin" crc="11d47dfd" map="0010"/>
@@ -62,16 +67,17 @@
             <part name="1d_sz07.bin" crc="f5b3a29f" map="0100"/>
             <part name="1e_sz08.bin" crc="d57d9f13" map="1000"/>
         </interleave>
-        <!-- gfx3 - starts at 0x64000 - length 0x20000 (17 bits) -->
+        <!-- JTFRAME_BA3_START -->
+        <!-- gfx3 - starts at 0x80000 - length 0x20000 (17 bits) -->
         <interleave output="16">
-            <part name="3j_sz17.bin" crc="8df7b24a" map="01"/>
-            <part name="3h_sz16.bin" crc="500ff2bb" map="10"/>
+            <part name="3h_sz16.bin" crc="500ff2bb" map="01"/>
+            <part name="3j_sz17.bin" crc="8df7b24a" map="10"/>
         </interleave>
         <interleave output="16">
-            <part name="1j_sz11.bin" crc="685d4c54" map="01"/>
-            <part name="1h_sz10.bin" crc="00b3d244" map="10"/>
+            <part name="1h_sz10.bin" crc="00b3d244" map="01"/>
+            <part name="1j_sz11.bin" crc="685d4c54" map="10"/>
         </interleave>
-        <!-- Total 0x84000 bytes - 528 kBytes -->
+        <!-- Total 0xA0000 bytes - 640 kBytes -->
     </rom>
     <rom index="1">
         <part>00</part>

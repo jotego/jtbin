@@ -32,10 +32,10 @@
     <rotation>vertical (cw)</rotation>
     <region>World</region>
     <mraauthor>jotego</mraauthor>
-    <rom index="0" zip="lwings.zip" md5="None" asm_md5="651efc4855d015293e02e45e6b59bc09">
+    <rom index="0" zip="lwings.zip" md5="None" asm_md5="9c92094526664b4d2ad9b5b41d1b495f">
         <part>
             01 00 00 00 00 00 00 00
-            01 80 02 00 02 40 06 40
+            01 80 02 00 04 00 08 00
             00 00 00 00 00 00 00 00
             00 00 00 00 00 00 00 00
         </part>
@@ -43,13 +43,18 @@
         <part name="7c_lw02.bin" crc="a5efbb1b"/>
         <part name="9c_lw03.bin" crc="ec5cc201"/>
         <part name="6c_lw01.bin" crc="b55a7f60"/>
+        <!-- JTFRAME_BA1_START -->
         <!-- soundcpu - starts at 0x18000 - length 0x8000 (15 bits) -->
         <part name="11e_lw04.bin" crc="a20337a2"/>
+        <!-- CHAR_START -->
         <!-- adpcm - starts at 0x20000 -->
-        <!-- gfx5 - starts at 0x20000 -->
-        <!-- gfx1 - starts at 0x20000 - length 0x4000 (14 bits) -->
-        <part name="9h_lw05.bin" crc="091d923c"/>
-        <!-- gfx2 - starts at 0x24000 - length 0x40000 (18 bits) -->
+        <!-- gfx1 - starts at 0x20000 - length 0x20000 (17 bits) -->
+        <interleave output="16">
+            <part name="9h_lw05.bin" crc="091d923c" map="12"/>
+        </interleave>
+        <part repeat="0x1C000"> FF</part>
+        <!-- JTFRAME_BA2_START -->
+        <!-- gfx2 - starts at 0x40000 - length 0x40000 (18 bits) -->
         <interleave output="32">
             <part name="3f_lw15.bin" crc="99e134ba" map="0001"/>
             <part name="3b_lw12.bin" crc="32e17b3c" map="0010"/>
@@ -62,16 +67,17 @@
             <part name="1d_lw07.bin" crc="5c73d406" map="0100"/>
             <part name="1e_lw08.bin" crc="b491bbbb" map="1000"/>
         </interleave>
-        <!-- gfx3 - starts at 0x64000 - length 0x20000 (17 bits) -->
+        <!-- JTFRAME_BA3_START -->
+        <!-- gfx3 - starts at 0x80000 - length 0x20000 (17 bits) -->
         <interleave output="16">
-            <part name="3j_lw17.bin" crc="5ed1bc9b" map="01"/>
-            <part name="3h_lw16.bin" crc="e8834006" map="10"/>
+            <part name="3h_lw16.bin" crc="e8834006" map="01"/>
+            <part name="3j_lw17.bin" crc="5ed1bc9b" map="10"/>
         </interleave>
         <interleave output="16">
-            <part name="1j_lw11.bin" crc="2a0790d6" map="01"/>
-            <part name="1h_lw10.bin" crc="b693f5a5" map="10"/>
+            <part name="1h_lw10.bin" crc="b693f5a5" map="01"/>
+            <part name="1j_lw11.bin" crc="2a0790d6" map="10"/>
         </interleave>
-        <!-- Total 0x84000 bytes - 528 kBytes -->
+        <!-- Total 0xA0000 bytes - 640 kBytes -->
     </rom>
     <!-- Vertical game -->
     <rom index="1">

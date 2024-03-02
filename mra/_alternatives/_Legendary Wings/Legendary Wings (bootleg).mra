@@ -32,10 +32,10 @@
     <rotation>vertical (cw)</rotation>
     <region>World</region>
     <mraauthor>jotego</mraauthor>
-    <rom index="0" zip="lwingsb.zip|lwings.zip" md5="None" asm_md5="7499589dc889a8e8f49b87255a73958c">
+    <rom index="0" zip="lwingsb.zip|lwings.zip" md5="None" asm_md5="610e576e2f92beccf822ce37666d20d2">
         <part>
             01 00 00 00 00 00 00 00
-            01 80 02 00 02 40 06 40
+            01 80 02 00 04 00 08 00
             00 00 00 00 00 00 00 00
             00 00 00 00 00 00 00 00
         </part>
@@ -43,13 +43,18 @@
         <part name="ic18.bin" crc="2a00cde8"/>
         <part name="ic19.bin" crc="ec5cc201"/>
         <part name="ic17.bin" crc="fe8a8823"/>
+        <!-- JTFRAME_BA1_START -->
         <!-- soundcpu - starts at 0x18000 - length 0x8000 (15 bits) -->
         <part name="ic37.bin" crc="a20337a2"/>
+        <!-- CHAR_START -->
         <!-- adpcm - starts at 0x20000 -->
-        <!-- gfx5 - starts at 0x20000 -->
-        <!-- gfx1 - starts at 0x20000 - length 0x4000 (14 bits) -->
-        <part name="ic60.bin" crc="091d923c"/>
-        <!-- gfx2 - starts at 0x24000 - length 0x40000 (18 bits) -->
+        <!-- gfx1 - starts at 0x20000 - length 0x20000 (17 bits) -->
+        <interleave output="16">
+            <part name="ic60.bin" crc="091d923c" map="12"/>
+        </interleave>
+        <part repeat="0x1C000"> FF</part>
+        <!-- JTFRAME_BA2_START -->
+        <!-- gfx2 - starts at 0x40000 - length 0x40000 (18 bits) -->
         <interleave output="32">
             <part name="ic63.bin" crc="99e134ba" map="0001"/>
             <part name="ic2.bin" crc="32e17b3c" map="0010"/>
@@ -62,16 +67,17 @@
             <part name="ic25.bin" crc="5c73d406" map="0100"/>
             <part name="ic49.bin" crc="ffdbdd69" map="1000"/>
         </interleave>
-        <!-- gfx3 - starts at 0x64000 - length 0x20000 (17 bits) -->
+        <!-- JTFRAME_BA3_START -->
+        <!-- gfx3 - starts at 0x80000 - length 0x20000 (17 bits) -->
         <interleave output="16">
-            <part name="ic99.bin" crc="163946da" map="01"/>
-            <part name="ic87.bin" crc="bca275ac" map="10"/>
+            <part name="ic87.bin" crc="bca275ac" map="01"/>
+            <part name="ic99.bin" crc="163946da" map="10"/>
         </interleave>
         <interleave output="16">
-            <part name="ic98.bin" crc="7cc90a1d" map="01"/>
-            <part name="ic86.bin" crc="3e396eda" map="10"/>
+            <part name="ic86.bin" crc="3e396eda" map="01"/>
+            <part name="ic98.bin" crc="7cc90a1d" map="10"/>
         </interleave>
-        <!-- Total 0x84000 bytes - 528 kBytes -->
+        <!-- Total 0xA0000 bytes - 640 kBytes -->
     </rom>
     <!-- Vertical game -->
     <rom index="1">

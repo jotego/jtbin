@@ -32,34 +32,48 @@
     <rotation>horizontal</rotation>
     <region>World</region>
     <mraauthor>jotego</mraauthor>
-    <rom index="0" zip="gngc.zip|gng.zip" md5="None" asm_md5="682b65e318744430685085daf95eb899">
+    <rom index="0" zip="gngc.zip|gng.zip" md5="None" asm_md5="9a6ab3483f50ebbc0461838729b837da">
         <!-- maincpu - starts at 0x0 - length 0x14000 (17 bits) -->
         <part name="mm_c_03" crc="1def138a"/>
         <part name="mm_c_04" crc="4f94130f"/>
         <part name="mm_c_05" crc="ed28e86e"/>
+        <!-- JTFRAME_BA1_START -->
         <!-- chars - starts at 0x14000 - length 0x4000 (14 bits) -->
-        <part name="gg1.bin" crc="ecfccf07"/>
+        <interleave output="16">
+            <part name="gg1.bin" crc="ecfccf07" map="12"/>
+        </interleave>
+        <!-- SND_START -->
         <!-- audiocpu - starts at 0x18000 - length 0x8000 (15 bits) -->
         <part name="gg2.bin" crc="615f5b6f"/>
+        <!-- JTFRAME_BA2_START -->
         <!-- tiles - starts at 0x20000 - length 0x20000 (17 bits) -->
-        <part name="gg9.bin" crc="20035bda"/>
-        <part name="gg8.bin" crc="f12ba271"/>
-        <part name="gg7.bin" crc="e525207d"/>
-        <part name="gg6.bin" crc="2d77e9b2"/>
-        <part name="gg11.bin" crc="ddd56fa9"/>
-        <part name="gg10.bin" crc="7302529d"/>
-        <part name="gg11.bin" crc="ddd56fa9"/>
-        <part name="gg10.bin" crc="7302529d"/>
-        <!-- sprites - starts at 0x40000 - length 0x20000 (17 bits) -->
-        <part name="gg17.bin" crc="93e50a8f"/>
-        <part name="gg16.bin" crc="06d7e5ca"/>
-        <part name="gg15.bin" crc="bc1fe02d"/>
-        <part name="gg15.bin" crc="bc1fe02d"/>
-        <part name="gg14.bin" crc="6aaf12f9"/>
-        <part name="gg13.bin" crc="e80c3fca"/>
-        <part name="gg12.bin" crc="7780a925"/>
-        <part name="gg12.bin" crc="7780a925"/>
-        <!-- Total 0x60000 bytes - 384 kBytes -->
+        <interleave output="32">
+            <part name="gg7.bin" crc="e525207d" map="0001"/>
+            <part name="gg9.bin" crc="20035bda" map="0010"/>
+            <part name="gg11.bin" crc="ddd56fa9" map="0100"/>
+            <part name="gg11.bin" crc="ddd56fa9" map="1000"/>
+        </interleave>
+        <interleave output="32">
+            <part name="gg6.bin" crc="2d77e9b2" map="0001"/>
+            <part name="gg8.bin" crc="f12ba271" map="0010"/>
+            <part name="gg10.bin" crc="7302529d" map="0100"/>
+            <part name="gg10.bin" crc="7302529d" map="1000"/>
+        </interleave>
+        <!-- JTFRAME_BA3_START -->
+        <!-- sprites - starts at 0x40000 - length 0x18000 (17 bits) -->
+        <interleave output="16">
+            <part name="gg14.bin" crc="6aaf12f9" map="01"/>
+            <part name="gg17.bin" crc="93e50a8f" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="gg13.bin" crc="e80c3fca" map="01"/>
+            <part name="gg16.bin" crc="06d7e5ca" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="gg12.bin" crc="7780a925" map="01"/>
+            <part name="gg15.bin" crc="bc1fe02d" map="10"/>
+        </interleave>
+        <!-- Total 0x58000 bytes - 352 kBytes -->
     </rom>
     <rom index="1">
         <part>00</part>

@@ -49,7 +49,7 @@
         <!-- PCM_START -->
         <!-- oki - starts at 0x90000 - length 0x20000 (17 bits) -->
         <part name="fa11.11k" crc="4e547bad"/>
-        <!-- BA2_START -->
+        <!-- JTFRAME_BA2_START -->
         <!-- gfx1 - starts at 0xB0000 - length 0x20000 (17 bits) -->
         <interleave output="16">
             <part name="fa05.11a" crc="09802924" map="01" length="0x4000"/>
@@ -74,7 +74,7 @@
             <part name="fa09.22a" crc="1395e9be" map="01"/>
             <part name="fa08.21a" crc="4d7464db" map="10"/>
         </interleave>
-        <!-- BA3_START -->
+        <!-- JTFRAME_BA3_START -->
         <!-- gfx4 - starts at 0x190000 - length 0x80000 (19 bits) -->
         <interleave output="32">
             <part name="fa01.4a" crc="99b0cd92" map="0001"/>
@@ -86,12 +86,12 @@
         <!-- mcu - starts at 0x210000 -->
         <!-- sub - starts at 0x210000 - length 0x18000 (17 bits) -->
         <part repeat="0x18000"> FF</part>
+        <!-- PROM_START -->
         <!-- JTFRAME_PROM_START -->
         <!-- proms - starts at 0x228000 - length 0x100 (8 bits) -->
         <part name="mb7114h.21k" crc="ad26e8d4"/>
         <!-- Total 0x228100 bytes - 2208 kBytes -->
     </rom>
-    <nvram index="2" size="63552"/>
     <rom index="1">
         <part>00</part>
     </rom>

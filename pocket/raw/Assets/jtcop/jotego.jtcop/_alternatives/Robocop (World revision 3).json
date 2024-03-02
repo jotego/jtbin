@@ -10,10 +10,6 @@
 			{
 				"id": 1,
 				"filename": "robocopw.rom"
-			},
-			{
-				"id": 2,
-				"filename": "robocopw.sav"
 			}
 		],
 		"memory_writes": [

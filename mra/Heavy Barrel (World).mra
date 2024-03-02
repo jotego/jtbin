@@ -55,7 +55,7 @@
         <!-- oki - starts at 0x90000 - length 0x20000 (17 bits) -->
         <part name="ec08.2c" crc="2159a609"/>
         <part repeat="0x10000"> FF</part>
-        <!-- BA2_START -->
+        <!-- JTFRAME_BA2_START -->
         <!-- gfx1 - starts at 0xB0000 - length 0x20000 (17 bits) -->
         <interleave output="16">
             <part name="ec25.15h" crc="2e5732a2" map="01"/>
@@ -89,7 +89,7 @@
             <part name="ec29.8h" crc="5514b296" map="01"/>
             <part name="ec27.8f" crc="99db7b9c" map="10"/>
         </interleave>
-        <!-- BA3_START -->
+        <!-- JTFRAME_BA3_START -->
         <!-- gfx4 - starts at 0x190000 - length 0x80000 (19 bits) -->
         <interleave output="32">
             <part name="ec15.16c" crc="21816707" map="0001"/>
@@ -103,11 +103,12 @@
             <part name="ec14.14c" crc="bedfe7f3" map="0100"/>
             <part name="ec10.14a" crc="47d95447" map="1000"/>
         </interleave>
+        <!-- JTFRAME_PROM_START -->
         <!-- MCU_START -->
         <!-- mcu - starts at 0x210000 - length 0x18000 (17 bits) -->
         <part name="ec31-e.9a" crc="bf93a2ec"/>
         <part repeat="0x17000"> FF</part>
-        <!-- JTFRAME_PROM_START -->
+        <!-- PROM_START -->
         <!-- proms - starts at 0x228000 - length 0x600 (11 bits) -->
         <part name="mb7116e.12c" crc="86e775f8"/>
         <part name="mb7122e.17e" crc="a5cda23e"/>
@@ -150,7 +151,6 @@
             0E 84 38 10 E2 40 88 03 21 0E 84 38 10 E2 40 88 03 21 0E 84 38 10 E2 40 88 03 21 0E 84 38 10 E2
         </part>
     </rom>
-    <nvram index="2" size="63552"/>
     <!-- Vertical game -->
     <rom index="1">
         <part>05</part>

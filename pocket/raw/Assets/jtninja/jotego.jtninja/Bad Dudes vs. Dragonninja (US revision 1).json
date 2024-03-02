@@ -10,10 +10,6 @@
 			{
 				"id": 1,
 				"filename": "baddudes.rom"
-			},
-			{
-				"id": 2,
-				"filename": "baddudes.sav"
 			}
 		],
 		"memory_writes": [

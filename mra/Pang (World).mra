@@ -41,11 +41,11 @@
         <part name="pwe_06.11h" crc="68be52cd"/>
         <part name="pwe_07.13h" crc="4a2e70f6"/>
         <part repeat="0x58000"> FF</part>
-        <!-- PCM_START -->
+        <!-- JTFRAME_BA1_START -->
         <!-- oki - starts at 0x80000 - length 0x80000 (19 bits) -->
         <part name="pw_01.1d" crc="c52e5b8e"/>
         <part repeat="0x60000"> FF</part>
-        <!-- CHAR_START -->
+        <!-- JTFRAME_BA2_START -->
         <!-- chars - starts at 0x100000 - length 0x200000 (21 bits) -->
         <interleave output="16">
             <part name="pwe_02.1e" crc="3a5883f5" map="01"/>
@@ -56,7 +56,7 @@
             <part name="pw_05.2g" crc="2fb3db6c" map="10"/>
         </interleave>
         <part repeat="0x180000"> FF</part>
-        <!-- OBJ_START -->
+        <!-- JTFRAME_BA3_START -->
         <!-- sprites - starts at 0x300000 - length 0x40000 (18 bits) -->
         <interleave output="16">
             <part name="pw_10.2k" crc="fdba4f6e" map="01"/>

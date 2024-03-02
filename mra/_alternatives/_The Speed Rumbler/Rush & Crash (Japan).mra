@@ -46,14 +46,15 @@
         <part name="rc08.13f" crc="2c25874b"/>
         <part name="rc07.12f" crc="de785076"/>
         <part name="rc06.11f" crc="a70f4fd4"/>
-        <!-- BA1_START -->
+        <!-- JTFRAME_BA1_START -->
         <!-- audiocpu - starts at 0x40000 - length 0x8000 (15 bits) -->
         <part name="rc05.2f" crc="ea04fa07"/>
-        <!-- BA2_START -->
+        <!-- JTFRAME_BA2_START -->
         <!-- chars - starts at 0x48000 - length 0x4000 (14 bits) -->
         <interleave output="16">
             <part name="rc10.6g" crc="0a3c0b0d" map="12"/>
         </interleave>
+        <!-- SCR_START -->
         <!-- tiles - starts at 0x4C000 - length 0x40000 (18 bits) -->
         <interleave output="16">
             <part name="rc15.11c" crc="ca3a3af3" map="01"/>
@@ -71,7 +72,7 @@
             <part name="rc18.15c" crc="ce67868e" map="01"/>
             <part name="rc14.15a" crc="b22b31b3" map="10"/>
         </interleave>
-        <!-- BA3_START -->
+        <!-- JTFRAME_BA3_START -->
         <!-- sprites - starts at 0x8C000 - length 0x40000 (18 bits) -->
         <interleave output="32">
             <part name="rc26.15j" crc="d4f1732f" map="0001"/>
@@ -85,7 +86,7 @@
             <part name="rc21.14f" crc="fd64bcd1" map="0100"/>
             <part name="rc19.14e" crc="ff8f9129" map="1000"/>
         </interleave>
-        <!-- PROM_START -->
+        <!-- JTFRAME_PROM_START -->
         <!-- proms - starts at 0xCC000 - length 0x300 (10 bits) -->
         <part name="63s141.12a" crc="8421786f"/>
         <part name="63s141.13a" crc="6048583f"/>

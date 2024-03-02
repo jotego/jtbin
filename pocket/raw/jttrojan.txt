@@ -8,7 +8,6 @@ Place the *.rom files in Assets/jttrojan/common
 Trojan (US set 1) --> trojan.rom
 Trojan (US set 2) --> trojana.rom
 Tatakai no Banka (Japan) --> trojanj.rom
-Trojan (location test) --> trojanlt.rom
 Trojan (Romstar) --> trojanr.rom
 
 

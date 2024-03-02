@@ -32,44 +32,40 @@
     <rotation>vertical (ccw)</rotation>
     <region>World</region>
     <mraauthor>jotego</mraauthor>
-    <rom index="0" zip="savgbees.zip|exedexes.zip" md5="None" asm_md5="0ef5c619ff89dc56a6bfeeecbeb3bbba">
+    <rom index="0" zip="savgbees.zip|exedexes.zip" md5="None" asm_md5="a0bfb6be669be0073f0196983de61d06">
         <!-- maincpu - starts at 0x0 - length 0xC000 (16 bits) -->
         <part name="ee04e.11m" crc="c0caf442"/>
         <part name="ee03e.10m" crc="9cd70ae1"/>
         <part name="ee02e.9m" crc="a04e6368"/>
-        <!-- SND_START -->
+        <!-- JTFRAME_BA1_START -->
         <!-- audiocpu - starts at 0xC000 - length 0x4000 (14 bits) -->
         <part name="ee01e.11e" crc="93d3f952"/>
-        <!-- MAP_START -->
-        <!-- tilerom - starts at 0x10000 - length 0x8000 (15 bits) -->
+        <!-- JTFRAME_BA2_START -->
+        <!-- tilerom - starts at 0x10000 - length 0x6000 (15 bits) -->
         <part name="c01_ee07.bin" crc="3625a68d"/>
         <part name="h04_ee09.bin" crc="6057c907"/>
-        <part repeat="0x2000"> FF</part>
         <!-- CHAR_START -->
-        <!-- chars - starts at 0x18000 - length 0x8000 (15 bits) -->
+        <!-- chars - starts at 0x16000 - length 0x2000 (13 bits) -->
         <interleave output="16">
             <part name="ee00e.5c" crc="5972f95f" map="12"/>
         </interleave>
-        <part repeat="0x6000"> FF</part>
-        <!-- SCR1_START -->
-        <!-- 16x16tiles - starts at 0x20000 - length 0x20000 (17 bits) -->
+        <!-- JTFRAME_BA3_START -->
+        <!-- 16x16tiles - starts at 0x18000 - length 0x8000 (15 bits) -->
         <interleave output="16">
             <part name="a02_ee05.bin" crc="b32d8252" map="01"/>
             <part name="a03_ee06.bin" crc="6039bdd1" map="10"/>
         </interleave>
-        <part repeat="0x18000"> FF</part>
         <!-- SCR2_START -->
-        <!-- 32x32tiles - starts at 0x40000 - length 0x20000 (17 bits) -->
+        <!-- 32x32tiles - starts at 0x20000 - length 0x4000 (14 bits) -->
         <part name="h01_ee08.bin" crc="96a65c1d"/>
-        <part repeat="0x1C000"> FF</part>
         <!-- OBJ_START -->
-        <!-- sprites - starts at 0x60000 - length 0x8000 (15 bits) -->
+        <!-- sprites - starts at 0x24000 - length 0x8000 (15 bits) -->
         <interleave output="16">
             <part name="j12_ee11.bin" crc="0e0f300d" map="01"/>
             <part name="j11_ee10.bin" crc="bc83e265" map="10"/>
         </interleave>
-        <!-- PROM_START -->
-        <!-- proms - starts at 0x68000 - length 0xB20 (12 bits) -->
+        <!-- JTFRAME_PROM_START -->
+        <!-- proms - starts at 0x2C000 - length 0xB20 (12 bits) -->
         <part name="02d_e-02.bin" crc="8d0d5935"/>
         <part name="03d_e-03.bin" crc="d3c17efc"/>
         <part name="04d_e-04.bin" crc="58ba964c"/>
@@ -82,7 +78,7 @@
         <part name="k06_e-08.bin" crc="0eaf5158"/>
         <part name="l03_e-09.bin" crc="0d968558"/>
         <part name="03e_e-01.bin" crc="1acee376"/>
-        <!-- Total 0x68B20 bytes - 418 kBytes -->
+        <!-- Total 0x2CB20 bytes - 178 kBytes -->
     </rom>
     <!-- Vertical game -->
     <rom index="1">

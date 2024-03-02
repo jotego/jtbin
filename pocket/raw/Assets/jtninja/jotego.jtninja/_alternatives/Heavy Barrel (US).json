@@ -10,10 +10,6 @@
 			{
 				"id": 1,
 				"filename": "hbarrelu.rom"
-			},
-			{
-				"id": 2,
-				"filename": "hbarrelu.sav"
 			}
 		],
 		"memory_writes": [

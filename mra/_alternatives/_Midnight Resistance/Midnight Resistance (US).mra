@@ -48,7 +48,7 @@
         <!-- PCM_START -->
         <!-- oki - starts at 0x90000 - length 0x20000 (17 bits) -->
         <part name="fl17" crc="9029965d"/>
-        <!-- BA2_START -->
+        <!-- JTFRAME_BA2_START -->
         <!-- gfx1 - starts at 0xB0000 - length 0x20000 (17 bits) -->
         <interleave output="16">
             <part name="fl05" crc="d75aba06" map="01"/>
@@ -70,7 +70,7 @@
             <part name="fl11" crc="b86b73b4" map="01"/>
             <part name="fl10" crc="92245b29" map="10"/>
         </interleave>
-        <!-- BA3_START -->
+        <!-- JTFRAME_BA3_START -->
         <!-- gfx4 - starts at 0x190000 - length 0x80000 (19 bits) -->
         <interleave output="32">
             <part name="fl01" crc="2c8b35a7" map="0001"/>
@@ -83,6 +83,7 @@
         <!-- sub - starts at 0x210000 - length 0x18000 (17 bits) -->
         <part repeat="0x18000"> FF</part>
         <!-- JTFRAME_PROM_START -->
+        <!-- PROM_START -->
         <!-- proms - starts at 0x228000 - length 0x100 (8 bits) -->
         <part name="7114.prm" crc="eb539ffb"/>
         <!-- Total 0x228100 bytes - 2208 kBytes -->
@@ -124,7 +125,6 @@
             6E 82 B8 09 E2 26 88 9B 20 6E 82 B8 09 E2 26 88 9B 20 6E 82 B8 09 E2 26 88 9B 20 6E 82 B8 09 E2
         </part>
     </rom>
-    <nvram index="2" size="63552"/>
     <rom index="1">
         <part>00</part>
     </rom>

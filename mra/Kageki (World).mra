@@ -35,7 +35,7 @@
     <rom index="0" zip="kageki.zip" md5="None" asm_md5="d2f330f88ad450df36e63f2de82bebc0">
         <!-- bit 0 = MCU
              bit 1 = color PROM
-             bit 2 = Kabuzi Z (specific sound features)
+             bit 2 = Kabuki Z (specific sound features)
              bit 3 = Kageki   (specific sound features)
              bit 4 = banked RAM
              bit 5 = coin XOR
@@ -44,7 +44,8 @@
              Byte 1:
              bit 0 = service XOR
              bit 1 = button aid
-             bit 2 = 3 MHz for FM module                  -->
+             bit 2 = 3 MHz for FM module
+             bit 3 = Kabuki Z with different memory map   -->
         <part>
             08 00 00 00 </part>
         <!-- maincpu - starts at 0x0 - length 0x20000 (17 bits) -->

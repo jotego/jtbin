@@ -46,13 +46,13 @@
             <part name="14" crc="c928a516" map="01"/>
             <part name="11" crc="b626c439" map="10"/>
         </interleave>
-        <!-- SND_START -->
+        <!-- JTFRAME_BA1_START -->
         <!-- audiocpu - starts at 0x60000 - length 0x10000 (16 bits) -->
         <part name="2" crc="ee81fdd8"/>
         <!-- PCM_START -->
         <!-- adpcm - starts at 0x70000 - length 0x10000 (16 bits) -->
         <part name="1" crc="fd1a34cc"/>
-        <!-- SCR_START -->
+        <!-- JTFRAME_BA2_START -->
         <!-- pc080sn - starts at 0x80000 - length 0x80000 (19 bits) -->
         <interleave output="16">
             <part name="8" crc="6aac8f67" map="01"/>
@@ -67,7 +67,7 @@
             <part name="4" crc="aa3a2d5e" map="10"/>
         </interleave>
         <part repeat="0x20000"> FF</part>
-        <!-- OBJ_START -->
+        <!-- JTFRAME_BA3_START -->
         <!-- pc090oj - starts at 0x100000 - length 0x70000 (19 bits) -->
         <interleave output="16">
             <part name="22" crc="d9d09beb" map="01"/>

@@ -32,35 +32,61 @@
     <rotation>vertical (ccw)</rotation>
     <region>World</region>
     <mraauthor>jotego</mraauthor>
-    <rom index="0" zip="gunsmokeb.zip|gunsmoke.zip" md5="None" asm_md5="c2dbd27e0a05e6575d1ff83831051a73">
+    <rom index="0" zip="gunsmokeb.zip|gunsmoke.zip" md5="None" asm_md5="c481890af1aca0095e6bc7eae10af4ea">
         <!-- maincpu - starts at 0x0 - length 0x18000 (17 bits) -->
         <part name="3.ic85" crc="ae6f4b75"/>
         <part name="4.ic86" crc="8d4b423f"/>
         <part name="5.ic87" crc="2b5667fb"/>
+        <!-- JTFRAME_BA1_START -->
         <!-- audiocpu - starts at 0x18000 - length 0x8000 (15 bits) -->
         <part name="2.ic41" crc="cd7a2c38"/>
+        <!-- CHAR_START -->
         <!-- chars - starts at 0x20000 - length 0x4000 (14 bits) -->
-        <part name="1.ic39" crc="b61ece9b"/>
+        <interleave output="16">
+            <part name="1.ic39" crc="b61ece9b" map="12"/>
+        </interleave>
+        <!-- JTFRAME_BA2_START -->
         <!-- bgtiles - starts at 0x24000 - length 0x8000 (15 bits) -->
-        <part name="14.ic25" crc="0af4f7eb"/>
+        <interleave output="16">
+            <part name="14.ic25" crc="0af4f7eb" map="12"/>
+        </interleave>
+        <!-- JTFRAME_BA3_START -->
         <!-- tiles - starts at 0x2C000 - length 0x40000 (18 bits) -->
-        <part name="13.ic21" crc="f6769fc5"/>
-        <part name="9.ic04" crc="539f182d"/>
-        <part name="12.ic20" crc="d997b78c"/>
-        <part name="8.ic03" crc="e87e526d"/>
-        <part name="11.ic19" crc="125ba58e"/>
-        <part name="7.ic02" crc="4382c0d2"/>
-        <part name="10.ic18" crc="f469c13c"/>
-        <part name="6.ic01" crc="4cafe7a6"/>
+        <interleave output="16">
+            <part name="9.ic04" crc="539f182d" map="01"/>
+            <part name="13.ic21" crc="f6769fc5" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="8.ic03" crc="e87e526d" map="01"/>
+            <part name="12.ic20" crc="d997b78c" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="7.ic02" crc="4382c0d2" map="01"/>
+            <part name="11.ic19" crc="125ba58e" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="6.ic01" crc="4cafe7a6" map="01"/>
+            <part name="10.ic18" crc="f469c13c" map="10"/>
+        </interleave>
+        <!-- OBJ_START -->
         <!-- sprites - starts at 0x6C000 - length 0x40000 (18 bits) -->
-        <part name="22.ic134" crc="dc9c508c"/>
-        <part name="18.ic115" crc="f69a3c7c"/>
-        <part name="21.ic133" crc="68883749"/>
-        <part name="17.ic114" crc="4e98562a"/>
-        <part name="20.ic132" crc="0be932ed"/>
-        <part name="16.ic113" crc="0d99c3b3"/>
-        <part name="19.ic131" crc="63072f93"/>
-        <part name="15.ic112" crc="7f14270e"/>
+        <interleave output="16">
+            <part name="18.ic115" crc="f69a3c7c" map="01"/>
+            <part name="22.ic134" crc="dc9c508c" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="17.ic114" crc="4e98562a" map="01"/>
+            <part name="21.ic133" crc="68883749" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="16.ic113" crc="0d99c3b3" map="01"/>
+            <part name="20.ic132" crc="0be932ed" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="15.ic112" crc="7f14270e" map="01"/>
+            <part name="19.ic131" crc="63072f93" map="10"/>
+        </interleave>
+        <!-- JTFRAME_PROM_START -->
         <!-- proms - starts at 0xAC000 - length 0xA00 (12 bits) -->
         <part name="prom.ic3" crc="02f55589"/>
         <part name="prom.ic4" crc="e1e36dd9"/>

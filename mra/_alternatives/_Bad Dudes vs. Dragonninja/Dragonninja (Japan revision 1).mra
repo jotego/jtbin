@@ -52,7 +52,7 @@
         <!-- oki - starts at 0x90000 - length 0x20000 (17 bits) -->
         <part name="eg08.2c" crc="92f2c916"/>
         <part repeat="0x10000"> FF</part>
-        <!-- BA2_START -->
+        <!-- JTFRAME_BA2_START -->
         <!-- gfx1 - starts at 0xB0000 - length 0x20000 (17 bits) -->
         <interleave output="16">
             <part name="eg25.15h" crc="6791bc20" map="01" length="0x4000"/>
@@ -95,7 +95,7 @@
             <part name="eg30.9h" crc="2438e67e" map="01" length="0x8000" offset="0x8000"/>
             <part name="eg30.9h" crc="2438e67e" map="10" length="0x8000" offset="0x8000"/>
         </interleave>
-        <!-- BA3_START -->
+        <!-- JTFRAME_BA3_START -->
         <!-- gfx4 - starts at 0x190000 - length 0x80000 (19 bits) -->
         <interleave output="32">
             <part name="eg15.16c" crc="5617d67f" map="0001"/>
@@ -110,17 +110,17 @@
             <part name="eg10.14a" crc="eeee8a1a" map="1000"/>
         </interleave>
         <part repeat="0x20000"> FF</part>
+        <!-- JTFRAME_PROM_START -->
         <!-- MCU_START -->
         <!-- mcu - starts at 0x210000 - length 0x18000 (17 bits) -->
         <part name="eg31.9a" crc="657aab2d"/>
         <part repeat="0x17000"> FF</part>
-        <!-- JTFRAME_PROM_START -->
+        <!-- PROM_START -->
         <!-- proms - starts at 0x228000 - length 0x600 (11 bits) -->
         <part name="mb7116e.12c" crc="86e775f8"/>
         <part name="mb7122e.17e" crc="a5cda23e"/>
         <!-- Total 0x228600 bytes - 2209 kBytes -->
     </rom>
-    <nvram index="2" size="63552"/>
     <rom index="1">
         <part>00</part>
     </rom>

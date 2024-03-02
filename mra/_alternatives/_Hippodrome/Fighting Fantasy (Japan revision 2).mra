@@ -51,7 +51,7 @@
         <!-- oki - starts at 0x90000 - length 0x20000 (17 bits) -->
         <part name="ew03" crc="b606924d"/>
         <part repeat="0x10000"> FF</part>
-        <!-- BA2_START -->
+        <!-- JTFRAME_BA2_START -->
         <!-- gfx1 - starts at 0xB0000 - length 0x20000 (17 bits) -->
         <interleave output="16">
             <part name="ev14" crc="686f72c1" map="01"/>
@@ -83,7 +83,7 @@
             <part name="ew23" crc="9ecf479e" map="10"/>
         </interleave>
         <part repeat="0x10000"> FF</part>
-        <!-- BA3_START -->
+        <!-- JTFRAME_BA3_START -->
         <!-- gfx4 - starts at 0x190000 - length 0x80000 (19 bits) -->
         <interleave output="32">
             <part name="ev15" crc="1d80f797" map="0001"/>
@@ -102,6 +102,7 @@
         <!-- sub - starts at 0x210000 - length 0x18000 (17 bits) -->
         <part name="ew08" crc="53010534"/>
         <part repeat="0x8000"> FF</part>
+        <!-- PROM_START -->
         <!-- JTFRAME_PROM_START -->
         <!-- proms - starts at 0x228000 - length 0x600 (11 bits) -->
         <part name="mb7116e_a-1.12c" crc="86e775f8"/>
@@ -112,7 +113,6 @@
         <patch offset="0x2101DB"> 60 </patch>
         <patch offset="0x21021A"> 60 </patch>
     </rom>
-    <nvram index="2" size="63552"/>
     <rom index="1">
         <part>00</part>
     </rom>

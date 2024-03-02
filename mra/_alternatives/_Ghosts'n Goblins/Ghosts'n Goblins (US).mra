@@ -32,34 +32,48 @@
     <rotation>horizontal</rotation>
     <region>World</region>
     <mraauthor>jotego</mraauthor>
-    <rom index="0" zip="gngt.zip|gng.zip" md5="None" asm_md5="205229cb8941ae2ab651777018f91826">
+    <rom index="0" zip="gngt.zip|gng.zip" md5="None" asm_md5="713a7b3018709f387b8fdabfb92e8d43">
         <!-- maincpu - starts at 0x0 - length 0x14000 (17 bits) -->
         <part name="mmt03d.8n" crc="fb040b42"/>
         <part name="mmt04d.10n" crc="652406f6"/>
         <part name="mmt05d.13n" crc="8f7cff61"/>
+        <!-- JTFRAME_BA1_START -->
         <!-- chars - starts at 0x14000 - length 0x4000 (14 bits) -->
-        <part name="mm01.11e" crc="ecfccf07"/>
+        <interleave output="16">
+            <part name="mm01.11e" crc="ecfccf07" map="12"/>
+        </interleave>
+        <!-- SND_START -->
         <!-- audiocpu - starts at 0x18000 - length 0x8000 (15 bits) -->
         <part name="mm02.14h" crc="615f5b6f"/>
+        <!-- JTFRAME_BA2_START -->
         <!-- tiles - starts at 0x20000 - length 0x20000 (17 bits) -->
-        <part name="mm09.3c" crc="20035bda"/>
-        <part name="mm08.1c" crc="f12ba271"/>
-        <part name="mm07.3b" crc="e525207d"/>
-        <part name="mm06.1b" crc="2d77e9b2"/>
-        <part name="mm11.3e" crc="ddd56fa9"/>
-        <part name="mm10.1e" crc="7302529d"/>
-        <part name="mm11.3e" crc="ddd56fa9"/>
-        <part name="mm10.1e" crc="7302529d"/>
-        <!-- sprites - starts at 0x40000 - length 0x20000 (17 bits) -->
-        <part name="mm17.4n" crc="93e50a8f"/>
-        <part name="mm16.3n" crc="06d7e5ca"/>
-        <part name="mm15.1n" crc="bc1fe02d"/>
-        <part name="mm15.1n" crc="bc1fe02d"/>
-        <part name="mm14.4l" crc="6aaf12f9"/>
-        <part name="mm13.3l" crc="e80c3fca"/>
-        <part name="mm12.1l" crc="7780a925"/>
-        <part name="mm12.1l" crc="7780a925"/>
-        <!-- Total 0x60000 bytes - 384 kBytes -->
+        <interleave output="32">
+            <part name="mm07.3b" crc="e525207d" map="0001"/>
+            <part name="mm09.3c" crc="20035bda" map="0010"/>
+            <part name="mm11.3e" crc="ddd56fa9" map="0100"/>
+            <part name="mm11.3e" crc="ddd56fa9" map="1000"/>
+        </interleave>
+        <interleave output="32">
+            <part name="mm06.1b" crc="2d77e9b2" map="0001"/>
+            <part name="mm08.1c" crc="f12ba271" map="0010"/>
+            <part name="mm10.1e" crc="7302529d" map="0100"/>
+            <part name="mm10.1e" crc="7302529d" map="1000"/>
+        </interleave>
+        <!-- JTFRAME_BA3_START -->
+        <!-- sprites - starts at 0x40000 - length 0x18000 (17 bits) -->
+        <interleave output="16">
+            <part name="mm14.4l" crc="6aaf12f9" map="01"/>
+            <part name="mm17.4n" crc="93e50a8f" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="mm13.3l" crc="e80c3fca" map="01"/>
+            <part name="mm16.3n" crc="06d7e5ca" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="mm12.1l" crc="7780a925" map="01"/>
+            <part name="mm15.1n" crc="bc1fe02d" map="10"/>
+        </interleave>
+        <!-- Total 0x58000 bytes - 352 kBytes -->
     </rom>
     <rom index="1">
         <part>00</part>

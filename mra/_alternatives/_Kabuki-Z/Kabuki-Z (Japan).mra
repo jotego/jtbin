@@ -1,0 +1,92 @@
+<!--          FPGA arcade hardware by Jotego
+
+              This core is available for hardware compatible with MiST and MiSTer
+              Other FPGA systems may be supported by the time you read this.
+              This work is not mantained by the MiSTer project. Please contact the
+              core author for issues and updates.
+
+              (c) Jose Tejada, 2024. Please support this research
+              Patreon: https://patreon.com/jotego
+
+              The author does not endorse or participate in illegal distribution
+              of copyrighted material. This work can be used with compatible
+              software. This software can be homebrew projects or legally
+              obtained memory dumps of compatible games.
+
+              This file license is GNU GPLv2.
+              You can read the whole license file in
+              https://opensource.org/licenses/gpl-2.0.php
+
+-->
+
+<misterromdescription>
+    <about author="jotego" webpage="https://patreon.com/jotego" source="https://github.com/jotego" twitter="@topapate"/>
+    <name>Kabuki-Z (Japan)</name>
+    <setname>kabukizj</setname>
+    <rbf>jtkiwi</rbf>
+    <mameversion>0251</mameversion>
+    <year>1988</year>
+    <manufacturer>Kaneko / Taito Corporation</manufacturer>
+    <players>2</players>
+    <joystick>8</joystick>
+    <rotation>horizontal</rotation>
+    <region>World</region>
+    <mraauthor>jotego</mraauthor>
+    <rom index="0" zip="kabukizj.zip|kabukiz.zip" md5="None" asm_md5="f11e10207b38efcc435c30be7cd02667">
+        <!-- bit 0 = MCU
+             bit 1 = color PROM
+             bit 2 = Kabuki Z (specific sound features)
+             bit 3 = Kageki   (specific sound features)
+             bit 4 = banked RAM
+             bit 5 = coin XOR
+             bit 6 = dip_flip XOR
+             bit 7 = HB delay
+             Byte 1:
+             bit 0 = service XOR
+             bit 1 = button aid
+             bit 2 = 3 MHz for FM module
+             bit 3 = Kabuki Z with different memory map   -->
+        <part>
+            14 04 00 00 </part>
+        <!-- maincpu - starts at 0x0 - length 0x20000 (17 bits) -->
+        <part name="b50-05.u1" crc="9cccb129"/>
+        <!-- JTFRAME_BA1_START -->
+        <!-- sub - starts at 0x20000 - length 0x10000 (16 bits) -->
+        <part name="b50-06.u3" crc="45650aab"/>
+        <!-- JTFRAME_BA2_START -->
+        <!-- audiocpu - starts at 0x30000 - length 0x20000 (17 bits) -->
+        <part name="b50-07.u34" crc="bf7fc2ed"/>
+        <!-- JTFRAME_BA3_START -->
+        <!-- samples - starts at 0x50000 -->
+        <!-- gfx1 - starts at 0x50000 - length 0x200000 (21 bits) -->
+        <interleave output="32">
+            <part name="b50-02.u43" crc="90b8a8e7" map="0001"/>
+            <part name="b50-04.u35" crc="04829aa9" map="0010"/>
+            <part name="b50-01.u46" crc="f4277751" map="0100"/>
+            <part name="b50-03.u39" crc="31489a4c" map="1000"/>
+        </interleave>
+        <!-- JTFRAME_PROM_START -->
+        <!-- proms - starts at 0x250000 - length 0x1000 (12 bits) -->
+        <part repeat="0x1000"> FF</part>
+        <!-- MCU_START -->
+        <!-- mcu - starts at 0x251000 - length 0x800 (11 bits) -->
+        <part repeat="0x800"> FF</part>
+        <!-- Total 0x251800 bytes - 2374 kBytes -->
+    </rom>
+    <rom index="1">
+        <part>00</part>
+    </rom>
+    <switches page_id="1" page_name="Switches" base="16" default="fe,fe">
+        <!-- DSWA -->
+        <dip name="Cabinet" bits="0" ids="Upright,Cocktail"/>
+        <dip name="Flip Screen" bits="1" ids="On,Off"/>
+        <dip name="Service Mode" bits="2" ids="On,Off"/>
+        <dip name="Demo Sounds" bits="3" ids="Off,On"/>
+        <dip name="Allow Continue" bits="7" ids="No,Yes"/>
+        <!-- DSWB -->
+        <dip name="Difficulty" bits="8,9" ids="Hardest,Hard,Medium,Easy"/>
+        <dip name="Coin A" bits="12,13" ids="2/3,2/1,1/2,1/1"/>
+        <dip name="Coin B" bits="14,15" ids="2/3,2/1,1/2,1/1"/>
+    </switches>
+    <buttons names="button 1,button 2,-,Start,Coin,Core credits" default="A,B,Start,Select,-" count="2"/>
+</misterromdescription>

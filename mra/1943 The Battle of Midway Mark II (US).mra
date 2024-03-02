@@ -32,39 +32,73 @@
     <rotation>vertical (ccw)</rotation>
     <region>World</region>
     <mraauthor>jotego</mraauthor>
-    <rom index="0" zip="1943mii.zip" md5="None" asm_md5="e56b41c808ea01274b7245c5d89fdef4">
+    <rom index="0" zip="1943mii.zip" md5="None" asm_md5="320715f0f37e39a6689bafc00a2f3386">
         <!-- maincpu - starts at 0x0 - length 0x28000 (18 bits) -->
         <part name="01.12d" crc="8ba22485"/>
         <part name="02.13d" crc="659a5455"/>
         <part name="03.14d" crc="159ea771"/>
+        <!-- SND_START -->
         <!-- audiocpu - starts at 0x28000 - length 0x8000 (15 bits) -->
         <part name="05.4k" crc="25f37957"/>
+        <!-- CHAR_START -->
         <!-- gfx1 - starts at 0x30000 - length 0x8000 (15 bits) -->
-        <part name="04.5h" crc="8190e092"/>
+        <interleave output="16">
+            <part name="04.5h" crc="8190e092" map="12"/>
+        </interleave>
+        <!-- JTFRAME_BA1_START -->
+        <!-- MAP1_START -->
         <!-- tilerom - starts at 0x38000 - length 0x10000 (16 bits) -->
-        <part name="14.5f" crc="02a899f1"/>
-        <part name="23.8k" crc="b6dfdf85"/>
+        <interleave output="16">
+            <part name="14.5f" crc="02a899f1" map="12"/>
+        </interleave>
+        <interleave output="16">
+            <part name="23.8k" crc="b6dfdf85" map="12"/>
+        </interleave>
+        <!-- SCR1_START -->
+        <!-- JTFRAME_BA2_START -->
         <!-- gfx2 - starts at 0x48000 - length 0x40000 (18 bits) -->
-        <part name="bm15.10f" crc="6b1a0443"/>
-        <part name="bm19.10j" crc="868ababc"/>
-        <part name="bm16.11f" crc="23c908c2"/>
-        <part name="bm20.11j" crc="0917e5d4"/>
-        <part name="17.12f" crc="3d5acab9"/>
-        <part name="21.12j" crc="8c7fe74a"/>
-        <part name="18.14f" crc="7b62da1d"/>
-        <part name="22.14j" crc="d5ef8a0e"/>
+        <interleave output="16">
+            <part name="bm19.10j" crc="868ababc" map="01"/>
+            <part name="bm15.10f" crc="6b1a0443" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="bm20.11j" crc="0917e5d4" map="01"/>
+            <part name="bm16.11f" crc="23c908c2" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="21.12j" crc="8c7fe74a" map="01"/>
+            <part name="17.12f" crc="3d5acab9" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="22.14j" crc="d5ef8a0e" map="01"/>
+            <part name="18.14f" crc="7b62da1d" map="10"/>
+        </interleave>
+        <!-- SCR2_START -->
         <!-- gfx3 - starts at 0x88000 - length 0x10000 (16 bits) -->
-        <part name="24.14k" crc="a0074c68"/>
-        <part name="25.14l" crc="f979b2f2"/>
+        <interleave output="16">
+            <part name="25.14l" crc="f979b2f2" map="01"/>
+            <part name="24.14k" crc="a0074c68" map="10"/>
+        </interleave>
+        <!-- JTFRAME_BA3_START -->
+        <!-- OBJ_START -->
         <!-- gfx4 - starts at 0x98000 - length 0x40000 (18 bits) -->
-        <part name="06.10a" crc="b261d5d7"/>
-        <part name="10.10c" crc="de539920"/>
-        <part name="07.11a" crc="2af8a6f2"/>
-        <part name="11.11c" crc="a6abf183"/>
-        <part name="08.12a" crc="159d51bd"/>
-        <part name="12.12c" crc="0f50c001"/>
-        <part name="09.14a" crc="70d9f9a7"/>
-        <part name="13.14c" crc="f065f619"/>
+        <interleave output="16">
+            <part name="10.10c" crc="de539920" map="01"/>
+            <part name="06.10a" crc="b261d5d7" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="11.11c" crc="a6abf183" map="01"/>
+            <part name="07.11a" crc="2af8a6f2" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="12.12c" crc="0f50c001" map="01"/>
+            <part name="08.12a" crc="159d51bd" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="13.14c" crc="f065f619" map="01"/>
+            <part name="09.14a" crc="70d9f9a7" map="10"/>
+        </interleave>
+        <!-- JTFRAME_PROM_START -->
         <!-- proms - starts at 0xD8000 - length 0xC00 (12 bits) -->
         <part name="10.7l" crc="db53adf0"/>
         <part name="11.12l" crc="6fb2e170"/>

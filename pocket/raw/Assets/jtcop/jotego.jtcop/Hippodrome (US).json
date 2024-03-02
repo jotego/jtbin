@@ -10,10 +10,6 @@
 			{
 				"id": 1,
 				"filename": "hippodrm.rom"
-			},
-			{
-				"id": 2,
-				"filename": "hippodrm.sav"
 			}
 		],
 		"memory_writes": [

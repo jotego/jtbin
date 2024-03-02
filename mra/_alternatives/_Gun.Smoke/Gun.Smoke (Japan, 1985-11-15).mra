@@ -32,35 +32,61 @@
     <rotation>vertical (ccw)</rotation>
     <region>World</region>
     <mraauthor>jotego</mraauthor>
-    <rom index="0" zip="gunsmokej.zip|gunsmoke.zip" md5="None" asm_md5="f06442c96d2b9b6115f45c30bb18cced">
+    <rom index="0" zip="gunsmokej.zip|gunsmoke.zip" md5="None" asm_md5="ece54e9f24d2e546cb0062f503d184ab">
         <!-- maincpu - starts at 0x0 - length 0x18000 (17 bits) -->
         <part name="gsj_03.09n" crc="b56b5df6"/>
         <part name="gs04.10n" crc="8d4b423f"/>
         <part name="gs05.12n" crc="2b5667fb"/>
+        <!-- JTFRAME_BA1_START -->
         <!-- audiocpu - starts at 0x18000 - length 0x8000 (15 bits) -->
         <part name="gs02.14h" crc="cd7a2c38"/>
+        <!-- CHAR_START -->
         <!-- chars - starts at 0x20000 - length 0x4000 (14 bits) -->
-        <part name="gs01.11f" crc="b61ece9b"/>
+        <interleave output="16">
+            <part name="gs01.11f" crc="b61ece9b" map="12"/>
+        </interleave>
+        <!-- JTFRAME_BA2_START -->
         <!-- bgtiles - starts at 0x24000 - length 0x8000 (15 bits) -->
-        <part name="gs14.11c" crc="0af4f7eb"/>
+        <interleave output="16">
+            <part name="gs14.11c" crc="0af4f7eb" map="12"/>
+        </interleave>
+        <!-- JTFRAME_BA3_START -->
         <!-- tiles - starts at 0x2C000 - length 0x40000 (18 bits) -->
-        <part name="gs13.06c" crc="f6769fc5"/>
-        <part name="gs09.06a" crc="539f182d"/>
-        <part name="gs12.05c" crc="d997b78c"/>
-        <part name="gs08.05a" crc="e87e526d"/>
-        <part name="gs11.04c" crc="125ba58e"/>
-        <part name="gs07.04a" crc="4382c0d2"/>
-        <part name="gs10.02c" crc="f469c13c"/>
-        <part name="gs06.02a" crc="4cafe7a6"/>
+        <interleave output="16">
+            <part name="gs09.06a" crc="539f182d" map="01"/>
+            <part name="gs13.06c" crc="f6769fc5" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="gs08.05a" crc="e87e526d" map="01"/>
+            <part name="gs12.05c" crc="d997b78c" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="gs07.04a" crc="4382c0d2" map="01"/>
+            <part name="gs11.04c" crc="125ba58e" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="gs06.02a" crc="4cafe7a6" map="01"/>
+            <part name="gs10.02c" crc="f469c13c" map="10"/>
+        </interleave>
+        <!-- OBJ_START -->
         <!-- sprites - starts at 0x6C000 - length 0x40000 (18 bits) -->
-        <part name="gs22.06n" crc="dc9c508c"/>
-        <part name="gs18.06l" crc="f69a3c7c"/>
-        <part name="gs21.04n" crc="68883749"/>
-        <part name="gs17.04l" crc="4e98562a"/>
-        <part name="gs20.03n" crc="0be932ed"/>
-        <part name="gs16.03l" crc="0d99c3b3"/>
-        <part name="gs19.01n" crc="63072f93"/>
-        <part name="gs15.01l" crc="7f14270e"/>
+        <interleave output="16">
+            <part name="gs18.06l" crc="f69a3c7c" map="01"/>
+            <part name="gs22.06n" crc="dc9c508c" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="gs17.04l" crc="4e98562a" map="01"/>
+            <part name="gs21.04n" crc="68883749" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="gs16.03l" crc="0d99c3b3" map="01"/>
+            <part name="gs20.03n" crc="0be932ed" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="gs15.01l" crc="7f14270e" map="01"/>
+            <part name="gs19.01n" crc="63072f93" map="10"/>
+        </interleave>
+        <!-- JTFRAME_PROM_START -->
         <!-- proms - starts at 0xAC000 - length 0xA00 (12 bits) -->
         <part name="g-01.03b" crc="02f55589"/>
         <part name="g-02.04b" crc="e1e36dd9"/>

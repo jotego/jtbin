@@ -19,10 +19,14 @@ Extermination (US, Romstar) --> extrmatnur.rom
 Insector X (World) --> insectx.rom
 Insector X (bootleg) --> insectxbl.rom
 Insector X (Japan) --> insectxj.rom
+Kabuki-Z (World) --> kabukiz.rom
+Kabuki-Z (Japan) --> kabukizj.rom
 Kageki (World) --> kageki.rom
 Kageki (hack) --> kagekih.rom
 Kageki (Japan) --> kagekij.rom
 Kageki (US) --> kagekiu.rom
+The NewZealand Story (World, new version) (P0-043A PCB) --> tnzs.rom
+The NewZealand Story (Japan, new version) (P0-043A PCB) --> tnzsj.rom
 The NewZealand Story (Japan, old version) (P0-041A PCB) --> tnzsjo.rom
 The NewZealand Story (World, old version) (P0-041A PCB) --> tnzso.rom
 The NewZealand Story (World, unknown version) (P0-041A PCB) --> tnzsoa.rom

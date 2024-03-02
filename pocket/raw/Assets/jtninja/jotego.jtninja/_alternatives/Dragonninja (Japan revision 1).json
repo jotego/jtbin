@@ -10,10 +10,6 @@
 			{
 				"id": 1,
 				"filename": "drgninja.rom"
-			},
-			{
-				"id": 2,
-				"filename": "drgninja.sav"
 			}
 		],
 		"memory_writes": [

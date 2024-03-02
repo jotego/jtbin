@@ -37,13 +37,13 @@
         <part name="vg_a-8h-g.ic55" crc="9444c04e"/>
         <part name="vg_a-8l-.ic57" crc="7f95799b"/>
         <part repeat="0x8000"> FF</part>
-        <!-- BA1_START -->
+        <!-- JTFRAME_BA1_START -->
         <!-- soundcpu - starts at 0x20000 - length 0x10000 (16 bits) -->
         <part name="vg_a-5j-.ic37" crc="10582b2d"/>
         <!-- PCM_START -->
         <!-- m72 - starts at 0x30000 - length 0x10000 (16 bits) -->
         <part name="vg_a-4d-.ic26" crc="9b85101d"/>
-        <!-- BA2_START -->
+        <!-- JTFRAME_BA2_START -->
         <!-- gfx1 - starts at 0x40000 - length 0x40000 (18 bits) -->
         <interleave output="16">
             <part name="vg_b-4f-.ic34" crc="01579d20" map="01"/>
@@ -56,7 +56,7 @@
         <part name="vg_b-1f-.ic3" crc="d0d33673"/>
         <part name="vg_b-1h-.ic4" crc="aae81695"/>
         <part repeat="0x10000"> FF</part>
-        <!-- BA3_START -->
+        <!-- JTFRAME_BA3_START -->
         <!-- gfx2 - starts at 0xC0000 - length 0x80000 (19 bits) -->
         <interleave output="16">
             <part name="vg_b-6l-.ic62" crc="fbe9552d" map="01"/>

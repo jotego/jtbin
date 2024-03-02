@@ -41,7 +41,7 @@
         <part name="k-18_2764.d6" crc="a09046ad"/>
         <part name="k-19_2764.d7" crc="0cdc4da9"/>
         <part repeat="0x4000"> FF</part>
-        <!-- SND_START -->
+        <!-- JTFRAME_BA1_START -->
         <!-- audiocpu - starts at 0x10000 - length 0x10000 (16 bits) -->
         <part name="k-26_2764.e10" crc="645232ba"/>
         <part name="k-25_2764.e9" crc="253bf0da"/>
@@ -51,14 +51,14 @@
         <part name="k-21_2764.e4" crc="5f0efbe7"/>
         <part name="k-20_2764.e2" crc="cbe8a533"/>
         <part repeat="0x2000"> FF</part>
-        <!-- CHAR_START -->
+        <!-- JTFRAME_BA2_START -->
         <!-- gfx1 - starts at 0x20000 - length 0x20000 (17 bits) -->
         <interleave output="16">
             <part name="k-0_2764.h3" crc="cec020f2" map="01"/>
             <part name="k-1_2764.h6" crc="cd96271c" map="10"/>
         </interleave>
         <part repeat="0x1C000"> FF</part>
-        <!-- OBJ_START -->
+        <!-- JTFRAME_BA3_START -->
         <!-- gfx2 - starts at 0x40000 - length 0x20000 (17 bits) -->
         <part name="k-13_2764.k15" crc="fb358707"/>
         <part name="k-4_2764.j15" crc="48372bf8"/>

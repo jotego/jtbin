@@ -42,11 +42,11 @@
         <part name="spu_07.13h" crc="f46b698d"/>
         <part name="spu_08.14h" crc="a75e7fbe"/>
         <part repeat="0x38000"> FF</part>
-        <!-- PCM_START -->
+        <!-- JTFRAME_BA1_START -->
         <!-- oki - starts at 0x80000 - length 0x80000 (19 bits) -->
         <part name="spj_01.1d" crc="b96ea126"/>
         <part repeat="0x60000"> FF</part>
-        <!-- CHAR_START -->
+        <!-- JTFRAME_BA2_START -->
         <!-- chars - starts at 0x100000 - length 0x200000 (21 bits) -->
         <interleave output="16">
             <part name="spu_02.1e" crc="0c22ffc6" map="01"/>
@@ -57,7 +57,7 @@
             <part name="spj_05.2g" crc="4a060884" map="10"/>
         </interleave>
         <part repeat="0x180000"> FF</part>
-        <!-- OBJ_START -->
+        <!-- JTFRAME_BA3_START -->
         <!-- sprites - starts at 0x300000 - length 0x40000 (18 bits) -->
         <interleave output="16">
             <part name="spu_10.2k" crc="d6675d8f" map="01"/>

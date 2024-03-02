@@ -32,36 +32,50 @@
     <rotation>horizontal</rotation>
     <region>World</region>
     <mraauthor>jotego</mraauthor>
-    <rom index="0" zip="blktiger.zip" md5="None" asm_md5="5d864c2ff5386bf87ecc66d99a29e06d">
+    <rom index="0" zip="blktiger.zip" md5="None" asm_md5="2d7440c40e52cb34ad47fbc0820bbcb6">
         <!-- maincpu - starts at 0x0 - length 0x48000 (19 bits) -->
         <part name="bdu-02a.6e" crc="7bef96e8"/>
         <part name="bdu-03a.8e" crc="4089e157"/>
         <part name="bd-04.9e" crc="ed6af6ec"/>
         <part name="bd-05.10e" crc="ae59b72e"/>
         <part name="bdu-01a.5e" crc="a8f98f22"/>
+        <!-- JTFRAME_BA1_START -->
         <!-- audiocpu - starts at 0x48000 - length 0x8000 (15 bits) -->
         <part name="bd-06.1l" crc="2cf54274"/>
-        <!-- chars - starts at 0x50000 - length 0x10000 (16 bits) -->
-        <part name="bd-15.2n" crc="70175d78"/>
-        <part name="bd-15.2n" crc="70175d78"/>
-        <!-- tiles - starts at 0x60000 - length 0x40000 (18 bits) -->
-        <part name="bd-14.9b" crc="dc49593a"/>
-        <part name="bd-13.8b" crc="7ed7a122"/>
-        <part name="bd-12.5b" crc="c4524993"/>
-        <part name="bd-11.4b" crc="7932c86f"/>
-        <!-- sprites - starts at 0xA0000 - length 0x40000 (18 bits) -->
-        <part name="bd-08.5a" crc="e2f17438"/>
-        <part name="bd-07.4a" crc="5fccbd27"/>
-        <part name="bd-10.9a" crc="fc33ccc6"/>
-        <part name="bd-09.8a" crc="f449de01"/>
-        <!-- mcu - starts at 0xE0000 - length 0x1000 (12 bits) -->
+        <!-- CHAR_START -->
+        <!-- chars - starts at 0x50000 - length 0x8000 (15 bits) -->
+        <interleave output="16">
+            <part name="bd-15.2n" crc="70175d78" map="12"/>
+        </interleave>
+        <!-- JTFRAME_BA2_START -->
+        <!-- tiles - starts at 0x58000 - length 0x40000 (18 bits) -->
+        <interleave output="16">
+            <part name="bd-14.9b" crc="dc49593a" map="01"/>
+            <part name="bd-12.5b" crc="c4524993" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="bd-13.8b" crc="7ed7a122" map="01"/>
+            <part name="bd-11.4b" crc="7932c86f" map="10"/>
+        </interleave>
+        <!-- JTFRAME_BA3_START -->
+        <!-- sprites - starts at 0x98000 - length 0x40000 (18 bits) -->
+        <interleave output="16">
+            <part name="bd-10.9a" crc="fc33ccc6" map="01"/>
+            <part name="bd-08.5a" crc="e2f17438" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="bd-09.8a" crc="f449de01" map="01"/>
+            <part name="bd-07.4a" crc="5fccbd27" map="10"/>
+        </interleave>
+        <!-- JTFRAME_PROM_START -->
+        <!-- mcu - starts at 0xD8000 - length 0x1000 (12 bits) -->
         <part name="bd.6k" crc="ac7d14f1"/>
-        <!-- proms - starts at 0xE1000 - length 0x400 (10 bits) -->
+        <!-- proms - starts at 0xD9000 - length 0x400 (10 bits) -->
         <part name="bd01.8j" crc="29b459e5"/>
         <part name="bd02.9j" crc="8b741e66"/>
         <part name="bd03.11k" crc="27201c75"/>
         <part name="bd04.11l" crc="e5490b68"/>
-        <!-- Total 0xE1400 bytes - 901 kBytes -->
+        <!-- Total 0xD9400 bytes - 869 kBytes -->
     </rom>
     <rom index="1">
         <part>00</part>

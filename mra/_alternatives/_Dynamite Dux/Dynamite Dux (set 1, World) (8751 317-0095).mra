@@ -72,8 +72,8 @@
             <part name="mpr-11923.b6" crc="c9ffe47d" map="10"/>
         </interleave>
         <part repeat="0x180000"> FF</part>
-        <!-- MCU_START -->
         <!-- JTFRAME_PROM_START -->
+        <!-- MCU_START -->
         <!-- mcu - starts at 0x440000 - length 0x2000 (13 bits) -->
         <part name="317-0095.c2" crc="b06b4ca7"/>
         <part repeat="0x1000"> FF</part>

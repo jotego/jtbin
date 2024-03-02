@@ -10,10 +10,6 @@
 			{
 				"id": 1,
 				"filename": "ffantasya.rom"
-			},
-			{
-				"id": 2,
-				"filename": "ffantasya.sav"
 			}
 		],
 		"memory_writes": [

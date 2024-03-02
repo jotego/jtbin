@@ -10,10 +10,6 @@
 			{
 				"id": 1,
 				"filename": "robocop.rom"
-			},
-			{
-				"id": 2,
-				"filename": "robocop.sav"
 			}
 		],
 		"memory_writes": [

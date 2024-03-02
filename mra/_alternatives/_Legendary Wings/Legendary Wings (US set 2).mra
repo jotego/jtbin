@@ -32,10 +32,10 @@
     <rotation>vertical (cw)</rotation>
     <region>World</region>
     <mraauthor>jotego</mraauthor>
-    <rom index="0" zip="lwings2.zip|lwings.zip" md5="None" asm_md5="ba6804d682090b0896ef14b7997aaeee">
+    <rom index="0" zip="lwings2.zip|lwings.zip" md5="None" asm_md5="d2f286876a761eb44bc263bdc6b56a47">
         <part>
             01 00 00 00 00 00 00 00
-            01 80 02 00 02 40 06 40
+            01 80 02 00 04 00 08 00
             00 00 00 00 00 00 00 00
             00 00 00 00 00 00 00 00
         </part>
@@ -43,13 +43,18 @@
         <part name="u14-k" crc="5d91c828"/>
         <part name="9c_lw03.bin" crc="ec5cc201"/>
         <part name="u13-l" crc="3069c01c"/>
+        <!-- JTFRAME_BA1_START -->
         <!-- soundcpu - starts at 0x18000 - length 0x8000 (15 bits) -->
         <part name="11e_lw04.bin" crc="a20337a2"/>
+        <!-- CHAR_START -->
         <!-- adpcm - starts at 0x20000 -->
-        <!-- gfx5 - starts at 0x20000 -->
-        <!-- gfx1 - starts at 0x20000 - length 0x4000 (14 bits) -->
-        <part name="9h_lw05.bin" crc="091d923c"/>
-        <!-- gfx2 - starts at 0x24000 - length 0x40000 (18 bits) -->
+        <!-- gfx1 - starts at 0x20000 - length 0x20000 (17 bits) -->
+        <interleave output="16">
+            <part name="9h_lw05.bin" crc="091d923c" map="12"/>
+        </interleave>
+        <part repeat="0x1C000"> FF</part>
+        <!-- JTFRAME_BA2_START -->
+        <!-- gfx2 - starts at 0x40000 - length 0x40000 (18 bits) -->
         <interleave output="32">
             <part name="b_03f.rom" crc="9b374dcc" map="0001"/>
             <part name="b_03b.rom" crc="4f8182e9" map="0010"/>
@@ -62,16 +67,17 @@
             <part name="b_01d.rom" crc="0ba008c3" map="0100"/>
             <part name="b_01e.rom" crc="f5d25623" map="1000"/>
         </interleave>
-        <!-- gfx3 - starts at 0x64000 - length 0x20000 (17 bits) -->
+        <!-- JTFRAME_BA3_START -->
+        <!-- gfx3 - starts at 0x80000 - length 0x20000 (17 bits) -->
         <interleave output="16">
-            <part name="b_03j.rom" crc="8f3c763a" map="01"/>
-            <part name="b_03h.rom" crc="7d58f532" map="10"/>
+            <part name="b_03h.rom" crc="7d58f532" map="01"/>
+            <part name="b_03j.rom" crc="8f3c763a" map="10"/>
         </interleave>
         <interleave output="16">
-            <part name="b_01j.rom" crc="7cc90a1d" map="01"/>
-            <part name="b_01h.rom" crc="3e396eda" map="10"/>
+            <part name="b_01h.rom" crc="3e396eda" map="01"/>
+            <part name="b_01j.rom" crc="7cc90a1d" map="10"/>
         </interleave>
-        <!-- Total 0x84000 bytes - 528 kBytes -->
+        <!-- Total 0xA0000 bytes - 640 kBytes -->
     </rom>
     <!-- Vertical game -->
     <rom index="1">

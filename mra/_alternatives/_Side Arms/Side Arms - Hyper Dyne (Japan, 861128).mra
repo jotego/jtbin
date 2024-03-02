@@ -43,16 +43,20 @@
         <interleave output="16">
             <part name="a_12e.rom" crc="81d0ece7" map="12"/>
         </interleave>
+        <!-- JTFRAME_BA1_START -->
         <!-- audiocpu - starts at 0x18000 - length 0x8000 (15 bits) -->
         <interleave output="16">
             <part name="a_04k.rom" crc="34efe2d2" map="12"/>
         </interleave>
+        <!-- STAR_START -->
         <!-- user1 - starts at 0x20000 - length 0x8000 (15 bits) -->
         <interleave output="16">
             <part name="b_11j.rom" crc="134dc35b" map="12"/>
         </interleave>
+        <!-- JTFRAME_BA2_START -->
         <!-- gfx1 - starts at 0x28000 - length 0x4000 (14 bits) -->
         <part name="a_10j.rom" crc="651fef75"/>
+        <!-- SCR_START -->
         <!-- gfx2 - starts at 0x2C000 - length 0x40000 (18 bits) -->
         <interleave output="16">
             <part name="b_13d.rom" crc="3c59afe1" map="01"/>
@@ -70,6 +74,7 @@
             <part name="b_13g.rom" crc="c71a3053" map="01"/>
             <part name="b_14g.rom" crc="ef6af630" map="10"/>
         </interleave>
+        <!-- JTFRAME_BA3_START -->
         <!-- gfx3 - starts at 0x6C000 - length 0x40000 (18 bits) -->
         <interleave output="16">
             <part name="b_11b.rom" crc="eb6f278c" map="01"/>
@@ -87,8 +92,10 @@
             <part name="b_13a.rom" crc="3e8a9f75" map="01"/>
             <part name="b_14a.rom" crc="dba06076" map="10"/>
         </interleave>
+        <!-- MAP_START -->
         <!-- gfx4 - starts at 0xAC000 - length 0x8000 (15 bits) -->
         <part name="b_03d.rom" crc="6f348008"/>
+        <!-- JTFRAME_PROM_START -->
         <!-- proms - starts at 0xB4000 - length 0x320 (10 bits) -->
         <part name="63s141.16h" crc="75af3553"/>
         <part name="63s141.11h" crc="a6e4d68f"/>
