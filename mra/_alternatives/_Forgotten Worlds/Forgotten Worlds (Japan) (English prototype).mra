@@ -86,6 +86,7 @@
         <!-- DSWC -->
         <dip name="Slow Motion" bits="16" ids="On,Off"/>
         <dip name="Slowest Motion" bits="17" ids="On,Off"/>
+        <dip name="PCB type" ids="88617A,89626A" bits="24"/>
     </switches>
     <buttons names="Shoot,Rotate left,Rotate right,-,-,-,Start,Coin,Core credits" default="A,B,X,Start,Select,-" count="3"/>
 </misterromdescription>

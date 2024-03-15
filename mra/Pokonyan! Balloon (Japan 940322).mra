@@ -97,6 +97,7 @@
         <dip name="Service Mode" bits="23" ids="On,Off"/>
         <!-- IN0 -->
         <dip name="Service Mode" bits="30" ids="On,Off"/>
+        <dip name="PCB type" ids="88617A,89626A" bits="24"/>
     </switches>
     <buttons names="button 1,button 2,-,-,-,-,Start,Coin,Core credits" default="A,B,Start,Select,-" count="2"/>
 </misterromdescription>

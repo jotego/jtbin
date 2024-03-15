@@ -577,7 +577,7 @@
 | rockmanj     | jtcps1     | 6c5699d3d2215256f970a3e9d27a86cc | ff,fa,ff     |
 | rocnrope     | jtroc      | 3ea1ddb56be848aecc0b3b64f295ad3e | ff,5b,96     |
 | rocnropek    | jtroc      | 9a7b2a4292da9248e666abe317edf768 | ff,5b,96     |
-| rushcrsh     | jtrumble   | de5d5970dfe0f0c7ba898502c147213d | ff,73        |
+| rushcrsh     | jtrumble   | 4f09aed603e4590fd2b8cadd6a796edf | ff,73        |
 | ryukyu       | jts16b     | 8f2e0276190a2c18150cc7da4a25583f | ff,fa        |
 | ryukyua      | jts16b     | a588e0ceab5e1d557cc0188a38385750 | ff,fa        |
 | savgbees     | jtexed     | a0bfb6be669be0073f0196983de61d06 | df,ff        |
@@ -750,9 +750,9 @@
 | splatter     | jtshouse   | 1e5918a0657787602d9c002385ffa46d | ff           |
 | splatter2    | jtshouse   | 41e360fa9bcd4805ad031ec8b0881d67 | ff           |
 | splatterj    | jtshouse   | 6d6b7cde5517f7eee3b8b1d291e622ba | ff           |
-| srumbler     | jtrumble   | 69aeb3084a87601bc6623b92290cfc14 | ff,73        |
-| srumbler2    | jtrumble   | d98cf9591f43371125ff421af37eca00 | ff,73        |
-| srumbler3    | jtrumble   | ac03c1aa0afba6c0be22ba7a2db1cdec | ff,73        |
+| srumbler     | jtrumble   | ca8dfc45b6c2bc43818e26c2a73614de | ff,73        |
+| srumbler2    | jtrumble   | 690ff40aeb3164bc29045fa8dd3eda6b | ff,73        |
+| srumbler3    | jtrumble   | 107617e23ae1fe6d8b581b64c267adad | ff,73        |
 | ssf2         | jtcps2     | ecf1e3a355748994730378115c4b33b2 |              |
 | ssf2a        | jtcps2     | afe74765324f5583550c6e3a23b79dc8 |              |
 | ssf2ar1      | jtcps2     | 6665fe4f45c22474958df3f7986c99f1 |              |

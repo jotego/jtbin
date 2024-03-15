@@ -3,8 +3,37 @@
 		"magic": "APF_VER_1",
 		"variables": [
 			{
-				"name": "Freeze",
+				"name": "FX Volume",
 				"id": 0,
+				"type": "list",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfb000000",
+				"defaultval": 0,
+				"value": 0,
+				"mask": "0xFFFFFF3F",
+				"options": [
+					{
+						"name": "high",
+						"value": "0x00"
+					},
+					{
+						"name": "very high",
+						"value": "0x40"
+					},
+					{
+						"name": "very low",
+						"value": "0x80"
+					},
+					{
+						"name": "low",
+						"value": "0xc0"
+					}
+				]
+			},
+			{
+				"name": "Freeze",
+				"id": 1,
 				"type": "check",
 				"enabled": true,
 				"persist": true,
@@ -16,7 +45,7 @@
 			},
 			{
 				"name": "Lives (Midnight Wanderers)",
-				"id": 1,
+				"id": 2,
 				"type": "list",
 				"enabled": true,
 				"persist": true,
@@ -45,7 +74,7 @@
 			},
 			{
 				"name": "Difficulty (Midnight Wanderers)",
-				"id": 2,
+				"id": 3,
 				"type": "list",
 				"enabled": true,
 				"persist": true,
@@ -74,7 +103,7 @@
 			},
 			{
 				"name": "Lives (Chariot)",
-				"id": 3,
+				"id": 4,
 				"type": "list",
 				"enabled": true,
 				"persist": true,
@@ -103,7 +132,7 @@
 			},
 			{
 				"name": "Difficulty (Chariot)",
-				"id": 4,
+				"id": 5,
 				"type": "list",
 				"enabled": true,
 				"persist": true,
@@ -132,7 +161,7 @@
 			},
 			{
 				"name": "Lives (Don't Pull)",
-				"id": 5,
+				"id": 6,
 				"type": "list",
 				"enabled": true,
 				"persist": true,
@@ -161,7 +190,7 @@
 			},
 			{
 				"name": "Difficulty (Don't Pull)",
-				"id": 6,
+				"id": 7,
 				"type": "list",
 				"enabled": true,
 				"persist": true,
@@ -190,7 +219,7 @@
 			},
 			{
 				"name": "Flip Screen",
-				"id": 7,
+				"id": 8,
 				"type": "check",
 				"enabled": true,
 				"persist": true,
@@ -202,7 +231,7 @@
 			},
 			{
 				"name": "Demo Sounds",
-				"id": 8,
+				"id": 9,
 				"type": "check",
 				"enabled": true,
 				"persist": true,
@@ -214,7 +243,7 @@
 			},
 			{
 				"name": "Allow Continue",
-				"id": 9,
+				"id": 10,
 				"type": "check",
 				"enabled": true,
 				"persist": true,
@@ -226,7 +255,7 @@
 			},
 			{
 				"name": "Game Mode",
-				"id": 10,
+				"id": 11,
 				"type": "list",
 				"enabled": true,
 				"persist": true,

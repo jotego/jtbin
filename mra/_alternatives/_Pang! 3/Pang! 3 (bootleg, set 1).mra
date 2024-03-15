@@ -67,6 +67,7 @@
         <!-- DSWC -->
         <dip name="Freeze" bits="3" ids="On,Off"/>
         <dip name="Freeze" ids="On,Off" bits="23"/>
+        <dip name="PCB type" ids="88617A,89626A" bits="24"/>
     </switches>
     <buttons names="Shoot,-,-,-,-,-,Start,Coin,Core credits" default="A,Start,Select,-" count="1"/>
 </misterromdescription>

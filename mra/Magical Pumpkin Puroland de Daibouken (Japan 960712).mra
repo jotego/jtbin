@@ -88,6 +88,7 @@
         <dip name="Service Mode" bits="23" ids="On,Off"/>
         <!-- IN0 -->
         <dip name="Service Mode" bits="30" ids="On,Off"/>
+        <dip name="PCB type" ids="88617A,89626A" bits="24"/>
     </switches>
     <buttons names="Kitty,Keroppi,Badtz-Maru,-,-,-,Start,Coin,Core credits" default="A,B,X,Start,Select,-" count="3"/>
 </misterromdescription>

@@ -3,8 +3,37 @@
 		"magic": "APF_VER_1",
 		"variables": [
 			{
-				"name": "Freeze",
+				"name": "FX Volume",
 				"id": 0,
+				"type": "list",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfb000000",
+				"defaultval": 0,
+				"value": 0,
+				"mask": "0xFFFFFF3F",
+				"options": [
+					{
+						"name": "high",
+						"value": "0x00"
+					},
+					{
+						"name": "very high",
+						"value": "0x40"
+					},
+					{
+						"name": "very low",
+						"value": "0x80"
+					},
+					{
+						"name": "low",
+						"value": "0xc0"
+					}
+				]
+			},
+			{
+				"name": "Freeze",
+				"id": 1,
 				"type": "check",
 				"enabled": true,
 				"persist": true,

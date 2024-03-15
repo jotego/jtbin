@@ -34,18 +34,6 @@
 				],
 				"address": "0x00000000",
 				"nonvolatile": true
-			},
-			{
-				"name": "JTBETA",
-				"id": 17,
-				"required": false,
-				"parameters": "0x1000000",
-				"filename": "beta.bin",
-				"extensions": [
-					"bin"
-				],
-				"address": "0x00000000",
-				"nonvolatile": false
 			}
 		]
 	}

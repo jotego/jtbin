@@ -88,6 +88,7 @@
         <dip name="Flip Screen" bits="20" ids="On,Off"/>
         <dip name="Demo Sounds" bits="21" ids="On,Off"/>
         <dip name="Game Mode" bits="23" ids="Test,Game"/>
+        <dip name="PCB type" ids="88617A,89626A" bits="24"/>
     </switches>
     <buttons names="Rotate left,Rotate right,-,-,-,-,Start,Coin,Core credits" default="A,B,Start,Select,-" count="2"/>
 </misterromdescription>

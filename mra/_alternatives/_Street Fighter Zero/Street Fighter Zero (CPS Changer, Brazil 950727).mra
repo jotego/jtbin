@@ -83,6 +83,8 @@
     <rom index="1">
         <part>00</part>
     </rom>
-    <switches page_id="1" page_name="Switches" base="8" default="ff,ff"/>
+    <switches page_id="1" page_name="Switches" base="8" default="ff,ff">
+        <dip name="PCB type" ids="88617A,89626A" bits="24"/>
+    </switches>
     <buttons names="LP,MP,SP,LK,MK,HK,Start,Coin,Core credits" default="A,B,X,Y,L,R,Start,Select,-" count="6"/>
 </misterromdescription>

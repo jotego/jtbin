@@ -92,6 +92,7 @@
         <dip name="Demo Sounds" bits="17" ids="Off,On"/>
         <dip name="Allow Continue" bits="18" ids="No,Yes"/>
         <dip name="Game Mode" bits="23" ids="Test,Game"/>
+        <dip name="PCB type" ids="88617A,89626A" bits="24"/>
     </switches>
     <buttons names="Attack,Jump,Weapon Change,-,-,-,Start,Coin,Core credits" default="A,B,X,Start,Select,-" count="3"/>
 </misterromdescription>

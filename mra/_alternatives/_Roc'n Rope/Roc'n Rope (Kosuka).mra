@@ -43,8 +43,8 @@
         <!-- timeplt_audio:tpsound - starts at 0xA000 - length 0x2000 (13 bits) -->
         <part name="rnr_7a.snd" crc="75d2c4e2"/>
         <part name="rnr_8a.snd" crc="ca4325ae"/>
-        <!-- SCR_START -->
         <!-- JTFRAME_MCLK -->
+        <!-- SCR_START -->
         <!-- tiles - starts at 0xC000 - length 0x4000 (14 bits) -->
         <interleave output="16">
             <part name="rnr_h12.vid" crc="e2114539" map="01"/>

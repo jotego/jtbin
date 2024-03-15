@@ -32,11 +32,11 @@
     <rotation>vertical (ccw)</rotation>
     <region>World</region>
     <mraauthor>jotego</mraauthor>
-    <rom index="0" zip="srumbler.zip" md5="None" asm_md5="69aeb3084a87601bc6623b92290cfc14">
+    <rom index="0" zip="srumbler.zip" md5="None" asm_md5="ca8dfc45b6c2bc43818e26c2a73614de">
         <!--  Header to identify the game
  -->
         <part>
-            00 00 00 00 </part>
+            01 00 00 00 </part>
         <!-- maincpu - starts at 0x0 - length 0x40000 (18 bits) -->
         <part name="rc04.14e" crc="a68ce89c"/>
         <part name="rc03.13e" crc="87bda812"/>
