@@ -1,11 +1,11 @@
 name: Pocket per core ZIP files
 
 on:
-  push:
-    branches:
-      - master
-    paths:
-      - pocket/raw/**
+#  push:
+#    branches:
+#      - master
+#    paths:
+#      - pocket/raw/**
   workflow_dispatch:
 
 jobs:
