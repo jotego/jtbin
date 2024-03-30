@@ -9,13 +9,18 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "kabukizj.rom"
+				"filename": "kchampvs3.rom"
+			},
+			{
+				"id": 17,
+				"filename": "beta.bin",
+				"md5": "71035230a15ff988e5823bc00a8efc50"
 			}
 		],
 		"memory_writes": [
 			{
 				"address": "0xf9000000",
-				"data": "0x0"
+				"data": "0x1"
 			}
 		]
 	}

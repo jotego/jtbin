@@ -1,0 +1,83 @@
+{
+	"interact":{
+		"magic": "APF_VER_1",
+		"variables": [
+			{
+				"name": "Rotate screen",
+				"id": 0,
+				"type": "check",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfb000000",
+				"defaultval": 4,
+				"value": 4,
+				"mask": "0xFFFFFFFB"
+			},
+			{
+				"name": "Difficulty",
+				"id": 1,
+				"type": "list",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 1,
+				"value": 0,
+				"mask": "0xFFFFFFCF",
+				"options": [
+					{
+						"name": "Hardest",
+						"value": "0x0"
+					},
+					{
+						"name": "Hard",
+						"value": "0x10"
+					},
+					{
+						"name": "Medium",
+						"value": "0x20"
+					},
+					{
+						"name": "Easy",
+						"value": "0x30"
+					}
+				]
+			},
+			{
+				"name": "Demo Sounds",
+				"id": 2,
+				"type": "check",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 1,
+				"value": 0,
+				"value_off": 64,
+				"mask": "0xFFFFFFBF"
+			},
+			{
+				"name": "Free Play",
+				"id": 3,
+				"type": "check",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 0,
+				"value": 0,
+				"value_off": 128,
+				"mask": "0xFFFFFF7F"
+			},
+			{
+				"name": "Default",
+				"id": 1015,
+				"type": "number_u32",
+				"enabled": false,
+				"persist": false,
+				"writeonly": true,
+				"address": "0xfa000000",
+				"defaultval": 159,
+				"value": 0
+			}
+		],
+		"messages": []
+	}
+}

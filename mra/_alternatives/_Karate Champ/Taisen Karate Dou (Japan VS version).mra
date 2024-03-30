@@ -90,8 +90,6 @@
     </rom>
     <switches page_id="1" page_name="Switches" base="16" default="9f">
         <!-- DSW -->
-        <dip name="Coin B" bits="0,1" ids="3/1,2/1,1/2,1/1"/>
-        <dip name="Coin A" bits="2,3" ids="3/1,2/1,1/2,1/1"/>
         <dip name="Difficulty" bits="4,5" ids="Hardest,Hard,Medium,Easy"/>
         <dip name="Demo Sounds" bits="6" ids="On,Off"/>
         <dip name="Free Play" bits="7" ids="On,Off"/>

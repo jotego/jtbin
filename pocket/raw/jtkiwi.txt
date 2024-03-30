@@ -19,8 +19,6 @@ Extermination (US, Romstar) --> extrmatnur.rom
 Insector X (World) --> insectx.rom
 Insector X (bootleg) --> insectxbl.rom
 Insector X (Japan) --> insectxj.rom
-Kabuki-Z (World) --> kabukiz.rom
-Kabuki-Z (Japan) --> kabukizj.rom
 Kageki (World) --> kageki.rom
 Kageki (hack) --> kagekih.rom
 Kageki (Japan) --> kagekij.rom

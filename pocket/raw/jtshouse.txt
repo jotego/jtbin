@@ -5,6 +5,9 @@ The following arcade titles are compatible with this core. Generate
 the required .rom file using the mra tool (read below).
 Place the *.rom files in Assets/jtshouse/common
 
+Galaga '88 --> galaga88.rom
+Galaga '88 (02-03-88) --> galaga88a.rom
+Galaga '88 (Japan) --> galaga88j.rom
 Splatter House (World, new version (SH3)) --> splatter.rom
 Splatter House (World, old version (SH2)) --> splatter2.rom
 Splatter House (Japan, SH1) --> splatterj.rom

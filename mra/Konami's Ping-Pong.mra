@@ -45,8 +45,8 @@
         <!-- OBJ_START -->
         <!-- sprites - starts at 0xA000 - length 0x2000 (13 bits) -->
         <part name="555_e02.12c" crc="33c687e0"/>
-        <!-- JTFRAME_PROM_START -->
         <!-- JTFRAME_MCLK -->
+        <!-- JTFRAME_PROM_START -->
         <!-- proms - starts at 0xC000 - length 0x220 (10 bits) -->
         <part name="555e06.3j" crc="3e04f06e"/>
         <part name="555e05.5h" crc="8456046a"/>

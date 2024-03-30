@@ -86,8 +86,8 @@
             <part name="12235-29.b4" crc="fa45d511" map="01"/>
             <part name="12239-30.b8" crc="91f70c8b" map="10"/>
         </interleave>
-        <!-- MCU_START -->
         <!-- JTFRAME_PROM_START -->
+        <!-- MCU_START -->
         <!-- mcu - starts at 0x180000 - length 0x2000 (13 bits) -->
         <part repeat="0x1000"> FF</part>
         <part repeat="0x1000"> FF</part>

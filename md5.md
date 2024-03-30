@@ -306,6 +306,9 @@
 | fpoint1      | jts16b     | 104febb82ea083d44525f317992142d3 | ff,fd        |
 | fround       | jtfround   | 0824f8ea07f0f330628fa9373dc13021 | ff,5e,ff     |
 | froundl      | jtfround   | b4f7a1b2506094c98fddf820462f5653 | ff,5e,ff     |
+| galaga88     | jtshouse   | 7fa29a855ff4114154da4ffd8d19589f | ff           |
+| galaga88a    | jtshouse   | 65df75a5bb8ba49366afcb60ef546266 | ff           |
+| galaga88j    | jtshouse   | df7948f75dffb9d4034d3bbc266a80c5 | ff           |
 | gbusters     | jtaliens   | 10dbc0128069fa05df7b4ce997b53fd5 | ff,56,ff     |
 | gbustersa    | jtaliens   | a039c0483e4977911a9683590ae316bd | ff,56,ff     |
 | ghouls       | jtcps1     | 6ca0a8f1265eca0c99f28ac9e645e2eb | ff,fd,ff     |
@@ -358,8 +361,6 @@
 | insectxbl    | jtkiwi     | 0f1fa4881ac2194d848bb02140bf8b32 | fe,ff        |
 | insectxj     | jtkiwi     | 382d7b3a550c7a5391cbc88e5f74033e | fe,ff        |
 | jyangoku     | jtcps2     | 7ae7b0471ea7dde0b0ff13962bfddcc8 |              |
-| kabukiz      | jtkiwi     | 29d892e42ee4f2d5e54f182cbf329112 | fe,fe        |
-| kabukizj     | jtkiwi     | f11e10207b38efcc435c30be7cd02667 | fe,fe        |
 | kageki       | jtkiwi     | d2f330f88ad450df36e63f2de82bebc0 | ff,ff        |
 | kagekih      | jtkiwi     | 42102bebd90944cd3e66eda8de060bcb | ff,ff        |
 | kagekij      | jtkiwi     | d3db18bddd0aac50e8616370da945975 | fe,ff        |
@@ -747,9 +748,9 @@
 | spf2tu       | jtcps2     | e14f9c04be77eec8123f32304ec377ac |              |
 | spf2xj       | jtcps2     | 88c1d220a0693a1126adfb418089afe6 |              |
 | spf2xjd      | jtcps2     | 8da65e97a9927ed5339918540cc99f67 |              |
-| splatter     | jtshouse   | 1e5918a0657787602d9c002385ffa46d | ff           |
-| splatter2    | jtshouse   | 41e360fa9bcd4805ad031ec8b0881d67 | ff           |
-| splatterj    | jtshouse   | 6d6b7cde5517f7eee3b8b1d291e622ba | ff           |
+| splatter     | jtshouse   | 20ac7bfbce64b1c4f07063a04d0da6dc | ff           |
+| splatter2    | jtshouse   | 39db02b9572c7eb0b52a07e51d4b6e64 | ff           |
+| splatterj    | jtshouse   | 7fec6c333ace128a57eed1a36f85a6de | ff           |
 | srumbler     | jtrumble   | ca8dfc45b6c2bc43818e26c2a73614de | ff,73        |
 | srumbler2    | jtrumble   | 690ff40aeb3164bc29045fa8dd3eda6b | ff,73        |
 | srumbler3    | jtrumble   | 107617e23ae1fe6d8b581b64c267adad | ff,73        |
