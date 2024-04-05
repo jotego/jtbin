@@ -501,6 +501,9 @@
 | outruneh     | jtoutrun   | daf7666a4f8a42933a0605a646765ae3 | ff,f9        |
 | outruneha    | jtoutrun   | 0603751fbd5551ed1be0189e474978a9 | ff,f9        |
 | outrunra     | jtoutrun   | ec44432539dfa9b7897ac1d4be2c169a | ff,f9        |
+| pacmania     | jtshouse   | 6e9025aeeaa7f8403dbeeaa4435b72c8 | ff           |
+| pacmaniaj    | jtshouse   | eff08a4a986ab70ba560fea2a1c54fc1 | ff           |
+| pacmaniao    | jtshouse   | dd2aaa41cca27d88f81fcc6db2f24b38 | ff           |
 | pang         | jtpang     | c5e7ed559af41d80dc11cfd427b4daac |              |
 | pang3        | jtcps1     | e53b10d4f19c2deec4d94c28fcedf066 | ff,ff,ff     |
 | pang3b       | jtcps1     | 7bc4743339f322fe222befc1a06fd74d | ff,ff,ff     |

@@ -9,7 +9,8 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "splatterj.rom"
+				"filename": "splatterj.rom",
+				"md5": "7fec6c333ace128a57eed1a36f85a6de"
 			},
 			{
 				"id": 2,

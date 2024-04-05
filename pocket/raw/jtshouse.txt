@@ -8,6 +8,9 @@ Place the *.rom files in Assets/jtshouse/common
 Galaga '88 --> galaga88.rom
 Galaga '88 (02-03-88) --> galaga88a.rom
 Galaga '88 (Japan) --> galaga88j.rom
+Pac-Mania --> pacmania.rom
+Pac-Mania (Japan) --> pacmaniaj.rom
+Pac-Mania (111187 sound program) --> pacmaniao.rom
 Splatter House (World, new version (SH3)) --> splatter.rom
 Splatter House (World, old version (SH2)) --> splatter2.rom
 Splatter House (Japan, SH1) --> splatterj.rom

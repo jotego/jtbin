@@ -113,6 +113,7 @@ Byte 7: addr for upper nibble read
         <dip name="Debug IRQ 1/2" bits="5" ids="Yes,No"/>
         <dip name="Debug IRQ 2/2" bits="6" ids="Yes,No"/>
         <dip name="Debug IRQ 2/2" bits="7" ids="Yes,No"/>
+        <dip name="*Sound fix" ids="On,Off" bits="8"/>
     </switches>
     <buttons names="Attack,Jump,-,Start,Coin,Core credits" default="A,B,Start,Select,-" count="2"/>
 </misterromdescription>

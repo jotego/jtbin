@@ -9,7 +9,8 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "galaga88a.rom"
+				"filename": "galaga88a.rom",
+				"md5": "65df75a5bb8ba49366afcb60ef546266"
 			},
 			{
 				"id": 2,
