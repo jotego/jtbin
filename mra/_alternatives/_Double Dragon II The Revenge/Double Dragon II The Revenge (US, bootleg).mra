@@ -49,8 +49,8 @@
         <part name="8" crc="151b22b4"/>
         <part name="10" crc="ae2fc028"/>
         <part repeat="0x10000"> FF</part>
-        <!-- CHAR_START -->
         <!-- JTFRAME_BA2_START -->
+        <!-- CHAR_START -->
         <!-- gfx1 - starts at 0x80000 - length 0x10000 (16 bits) -->
         <part name="1" crc="3ad1049c"/>
         <!-- SCR_START -->

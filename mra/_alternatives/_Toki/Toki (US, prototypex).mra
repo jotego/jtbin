@@ -1,0 +1,89 @@
+<!--          FPGA arcade hardware by Jotego
+
+              This core is available for hardware compatible with MiST and MiSTer
+              Other FPGA systems may be supported by the time you read this.
+              This work is not mantained by the MiSTer project. Please contact the
+              core author for issues and updates.
+
+              (c) Jose Tejada, 2024. Please support this research
+              Patreon: https://patreon.com/jotego
+
+              The author does not endorse or participate in illegal distribution
+              of copyrighted material. This work can be used with compatible
+              software. This software can be homebrew projects or legally
+              obtained memory dumps of compatible games.
+
+              This file license is GNU GPLv2.
+              You can read the whole license file in
+              https://opensource.org/licenses/gpl-2.0.php
+
+-->
+
+<misterromdescription>
+    <about author="jotego" webpage="https://patreon.com/jotego" source="https://github.com/jotego" twitter="@topapate"/>
+    <name>Toki (US, prototype?)</name>
+    <setname>tokip</setname>
+    <rbf>jttoki</rbf>
+    <mameversion>0251</mameversion>
+    <year>1989</year>
+    <manufacturer>TAD Corporation (Fabtek license)</manufacturer>
+    <players>2</players>
+    <joystick>8</joystick>
+    <rotation>horizontal</rotation>
+    <region>World</region>
+    <rom index="0" zip="tokip.zip|toki.zip" md5="None" asm_md5="1aa6e588f1a9bbeef4c8e36fad492553">
+        <!-- audiocpu - starts at 0x0 - length 0x20000 (17 bits) -->
+        <part name="8 3-m" crc="6c87c4c5"/>
+        <part repeat="0xE000"> FF</part>
+        <part name="7 7-m" crc="a67969c4"/>
+        <!-- gfx1 - starts at 0x20000 - length 0x20000 (17 bits) -->
+        <part name="1 5-c" crc="fd0ff303"/>
+        <part name="2 3-c" crc="86e87e48"/>
+        <!-- gfx2 - starts at 0x40000 - length 0x100000 (20 bits) -->
+        <part name="obj 1-0.rom10" crc="a027bd8e"/>
+        <part name="obj 1-1.rom9" crc="43a767ea"/>
+        <part name="obj 1-2.rom12" crc="1aecc9d8"/>
+        <part name="obj 1-3.rom11" crc="d65c0c6d"/>
+        <part name="obj 2-0.rom14" crc="cedaccaf"/>
+        <part name="obj 2-1.rom13" crc="013f539b"/>
+        <part name="obj 2-2.rom16" crc="6a8e6e22"/>
+        <part name="obj 2-3.rom15" crc="25d9a16c"/>
+        <!-- gfx3 - starts at 0x140000 - length 0x80000 (19 bits) -->
+        <part name="back 1-0.rom5" crc="fac7e32f"/>
+        <part name="back 1-1.rom6" crc="ee1135d6"/>
+        <part name="back 1-2.rom7" crc="78db8d57"/>
+        <part name="back 1-3.rom8" crc="d719de71"/>
+        <!-- gfx4 - starts at 0x1C0000 - length 0x80000 (19 bits) -->
+        <part name="back 2-0.rom1" crc="949d8025"/>
+        <part name="back 2-1.rom2" crc="4b28b4b4"/>
+        <part name="back 2-2.rom3" crc="1aa9a5cf"/>
+        <part name="back 2-3.rom4" crc="6759571f"/>
+        <!-- maincpu - starts at 0x240000 - length 0x60000 (19 bits) -->
+        <part name="6 10-m" crc="91b554a3"/>
+        <part name="4 10-k" crc="404220f7"/>
+        <part name="5 12-m" crc="d6a82808"/>
+        <part name="3 12-k" crc="a01a5b10"/>
+        <!-- oki - starts at 0x2A0000 - length 0x20000 (17 bits) -->
+        <part name="9 1-m" crc="ae7a6b8b"/>
+        <!-- proms - starts at 0x2C0000 - length 0x200 (9 bits) -->
+        <part name="prom26.b6" crc="ea6312c6"/>
+        <part name="prom27.j3" crc="e616ae85"/>
+        <!-- Total 0x2C0200 bytes - 2816 kBytes -->
+    </rom>
+    <rom index="1">
+        <part>00</part>
+    </rom>
+    <switches page_id="1" page_name="Switches" base="16" default="df,ff">
+        <!-- DSW -->
+        <dip name="Coinage" bits="0,4" ids="A 5/1 B 1/6,Free Play,-,8/3,-,5/3,-,3/2,-,2/3,A 3/1 B 1/5,1/6,-,1/5,-,1/4,-,1/3,-,1/2,A 2/1 B 1/3,6/1,-,5/1,-,4/1,-,3/1,-,2/1,A 1/1 B 1/2,1/1"/>
+        <dip name="Joysticks" bits="5" ids="2,1"/>
+        <dip name="Cabinet" bits="6" ids="Cocktail,Upright"/>
+        <dip name="Flip Screen" bits="7" ids="On,Off"/>
+        <dip name="Lives" bits="8,9" ids="Infinite,5,2,3"/>
+        <dip name="Bonus Life" bits="10,11" ids="70k 140k 210k,100k 200k,50k 150k,70k"/>
+        <dip name="Difficulty" bits="12,13" ids="Hardest,Hard,Easy,Medium"/>
+        <dip name="Allow Continue" bits="14" ids="No,Yes"/>
+        <dip name="Demo Sounds" bits="15" ids="Off,On"/>
+    </switches>
+    <buttons names="button 1,button 2,Start,Coin,Core credits" default="A,B,Start,Select,-" count="2"/>
+</misterromdescription>

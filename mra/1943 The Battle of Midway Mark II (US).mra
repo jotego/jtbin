@@ -79,8 +79,8 @@
             <part name="25.14l" crc="f979b2f2" map="01"/>
             <part name="24.14k" crc="a0074c68" map="10"/>
         </interleave>
-        <!-- JTFRAME_BA3_START -->
         <!-- OBJ_START -->
+        <!-- JTFRAME_BA3_START -->
         <!-- gfx4 - starts at 0x98000 - length 0x40000 (18 bits) -->
         <interleave output="16">
             <part name="10.10c" crc="de539920" map="01"/>

@@ -360,6 +360,9 @@
 | insectx      | jtkiwi     | 70716a1310f259feb93021b69248cfe8 | fe,ff        |
 | insectxbl    | jtkiwi     | 0f1fa4881ac2194d848bb02140bf8b32 | fe,ff        |
 | insectxj     | jtkiwi     | 382d7b3a550c7a5391cbc88e5f74033e | fe,ff        |
+| juju         | jttoki     | 418f643b995b020c4fe0c1453853b6c6 | df,ff        |
+| jujub        | jttoki     | 8b877b157e7b855d55ea6bd1ac28e801 | df,ff        |
+| jujuba       | jttoki     | c9f74e6ae98fcf11f18f93ffa8a04393 | df,ff        |
 | jyangoku     | jtcps2     | 7ae7b0471ea7dde0b0ff13962bfddcc8 |              |
 | kageki       | jtkiwi     | d2f330f88ad450df36e63f2de82bebc0 | ff,ff        |
 | kagekih      | jtkiwi     | 42102bebd90944cd3e66eda8de060bcb | ff,ff        |
@@ -824,10 +827,16 @@
 | tnzsoa       | jtkiwi     | 6ad3765d3584a88f4fc53661683f14f4 | fe,ff        |
 | tnzsop       | jtkiwi     | 8f0223d475a84ce98ccf5c8a0a3d0905 | fe,ff        |
 | tnzsuo       | jtkiwi     | 8150dddcf9f52643a5d3c9d032e526ff | fe,ff        |
+| toki         | jttoki     | 01ae8550260211f8008b88f806b65f80 | df,ff        |
+| tokia        | jttoki     | f83673a126d75ddc1119b7bc4dc0778d | df,ff        |
+| tokib        | jttoki     | 6e19cfa17a3d4108dd939c5df16d1f98 | df,ff        |
 | tokio        | jtbubl     | a16d11118acc27f5802e5a292a29a712 | ff,ff        |
 | tokiob       | jtbubl     | fd37a47f72184caf3c60c6187db54788 | ff,ff        |
 | tokioo       | jtbubl     | 57a5c7a2954cbf851962aa960878433a | ff,ff        |
 | tokiou       | jtbubl     | 53510e372905aaa68e23552e2885d324 | ff,ff        |
+| tokip        | jttoki     | 1aa6e588f1a9bbeef4c8e36fad492553 | df,ff        |
+| tokiu        | jttoki     | dc6c2cf4c50de20aa805a60933964e84 | df,ff        |
+| tokiua       | jttoki     | e82c305fc3b337afba9419e0c97a8c62 | df,ff        |
 | topsecrt     | jtbiocom   | 685ea63491f6d89e485d0d5619c4bd23 | ff,df        |
 | topsecrt2    | jtbiocom   | a0e127acf4aa7292fdc1c37f4bd721e6 | ff,df        |
 | toramich     | jttora     | 32cb4c4bd6913f32104362e761847490 | ff,ff        |
