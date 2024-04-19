@@ -20,7 +20,7 @@
 -->
 
 <misterromdescription>
-    <about author="jotego,atrac17" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
     <name>Alien Syndrome (set 4, System 16B, unprotected)</name>
     <setname>aliensyn</setname>
     <rbf>jts16b</rbf>

@@ -20,7 +20,7 @@
 -->
 
 <misterromdescription default="ff,ff">
-    <about author="jotego,atrac17" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
     <name>1944: The Loop Master (USA 000620 Phoenix Edition) (bootleg)</name>
     <setname>1944d</setname>
     <rbf>jtcps2</rbf>

@@ -20,7 +20,7 @@
 -->
 
 <misterromdescription default="ff,ff">
-    <about author="jotego,atrac17" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
     <name>Capcom Sports Club (Japan 970722, yellow case)</name>
     <setname>csclubjy</setname>
     <rbf>jtcps2</rbf>

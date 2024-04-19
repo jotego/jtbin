@@ -20,7 +20,7 @@
 -->
 
 <misterromdescription>
-    <about author="jotego,atrac17" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
     <name>Time Scanner (Set 1, World, S16A) [FD1089B 317-0024]</name>
     <setname>timescan1</setname>
     <rbf>jts16</rbf>

@@ -20,7 +20,7 @@
 -->
 
 <misterromdescription>
-    <about author="jotego,atrac17" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
     <name>E-Swat - Cyber Police (set 1, Japan) (FD1094 317-0131)</name>
     <setname>eswatj1</setname>
     <rbf>jts16b</rbf>
@@ -97,8 +97,8 @@
             <part name="epr-12699.b12" crc="ac329586" map="10"/>
         </interleave>
         <part repeat="0x40000"> FF</part>
-        <!-- JTFRAME_PROM_START -->
         <!-- MCU_START -->
+        <!-- JTFRAME_PROM_START -->
         <!-- mcu - starts at 0x440000 - length 0x2000 (13 bits) -->
         <part repeat="0x1000"> FF</part>
         <part repeat="0x1000"> FF</part>

@@ -20,7 +20,7 @@
 -->
 
 <misterromdescription>
-    <about author="jotego,atrac17" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
     <name>Aurail (set 1, Japan) (FD1089A 317-0167)</name>
     <setname>aurailj</setname>
     <rbf>jts16b</rbf>

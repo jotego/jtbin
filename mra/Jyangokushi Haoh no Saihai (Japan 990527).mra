@@ -20,7 +20,7 @@
 -->
 
 <misterromdescription default="ff,ff">
-    <about author="jotego,atrac17" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
     <name>Jyangokushi: Haoh no Saihai (Japan 990527)</name>
     <setname>jyangoku</setname>
     <rbf>jtcps2</rbf>

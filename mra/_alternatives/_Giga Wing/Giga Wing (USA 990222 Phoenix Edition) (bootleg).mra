@@ -20,7 +20,7 @@
 -->
 
 <misterromdescription default="ff,ff">
-    <about author="jotego,atrac17" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
     <name>Giga Wing (USA 990222 Phoenix Edition) (bootleg)</name>
     <setname>gigawingd</setname>
     <rbf>jtcps2</rbf>

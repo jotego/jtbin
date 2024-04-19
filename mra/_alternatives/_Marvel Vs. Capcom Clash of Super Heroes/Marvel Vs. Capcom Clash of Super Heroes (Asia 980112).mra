@@ -20,7 +20,7 @@
 -->
 
 <misterromdescription default="ff,ff">
-    <about author="jotego,atrac17" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
     <name>Marvel Vs. Capcom: Clash of Super Heroes (Asia 980112)</name>
     <setname>mvscar1</setname>
     <rbf>jtcps2</rbf>

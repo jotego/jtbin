@@ -20,7 +20,7 @@
 -->
 
 <misterromdescription>
-    <about author="jotego,atrac17" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
     <name>Quartet 2 (World, S16A) [8751 317-0010]</name>
     <setname>quartet2</setname>
     <rbf>jts16</rbf>
@@ -93,8 +93,8 @@
             <part name="epr-7472.5b" crc="8e2762ec" map="10"/>
         </interleave>
         <part repeat="0x10000"> FF</part>
-        <!-- JTFRAME_PROM_START -->
         <!-- MCU_START -->
+        <!-- JTFRAME_PROM_START -->
         <!-- mcu - starts at 0x180000 - length 0x2000 (13 bits) -->
         <part name="317-0010.bin" crc="8c2033ea"/>
         <part repeat="0x1000"> FF</part>

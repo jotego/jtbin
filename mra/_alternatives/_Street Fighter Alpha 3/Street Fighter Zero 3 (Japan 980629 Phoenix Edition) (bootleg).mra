@@ -20,7 +20,7 @@
 -->
 
 <misterromdescription default="ff,ff">
-    <about author="jotego,atrac17" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
     <name>Street Fighter Zero 3 (Japan 980629 Phoenix Edition) (bootleg)</name>
     <setname>sfz3jr2d</setname>
     <rbf>jtcps2</rbf>

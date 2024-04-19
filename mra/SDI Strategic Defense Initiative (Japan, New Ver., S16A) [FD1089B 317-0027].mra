@@ -20,7 +20,7 @@
 -->
 
 <misterromdescription>
-    <about author="jotego,atrac17" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
     <name>SDI: Strategic Defense Initiative (Japan, New Ver., S16A) [FD1089B 317-0027]</name>
     <setname>sdi</setname>
     <rbf>jts16</rbf>

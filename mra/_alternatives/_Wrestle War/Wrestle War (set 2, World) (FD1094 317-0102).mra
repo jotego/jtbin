@@ -20,7 +20,7 @@
 -->
 
 <misterromdescription>
-    <about author="jotego,atrac17" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
     <name>Wrestle War (set 2, World) (FD1094 317-0102)</name>
     <setname>wrestwar2</setname>
     <rbf>jts16b</rbf>
@@ -90,8 +90,8 @@
             <part name="opr-12162.b11" crc="fa06fd24" map="10"/>
         </interleave>
         <part repeat="0xA0000"> FF</part>
-        <!-- MCU_START -->
         <!-- JTFRAME_PROM_START -->
+        <!-- MCU_START -->
         <!-- mcu - starts at 0x440000 - length 0x2000 (13 bits) -->
         <part repeat="0x1000"> FF</part>
         <part repeat="0x1000"> FF</part>

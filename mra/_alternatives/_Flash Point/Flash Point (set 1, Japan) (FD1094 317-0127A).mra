@@ -20,7 +20,7 @@
 -->
 
 <misterromdescription>
-    <about author="jotego,atrac17" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
     <name>Flash Point (set 1, Japan) (FD1094 317-0127A)</name>
     <setname>fpoint1</setname>
     <rbf>jts16b</rbf>
@@ -64,8 +64,8 @@
             <part name="opr-12597.b5" crc="6961e676" map="10"/>
         </interleave>
         <part repeat="0x1E0000"> FF</part>
-        <!-- MCU_START -->
         <!-- JTFRAME_PROM_START -->
+        <!-- MCU_START -->
         <!-- mcu - starts at 0x440000 - length 0x2000 (13 bits) -->
         <part repeat="0x1000"> FF</part>
         <part repeat="0x1000"> FF</part>

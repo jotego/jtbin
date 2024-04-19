@@ -20,7 +20,7 @@
 -->
 
 <misterromdescription default="ff,ff">
-    <about author="jotego,atrac17" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
     <name>Mega Man 2: The Power Fighters (USA 960708 Phoenix Edition) (bootleg)</name>
     <setname>megamn2d</setname>
     <rbf>jtcps2</rbf>

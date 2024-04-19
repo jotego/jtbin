@@ -20,7 +20,7 @@
 -->
 
 <misterromdescription>
-    <about author="jotego,atrac17" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
     <name>Alien Syndrome (set 7, System 16B, MC-8123B 317-00xx)</name>
     <setname>aliensyn7</setname>
     <rbf>jts16b</rbf>
