@@ -1,0 +1,80 @@
+<!--          FPGA arcade hardware by Jotego
+
+              This core is available for hardware compatible with MiST and MiSTer
+              Other FPGA systems may be supported by the time you read this.
+              This work is not mantained by the MiSTer project. Please contact the
+              core author for issues and updates.
+
+              (c) Jose Tejada, 2024. Please support this research
+              Patreon: https://patreon.com/jotego
+
+              The author does not endorse or participate in illegal distribution
+              of copyrighted material. This work can be used with compatible
+              software. This software can be homebrew projects or legally
+              obtained memory dumps of compatible games.
+
+              This file license is GNU GPLv2.
+              You can read the whole license file in
+              https://opensource.org/licenses/gpl-2.0.php
+
+-->
+
+<misterromdescription>
+    <about author="Solal Jacob" webpage="https://ko-fi.com/solalretrogaming" twitter="@s_on_vg" source="https://github.com/jotego/jtcores"/>
+    <name>Toki (World, set 1)</name>
+    <setname>toki</setname>
+    <rbf>jttoki</rbf>
+    <mameversion>0251</mameversion>
+    <year>1989</year>
+    <manufacturer>TAD Corporation</manufacturer>
+    <players>2</players>
+    <joystick>8</joystick>
+    <rotation>horizontal</rotation>
+    <region>World</region>
+    <rom index="0" zip="toki.zip" md5="None" asm_md5="ae111807dd42167b8805493a946efe92">
+        <!-- maincpu - starts at 0x0 - length 0x60000 (19 bits) -->
+        <interleave output="16">
+            <part name="4e.k10" crc="531bd3ef" map="01"/>
+            <part name="6e.m10" crc="94015d91" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="3.k12" crc="a01a5b10" map="01"/>
+            <part name="5.m12" crc="d6a82808" map="10"/>
+        </interleave>
+        <!-- gfx1 - starts at 0x60000 - length 0x20000 (17 bits) -->
+        <part name="1.c5" crc="8aa964a2"/>
+        <part name="2.c3" crc="86e87e48"/>
+        <!-- gfx2 - starts at 0x80000 - length 0x100000 (20 bits) -->
+        <part name="toki_obj1.c20" crc="a27a80ba"/>
+        <part name="toki_obj2.c22" crc="fa687718"/>
+        <!-- gfx3 - starts at 0x180000 - length 0x80000 (19 bits) -->
+        <part name="toki_bk1.cd8" crc="fdaa5f4b"/>
+        <!-- gfx4 - starts at 0x200000 - length 0x80000 (19 bits) -->
+        <part name="toki_bk2.ef8" crc="d86ac664"/>
+        <!-- JTFRAME_BA1_START -->
+        <!-- audiocpu - starts at 0x280000 - length 0x12000 (17 bits) -->
+        <part name="8.m3" crc="6c87c4c5"/>
+        <part name="7.m7" crc="a67969c4"/>
+        <!-- oki - starts at 0x292000 - length 0x20000 (17 bits) -->
+        <part name="9.m1" crc="ae7a6b8b"/>
+        <!-- proms - starts at 0x2B2000 - length 0x200 (9 bits) -->
+        <part name="prom26.b6" crc="ea6312c6"/>
+        <part name="prom27.j3" crc="e616ae85"/>
+        <!-- Total 0x2B2200 bytes - 2760 kBytes -->
+    </rom>
+    <rom index="1">
+        <part>00</part>
+    </rom>
+    <switches page_id="1" page_name="Switches" base="16" default="df,ff">
+        <!-- DSW -->
+        <dip name="Joysticks" bits="5" ids="2,1"/>
+        <dip name="Cabinet" bits="6" ids="Cocktail,Upright"/>
+        <dip name="Flip Screen" bits="7" ids="On,Off"/>
+        <dip name="Lives" bits="8,9" ids="Infinite,5,2,3"/>
+        <dip name="Bonus Life" bits="10,11" ids="70k 140k 210k,100k 200k,50k 150k,70k"/>
+        <dip name="Difficulty" bits="12,13" ids="Hardest,Hard,Easy,Medium"/>
+        <dip name="Allow Continue" bits="14" ids="No,Yes"/>
+        <dip name="Demo Sounds" bits="15" ids="Off,On"/>
+    </switches>
+    <buttons names="Shoot,Jump,Start,Coin,Core credits" default="A,B,Start,Select,-" count="2"/>
+</misterromdescription>

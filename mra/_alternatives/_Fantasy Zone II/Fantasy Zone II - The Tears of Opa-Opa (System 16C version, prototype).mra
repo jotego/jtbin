@@ -20,7 +20,7 @@
 -->
 
 <misterromdescription>
-    <about author="jotego" webpage="https://patreon.com/jotego" source="https://github.com/jotego" twitter="@topapate"/>
+    <about author="jotego,atrac17" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
     <name>Fantasy Zone II - The Tears of Opa-Opa (System 16C version, prototype)</name>
     <setname>fantzn2xp</setname>
     <rbf>jts16b</rbf>
@@ -31,7 +31,6 @@
     <joystick>8</joystick>
     <rotation>horizontal</rotation>
     <region>World</region>
-    <mraauthor>jotego,atrac17</mraauthor>
     <rom index="0" zip="fantzn2xp.zip|fantzn2x.zip" md5="None" asm_md5="813dcb28e6554253ab2718870302c812">
         <part>
             00 00 00 00 00 00 00 00

@@ -20,7 +20,7 @@
 -->
 
 <misterromdescription>
-    <about author="jotego" webpage="https://patreon.com/jotego" source="https://github.com/jotego" twitter="@topapate"/>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
     <name>Insector X (Japan)</name>
     <setname>insectxj</setname>
     <rbf>jtkiwi</rbf>
@@ -31,7 +31,6 @@
     <joystick>8</joystick>
     <rotation>horizontal</rotation>
     <region>World</region>
-    <mraauthor>jotego</mraauthor>
     <rom index="0" zip="insectxj.zip|insectx.zip" md5="None" asm_md5="382d7b3a550c7a5391cbc88e5f74033e">
         <!-- bit 0 = MCU
              bit 1 = color PROM

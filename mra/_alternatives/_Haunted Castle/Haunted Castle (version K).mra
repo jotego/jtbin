@@ -20,7 +20,7 @@
 -->
 
 <misterromdescription>
-    <about author="jotego" webpage="https://patreon.com/jotego" source="https://github.com/jotego" twitter="@topapate"/>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
     <name>Haunted Castle (version K)</name>
     <setname>hcastlek</setname>
     <rbf>jtcastle</rbf>
@@ -31,7 +31,6 @@
     <joystick>4</joystick>
     <rotation>horizontal</rotation>
     <region>World</region>
-    <mraauthor>jotego</mraauthor>
     <rom index="0" zip="hcastlek.zip|hcastle.zip" md5="None" asm_md5="792920a9d62f4c492e6b05968e1d5d33">
         <!-- maincpu - starts at 0x0 - length 0x28000 (18 bits) -->
         <part name="768g06.k8" crc="cdade920"/>

@@ -20,7 +20,7 @@
 -->
 
 <misterromdescription>
-    <about author="jotego" webpage="https://patreon.com/jotego" source="https://github.com/jotego" twitter="@topapate"/>
+    <about author="jotego,atrac17" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
     <name>Toryumon</name>
     <setname>toryumon</setname>
     <rbf>jts16b</rbf>
@@ -31,7 +31,6 @@
     <joystick>8</joystick>
     <rotation>horizontal</rotation>
     <region>World</region>
-    <mraauthor>jotego,atrac17</mraauthor>
     <rom index="0" zip="toryumon.zip" md5="None" asm_md5="1af2f900df45b579cdbd5afab88def89">
         <part>
             00 00 00 00 00 00 00 00

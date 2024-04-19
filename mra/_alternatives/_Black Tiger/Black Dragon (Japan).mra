@@ -20,7 +20,7 @@
 -->
 
 <misterromdescription>
-    <about author="jotego" webpage="https://patreon.com/jotego" source="https://github.com/jotego" twitter="@topapate"/>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
     <name>Black Dragon (Japan)</name>
     <setname>blkdrgon</setname>
     <rbf>jtbtiger</rbf>
@@ -31,7 +31,6 @@
     <joystick>8</joystick>
     <rotation>horizontal</rotation>
     <region>World</region>
-    <mraauthor>jotego</mraauthor>
     <rom index="0" zip="blkdrgon.zip|blktiger.zip" md5="None" asm_md5="b14ac15cf95a71b1c15ee75ad49f1a45">
         <!-- maincpu - starts at 0x0 - length 0x48000 (19 bits) -->
         <part name="bd_02.6e" crc="7d39c26f"/>

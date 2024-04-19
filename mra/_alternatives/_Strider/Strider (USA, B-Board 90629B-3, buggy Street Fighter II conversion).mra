@@ -20,7 +20,7 @@
 -->
 
 <misterromdescription>
-    <about author="jotego" webpage="https://patreon.com/jotego" source="https://github.com/jotego" twitter="@topapate"/>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
     <name>Strider (USA, B-Board 90629B-3, buggy Street Fighter II conversion)</name>
     <setname>strideruc</setname>
     <rbf>jtcps1</rbf>
@@ -31,7 +31,6 @@
     <joystick>8</joystick>
     <rotation>horizontal</rotation>
     <region>World</region>
-    <mraauthor>jotego</mraauthor>
     <rom index="0" zip="strideruc.zip|strider.zip" md5="None" asm_md5="d1d52503d329441ea51b411e6009f4e2">
         <part>
             00 04 40 04 40 05 FF FF

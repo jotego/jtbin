@@ -20,7 +20,7 @@
 -->
 
 <misterromdescription>
-    <about author="jotego" webpage="https://patreon.com/jotego" source="https://github.com/jotego" twitter="@topapate"/>
+    <about author="jotego,atrac17" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
     <name>Action Fighter (System 16B, FD1089B 317-unknown)</name>
     <setname>afighterg</setname>
     <rbf>jts16b</rbf>
@@ -31,7 +31,6 @@
     <joystick>8</joystick>
     <rotation>vertical (ccw)</rotation>
     <region>World</region>
-    <mraauthor>jotego,atrac17</mraauthor>
     <rom index="0" zip="afighterg.zip|afighter.zip" md5="None" asm_md5="c4dccd35f3bbbbbc23e07a298d0eeceb">
         <part>
             00 00 00 00 00 00 00 00
@@ -88,8 +87,8 @@
             <part name="epr10047.bin" crc="84a49518" map="10"/>
         </interleave>
         <part repeat="0x190000"> FF</part>
-        <!-- MCU_START -->
         <!-- JTFRAME_PROM_START -->
+        <!-- MCU_START -->
         <!-- mcu - starts at 0x440000 - length 0x2000 (13 bits) -->
         <part repeat="0x1000"> FF</part>
         <part repeat="0x1000"> FF</part>

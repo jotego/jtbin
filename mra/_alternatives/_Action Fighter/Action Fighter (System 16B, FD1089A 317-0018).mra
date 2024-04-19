@@ -20,7 +20,7 @@
 -->
 
 <misterromdescription>
-    <about author="jotego" webpage="https://patreon.com/jotego" source="https://github.com/jotego" twitter="@topapate"/>
+    <about author="jotego,atrac17" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
     <name>Action Fighter (System 16B, FD1089A 317-0018)</name>
     <setname>afighterh</setname>
     <rbf>jts16b</rbf>
@@ -31,7 +31,6 @@
     <joystick>8</joystick>
     <rotation>vertical (ccw)</rotation>
     <region>World</region>
-    <mraauthor>jotego,atrac17</mraauthor>
     <rom index="0" zip="afighterh.zip|afighter.zip" md5="None" asm_md5="80aa8ee3170c5744cfbc131964efa6b2">
         <part>
             00 00 00 00 00 00 00 00

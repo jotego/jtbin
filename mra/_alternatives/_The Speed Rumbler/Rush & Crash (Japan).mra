@@ -20,7 +20,7 @@
 -->
 
 <misterromdescription>
-    <about author="jotego" webpage="https://patreon.com/jotego" source="https://github.com/jotego" twitter="@topapate"/>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
     <name>Rush &amp; Crash (Japan)</name>
     <setname>rushcrsh</setname>
     <rbf>jtrumble</rbf>
@@ -31,7 +31,6 @@
     <joystick>8</joystick>
     <rotation>vertical (ccw)</rotation>
     <region>World</region>
-    <mraauthor>jotego</mraauthor>
     <rom index="0" zip="rushcrsh.zip|srumbler.zip" md5="None" asm_md5="4f09aed603e4590fd2b8cadd6a796edf">
         <!--  Header to identify the game
  -->

@@ -20,7 +20,7 @@
 -->
 
 <misterromdescription>
-    <about author="jotego" webpage="https://patreon.com/jotego" source="https://github.com/jotego" twitter="@topapate"/>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
     <name>Gryzor (set 2)</name>
     <setname>gryzor1</setname>
     <rbf>jtcontra</rbf>
@@ -31,7 +31,6 @@
     <joystick>8</joystick>
     <rotation>vertical (cw)</rotation>
     <region>World</region>
-    <mraauthor>jotego</mraauthor>
     <rom index="0" zip="gryzor1.zip|contra.zip" md5="None" asm_md5="b5ff88f93a1cebec6fd192b8140763fe">
         <!-- maincpu - starts at 0x0 - length 0x20000 (17 bits) -->
         <part name="633g3.17a" crc="bbd9e95e"/>

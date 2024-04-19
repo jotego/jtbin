@@ -20,7 +20,7 @@
 -->
 
 <misterromdescription>
-    <about author="jotego" webpage="https://patreon.com/jotego" source="https://github.com/jotego" twitter="@topapate"/>
+    <about author="jotego,atrac17" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
     <name>Bay Route (set 2, Japan) (FD1094 317-0115)</name>
     <setname>bayroutej</setname>
     <rbf>jts16b</rbf>
@@ -31,7 +31,6 @@
     <joystick>8</joystick>
     <rotation>horizontal</rotation>
     <region>Japan</region>
-    <mraauthor>jotego,atrac17</mraauthor>
     <rom index="0" zip="bayroutej.zip|bayroute.zip" md5="None" asm_md5="2c03630c997951b067f5bdc89459c2e4">
         <part>
             00 00 00 00 00 00 00 00

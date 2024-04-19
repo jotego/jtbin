@@ -20,7 +20,7 @@
 -->
 
 <misterromdescription default="ff,ff">
-    <about author="jotego" webpage="https://patreon.com/jotego" source="https://github.com/jotego" twitter="@topapate"/>
+    <about author="jotego,atrac17" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
     <name>Progear (USA 010117)</name>
     <setname>progear</setname>
     <rbf>jtcps2</rbf>
@@ -31,7 +31,6 @@
     <joystick>8</joystick>
     <rotation>horizontal</rotation>
     <region>World</region>
-    <mraauthor>jotego,atrac17</mraauthor>
     <rom index="0" zip="progear.zip|qsound.zip" md5="None" address="0x30000000" asm_md5="1104d941c107b26220d065299c2b15d6">
         <part>
             00 04 80 04 80 24 80 64

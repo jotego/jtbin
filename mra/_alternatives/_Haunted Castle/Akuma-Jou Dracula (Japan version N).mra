@@ -20,7 +20,7 @@
 -->
 
 <misterromdescription>
-    <about author="jotego" webpage="https://patreon.com/jotego" source="https://github.com/jotego" twitter="@topapate"/>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
     <name>Akuma-Jou Dracula (Japan version N)</name>
     <setname>akumajoun</setname>
     <rbf>jtcastle</rbf>
@@ -31,7 +31,6 @@
     <joystick>4</joystick>
     <rotation>horizontal</rotation>
     <region>World</region>
-    <mraauthor>jotego</mraauthor>
     <rom index="0" zip="akumajoun.zip|hcastle.zip" md5="None" asm_md5="5b4cfc76c4e5b30762d872bf639bd19d">
         <!-- maincpu - starts at 0x0 - length 0x28000 (18 bits) -->
         <part name="768j06.k8" crc="42283c3e"/>

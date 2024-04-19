@@ -20,7 +20,7 @@
 -->
 
 <misterromdescription>
-    <about author="jotego" webpage="https://patreon.com/jotego" source="https://github.com/jotego" twitter="@topapate"/>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
     <name>Galaga &apos;88 (02-03-88)</name>
     <setname>galaga88a</setname>
     <rbf>jtshouse</rbf>
@@ -31,7 +31,7 @@
     <joystick>8</joystick>
     <rotation>vertical (cw)</rotation>
     <region>World</region>
-    <rom index="0" zip="galaga88a.zip|galaga88.zip" md5="None" asm_md5="65df75a5bb8ba49366afcb60ef546266">
+    <rom index="0" zip="galaga88a.zip|galaga88.zip" md5="None" asm_md5="2f3fc3c1173e0cebaf41a5672e2dc33b">
         <!-- Byte 0: protection type
 Byte 1: key ID
 Byte 2: addr for key ID
@@ -81,8 +81,8 @@ Byte 7: addr for upper nibble read
         <part name="g8_chr-1.bin" crc="3dc0f93f"/>
         <part name="g8_chr-2.bin" crc="dbf26f1f"/>
         <part name="g8_chr-3.bin" crc="f5d6cac5"/>
-        <part name="g8chr-7.m8" crc="5f655016"/>
         <part repeat="0x60000"> FF</part>
+        <part name="g8chr-7.m8" crc="5f655016"/>
         <!-- JTFRAME_BA3_START -->
         <!-- sprite - starts at 0x590000 - length 0x100000 (20 bits) -->
         <part name="g8_obj-0.bin" crc="d7112e3f"/>

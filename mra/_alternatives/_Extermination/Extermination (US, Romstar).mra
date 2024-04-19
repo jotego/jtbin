@@ -20,7 +20,7 @@
 -->
 
 <misterromdescription>
-    <about author="jotego" webpage="https://patreon.com/jotego" source="https://github.com/jotego" twitter="@topapate"/>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
     <name>Extermination (US, Romstar)</name>
     <setname>extrmatnur</setname>
     <rbf>jtkiwi</rbf>
@@ -31,7 +31,6 @@
     <joystick>8</joystick>
     <rotation>vertical (ccw)</rotation>
     <region>World</region>
-    <mraauthor>jotego</mraauthor>
     <rom index="0" zip="extrmatnur.zip|extrmatn.zip" md5="None" asm_md5="b3459d8c8a81e86572465d91d6cce3a2">
         <!-- bit 0 = MCU
              bit 1 = color PROM

@@ -20,7 +20,7 @@
 -->
 
 <misterromdescription>
-    <about author="jotego" webpage="https://patreon.com/jotego" source="https://github.com/jotego" twitter="@topapate"/>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
     <name>Vigilante (World, Rev C)</name>
     <setname>vigilantc</setname>
     <rbf>jtvigil</rbf>
@@ -31,7 +31,6 @@
     <joystick>8</joystick>
     <rotation>horizontal</rotation>
     <region>World</region>
-    <mraauthor>jotego</mraauthor>
     <rom index="0" zip="vigilantc.zip|vigilant.zip" md5="None" asm_md5="ae9a07af3298f7bc8498c11b97583126">
         <!-- maincpu - starts at 0x0 - length 0x20000 (17 bits) -->
         <part name="vg_a-8h-c.ic55" crc="d72682e8"/>

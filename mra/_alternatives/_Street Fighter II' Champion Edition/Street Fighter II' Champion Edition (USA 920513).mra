@@ -20,7 +20,7 @@
 -->
 
 <misterromdescription>
-    <about author="jotego" webpage="https://patreon.com/jotego" source="https://github.com/jotego" twitter="@topapate"/>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
     <name>Street Fighter II&apos;: Champion Edition (USA 920513)</name>
     <setname>sf2ceub</setname>
     <rbf>jtcps1</rbf>
@@ -31,7 +31,6 @@
     <joystick>8</joystick>
     <rotation>horizontal</rotation>
     <region>World</region>
-    <mraauthor>jotego</mraauthor>
     <rom index="0" zip="sf2ceub.zip|sf2ce.zip" md5="None" asm_md5="4133cee6b9d1ca6cfb4b8fd8d6f72493">
         <part>
             00 06 40 06 40 07 FF FF

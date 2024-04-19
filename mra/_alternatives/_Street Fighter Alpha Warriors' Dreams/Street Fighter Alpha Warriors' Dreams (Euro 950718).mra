@@ -20,7 +20,7 @@
 -->
 
 <misterromdescription default="ff,ff">
-    <about author="jotego" webpage="https://patreon.com/jotego" source="https://github.com/jotego" twitter="@topapate"/>
+    <about author="jotego,atrac17" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
     <name>Street Fighter Alpha: Warriors&apos; Dreams (Euro 950718)</name>
     <setname>sfar1</setname>
     <rbf>jtcps2</rbf>
@@ -31,7 +31,6 @@
     <joystick>8</joystick>
     <rotation>horizontal</rotation>
     <region>World</region>
-    <mraauthor>jotego,atrac17</mraauthor>
     <rom index="0" zip="sfar1.zip|sfa.zip|qsound.zip" md5="None" address="0x30000000" asm_md5="03f21380f0c4a4f33a4fb9c70ae86b77">
         <part>
             00 08 00 09 00 19 00 59

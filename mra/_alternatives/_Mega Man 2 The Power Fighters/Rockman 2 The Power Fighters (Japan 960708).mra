@@ -20,7 +20,7 @@
 -->
 
 <misterromdescription default="ff,ff">
-    <about author="jotego" webpage="https://patreon.com/jotego" source="https://github.com/jotego" twitter="@topapate"/>
+    <about author="jotego,atrac17" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
     <name>Rockman 2: The Power Fighters (Japan 960708)</name>
     <setname>rockman2j</setname>
     <rbf>jtcps2</rbf>
@@ -31,7 +31,6 @@
     <joystick>8</joystick>
     <rotation>horizontal</rotation>
     <region>World</region>
-    <mraauthor>jotego,atrac17</mraauthor>
     <rom index="0" zip="rockman2j.zip|megaman2.zip|qsound.zip" md5="None" address="0x30000000" asm_md5="947a8ef6dd75a535d030faf144d8dc2e">
         <part>
             00 06 00 07 00 17 00 57

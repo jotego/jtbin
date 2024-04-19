@@ -20,7 +20,7 @@
 -->
 
 <misterromdescription default="ff,ff">
-    <about author="jotego" webpage="https://patreon.com/jotego" source="https://github.com/jotego" twitter="@topapate"/>
+    <about author="jotego,atrac17" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
     <name>Progear (USA 010117 Phoenix Edition) (bootleg)</name>
     <setname>progearud</setname>
     <rbf>jtcps2</rbf>
@@ -31,7 +31,6 @@
     <joystick>8</joystick>
     <rotation>horizontal</rotation>
     <region>World</region>
-    <mraauthor>jotego,atrac17</mraauthor>
     <rom index="0" zip="progearud.zip|progear.zip|qsound.zip" md5="None" address="0x30000000" asm_md5="70c2305d7e3ce1388fd6c7c37bd58ca0">
         <part>
             00 04 80 04 80 24 80 64

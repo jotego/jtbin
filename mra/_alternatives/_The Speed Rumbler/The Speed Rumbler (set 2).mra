@@ -20,7 +20,7 @@
 -->
 
 <misterromdescription>
-    <about author="jotego" webpage="https://patreon.com/jotego" source="https://github.com/jotego" twitter="@topapate"/>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
     <name>The Speed Rumbler (set 2)</name>
     <setname>srumbler2</setname>
     <rbf>jtrumble</rbf>
@@ -31,7 +31,6 @@
     <joystick>8</joystick>
     <rotation>vertical (ccw)</rotation>
     <region>World</region>
-    <mraauthor>jotego</mraauthor>
     <rom index="0" zip="srumbler2.zip|srumbler.zip" md5="None" asm_md5="690ff40aeb3164bc29045fa8dd3eda6b">
         <!--  Header to identify the game
  -->

@@ -20,7 +20,7 @@
 -->
 
 <misterromdescription>
-    <about author="jotego" webpage="https://patreon.com/jotego" source="https://github.com/jotego" twitter="@topapate"/>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
     <name>Tenchi wo Kurau II: Sekiheki no Tatakai (Japan 921031)</name>
     <setname>wofj</setname>
     <rbf>jtcps15</rbf>
@@ -31,7 +31,6 @@
     <joystick>8</joystick>
     <rotation>horizontal</rotation>
     <region>World</region>
-    <mraauthor>jotego</mraauthor>
     <rom index="0" zip="wofj.zip|wof.zip|qsound.zip" md5="None" asm_md5="86b9b805367cf1470739b3a563c2d00d">
         <part>
             00 04 80 04 80 0C 80 1C

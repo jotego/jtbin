@@ -108,6 +108,7 @@
 | bionicc2     | jtbiocom   | 890e141794e2b6f5acc859253a0ae010 | ff,df        |
 | bioniccbl    | jtbiocom   | f74b047fe61f14bf5b2536784e94b4f7 | ff,df        |
 | bioniccbl2   | jtbiocom   | 874332c74dca2f75d181068e18187bb6 | ff,df        |
+| blastoff     | jtshouse   | f89c9d8a8fb593e5a34edfada81301a0 | ff,ff        |
 | blkdrgon     | jtbtiger   | b14ac15cf95a71b1c15ee75ad49f1a45 | ff,6f        |
 | blktiger     | jtbtiger   | 2d7440c40e52cb34ad47fbc0820bbcb6 | ff,6f        |
 | blktigera    | jtbtiger   | acadf2e0bc8d647911cb8ea0dfea6d00 | ff,6f        |
@@ -183,6 +184,7 @@
 | cybotsud     | jtcps2     | 1d24397adb133647b22766e9e6ca112e |              |
 | daimakai     | jtcps1     | 86838f032c65d3d4539aeb3e8ba90a2f | 7f,ff,ff     |
 | daimakair    | jtcps1     | 657537b03050f067686496586e9aee76 | 7f,ff,ff     |
+| dangseed     | jtshouse   | 0985e63d9b7827822334612eae5f94e7 | ff           |
 | ddragon      | jtdd       | 20fd26784491a8d35a4799cc4227b68a | ff,ff        |
 | ddragon2     | jtdd2      | ee5ff67deb739a89fc27b6fc0ca78e2b | ff,96        |
 | ddragon2b    | jtdd2      | e3726956c80d97b424f254c127e85b7c | ff,96        |
@@ -236,6 +238,9 @@
 | drtoppel     | jtkiwi     | 3c672dd2cd71cc489382ba09aa732b34 | fe,ff        |
 | drtoppelj    | jtkiwi     | 8b519a1d1fcd91748684962121300d1a | fe,ff        |
 | drtoppelu    | jtkiwi     | 65f40accaa9ec3b34296a31679ca898e | fe,ff        |
+| dspirit      | jtshouse   | 097c833e8e78033db06f27bf99ff8e62 | ff           |
+| dspirit1     | jtshouse   | dc47685e5ca11cd393856cbc2ff4bdcd | ff           |
+| dspirit2     | jtshouse   | 52ae1bd39837977eeabc99cf61cc9569 | ff           |
 | dstlk        | jtcps2     | 2a6ec00a2222924a0f3ad77c36833ebd |              |
 | dstlka       | jtcps2     | d6ffc506d718d8385ba1db05a51f3dd7 |              |
 | dstlkh       | jtcps2     | 2aea6349dc9bad74eae0223251f57915 |              |
@@ -307,7 +312,7 @@
 | fround       | jtfround   | 0824f8ea07f0f330628fa9373dc13021 | ff,5e,ff     |
 | froundl      | jtfround   | b4f7a1b2506094c98fddf820462f5653 | ff,5e,ff     |
 | galaga88     | jtshouse   | 7fa29a855ff4114154da4ffd8d19589f | ff           |
-| galaga88a    | jtshouse   | 65df75a5bb8ba49366afcb60ef546266 | ff           |
+| galaga88a    | jtshouse   | 2f3fc3c1173e0cebaf41a5672e2dc33b | ff           |
 | galaga88j    | jtshouse   | df7948f75dffb9d4034d3bbc266a80c5 | ff           |
 | gbusters     | jtaliens   | 10dbc0128069fa05df7b4ce997b53fd5 | ff,56,ff     |
 | gbustersa    | jtaliens   | a039c0483e4977911a9683590ae316bd | ff,56,ff     |
@@ -360,9 +365,7 @@
 | insectx      | jtkiwi     | 70716a1310f259feb93021b69248cfe8 | fe,ff        |
 | insectxbl    | jtkiwi     | 0f1fa4881ac2194d848bb02140bf8b32 | fe,ff        |
 | insectxj     | jtkiwi     | 382d7b3a550c7a5391cbc88e5f74033e | fe,ff        |
-| juju         | jttoki     | 418f643b995b020c4fe0c1453853b6c6 | df,ff        |
-| jujub        | jttoki     | 8b877b157e7b855d55ea6bd1ac28e801 | df,ff        |
-| jujuba       | jttoki     | c9f74e6ae98fcf11f18f93ffa8a04393 | df,ff        |
+| juju         | jttoki     | 38b73e94149bd174150e63f0811cb5a4 | df,ff        |
 | jyangoku     | jtcps2     | 7ae7b0471ea7dde0b0ff13962bfddcc8 |              |
 | kageki       | jtkiwi     | d2f330f88ad450df36e63f2de82bebc0 | ff,ff        |
 | kagekih      | jtkiwi     | 42102bebd90944cd3e66eda8de060bcb | ff,ff        |
@@ -524,6 +527,7 @@
 | pgear        | jtcps2     | 860523a37f3cac75f3133f1f71586c19 |              |
 | pgearr1      | jtcps2     | 0005502bf24103341c096a807ddfa0e6 |              |
 | pingpong     | jtpinpon   | 3c6eaf0db6cb96ab18e8c5ca63aed2a9 | ff,fa,ff     |
+| pistoldm     | jtshouse   | f2cbddfb4450b46563b02de50d227f2e | ff,ff        |
 | pnickj       | jtcps1     | 39d46d81dfc6c10c94b02cf812bfd817 | ff,fc,ff     |
 | pokonyan     | jtcps1     | 0c22b6a35a4c7dcf7ee3d42b04a1f1df | ff,fb,ff,ff  |
 | pompingw     | jtpang     | 6be48a4c0844f8c6737f13d6e239a358 |              |
@@ -537,10 +541,10 @@
 | punisherh    | jtcps15    | 68975f8d997bdef8ab75b7c9344fc53e | ff           |
 | punisherj    | jtcps15    | 69188d91acf77e22d0a0cd39f347e74e | ff           |
 | punisheru    | jtcps15    | a0fbdd47a572dc50488fa84e5ddd0c92 | ff           |
-| punkshot     | jttmnt     | 01c4c11af76256003b7597056b5be5e2 | ff,7b,ff     |
-| punkshot2    | jttmnt     | 41478b4df5797ff07fc417d4b5e0619c | ff,7f,ff     |
-| punkshot2e   | jttmnt     | 8d2b8dfc39d766cacab19301b16e9cc7 | ff,7f,ff     |
-| punkshotj    | jttmnt     | 6b1aa3acf549131e7992df9e4aa6d44b | ff,5b,ff     |
+| punkshot     | jttmnt     | 475065e60e7d68f58dd271b61287f6aa | ff,7b,ff     |
+| punkshot2    | jttmnt     | b6650061c4bb977e7700e1b302064c71 | ff,7f,ff     |
+| punkshot2e   | jttmnt     | b471b58178c34c316d654e6669929dc7 | ff,7f,ff     |
+| punkshotj    | jttmnt     | aa6a21f0418fbbd1b4845256937e2a21 | ff,5b,ff     |
 | pzloop2      | jtcps2     | 1e52a337b3145823c43122abad5ab2db |              |
 | pzloop2j     | jtcps2     | 2005f74ca24858fb5511c48a77c6ae5d |              |
 | pzloop2jd    | jtcps2     | 6545381800fad4f7278d119f319944c0 |              |
@@ -827,16 +831,14 @@
 | tnzsoa       | jtkiwi     | 6ad3765d3584a88f4fc53661683f14f4 | fe,ff        |
 | tnzsop       | jtkiwi     | 8f0223d475a84ce98ccf5c8a0a3d0905 | fe,ff        |
 | tnzsuo       | jtkiwi     | 8150dddcf9f52643a5d3c9d032e526ff | fe,ff        |
-| toki         | jttoki     | 01ae8550260211f8008b88f806b65f80 | df,ff        |
-| tokia        | jttoki     | f83673a126d75ddc1119b7bc4dc0778d | df,ff        |
-| tokib        | jttoki     | 6e19cfa17a3d4108dd939c5df16d1f98 | df,ff        |
+| toki         | jttoki     | ae111807dd42167b8805493a946efe92 | df,ff        |
+| tokia        | jttoki     | 5ca8ff7a6a6699352a25677ab50fc72f | df,ff        |
 | tokio        | jtbubl     | a16d11118acc27f5802e5a292a29a712 | ff,ff        |
 | tokiob       | jtbubl     | fd37a47f72184caf3c60c6187db54788 | ff,ff        |
 | tokioo       | jtbubl     | 57a5c7a2954cbf851962aa960878433a | ff,ff        |
 | tokiou       | jtbubl     | 53510e372905aaa68e23552e2885d324 | ff,ff        |
-| tokip        | jttoki     | 1aa6e588f1a9bbeef4c8e36fad492553 | df,ff        |
-| tokiu        | jttoki     | dc6c2cf4c50de20aa805a60933964e84 | df,ff        |
-| tokiua       | jttoki     | e82c305fc3b337afba9419e0c97a8c62 | df,ff        |
+| tokiu        | jttoki     | 7236481fa5d32948bd86ec577685ff1e | df,ff        |
+| tokiua       | jttoki     | 47c22e77be894d51060c2ed4f3ed0e43 | df,ff        |
 | topsecrt     | jtbiocom   | 685ea63491f6d89e485d0d5619c4bd23 | ff,df        |
 | topsecrt2    | jtbiocom   | a0e127acf4aa7292fdc1c37f4bd721e6 | ff,df        |
 | toramich     | jttora     | 32cb4c4bd6913f32104362e761847490 | ff,ff        |

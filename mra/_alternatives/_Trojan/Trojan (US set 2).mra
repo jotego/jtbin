@@ -20,7 +20,7 @@
 -->
 
 <misterromdescription>
-    <about author="jotego" webpage="https://patreon.com/jotego" source="https://github.com/jotego" twitter="@topapate"/>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
     <name>Trojan (US set 2)</name>
     <setname>trojana</setname>
     <rbf>jttrojan</rbf>
@@ -31,7 +31,6 @@
     <joystick>8</joystick>
     <rotation>horizontal</rotation>
     <region>World</region>
-    <mraauthor>jotego</mraauthor>
     <rom index="0" zip="trojana.zip|trojan.zip" md5="None" asm_md5="9fefd1b0b9092e019903de297747fc6c">
         <part>
             02 00 00 00 00 00 00 00
@@ -65,8 +64,8 @@
         <interleave output="16">
             <part name="tb03.8k" crc="581a2b4c" map="12"/>
         </interleave>
-        <!-- CHAR_START -->
         <!-- SCR_START -->
+        <!-- CHAR_START -->
         <!-- gfx2 - starts at 0x40000 - length 0x40000 (18 bits) -->
         <interleave output="32">
             <part name="tb14.8b" crc="14bfac18" map="0001"/>

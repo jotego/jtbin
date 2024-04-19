@@ -20,7 +20,7 @@
 -->
 
 <misterromdescription>
-    <about author="jotego" webpage="https://patreon.com/jotego" source="https://github.com/jotego" twitter="@topapate"/>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
     <name>Side Arms - Hyper Dyne (US, 861128)</name>
     <setname>sidearmsur1</setname>
     <rbf>jtsarms</rbf>
@@ -31,7 +31,6 @@
     <joystick>8</joystick>
     <rotation>horizontal</rotation>
     <region>World</region>
-    <mraauthor>jotego</mraauthor>
     <rom index="0" zip="sidearmsur1.zip|sidearms.zip" md5="None" asm_md5="784ae56ee88f2a9dcb44daeff1d60ebd">
         <!-- maincpu - starts at 0x0 - length 0x18000 (17 bits) -->
         <interleave output="16">

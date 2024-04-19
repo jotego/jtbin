@@ -20,7 +20,7 @@
 -->
 
 <misterromdescription>
-    <about author="jotego" webpage="https://patreon.com/jotego" source="https://github.com/jotego" twitter="@topapate"/>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
     <name>Cadillacs: Kyouryuu Shin Seiki (Japan 930201)</name>
     <setname>dinoj</setname>
     <rbf>jtcps15</rbf>
@@ -31,7 +31,6 @@
     <joystick>8</joystick>
     <rotation>horizontal</rotation>
     <region>World</region>
-    <mraauthor>jotego</mraauthor>
     <rom index="0" zip="dinoj.zip|dino.zip|qsound.zip" md5="None" asm_md5="5b16a312e8da3d2963860f26d8bb21a5">
         <part>
             00 06 80 06 80 0E 80 1E

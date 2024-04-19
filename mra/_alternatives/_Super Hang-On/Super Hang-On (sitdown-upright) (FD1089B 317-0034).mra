@@ -20,7 +20,7 @@
 -->
 
 <misterromdescription>
-    <about author="jotego" webpage="https://patreon.com/jotego" source="https://github.com/jotego" twitter="@topapate"/>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
     <name>Super Hang-On (sitdown-upright) (FD1089B 317-0034)</name>
     <setname>shangon3</setname>
     <rbf>jtshanon</rbf>
@@ -31,7 +31,6 @@
     <joystick/>
     <rotation>horizontal</rotation>
     <region>World</region>
-    <mraauthor>jotego</mraauthor>
     <rom index="0" zip="shangon3.zip|shangon.zip" md5="None" asm_md5="9da98cae4f35abee9531bae161dcaadb">
         <part>
             03 01 00 00 00 00 00 00

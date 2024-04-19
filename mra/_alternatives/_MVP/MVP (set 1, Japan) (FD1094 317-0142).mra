@@ -20,7 +20,7 @@
 -->
 
 <misterromdescription>
-    <about author="jotego" webpage="https://patreon.com/jotego" source="https://github.com/jotego" twitter="@topapate"/>
+    <about author="jotego,atrac17" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
     <name>MVP (set 1, Japan) (FD1094 317-0142)</name>
     <setname>mvpj</setname>
     <rbf>jts16b</rbf>
@@ -31,7 +31,6 @@
     <joystick>8</joystick>
     <rotation>horizontal</rotation>
     <region>Japan</region>
-    <mraauthor>jotego,atrac17</mraauthor>
     <rom index="0" zip="mvpj.zip|mvp.zip" md5="None" asm_md5="cfe9f4ef18d1a092db54a550f0078e20">
         <part>
             00 00 00 00 00 00 00 00
@@ -96,8 +95,8 @@
             <part name="epr-12982.b12" crc="c4453292" map="10"/>
         </interleave>
         <part repeat="0x40000"> FF</part>
-        <!-- MCU_START -->
         <!-- JTFRAME_PROM_START -->
+        <!-- MCU_START -->
         <!-- mcu - starts at 0x440000 - length 0x2000 (13 bits) -->
         <part repeat="0x1000"> FF</part>
         <part repeat="0x1000"> FF</part>

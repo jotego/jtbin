@@ -20,7 +20,7 @@
 -->
 
 <misterromdescription>
-    <about author="jotego" webpage="https://patreon.com/jotego" source="https://github.com/jotego" twitter="@topapate"/>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
     <name>Savage Bees</name>
     <setname>savgbees</setname>
     <rbf>jtexed</rbf>
@@ -31,7 +31,6 @@
     <joystick>8</joystick>
     <rotation>vertical (ccw)</rotation>
     <region>World</region>
-    <mraauthor>jotego</mraauthor>
     <rom index="0" zip="savgbees.zip|exedexes.zip" md5="None" asm_md5="a0bfb6be669be0073f0196983de61d06">
         <!-- maincpu - starts at 0x0 - length 0xC000 (16 bits) -->
         <part name="ee04e.11m" crc="c0caf442"/>

@@ -20,7 +20,7 @@
 -->
 
 <misterromdescription>
-    <about author="jotego" webpage="https://patreon.com/jotego" source="https://github.com/jotego" twitter="@topapate"/>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
     <name>Capcom World (Japan)</name>
     <setname>cworld</setname>
     <rbf>jtpang</rbf>
@@ -31,7 +31,6 @@
     <joystick/>
     <rotation>horizontal</rotation>
     <region>World</region>
-    <mraauthor>jotego</mraauthor>
     <rom index="0" zip="cworld.zip" md5="None" asm_md5="d4d84d29ff0060240d09ca61ce4d7508">
         <part>
             04 15 26 37 40 51 62 73

@@ -20,7 +20,7 @@
 -->
 
 <misterromdescription>
-    <about author="jotego" webpage="https://patreon.com/jotego" source="https://github.com/jotego" twitter="@topapate"/>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
     <name>MX5000</name>
     <setname>mx5000</setname>
     <rbf>jtmx5k</rbf>
@@ -31,7 +31,6 @@
     <joystick>8</joystick>
     <rotation>vertical (cw)</rotation>
     <region>World</region>
-    <mraauthor>jotego</mraauthor>
     <rom index="0" zip="mx5000.zip" md5="None" asm_md5="51dfe5deef23094f7b7a4d85e983ac5e">
         <!-- maincpu - starts at 0x0 - length 0x10000 (16 bits) -->
         <part name="669_r01.16c" crc="79b226fc"/>

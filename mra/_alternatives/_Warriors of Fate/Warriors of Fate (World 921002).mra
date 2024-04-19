@@ -20,7 +20,7 @@
 -->
 
 <misterromdescription>
-    <about author="jotego" webpage="https://patreon.com/jotego" source="https://github.com/jotego" twitter="@topapate"/>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
     <name>Warriors of Fate (World 921002)</name>
     <setname>wofr1</setname>
     <rbf>jtcps15</rbf>
@@ -31,7 +31,6 @@
     <joystick>8</joystick>
     <rotation>horizontal</rotation>
     <region>World</region>
-    <mraauthor>jotego</mraauthor>
     <rom index="0" zip="wofr1.zip|wof.zip|qsound.zip" md5="None" asm_md5="8a9da03c9d081e3afeed1b6a1dc78630">
         <part>
             00 04 80 04 80 0C 80 1C

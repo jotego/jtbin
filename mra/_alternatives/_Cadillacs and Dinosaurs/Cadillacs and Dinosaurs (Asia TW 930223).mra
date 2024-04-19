@@ -20,7 +20,7 @@
 -->
 
 <misterromdescription>
-    <about author="jotego" webpage="https://patreon.com/jotego" source="https://github.com/jotego" twitter="@topapate"/>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
     <name>Cadillacs and Dinosaurs (Asia TW 930223)</name>
     <setname>dinoa</setname>
     <rbf>jtcps15</rbf>
@@ -31,7 +31,6 @@
     <joystick>8</joystick>
     <rotation>horizontal</rotation>
     <region>World</region>
-    <mraauthor>jotego</mraauthor>
     <rom index="0" zip="dinoa.zip|dino.zip|qsound.zip" md5="None" asm_md5="beab07c1ce2192cac113f1e0ab6151b7">
         <part>
             00 06 80 06 80 0E 80 1E

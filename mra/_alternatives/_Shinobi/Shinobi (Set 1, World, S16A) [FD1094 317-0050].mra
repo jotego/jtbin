@@ -20,7 +20,7 @@
 -->
 
 <misterromdescription>
-    <about author="jotego" webpage="https://patreon.com/jotego" source="https://github.com/jotego" twitter="@topapate"/>
+    <about author="jotego,atrac17" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
     <name>Shinobi (Set 1, World, S16A) [FD1094 317-0050]</name>
     <setname>shinobi1</setname>
     <rbf>jts16</rbf>
@@ -31,7 +31,6 @@
     <joystick>8</joystick>
     <rotation>horizontal</rotation>
     <region>World</region>
-    <mraauthor>jotego,atrac17</mraauthor>
     <rom index="0" zip="shinobi1.zip|shinobi.zip" md5="None" asm_md5="2c6ca20fe0a6c0cadd7c8cfee6238d89">
         <part>
             00 00 00 00 00 00 00 00

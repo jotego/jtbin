@@ -20,7 +20,7 @@
 -->
 
 <misterromdescription>
-    <about author="jotego" webpage="https://patreon.com/jotego" source="https://github.com/jotego" twitter="@topapate"/>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
     <name>Pomping World (Japan)</name>
     <setname>pompingw</setname>
     <rbf>jtpang</rbf>
@@ -31,7 +31,6 @@
     <joystick>4</joystick>
     <rotation>horizontal</rotation>
     <region>World</region>
-    <mraauthor>jotego</mraauthor>
     <rom index="0" zip="pompingw.zip|pang.zip" md5="None" asm_md5="6be48a4c0844f8c6737f13d6e239a358">
         <part>
             01 23 45 67 76 54 32 10

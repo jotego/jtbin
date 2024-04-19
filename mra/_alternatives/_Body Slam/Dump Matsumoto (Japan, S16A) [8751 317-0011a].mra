@@ -20,7 +20,7 @@
 -->
 
 <misterromdescription>
-    <about author="jotego" webpage="https://patreon.com/jotego" source="https://github.com/jotego" twitter="@topapate"/>
+    <about author="jotego,atrac17" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
     <name>Dump Matsumoto (Japan, S16A) [8751 317-0011a]</name>
     <setname>dumpmtmt</setname>
     <rbf>jts16</rbf>
@@ -31,7 +31,6 @@
     <joystick>8</joystick>
     <rotation>horizontal</rotation>
     <region>World</region>
-    <mraauthor>jotego,atrac17</mraauthor>
     <rom index="0" zip="dumpmtmt.zip|bodyslam.zip" md5="None" asm_md5="8141d8babe5c2deb1bdc12896636b522">
         <part>
             00 00 00 00 00 00 00 00

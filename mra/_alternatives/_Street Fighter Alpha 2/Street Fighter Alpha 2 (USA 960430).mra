@@ -20,7 +20,7 @@
 -->
 
 <misterromdescription default="ff,ff">
-    <about author="jotego" webpage="https://patreon.com/jotego" source="https://github.com/jotego" twitter="@topapate"/>
+    <about author="jotego,atrac17" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
     <name>Street Fighter Alpha 2 (USA 960430)</name>
     <setname>sfa2u</setname>
     <rbf>jtcps2</rbf>
@@ -31,7 +31,6 @@
     <joystick>8</joystick>
     <rotation>horizontal</rotation>
     <region>World</region>
-    <mraauthor>jotego,atrac17</mraauthor>
     <rom index="0" zip="sfa2u.zip|sfa2.zip|qsound.zip" md5="None" address="0x30000000" asm_md5="c7755ffd0cf88246c02ac4a86333e496">
         <part>
             00 0C 00 0D 00 1D 00 6D

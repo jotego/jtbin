@@ -20,7 +20,7 @@
 -->
 
 <misterromdescription>
-    <about author="jotego" webpage="https://patreon.com/jotego" source="https://github.com/jotego" twitter="@topapate"/>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
     <name>Bubble Bobble (Japan, Ver 0.0)</name>
     <setname>bublbobl1</setname>
     <rbf>jtbubl</rbf>
@@ -31,7 +31,6 @@
     <joystick>2</joystick>
     <rotation>horizontal</rotation>
     <region>World</region>
-    <mraauthor>jotego</mraauthor>
     <rom index="0" zip="bublbobl1.zip|bublbobl.zip" md5="None" asm_md5="e151ea1dcc1cd20b53ed8dcfbeb944f2">
         <!--  Header to identify the PCB type
         Byte 0 = 0 for Bubble Bobble (MC6801 MCU)

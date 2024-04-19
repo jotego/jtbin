@@ -20,7 +20,7 @@
 -->
 
 <misterromdescription>
-    <about author="jotego" webpage="https://patreon.com/jotego" source="https://github.com/jotego" twitter="@topapate"/>
+    <about author="jotego,atrac17" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
     <name>Fantasy Zone (World, S16A) [FD1089B 317-0016]</name>
     <setname>fantzonee</setname>
     <rbf>jts16</rbf>
@@ -31,7 +31,6 @@
     <joystick>8</joystick>
     <rotation>horizontal</rotation>
     <region>World</region>
-    <mraauthor>jotego,atrac17</mraauthor>
     <rom index="0" zip="fantzonee.zip|fantzone.zip" md5="None" asm_md5="9295aa34da608c0b16cdcc87c7cb1406">
         <part>
             00 00 00 00 00 00 00 00

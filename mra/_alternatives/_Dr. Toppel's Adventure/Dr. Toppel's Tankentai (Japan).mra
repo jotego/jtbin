@@ -20,7 +20,7 @@
 -->
 
 <misterromdescription>
-    <about author="jotego" webpage="https://patreon.com/jotego" source="https://github.com/jotego" twitter="@topapate"/>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
     <name>Dr. Toppel&apos;s Tankentai (Japan)</name>
     <setname>drtoppelj</setname>
     <rbf>jtkiwi</rbf>
@@ -31,7 +31,6 @@
     <joystick>8</joystick>
     <rotation>vertical (cw)</rotation>
     <region>World</region>
-    <mraauthor>jotego</mraauthor>
     <rom index="0" zip="drtoppelj.zip|drtoppel.zip" md5="None" asm_md5="8b519a1d1fcd91748684962121300d1a">
         <!-- bit 0 = MCU
              bit 1 = color PROM

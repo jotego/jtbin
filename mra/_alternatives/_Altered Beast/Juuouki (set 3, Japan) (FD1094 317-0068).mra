@@ -20,7 +20,7 @@
 -->
 
 <misterromdescription>
-    <about author="jotego" webpage="https://patreon.com/jotego" source="https://github.com/jotego" twitter="@topapate"/>
+    <about author="jotego,atrac17" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
     <name>Juuouki (set 3, Japan) (FD1094 317-0068)</name>
     <setname>altbeastj3</setname>
     <rbf>jts16b</rbf>
@@ -31,7 +31,6 @@
     <joystick>8</joystick>
     <rotation>horizontal</rotation>
     <region>Japan</region>
-    <mraauthor>jotego,atrac17</mraauthor>
     <rom index="0" zip="altbeastj3.zip|altbeast.zip" md5="None" asm_md5="6cc4f8fb4472788a79a68b23fc3fa2de">
         <part>
             00 00 00 00 00 00 00 00

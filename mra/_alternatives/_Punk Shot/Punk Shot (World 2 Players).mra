@@ -20,7 +20,7 @@
 -->
 
 <misterromdescription>
-    <about author="jotego" webpage="https://patreon.com/jotego" source="https://github.com/jotego" twitter="@topapate"/>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
     <name>Punk Shot (World 2 Players)</name>
     <setname>punkshot2e</setname>
     <rbf>jttmnt</rbf>
@@ -31,8 +31,7 @@
     <joystick>8</joystick>
     <rotation>horizontal</rotation>
     <region>World</region>
-    <mraauthor>jotego</mraauthor>
-    <rom index="0" zip="punkshot2e.zip|punkshot.zip" md5="None" asm_md5="8d2b8dfc39d766cacab19301b16e9cc7">
+    <rom index="0" zip="punkshot2e.zip|punkshot.zip" md5="None" asm_md5="b471b58178c34c316d654e6669929dc7">
         <!--     byte 0: 00 = TMNT
             01 = MIA
             02 = Punk Shot -->
@@ -65,15 +64,12 @@
         <!-- JTFRAME_BA3_START -->
         <!-- k051960 - starts at 0x228000 - length 0x200000 (21 bits) -->
         <interleave output="32">
-            <part name="907d07.k2" crc="b0fe4543" map="0021"/>
-            <part name="907d08.k7" crc="d5ac8d9d" map="2100"/>
+            <part name="907d08.k7" crc="d5ac8d9d" map="0012"/>
+            <part name="907d07.k2" crc="b0fe4543" map="1200"/>
         </interleave>
         <!-- JTFRAME_PROM_START -->
         <!-- proms - starts at 0x428000 -->
         <!-- Total 0x428000 bytes - 4256 kBytes -->
-    </rom>
-    <rom index="17" zip="jtbeta.zip" md5="None" asm_md5="71035230a15ff988e5823bc00a8efc50">
-        <part name="beta.bin" crc="f1b63018"/>
     </rom>
     <rom index="1">
         <part>00</part>

@@ -20,7 +20,7 @@
 -->
 
 <misterromdescription default="ff,ff">
-    <about author="jotego" webpage="https://patreon.com/jotego" source="https://github.com/jotego" twitter="@topapate"/>
+    <about author="jotego,atrac17" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
     <name>Dungeons &amp; Dragons: Shadow over Mystara (USA 960209)</name>
     <setname>ddsomur1</setname>
     <rbf>jtcps2</rbf>
@@ -31,7 +31,6 @@
     <joystick>8</joystick>
     <rotation>horizontal</rotation>
     <region>World</region>
-    <mraauthor>jotego,atrac17</mraauthor>
     <rom index="0" zip="ddsomur1.zip|ddsom.zip|qsound.zip" md5="None" address="0x30000000" asm_md5="0fb7251f8796fe40c6037303a9dc50cb">
         <part>
             00 10 00 11 00 21 00 81

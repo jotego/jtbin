@@ -20,7 +20,7 @@
 -->
 
 <misterromdescription>
-    <about author="jotego" webpage="https://patreon.com/jotego" source="https://github.com/jotego" twitter="@topapate"/>
+    <about author="jotego,atrac17" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
     <name>Altered Beast (set 8) (8751 317-0078)</name>
     <setname>altbeast</setname>
     <rbf>jts16b</rbf>
@@ -31,7 +31,6 @@
     <joystick>8</joystick>
     <rotation>horizontal</rotation>
     <region>World</region>
-    <mraauthor>jotego,atrac17</mraauthor>
     <rom index="0" zip="altbeast.zip" md5="None" asm_md5="2af9520a396cab835f837678719bc312">
         <part>
             00 00 00 00 00 00 00 00
@@ -80,8 +79,8 @@
             <part name="epr-11684.b8" crc="b20c0edb" map="10"/>
         </interleave>
         <part repeat="0x100000"> FF</part>
-        <!-- MCU_START -->
         <!-- JTFRAME_PROM_START -->
+        <!-- MCU_START -->
         <!-- mcu - starts at 0x440000 - length 0x2000 (13 bits) -->
         <part name="317-0078.c2" crc="8101925f"/>
         <part repeat="0x1000"> FF</part>

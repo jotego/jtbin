@@ -20,7 +20,7 @@
 -->
 
 <misterromdescription>
-    <about author="jotego" webpage="https://patreon.com/jotego" source="https://github.com/jotego" twitter="@topapate"/>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
     <name>Ghouls&apos;n Ghosts (World)</name>
     <setname>ghouls</setname>
     <rbf>jtcps1</rbf>
@@ -31,7 +31,6 @@
     <joystick>4</joystick>
     <rotation>horizontal</rotation>
     <region>World</region>
-    <mraauthor>jotego</mraauthor>
     <rom index="0" zip="ghouls.zip" md5="None" asm_md5="6ca0a8f1265eca0c99f28ac9e645e2eb">
         <part>
             00 04 40 04 40 05 FF FF

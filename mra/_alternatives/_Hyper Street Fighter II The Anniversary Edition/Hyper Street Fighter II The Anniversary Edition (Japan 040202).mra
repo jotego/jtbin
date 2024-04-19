@@ -20,7 +20,7 @@
 -->
 
 <misterromdescription default="ff,ff">
-    <about author="jotego" webpage="https://patreon.com/jotego" source="https://github.com/jotego" twitter="@topapate"/>
+    <about author="jotego,atrac17" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
     <name>Hyper Street Fighter II: The Anniversary Edition (Japan 040202)</name>
     <setname>hsf2j</setname>
     <rbf>jtcps2</rbf>
@@ -31,7 +31,6 @@
     <joystick>8</joystick>
     <rotation>horizontal</rotation>
     <region>World</region>
-    <mraauthor>jotego,atrac17</mraauthor>
     <rom index="0" zip="hsf2j.zip|hsf2.zip|qsound.zip" md5="None" address="0x30000000" asm_md5="f5668656cc694dc2a0253600120adc0b">
         <part>
             00 10 00 11 00 31 00 B1

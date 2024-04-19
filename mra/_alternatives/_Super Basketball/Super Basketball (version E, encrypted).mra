@@ -20,7 +20,7 @@
 -->
 
 <misterromdescription>
-    <about author="jotego" webpage="https://patreon.com/jotego" source="https://github.com/jotego" twitter="@topapate"/>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
     <name>Super Basketball (version E, encrypted)</name>
     <setname>sbaskete</setname>
     <rbf>jtsbaskt</rbf>
@@ -31,7 +31,6 @@
     <joystick>8</joystick>
     <rotation>vertical (cw)</rotation>
     <region>World</region>
-    <mraauthor>jotego</mraauthor>
     <rom index="0" zip="sbaskete.zip|sbasketb.zip" md5="None" asm_md5="8033bc13da3e333d7bfc948a1289f329">
         <!--  Header to identify the PCB type
         Byte 0 = 0 for M6809 CPU, 1 for KONAMI-1 CPU

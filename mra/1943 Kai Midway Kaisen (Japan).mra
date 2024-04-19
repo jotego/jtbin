@@ -20,7 +20,7 @@
 -->
 
 <misterromdescription>
-    <about author="jotego" webpage="https://patreon.com/jotego" source="https://github.com/jotego" twitter="@topapate"/>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
     <name>1943 Kai: Midway Kaisen (Japan)</name>
     <setname>1943kai</setname>
     <rbf>jt1943</rbf>
@@ -31,7 +31,6 @@
     <joystick>8</joystick>
     <rotation>vertical (ccw)</rotation>
     <region>World</region>
-    <mraauthor>jotego</mraauthor>
     <rom index="0" zip="1943kai.zip" md5="None" asm_md5="dc5ee323b52c21dd3d7efffa85de97ad">
         <!-- maincpu - starts at 0x0 - length 0x28000 (18 bits) -->
         <part name="bmk01.12d" crc="7d2211db"/>
@@ -79,8 +78,8 @@
             <part name="bmk25.14l" crc="a755faf1" map="01"/>
             <part name="bmk24.14k" crc="bf186ef2" map="10"/>
         </interleave>
-        <!-- OBJ_START -->
         <!-- JTFRAME_BA3_START -->
+        <!-- OBJ_START -->
         <!-- gfx4 - starts at 0x98000 - length 0x40000 (18 bits) -->
         <interleave output="16">
             <part name="bmk10.10c" crc="1e0d9571" map="01"/>

@@ -20,7 +20,7 @@
 -->
 
 <misterromdescription>
-    <about author="jotego" webpage="https://patreon.com/jotego" source="https://github.com/jotego" twitter="@topapate"/>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
     <name>Hyper Sports</name>
     <setname>hyperspt</setname>
     <rbf>jtroadf</rbf>
@@ -31,7 +31,6 @@
     <joystick/>
     <rotation>horizontal</rotation>
     <region>World</region>
-    <mraauthor>jotego</mraauthor>
     <rom index="0" zip="hyperspt.zip" md5="None" asm_md5="5964cd567bdc916f1f80c348ff922f43">
         <!--  Header to identify the game -->
         <part>

@@ -20,7 +20,7 @@
 -->
 
 <misterromdescription>
-    <about author="jotego" webpage="https://patreon.com/jotego" source="https://github.com/jotego" twitter="@topapate"/>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
     <name>Ares no Tsubasa (Japan, rev. A)</name>
     <setname>lwingsja</setname>
     <rbf>jtsectnz</rbf>
@@ -31,7 +31,6 @@
     <joystick>8</joystick>
     <rotation>vertical (cw)</rotation>
     <region>World</region>
-    <mraauthor>jotego</mraauthor>
     <rom index="0" zip="lwingsja.zip|lwings.zip" md5="None" asm_md5="e8c07ec5ddf9bda400884cdd6c9aa962">
         <part>
             01 00 00 00 00 00 00 00

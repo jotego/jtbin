@@ -20,7 +20,7 @@
 -->
 
 <misterromdescription>
-    <about author="jotego" webpage="https://patreon.com/jotego" source="https://github.com/jotego" twitter="@topapate"/>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
     <name>Turbo Out Run (Out Run upgrade) (FD1094 317-0118)</name>
     <setname>toutrun</setname>
     <rbf>jtoutrun</rbf>
@@ -31,7 +31,6 @@
     <joystick/>
     <rotation>horizontal</rotation>
     <region>World</region>
-    <mraauthor>jotego</mraauthor>
     <rom index="0" zip="toutrun.zip" md5="None" asm_md5="44219ddaa2201c084697f4adb2ea80ce">
         <part>
             04 02 00 00 00 00 00 00

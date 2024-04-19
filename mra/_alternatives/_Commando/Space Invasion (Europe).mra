@@ -20,7 +20,7 @@
 -->
 
 <misterromdescription>
-    <about author="jotego" webpage="https://patreon.com/jotego" source="https://github.com/jotego" twitter="@topapate"/>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
     <name>Space Invasion (Europe)</name>
     <setname>sinvasn</setname>
     <rbf>jtcommnd</rbf>
@@ -31,7 +31,6 @@
     <joystick>8</joystick>
     <rotation>vertical (ccw)</rotation>
     <region>World</region>
-    <mraauthor>jotego</mraauthor>
     <rom index="0" zip="sinvasn.zip|commando.zip" md5="None" asm_md5="e87eba48664693b5d77e293a5cf91a3c">
         <!-- maincpu - starts at 0x0 - length 0xC000 (16 bits) -->
         <part name="sp04.9m" crc="33f9601e"/>

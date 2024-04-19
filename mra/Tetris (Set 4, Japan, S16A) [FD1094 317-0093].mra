@@ -20,7 +20,7 @@
 -->
 
 <misterromdescription>
-    <about author="jotego" webpage="https://patreon.com/jotego" source="https://github.com/jotego" twitter="@topapate"/>
+    <about author="jotego,atrac17" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
     <name>Tetris (Set 4, Japan, S16A) [FD1094 317-0093]</name>
     <setname>tetris</setname>
     <rbf>jts16</rbf>
@@ -31,7 +31,6 @@
     <joystick>5 (half8)</joystick>
     <rotation>horizontal</rotation>
     <region>Japan</region>
-    <mraauthor>jotego,atrac17</mraauthor>
     <rom index="0" zip="tetris.zip" md5="None" asm_md5="a66fee2c280d67b2820db8dda291719e">
         <part>
             00 00 00 00 00 00 00 00

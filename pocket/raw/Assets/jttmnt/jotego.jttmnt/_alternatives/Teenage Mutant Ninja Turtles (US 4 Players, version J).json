@@ -10,11 +10,6 @@
 			{
 				"id": 1,
 				"filename": "tmntub.rom"
-			},
-			{
-				"id": 17,
-				"filename": "beta.bin",
-				"md5": "71035230a15ff988e5823bc00a8efc50"
 			}
 		],
 		"memory_writes": [

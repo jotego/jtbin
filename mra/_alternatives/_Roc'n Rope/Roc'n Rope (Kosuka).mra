@@ -20,7 +20,7 @@
 -->
 
 <misterromdescription>
-    <about author="jotego" webpage="https://patreon.com/jotego" source="https://github.com/jotego" twitter="@topapate"/>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
     <name>Roc&apos;n Rope (Kosuka)</name>
     <setname>rocnropek</setname>
     <rbf>jtroc</rbf>
@@ -31,7 +31,6 @@
     <joystick>4</joystick>
     <rotation>vertical (cw)</rotation>
     <region>World</region>
-    <mraauthor>jotego</mraauthor>
     <rom index="0" zip="rocnropek.zip|rocnrope.zip" md5="None" asm_md5="9a7b2a4292da9248e666abe317edf768">
         <!-- maincpu - starts at 0x0 - length 0xA000 (16 bits) -->
         <part name="rnr_h1.vid" crc="0fddc1f6"/>
@@ -44,7 +43,6 @@
         <part name="rnr_7a.snd" crc="75d2c4e2"/>
         <part name="rnr_8a.snd" crc="ca4325ae"/>
         <!-- SCR_START -->
-        <!-- JTFRAME_MCLK -->
         <!-- tiles - starts at 0xC000 - length 0x4000 (14 bits) -->
         <interleave output="16">
             <part name="rnr_h12.vid" crc="e2114539" map="01"/>

@@ -20,7 +20,7 @@
 -->
 
 <misterromdescription>
-    <about author="jotego" webpage="https://patreon.com/jotego" source="https://github.com/jotego" twitter="@topapate"/>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
     <name>Ghosts&apos;n Goblins (World? set 1)</name>
     <setname>gng</setname>
     <rbf>jtgng</rbf>
@@ -31,7 +31,6 @@
     <joystick>8</joystick>
     <rotation>horizontal</rotation>
     <region>World</region>
-    <mraauthor>jotego</mraauthor>
     <rom index="0" zip="gng.zip" md5="None" asm_md5="314bf8a2179fea0b42b1e675093d01b7">
         <!-- maincpu - starts at 0x0 - length 0x14000 (17 bits) -->
         <part name="gg3.bin" crc="9e01c65e"/>

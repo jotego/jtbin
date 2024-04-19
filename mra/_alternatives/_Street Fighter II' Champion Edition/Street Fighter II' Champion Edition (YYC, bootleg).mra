@@ -20,7 +20,7 @@
 -->
 
 <misterromdescription>
-    <about author="jotego" webpage="https://patreon.com/jotego" source="https://github.com/jotego" twitter="@topapate"/>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
     <name>Street Fighter II&apos;: Champion Edition (YYC, bootleg)</name>
     <setname>sf2yyc</setname>
     <rbf>jtcps1</rbf>
@@ -31,7 +31,6 @@
     <joystick>8</joystick>
     <rotation>horizontal</rotation>
     <region>World</region>
-    <mraauthor>jotego</mraauthor>
     <rom index="0" zip="sf2yyc.zip|sf2ce.zip" md5="None" asm_md5="4ee9d1ff54b4c83852b64d57ec1aca3b">
         <part>
             00 05 40 05 40 06 FF FF

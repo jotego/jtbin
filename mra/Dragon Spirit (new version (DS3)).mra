@@ -1,0 +1,124 @@
+<!--          FPGA arcade hardware by Jotego
+
+              This core is available for hardware compatible with MiST and MiSTer
+              Other FPGA systems may be supported by the time you read this.
+              This work is not mantained by the MiSTer project. Please contact the
+              core author for issues and updates.
+
+              (c) Jose Tejada, 2024. Please support this research
+              Patreon: https://patreon.com/jotego
+
+              The author does not endorse or participate in illegal distribution
+              of copyrighted material. This work can be used with compatible
+              software. This software can be homebrew projects or legally
+              obtained memory dumps of compatible games.
+
+              This file license is GNU GPLv2.
+              You can read the whole license file in
+              https://opensource.org/licenses/gpl-2.0.php
+
+-->
+
+<misterromdescription>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
+    <name>Dragon Spirit (new version (DS3))</name>
+    <setname>dspirit</setname>
+    <rbf>jtshouse</rbf>
+    <mameversion>0251</mameversion>
+    <year>1987</year>
+    <manufacturer>Namco</manufacturer>
+    <players>2</players>
+    <joystick>8</joystick>
+    <rotation>vertical (cw)</rotation>
+    <region>World</region>
+    <rom index="0" zip="dspirit.zip" md5="None" asm_md5="097c833e8e78033db06f27bf99ff8e62">
+        <!-- Byte 0: protection type
+Byte 1: key ID
+Byte 2: addr for key ID
+Byte 3: addr for RNG
+Byte 4: addr for nibble swap data write
+Byte 5: addr for nibble swap read
+Byte 6: addr for lower nibble read
+Byte 7: addr for upper nibble read
+ -->
+        <part>
+            01 36 00 00 00 00 00 00
+        </part>
+        <!-- user1 - starts at 0x0 - length 0x3A0000 (22 bits) -->
+        <part name="ds1_p0.bin" crc="b22a2856"/>
+        <part repeat="0x70000"> FF</part>
+        <part name="ds1_p1.bin" crc="f7e3298a"/>
+        <part repeat="0x70000"> FF</part>
+        <part name="ds1_p2.bin" crc="3c9b0100"/>
+        <part repeat="0x70000"> FF</part>
+        <part name="ds1_p3.bin" crc="c6e5954b"/>
+        <part repeat="0x70000"> FF</part>
+        <part name="ds1_p4.bin" crc="f3307870"/>
+        <part repeat="0x70000"> FF</part>
+        <part name="ds1_p5.bin" crc="9a3a1028"/>
+        <part repeat="0x70000"> FF</part>
+        <part name="ds3_p6.bin" crc="fcc01bd1"/>
+        <part repeat="0x70000"> FF</part>
+        <part name="ds3_p7.bin" crc="820bedb2"/>
+        <part repeat="0x10000"> FF</part>
+        <!-- JTFRAME_BA1_START -->
+        <!-- audiocpu - starts at 0x3A0000 - length 0x20000 (17 bits) -->
+        <part name="ds1_s0.bin" crc="27100065"/>
+        <part name="ds1_s1.bin" crc="b398645f"/>
+        <!-- PCM_START -->
+        <!-- voice - starts at 0x3C0000 - length 0xB0000 (20 bits) -->
+        <part name="ds1_v0.bin" crc="313b3508"/>
+        <part repeat="0x10000"> FF</part>
+        <part name="ds_voi-1.bin" crc="54790d4e"/>
+        <part name="ds_voi-2.bin" crc="05298534"/>
+        <part name="ds_voi-3.bin" crc="13e84c7e"/>
+        <part name="ds_voi-4.bin" crc="34fbb8cd"/>
+        <part repeat="0x10000"> FF</part>
+        <!-- JTFRAME_BA2_START -->
+        <!-- c123tmap:mask - starts at 0x470000 - length 0x20000 (17 bits) -->
+        <part name="ds_chr-8.bin" crc="946eb242"/>
+        <!-- SCR_START -->
+        <!-- c123tmap - starts at 0x490000 - length 0x100000 (20 bits) -->
+        <part name="ds_chr-0.bin" crc="7bf28ac3"/>
+        <part name="ds_chr-1.bin" crc="03582fea"/>
+        <part name="ds_chr-2.bin" crc="5e05f4f9"/>
+        <part name="ds_chr-3.bin" crc="dc540791"/>
+        <part name="ds_chr-4.bin" crc="ffd1f35c"/>
+        <part name="ds_chr-5.bin" crc="8472e0a3"/>
+        <part name="ds_chr-6.bin" crc="a799665a"/>
+        <part name="ds_chr-7.bin" crc="a51724af"/>
+        <!-- JTFRAME_BA3_START -->
+        <!-- sprite - starts at 0x590000 - length 0x100000 (20 bits) -->
+        <part name="ds_obj-0.bin" crc="03ec3076"/>
+        <part name="ds_obj-1.bin" crc="e67a8fa4"/>
+        <part name="ds_obj-2.bin" crc="061cd763"/>
+        <part name="ds_obj-3.bin" crc="63225a09"/>
+        <part name="ds1_o4.bin" crc="a6246fcb"/>
+        <part repeat="0x70000"> FF</part>
+        <!-- JTFRAME_PROM_START -->
+        <!-- mcu - starts at 0x690000 - length 0x1000 (12 bits) -->
+        <part name="cus64-64a1.mcu" crc="ffb5c0bd"/>
+        <!-- Total 0x691000 bytes - 6724 kBytes -->
+    </rom>
+    <rom index="17" zip="jtbeta.zip" md5="None" asm_md5="71035230a15ff988e5823bc00a8efc50">
+        <part name="beta.bin" crc="f1b63018"/>
+    </rom>
+    <nvram index="2" size="63552"/>
+    <!-- Vertical game -->
+    <rom index="1">
+        <part>01</part>
+    </rom>
+    <switches page_id="1" page_name="Switches" base="16" default="ff">
+        <!-- DIPSW -->
+        <dip name="Service Mode" bits="0" ids="On,Off"/>
+        <dip name="3rd life 1/7" bits="1" ids="Yes,No"/>
+        <dip name="3rd life 2/7" bits="2" ids="Yes,No"/>
+        <dip name="3rd life 3/7" bits="3" ids="No,Yes"/>
+        <dip name="3rd life 4/7" bits="4" ids="Yes,No"/>
+        <dip name="3rd life 5/7" bits="5" ids="No,Yes"/>
+        <dip name="3rd life 6/7" bits="6" ids="No,Yes"/>
+        <dip name="3rd life 7/7" bits="7" ids="Yes,No"/>
+        <dip name="*Sound fix" ids="On,Off" bits="8"/>
+    </switches>
+    <buttons names="button 1,button 2,-,Start,Coin,Core credits" default="A,B,Start,Select,-" count="2"/>
+</misterromdescription>

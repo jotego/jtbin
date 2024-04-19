@@ -20,7 +20,7 @@
 -->
 
 <misterromdescription>
-    <about author="jotego" webpage="https://patreon.com/jotego" source="https://github.com/jotego" twitter="@topapate"/>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
     <name>Legendary Wings (US set 2)</name>
     <setname>lwings2</setname>
     <rbf>jtsectnz</rbf>
@@ -31,7 +31,6 @@
     <joystick>8</joystick>
     <rotation>vertical (cw)</rotation>
     <region>World</region>
-    <mraauthor>jotego</mraauthor>
     <rom index="0" zip="lwings2.zip|lwings.zip" md5="None" asm_md5="d2f286876a761eb44bc263bdc6b56a47">
         <part>
             01 00 00 00 00 00 00 00

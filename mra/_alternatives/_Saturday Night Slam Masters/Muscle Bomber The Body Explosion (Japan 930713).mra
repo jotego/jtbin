@@ -20,7 +20,7 @@
 -->
 
 <misterromdescription>
-    <about author="jotego" webpage="https://patreon.com/jotego" source="https://github.com/jotego" twitter="@topapate"/>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
     <name>Muscle Bomber: The Body Explosion (Japan 930713)</name>
     <setname>mbomberj</setname>
     <rbf>jtcps15</rbf>
@@ -31,7 +31,6 @@
     <joystick>8</joystick>
     <rotation>horizontal</rotation>
     <region>World</region>
-    <mraauthor>jotego</mraauthor>
     <rom index="0" zip="mbomberj.zip|slammast.zip|qsound.zip" md5="None" asm_md5="56c6bded6b8144d83b003ead2952ddd9">
         <part>
             00 08 80 08 80 18 80 30

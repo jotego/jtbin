@@ -20,7 +20,7 @@
 -->
 
 <misterromdescription default="ff,ff">
-    <about author="jotego" webpage="https://patreon.com/jotego" source="https://github.com/jotego" twitter="@topapate"/>
+    <about author="jotego,atrac17" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
     <name>Dungeons &amp; Dragons: Tower of Doom (Euro 940113)</name>
     <setname>ddtodr1</setname>
     <rbf>jtcps2</rbf>
@@ -31,7 +31,6 @@
     <joystick>8</joystick>
     <rotation>horizontal</rotation>
     <region>World</region>
-    <mraauthor>jotego,atrac17</mraauthor>
     <rom index="0" zip="ddtodr1.zip|ddtod.zip|qsound.zip" md5="None" address="0x30000000" asm_md5="12cefe9c08ff0a86b8e9583f489fa312">
         <part>
             00 0A 80 0A 80 1A 80 4A

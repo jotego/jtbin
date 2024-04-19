@@ -20,7 +20,7 @@
 -->
 
 <misterromdescription>
-    <about author="jotego" webpage="https://patreon.com/jotego" source="https://github.com/jotego" twitter="@topapate"/>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
     <name>Saturday Night Slam Masters (USA 930713)</name>
     <setname>slammastu</setname>
     <rbf>jtcps15</rbf>
@@ -31,7 +31,6 @@
     <joystick>8</joystick>
     <rotation>horizontal</rotation>
     <region>World</region>
-    <mraauthor>jotego</mraauthor>
     <rom index="0" zip="slammastu.zip|slammast.zip|qsound.zip" md5="None" asm_md5="ce1b77141ec7606bd656100d9a41e0e2">
         <part>
             00 08 80 08 80 18 80 30

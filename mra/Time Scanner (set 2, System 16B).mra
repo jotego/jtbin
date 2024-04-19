@@ -20,7 +20,7 @@
 -->
 
 <misterromdescription>
-    <about author="jotego" webpage="https://patreon.com/jotego" source="https://github.com/jotego" twitter="@topapate"/>
+    <about author="jotego,atrac17" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
     <name>Time Scanner (set 2, System 16B)</name>
     <setname>timescan</setname>
     <rbf>jts16b</rbf>
@@ -31,7 +31,6 @@
     <joystick>5 (half8)</joystick>
     <rotation>vertical (ccw)</rotation>
     <region>World</region>
-    <mraauthor>jotego,atrac17</mraauthor>
     <rom index="0" zip="timescan.zip" md5="None" asm_md5="9096991c6f3aab9fe5a4fffc38d927be">
         <part>
             00 00 00 00 00 00 00 00

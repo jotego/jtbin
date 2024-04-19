@@ -20,7 +20,7 @@
 -->
 
 <misterromdescription>
-    <about author="jotego" webpage="https://patreon.com/jotego" source="https://github.com/jotego" twitter="@topapate"/>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
     <name>Arkanoid - Revenge of DOH (US)</name>
     <setname>arknoid2u</setname>
     <rbf>jtkiwi</rbf>
@@ -31,7 +31,6 @@
     <joystick/>
     <rotation>vertical (ccw)</rotation>
     <region>World</region>
-    <mraauthor>jotego</mraauthor>
     <rom index="0" zip="arknoid2u.zip|arknoid2.zip" md5="None" asm_md5="1e0d1ed4a597debaf1cdf47d06c82848">
         <!-- bit 0 = MCU
              bit 1 = color PROM

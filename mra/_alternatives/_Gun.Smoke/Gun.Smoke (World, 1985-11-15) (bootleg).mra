@@ -20,7 +20,7 @@
 -->
 
 <misterromdescription>
-    <about author="jotego" webpage="https://patreon.com/jotego" source="https://github.com/jotego" twitter="@topapate"/>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
     <name>Gun.Smoke (World, 1985-11-15) (bootleg)</name>
     <setname>gunsmokeb</setname>
     <rbf>jtgunsmk</rbf>
@@ -31,7 +31,6 @@
     <joystick>8</joystick>
     <rotation>vertical (ccw)</rotation>
     <region>World</region>
-    <mraauthor>jotego</mraauthor>
     <rom index="0" zip="gunsmokeb.zip|gunsmoke.zip" md5="None" asm_md5="c481890af1aca0095e6bc7eae10af4ea">
         <!-- maincpu - starts at 0x0 - length 0x18000 (17 bits) -->
         <part name="3.ic85" crc="ae6f4b75"/>

@@ -20,7 +20,7 @@
 -->
 
 <misterromdescription>
-    <about author="jotego" webpage="https://patreon.com/jotego" source="https://github.com/jotego" twitter="@topapate"/>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
     <name>Black Tiger</name>
     <setname>blktiger</setname>
     <rbf>jtbtiger</rbf>
@@ -31,7 +31,6 @@
     <joystick>8</joystick>
     <rotation>horizontal</rotation>
     <region>World</region>
-    <mraauthor>jotego</mraauthor>
     <rom index="0" zip="blktiger.zip" md5="None" asm_md5="2d7440c40e52cb34ad47fbc0820bbcb6">
         <!-- maincpu - starts at 0x0 - length 0x48000 (19 bits) -->
         <part name="bdu-02a.6e" crc="7bef96e8"/>

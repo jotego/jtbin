@@ -20,7 +20,7 @@
 -->
 
 <misterromdescription>
-    <about author="jotego" webpage="https://patreon.com/jotego" source="https://github.com/jotego" twitter="@topapate"/>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
     <name>Tatakai no Banka (Japan)</name>
     <setname>trojanj</setname>
     <rbf>jttrojan</rbf>
@@ -31,7 +31,6 @@
     <joystick>8</joystick>
     <rotation>horizontal</rotation>
     <region>World</region>
-    <mraauthor>jotego</mraauthor>
     <rom index="0" zip="trojanj.zip|trojan.zip" md5="None" asm_md5="c99b24635bc080b30861f06d9cba45b6">
         <part>
             02 00 00 00 00 00 00 00

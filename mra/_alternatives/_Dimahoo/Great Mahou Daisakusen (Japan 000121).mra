@@ -20,7 +20,7 @@
 -->
 
 <misterromdescription default="ff,ff">
-    <about author="jotego" webpage="https://patreon.com/jotego" source="https://github.com/jotego" twitter="@topapate"/>
+    <about author="jotego,atrac17" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
     <name>Great Mahou Daisakusen (Japan 000121)</name>
     <setname>gmahou</setname>
     <rbf>jtcps2</rbf>
@@ -31,7 +31,6 @@
     <joystick>8</joystick>
     <rotation>vertical (ccw)</rotation>
     <region>World</region>
-    <mraauthor>jotego,atrac17</mraauthor>
     <rom index="0" zip="gmahou.zip|dimahoo.zip|qsound.zip" md5="None" address="0x30000000" asm_md5="fbf2c537cbdb9de26f34c884a39afc56">
         <part>
             00 08 00 09 00 29 00 69

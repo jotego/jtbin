@@ -20,7 +20,7 @@
 -->
 
 <misterromdescription>
-    <about author="jotego" webpage="https://patreon.com/jotego" source="https://github.com/jotego" twitter="@topapate"/>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
     <name>Taisen Karate Dou (Japan VS version)</name>
     <setname>karatevs</setname>
     <rbf>jtkchamp</rbf>
@@ -31,7 +31,6 @@
     <joystick>4</joystick>
     <rotation>vertical (cw)</rotation>
     <region>World</region>
-    <mraauthor>jotego</mraauthor>
     <rom index="0" zip="karatevs.zip|kchamp.zip" md5="None" asm_md5="7bb5607f428ff08fb073e017b087747a">
         <!-- maincpu - starts at 0x0 - length 0x10000 (16 bits) -->
         <part name="br24.d13" crc="ea9cda49"/>

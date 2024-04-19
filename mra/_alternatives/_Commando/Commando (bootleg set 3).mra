@@ -20,7 +20,7 @@
 -->
 
 <misterromdescription>
-    <about author="jotego" webpage="https://patreon.com/jotego" source="https://github.com/jotego" twitter="@topapate"/>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
     <name>Commando (bootleg set 3)</name>
     <setname>commandob3</setname>
     <rbf>jtcommnd</rbf>
@@ -31,7 +31,6 @@
     <joystick>8</joystick>
     <rotation>vertical (ccw)</rotation>
     <region>World</region>
-    <mraauthor>jotego</mraauthor>
     <rom index="0" zip="commandob3.zip|commando.zip" md5="None" asm_md5="34d5dc4ee95a5d25046f02441f424af1">
         <!-- maincpu - starts at 0x0 - length 0xC000 (16 bits) -->
         <part name="b5.10n" crc="df8f4e9a"/>

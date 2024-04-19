@@ -20,7 +20,7 @@
 -->
 
 <misterromdescription>
-    <about author="jotego" webpage="https://patreon.com/jotego" source="https://github.com/jotego" twitter="@topapate"/>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
     <name>Double Dragon (US set 3)</name>
     <setname>ddragonub</setname>
     <rbf>jtdd</rbf>
@@ -31,7 +31,6 @@
     <joystick>8</joystick>
     <rotation>horizontal</rotation>
     <region>World</region>
-    <mraauthor>jotego</mraauthor>
     <rom index="0" zip="ddragonub.zip|ddragon.zip" md5="None" asm_md5="c56c079a914912eb1d3d9a04cbc6c425">
         <!-- maincpu - starts at 0x0 - length 0x28000 (18 bits) -->
         <part name="21a-2_4" crc="5cd67657"/>

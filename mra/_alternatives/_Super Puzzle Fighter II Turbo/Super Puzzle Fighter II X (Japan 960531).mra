@@ -20,7 +20,7 @@
 -->
 
 <misterromdescription default="ff,ff">
-    <about author="jotego" webpage="https://patreon.com/jotego" source="https://github.com/jotego" twitter="@topapate"/>
+    <about author="jotego,atrac17" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
     <name>Super Puzzle Fighter II X (Japan 960531)</name>
     <setname>spf2xj</setname>
     <rbf>jtcps2</rbf>
@@ -31,7 +31,6 @@
     <joystick>8</joystick>
     <rotation>horizontal</rotation>
     <region>World</region>
-    <mraauthor>jotego,atrac17</mraauthor>
     <rom index="0" zip="spf2xj.zip|spf2t.zip|qsound.zip" md5="None" address="0x30000000" asm_md5="88c1d220a0693a1126adfb418089afe6">
         <part>
             00 04 00 05 00 15 00 45

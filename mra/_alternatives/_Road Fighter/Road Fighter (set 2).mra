@@ -20,7 +20,7 @@
 -->
 
 <misterromdescription>
-    <about author="jotego" webpage="https://patreon.com/jotego" source="https://github.com/jotego" twitter="@topapate"/>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
     <name>Road Fighter (set 2)</name>
     <setname>roadf2</setname>
     <rbf>jtroadf</rbf>
@@ -31,7 +31,6 @@
     <joystick>8</joystick>
     <rotation>vertical (cw)</rotation>
     <region>World</region>
-    <mraauthor>jotego</mraauthor>
     <rom index="0" zip="roadf2.zip|roadf.zip" md5="None" asm_md5="6c292e9a66128e2de629be87dd0e4893">
         <!--  Header to identify the game -->
         <part>

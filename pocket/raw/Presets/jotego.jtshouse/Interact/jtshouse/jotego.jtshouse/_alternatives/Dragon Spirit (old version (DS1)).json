@@ -1,0 +1,189 @@
+{
+	"interact":{
+		"magic": "APF_VER_1",
+		"variables": [
+			{
+				"name": "Rotate screen",
+				"id": 0,
+				"type": "check",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfb000000",
+				"defaultval": 4,
+				"value": 4,
+				"mask": "0xFFFFFFFB"
+			},
+			{
+				"name": "Service Mode",
+				"id": 1,
+				"type": "check",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 0,
+				"value": 0,
+				"value_off": 1,
+				"mask": "0xFFFFFFFE"
+			},
+			{
+				"name": "Open 3rd Life (step1of7)",
+				"id": 2,
+				"type": "list",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 1,
+				"value": 0,
+				"mask": "0xFFFFFFFD",
+				"options": [
+					{
+						"name": "Yes (on)",
+						"value": "0x0"
+					},
+					{
+						"name": "No (off)",
+						"value": "0x2"
+					}
+				]
+			},
+			{
+				"name": "Open 3rd Life (step2of7)",
+				"id": 3,
+				"type": "list",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 1,
+				"value": 0,
+				"mask": "0xFFFFFFFB",
+				"options": [
+					{
+						"name": "Yes (on)",
+						"value": "0x0"
+					},
+					{
+						"name": "No (off)",
+						"value": "0x4"
+					}
+				]
+			},
+			{
+				"name": "Open 3rd Life (step3of7)",
+				"id": 4,
+				"type": "list",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 1,
+				"value": 0,
+				"mask": "0xFFFFFFF7",
+				"options": [
+					{
+						"name": "No (on)",
+						"value": "0x0"
+					},
+					{
+						"name": "Yes (off)",
+						"value": "0x8"
+					}
+				]
+			},
+			{
+				"name": "Open 3rd Life (step4of7)",
+				"id": 5,
+				"type": "list",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 1,
+				"value": 0,
+				"mask": "0xFFFFFFEF",
+				"options": [
+					{
+						"name": "Yes (on)",
+						"value": "0x0"
+					},
+					{
+						"name": "No (off)",
+						"value": "0x10"
+					}
+				]
+			},
+			{
+				"name": "Open 3rd Life (step5of7)",
+				"id": 6,
+				"type": "list",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 1,
+				"value": 0,
+				"mask": "0xFFFFFFDF",
+				"options": [
+					{
+						"name": "No (on)",
+						"value": "0x0"
+					},
+					{
+						"name": "Yes (off)",
+						"value": "0x20"
+					}
+				]
+			},
+			{
+				"name": "Open 3rd Life (step6of7)",
+				"id": 7,
+				"type": "list",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 1,
+				"value": 0,
+				"mask": "0xFFFFFFBF",
+				"options": [
+					{
+						"name": "No (on)",
+						"value": "0x0"
+					},
+					{
+						"name": "Yes (off)",
+						"value": "0x40"
+					}
+				]
+			},
+			{
+				"name": "Open 3rd Life (step7of7)",
+				"id": 8,
+				"type": "list",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 1,
+				"value": 0,
+				"mask": "0xFFFFFF7F",
+				"options": [
+					{
+						"name": "Yes (on)",
+						"value": "0x0"
+					},
+					{
+						"name": "No (off)",
+						"value": "0x80"
+					}
+				]
+			},
+			{
+				"name": "Default",
+				"id": 1015,
+				"type": "number_u32",
+				"enabled": false,
+				"persist": false,
+				"writeonly": true,
+				"address": "0xfa000000",
+				"defaultval": 255,
+				"value": 0
+			}
+		],
+		"messages": []
+	}
+}

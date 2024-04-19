@@ -20,7 +20,7 @@
 -->
 
 <misterromdescription default="ff,ff">
-    <about author="jotego" webpage="https://patreon.com/jotego" source="https://github.com/jotego" twitter="@topapate"/>
+    <about author="jotego,atrac17" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
     <name>Puzz Loop 2 (Japan 010226)</name>
     <setname>pzloop2j</setname>
     <rbf>jtcps2</rbf>
@@ -31,7 +31,6 @@
     <joystick>8</joystick>
     <rotation>horizontal</rotation>
     <region>World</region>
-    <mraauthor>jotego,atrac17</mraauthor>
     <rom index="0" zip="pzloop2j.zip|pzloop2.zip|qsound.zip" md5="None" address="0x30000000" asm_md5="2005f74ca24858fb5511c48a77c6ae5d">
         <part>
             00 08 80 08 80 18 80 58

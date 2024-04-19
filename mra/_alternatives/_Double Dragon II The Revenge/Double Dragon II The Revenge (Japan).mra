@@ -20,7 +20,7 @@
 -->
 
 <misterromdescription>
-    <about author="jotego" webpage="https://patreon.com/jotego" source="https://github.com/jotego" twitter="@topapate"/>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
     <name>Double Dragon II: The Revenge (Japan)</name>
     <setname>ddragon2j</setname>
     <rbf>jtdd2</rbf>
@@ -31,7 +31,6 @@
     <joystick>8</joystick>
     <rotation>horizontal</rotation>
     <region>World</region>
-    <mraauthor>jotego</mraauthor>
     <rom index="0" zip="ddragon2j.zip|ddragon2.zip" md5="None" asm_md5="0f61f9dbc5142f8d87940e87d4e8d50c">
         <!-- maincpu - starts at 0x0 - length 0x28000 (18 bits) -->
         <part name="26aa-0_j.ic52" crc="bfb4ee04"/>
@@ -47,8 +46,8 @@
         <part name="26j6-0.bin" crc="a84b2a29"/>
         <part name="26j7-0.bin" crc="bc6a48d5"/>
         <part repeat="0x10000"> FF</part>
-        <!-- JTFRAME_BA2_START -->
         <!-- CHAR_START -->
+        <!-- JTFRAME_BA2_START -->
         <!-- gfx1 - starts at 0x80000 - length 0x10000 (16 bits) -->
         <part name="26a8-0e.19" crc="4e80cd36"/>
         <!-- SCR_START -->

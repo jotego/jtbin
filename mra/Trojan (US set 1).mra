@@ -20,7 +20,7 @@
 -->
 
 <misterromdescription>
-    <about author="jotego" webpage="https://patreon.com/jotego" source="https://github.com/jotego" twitter="@topapate"/>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
     <name>Trojan (US set 1)</name>
     <setname>trojan</setname>
     <rbf>jttrojan</rbf>
@@ -31,7 +31,6 @@
     <joystick>8</joystick>
     <rotation>horizontal</rotation>
     <region>World</region>
-    <mraauthor>jotego</mraauthor>
     <rom index="0" zip="trojan.zip" md5="None" asm_md5="98cb05511d62d37c292c6c9b08d2c8e3">
         <part>
             02 00 00 00 00 00 00 00

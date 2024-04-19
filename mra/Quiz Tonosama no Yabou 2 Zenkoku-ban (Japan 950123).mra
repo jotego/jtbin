@@ -20,7 +20,7 @@
 -->
 
 <misterromdescription>
-    <about author="jotego" webpage="https://patreon.com/jotego" source="https://github.com/jotego" twitter="@topapate"/>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
     <name>Quiz Tonosama no Yabou 2: Zenkoku-ban (Japan 950123)</name>
     <setname>qtono2j</setname>
     <rbf>jtcps1</rbf>
@@ -31,7 +31,6 @@
     <joystick/>
     <rotation>horizontal</rotation>
     <region>World</region>
-    <mraauthor>jotego</mraauthor>
     <rom index="0" zip="qtono2j.zip" md5="None" asm_md5="1fc1cbaf01b7834908c9058afaaf4578">
         <part>
             00 04 40 04 40 05 FF FF

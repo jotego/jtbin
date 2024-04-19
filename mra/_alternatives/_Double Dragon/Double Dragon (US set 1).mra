@@ -20,7 +20,7 @@
 -->
 
 <misterromdescription>
-    <about author="jotego" webpage="https://patreon.com/jotego" source="https://github.com/jotego" twitter="@topapate"/>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
     <name>Double Dragon (US set 1)</name>
     <setname>ddragonu</setname>
     <rbf>jtdd</rbf>
@@ -31,7 +31,6 @@
     <joystick>8</joystick>
     <rotation>horizontal</rotation>
     <region>World</region>
-    <mraauthor>jotego</mraauthor>
     <rom index="0" zip="ddragonu.zip|ddragon.zip" md5="None" asm_md5="0d851cf215651c3324bedc071931d8e2">
         <!-- maincpu - starts at 0x0 - length 0x28000 (18 bits) -->
         <part name="21j-2-3.25" crc="5779705e"/>
@@ -62,8 +61,8 @@
             <part name="21j-9" crc="c6640aed" map="01"/>
             <part name="21j-j" crc="5fb42e7c" map="10"/>
         </interleave>
-        <!-- JTFRAME_BA3_START -->
         <!-- OBJ_START -->
+        <!-- JTFRAME_BA3_START -->
         <!-- gfx2 - starts at 0x98000 - length 0x80000 (19 bits) -->
         <interleave output="16">
             <part name="21j-a" crc="574face3" map="01"/>

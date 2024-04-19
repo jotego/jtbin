@@ -20,7 +20,7 @@
 -->
 
 <misterromdescription>
-    <about author="jotego" webpage="https://patreon.com/jotego" source="https://github.com/jotego" twitter="@topapate"/>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
     <name>Out Run (deluxe sitdown)</name>
     <setname>outrundx</setname>
     <rbf>jtoutrun</rbf>
@@ -31,7 +31,6 @@
     <joystick/>
     <rotation>horizontal</rotation>
     <region>World</region>
-    <mraauthor>jotego</mraauthor>
     <rom index="0" zip="outrundx.zip|outrun.zip" md5="None" asm_md5="05e3145e97e3f45032863161f9662a3d">
         <part>
             00 00 00 00 00 00 00 00

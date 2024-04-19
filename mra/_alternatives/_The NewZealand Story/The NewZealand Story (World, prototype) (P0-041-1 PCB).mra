@@ -20,7 +20,7 @@
 -->
 
 <misterromdescription>
-    <about author="jotego" webpage="https://patreon.com/jotego" source="https://github.com/jotego" twitter="@topapate"/>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
     <name>The NewZealand Story (World, prototype) (P0-041-1 PCB)</name>
     <setname>tnzsop</setname>
     <rbf>jtkiwi</rbf>
@@ -31,7 +31,6 @@
     <joystick>8</joystick>
     <rotation>horizontal</rotation>
     <region>World</region>
-    <mraauthor>jotego</mraauthor>
     <rom index="0" zip="tnzsop.zip|tnzs.zip" md5="None" asm_md5="8f0223d475a84ce98ccf5c8a0a3d0905">
         <!-- bit 0 = MCU
              bit 1 = color PROM

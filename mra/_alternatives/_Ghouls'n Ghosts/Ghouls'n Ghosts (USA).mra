@@ -20,7 +20,7 @@
 -->
 
 <misterromdescription>
-    <about author="jotego" webpage="https://patreon.com/jotego" source="https://github.com/jotego" twitter="@topapate"/>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
     <name>Ghouls&apos;n Ghosts (USA)</name>
     <setname>ghoulsu</setname>
     <rbf>jtcps1</rbf>
@@ -31,7 +31,6 @@
     <joystick>4</joystick>
     <rotation>horizontal</rotation>
     <region>World</region>
-    <mraauthor>jotego</mraauthor>
     <rom index="0" zip="ghoulsu.zip|ghouls.zip" md5="None" asm_md5="3dbf285eda000132f55e31ce9ae667da">
         <part>
             00 04 40 04 40 05 FF FF

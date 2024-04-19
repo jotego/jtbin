@@ -20,7 +20,7 @@
 -->
 
 <misterromdescription>
-    <about author="jotego" webpage="https://patreon.com/jotego" source="https://github.com/jotego" twitter="@topapate"/>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
     <name>Thunder Cross (set 3)</name>
     <setname>thunderxb</setname>
     <rbf>jtaliens</rbf>
@@ -31,7 +31,6 @@
     <joystick>8</joystick>
     <rotation>horizontal</rotation>
     <region>World</region>
-    <mraauthor>jotego</mraauthor>
     <rom index="0" zip="thunderxb.zip|thunderx.zip" md5="None" asm_md5="3c74200b62e7eb71d91b1f09046fb50d">
         <!--     bit   0 = GX878 (Gang Busters)
                  bits 2:1 = PCB config -> 0=Aliens, 1=Super Contra, 2=Thunder Cross -->

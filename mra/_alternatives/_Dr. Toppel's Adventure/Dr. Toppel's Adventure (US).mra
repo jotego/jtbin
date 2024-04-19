@@ -20,7 +20,7 @@
 -->
 
 <misterromdescription>
-    <about author="jotego" webpage="https://patreon.com/jotego" source="https://github.com/jotego" twitter="@topapate"/>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
     <name>Dr. Toppel&apos;s Adventure (US)</name>
     <setname>drtoppelu</setname>
     <rbf>jtkiwi</rbf>
@@ -31,7 +31,6 @@
     <joystick>8</joystick>
     <rotation>vertical (cw)</rotation>
     <region>World</region>
-    <mraauthor>jotego</mraauthor>
     <rom index="0" zip="drtoppelu.zip|drtoppel.zip" md5="None" asm_md5="65f40accaa9ec3b34296a31679ca898e">
         <!-- bit 0 = MCU
              bit 1 = color PROM

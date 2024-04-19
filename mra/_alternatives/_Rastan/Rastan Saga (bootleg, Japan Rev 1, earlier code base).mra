@@ -20,7 +20,7 @@
 -->
 
 <misterromdescription>
-    <about author="jotego" webpage="https://patreon.com/jotego" source="https://github.com/jotego" twitter="@topapate"/>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
     <name>Rastan Saga (bootleg, Japan Rev 1, earlier code base)</name>
     <setname>rastsagaabl</setname>
     <rbf>jtrastan</rbf>
@@ -31,7 +31,6 @@
     <joystick>8</joystick>
     <rotation>horizontal</rotation>
     <region>Japan</region>
-    <mraauthor>jotego</mraauthor>
     <rom index="0" zip="rastsagaabl.zip|rastan.zip" md5="None" asm_md5="b58fd892743e1bde971615553cf66349">
         <!-- maincpu - starts at 0x0 - length 0x60000 (19 bits) -->
         <interleave output="16">

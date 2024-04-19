@@ -20,7 +20,7 @@
 -->
 
 <misterromdescription>
-    <about author="jotego" webpage="https://patreon.com/jotego" source="https://github.com/jotego" twitter="@topapate"/>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
     <name>Street Fighter II&apos;: Champion Edition (Accelerator!, bootleg, set 1)</name>
     <setname>sf2acc</setname>
     <rbf>jtcps1</rbf>
@@ -31,7 +31,6 @@
     <joystick>8</joystick>
     <rotation>horizontal</rotation>
     <region>World</region>
-    <mraauthor>jotego</mraauthor>
     <rom index="0" zip="sf2acc.zip|sf2ce.zip" md5="None" asm_md5="73b0113f74ede17f04a33f60503b62a4">
         <part>
             00 05 40 05 40 06 FF FF

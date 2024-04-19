@@ -20,7 +20,7 @@
 -->
 
 <misterromdescription>
-    <about author="jotego" webpage="https://patreon.com/jotego" source="https://github.com/jotego" twitter="@topapate"/>
+    <about author="jotego,atrac17" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
     <name>Alien Syndrome (Set 2, World, S16A) [FD1089A 317-0033]</name>
     <setname>aliensyn2</setname>
     <rbf>jts16</rbf>
@@ -31,7 +31,6 @@
     <joystick>8</joystick>
     <rotation>horizontal</rotation>
     <region>World</region>
-    <mraauthor>jotego,atrac17</mraauthor>
     <rom index="0" zip="aliensyn2.zip|aliensyn.zip" md5="None" asm_md5="3fb70dea14c612d0a040900dfd3a15af">
         <part>
             00 00 00 00 00 00 00 00

@@ -20,7 +20,7 @@
 -->
 
 <misterromdescription>
-    <about author="jotego" webpage="https://patreon.com/jotego" source="https://github.com/jotego" twitter="@topapate"/>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
     <name>Nekketsu Kouha Kunio-kun (Japan bootleg)</name>
     <setname>kuniokunb</setname>
     <rbf>jtkunio</rbf>
@@ -31,7 +31,6 @@
     <joystick>8</joystick>
     <rotation>horizontal</rotation>
     <region>World</region>
-    <mraauthor>jotego</mraauthor>
     <rom index="0" zip="kuniokunb.zip|renegade.zip" md5="None" asm_md5="528dc7d21a8640bc053a980bd8d253f8">
         <!-- maincpu - starts at 0x0 - length 0x10000 (16 bits) -->
         <part name="ta18-11.bin" crc="f240f5cd"/>

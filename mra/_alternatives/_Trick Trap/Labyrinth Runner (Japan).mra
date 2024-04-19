@@ -20,7 +20,7 @@
 -->
 
 <misterromdescription>
-    <about author="jotego" webpage="https://patreon.com/jotego" source="https://github.com/jotego" twitter="@topapate"/>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
     <name>Labyrinth Runner (Japan)</name>
     <setname>labyrunr</setname>
     <rbf>jtlabrun</rbf>
@@ -31,7 +31,6 @@
     <joystick>8</joystick>
     <rotation>vertical (cw)</rotation>
     <region>World</region>
-    <mraauthor>jotego</mraauthor>
     <rom index="0" zip="labyrunr.zip|tricktrp.zip" md5="None" asm_md5="7432285ff67a0ccdda24a8b3857c73ea">
         <!-- maincpu - starts at 0x0 - length 0x20000 (17 bits) -->
         <part name="771j04.10f" crc="354a41d0"/>

@@ -20,7 +20,7 @@
 -->
 
 <misterromdescription>
-    <about author="jotego" webpage="https://patreon.com/jotego" source="https://github.com/jotego" twitter="@topapate"/>
+    <about author="jotego,atrac17" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
     <name>Passing Shot (World, 4 Players) (FD1094 317-0074)</name>
     <setname>passshta</setname>
     <rbf>jts16b</rbf>
@@ -31,7 +31,6 @@
     <joystick>8</joystick>
     <rotation>vertical (ccw)</rotation>
     <region>World</region>
-    <mraauthor>jotego,atrac17</mraauthor>
     <rom index="0" zip="passshta.zip|passsht.zip" md5="None" asm_md5="322e32482d647b21e2f971f8c3ec660d">
         <part>
             00 00 00 00 00 00 00 00
@@ -81,8 +80,8 @@
             <part name="opr-11867.b7" crc="81e49697" map="10"/>
         </interleave>
         <part repeat="0x1A0000"> FF</part>
-        <!-- MCU_START -->
         <!-- JTFRAME_PROM_START -->
+        <!-- MCU_START -->
         <!-- mcu - starts at 0x440000 - length 0x2000 (13 bits) -->
         <part repeat="0x1000"> FF</part>
         <part repeat="0x1000"> FF</part>

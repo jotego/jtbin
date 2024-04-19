@@ -20,7 +20,7 @@
 -->
 
 <misterromdescription>
-    <about author="jotego" webpage="https://patreon.com/jotego" source="https://github.com/jotego" twitter="@topapate"/>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
     <name>Boot Camp (set 2)</name>
     <setname>bootcampa</setname>
     <rbf>jtcomsc</rbf>
@@ -31,7 +31,6 @@
     <joystick/>
     <rotation>horizontal</rotation>
     <region>World</region>
-    <mraauthor>jotego</mraauthor>
     <rom index="0" zip="bootcampa.zip|combatsc.zip" md5="None" asm_md5="baaa45c8f5484ad876680676b0dc8bb1">
         <!-- maincpu - starts at 0x0 - length 0x30000 (18 bits) -->
         <part name="611g02.rom" crc="9ba05327"/>

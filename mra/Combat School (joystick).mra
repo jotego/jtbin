@@ -20,7 +20,7 @@
 -->
 
 <misterromdescription>
-    <about author="jotego" webpage="https://patreon.com/jotego" source="https://github.com/jotego" twitter="@topapate"/>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
     <name>Combat School (joystick)</name>
     <setname>combatsc</setname>
     <rbf>jtcomsc</rbf>
@@ -31,7 +31,6 @@
     <joystick>8</joystick>
     <rotation>horizontal</rotation>
     <region>World</region>
-    <mraauthor>jotego</mraauthor>
     <rom index="0" zip="combatsc.zip" md5="None" asm_md5="632210364566c4af623d44a003eb95a4">
         <!-- maincpu - starts at 0x0 - length 0x30000 (18 bits) -->
         <part name="611g02.rom" crc="9ba05327"/>

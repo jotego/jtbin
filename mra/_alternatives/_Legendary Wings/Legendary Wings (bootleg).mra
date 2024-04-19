@@ -20,7 +20,7 @@
 -->
 
 <misterromdescription>
-    <about author="jotego" webpage="https://patreon.com/jotego" source="https://github.com/jotego" twitter="@topapate"/>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
     <name>Legendary Wings (bootleg)</name>
     <setname>lwingsb</setname>
     <rbf>jtsectnz</rbf>
@@ -31,7 +31,6 @@
     <joystick>8</joystick>
     <rotation>vertical (cw)</rotation>
     <region>World</region>
-    <mraauthor>jotego</mraauthor>
     <rom index="0" zip="lwingsb.zip|lwings.zip" md5="None" asm_md5="610e576e2f92beccf822ce37666d20d2">
         <part>
             01 00 00 00 00 00 00 00

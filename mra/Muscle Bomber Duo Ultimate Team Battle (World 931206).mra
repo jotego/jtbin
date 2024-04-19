@@ -20,7 +20,7 @@
 -->
 
 <misterromdescription>
-    <about author="jotego" webpage="https://patreon.com/jotego" source="https://github.com/jotego" twitter="@topapate"/>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
     <name>Muscle Bomber Duo: Ultimate Team Battle (World 931206)</name>
     <setname>mbombrd</setname>
     <rbf>jtcps15</rbf>
@@ -31,7 +31,6 @@
     <joystick>8</joystick>
     <rotation>horizontal</rotation>
     <region>World</region>
-    <mraauthor>jotego</mraauthor>
     <rom index="0" zip="mbombrd.zip|qsound.zip" md5="None" asm_md5="b2222a07181b228d155a47c93e3cb110">
         <part>
             00 08 80 08 80 18 80 30

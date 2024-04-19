@@ -20,7 +20,7 @@
 -->
 
 <misterromdescription>
-    <about author="jotego" webpage="https://patreon.com/jotego" source="https://github.com/jotego" twitter="@topapate"/>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
     <name>Double Dragon II: The Revenge (US, bootleg)</name>
     <setname>ddragon2b</setname>
     <rbf>jtdd2</rbf>
@@ -31,7 +31,6 @@
     <joystick>8</joystick>
     <rotation>horizontal</rotation>
     <region>World</region>
-    <mraauthor>jotego</mraauthor>
     <rom index="0" zip="ddragon2b.zip|ddragon2.zip" md5="None" asm_md5="e3726956c80d97b424f254c127e85b7c">
         <!-- maincpu - starts at 0x0 - length 0x28000 (18 bits) -->
         <part name="4" crc="78750947"/>
@@ -49,8 +48,8 @@
         <part name="8" crc="151b22b4"/>
         <part name="10" crc="ae2fc028"/>
         <part repeat="0x10000"> FF</part>
-        <!-- JTFRAME_BA2_START -->
         <!-- CHAR_START -->
+        <!-- JTFRAME_BA2_START -->
         <!-- gfx1 - starts at 0x80000 - length 0x10000 (16 bits) -->
         <part name="1" crc="3ad1049c"/>
         <!-- SCR_START -->
@@ -64,8 +63,8 @@
             <part name="12" crc="6896e2f7" map="10"/>
         </interleave>
         <part repeat="0x40000"> FF</part>
-        <!-- JTFRAME_BA3_START -->
         <!-- OBJ_START -->
+        <!-- JTFRAME_BA3_START -->
         <!-- gfx2 - starts at 0x110000 - length 0x100000 (20 bits) -->
         <interleave output="16">
             <part name="27" crc="fe42df5d" map="01"/>

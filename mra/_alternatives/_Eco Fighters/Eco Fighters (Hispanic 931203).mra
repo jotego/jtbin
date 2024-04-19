@@ -20,7 +20,7 @@
 -->
 
 <misterromdescription>
-    <about author="jotego" webpage="https://patreon.com/jotego" source="https://github.com/jotego" twitter="@topapate"/>
+    <about author="jotego,atrac17" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
     <name>Eco Fighters (Hispanic 931203)</name>
     <setname>ecofghtrh</setname>
     <rbf>jtcps2</rbf>
@@ -31,7 +31,6 @@
     <joystick>8</joystick>
     <rotation>horizontal</rotation>
     <region>World</region>
-    <mraauthor>jotego,atrac17</mraauthor>
     <rom index="0" zip="ecofghtrh.zip|ecofghtr.zip|qsound.zip" md5="None" address="0x30000000" asm_md5="661ad32e45a124e5e81f73f15095d164">
         <part>
             00 08 80 08 80 18 80 48

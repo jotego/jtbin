@@ -20,7 +20,7 @@
 -->
 
 <misterromdescription>
-    <about author="jotego" webpage="https://patreon.com/jotego" source="https://github.com/jotego" twitter="@topapate"/>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
     <name>Karate Dou (Arfyc bootleg)</name>
     <setname>karateda</setname>
     <rbf>jtkchamp</rbf>
@@ -31,7 +31,6 @@
     <joystick>4</joystick>
     <rotation>vertical (cw)</rotation>
     <region>World</region>
-    <mraauthor>jotego</mraauthor>
     <rom index="0" zip="karateda.zip|kchamp.zip" md5="None" asm_md5="278b40c5a7797bdfd700d59cab41adab">
         <!-- maincpu - starts at 0x0 - length 0x10000 (16 bits) -->
         <part name="k-14_2764.d1" crc="44e60aa0"/>

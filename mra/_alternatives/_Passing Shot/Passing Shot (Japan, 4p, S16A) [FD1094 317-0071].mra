@@ -20,7 +20,7 @@
 -->
 
 <misterromdescription>
-    <about author="jotego" webpage="https://patreon.com/jotego" source="https://github.com/jotego" twitter="@topapate"/>
+    <about author="jotego,atrac17" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
     <name>Passing Shot (Japan, 4p, S16A) [FD1094 317-0071]</name>
     <setname>passsht16a</setname>
     <rbf>jts16</rbf>
@@ -31,7 +31,6 @@
     <joystick>8</joystick>
     <rotation>vertical (ccw)</rotation>
     <region>World</region>
-    <mraauthor>jotego,atrac17</mraauthor>
     <rom index="0" zip="passsht16a.zip|passsht.zip" md5="None" asm_md5="d05f1d8fcc42dc8c87bb6b4467e6adf5">
         <part>
             00 00 00 00 00 00 00 00

@@ -20,7 +20,7 @@
 -->
 
 <misterromdescription>
-    <about author="jotego" webpage="https://patreon.com/jotego" source="https://github.com/jotego" twitter="@topapate"/>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
     <name>Block Block (World 911106 Joystick)</name>
     <setname>blockr1</setname>
     <rbf>jtpang</rbf>
@@ -31,7 +31,6 @@
     <joystick>2</joystick>
     <rotation>vertical (ccw)</rotation>
     <region>World</region>
-    <mraauthor>jotego</mraauthor>
     <rom index="0" zip="blockr1.zip|block.zip" md5="None" asm_md5="e09a193172ef3ee6478eaa3c1c199477">
         <part>
             02 46 13 57 64 20 75 31

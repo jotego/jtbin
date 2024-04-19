@@ -20,7 +20,7 @@
 -->
 
 <misterromdescription default="ff,ff">
-    <about author="jotego" webpage="https://patreon.com/jotego" source="https://github.com/jotego" twitter="@topapate"/>
+    <about author="jotego,atrac17" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
     <name>Giga Wing (Japan 990223 Phoenix Edition) (bootleg)</name>
     <setname>gigawingjd</setname>
     <rbf>jtcps2</rbf>
@@ -31,7 +31,6 @@
     <joystick>8</joystick>
     <rotation>horizontal</rotation>
     <region>World</region>
-    <mraauthor>jotego,atrac17</mraauthor>
     <rom index="0" zip="gigawingjd.zip|gigawing.zip|qsound.zip" md5="None" address="0x30000000" asm_md5="35a91a708bec512a9687bf1455af5e1f">
         <part>
             00 06 80 06 80 26 80 66

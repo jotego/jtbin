@@ -20,7 +20,7 @@
 -->
 
 <misterromdescription>
-    <about author="jotego" webpage="https://patreon.com/jotego" source="https://github.com/jotego" twitter="@topapate"/>
+    <about author="jotego,atrac17" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
     <name>Wrestle War (set 3, World) (8751 317-0103)</name>
     <setname>wrestwar</setname>
     <rbf>jts16b</rbf>
@@ -31,7 +31,6 @@
     <joystick>8</joystick>
     <rotation>vertical (ccw)</rotation>
     <region>World</region>
-    <mraauthor>jotego,atrac17</mraauthor>
     <rom index="0" zip="wrestwar.zip" md5="None" asm_md5="2b5f95a8e696e54ed21149606b6ae9b0">
         <part>
             00 00 00 00 00 00 00 00
@@ -91,8 +90,8 @@
             <part name="opr-12162.b11" crc="fa06fd24" map="10"/>
         </interleave>
         <part repeat="0xA0000"> FF</part>
-        <!-- MCU_START -->
         <!-- JTFRAME_PROM_START -->
+        <!-- MCU_START -->
         <!-- mcu - starts at 0x440000 - length 0x2000 (13 bits) -->
         <part name="317-0103.c2" crc="aa0710f5"/>
         <part repeat="0x1000"> FF</part>

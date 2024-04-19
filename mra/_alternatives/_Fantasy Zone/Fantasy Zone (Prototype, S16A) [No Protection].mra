@@ -20,7 +20,7 @@
 -->
 
 <misterromdescription>
-    <about author="jotego" webpage="https://patreon.com/jotego" source="https://github.com/jotego" twitter="@topapate"/>
+    <about author="jotego,atrac17" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
     <name>Fantasy Zone (Prototype, S16A) [No Protection]</name>
     <setname>fantzonepr</setname>
     <rbf>jts16</rbf>
@@ -31,7 +31,6 @@
     <joystick>8</joystick>
     <rotation>horizontal</rotation>
     <region>World</region>
-    <mraauthor>jotego,atrac17</mraauthor>
     <rom index="0" zip="fantzonepr.zip|fantzone.zip" md5="None" asm_md5="7807c86b66bdb0be10ed499d3317946b">
         <part>
             00 00 00 00 00 00 00 00
@@ -85,8 +84,8 @@
             <part name="ic24" crc="68807b49" map="10"/>
         </interleave>
         <part repeat="0x30000"> FF</part>
-        <!-- JTFRAME_PROM_START -->
         <!-- MCU_START -->
+        <!-- JTFRAME_PROM_START -->
         <!-- mcu - starts at 0x180000 - length 0x2000 (13 bits) -->
         <part name="8751.bin" crc="c0d325e6"/>
         <part repeat="0x1000"> FF</part>

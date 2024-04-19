@@ -20,7 +20,7 @@
 -->
 
 <misterromdescription>
-    <about author="jotego" webpage="https://patreon.com/jotego" source="https://github.com/jotego" twitter="@topapate"/>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
     <name>1943: The Battle of Midway (US, Rev C)</name>
     <setname>1943u</setname>
     <rbf>jt1943</rbf>
@@ -31,7 +31,6 @@
     <joystick>8</joystick>
     <rotation>vertical (ccw)</rotation>
     <region>World</region>
-    <mraauthor>jotego</mraauthor>
     <rom index="0" zip="1943u.zip|1943.zip" md5="None" asm_md5="523a3bca144d71501cca1ad8d6dd07fc">
         <!-- maincpu - starts at 0x0 - length 0x28000 (18 bits) -->
         <part name="bmu01c.12d" crc="c686cc5c"/>
@@ -54,8 +53,8 @@
         <interleave output="16">
             <part name="bm23.8k" crc="a52aecbd" map="12"/>
         </interleave>
-        <!-- JTFRAME_BA2_START -->
         <!-- SCR1_START -->
+        <!-- JTFRAME_BA2_START -->
         <!-- gfx2 - starts at 0x48000 - length 0x40000 (18 bits) -->
         <interleave output="16">
             <part name="bm19.10j" crc="868ababc" map="01"/>

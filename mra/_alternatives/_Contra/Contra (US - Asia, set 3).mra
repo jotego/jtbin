@@ -20,7 +20,7 @@
 -->
 
 <misterromdescription>
-    <about author="jotego" webpage="https://patreon.com/jotego" source="https://github.com/jotego" twitter="@topapate"/>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
     <name>Contra (US - Asia, set 3)</name>
     <setname>contrae</setname>
     <rbf>jtcontra</rbf>
@@ -31,7 +31,6 @@
     <joystick>8</joystick>
     <rotation>vertical (cw)</rotation>
     <region>Asia</region>
-    <mraauthor>jotego</mraauthor>
     <rom index="0" zip="contrae.zip|contra.zip" md5="None" asm_md5="75c2b0f6b68a4c35d293d9b0199964fc">
         <!-- maincpu - starts at 0x0 - length 0x20000 (17 bits) -->
         <part name="633_e02.17a" crc="9d5ebe66"/>

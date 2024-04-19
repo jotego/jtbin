@@ -20,7 +20,7 @@
 -->
 
 <misterromdescription>
-    <about author="jotego" webpage="https://patreon.com/jotego" source="https://github.com/jotego" twitter="@topapate"/>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
     <name>Karate Champ (US)</name>
     <setname>kchamp</setname>
     <rbf>jtkchamp</rbf>
@@ -31,7 +31,6 @@
     <joystick>4</joystick>
     <rotation>vertical (cw)</rotation>
     <region>World</region>
-    <mraauthor>jotego</mraauthor>
     <rom index="0" zip="kchamp.zip" md5="None" asm_md5="efdeaf8ffe3311b115ffe8f9923c8c4f">
         <!-- maincpu - starts at 0x0 - length 0x10000 (16 bits) -->
         <part name="b014.bin" crc="0000d1a0"/>

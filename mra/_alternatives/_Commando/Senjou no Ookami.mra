@@ -20,7 +20,7 @@
 -->
 
 <misterromdescription>
-    <about author="jotego" webpage="https://patreon.com/jotego" source="https://github.com/jotego" twitter="@topapate"/>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
     <name>Senjou no Ookami</name>
     <setname>commandoj</setname>
     <rbf>jtcommnd</rbf>
@@ -31,7 +31,6 @@
     <joystick>8</joystick>
     <rotation>vertical (ccw)</rotation>
     <region>World</region>
-    <mraauthor>jotego</mraauthor>
     <rom index="0" zip="commandoj.zip|commando.zip" md5="None" asm_md5="f858e0e3d9eddd3eab6fd25a8dbc6839">
         <!-- maincpu - starts at 0x0 - length 0xC000 (16 bits) -->
         <part name="so04.9m" crc="d3f2bfb3"/>

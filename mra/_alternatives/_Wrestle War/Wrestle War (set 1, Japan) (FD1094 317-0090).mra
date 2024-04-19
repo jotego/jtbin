@@ -20,7 +20,7 @@
 -->
 
 <misterromdescription>
-    <about author="jotego" webpage="https://patreon.com/jotego" source="https://github.com/jotego" twitter="@topapate"/>
+    <about author="jotego,atrac17" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
     <name>Wrestle War (set 1, Japan) (FD1094 317-0090)</name>
     <setname>wrestwar1</setname>
     <rbf>jts16b</rbf>
@@ -31,7 +31,6 @@
     <joystick>8</joystick>
     <rotation>vertical (ccw)</rotation>
     <region>Japan</region>
-    <mraauthor>jotego,atrac17</mraauthor>
     <rom index="0" zip="wrestwar1.zip|wrestwar.zip" md5="None" asm_md5="f6e802ebc98aa533c4ee13d9786b3860">
         <part>
             00 00 00 00 00 00 00 00

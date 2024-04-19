@@ -20,7 +20,7 @@
 -->
 
 <misterromdescription>
-    <about author="jotego" webpage="https://patreon.com/jotego" source="https://github.com/jotego" twitter="@topapate"/>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
     <name>Shao-lin&apos;s Road (set 1)</name>
     <setname>shaolins</setname>
     <rbf>jtkicker</rbf>
@@ -31,7 +31,6 @@
     <joystick>4</joystick>
     <rotation>vertical (cw)</rotation>
     <region>World</region>
-    <mraauthor>jotego</mraauthor>
     <rom index="0" zip="shaolins.zip|kicker.zip" md5="None" asm_md5="298df92593d7f8ee9d16710345fd47a2">
         <!-- maincpu - starts at 0x0 - length 0x10000 (16 bits) -->
         <part repeat="0x6000"> FF</part>
@@ -57,8 +56,8 @@
             <part name="477j01.h14" crc="61bbf797" map="01"/>
             <part name="477j02.h15" crc="b94e645b" map="10"/>
         </interleave>
-        <!-- JTFRAME_PROM_START -->
         <!-- PCM_START -->
+        <!-- JTFRAME_PROM_START -->
         <!-- proms - starts at 0x1E000 - length 0x500 (11 bits) -->
         <part name="477j10.a12" crc="b09db4b4"/>
         <part name="477j11.a13" crc="270a2bf3"/>

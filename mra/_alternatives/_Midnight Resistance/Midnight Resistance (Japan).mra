@@ -20,7 +20,7 @@
 -->
 
 <misterromdescription>
-    <about author="jotego" webpage="https://patreon.com/jotego" source="https://github.com/jotego" twitter="@topapate"/>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
     <name>Midnight Resistance (Japan)</name>
     <setname>midresj</setname>
     <rbf>jtmidres</rbf>
@@ -31,7 +31,6 @@
     <joystick>8</joystick>
     <rotation>horizontal</rotation>
     <region>World</region>
-    <mraauthor>jotego</mraauthor>
     <rom index="0" zip="midresj.zip|midres.zip" md5="None" asm_md5="2ee0034ed515c9f076045879eb7a7fd9">
         <!-- maincpu - starts at 0x0 - length 0x80000 (19 bits) -->
         <interleave output="16">
@@ -82,8 +81,8 @@
         <!-- mcu - starts at 0x210000 -->
         <!-- sub - starts at 0x210000 - length 0x18000 (17 bits) -->
         <part repeat="0x18000"> FF</part>
-        <!-- JTFRAME_PROM_START -->
         <!-- PROM_START -->
+        <!-- JTFRAME_PROM_START -->
         <!-- proms - starts at 0x228000 - length 0x100 (8 bits) -->
         <part name="7114.prm" crc="eb539ffb"/>
         <!-- Total 0x228100 bytes - 2208 kBytes -->

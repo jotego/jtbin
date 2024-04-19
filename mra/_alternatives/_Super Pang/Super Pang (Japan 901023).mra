@@ -20,7 +20,7 @@
 -->
 
 <misterromdescription>
-    <about author="jotego" webpage="https://patreon.com/jotego" source="https://github.com/jotego" twitter="@topapate"/>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
     <name>Super Pang (Japan 901023)</name>
     <setname>spangj</setname>
     <rbf>jtpang</rbf>
@@ -31,7 +31,6 @@
     <joystick>4</joystick>
     <rotation>horizontal</rotation>
     <region>World</region>
-    <mraauthor>jotego</mraauthor>
     <rom index="0" zip="spangj.zip|spang.zip" md5="None" asm_md5="5823bbd86a21da56f948655b6ab31dd4">
         <part>
             45 12 36 70 67 01 23 45

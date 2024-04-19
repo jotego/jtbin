@@ -20,7 +20,7 @@
 -->
 
 <misterromdescription>
-    <about author="jotego" webpage="https://patreon.com/jotego" source="https://github.com/jotego" twitter="@topapate"/>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
     <name>Double Dragon (World set 1)</name>
     <setname>ddragonw</setname>
     <rbf>jtdd</rbf>
@@ -31,7 +31,6 @@
     <joystick>8</joystick>
     <rotation>horizontal</rotation>
     <region>World</region>
-    <mraauthor>jotego</mraauthor>
     <rom index="0" zip="ddragonw.zip|ddragon.zip" md5="None" asm_md5="6bab0e99f8048e411fd7e1cdc97c73e4">
         <!-- maincpu - starts at 0x0 - length 0x28000 (18 bits) -->
         <part name="21j-2-3.25" crc="5779705e"/>

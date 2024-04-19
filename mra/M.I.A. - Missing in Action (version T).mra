@@ -20,7 +20,7 @@
 -->
 
 <misterromdescription>
-    <about author="jotego" webpage="https://patreon.com/jotego" source="https://github.com/jotego" twitter="@topapate"/>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
     <name>M.I.A. - Missing in Action (version T)</name>
     <setname>mia</setname>
     <rbf>jttmnt</rbf>
@@ -31,7 +31,6 @@
     <joystick>8</joystick>
     <rotation>horizontal</rotation>
     <region>World</region>
-    <mraauthor>jotego</mraauthor>
     <rom index="0" zip="mia.zip" md5="None" asm_md5="5f769f3867971538eb3402f0fbdf9b88">
         <!--     byte 0: 00 = TMNT
             01 = MIA
@@ -79,9 +78,6 @@
         <part name="808a18.f16" crc="eb95aede"/>
         <part name="808a18.f16" crc="eb95aede"/>
         <!-- Total 0x428200 bytes - 4256 kBytes -->
-    </rom>
-    <rom index="17" zip="jtbeta.zip" md5="None" asm_md5="71035230a15ff988e5823bc00a8efc50">
-        <part name="beta.bin" crc="f1b63018"/>
     </rom>
     <rom index="1">
         <part>00</part>

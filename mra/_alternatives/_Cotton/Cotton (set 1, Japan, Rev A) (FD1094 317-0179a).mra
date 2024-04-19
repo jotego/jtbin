@@ -20,7 +20,7 @@
 -->
 
 <misterromdescription>
-    <about author="jotego" webpage="https://patreon.com/jotego" source="https://github.com/jotego" twitter="@topapate"/>
+    <about author="jotego,atrac17" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
     <name>Cotton (set 1, Japan, Rev A) (FD1094 317-0179a)</name>
     <setname>cottonja</setname>
     <rbf>jts16b</rbf>
@@ -31,7 +31,6 @@
     <joystick>8</joystick>
     <rotation>horizontal</rotation>
     <region>Japan</region>
-    <mraauthor>jotego,atrac17</mraauthor>
     <rom index="0" zip="cottonja.zip|cotton.zip" md5="None" asm_md5="08ca2260697c55b1d31cc79480e0676d">
         <part>
             00 00 00 00 00 00 00 00
@@ -102,8 +101,8 @@
             <part name="opr-13855.a4" crc="856f3ee2" map="01"/>
             <part name="opr-13876.b13" crc="1c5ffad8" map="10"/>
         </interleave>
-        <!-- MCU_START -->
         <!-- JTFRAME_PROM_START -->
+        <!-- MCU_START -->
         <!-- mcu - starts at 0x440000 - length 0x2000 (13 bits) -->
         <part repeat="0x1000"> FF</part>
         <part repeat="0x1000"> FF</part>

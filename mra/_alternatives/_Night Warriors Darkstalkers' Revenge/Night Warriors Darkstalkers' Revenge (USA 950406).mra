@@ -20,7 +20,7 @@
 -->
 
 <misterromdescription default="ff,ff">
-    <about author="jotego" webpage="https://patreon.com/jotego" source="https://github.com/jotego" twitter="@topapate"/>
+    <about author="jotego,atrac17" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
     <name>Night Warriors: Darkstalkers&apos; Revenge (USA 950406)</name>
     <setname>nwarru</setname>
     <rbf>jtcps2</rbf>
@@ -31,7 +31,6 @@
     <joystick>8</joystick>
     <rotation>horizontal</rotation>
     <region>World</region>
-    <mraauthor>jotego,atrac17</mraauthor>
     <rom index="0" zip="nwarru.zip|nwarr.zip|qsound.zip" md5="None" address="0x30000000" asm_md5="86d6ea6dff9499a26677d0ecf95b546e">
         <part>
             00 10 00 11 00 21 00 A1

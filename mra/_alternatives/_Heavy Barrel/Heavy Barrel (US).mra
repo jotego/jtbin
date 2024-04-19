@@ -20,7 +20,7 @@
 -->
 
 <misterromdescription>
-    <about author="jotego" webpage="https://patreon.com/jotego" source="https://github.com/jotego" twitter="@topapate"/>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
     <name>Heavy Barrel (US)</name>
     <setname>hbarrelu</setname>
     <rbf>jtninja</rbf>
@@ -31,7 +31,6 @@
     <joystick>8</joystick>
     <rotation>vertical (ccw)</rotation>
     <region>World</region>
-    <mraauthor>jotego</mraauthor>
     <rom index="0" zip="hbarrelu.zip|hbarrel.zip" md5="None" asm_md5="2b1e251a9a99f04b47169625acb208ef">
         <!-- maincpu - starts at 0x0 - length 0x80000 (19 bits) -->
         <interleave output="16">
@@ -103,8 +102,8 @@
             <part name="heavy_barrel_14.14c" crc="bedfe7f3" map="0100"/>
             <part name="heavy_barrel_10.14a" crc="47d95447" map="1000"/>
         </interleave>
-        <!-- MCU_START -->
         <!-- JTFRAME_PROM_START -->
+        <!-- MCU_START -->
         <!-- mcu - starts at 0x210000 - length 0x18000 (17 bits) -->
         <part name="heavy_barrel_31.9a" crc="239d726f"/>
         <part repeat="0x17000"> FF</part>

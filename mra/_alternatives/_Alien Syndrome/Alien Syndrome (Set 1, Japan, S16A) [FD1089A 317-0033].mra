@@ -20,7 +20,7 @@
 -->
 
 <misterromdescription>
-    <about author="jotego" webpage="https://patreon.com/jotego" source="https://github.com/jotego" twitter="@topapate"/>
+    <about author="jotego,atrac17" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
     <name>Alien Syndrome (Set 1, Japan, S16A) [FD1089A 317-0033]</name>
     <setname>aliensynjo</setname>
     <rbf>jts16</rbf>
@@ -31,7 +31,6 @@
     <joystick>8</joystick>
     <rotation>horizontal</rotation>
     <region>Japan</region>
-    <mraauthor>jotego,atrac17</mraauthor>
     <rom index="0" zip="aliensynjo.zip|aliensyn.zip" md5="None" asm_md5="f684b5a0e51797a4a983820a68d005ec">
         <part>
             00 00 00 00 00 00 00 00
@@ -89,8 +88,8 @@
             <part name="epr-10712.29" crc="876ad019" map="01"/>
             <part name="epr-10716.30" crc="40ba1d48" map="10"/>
         </interleave>
-        <!-- JTFRAME_PROM_START -->
         <!-- MCU_START -->
+        <!-- JTFRAME_PROM_START -->
         <!-- mcu - starts at 0x180000 - length 0x2000 (13 bits) -->
         <part repeat="0x1000"> FF</part>
         <part repeat="0x1000"> FF</part>

@@ -20,7 +20,7 @@
 -->
 
 <misterromdescription>
-    <about author="jotego" webpage="https://patreon.com/jotego" source="https://github.com/jotego" twitter="@topapate"/>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
     <name>Teenage Mutant Ninja Turtles (Oceania 2 Players, version ?)</name>
     <setname>tmnt2po</setname>
     <rbf>jttmnt</rbf>
@@ -31,7 +31,6 @@
     <joystick>8</joystick>
     <rotation>horizontal</rotation>
     <region>World</region>
-    <mraauthor>jotego</mraauthor>
     <rom index="0" zip="tmnt2po.zip|tmnt.zip" md5="None" asm_md5="1b914ef0a15fbc34773a69236885181e">
         <!--     byte 0: 00 = TMNT
             01 = MIA
@@ -83,9 +82,6 @@
         <part name="963a31.g19" crc="f8004a1c"/>
         <!-- Total 0x428200 bytes - 4256 kBytes -->
         <patch offset="0x1076">71 4E 71 4E 71 4E</patch>
-    </rom>
-    <rom index="17" zip="jtbeta.zip" md5="None" asm_md5="71035230a15ff988e5823bc00a8efc50">
-        <part name="beta.bin" crc="f1b63018"/>
     </rom>
     <rom index="1">
         <part>00</part>

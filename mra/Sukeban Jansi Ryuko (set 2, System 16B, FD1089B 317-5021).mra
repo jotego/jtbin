@@ -20,7 +20,7 @@
 -->
 
 <misterromdescription>
-    <about author="jotego" webpage="https://patreon.com/jotego" source="https://github.com/jotego" twitter="@topapate"/>
+    <about author="jotego,atrac17" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
     <name>Sukeban Jansi Ryuko (set 2, System 16B, FD1089B 317-5021)</name>
     <setname>sjryuko</setname>
     <rbf>jts16b</rbf>
@@ -31,7 +31,6 @@
     <joystick/>
     <rotation>horizontal</rotation>
     <region>World</region>
-    <mraauthor>jotego,atrac17</mraauthor>
     <rom index="0" zip="sjryuko.zip" md5="None" asm_md5="d796598dc8a8e8d5b5315bf1358051fa">
         <part>
             00 00 00 00 00 00 00 00

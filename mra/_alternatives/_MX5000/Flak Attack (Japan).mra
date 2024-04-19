@@ -20,7 +20,7 @@
 -->
 
 <misterromdescription>
-    <about author="jotego" webpage="https://patreon.com/jotego" source="https://github.com/jotego" twitter="@topapate"/>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
     <name>Flak Attack (Japan)</name>
     <setname>flkatck</setname>
     <rbf>jtmx5k</rbf>
@@ -31,7 +31,6 @@
     <joystick>8</joystick>
     <rotation>vertical (cw)</rotation>
     <region>World</region>
-    <mraauthor>jotego</mraauthor>
     <rom index="0" zip="flkatck.zip|mx5000.zip" md5="None" asm_md5="7ca93f929eed63fc55bc6a8522be2574">
         <!-- maincpu - starts at 0x0 - length 0x10000 (16 bits) -->
         <part name="669_p01.16c" crc="c5cd2807"/>

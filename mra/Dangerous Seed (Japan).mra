@@ -1,0 +1,102 @@
+<!--          FPGA arcade hardware by Jotego
+
+              This core is available for hardware compatible with MiST and MiSTer
+              Other FPGA systems may be supported by the time you read this.
+              This work is not mantained by the MiSTer project. Please contact the
+              core author for issues and updates.
+
+              (c) Jose Tejada, 2024. Please support this research
+              Patreon: https://patreon.com/jotego
+
+              The author does not endorse or participate in illegal distribution
+              of copyrighted material. This work can be used with compatible
+              software. This software can be homebrew projects or legally
+              obtained memory dumps of compatible games.
+
+              This file license is GNU GPLv2.
+              You can read the whole license file in
+              https://opensource.org/licenses/gpl-2.0.php
+
+-->
+
+<misterromdescription>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
+    <name>Dangerous Seed (Japan)</name>
+    <setname>dangseed</setname>
+    <rbf>jtshouse</rbf>
+    <mameversion>0251</mameversion>
+    <year>1989</year>
+    <manufacturer>Namco</manufacturer>
+    <players>2</players>
+    <joystick>8</joystick>
+    <rotation>vertical (cw)</rotation>
+    <region>World</region>
+    <rom index="0" zip="dangseed.zip" md5="None" asm_md5="0985e63d9b7827822334612eae5f94e7">
+        <!-- Byte 0: protection type
+Byte 1: key ID
+Byte 2: addr for key ID
+Byte 3: addr for RNG
+Byte 4: addr for nibble swap data write
+Byte 5: addr for nibble swap read
+Byte 6: addr for lower nibble read
+Byte 7: addr for upper nibble read
+ -->
+        <part>
+            03 34 06 FF 05 FF 00 04
+        </part>
+        <!-- user1 - starts at 0x0 - length 0x3A0000 (22 bits) -->
+        <part repeat="0x280000"> FF</part>
+        <part name="dr_prg-5.bin" crc="7986bbdd"/>
+        <part repeat="0x60000"> FF</part>
+        <part name="dr1_prg6.bin" crc="cc68262b"/>
+        <part repeat="0x70000"> FF</part>
+        <part name="dr1_prg7.bin" crc="d7d2f653"/>
+        <!-- JTFRAME_BA1_START -->
+        <!-- audiocpu - starts at 0x3A0000 - length 0x20000 (17 bits) -->
+        <part name="dr1_snd0.bin" crc="bcbbb21d"/>
+        <!-- PCM_START -->
+        <!-- voice - starts at 0x3C0000 - length 0xB0000 (20 bits) -->
+        <part name="dr_voi-0.bin" crc="de4fdc0e"/>
+        <part repeat="0x90000"> FF</part>
+        <!-- JTFRAME_BA2_START -->
+        <!-- c123tmap:mask - starts at 0x470000 - length 0x20000 (17 bits) -->
+        <part name="dr_chr-8.bin" crc="0fbaa10e"/>
+        <!-- SCR_START -->
+        <!-- c123tmap - starts at 0x490000 - length 0x100000 (20 bits) -->
+        <part name="dr_chr-0.bin" crc="419bacc7"/>
+        <part name="dr_chr-1.bin" crc="55ce77e1"/>
+        <part name="dr_chr-2.bin" crc="6f913419"/>
+        <part name="dr_chr-3.bin" crc="fe1f1a25"/>
+        <part name="dr_chr-4.bin" crc="c34471bc"/>
+        <part name="dr_chr-5.bin" crc="715c0720"/>
+        <part name="dr_chr-6.bin" crc="5c1b71fa"/>
+        <part repeat="0x20000"> FF</part>
+        <!-- JTFRAME_BA3_START -->
+        <!-- sprite - starts at 0x590000 - length 0x100000 (20 bits) -->
+        <part name="dr_obj-0.bin" crc="abb95644"/>
+        <part name="dr_obj-1.bin" crc="24d6db51"/>
+        <part name="dr_obj-2.bin" crc="7e3a78c0"/>
+        <part repeat="0xA0000"> FF</part>
+        <!-- JTFRAME_PROM_START -->
+        <!-- mcu - starts at 0x690000 - length 0x1000 (12 bits) -->
+        <part name="cus64-64a1.mcu" crc="ffb5c0bd"/>
+        <!-- Total 0x691000 bytes - 6724 kBytes -->
+    </rom>
+    <rom index="17" zip="jtbeta.zip" md5="None" asm_md5="71035230a15ff988e5823bc00a8efc50">
+        <part name="beta.bin" crc="f1b63018"/>
+    </rom>
+    <nvram index="2" size="63552"/>
+    <!-- Vertical game -->
+    <rom index="1">
+        <part>01</part>
+    </rom>
+    <switches page_id="1" page_name="Switches" base="16" default="ff">
+        <!-- DIPSW -->
+        <dip name="Service Mode" bits="0" ids="On,Off"/>
+        <dip name="Freeze" bits="1" ids="On,Off"/>
+        <dip name="Kick Watchdog in IRQ" bits="2" ids="Yes,No"/>
+        <dip name="Auto Data Sampling" bits="5" ids="On,Off"/>
+        <dip name="*Sound fix" ids="On,Off" bits="8"/>
+    </switches>
+    <buttons names="button 1,button 2,-,Start,Coin,Core credits" default="A,B,Start,Select,-" count="2"/>
+</misterromdescription>

@@ -20,7 +20,7 @@
 -->
 
 <misterromdescription>
-    <about author="jotego" webpage="https://patreon.com/jotego" source="https://github.com/jotego" twitter="@topapate"/>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
     <name>Commando (bootleg set 2)</name>
     <setname>commandob2</setname>
     <rbf>jtcommnd</rbf>
@@ -31,7 +31,6 @@
     <joystick>8</joystick>
     <rotation>vertical (ccw)</rotation>
     <region>World</region>
-    <mraauthor>jotego</mraauthor>
     <rom index="0" zip="commandob2.zip|commando.zip" md5="None" asm_md5="1f32592edb0816226f515e477dcd1451">
         <!-- maincpu - starts at 0x0 - length 0xC000 (16 bits) -->
         <part name="10" crc="ab5d1469"/>
