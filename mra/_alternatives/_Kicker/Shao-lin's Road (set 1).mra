@@ -56,8 +56,8 @@
             <part name="477j01.h14" crc="61bbf797" map="01"/>
             <part name="477j02.h15" crc="b94e645b" map="10"/>
         </interleave>
-        <!-- PCM_START -->
         <!-- JTFRAME_PROM_START -->
+        <!-- PCM_START -->
         <!-- proms - starts at 0x1E000 - length 0x500 (11 bits) -->
         <part name="477j10.a12" crc="b09db4b4"/>
         <part name="477j11.a13" crc="270a2bf3"/>

@@ -6,10 +6,12 @@ the required .rom file using the mra tool (read below).
 Place the *.rom files in Assets/jtshouse/common
 
 Blast Off (Japan) --> blastoff.rom
+Blazer (Japan) --> blazer.rom
 Dangerous Seed (Japan) --> dangseed.rom
 Dragon Spirit (new version (DS3)) --> dspirit.rom
 Dragon Spirit (old version (DS1)) --> dspirit1.rom
 Dragon Spirit (DS2) --> dspirit2.rom
+Face Off (Japan 2 Players) --> faceoff.rom
 Galaga '88 --> galaga88.rom
 Galaga '88 (02-03-88) --> galaga88a.rom
 Galaga '88 (Japan) --> galaga88j.rom
@@ -20,6 +22,11 @@ Pistol Daimyo no Bouken (Japan) --> pistoldm.rom
 Splatter House (World, new version (SH3)) --> splatter.rom
 Splatter House (World, old version (SH2)) --> splatter2.rom
 Splatter House (Japan, SH1) --> splatterj.rom
+Tank Force (US, 2 Players) --> tankfrce.rom
+Pro Tennis World Court (Japan) --> wldcourt.rom
+Pro Yakyuu World Stadium (Japan) --> ws.rom
+Pro Yakyuu World Stadium '89 (Japan) --> ws89.rom
+Pro Yakyuu World Stadium '90 (Japan) --> ws90.rom
 
 
 These files are generated using the mra tool in:

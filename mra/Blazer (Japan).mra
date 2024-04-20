@@ -1,0 +1,116 @@
+<!--          FPGA arcade hardware by Jotego
+
+              This core is available for hardware compatible with MiST and MiSTer
+              Other FPGA systems may be supported by the time you read this.
+              This work is not mantained by the MiSTer project. Please contact the
+              core author for issues and updates.
+
+              (c) Jose Tejada, 2024. Please support this research
+              Patreon: https://patreon.com/jotego
+
+              The author does not endorse or participate in illegal distribution
+              of copyrighted material. This work can be used with compatible
+              software. This software can be homebrew projects or legally
+              obtained memory dumps of compatible games.
+
+              This file license is GNU GPLv2.
+              You can read the whole license file in
+              https://opensource.org/licenses/gpl-2.0.php
+
+-->
+
+<misterromdescription>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
+    <name>Blazer (Japan)</name>
+    <setname>blazer</setname>
+    <rbf>jtshouse</rbf>
+    <mameversion>0251</mameversion>
+    <year>1987</year>
+    <manufacturer>Namco</manufacturer>
+    <players>2</players>
+    <joystick>8</joystick>
+    <rotation>vertical (cw)</rotation>
+    <region>World</region>
+    <rom index="0" zip="blazer.zip" md5="None" asm_md5="02382b743ebcc7dca172f5b0b5cf50e8">
+        <!-- Byte 0: protection type
+Byte 1: key ID
+Byte 2: addr for key ID
+Byte 3: addr for RNG
+Byte 4: addr for nibble swap data write
+Byte 5: addr for nibble swap read
+Byte 6: addr for lower nibble read
+Byte 7: addr for upper nibble read
+ -->
+        <part>
+            01 13 00 00 00 00 00 00
+        </part>
+        <!-- user1 - starts at 0x0 - length 0x3A0000 (22 bits) -->
+        <part name="bz1_p0.bin" crc="a7dd195b"/>
+        <part repeat="0x70000"> FF</part>
+        <part name="bz1_p1.bin" crc="c54bbbf4"/>
+        <part repeat="0x70000"> FF</part>
+        <part name="bz1_p2.bin" crc="5d700aed"/>
+        <part repeat="0x70000"> FF</part>
+        <part name="bz1_p3.bin" crc="81b32a1a"/>
+        <part repeat="0x70000"> FF</part>
+        <part name="bz_prg-4.bin" crc="65ef6f05"/>
+        <part repeat="0x60000"> FF</part>
+        <part name="bz_prg-5.bin" crc="900da191"/>
+        <part repeat="0x60000"> FF</part>
+        <part name="bz_prg-6.bin" crc="81c48fc0"/>
+        <part repeat="0x60000"> FF</part>
+        <part name="bz1_p7.bin" crc="2d4cbb95"/>
+        <part repeat="0x10000"> FF</part>
+        <!-- JTFRAME_BA1_START -->
+        <!-- audiocpu - starts at 0x3A0000 - length 0x20000 (17 bits) -->
+        <part name="bz1_s0.bin" crc="6c3a580b"/>
+        <part repeat="0x10000"> FF</part>
+        <!-- PCM_START -->
+        <!-- voice - starts at 0x3C0000 - length 0xB0000 (20 bits) -->
+        <part name="bz1_v0.bin" crc="3d09d32e"/>
+        <part repeat="0x10000"> FF</part>
+        <part name="bz_voi-1.bin" crc="2043b141"/>
+        <part name="bz_voi-2.bin" crc="64143442"/>
+        <part name="bz_voi-3.bin" crc="26cfc510"/>
+        <part name="bz_voi-4.bin" crc="d206b1bd"/>
+        <part repeat="0x10000"> FF</part>
+        <!-- JTFRAME_BA2_START -->
+        <!-- c123tmap:mask - starts at 0x470000 - length 0x20000 (17 bits) -->
+        <part name="bz_chr-8.bin" crc="db28bfca"/>
+        <!-- SCR_START -->
+        <!-- c123tmap - starts at 0x490000 - length 0x100000 (20 bits) -->
+        <part name="bz_chr-0.bin" crc="d346ba61"/>
+        <part name="bz_chr-1.bin" crc="e45eb2ea"/>
+        <part name="bz_chr-2.bin" crc="599079ee"/>
+        <part name="bz_chr-3.bin" crc="d5182e36"/>
+        <part name="bz_chr-4.bin" crc="e788259e"/>
+        <part name="bz_chr-5.bin" crc="107e6814"/>
+        <part name="bz_chr-6.bin" crc="0312e2ba"/>
+        <part name="bz_chr-7.bin" crc="d9d9a90f"/>
+        <!-- JTFRAME_BA3_START -->
+        <!-- sprite - starts at 0x590000 - length 0x100000 (20 bits) -->
+        <part name="bz_obj-0.bin" crc="22aee927"/>
+        <part name="bz_obj-1.bin" crc="7cb10112"/>
+        <part name="bz_obj-2.bin" crc="34b23bb7"/>
+        <part name="bz_obj-3.bin" crc="9bc1db71"/>
+        <part repeat="0x80000"> FF</part>
+        <!-- JTFRAME_PROM_START -->
+        <!-- mcu - starts at 0x690000 - length 0x1000 (12 bits) -->
+        <part name="cus64-64a1.mcu" crc="ffb5c0bd"/>
+        <!-- Total 0x691000 bytes - 6724 kBytes -->
+    </rom>
+    <rom index="17" zip="jtbeta.zip" md5="None" asm_md5="71035230a15ff988e5823bc00a8efc50">
+        <part name="beta.bin" crc="f1b63018"/>
+    </rom>
+    <nvram index="2" size="63552"/>
+    <!-- Vertical game -->
+    <rom index="1">
+        <part>01</part>
+    </rom>
+    <switches page_id="1" page_name="Switches" base="16" default="ff,ff">
+        <!-- DIPSW -->
+        <dip name="Service Mode" bits="0" ids="On,Off"/>
+        <dip name="*Sound fix" ids="On,Off" bits="8"/>
+    </switches>
+    <buttons names="button 1,button 2,-,Start,Coin,Core credits" default="A,B,Start,Select,-" count="2"/>
+</misterromdescription>

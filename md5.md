@@ -109,6 +109,7 @@
 | bioniccbl    | jtbiocom   | f74b047fe61f14bf5b2536784e94b4f7 | ff,df        |
 | bioniccbl2   | jtbiocom   | 874332c74dca2f75d181068e18187bb6 | ff,df        |
 | blastoff     | jtshouse   | f89c9d8a8fb593e5a34edfada81301a0 | ff,ff        |
+| blazer       | jtshouse   | 02382b743ebcc7dca172f5b0b5cf50e8 | ff,ff        |
 | blkdrgon     | jtbtiger   | b14ac15cf95a71b1c15ee75ad49f1a45 | ff,6f        |
 | blktiger     | jtbtiger   | 2d7440c40e52cb34ad47fbc0820bbcb6 | ff,6f        |
 | blktigera    | jtbtiger   | acadf2e0bc8d647911cb8ea0dfea6d00 | ff,6f        |
@@ -272,6 +273,7 @@
 | extrmatnu    | jtkiwi     | 1652eb42cdcd36bdb3ad309c9a31aecf | ff,ff        |
 | extrmatnur   | jtkiwi     | b3459d8c8a81e86572465d91d6cce3a2 | ff,ff        |
 | f1dream      | jttora     | c2f66b62e2a60145566d4375733ee079 | ff,bf        |
+| faceoff      | jtshouse   | ebf55f96b05edd8d2921f03e87778e5d | ff,ff        |
 | fantzn2x     | jts16b     | ac119bf42d19e581a31ecbf3e60418fc | ff,ff        |
 | fantzn2xp    | jts16b     | 813dcb28e6554253ab2718870302c812 | ff,ff        |
 | fantzone     | jts16      | a4721e6639defe60c00a62ef7b5b5020 | ff,fc        |
@@ -798,6 +800,7 @@
 | striderua    | jtcps1     | 1313f2c0949e67b8c4dab96dd71856a4 | ff,fd,ff     |
 | strideruc    | jtcps1     | d1d52503d329441ea51b411e6009f4e2 | ff,fd,ff     |
 | suprleag     | jts16b     | 60eac3924d5353c0ba872b74d0bb8242 | ff,fe        |
+| tankfrce     | jtshouse   | f8abd206a5b82f1c759f302ba16c6cd7 | ff,ff        |
 | tetris       | jts16      | a66fee2c280d67b2820db8dda291719e | ff,fd        |
 | tetris1      | jts16b     | e9cca35f63ff528a07057065e30c5d0d | ff,fd        |
 | tetris2      | jts16b     | 91eeb6e782d0812f8c9fa0ea9e993ff9 | ff,fd        |
@@ -914,6 +917,7 @@
 | willowj      | jtcps1     | 527ad7df6f60a5129f1669522532c45e | 7f,ff,ff     |
 | willowu      | jtcps1     | b692e6ca608e1704249ec551f4d1242d | ff,ff,fa     |
 | willowuo     | jtcps1     | f44bb34ad35e743c894a070f2ecbc3f3 | ff,ff,fa     |
+| wldcourt     | jtshouse   | 8510943f973576fe15b14eef98c91317 | ff           |
 | wndrplnt     | jtkarnov   | e81ae47504db6a4446676dfb39dfbab0 | 7f,ff        |
 | wof          | jtcps15    | 0e41c840a0f9d1c443c0e388c73dc11c | ff           |
 | wofa         | jtcps15    | 62ace165f74e3b5e07cd788edea93b67 | ff           |
@@ -925,6 +929,9 @@
 | wrestwar     | jts16b     | 2b5f95a8e696e54ed21149606b6ae9b0 | ff,fd        |
 | wrestwar1    | jts16b     | f6e802ebc98aa533c4ee13d9786b3860 | ff,fd        |
 | wrestwar2    | jts16b     | e1b30e2d9895d7ece41c7e0ecd8bde27 | ff,fd        |
+| ws           | jtshouse   | 10155e5117703452130929b096d83152 | ff,ff        |
+| ws89         | jtshouse   | dda962f51ad95ca7a7f705257e2855b6 | ff           |
+| ws90         | jtshouse   | ac7d6edb05765bceb3af99c67f2fd75a | ff           |
 | xmcota       | jtcps2     | 1525d27aa5956ab9307eca7a669be2b2 |              |
 | xmcotaa      | jtcps2     | 407571cb28ffec3202edfb31e2a0dfc0 |              |
 | xmcotaar1    | jtcps2     | 4df40bac82e21b57c37b0413ae506c3a |              |

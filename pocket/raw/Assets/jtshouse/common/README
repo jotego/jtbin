@@ -1,10 +1,12 @@
 Place the following files in this folder:
 
 blastoff.rom
+blazer.rom
 dangseed.rom
 dspirit.rom
 dspirit1.rom
 dspirit2.rom
+faceoff.rom
 galaga88.rom
 galaga88a.rom
 galaga88j.rom
@@ -15,6 +17,11 @@ pistoldm.rom
 splatter.rom
 splatter2.rom
 splatterj.rom
+tankfrce.rom
+wldcourt.rom
+ws.rom
+ws89.rom
+ws90.rom
 
 These files are generated using the mra tool in:
 https://github.com/sebdel/mra-tools-c/tree/master/release

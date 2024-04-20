@@ -1,0 +1,105 @@
+<!--          FPGA arcade hardware by Jotego
+
+              This core is available for hardware compatible with MiST and MiSTer
+              Other FPGA systems may be supported by the time you read this.
+              This work is not mantained by the MiSTer project. Please contact the
+              core author for issues and updates.
+
+              (c) Jose Tejada, 2024. Please support this research
+              Patreon: https://patreon.com/jotego
+
+              The author does not endorse or participate in illegal distribution
+              of copyrighted material. This work can be used with compatible
+              software. This software can be homebrew projects or legally
+              obtained memory dumps of compatible games.
+
+              This file license is GNU GPLv2.
+              You can read the whole license file in
+              https://opensource.org/licenses/gpl-2.0.php
+
+-->
+
+<misterromdescription>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
+    <name>Pro Tennis World Court (Japan)</name>
+    <setname>wldcourt</setname>
+    <rbf>jtshouse</rbf>
+    <mameversion>0251</mameversion>
+    <year>1988</year>
+    <manufacturer>Namco</manufacturer>
+    <players>2</players>
+    <joystick>8</joystick>
+    <rotation>horizontal</rotation>
+    <region>World</region>
+    <rom index="0" zip="wldcourt.zip" md5="None" asm_md5="8510943f973576fe15b14eef98c91317">
+        <!-- Byte 0: protection type
+Byte 1: key ID
+Byte 2: addr for key ID
+Byte 3: addr for RNG
+Byte 4: addr for nibble swap data write
+Byte 5: addr for nibble swap read
+Byte 6: addr for lower nibble read
+Byte 7: addr for upper nibble read
+ -->
+        <part>
+            01 35 00 00 00 00 00 00
+        </part>
+        <!-- user1 - starts at 0x0 - length 0x3A0000 (22 bits) -->
+        <part repeat="0x300000"> FF</part>
+        <part name="wc1_prg6.bin" crc="e9216b9e"/>
+        <part repeat="0x70000"> FF</part>
+        <part name="wc1_prg7.bin" crc="8a7c6cac"/>
+        <part repeat="0x10000"> FF</part>
+        <!-- JTFRAME_BA1_START -->
+        <!-- audiocpu - starts at 0x3A0000 - length 0x20000 (17 bits) -->
+        <part name="wc1_snd0.bin" crc="17a6505d"/>
+        <part repeat="0x10000"> FF</part>
+        <!-- PCM_START -->
+        <!-- voice - starts at 0x3C0000 - length 0xB0000 (20 bits) -->
+        <part name="wc1_voi0.bin" crc="b57919f7"/>
+        <part repeat="0x10000"> FF</part>
+        <part name="wc1_voi1.bin" crc="97974b4b"/>
+        <part repeat="0x70000"> FF</part>
+        <!-- JTFRAME_BA2_START -->
+        <!-- c123tmap:mask - starts at 0x470000 - length 0x20000 (17 bits) -->
+        <part name="wc1_chr8.bin" crc="23e1c399"/>
+        <!-- SCR_START -->
+        <!-- c123tmap - starts at 0x490000 - length 0x100000 (20 bits) -->
+        <part name="wc1_chr0.bin" crc="9fb07b9b"/>
+        <part name="wc1_chr1.bin" crc="01bfbf60"/>
+        <part name="wc1_chr2.bin" crc="7e8acf45"/>
+        <part name="wc1_chr3.bin" crc="924e9c81"/>
+        <part repeat="0x80000"> FF</part>
+        <!-- JTFRAME_BA3_START -->
+        <!-- sprite - starts at 0x590000 - length 0x100000 (20 bits) -->
+        <part name="wc1_obj0.bin" crc="70d562f8"/>
+        <part name="wc1_obj1.bin" crc="ba8b034a"/>
+        <part name="wc1_obj2.bin" crc="c2bd5f0f"/>
+        <part name="wc1_obj3.bin" crc="1aa2dbc8"/>
+        <part repeat="0x90000"> FF</part>
+        <!-- JTFRAME_PROM_START -->
+        <!-- mcu - starts at 0x690000 - length 0x1000 (12 bits) -->
+        <part name="cus64-64a1.mcu" crc="ffb5c0bd"/>
+        <!-- Total 0x691000 bytes - 6724 kBytes -->
+    </rom>
+    <rom index="17" zip="jtbeta.zip" md5="None" asm_md5="71035230a15ff988e5823bc00a8efc50">
+        <part name="beta.bin" crc="f1b63018"/>
+    </rom>
+    <nvram index="2" size="63552"/>
+    <rom index="1">
+        <part>00</part>
+    </rom>
+    <switches page_id="1" page_name="Switches" base="16" default="ff">
+        <!-- DIPSW -->
+        <dip name="Service Mode" bits="0" ids="On,Off"/>
+        <dip name="Debug lines 1/6" bits="1" ids="No,Yes"/>
+        <dip name="Debug lines 2/6" bits="2" ids="Yes,No"/>
+        <dip name="Debug lines 3/6" bits="3" ids="No,Yes"/>
+        <dip name="Debug lines 4/6" bits="4" ids="No,Yes"/>
+        <dip name="Debug lines 5/6" bits="5" ids="No,Yes"/>
+        <dip name="Debug lines 6/6" bits="6" ids="Yes,No"/>
+        <dip name="Freeze" bits="7" ids="On,Off"/>
+        <dip name="*Sound fix" ids="On,Off" bits="8"/>
+    </switches>
+    <buttons names="button 1,button 2,-,Start,Coin,Core credits" default="A,B,Start,Select,-" count="2"/>
+</misterromdescription>
