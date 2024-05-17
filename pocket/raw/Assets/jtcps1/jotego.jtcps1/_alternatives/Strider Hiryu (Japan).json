@@ -1,0 +1,27 @@
+{
+	"instance":{
+		"magic": "APF_VER_1",
+		"variant_select": {
+			"id": 0,
+			"select": false
+		},
+		"data_path": "",
+		"data_slots": [
+			{
+				"id": 1,
+				"filename": "striderj.rom",
+				"md5": "49e0f70b14c4aae1bf3dc66b2fdc5e75"
+			},
+			{
+				"id": 2,
+				"filename": "striderj.sav"
+			}
+		],
+		"memory_writes": [
+			{
+				"address": "0xf9000000",
+				"data": "0x0"
+			}
+		]
+	}
+}

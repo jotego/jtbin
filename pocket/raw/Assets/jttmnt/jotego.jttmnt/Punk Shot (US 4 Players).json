@@ -1,0 +1,23 @@
+{
+	"instance":{
+		"magic": "APF_VER_1",
+		"variant_select": {
+			"id": 0,
+			"select": false
+		},
+		"data_path": "",
+		"data_slots": [
+			{
+				"id": 1,
+				"filename": "punkshot.rom",
+				"md5": "475065e60e7d68f58dd271b61287f6aa"
+			}
+		],
+		"memory_writes": [
+			{
+				"address": "0xf9000000",
+				"data": "0x20"
+			}
+		]
+	}
+}

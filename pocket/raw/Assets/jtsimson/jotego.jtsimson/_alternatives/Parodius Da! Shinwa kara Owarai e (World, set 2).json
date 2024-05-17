@@ -1,0 +1,27 @@
+{
+	"instance":{
+		"magic": "APF_VER_1",
+		"variant_select": {
+			"id": 0,
+			"select": false
+		},
+		"data_path": "",
+		"data_slots": [
+			{
+				"id": 1,
+				"filename": "parodiuse.rom",
+				"md5": "f2715277d32ad3f3678d4344c9fdc8ae"
+			},
+			{
+				"id": 2,
+				"filename": "parodiuse.sav"
+			}
+		],
+		"memory_writes": [
+			{
+				"address": "0xf9000000",
+				"data": "0x60"
+			}
+		]
+	}
+}

@@ -1,0 +1,136 @@
+<!--          FPGA arcade hardware by Jotego
+
+              This core is available for hardware compatible with MiST and MiSTer
+              Other FPGA systems may be supported by the time you read this.
+              This work is not mantained by the MiSTer project. Please contact the
+              core author for issues and updates.
+
+              (c) Jose Tejada, 2024. Please support this research
+              Patreon: https://patreon.com/jotego
+
+              The author does not endorse or participate in illegal distribution
+              of copyrighted material. This work can be used with compatible
+              software. This software can be homebrew projects or legally
+              obtained memory dumps of compatible games.
+
+              This file license is GNU GPLv2.
+              You can read the whole license file in
+              https://opensource.org/licenses/gpl-2.0.php
+
+-->
+
+<misterromdescription>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
+    <name>Sukeban Jansi Ryuko (set 2, System 16B, FD1089B 317-5021)</name>
+    <setname>sjryuko</setname>
+    <rbf>jts16b</rbf>
+    <mameversion>0251</mameversion>
+    <year>1988</year>
+    <manufacturer>White Board</manufacturer>
+    <players>1</players>
+    <joystick/>
+    <rotation>horizontal</rotation>
+    <region>World</region>
+    <rom index="0" zip="sjryuko.zip" md5="None" asm_md5="d796598dc8a8e8d5b5315bf1358051fa">
+        <part>
+            00 00 00 00 00 00 00 00
+            00 00 00 00 00 00 00 00
+            02 00 00 00 00 00 00 00
+            1B 00 00 00 00 00 00 00
+        </part>
+        <!-- maincpu - starts at 0x0 - length 0x80000 (19 bits) -->
+        <interleave output="16">
+            <part name="epr-12253.a1" crc="26a822df" map="01"/>
+            <part name="epr-12256.a4" crc="5987ee1b" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="epr-12254.a2" crc="7e908217" map="01"/>
+            <part name="epr-12257.a5" crc="3a2acc3f" map="10"/>
+        </interleave>
+        <part repeat="0x60000"> FF</part>
+        <!-- JTFRAME_BA1_START -->
+        <!-- soundcpu - starts at 0x80000 - length 0xC0000 (20 bits) -->
+        <part name="epr-12244.a7" crc="cb2a47e5"/>
+        <part repeat="0x8000"> FF</part>
+        <part name="epr-12245.a8" crc="66164134"/>
+        <part repeat="0x8000"> FF</part>
+        <part name="epr-12246.a9" crc="f1242582"/>
+        <part repeat="0x8000"> FF</part>
+        <part name="epr-12247.a10" crc="ef8a64c6"/>
+        <part repeat="0x8000"> FF</part>
+        <part name="epr-12248.a11" crc="d1eabdab"/>
+        <part repeat="0x78000"> FF</part>
+        <!-- JTFRAME_BA2_START -->
+        <!-- gfx1 - starts at 0x140000 - length 0x100000 (20 bits) -->
+        <interleave output="32">
+            <part name="epr-12224-95.b9" crc="eac17ba1" map="0001"/>
+            <part name="epr-12225-94.b10" crc="2310fc98" map="0010"/>
+            <part name="epr-12226-93.b11" crc="210e6999" map="0100"/>
+            <part name="epr-12226-93.b11" crc="210e6999" map="1000"/>
+        </interleave>
+        <part repeat="0xE0000"> FF</part>
+        <!-- JTFRAME_BA3_START -->
+        <!-- sprites - starts at 0x240000 - length 0x200000 (21 bits) -->
+        <interleave output="16">
+            <part name="epr-12232-10.b1" crc="0adec62b" map="01"/>
+            <part name="epr-12236-11.b5" crc="286b9af8" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="epr-12233-17.b2" crc="3e45969c" map="01"/>
+            <part name="epr-12237-18.b6" crc="e5058e96" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="epr-12234-23.b3" crc="8c8d54ef" map="01"/>
+            <part name="epr-12238-24.b7" crc="7ada3304" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="epr-12235-29.b4" crc="fa45d511" map="01"/>
+            <part name="epr-12239-30.b8" crc="91f70c8b" map="10"/>
+        </interleave>
+        <part repeat="0x180000"> FF</part>
+        <!-- MCU_START -->
+        <!-- JTFRAME_PROM_START -->
+        <!-- mcu - starts at 0x440000 - length 0x2000 (13 bits) -->
+        <part repeat="0x1000"> FF</part>
+        <part repeat="0x1000"> FF</part>
+        <!-- MAINKEY_START -->
+        <!-- maincpu:key - starts at 0x442000 - length 0x6000 (15 bits) -->
+        <part name="317-5021.key" crc="8e40b2ab"/>
+        <part repeat="0x4000"> FF</part>
+        <!-- SNDKEY_START -->
+        <!-- soundcpu:key - starts at 0x448000 - length 0x2000 (13 bits) -->
+        <part repeat="0x2000"> FF</part>
+        <!-- FD1089 base table starts at 0x44A000 -->
+        <part>
+            00 1C 76 6A 5E 42 24 38 4B 67 AD 81 E9 C5 03 2F
+            45 69 AF 83 E7 CB 01 2D 02 1E 78 64 5C 40 2A 36
+            32 2E 44 58 E4 F8 9E 82 29 05 CF E3 93 BF 79 55
+            3F 13 D5 F9 85 A9 63 4F B8 A4 C2 DE 6E 72 18 04
+            0C 10 7A 66 FC E0 86 9A 47 6B A1 8D BB 97 51 7D
+            17 3B FD D1 EB C7 0D 21 A0 BC DA C6 50 4C 26 3A
+            3E 22 48 54 46 5A 3C 20 25 09 C3 EF C1 ED 2B 07
+            6D 41 87 AB 89 A5 6F 43 1A 06 60 7C 62 7E 14 08
+            0A 16 70 6C DC C0 AA B6 4D 61 A7 8B F7 DB 11 3D
+            5B 77 BD 91 E1 CD 0B 27 80 9C F6 EA 56 4A 2C 30
+            B0 AC CA D6 EE F2 98 84 37 1B DD F1 95 B9 73 5F
+            39 15 DF F3 9B B7 71 5D B2 AE C4 D8 EC F0 96 8A
+            A8 B4 D2 CE D0 CC A6 BA 1F 33 F5 D9 FB D7 1D 31
+            57 7B B1 9D B3 9F 59 75 8C 90 FA E6 F4 E8 8E 92
+            12 0E 68 74 E2 FE 94 88 65 49 8F A3 99 B5 7F 53
+            35 19 D3 FF C9 E5 23 0F BE A2 C8 D4 4E 52 34 28
+        </part>
+        <!-- Total 0x44A100 bytes - 4392 kBytes -->
+    </rom>
+    <rom index="1">
+        <part>00</part>
+    </rom>
+    <switches page_id="1" page_name="Switches" base="16" default="ff,fb">
+        <!-- DSW1 -->
+        <dip name="Coin A" bits="0,3" ids="1/1,None,None,None,None,None,2/3,4/1,3/1,2/1,1/6,1/5,1/4,1/3,1/2,1/1"/>
+        <dip name="Coin B" bits="4,7" ids="1/1,None,None,None,None,None,2/3,4/1,3/1,2/1,1/6,1/5,1/4,1/3,1/2,1/1"/>
+        <!-- DSW2 -->
+        <dip name="CPU Level" bits="8,9" ids="Strong,Medium Strong,Medium Weak,Weak"/>
+        <dip name="Demo Sounds" bits="10" ids="On,Off"/>
+    </switches>
+    <buttons names="none,-,-,-,Start,Coin,Core credits" default="A,Start,Select,-" count="1"/>
+</misterromdescription>

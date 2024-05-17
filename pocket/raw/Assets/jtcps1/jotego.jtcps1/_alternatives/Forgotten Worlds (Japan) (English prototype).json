@@ -1,0 +1,27 @@
+{
+	"instance":{
+		"magic": "APF_VER_1",
+		"variant_select": {
+			"id": 0,
+			"select": false
+		},
+		"data_path": "",
+		"data_slots": [
+			{
+				"id": 1,
+				"filename": "forgottnj.rom",
+				"md5": "aedc7e205d5d3ab8e30585f6eb9a32b2"
+			},
+			{
+				"id": 2,
+				"filename": "forgottnj.sav"
+			}
+		],
+		"memory_writes": [
+			{
+				"address": "0xf9000000",
+				"data": "0x0"
+			}
+		]
+	}
+}

@@ -1,0 +1,27 @@
+{
+	"instance":{
+		"magic": "APF_VER_1",
+		"variant_select": {
+			"id": 0,
+			"select": false
+		},
+		"data_path": "",
+		"data_slots": [
+			{
+				"id": 1,
+				"filename": "ffightu1.rom",
+				"md5": "87933d5e8e03214bbb70cc828d090e81"
+			},
+			{
+				"id": 2,
+				"filename": "ffightu1.sav"
+			}
+		],
+		"memory_writes": [
+			{
+				"address": "0xf9000000",
+				"data": "0x0"
+			}
+		]
+	}
+}

@@ -1,0 +1,27 @@
+{
+	"instance":{
+		"magic": "APF_VER_1",
+		"variant_select": {
+			"id": 0,
+			"select": false
+		},
+		"data_path": "",
+		"data_slots": [
+			{
+				"id": 1,
+				"filename": "3wondersh.rom",
+				"md5": "9e78eb9c9944cc9ea26c5a83d4980c96"
+			},
+			{
+				"id": 2,
+				"filename": "3wondersh.sav"
+			}
+		],
+		"memory_writes": [
+			{
+				"address": "0xf9000000",
+				"data": "0x0"
+			}
+		]
+	}
+}

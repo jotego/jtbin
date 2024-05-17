@@ -1,0 +1,211 @@
+{
+	"interact":{
+		"magic": "APF_VER_1",
+		"variables": [
+			{
+				"name": "FX Volume",
+				"id": 0,
+				"type": "list",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfb000000",
+				"defaultval": 0,
+				"value": 0,
+				"mask": "0xFFFFFF3F",
+				"options": [
+					{
+						"name": "high",
+						"value": "0x00"
+					},
+					{
+						"name": "very high",
+						"value": "0x40"
+					},
+					{
+						"name": "very low",
+						"value": "0x80"
+					},
+					{
+						"name": "low",
+						"value": "0xc0"
+					}
+				]
+			},
+			{
+				"name": "Joysticks",
+				"id": 1,
+				"type": "list",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 0,
+				"value": 0,
+				"mask": "0xFFFFFFDF",
+				"options": [
+					{
+						"name": "2",
+						"value": "0x0"
+					},
+					{
+						"name": "1",
+						"value": "0x20"
+					}
+				]
+			},
+			{
+				"name": "Cabinet",
+				"id": 2,
+				"type": "list",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 1,
+				"value": 0,
+				"mask": "0xFFFFFFBF",
+				"options": [
+					{
+						"name": "Cocktail",
+						"value": "0x0"
+					},
+					{
+						"name": "Upright",
+						"value": "0x40"
+					}
+				]
+			},
+			{
+				"name": "Flip Screen",
+				"id": 3,
+				"type": "check",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 0,
+				"value": 0,
+				"value_off": 128,
+				"mask": "0xFFFFFF7F"
+			},
+			{
+				"name": "Lives",
+				"id": 4,
+				"type": "list",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 3,
+				"value": 0,
+				"mask": "0xFFFFFCFF",
+				"options": [
+					{
+						"name": "Infinite (Cheat)",
+						"value": "0x0"
+					},
+					{
+						"name": "5",
+						"value": "0x100"
+					},
+					{
+						"name": "2",
+						"value": "0x200"
+					},
+					{
+						"name": "3",
+						"value": "0x300"
+					}
+				]
+			},
+			{
+				"name": "Bonus Life",
+				"id": 5,
+				"type": "list",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 3,
+				"value": 0,
+				"mask": "0xFFFFF3FF",
+				"options": [
+					{
+						"name": "70000 140000 210000",
+						"value": "0x0"
+					},
+					{
+						"name": "100000 200000",
+						"value": "0x400"
+					},
+					{
+						"name": "50000 150000",
+						"value": "0x800"
+					},
+					{
+						"name": "70000",
+						"value": "0xC00"
+					}
+				]
+			},
+			{
+				"name": "Difficulty",
+				"id": 6,
+				"type": "list",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 3,
+				"value": 0,
+				"mask": "0xFFFFCFFF",
+				"options": [
+					{
+						"name": "Hardest",
+						"value": "0x0"
+					},
+					{
+						"name": "Hard",
+						"value": "0x1000"
+					},
+					{
+						"name": "Easy",
+						"value": "0x2000"
+					},
+					{
+						"name": "Medium",
+						"value": "0x3000"
+					}
+				]
+			},
+			{
+				"name": "Allow Continue",
+				"id": 7,
+				"type": "check",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 1,
+				"value": 16384,
+				"mask": "0xFFFFBFFF"
+			},
+			{
+				"name": "Demo Sounds",
+				"id": 8,
+				"type": "check",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 1,
+				"value": 32768,
+				"mask": "0xFFFF7FFF"
+			},
+			{
+				"name": "Default",
+				"id": 1015,
+				"type": "number_u32",
+				"enabled": false,
+				"persist": false,
+				"writeonly": true,
+				"address": "0xfa000000",
+				"defaultval": 57343,
+				"value": 0
+			}
+		],
+		"messages": []
+	}
+}

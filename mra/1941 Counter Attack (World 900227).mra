@@ -1,0 +1,92 @@
+<!--          FPGA arcade hardware by Jotego
+
+              This core is available for hardware compatible with MiST and MiSTer
+              Other FPGA systems may be supported by the time you read this.
+              This work is not mantained by the MiSTer project. Please contact the
+              core author for issues and updates.
+
+              (c) Jose Tejada, 2024. Please support this research
+              Patreon: https://patreon.com/jotego
+
+              The author does not endorse or participate in illegal distribution
+              of copyrighted material. This work can be used with compatible
+              software. This software can be homebrew projects or legally
+              obtained memory dumps of compatible games.
+
+              This file license is GNU GPLv2.
+              You can read the whole license file in
+              https://opensource.org/licenses/gpl-2.0.php
+
+-->
+
+<misterromdescription>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
+    <name>1941: Counter Attack (World 900227)</name>
+    <setname>1941</setname>
+    <rbf>jtcps1</rbf>
+    <mameversion>0251</mameversion>
+    <year>1990</year>
+    <manufacturer>Capcom</manufacturer>
+    <players>2</players>
+    <joystick>8</joystick>
+    <rotation>vertical (ccw)</rotation>
+    <region>World</region>
+    <rom index="0" zip="1941.zip" md5="None" asm_md5="f46af2ef83e0d4359e13290208828664">
+        <part>
+            00 04 40 04 40 05 FF FF
+            FF FF FF FF FF FF FF FF
+            20 05 FF FF FF FF 28 2A
+            2C 2E 30 00 00 32 02 08
+            20 14 2A 40 44 F3 FF 00
+            FF FF FF FF FF FF FF FF
+            FF FF FF FF FF FF FF FF
+            FF FF FF FF FF FF FF FF
+        </part>
+        <!-- maincpu - starts at 0x0 - length 0x100000 (20 bits) -->
+        <interleave output="16">
+            <part name="41em_35.11h" crc="ddbee5eb" map="01"/>
+            <part name="41em_30.11f" crc="4249ec61" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="41em_36.12h" crc="3cfc31d0" map="01"/>
+            <part name="41em_31.12f" crc="584e88e5" map="10"/>
+        </interleave>
+        <part name="41-32m.8h" crc="4e9648ca"/>
+        <!-- audiocpu - starts at 0x100000 - length 0x10000 (16 bits) -->
+        <part name="41_9.12b" crc="0f9d8527"/>
+        <!-- oki - starts at 0x110000 - length 0x40000 (18 bits) -->
+        <part name="41_18.11c" crc="d1f15aeb"/>
+        <part name="41_19.12c" crc="15aec3a6"/>
+        <!-- gfx - starts at 0x150000 - length 0x200000 (21 bits) -->
+        <interleave output="64">
+            <part name="41-5m.7a" crc="01d1cb11" map="00000021"/>
+            <part name="41-7m.9a" crc="aeaa3509" map="00002100"/>
+            <part name="41-1m.3a" crc="ff77985a" map="00210000"/>
+            <part name="41-3m.5a" crc="983be58f" map="21000000"/>
+        </interleave>
+        <!-- Total 0x350000 bytes - 3392 kBytes -->
+    </rom>
+    <!-- Vertical game -->
+    <rom index="1">
+        <part>05</part>
+    </rom>
+    <switches page_id="1" page_name="Switches" base="8" default="ff,fc,9f">
+        <!-- DSWB -->
+        <dip name="Difficulty" bits="8,10" ids="7,6,5,4,3,2,1,0"/>
+        <dip name="Level Up Timer" bits="11,12" ids="More Quickly,Quickly,Slowly,More Slowly"/>
+        <dip name="Bullet&apos;s Speed" bits="13,14" ids="Very Fast,Fast,Slow,Very Slow"/>
+        <dip name="Initial Vitality" bits="15" ids="4 Bars,3 Bars"/>
+        <!-- DSWC -->
+        <dip name="Throttle Game Speed" bits="16" ids="Off,On"/>
+        <dip name="Free Play" bits="18" ids="On,Off"/>
+        <dip name="Freeze" bits="19" ids="On,Off"/>
+        <dip name="Flip Screen" bits="20" ids="On,Off"/>
+        <dip name="Demo Sounds" bits="21" ids="On,Off"/>
+        <dip name="Allow Continue" bits="22" ids="Yes,No"/>
+        <dip name="Game Mode" bits="23" ids="Test,Game"/>
+        <!-- IN0 -->
+        <dip name="Service Mode" bits="30" ids="On,Off"/>
+        <dip name="PCB type" ids="88617A,89626A" bits="24"/>
+    </switches>
+    <buttons names="Shoot,Bomb,-,-,-,-,Start,Coin,Core credits" default="A,B,Start,Select,-" count="2"/>
+</misterromdescription>

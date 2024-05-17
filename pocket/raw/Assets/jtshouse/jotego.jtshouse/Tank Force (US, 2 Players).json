@@ -1,0 +1,32 @@
+{
+	"instance":{
+		"magic": "APF_VER_1",
+		"variant_select": {
+			"id": 0,
+			"select": false
+		},
+		"data_path": "",
+		"data_slots": [
+			{
+				"id": 1,
+				"filename": "tankfrce.rom",
+				"md5": "f8abd206a5b82f1c759f302ba16c6cd7"
+			},
+			{
+				"id": 2,
+				"filename": "tankfrce.sav"
+			},
+			{
+				"id": 17,
+				"filename": "beta.bin",
+				"md5": "71035230a15ff988e5823bc00a8efc50"
+			}
+		],
+		"memory_writes": [
+			{
+				"address": "0xf9000000",
+				"data": "0x0"
+			}
+		]
+	}
+}

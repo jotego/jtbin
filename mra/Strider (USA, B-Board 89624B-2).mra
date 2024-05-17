@@ -1,0 +1,98 @@
+<!--          FPGA arcade hardware by Jotego
+
+              This core is available for hardware compatible with MiST and MiSTer
+              Other FPGA systems may be supported by the time you read this.
+              This work is not mantained by the MiSTer project. Please contact the
+              core author for issues and updates.
+
+              (c) Jose Tejada, 2024. Please support this research
+              Patreon: https://patreon.com/jotego
+
+              The author does not endorse or participate in illegal distribution
+              of copyrighted material. This work can be used with compatible
+              software. This software can be homebrew projects or legally
+              obtained memory dumps of compatible games.
+
+              This file license is GNU GPLv2.
+              You can read the whole license file in
+              https://opensource.org/licenses/gpl-2.0.php
+
+-->
+
+<misterromdescription>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
+    <name>Strider (USA, B-Board 89624B-2)</name>
+    <setname>strider</setname>
+    <rbf>jtcps1</rbf>
+    <mameversion>0251</mameversion>
+    <year>1989</year>
+    <manufacturer>Capcom</manufacturer>
+    <players>2</players>
+    <joystick>8</joystick>
+    <rotation>horizontal</rotation>
+    <region>World</region>
+    <rom index="0" zip="strider.zip" md5="None" asm_md5="0de57eaedbb520fcb4c938b667808061">
+        <part>
+            00 04 40 04 40 05 FF FF
+            FF FF FF FF FF FF FF FF
+            FF 00 FF FF FF FF 26 28
+            2A 2C 2E 00 00 30 02 04
+            08 30 22 40 88 73 FF 00
+            FF FF FF FF FF FF FF FF
+            FF FF FF FF FF FF FF FF
+            FF FF FF FF FF FF FF FF
+        </part>
+        <!-- maincpu - starts at 0x0 - length 0x100000 (20 bits) -->
+        <interleave output="16">
+            <part name="35.11h" crc="5463aaa3" map="01"/>
+            <part name="30.11f" crc="da997474" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="36.12h" crc="21aa2863" map="01"/>
+            <part name="31.12f" crc="d20786db" map="10"/>
+        </interleave>
+        <part name="st-14.8h" crc="9b3cfc08"/>
+        <!-- audiocpu - starts at 0x100000 - length 0x10000 (16 bits) -->
+        <part name="09.12b" crc="2ed403bc"/>
+        <!-- oki - starts at 0x110000 - length 0x40000 (18 bits) -->
+        <part name="18.11c" crc="4386bc80"/>
+        <part name="19.12c" crc="444536d7"/>
+        <!-- gfx - starts at 0x150000 - length 0x400000 (22 bits) -->
+        <interleave output="64">
+            <part name="st-2.8a" crc="4eee9aea" map="00000021"/>
+            <part name="st-11.10a" crc="2d7f21e4" map="00002100"/>
+            <part name="st-5.4a" crc="7705aa46" map="00210000"/>
+            <part name="st-9.6a" crc="5b18b722" map="21000000"/>
+        </interleave>
+        <interleave output="64">
+            <part name="st-1.7a" crc="005f000b" map="00000021"/>
+            <part name="st-10.9a" crc="b9441519" map="00002100"/>
+            <part name="st-4.3a" crc="b7d04e8b" map="00210000"/>
+            <part name="st-8.5a" crc="6b4713b4" map="21000000"/>
+        </interleave>
+        <!-- Total 0x550000 bytes - 5440 kBytes -->
+    </rom>
+    <rom index="1">
+        <part>00</part>
+    </rom>
+    <switches page_id="1" page_name="Switches" base="8" default="ff,fd,ff">
+        <!-- DSWA -->
+        <dip name="Cabinet" bits="6,7" ids="Cocktail,-,Upright 2 Players,Upright 1 Player"/>
+        <!-- DSWB -->
+        <dip name="Difficulty" bits="8,10" ids="8,7,6,5,1,2,3,4"/>
+        <dip name="Bonus" bits="12,13" ids="30K &amp; 60K only,20K &amp; 60K only,30 50 then every 70,20 40 then every 60"/>
+        <dip name="Life Loss" bits="14,15" ids="-1,-,Default,-3"/>
+        <!-- DSWC -->
+        <dip name="Lives" bits="16,17" ids="2,5,4,3"/>
+        <dip name="Freeze" bits="18" ids="On,Off"/>
+        <dip name="Free Play" bits="19" ids="On,Off"/>
+        <dip name="Flip Screen" bits="20" ids="On,Off"/>
+        <dip name="Demo Sounds" bits="21" ids="Off,On"/>
+        <dip name="Allow Continue" bits="22" ids="No,Yes"/>
+        <dip name="Game Mode" bits="23" ids="Test,Game"/>
+        <!-- IN0 -->
+        <dip name="Service Mode" bits="30" ids="On,Off"/>
+        <dip name="PCB type" ids="88617A,89626A" bits="24"/>
+    </switches>
+    <buttons names="Attack,Jump,-,-,-,-,Start,Coin,Core credits" default="A,B,Start,Select,-" count="2"/>
+</misterromdescription>

@@ -1,0 +1,32 @@
+{
+	"instance":{
+		"magic": "APF_VER_1",
+		"variant_select": {
+			"id": 0,
+			"select": false
+		},
+		"data_path": "",
+		"data_slots": [
+			{
+				"id": 1,
+				"filename": "shadowld.rom",
+				"md5": "659556f8eddd38ab3de627f12a31bec0"
+			},
+			{
+				"id": 2,
+				"filename": "shadowld.sav"
+			},
+			{
+				"id": 17,
+				"filename": "beta.bin",
+				"md5": "71035230a15ff988e5823bc00a8efc50"
+			}
+		],
+		"memory_writes": [
+			{
+				"address": "0xf9000000",
+				"data": "0x0"
+			}
+		]
+	}
+}

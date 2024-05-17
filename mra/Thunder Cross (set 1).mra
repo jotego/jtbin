@@ -1,0 +1,104 @@
+<!--          FPGA arcade hardware by Jotego
+
+              This core is available for hardware compatible with MiST and MiSTer
+              Other FPGA systems may be supported by the time you read this.
+              This work is not mantained by the MiSTer project. Please contact the
+              core author for issues and updates.
+
+              (c) Jose Tejada, 2024. Please support this research
+              Patreon: https://patreon.com/jotego
+
+              The author does not endorse or participate in illegal distribution
+              of copyrighted material. This work can be used with compatible
+              software. This software can be homebrew projects or legally
+              obtained memory dumps of compatible games.
+
+              This file license is GNU GPLv2.
+              You can read the whole license file in
+              https://opensource.org/licenses/gpl-2.0.php
+
+-->
+
+<misterromdescription>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
+    <name>Thunder Cross (set 1)</name>
+    <setname>thunderx</setname>
+    <rbf>jtaliens</rbf>
+    <mameversion>0251</mameversion>
+    <year>1988</year>
+    <manufacturer>Konami</manufacturer>
+    <players>2</players>
+    <joystick>8</joystick>
+    <rotation>horizontal</rotation>
+    <region>World</region>
+    <rom index="0" zip="thunderx.zip" md5="None" asm_md5="719a5706ab5e24f82b68c5d7ab7b671d">
+        <!--     bit   0 = GX878 (Gang Busters)
+                 bits 2:1 = PCB config -> 0=Aliens, 1=Super Contra, 2=Thunder Cross -->
+        <part>
+            04 00 00 00 00 00 00 00
+        </part>
+        <!-- maincpu - starts at 0x0 - length 0x30000 (18 bits) -->
+        <part name="873-s02.k13" crc="6619333a"/>
+        <part name="873-s03.k15" crc="2aec2699"/>
+        <part repeat="0x10000"> FF</part>
+        <!-- JTFRAME_BA1_START -->
+        <!-- audiocpu - starts at 0x30000 - length 0x8000 (15 bits) -->
+        <part name="873-f01.f8" crc="ea35ffa3"/>
+        <!-- PCM_START -->
+        <!-- k007232 - starts at 0x38000 - length 0x80000 (19 bits) -->
+        <part repeat="0x80000"> FF</part>
+        <!-- JTFRAME_BA2_START -->
+        <!-- k052109 - starts at 0xB8000 - length 0x188000 (21 bits) -->
+        <interleave output="32">
+            <part name="873c06a.f6" crc="0e340b67" map="0001"/>
+            <part name="873c06c.f5" crc="ef0e72cd" map="0010"/>
+            <part name="873c07a.f4" crc="a8aab84f" map="0100"/>
+            <part name="873c07c.f3" crc="2521009a" map="1000"/>
+        </interleave>
+        <interleave output="32">
+            <part name="873c06b.e6" crc="97ad202e" map="0001"/>
+            <part name="873c06d.e5" crc="8393d42e" map="0010"/>
+            <part name="873c07b.e4" crc="12a2b8ba" map="0100"/>
+            <part name="873c07d.e3" crc="fae9f965" map="1000"/>
+        </interleave>
+        <part repeat="0x108000"> FF</part>
+        <!-- JTFRAME_BA3_START -->
+        <!-- k051960 - starts at 0x240000 - length 0x180000 (21 bits) -->
+        <interleave output="32">
+            <part name="873c05c.f8" crc="59903200" map="0001"/>
+            <part name="873c05a.f9" crc="d73e107d" map="0010"/>
+            <part name="873c04c.f10" crc="5dacbd2b" map="0100"/>
+            <part name="873c04a.f11" crc="f7740bf3" map="1000"/>
+        </interleave>
+        <interleave output="32">
+            <part name="873c05d.e8" crc="7fa3d7df" map="0001"/>
+            <part name="873c05b.e9" crc="81059b99" map="0010"/>
+            <part name="873c04d.e10" crc="44a4668c" map="0100"/>
+            <part name="873c04b.e11" crc="9ac581da" map="1000"/>
+        </interleave>
+        <part repeat="0x100000"> FF</part>
+        <!-- JTFRAME_PROM_START -->
+        <!-- proms - starts at 0x3C0000 - length 0x100 (8 bits) -->
+        <part name="873a08.f20" crc="e2d09a1b"/>
+        <!-- Total 0x3C0100 bytes - 3840 kBytes -->
+    </rom>
+    <nvram index="2" size="4096"/>
+    <rom index="1">
+        <part>00</part>
+    </rom>
+    <switches page_id="1" page_name="Switches" base="8" default="ff,7a,ff">
+        <!-- DSW1 -->
+        <dip name="Coin A" bits="0,3" ids="Free Play,4/3,4/1,3/4,3/2,3/1,2/5,2/3,2/1,1/7,1/6,1/5,1/4,1/3,1/2,1/1"/>
+        <dip name="Coin B" bits="4,7" ids="No B,4/3,4/1,3/4,3/2,3/1,2/5,2/3,2/1,1/7,1/6,1/5,1/4,1/3,1/2,1/1"/>
+        <!-- DSW2 -->
+        <dip name="Lives" bits="8,9" ids="7,5,3,2"/>
+        <dip name="Award Bonus Life" bits="10" ids="Yes,No"/>
+        <dip name="Bonus Life" bits="11,12" ids="50k,30k,50k 300k,30k 200k"/>
+        <dip name="Difficulty" bits="13,14" ids="Very Difficult,Difficult,Normal,Easy"/>
+        <dip name="Demo Sounds" bits="15" ids="On,Off"/>
+        <!-- DSW3 -->
+        <dip name="Flip Screen" bits="16" ids="On,Off"/>
+        <dip name="Service Mode" bits="18" ids="On,Off"/>
+    </switches>
+    <buttons names="Shoot,Option adjust,-,Start,Coin,Core credits" default="A,B,Start,Select,-" count="2"/>
+</misterromdescription>

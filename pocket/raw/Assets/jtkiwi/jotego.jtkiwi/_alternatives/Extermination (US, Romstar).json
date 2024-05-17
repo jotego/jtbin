@@ -1,0 +1,23 @@
+{
+	"instance":{
+		"magic": "APF_VER_1",
+		"variant_select": {
+			"id": 0,
+			"select": false
+		},
+		"data_path": "",
+		"data_slots": [
+			{
+				"id": 1,
+				"filename": "extrmatnur.rom",
+				"md5": "b3459d8c8a81e86572465d91d6cce3a2"
+			}
+		],
+		"memory_writes": [
+			{
+				"address": "0xf9000000",
+				"data": "0x5"
+			}
+		]
+	}
+}

@@ -1,0 +1,27 @@
+{
+	"instance":{
+		"magic": "APF_VER_1",
+		"variant_select": {
+			"id": 0,
+			"select": false
+		},
+		"data_path": "",
+		"data_slots": [
+			{
+				"id": 1,
+				"filename": "vendettan.rom",
+				"md5": "81c619369eb62011b4dc65504d3272ba"
+			},
+			{
+				"id": 2,
+				"filename": "vendettan.sav"
+			}
+		],
+		"memory_writes": [
+			{
+				"address": "0xf9000000",
+				"data": "0x20"
+			}
+		]
+	}
+}

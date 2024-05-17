@@ -1,0 +1,45 @@
+jtsimson - Arcade compatible hardware for Pocket FPGA
+Developed by JOTEGO - https://patreon.com/jotego
+
+The following arcade titles are compatible with this core. Generate
+the required .rom file using the mra tool (read below).
+Place the *.rom files in Assets/jtsimson/common
+
+Parodius Da!: Shinwa kara Owarai e (World, set 1) --> parodius.rom
+Parodius Da!: Shinwa kara Owarai e (Asia) --> parodiusa.rom
+Parodius Da!: Shinwa kara Owarai e (World, set 2) --> parodiuse.rom
+Parodius Da!: Shinwa kara Owarai e (Japan) --> parodiusj.rom
+The Simpsons (4 Players World, set 1) --> simpsons.rom
+The Simpsons (2 Players World, set 1) --> simpsons2p.rom
+The Simpsons (2 Players World, set 2) --> simpsons2p2.rom
+The Simpsons (2 Players World, set 3) --> simpsons2p3.rom
+The Simpsons (2 Players Asia) --> simpsons2pa.rom
+The Simpsons (2 Players Japan) --> simpsons2pj.rom
+The Simpsons (4 Players Asia) --> simpsons4pa.rom
+The Simpsons (4 Players World, set 2) --> simpsons4pe.rom
+The Simpsons (4 Players World, set 3) --> simpsons4pe2.rom
+Vendetta (World, 4 Players, ver. T) --> vendetta.rom
+Vendetta (Asia, 2 Players, ver. D) --> vendetta2pd.rom
+Vendetta (World, 2 Players, ver. EB-A?) --> vendetta2peba.rom
+Crime Fighters 2 (Japan, 2 Players, ver. P) --> vendetta2pp.rom
+Vendetta (Asia, 2 Players, ver. U) --> vendetta2pu.rom
+Vendetta (World, 2 Players, ver. ?) --> vendetta2pun.rom
+Vendetta (World, 2 Players, ver. W) --> vendetta2pw.rom
+Crime Fighters 2 (Japan, 4 Players, ver. N) --> vendettan.rom
+Vendetta (US, 4 Players, ver. R) --> vendettar.rom
+Vendetta (World, 4 Players, ver. ?) --> vendettaun.rom
+Vendetta (Asia, 4 Players, ver. Z) --> vendettaz.rom
+
+
+These files are generated using the mra tool in:
+https://github.com/sebdel/mra-tools-c/tree/master/release
+
+Boogermann's ORCA tool can also be used to generate the files:
+https://github.com/opengateware/tools-orca
+
+Check out the short tutorial in:
+https://github.com/jotego/jtbin/wiki/Analogue-Pocket-Cores
+
+DISCLAIMER: This PocketFPGA core is licensed to be used only
+with legally owned dumps of videogame data. It is also licensed
+to be used with freeware (homebrew) compatible with the platform.

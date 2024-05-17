@@ -1,0 +1,122 @@
+<!--          FPGA arcade hardware by Jotego
+
+              This core is available for hardware compatible with MiST and MiSTer
+              Other FPGA systems may be supported by the time you read this.
+              This work is not mantained by the MiSTer project. Please contact the
+              core author for issues and updates.
+
+              (c) Jose Tejada, 2024. Please support this research
+              Patreon: https://patreon.com/jotego
+
+              The author does not endorse or participate in illegal distribution
+              of copyrighted material. This work can be used with compatible
+              software. This software can be homebrew projects or legally
+              obtained memory dumps of compatible games.
+
+              This file license is GNU GPLv2.
+              You can read the whole license file in
+              https://opensource.org/licenses/gpl-2.0.php
+
+-->
+
+<misterromdescription>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
+    <name>Wrestle War (set 3, World) (8751 317-0103)</name>
+    <setname>wrestwar</setname>
+    <rbf>jts16b</rbf>
+    <mameversion>0251</mameversion>
+    <year>1989</year>
+    <manufacturer>Sega</manufacturer>
+    <players>2</players>
+    <joystick>8</joystick>
+    <rotation>vertical (ccw)</rotation>
+    <region>World</region>
+    <rom index="0" zip="wrestwar.zip" md5="None" asm_md5="2b5f95a8e696e54ed21149606b6ae9b0">
+        <part>
+            00 00 00 00 00 00 00 00
+            00 00 00 00 00 00 00 00
+            00 00 00 01 00 00 00 00
+            40 00 00 00 00 00 00 00
+        </part>
+        <!-- maincpu - starts at 0x0 - length 0x80000 (19 bits) -->
+        <interleave output="16">
+            <part name="epr-12371.a5" crc="6714600a" map="01"/>
+            <part name="epr-12372.a7" crc="eeaba126" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="epr-12144.a6" crc="ddf075cb" map="01"/>
+            <part name="epr-12146.a8" crc="b77ba665" map="10"/>
+        </interleave>
+        <!-- JTFRAME_BA1_START -->
+        <!-- soundcpu - starts at 0x80000 - length 0xC0000 (20 bits) -->
+        <part name="epr-12147.a10" crc="c3609607"/>
+        <part repeat="0x8000"> FF</part>
+        <part name="mpr-12148.a11" crc="fb9a7f29"/>
+        <part name="mpr-12149.a12" crc="d6617b19"/>
+        <part repeat="0x70000"> FF</part>
+        <!-- JTFRAME_BA2_START -->
+        <!-- gfx1 - starts at 0x140000 - length 0x100000 (20 bits) -->
+        <interleave output="32">
+            <part name="mpr-12150.a14" crc="6a821ab9" map="0001"/>
+            <part name="mpr-12151.a15" crc="2b1a0751" map="0010"/>
+            <part name="mpr-12152.a16" crc="f6e190fe" map="0100"/>
+            <part name="mpr-12152.a16" crc="f6e190fe" map="1000"/>
+        </interleave>
+        <part repeat="0x80000"> FF</part>
+        <!-- JTFRAME_BA3_START -->
+        <!-- sprites - starts at 0x240000 - length 0x200000 (21 bits) -->
+        <interleave output="16">
+            <part name="mpr-12153.b1" crc="ffa7d368" map="01"/>
+            <part name="mpr-12157.b5" crc="8d7794c1" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="mpr-12154.b2" crc="0ed343f2" map="01"/>
+            <part name="mpr-12158.b6" crc="99458d58" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="mpr-12155.b3" crc="3087104d" map="01"/>
+            <part name="mpr-12159.b7" crc="abcf9bed" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="opr-12156.b4" crc="41b6068b" map="01"/>
+            <part name="opr-12160.b8" crc="97eac164" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="opr-12141.a1" crc="260311c5" map="01"/>
+            <part name="opr-12161.b10" crc="35a4b1b1" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="opr-12142.a2" crc="12e38a5c" map="01"/>
+            <part name="opr-12162.b11" crc="fa06fd24" map="10"/>
+        </interleave>
+        <part repeat="0xA0000"> FF</part>
+        <!-- MCU_START -->
+        <!-- JTFRAME_PROM_START -->
+        <!-- mcu - starts at 0x440000 - length 0x2000 (13 bits) -->
+        <part name="317-0103.c2" crc="aa0710f5"/>
+        <part repeat="0x1000"> FF</part>
+        <!-- MAINKEY_START -->
+        <!-- maincpu:key - starts at 0x442000 - length 0x6000 (15 bits) -->
+        <part repeat="0x2000"> FF</part>
+        <part repeat="0x4000"> FF</part>
+        <!-- SNDKEY_START -->
+        <!-- soundcpu:key - starts at 0x448000 - length 0x2000 (13 bits) -->
+        <part repeat="0x2000"> FF</part>
+        <!-- Total 0x44A000 bytes - 4392 kBytes -->
+    </rom>
+    <!-- Vertical game -->
+    <rom index="1">
+        <part>05</part>
+    </rom>
+    <switches page_id="1" page_name="Switches" base="16" default="ff,fd">
+        <!-- DSW1 -->
+        <dip name="Coin A" bits="0,3" ids="Free Play or 1/1,1/1 2/3,1/1 4/5,1/1 5/6,2/1 4/3,2/1 5/3 6/4,2/3,4/1,3/1,2/1,1/6,1/5,1/4,1/3,1/2,1/1"/>
+        <dip name="Coin B" bits="4,7" ids="Free Play or 1/1,1/1 2/3,1/1 4/5,1/1 5/6,2/1 4/3,2/1 5/3 6/4,2/3,4/1,3/1,2/1,1/6,1/5,1/4,1/3,1/2,1/1"/>
+        <!-- DSW2 -->
+        <dip name="Demo Sounds" bits="9" ids="On,Off"/>
+        <dip name="Round Time" bits="10,11" ids="100,130,120,110"/>
+        <dip name="Allow Continue" bits="13" ids="No,Yes"/>
+        <dip name="Difficulty" bits="14,15" ids="Hardest,Hard,Easy,Normal"/>
+    </switches>
+    <buttons names="Punch,Kick,-,-,Start,Coin,Core credits" default="A,B,Start,Select,-" count="2"/>
+</misterromdescription>

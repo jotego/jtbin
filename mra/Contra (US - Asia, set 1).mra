@@ -1,0 +1,80 @@
+<!--          FPGA arcade hardware by Jotego
+
+              This core is available for hardware compatible with MiST and MiSTer
+              Other FPGA systems may be supported by the time you read this.
+              This work is not mantained by the MiSTer project. Please contact the
+              core author for issues and updates.
+
+              (c) Jose Tejada, 2024. Please support this research
+              Patreon: https://patreon.com/jotego
+
+              The author does not endorse or participate in illegal distribution
+              of copyrighted material. This work can be used with compatible
+              software. This software can be homebrew projects or legally
+              obtained memory dumps of compatible games.
+
+              This file license is GNU GPLv2.
+              You can read the whole license file in
+              https://opensource.org/licenses/gpl-2.0.php
+
+-->
+
+<misterromdescription>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
+    <name>Contra (US - Asia, set 1)</name>
+    <setname>contra</setname>
+    <rbf>jtcontra</rbf>
+    <mameversion>0251</mameversion>
+    <year>1987</year>
+    <manufacturer>Konami</manufacturer>
+    <players>2</players>
+    <joystick>8</joystick>
+    <rotation>vertical (cw)</rotation>
+    <region>Asia</region>
+    <rom index="0" zip="contra.zip" md5="None" asm_md5="bb925cb753830f2a852903e0e155085b">
+        <!-- maincpu - starts at 0x0 - length 0x20000 (17 bits) -->
+        <part name="633i02.17a" crc="b2f7bd9a"/>
+        <part name="633m03.18a" crc="d045e1da"/>
+        <!-- SND_START -->
+        <!-- audiocpu - starts at 0x20000 - length 0x8000 (15 bits) -->
+        <part name="633e01.12a" crc="d1549255"/>
+        <!-- GFX1_START -->
+        <!-- k007121_1 - starts at 0x28000 - length 0x80000 (19 bits) -->
+        <interleave output="16">
+            <part name="633e05.7f" crc="42185044" map="01"/>
+            <part name="633e04.7d" crc="14ddc542" map="10"/>
+        </interleave>
+        <!-- GFX2_START -->
+        <!-- k007121_2 - starts at 0xA8000 - length 0x80000 (19 bits) -->
+        <interleave output="16">
+            <part name="633e07.16f" crc="f2d06638" map="01"/>
+            <part name="633e06.16d" crc="9cf6faae" map="10"/>
+        </interleave>
+        <!-- JTFRAME_PROM_START -->
+        <!-- proms - starts at 0x128000 - length 0x400 (10 bits) -->
+        <part name="633e08.10g" crc="9f0949fa"/>
+        <part name="633e09.12g" crc="14ca5e19"/>
+        <part name="633f10.18g" crc="2b244d84"/>
+        <part name="633f11.20g" crc="14ca5e19"/>
+        <!-- Total 0x128400 bytes - 1185 kBytes -->
+    </rom>
+    <!-- Vertical game -->
+    <rom index="1">
+        <part>01</part>
+    </rom>
+    <switches page_id="1" page_name="Switches" base="8" default="ff,7e,ff">
+        <!-- DSW1 -->
+        <dip name="Coin A" bits="0,3" ids="Free Play,4/3,4/1,3/4,3/2,3/1,2/5,2/3,2/1,1/7,1/6,1/5,1/4,1/3,1/2,1/1"/>
+        <dip name="Coin B" bits="4,7" ids="No B,4/3,4/1,3/4,3/2,3/1,2/5,2/3,2/1,1/7,1/6,1/5,1/4,1/3,1/2,1/1"/>
+        <!-- DSW2 -->
+        <dip name="Lives" bits="8,9" ids="7,5,3,2"/>
+        <dip name="Bonus Life" bits="11,12" ids="50k,40k,40k 80k,30k 70k"/>
+        <dip name="Difficulty" bits="13,14" ids="Hardest,Hard,Normal,Easy"/>
+        <dip name="Demo Sounds" bits="15" ids="On,Off"/>
+        <!-- DSW3 -->
+        <dip name="Flip Screen" bits="16" ids="On,Off"/>
+        <dip name="Service Mode" bits="18" ids="On,Off"/>
+        <dip name="Sound" bits="19" ids="Mono,Stereo"/>
+    </switches>
+    <buttons names="Shoot,Jump,Start,Coin,Core credits" default="A,B,Start,Select,-" count="2"/>
+</misterromdescription>

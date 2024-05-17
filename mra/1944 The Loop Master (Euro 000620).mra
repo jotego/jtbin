@@ -1,0 +1,89 @@
+<!--          FPGA arcade hardware by Jotego
+
+              This core is available for hardware compatible with MiST and MiSTer
+              Other FPGA systems may be supported by the time you read this.
+              This work is not mantained by the MiSTer project. Please contact the
+              core author for issues and updates.
+
+              (c) Jose Tejada, 2024. Please support this research
+              Patreon: https://patreon.com/jotego
+
+              The author does not endorse or participate in illegal distribution
+              of copyrighted material. This work can be used with compatible
+              software. This software can be homebrew projects or legally
+              obtained memory dumps of compatible games.
+
+              This file license is GNU GPLv2.
+              You can read the whole license file in
+              https://opensource.org/licenses/gpl-2.0.php
+
+-->
+
+<misterromdescription default="ff,ff">
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
+    <name>1944: The Loop Master (Euro 000620)</name>
+    <setname>1944</setname>
+    <rbf>jtcps2</rbf>
+    <mameversion>0251</mameversion>
+    <year>2000</year>
+    <manufacturer>Eighting / Raizing (Capcom license)</manufacturer>
+    <players>2</players>
+    <joystick>8</joystick>
+    <rotation>horizontal</rotation>
+    <region>World</region>
+    <rom index="0" zip="1944.zip|qsound.zip" md5="None" address="0x30000000" asm_md5="57e1779f1b7ff9b65d631df05d5cebf0">
+        <part>
+            00 06 80 06 80 26 80 76
+            FF FF FF FF FF FF FF FF
+            32 FF 00 02 04 06 26 28
+            2A 2C 2E 00 00 30 02 04
+            08 30 FF FF FF FF FF FF
+            FF FF FF FF </part>
+        <!-- key - starts at 0x0 - length 0x14 (5 bits) -->
+        <part name="1944.key" crc="5f22140e"/>
+        <!-- maincpu - starts at 0x14 - length 0x180000 (21 bits) -->
+        <part name="nffe.03" crc="7544b926"/>
+        <part name="nffe.04" crc="dba1c66e"/>
+        <part name="nffe.05" crc="d78d31d3"/>
+        <!-- audiocpu - starts at 0x180014 - length 0x20000 (17 bits) -->
+        <part name="nff.01" crc="d2e44318"/>
+        <!-- qsound - starts at 0x1A0014 - length 0x800000 (23 bits) -->
+        <interleave output="16">
+            <part name="nff.11m" crc="243e4e05" map="12"/>
+        </interleave>
+        <interleave output="16">
+            <part name="nff.12m" crc="4fcf1600" map="12"/>
+        </interleave>
+        <!-- gfx - starts at 0x9A0014 - length 0x1400000 (25 bits) -->
+        <interleave output="64">
+            <part name="nff.13m" crc="c9fca741" map="00000021"/>
+            <part name="nff.15m" crc="f809d898" map="00002100"/>
+            <part name="nff.17m" crc="15ba4507" map="00210000"/>
+            <part name="nff.19m" crc="3dd41b8c" map="21000000"/>
+        </interleave>
+        <interleave output="64">
+            <part name="nff.14m" crc="3fe3a54b" map="00000021"/>
+            <part name="nff.16m" crc="565cd231" map="00002100"/>
+            <part name="nff.18m" crc="63ca5988" map="00210000"/>
+            <part name="nff.20m" crc="21eb8f3b" map="21000000"/>
+        </interleave>
+        <!-- firmware - starts at 0x1DA0014 - length 0x2000 (13 bits) -->
+        <part name="dl-1425.bin" crc="d6cf5ef5" length="0x2000"/>
+        <!-- Total 0x1DA2014 bytes - 30344 kBytes -->
+    </rom>
+    <rom index="2">
+00 00 01 00 00 00 00 02 00 00 00 00 00 00 00 00
+01 03 00 02 00 00 00 00 00 00 00 00 00 00 00 00
+00 20 23 06 19 04 FF 44 39 31 34 34 45 20 52 55
+00 00 01 00 00 00 00 02 00 00 00 00 00 00 00 00
+01 03 00 02 00 00 00 00 00 00 00 00 00 00 00 00
+00 20 23 06 19 04 FF 44 39 31 34 34 45 20 52 55
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+</rom>
+    <nvram index="2" size="128"/>
+    <rom index="1">
+        <part>00</part>
+    </rom>
+    <buttons names="Shot,Bomb,-,-,-,-,Start,Coin,Core credits" default="A,B,Start,Select,-" count="2"/>
+</misterromdescription>

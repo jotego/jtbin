@@ -1,0 +1,86 @@
+<!--          FPGA arcade hardware by Jotego
+
+              This core is available for hardware compatible with MiST and MiSTer
+              Other FPGA systems may be supported by the time you read this.
+              This work is not mantained by the MiSTer project. Please contact the
+              core author for issues and updates.
+
+              (c) Jose Tejada, 2024. Please support this research
+              Patreon: https://patreon.com/jotego
+
+              The author does not endorse or participate in illegal distribution
+              of copyrighted material. This work can be used with compatible
+              software. This software can be homebrew projects or legally
+              obtained memory dumps of compatible games.
+
+              This file license is GNU GPLv2.
+              You can read the whole license file in
+              https://opensource.org/licenses/gpl-2.0.php
+
+-->
+
+<misterromdescription>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
+    <name>Crime Fighters (World 2 players)</name>
+    <setname>crimfght</setname>
+    <rbf>jtaliens</rbf>
+    <mameversion>0251</mameversion>
+    <year>1989</year>
+    <manufacturer>Konami</manufacturer>
+    <players>2</players>
+    <joystick>8</joystick>
+    <rotation>horizontal</rotation>
+    <region>World</region>
+    <rom index="0" zip="crimfght.zip" md5="None" asm_md5="a60fc1b7d6bf7e14f99abc9f8044ca52">
+        <!--     bit   0 = GX878 (Gang Busters)
+                 bits 2:1 = PCB config -> 0=Aliens, 1=Super Contra, 2=Thunder Cross -->
+        <part>
+            06 00 00 00 00 00 00 00
+        </part>
+        <!-- maincpu - starts at 0x0 - length 0x30000 (18 bits) -->
+        <part name="821r02.f24" crc="4ecdd923"/>
+        <part repeat="0x10000"> FF</part>
+        <!-- JTFRAME_BA1_START -->
+        <!-- audiocpu - starts at 0x30000 - length 0x8000 (15 bits) -->
+        <part name="821l01.h4" crc="0faca89e"/>
+        <!-- PCM_START -->
+        <!-- k007232 - starts at 0x38000 - length 0x80000 (19 bits) -->
+        <part name="821k03.e5" crc="fef8505a"/>
+        <part repeat="0x40000"> FF</part>
+        <!-- JTFRAME_BA2_START -->
+        <!-- k052109 - starts at 0xB8000 - length 0x188000 (21 bits) -->
+        <interleave output="32">
+            <part name="821k06.k13" crc="a1eadb24" map="0021"/>
+            <part name="821k07.k19" crc="060019fa" map="2100"/>
+        </interleave>
+        <part repeat="0x108000"> FF</part>
+        <!-- JTFRAME_BA3_START -->
+        <!-- k051960 - starts at 0x240000 - length 0x180000 (21 bits) -->
+        <interleave output="32">
+            <part name="821k05.k8" crc="e09ea05d" map="0012"/>
+            <part name="821k04.k2" crc="00e0291b" map="1200"/>
+        </interleave>
+        <part repeat="0x80000"> FF</part>
+        <!-- JTFRAME_PROM_START -->
+        <!-- proms - starts at 0x3C0000 - length 0x100 (8 bits) -->
+        <part name="821a08.i15" crc="7da55800"/>
+        <!-- Total 0x3C0100 bytes - 3840 kBytes -->
+    </rom>
+    <nvram index="2" size="4096"/>
+    <rom index="1">
+        <part>00</part>
+    </rom>
+    <switches page_id="1" page_name="Switches" base="8" default="ff,5d,ff">
+        <!-- DSW1 -->
+        <dip name="Coin A" bits="0,3" ids="Free Play,4/3,4/1,3/4,3/2,3/1,2/5,2/3,2/1,1/7,1/6,1/5,1/4,1/3,1/2,1/1"/>
+        <dip name="Coin B" bits="4,7" ids="Unused,4/3,4/1,3/4,3/2,3/1,2/5,2/3,2/1,1/7,1/6,1/5,1/4,1/3,1/2,1/1"/>
+        <!-- DSW2 -->
+        <dip name="Lives" bits="8,9" ids="4,3,2,1"/>
+        <dip name="Difficulty" bits="13,14" ids="Very Difficult,Difficult,Normal,Easy"/>
+        <dip name="Demo Sounds" bits="15" ids="On,Off"/>
+        <!-- DSW3 -->
+        <dip name="Flip Screen" bits="16" ids="On,Off"/>
+        <dip name="Service Mode" bits="18" ids="On,Off"/>
+    </switches>
+    <buttons names="Punch,Kick,Back Kick,Start,Coin,Core credits" default="A,B,X,Start,Select,-" count="3"/>
+</misterromdescription>

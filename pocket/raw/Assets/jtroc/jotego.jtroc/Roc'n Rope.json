@@ -1,0 +1,23 @@
+{
+	"instance":{
+		"magic": "APF_VER_1",
+		"variant_select": {
+			"id": 0,
+			"select": false
+		},
+		"data_path": "",
+		"data_slots": [
+			{
+				"id": 1,
+				"filename": "rocnrope.rom",
+				"md5": "3ea1ddb56be848aecc0b3b64f295ad3e"
+			}
+		],
+		"memory_writes": [
+			{
+				"address": "0xf9000000",
+				"data": "0x1"
+			}
+		]
+	}
+}

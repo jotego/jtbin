@@ -1,0 +1,116 @@
+<!--          FPGA arcade hardware by Jotego
+
+              This core is available for hardware compatible with MiST and MiSTer
+              Other FPGA systems may be supported by the time you read this.
+              This work is not mantained by the MiSTer project. Please contact the
+              core author for issues and updates.
+
+              (c) Jose Tejada, 2024. Please support this research
+              Patreon: https://patreon.com/jotego
+
+              The author does not endorse or participate in illegal distribution
+              of copyrighted material. This work can be used with compatible
+              software. This software can be homebrew projects or legally
+              obtained memory dumps of compatible games.
+
+              This file license is GNU GPLv2.
+              You can read the whole license file in
+              https://opensource.org/licenses/gpl-2.0.php
+
+-->
+
+<misterromdescription>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
+    <name>Vulgus (set 1)</name>
+    <setname>vulgus</setname>
+    <rbf>jt1942</rbf>
+    <mameversion>0251</mameversion>
+    <year>1984</year>
+    <manufacturer>Capcom</manufacturer>
+    <players>2</players>
+    <joystick>8</joystick>
+    <rotation>vertical (ccw)</rotation>
+    <region>World</region>
+    <rom index="0" zip="vulgus.zip" md5="None" asm_md5="a2491b35a3630e0ff50c257ef89ca8e2">
+        <!--  Header to identify the PCB type
+        Byte 0 = 0 for 1942, 1 for Vulgus, 2 for Higemaru
+        Byte 1 = XOR with flip
+ -->
+        <part>
+            01 00 00 00 </part>
+        <!-- maincpu - starts at 0x0 - length 0x14000 (17 bits) -->
+        <part name="vulgus.002" crc="e49d6c5d"/>
+        <part name="vulgus.003" crc="51acef76"/>
+        <part name="vulgus.004" crc="489e7f60"/>
+        <part name="vulgus.005" crc="de3a24a8"/>
+        <part name="1-8n.bin" crc="6ca5ca41"/>
+        <part repeat="0xA000"> FF</part>
+        <!-- JTFRAME_BA1_START -->
+        <!-- audiocpu - starts at 0x14000 - length 0x4000 (14 bits) -->
+        <part name="1-11c.bin" crc="3bd2acf4"/>
+        <part repeat="0x2000"> FF</part>
+        <!-- JTFRAME_BA2_START -->
+        <!-- gfx1 - starts at 0x18000 - length 0x2000 (13 bits) -->
+        <interleave output="16">
+            <part name="1-3d.bin" crc="8bc5d7a5" map="12"/>
+        </interleave>
+        <!-- gfx3 - starts at 0x1A000 - length 0x10000 (16 bits) -->
+        <interleave output="16">
+            <part name="2-2n.bin" crc="6db1b10d" map="01"/>
+            <part name="2-4n.bin" crc="0071a2e3" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="2-3n.bin" crc="5d8c34ec" map="01"/>
+            <part name="2-5n.bin" crc="4023a1ec" map="10"/>
+        </interleave>
+        <part repeat="0x8000"> FF</part>
+        <!-- JTFRAME_BA3_START -->
+        <!-- gfx2 - starts at 0x2A000 - length 0x10000 (16 bits) -->
+        <interleave output="32">
+            <part name="2-2a.bin" crc="e10aaca1" map="0001"/>
+            <part name="2-4a.bin" crc="206a13f1" map="0010"/>
+            <part name="2-6a.bin" crc="5a26b38f" map="0100"/>
+            <part name="2-6a.bin" crc="5a26b38f" map="1000"/>
+        </interleave>
+        <interleave output="32">
+            <part name="2-3a.bin" crc="8da520da" map="0001"/>
+            <part name="2-5a.bin" crc="b6d81984" map="0010"/>
+            <part name="2-7a.bin" crc="1e1ca773" map="0100"/>
+            <part name="2-7a.bin" crc="1e1ca773" map="1000"/>
+        </interleave>
+        <!-- JTFRAME_PROM_START -->
+        <!-- palproms - starts at 0x3A000 -->
+        <!-- charprom - starts at 0x3A000 -->
+        <!-- tileprom - starts at 0x3A000 -->
+        <!-- sprprom - starts at 0x3A000 -->
+        <!-- proms - starts at 0x3A000 - length 0xA00 (12 bits) -->
+        <part name="e8.bin" crc="06a83606"/>
+        <part name="e9.bin" crc="beacf13c"/>
+        <part name="e10.bin" crc="de1fb621"/>
+        <part name="d1.bin" crc="7179080d"/>
+        <part name="c9.bin" crc="7a1f0bd6"/>
+        <part name="j2.bin" crc="d0842029"/>
+        <part name="e8.bin" crc="06a83606"/>
+        <part name="e8.bin" crc="06a83606"/>
+        <part name="82s126.9k" crc="32b10521"/>
+        <part name="82s129.8n" crc="4921635c"/>
+        <!-- Total 0x3AA00 bytes - 234 kBytes -->
+    </rom>
+    <!-- Vertical game -->
+    <rom index="1">
+        <part>05</part>
+    </rom>
+    <switches page_id="1" page_name="Switches" base="16" default="ff,7f">
+        <!-- DSW1 -->
+        <dip name="Lives" bits="0,1" ids="5,1,2,3"/>
+        <dip name="Coin B" bits="2,4" ids="Invalid,2/1,4/1,1/2,5/1,1/3,3/1,1/1"/>
+        <dip name="Coin A" bits="5,7" ids="Free Play,2/1,4/1,1/2,5/1,1/3,3/1,1/1"/>
+        <!-- DSW2 -->
+        <dip name="Demo Music" bits="10" ids="Off,On"/>
+        <dip name="Demo Sounds" bits="11" ids="Off,On"/>
+        <dip name="Bonus Life" bits="12,14" ids="None,10k 70k,20k 80k,10k 50k,30k 70k,10k 60k,20k 70k,20k 60k"/>
+        <dip name="Cabinet" bits="15" ids="Upright,Cocktail"/>
+        <dip name="Flip Screen" ids="Off,On" bits="16"/>
+    </switches>
+    <buttons names="Shoot,Bomb,Start,Coin,Core credits" default="A,B,Start,Select,-" count="2"/>
+</misterromdescription>

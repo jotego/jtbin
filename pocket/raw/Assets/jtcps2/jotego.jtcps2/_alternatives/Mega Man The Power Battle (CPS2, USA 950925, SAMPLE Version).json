@@ -1,0 +1,27 @@
+{
+	"instance":{
+		"magic": "APF_VER_1",
+		"variant_select": {
+			"id": 0,
+			"select": false
+		},
+		"data_path": "",
+		"data_slots": [
+			{
+				"id": 1,
+				"filename": "mmancp2ur2.rom",
+				"md5": "f8489c0cd77b19c0d70b7b79d23fc16d"
+			},
+			{
+				"id": 2,
+				"filename": "mmancp2ur2.sav"
+			}
+		],
+		"memory_writes": [
+			{
+				"address": "0xf9000000",
+				"data": "0x0"
+			}
+		]
+	}
+}

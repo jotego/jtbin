@@ -1,0 +1,31 @@
+{
+	"interact":{
+		"magic": "APF_VER_1",
+		"variables": [
+			{
+				"name": "Service Mode",
+				"id": 0,
+				"type": "check",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 0,
+				"value": 0,
+				"value_off": 1,
+				"mask": "0xFFFFFFFE"
+			},
+			{
+				"name": "Default",
+				"id": 1015,
+				"type": "number_u32",
+				"enabled": false,
+				"persist": false,
+				"writeonly": true,
+				"address": "0xfa000000",
+				"defaultval": 65535,
+				"value": 0
+			}
+		],
+		"messages": []
+	}
+}

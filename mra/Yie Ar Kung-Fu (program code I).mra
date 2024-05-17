@@ -1,0 +1,88 @@
+<!--          FPGA arcade hardware by Jotego
+
+              This core is available for hardware compatible with MiST and MiSTer
+              Other FPGA systems may be supported by the time you read this.
+              This work is not mantained by the MiSTer project. Please contact the
+              core author for issues and updates.
+
+              (c) Jose Tejada, 2024. Please support this research
+              Patreon: https://patreon.com/jotego
+
+              The author does not endorse or participate in illegal distribution
+              of copyrighted material. This work can be used with compatible
+              software. This software can be homebrew projects or legally
+              obtained memory dumps of compatible games.
+
+              This file license is GNU GPLv2.
+              You can read the whole license file in
+              https://opensource.org/licenses/gpl-2.0.php
+
+-->
+
+<misterromdescription>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
+    <name>Yie Ar Kung-Fu (program code I)</name>
+    <setname>yiear</setname>
+    <rbf>jtyiear</rbf>
+    <mameversion>0251</mameversion>
+    <year>1985</year>
+    <manufacturer>Konami</manufacturer>
+    <players>2</players>
+    <joystick>8</joystick>
+    <rotation>horizontal</rotation>
+    <region>World</region>
+    <rom index="0" zip="yiear.zip" md5="None" asm_md5="afb55d95baedbc4da89fc628d6586861">
+        <!-- maincpu - starts at 0x0 - length 0x10000 (16 bits) -->
+        <part repeat="0x8000"> FF</part>
+        <interleave output="16">
+            <part name="407_i08.10d" crc="e2d7458b" map="12"/>
+        </interleave>
+        <interleave output="16">
+            <part name="407_i07.8d" crc="7db7442e" map="12"/>
+        </interleave>
+        <!-- SCR_START -->
+        <!-- tiles - starts at 0x10000 - length 0x4000 (14 bits) -->
+        <interleave output="16">
+            <part name="407_c01.6h" crc="b68fd91d" map="01"/>
+            <part name="407_c02.7h" crc="d9b167c6" map="10"/>
+        </interleave>
+        <!-- OBJ_START -->
+        <!-- sprites - starts at 0x14000 - length 0x10000 (16 bits) -->
+        <interleave output="16">
+            <part name="407_d05.16h" crc="45109b29" map="01"/>
+            <part name="407_d03.14h" crc="e6aa945b" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="407_d06.17h" crc="1d650790" map="01"/>
+            <part name="407_d04.15h" crc="cc187c22" map="10"/>
+        </interleave>
+        <!-- PCM_START -->
+        <!-- vlm - starts at 0x24000 - length 0x2000 (13 bits) -->
+        <interleave output="16">
+            <part name="407_c09.8b" crc="f75a1539" map="12"/>
+        </interleave>
+        <!-- JTFRAME_PROM_START -->
+        <!-- proms - starts at 0x26000 - length 0x20 (5 bits) -->
+        <part name="407c10.1g" crc="c283d71f"/>
+        <!-- Total 0x26020 bytes - 152 kBytes -->
+    </rom>
+    <rom index="1">
+        <part>00</part>
+    </rom>
+    <switches page_id="1" page_name="Switches" base="16" default="ff,5b,ff">
+        <!-- DSW1 -->
+        <dip name="Coin A" bits="0,3" ids="Free Play,4/3,4/1,3/4,3/2,3/1,2/5,2/3,2/1,1/7,1/6,1/5,1/4,1/3,1/2,1/1"/>
+        <dip name="Coin B" bits="4,7" ids="Invalid,4/3,4/1,3/4,3/2,3/1,2/5,2/3,2/1,1/7,1/6,1/5,1/4,1/3,1/2,1/1"/>
+        <!-- DSW2 -->
+        <dip name="Lives" bits="8,9" ids="5,3,2,1"/>
+        <dip name="Cabinet" bits="10" ids="Upright,Cocktail"/>
+        <dip name="Bonus Life" bits="11" ids="40k 90k,30k 80k"/>
+        <dip name="Difficulty" bits="12,13" ids="Very Difficult,Normal,Difficult,Easy"/>
+        <dip name="Demo Sounds" bits="15" ids="On,Off"/>
+        <!-- DSW3 -->
+        <dip name="Flip Screen" bits="16" ids="On,Off"/>
+        <dip name="Upright Controls" bits="17" ids="Dual,Single"/>
+        <dip name="Service Mode" bits="18" ids="On,Off"/>
+    </switches>
+    <buttons names="Punch,Kick,Start,Coin,Core credits" default="A,B,Start,Select,-" count="2"/>
+</misterromdescription>

@@ -1,0 +1,32 @@
+{
+	"instance":{
+		"magic": "APF_VER_1",
+		"variant_select": {
+			"id": 0,
+			"select": false
+		},
+		"data_path": "",
+		"data_slots": [
+			{
+				"id": 1,
+				"filename": "boxyboya.rom",
+				"md5": "3f3e8b7f50b9b5b14d78ac54d9cdf341"
+			},
+			{
+				"id": 2,
+				"filename": "boxyboya.sav"
+			},
+			{
+				"id": 17,
+				"filename": "beta.bin",
+				"md5": "71035230a15ff988e5823bc00a8efc50"
+			}
+		],
+		"memory_writes": [
+			{
+				"address": "0xf9000000",
+				"data": "0x0"
+			}
+		]
+	}
+}

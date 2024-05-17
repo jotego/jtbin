@@ -1,0 +1,42 @@
+Place the following files in this folder:
+
+blastoff.rom
+blazer.rom
+boxyboy.rom
+boxyboya.rom
+dangseed.rom
+dspirit.rom
+dspirit1.rom
+dspirit2.rom
+faceoff.rom
+galaga88.rom
+galaga88a.rom
+galaga88j.rom
+mmaze.rom
+mmaze2.rom
+pacmania.rom
+pacmaniaj.rom
+pacmaniao.rom
+pistoldm.rom
+shadowld.rom
+soukobdx.rom
+splatter.rom
+splatter2.rom
+splatterj.rom
+tankfrce.rom
+wldcourt.rom
+ws.rom
+ws89.rom
+ws90.rom
+youkaidk1.rom
+youkaidk2.rom
+
+These files are generated using the mra tool in:
+https://github.com/sebdel/mra-tools-c/tree/master/release
+
+Check out the short tutorial in:
+https://github.com/jotego/jtbin/wiki/Analogue-Pocket-Cores
+
+DISCLAIMER: This PocketFPGA core is licensed to be used only
+with legally owned dumps of videogame data. It is also licensed
+to be used with freeware (homebrew) compatible with the platform.

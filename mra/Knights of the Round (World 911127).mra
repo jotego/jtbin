@@ -1,0 +1,87 @@
+<!--          FPGA arcade hardware by Jotego
+
+              This core is available for hardware compatible with MiST and MiSTer
+              Other FPGA systems may be supported by the time you read this.
+              This work is not mantained by the MiSTer project. Please contact the
+              core author for issues and updates.
+
+              (c) Jose Tejada, 2024. Please support this research
+              Patreon: https://patreon.com/jotego
+
+              The author does not endorse or participate in illegal distribution
+              of copyrighted material. This work can be used with compatible
+              software. This software can be homebrew projects or legally
+              obtained memory dumps of compatible games.
+
+              This file license is GNU GPLv2.
+              You can read the whole license file in
+              https://opensource.org/licenses/gpl-2.0.php
+
+-->
+
+<misterromdescription>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
+    <name>Knights of the Round (World 911127)</name>
+    <setname>knights</setname>
+    <rbf>jtcps1</rbf>
+    <mameversion>0251</mameversion>
+    <year>1991</year>
+    <manufacturer>Capcom</manufacturer>
+    <players>3</players>
+    <joystick>8</joystick>
+    <rotation>horizontal</rotation>
+    <region>World</region>
+    <rom index="0" zip="knights.zip" md5="None" asm_md5="28d67adc3f399d60f904d6bee5669c86">
+        <part>
+            00 04 40 04 40 05 FF FF
+            FF FF FF FF FF FF FF FF
+            FF FF 06 04 02 00 28 26
+            24 22 20 36 00 30 20 10
+            02 00 0D 40 88 73 FF 02
+            FF FF FF FF FF FF FF FF
+            FF FF FF FF FF FF FF FF
+            FF FF FF FF FF FF FF FF
+        </part>
+        <!-- maincpu - starts at 0x0 - length 0x100000 (20 bits) -->
+        <part name="kr_23e.8f" crc="1b3997eb"/>
+        <part name="kr_22.7f" crc="d0b671a9"/>
+        <!-- audiocpu - starts at 0x100000 - length 0x10000 (16 bits) -->
+        <part name="kr_09.11a" crc="5e44d9ee"/>
+        <!-- oki - starts at 0x110000 - length 0x40000 (18 bits) -->
+        <part name="kr_18.11c" crc="da69d15f"/>
+        <part name="kr_19.12c" crc="bfc654e9"/>
+        <!-- gfx - starts at 0x150000 - length 0x400000 (22 bits) -->
+        <interleave output="64">
+            <part name="kr-5m.3a" crc="9e36c1a4" map="00000021"/>
+            <part name="kr-7m.5a" crc="c5832cae" map="00002100"/>
+            <part name="kr-1m.4a" crc="f095be2d" map="00210000"/>
+            <part name="kr-3m.6a" crc="179dfd96" map="21000000"/>
+        </interleave>
+        <interleave output="64">
+            <part name="kr-6m.7a" crc="1f4298d2" map="00000021"/>
+            <part name="kr-8m.9a" crc="37fa8751" map="00002100"/>
+            <part name="kr-2m.8a" crc="0200bc3d" map="00210000"/>
+            <part name="kr-4m.10a" crc="0bb2b4e7" map="21000000"/>
+        </interleave>
+        <!-- Total 0x550000 bytes - 5440 kBytes -->
+    </rom>
+    <rom index="1">
+        <part>00</part>
+    </rom>
+    <switches page_id="1" page_name="Switches" base="8" default="ff,fc,bf">
+        <!-- DSWB -->
+        <dip name="Enemy&apos;s attack frequency" bits="8,10" ids="8,7,6,5,4,3,2,1"/>
+        <dip name="Enemy&apos;s attack power" bits="11,13" ids="1,2,3,8,7,6,5,4"/>
+        <dip name="Play Mode" bits="15" ids="2 Players,3 Players"/>
+        <!-- DSWC -->
+        <dip name="Lives" bits="16,17" ids="1,4,3,2"/>
+        <dip name="Free Play" bits="18" ids="On,Off"/>
+        <dip name="Freeze" bits="19" ids="On,Off"/>
+        <dip name="Flip Screen" bits="20" ids="On,Off"/>
+        <dip name="Demo Sounds" bits="21" ids="On,Off"/>
+        <dip name="Allow Continue" bits="22" ids="Yes,No"/>
+        <dip name="Game Mode" bits="23" ids="Test,Game"/>
+        <dip name="PCB type" ids="88617A,89626A" bits="24"/>
+    </switches>
+    <buttons names="Slay,Jump,-,-,-,-,Start,Coin,Core credits" default="A,B,Start,Select,-" count="2"/>
+</misterromdescription>

@@ -1,0 +1,30 @@
+jtkchamp - Arcade compatible hardware for Pocket FPGA
+Developed by JOTEGO - https://patreon.com/jotego
+
+The following arcade titles are compatible with this core. Generate
+the required .rom file using the mra tool (read below).
+Place the *.rom files in Assets/jtkchamp/common
+
+Karate Dou (Arfyc bootleg) --> karateda.rom
+Karate Dou (Japan) --> karatedo.rom
+Taisen Karate Dou (Japan VS version) --> karatevs.rom
+Karate Champ (US) --> kchamp.rom
+Karate Champ (Tecfri bootleg) --> kchamptec.rom
+Karate Champ (US VS version, set 1) --> kchampvs.rom
+Karate Champ (US VS version, set 2) --> kchampvs2.rom
+Karate Champ (US VS version, set 3) --> kchampvs3.rom
+Karate Champ (US VS version, set 4) --> kchampvs4.rom
+
+
+These files are generated using the mra tool in:
+https://github.com/sebdel/mra-tools-c/tree/master/release
+
+Boogermann's ORCA tool can also be used to generate the files:
+https://github.com/opengateware/tools-orca
+
+Check out the short tutorial in:
+https://github.com/jotego/jtbin/wiki/Analogue-Pocket-Cores
+
+DISCLAIMER: This PocketFPGA core is licensed to be used only
+with legally owned dumps of videogame data. It is also licensed
+to be used with freeware (homebrew) compatible with the platform.

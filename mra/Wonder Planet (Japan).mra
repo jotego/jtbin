@@ -1,0 +1,107 @@
+<!--          FPGA arcade hardware by Jotego
+
+              This core is available for hardware compatible with MiST and MiSTer
+              Other FPGA systems may be supported by the time you read this.
+              This work is not mantained by the MiSTer project. Please contact the
+              core author for issues and updates.
+
+              (c) Jose Tejada, 2024. Please support this research
+              Patreon: https://patreon.com/jotego
+
+              The author does not endorse or participate in illegal distribution
+              of copyrighted material. This work can be used with compatible
+              software. This software can be homebrew projects or legally
+              obtained memory dumps of compatible games.
+
+              This file license is GNU GPLv2.
+              You can read the whole license file in
+              https://opensource.org/licenses/gpl-2.0.php
+
+-->
+
+<misterromdescription>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
+    <name>Wonder Planet (Japan)</name>
+    <setname>wndrplnt</setname>
+    <rbf>jtkarnov</rbf>
+    <mameversion>0251</mameversion>
+    <year>1987</year>
+    <manufacturer>Data East Corporation</manufacturer>
+    <players>2</players>
+    <joystick>8</joystick>
+    <rotation>vertical (ccw)</rotation>
+    <region>World</region>
+    <rom index="0" zip="wndrplnt.zip" md5="None" asm_md5="e81ae47504db6a4446676dfb39dfbab0">
+        <!-- maincpu - starts at 0x0 - length 0x60000 (19 bits) -->
+        <interleave output="16">
+            <part name="ea11.j19" crc="271edc6c" map="01"/>
+            <part name="ea08.j16" crc="b0578a14" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="ea10.j18" crc="81a96475" map="01"/>
+            <part name="ea07.j14" crc="7095a7d5" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="ea09.j17" crc="c4b3cb1e" map="01"/>
+            <part name="ea06.j13" crc="5951add3" map="10"/>
+        </interleave>
+        <!-- JTFRAME_BA1_START -->
+        <!-- audiocpu - starts at 0x60000 - length 0x10000 (16 bits) -->
+        <part repeat="0x8000"> FF</part>
+        <part name="ea05.f3" crc="8dbb6231"/>
+        <!-- JTFRAME_BA2_START -->
+        <!-- gfx1 - starts at 0x70000 - length 0x8000 (15 bits) -->
+        <!-- Singleton region. The files are merged with themselves. -->
+        <interleave output="32">
+            <part name="ea00.c5" crc="9f3cac4c" offset="0x0000" map="0001" length="0x2000"/>
+            <part name="ea00.c5" crc="9f3cac4c" offset="0x2000" map="0010" length="0x2000"/>
+            <part name="ea00.c5" crc="9f3cac4c" offset="0x4000" map="0100" length="0x2000"/>
+            <part name="ea00.c5" crc="9f3cac4c" offset="0x6000" map="1000" length="0x2000"/>
+        </interleave>
+        <!-- SCR_START -->
+        <!-- gfx2 - starts at 0x78000 - length 0x40000 (18 bits) -->
+        <interleave output="32">
+            <part name="ea03.d15" crc="922ef050" map="0001"/>
+            <part name="ea01.c18" crc="18df55fb" map="0010"/>
+            <part name="ea04.d18" crc="7d701344" map="0100"/>
+            <part name="ea02.c18" crc="700fde70" map="1000"/>
+        </interleave>
+        <!-- JTFRAME_BA3_START -->
+        <!-- gfx3 - starts at 0xB8000 - length 0x80000 (19 bits) -->
+        <interleave output="32">
+            <part name="ea16.bin" crc="7a1d8a9c" map="0001"/>
+            <part name="ea13.f13" crc="cd839f3a" map="0010"/>
+            <part name="ea12.f8" crc="a6d4e99d" map="0100"/>
+            <part name="ea18.bin" crc="3fb2cec7" map="1000"/>
+        </interleave>
+        <interleave output="32">
+            <part name="ea17.bin" crc="21a3223d" map="0001"/>
+            <part name="ea15.f15" crc="a1f14f16" map="0010"/>
+            <part name="ea14.f9" crc="915ffdc9" map="0100"/>
+            <part name="ea19.bin" crc="87cf03b5" map="1000"/>
+        </interleave>
+        <!-- JTFRAME_PROM_START -->
+        <!-- mcu - starts at 0x138000 - length 0x1000 (12 bits) -->
+        <part name="ea.k14" crc="b481f6a9"/>
+        <!-- proms - starts at 0x139000 - length 0x800 (11 bits) -->
+        <part name="ea-21.k8" crc="c8beab49"/>
+        <part name="ea-20.l6" crc="619f9d1e"/>
+        <!-- Total 0x139800 bytes - 1254 kBytes -->
+    </rom>
+    <!-- Vertical game -->
+    <rom index="1">
+        <part>05</part>
+    </rom>
+    <switches page_id="1" page_name="Switches" base="16" default="7f,ff">
+        <!-- DSW -->
+        <dip name="Coin A" bits="0,1" ids="2/1,1/3,1/2,1/1"/>
+        <dip name="Coin B" bits="2,3" ids="2/1,1/3,1/2,1/1"/>
+        <dip name="Demo Sounds" bits="5" ids="Off,On"/>
+        <dip name="Flip Screen" bits="6" ids="On,Off"/>
+        <dip name="Cabinet" bits="7" ids="Upright,Cocktail"/>
+        <dip name="Lives" bits="8,9" ids="Infinite,1,5,3"/>
+        <dip name="Difficulty" bits="10,11" ids="Hardest,Hard,Easy,Normal"/>
+        <dip name="Allow Continue" bits="12" ids="No,Yes"/>
+    </switches>
+    <buttons names="Fire,Bomb,-,-,Start,Coin,Core credits" default="A,B,Start,Select,-" count="2"/>
+</misterromdescription>

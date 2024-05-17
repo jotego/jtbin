@@ -1,0 +1,101 @@
+<!--          FPGA arcade hardware by Jotego
+
+              This core is available for hardware compatible with MiST and MiSTer
+              Other FPGA systems may be supported by the time you read this.
+              This work is not mantained by the MiSTer project. Please contact the
+              core author for issues and updates.
+
+              (c) Jose Tejada, 2024. Please support this research
+              Patreon: https://patreon.com/jotego
+
+              The author does not endorse or participate in illegal distribution
+              of copyrighted material. This work can be used with compatible
+              software. This software can be homebrew projects or legally
+              obtained memory dumps of compatible games.
+
+              This file license is GNU GPLv2.
+              You can read the whole license file in
+              https://opensource.org/licenses/gpl-2.0.php
+
+-->
+
+<misterromdescription>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
+    <name>Kageki (World)</name>
+    <setname>kageki</setname>
+    <rbf>jtkiwi</rbf>
+    <mameversion>0251</mameversion>
+    <year>1988</year>
+    <manufacturer>Kaneko / Taito Corporation</manufacturer>
+    <players>2</players>
+    <joystick>8</joystick>
+    <rotation>vertical (cw)</rotation>
+    <region>World</region>
+    <rom index="0" zip="kageki.zip" md5="None" asm_md5="d2f330f88ad450df36e63f2de82bebc0">
+        <!-- bit 0 = MCU
+             bit 1 = color PROM
+             bit 2 = Kabuki Z (specific sound features)
+             bit 3 = Kageki   (specific sound features)
+             bit 4 = banked RAM
+             bit 5 = coin XOR
+             bit 6 = dip_flip XOR
+             bit 7 = HB delay
+             Byte 1:
+             bit 0 = service XOR
+             bit 1 = button aid
+             bit 2 = 3 MHz for FM module
+             bit 3 = Kabuki Z with different memory map   -->
+        <part>
+            08 00 00 00 </part>
+        <!-- maincpu - starts at 0x0 - length 0x20000 (17 bits) -->
+        <part name="b35-13.bin" crc="dc4b025f"/>
+        <part name="b35-10.9c" crc="b150457d"/>
+        <!-- JTFRAME_BA1_START -->
+        <!-- sub - starts at 0x20000 - length 0x10000 (16 bits) -->
+        <part name="b35-14.bin" crc="8adef2d0"/>
+        <!-- JTFRAME_BA2_START -->
+        <!-- audiocpu - starts at 0x30000 - length 0x10000 (16 bits) -->
+        <part repeat="0x10000"> FF</part>
+        <!-- PCM_START -->
+        <!-- samples - starts at 0x40000 - length 0x10000 (16 bits) -->
+        <part name="b35-15.98g" crc="e6212a0f"/>
+        <!-- JTFRAME_BA3_START -->
+        <!-- gfx1 - starts at 0x50000 - length 0x200000 (21 bits) -->
+        <interleave output="32">
+            <part name="b35__05.7a" crc="a4e20c08" map="0001"/>
+            <part name="b35__01.13a" crc="01d83a69" map="0010"/>
+            <part name="b35__07.4a" crc="1b4af049" map="0100"/>
+            <part name="b35__03.10a" crc="3cb68797" map="1000"/>
+        </interleave>
+        <interleave output="32">
+            <part name="b35__06.5a" crc="3f8ab658" map="0001"/>
+            <part name="b35__02.12a" crc="d8af47ac" map="0010"/>
+            <part name="b35__08.2a" crc="deb2268c" map="0100"/>
+            <part name="b35__04.8a" crc="71c03f91" map="1000"/>
+        </interleave>
+        <part repeat="0x100000"> FF</part>
+        <!-- JTFRAME_PROM_START -->
+        <!-- proms - starts at 0x250000 - length 0x1000 (12 bits) -->
+        <part repeat="0x1000"> FF</part>
+        <!-- MCU_START -->
+        <!-- mcu - starts at 0x251000 - length 0x800 (11 bits) -->
+        <part repeat="0x800"> FF</part>
+        <!-- Total 0x251800 bytes - 2374 kBytes -->
+    </rom>
+    <!-- Vertical game -->
+    <rom index="1">
+        <part>01</part>
+    </rom>
+    <switches page_id="1" page_name="Switches" base="16" default="ff,ff">
+        <!-- DSWA -->
+        <dip name="Flip Screen" bits="1" ids="On,Off"/>
+        <dip name="Service Mode" bits="2" ids="On,Off"/>
+        <dip name="Demo Sounds" bits="3" ids="Off,On"/>
+        <dip name="Coin A" bits="4,5" ids="4/1,3/1,2/1,1/1"/>
+        <dip name="Coin B" bits="6,7" ids="1/6,1/4,1/3,1/2"/>
+        <!-- DSWB -->
+        <dip name="Difficulty" bits="8,9" ids="Hardest,Hard,Easy,Medium"/>
+        <dip name="Allow Continue" bits="15" ids="No,Yes"/>
+    </switches>
+    <buttons names="Left jab,Right hook,-,Start,Coin,Core credits" default="A,B,Start,Select,-" count="2"/>
+</misterromdescription>

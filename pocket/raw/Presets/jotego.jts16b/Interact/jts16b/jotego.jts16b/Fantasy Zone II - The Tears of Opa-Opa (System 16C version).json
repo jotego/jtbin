@@ -1,0 +1,77 @@
+{
+	"interact":{
+		"magic": "APF_VER_1",
+		"variables": [
+			{
+				"name": "Lives",
+				"id": 0,
+				"type": "list",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 3,
+				"value": 0,
+				"mask": "0xFFFFF3FF",
+				"options": [
+					{
+						"name": "240 (Cheat)",
+						"value": "0x0"
+					},
+					{
+						"name": "4",
+						"value": "0x400"
+					},
+					{
+						"name": "2",
+						"value": "0x800"
+					},
+					{
+						"name": "3",
+						"value": "0xC00"
+					}
+				]
+			},
+			{
+				"name": "Difficulty",
+				"id": 1,
+				"type": "list",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 3,
+				"value": 0,
+				"mask": "0xFFFF3FFF",
+				"options": [
+					{
+						"name": "Hardest",
+						"value": "0x0"
+					},
+					{
+						"name": "Hard",
+						"value": "0x4000"
+					},
+					{
+						"name": "Easy",
+						"value": "0x8000"
+					},
+					{
+						"name": "Normal",
+						"value": "0xC000"
+					}
+				]
+			},
+			{
+				"name": "Default",
+				"id": 1015,
+				"type": "number_u32",
+				"enabled": false,
+				"persist": false,
+				"writeonly": true,
+				"address": "0xfa000000",
+				"defaultval": 65535,
+				"value": 0
+			}
+		],
+		"messages": []
+	}
+}

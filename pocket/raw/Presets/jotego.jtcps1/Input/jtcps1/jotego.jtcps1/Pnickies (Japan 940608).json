@@ -1,0 +1,22 @@
+{
+	"input":{
+		"magic": "APF_VER_1",
+		"controllers": [
+			{
+				"type": "default",
+				"mappings": [
+					{
+						"id": 0,
+						"name": "Rotate left",
+						"key": "pad_btn_a"
+					},
+					{
+						"id": 1,
+						"name": "Rotate right",
+						"key": "pad_btn_b"
+					}
+				]
+			}
+		]
+	}
+}

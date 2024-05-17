@@ -1,0 +1,109 @@
+<!--          FPGA arcade hardware by Jotego
+
+              This core is available for hardware compatible with MiST and MiSTer
+              Other FPGA systems may be supported by the time you read this.
+              This work is not mantained by the MiSTer project. Please contact the
+              core author for issues and updates.
+
+              (c) Jose Tejada, 2024. Please support this research
+              Patreon: https://patreon.com/jotego
+
+              The author does not endorse or participate in illegal distribution
+              of copyrighted material. This work can be used with compatible
+              software. This software can be homebrew projects or legally
+              obtained memory dumps of compatible games.
+
+              This file license is GNU GPLv2.
+              You can read the whole license file in
+              https://opensource.org/licenses/gpl-2.0.php
+
+-->
+
+<misterromdescription>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
+    <name>Magic Sword: Heroic Fantasy (Japan 900623)</name>
+    <setname>mswordj</setname>
+    <rbf>jtcps1</rbf>
+    <mameversion>0251</mameversion>
+    <year>1990</year>
+    <manufacturer>Capcom</manufacturer>
+    <players>2</players>
+    <joystick>8</joystick>
+    <rotation>horizontal</rotation>
+    <region>World</region>
+    <rom index="0" zip="mswordj.zip|msword.zip" md5="None" asm_md5="076aa2d126fff85fa16ff884efea725e">
+        <part>
+            00 04 40 04 40 05 FF FF
+            FF FF FF FF FF FF FF FF
+            2E 43 FF FF FF FF 22 24
+            26 28 2A 00 00 2C 20 02
+            04 00 11 40 44 F3 FF 00
+            FF FF FF FF FF FF FF FF
+            FF FF FF FF FF FF FF FF
+            FF FF FF FF FF FF FF FF
+        </part>
+        <!-- maincpu - starts at 0x0 - length 0x100000 (20 bits) -->
+        <interleave output="16">
+            <part name="msj_42.12h" crc="9fcbb9cd" map="01"/>
+            <part name="msj_36.12f" crc="04f0ef50" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="msj_43.13h" crc="aec77787" map="01"/>
+            <part name="msj_37.13f" crc="6c060d70" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="ms_40.10h" crc="babade3a" map="01"/>
+            <part name="ms_34.10f" crc="0e59a62d" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="ms_41.11h" crc="fadf99ea" map="01"/>
+            <part name="ms_35.11f" crc="03da99d1" map="10"/>
+        </interleave>
+        <!-- audiocpu - starts at 0x100000 - length 0x10000 (16 bits) -->
+        <part name="ms_23.13b" crc="57b29519"/>
+        <!-- oki - starts at 0x110000 - length 0x40000 (18 bits) -->
+        <part name="ms_30.12c" crc="fb64e90d"/>
+        <part name="ms_31.13c" crc="74f892b9"/>
+        <!-- gfx - starts at 0x150000 - length 0x200000 (21 bits) -->
+        <interleave output="64">
+            <part name="ms_09.4b" crc="4adee6f6" map="00000001"/>
+            <part name="ms_01.4a" crc="f7ab1b88" map="00000010"/>
+            <part name="ms_13.9b" crc="e01adc4b" map="00000100"/>
+            <part name="ms_05.9a" crc="f62c2369" map="00001000"/>
+            <part name="ms_24.5e" crc="be64a3a1" map="00010000"/>
+            <part name="ms_17.5c" crc="0bc1665f" map="00100000"/>
+            <part name="ms_38.8h" crc="904a2ed5" map="01000000"/>
+            <part name="ms_32.8f" crc="3d89c530" map="10000000"/>
+        </interleave>
+        <interleave output="64">
+            <part name="ms_10.5b" crc="f02c0718" map="00000001"/>
+            <part name="ms_02.5a" crc="d071a405" map="00000010"/>
+            <part name="ms_14.10b" crc="dfb2e4df" map="00000100"/>
+            <part name="ms_06.10a" crc="d3ce2a91" map="00001000"/>
+            <part name="ms_25.7e" crc="0f199d56" map="00010000"/>
+            <part name="ms_18.7c" crc="1ba76df2" map="00100000"/>
+            <part name="ms_39.9h" crc="01efce86" map="01000000"/>
+            <part name="ms_33.9f" crc="ce25defc" map="10000000"/>
+        </interleave>
+        <!-- Total 0x350000 bytes - 3392 kBytes -->
+    </rom>
+    <rom index="1">
+        <part>00</part>
+    </rom>
+    <switches page_id="1" page_name="Switches" base="8" default="ff,bc,bf">
+        <!-- DSWB -->
+        <dip name="Stamina" bits="8,10" ids="8,7,6,5,4,3,2,1"/>
+        <dip name="Enemy&apos;s Strength" bits="11,13" ids="8,7,6,5,1,2,3,4"/>
+        <dip name="Stage Select" bits="14" ids="On,Off"/>
+        <!-- DSWC -->
+        <dip name="Vitality Packs" bits="16,17" ids="1,4,3,2"/>
+        <dip name="Free Play" bits="18" ids="On,Off"/>
+        <dip name="Freeze" bits="19" ids="On,Off"/>
+        <dip name="Flip Screen" bits="20" ids="On,Off"/>
+        <dip name="Demo Sounds" bits="21" ids="On,Off"/>
+        <dip name="Allow Continue" bits="22" ids="Yes,No"/>
+        <dip name="Game Mode" bits="23" ids="Test,Game"/>
+        <dip name="PCB type" ids="88617A,89626A" bits="24"/>
+    </switches>
+    <buttons names="Slay,Jump,-,-,-,-,Start,Coin,Core credits" default="A,B,Start,Select,-" count="2"/>
+</misterromdescription>

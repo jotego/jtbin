@@ -1,0 +1,78 @@
+{
+	"interact":{
+		"magic": "APF_VER_1",
+		"variables": [
+			{
+				"name": "Rotate screen",
+				"id": 0,
+				"type": "check",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfb000000",
+				"defaultval": 4,
+				"value": 4,
+				"mask": "0xFFFFFFFB"
+			},
+			{
+				"name": "Service Mode",
+				"id": 1,
+				"type": "check",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 0,
+				"value": 0,
+				"value_off": 1,
+				"mask": "0xFFFFFFFE"
+			},
+			{
+				"name": "Freeze",
+				"id": 2,
+				"type": "check",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 0,
+				"value": 0,
+				"value_off": 2,
+				"mask": "0xFFFFFFFD"
+			},
+			{
+				"name": "Kick Watchdog in IRQ",
+				"id": 3,
+				"type": "check",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 0,
+				"value": 0,
+				"value_off": 4,
+				"mask": "0xFFFFFFFB"
+			},
+			{
+				"name": "Auto Data Sampling",
+				"id": 4,
+				"type": "check",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 0,
+				"value": 0,
+				"value_off": 16,
+				"mask": "0xFFFFFFEF"
+			},
+			{
+				"name": "Default",
+				"id": 1015,
+				"type": "number_u32",
+				"enabled": false,
+				"persist": false,
+				"writeonly": true,
+				"address": "0xfa000000",
+				"defaultval": 255,
+				"value": 0
+			}
+		],
+		"messages": []
+	}
+}

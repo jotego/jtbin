@@ -1,0 +1,172 @@
+{
+	"interact":{
+		"magic": "APF_VER_1",
+		"variables": [
+			{
+				"name": "FX Volume",
+				"id": 0,
+				"type": "list",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfb000000",
+				"defaultval": 0,
+				"value": 0,
+				"mask": "0xFFFFFF3F",
+				"options": [
+					{
+						"name": "high",
+						"value": "0x00"
+					},
+					{
+						"name": "very high",
+						"value": "0x40"
+					},
+					{
+						"name": "very low",
+						"value": "0x80"
+					},
+					{
+						"name": "low",
+						"value": "0xc0"
+					}
+				]
+			},
+			{
+				"name": "Difficulty",
+				"id": 1,
+				"type": "list",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 2,
+				"value": 0,
+				"mask": "0xFFFFFCFF",
+				"options": [
+					{
+						"name": "Hardest",
+						"value": "0x0"
+					},
+					{
+						"name": "Hard",
+						"value": "0x100"
+					},
+					{
+						"name": "Normal",
+						"value": "0x200"
+					},
+					{
+						"name": "Easy",
+						"value": "0x300"
+					}
+				]
+			},
+			{
+				"name": "Time",
+				"id": 2,
+				"type": "list",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 3,
+				"value": 0,
+				"mask": "0xFFFFF3FF",
+				"options": [
+					{
+						"name": "60",
+						"value": "0x0"
+					},
+					{
+						"name": "70",
+						"value": "0x400"
+					},
+					{
+						"name": "90",
+						"value": "0x800"
+					},
+					{
+						"name": "100",
+						"value": "0xC00"
+					}
+				]
+			},
+			{
+				"name": "Voice",
+				"id": 3,
+				"type": "check",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 1,
+				"value": 16384,
+				"mask": "0xFFFFBFFF"
+			},
+			{
+				"name": "Flip Screen",
+				"id": 4,
+				"type": "check",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 0,
+				"value": 0,
+				"value_off": 65536,
+				"mask": "0xFFFEFFFF"
+			},
+			{
+				"name": "Demo Sounds",
+				"id": 5,
+				"type": "check",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 1,
+				"value": 131072,
+				"mask": "0xFFFDFFFF"
+			},
+			{
+				"name": "Allow Continue",
+				"id": 6,
+				"type": "check",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 1,
+				"value": 262144,
+				"mask": "0xFFFBFFFF"
+			},
+			{
+				"name": "Game Mode",
+				"id": 7,
+				"type": "list",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 1,
+				"value": 0,
+				"mask": "0xFF7FFFFF",
+				"options": [
+					{
+						"name": "Test",
+						"value": "0x0"
+					},
+					{
+						"name": "Game",
+						"value": "0x800000"
+					}
+				]
+			},
+			{
+				"name": "Default",
+				"id": 1015,
+				"type": "number_u32",
+				"enabled": false,
+				"persist": false,
+				"writeonly": true,
+				"address": "0xfa000000",
+				"defaultval": 16775935,
+				"value": 0
+			}
+		],
+		"messages": []
+	}
+}

@@ -1,0 +1,91 @@
+<!--          FPGA arcade hardware by Jotego
+
+              This core is available for hardware compatible with MiST and MiSTer
+              Other FPGA systems may be supported by the time you read this.
+              This work is not mantained by the MiSTer project. Please contact the
+              core author for issues and updates.
+
+              (c) Jose Tejada, 2024. Please support this research
+              Patreon: https://patreon.com/jotego
+
+              The author does not endorse or participate in illegal distribution
+              of copyrighted material. This work can be used with compatible
+              software. This software can be homebrew projects or legally
+              obtained memory dumps of compatible games.
+
+              This file license is GNU GPLv2.
+              You can read the whole license file in
+              https://opensource.org/licenses/gpl-2.0.php
+
+-->
+
+<misterromdescription>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
+    <name>Captain Commando (World 911202)</name>
+    <setname>captcomm</setname>
+    <rbf>jtcps1</rbf>
+    <mameversion>0251</mameversion>
+    <year>1991</year>
+    <manufacturer>Capcom</manufacturer>
+    <players>4</players>
+    <joystick>8</joystick>
+    <rotation>horizontal</rotation>
+    <region>World</region>
+    <rom index="0" zip="captcomm.zip" md5="None" asm_md5="6544482d4fdffd3567d47e75daf0c42f">
+        <part>
+            00 05 40 05 40 06 FF FF
+            FF FF FF FF FF FF FF FF
+            FF FF 06 04 02 00 20 2E
+            2C 2A 28 36 38 30 20 12
+            12 00 04 40 88 73 FF 04
+            FF FF FF FF FF FF FF FF
+            FF FF FF FF FF FF FF FF
+            FF FF FF FF FF FF FF FF
+        </part>
+        <!-- maincpu - starts at 0x0 - length 0x140000 (21 bits) -->
+        <part name="cce_23f.8f" crc="42c814c5"/>
+        <part name="cc_22f.7f" crc="0fd34195"/>
+        <interleave output="16">
+            <part name="cc_28f.9f" crc="fc3c2906" map="01"/>
+            <part name="cc_24f.9e" crc="3a794f25" map="10"/>
+        </interleave>
+        <!-- audiocpu - starts at 0x140000 - length 0x10000 (16 bits) -->
+        <part name="cc_09.11a" crc="698e8b58"/>
+        <!-- oki - starts at 0x150000 - length 0x40000 (18 bits) -->
+        <part name="cc_18.11c" crc="6de2c2db"/>
+        <part name="cc_19.12c" crc="b99091ae"/>
+        <!-- gfx - starts at 0x190000 - length 0x400000 (22 bits) -->
+        <interleave output="64">
+            <part name="cc-5m.3a" crc="7261d8ba" map="00000021"/>
+            <part name="cc-7m.5a" crc="6a60f949" map="00002100"/>
+            <part name="cc-1m.4a" crc="00637302" map="00210000"/>
+            <part name="cc-3m.6a" crc="cc87cf61" map="21000000"/>
+        </interleave>
+        <interleave output="64">
+            <part name="cc-6m.7a" crc="28718bed" map="00000021"/>
+            <part name="cc-8m.9a" crc="d4acc53a" map="00002100"/>
+            <part name="cc-2m.8a" crc="0c69f151" map="00210000"/>
+            <part name="cc-4m.10a" crc="1f9ebb97" map="21000000"/>
+        </interleave>
+        <!-- Total 0x590000 bytes - 5696 kBytes -->
+    </rom>
+    <rom index="1">
+        <part>00</part>
+    </rom>
+    <switches page_id="1" page_name="Switches" base="8" default="ff,f4,bf">
+        <!-- DSWB -->
+        <dip name="Difficulty 1" bits="8,10" ids="8,7,6,5,4,3,2,1"/>
+        <dip name="Difficulty 2" bits="11,12" ids="Hardest,Hard,Normal,Easy"/>
+        <dip name="Play Mode" bits="14,15" ids="4 Players,1 Players,3 Players,2 Players"/>
+        <!-- DSWC -->
+        <dip name="Lives" bits="16,17" ids="1,4,3,2"/>
+        <dip name="Free Play" bits="18" ids="On,Off"/>
+        <dip name="Freeze" bits="19" ids="On,Off"/>
+        <dip name="Flip Screen" bits="20" ids="On,Off"/>
+        <dip name="Demo Sounds" bits="21" ids="On,Off"/>
+        <dip name="Allow Continue" bits="22" ids="Yes,No"/>
+        <dip name="Game Mode" bits="23" ids="Test,Game"/>
+        <dip name="PCB type" ids="88617A,89626A" bits="24"/>
+    </switches>
+    <buttons names="Attack,Jump,-,-,-,-,Start,Coin,Core credits" default="A,B,Start,Select,-" count="2"/>
+</misterromdescription>

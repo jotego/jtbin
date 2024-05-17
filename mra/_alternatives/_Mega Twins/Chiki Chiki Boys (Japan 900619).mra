@@ -1,0 +1,107 @@
+<!--          FPGA arcade hardware by Jotego
+
+              This core is available for hardware compatible with MiST and MiSTer
+              Other FPGA systems may be supported by the time you read this.
+              This work is not mantained by the MiSTer project. Please contact the
+              core author for issues and updates.
+
+              (c) Jose Tejada, 2024. Please support this research
+              Patreon: https://patreon.com/jotego
+
+              The author does not endorse or participate in illegal distribution
+              of copyrighted material. This work can be used with compatible
+              software. This software can be homebrew projects or legally
+              obtained memory dumps of compatible games.
+
+              This file license is GNU GPLv2.
+              You can read the whole license file in
+              https://opensource.org/licenses/gpl-2.0.php
+
+-->
+
+<misterromdescription>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
+    <name>Chiki Chiki Boys (Japan 900619)</name>
+    <setname>chikij</setname>
+    <rbf>jtcps1</rbf>
+    <mameversion>0251</mameversion>
+    <year>1990</year>
+    <manufacturer>Capcom</manufacturer>
+    <players>2</players>
+    <joystick>8</joystick>
+    <rotation>horizontal</rotation>
+    <region>World</region>
+    <rom index="0" zip="chikij.zip|mtwins.zip" md5="None" asm_md5="eb05493f72a6199e051ff4542ef300a6">
+        <part>
+            00 04 40 04 40 05 FF FF
+            FF FF FF FF FF FF FF FF
+            1E 44 FF FF FF FF 12 14
+            16 18 1A 00 00 1C 08 20
+            10 00 06 40 44 F3 FF 00
+            FF FF FF FF FF FF FF FF
+            FF FF FF FF FF FF FF FF
+            FF FF FF FF FF FF FF FF
+        </part>
+        <!-- maincpu - starts at 0x0 - length 0x100000 (20 bits) -->
+        <interleave output="16">
+            <part name="chj_42a.12h" crc="4ae13503" map="01"/>
+            <part name="chj_36a.12f" crc="ec1328d8" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="chj_43a.13h" crc="8d387fe8" map="01"/>
+            <part name="chj_37a.13f" crc="46d2cf7b" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="ch_40.10h" crc="be0d8301" map="01"/>
+            <part name="ch_34.10f" crc="609ed2f9" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="ch_41.11h" crc="8ad96155" map="01"/>
+            <part name="ch_35.11f" crc="b810867f" map="10"/>
+        </interleave>
+        <!-- audiocpu - starts at 0x100000 - length 0x10000 (16 bits) -->
+        <part name="ch_23.13b" crc="4d4255b7"/>
+        <!-- oki - starts at 0x110000 - length 0x40000 (18 bits) -->
+        <part name="ch_30.12c" crc="f909e8de"/>
+        <part name="ch_31.13c" crc="fc158cf7"/>
+        <!-- gfx - starts at 0x150000 - length 0x200000 (21 bits) -->
+        <interleave output="64">
+            <part name="ch_09.4b" crc="567ab3ca" map="00000001"/>
+            <part name="ch_01.4a" crc="7f3b7b56" map="00000010"/>
+            <part name="ch_13.9b" crc="12a7a8ba" map="00000100"/>
+            <part name="ch_05.9a" crc="6c1afb9a" map="00001000"/>
+            <part name="ch_24.5e" crc="9cb6e6bc" map="00010000"/>
+            <part name="ch_17.5c" crc="fe490846" map="00100000"/>
+            <part name="ch_38.8h" crc="6e5c8cb6" map="01000000"/>
+            <part name="ch_32.8f" crc="317d27b0" map="10000000"/>
+        </interleave>
+        <interleave output="64">
+            <part name="ch_10.5b" crc="e8251a9b" map="00000001"/>
+            <part name="ch_02.5a" crc="7c8c88fb" map="00000010"/>
+            <part name="ch_14.10b" crc="4012ec4b" map="00000100"/>
+            <part name="ch_06.10a" crc="81884b2b" map="00001000"/>
+            <part name="ch_25.7e" crc="1dfcbac5" map="00010000"/>
+            <part name="ch_18.7c" crc="516a34d1" map="00100000"/>
+            <part name="ch_39.9h" crc="872fb2a4" map="01000000"/>
+            <part name="ch_33.9f" crc="30dc5ded" map="10000000"/>
+        </interleave>
+        <!-- Total 0x350000 bytes - 3392 kBytes -->
+    </rom>
+    <rom index="1">
+        <part>00</part>
+    </rom>
+    <switches page_id="1" page_name="Switches" base="8" default="ff,fc,bf">
+        <!-- DSWB -->
+        <dip name="Difficulty" bits="8,10" ids="7,6,5,4,3,2,1,0"/>
+        <dip name="Lives" bits="11,13" ids="4,3,1,2,-,-,-,-"/>
+        <!-- DSWC -->
+        <dip name="Free Play" bits="18" ids="On,Off"/>
+        <dip name="Freeze" bits="19" ids="On,Off"/>
+        <dip name="Flip Screen" bits="20" ids="On,Off"/>
+        <dip name="Demo Sounds" bits="21" ids="On,Off"/>
+        <dip name="Allow Continue" bits="22" ids="Yes,No"/>
+        <dip name="Game Mode" bits="23" ids="Test,Game"/>
+        <dip name="PCB type" ids="88617A,89626A" bits="24"/>
+    </switches>
+    <buttons names="Attack,Jump,Special,-,-,-,Start,Coin,Core credits" default="A,B,X,Start,Select,-" count="3"/>
+</misterromdescription>

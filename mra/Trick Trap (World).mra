@@ -1,0 +1,72 @@
+<!--          FPGA arcade hardware by Jotego
+
+              This core is available for hardware compatible with MiST and MiSTer
+              Other FPGA systems may be supported by the time you read this.
+              This work is not mantained by the MiSTer project. Please contact the
+              core author for issues and updates.
+
+              (c) Jose Tejada, 2024. Please support this research
+              Patreon: https://patreon.com/jotego
+
+              The author does not endorse or participate in illegal distribution
+              of copyrighted material. This work can be used with compatible
+              software. This software can be homebrew projects or legally
+              obtained memory dumps of compatible games.
+
+              This file license is GNU GPLv2.
+              You can read the whole license file in
+              https://opensource.org/licenses/gpl-2.0.php
+
+-->
+
+<misterromdescription>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
+    <name>Trick Trap (World?)</name>
+    <setname>tricktrp</setname>
+    <rbf>jtlabrun</rbf>
+    <mameversion>0251</mameversion>
+    <year>1987</year>
+    <manufacturer>Konami</manufacturer>
+    <players>2</players>
+    <joystick>8</joystick>
+    <rotation>vertical (cw)</rotation>
+    <region>World</region>
+    <rom index="0" zip="tricktrp.zip" md5="None" asm_md5="3e5dbbefbd2de31e43420016a8907428">
+        <!-- maincpu - starts at 0x0 - length 0x20000 (17 bits) -->
+        <part name="771e04" crc="ba2c7e20"/>
+        <part name="771e03" crc="d0d68036"/>
+        <!-- gfx - starts at 0x20000 - length 0x40000 (18 bits) -->
+        <interleave output="16">
+            <part name="771e01a" crc="103ffa0d" map="01"/>
+            <part name="771e01c" crc="cfec5be9" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="771d01b" crc="07f2a71c" map="01"/>
+            <part name="771d01d" crc="f6810a49" map="10"/>
+        </interleave>
+        <!-- proms - starts at 0x60000 - length 0x100 (8 bits) -->
+        <part name="771d02.08d" crc="3d34bb5a"/>
+        <!-- Total 0x60100 bytes - 384 kBytes -->
+    </rom>
+    <!-- Vertical game -->
+    <rom index="1">
+        <part>01</part>
+    </rom>
+    <switches page_id="1" page_name="Switches" base="8" default="ff,5a,f7">
+        <!-- DSW1 -->
+        <dip name="Coin A" bits="0,3" ids="Free Play,4/3,4/1,3/4,3/2,3/1,2/5,2/3,2/1,1/7,1/6,1/5,1/4,1/3,1/2,1/1"/>
+        <dip name="Coin B" bits="4,7" ids="None,4/3,4/1,3/4,3/2,3/1,2/5,2/3,2/1,1/7,1/6,1/5,1/4,1/3,1/2,1/1"/>
+        <!-- DSW2 -->
+        <dip name="Lives" bits="8,9" ids="7,5,3,2"/>
+        <dip name="Cabinet" bits="10" ids="Upright,Cocktail"/>
+        <dip name="Bonus Life" bits="11,12" ids="50k,40k,40k 80k,30k 70k"/>
+        <dip name="Difficulty" bits="13,14" ids="Hardest,Hard,Normal,Easy"/>
+        <dip name="Demo Sounds" bits="15" ids="On,Off"/>
+        <!-- DSW3 -->
+        <dip name="Flip Screen" bits="16" ids="On,Off"/>
+        <dip name="Upright Controls" bits="17" ids="Dual,Single"/>
+        <dip name="Service Mode" bits="18" ids="On,Off"/>
+        <dip name="Allow Continue" bits="19" ids="5 Times,3 Times"/>
+    </switches>
+    <buttons names="Shoot,Bomb,Start,Coin,Core credits" default="A,B,Start,Select,-" count="2"/>
+</misterromdescription>

@@ -1,0 +1,27 @@
+{
+	"instance":{
+		"magic": "APF_VER_1",
+		"variant_select": {
+			"id": 0,
+			"select": false
+		},
+		"data_path": "",
+		"data_slots": [
+			{
+				"id": 1,
+				"filename": "simpsons4pe.rom",
+				"md5": "7a3fe37c59d3a1c3a0586e8048d0f10c"
+			},
+			{
+				"id": 2,
+				"filename": "simpsons4pe.sav"
+			}
+		],
+		"memory_writes": [
+			{
+				"address": "0xf9000000",
+				"data": "0x60"
+			}
+		]
+	}
+}

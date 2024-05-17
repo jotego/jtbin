@@ -1,0 +1,27 @@
+{
+	"instance":{
+		"magic": "APF_VER_1",
+		"variant_select": {
+			"id": 0,
+			"select": false
+		},
+		"data_path": "",
+		"data_slots": [
+			{
+				"id": 1,
+				"filename": "mercsur1.rom",
+				"md5": "04c9aebe115e425e22e73fae1c3bf9d8"
+			},
+			{
+				"id": 2,
+				"filename": "mercsur1.sav"
+			}
+		],
+		"memory_writes": [
+			{
+				"address": "0xf9000000",
+				"data": "0x5"
+			}
+		]
+	}
+}

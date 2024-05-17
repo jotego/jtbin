@@ -1,0 +1,22 @@
+{
+	"input":{
+		"magic": "APF_VER_1",
+		"controllers": [
+			{
+				"type": "default",
+				"mappings": [
+					{
+						"id": 0,
+						"name": "L. Flipper/Ball Start",
+						"key": "pad_btn_a"
+					},
+					{
+						"id": 1,
+						"name": "R. Flipper/Lane Shift",
+						"key": "pad_btn_b"
+					}
+				]
+			}
+		]
+	}
+}

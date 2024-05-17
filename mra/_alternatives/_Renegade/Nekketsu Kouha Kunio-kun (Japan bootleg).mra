@@ -1,0 +1,87 @@
+<!--          FPGA arcade hardware by Jotego
+
+              This core is available for hardware compatible with MiST and MiSTer
+              Other FPGA systems may be supported by the time you read this.
+              This work is not mantained by the MiSTer project. Please contact the
+              core author for issues and updates.
+
+              (c) Jose Tejada, 2024. Please support this research
+              Patreon: https://patreon.com/jotego
+
+              The author does not endorse or participate in illegal distribution
+              of copyrighted material. This work can be used with compatible
+              software. This software can be homebrew projects or legally
+              obtained memory dumps of compatible games.
+
+              This file license is GNU GPLv2.
+              You can read the whole license file in
+              https://opensource.org/licenses/gpl-2.0.php
+
+-->
+
+<misterromdescription>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
+    <name>Nekketsu Kouha Kunio-kun (Japan bootleg)</name>
+    <setname>kuniokunb</setname>
+    <rbf>jtkunio</rbf>
+    <mameversion>0251</mameversion>
+    <year>1986</year>
+    <manufacturer>bootleg</manufacturer>
+    <players>2</players>
+    <joystick>8</joystick>
+    <rotation>horizontal</rotation>
+    <region>World</region>
+    <rom index="0" zip="kuniokunb.zip|renegade.zip" md5="None" asm_md5="528dc7d21a8640bc053a980bd8d253f8">
+        <!-- maincpu - starts at 0x0 - length 0x10000 (16 bits) -->
+        <part name="ta18-11.bin" crc="f240f5cd"/>
+        <part name="ta18-10.bin" crc="a90cf44a"/>
+        <!-- JTFRAME_BA1_START -->
+        <!-- audiocpu - starts at 0x10000 - length 0x8000 (15 bits) -->
+        <part name="n0-5.bin" crc="3587de3b"/>
+        <!-- PCM_START -->
+        <!-- adpcm - starts at 0x18000 - length 0x18000 (17 bits) -->
+        <part name="ta18-09.bin" crc="07ed4705"/>
+        <part name="ta18-08.bin" crc="c9312613"/>
+        <part name="ta18-07.bin" crc="02e3f3ed"/>
+        <!-- JTFRAME_BA2_START -->
+        <!-- chars - starts at 0x30000 - length 0x8000 (15 bits) -->
+        <part name="ta18-25.bin" crc="9bd2bea3"/>
+        <!-- SCR_START -->
+        <!-- tiles - starts at 0x38000 - length 0x30000 (18 bits) -->
+        <part name="ta18-01.bin" crc="daf15024"/>
+        <part name="ta18-06.bin" crc="1f59a248"/>
+        <part name="n7-5.bin" crc="7ca5a532"/>
+        <part name="ta18-02.bin" crc="994c0021"/>
+        <part name="ta18-04.bin" crc="55b9e8aa"/>
+        <part name="ta18-03.bin" crc="0475c99a"/>
+        <!-- JTFRAME_BA3_START -->
+        <!-- sprites - starts at 0x68000 - length 0x60000 (19 bits) -->
+        <part name="ta18-20.bin" crc="c7d54139"/>
+        <part name="ta18-24.bin" crc="84677d45"/>
+        <part name="ta18-18.bin" crc="1c770853"/>
+        <part name="ta18-14.bin" crc="af656017"/>
+        <part name="ta18-23.bin" crc="3fd19cf7"/>
+        <part name="ta18-17.bin" crc="74c64c6e"/>
+        <part name="ta18-19.bin" crc="c8795fd7"/>
+        <part name="ta18-22.bin" crc="df3a2ff5"/>
+        <part name="ta18-16.bin" crc="7244bad0"/>
+        <part name="ta18-13.bin" crc="b6b14d46"/>
+        <part name="ta18-21.bin" crc="c95e009b"/>
+        <part name="ta18-15.bin" crc="a5d61d01"/>
+        <!-- mcu:mcu - starts at 0xC8000 -->
+        <!-- Total 0xC8000 bytes - 800 kBytes -->
+    </rom>
+    <rom index="1">
+        <part>00</part>
+    </rom>
+    <switches page_id="1" page_name="Switches" base="16" default="ff,ff">
+        <!-- DSW1 -->
+        <dip name="Coin A" bits="0,1" ids="2/1,1/3,1/2,1/1"/>
+        <dip name="Coin B" bits="2,3" ids="2/1,1/3,1/2,1/1"/>
+        <dip name="Lives" bits="4" ids="2,1"/>
+        <dip name="Bonus Life" bits="5" ids="None,30k"/>
+        <!-- DSW2 -->
+        <dip name="Difficulty" bits="8,9" ids="Very Hard,Hard,Easy,Normal"/>
+    </switches>
+    <buttons names="Hit Left,Jump,Hit Right,Start,Coin,Core credits" default="A,B,X,Start,Select,-" count="3"/>
+</misterromdescription>

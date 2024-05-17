@@ -1,0 +1,88 @@
+<!--          FPGA arcade hardware by Jotego
+
+              This core is available for hardware compatible with MiST and MiSTer
+              Other FPGA systems may be supported by the time you read this.
+              This work is not mantained by the MiSTer project. Please contact the
+              core author for issues and updates.
+
+              (c) Jose Tejada, 2024. Please support this research
+              Patreon: https://patreon.com/jotego
+
+              The author does not endorse or participate in illegal distribution
+              of copyrighted material. This work can be used with compatible
+              software. This software can be homebrew projects or legally
+              obtained memory dumps of compatible games.
+
+              This file license is GNU GPLv2.
+              You can read the whole license file in
+              https://opensource.org/licenses/gpl-2.0.php
+
+-->
+
+<misterromdescription>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
+    <name>Daimakaimura (Japan Resale Ver.)</name>
+    <setname>daimakair</setname>
+    <rbf>jtcps1</rbf>
+    <mameversion>0251</mameversion>
+    <year>1988</year>
+    <manufacturer>Capcom</manufacturer>
+    <players>2</players>
+    <joystick>4</joystick>
+    <rotation>horizontal</rotation>
+    <region>World</region>
+    <rom index="0" zip="daimakair.zip|ghouls.zip" md5="None" asm_md5="657537b03050f067686496586e9aee76">
+        <part>
+            00 04 80 04 80 05 FF FF
+            FF FF FF FF FF FF FF FF
+            32 FF 00 02 04 06 26 28
+            2A 2C 2E 00 00 30 02 04
+            08 30 08 40 88 73 FF 01
+            FF FF FF FF FF FF FF FF
+            FF FF FF FF FF FF FF FF
+            FF FF FF FF FF FF FF FF
+        </part>
+        <!-- maincpu - starts at 0x0 - length 0x100000 (20 bits) -->
+        <part name="damj_23.8f" crc="c3b248ec"/>
+        <part name="damj_22.7f" crc="595ff2f3"/>
+        <!-- audiocpu - starts at 0x100000 - length 0x20000 (17 bits) -->
+        <part name="dam_09.12a" crc="0656ff53"/>
+        <!-- oki - starts at 0x120000 - length 0x40000 (18 bits) -->
+        <part repeat="0x40000"> FF</part>
+        <!-- gfx - starts at 0x160000 - length 0x400000 (22 bits) -->
+        <interleave output="64">
+            <part name="dam_01.3a" crc="0ba9c0b0" map="00000021"/>
+            <part name="dam_02.4a" crc="5d760ab9" map="00002100"/>
+            <part name="dam_03.5a" crc="4ba90b59" map="00210000"/>
+            <part name="dam_04.6a" crc="4bdee9de" map="21000000"/>
+        </interleave>
+        <interleave output="64">
+            <part name="dam_05.7a" crc="7dc61b94" map="00000021"/>
+            <part name="dam_06.8a" crc="fde89758" map="00002100"/>
+            <part name="dam_07.9a" crc="ec351d78" map="00210000"/>
+            <part name="dam_08.10a" crc="ee2acc1e" map="21000000"/>
+        </interleave>
+        <!-- Total 0x560000 bytes - 5504 kBytes -->
+    </rom>
+    <rom index="1">
+        <part>00</part>
+    </rom>
+    <switches page_id="1" page_name="Switches" base="8" default="7f,ff,ff">
+        <!-- DSWA -->
+        <dip name="Cabinet" bits="6,7" ids="Cocktail,-,Upright 2 Players,Upright 1 Player"/>
+        <!-- DSWB -->
+        <dip name="Difficulty" bits="8,10" ids="8,7,6,5,1,2,3,4"/>
+        <dip name="Bonus" bits="12,13" ids="40K 70K &amp; *80K,20K 50K &amp; *70K,10K 30K &amp; *30K,30K 60K &amp; *70K"/>
+        <dip name="Freeze" bits="15" ids="On,Off"/>
+        <!-- DSWC -->
+        <dip name="Lives" bits="16,17" ids="6,5,4,3"/>
+        <dip name="Flip Screen" bits="20" ids="On,Off"/>
+        <dip name="Demo Sounds" bits="21" ids="Off,On"/>
+        <dip name="Allow Continue" bits="22" ids="No,Yes"/>
+        <dip name="Game Mode" bits="23" ids="Test,Game"/>
+        <!-- IN0 -->
+        <dip name="Service Mode" bits="30" ids="On,Off"/>
+        <dip name="PCB type" ids="88617A,89626A" bits="24"/>
+    </switches>
+    <buttons names="Attack,Jump,-,-,-,-,Start,Coin,Core credits" default="A,B,Start,Select,-" count="2"/>
+</misterromdescription>

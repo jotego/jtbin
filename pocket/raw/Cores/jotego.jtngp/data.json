@@ -1,0 +1,55 @@
+{
+	"data":{
+		"magic": "APF_VER_1",
+		"data_slots": [
+			{
+				"name": "Cartridge",
+				"id": 4,
+				"required": true,
+				"parameters": "0x09",
+				"extensions": [
+					"ngp",
+					"ngc"
+				],
+				"address": "0x00000000",
+				"nonvolatile": false
+			},
+			{
+				"name": "firmware",
+				"id": 1,
+				"required": true,
+				"parameters": "0x108",
+				"filename": "ngp.rom",
+				"extensions": [
+					"rom",
+					"bin"
+				],
+				"address": "0x00000000",
+				"nonvolatile": false
+			},
+			{
+				"name": "NVRAM",
+				"id": 2,
+				"required": false,
+				"parameters": "0x100",
+				"extensions": [
+					"sav"
+				],
+				"address": "0x00000000",
+				"nonvolatile": true
+			},
+			{
+				"name": "JTBETA",
+				"id": 17,
+				"required": false,
+				"parameters": "0x1000000",
+				"filename": "beta.bin",
+				"extensions": [
+					"bin"
+				],
+				"address": "0x00000000",
+				"nonvolatile": false
+			}
+		]
+	}
+}

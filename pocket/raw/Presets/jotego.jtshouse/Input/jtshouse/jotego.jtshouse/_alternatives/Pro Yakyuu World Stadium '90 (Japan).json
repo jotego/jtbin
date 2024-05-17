@@ -1,0 +1,27 @@
+{
+	"input":{
+		"magic": "APF_VER_1",
+		"controllers": [
+			{
+				"type": "default",
+				"mappings": [
+					{
+						"id": 0,
+						"name": "Batting/Throw",
+						"key": "pad_btn_a"
+					},
+					{
+						"id": 1,
+						"name": "Base Running/Checkmate",
+						"key": "pad_btn_b"
+					},
+					{
+						"id": 2,
+						"name": "Timeout",
+						"key": "pad_btn_x"
+					}
+				]
+			}
+		]
+	}
+}

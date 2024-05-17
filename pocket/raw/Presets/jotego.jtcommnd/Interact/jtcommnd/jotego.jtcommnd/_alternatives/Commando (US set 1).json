@@ -1,0 +1,235 @@
+{
+	"interact":{
+		"magic": "APF_VER_1",
+		"variables": [
+			{
+				"name": "Rotate screen",
+				"id": 0,
+				"type": "check",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfb000000",
+				"defaultval": 4,
+				"value": 4,
+				"mask": "0xFFFFFFFB"
+			},
+			{
+				"name": "Starting Area",
+				"id": 1,
+				"type": "list",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 3,
+				"value": 0,
+				"mask": "0xFFFFFFFC",
+				"options": [
+					{
+						"name": "6 (Desert 2)",
+						"value": "0x0"
+					},
+					{
+						"name": "2 (Desert 1)",
+						"value": "0x1"
+					},
+					{
+						"name": "4 (Forest 2)",
+						"value": "0x2"
+					},
+					{
+						"name": "0 (Forest 1)",
+						"value": "0x3"
+					}
+				]
+			},
+			{
+				"name": "Lives",
+				"id": 2,
+				"type": "list",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 3,
+				"value": 0,
+				"mask": "0xFFFFFFF3",
+				"options": [
+					{
+						"name": "5",
+						"value": "0x0"
+					},
+					{
+						"name": "2",
+						"value": "0x4"
+					},
+					{
+						"name": "4",
+						"value": "0x8"
+					},
+					{
+						"name": "3",
+						"value": "0xC"
+					}
+				]
+			},
+			{
+				"name": "Coin B",
+				"id": 3,
+				"type": "list",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 3,
+				"value": 0,
+				"mask": "0xFFFFFFCF",
+				"options": [
+					{
+						"name": "4 Coins/1 Credit",
+						"value": "0x0"
+					},
+					{
+						"name": "2 Coins/1 Credit",
+						"value": "0x10"
+					},
+					{
+						"name": "3 Coins/1 Credit",
+						"value": "0x20"
+					},
+					{
+						"name": "1 Coin/1 Credit",
+						"value": "0x30"
+					}
+				]
+			},
+			{
+				"name": "Coin A",
+				"id": 4,
+				"type": "list",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 3,
+				"value": 0,
+				"mask": "0xFFFFFF3F",
+				"options": [
+					{
+						"name": "2 Coins/1 Credit",
+						"value": "0x0"
+					},
+					{
+						"name": "1 Coin/2 Credits",
+						"value": "0x40"
+					},
+					{
+						"name": "1 Coin/3 Credits",
+						"value": "0x80"
+					},
+					{
+						"name": "1 Coin/1 Credit",
+						"value": "0xC0"
+					}
+				]
+			},
+			{
+				"name": "Bonus Life",
+				"id": 5,
+				"type": "list",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 7,
+				"value": 0,
+				"mask": "0xFFFFF8FF",
+				"options": [
+					{
+						"name": "None",
+						"value": "0x0"
+					},
+					{
+						"name": "20K 70K+",
+						"value": "0x100"
+					},
+					{
+						"name": "30K 80K+",
+						"value": "0x200"
+					},
+					{
+						"name": "10K 60K+",
+						"value": "0x300"
+					},
+					{
+						"name": "40K 100K+",
+						"value": "0x400"
+					},
+					{
+						"name": "20K 60K+",
+						"value": "0x500"
+					},
+					{
+						"name": "30K 70K+",
+						"value": "0x600"
+					},
+					{
+						"name": "10K 50K+",
+						"value": "0x700"
+					}
+				]
+			},
+			{
+				"name": "Service Mode",
+				"id": 6,
+				"type": "check",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 0,
+				"value": 0,
+				"value_off": 2048,
+				"mask": "0xFFFFF7FF"
+			},
+			{
+				"name": "Difficulty",
+				"id": 7,
+				"type": "list",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 1,
+				"value": 0,
+				"mask": "0xFFFFEFFF",
+				"options": [
+					{
+						"name": "Difficult",
+						"value": "0x0"
+					},
+					{
+						"name": "Normal",
+						"value": "0x1000"
+					}
+				]
+			},
+			{
+				"name": "Flip Screen",
+				"id": 8,
+				"type": "check",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 0,
+				"value": 8192,
+				"mask": "0xFFFFDFFF"
+			},
+			{
+				"name": "Default",
+				"id": 1015,
+				"type": "number_u32",
+				"enabled": false,
+				"persist": false,
+				"writeonly": true,
+				"address": "0xfa000000",
+				"defaultval": 65503,
+				"value": 0
+			}
+		],
+		"messages": []
+	}
+}

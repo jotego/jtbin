@@ -1,0 +1,74 @@
+<!--          FPGA arcade hardware by Jotego
+
+              This core is available for hardware compatible with MiST and MiSTer
+              Other FPGA systems may be supported by the time you read this.
+              This work is not mantained by the MiSTer project. Please contact the
+              core author for issues and updates.
+
+              (c) Jose Tejada, 2024. Please support this research
+              Patreon: https://patreon.com/jotego
+
+              The author does not endorse or participate in illegal distribution
+              of copyrighted material. This work can be used with compatible
+              software. This software can be homebrew projects or legally
+              obtained memory dumps of compatible games.
+
+              This file license is GNU GPLv2.
+              You can read the whole license file in
+              https://opensource.org/licenses/gpl-2.0.php
+
+-->
+
+<misterromdescription>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
+    <name>Super Pang (World 900914)</name>
+    <setname>spang</setname>
+    <rbf>jtpang</rbf>
+    <mameversion>0251</mameversion>
+    <year>1990</year>
+    <manufacturer>Mitchell</manufacturer>
+    <players>2</players>
+    <joystick>4</joystick>
+    <rotation>horizontal</rotation>
+    <region>World</region>
+    <rom index="0" zip="spang.zip" md5="None" asm_md5="9b179e173e743778be0ce2fa31c28aa9">
+        <part>
+            45 67 01 23 45 67 01 23
+            58 52 43 00 00 00 00 00
+        </part>
+        <!-- maincpu - starts at 0x0 - length 0x80000 (19 bits) -->
+        <part name="spe_06.11h" crc="1af106fb"/>
+        <part name="spe_07.13h" crc="208b5f54"/>
+        <part name="spe_08.14h" crc="2bc03ade"/>
+        <part repeat="0x38000"> FF</part>
+        <!-- JTFRAME_BA1_START -->
+        <!-- oki - starts at 0x80000 - length 0x80000 (19 bits) -->
+        <part name="spe_01.1d" crc="2d19c133"/>
+        <part repeat="0x60000"> FF</part>
+        <!-- JTFRAME_BA2_START -->
+        <!-- chars - starts at 0x100000 - length 0x200000 (21 bits) -->
+        <interleave output="16">
+            <part name="spe_02.1e" crc="63c9dfd2" map="01"/>
+            <part name="spe_04.1g" crc="9d7b225b" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="spj_03.3e" crc="3ae28bc1" map="01"/>
+            <part name="spj_05.2g" crc="4a060884" map="10"/>
+        </interleave>
+        <part repeat="0x180000"> FF</part>
+        <!-- JTFRAME_BA3_START -->
+        <!-- sprites - starts at 0x300000 - length 0x40000 (18 bits) -->
+        <interleave output="16">
+            <part name="spj_10.2k" crc="eedd0ade" map="01"/>
+            <part name="spj_09.1k" crc="04b41b75" map="10"/>
+        </interleave>
+        <!-- eeprom - starts at 0x340000 - length 0x80 (7 bits) -->
+        <part name="eeprom-spang.bin" crc="deae1291"/>
+        <!-- Total 0x340080 bytes - 3328 kBytes -->
+    </rom>
+    <nvram index="2" size="128"/>
+    <rom index="1">
+        <part>00</part>
+    </rom>
+    <buttons names="button 1,button 2,-,-,Start,Coin,Core credits" default="A,B,Start,Select,-" count="2"/>
+</misterromdescription>

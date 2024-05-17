@@ -1,0 +1,119 @@
+<!--          FPGA arcade hardware by Jotego
+
+              This core is available for hardware compatible with MiST and MiSTer
+              Other FPGA systems may be supported by the time you read this.
+              This work is not mantained by the MiSTer project. Please contact the
+              core author for issues and updates.
+
+              (c) Jose Tejada, 2024. Please support this research
+              Patreon: https://patreon.com/jotego
+
+              The author does not endorse or participate in illegal distribution
+              of copyrighted material. This work can be used with compatible
+              software. This software can be homebrew projects or legally
+              obtained memory dumps of compatible games.
+
+              This file license is GNU GPLv2.
+              You can read the whole license file in
+              https://opensource.org/licenses/gpl-2.0.php
+
+-->
+
+<misterromdescription>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
+    <name>Rastan Saga (bootleg, Japan Rev 1, earlier code base)</name>
+    <setname>rastsagaabl</setname>
+    <rbf>jtrastan</rbf>
+    <mameversion>0251</mameversion>
+    <year>1987</year>
+    <manufacturer>Taito Corporation</manufacturer>
+    <players>2</players>
+    <joystick>8</joystick>
+    <rotation>horizontal</rotation>
+    <region>Japan</region>
+    <rom index="0" zip="rastsagaabl.zip|rastan.zip" md5="None" asm_md5="b58fd892743e1bde971615553cf66349">
+        <!-- maincpu - starts at 0x0 - length 0x60000 (19 bits) -->
+        <interleave output="16">
+            <part name="12" crc="bad60872" map="01"/>
+            <part name="9" crc="a38ac909" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="13" crc="ff9e018a" map="01"/>
+            <part name="10" crc="00b59e60" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="14" crc="c928a516" map="01"/>
+            <part name="11" crc="b626c439" map="10"/>
+        </interleave>
+        <!-- JTFRAME_BA1_START -->
+        <!-- audiocpu - starts at 0x60000 - length 0x10000 (16 bits) -->
+        <part name="2" crc="ee81fdd8"/>
+        <!-- PCM_START -->
+        <!-- adpcm - starts at 0x70000 - length 0x10000 (16 bits) -->
+        <part name="1" crc="fd1a34cc"/>
+        <!-- JTFRAME_BA2_START -->
+        <!-- pc080sn - starts at 0x80000 - length 0x80000 (19 bits) -->
+        <interleave output="16">
+            <part name="8" crc="6aac8f67" map="01"/>
+            <part name="5" crc="8c184637" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="6" crc="e8b64ced" map="01"/>
+            <part name="3" crc="27f6c59b" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="7" crc="225e19fa" map="01"/>
+            <part name="4" crc="aa3a2d5e" map="10"/>
+        </interleave>
+        <part repeat="0x20000"> FF</part>
+        <!-- JTFRAME_BA3_START -->
+        <!-- pc090oj - starts at 0x100000 - length 0x70000 (19 bits) -->
+        <interleave output="16">
+            <part name="22" crc="d9d09beb" map="01"/>
+            <part name="18" crc="d6fb44fe" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="28" crc="f19630f7" map="01"/>
+            <part name="25" crc="d778ceea" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="21" crc="21453a7a" map="01"/>
+            <part name="17" crc="5cd5c7e9" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="27" crc="2e66aa0b" map="01"/>
+            <part name="24" crc="88217cbc" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="20" crc="9cd627e1" map="01"/>
+            <part name="16" crc="93d64eef" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="26" crc="9bca4abc" map="01"/>
+            <part name="23" crc="cde8891b" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="19" crc="02ed3b16" map="01"/>
+            <part name="15" crc="3e4c41d4" map="10"/>
+        </interleave>
+        <!-- Total 0x170000 bytes - 1472 kBytes -->
+    </rom>
+    <nvram index="2" size="1024"/>
+    <rom index="1">
+        <part>00</part>
+    </rom>
+    <switches page_id="1" page_name="Switches" base="16" default="fe,ff">
+        <!-- DSWA -->
+        <dip name="Cabinet" bits="0" ids="Upright,Cocktail"/>
+        <dip name="Flip Screen" bits="1" ids="On,Off"/>
+        <dip name="Service Mode" bits="2" ids="On,Off"/>
+        <dip name="Coin A" bits="4,5" ids="2/3,2/1,1/2,1/1"/>
+        <dip name="Coin B" bits="6,7" ids="2/3,2/1,1/2,1/1"/>
+        <!-- DSWB -->
+        <dip name="Difficulty" bits="8,9" ids="Hardest,Hard,Easy,Medium"/>
+        <dip name="1PUP" bits="10,11" ids="250 500 1000 1500 2000,200 400 800 1200 1600,150 300 600 900 1200,100 200 400 600 800"/>
+        <dip name="Lives" bits="12,13" ids="6,5,4,3"/>
+        <dip name="Allow Continue" bits="14" ids="Off,On"/>
+    </switches>
+    <buttons names="Slash,Jump,Start,Coin,Core credits" default="A,B,Start,Select,-" count="2"/>
+</misterromdescription>

@@ -1,0 +1,101 @@
+<!--          FPGA arcade hardware by Jotego
+
+              This core is available for hardware compatible with MiST and MiSTer
+              Other FPGA systems may be supported by the time you read this.
+              This work is not mantained by the MiSTer project. Please contact the
+              core author for issues and updates.
+
+              (c) Jose Tejada, 2024. Please support this research
+              Patreon: https://patreon.com/jotego
+
+              The author does not endorse or participate in illegal distribution
+              of copyrighted material. This work can be used with compatible
+              software. This software can be homebrew projects or legally
+              obtained memory dumps of compatible games.
+
+              This file license is GNU GPLv2.
+              You can read the whole license file in
+              https://opensource.org/licenses/gpl-2.0.php
+
+-->
+
+<misterromdescription>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
+    <name>The NewZealand Story (World, old version) (P0-041A PCB)</name>
+    <setname>tnzso</setname>
+    <rbf>jtkiwi</rbf>
+    <mameversion>0251</mameversion>
+    <year>1988</year>
+    <manufacturer>Taito Corporation Japan</manufacturer>
+    <players>2</players>
+    <joystick>8</joystick>
+    <rotation>horizontal</rotation>
+    <region>World</region>
+    <rom index="0" zip="tnzso.zip|tnzs.zip" md5="None" asm_md5="8fbb9492abb24202226ce26baca2bf77">
+        <!-- bit 0 = MCU
+             bit 1 = color PROM
+             bit 2 = Kabuki Z (specific sound features)
+             bit 3 = Kageki   (specific sound features)
+             bit 4 = banked RAM
+             bit 5 = coin XOR
+             bit 6 = dip_flip XOR
+             bit 7 = HB delay
+             Byte 1:
+             bit 0 = service XOR
+             bit 1 = button aid
+             bit 2 = 3 MHz for FM module
+             bit 3 = Kabuki Z with different memory map   -->
+        <part>
+            B1 04 00 00 </part>
+        <!-- maincpu - starts at 0x0 - length 0x20000 (17 bits) -->
+        <part name="b53-10.27c1001d.u32" crc="a73745c6"/>
+        <!-- JTFRAME_BA1_START -->
+        <!-- sub - starts at 0x20000 - length 0x10000 (16 bits) -->
+        <part name="b53-14.u38" crc="f269c5f1"/>
+        <!-- JTFRAME_BA2_START -->
+        <!-- audiocpu - starts at 0x30000 - length 0x10000 (16 bits) -->
+        <part repeat="0x10000"> FF</part>
+        <!-- PCM_START -->
+        <!-- samples - starts at 0x40000 - length 0x10000 (16 bits) -->
+        <part repeat="0x10000"> FF</part>
+        <!-- JTFRAME_BA3_START -->
+        <!-- gfx1 - starts at 0x50000 - length 0x200000 (21 bits) -->
+        <interleave output="32">
+            <part name="b53-04.u4" crc="59d2aef6" map="0001"/>
+            <part name="b53-08.u8" crc="c3519c2a" map="0010"/>
+            <part name="b53-02.u2" crc="095d0dc0" map="0100"/>
+            <part name="b53-06.u6" crc="92f35ed9" map="1000"/>
+        </interleave>
+        <interleave output="32">
+            <part name="b53-03.u3" crc="74acfb9b" map="0001"/>
+            <part name="b53-07.u7" crc="2bf199e8" map="0010"/>
+            <part name="b53-01.u1" crc="9800c54d" map="0100"/>
+            <part name="b53-05.u5" crc="edbb9581" map="1000"/>
+        </interleave>
+        <part repeat="0x100000"> FF</part>
+        <!-- JTFRAME_PROM_START -->
+        <!-- proms - starts at 0x250000 - length 0x1000 (12 bits) -->
+        <part repeat="0x1000"> FF</part>
+        <!-- MCU_START -->
+        <!-- mcu - starts at 0x251000 - length 0x800 (11 bits) -->
+        <part name="b53-09.u46" crc="a4bfce19"/>
+        <!-- Total 0x251800 bytes - 2374 kBytes -->
+    </rom>
+    <rom index="1">
+        <part>00</part>
+    </rom>
+    <switches page_id="1" page_name="Switches" base="16" default="fe,ff">
+        <!-- DSWA -->
+        <dip name="Cabinet" bits="0" ids="Upright,Cocktail"/>
+        <dip name="Flip Screen" bits="1" ids="On,Off"/>
+        <dip name="Service Mode" bits="2" ids="On,Off"/>
+        <dip name="Coin A" bits="4,5" ids="4/1,3/1,2/1,1/1"/>
+        <dip name="Coin B" bits="6,7" ids="1/6,1/4,1/3,1/2"/>
+        <!-- DSWB -->
+        <dip name="Difficulty" bits="8,9" ids="Hardest,Hard,Easy,Medium"/>
+        <dip name="Bonus Life" bits="10,11" ids="10k 100k 100k+,10k 200k 200k+,10k 300k 300k+,10k 150k 150k+"/>
+        <dip name="Lives" bits="12,13" ids="4,5,2,3"/>
+        <dip name="Allow Continue" bits="14" ids="No,Yes"/>
+    </switches>
+    <buttons names="Shoot,Jump,-,Start,Coin,Core credits" default="A,B,Start,Select,-" count="2"/>
+</misterromdescription>

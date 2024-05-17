@@ -1,0 +1,80 @@
+<!--          FPGA arcade hardware by Jotego
+
+              This core is available for hardware compatible with MiST and MiSTer
+              Other FPGA systems may be supported by the time you read this.
+              This work is not mantained by the MiSTer project. Please contact the
+              core author for issues and updates.
+
+              (c) Jose Tejada, 2024. Please support this research
+              Patreon: https://patreon.com/jotego
+
+              The author does not endorse or participate in illegal distribution
+              of copyrighted material. This work can be used with compatible
+              software. This software can be homebrew projects or legally
+              obtained memory dumps of compatible games.
+
+              This file license is GNU GPLv2.
+              You can read the whole license file in
+              https://opensource.org/licenses/gpl-2.0.php
+
+-->
+
+<misterromdescription>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
+    <name>Gulun.Pa! (Japan 931220 L) (prototype)</name>
+    <setname>gulunpa</setname>
+    <rbf>jtcps1</rbf>
+    <mameversion>0251</mameversion>
+    <year>1993</year>
+    <manufacturer>Capcom</manufacturer>
+    <players>2</players>
+    <joystick>8</joystick>
+    <rotation>horizontal</rotation>
+    <region>World</region>
+    <rom index="0" zip="gulunpa.zip" md5="None" asm_md5="2a6aba4ca3cd0cd81d9fb2494a706039">
+        <part>
+            00 01 40 01 40 02 FF FF
+            FF FF FF FF FF FF FF FF
+            32 FF 00 02 04 06 26 28
+            2A 2C 2E 00 00 30 02 04
+            08 30 28 40 C8 73 FF 00
+            FF FF FF FF FF FF FF FF
+            FF FF FF FF FF FF FF FF
+            FF FF FF FF FF FF FF FF
+        </part>
+        <!-- maincpu - starts at 0x0 - length 0x40000 (18 bits) -->
+        <interleave output="16">
+            <part name="30" crc="5d35f737" map="01"/>
+            <part name="26" crc="f30ffa29" map="10"/>
+        </interleave>
+        <!-- audiocpu - starts at 0x40000 - length 0x10000 (16 bits) -->
+        <part name="9" crc="15afd06f"/>
+        <!-- oki - starts at 0x50000 - length 0x40000 (18 bits) -->
+        <part name="18" crc="9997a34f"/>
+        <part name="19" crc="e95270ac"/>
+        <!-- gfx - starts at 0x90000 - length 0x200000 (21 bits) -->
+        <interleave output="64">
+            <part name="1" crc="b55e648f" map="00000021"/>
+            <part name="2" crc="ad033bce" map="00002100"/>
+            <part name="3" crc="36c3951a" map="00210000"/>
+            <part name="4" crc="ff0cb826" map="21000000"/>
+        </interleave>
+        <!-- Total 0x290000 bytes - 2624 kBytes -->
+    </rom>
+    <rom index="1">
+        <part>00</part>
+    </rom>
+    <switches page_id="1" page_name="Switches" base="8" default="ff,ff,df,ff">
+        <!-- DSWB -->
+        <dip name="Difficulty" bits="8,10" ids="8 Hardest,7 Very Hard,6 Hard,5 Medium Hard,4 Medium,3 Easy,2 Very Easy,1 Easiest"/>
+        <!-- DSWC -->
+        <dip name="Freeze" bits="19" ids="On,Off"/>
+        <dip name="Flip Screen" bits="20" ids="On,Off"/>
+        <dip name="Demo Sounds" bits="21" ids="On,Off"/>
+        <dip name="Game Mode" bits="23" ids="Test,Game"/>
+        <!-- IN0 -->
+        <dip name="Service Mode" bits="30" ids="On,Off"/>
+        <dip name="PCB type" ids="88617A,89626A" bits="24"/>
+    </switches>
+    <buttons names="button 1,button 2,-,-,-,-,Start,Coin,Core credits" default="A,B,Start,Select,-" count="2"/>
+</misterromdescription>

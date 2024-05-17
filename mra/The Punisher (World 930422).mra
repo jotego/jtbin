@@ -1,0 +1,96 @@
+<!--          FPGA arcade hardware by Jotego
+
+              This core is available for hardware compatible with MiST and MiSTer
+              Other FPGA systems may be supported by the time you read this.
+              This work is not mantained by the MiSTer project. Please contact the
+              core author for issues and updates.
+
+              (c) Jose Tejada, 2024. Please support this research
+              Patreon: https://patreon.com/jotego
+
+              The author does not endorse or participate in illegal distribution
+              of copyrighted material. This work can be used with compatible
+              software. This software can be homebrew projects or legally
+              obtained memory dumps of compatible games.
+
+              This file license is GNU GPLv2.
+              You can read the whole license file in
+              https://opensource.org/licenses/gpl-2.0.php
+
+-->
+
+<misterromdescription>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
+    <name>The Punisher (World 930422)</name>
+    <setname>punisher</setname>
+    <rbf>jtcps15</rbf>
+    <mameversion>0251</mameversion>
+    <year>1993</year>
+    <manufacturer>Capcom</manufacturer>
+    <players>2</players>
+    <joystick>8</joystick>
+    <rotation>horizontal</rotation>
+    <region>World</region>
+    <rom index="0" zip="punisher.zip|qsound.zip" md5="None" asm_md5="197124519e08f02d61afec66dbbb7d0a">
+        <part>
+            00 06 80 06 80 0E 80 1E
+            FF FF FF FF FF FF FF FF
+            0E C0 FF FF FF FF 12 14
+            16 08 0A 00 00 0C 04 02
+            20 00 17 40 88 73 FF 20
+            FF FF FF FF FF FF FF FF
+            67 45 21 03 75 31 60 24
+            22 22 22 FF FF FF FF FF
+        </part>
+        <!-- maincpu - starts at 0x0 - length 0x180000 (21 bits) -->
+        <interleave output="16">
+            <part name="pse_30.11f" crc="68fb06ac" map="01"/>
+            <part name="pse_26.11e" crc="389a99d2" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="pse_31.12f" crc="37108e7b" map="01"/>
+            <part name="pse_27.12e" crc="3eb181c3" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="pse_28.9f" crc="b732345d" map="01"/>
+            <part name="pse_24.9e" crc="0f434414" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="pse_29.10f" crc="ec037bce" map="01"/>
+            <part name="pse_25.10e" crc="b77102e2" map="10"/>
+        </interleave>
+        <part name="ps_21.6f" crc="8affa5a9"/>
+        <!-- audiocpu - starts at 0x180000 - length 0x20000 (17 bits) -->
+        <part name="ps_q.5k" crc="49ff4446"/>
+        <!-- qsound - starts at 0x1A0000 - length 0x200000 (21 bits) -->
+        <part name="ps-q1.1k" crc="31fd8726"/>
+        <part name="ps-q2.2k" crc="980a9eef"/>
+        <part name="ps-q3.3k" crc="0dd44491"/>
+        <part name="ps-q4.4k" crc="bed42f03"/>
+        <!-- gfx - starts at 0x3A0000 - length 0x400000 (22 bits) -->
+        <interleave output="64">
+            <part name="ps-1m.3a" crc="77b7ccab" map="00000021"/>
+            <part name="ps-3m.5a" crc="0122720b" map="00002100"/>
+            <part name="ps-2m.4a" crc="64fa58d4" map="00210000"/>
+            <part name="ps-4m.6a" crc="60da42c8" map="21000000"/>
+        </interleave>
+        <interleave output="64">
+            <part name="ps-5m.7a" crc="c54ea839" map="00000021"/>
+            <part name="ps-7m.9a" crc="04c5acbd" map="00002100"/>
+            <part name="ps-6m.8a" crc="a544f4cc" map="00210000"/>
+            <part name="ps-8m.10a" crc="8f02f436" map="21000000"/>
+        </interleave>
+        <!-- firmware - starts at 0x7A0000 - length 0x2000 (13 bits) -->
+        <part name="dl-1425.bin" crc="d6cf5ef5" length="0x2000"/>
+        <!-- Total 0x7A2000 bytes - 7816 kBytes -->
+    </rom>
+    <nvram index="2" size="128"/>
+    <rom index="1">
+        <part>00</part>
+    </rom>
+    <switches page_id="1" page_name="Switches" base="16" default="ff">
+        <!-- DSWC -->
+        <dip name="Freeze" bits="3" ids="On,Off"/>
+    </switches>
+    <buttons names="Attack,Jump,-,-,-,-,Start,Coin,Core credits" default="A,B,Start,Select,-" count="2"/>
+</misterromdescription>

@@ -1,0 +1,272 @@
+{
+	"interact":{
+		"magic": "APF_VER_1",
+		"variables": [
+			{
+				"name": "FX Volume",
+				"id": 0,
+				"type": "list",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfb000000",
+				"defaultval": 0,
+				"value": 0,
+				"mask": "0xFFFFFF3F",
+				"options": [
+					{
+						"name": "high",
+						"value": "0x00"
+					},
+					{
+						"name": "very high",
+						"value": "0x40"
+					},
+					{
+						"name": "very low",
+						"value": "0x80"
+					},
+					{
+						"name": "low",
+						"value": "0xc0"
+					}
+				]
+			},
+			{
+				"name": "Cabinet",
+				"id": 1,
+				"type": "list",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 2,
+				"value": 0,
+				"mask": "0xFFFFFF3F",
+				"options": [
+					{
+						"name": "Cocktail",
+						"value": "0x0"
+					},
+					{
+						"name": "Upright 2 Players",
+						"value": "0x80"
+					},
+					{
+						"name": "Upright 1 Player",
+						"value": "0xC0"
+					}
+				]
+			},
+			{
+				"name": "Difficulty",
+				"id": 2,
+				"type": "list",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 7,
+				"value": 0,
+				"mask": "0xFFFFF8FF",
+				"options": [
+					{
+						"name": "8 (Hardest)",
+						"value": "0x0"
+					},
+					{
+						"name": "7",
+						"value": "0x100"
+					},
+					{
+						"name": "6",
+						"value": "0x200"
+					},
+					{
+						"name": "5",
+						"value": "0x300"
+					},
+					{
+						"name": "1 (Easiest)",
+						"value": "0x400"
+					},
+					{
+						"name": "2",
+						"value": "0x500"
+					},
+					{
+						"name": "3",
+						"value": "0x600"
+					},
+					{
+						"name": "4 (Normal)",
+						"value": "0x700"
+					}
+				]
+			},
+			{
+				"name": "Nando Speed",
+				"id": 3,
+				"type": "list",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 3,
+				"value": 0,
+				"mask": "0xFFFFE7FF",
+				"options": [
+					{
+						"name": "Very Fast",
+						"value": "0x0"
+					},
+					{
+						"name": "Fast",
+						"value": "0x800"
+					},
+					{
+						"name": "Slow",
+						"value": "0x1000"
+					},
+					{
+						"name": "Normal",
+						"value": "0x1800"
+					}
+				]
+			},
+			{
+				"name": "Stage Magic Continue",
+				"id": 4,
+				"type": "check",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 0,
+				"value": 0,
+				"value_off": 32768,
+				"mask": "0xFFFF7FFF"
+			},
+			{
+				"name": "Lives",
+				"id": 5,
+				"type": "list",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 2,
+				"value": 0,
+				"mask": "0xFFFCFFFF",
+				"options": [
+					{
+						"name": "4",
+						"value": "0x0"
+					},
+					{
+						"name": "3",
+						"value": "0x10000"
+					},
+					{
+						"name": "1",
+						"value": "0x20000"
+					},
+					{
+						"name": "2",
+						"value": "0x30000"
+					}
+				]
+			},
+			{
+				"name": "Vitality",
+				"id": 6,
+				"type": "list",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 2,
+				"value": 0,
+				"mask": "0xFFF3FFFF",
+				"options": [
+					{
+						"name": "2",
+						"value": "0x0"
+					},
+					{
+						"name": "5",
+						"value": "0x40000"
+					},
+					{
+						"name": "4",
+						"value": "0x80000"
+					},
+					{
+						"name": "3",
+						"value": "0xC0000"
+					}
+				]
+			},
+			{
+				"name": "Flip Screen",
+				"id": 7,
+				"type": "check",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 0,
+				"value": 0,
+				"value_off": 1048576,
+				"mask": "0xFFEFFFFF"
+			},
+			{
+				"name": "Demo Sounds",
+				"id": 8,
+				"type": "check",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 1,
+				"value": 2097152,
+				"mask": "0xFFDFFFFF"
+			},
+			{
+				"name": "Allow Continue",
+				"id": 9,
+				"type": "check",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 1,
+				"value": 4194304,
+				"mask": "0xFFBFFFFF"
+			},
+			{
+				"name": "Game Mode",
+				"id": 10,
+				"type": "list",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 1,
+				"value": 0,
+				"mask": "0xFF7FFFFF",
+				"options": [
+					{
+						"name": "Test",
+						"value": "0x0"
+					},
+					{
+						"name": "Game",
+						"value": "0x800000"
+					}
+				]
+			},
+			{
+				"name": "Default",
+				"id": 1015,
+				"type": "number_u32",
+				"enabled": false,
+				"persist": false,
+				"writeonly": true,
+				"address": "0xfa000000",
+				"defaultval": 8388607,
+				"value": 0
+			}
+		],
+		"messages": []
+	}
+}

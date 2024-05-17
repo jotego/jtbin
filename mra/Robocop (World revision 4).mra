@@ -1,0 +1,130 @@
+<!--          FPGA arcade hardware by Jotego
+
+              This core is available for hardware compatible with MiST and MiSTer
+              Other FPGA systems may be supported by the time you read this.
+              This work is not mantained by the MiSTer project. Please contact the
+              core author for issues and updates.
+
+              (c) Jose Tejada, 2024. Please support this research
+              Patreon: https://patreon.com/jotego
+
+              The author does not endorse or participate in illegal distribution
+              of copyrighted material. This work can be used with compatible
+              software. This software can be homebrew projects or legally
+              obtained memory dumps of compatible games.
+
+              This file license is GNU GPLv2.
+              You can read the whole license file in
+              https://opensource.org/licenses/gpl-2.0.php
+
+-->
+
+<misterromdescription>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
+    <name>Robocop (World revision 4)</name>
+    <setname>robocop</setname>
+    <rbf>jtcop</rbf>
+    <mameversion>0251</mameversion>
+    <year>1988</year>
+    <manufacturer>Data East Corporation</manufacturer>
+    <players>2</players>
+    <joystick>8</joystick>
+    <rotation>horizontal</rotation>
+    <region>World</region>
+    <rom index="0" zip="robocop.zip" md5="None" asm_md5="dbaa20472e6bb40dfceb08ba5103d17d">
+        <!-- maincpu - starts at 0x0 - length 0x80000 (19 bits) -->
+        <interleave output="16">
+            <part name="ep01-4.11b" crc="77507c69" map="01"/>
+            <part name="ep05-4.11c" crc="29c35379" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="ep00-3" crc="e128541f" map="01"/>
+            <part name="ep04-3" crc="39181778" map="10"/>
+        </interleave>
+        <part repeat="0x40000"> FF</part>
+        <!-- SND_START -->
+        <!-- audiocpu - starts at 0x80000 - length 0x10000 (16 bits) -->
+        <part name="ep03-3" crc="5b164b24"/>
+        <part repeat="0x8000"> FF</part>
+        <!-- PCM_START -->
+        <!-- oki - starts at 0x90000 - length 0x20000 (17 bits) -->
+        <part name="ep02" crc="711ce46f"/>
+        <part repeat="0x10000"> FF</part>
+        <!-- JTFRAME_BA2_START -->
+        <!-- gfx1 - starts at 0xB0000 - length 0x20000 (17 bits) -->
+        <interleave output="16">
+            <part name="ep23" crc="a77e4ab1" map="01"/>
+            <part name="ep22" crc="9fbd6903" map="10"/>
+        </interleave>
+        <!-- GFX2_START -->
+        <!-- gfx2 - starts at 0xD0000 - length 0x80000 (19 bits) -->
+        <interleave output="16">
+            <part name="ep20" crc="1d8d38b8" map="01"/>
+            <part name="ep18" crc="b6580b5e" map="10"/>
+        </interleave>
+        <part repeat="0x20000"> FF</part>
+        <!-- Blank ends at 0x110000 -->
+        <interleave output="16">
+            <part name="ep21" crc="187929b2" map="01"/>
+            <part name="ep19" crc="9bad01c7" map="10"/>
+        </interleave>
+        <part repeat="0x20000"> FF</part>
+        <!-- GFX3_START -->
+        <!-- gfx3 - starts at 0x150000 - length 0x40000 (18 bits) -->
+        <interleave output="16">
+            <part name="ep15" crc="a945269c" map="01"/>
+            <part name="ep17" crc="84aae89d" map="10"/>
+        </interleave>
+        <part repeat="0x10000"> FF</part>
+        <!-- Blank ends at 0x170000 -->
+        <interleave output="16">
+            <part name="ep14" crc="ca56ceda" map="01"/>
+            <part name="ep16" crc="e7fa4d58" map="10"/>
+        </interleave>
+        <part repeat="0x10000"> FF</part>
+        <!-- JTFRAME_BA3_START -->
+        <!-- gfx4 - starts at 0x190000 - length 0x80000 (19 bits) -->
+        <interleave output="32">
+            <part name="ep07" crc="495d75cf" map="0001"/>
+            <part name="ep11" crc="62fa425a" map="0010"/>
+            <part name="ep09" crc="11bed656" map="0100"/>
+            <part name="ep13" crc="8fca9f28" map="1000"/>
+        </interleave>
+        <interleave output="32">
+            <part name="ep06" crc="a2ae32e2" map="0001"/>
+            <part name="ep10" crc="cce3bd95" map="0010"/>
+            <part name="ep08" crc="c45c7b4c" map="0100"/>
+            <part name="ep12" crc="3cd1d0c3" map="1000"/>
+        </interleave>
+        <part repeat="0x20000"> FF</part>
+        <!-- MCU_START -->
+        <!-- mcu - starts at 0x210000 -->
+        <!-- sub - starts at 0x210000 - length 0x18000 (17 bits) -->
+        <part repeat="0x1E00"> FF</part>
+        <part name="en_24_mb7124e.a2" crc="b8e2ca98"/>
+        <part repeat="0x16000"> FF</part>
+        <!-- PROM_START -->
+        <!-- JTFRAME_PROM_START -->
+        <!-- proms - starts at 0x228000 - length 0x600 (11 bits) -->
+        <part name="mb7116e_a-1.12c" crc="86e775f8"/>
+        <part name="mb7122e_a-2.17e" crc="a5cda23e"/>
+        <!-- Total 0x228600 bytes - 2209 kBytes -->
+    </rom>
+    <rom index="1">
+        <part>00</part>
+    </rom>
+    <switches page_id="1" page_name="Switches" base="17" default="7f,ff">
+        <!-- DSW -->
+        <dip name="Coin A" bits="0,1" ids="3/1,2/1,1/2,1/1"/>
+        <dip name="Coin B" bits="2,3" ids="3/1,2/1,1/2,1/1"/>
+        <dip name="Demo Sounds" bits="5" ids="Off,On"/>
+        <dip name="Flip Screen" bits="6" ids="On,Off"/>
+        <dip name="Cabinet" bits="7" ids="Upright,Cocktail"/>
+        <dip name="Player Energy" bits="8,9" ids="Very High,Low,High,Medium"/>
+        <dip name="Difficulty" bits="10,11" ids="Hardest,Hard,Easy,Normal"/>
+        <dip name="Allow Continue" bits="12" ids="No,Yes"/>
+        <dip name="Bonus Stage Energy" bits="13" ids="Low,High"/>
+        <dip name="Brink Time" bits="14" ids="Less,Normal"/>
+    </switches>
+    <buttons names="Shot,Jump,-,-,-,Start,Coin,Core credits" default="A,B,Start,Select,-" count="2"/>
+</misterromdescription>

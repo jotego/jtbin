@@ -1,0 +1,88 @@
+<!--          FPGA arcade hardware by Jotego
+
+              This core is available for hardware compatible with MiST and MiSTer
+              Other FPGA systems may be supported by the time you read this.
+              This work is not mantained by the MiSTer project. Please contact the
+              core author for issues and updates.
+
+              (c) Jose Tejada, 2024. Please support this research
+              Patreon: https://patreon.com/jotego
+
+              The author does not endorse or participate in illegal distribution
+              of copyrighted material. This work can be used with compatible
+              software. This software can be homebrew projects or legally
+              obtained memory dumps of compatible games.
+
+              This file license is GNU GPLv2.
+              You can read the whole license file in
+              https://opensource.org/licenses/gpl-2.0.php
+
+-->
+
+<misterromdescription>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
+    <name>Vigilante (World, Rev E)</name>
+    <setname>vigilant</setname>
+    <rbf>jtvigil</rbf>
+    <mameversion>0251</mameversion>
+    <year>1988</year>
+    <manufacturer>Irem</manufacturer>
+    <players>2</players>
+    <joystick>8</joystick>
+    <rotation>horizontal</rotation>
+    <region>World</region>
+    <rom index="0" zip="vigilant.zip" md5="None" asm_md5="f702564e5e3919efcd90863604729da9">
+        <!-- maincpu - starts at 0x0 - length 0x20000 (17 bits) -->
+        <part name="vg_a-8h-e.ic55" crc="0d4e6866"/>
+        <part name="vg_a-8l-a.ic57" crc="690d812f"/>
+        <part repeat="0x8000"> FF</part>
+        <!-- JTFRAME_BA1_START -->
+        <!-- soundcpu - starts at 0x20000 - length 0x10000 (16 bits) -->
+        <part name="vg_a-5j-.ic37" crc="10582b2d"/>
+        <!-- PCM_START -->
+        <!-- m72 - starts at 0x30000 - length 0x10000 (16 bits) -->
+        <part name="vg_a-4d-.ic26" crc="9b85101d"/>
+        <!-- JTFRAME_BA2_START -->
+        <!-- gfx1 - starts at 0x40000 - length 0x40000 (18 bits) -->
+        <interleave output="16">
+            <part name="vg_b-4f-.ic34" crc="01579d20" map="01"/>
+            <part name="vg_b-4j-.ic35" crc="4f5872f0" map="10"/>
+        </interleave>
+        <part repeat="0x20000"> FF</part>
+        <!-- SCR2_START -->
+        <!-- gfx3 - starts at 0x80000 - length 0x40000 (18 bits) -->
+        <part name="vg_b-1d-.ic2" crc="81b1ee5c"/>
+        <part name="vg_b-1f-.ic3" crc="d0d33673"/>
+        <part name="vg_b-1h-.ic4" crc="aae81695"/>
+        <part repeat="0x10000"> FF</part>
+        <!-- JTFRAME_BA3_START -->
+        <!-- gfx2 - starts at 0xC0000 - length 0x80000 (19 bits) -->
+        <interleave output="16">
+            <part name="vg_b-6l-.ic62" crc="fbe9552d" map="01"/>
+            <part name="vg_b-6p-.ic64" crc="afb77461" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="vg_b-6k-.ic61" crc="ae09d5c0" map="01"/>
+            <part name="vg_b-6n-.ic63" crc="5065cd35" map="10"/>
+        </interleave>
+        <!-- Total 0x140000 bytes - 1280 kBytes -->
+    </rom>
+    <rom index="1">
+        <part>00</part>
+    </rom>
+    <switches page_id="1" page_name="Switches" base="16" default="ff,fd">
+        <!-- DSW1 -->
+        <dip name="Lives" bits="0,1" ids="5,4,2,3"/>
+        <dip name="Difficulty" bits="2" ids="Hard,Normal"/>
+        <dip name="Decrease of Energy" bits="3" ids="Fast,Slow"/>
+        <!-- DSW2 -->
+        <dip name="Flip Screen" bits="8" ids="On,Off"/>
+        <dip name="Cabinet" bits="9" ids="Upright,Cocktail"/>
+        <dip name="Coin Mode" bits="10" ids="Mode 2,Mode 1"/>
+        <dip name="Demo Sounds" bits="11" ids="Off,On"/>
+        <dip name="Allow Continue" bits="12" ids="No,Yes"/>
+        <dip name="Stop Mode (Cheat)" bits="13" ids="On,Off"/>
+        <dip name="Cheat" bits="14" ids="On,Off"/>
+    </switches>
+    <buttons names="Punch, Kick ,Start,Coin,Core credits" default="A,B,Start,Select,-" count="2"/>
+</misterromdescription>

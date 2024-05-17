@@ -1,0 +1,229 @@
+{
+	"interact":{
+		"magic": "APF_VER_1",
+		"variables": [
+			{
+				"name": "Coin A",
+				"id": 0,
+				"type": "list",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 3,
+				"value": 0,
+				"mask": "0xFFFFFFFC",
+				"options": [
+					{
+						"name": "2 Coins/1 Credit",
+						"value": "0x0"
+					},
+					{
+						"name": "1 Coin/3 Credits",
+						"value": "0x1"
+					},
+					{
+						"name": "1 Coin/2 Credits",
+						"value": "0x2"
+					},
+					{
+						"name": "1 Coin/1 Credit",
+						"value": "0x3"
+					}
+				]
+			},
+			{
+				"name": "Coin B",
+				"id": 1,
+				"type": "list",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 3,
+				"value": 0,
+				"mask": "0xFFFFFFF3",
+				"options": [
+					{
+						"name": "2 Coins/1 Credit",
+						"value": "0x0"
+					},
+					{
+						"name": "1 Coin/3 Credits",
+						"value": "0x4"
+					},
+					{
+						"name": "1 Coin/2 Credits",
+						"value": "0x8"
+					},
+					{
+						"name": "1 Coin/1 Credit",
+						"value": "0xC"
+					}
+				]
+			},
+			{
+				"name": "Flip Screen",
+				"id": 2,
+				"type": "check",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 0,
+				"value": 0,
+				"value_off": 32,
+				"mask": "0xFFFFFFDF"
+			},
+			{
+				"name": "Cabinet",
+				"id": 3,
+				"type": "list",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 0,
+				"value": 0,
+				"mask": "0xFFFFFFBF",
+				"options": [
+					{
+						"name": "Upright",
+						"value": "0x0"
+					},
+					{
+						"name": "Cocktail",
+						"value": "0x40"
+					}
+				]
+			},
+			{
+				"name": "Lives",
+				"id": 4,
+				"type": "list",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 3,
+				"value": 0,
+				"mask": "0xFFFFFCFF",
+				"options": [
+					{
+						"name": "Infinite (Cheat)",
+						"value": "0x0"
+					},
+					{
+						"name": "1",
+						"value": "0x100"
+					},
+					{
+						"name": "5",
+						"value": "0x200"
+					},
+					{
+						"name": "3",
+						"value": "0x300"
+					}
+				]
+			},
+			{
+				"name": "Bonus Life",
+				"id": 5,
+				"type": "list",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 3,
+				"value": 0,
+				"mask": "0xFFFFF3FF",
+				"options": [
+					{
+						"name": "100 'K'",
+						"value": "0x0"
+					},
+					{
+						"name": "90 'K'",
+						"value": "0x400"
+					},
+					{
+						"name": "70 'K'",
+						"value": "0x800"
+					},
+					{
+						"name": "50 'K'",
+						"value": "0xC00"
+					}
+				]
+			},
+			{
+				"name": "Difficulty",
+				"id": 6,
+				"type": "list",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 3,
+				"value": 0,
+				"mask": "0xFFFFCFFF",
+				"options": [
+					{
+						"name": "Very Hard",
+						"value": "0x0"
+					},
+					{
+						"name": "Hard",
+						"value": "0x1000"
+					},
+					{
+						"name": "Easy",
+						"value": "0x2000"
+					},
+					{
+						"name": "Normal",
+						"value": "0x3000"
+					}
+				]
+			},
+			{
+				"name": "Demo Sounds",
+				"id": 7,
+				"type": "check",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 1,
+				"value": 16384,
+				"mask": "0xFFFFBFFF"
+			},
+			{
+				"name": "Timer Speed",
+				"id": 8,
+				"type": "list",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 1,
+				"value": 0,
+				"mask": "0xFFFF7FFF",
+				"options": [
+					{
+						"name": "Fast",
+						"value": "0x0"
+					},
+					{
+						"name": "Normal",
+						"value": "0x8000"
+					}
+				]
+			},
+			{
+				"name": "Default",
+				"id": 1015,
+				"type": "number_u32",
+				"enabled": false,
+				"persist": false,
+				"writeonly": true,
+				"address": "0xfa000000",
+				"defaultval": 49151,
+				"value": 0
+			}
+		],
+		"messages": []
+	}
+}

@@ -1,0 +1,102 @@
+<!--          FPGA arcade hardware by Jotego
+
+              This core is available for hardware compatible with MiST and MiSTer
+              Other FPGA systems may be supported by the time you read this.
+              This work is not mantained by the MiSTer project. Please contact the
+              core author for issues and updates.
+
+              (c) Jose Tejada, 2024. Please support this research
+              Patreon: https://patreon.com/jotego
+
+              The author does not endorse or participate in illegal distribution
+              of copyrighted material. This work can be used with compatible
+              software. This software can be homebrew projects or legally
+              obtained memory dumps of compatible games.
+
+              This file license is GNU GPLv2.
+              You can read the whole license file in
+              https://opensource.org/licenses/gpl-2.0.php
+
+-->
+
+<misterromdescription>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
+    <name>Pokonyan! Balloon (Japan 940322)</name>
+    <setname>pokonyan</setname>
+    <rbf>jtcps1</rbf>
+    <mameversion>0251</mameversion>
+    <year>1994</year>
+    <manufacturer>Capcom</manufacturer>
+    <players>2</players>
+    <joystick>8</joystick>
+    <rotation>horizontal</rotation>
+    <region>World</region>
+    <rom index="0" zip="pokonyan.zip" md5="None" asm_md5="0c22b6a35a4c7dcf7ee3d42b04a1f1df">
+        <part>
+            00 02 40 02 40 03 FF FF
+            FF FF FF FF FF FF FF FF
+            32 FF 00 02 04 06 26 28
+            2A 2C 2E 36 00 30 02 04
+            08 30 16 40 C8 73 F7 00
+            FF FF FF FF FF FF FF FF
+            FF FF FF FF FF FF FF FF
+            FF FF FF FF FF FF FF FF
+        </part>
+        <!-- maincpu - starts at 0x0 - length 0x80000 (19 bits) -->
+        <interleave output="16">
+            <part name="xmqq-12h.bin" crc="2d7ee2e9" map="01"/>
+            <part name="xmqq-12f.bin" crc="196297bf" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="xmqq-13h.bin" crc="3fefe432" map="01"/>
+            <part name="xmqq-13f.bin" crc="8f6abf26" map="10"/>
+        </interleave>
+        <!-- audiocpu - starts at 0x80000 - length 0x10000 (16 bits) -->
+        <part name="xmqq-13b.bin" crc="4e8b81a8"/>
+        <!-- oki - starts at 0x90000 - length 0x40000 (18 bits) -->
+        <part name="xmqq-12c.bin" crc="71ac69ad"/>
+        <part name="xmqq-13c.bin" crc="71e29699"/>
+        <!-- gfx - starts at 0xD0000 - length 0x200000 (21 bits) -->
+        <interleave output="64">
+            <part name="xmqq-4b.bin" crc="933ab76d" map="00000001"/>
+            <part name="xmqq-4a.bin" crc="b098e7a9" map="00000010"/>
+            <part name="xmqq-9b.bin" crc="b66d62d4" map="00000100"/>
+            <part name="xmqq-9a.bin" crc="9c23e40b" map="00001000"/>
+            <part name="xmqq-5e.bin" crc="63d06d6f" map="00010000"/>
+            <part name="xmqq-5c.bin" crc="e2169bb5" map="00100000"/>
+            <part name="xmqq-8h.bin" crc="113121f5" map="01000000"/>
+            <part name="xmqq-8f.bin" crc="beb00e07" map="10000000"/>
+        </interleave>
+        <interleave output="64">
+            <part name="xmqq-5b.bin" crc="05354905" map="00000001"/>
+            <part name="xmqq-5a.bin" crc="bd40215e" map="00000010"/>
+            <part name="xmqq-10b.bin" crc="9fa773ef" map="00000100"/>
+            <part name="xmqq-10a.bin" crc="638d4bc7" map="00001000"/>
+            <part name="xmqq-7e.bin" crc="72c45858" map="00010000"/>
+            <part name="xmqq-7c.bin" crc="d91cda18" map="00100000"/>
+            <part name="xmqq-9h.bin" crc="3cd8594b" map="01000000"/>
+            <part name="xmqq-9f.bin" crc="1ec10bed" map="10000000"/>
+        </interleave>
+        <!-- Total 0x2D0000 bytes - 2880 kBytes -->
+    </rom>
+    <rom index="1">
+        <part>00</part>
+    </rom>
+    <switches page_id="1" page_name="Switches" base="8" default="ff,fb,ff,ff">
+        <!-- DSWB -->
+        <dip name="Demo Sounds" bits="8,9" ids="Off,Every 4,Every 2,On"/>
+        <dip name="Prize Mode" bits="10" ids="Not Used,Used"/>
+        <dip name="Credit Mode" bits="11" ids="On,Off"/>
+        <dip name="Max Stage" bits="12" ids="2,3"/>
+        <dip name="Card Check" bits="13" ids="On,Off"/>
+        <!-- DSWC -->
+        <dip name="Body Check" bits="17" ids="On,Off"/>
+        <dip name="Screen Stop" bits="19" ids="On,Off"/>
+        <dip name="Flip Screen" bits="20" ids="On,Off"/>
+        <dip name="Service Mode" bits="23" ids="On,Off"/>
+        <!-- IN0 -->
+        <dip name="Service Mode" bits="30" ids="On,Off"/>
+        <dip name="PCB type" ids="88617A,89626A" bits="24"/>
+    </switches>
+    <buttons names="button 1,button 2,-,-,-,-,Start,Coin,Core credits" default="A,B,Start,Select,-" count="2"/>
+</misterromdescription>

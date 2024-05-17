@@ -1,0 +1,107 @@
+<!--          FPGA arcade hardware by Jotego
+
+              This core is available for hardware compatible with MiST and MiSTer
+              Other FPGA systems may be supported by the time you read this.
+              This work is not mantained by the MiSTer project. Please contact the
+              core author for issues and updates.
+
+              (c) Jose Tejada, 2024. Please support this research
+              Patreon: https://patreon.com/jotego
+
+              The author does not endorse or participate in illegal distribution
+              of copyrighted material. This work can be used with compatible
+              software. This software can be homebrew projects or legally
+              obtained memory dumps of compatible games.
+
+              This file license is GNU GPLv2.
+              You can read the whole license file in
+              https://opensource.org/licenses/gpl-2.0.php
+
+-->
+
+<misterromdescription>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
+    <name>Muscle Bomber Duo: Ultimate Team Battle (World 931206)</name>
+    <setname>mbombrd</setname>
+    <rbf>jtcps15</rbf>
+    <mameversion>0251</mameversion>
+    <year>1993</year>
+    <manufacturer>Capcom</manufacturer>
+    <players>4</players>
+    <joystick>8</joystick>
+    <rotation>horizontal</rotation>
+    <region>World</region>
+    <rom index="0" zip="mbombrd.zip|qsound.zip" md5="None" asm_md5="b2222a07181b228d155a47c93e3cb110">
+        <part>
+            00 08 80 08 80 18 80 30
+            FF FF FF FF FF FF FF FF
+            1E C2 FF FF FF FF 2A 2C
+            2E 30 32 00 00 1C 04 08
+            10 00 10 40 C8 73 F7 20
+            FF FF FF FF FF FF FF FF
+            54 32 10 76 65 43 21 07
+            31 31 19 FF FF FF FF FF
+        </part>
+        <!-- maincpu - starts at 0x0 - length 0x200000 (21 bits) -->
+        <interleave output="16">
+            <part name="mbde_30.11f" crc="a036dc16" map="01"/>
+            <part name="mbde_26.11e" crc="72b7451c" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="mbde_31.12f" crc="085f47f0" map="01"/>
+            <part name="mbde_27.12e" crc="4086f534" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="mbde_28.9f" crc="2618d5e1" map="01"/>
+            <part name="mbde_24.9e" crc="c20895a5" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="mbde_29.10f" crc="3f52d5e5" map="01"/>
+            <part name="mbde_25.10e" crc="9bdb6b11" map="10"/>
+        </interleave>
+        <part name="mbde_21.6f" crc="690c026a"/>
+        <part name="mbde_20.5f" crc="b8b2139b"/>
+        <!-- audiocpu - starts at 0x200000 - length 0x20000 (17 bits) -->
+        <part name="mb_q.5k" crc="d6fa76d1"/>
+        <!-- qsound - starts at 0x220000 - length 0x400000 (22 bits) -->
+        <part name="mb-q1.1k" crc="0630c3ce"/>
+        <part name="mb-q2.2k" crc="354f9c21"/>
+        <part name="mb-q3.3k" crc="7838487c"/>
+        <part name="mb-q4.4k" crc="ab66e087"/>
+        <part name="mb-q5.1m" crc="c789fef2"/>
+        <part name="mb-q6.2m" crc="ecb81b61"/>
+        <part name="mb-q7.3m" crc="041e49ba"/>
+        <part name="mb-q8.4m" crc="59fe702a"/>
+        <!-- gfx - starts at 0x620000 - length 0x600000 (23 bits) -->
+        <interleave output="64">
+            <part name="mb-1m.3a" crc="41468e06" map="00000021"/>
+            <part name="mb-3m.5a" crc="f453aa9e" map="00002100"/>
+            <part name="mb-2m.4a" crc="2ffbfea8" map="00210000"/>
+            <part name="mb-4m.6a" crc="1eb9841d" map="21000000"/>
+        </interleave>
+        <interleave output="64">
+            <part name="mb-5m.7a" crc="506b9dc9" map="00000021"/>
+            <part name="mb-7m.9a" crc="aff8c2fb" map="00002100"/>
+            <part name="mb-6m.8a" crc="b76c70e9" map="00210000"/>
+            <part name="mb-8m.10a" crc="e60c9556" map="21000000"/>
+        </interleave>
+        <interleave output="64">
+            <part name="mb-10m.3c" crc="97976ff5" map="00000021"/>
+            <part name="mb-12m.5c" crc="b350a840" map="00002100"/>
+            <part name="mb-11m.4c" crc="8fb94743" map="00210000"/>
+            <part name="mb-13m.6c" crc="da810d5f" map="21000000"/>
+        </interleave>
+        <!-- firmware - starts at 0xC20000 - length 0x2000 (13 bits) -->
+        <part name="dl-1425.bin" crc="d6cf5ef5" length="0x2000"/>
+        <!-- Total 0xC22000 bytes - 12424 kBytes -->
+    </rom>
+    <nvram index="2" size="128"/>
+    <rom index="1">
+        <part>00</part>
+    </rom>
+    <switches page_id="1" page_name="Switches" base="16" default="ff">
+        <!-- DSWC -->
+        <dip name="Freeze" bits="3" ids="On,Off"/>
+    </switches>
+    <buttons names="Grab,Attack,Jump,-,-,-,Start,Coin,Core credits" default="A,B,X,Start,Select,-" count="3"/>
+</misterromdescription>

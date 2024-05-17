@@ -1,0 +1,113 @@
+<!--          FPGA arcade hardware by Jotego
+
+              This core is available for hardware compatible with MiST and MiSTer
+              Other FPGA systems may be supported by the time you read this.
+              This work is not mantained by the MiSTer project. Please contact the
+              core author for issues and updates.
+
+              (c) Jose Tejada, 2024. Please support this research
+              Patreon: https://patreon.com/jotego
+
+              The author does not endorse or participate in illegal distribution
+              of copyrighted material. This work can be used with compatible
+              software. This software can be homebrew projects or legally
+              obtained memory dumps of compatible games.
+
+              This file license is GNU GPLv2.
+              You can read the whole license file in
+              https://opensource.org/licenses/gpl-2.0.php
+
+-->
+
+<misterromdescription>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
+    <name>Arkanoid - Revenge of DOH (World)</name>
+    <setname>arknoid2</setname>
+    <rbf>jtkiwi</rbf>
+    <mameversion>0251</mameversion>
+    <year>1987</year>
+    <manufacturer>Taito Corporation Japan</manufacturer>
+    <players>2</players>
+    <joystick/>
+    <rotation>vertical (ccw)</rotation>
+    <region>World</region>
+    <rom index="0" zip="arknoid2.zip" md5="None" asm_md5="7586279997dac5121b3b2ecc1c6ad29b">
+        <!-- bit 0 = MCU
+             bit 1 = color PROM
+             bit 2 = Kabuki Z (specific sound features)
+             bit 3 = Kageki   (specific sound features)
+             bit 4 = banked RAM
+             bit 5 = coin XOR
+             bit 6 = dip_flip XOR
+             bit 7 = HB delay
+             Byte 1:
+             bit 0 = service XOR
+             bit 1 = button aid
+             bit 2 = 3 MHz for FM module
+             bit 3 = Kabuki Z with different memory map   -->
+        <part>
+            03 03 00 00 </part>
+        <!-- maincpu - starts at 0x0 - length 0x20000 (17 bits) -->
+        <part name="b08__05.11c" crc="136edf9d"/>
+        <part repeat="0x10000"> FF</part>
+        <!-- JTFRAME_BA1_START -->
+        <!-- sub - starts at 0x20000 - length 0x10000 (16 bits) -->
+        <part name="b08__13.3e" crc="e8035ef1"/>
+        <!-- JTFRAME_BA2_START -->
+        <!-- audiocpu - starts at 0x30000 - length 0x10000 (16 bits) -->
+        <part repeat="0x10000"> FF</part>
+        <!-- PCM_START -->
+        <!-- samples - starts at 0x40000 - length 0x10000 (16 bits) -->
+        <part repeat="0x10000"> FF</part>
+        <!-- JTFRAME_BA3_START -->
+        <!-- gfx1 - starts at 0x50000 - length 0x200000 (21 bits) -->
+        <interleave output="32">
+            <part name="b08-03.7a" crc="274a795f" map="0001"/>
+            <part name="b08-01.13a" crc="2ccc86b4" map="0010"/>
+            <part name="b08-04.4a" crc="9754f703" map="0100"/>
+            <part name="b08-02.10a" crc="056a985f" map="1000"/>
+        </interleave>
+        <part repeat="0x180000"> FF</part>
+        <!-- JTFRAME_PROM_START -->
+        <!-- proms - starts at 0x250000 - length 0x1000 (12 bits) -->
+        <part name="b08-08.15f" crc="a4f7ebd9"/>
+        <part name="b08-07.16f" crc="ea34d9f7"/>
+        <part repeat="0xC00"> FF</part>
+        <!-- MCU_START -->
+        <!-- mcu - starts at 0x251000 - length 0x800 (11 bits) -->
+        <!-- Using custom firmware (no known dump) -->
+        <part>
+            04 07 00 93 00 00 93 23 00 D7 15 35 65 85 A5 23
+            55 90 23 55 02 86 15 B8 20 B9 60 23 00 A0 18 E9
+            1D 23 AA 90 23 AA 02 86 27 B8 30 B9 04 D6 2D 22
+            A5 A0 18 E9 2D 23 5A 90 23 5A 02 86 3B BF 00 86
+            43 04 6D D6 3F 22 76 54 A8 FC 03 BF 96 3F FF 68
+            AF 02 04 3F A5 AC 03 3F 96 62 BD 00 14 82 FF 02
+            04 3F FC 03 EB 96 3F FF C6 6D CF 04 3F 23 04 3A
+            09 43 0F A8 23 05 3A 09 77 77 77 77 43 F0 58 02
+            04 3F 23 00 26 88 43 10 46 8C 43 20 A8 C6 9C DE
+            C6 9C FF 03 F7 F6 9C 1F F8 90 AE 83 F8 AE 23 00
+            90 83 </part>
+        <part repeat="0x75E"> FF</part>
+        <!-- Total 0x251800 bytes - 2374 kBytes -->
+    </rom>
+    <!-- Vertical game -->
+    <rom index="1">
+        <part>05</part>
+    </rom>
+    <switches page_id="1" page_name="Switches" base="16" default="fe,7f">
+        <!-- DSWA -->
+        <dip name="Cabinet" bits="0" ids="Upright,Cocktail"/>
+        <dip name="Flip Screen" bits="1" ids="On,Off"/>
+        <dip name="Service Mode" bits="2" ids="On,Off"/>
+        <dip name="Demo Sounds" bits="3" ids="Off,On"/>
+        <dip name="Coin A" bits="4,5" ids="4/1,3/1,2/1,1/1"/>
+        <dip name="Coin B" bits="6,7" ids="1/6,1/4,1/3,1/2"/>
+        <!-- DSWB -->
+        <dip name="Difficulty" bits="8,9" ids="Hardest,Hard,Easy,Medium"/>
+        <dip name="Bonus Life" bits="10,11" ids="50k 150k 150k+,50k only,100k only,100k 200k 200k+"/>
+        <dip name="Lives" bits="12,13" ids="5,4,2,3"/>
+        <dip name="Allow Continue" bits="15" ids="Yes,No"/>
+    </switches>
+    <buttons names="Shoot,-,-,Start,Coin,Core credits" default="A,Start,Select,-" count="1"/>
+</misterromdescription>

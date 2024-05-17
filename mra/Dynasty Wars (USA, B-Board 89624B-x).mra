@@ -1,0 +1,95 @@
+<!--          FPGA arcade hardware by Jotego
+
+              This core is available for hardware compatible with MiST and MiSTer
+              Other FPGA systems may be supported by the time you read this.
+              This work is not mantained by the MiSTer project. Please contact the
+              core author for issues and updates.
+
+              (c) Jose Tejada, 2024. Please support this research
+              Patreon: https://patreon.com/jotego
+
+              The author does not endorse or participate in illegal distribution
+              of copyrighted material. This work can be used with compatible
+              software. This software can be homebrew projects or legally
+              obtained memory dumps of compatible games.
+
+              This file license is GNU GPLv2.
+              You can read the whole license file in
+              https://opensource.org/licenses/gpl-2.0.php
+
+-->
+
+<misterromdescription>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
+    <name>Dynasty Wars (USA, B-Board 89624B-?)</name>
+    <setname>dynwar</setname>
+    <rbf>jtcps1</rbf>
+    <mameversion>0251</mameversion>
+    <year>1989</year>
+    <manufacturer>Capcom</manufacturer>
+    <players>2</players>
+    <joystick>8</joystick>
+    <rotation>horizontal</rotation>
+    <region>World</region>
+    <rom index="0" zip="dynwar.zip" md5="None" asm_md5="38c64741d4ce69186c4eed0a0599e2ae">
+        <part>
+            00 04 40 04 40 05 FF FF
+            FF FF FF FF FF FF FF FF
+            20 02 FF FF FF FF 2C 2A
+            28 26 24 00 00 22 02 04
+            08 00 24 20 64 31 33 00
+            FF FF FF FF FF FF FF FF
+            FF FF FF FF FF FF FF FF
+            FF FF FF FF FF FF FF FF
+        </part>
+        <!-- maincpu - starts at 0x0 - length 0x100000 (20 bits) -->
+        <interleave output="16">
+            <part name="35.11h" crc="e41fff2f" map="01"/>
+            <part name="30.11f" crc="f9ec6d68" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="36.12h" crc="7a13cfbf" map="01"/>
+            <part name="31.12f" crc="e3de76ff" map="10"/>
+        </interleave>
+        <part name="tkm-9.8h" crc="93654bcf"/>
+        <!-- audiocpu - starts at 0x100000 - length 0x10000 (16 bits) -->
+        <part name="tke_17.12b" crc="b3b79d4f"/>
+        <!-- oki - starts at 0x110000 - length 0x40000 (18 bits) -->
+        <part name="tke_18.11c" crc="ac6e307d"/>
+        <part name="tke_19.12c" crc="068741db"/>
+        <!-- gfx - starts at 0x150000 - length 0x400000 (22 bits) -->
+        <interleave output="64">
+            <part name="tkm-5.7a" crc="f64bb6a0" map="00000021"/>
+            <part name="tkm-8.9a" crc="21fe6274" map="00002100"/>
+            <part name="tkm-6.3a" crc="0bf228cb" map="00210000"/>
+            <part name="tkm-7.5a" crc="1255dfb1" map="21000000"/>
+        </interleave>
+        <interleave output="64">
+            <part name="tkm-1.8a" crc="44f7661e" map="00000021"/>
+            <part name="tkm-4.10a" crc="a54c515d" map="00002100"/>
+            <part name="tkm-2.4a" crc="ca5c687c" map="00210000"/>
+            <part name="tkm-3.6a" crc="f9fe6591" map="21000000"/>
+        </interleave>
+        <!-- Total 0x550000 bytes - 5440 kBytes -->
+    </rom>
+    <rom index="1">
+        <part>00</part>
+    </rom>
+    <switches page_id="1" page_name="Switches" base="8" default="ff,ff,ff">
+        <!-- DSWA -->
+        <dip name="Free Play" bits="7" ids="On,Off"/>
+        <!-- DSWB -->
+        <dip name="Difficulty" bits="8,10" ids="8,7,6,5,1,2,3,4"/>
+        <!-- DSWC -->
+        <dip name="Freeze" bits="16" ids="On,Off"/>
+        <dip name="Turbo Mode" bits="17" ids="On,Off"/>
+        <dip name="Flip Screen" bits="20" ids="On,Off"/>
+        <dip name="Demo Sounds" bits="21" ids="Off,On"/>
+        <dip name="Allow Continue" bits="22" ids="No,Yes"/>
+        <dip name="Game Mode" bits="23" ids="Test,Game"/>
+        <!-- IN0 -->
+        <dip name="Service Mode" bits="30" ids="On,Off"/>
+        <dip name="PCB type" ids="88617A,89626A" bits="24"/>
+    </switches>
+    <buttons names="Attack left,Attack right,Special,-,-,-,Start,Coin,Core credits" default="A,B,X,Start,Select,-" count="3"/>
+</misterromdescription>

@@ -1,0 +1,19 @@
+[ARC]
+RBF=JTCPS1
+MOD=0
+NAME=3WONDERS
+DEFAULT=0xFFFFFF00
+CONF="P1,Switches"
+CONF="P1OE,2 to Start, 1 to Cont.,On,Off"
+CONF="P1OE,Free Play,On,Off"
+CONF="P1OF,Freeze,On,Off"
+CONF="P1OGH,Lives (M.W.),5,3,2,1"
+CONF="P1OIJ,Difficulty (M.W.),Hardest,Hard,Normal,Easy"
+CONF="P1OKL,Lives (Ch.),5,3,2,1"
+CONF="P1OMN,Difficulty (Ch.),Hardest,Hard,Normal,Easy"
+CONF="P1OOP,Lives (D.P.),5,3,2,1"
+CONF="P1OQR,Difficulty (D.P.),Hardest,Hard,Normal,Easy"
+CONF="P1OS,Flip Screen,On,Off"
+CONF="P1OT,Demo Sounds,On,Off"
+CONF="P1OU,Continue,Yes,No"
+CONF="P1OV,Game Mode,Test,Game"

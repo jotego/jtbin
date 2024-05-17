@@ -1,0 +1,75 @@
+<!--          FPGA arcade hardware by Jotego
+
+              This core is available for hardware compatible with MiST and MiSTer
+              Other FPGA systems may be supported by the time you read this.
+              This work is not mantained by the MiSTer project. Please contact the
+              core author for issues and updates.
+
+              (c) Jose Tejada, 2024. Please support this research
+              Patreon: https://patreon.com/jotego
+
+              The author does not endorse or participate in illegal distribution
+              of copyrighted material. This work can be used with compatible
+              software. This software can be homebrew projects or legally
+              obtained memory dumps of compatible games.
+
+              This file license is GNU GPLv2.
+              You can read the whole license file in
+              https://opensource.org/licenses/gpl-2.0.php
+
+-->
+
+<misterromdescription>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
+    <name>The Simpsons (2 Players World, set 3)</name>
+    <setname>simpsons2p3</setname>
+    <rbf>jtsimson</rbf>
+    <mameversion>0251</mameversion>
+    <year>1991</year>
+    <manufacturer>Konami</manufacturer>
+    <players>2</players>
+    <joystick>8</joystick>
+    <rotation>horizontal</rotation>
+    <region>World</region>
+    <rom index="0" zip="simpsons2p3.zip|simpsons.zip" md5="None" asm_md5="55527ee092429e31a618a1056c022cec">
+        <!--  Header to identify the PCB type
+        Byte 0 = 0 - The Simpsons
+                 1 - Parodius
+                 2 - Vendetta -->
+        <part>
+            00 00 00 00 </part>
+        <!-- maincpu - starts at 0x0 - length 0x80000 (19 bits) -->
+        <part name="072-g02.16c" crc="580ce1d6"/>
+        <part name="4.13c" crc="c3040e4f"/>
+        <part name="072-p01.17c" crc="07ceeaea"/>
+        <part name="3.15c" crc="eb4f5781"/>
+        <!-- JTFRAME_BA1_START -->
+        <!-- audiocpu - starts at 0x80000 - length 0x20000 (17 bits) -->
+        <part name="072-g03.6g" crc="76c1850c"/>
+        <!-- PCM_START -->
+        <!-- pcm - starts at 0xA0000 - length 0x140000 (21 bits) -->
+        <part name="072-d05.1f" crc="1397a73b"/>
+        <part name="072-d04.1d" crc="78778013"/>
+        <!-- JTFRAME_BA2_START -->
+        <!-- tiles - starts at 0x1E0000 - length 0x100000 (20 bits) -->
+        <interleave output="32">
+            <part name="072-b07.18h" crc="ba1ec910" map="0021"/>
+            <part name="072-b06.16h" crc="cf2bbcab" map="2100"/>
+        </interleave>
+        <!-- JTFRAME_BA3_START -->
+        <!-- obj - starts at 0x2E0000 - length 0x400000 (22 bits) -->
+        <interleave output="64">
+            <part name="072-b08.3n" crc="7de500ad" map="00000021"/>
+            <part name="072-b09.8n" crc="aa085093" map="00002100"/>
+            <part name="072-b10.12n" crc="577dbd53" map="00210000"/>
+            <part name="072-b11.16l" crc="55fab05d" map="21000000"/>
+        </interleave>
+        <!-- Total 0x6E0000 bytes - 7040 kBytes -->
+    </rom>
+    <nvram index="2" size="128"/>
+    <rom index="1">
+        <!-- black frame 16x0 -->
+        <part>60</part>
+    </rom>
+    <buttons names="Attack,Jump,-,Start,Coin,Core credits" default="A,B,Start,Select,-" count="2"/>
+</misterromdescription>

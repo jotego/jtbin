@@ -1,0 +1,51 @@
+jtshouse - Arcade compatible hardware for Pocket FPGA
+Developed by JOTEGO - https://patreon.com/jotego
+
+The following arcade titles are compatible with this core. Generate
+the required .rom file using the mra tool (read below).
+Place the *.rom files in Assets/jtshouse/common
+
+Blast Off (Japan) --> blastoff.rom
+Blazer (Japan) --> blazer.rom
+Boxy Boy (World, SB2) --> boxyboy.rom
+Boxy Boy (SB?) --> boxyboya.rom
+Dangerous Seed (Japan) --> dangseed.rom
+Dragon Spirit (new version (DS3)) --> dspirit.rom
+Dragon Spirit (old version (DS1)) --> dspirit1.rom
+Dragon Spirit (DS2) --> dspirit2.rom
+Face Off (Japan 2 Players) --> faceoff.rom
+Galaga '88 --> galaga88.rom
+Galaga '88 (02-03-88) --> galaga88a.rom
+Galaga '88 (Japan) --> galaga88j.rom
+Marchen Maze (Japan) --> mmaze.rom
+Marchen Maze (Japan, hack?) --> mmaze2.rom
+Pac-Mania --> pacmania.rom
+Pac-Mania (Japan) --> pacmaniaj.rom
+Pac-Mania (111187 sound program) --> pacmaniao.rom
+Pistol Daimyo no Bouken (Japan) --> pistoldm.rom
+Shadowland (YD3) --> shadowld.rom
+Souko Ban Deluxe (Japan, SB1) --> soukobdx.rom
+Splatter House (World, new version (SH3)) --> splatter.rom
+Splatter House (World, old version (SH2)) --> splatter2.rom
+Splatter House (Japan, SH1) --> splatterj.rom
+Tank Force (US, 2 Players) --> tankfrce.rom
+Pro Tennis World Court (Japan) --> wldcourt.rom
+Pro Yakyuu World Stadium (Japan) --> ws.rom
+Pro Yakyuu World Stadium '89 (Japan) --> ws89.rom
+Pro Yakyuu World Stadium '90 (Japan) --> ws90.rom
+Youkai Douchuuki (Japan, old version (YD1)) --> youkaidk1.rom
+Youkai Douchuuki (Japan, new version (YD2, Rev B)) --> youkaidk2.rom
+
+
+These files are generated using the mra tool in:
+https://github.com/sebdel/mra-tools-c/tree/master/release
+
+Boogermann's ORCA tool can also be used to generate the files:
+https://github.com/opengateware/tools-orca
+
+Check out the short tutorial in:
+https://github.com/jotego/jtbin/wiki/Analogue-Pocket-Cores
+
+DISCLAIMER: This PocketFPGA core is licensed to be used only
+with legally owned dumps of videogame data. It is also licensed
+to be used with freeware (homebrew) compatible with the platform.

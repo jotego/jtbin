@@ -1,0 +1,88 @@
+<!--          FPGA arcade hardware by Jotego
+
+              This core is available for hardware compatible with MiST and MiSTer
+              Other FPGA systems may be supported by the time you read this.
+              This work is not mantained by the MiSTer project. Please contact the
+              core author for issues and updates.
+
+              (c) Jose Tejada, 2024. Please support this research
+              Patreon: https://patreon.com/jotego
+
+              The author does not endorse or participate in illegal distribution
+              of copyrighted material. This work can be used with compatible
+              software. This software can be homebrew projects or legally
+              obtained memory dumps of compatible games.
+
+              This file license is GNU GPLv2.
+              You can read the whole license file in
+              https://opensource.org/licenses/gpl-2.0.php
+
+-->
+
+<misterromdescription>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
+    <name>The Final Round (version M)</name>
+    <setname>fround</setname>
+    <rbf>jtfround</rbf>
+    <mameversion>0251</mameversion>
+    <year>1988</year>
+    <manufacturer>Konami</manufacturer>
+    <players>2</players>
+    <joystick>8</joystick>
+    <rotation>horizontal</rotation>
+    <region>World</region>
+    <rom index="0" zip="fround.zip" md5="None" asm_md5="0824f8ea07f0f330628fa9373dc13021">
+        <part>
+            00 00 00 00 00 00 00 00
+        </part>
+        <!-- maincpu - starts at 0x0 - length 0x40000 (18 bits) -->
+        <interleave output="16">
+            <part name="870_m20.bin" crc="b1c79d6a" map="01"/>
+            <part name="870_m21.bin" crc="436dbffb" map="10"/>
+        </interleave>
+        <!-- data - starts at 0x40000 - length 0x60000 (19 bits) -->
+        <part repeat="0x60000"> FF</part>
+        <!-- JTFRAME_BA1_START -->
+        <!-- audiocpu - starts at 0xA0000 - length 0x8000 (15 bits) -->
+        <part name="870_f03.10a" crc="a645c727"/>
+        <!-- PCM_START -->
+        <!-- k007232 - starts at 0xA8000 - length 0x20000 (17 bits) -->
+        <part name="870_c01.5a" crc="6af96546"/>
+        <!-- UPD_START -->
+        <!-- upd - starts at 0xC8000 - length 0x20000 (17 bits) -->
+        <part name="870_c02.7c" crc="54e12c6d"/>
+        <!-- JTFRAME_BA2_START -->
+        <!-- fixed - starts at 0xE8000 - length 0x4000 (14 bits) -->
+        <part name="870_f14.d8" crc="c9b46615"/>
+        <!-- SCR_START -->
+        <!-- tiles - starts at 0xEC000 - length 0x100000 (20 bits) -->
+        <interleave output="32">
+            <part name="870c16.p15" crc="41df6a1b" map="0021"/>
+            <part name="870c18.p18" crc="07927fe8" map="2100"/>
+        </interleave>
+        <!-- JTFRAME_BA3_START -->
+        <!-- gfxrom - starts at 0x1EC000 - length 0x100000 (20 bits) -->
+        <interleave output="32">
+            <part name="870c15.p13" crc="8c9281df" map="0021"/>
+            <part name="870c17.p16" crc="2bc99ff8" map="2100"/>
+        </interleave>
+        <!-- Total 0x2EC000 bytes - 2992 kBytes -->
+        <patch offset="0x1060">12 11</patch>
+    </rom>
+    <rom index="1">
+        <part>00</part>
+    </rom>
+    <switches page_id="1" page_name="Switches" base="8" default="ff,5e,ff">
+        <!-- DSW1 -->
+        <dip name="Coin A" bits="0,3" ids="Free Play,4/3,4/1,3/4,3/2,3/1,2/5,2/3,2/1,1/7,1/6,1/5,1/4,1/3,1/2,1/1"/>
+        <dip name="Coin B" bits="4,7" ids="No B,4/3,4/1,3/4,3/2,3/1,2/5,2/3,2/1,1/7,1/6,1/5,1/4,1/3,1/2,1/1"/>
+        <!-- DSW2 -->
+        <dip name="Energy" bits="8,9" ids="24,22,20,18"/>
+        <dip name="Difficulty" bits="13,14" ids="Very Difficult,Difficult,Normal,Easy"/>
+        <dip name="Demo Sounds" bits="15" ids="On,Off"/>
+        <!-- DSW3 -->
+        <dip name="Flip Screen" bits="16" ids="On,Off"/>
+        <dip name="Service Mode" bits="18" ids="On,Off"/>
+    </switches>
+    <buttons names="Face Punch,Body Punch,Guard,Start,Coin,Core credits" default="A,B,X,Start,Select,-" count="3"/>
+</misterromdescription>

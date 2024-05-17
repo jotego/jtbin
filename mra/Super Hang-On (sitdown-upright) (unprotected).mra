@@ -1,0 +1,128 @@
+<!--          FPGA arcade hardware by Jotego
+
+              This core is available for hardware compatible with MiST and MiSTer
+              Other FPGA systems may be supported by the time you read this.
+              This work is not mantained by the MiSTer project. Please contact the
+              core author for issues and updates.
+
+              (c) Jose Tejada, 2024. Please support this research
+              Patreon: https://patreon.com/jotego
+
+              The author does not endorse or participate in illegal distribution
+              of copyrighted material. This work can be used with compatible
+              software. This software can be homebrew projects or legally
+              obtained memory dumps of compatible games.
+
+              This file license is GNU GPLv2.
+              You can read the whole license file in
+              https://opensource.org/licenses/gpl-2.0.php
+
+-->
+
+<misterromdescription>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
+    <name>Super Hang-On (sitdown-upright) (unprotected)</name>
+    <setname>shangon</setname>
+    <rbf>jtshanon</rbf>
+    <mameversion>0251</mameversion>
+    <year>1987</year>
+    <manufacturer>Sega</manufacturer>
+    <players>1</players>
+    <joystick/>
+    <rotation>horizontal</rotation>
+    <region>World</region>
+    <rom index="0" zip="shangon.zip" md5="None" asm_md5="88939b6dd5728e4207375b57101466f8">
+        <part>
+            00 01 00 00 00 00 00 00
+            00 00 00 00 00 00 00 00
+        </part>
+        <!-- maincpu - starts at 0x0 - length 0x60000 (19 bits) -->
+        <interleave output="16">
+            <part name="epr-10884.118" crc="cb06150d" map="01"/>
+            <part name="epr-10886.133" crc="8be3cd36" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="epr-10885.117" crc="70795f26" map="01"/>
+            <part name="epr-10887.132" crc="8d248bb0" map="10"/>
+        </interleave>
+        <part repeat="0x20000"> FF</part>
+        <!-- JTFRAME_BA1_START -->
+        <!-- subcpu - starts at 0x60000 - length 0x60000 (19 bits) -->
+        <interleave output="16">
+            <part name="epr-10790.58" crc="2246cbc1" map="01"/>
+            <part name="epr-10792.76" crc="16299d25" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="epr-10791.57" crc="5faf4cbe" map="01"/>
+            <part name="epr-10793.75" crc="d9525427" map="10"/>
+        </interleave>
+        <part repeat="0x20000"> FF</part>
+        <!-- SND_START -->
+        <!-- soundcpu - starts at 0xC0000 - length 0x10000 (16 bits) -->
+        <part name="epr-10649c.88" crc="f6c1ce71"/>
+        <part repeat="0x8000"> FF</part>
+        <!-- PCM_START -->
+        <!-- pcm - starts at 0xD0000 - length 0x60000 (19 bits) -->
+        <part name="epr-10643.66" crc="06f55364"/>
+        <part repeat="0x8000"> FF</part>
+        <part name="epr-10644.67" crc="b41d541d"/>
+        <part repeat="0x8000"> FF</part>
+        <part name="epr-10645.68" crc="a60dabff"/>
+        <part repeat="0x8000"> FF</part>
+        <part name="epr-10646.69" crc="473cc411"/>
+        <part repeat="0x28000"> FF</part>
+        <!-- JTFRAME_BA2_START -->
+        <!-- gfx1 - starts at 0x130000 - length 0x40000 (18 bits) -->
+        <interleave output="32">
+            <part name="epr-10652.54" crc="260286f9" map="0001"/>
+            <part name="epr-10651.55" crc="c609ee7b" map="0010"/>
+            <part name="epr-10650.56" crc="b236a403" map="0100"/>
+            <part name="epr-10650.56" crc="b236a403" map="1000"/>
+        </interleave>
+        <part repeat="0x20000"> FF</part>
+        <!-- JTFRAME_BA3_START -->
+        <!-- sprites - starts at 0x170000 - length 0x100000 (20 bits) -->
+        <interleave output="16">
+            <part name="mpr-10794.8" crc="7c958e63" map="01"/>
+            <part name="mpr-10798.16" crc="7d58f807" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="mpr-10795.6" crc="d9d31f8c" map="01"/>
+            <part name="mpr-10799.14" crc="96d90d3d" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="mpr-10796.4" crc="fb48957c" map="01"/>
+            <part name="mpr-10800.12" crc="feaff98e" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="mpr-10797.2" crc="27f2870d" map="01"/>
+            <part name="mpr-10801.10" crc="12781795" map="10"/>
+        </interleave>
+        <!-- ROAD_START -->
+        <!-- segaic16road - starts at 0x270000 - length 0x28000 (18 bits) -->
+        <!-- Singleton region. The files are merged with themselves. -->
+        <interleave output="16">
+            <part name="epr-10642.47" crc="7836bcc3" offset="0x0000" map="01" length="0x4000"/>
+            <part name="epr-10642.47" crc="7836bcc3" offset="0x4000" map="10" length="0x4000"/>
+        </interleave>
+        <part repeat="0x20000"> FF</part>
+        <!-- JTFRAME_PROM_START -->
+        <!-- maincpu:key - starts at 0x298000 - length 0x2000 (13 bits) -->
+        <part repeat="0x2000"> FF</part>
+        <!-- Total 0x29A000 bytes - 2664 kBytes -->
+    </rom>
+    <nvram index="2" size="18432"/>
+    <rom index="1">
+        <part>00</part>
+    </rom>
+    <switches page_id="1" page_name="Switches" base="24" default="ff,fe">
+        <!-- COINAGE -->
+        <dip name="Coin A" bits="0,3" ids="Free Play or 1/1,1/1 2/3,1/1 4/5,1/1 5/6,2/1 4/3,2/1 5/3 6/4,2/3,4/1,3/1,2/1,1/6,1/5,1/4,1/3,1/2,1/1"/>
+        <dip name="Coin B" bits="4,7" ids="Free Play or 1/1,1/1 2/3,1/1 4/5,1/1 5/6,2/1 4/3,2/1 5/3 6/4,2/3,4/1,3/1,2/1,1/6,1/5,1/4,1/3,1/2,1/1"/>
+        <!-- DSW -->
+        <dip name="Demo Sounds" bits="8" ids="On,Off"/>
+        <dip name="Difficulty" bits="9,10" ids="Hardest,Hard,Easy,Normal"/>
+        <dip name="Time Adj." bits="11,12" ids="Hardest,Hard,Easy,Normal"/>
+    </switches>
+    <buttons names="Accelerate,Brake,Supercharger,-,Start,Coin,Core credits" default="A,B,X,Start,Select,-" count="3"/>
+</misterromdescription>

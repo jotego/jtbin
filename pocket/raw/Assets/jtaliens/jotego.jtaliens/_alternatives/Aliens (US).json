@@ -1,0 +1,27 @@
+{
+	"instance":{
+		"magic": "APF_VER_1",
+		"variant_select": {
+			"id": 0,
+			"select": false
+		},
+		"data_path": "",
+		"data_slots": [
+			{
+				"id": 1,
+				"filename": "aliensu.rom",
+				"md5": "7458d38926ecc5f7048a72e34c06f27b"
+			},
+			{
+				"id": 2,
+				"filename": "aliensu.sav"
+			}
+		],
+		"memory_writes": [
+			{
+				"address": "0xf9000000",
+				"data": "0x60"
+			}
+		]
+	}
+}

@@ -1,0 +1,107 @@
+<!--          FPGA arcade hardware by Jotego
+
+              This core is available for hardware compatible with MiST and MiSTer
+              Other FPGA systems may be supported by the time you read this.
+              This work is not mantained by the MiSTer project. Please contact the
+              core author for issues and updates.
+
+              (c) Jose Tejada, 2024. Please support this research
+              Patreon: https://patreon.com/jotego
+
+              The author does not endorse or participate in illegal distribution
+              of copyrighted material. This work can be used with compatible
+              software. This software can be homebrew projects or legally
+              obtained memory dumps of compatible games.
+
+              This file license is GNU GPLv2.
+              You can read the whole license file in
+              https://opensource.org/licenses/gpl-2.0.php
+
+-->
+
+<misterromdescription>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
+    <name>Area 88 (Japan)</name>
+    <setname>area88</setname>
+    <rbf>jtcps1</rbf>
+    <mameversion>0251</mameversion>
+    <year>1989</year>
+    <manufacturer>Capcom</manufacturer>
+    <players>2</players>
+    <joystick>8</joystick>
+    <rotation>horizontal</rotation>
+    <region>World</region>
+    <rom index="0" zip="area88.zip|unsquad.zip" md5="None" asm_md5="6454eb2d74631208ece064404009e98f">
+        <part>
+            00 04 40 04 40 05 FF FF
+            FF FF FF FF FF FF FF FF
+            32 41 FF FF FF FF 26 28
+            2A 2C 2E 00 00 30 08 10
+            20 00 00 20 44 31 FF 00
+            FF FF FF FF FF FF FF FF
+            FF FF FF FF FF FF FF FF
+            FF FF FF FF FF FF FF FF
+        </part>
+        <!-- maincpu - starts at 0x0 - length 0x100000 (20 bits) -->
+        <interleave output="16">
+            <part name="ar_42.12h" crc="c48170de" map="01"/>
+            <part name="ar_36.12f" crc="65030392" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="ar_43.13h" crc="7cc8fb9e" map="01"/>
+            <part name="ar_37.13f" crc="33e9694b" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="ar_40.10h" crc="be36c145" map="01"/>
+            <part name="ar_34.10f" crc="f6e80386" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="ar_41.11h" crc="758893d3" map="01"/>
+            <part name="ar_35.11f" crc="86d98ff3" map="10"/>
+        </interleave>
+        <!-- audiocpu - starts at 0x100000 - length 0x10000 (16 bits) -->
+        <part name="ar_23.13c" crc="f3dd1367"/>
+        <!-- oki - starts at 0x110000 - length 0x40000 (18 bits) -->
+        <part name="ar_30.12e" crc="584b43a9"/>
+        <part repeat="0x20000"> FF</part>
+        <!-- gfx - starts at 0x150000 - length 0x200000 (21 bits) -->
+        <interleave output="64">
+            <part name="ar_09.4b" crc="db9376f8" map="00000001"/>
+            <part name="ar_01.4a" crc="392151b4" map="00000010"/>
+            <part name="ar_13.9b" crc="81436481" map="00000100"/>
+            <part name="ar_05.9a" crc="e246ed9f" map="00001000"/>
+            <part name="ar_24.5e" crc="9cd6e2a3" map="00010000"/>
+            <part name="ar_17.5c" crc="0b8e0df4" map="00100000"/>
+            <part name="ar_38.8h" crc="8b9e75b9" map="01000000"/>
+            <part name="ar_32.8f" crc="db6acdcf" map="10000000"/>
+        </interleave>
+        <interleave output="64">
+            <part name="ar_10.5b" crc="4219b622" map="00000001"/>
+            <part name="ar_02.5a" crc="bac5dec5" map="00000010"/>
+            <part name="ar_14.10b" crc="e6bae179" map="00000100"/>
+            <part name="ar_06.10a" crc="c8f04223" map="00001000"/>
+            <part name="ar_25.7e" crc="15ccf981" map="00010000"/>
+            <part name="ar_18.7c" crc="9336db6a" map="00100000"/>
+            <part name="ar_39.9h" crc="9b8e1363" map="01000000"/>
+            <part name="ar_33.9f" crc="3968f4b5" map="10000000"/>
+        </interleave>
+        <!-- Total 0x350000 bytes - 3392 kBytes -->
+    </rom>
+    <rom index="1">
+        <part>00</part>
+    </rom>
+    <switches page_id="1" page_name="Switches" base="8" default="ff,fc,9f">
+        <!-- DSWB -->
+        <dip name="Difficulty" bits="8,10" ids="7,6,5,4,3,2,1,0"/>
+        <dip name="Damage" bits="11,12" ids="Biggest,Big,Small,Normal"/>
+        <!-- DSWC -->
+        <dip name="Free Play" bits="18" ids="On,Off"/>
+        <dip name="Freeze" bits="19" ids="On,Off"/>
+        <dip name="Flip Screen" bits="20" ids="On,Off"/>
+        <dip name="Demo Sounds" bits="21" ids="On,Off"/>
+        <dip name="Allow Continue" bits="22" ids="Yes,No"/>
+        <dip name="Game Mode" bits="23" ids="Test,Game"/>
+        <dip name="PCB type" ids="88617A,89626A" bits="24"/>
+    </switches>
+    <buttons names="Shoot,Bomb,-,-,-,-,Start,Coin,Core credits" default="A,B,Start,Select,-" count="2"/>
+</misterromdescription>

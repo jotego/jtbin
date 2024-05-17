@@ -1,0 +1,36 @@
+Place the following files in this folder:
+
+parodius.rom
+parodiusa.rom
+parodiuse.rom
+parodiusj.rom
+simpsons.rom
+simpsons2p.rom
+simpsons2p2.rom
+simpsons2p3.rom
+simpsons2pa.rom
+simpsons2pj.rom
+simpsons4pa.rom
+simpsons4pe.rom
+simpsons4pe2.rom
+vendetta.rom
+vendetta2pd.rom
+vendetta2peba.rom
+vendetta2pp.rom
+vendetta2pu.rom
+vendetta2pun.rom
+vendetta2pw.rom
+vendettan.rom
+vendettar.rom
+vendettaun.rom
+vendettaz.rom
+
+These files are generated using the mra tool in:
+https://github.com/sebdel/mra-tools-c/tree/master/release
+
+Check out the short tutorial in:
+https://github.com/jotego/jtbin/wiki/Analogue-Pocket-Cores
+
+DISCLAIMER: This PocketFPGA core is licensed to be used only
+with legally owned dumps of videogame data. It is also licensed
+to be used with freeware (homebrew) compatible with the platform.

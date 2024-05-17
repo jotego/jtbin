@@ -1,0 +1,86 @@
+<!--          FPGA arcade hardware by Jotego
+
+              This core is available for hardware compatible with MiST and MiSTer
+              Other FPGA systems may be supported by the time you read this.
+              This work is not mantained by the MiSTer project. Please contact the
+              core author for issues and updates.
+
+              (c) Jose Tejada, 2024. Please support this research
+              Patreon: https://patreon.com/jotego
+
+              The author does not endorse or participate in illegal distribution
+              of copyrighted material. This work can be used with compatible
+              software. This software can be homebrew projects or legally
+              obtained memory dumps of compatible games.
+
+              This file license is GNU GPLv2.
+              You can read the whole license file in
+              https://opensource.org/licenses/gpl-2.0.php
+
+-->
+
+<misterromdescription>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
+    <name>Carrier Air Wing (World 901012)</name>
+    <setname>cawing</setname>
+    <rbf>jtcps1</rbf>
+    <mameversion>0251</mameversion>
+    <year>1990</year>
+    <manufacturer>Capcom</manufacturer>
+    <players>2</players>
+    <joystick>8</joystick>
+    <rotation>horizontal</rotation>
+    <region>World</region>
+    <rom index="0" zip="cawing.zip" md5="None" asm_md5="df07f29994f8b9121b2ed3ae88b14dc9">
+        <part>
+            00 04 40 04 40 05 FF FF
+            FF FF FF FF FF FF FF FF
+            00 46 FF FF FF FF 0C 0A
+            08 06 04 00 00 02 10 0A
+            0A 00 03 40 44 F3 FF 00
+            FF FF FF FF FF FF FF FF
+            FF FF FF FF FF FF FF FF
+            FF FF FF FF FF FF FF FF
+        </part>
+        <!-- maincpu - starts at 0x0 - length 0x100000 (20 bits) -->
+        <interleave output="16">
+            <part name="cae_35a.11h" crc="3ef03083" map="01"/>
+            <part name="cae_30a.11f" crc="91fceacd" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="cae_36a.12h" crc="c73fd713" map="01"/>
+            <part name="cae_31a.12f" crc="e5b75caf" map="10"/>
+        </interleave>
+        <part name="ca-32m.8h" crc="0c4837d4"/>
+        <!-- audiocpu - starts at 0x100000 - length 0x10000 (16 bits) -->
+        <part name="ca_9.12b" crc="96fe7485"/>
+        <!-- oki - starts at 0x110000 - length 0x40000 (18 bits) -->
+        <part name="ca_18.11c" crc="4a613a2c"/>
+        <part name="ca_19.12c" crc="74584493"/>
+        <!-- gfx - starts at 0x150000 - length 0x200000 (21 bits) -->
+        <interleave output="64">
+            <part name="ca-5m.7a" crc="66d4cc37" map="00000021"/>
+            <part name="ca-7m.9a" crc="b6f896f2" map="00002100"/>
+            <part name="ca-1m.3a" crc="4d0620fd" map="00210000"/>
+            <part name="ca-3m.5a" crc="0b0341c3" map="21000000"/>
+        </interleave>
+        <!-- Total 0x350000 bytes - 3392 kBytes -->
+    </rom>
+    <rom index="1">
+        <part>00</part>
+    </rom>
+    <switches page_id="1" page_name="Switches" base="8" default="ff,fc,bf">
+        <!-- DSWB -->
+        <dip name="Enemy&apos;s Strength" bits="8,10" ids="8,7,6,5,4,3,2,1"/>
+        <dip name="Gameplay" bits="11,12" ids="Hardest,Hard,Easy,Normal"/>
+        <!-- DSWC -->
+        <dip name="Free Play" bits="18" ids="On,Off"/>
+        <dip name="Freeze" bits="19" ids="On,Off"/>
+        <dip name="Flip Screen" bits="20" ids="On,Off"/>
+        <dip name="Demo Sounds" bits="21" ids="On,Off"/>
+        <dip name="Allow Continue" bits="22" ids="Yes,No"/>
+        <dip name="Game Mode" bits="23" ids="Test,Game"/>
+        <dip name="PCB type" ids="88617A,89626A" bits="24"/>
+    </switches>
+    <buttons names="Shoot,Bomb,-,-,-,-,Start,Coin,Core credits" default="A,B,Start,Select,-" count="2"/>
+</misterromdescription>

@@ -1,0 +1,32 @@
+{
+	"instance":{
+		"magic": "APF_VER_1",
+		"variant_select": {
+			"id": 0,
+			"select": false
+		},
+		"data_path": "",
+		"data_slots": [
+			{
+				"id": 1,
+				"filename": "dspirit.rom",
+				"md5": "097c833e8e78033db06f27bf99ff8e62"
+			},
+			{
+				"id": 2,
+				"filename": "dspirit.sav"
+			},
+			{
+				"id": 17,
+				"filename": "beta.bin",
+				"md5": "71035230a15ff988e5823bc00a8efc50"
+			}
+		],
+		"memory_writes": [
+			{
+				"address": "0xf9000000",
+				"data": "0x1"
+			}
+		]
+	}
+}

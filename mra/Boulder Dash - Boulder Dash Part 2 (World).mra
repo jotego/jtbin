@@ -1,0 +1,110 @@
+<!--          FPGA arcade hardware by Jotego
+
+              This core is available for hardware compatible with MiST and MiSTer
+              Other FPGA systems may be supported by the time you read this.
+              This work is not mantained by the MiSTer project. Please contact the
+              core author for issues and updates.
+
+              (c) Jose Tejada, 2024. Please support this research
+              Patreon: https://patreon.com/jotego
+
+              The author does not endorse or participate in illegal distribution
+              of copyrighted material. This work can be used with compatible
+              software. This software can be homebrew projects or legally
+              obtained memory dumps of compatible games.
+
+              This file license is GNU GPLv2.
+              You can read the whole license file in
+              https://opensource.org/licenses/gpl-2.0.php
+
+-->
+
+<misterromdescription>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
+    <name>Boulder Dash - Boulder Dash Part 2 (World)</name>
+    <setname>bouldash</setname>
+    <rbf>jtslyspy</rbf>
+    <mameversion>0251</mameversion>
+    <year>1990</year>
+    <manufacturer>Data East Corporation (licensed from First Star)</manufacturer>
+    <players>2</players>
+    <joystick>4</joystick>
+    <rotation>horizontal</rotation>
+    <region>World</region>
+    <rom index="0" zip="bouldash.zip" md5="None" asm_md5="8b470f64f4920165a6461f9ca169c933">
+        <!-- maincpu - starts at 0x0 - length 0x80000 (19 bits) -->
+        <interleave output="16">
+            <part name="fw-12-2.9l" crc="242bdc2a" map="01"/>
+            <part name="fw-15-2.17l" crc="ca19a967" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="fw-13-2.11l" crc="19209ef4" map="01"/>
+            <part name="fw-16-2.19l" crc="b7217265" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="fw-14-2.13l" crc="69b6112d" map="01"/>
+            <part name="fw-17-2.20l" crc="78a632a1" map="10"/>
+        </interleave>
+        <part repeat="0x20000"> FF</part>
+        <!-- SND_START -->
+        <!-- audiocpu - starts at 0x80000 - length 0x10000 (16 bits) -->
+        <part name="fn-10" crc="c74106e7"/>
+        <!-- PCM_START -->
+        <!-- oki - starts at 0x90000 - length 0x20000 (17 bits) -->
+        <part name="fn-11" crc="990fd8d9"/>
+        <part repeat="0x10000"> FF</part>
+        <!-- JTFRAME_BA2_START -->
+        <!-- gfx1 - starts at 0xB0000 - length 0x20000 (17 bits) -->
+        <interleave output="16">
+            <part name="fn-04" crc="40f5a760" map="01"/>
+            <part name="fn-05" crc="824f2168" map="10"/>
+        </interleave>
+        <!-- GFX2_START -->
+        <!-- gfx2 - starts at 0xD0000 - length 0x80000 (19 bits) -->
+        <interleave output="16">
+            <part name="fn-07" crc="eac6a3b3" map="01"/>
+            <part name="fn-06" crc="3feee292" map="10"/>
+        </interleave>
+        <part repeat="0x60000"> FF</part>
+        <!-- GFX3_START -->
+        <!-- gfx3 - starts at 0x150000 - length 0x40000 (18 bits) -->
+        <interleave output="16">
+            <part name="fn-09" crc="c2b27bd2" map="01"/>
+            <part name="fn-08" crc="5ac97178" map="10"/>
+        </interleave>
+        <!-- JTFRAME_BA3_START -->
+        <!-- gfx4 - starts at 0x190000 - length 0x80000 (19 bits) -->
+        <interleave output="32">
+            <part name="fn-01" crc="9333121b" map="0001"/>
+            <part name="fn-00" crc="ec18d098" map="0010"/>
+            <part name="fn-03" crc="254ba60f" map="0100"/>
+            <part name="fn-02" crc="4f060cba" map="1000"/>
+        </interleave>
+        <part repeat="0x40000"> FF</part>
+        <!-- MCU_START -->
+        <!-- mcu - starts at 0x210000 -->
+        <!-- sub - starts at 0x210000 - length 0x18000 (17 bits) -->
+        <part repeat="0x18000"> FF</part>
+        <!-- PROM_START -->
+        <!-- JTFRAME_PROM_START -->
+        <!-- proms - starts at 0x228000 - length 0x100 (8 bits) -->
+        <part name="ta-16.21k" crc="ad26e8d4"/>
+        <!-- Total 0x228100 bytes - 2208 kBytes -->
+    </rom>
+    <rom index="1">
+        <part>00</part>
+    </rom>
+    <switches page_id="1" page_name="Switches" base="17" default="7f,7f">
+        <!-- DSW -->
+        <dip name="Coin A" bits="0,2" ids="3/1,2/1,1/6,1/5,1/4,1/3,1/2,1/1"/>
+        <dip name="Coin B" bits="3,5" ids="3/1,2/1,1/6,1/5,1/4,1/3,1/2,1/1"/>
+        <dip name="Flip Screen" bits="6" ids="On,Off"/>
+        <dip name="Cabinet" bits="7" ids="Upright,Cocktail"/>
+        <dip name="Lives" bits="8,9" ids="2,5,4,3"/>
+        <dip name="Difficulty" bits="10,11" ids="Hardest,Hard,Easy,Normal"/>
+        <dip name="Game Change Mode" bits="13" ids="Part 2,Part 1"/>
+        <dip name="Allow Continue" bits="14" ids="No,Yes"/>
+        <dip name="Demo Sounds" bits="15" ids="On,Off"/>
+    </switches>
+    <buttons names="Shot,Jump,-,-,-,Start,Coin,Core credits" default="A,B,Start,Select,-" count="2"/>
+</misterromdescription>

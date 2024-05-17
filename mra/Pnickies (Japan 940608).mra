@@ -1,0 +1,93 @@
+<!--          FPGA arcade hardware by Jotego
+
+              This core is available for hardware compatible with MiST and MiSTer
+              Other FPGA systems may be supported by the time you read this.
+              This work is not mantained by the MiSTer project. Please contact the
+              core author for issues and updates.
+
+              (c) Jose Tejada, 2024. Please support this research
+              Patreon: https://patreon.com/jotego
+
+              The author does not endorse or participate in illegal distribution
+              of copyrighted material. This work can be used with compatible
+              software. This software can be homebrew projects or legally
+              obtained memory dumps of compatible games.
+
+              This file license is GNU GPLv2.
+              You can read the whole license file in
+              https://opensource.org/licenses/gpl-2.0.php
+
+-->
+
+<misterromdescription>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
+    <name>Pnickies (Japan 940608)</name>
+    <setname>pnickj</setname>
+    <rbf>jtcps1</rbf>
+    <mameversion>0251</mameversion>
+    <year>1994</year>
+    <manufacturer>Capcom</manufacturer>
+    <players>2</players>
+    <joystick>8</joystick>
+    <rotation>horizontal</rotation>
+    <region>World</region>
+    <rom index="0" zip="pnickj.zip" md5="None" asm_md5="39d46d81dfc6c10c94b02cf812bfd817">
+        <part>
+            00 01 40 01 40 02 FF FF
+            FF FF FF FF FF FF FF FF
+            32 FF 00 02 04 06 26 28
+            2A 2C 2E 00 00 30 02 04
+            08 30 15 40 44 F3 FF 01
+            FF FF FF FF FF FF FF FF
+            FF FF FF FF FF FF FF FF
+            FF FF FF FF FF FF FF FF
+        </part>
+        <!-- maincpu - starts at 0x0 - length 0x40000 (18 bits) -->
+        <interleave output="16">
+            <part name="pnij_42.12h" crc="c085dfaf" map="01"/>
+            <part name="pnij_36.12f" crc="2d4ffb2b" map="10"/>
+        </interleave>
+        <!-- audiocpu - starts at 0x40000 - length 0x10000 (16 bits) -->
+        <part name="pnij_17.13b" crc="e86f787a"/>
+        <!-- oki - starts at 0x50000 - length 0x40000 (18 bits) -->
+        <part name="pnij_24.12c" crc="5092257d"/>
+        <part name="pnij_25.13c" crc="22109aaa"/>
+        <!-- gfx - starts at 0x90000 - length 0x200000 (21 bits) -->
+        <interleave output="64">
+            <part name="pnij_09.4b" crc="48177b0a" map="00000001"/>
+            <part name="pnij_01.4a" crc="01a0f311" map="00000010"/>
+            <part name="pnij_13.9b" crc="406451b0" map="00000100"/>
+            <part name="pnij_05.9a" crc="8c515dc0" map="00001000"/>
+            <part name="pnij_26.5e" crc="e2af981e" map="00010000"/>
+            <part name="pnij_18.5c" crc="f17a0e56" map="00100000"/>
+            <part name="pnij_38.8h" crc="eb75bd8c" map="01000000"/>
+            <part name="pnij_32.8f" crc="84560bef" map="10000000"/>
+        </interleave>
+        <interleave output="64">
+            <part name="pnij_10.5b" crc="c2acc171" map="00000001"/>
+            <part name="pnij_02.5a" crc="0e21fc33" map="00000010"/>
+            <part name="pnij_14.10b" crc="7fe59b19" map="00000100"/>
+            <part name="pnij_06.10a" crc="79f4bfe3" map="00001000"/>
+            <part name="pnij_27.7e" crc="83d5cb0e" map="00010000"/>
+            <part name="pnij_19.7c" crc="af08b230" map="00100000"/>
+            <part name="pnij_39.9h" crc="70fbe579" map="01000000"/>
+            <part name="pnij_33.9f" crc="3ed2c680" map="10000000"/>
+        </interleave>
+        <!-- Total 0x290000 bytes - 2624 kBytes -->
+    </rom>
+    <rom index="1">
+        <part>00</part>
+    </rom>
+    <switches page_id="1" page_name="Switches" base="8" default="ff,fc,ff">
+        <!-- DSWB -->
+        <dip name="Difficulty" bits="8,10" ids="7,6,5,4,3,2,1,0"/>
+        <dip name="Vs Play Mode" bits="14,15" ids="7 Games Match,5 Games Match,3 Games Match,1 Game Match"/>
+        <!-- DSWC -->
+        <dip name="Freeze" bits="19" ids="On,Off"/>
+        <dip name="Flip Screen" bits="20" ids="On,Off"/>
+        <dip name="Demo Sounds" bits="21" ids="On,Off"/>
+        <dip name="Game Mode" bits="23" ids="Test,Game"/>
+        <dip name="PCB type" ids="88617A,89626A" bits="24"/>
+    </switches>
+    <buttons names="Rotate left,Rotate right,-,-,-,-,Start,Coin,Core credits" default="A,B,Start,Select,-" count="2"/>
+</misterromdescription>

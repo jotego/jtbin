@@ -1,0 +1,117 @@
+<!--          FPGA arcade hardware by Jotego
+
+              This core is available for hardware compatible with MiST and MiSTer
+              Other FPGA systems may be supported by the time you read this.
+              This work is not mantained by the MiSTer project. Please contact the
+              core author for issues and updates.
+
+              (c) Jose Tejada, 2024. Please support this research
+              Patreon: https://patreon.com/jotego
+
+              The author does not endorse or participate in illegal distribution
+              of copyrighted material. This work can be used with compatible
+              software. This software can be homebrew projects or legally
+              obtained memory dumps of compatible games.
+
+              This file license is GNU GPLv2.
+              You can read the whole license file in
+              https://opensource.org/licenses/gpl-2.0.php
+
+-->
+
+<misterromdescription>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
+    <name>Senjou no Ookami II (Japan 900302)</name>
+    <setname>mercsj</setname>
+    <rbf>jtcps1</rbf>
+    <mameversion>0251</mameversion>
+    <year>1990</year>
+    <manufacturer>Capcom</manufacturer>
+    <players>3</players>
+    <joystick>8</joystick>
+    <rotation>vertical (ccw)</rotation>
+    <region>World</region>
+    <rom index="0" zip="mercsj.zip|mercs.zip" md5="None" asm_md5="268b3afe8b4c94423970401d372b2383">
+        <part>
+            00 04 40 04 40 05 FF FF
+            FF FF FF FF FF FF FF FF
+            20 42 FF FF FF FF 2C 2A
+            28 26 24 36 00 22 02 04
+            08 00 13 40 66 33 FF 02
+            FF FF FF FF FF FF FF FF
+            FF FF FF FF FF FF FF FF
+            FF FF FF FF FF FF FF FF
+        </part>
+        <!-- maincpu - starts at 0x0 - length 0x100000 (20 bits) -->
+        <interleave output="16">
+            <part name="so2_42.12h" crc="2c3884c6" map="01"/>
+            <part name="so2_36.12f" crc="e17f9bf7" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="so2_43.13h" crc="9cfba8b4" map="01"/>
+            <part name="so2_37.13f" crc="51204d36" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="so2_40.10h" crc="de37771c" map="01"/>
+            <part name="so2_34.10f" crc="b8dae95f" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="so2_41.11h" crc="914f85e0" map="01"/>
+            <part name="so2_35.11f" crc="7d24394d" map="10"/>
+        </interleave>
+        <!-- audiocpu - starts at 0x100000 - length 0x10000 (16 bits) -->
+        <part name="so2_23.13b" crc="d09d7c7a"/>
+        <!-- oki - starts at 0x110000 - length 0x40000 (18 bits) -->
+        <part name="so2_30.12c" crc="bbea1643"/>
+        <part name="so2_31.13c" crc="ac58aa71"/>
+        <!-- gfx - starts at 0x150000 - length 0x300000 (22 bits) -->
+        <interleave output="64">
+            <part name="so2_09.4b" crc="690c261d" map="00000001"/>
+            <part name="so2_01.4a" crc="31fd2715" map="00000010"/>
+            <part name="so2_13.9b" crc="b5e48282" map="00000100"/>
+            <part name="so2_05.9a" crc="54bed82c" map="00001000"/>
+            <part name="so2_24.5e" crc="78b6f0cb" map="00010000"/>
+            <part name="so2_17.5c" crc="e78bb308" map="00100000"/>
+            <part name="so2_38.8h" crc="0010a9a2" map="01000000"/>
+            <part name="so2_32.8f" crc="75dffc9a" map="10000000"/>
+        </interleave>
+        <interleave output="64">
+            <part name="so2_10.5b" crc="2f871714" map="00000001"/>
+            <part name="so2_02.5a" crc="b4b2a0b7" map="00000010"/>
+            <part name="so2_14.10b" crc="737a744b" map="00000100"/>
+            <part name="so2_06.10a" crc="9d756f51" map="00001000"/>
+            <part name="so2_25.7e" crc="6d0e05d6" map="00010000"/>
+            <part name="so2_18.7c" crc="96f61f4e" map="00100000"/>
+            <part name="so2_39.9h" crc="d52ba336" map="01000000"/>
+            <part name="so2_33.9f" crc="39b90d25" map="10000000"/>
+        </interleave>
+        <interleave output="64">
+            <part name="so2_11.7b" crc="3f254efe" map="00000001"/>
+            <part name="so2_03.7a" crc="f5a8905e" map="00000010"/>
+            <part name="so2_15.11b" crc="f3aa5a4a" map="00000100"/>
+            <part name="so2_07.11a" crc="b43cd1a8" map="00001000"/>
+            <part name="so2_26.8e" crc="8ca751a3" map="00010000"/>
+            <part name="so2_19.8c" crc="e9f569fd" map="00100000"/>
+            <part name="so2_28.10e" crc="fce9a377" map="01000000"/>
+            <part name="so2_21.10c" crc="b7df8a06" map="10000000"/>
+        </interleave>
+        <!-- Total 0x450000 bytes - 4416 kBytes -->
+    </rom>
+    <!-- Vertical game -->
+    <rom index="1">
+        <part>05</part>
+    </rom>
+    <switches page_id="1" page_name="Switches" base="8" default="ff,fc,9f">
+        <!-- DSWB -->
+        <dip name="Difficulty" bits="8,10" ids="7,6,5,4,3,2,1,0"/>
+        <dip name="Play Mode" bits="12" ids="2 Players,3 Players"/>
+        <!-- DSWC -->
+        <dip name="Freeze" bits="19" ids="On,Off"/>
+        <dip name="Flip Screen" bits="20" ids="On,Off"/>
+        <dip name="Demo Sounds" bits="21" ids="On,Off"/>
+        <dip name="Allow Continue" bits="22" ids="Yes,No"/>
+        <dip name="Service Mode" bits="23" ids="On,Off"/>
+        <dip name="PCB type" ids="88617A,89626A" bits="24"/>
+    </switches>
+    <buttons names="Shoot,Bomb,-,-,-,-,Start,Coin,Core credits" default="A,B,Start,Select,-" count="2"/>
+</misterromdescription>

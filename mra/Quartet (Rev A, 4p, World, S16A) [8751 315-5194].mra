@@ -1,0 +1,125 @@
+<!--          FPGA arcade hardware by Jotego
+
+              This core is available for hardware compatible with MiST and MiSTer
+              Other FPGA systems may be supported by the time you read this.
+              This work is not mantained by the MiSTer project. Please contact the
+              core author for issues and updates.
+
+              (c) Jose Tejada, 2024. Please support this research
+              Patreon: https://patreon.com/jotego
+
+              The author does not endorse or participate in illegal distribution
+              of copyrighted material. This work can be used with compatible
+              software. This software can be homebrew projects or legally
+              obtained memory dumps of compatible games.
+
+              This file license is GNU GPLv2.
+              You can read the whole license file in
+              https://opensource.org/licenses/gpl-2.0.php
+
+-->
+
+<misterromdescription>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
+    <name>Quartet (Rev A, 4p, World, S16A) [8751 315-5194]</name>
+    <setname>quartet</setname>
+    <rbf>jts16</rbf>
+    <mameversion>0251</mameversion>
+    <year>1986</year>
+    <manufacturer>Sega</manufacturer>
+    <players>4</players>
+    <joystick>8</joystick>
+    <rotation>horizontal</rotation>
+    <region>World</region>
+    <rom index="0" zip="quartet.zip" md5="None" asm_md5="e050e9908f4a2f31af39064094d03f93">
+        <part>
+            00 00 00 00 00 00 00 00
+            00 00 00 00 00 00 00 00
+            00 00 00 01 00 00 00 00
+            04 00 00 00 00 00 00 00
+        </part>
+        <!-- maincpu - starts at 0x0 - length 0x40000 (18 bits) -->
+        <interleave output="16">
+            <part name="epr-7455a.6b" crc="01631ab2" map="01"/>
+            <part name="epr-7458a.9b" crc="42e7b23e" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="epr-7456a.7b" crc="31ca583e" map="01"/>
+            <part name="epr-7459a.10b" crc="6b540637" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="epr-7457.8b" crc="3b282c23" map="01"/>
+            <part name="epr-7460.11b" crc="a444ea13" map="10"/>
+        </interleave>
+        <part repeat="0x10000"> FF</part>
+        <!-- JTFRAME_BA1_START -->
+        <!-- soundcpu - starts at 0x40000 - length 0x8000 (15 bits) -->
+        <part name="epr-7464.1b" crc="9f291306"/>
+        <!-- PCM_START -->
+        <!-- n7751data - starts at 0x48000 - length 0x40000 (18 bits) -->
+        <part name="epr-7473.1c" crc="06ec75fa"/>
+        <part name="epr-7475.2c" crc="7abd1206"/>
+        <part name="epr-7474.3c" crc="dbf853b8"/>
+        <part name="epr-7476.4c" crc="5eba655a"/>
+        <part repeat="0x20000"> FF</part>
+        <!-- JTFRAME_BA2_START -->
+        <!-- gfx1 - starts at 0x88000 - length 0x78000 (19 bits) -->
+        <interleave output="32">
+            <part name="epr-7461.9c" crc="f6af07f2" map="0001"/>
+            <part name="epr-7462.10c" crc="7914af28" map="0010"/>
+            <part name="epr-7463.11c" crc="827c5603" map="0100"/>
+            <part name="epr-7463.11c" crc="827c5603" map="1000"/>
+        </interleave>
+        <part repeat="0x58000"> FF</part>
+        <!-- JTFRAME_BA3_START -->
+        <!-- sprites - starts at 0x100000 - length 0x80000 (19 bits) -->
+        <interleave output="16">
+            <part name="epr-7465.5c" crc="8a1ab7d7" map="01"/>
+            <part name="epr-7469.2b" crc="cb65ae4f" map="10"/>
+        </interleave>
+        <part repeat="0x10000"> FF</part>
+        <interleave output="16">
+            <part name="epr-7466.6c" crc="b2d3f4f3" map="01"/>
+            <part name="epr-7470.3b" crc="16fc67b1" map="10"/>
+        </interleave>
+        <part repeat="0x10000"> FF</part>
+        <interleave output="16">
+            <part name="epr-7467.7c" crc="0af68de2" map="01"/>
+            <part name="epr-7471.4b" crc="13fad5ac" map="10"/>
+        </interleave>
+        <part repeat="0x10000"> FF</part>
+        <interleave output="16">
+            <part name="epr-7468.8c" crc="ddfd40c0" map="01"/>
+            <part name="epr-7472.5b" crc="8e2762ec" map="10"/>
+        </interleave>
+        <part repeat="0x10000"> FF</part>
+        <!-- MCU_START -->
+        <!-- JTFRAME_PROM_START -->
+        <!-- mcu - starts at 0x180000 - length 0x2000 (13 bits) -->
+        <part name="315-5194.mcu" crc="b7298f66"/>
+        <part repeat="0x1000"> FF</part>
+        <!-- MAINKEY_START -->
+        <!-- maincpu:key - starts at 0x182000 - length 0x2000 (13 bits) -->
+        <part repeat="0x2000"> FF</part>
+        <!-- N7751_START -->
+        <!-- n7751 - starts at 0x184000 - length 0x400 (10 bits) -->
+        <part name="7751.bin" crc="6a9534fc"/>
+        <!-- Total 0x184400 bytes - 1553 kBytes -->
+    </rom>
+    <rom index="1">
+        <part>00</part>
+    </rom>
+    <switches page_id="1" page_name="Switches" base="16" default="ff,fe">
+        <!-- DSW1 -->
+        <dip name="Coin A" bits="0,3" ids="Free Play or 1/1,1/1 2/3,1/1 4/5,1/1 5/6,2/1 4/3,2/1 5/3 6/4,2/3,4/1,3/1,2/1,1/6,1/5,1/4,1/3,1/2,1/1"/>
+        <dip name="Coin B" bits="4,7" ids="Free Play or 1/1,1/1 2/3,1/1 4/5,1/1 5/6,2/1 4/3,2/1 5/3 6/4,2/3,4/1,3/1,2/1,1/6,1/5,1/4,1/3,1/2,1/1"/>
+        <!-- DSW2 -->
+        <dip name="Demo Sounds" bits="8" ids="On,Off"/>
+        <dip name="Credit Power" bits="9,10" ids="9000,2000,500,1000"/>
+        <dip name="Difficulty" bits="11,12" ids="Hardest,Hard,Easy,Normal"/>
+        <dip name="Coin During Game" bits="13" ids="Credit,Power"/>
+        <dip name="Free Play" bits="14" ids="On,Off"/>
+        <dip name="Service Mode" bits="15" ids="On,Off"/>
+    </switches>
+    <buttons names="Jump,Shot,-,-,Start,Coin,Core credits" default="A,B,Start,Select,-" count="2"/>
+</misterromdescription>

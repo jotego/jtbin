@@ -1,0 +1,90 @@
+<!--          FPGA arcade hardware by Jotego
+
+              This core is available for hardware compatible with MiST and MiSTer
+              Other FPGA systems may be supported by the time you read this.
+              This work is not mantained by the MiSTer project. Please contact the
+              core author for issues and updates.
+
+              (c) Jose Tejada, 2024. Please support this research
+              Patreon: https://patreon.com/jotego
+
+              The author does not endorse or participate in illegal distribution
+              of copyrighted material. This work can be used with compatible
+              software. This software can be homebrew projects or legally
+              obtained memory dumps of compatible games.
+
+              This file license is GNU GPLv2.
+              You can read the whole license file in
+              https://opensource.org/licenses/gpl-2.0.php
+
+-->
+
+<misterromdescription>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
+    <name>Final Fight (World, set 1)</name>
+    <setname>ffight</setname>
+    <rbf>jtcps1</rbf>
+    <mameversion>0251</mameversion>
+    <year>1989</year>
+    <manufacturer>Capcom</manufacturer>
+    <players>2</players>
+    <joystick>8</joystick>
+    <rotation>horizontal</rotation>
+    <region>World</region>
+    <rom index="0" zip="ffight.zip" md5="None" asm_md5="aca5a28ec2d82513caa50fdbe0b1973a">
+        <part>
+            00 04 40 04 40 05 FF FF
+            FF FF FF FF FF FF FF FF
+            20 04 FF FF FF FF 2E 26
+            30 28 32 00 00 2A 02 04
+            08 00 1E 40 44 F3 FF 00
+            FF FF FF FF FF FF FF FF
+            FF FF FF FF FF FF FF FF
+            FF FF FF FF FF FF FF FF
+        </part>
+        <!-- maincpu - starts at 0x0 - length 0x100000 (20 bits) -->
+        <interleave output="16">
+            <part name="ff_42.11h" crc="65f11215" map="01"/>
+            <part name="ff_36.11f" crc="f9a5ce83" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="ffe_43.12h" crc="995e968a" map="01"/>
+            <part name="ff_37.12f" crc="e1033784" map="10"/>
+        </interleave>
+        <part name="ff-32m.8h" crc="c747696e"/>
+        <!-- audiocpu - starts at 0x100000 - length 0x10000 (16 bits) -->
+        <part name="ff_09.12b" crc="b8367eb5"/>
+        <!-- oki - starts at 0x110000 - length 0x40000 (18 bits) -->
+        <part name="ff_18.11c" crc="375c66e7"/>
+        <part name="ff_19.12c" crc="1ef137f9"/>
+        <!-- gfx - starts at 0x150000 - length 0x200000 (21 bits) -->
+        <interleave output="64">
+            <part name="ff-5m.7a" crc="9c284108" map="00000021"/>
+            <part name="ff-7m.9a" crc="a7584dfb" map="00002100"/>
+            <part name="ff-1m.3a" crc="0b605e44" map="00210000"/>
+            <part name="ff-3m.5a" crc="52291cd2" map="21000000"/>
+        </interleave>
+        <!-- Total 0x350000 bytes - 3392 kBytes -->
+    </rom>
+    <rom index="1">
+        <part>00</part>
+    </rom>
+    <switches page_id="1" page_name="Switches" base="8" default="ff,f4,9f">
+        <!-- DSWB -->
+        <dip name="Difficulty Level 1" bits="8,10" ids="Hardest,Harder,Hard,Medium,Normal,Easy,Easier,Easiest"/>
+        <dip name="Difficulty Level 2" bits="11,12" ids="Hardest,Hard,Normal,Easy"/>
+        <dip name="Bonus" bits="13,14" ids="None,100k &amp; *200k,200k,100k"/>
+        <!-- DSWC -->
+        <dip name="Lives" bits="16,17" ids="1,4,3,2"/>
+        <dip name="Free Play" bits="18" ids="On,Off"/>
+        <dip name="Freeze" bits="19" ids="On,Off"/>
+        <dip name="Flip Screen" bits="20" ids="On,Off"/>
+        <dip name="Demo Sounds" bits="21" ids="On,Off"/>
+        <dip name="Allow Continue" bits="22" ids="Yes,No"/>
+        <dip name="Game Mode" bits="23" ids="Test,Game"/>
+        <!-- IN0 -->
+        <dip name="Service Mode" bits="30" ids="On,Off"/>
+        <dip name="PCB type" ids="88617A,89626A" bits="24"/>
+    </switches>
+    <buttons names="Attack,Jump,Evade,-,-,-,Start,Coin,Core credits" default="A,B,X,Start,Select,-" count="3"/>
+</misterromdescription>

@@ -1,0 +1,27 @@
+{
+	"instance":{
+		"magic": "APF_VER_1",
+		"variant_select": {
+			"id": 0,
+			"select": false
+		},
+		"data_path": "",
+		"data_slots": [
+			{
+				"id": 1,
+				"filename": "roadfu.rom",
+				"md5": "29e9bd1ed505d6ff3c7eac3a7d3dece9"
+			},
+			{
+				"id": 2,
+				"filename": "roadfu.sav"
+			}
+		],
+		"memory_writes": [
+			{
+				"address": "0xf9000000",
+				"data": "0x1"
+			}
+		]
+	}
+}

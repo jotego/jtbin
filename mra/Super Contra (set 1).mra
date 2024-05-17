@@ -1,0 +1,131 @@
+<!--          FPGA arcade hardware by Jotego
+
+              This core is available for hardware compatible with MiST and MiSTer
+              Other FPGA systems may be supported by the time you read this.
+              This work is not mantained by the MiSTer project. Please contact the
+              core author for issues and updates.
+
+              (c) Jose Tejada, 2024. Please support this research
+              Patreon: https://patreon.com/jotego
+
+              The author does not endorse or participate in illegal distribution
+              of copyrighted material. This work can be used with compatible
+              software. This software can be homebrew projects or legally
+              obtained memory dumps of compatible games.
+
+              This file license is GNU GPLv2.
+              You can read the whole license file in
+              https://opensource.org/licenses/gpl-2.0.php
+
+-->
+
+<misterromdescription>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
+    <name>Super Contra (set 1)</name>
+    <setname>scontra</setname>
+    <rbf>jtaliens</rbf>
+    <mameversion>0251</mameversion>
+    <year>1988</year>
+    <manufacturer>Konami</manufacturer>
+    <players>2</players>
+    <joystick>8</joystick>
+    <rotation>vertical (cw)</rotation>
+    <region>World</region>
+    <rom index="0" zip="scontra.zip" md5="None" asm_md5="ffd37f90245d65425a36c8447a534517">
+        <!--     bit   0 = GX878 (Gang Busters)
+                 bits 2:1 = PCB config -> 0=Aliens, 1=Super Contra, 2=Thunder Cross -->
+        <part>
+            02 00 00 00 00 00 00 00
+        </part>
+        <!-- maincpu - starts at 0x0 - length 0x30000 (18 bits) -->
+        <part name="775-e02.k11" crc="a61c0ead"/>
+        <part name="775-e03.k13" crc="00b02622"/>
+        <part repeat="0x10000"> FF</part>
+        <!-- JTFRAME_BA1_START -->
+        <!-- audiocpu - starts at 0x30000 - length 0x8000 (15 bits) -->
+        <part name="775-c01.bin" crc="0ced785a"/>
+        <!-- PCM_START -->
+        <!-- k007232 - starts at 0x38000 - length 0x80000 (19 bits) -->
+        <part name="775-a04a.11b" crc="7efb2e0f"/>
+        <part name="775-a04b.10b" crc="f41a2b33"/>
+        <part name="775-a04c.9b" crc="e4e58f14"/>
+        <part name="775-a04d.8b" crc="d46736f6"/>
+        <part name="775-f04e.11a" crc="fbf7e363"/>
+        <part name="775-f04f.10a" crc="b031ef2d"/>
+        <part name="775-f04g.9a" crc="ee107bbb"/>
+        <part name="775-f04h.8a" crc="fb0fab46"/>
+        <!-- JTFRAME_BA2_START -->
+        <!-- k052109 - starts at 0xB8000 - length 0x188000 (21 bits) -->
+        <interleave output="32">
+            <part name="775-a07a.6f" crc="e716bdf3" map="0001"/>
+            <part name="775-a07e.5f" crc="0986e3a5" map="0010"/>
+            <part name="775-a08a.4f" crc="3ddd11a4" map="0100"/>
+            <part name="775-a08e.3f" crc="1007d963" map="1000"/>
+        </interleave>
+        <interleave output="32">
+            <part name="775-f07c.6d" crc="b0b30915" map="0001"/>
+            <part name="775-f07g.5d" crc="fbed827d" map="0010"/>
+            <part name="775-f08c.4d" crc="53abdaec" map="0100"/>
+            <part name="775-f08g.3d" crc="3df85a6e" map="1000"/>
+        </interleave>
+        <interleave output="32">
+            <part name="775-f07d.7f" crc="f184be8e" map="0001"/>
+            <part name="775-f07h.7e" crc="7b56c348" map="0010"/>
+            <part name="775-f08d.7d" crc="102dcace" map="0100"/>
+            <part name="775-f08h.7c" crc="ad9d7016" map="1000"/>
+        </interleave>
+        <part repeat="0x88000"> FF</part>
+        <!-- JTFRAME_BA3_START -->
+        <!-- k051960 - starts at 0x240000 - length 0x180000 (21 bits) -->
+        <interleave output="32">
+            <part name="775-a06e.8f" crc="8a910c94" map="0001"/>
+            <part name="775-a06a.9f" crc="77a34ad0" map="0010"/>
+            <part name="775-a05e.10f" crc="2f656f08" map="0100"/>
+            <part name="775-a05a.11f" crc="a0767045" map="1000"/>
+        </interleave>
+        <interleave output="32">
+            <part name="775-a06f.8e" crc="e14995c0" map="0001"/>
+            <part name="775-a06b.9e" crc="563fb565" map="0010"/>
+            <part name="775-a05f.10e" crc="1c0eb1b6" map="0100"/>
+            <part name="775-a05b.11e" crc="ab8ad4fd" map="1000"/>
+        </interleave>
+        <interleave output="32">
+            <part name="775-f06g.8d" crc="2645274d" map="0001"/>
+            <part name="775-f06c.9d" crc="5ee6f3c1" map="0010"/>
+            <part name="775-f05g.10d" crc="a1692cca" map="0100"/>
+            <part name="775-f05c.11d" crc="5647761e" map="1000"/>
+        </interleave>
+        <interleave output="32">
+            <part name="775-f06h.8c" crc="d6595f59" map="0001"/>
+            <part name="775-f06d.9c" crc="c8b764fa" map="0010"/>
+            <part name="775-f05h.10c" crc="3f925bcf" map="0100"/>
+            <part name="775-f05d.11c" crc="ad676a6f" map="1000"/>
+        </interleave>
+        <part repeat="0x80000"> FF</part>
+        <!-- JTFRAME_PROM_START -->
+        <!-- proms - starts at 0x3C0000 - length 0x100 (8 bits) -->
+        <part name="775a09.b19" crc="46d1e0df"/>
+        <!-- Total 0x3C0100 bytes - 3840 kBytes -->
+        <patch offset="0x8096">68 03 83</patch>
+    </rom>
+    <nvram index="2" size="4096"/>
+    <!-- Vertical game -->
+    <rom index="1">
+        <part>01</part>
+    </rom>
+    <switches page_id="1" page_name="Switches" base="8" default="ff,5e,f7">
+        <!-- DSW1 -->
+        <dip name="Coin A" bits="0,3" ids="Free Play,4/3,4/1,3/4,3/2,3/1,2/5,2/3,2/1,1/7,1/6,1/5,1/4,1/3,1/2,1/1"/>
+        <dip name="Coin B" bits="4,7" ids="No B,4/3,4/1,3/4,3/2,3/1,2/5,2/3,2/1,1/7,1/6,1/5,1/4,1/3,1/2,1/1"/>
+        <!-- DSW2 -->
+        <dip name="Lives" bits="8,9" ids="7,5,3,2"/>
+        <dip name="Bonus Life" bits="11,12" ids="50k,30k,50k 300k,30k 200k"/>
+        <dip name="Difficulty" bits="13,14" ids="Very Difficult,Difficult,Normal,Easy"/>
+        <dip name="Demo Sounds" bits="15" ids="On,Off"/>
+        <!-- DSW3 -->
+        <dip name="Flip Screen" bits="16" ids="On,Off"/>
+        <dip name="Service Mode" bits="18" ids="On,Off"/>
+        <dip name="Max cont" bits="19" ids="5 and 4,3 and 2"/>
+    </switches>
+    <buttons names="Shoot,Jump,-,Start,Coin,Core credits" default="A,B,Start,Select,-" count="2"/>
+</misterromdescription>

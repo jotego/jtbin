@@ -1,0 +1,182 @@
+{
+	"interact":{
+		"magic": "APF_VER_1",
+		"variables": [
+			{
+				"name": "FX Volume",
+				"id": 0,
+				"type": "list",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfb000000",
+				"defaultval": 0,
+				"value": 0,
+				"mask": "0xFFFFFF3F",
+				"options": [
+					{
+						"name": "high",
+						"value": "0x00"
+					},
+					{
+						"name": "very high",
+						"value": "0x40"
+					},
+					{
+						"name": "very low",
+						"value": "0x80"
+					},
+					{
+						"name": "low",
+						"value": "0xc0"
+					}
+				]
+			},
+			{
+				"name": "Dial sensitivity",
+				"id": 1,
+				"type": "list",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfb000004",
+				"defaultval": 3,
+				"value": 0,
+				"mask": "0xFFFFFFFC",
+				"options": [
+					{
+						"name": "very high",
+						"value": "0x1"
+					},
+					{
+						"name": "high",
+						"value": "0x0"
+					},
+					{
+						"name": "low",
+						"value": "0x3"
+					},
+					{
+						"name": "very low",
+						"value": "0x2"
+					}
+				]
+			},
+			{
+				"name": "Difficulty",
+				"id": 2,
+				"type": "list",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 4,
+				"value": 0,
+				"mask": "0xFFFFFFF8",
+				"options": [
+					{
+						"name": "7 (Hardest)",
+						"value": "0x0"
+					},
+					{
+						"name": "6",
+						"value": "0x1"
+					},
+					{
+						"name": "5",
+						"value": "0x2"
+					},
+					{
+						"name": "4",
+						"value": "0x3"
+					},
+					{
+						"name": "3 (Normal)",
+						"value": "0x4"
+					},
+					{
+						"name": "2",
+						"value": "0x5"
+					},
+					{
+						"name": "1",
+						"value": "0x6"
+					},
+					{
+						"name": "0 (Easiest)",
+						"value": "0x7"
+					}
+				]
+			},
+			{
+				"name": "Service Mode",
+				"id": 3,
+				"type": "check",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 0,
+				"value": 0,
+				"value_off": 128,
+				"mask": "0xFFFFFF7F"
+			},
+			{
+				"name": "Speed up",
+				"id": 4,
+				"type": "check",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 0,
+				"value": 0,
+				"value_off": 16384,
+				"mask": "0xFFFFBFFF"
+			},
+			{
+				"name": "Flip Screen",
+				"id": 5,
+				"type": "check",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 0,
+				"value": 0,
+				"value_off": 32768,
+				"mask": "0xFFFF7FFF"
+			},
+			{
+				"name": "Slow Motion",
+				"id": 6,
+				"type": "check",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 0,
+				"value": 0,
+				"value_off": 65536,
+				"mask": "0xFFFEFFFF"
+			},
+			{
+				"name": "Slowest Motion",
+				"id": 7,
+				"type": "check",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 0,
+				"value": 0,
+				"value_off": 131072,
+				"mask": "0xFFFDFFFF"
+			},
+			{
+				"name": "Default",
+				"id": 1015,
+				"type": "number_u32",
+				"enabled": false,
+				"persist": false,
+				"writeonly": true,
+				"address": "0xfa000000",
+				"defaultval": 16776447,
+				"value": 0
+			}
+		],
+		"messages": []
+	}
+}

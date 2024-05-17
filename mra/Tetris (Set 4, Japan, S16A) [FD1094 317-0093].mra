@@ -1,0 +1,94 @@
+<!--          FPGA arcade hardware by Jotego
+
+              This core is available for hardware compatible with MiST and MiSTer
+              Other FPGA systems may be supported by the time you read this.
+              This work is not mantained by the MiSTer project. Please contact the
+              core author for issues and updates.
+
+              (c) Jose Tejada, 2024. Please support this research
+              Patreon: https://patreon.com/jotego
+
+              The author does not endorse or participate in illegal distribution
+              of copyrighted material. This work can be used with compatible
+              software. This software can be homebrew projects or legally
+              obtained memory dumps of compatible games.
+
+              This file license is GNU GPLv2.
+              You can read the whole license file in
+              https://opensource.org/licenses/gpl-2.0.php
+
+-->
+
+<misterromdescription>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
+    <name>Tetris (Set 4, Japan, S16A) [FD1094 317-0093]</name>
+    <setname>tetris</setname>
+    <rbf>jts16</rbf>
+    <mameversion>0251</mameversion>
+    <year>1988</year>
+    <manufacturer>Sega</manufacturer>
+    <players>2</players>
+    <joystick>5 (half8)</joystick>
+    <rotation>horizontal</rotation>
+    <region>Japan</region>
+    <rom index="0" zip="tetris.zip" md5="None" asm_md5="a66fee2c280d67b2820db8dda291719e">
+        <part>
+            00 00 00 00 00 00 00 00
+            00 00 00 00 00 00 00 00
+            00 01 00 00 00 00 00 00
+            00 00 00 00 00 00 00 00
+        </part>
+        <!-- maincpu - starts at 0x0 - length 0x40000 (18 bits) -->
+        <interleave output="16">
+            <part name="epr-12200.rom" crc="fb058779" map="01"/>
+            <part name="epr-12201.rom" crc="338e9b51" map="10"/>
+        </interleave>
+        <part repeat="0x30000"> FF</part>
+        <!-- JTFRAME_BA1_START -->
+        <!-- soundcpu - starts at 0x40000 - length 0x8000 (15 bits) -->
+        <part name="epr-12205.rom" crc="6695dc99"/>
+        <!-- PCM_START -->
+        <!-- n7751data - starts at 0x48000 - length 0x40000 (18 bits) -->
+        <part repeat="0x40000"> FF</part>
+        <!-- JTFRAME_BA2_START -->
+        <!-- gfx1 - starts at 0x88000 - length 0x78000 (19 bits) -->
+        <interleave output="32">
+            <part name="epr-12202.rom" crc="2f7da741" map="0001"/>
+            <part name="epr-12203.rom" crc="a6e58ec5" map="0010"/>
+            <part name="epr-12204.rom" crc="0ae98e23" map="0100"/>
+            <part name="epr-12204.rom" crc="0ae98e23" map="1000"/>
+        </interleave>
+        <part repeat="0x38000"> FF</part>
+        <!-- JTFRAME_BA3_START -->
+        <!-- sprites - starts at 0x100000 - length 0x80000 (19 bits) -->
+        <interleave output="16">
+            <part name="epr-12169.b1" crc="dacc6165" map="01"/>
+            <part name="epr-12170.b5" crc="87354e42" map="10"/>
+        </interleave>
+        <part repeat="0x70000"> FF</part>
+        <!-- MCU_START -->
+        <!-- JTFRAME_PROM_START -->
+        <!-- mcu - starts at 0x180000 - length 0x2000 (13 bits) -->
+        <part repeat="0x1000"> FF</part>
+        <part repeat="0x1000"> FF</part>
+        <!-- MAINKEY_START -->
+        <!-- maincpu:key - starts at 0x182000 - length 0x2000 (13 bits) -->
+        <part name="317-0093.key" crc="e0064442"/>
+        <!-- N7751_START -->
+        <!-- n7751 - starts at 0x184000 - length 0x400 (10 bits) -->
+        <part repeat="0x400"> FF</part>
+        <!-- Total 0x184400 bytes - 1553 kBytes -->
+    </rom>
+    <rom index="1">
+        <part>00</part>
+    </rom>
+    <switches page_id="1" page_name="Switches" base="16" default="ff,fd">
+        <!-- DSW1 -->
+        <dip name="Coin A" bits="0,3" ids="Free Play or 1/1,1/1 2/3,1/1 4/5,1/1 5/6,2/1 4/3,2/1 5/3 6/4,2/3,4/1,3/1,2/1,1/6,1/5,1/4,1/3,1/2,1/1"/>
+        <dip name="Coin B" bits="4,7" ids="Free Play or 1/1,1/1 2/3,1/1 4/5,1/1 5/6,2/1 4/3,2/1 5/3 6/4,2/3,4/1,3/1,2/1,1/6,1/5,1/4,1/3,1/2,1/1"/>
+        <!-- DSW2 -->
+        <dip name="Demo Sounds" bits="9" ids="On,Off"/>
+        <dip name="Difficulty" bits="12,13" ids="Hardest,Hard,Easy,Normal"/>
+    </switches>
+    <buttons names="Rotate,Rotate,Rotate,-,Start,Coin,Core credits" default="A,B,X,Start,Select,-" count="3"/>
+</misterromdescription>

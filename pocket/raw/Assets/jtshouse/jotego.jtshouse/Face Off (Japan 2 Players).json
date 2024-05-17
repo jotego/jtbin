@@ -1,0 +1,32 @@
+{
+	"instance":{
+		"magic": "APF_VER_1",
+		"variant_select": {
+			"id": 0,
+			"select": false
+		},
+		"data_path": "",
+		"data_slots": [
+			{
+				"id": 1,
+				"filename": "faceoff.rom",
+				"md5": "ebf55f96b05edd8d2921f03e87778e5d"
+			},
+			{
+				"id": 2,
+				"filename": "faceoff.sav"
+			},
+			{
+				"id": 17,
+				"filename": "beta.bin",
+				"md5": "71035230a15ff988e5823bc00a8efc50"
+			}
+		],
+		"memory_writes": [
+			{
+				"address": "0xf9000000",
+				"data": "0x0"
+			}
+		]
+	}
+}

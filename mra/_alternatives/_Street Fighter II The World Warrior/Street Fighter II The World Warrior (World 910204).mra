@@ -1,0 +1,104 @@
+<!--          FPGA arcade hardware by Jotego
+
+              This core is available for hardware compatible with MiST and MiSTer
+              Other FPGA systems may be supported by the time you read this.
+              This work is not mantained by the MiSTer project. Please contact the
+              core author for issues and updates.
+
+              (c) Jose Tejada, 2024. Please support this research
+              Patreon: https://patreon.com/jotego
+
+              The author does not endorse or participate in illegal distribution
+              of copyrighted material. This work can be used with compatible
+              software. This software can be homebrew projects or legally
+              obtained memory dumps of compatible games.
+
+              This file license is GNU GPLv2.
+              You can read the whole license file in
+              https://opensource.org/licenses/gpl-2.0.php
+
+-->
+
+<misterromdescription>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
+    <name>Street Fighter II: The World Warrior (World 910204)</name>
+    <setname>sf2ea</setname>
+    <rbf>jtcps1</rbf>
+    <mameversion>0251</mameversion>
+    <year>1991</year>
+    <manufacturer>Capcom</manufacturer>
+    <players>2</players>
+    <joystick>8</joystick>
+    <rotation>horizontal</rotation>
+    <region>World</region>
+    <rom index="0" zip="sf2ea.zip|sf2.zip" md5="None" asm_md5="a40dda2a20b9a0db1d3093e32ac5df02">
+        <part>
+            00 04 40 04 40 05 FF FF
+            FF FF FF FF FF FF FF FF
+            08 47 FF FF FF FF 14 12
+            10 0E 0C 36 00 0A 08 14
+            02 00 23 40 C8 73 F7 08
+            FF FF FF FF FF FF FF FF
+            FF FF FF FF FF FF FF FF
+            FF FF FF FF FF FF FF FF
+        </part>
+        <!-- maincpu - starts at 0x0 - length 0x100000 (20 bits) -->
+        <interleave output="16">
+            <part name="sf2e_37a.11f" crc="1c1266b3" map="01"/>
+            <part name="sf2e_30a.11e" crc="bc02c14c" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="sf2e_38a.12f" crc="2d42d82a" map="01"/>
+            <part name="sf2e_31a.12e" crc="8b8221e6" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="sf2_35a.9f" crc="3b075de1" map="01"/>
+            <part name="sf2_28a.9e" crc="852e10ec" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="sf2_36.10f" crc="db66b127" map="01"/>
+            <part name="sf2_29.10e" crc="fdd0b5c1" map="10"/>
+        </interleave>
+        <!-- audiocpu - starts at 0x100000 - length 0x10000 (16 bits) -->
+        <part name="sf2_9.12a" crc="a4823a1b"/>
+        <!-- oki - starts at 0x110000 - length 0x40000 (18 bits) -->
+        <part name="sf2_18.11c" crc="7f162009"/>
+        <part name="sf2_19.12c" crc="beade53f"/>
+        <!-- gfx - starts at 0x150000 - length 0x600000 (23 bits) -->
+        <interleave output="64">
+            <part name="sf2-5m.4a" crc="22c9cc8e" map="00000021"/>
+            <part name="sf2-7m.6a" crc="57213be8" map="00002100"/>
+            <part name="sf2-1m.3a" crc="ba529b4f" map="00210000"/>
+            <part name="sf2-3m.5a" crc="4b1b33a8" map="21000000"/>
+        </interleave>
+        <interleave output="64">
+            <part name="sf2-6m.4c" crc="2c7e2229" map="00000021"/>
+            <part name="sf2-8m.6c" crc="b5548f17" map="00002100"/>
+            <part name="sf2-2m.3c" crc="14b84312" map="00210000"/>
+            <part name="sf2-4m.5c" crc="5e9cd89a" map="21000000"/>
+        </interleave>
+        <interleave output="64">
+            <part name="sf2-13m.4d" crc="994bfa58" map="00000021"/>
+            <part name="sf2-15m.6d" crc="3e66ad9d" map="00002100"/>
+            <part name="sf2-9m.3d" crc="c1befaa8" map="00210000"/>
+            <part name="sf2-11m.5d" crc="0627c831" map="21000000"/>
+        </interleave>
+        <!-- Total 0x750000 bytes - 7488 kBytes -->
+    </rom>
+    <rom index="1">
+        <part>00</part>
+    </rom>
+    <switches page_id="1" page_name="Switches" base="8" default="ff,fc,9f">
+        <!-- DSWB -->
+        <dip name="Difficulty" bits="8,10" ids="7,6,5,4,3,2,1,0"/>
+        <!-- DSWC -->
+        <dip name="Free Play" bits="18" ids="On,Off"/>
+        <dip name="Freeze" bits="19" ids="On,Off"/>
+        <dip name="Flip Screen" bits="20" ids="On,Off"/>
+        <dip name="Demo Sounds" bits="21" ids="On,Off"/>
+        <dip name="Allow Continue" bits="22" ids="Yes,No"/>
+        <dip name="Game Mode" bits="23" ids="Test,Game"/>
+        <dip name="PCB type" ids="88617A,89626A" bits="24"/>
+    </switches>
+    <buttons names="LP,MP,SP,LK,MK,HK,Start,Coin,Core credits" default="A,B,X,Y,L,R,Start,Select,-" count="6"/>
+</misterromdescription>

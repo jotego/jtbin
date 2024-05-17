@@ -1,0 +1,106 @@
+<!--          FPGA arcade hardware by Jotego
+
+              This core is available for hardware compatible with MiST and MiSTer
+              Other FPGA systems may be supported by the time you read this.
+              This work is not mantained by the MiSTer project. Please contact the
+              core author for issues and updates.
+
+              (c) Jose Tejada, 2024. Please support this research
+              Patreon: https://patreon.com/jotego
+
+              The author does not endorse or participate in illegal distribution
+              of copyrighted material. This work can be used with compatible
+              software. This software can be homebrew projects or legally
+              obtained memory dumps of compatible games.
+
+              This file license is GNU GPLv2.
+              You can read the whole license file in
+              https://opensource.org/licenses/gpl-2.0.php
+
+-->
+
+<misterromdescription>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
+    <name>Bubble Bobble (Japan, Ver 0.1)</name>
+    <setname>bublbobl</setname>
+    <rbf>jtbubl</rbf>
+    <mameversion>0251</mameversion>
+    <year>1986</year>
+    <manufacturer>Taito Corporation</manufacturer>
+    <players>2</players>
+    <joystick>2</joystick>
+    <rotation>horizontal</rotation>
+    <region>World</region>
+    <rom index="0" zip="bublbobl.zip" md5="None" asm_md5="fcbcd7500f6a7421e827373cfa8890d3">
+        <!--  Header to identify the PCB type
+        Byte 0 = 0 for Bubble Bobble (MC6801 MCU)
+                 1 for Tokio (MC68705 MCU)
+                 3 for Tokio bootleg (no MCU but a fixed value fed into CPU)
+ -->
+        <part>
+            00 00 00 00 </part>
+        <!-- maincpu - starts at 0x0 - length 0x28000 (18 bits) -->
+        <part name="a78-06-1.51" crc="567934b6"/>
+        <part name="a78-05-1.52" crc="9f8ee242"/>
+        <part repeat="0x10000"> FF</part>
+        <!-- SUB_START -->
+        <!-- subcpu - starts at 0x28000 - length 0x8000 (15 bits) -->
+        <part name="a78-08.37" crc="ae11a07b"/>
+        <!-- JTFRAME_BA1_START -->
+        <!-- audiocpu - starts at 0x30000 - length 0x8000 (15 bits) -->
+        <part name="a78-07.46" crc="4f9a26e8"/>
+        <!-- JTFRAME_BA2_START -->
+        <!-- gfx1 - starts at 0x38000 - length 0x80000 (19 bits) -->
+        <interleave output="16">
+            <part name="a78-15.30" crc="6b61a413" map="01"/>
+            <part name="a78-09.12" crc="20358c22" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="a78-16.31" crc="b5492d97" map="01"/>
+            <part name="a78-10.13" crc="930168a9" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="a78-17.32" crc="d69762d5" map="01"/>
+            <part name="a78-11.14" crc="9773e512" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="a78-18.33" crc="9f243b68" map="01"/>
+            <part name="a78-12.15" crc="d045549b" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="a78-19.34" crc="66e9438c" map="01"/>
+            <part name="a78-13.16" crc="d0af35c5" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="a78-20.35" crc="9ef863ad" map="01"/>
+            <part name="a78-14.17" crc="7b5369a8" map="10"/>
+        </interleave>
+        <part repeat="0x20000"> FF</part>
+        <!-- MCU_START -->
+        <!-- mcu - starts at 0xB8000 - length 0x8000 (15 bits) -->
+        <part name="a78-01.17" crc="b1bfb53d"/>
+        <part repeat="0x7000"> FF</part>
+        <!-- JTFRAME_PROM_START -->
+        <!-- proms - starts at 0xC0000 - length 0x100 (8 bits) -->
+        <part name="a71-25.41" crc="2d0f8545"/>
+        <!-- Total 0xC0100 bytes - 768 kBytes -->
+    </rom>
+    <rom index="1">
+        <part>00</part>
+    </rom>
+    <switches page_id="1" page_name="Switches" base="16" default="ff,ff">
+        <!-- DSW0 -->
+        <dip name="Flip Screen" bits="1" ids="On,Off"/>
+        <dip name="Demo Sounds" bits="3" ids="Off,On"/>
+        <dip name="Coin A" bits="4,5" ids="2/3,2/1,1/2,1/1"/>
+        <dip name="Coin B" bits="6,7" ids="2/3,2/1,1/2,1/1"/>
+        <!-- DSW1 -->
+        <dip name="Difficulty" bits="8,9" ids="Very Hard,Hard,Easy,Normal"/>
+        <dip name="Bonus Life" bits="10,11" ids="50K 250K 500K,40K 200K 500K,20K 80K 300K,30K 100K 400K"/>
+        <dip name="Lives" bits="12,13" ids="2,1,5,3"/>
+        <dip name="Type" bits="15" ids="IC52=256kb IC53=256kb,IC52=512kb IC53=none"/>
+        <dip name="Language" ids="English,Japanese" bits="0"/>
+        <dip name="Operation" ids="Test,Game" bits="2"/>
+    </switches>
+    <buttons names="Jump,Shoot,Start,Coin,Core credits" default="A,B,Start,Select,-" count="2"/>
+</misterromdescription>

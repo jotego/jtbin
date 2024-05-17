@@ -1,0 +1,138 @@
+<!--          FPGA arcade hardware by Jotego
+
+              This core is available for hardware compatible with MiST and MiSTer
+              Other FPGA systems may be supported by the time you read this.
+              This work is not mantained by the MiSTer project. Please contact the
+              core author for issues and updates.
+
+              (c) Jose Tejada, 2024. Please support this research
+              Patreon: https://patreon.com/jotego
+
+              The author does not endorse or participate in illegal distribution
+              of copyrighted material. This work can be used with compatible
+              software. This software can be homebrew projects or legally
+              obtained memory dumps of compatible games.
+
+              This file license is GNU GPLv2.
+              You can read the whole license file in
+              https://opensource.org/licenses/gpl-2.0.php
+
+-->
+
+<misterromdescription>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
+    <name>Bad Dudes vs. Dragonninja (US revision 1)</name>
+    <setname>baddudes</setname>
+    <rbf>jtninja</rbf>
+    <mameversion>0251</mameversion>
+    <year>1988</year>
+    <manufacturer>Data East USA</manufacturer>
+    <players>2</players>
+    <joystick>8</joystick>
+    <rotation>horizontal</rotation>
+    <region>World</region>
+    <rom index="0" zip="baddudes.zip" md5="None" asm_md5="9a137460886b91314748c80a1b5717f0">
+        <!-- maincpu - starts at 0x0 - length 0x80000 (19 bits) -->
+        <interleave output="16">
+            <part name="ei01-1.3a" crc="74f5110c" map="01"/>
+            <part name="ei04-1.3c" crc="4bf158a7" map="10"/>
+        </interleave>
+        <part repeat="0x20000"> FF</part>
+        <interleave output="16">
+            <part name="ei03.6a" crc="f8f2bd94" map="01"/>
+            <part name="ei06.6c" crc="3ff8da57" map="10"/>
+        </interleave>
+        <part repeat="0x20000"> FF</part>
+        <!-- SND_START -->
+        <!-- audiocpu - starts at 0x80000 - length 0x10000 (16 bits) -->
+        <part name="ei07.8a" crc="9fb1ef4b"/>
+        <part repeat="0x8000"> FF</part>
+        <!-- PCM_START -->
+        <!-- oki - starts at 0x90000 - length 0x20000 (17 bits) -->
+        <part name="ei08.2c" crc="3c87463e"/>
+        <part repeat="0x10000"> FF</part>
+        <!-- JTFRAME_BA2_START -->
+        <!-- gfx1 - starts at 0xB0000 - length 0x20000 (17 bits) -->
+        <interleave output="16">
+            <part name="ei25.15h" crc="bcf59a69" map="01" length="0x4000"/>
+            <part name="ei26.16h" crc="9aff67b8" map="10" length="0x4000"/>
+        </interleave>
+        <part repeat="0x8000"> FF</part>
+        <interleave output="16">
+            <part name="ei25.15h" crc="bcf59a69" map="01" length="0x4000" offset="0x4000"/>
+            <part name="ei26.16h" crc="9aff67b8" map="10" length="0x4000" offset="0x4000"/>
+        </interleave>
+        <part repeat="0x8000"> FF</part>
+        <!-- GFX2_START -->
+        <!-- gfx2 - starts at 0xD0000 - length 0x80000 (19 bits) -->
+        <interleave output="16">
+            <part name="ei18.14d" crc="05cfc3e5" map="01"/>
+            <part name="ei22.14f" crc="b893d880" map="10"/>
+        </interleave>
+        <part repeat="0x20000"> FF</part>
+        <!-- Blank ends at 0x110000 -->
+        <interleave output="16">
+            <part name="ei20.17d" crc="e11e988f" map="01"/>
+            <part name="ei24.17f" crc="6f226dda" map="10"/>
+        </interleave>
+        <part repeat="0x20000"> FF</part>
+        <!-- GFX3_START -->
+        <!-- gfx3 - starts at 0x150000 - length 0x40000 (18 bits) -->
+        <interleave output="16">
+            <part name="ei30.9h" crc="982da0d1" map="01" length="0x8000"/>
+            <part name="ei28.9f" crc="f01ebb3b" map="10" length="0x8000"/>
+        </interleave>
+        <interleave output="16">
+            <part name="ei30.9h" crc="982da0d1" map="01" length="0x8000"/>
+            <part name="ei30.9h" crc="982da0d1" map="10" length="0x8000"/>
+        </interleave>
+        <interleave output="16">
+            <part name="ei30.9h" crc="982da0d1" map="01" length="0x8000" offset="0x8000"/>
+            <part name="ei28.9f" crc="f01ebb3b" map="10" length="0x8000" offset="0x8000"/>
+        </interleave>
+        <interleave output="16">
+            <part name="ei30.9h" crc="982da0d1" map="01" length="0x8000" offset="0x8000"/>
+            <part name="ei30.9h" crc="982da0d1" map="10" length="0x8000" offset="0x8000"/>
+        </interleave>
+        <!-- JTFRAME_BA3_START -->
+        <!-- gfx4 - starts at 0x190000 - length 0x80000 (19 bits) -->
+        <interleave output="32">
+            <part name="ei15.16c" crc="a38a7d30" map="0001"/>
+            <part name="ei11.16a" crc="3a77326c" map="0010"/>
+            <part name="ei13.13c" crc="e5ae2751" map="0100"/>
+            <part name="ei09.13a" crc="6901e628" map="1000"/>
+        </interleave>
+        <interleave output="32">
+            <part name="ei16.17c" crc="17e42633" map="0001"/>
+            <part name="ei12.17a" crc="fea2a134" map="0010"/>
+            <part name="ei14.14c" crc="e83c760a" map="0100"/>
+            <part name="ei10.14a" crc="eeee8a1a" map="1000"/>
+        </interleave>
+        <part repeat="0x20000"> FF</part>
+        <!-- JTFRAME_PROM_START -->
+        <!-- MCU_START -->
+        <!-- mcu - starts at 0x210000 - length 0x18000 (17 bits) -->
+        <part name="ei31.9a" crc="2a8745d2"/>
+        <part repeat="0x17000"> FF</part>
+        <!-- PROM_START -->
+        <!-- proms - starts at 0x228000 - length 0x600 (11 bits) -->
+        <part name="mb7116e.12c" crc="86e775f8"/>
+        <part name="mb7122e.17e" crc="a5cda23e"/>
+        <!-- Total 0x228600 bytes - 2209 kBytes -->
+    </rom>
+    <rom index="1">
+        <part>00</part>
+    </rom>
+    <switches page_id="1" page_name="Switches" base="17" default="ff,ff">
+        <!-- DSW -->
+        <dip name="Coin A" bits="0,1" ids="3/1,2/1,1/2,1/1"/>
+        <dip name="Coin B" bits="2,3" ids="3/1,2/1,1/2,1/1"/>
+        <dip name="Service Mode" bits="4" ids="On,Off"/>
+        <dip name="Demo Sounds" bits="5" ids="Off,On"/>
+        <dip name="Flip Screen" bits="6" ids="On,Off"/>
+        <dip name="Lives" bits="8,9" ids="Infinite,1,5,3"/>
+        <dip name="Difficulty" bits="10,11" ids="Hardest,Hard,Easy,Normal"/>
+        <dip name="Allow Continue" bits="12" ids="No,Yes"/>
+    </switches>
+    <buttons names="Attack,Jump,-,-,-,Start,Coin,Core credits" default="A,B,Start,Select,-" count="2"/>
+</misterromdescription>

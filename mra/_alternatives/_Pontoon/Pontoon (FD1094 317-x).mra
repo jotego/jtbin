@@ -1,0 +1,94 @@
+<!--          FPGA arcade hardware by Jotego
+
+              This core is available for hardware compatible with MiST and MiSTer
+              Other FPGA systems may be supported by the time you read this.
+              This work is not mantained by the MiSTer project. Please contact the
+              core author for issues and updates.
+
+              (c) Jose Tejada, 2024. Please support this research
+              Patreon: https://patreon.com/jotego
+
+              The author does not endorse or participate in illegal distribution
+              of copyrighted material. This work can be used with compatible
+              software. This software can be homebrew projects or legally
+              obtained memory dumps of compatible games.
+
+              This file license is GNU GPLv2.
+              You can read the whole license file in
+              https://opensource.org/licenses/gpl-2.0.php
+
+-->
+
+<misterromdescription>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
+    <name>Pontoon (FD1094 317-?)</name>
+    <setname>pontoona</setname>
+    <rbf>jts18</rbf>
+    <mameversion>0251</mameversion>
+    <year>1989</year>
+    <manufacturer>Sega</manufacturer>
+    <players>2</players>
+    <joystick>8</joystick>
+    <rotation>horizontal</rotation>
+    <region>World</region>
+    <rom index="0" zip="pontoona.zip|pontoon.zip" md5="None" asm_md5="1d60e25d25ace373db52917a52838a57">
+        <part>
+            00 00 00 00 00 00 00 00
+            00 00 00 00 00 00 00 00
+            00 01 00 00 00 00 00 00
+            01 00 00 00 00 00 00 00
+        </part>
+        <!-- maincpu - starts at 0x0 - length 0x200000 (21 bits) -->
+        <interleave output="16">
+            <part name="epr-12827.a5" crc="8dfe7859" map="01"/>
+            <part name="epr-12828.a6" crc="f78e7e25" map="10"/>
+        </interleave>
+        <part repeat="0x180000"> FF</part>
+        <!-- JTFRAME_BA1_START -->
+        <!-- soundcpu - starts at 0x200000 - length 0x200000 (21 bits) -->
+        <part name="epr-12826.a4" crc="dc167e51"/>
+        <part repeat="0x1E0000"> FF</part>
+        <!-- JTFRAME_BA2_START -->
+        <!-- tiles - starts at 0x400000 - length 0x400000 (22 bits) -->
+        <interleave output="32">
+            <part name="epr-12817.b1" crc="e34834a9" map="0001"/>
+            <part name="epr-12818.b2" crc="79a55a3f" map="0010"/>
+            <part name="epr-12819.b3" crc="05cc079a" map="0100"/>
+            <part name="epr-12819.b3" crc="05cc079a" map="1000"/>
+        </interleave>
+        <part repeat="0x300000"> FF</part>
+        <!-- JTFRAME_BA3_START -->
+        <!-- sprites - starts at 0x800000 - length 0x800000 (23 bits) -->
+        <interleave output="16">
+            <part name="epr-12823.b11" crc="a4c520a9" map="01"/>
+            <part name="epr-12832.a11" crc="225766e8" map="10"/>
+        </interleave>
+        <part repeat="0x780000"> FF</part>
+        <!-- JTFRAME_PROM_START -->
+        <!-- maincpu:key - starts at 0x1000000 - length 0x2000 (13 bits) -->
+        <!-- Skipping region maincpu:key because there is no dump known -->
+        <part repeat="0x2000"> FF</part>
+        <!-- MCU_START -->
+        <!-- mcu - starts at 0x1002000 -->
+        <!-- Total 0x1002000 bytes - 16392 kBytes -->
+    </rom>
+    <rom index="17" zip="jtbeta.zip" md5="None" asm_md5="71035230a15ff988e5823bc00a8efc50">
+        <part name="beta.bin" crc="f1b63018"/>
+    </rom>
+    <nvram index="2" size="4096"/>
+    <rom index="1">
+        <part>00</part>
+    </rom>
+    <switches page_id="1" page_name="Switches" base="16" default="ff,fd">
+        <!-- COINAGE -->
+        <dip name="Coin A" bits="0,3" ids="Free Play or 1/1,1/1 2/3,1/1 4/5,1/1 5/6,2/1 4/3,2/1 5/3 6/4,2/3,4/1,3/1,2/1,1/6,1/5,1/4,1/3,1/2,1/1"/>
+        <dip name="Coin B" bits="4,7" ids="Free Play or 1/1,1/1 2/3,1/1 4/5,1/1 5/6,2/1 4/3,2/1 5/3 6/4,2/3,4/1,3/1,2/1,1/6,1/5,1/4,1/3,1/2,1/1"/>
+        <!-- DSW -->
+        <dip name="2 Credits to Start" bits="8" ids="On,Off"/>
+        <dip name="Demo Sounds" bits="9" ids="On,Off"/>
+        <dip name="Lives" bits="10,11" ids="2,5,4,3"/>
+        <dip name="Difficulty" bits="12,13" ids="Hardest,Hard,Easy,Normal"/>
+        <dip name="Time Adjust" bits="14,15" ids="2.20,2.40,3.30,3.00"/>
+    </switches>
+    <buttons names="button 1,button 2,-,-,Start,Coin,Core credits" default="A,B,Start,Select,-" count="2"/>
+</misterromdescription>

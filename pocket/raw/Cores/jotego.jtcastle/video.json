@@ -1,0 +1,55 @@
+{
+	"video":{
+		"magic": "APF_VER_1",
+		"scaler_modes": [
+			{
+				"width": 280,
+				"height": 224,
+				"aspect_w": 5,
+				"aspect_h": 4,
+				"rotation": 0,
+				"mirror": 0
+			},
+			{
+				"width": 280,
+				"height": 224,
+				"aspect_w": 5,
+				"aspect_h": 4,
+				"rotation": 270,
+				"mirror": 0
+			},
+			{
+				"width": 280,
+				"height": 224,
+				"aspect_w": 5,
+				"aspect_h": 4,
+				"rotation": 90,
+				"mirror": 0
+			},
+			{
+				"width": 280,
+				"height": 224,
+				"aspect_w": 5,
+				"aspect_h": 4,
+				"rotation": 0,
+				"mirror": 0
+			},
+			{
+				"width": 264,
+				"height": 224,
+				"aspect_w": 5,
+				"aspect_h": 4,
+				"rotation": 0,
+				"mirror": 0
+			},
+			{
+				"width": 248,
+				"height": 224,
+				"aspect_w": 5,
+				"aspect_h": 4,
+				"rotation": 0,
+				"mirror": 0
+			}
+		]
+	}
+}

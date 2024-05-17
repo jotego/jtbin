@@ -1,0 +1,121 @@
+<!--          FPGA arcade hardware by Jotego
+
+              This core is available for hardware compatible with MiST and MiSTer
+              Other FPGA systems may be supported by the time you read this.
+              This work is not mantained by the MiSTer project. Please contact the
+              core author for issues and updates.
+
+              (c) Jose Tejada, 2024. Please support this research
+              Patreon: https://patreon.com/jotego
+
+              The author does not endorse or participate in illegal distribution
+              of copyrighted material. This work can be used with compatible
+              software. This software can be homebrew projects or legally
+              obtained memory dumps of compatible games.
+
+              This file license is GNU GPLv2.
+              You can read the whole license file in
+              https://opensource.org/licenses/gpl-2.0.php
+
+-->
+
+<misterromdescription>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
+    <name>Trojan (US set 1)</name>
+    <setname>trojan</setname>
+    <rbf>jttrojan</rbf>
+    <mameversion>0251</mameversion>
+    <year>1986</year>
+    <manufacturer>Capcom</manufacturer>
+    <players>2</players>
+    <joystick>8</joystick>
+    <rotation>horizontal</rotation>
+    <region>World</region>
+    <rom index="0" zip="trojan.zip" md5="None" asm_md5="98cb05511d62d37c292c6c9b08d2c8e3">
+        <part>
+            02 00 00 00 00 00 00 00
+            01 80 03 C0 04 00 08 00
+            0C 00 00 00 00 00 00 00
+            00 00 00 00 00 00 00 00
+        </part>
+        <!-- maincpu - starts at 0x0 - length 0x18000 (17 bits) -->
+        <part name="t6.13n" crc="d49592ef"/>
+        <part name="tb05.12n" crc="9273b264"/>
+        <part name="t4.10n" crc="c1bbeb4e"/>
+        <!-- JTFRAME_BA1_START -->
+        <!-- soundcpu - starts at 0x18000 - length 0x8000 (15 bits) -->
+        <part name="tb02.15h" crc="21154797"/>
+        <!-- SND2_START -->
+        <!-- adpcm - starts at 0x20000 - length 0x4000 (14 bits) -->
+        <part name="tb01.6d" crc="1c0f91b2"/>
+        <!-- JTFRAME_BA2_START -->
+        <!-- gfx5 - starts at 0x24000 - length 0x8000 (15 bits) -->
+        <interleave output="16">
+            <part name="tb23.9n" crc="eda13c0e" map="12"/>
+        </interleave>
+        <!-- SCR2_START -->
+        <!-- gfx4 - starts at 0x2C000 - length 0x10000 (16 bits) -->
+        <interleave output="16">
+            <part name="tb25.15n" crc="6e38c6fa" map="01"/>
+            <part name="tb24.13n" crc="14fc6cf2" map="10"/>
+        </interleave>
+        <!-- JTFRAME_BA3_START -->
+        <!-- gfx1 - starts at 0x3C000 - length 0x4000 (14 bits) -->
+        <interleave output="16">
+            <part name="tb03.8k" crc="581a2b4c" map="12"/>
+        </interleave>
+        <!-- CHAR_START -->
+        <!-- SCR_START -->
+        <!-- gfx2 - starts at 0x40000 - length 0x40000 (18 bits) -->
+        <interleave output="32">
+            <part name="tb14.8b" crc="14bfac18" map="0001"/>
+            <part name="tb11.3b" crc="00f0f4fd" map="0010"/>
+            <part name="tb12.4b" crc="dfb0fe5c" map="0100"/>
+            <part name="tb13.6b" crc="285a052b" map="1000"/>
+        </interleave>
+        <interleave output="32">
+            <part name="tb10.8a" crc="71ba8a6d" map="0001"/>
+            <part name="tb07.3a" crc="dff2ee02" map="0010"/>
+            <part name="tb08.4a" crc="d3a4c9d1" map="0100"/>
+            <part name="tb09.6a" crc="aeb693f7" map="1000"/>
+        </interleave>
+        <!-- OBJ_START -->
+        <!-- gfx3 - starts at 0x80000 - length 0x40000 (18 bits) -->
+        <interleave output="16">
+            <part name="tb22.7n" crc="39daafd4" map="01"/>
+            <part name="tb18.7l" crc="862c4713" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="tb20.3n" crc="94615d2a" map="01"/>
+            <part name="tb16.3l" crc="d86f8cbd" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="tb21.5n" crc="66c642bd" map="01"/>
+            <part name="tb17.5l" crc="12a73b3f" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="tb19.2n" crc="81d5ab36" map="01"/>
+            <part name="tb15.2l" crc="bb1a2769" map="10"/>
+        </interleave>
+        <!-- JTFRAME_PROM_START -->
+        <!-- proms - starts at 0xC0000 - length 0x200 (9 bits) -->
+        <part name="tbp24s10.7j" crc="d96bcc98"/>
+        <part name="mb7114e.1e" crc="5052fa9d"/>
+        <!-- Total 0xC0200 bytes - 768 kBytes -->
+    </rom>
+    <rom index="1">
+        <part>00</part>
+    </rom>
+    <switches page_id="1" page_name="Switches" base="16" default="fc,ff">
+        <!-- DSWA -->
+        <dip name="Cabinet" bits="0,1" ids="Upright 1 Player,-,Upright 2 Players,Cocktail"/>
+        <dip name="Bonus Life" bits="2,4" ids="None,40k 80k,20k 80k,20k 70k,20k 60k,30k 80k,30k 70k,30k 60k"/>
+        <!-- DSWB -->
+        <dip name="Coin A" bits="8,9" ids="2/1,1/3,1/2,1/1"/>
+        <dip name="Coin B" bits="10,11" ids="4/1,3/1,2/1,1/1"/>
+        <dip name="Lives" bits="12,13" ids="5,4,2,3"/>
+        <dip name="Flip Screen" bits="14" ids="On,Off"/>
+        <dip name="Allow Continue" bits="15" ids="No,Yes"/>
+    </switches>
+    <buttons names="Attack,Jump,Start,Coin,Core credits" default="A,B,Start,Select,-" count="2"/>
+</misterromdescription>

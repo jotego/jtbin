@@ -1,0 +1,88 @@
+<!--          FPGA arcade hardware by Jotego
+
+              This core is available for hardware compatible with MiST and MiSTer
+              Other FPGA systems may be supported by the time you read this.
+              This work is not mantained by the MiSTer project. Please contact the
+              core author for issues and updates.
+
+              (c) Jose Tejada, 2024. Please support this research
+              Patreon: https://patreon.com/jotego
+
+              The author does not endorse or participate in illegal distribution
+              of copyrighted material. This work can be used with compatible
+              software. This software can be homebrew projects or legally
+              obtained memory dumps of compatible games.
+
+              This file license is GNU GPLv2.
+              You can read the whole license file in
+              https://opensource.org/licenses/gpl-2.0.php
+
+-->
+
+<misterromdescription>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
+    <name>Renegade (US)</name>
+    <setname>renegade</setname>
+    <rbf>jtkunio</rbf>
+    <mameversion>0251</mameversion>
+    <year>1986</year>
+    <manufacturer>Technos Japan (Taito America license)</manufacturer>
+    <players>2</players>
+    <joystick>8</joystick>
+    <rotation>horizontal</rotation>
+    <region>World</region>
+    <rom index="0" zip="renegade.zip" md5="None" asm_md5="2129de6d1efcbc2e10912dbcd3814279">
+        <!-- maincpu - starts at 0x0 - length 0x10000 (16 bits) -->
+        <part name="na-5.ic52" crc="de7e7df4"/>
+        <part name="nb-5.ic51" crc="ba683ddf"/>
+        <!-- JTFRAME_BA1_START -->
+        <!-- audiocpu - starts at 0x10000 - length 0x8000 (15 bits) -->
+        <part name="n0-5.ic13" crc="3587de3b"/>
+        <!-- PCM_START -->
+        <!-- adpcm - starts at 0x18000 - length 0x18000 (17 bits) -->
+        <part name="n3-5.ic33" crc="78fd6190"/>
+        <part name="n4-5.ic32" crc="6557564c"/>
+        <part name="n5-5.ic31" crc="7ee43a3c"/>
+        <!-- JTFRAME_BA2_START -->
+        <!-- chars - starts at 0x30000 - length 0x8000 (15 bits) -->
+        <part name="nc-5.bin" crc="9adfaa5d"/>
+        <!-- SCR_START -->
+        <!-- tiles - starts at 0x38000 - length 0x30000 (18 bits) -->
+        <part name="n1-5.ic1" crc="4a9f47f3"/>
+        <part name="n6-5.ic28" crc="d62a0aa8"/>
+        <part name="n7-5.ic27" crc="7ca5a532"/>
+        <part name="n2-5.ic14" crc="8d2e7982"/>
+        <part name="n8-5.ic26" crc="0dba31d3"/>
+        <part name="n9-5.ic25" crc="5b621b6a"/>
+        <!-- JTFRAME_BA3_START -->
+        <!-- sprites - starts at 0x68000 - length 0x60000 (19 bits) -->
+        <part name="nh-5.bin" crc="dcd7857c"/>
+        <part name="nd-5.bin" crc="2de1717c"/>
+        <part name="nj-5.bin" crc="0f96a18e"/>
+        <part name="nn-5.bin" crc="1bf15787"/>
+        <part name="ne-5.bin" crc="924c7388"/>
+        <part name="nk-5.bin" crc="69499a94"/>
+        <part name="ni-5.bin" crc="6f597ed2"/>
+        <part name="nf-5.bin" crc="0efc8d45"/>
+        <part name="nl-5.bin" crc="14778336"/>
+        <part name="no-5.bin" crc="147dd23b"/>
+        <part name="ng-5.bin" crc="a8ee3720"/>
+        <part name="nm-5.bin" crc="c100258e"/>
+        <!-- mcu:mcu - starts at 0xC8000 - length 0x800 (11 bits) -->
+        <part name="nz-5.ic97" crc="32e47560"/>
+        <!-- Total 0xC8800 bytes - 802 kBytes -->
+    </rom>
+    <rom index="1">
+        <part>00</part>
+    </rom>
+    <switches page_id="1" page_name="Switches" base="16" default="ff,ff">
+        <!-- DSW1 -->
+        <dip name="Coin A" bits="0,1" ids="2/1,1/3,1/2,1/1"/>
+        <dip name="Coin B" bits="2,3" ids="2/1,1/3,1/2,1/1"/>
+        <dip name="Lives" bits="4" ids="2,1"/>
+        <dip name="Bonus Life" bits="5" ids="None,30k"/>
+        <!-- DSW2 -->
+        <dip name="Difficulty" bits="8,9" ids="Very Hard,Hard,Easy,Normal"/>
+    </switches>
+    <buttons names="Hit Left,Jump,Hit Right,Start,Coin,Core credits" default="A,B,X,Start,Select,-" count="3"/>
+</misterromdescription>

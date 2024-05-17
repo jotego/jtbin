@@ -1,0 +1,107 @@
+<!--          FPGA arcade hardware by Jotego
+
+              This core is available for hardware compatible with MiST and MiSTer
+              Other FPGA systems may be supported by the time you read this.
+              This work is not mantained by the MiSTer project. Please contact the
+              core author for issues and updates.
+
+              (c) Jose Tejada, 2024. Please support this research
+              Patreon: https://patreon.com/jotego
+
+              The author does not endorse or participate in illegal distribution
+              of copyrighted material. This work can be used with compatible
+              software. This software can be homebrew projects or legally
+              obtained memory dumps of compatible games.
+
+              This file license is GNU GPLv2.
+              You can read the whole license file in
+              https://opensource.org/licenses/gpl-2.0.php
+
+-->
+
+<misterromdescription>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
+    <name>Hyper Sports</name>
+    <setname>hyperspt</setname>
+    <rbf>jtroadf</rbf>
+    <mameversion>0251</mameversion>
+    <year>1984</year>
+    <manufacturer>Konami (Centuri license)</manufacturer>
+    <players>4</players>
+    <joystick/>
+    <rotation>horizontal</rotation>
+    <region>World</region>
+    <rom index="0" zip="hyperspt.zip" md5="None" asm_md5="5964cd567bdc916f1f80c348ff922f43">
+        <!--  Header to identify the game -->
+        <part>
+            01 00 00 00 00 00 00 00
+        </part>
+        <!-- maincpu - starts at 0x0 - length 0x10000 (16 bits) -->
+        <part repeat="0x4000"> FF</part>
+        <part name="c01" crc="0c720eeb"/>
+        <part name="c02" crc="560258e0"/>
+        <part name="c03" crc="9b01c7e6"/>
+        <part name="c04" crc="10d7e9a2"/>
+        <part name="c05" crc="b105a8cd"/>
+        <part name="c06" crc="1a34a849"/>
+        <!-- SND_START -->
+        <!-- audiocpu - starts at 0x10000 - length 0x4000 (14 bits) -->
+        <part name="c10" crc="3dc1a6ff"/>
+        <part name="c09" crc="9b525c3e"/>
+        <!-- SCR_START -->
+        <!-- tiles - starts at 0x14000 - length 0xC000 (16 bits) -->
+        <interleave output="16">
+            <part name="c26" crc="a6897eac" map="01"/>
+            <part name="c22" crc="ed9271a0" map="10"/>
+        </interleave>
+        <part repeat="0x4000"> FF</part>
+        <!-- Blank ends at 0x1C000 -->
+        <interleave output="16">
+            <part name="c24" crc="5fb230c0" map="01"/>
+            <part name="c20" crc="183f4324" map="10"/>
+        </interleave>
+        <!-- OBJ_START -->
+        <!-- sprites - starts at 0x20000 - length 0x10000 (16 bits) -->
+        <interleave output="16">
+            <part name="c14" crc="c72d63be" map="01"/>
+            <part name="c18" crc="ed25e669" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="c13" crc="76565608" map="01"/>
+            <part name="c17" crc="b145b39f" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="c12" crc="74d2cc69" map="01"/>
+            <part name="c16" crc="d7ff9f2b" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="c11" crc="66cbcb4d" map="01"/>
+            <part name="c15" crc="f3d454e6" map="10"/>
+        </interleave>
+        <!-- PCM_START -->
+        <!-- vlm - starts at 0x30000 - length 0x2000 (13 bits) -->
+        <part name="c08" crc="e8f8ea78"/>
+        <!-- JTFRAME_PROM_START -->
+        <!-- proms - starts at 0x32000 - length 0x220 (10 bits) -->
+        <part name="c03_c27.bin" crc="bc8a5956"/>
+        <part name="j12_c28.bin" crc="2c891d59"/>
+        <part name="a09_c29.bin" crc="811a3f3f"/>
+        <!-- Total 0x32220 bytes - 200 kBytes -->
+    </rom>
+    <nvram index="2" size="2048"/>
+    <rom index="1">
+        <part>00</part>
+    </rom>
+    <switches page_id="1" page_name="Switches" base="16" default="ff,49,ff">
+        <!-- DSW1 -->
+        <dip name="Coin A" bits="0,3" ids="Free Play,4/3,4/1,3/4,3/2,3/1,2/5,2/3,2/1,1/7,1/6,1/5,1/4,1/3,1/2,1/1"/>
+        <dip name="Coin B" bits="4,7" ids="No B,4/3,4/1,3/4,3/2,3/1,2/5,2/3,2/1,1/7,1/6,1/5,1/4,1/3,1/2,1/1"/>
+        <!-- DSW2 -->
+        <dip name="After ending" bits="8" ids="Game Continues,Game Over"/>
+        <dip name="Cabinet" bits="9" ids="Upright,Cocktail"/>
+        <dip name="Demo Sounds" bits="10" ids="On,Off"/>
+        <dip name="Records" bits="11" ids="Erase on Reset,Don&apos;t Erase"/>
+        <dip name="Difficulty" bits="12,15" ids="Difficult 4,Difficult 3,Difficult 2,Difficult 1,Normal 8,Normal 7,Normal 6,Normal 5,Normal 4,Normal 3,Normal 2,Normal 1,Easy 4,Easy 3,Easy 2,Easy 1"/>
+    </switches>
+    <buttons names="Left button, Centre button, Right button,Start,Coin,Core credits" default="A,B,X,Start,Select,-" count="3"/>
+</misterromdescription>

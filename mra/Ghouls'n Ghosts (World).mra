@@ -1,0 +1,110 @@
+<!--          FPGA arcade hardware by Jotego
+
+              This core is available for hardware compatible with MiST and MiSTer
+              Other FPGA systems may be supported by the time you read this.
+              This work is not mantained by the MiSTer project. Please contact the
+              core author for issues and updates.
+
+              (c) Jose Tejada, 2024. Please support this research
+              Patreon: https://patreon.com/jotego
+
+              The author does not endorse or participate in illegal distribution
+              of copyrighted material. This work can be used with compatible
+              software. This software can be homebrew projects or legally
+              obtained memory dumps of compatible games.
+
+              This file license is GNU GPLv2.
+              You can read the whole license file in
+              https://opensource.org/licenses/gpl-2.0.php
+
+-->
+
+<misterromdescription>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
+    <name>Ghouls&apos;n Ghosts (World)</name>
+    <setname>ghouls</setname>
+    <rbf>jtcps1</rbf>
+    <mameversion>0251</mameversion>
+    <year>1988</year>
+    <manufacturer>Capcom</manufacturer>
+    <players>2</players>
+    <joystick>4</joystick>
+    <rotation>horizontal</rotation>
+    <region>World</region>
+    <rom index="0" zip="ghouls.zip" md5="None" asm_md5="6ca0a8f1265eca0c99f28ac9e645e2eb">
+        <part>
+            00 04 40 04 40 05 FF FF
+            FF FF FF FF FF FF FF FF
+            FF 00 FF FF FF FF 26 28
+            2A 2C 2E 00 00 30 02 04
+            08 30 0A 40 65 13 F1 00
+            FF FF FF FF FF FF FF FF
+            FF FF FF FF FF FF FF FF
+            FF FF FF FF FF FF FF FF
+        </part>
+        <!-- maincpu - starts at 0x0 - length 0x100000 (20 bits) -->
+        <interleave output="16">
+            <part name="dme_30.10j" crc="7ac8407a" map="01"/>
+            <part name="dme_29.10h" crc="166a58a2" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="dme_28.9j" crc="03d3e714" map="01"/>
+            <part name="dme_27.9h" crc="f734b2be" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="dm-17.7j" crc="3ea1b0f2" map="12"/>
+        </interleave>
+        <!-- audiocpu - starts at 0x100000 - length 0x10000 (16 bits) -->
+        <part name="26.10a" crc="3692f6e5"/>
+        <!-- oki - starts at 0x110000 - length 0x40000 (18 bits) -->
+        <part repeat="0x40000"> FF</part>
+        <!-- gfx - starts at 0x150000 - length 0x300000 (22 bits) -->
+        <interleave output="64">
+            <part name="dm-05.3a" crc="0ba9c0b0" map="00000021"/>
+            <part name="dm-07.3f" crc="5d760ab9" map="00002100"/>
+            <part name="dm-06.3c" crc="4ba90b59" map="00210000"/>
+            <part name="dm-08.3g" crc="4bdee9de" map="21000000"/>
+        </interleave>
+        <interleave output="64">
+            <part name="09.4a" crc="ae24bb19" map="00000001"/>
+            <part name="18.7a" crc="d34e271a" map="00000010"/>
+            <part name="13.4e" crc="3f70dd37" map="00000100"/>
+            <part name="22.7e" crc="7e69e2e6" map="00001000"/>
+            <part name="11.4c" crc="37c9b6c6" map="00010000"/>
+            <part name="20.7c" crc="2f1345b4" map="00100000"/>
+            <part name="15.4g" crc="3c2a212a" map="01000000"/>
+            <part name="24.7g" crc="889aac05" map="10000000"/>
+        </interleave>
+        <interleave output="64">
+            <part name="10.4b" crc="bcc0f28c" map="00000001"/>
+            <part name="19.7b" crc="2a40166a" map="00000010"/>
+            <part name="14.4f" crc="20f85c03" map="00000100"/>
+            <part name="23.7f" crc="8426144b" map="00001000"/>
+            <part name="12.4d" crc="da088d61" map="00010000"/>
+            <part name="21.7d" crc="17e11df0" map="00100000"/>
+            <part name="16.4h" crc="f187ba1c" map="01000000"/>
+            <part name="25.7h" crc="29f79c78" map="10000000"/>
+        </interleave>
+        <!-- Total 0x450000 bytes - 4416 kBytes -->
+    </rom>
+    <rom index="1">
+        <part>00</part>
+    </rom>
+    <switches page_id="1" page_name="Switches" base="8" default="ff,fd,ff">
+        <!-- DSWA -->
+        <dip name="Cabinet" bits="6,7" ids="Cocktail,-,Upright 2 Players,Upright 1 Player"/>
+        <!-- DSWB -->
+        <dip name="Difficulty" bits="8,10" ids="8,7,6,5,1,2,3,4"/>
+        <dip name="Bonus" bits="12,13" ids="40K 70K &amp; *80K,20K 50K &amp; *70K,10K 30K &amp; *30K,30K 60K &amp; *70K"/>
+        <!-- DSWC -->
+        <dip name="Lives" bits="16,17" ids="6,5,4,3"/>
+        <dip name="Flip Screen" bits="20" ids="On,Off"/>
+        <dip name="Demo Sounds" bits="21" ids="Off,On"/>
+        <dip name="Allow Continue" bits="22" ids="No,Yes"/>
+        <dip name="Game Mode" bits="23" ids="Test,Game"/>
+        <!-- IN0 -->
+        <dip name="Service Mode" bits="30" ids="On,Off"/>
+        <dip name="PCB type" ids="88617A,89626A" bits="24"/>
+    </switches>
+    <buttons names="Attack,Jump,-,-,-,-,Start,Coin,Core credits" default="A,B,Start,Select,-" count="2"/>
+</misterromdescription>

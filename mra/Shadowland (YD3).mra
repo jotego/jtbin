@@ -1,0 +1,114 @@
+<!--          FPGA arcade hardware by Jotego
+
+              This core is available for hardware compatible with MiST and MiSTer
+              Other FPGA systems may be supported by the time you read this.
+              This work is not mantained by the MiSTer project. Please contact the
+              core author for issues and updates.
+
+              (c) Jose Tejada, 2024. Please support this research
+              Patreon: https://patreon.com/jotego
+
+              The author does not endorse or participate in illegal distribution
+              of copyrighted material. This work can be used with compatible
+              software. This software can be homebrew projects or legally
+              obtained memory dumps of compatible games.
+
+              This file license is GNU GPLv2.
+              You can read the whole license file in
+              https://opensource.org/licenses/gpl-2.0.php
+
+-->
+
+<misterromdescription>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
+    <name>Shadowland (YD3)</name>
+    <setname>shadowld</setname>
+    <rbf>jtshouse</rbf>
+    <mameversion>0251</mameversion>
+    <year>1987</year>
+    <manufacturer>Namco</manufacturer>
+    <players>2</players>
+    <joystick>8</joystick>
+    <rotation>horizontal</rotation>
+    <region>World</region>
+    <rom index="0" zip="shadowld.zip" md5="None" asm_md5="659556f8eddd38ab3de627f12a31bec0">
+        <!-- Byte 0: protection type
+Byte 1: key ID
+Byte 2: addr for key ID
+Byte 3: addr for RNG
+Byte 4: addr for nibble swap data write
+Byte 5: addr for nibble swap read
+Byte 6: addr for lower nibble read
+Byte 7: addr for upper nibble read
+ -->
+        <part>
+            00 00 00 00 00 00 00 00
+        </part>
+        <!-- user1 - starts at 0x0 - length 0x3A0000 (22 bits) -->
+        <part name="yd1_p0.bin" crc="07e49883"/>
+        <part repeat="0x70000"> FF</part>
+        <part name="yd1_p1.bin" crc="a8ea6bd3"/>
+        <part repeat="0x70000"> FF</part>
+        <part name="yd1_p2.bin" crc="62e5bbec"/>
+        <part repeat="0x70000"> FF</part>
+        <part name="yd1_p3.bin" crc="a4f27c24"/>
+        <part repeat="0xF0000"> FF</part>
+        <part name="yd1_p5.bin" crc="29a78bd6"/>
+        <part repeat="0x70000"> FF</part>
+        <part name="yd3_p6.bin" crc="93d6811c"/>
+        <part repeat="0x70000"> FF</part>
+        <part name="yd3_p7.bin" crc="f1c271a0"/>
+        <part repeat="0x10000"> FF</part>
+        <!-- JTFRAME_BA1_START -->
+        <!-- audiocpu - starts at 0x3A0000 - length 0x20000 (17 bits) -->
+        <part name="yd1_s0.bin" crc="a9cb51fb"/>
+        <part name="yd1_s1.bin" crc="65d1dc0d"/>
+        <!-- PCM_START -->
+        <!-- voice - starts at 0x3C0000 - length 0xB0000 (20 bits) -->
+        <part name="yd_voi-0.bin" crc="448bc6a1"/>
+        <part name="yd_voi-1.bin" crc="7809035c"/>
+        <part name="yd_voi-2.bin" crc="73bffc16"/>
+        <part repeat="0x50000"> FF</part>
+        <!-- JTFRAME_BA2_START -->
+        <!-- c123tmap:mask - starts at 0x470000 - length 0x20000 (17 bits) -->
+        <part name="yd_chr-8.bin" crc="0c8e69d0"/>
+        <!-- SCR_START -->
+        <!-- c123tmap - starts at 0x490000 - length 0x100000 (20 bits) -->
+        <part name="yd_chr-0.bin" crc="717441dd"/>
+        <part name="yd_chr-1.bin" crc="c1be6e35"/>
+        <part name="yd_chr-2.bin" crc="2df8d8cc"/>
+        <part name="yd_chr-3.bin" crc="d4e15c9e"/>
+        <part name="yd_chr-4.bin" crc="c0041e0d"/>
+        <part name="yd_chr-5.bin" crc="7b368461"/>
+        <part name="yd_chr-6.bin" crc="3ac6a90e"/>
+        <part name="yd_chr-7.bin" crc="8d2cffa5"/>
+        <!-- JTFRAME_BA3_START -->
+        <!-- sprite - starts at 0x590000 - length 0x100000 (20 bits) -->
+        <part name="yd_obj-0.bin" crc="efb8efe3"/>
+        <part name="yd_obj-1.bin" crc="bf4ee682"/>
+        <part name="yd_obj-2.bin" crc="cb721682"/>
+        <part name="yd_obj-3.bin" crc="8a6c3d1c"/>
+        <part name="yd_obj-4.bin" crc="ef97bffb"/>
+        <part name="yd3_obj5.bin" crc="1e4aa460"/>
+        <part repeat="0x50000"> FF</part>
+        <!-- JTFRAME_PROM_START -->
+        <!-- mcu - starts at 0x690000 - length 0x1000 (12 bits) -->
+        <part name="cus64-64a1.mcu" crc="ffb5c0bd"/>
+        <!-- Total 0x691000 bytes - 6724 kBytes -->
+    </rom>
+    <rom index="17" zip="jtbeta.zip" md5="None" asm_md5="71035230a15ff988e5823bc00a8efc50">
+        <part name="beta.bin" crc="f1b63018"/>
+    </rom>
+    <nvram index="2" size="63552"/>
+    <rom index="1">
+        <part>00</part>
+    </rom>
+    <switches page_id="1" page_name="Switches" base="16" default="ff">
+        <!-- DIPSW -->
+        <dip name="Service Mode" bits="0" ids="On,Off"/>
+        <dip name="Freeze" bits="1" ids="On,Off"/>
+        <dip name="Alternate sound effects" bits="2" ids="On,Off"/>
+        <dip name="*Sound fix" ids="On,Off" bits="8"/>
+    </switches>
+    <buttons names="Telekinesis Launch,Jump,-,Start,Coin,Core credits" default="A,B,Start,Select,-" count="2"/>
+</misterromdescription>

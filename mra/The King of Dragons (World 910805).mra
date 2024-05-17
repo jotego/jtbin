@@ -1,0 +1,102 @@
+<!--          FPGA arcade hardware by Jotego
+
+              This core is available for hardware compatible with MiST and MiSTer
+              Other FPGA systems may be supported by the time you read this.
+              This work is not mantained by the MiSTer project. Please contact the
+              core author for issues and updates.
+
+              (c) Jose Tejada, 2024. Please support this research
+              Patreon: https://patreon.com/jotego
+
+              The author does not endorse or participate in illegal distribution
+              of copyrighted material. This work can be used with compatible
+              software. This software can be homebrew projects or legally
+              obtained memory dumps of compatible games.
+
+              This file license is GNU GPLv2.
+              You can read the whole license file in
+              https://opensource.org/licenses/gpl-2.0.php
+
+-->
+
+<misterromdescription>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
+    <name>The King of Dragons (World 910805)</name>
+    <setname>kod</setname>
+    <rbf>jtcps1</rbf>
+    <mameversion>0251</mameversion>
+    <year>1991</year>
+    <manufacturer>Capcom</manufacturer>
+    <players>3</players>
+    <joystick>8</joystick>
+    <rotation>horizontal</rotation>
+    <region>World</region>
+    <rom index="0" zip="kod.zip" md5="None" asm_md5="76d1507e465c0f609a4f88f0f4d0302a">
+        <part>
+            00 04 40 04 40 05 FF FF
+            FF FF FF FF FF FF FF FF
+            FF FF 1E 1C 1A 18 20 2E
+            2C 2A 28 36 00 30 30 08
+            30 00 0B 40 88 73 FF 03
+            FF FF FF FF FF FF FF FF
+            FF FF FF FF FF FF FF FF
+            FF FF FF FF FF FF FF FF
+        </part>
+        <!-- maincpu - starts at 0x0 - length 0x100000 (20 bits) -->
+        <interleave output="16">
+            <part name="kde_37a.11f" crc="f22e5266" map="01"/>
+            <part name="kde_30a.11e" crc="fcb5efe2" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="kde_38a.12f" crc="57d6ed3a" map="01"/>
+            <part name="kde_31a.12e" crc="c710d722" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="kd_35.9f" crc="4ca6a48a" map="01"/>
+            <part name="kd_28.9e" crc="9367bcd9" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="kd_36a.10f" crc="95a3cef8" map="01"/>
+            <part name="kd_29.10e" crc="0360fa72" map="10"/>
+        </interleave>
+        <!-- audiocpu - starts at 0x100000 - length 0x10000 (16 bits) -->
+        <part name="kd_9.12a" crc="bac6ec26"/>
+        <!-- oki - starts at 0x110000 - length 0x40000 (18 bits) -->
+        <part name="kd_18.11c" crc="4c63181d"/>
+        <part name="kd_19.12c" crc="92941b80"/>
+        <!-- gfx - starts at 0x150000 - length 0x400000 (22 bits) -->
+        <interleave output="64">
+            <part name="kd-5m.4a" crc="e45b8701" map="00000021"/>
+            <part name="kd-7m.6a" crc="a7750322" map="00002100"/>
+            <part name="kd-1m.3a" crc="5f74bf78" map="00210000"/>
+            <part name="kd-3m.5a" crc="5e5303bf" map="21000000"/>
+        </interleave>
+        <interleave output="64">
+            <part name="kd-6m.4c" crc="113358f3" map="00000021"/>
+            <part name="kd-8m.6c" crc="38853c44" map="00002100"/>
+            <part name="kd-2m.3c" crc="9ef36604" map="00210000"/>
+            <part name="kd-4m.5c" crc="402b9b4f" map="21000000"/>
+        </interleave>
+        <!-- Total 0x550000 bytes - 5440 kBytes -->
+    </rom>
+    <rom index="1">
+        <part>00</part>
+    </rom>
+    <switches page_id="1" page_name="Switches" base="8" default="ff,fc,bf">
+        <!-- DSWA -->
+        <dip name="Play Mode" bits="4" ids="2 Players,3 Players"/>
+        <!-- DSWB -->
+        <dip name="Difficulty" bits="8,10" ids="7,6,5,4,3,2,1,0"/>
+        <dip name="Lives" bits="11,13" ids="8,7,6,5,4,3,1,2"/>
+        <dip name="Bonus" bits="14,15" ids="None,160k &amp; *450k,80k &amp; *400k,200k &amp; *450k"/>
+        <!-- DSWC -->
+        <dip name="Free Play" bits="18" ids="On,Off"/>
+        <dip name="Freeze" bits="19" ids="On,Off"/>
+        <dip name="Flip Screen" bits="20" ids="On,Off"/>
+        <dip name="Demo Sounds" bits="21" ids="On,Off"/>
+        <dip name="Allow Continue" bits="22" ids="Yes,No"/>
+        <dip name="Game Mode" bits="23" ids="Test,Game"/>
+        <dip name="PCB type" ids="88617A,89626A" bits="24"/>
+    </switches>
+    <buttons names="Slay,Jump,-,-,-,-,Start,Coin,Core credits" default="A,B,Start,Select,-" count="2"/>
+</misterromdescription>

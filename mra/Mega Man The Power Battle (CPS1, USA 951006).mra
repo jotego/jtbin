@@ -1,0 +1,97 @@
+<!--          FPGA arcade hardware by Jotego
+
+              This core is available for hardware compatible with MiST and MiSTer
+              Other FPGA systems may be supported by the time you read this.
+              This work is not mantained by the MiSTer project. Please contact the
+              core author for issues and updates.
+
+              (c) Jose Tejada, 2024. Please support this research
+              Patreon: https://patreon.com/jotego
+
+              The author does not endorse or participate in illegal distribution
+              of copyrighted material. This work can be used with compatible
+              software. This software can be homebrew projects or legally
+              obtained memory dumps of compatible games.
+
+              This file license is GNU GPLv2.
+              You can read the whole license file in
+              https://opensource.org/licenses/gpl-2.0.php
+
+-->
+
+<misterromdescription>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
+    <name>Mega Man: The Power Battle (CPS1, USA 951006)</name>
+    <setname>megaman</setname>
+    <rbf>jtcps1</rbf>
+    <mameversion>0251</mameversion>
+    <year>1995</year>
+    <manufacturer>Capcom</manufacturer>
+    <players>2</players>
+    <joystick>8</joystick>
+    <rotation>horizontal</rotation>
+    <region>World</region>
+    <rom index="0" zip="megaman.zip" md5="None" asm_md5="fd501716b34931dcc4eefdbef1e8ee16">
+        <part>
+            00 06 40 06 40 07 FF FF
+            FF FF FF FF FF FF FF FF
+            32 FF 00 02 04 06 26 28
+            2A 2C 2E 00 00 30 02 04
+            08 30 1B 40 C8 73 77 01
+            FF FF FF FF FF FF FF FF
+            FF FF FF FF FF FF FF FF
+            FF FF FF FF FF FF FF FF
+        </part>
+        <!-- maincpu - starts at 0x0 - length 0x180000 (21 bits) -->
+        <part name="rcmu_23b.8f" crc="1cd33c7a"/>
+        <part name="rcmu_22b.7f" crc="708268c4"/>
+        <part name="rcmu_21a.6f" crc="4376ea95"/>
+        <!-- audiocpu - starts at 0x180000 - length 0x10000 (16 bits) -->
+        <part name="rcm_09.11a" crc="22ac8f5f"/>
+        <!-- oki - starts at 0x190000 - length 0x40000 (18 bits) -->
+        <part name="rcm_18.11c" crc="80f1f8aa"/>
+        <part name="rcm_19.12c" crc="f257dbe1"/>
+        <!-- gfx - starts at 0x1D0000 - length 0x800000 (23 bits) -->
+        <interleave output="64">
+            <part name="rcm_01.3a" crc="6ecdf13f" map="00000021"/>
+            <part name="rcm_02.4a" crc="944d4f0f" map="00002100"/>
+            <part name="rcm_03.5a" crc="36f3073c" map="00210000"/>
+            <part name="rcm_04.6a" crc="54e622ff" map="21000000"/>
+        </interleave>
+        <interleave output="64">
+            <part name="rcm_05.7a" crc="5dd131fd" map="00000021"/>
+            <part name="rcm_06.8a" crc="f0faf813" map="00002100"/>
+            <part name="rcm_07.9a" crc="826de013" map="00210000"/>
+            <part name="rcm_08.10a" crc="fbff64cf" map="21000000"/>
+        </interleave>
+        <interleave output="64">
+            <part name="rcm_10.3c" crc="4dc8ada9" map="00000021"/>
+            <part name="rcm_11.4c" crc="f2b9ee06" map="00002100"/>
+            <part name="rcm_12.5c" crc="fed5f203" map="00210000"/>
+            <part name="rcm_13.6c" crc="5069d4a9" map="21000000"/>
+        </interleave>
+        <interleave output="64">
+            <part name="rcm_14.7c" crc="303be3bd" map="00000021"/>
+            <part name="rcm_15.8c" crc="4f2d372f" map="00002100"/>
+            <part name="rcm_16.9c" crc="93d97fde" map="00210000"/>
+            <part name="rcm_17.10c" crc="92371042" map="21000000"/>
+        </interleave>
+        <!-- Total 0x9D0000 bytes - 10048 kBytes -->
+    </rom>
+    <rom index="1">
+        <part>00</part>
+    </rom>
+    <switches page_id="1" page_name="Switches" base="8" default="ff,fa,ff">
+        <!-- DSWB -->
+        <dip name="Difficulty" bits="8,9" ids="Hardest,Hard,Normal,Easy"/>
+        <dip name="Time" bits="10,11" ids="60,70,90,100"/>
+        <dip name="Voice" bits="14" ids="Off,On"/>
+        <!-- DSWC -->
+        <dip name="Flip Screen" bits="16" ids="On,Off"/>
+        <dip name="Demo Sounds" bits="17" ids="Off,On"/>
+        <dip name="Allow Continue" bits="18" ids="No,Yes"/>
+        <dip name="Game Mode" bits="23" ids="Test,Game"/>
+        <dip name="PCB type" ids="88617A,89626A" bits="24"/>
+    </switches>
+    <buttons names="Attack,Jump,Weapon Change,-,-,-,Start,Coin,Core credits" default="A,B,X,Start,Select,-" count="3"/>
+</misterromdescription>

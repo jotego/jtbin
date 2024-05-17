@@ -1,0 +1,115 @@
+<!--          FPGA arcade hardware by Jotego
+
+              This core is available for hardware compatible with MiST and MiSTer
+              Other FPGA systems may be supported by the time you read this.
+              This work is not mantained by the MiSTer project. Please contact the
+              core author for issues and updates.
+
+              (c) Jose Tejada, 2024. Please support this research
+              Patreon: https://patreon.com/jotego
+
+              The author does not endorse or participate in illegal distribution
+              of copyrighted material. This work can be used with compatible
+              software. This software can be homebrew projects or legally
+              obtained memory dumps of compatible games.
+
+              This file license is GNU GPLv2.
+              You can read the whole license file in
+              https://opensource.org/licenses/gpl-2.0.php
+
+-->
+
+<misterromdescription>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
+    <name>Fantasy Zone II - The Tears of Opa-Opa (System 16C version)</name>
+    <setname>fantzn2x</setname>
+    <rbf>jts16b</rbf>
+    <mameversion>0251</mameversion>
+    <year>2008</year>
+    <manufacturer>Sega / M2</manufacturer>
+    <players>2</players>
+    <joystick>8</joystick>
+    <rotation>horizontal</rotation>
+    <region>World</region>
+    <rom index="0" zip="fantzn2x.zip" md5="None" asm_md5="ac119bf42d19e581a31ecbf3e60418fc">
+        <part>
+            00 00 00 00 00 00 00 00
+            00 00 00 00 00 00 00 00
+            00 00 00 00 00 00 00 00
+            43 00 00 00 00 00 00 00
+        </part>
+        <!-- maincpu - starts at 0x0 - length 0x80000 (19 bits) -->
+        <interleave output="16">
+            <part name="fz2.a5" crc="f3526895" map="01"/>
+            <part name="fz2.a7" crc="94c05f0b" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="fz2.a6" crc="6833f546" map="01"/>
+            <part name="fz2.a8" crc="b2ebb209" map="10"/>
+        </interleave>
+        <!-- JTFRAME_BA1_START -->
+        <!-- soundcpu - starts at 0x80000 - length 0xC0000 (20 bits) -->
+        <part name="fz2.a10" crc="92c92924"/>
+        <part repeat="0x8000"> FF</part>
+        <part name="fz2.a11" crc="8c641bb9"/>
+        <part repeat="0x90000"> FF</part>
+        <!-- JTFRAME_BA2_START -->
+        <!-- gfx1 - starts at 0x140000 - length 0x100000 (20 bits) -->
+        <interleave output="32">
+            <part name="fz2.a14" crc="1c0a4537" map="0001"/>
+            <part name="fz2.a15" crc="2b933344" map="0010"/>
+            <part name="fz2.a16" crc="e63281a1" map="0100"/>
+            <part name="fz2.a16" crc="e63281a1" map="1000"/>
+        </interleave>
+        <part repeat="0x80000"> FF</part>
+        <!-- JTFRAME_BA3_START -->
+        <!-- sprites - starts at 0x240000 - length 0x200000 (21 bits) -->
+        <interleave output="16">
+            <part name="fz2.b1" crc="46bba615" map="01"/>
+            <part name="fz2.b5" crc="bebeee5d" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="fz2.b2" crc="6681a7b6" map="01"/>
+            <part name="fz2.b6" crc="42d3241f" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="fz2.b3" crc="5863926f" map="01"/>
+            <part name="fz2.b7" crc="cd830510" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="fz2.b4" crc="b98fa5b6" map="01"/>
+            <part name="fz2.b8" crc="e8248f68" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="fz2.a1" crc="9d2f41f3" map="01"/>
+            <part name="fz2.b10" crc="7686ea33" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="fz2.a2" crc="3b4050b7" map="01"/>
+            <part name="fz2.b11" crc="da8a95dc" map="10"/>
+        </interleave>
+        <part repeat="0x80000"> FF</part>
+        <!-- JTFRAME_PROM_START -->
+        <!-- MCU_START -->
+        <!-- mcu - starts at 0x440000 - length 0x2000 (13 bits) -->
+        <part repeat="0x1000"> FF</part>
+        <part repeat="0x1000"> FF</part>
+        <!-- MAINKEY_START -->
+        <!-- maincpu:key - starts at 0x442000 - length 0x6000 (15 bits) -->
+        <part repeat="0x2000"> FF</part>
+        <part repeat="0x4000"> FF</part>
+        <!-- SNDKEY_START -->
+        <!-- soundcpu:key - starts at 0x448000 - length 0x2000 (13 bits) -->
+        <part repeat="0x2000"> FF</part>
+        <!-- Total 0x44A000 bytes - 4392 kBytes -->
+    </rom>
+    <rom index="1">
+        <part>00</part>
+    </rom>
+    <switches page_id="1" page_name="Switches" base="16" default="ff,ff">
+        <!-- DSW2 -->
+        <dip name="Lives" bits="10,11" ids="240,4,2,3"/>
+        <dip name="Difficulty" bits="14,15" ids="Hardest,Hard,Easy,Normal"/>
+    </switches>
+    <buttons names="Shot,Bomb,-,-,Start,Coin,Core credits" default="A,B,Start,Select,-" count="2"/>
+</misterromdescription>

@@ -1,0 +1,32 @@
+{
+	"input":{
+		"magic": "APF_VER_1",
+		"controllers": [
+			{
+				"type": "default",
+				"mappings": [
+					{
+						"id": 0,
+						"name": "Shot (Up)",
+						"key": "pad_btn_a"
+					},
+					{
+						"id": 1,
+						"name": "Shot (Right)",
+						"key": "pad_btn_b"
+					},
+					{
+						"id": 2,
+						"name": "Shot (Behind)",
+						"key": "pad_btn_x"
+					},
+					{
+						"id": 3,
+						"name": "Shot (Left)",
+						"key": "pad_btn_y"
+					}
+				]
+			}
+		]
+	}
+}

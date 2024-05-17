@@ -1,0 +1,96 @@
+{
+	"interact":{
+		"magic": "APF_VER_1",
+		"variables": [
+			{
+				"name": "Rotate screen",
+				"id": 0,
+				"type": "check",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfb000000",
+				"defaultval": 4,
+				"value": 4,
+				"mask": "0xFFFFFFFB"
+			},
+			{
+				"name": "Difficulty",
+				"id": 1,
+				"type": "list",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 1,
+				"value": 0,
+				"mask": "0xFFFFFFEF",
+				"options": [
+					{
+						"name": "Hard",
+						"value": "0x0"
+					},
+					{
+						"name": "Normal",
+						"value": "0x10"
+					}
+				]
+			},
+			{
+				"name": "Free Play",
+				"id": 2,
+				"type": "check",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 0,
+				"value": 0,
+				"value_off": 32,
+				"mask": "0xFFFFFFDF"
+			},
+			{
+				"name": "Demo Sounds",
+				"id": 3,
+				"type": "check",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 1,
+				"value": 0,
+				"value_off": 64,
+				"mask": "0xFFFFFFBF"
+			},
+			{
+				"name": "Cabinet",
+				"id": 4,
+				"type": "list",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 0,
+				"value": 0,
+				"mask": "0xFFFFFF7F",
+				"options": [
+					{
+						"name": "Upright",
+						"value": "0x0"
+					},
+					{
+						"name": "Cocktail",
+						"value": "0x80"
+					}
+				]
+			},
+			{
+				"name": "Default",
+				"id": 1015,
+				"type": "number_u32",
+				"enabled": false,
+				"persist": false,
+				"writeonly": true,
+				"address": "0xfa000000",
+				"defaultval": 63,
+				"value": 0
+			}
+		],
+		"messages": []
+	}
+}

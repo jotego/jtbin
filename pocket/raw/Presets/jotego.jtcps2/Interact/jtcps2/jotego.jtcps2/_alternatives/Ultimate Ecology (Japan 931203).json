@@ -1,0 +1,37 @@
+{
+	"interact":{
+		"magic": "APF_VER_1",
+		"variables": [
+			{
+				"name": "Dial sensitivity",
+				"id": 0,
+				"type": "list",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfb000004",
+				"defaultval": 3,
+				"value": 0,
+				"mask": "0xFFFFFFFC",
+				"options": [
+					{
+						"name": "very high",
+						"value": "0x1"
+					},
+					{
+						"name": "high",
+						"value": "0x0"
+					},
+					{
+						"name": "low",
+						"value": "0x3"
+					},
+					{
+						"name": "very low",
+						"value": "0x2"
+					}
+				]
+			}
+		],
+		"messages": []
+	}
+}

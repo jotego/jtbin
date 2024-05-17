@@ -1,0 +1,103 @@
+<!--          FPGA arcade hardware by Jotego
+
+              This core is available for hardware compatible with MiST and MiSTer
+              Other FPGA systems may be supported by the time you read this.
+              This work is not mantained by the MiSTer project. Please contact the
+              core author for issues and updates.
+
+              (c) Jose Tejada, 2024. Please support this research
+              Patreon: https://patreon.com/jotego
+
+              The author does not endorse or participate in illegal distribution
+              of copyrighted material. This work can be used with compatible
+              software. This software can be homebrew projects or legally
+              obtained memory dumps of compatible games.
+
+              This file license is GNU GPLv2.
+              You can read the whole license file in
+              https://opensource.org/licenses/gpl-2.0.php
+
+-->
+
+<misterromdescription>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
+    <name>Three Wonders (World 910520)</name>
+    <setname>3wonders</setname>
+    <rbf>jtcps1</rbf>
+    <mameversion>0251</mameversion>
+    <year>1991</year>
+    <manufacturer>Capcom</manufacturer>
+    <players>2</players>
+    <joystick>8</joystick>
+    <rotation>horizontal</rotation>
+    <region>World</region>
+    <rom index="0" zip="3wonders.zip" md5="None" asm_md5="b39387a71b81384e59317ba421c767d8">
+        <part>
+            00 04 40 04 40 05 FF FF
+            FF FF FF FF FF FF FF FF
+            32 80 0E 0C 0A 08 28 26
+            24 22 20 00 00 30 20 04
+            08 12 1D 40 88 73 FF 00
+            FF FF FF FF FF FF FF FF
+            FF FF FF FF FF FF FF FF
+            FF FF FF FF FF FF FF FF
+        </part>
+        <!-- maincpu - starts at 0x0 - length 0x100000 (20 bits) -->
+        <interleave output="16">
+            <part name="rte_35a.11h" crc="7d705529" map="01"/>
+            <part name="rte_30a.11f" crc="ef5b8b33" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="rte_36a.12h" crc="7637975f" map="01"/>
+            <part name="rte_31a.12f" crc="32835e5e" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="rt_33a.9h" crc="7264cb1b" map="01"/>
+            <part name="rt_28a.9f" crc="054137c8" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="rte_34a.10h" crc="ed52e7e5" map="01"/>
+            <part name="rte_29a.10f" crc="cddaa919" map="10"/>
+        </interleave>
+        <!-- audiocpu - starts at 0x100000 - length 0x10000 (16 bits) -->
+        <part name="rt_9.12b" crc="abfca165"/>
+        <!-- oki - starts at 0x110000 - length 0x40000 (18 bits) -->
+        <part name="rt_18.11c" crc="26b211ab"/>
+        <part name="rt_19.12c" crc="dbe64ad0"/>
+        <!-- gfx - starts at 0x150000 - length 0x400000 (22 bits) -->
+        <interleave output="64">
+            <part name="rt-5m.7a" crc="86aef804" map="00000021"/>
+            <part name="rt-7m.9a" crc="4f057110" map="00002100"/>
+            <part name="rt-1m.3a" crc="902489d0" map="00210000"/>
+            <part name="rt-3m.5a" crc="e35ce720" map="21000000"/>
+        </interleave>
+        <interleave output="64">
+            <part name="rt-6m.8a" crc="13cb0e7c" map="00000021"/>
+            <part name="rt-8m.10a" crc="1f055014" map="00002100"/>
+            <part name="rt-2m.4a" crc="e9a034f4" map="00210000"/>
+            <part name="rt-4m.6a" crc="df0eea8b" map="21000000"/>
+        </interleave>
+        <!-- Total 0x550000 bytes - 5440 kBytes -->
+    </rom>
+    <rom index="1">
+        <part>00</part>
+    </rom>
+    <switches page_id="1" page_name="Switches" base="8" default="ff,9a,99">
+        <!-- DSWA -->
+        <dip name="Freeze" bits="7" ids="On,Off"/>
+        <!-- DSWB -->
+        <dip name="Lives (Mid.W.)" bits="8,9" ids="5,3,2,1"/>
+        <dip name="Gameplay (Mid.W.)" bits="10,11" ids="Hardest,Hard,Normal,Easy"/>
+        <dip name="Lives (Chariot)" bits="12,13" ids="5,3,2,1"/>
+        <dip name="Gameplay (Chariot)" bits="14,15" ids="Hardest,Hard,Normal,Easy"/>
+        <!-- DSWC -->
+        <dip name="Lives (Don&apos;t Pull)" bits="16,17" ids="5,3,2,1"/>
+        <dip name="Gameplay (Don&apos;t P.)" bits="18,19" ids="Hardest,Hard,Normal,Easy"/>
+        <dip name="Flip Screen" bits="20" ids="On,Off"/>
+        <dip name="Demo Sounds" bits="21" ids="On,Off"/>
+        <dip name="Allow Continue" bits="22" ids="Yes,No"/>
+        <dip name="Game Mode" bits="23" ids="Test,Game"/>
+        <dip name="PCB type" ids="88617A,89626A" bits="24"/>
+    </switches>
+    <buttons names="Attack/Shot/P.Block,Jump/T.Shot/P.Block,-,-,-,-,Start,Coin,Core credits" default="A,B,Start,Select,-" count="2"/>
+</misterromdescription>

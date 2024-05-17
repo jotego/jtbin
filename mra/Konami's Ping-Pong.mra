@@ -1,0 +1,67 @@
+<!--          FPGA arcade hardware by Jotego
+
+              This core is available for hardware compatible with MiST and MiSTer
+              Other FPGA systems may be supported by the time you read this.
+              This work is not mantained by the MiSTer project. Please contact the
+              core author for issues and updates.
+
+              (c) Jose Tejada, 2024. Please support this research
+              Patreon: https://patreon.com/jotego
+
+              The author does not endorse or participate in illegal distribution
+              of copyrighted material. This work can be used with compatible
+              software. This software can be homebrew projects or legally
+              obtained memory dumps of compatible games.
+
+              This file license is GNU GPLv2.
+              You can read the whole license file in
+              https://opensource.org/licenses/gpl-2.0.php
+
+-->
+
+<misterromdescription>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
+    <name>Konami&apos;s Ping-Pong</name>
+    <setname>pingpong</setname>
+    <rbf>jtpinpon</rbf>
+    <mameversion>0251</mameversion>
+    <year>1985</year>
+    <manufacturer>Konami</manufacturer>
+    <players>2</players>
+    <joystick>2</joystick>
+    <rotation>horizontal</rotation>
+    <region>World</region>
+    <rom index="0" zip="pingpong.zip" md5="None" asm_md5="3c6eaf0db6cb96ab18e8c5ca63aed2a9">
+        <!-- maincpu - starts at 0x0 - length 0x8000 (15 bits) -->
+        <part name="555_e04.7a" crc="18552f8f"/>
+        <part name="555_e03.6a" crc="ae5f01e8"/>
+        <!-- SCR_START -->
+        <!-- audiocpu - starts at 0x8000 -->
+        <!-- tiles - starts at 0x8000 - length 0x2000 (13 bits) -->
+        <interleave output="16">
+            <part name="555_e01.7h" crc="d1d6f090" map="12"/>
+        </interleave>
+        <!-- OBJ_START -->
+        <!-- sprites - starts at 0xA000 - length 0x2000 (13 bits) -->
+        <part name="555_e02.12c" crc="33c687e0"/>
+        <!-- JTFRAME_PROM_START -->
+        <!-- proms - starts at 0xC000 - length 0x220 (10 bits) -->
+        <part name="555e06.3j" crc="3e04f06e"/>
+        <part name="555e05.5h" crc="8456046a"/>
+        <part name="555e07.11j" crc="09d96b08"/>
+        <!-- Total 0xC220 bytes - 48 kBytes -->
+    </rom>
+    <rom index="1">
+        <part>00</part>
+    </rom>
+    <switches page_id="1" page_name="Switches" base="16" default="ff,fa,ff">
+        <!-- DSW1 -->
+        <dip name="Coin B" bits="0,3" ids="Free Play,2/1,3/2,1/4,4/1,1/6,2/5,1/2,4/3,1/7,3/1,1/3,3/4,1/5,2/3,1/1"/>
+        <!-- DSW2 -->
+        <dip name="Demo Sounds" bits="8" ids="On,Off"/>
+        <dip name="Difficulty" bits="9,10" ids="Very Difficult,Normal,Difficult,Easy"/>
+        <!-- SYSTEM -->
+        <dip name="Service Mode" bits="13" ids="On,Off"/>
+    </switches>
+    <buttons names="Button 1, button 2,Start,Coin,Core credits" default="A,B,Start,Select,-" count="2"/>
+</misterromdescription>

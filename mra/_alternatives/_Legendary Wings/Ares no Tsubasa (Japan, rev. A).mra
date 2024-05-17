@@ -1,0 +1,98 @@
+<!--          FPGA arcade hardware by Jotego
+
+              This core is available for hardware compatible with MiST and MiSTer
+              Other FPGA systems may be supported by the time you read this.
+              This work is not mantained by the MiSTer project. Please contact the
+              core author for issues and updates.
+
+              (c) Jose Tejada, 2024. Please support this research
+              Patreon: https://patreon.com/jotego
+
+              The author does not endorse or participate in illegal distribution
+              of copyrighted material. This work can be used with compatible
+              software. This software can be homebrew projects or legally
+              obtained memory dumps of compatible games.
+
+              This file license is GNU GPLv2.
+              You can read the whole license file in
+              https://opensource.org/licenses/gpl-2.0.php
+
+-->
+
+<misterromdescription>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
+    <name>Ares no Tsubasa (Japan, rev. A)</name>
+    <setname>lwingsja</setname>
+    <rbf>jtsectnz</rbf>
+    <mameversion>0251</mameversion>
+    <year>1986</year>
+    <manufacturer>Capcom</manufacturer>
+    <players>2</players>
+    <joystick>8</joystick>
+    <rotation>vertical (cw)</rotation>
+    <region>World</region>
+    <rom index="0" zip="lwingsja.zip|lwings.zip" md5="None" asm_md5="e8c07ec5ddf9bda400884cdd6c9aa962">
+        <part>
+            01 00 00 00 00 00 00 00
+            01 80 02 00 04 00 08 00
+            00 00 00 00 00 00 00 00
+            00 00 00 00 00 00 00 00
+        </part>
+        <!-- maincpu - starts at 0x0 - length 0x18000 (17 bits) -->
+        <part name="at_02.7c" crc="d6a2edc4"/>
+        <part name="at_03.9c" crc="ec5cc201"/>
+        <part name="at_01a.6c" crc="568f1ea5"/>
+        <!-- JTFRAME_BA1_START -->
+        <!-- soundcpu - starts at 0x18000 - length 0x8000 (15 bits) -->
+        <part name="at_03.11e" crc="a20337a2"/>
+        <!-- CHAR_START -->
+        <!-- adpcm - starts at 0x20000 -->
+        <!-- gfx1 - starts at 0x20000 - length 0x20000 (17 bits) -->
+        <interleave output="16">
+            <part name="at_05.9h" crc="091d923c" map="12"/>
+        </interleave>
+        <part repeat="0x1C000"> FF</part>
+        <!-- JTFRAME_BA2_START -->
+        <!-- gfx2 - starts at 0x40000 - length 0x40000 (18 bits) -->
+        <interleave output="32">
+            <part name="at_15.3f" crc="9b374dcc" map="0001"/>
+            <part name="at_12.3b" crc="4f8182e9" map="0010"/>
+            <part name="at_13.3d" crc="001caa35" map="0100"/>
+            <part name="at_14.3e" crc="176e3027" map="1000"/>
+        </interleave>
+        <interleave output="32">
+            <part name="at_09.1f" crc="23654e0a" map="0001"/>
+            <part name="at_06.1b" crc="f1617374" map="0010"/>
+            <part name="at_07.1d" crc="0ba008c3" map="0100"/>
+            <part name="at_08.1e" crc="f5d25623" map="1000"/>
+        </interleave>
+        <!-- JTFRAME_BA3_START -->
+        <!-- gfx3 - starts at 0x80000 - length 0x20000 (17 bits) -->
+        <interleave output="16">
+            <part name="at_16.3h" crc="7d58f532" map="01"/>
+            <part name="at_17.3j" crc="8f3c763a" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="at_10.1h" crc="3e396eda" map="01"/>
+            <part name="at_11.1j" crc="7cc90a1d" map="10"/>
+        </interleave>
+        <!-- Total 0xA0000 bytes - 640 kBytes -->
+    </rom>
+    <!-- Vertical game -->
+    <rom index="1">
+        <part>01</part>
+    </rom>
+    <switches page_id="1" page_name="Switches" base="16" default="ff,ff">
+        <!-- DSWA -->
+        <dip name="Flip Screen" bits="1" ids="On,Off"/>
+        <dip name="Lives" bits="2,3" ids="6,4,5,3"/>
+        <dip name="Coin B" bits="4,5" ids="4/1,2/1,3/1,1/1"/>
+        <dip name="Coin A" bits="6,7" ids="2/4,1/2,1/3,1/1"/>
+        <!-- DSWB -->
+        <dip name="Difficulty" bits="9,10" ids="Hardest,Easy,Hard,Medium"/>
+        <dip name="Demo Sounds" bits="11" ids="Off,On"/>
+        <dip name="Allow Continue" bits="12" ids="No,Yes"/>
+        <dip name="Bonus" bits="13,15" ids="None,30k &amp; *60k,30k &amp; *80k,20k &amp; *60k,40k &amp; *100k,20k &amp; *70k,30k &amp; *70k,20k &amp; *50k"/>
+    </switches>
+    <buttons names="Shoot,Bomb,Start,Coin,Core credits" default="A,B,Start,Select,-" count="2"/>
+</misterromdescription>

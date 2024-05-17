@@ -1,0 +1,100 @@
+<!--          FPGA arcade hardware by Jotego
+
+              This core is available for hardware compatible with MiST and MiSTer
+              Other FPGA systems may be supported by the time you read this.
+              This work is not mantained by the MiSTer project. Please contact the
+              core author for issues and updates.
+
+              (c) Jose Tejada, 2024. Please support this research
+              Patreon: https://patreon.com/jotego
+
+              The author does not endorse or participate in illegal distribution
+              of copyrighted material. This work can be used with compatible
+              software. This software can be homebrew projects or legally
+              obtained memory dumps of compatible games.
+
+              This file license is GNU GPLv2.
+              You can read the whole license file in
+              https://opensource.org/licenses/gpl-2.0.php
+
+-->
+
+<misterromdescription>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
+    <name>Saturday Night Slam Masters (World 930713)</name>
+    <setname>slammast</setname>
+    <rbf>jtcps15</rbf>
+    <mameversion>0251</mameversion>
+    <year>1993</year>
+    <manufacturer>Capcom</manufacturer>
+    <players>4</players>
+    <joystick>8</joystick>
+    <rotation>horizontal</rotation>
+    <region>World</region>
+    <rom index="0" zip="slammast.zip|qsound.zip" md5="None" asm_md5="313b1b55f32092e408b79fd7a34a0962">
+        <part>
+            00 08 80 08 80 18 80 30
+            FF FF FF FF FF FF FF FF
+            2E C1 FF FF FF FF 16 00
+            02 28 2A 00 00 2C 04 08
+            10 00 10 40 C8 73 F7 20
+            FF FF FF FF FF FF FF FF
+            54 32 10 76 65 43 21 07
+            31 31 19 FF FF FF FF FF
+        </part>
+        <!-- maincpu - starts at 0x0 - length 0x200000 (21 bits) -->
+        <part name="mbe_23e.8f" crc="5394057a"/>
+        <interleave output="16">
+            <part name="mbe_28b.9f" crc="b1c7cbcb" map="01"/>
+            <part name="mbe_24b.9e" crc="95d5e729" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="mbe_29b.10f" crc="08e32e56" map="01"/>
+            <part name="mbe_25b.10e" crc="a50d3fd4" map="10"/>
+        </interleave>
+        <part name="mbe_21a.6f" crc="d5007b05"/>
+        <part name="mbe_20a.5f" crc="aeb557b0"/>
+        <!-- audiocpu - starts at 0x200000 - length 0x20000 (17 bits) -->
+        <part name="mb_qa.5k" crc="e21a03c4"/>
+        <!-- qsound - starts at 0x220000 - length 0x400000 (22 bits) -->
+        <part name="mb-q1.1k" crc="0630c3ce"/>
+        <part name="mb-q2.2k" crc="354f9c21"/>
+        <part name="mb-q3.3k" crc="7838487c"/>
+        <part name="mb-q4.4k" crc="ab66e087"/>
+        <part name="mb-q5.1m" crc="c789fef2"/>
+        <part name="mb-q6.2m" crc="ecb81b61"/>
+        <part name="mb-q7.3m" crc="041e49ba"/>
+        <part name="mb-q8.4m" crc="59fe702a"/>
+        <!-- gfx - starts at 0x620000 - length 0x600000 (23 bits) -->
+        <interleave output="64">
+            <part name="mb-1m.3a" crc="41468e06" map="00000021"/>
+            <part name="mb-3m.5a" crc="f453aa9e" map="00002100"/>
+            <part name="mb-2m.4a" crc="2ffbfea8" map="00210000"/>
+            <part name="mb-4m.6a" crc="1eb9841d" map="21000000"/>
+        </interleave>
+        <interleave output="64">
+            <part name="mb-5m.7a" crc="506b9dc9" map="00000021"/>
+            <part name="mb-7m.9a" crc="aff8c2fb" map="00002100"/>
+            <part name="mb-6m.8a" crc="b76c70e9" map="00210000"/>
+            <part name="mb-8m.10a" crc="e60c9556" map="21000000"/>
+        </interleave>
+        <interleave output="64">
+            <part name="mb-10m.3c" crc="97976ff5" map="00000021"/>
+            <part name="mb-12m.5c" crc="b350a840" map="00002100"/>
+            <part name="mb-11m.4c" crc="8fb94743" map="00210000"/>
+            <part name="mb-13m.6c" crc="da810d5f" map="21000000"/>
+        </interleave>
+        <!-- firmware - starts at 0xC20000 - length 0x2000 (13 bits) -->
+        <part name="dl-1425.bin" crc="d6cf5ef5" length="0x2000"/>
+        <!-- Total 0xC22000 bytes - 12424 kBytes -->
+    </rom>
+    <nvram index="2" size="128"/>
+    <rom index="1">
+        <part>00</part>
+    </rom>
+    <switches page_id="1" page_name="Switches" base="16" default="ff">
+        <!-- DSWC -->
+        <dip name="Freeze" bits="3" ids="On,Off"/>
+    </switches>
+    <buttons names="Attack,Jump,Pin,-,-,-,Start,Coin,Core credits" default="A,B,X,Start,Select,-" count="3"/>
+</misterromdescription>

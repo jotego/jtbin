@@ -1,0 +1,251 @@
+{
+	"interact":{
+		"magic": "APF_VER_1",
+		"variables": [
+			{
+				"name": "Coin A",
+				"id": 0,
+				"type": "list",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 15,
+				"value": 0,
+				"mask": "0xFFFFFFF0",
+				"options": [
+					{
+						"name": "Free Play (if Coin B too) or 1/1",
+						"value": "0x0"
+					},
+					{
+						"name": "1 Coin/1 Credit, 2/3",
+						"value": "0x1"
+					},
+					{
+						"name": "1 Coin/1 Credit, 4/5",
+						"value": "0x2"
+					},
+					{
+						"name": "1 Coin/1 Credit, 5/6",
+						"value": "0x3"
+					},
+					{
+						"name": "2 Coins/1 Credit, 4/3",
+						"value": "0x4"
+					},
+					{
+						"name": "2 Coins/1 Credit, 5/3, 6/4",
+						"value": "0x5"
+					},
+					{
+						"name": "2 Coins/3 Credits",
+						"value": "0x6"
+					},
+					{
+						"name": "4 Coins/1 Credit",
+						"value": "0x7"
+					},
+					{
+						"name": "3 Coins/1 Credit",
+						"value": "0x8"
+					},
+					{
+						"name": "2 Coins/1 Credit",
+						"value": "0x9"
+					},
+					{
+						"name": "1 Coin/6 Credits",
+						"value": "0xA"
+					},
+					{
+						"name": "1 Coin/5 Credits",
+						"value": "0xB"
+					},
+					{
+						"name": "1 Coin/4 Credits",
+						"value": "0xC"
+					},
+					{
+						"name": "1 Coin/3 Credits",
+						"value": "0xD"
+					},
+					{
+						"name": "1 Coin/2 Credits",
+						"value": "0xE"
+					},
+					{
+						"name": "1 Coin/1 Credit",
+						"value": "0xF"
+					}
+				]
+			},
+			{
+				"name": "Coin B",
+				"id": 1,
+				"type": "list",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 15,
+				"value": 0,
+				"mask": "0xFFFFFF0F",
+				"options": [
+					{
+						"name": "Free Play (if Coin A too) or 1/1",
+						"value": "0x0"
+					},
+					{
+						"name": "1 Coin/1 Credit, 2/3",
+						"value": "0x10"
+					},
+					{
+						"name": "1 Coin/1 Credit, 4/5",
+						"value": "0x20"
+					},
+					{
+						"name": "1 Coin/1 Credit, 5/6",
+						"value": "0x30"
+					},
+					{
+						"name": "2 Coins/1 Credit, 4/3",
+						"value": "0x40"
+					},
+					{
+						"name": "2 Coins/1 Credit, 5/3, 6/4",
+						"value": "0x50"
+					},
+					{
+						"name": "2 Coins/3 Credits",
+						"value": "0x60"
+					},
+					{
+						"name": "4 Coins/1 Credit",
+						"value": "0x70"
+					},
+					{
+						"name": "3 Coins/1 Credit",
+						"value": "0x80"
+					},
+					{
+						"name": "2 Coins/1 Credit",
+						"value": "0x90"
+					},
+					{
+						"name": "1 Coin/6 Credits",
+						"value": "0xA0"
+					},
+					{
+						"name": "1 Coin/5 Credits",
+						"value": "0xB0"
+					},
+					{
+						"name": "1 Coin/4 Credits",
+						"value": "0xC0"
+					},
+					{
+						"name": "1 Coin/3 Credits",
+						"value": "0xD0"
+					},
+					{
+						"name": "1 Coin/2 Credits",
+						"value": "0xE0"
+					},
+					{
+						"name": "1 Coin/1 Credit",
+						"value": "0xF0"
+					}
+				]
+			},
+			{
+				"name": "Demo Sounds",
+				"id": 2,
+				"type": "check",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 1,
+				"value": 0,
+				"value_off": 256,
+				"mask": "0xFFFFFEFF"
+			},
+			{
+				"name": "VS Play Mode",
+				"id": 3,
+				"type": "list",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 1,
+				"value": 0,
+				"mask": "0xFFFFEFFF",
+				"options": [
+					{
+						"name": "3 Set",
+						"value": "0x0"
+					},
+					{
+						"name": "1 Set",
+						"value": "0x1000"
+					}
+				]
+			},
+			{
+				"name": "Difficulty",
+				"id": 4,
+				"type": "list",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 7,
+				"value": 0,
+				"mask": "0xFFFF1FFF",
+				"options": [
+					{
+						"name": "Hard+5",
+						"value": "0x0"
+					},
+					{
+						"name": "Hard+4",
+						"value": "0x2000"
+					},
+					{
+						"name": "Hard+3",
+						"value": "0x4000"
+					},
+					{
+						"name": "Hard+2",
+						"value": "0x6000"
+					},
+					{
+						"name": "Hard+1",
+						"value": "0x8000"
+					},
+					{
+						"name": "Hard",
+						"value": "0xA000"
+					},
+					{
+						"name": "Easy",
+						"value": "0xC000"
+					},
+					{
+						"name": "Normal",
+						"value": "0xE000"
+					}
+				]
+			},
+			{
+				"name": "Default",
+				"id": 1015,
+				"type": "number_u32",
+				"enabled": false,
+				"persist": false,
+				"writeonly": true,
+				"address": "0xfa000000",
+				"defaultval": 65534,
+				"value": 0
+			}
+		],
+		"messages": []
+	}
+}

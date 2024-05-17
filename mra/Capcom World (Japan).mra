@@ -1,0 +1,81 @@
+<!--          FPGA arcade hardware by Jotego
+
+              This core is available for hardware compatible with MiST and MiSTer
+              Other FPGA systems may be supported by the time you read this.
+              This work is not mantained by the MiSTer project. Please contact the
+              core author for issues and updates.
+
+              (c) Jose Tejada, 2024. Please support this research
+              Patreon: https://patreon.com/jotego
+
+              The author does not endorse or participate in illegal distribution
+              of copyrighted material. This work can be used with compatible
+              software. This software can be homebrew projects or legally
+              obtained memory dumps of compatible games.
+
+              This file license is GNU GPLv2.
+              You can read the whole license file in
+              https://opensource.org/licenses/gpl-2.0.php
+
+-->
+
+<misterromdescription>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
+    <name>Capcom World (Japan)</name>
+    <setname>cworld</setname>
+    <rbf>jtpang</rbf>
+    <mameversion>0251</mameversion>
+    <year>1989</year>
+    <manufacturer>Capcom</manufacturer>
+    <players>2</players>
+    <joystick/>
+    <rotation>horizontal</rotation>
+    <region>World</region>
+    <rom index="0" zip="cworld.zip" md5="None" asm_md5="d4d84d29ff0060240d09ca61ce4d7508">
+        <part>
+            04 15 26 37 40 51 62 73
+            57 51 43 00 00 00 00 02
+        </part>
+        <!-- maincpu - starts at 0x0 - length 0x80000 (19 bits) -->
+        <part name="cw05.bin" crc="d3c1723d"/>
+        <part name="cw06.bin" crc="d71ed4a3"/>
+        <part name="cw07.bin" crc="d419ce08"/>
+        <part repeat="0x38000"> FF</part>
+        <!-- JTFRAME_BA1_START -->
+        <!-- oki - starts at 0x80000 - length 0x80000 (19 bits) -->
+        <part name="cw01.bin" crc="f4368f5b"/>
+        <part repeat="0x60000"> FF</part>
+        <!-- JTFRAME_BA2_START -->
+        <!-- chars - starts at 0x100000 - length 0x200000 (21 bits) -->
+        <interleave output="16">
+            <part name="cw08.bin" crc="6c80da3c" map="01"/>
+            <part name="cw18.bin" crc="be6ee0c9" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="cw09.bin" crc="7607da71" map="01"/>
+            <part name="cw19.bin" crc="51fc5532" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="cw10.bin" crc="6f0e639f" map="01"/>
+            <part name="cw20.bin" crc="58381d58" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="cw11.bin" crc="130bd7c0" map="01"/>
+            <part name="cw21.bin" crc="910cc753" map="10"/>
+        </interleave>
+        <part repeat="0x100000"> FF</part>
+        <!-- JTFRAME_BA3_START -->
+        <!-- sprites - starts at 0x300000 - length 0x40000 (18 bits) -->
+        <interleave output="16">
+            <part name="cw16.bin" crc="f90217d1" map="01"/>
+            <part name="cw17.bin" crc="c953c702" map="10"/>
+        </interleave>
+        <!-- eeprom - starts at 0x340000 -->
+        <!-- Total 0x340000 bytes - 3328 kBytes -->
+    </rom>
+    <nvram index="2" size="128"/>
+    <rom index="1">
+        <part>00</part>
+    </rom>
+    <buttons names="button 1,button 2,-,-,Start,Coin,Core credits" default="A,B,Start,Select,-" count="2"/>
+</misterromdescription>

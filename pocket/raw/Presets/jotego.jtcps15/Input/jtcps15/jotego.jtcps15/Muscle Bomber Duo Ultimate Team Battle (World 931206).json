@@ -1,0 +1,27 @@
+{
+	"input":{
+		"magic": "APF_VER_1",
+		"controllers": [
+			{
+				"type": "default",
+				"mappings": [
+					{
+						"id": 0,
+						"name": "Grab",
+						"key": "pad_btn_a"
+					},
+					{
+						"id": 1,
+						"name": "Attack",
+						"key": "pad_btn_b"
+					},
+					{
+						"id": 2,
+						"name": "Jump",
+						"key": "pad_btn_x"
+					}
+				]
+			}
+		]
+	}
+}

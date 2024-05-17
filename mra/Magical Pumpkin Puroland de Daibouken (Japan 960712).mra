@@ -1,0 +1,93 @@
+<!--          FPGA arcade hardware by Jotego
+
+              This core is available for hardware compatible with MiST and MiSTer
+              Other FPGA systems may be supported by the time you read this.
+              This work is not mantained by the MiSTer project. Please contact the
+              core author for issues and updates.
+
+              (c) Jose Tejada, 2024. Please support this research
+              Patreon: https://patreon.com/jotego
+
+              The author does not endorse or participate in illegal distribution
+              of copyrighted material. This work can be used with compatible
+              software. This software can be homebrew projects or legally
+              obtained memory dumps of compatible games.
+
+              This file license is GNU GPLv2.
+              You can read the whole license file in
+              https://opensource.org/licenses/gpl-2.0.php
+
+-->
+
+<misterromdescription>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
+    <name>Magical Pumpkin: Puroland de Daibouken (Japan 960712)</name>
+    <setname>mpumpkin</setname>
+    <rbf>jtcps1</rbf>
+    <mameversion>0251</mameversion>
+    <year>1996</year>
+    <manufacturer>Capcom</manufacturer>
+    <players>1</players>
+    <joystick/>
+    <rotation>horizontal</rotation>
+    <region>World</region>
+    <rom index="0" zip="mpumpkin.zip" md5="None" asm_md5="bce61e3b5079a60c89eb310ec5947167">
+        <part>
+            00 02 40 02 40 03 FF FF
+            FF FF FF FF FF FF FF FF
+            32 FF 00 02 04 06 26 28
+            2A 2C 2E 00 00 30 02 04
+            08 30 20 00 00 FF FF 00
+            FE FF FF FF FF FF FF FF
+            FF FF FF FF FF FF FF FF
+            FF FF FF FF FF FF FF FF
+        </part>
+        <!-- maincpu - starts at 0x0 - length 0x80000 (19 bits) -->
+        <part name="mpa_23.8f" crc="38b9883a"/>
+        <!-- audiocpu - starts at 0x80000 - length 0x10000 (16 bits) -->
+        <part name="mpa_09.12a" crc="0b5b1b72"/>
+        <!-- oki - starts at 0x90000 - length 0x40000 (18 bits) -->
+        <part name="mpa_18.11c" crc="cef6d39e"/>
+        <part name="mpa_19.12c" crc="24947f8e"/>
+        <!-- gfx - starts at 0xD0000 - length 0x600000 (23 bits) -->
+        <interleave output="64">
+            <part name="mpa_01.3a" crc="7c8c0c22" map="00000021"/>
+            <part name="mpa_02.4a" crc="23f95339" map="00002100"/>
+            <part name="mpa_03.5a" crc="107842a6" map="00210000"/>
+            <part name="mpa_04.6a" crc="fce457ae" map="21000000"/>
+        </interleave>
+        <interleave output="64">
+            <part name="mpa_05.7a" crc="ba8f3585" map="00000021"/>
+            <part name="mpa_06.8a" crc="037f20cc" map="00002100"/>
+            <part name="mpa_07.9a" crc="ba8f3585" map="00210000"/>
+            <part name="mpa_08.10a" crc="037f20cc" map="21000000"/>
+        </interleave>
+        <interleave output="64">
+            <part name="mpa_10.3c" crc="870f3a2a" map="00000021"/>
+            <part name="mpa_11.4c" crc="8923fc3a" map="00002100"/>
+            <part name="mpa_12.5c" crc="87b88629" map="00210000"/>
+            <part name="mpa_13.6c" crc="a09a6acf" map="21000000"/>
+        </interleave>
+        <!-- Total 0x6D0000 bytes - 6976 kBytes -->
+    </rom>
+    <rom index="1">
+        <part>18</part>
+    </rom>
+    <switches page_id="1" page_name="Switches" base="8" default="ff,fb,ff,ff">
+        <!-- DSWB -->
+        <dip name="Demo Sounds" bits="8,9" ids="Off,Every 4,Every 2,On"/>
+        <dip name="Prize Mode" bits="10" ids="Not Used,Used"/>
+        <dip name="Credit Mode" bits="11" ids="On,Off"/>
+        <dip name="Max Stage" bits="12" ids="2,3"/>
+        <dip name="Card Check" bits="13" ids="On,Off"/>
+        <!-- DSWC -->
+        <dip name="Body Check" bits="17" ids="On,Off"/>
+        <dip name="Screen Stop" bits="19" ids="On,Off"/>
+        <dip name="Flip Screen" bits="20" ids="On,Off"/>
+        <dip name="Service Mode" bits="23" ids="On,Off"/>
+        <!-- IN0 -->
+        <dip name="Service Mode" bits="30" ids="On,Off"/>
+        <dip name="PCB type" ids="88617A,89626A" bits="24"/>
+    </switches>
+    <buttons names="Kitty,Keroppi,Badtz-Maru,-,-,-,Start,Coin,Core credits" default="A,B,X,Start,Select,-" count="3"/>
+</misterromdescription>

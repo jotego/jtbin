@@ -1,0 +1,32 @@
+{
+	"input":{
+		"magic": "APF_VER_1",
+		"controllers": [
+			{
+				"type": "default",
+				"mappings": [
+					{
+						"id": 0,
+						"name": "Accelerate",
+						"key": "pad_btn_a"
+					},
+					{
+						"id": 1,
+						"name": "Brake",
+						"key": "pad_btn_b"
+					},
+					{
+						"id": 2,
+						"name": "Gear (Low / High)",
+						"key": "pad_btn_x"
+					},
+					{
+						"id": 3,
+						"name": "Nitro",
+						"key": "pad_btn_y"
+					}
+				]
+			}
+		]
+	}
+}

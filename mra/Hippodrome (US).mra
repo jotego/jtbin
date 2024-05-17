@@ -1,0 +1,130 @@
+<!--          FPGA arcade hardware by Jotego
+
+              This core is available for hardware compatible with MiST and MiSTer
+              Other FPGA systems may be supported by the time you read this.
+              This work is not mantained by the MiSTer project. Please contact the
+              core author for issues and updates.
+
+              (c) Jose Tejada, 2024. Please support this research
+              Patreon: https://patreon.com/jotego
+
+              The author does not endorse or participate in illegal distribution
+              of copyrighted material. This work can be used with compatible
+              software. This software can be homebrew projects or legally
+              obtained memory dumps of compatible games.
+
+              This file license is GNU GPLv2.
+              You can read the whole license file in
+              https://opensource.org/licenses/gpl-2.0.php
+
+-->
+
+<misterromdescription>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
+    <name>Hippodrome (US)</name>
+    <setname>hippodrm</setname>
+    <rbf>jtcop</rbf>
+    <mameversion>0251</mameversion>
+    <year>1989</year>
+    <manufacturer>Data East USA</manufacturer>
+    <players>2</players>
+    <joystick>8</joystick>
+    <rotation>horizontal</rotation>
+    <region>World</region>
+    <rom index="0" zip="hippodrm.zip" md5="None" asm_md5="a8bf65155b3daa5dcb5a00a268a09447">
+        <!-- maincpu - starts at 0x0 - length 0x80000 (19 bits) -->
+        <interleave output="16">
+            <part name="ew01" crc="d5670aa7" map="01"/>
+            <part name="ew02" crc="df0d7dc6" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="ew00" crc="e9b427a6" map="01"/>
+            <part name="ew05" crc="c76d65ec" map="10"/>
+        </interleave>
+        <part repeat="0x40000"> FF</part>
+        <!-- SND_START -->
+        <!-- audiocpu - starts at 0x80000 - length 0x10000 (16 bits) -->
+        <part name="ew04" crc="9871b98d"/>
+        <part repeat="0x8000"> FF</part>
+        <!-- PCM_START -->
+        <!-- oki - starts at 0x90000 - length 0x20000 (17 bits) -->
+        <part name="ew03" crc="b606924d"/>
+        <part repeat="0x10000"> FF</part>
+        <!-- JTFRAME_BA2_START -->
+        <!-- gfx1 - starts at 0xB0000 - length 0x20000 (17 bits) -->
+        <interleave output="16">
+            <part name="ew14" crc="71ca593d" map="01"/>
+            <part name="ew13" crc="86be5fa7" map="10"/>
+        </interleave>
+        <!-- GFX2_START -->
+        <!-- gfx2 - starts at 0xD0000 - length 0x80000 (19 bits) -->
+        <interleave output="16">
+            <part name="ew19" crc="6b80d7a3" map="01"/>
+            <part name="ew20" crc="ce9f5de3" map="10"/>
+        </interleave>
+        <part repeat="0x30000"> FF</part>
+        <!-- Blank ends at 0x110000 -->
+        <interleave output="16">
+            <part name="ew18" crc="78d3d764" map="01"/>
+            <part name="ew21" crc="487a7ba2" map="10"/>
+        </interleave>
+        <part repeat="0x30000"> FF</part>
+        <!-- GFX3_START -->
+        <!-- gfx3 - starts at 0x150000 - length 0x40000 (18 bits) -->
+        <interleave output="16">
+            <part name="ew25" crc="9eb47dfb" map="01"/>
+            <part name="ew22" crc="e55669aa" map="10"/>
+        </interleave>
+        <part repeat="0x10000"> FF</part>
+        <!-- Blank ends at 0x170000 -->
+        <interleave output="16">
+            <part name="ew24" crc="4e1bc2a4" map="01"/>
+            <part name="ew23" crc="9ecf479e" map="10"/>
+        </interleave>
+        <part repeat="0x10000"> FF</part>
+        <!-- JTFRAME_BA3_START -->
+        <!-- gfx4 - starts at 0x190000 - length 0x80000 (19 bits) -->
+        <interleave output="32">
+            <part name="ew15" crc="95423914" map="0001"/>
+            <part name="ew10" crc="4c25dfe8" map="0010"/>
+            <part name="ew06" crc="e4bb8199" map="0100"/>
+            <part name="ew17" crc="8c97c757" map="1000"/>
+        </interleave>
+        <interleave output="32">
+            <part name="ew16" crc="96233177" map="0001"/>
+            <part name="ew11" crc="f2e007fc" map="0010"/>
+            <part name="ew07" crc="470b6989" map="0100"/>
+            <part name="ew12" crc="a2d244bc" map="1000"/>
+        </interleave>
+        <!-- MCU_START -->
+        <!-- mcu - starts at 0x210000 -->
+        <!-- sub - starts at 0x210000 - length 0x18000 (17 bits) -->
+        <part name="ew08" crc="53010534"/>
+        <part repeat="0x8000"> FF</part>
+        <!-- PROM_START -->
+        <!-- JTFRAME_PROM_START -->
+        <!-- proms - starts at 0x228000 - length 0x600 (11 bits) -->
+        <part name="mb7116e_a-1.12c" crc="86e775f8"/>
+        <part name="mb7122e_a-2.17e" crc="a5cda23e"/>
+        <!-- Total 0x228600 bytes - 2209 kBytes -->
+        <patch offset="0x210189"> 60 </patch>
+        <patch offset="0x2101AF"> 60 </patch>
+        <patch offset="0x2101DB"> 60 </patch>
+        <patch offset="0x21021A"> 60 </patch>
+    </rom>
+    <rom index="1">
+        <part>00</part>
+    </rom>
+    <switches page_id="1" page_name="Switches" base="17" default="ff,ff">
+        <!-- DSW -->
+        <dip name="Coin A" bits="0,1" ids="3/1,2/1,1/2,1/1"/>
+        <dip name="Coin B" bits="2,3" ids="3/1,2/1,1/2,1/1"/>
+        <dip name="Demo Sounds" bits="5" ids="Off,On"/>
+        <dip name="Flip Screen" bits="6" ids="On,Off"/>
+        <dip name="Lives" bits="8,9" ids="5,1,3,2"/>
+        <dip name="Difficulty" bits="10,11" ids="Hardest,Hard,Easy,Normal"/>
+        <dip name="Energy scale" bits="12,13" ids="High,Very Low,Low,Medium"/>
+        <dip name="Player strength" bits="14" ids="3 Dots,2 Dots"/>
+    </switches>
+    <buttons names="Attack,Jump,-,-,-,Start,Coin,Core credits" default="A,B,Start,Select,-" count="2"/>
+</misterromdescription>

@@ -1,0 +1,101 @@
+<!--          FPGA arcade hardware by Jotego
+
+              This core is available for hardware compatible with MiST and MiSTer
+              Other FPGA systems may be supported by the time you read this.
+              This work is not mantained by the MiSTer project. Please contact the
+              core author for issues and updates.
+
+              (c) Jose Tejada, 2024. Please support this research
+              Patreon: https://patreon.com/jotego
+
+              The author does not endorse or participate in illegal distribution
+              of copyrighted material. This work can be used with compatible
+              software. This software can be homebrew projects or legally
+              obtained memory dumps of compatible games.
+
+              This file license is GNU GPLv2.
+              You can read the whole license file in
+              https://opensource.org/licenses/gpl-2.0.php
+
+-->
+
+<misterromdescription>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
+    <name>Teenage Mutant Ninja Turtles (World 4 Players, version X)</name>
+    <setname>tmnt</setname>
+    <rbf>jttmnt</rbf>
+    <mameversion>0251</mameversion>
+    <year>1989</year>
+    <manufacturer>Konami</manufacturer>
+    <players>4</players>
+    <joystick>8</joystick>
+    <rotation>horizontal</rotation>
+    <region>World</region>
+    <rom index="0" zip="tmnt.zip" md5="None" asm_md5="0cb03fa627e8bd4c0b09618325ee144a">
+        <!--     byte 0: 00 = TMNT
+            01 = MIA
+            02 = Punk Shot -->
+        <part>
+            00 00 00 00 00 00 00 00
+        </part>
+        <!-- maincpu - starts at 0x0 - length 0x60000 (19 bits) -->
+        <interleave output="16">
+            <part name="963-x24.k17" crc="e5cc9067" map="01"/>
+            <part name="963-x23.j17" crc="a9549004" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="963-x22.k15" crc="0a74e277" map="01"/>
+            <part name="963-x21.j15" crc="5789cf92" map="10"/>
+        </interleave>
+        <!-- JTFRAME_BA1_START -->
+        <!-- audiocpu - starts at 0x60000 - length 0x8000 (15 bits) -->
+        <part name="963e20.g13" crc="1692a6d6"/>
+        <!-- PCM_START -->
+        <!-- k007232 - starts at 0x68000 - length 0x20000 (17 bits) -->
+        <part name="963a26.c13" crc="e2ac3063"/>
+        <!-- UPD_START -->
+        <!-- k053260 - starts at 0x88000 -->
+        <!-- upd - starts at 0x88000 - length 0x20000 (17 bits) -->
+        <part name="963a27.d18" crc="2dfd674b"/>
+        <!-- TITLE_START -->
+        <!-- title - starts at 0xA8000 - length 0x80000 (19 bits) -->
+        <part name="963a25.d5" crc="fca078c7"/>
+        <!-- JTFRAME_BA2_START -->
+        <!-- k052109 - starts at 0x128000 - length 0x100000 (20 bits) -->
+        <interleave output="32">
+            <part name="963a28.h27" crc="db4769a8" map="0021"/>
+            <part name="963a29.k27" crc="8069cd2e" map="2100"/>
+        </interleave>
+        <!-- JTFRAME_BA3_START -->
+        <!-- k051960 - starts at 0x228000 - length 0x200000 (21 bits) -->
+        <interleave output="32">
+            <part name="963a15.k4" crc="1f324eed" map="0012"/>
+            <part name="963a17.h4" crc="b5239a44" map="1200"/>
+        </interleave>
+        <interleave output="32">
+            <part name="963a16.k6" crc="d4bd9984" map="0012"/>
+            <part name="963a18.h6" crc="dd51adef" map="1200"/>
+        </interleave>
+        <!-- JTFRAME_PROM_START -->
+        <!-- proms - starts at 0x428000 - length 0x200 (9 bits) -->
+        <part name="963a30.g7" crc="abd82680"/>
+        <part name="963a31.g19" crc="f8004a1c"/>
+        <!-- Total 0x428200 bytes - 4256 kBytes -->
+        <patch offset="0x1076">71 4E 71 4E 71 4E</patch>
+    </rom>
+    <rom index="1">
+        <part>00</part>
+    </rom>
+    <switches page_id="1" page_name="Switches" base="8" default="ff,5e,ff">
+        <!-- DSW1 -->
+        <dip name="Coinage" bits="0,3" ids="5/1,4/3,4/1,3/4,3/2,3/1,2/5,2/3,2/1,1/7,1/6,1/5,1/4,1/3,1/2,1/1"/>
+        <!-- DSW2 -->
+        <dip name="Lives" bits="8,9" ids="5,3,2,1"/>
+        <dip name="Difficulty" bits="13,14" ids="Very Difficult,Difficult,Normal,Easy"/>
+        <dip name="Demo Sounds" bits="15" ids="On,Off"/>
+        <!-- DSW3 -->
+        <dip name="Flip Screen" bits="16" ids="On,Off"/>
+        <dip name="Service Mode" bits="18" ids="On,Off"/>
+    </switches>
+    <buttons names="Jump, Attack,-,Start,Coin,Core credits" default="A,B,Start,Select,-" count="2"/>
+</misterromdescription>

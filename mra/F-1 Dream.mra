@@ -1,0 +1,109 @@
+<!--          FPGA arcade hardware by Jotego
+
+              This core is available for hardware compatible with MiST and MiSTer
+              Other FPGA systems may be supported by the time you read this.
+              This work is not mantained by the MiSTer project. Please contact the
+              core author for issues and updates.
+
+              (c) Jose Tejada, 2024. Please support this research
+              Patreon: https://patreon.com/jotego
+
+              The author does not endorse or participate in illegal distribution
+              of copyrighted material. This work can be used with compatible
+              software. This software can be homebrew projects or legally
+              obtained memory dumps of compatible games.
+
+              This file license is GNU GPLv2.
+              You can read the whole license file in
+              https://opensource.org/licenses/gpl-2.0.php
+
+-->
+
+<misterromdescription>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
+    <name>F-1 Dream</name>
+    <setname>f1dream</setname>
+    <rbf>jttora</rbf>
+    <mameversion>0251</mameversion>
+    <year>1988</year>
+    <manufacturer>Capcom (Romstar license)</manufacturer>
+    <players>2</players>
+    <joystick>8</joystick>
+    <rotation>horizontal</rotation>
+    <region>World</region>
+    <rom index="0" zip="f1dream.zip" md5="None" asm_md5="c2f66b62e2a60145566d4375733ee079">
+        <!--  Header to identify the PCB type
+        Byte 0 = 0 for Tiger Road, 1 for F1-Dream, 2 for Tora e no michi
+ -->
+        <part>
+            01 00 00 00 </part>
+        <!-- maincpu - starts at 0x0 - length 0x40000 (18 bits) -->
+        <interleave output="16">
+            <part name="f1_03.6k" crc="85ebad91" map="01"/>
+            <part name="f1_02.6j" crc="3c2ec697" map="10"/>
+        </interleave>
+        <!-- JTFRAME_BA1_START -->
+        <!-- bgmap - starts at 0x40000 - length 0x8000 (15 bits) -->
+        <interleave output="16">
+            <part name="f1_15.7l" crc="978758b7" map="12"/>
+        </interleave>
+        <!-- SCR_START -->
+        <!-- tiles - starts at 0x48000 - length 0x100000 (20 bits) -->
+        <interleave output="16">
+            <part name="f1_11.2f" crc="4aa49cd7" map="01"/>
+            <part name="f1_12.3f" crc="bc13e43c" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="f1_09.17f" crc="ca622155" map="01"/>
+            <part name="f1_10.1f" crc="f7617ad9" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="f1_13.2h" crc="2a63961e" map="01"/>
+            <part name="f1_14.3h" crc="e33cd438" map="10"/>
+        </interleave>
+        <part repeat="0xA0000"> FF</part>
+        <!-- JTFRAME_BA2_START -->
+        <!-- audiocpu - starts at 0x148000 - length 0x8000 (15 bits) -->
+        <part name="f1_04.12k" crc="4b9a7524"/>
+        <!-- SND2_START -->
+        <!-- sample - starts at 0x150000 - length 0x10000 (16 bits) -->
+        <part repeat="0x10000"> FF</part>
+        <!-- JTFRAME_BA3_START -->
+        <!-- text - starts at 0x160000 - length 0x8000 (15 bits) -->
+        <interleave output="16">
+            <part name="f1_01.10d" crc="361caf00" map="12"/>
+        </interleave>
+        <!-- OBJ_START -->
+        <!-- spritegen - starts at 0x168000 - length 0x80000 (19 bits) -->
+        <interleave output="32">
+            <part name="f1_06.3b" crc="5e54e391" map="0001"/>
+            <part name="f1_05.2b" crc="cdd119fd" map="0010"/>
+            <part name="f1_08.3d" crc="811f2e22" map="0100"/>
+            <part name="f1_07.2d" crc="aa9a1233" map="1000"/>
+        </interleave>
+        <part repeat="0x40000"> FF</part>
+        <!-- JTFRAME_PROM_START -->
+        <!-- proms - starts at 0x1E8000 - length 0x1000 (12 bits) -->
+        <part name="tr.9e" crc="ec80ae36"/>
+        <part repeat="0xF00"> FF</part>
+        <!-- MCU_START -->
+        <!-- mcu - starts at 0x1E9000 - length 0x1000 (12 bits) -->
+        <part name="f1.9j" crc="c8e6075c"/>
+        <!-- Total 0x1EA000 bytes - 1960 kBytes -->
+    </rom>
+    <rom index="1">
+        <part>00</part>
+    </rom>
+    <switches page_id="1" page_name="Switches" base="16" default="ff,bf">
+        <!-- DSW -->
+        <dip name="Coin B" bits="0,2" ids="4/1,3/1,2/1,1/6,1/4,1/3,1/2,1/1"/>
+        <dip name="Coin A" bits="3,5" ids="4/1,3/1,2/1,1/6,1/4,1/3,1/2,1/1"/>
+        <dip name="Service Mode" bits="6" ids="On,Off"/>
+        <dip name="Lives" bits="8,9" ids="7,5,4,3"/>
+        <dip name="F1 Up Point" bits="11,12" ids="20,18,16,12"/>
+        <dip name="Difficulty" bits="13" ids="Difficult,Normal"/>
+        <dip name="Version" bits="14" ids="World,Japan"/>
+        <dip name="Allow Continue" bits="15" ids="No,Yes"/>
+    </switches>
+    <buttons names="Low Gear,High Gear,Start,Coin,Core credits" default="A,B,Start,Select,-" count="2"/>
+</misterromdescription>

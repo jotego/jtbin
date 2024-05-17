@@ -1,0 +1,85 @@
+<!--          FPGA arcade hardware by Jotego
+
+              This core is available for hardware compatible with MiST and MiSTer
+              Other FPGA systems may be supported by the time you read this.
+              This work is not mantained by the MiSTer project. Please contact the
+              core author for issues and updates.
+
+              (c) Jose Tejada, 2024. Please support this research
+              Patreon: https://patreon.com/jotego
+
+              The author does not endorse or participate in illegal distribution
+              of copyrighted material. This work can be used with compatible
+              software. This software can be homebrew projects or legally
+              obtained memory dumps of compatible games.
+
+              This file license is GNU GPLv2.
+              You can read the whole license file in
+              https://opensource.org/licenses/gpl-2.0.php
+
+-->
+
+<misterromdescription>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
+    <name>Super Basketball (version I, encrypted)</name>
+    <setname>sbasketb</setname>
+    <rbf>jtsbaskt</rbf>
+    <mameversion>0251</mameversion>
+    <year>1984</year>
+    <manufacturer>Konami</manufacturer>
+    <players>2</players>
+    <joystick>8</joystick>
+    <rotation>vertical (cw)</rotation>
+    <region>World</region>
+    <rom index="0" zip="sbasketb.zip" md5="None" asm_md5="d24bb7c8ca71011f65a76783a90fb296">
+        <!--  Header to identify the PCB type
+        Byte 0 = 0 for M6809 CPU, 1 for KONAMI-1 CPU
+ -->
+        <part>
+            01 00 00 00 </part>
+        <!-- maincpu - starts at 0x0 - length 0x10000 (16 bits) -->
+        <part repeat="0x6000"> FF</part>
+        <part name="405g05.14j" crc="336dc0ab"/>
+        <part name="405i03.11j" crc="d33b82dd"/>
+        <part name="405i01.9j" crc="1c09cc3f"/>
+        <!-- SND_START -->
+        <!-- audiocpu - starts at 0x10000 - length 0x2000 (13 bits) -->
+        <part name="405e13.7a" crc="1ec7458b"/>
+        <!-- SCR_START -->
+        <!-- tiles - starts at 0x12000 - length 0x4000 (14 bits) -->
+        <part name="405e12.22f" crc="e02c54da"/>
+        <!-- OBJ_START -->
+        <!-- sprites - starts at 0x16000 - length 0xC000 (16 bits) -->
+        <part name="405h06.14g" crc="cfbbff07"/>
+        <part name="405h08.17g" crc="c75901b6"/>
+        <part name="405h10.20g" crc="95bc5942"/>
+        <!-- PCM_START -->
+        <!-- vlm - starts at 0x22000 - length 0x2000 (13 bits) -->
+        <part name="405e15.11f" crc="01bb5ce9"/>
+        <!-- JTFRAME_PROM_START -->
+        <!-- proms - starts at 0x24000 - length 0x500 (11 bits) -->
+        <part name="405e17.5a" crc="b4c36d57"/>
+        <part name="405e16.4a" crc="0b7b03b8"/>
+        <part name="405e18.6a" crc="9e533bad"/>
+        <part name="405e20.19d" crc="8ca6de2f"/>
+        <part name="405e19.16d" crc="e0bc782f"/>
+        <!-- Total 0x24500 bytes - 145 kBytes -->
+    </rom>
+    <!-- Vertical game -->
+    <rom index="1">
+        <part>01</part>
+    </rom>
+    <switches page_id="1" page_name="Switches" base="16" default="ff,68">
+        <!-- DSW1 -->
+        <dip name="Coin A" bits="0,3" ids="Free Play,4/3,4/1,3/4,3/2,3/1,2/5,2/3,2/1,1/7,1/6,1/5,1/4,1/3,1/2,1/1"/>
+        <dip name="Coin B" bits="4,7" ids="Free Play,4/3,4/1,3/4,3/2,3/1,2/5,2/3,2/1,1/7,1/6,1/5,1/4,1/3,1/2,1/1"/>
+        <!-- DSW2 -->
+        <dip name="Game Time" bits="8,9" ids="60,40,50,30"/>
+        <dip name="Cabinet" bits="10" ids="Upright,Cocktail"/>
+        <dip name="Starting Score" bits="11" ids="100-115,70-78"/>
+        <dip name="Ranking" bits="12" ids="Data Remaining,Data Initialized"/>
+        <dip name="Difficulty" bits="13,14" ids="Hardest,Hard,Medium,Easy"/>
+        <dip name="Demo Sounds" bits="15" ids="On,Off"/>
+    </switches>
+    <buttons names="Bounce,Throw,Pass,Start,Coin,Core credits" default="A,B,X,Start,Select,-" count="3"/>
+</misterromdescription>

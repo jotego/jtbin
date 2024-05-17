@@ -1,0 +1,71 @@
+<!--          FPGA arcade hardware by Jotego
+
+              This core is available for hardware compatible with MiST and MiSTer
+              Other FPGA systems may be supported by the time you read this.
+              This work is not mantained by the MiSTer project. Please contact the
+              core author for issues and updates.
+
+              (c) Jose Tejada, 2024. Please support this research
+              Patreon: https://patreon.com/jotego
+
+              The author does not endorse or participate in illegal distribution
+              of copyrighted material. This work can be used with compatible
+              software. This software can be homebrew projects or legally
+              obtained memory dumps of compatible games.
+
+              This file license is GNU GPLv2.
+              You can read the whole license file in
+              https://opensource.org/licenses/gpl-2.0.php
+
+-->
+
+<misterromdescription>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
+    <name>Pang! 3 (Euro 950601)</name>
+    <setname>pang3</setname>
+    <rbf>jtcps1</rbf>
+    <mameversion>0251</mameversion>
+    <year>1995</year>
+    <manufacturer>Mitchell</manufacturer>
+    <players>2</players>
+    <joystick>4</joystick>
+    <rotation>horizontal</rotation>
+    <region>World</region>
+    <rom index="0" zip="pang3.zip" md5="None" asm_md5="e53b10d4f19c2deec4d94c28fcedf066">
+        <part>
+            00 04 80 04 80 05 FF FF
+            FF FF FF FF FF FF FF FF
+            32 FF 00 02 04 06 26 28
+            2A 2C 2E 00 00 30 02 04
+            08 30 14 40 88 73 FF C1
+            FF FF FF FF FF FF FF FF
+            FF FF FF FF FF FF FF FF
+            FF FF FF FF FF FF FF FF
+        </part>
+        <!-- maincpu - starts at 0x0 - length 0x100000 (20 bits) -->
+        <part name="pa3e_17a.11l" crc="a213fa80"/>
+        <part name="pa3e_16a.10l" crc="7169ea67"/>
+        <!-- audiocpu - starts at 0x100000 - length 0x20000 (17 bits) -->
+        <part name="pa3_11.11f" crc="cb1423a2"/>
+        <!-- oki - starts at 0x120000 - length 0x40000 (18 bits) -->
+        <part name="pa3_05.10d" crc="73a10d5d"/>
+        <part name="pa3_06.11d" crc="affa4f82"/>
+        <!-- gfx - starts at 0x160000 - length 0x400000 (22 bits) -->
+        <interleave output="64">
+            <part name="pa3-01m.2c" crc="068a152c" map="00000021" length="0x100000"/>
+            <part name="pa3-07m.2f" crc="3a4a619d" map="00002100" length="0x100000"/>
+            <part name="pa3-01m.2c" crc="068a152c" map="00210000" length="0x100000" offset="0x100000"/>
+            <part name="pa3-07m.2f" crc="3a4a619d" map="21000000" length="0x100000" offset="0x100000"/>
+        </interleave>
+        <!-- Total 0x560000 bytes - 5504 kBytes -->
+    </rom>
+    <nvram index="2" size="128"/>
+    <rom index="1">
+        <part>00</part>
+    </rom>
+    <switches page_id="1" page_name="Switches" base="8" default="ff,ff,ff">
+        <dip name="Freeze" ids="On,Off" bits="23"/>
+        <dip name="PCB type" ids="88617A,89626A" bits="24"/>
+    </switches>
+    <buttons names="Shoot,-,-,-,-,-,Start,Coin,Core credits" default="A,Start,Select,-" count="1"/>
+</misterromdescription>

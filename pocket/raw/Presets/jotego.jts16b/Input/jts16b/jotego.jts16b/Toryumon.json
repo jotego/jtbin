@@ -1,0 +1,17 @@
+{
+	"input":{
+		"magic": "APF_VER_1",
+		"controllers": [
+			{
+				"type": "default",
+				"mappings": [
+					{
+						"id": 0,
+						"name": "Block Turn",
+						"key": "pad_btn_a"
+					}
+				]
+			}
+		]
+	}
+}
