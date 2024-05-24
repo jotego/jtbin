@@ -9,8 +9,7 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "youkaidk2.rom",
-				"md5": "524452a554ef03c5cfc89c10c38b64b4"
+				"filename": "youkaidk2.rom"
 			},
 			{
 				"id": 2,
@@ -19,7 +18,7 @@
 			{
 				"id": 17,
 				"filename": "beta.bin",
-				"md5": "71035230a15ff988e5823bc00a8efc50"
+				"md5": "c6a4be95256a59cbf8cdd01b7c2a6e70"
 			}
 		],
 		"memory_writes": [

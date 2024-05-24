@@ -9,8 +9,7 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "fround.rom",
-				"md5": "0824f8ea07f0f330628fa9373dc13021"
+				"filename": "fround.rom"
 			}
 		],
 		"memory_writes": [

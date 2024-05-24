@@ -9,8 +9,7 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "tokiob.rom",
-				"md5": "fd37a47f72184caf3c60c6187db54788"
+				"filename": "tokiob.rom"
 			}
 		],
 		"memory_writes": [

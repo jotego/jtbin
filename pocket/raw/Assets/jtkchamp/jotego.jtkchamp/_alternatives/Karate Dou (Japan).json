@@ -9,8 +9,7 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "karatedo.rom",
-				"md5": "5f4c4ef4a25eee6df5893aafa5fbdb47"
+				"filename": "karatedo.rom"
 			}
 		],
 		"memory_writes": [

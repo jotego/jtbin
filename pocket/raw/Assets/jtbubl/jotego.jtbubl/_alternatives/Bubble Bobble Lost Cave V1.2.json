@@ -9,8 +9,7 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "bublcave.rom",
-				"md5": "a9fda186c2521d47ad57715e41febab9"
+				"filename": "bublcave.rom"
 			}
 		],
 		"memory_writes": [

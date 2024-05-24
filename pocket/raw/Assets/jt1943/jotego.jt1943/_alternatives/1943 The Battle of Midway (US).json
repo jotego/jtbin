@@ -9,8 +9,7 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "1943ua.rom",
-				"md5": "b30ec11bfb9999acf2b4294d8c5b3db7"
+				"filename": "1943ua.rom"
 			}
 		],
 		"memory_writes": [

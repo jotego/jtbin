@@ -9,8 +9,7 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "dunkshoto.rom",
-				"md5": "38545bde4fe1d03df7b5afcd23f26433"
+				"filename": "dunkshoto.rom"
 			}
 		],
 		"memory_writes": [

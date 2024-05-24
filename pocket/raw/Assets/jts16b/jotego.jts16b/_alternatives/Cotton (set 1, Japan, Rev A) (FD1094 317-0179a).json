@@ -9,8 +9,7 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "cottonja.rom",
-				"md5": "08ca2260697c55b1d31cc79480e0676d"
+				"filename": "cottonja.rom"
 			}
 		],
 		"memory_writes": [

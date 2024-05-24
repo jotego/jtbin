@@ -9,8 +9,7 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "tmht.rom",
-				"md5": "ee4c5a737803a7cb7125d93811bdd6a6"
+				"filename": "tmht.rom"
 			}
 		],
 		"memory_writes": [

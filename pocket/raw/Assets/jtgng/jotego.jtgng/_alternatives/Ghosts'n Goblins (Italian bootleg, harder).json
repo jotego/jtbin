@@ -9,8 +9,7 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "gngblita.rom",
-				"md5": "edf6c8eafa81dd02b607387fbd889322"
+				"filename": "gngblita.rom"
 			}
 		],
 		"memory_writes": [

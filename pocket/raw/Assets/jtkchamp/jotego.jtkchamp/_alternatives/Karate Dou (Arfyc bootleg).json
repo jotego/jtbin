@@ -9,8 +9,7 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "karateda.rom",
-				"md5": "278b40c5a7797bdfd700d59cab41adab"
+				"filename": "karateda.rom"
 			}
 		],
 		"memory_writes": [

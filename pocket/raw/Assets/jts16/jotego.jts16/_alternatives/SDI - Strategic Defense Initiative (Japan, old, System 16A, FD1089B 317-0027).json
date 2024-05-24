@@ -9,8 +9,7 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "sdia.rom",
-				"md5": "f728c6163c6a5a2150820dc62668450a"
+				"filename": "sdia.rom"
 			}
 		],
 		"memory_writes": [

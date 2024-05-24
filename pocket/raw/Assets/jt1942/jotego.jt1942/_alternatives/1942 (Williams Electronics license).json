@@ -9,8 +9,7 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "1942w.rom",
-				"md5": "ce2877f2ac8c9b098f198a97517b0be1"
+				"filename": "1942w.rom"
 			}
 		],
 		"memory_writes": [

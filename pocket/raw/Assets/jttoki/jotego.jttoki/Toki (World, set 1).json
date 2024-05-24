@@ -9,8 +9,7 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "toki.rom",
-				"md5": "ae111807dd42167b8805493a946efe92"
+				"filename": "toki.rom"
 			}
 		],
 		"memory_writes": [

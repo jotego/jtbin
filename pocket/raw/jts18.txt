@@ -1,0 +1,26 @@
+jts18 - Arcade compatible hardware for Pocket FPGA
+Developed by JOTEGO - https://patreon.com/jotego
+
+The following arcade titles are compatible with this core. Generate
+the required .rom file using the mra tool (read below).
+Place the *.rom files in Assets/jts18/common
+
+Bloxeed (Japan) (FD1094 317-0139) --> bloxeed.rom
+Bloxeed (Japan, earlier) (FD1094 317-0139) --> bloxeeda.rom
+Shadow Dancer (World) --> shdancer.rom
+Shadow Dancer (US) --> shdancer1.rom
+Shadow Dancer (Japan) --> shdancerj.rom
+
+
+These files are generated using the mra tool in:
+https://github.com/sebdel/mra-tools-c/tree/master/release
+
+Boogermann's ORCA tool can also be used to generate the files:
+https://github.com/opengateware/tools-orca
+
+Check out the short tutorial in:
+https://github.com/jotego/jtbin/wiki/Analogue-Pocket-Cores
+
+DISCLAIMER: This PocketFPGA core is licensed to be used only
+with legally owned dumps of videogame data. It is also licensed
+to be used with freeware (homebrew) compatible with the platform.

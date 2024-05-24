@@ -9,8 +9,7 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "toryumon.rom",
-				"md5": "1af2f900df45b579cdbd5afab88def89"
+				"filename": "toryumon.rom"
 			}
 		],
 		"memory_writes": [

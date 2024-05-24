@@ -9,8 +9,7 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "renegade.rom",
-				"md5": "2129de6d1efcbc2e10912dbcd3814279"
+				"filename": "renegade.rom"
 			}
 		],
 		"memory_writes": [

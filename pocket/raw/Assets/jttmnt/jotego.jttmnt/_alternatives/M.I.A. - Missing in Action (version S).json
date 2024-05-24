@@ -9,8 +9,7 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "mia2.rom",
-				"md5": "9910372f578c6ab2a3b0dce22c840290"
+				"filename": "mia2.rom"
 			}
 		],
 		"memory_writes": [

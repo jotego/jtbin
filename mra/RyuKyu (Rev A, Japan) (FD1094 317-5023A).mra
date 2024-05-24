@@ -31,7 +31,7 @@
     <joystick>8</joystick>
     <rotation>horizontal</rotation>
     <region>Japan</region>
-    <rom index="0" zip="ryukyu.zip" md5="None" asm_md5="8f2e0276190a2c18150cc7da4a25583f">
+    <rom index="0" zip="ryukyu.zip" md5="None" address="0x30000000" asm_md5="8f2e0276190a2c18150cc7da4a25583f">
         <part>
             00 00 00 00 00 00 00 00
             00 00 00 00 00 00 00 00

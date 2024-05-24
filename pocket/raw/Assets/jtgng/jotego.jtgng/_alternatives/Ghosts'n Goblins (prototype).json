@@ -9,8 +9,7 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "gngprot.rom",
-				"md5": "e3ab071e7609f552f09f2f3bc53fa3e3"
+				"filename": "gngprot.rom"
 			}
 		],
 		"memory_writes": [

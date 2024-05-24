@@ -9,8 +9,7 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "sdi.rom",
-				"md5": "ed4e3c4a952505271874a0076c4089fd"
+				"filename": "sdi.rom"
 			}
 		],
 		"memory_writes": [

@@ -31,7 +31,7 @@
     <joystick>8</joystick>
     <rotation>horizontal</rotation>
     <region>Japan</region>
-    <rom index="0" zip="fpoint1.zip|fpoint.zip" md5="None" asm_md5="104febb82ea083d44525f317992142d3">
+    <rom index="0" zip="fpoint1.zip|fpoint.zip" md5="None" address="0x30000000" asm_md5="104febb82ea083d44525f317992142d3">
         <part>
             00 00 00 00 00 00 00 00
             00 00 00 00 00 00 00 00

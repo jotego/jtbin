@@ -9,8 +9,7 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "higemaru.rom",
-				"md5": "da45a9005c48d673d1d0fb1d2bc7c746"
+				"filename": "higemaru.rom"
 			}
 		],
 		"memory_writes": [

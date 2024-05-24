@@ -9,8 +9,7 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "bodyslam.rom",
-				"md5": "95c7c8e42469e939eb64e7c9008b7972"
+				"filename": "bodyslam.rom"
 			}
 		],
 		"memory_writes": [

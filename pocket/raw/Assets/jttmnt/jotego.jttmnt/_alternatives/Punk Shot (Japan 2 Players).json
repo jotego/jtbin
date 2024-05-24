@@ -9,8 +9,7 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "punkshotj.rom",
-				"md5": "aa6a21f0418fbbd1b4845256937e2a21"
+				"filename": "punkshotj.rom"
 			}
 		],
 		"memory_writes": [

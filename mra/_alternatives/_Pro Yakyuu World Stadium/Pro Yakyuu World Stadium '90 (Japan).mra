@@ -31,8 +31,8 @@
     <joystick>8</joystick>
     <rotation>horizontal</rotation>
     <region>World</region>
-    <rom index="0" zip="ws90.zip|ws.zip" md5="None" asm_md5="ac7d6edb05765bceb3af99c67f2fd75a">
-        <!-- Byte 0: protection type
+    <rom index="0" zip="ws90.zip|ws.zip" md5="None" address="0x30000000" asm_md5="d1cacce6939feb7ce547fcb490b26575">
+        <!-- Byte 0: bit 0-1: protection type, bit 4-5: control type (0 - normal, 1 - faceoff 4p, 2 - berabohm, 3 - quester), bit 6: 64/128kB Program ROMs
 Byte 1: key ID
 Byte 2: addr for key ID
 Byte 3: addr for RNG
@@ -46,13 +46,16 @@ Byte 7: addr for upper nibble read
         </part>
         <!-- user1 - starts at 0x0 - length 0x3A0000 (22 bits) -->
         <part name="ws1_prg0.bin" crc="b0234298"/>
-        <part repeat="0x70000"> FF</part>
+        <part name="ws1_prg0.bin" crc="b0234298"/>
+        <part repeat="0x60000"> FF</part>
         <part name="w91_prg1.bin" crc="7ad8768f"/>
-        <part repeat="0x70000"> FF</part>
+        <part name="w91_prg1.bin" crc="7ad8768f"/>
+        <part repeat="0x60000"> FF</part>
         <part name="w901prg2.bin" crc="b9e98e2f"/>
-        <part repeat="0x270000"> FF</part>
+        <part name="w901prg2.bin" crc="b9e98e2f"/>
+        <part repeat="0x260000"> FF</part>
         <part name="w901prg7.bin" crc="37ae1b25"/>
-        <part repeat="0x10000"> FF</part>
+        <part name="w901prg7.bin" crc="37ae1b25"/>
         <!-- JTFRAME_BA1_START -->
         <!-- audiocpu - starts at 0x3A0000 - length 0x20000 (17 bits) -->
         <part name="w91_snd0.bin" crc="52b84d5a"/>
@@ -88,8 +91,8 @@ Byte 7: addr for upper nibble read
         <part name="cus64-64a1.mcu" crc="ffb5c0bd"/>
         <!-- Total 0x691000 bytes - 6724 kBytes -->
     </rom>
-    <rom index="17" zip="jtbeta.zip" md5="None" asm_md5="71035230a15ff988e5823bc00a8efc50">
-        <part name="beta.bin" crc="f1b63018"/>
+    <rom index="17" zip="jtbeta.zip" md5="None" asm_md5="c6a4be95256a59cbf8cdd01b7c2a6e70">
+        <part name="beta.bin" crc="330da304"/>
     </rom>
     <nvram index="2" size="63552"/>
     <rom index="1">
@@ -102,5 +105,5 @@ Byte 7: addr for upper nibble read
         <dip name="Freeze" bits="7" ids="On,Off"/>
         <dip name="*Sound fix" ids="On,Off" bits="8"/>
     </switches>
-    <buttons names="Batting/Throw,Base Running/Checkmate,Timeout,Start,Coin,Core credits" default="A,B,X,Start,Select,-" count="3"/>
+    <buttons names="Batting/Throw,Base Running/Checkmate,Timeout,-,-,-,Start,Coin,Core credits" default="A,B,X,Start,Select,-" count="3"/>
 </misterromdescription>

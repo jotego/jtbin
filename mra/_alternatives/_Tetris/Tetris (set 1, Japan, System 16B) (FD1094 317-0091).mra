@@ -31,7 +31,7 @@
     <joystick>5 (half8)</joystick>
     <rotation>horizontal</rotation>
     <region>Japan</region>
-    <rom index="0" zip="tetris1.zip|tetris.zip" md5="None" asm_md5="e9cca35f63ff528a07057065e30c5d0d">
+    <rom index="0" zip="tetris1.zip|tetris.zip" md5="None" address="0x30000000" asm_md5="e9cca35f63ff528a07057065e30c5d0d">
         <part>
             00 00 00 00 00 00 00 00
             00 00 00 00 00 00 00 00

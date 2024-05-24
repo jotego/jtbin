@@ -1,0 +1,42 @@
+{
+	"input":{
+		"magic": "APF_VER_1",
+		"controllers": [
+			{
+				"type": "default",
+				"mappings": [
+					{
+						"id": 0,
+						"name": "Small Jump",
+						"key": "pad_btn_a"
+					},
+					{
+						"id": 1,
+						"name": "Mid Jump",
+						"key": "pad_btn_b"
+					},
+					{
+						"id": 2,
+						"name": "High Jump",
+						"key": "pad_btn_x"
+					},
+					{
+						"id": 3,
+						"name": "Weak Attack",
+						"key": "pad_btn_y"
+					},
+					{
+						"id": 4,
+						"name": "Mid Attack",
+						"key": "pad_trig_l"
+					},
+					{
+						"id": 5,
+						"name": "Strong Attack",
+						"key": "pad_trig_r"
+					}
+				]
+			}
+		]
+	}
+}

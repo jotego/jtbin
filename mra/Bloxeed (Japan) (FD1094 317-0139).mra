@@ -21,17 +21,17 @@
 
 <misterromdescription>
     <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
-    <name>Pontoon (FD1094 317-?)</name>
-    <setname>pontoona</setname>
+    <name>Bloxeed (Japan) (FD1094 317-0139)</name>
+    <setname>bloxeed</setname>
     <rbf>jts18</rbf>
     <mameversion>0251</mameversion>
     <year>1989</year>
-    <manufacturer>Sega</manufacturer>
+    <manufacturer>Sega / Elorg</manufacturer>
     <players>2</players>
     <joystick>8</joystick>
     <rotation>horizontal</rotation>
     <region>World</region>
-    <rom index="0" zip="pontoona.zip|pontoon.zip" md5="None" asm_md5="1d60e25d25ace373db52917a52838a57">
+    <rom index="0" zip="bloxeed.zip" md5="None" address="0x30000000" asm_md5="e0e9f4b77c0238dc10ead8337d5473b4">
         <part>
             00 00 00 00 00 00 00 00
             00 00 00 00 00 00 00 00
@@ -40,55 +40,55 @@
         </part>
         <!-- maincpu - starts at 0x0 - length 0x200000 (21 bits) -->
         <interleave output="16">
-            <part name="epr-12827.a5" crc="8dfe7859" map="01"/>
-            <part name="epr-12828.a6" crc="f78e7e25" map="10"/>
+            <part name="epr-12910.a5" crc="dd1bc3bf" map="01"/>
+            <part name="epr-12911.a6" crc="a481581a" map="10"/>
         </interleave>
-        <part repeat="0x180000"> FF</part>
+        <part repeat="0x1C0000"> FF</part>
         <!-- JTFRAME_BA1_START -->
         <!-- soundcpu - starts at 0x200000 - length 0x200000 (21 bits) -->
-        <part name="epr-12826.a4" crc="dc167e51"/>
+        <part name="epr-12888.a4" crc="6f2fc63c"/>
         <part repeat="0x1E0000"> FF</part>
         <!-- JTFRAME_BA2_START -->
         <!-- tiles - starts at 0x400000 - length 0x400000 (22 bits) -->
         <interleave output="32">
-            <part name="epr-12817.b1" crc="e34834a9" map="0001"/>
-            <part name="epr-12818.b2" crc="79a55a3f" map="0010"/>
-            <part name="epr-12819.b3" crc="05cc079a" map="0100"/>
-            <part name="epr-12819.b3" crc="05cc079a" map="1000"/>
+            <part name="opr-12884.b1" crc="e024aa33" map="0001"/>
+            <part name="opr-12885.b2" crc="8041b814" map="0010"/>
+            <part name="opr-12886.b3" crc="de32285e" map="0100"/>
+            <part name="opr-12886.b3" crc="de32285e" map="1000"/>
         </interleave>
-        <part repeat="0x300000"> FF</part>
+        <part repeat="0x3C0000"> FF</part>
         <!-- JTFRAME_BA3_START -->
         <!-- sprites - starts at 0x800000 - length 0x800000 (23 bits) -->
         <interleave output="16">
-            <part name="epr-12823.b11" crc="a4c520a9" map="01"/>
-            <part name="epr-12832.a11" crc="225766e8" map="10"/>
+            <part name="opr-12887.b11" crc="f0c0f49d" map="01"/>
+            <part name="opr-12891.a11" crc="90d31a8c" map="10"/>
         </interleave>
-        <part repeat="0x780000"> FF</part>
+        <part repeat="0x7E0000"> FF</part>
         <!-- JTFRAME_PROM_START -->
         <!-- maincpu:key - starts at 0x1000000 - length 0x2000 (13 bits) -->
-        <!-- Skipping region maincpu:key because there is no dump known -->
-        <part repeat="0x2000"> FF</part>
+        <part name="317-0139.key" crc="9aae84cb"/>
         <!-- MCU_START -->
         <!-- mcu - starts at 0x1002000 -->
         <!-- Total 0x1002000 bytes - 16392 kBytes -->
     </rom>
-    <rom index="17" zip="jtbeta.zip" md5="None" asm_md5="71035230a15ff988e5823bc00a8efc50">
-        <part name="beta.bin" crc="f1b63018"/>
+    <rom index="17" zip="jtbeta.zip" md5="None" asm_md5="c6a4be95256a59cbf8cdd01b7c2a6e70">
+        <part name="beta.bin" crc="330da304"/>
     </rom>
     <nvram index="2" size="4096"/>
     <rom index="1">
         <part>00</part>
     </rom>
-    <switches page_id="1" page_name="Switches" base="16" default="ff,fd">
+    <switches page_id="1" page_name="Switches" base="16" default="ff,7d">
         <!-- COINAGE -->
         <dip name="Coin A" bits="0,3" ids="Free Play or 1/1,1/1 2/3,1/1 4/5,1/1 5/6,2/1 4/3,2/1 5/3 6/4,2/3,4/1,3/1,2/1,1/6,1/5,1/4,1/3,1/2,1/1"/>
         <dip name="Coin B" bits="4,7" ids="Free Play or 1/1,1/1 2/3,1/1 4/5,1/1 5/6,2/1 4/3,2/1 5/3 6/4,2/3,4/1,3/1,2/1,1/6,1/5,1/4,1/3,1/2,1/1"/>
         <!-- DSW -->
-        <dip name="2 Credits to Start" bits="8" ids="On,Off"/>
+        <dip name="Allow VS Mode" bits="8" ids="No,Yes"/>
         <dip name="Demo Sounds" bits="9" ids="On,Off"/>
-        <dip name="Lives" bits="10,11" ids="2,5,4,3"/>
+        <dip name="Lines Per Level" bits="10,11" ids="2,2,4,3"/>
         <dip name="Difficulty" bits="12,13" ids="Hardest,Hard,Easy,Normal"/>
-        <dip name="Time Adjust" bits="14,15" ids="2.20,2.40,3.30,3.00"/>
+        <dip name="Unknown" bits="14" ids="On,Off"/>
+        <dip name="High Speed Mode" bits="15" ids="Off,On"/>
     </switches>
-    <buttons names="button 1,button 2,-,-,Start,Coin,Core credits" default="A,B,Start,Select,-" count="2"/>
+    <buttons names="Change Direction Block,-,-,-,Start,Coin,Core credits" default="A,Start,Select,-" count="1"/>
 </misterromdescription>

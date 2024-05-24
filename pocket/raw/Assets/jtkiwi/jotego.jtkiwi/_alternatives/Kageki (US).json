@@ -9,8 +9,7 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "kagekiu.rom",
-				"md5": "23f9789cf08cb291937eb7673fcaaba2"
+				"filename": "kagekiu.rom"
 			}
 		],
 		"memory_writes": [

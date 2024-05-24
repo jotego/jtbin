@@ -9,8 +9,7 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "bublbobl.rom",
-				"md5": "fcbcd7500f6a7421e827373cfa8890d3"
+				"filename": "bublbobl.rom"
 			}
 		],
 		"memory_writes": [

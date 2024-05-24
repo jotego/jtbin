@@ -1,0 +1,113 @@
+<!--          FPGA arcade hardware by Jotego
+
+              This core is available for hardware compatible with MiST and MiSTer
+              Other FPGA systems may be supported by the time you read this.
+              This work is not mantained by the MiSTer project. Please contact the
+              core author for issues and updates.
+
+              (c) Jose Tejada, 2024. Please support this research
+              Patreon: https://patreon.com/jotego
+
+              The author does not endorse or participate in illegal distribution
+              of copyrighted material. This work can be used with compatible
+              software. This software can be homebrew projects or legally
+              obtained memory dumps of compatible games.
+
+              This file license is GNU GPLv2.
+              You can read the whole license file in
+              https://opensource.org/licenses/gpl-2.0.php
+
+-->
+
+<misterromdescription>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
+    <name>Chou Zetsurinjin Berabowman (Japan, Rev B)</name>
+    <setname>berabohmb</setname>
+    <rbf>jtshouse</rbf>
+    <mameversion>0251</mameversion>
+    <year>1988</year>
+    <manufacturer>Namco</manufacturer>
+    <players>2</players>
+    <joystick>8</joystick>
+    <rotation>horizontal</rotation>
+    <region>World</region>
+    <rom index="0" zip="berabohmb.zip|berabohm.zip" md5="None" address="0x30000000" asm_md5="45886b1dd0844e481d65affaa6f96783">
+        <!-- Byte 0: bit 0-1: protection type, bit 4-5: control type (0 - normal, 1 - faceoff 4p, 2 - berabohm, 3 - quester), bit 6: 64/128kB Program ROMs
+Byte 1: key ID
+Byte 2: addr for key ID
+Byte 3: addr for RNG
+Byte 4: addr for nibble swap data write
+Byte 5: addr for nibble swap read
+Byte 6: addr for lower nibble read
+Byte 7: addr for upper nibble read
+ -->
+        <part>
+            20 00 00 00 00 00 00 00
+        </part>
+        <!-- user1 - starts at 0x0 - length 0x3A0000 (22 bits) -->
+        <part name="bm1_p0.bin" crc="b57ff8c1" length="0x20000"/>
+        <part repeat="0x60000"> FF</part>
+        <part name="bm1_p1.bin" crc="b15f6407" length="0x20000"/>
+        <part repeat="0x160000"> FF</part>
+        <part name="bm1_p4.bin" crc="f6cfcb8c" length="0x20000"/>
+        <part repeat="0xE0000"> FF</part>
+        <part name="bm1-p6.bin" crc="a51b69a5"/>
+        <part name="bm1-p6.bin" crc="a51b69a5"/>
+        <part repeat="0x60000"> FF</part>
+        <part name="bm1_p7b.bin" crc="e0c36ddd" length="0x20000"/>
+        <!-- JTFRAME_BA1_START -->
+        <!-- audiocpu - starts at 0x3A0000 - length 0x20000 (17 bits) -->
+        <part name="bm1_s0.bin" crc="d5d53cb1"/>
+        <part repeat="0x10000"> FF</part>
+        <!-- PCM_START -->
+        <!-- voice - starts at 0x3C0000 - length 0xB0000 (20 bits) -->
+        <part name="bm1_v0.bin" crc="4e40d0ca"/>
+        <part repeat="0x10000"> FF</part>
+        <part name="bm_voi-1.bin" crc="be9ce0a8"/>
+        <part name="bm1_v2.bin" crc="41225d04"/>
+        <part repeat="0x60000"> FF</part>
+        <!-- JTFRAME_BA2_START -->
+        <!-- c123tmap:mask - starts at 0x470000 - length 0x20000 (17 bits) -->
+        <part name="bm_chr-8.bin" crc="92860e95"/>
+        <!-- SCR_START -->
+        <!-- c123tmap - starts at 0x490000 - length 0x100000 (20 bits) -->
+        <part name="bm_chr-0.bin" crc="eda1d92e"/>
+        <part name="bm_chr-1.bin" crc="8ae1891e"/>
+        <part name="bm_chr-2.bin" crc="774cdf4e"/>
+        <part name="bm_chr-3.bin" crc="6d81e6c9"/>
+        <part name="bm_chr-4.bin" crc="f4597683"/>
+        <part name="bm_chr-5.bin" crc="0e0abde0"/>
+        <part name="bm_chr-6.bin" crc="4a61f08c"/>
+        <part repeat="0x20000"> FF</part>
+        <!-- JTFRAME_BA3_START -->
+        <!-- sprite - starts at 0x590000 - length 0x100000 (20 bits) -->
+        <part name="bm_obj-0.bin" crc="15724b94"/>
+        <part name="bm_obj-1.bin" crc="5d21f962"/>
+        <part name="bm_obj-2.bin" crc="5d48e924"/>
+        <part name="bm_obj-3.bin" crc="cbe56b7f"/>
+        <part name="bm_obj-4.bin" crc="76dcc24c"/>
+        <part name="bm_obj-5.bin" crc="fe70201d"/>
+        <part repeat="0x20000"> FF</part>
+        <part name="bm_obj-7.bin" crc="377c81ed"/>
+        <!-- JTFRAME_PROM_START -->
+        <!-- mcu - starts at 0x690000 - length 0x1000 (12 bits) -->
+        <part name="cus64-64a1.mcu" crc="ffb5c0bd"/>
+        <!-- Total 0x691000 bytes - 6724 kBytes -->
+    </rom>
+    <rom index="17" zip="jtbeta.zip" md5="None" asm_md5="c6a4be95256a59cbf8cdd01b7c2a6e70">
+        <part name="beta.bin" crc="330da304"/>
+    </rom>
+    <nvram index="2" size="63552"/>
+    <rom index="1">
+        <part>00</part>
+    </rom>
+    <switches page_id="1" page_name="Switches" base="16" default="ff">
+        <!-- DIPSW -->
+        <dip name="Service Mode" bits="0" ids="On,Off"/>
+        <dip name="Invulnerability" bits="2" ids="On,Off"/>
+        <dip name="Allow Continue" bits="3" ids="Off,On"/>
+        <dip name="Freeze" bits="7" ids="On,Off"/>
+        <dip name="*Sound fix" ids="On,Off" bits="8"/>
+    </switches>
+    <buttons names="Small Jump,Mid Jump,High Jump,Weak Attack,Mid Attack,Strong Attack,Start,Coin,Core credits" default="A,B,X,Y,L,R,Start,Select,-" count="6"/>
+</misterromdescription>

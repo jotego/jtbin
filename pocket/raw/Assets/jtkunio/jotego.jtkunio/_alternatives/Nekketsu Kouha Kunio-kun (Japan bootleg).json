@@ -9,8 +9,7 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "kuniokunb.rom",
-				"md5": "528dc7d21a8640bc053a980bd8d253f8"
+				"filename": "kuniokunb.rom"
 			}
 		],
 		"memory_writes": [

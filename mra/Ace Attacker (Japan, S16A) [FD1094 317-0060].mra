@@ -31,7 +31,7 @@
     <joystick/>
     <rotation>vertical (ccw)</rotation>
     <region>World</region>
-    <rom index="0" zip="aceattaca.zip|aceattac.zip" md5="None" asm_md5="4e64a33047bf25de947b255977655508">
+    <rom index="0" zip="aceattaca.zip|aceattac.zip" md5="None" address="0x30000000" asm_md5="4e64a33047bf25de947b255977655508">
         <part>
             00 00 00 00 00 00 00 00
             00 00 00 00 00 00 00 00

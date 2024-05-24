@@ -9,8 +9,7 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "exctleag.rom",
-				"md5": "ed9bf39db556e7156a6f6bf7179ea557"
+				"filename": "exctleag.rom"
 			}
 		],
 		"memory_writes": [

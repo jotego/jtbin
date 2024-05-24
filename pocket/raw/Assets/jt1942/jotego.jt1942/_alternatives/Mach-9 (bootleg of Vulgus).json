@@ -9,8 +9,7 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "mach9.rom",
-				"md5": "d470962fb542b92432b24e558f7d3374"
+				"filename": "mach9.rom"
 			}
 		],
 		"memory_writes": [

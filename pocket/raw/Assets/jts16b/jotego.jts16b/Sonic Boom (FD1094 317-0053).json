@@ -9,8 +9,7 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "sonicbom.rom",
-				"md5": "cf53c5348b3217efeefadfb5612757fa"
+				"filename": "sonicbom.rom"
 			}
 		],
 		"memory_writes": [

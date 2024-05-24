@@ -9,8 +9,7 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "tnzsop.rom",
-				"md5": "8f0223d475a84ce98ccf5c8a0a3d0905"
+				"filename": "tnzsop.rom"
 			}
 		],
 		"memory_writes": [

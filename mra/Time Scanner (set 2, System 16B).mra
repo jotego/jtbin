@@ -31,7 +31,7 @@
     <joystick>5 (half8)</joystick>
     <rotation>vertical (ccw)</rotation>
     <region>World</region>
-    <rom index="0" zip="timescan.zip" md5="None" asm_md5="9096991c6f3aab9fe5a4fffc38d927be">
+    <rom index="0" zip="timescan.zip" md5="None" address="0x30000000" asm_md5="9096991c6f3aab9fe5a4fffc38d927be">
         <part>
             00 00 00 00 00 00 00 00
             00 00 00 00 00 00 00 00

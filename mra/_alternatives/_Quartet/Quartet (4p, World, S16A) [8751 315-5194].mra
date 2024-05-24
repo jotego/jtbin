@@ -31,7 +31,7 @@
     <joystick>8</joystick>
     <rotation>horizontal</rotation>
     <region>World</region>
-    <rom index="0" zip="quarteta.zip|quartet.zip" md5="None" asm_md5="5f1a0fbbfd7bc9929ef3f8c79e31cdcd">
+    <rom index="0" zip="quarteta.zip|quartet.zip" md5="None" address="0x30000000" asm_md5="5f1a0fbbfd7bc9929ef3f8c79e31cdcd">
         <part>
             00 00 00 00 00 00 00 00
             00 00 00 00 00 00 00 00

@@ -9,8 +9,7 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "pacmania.rom",
-				"md5": "6e9025aeeaa7f8403dbeeaa4435b72c8"
+				"filename": "pacmania.rom"
 			},
 			{
 				"id": 2,
@@ -19,7 +18,7 @@
 			{
 				"id": 17,
 				"filename": "beta.bin",
-				"md5": "71035230a15ff988e5823bc00a8efc50"
+				"md5": "c6a4be95256a59cbf8cdd01b7c2a6e70"
 			}
 		],
 		"memory_writes": [

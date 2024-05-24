@@ -31,7 +31,7 @@
     <joystick>8</joystick>
     <rotation>vertical (ccw)</rotation>
     <region>World</region>
-    <rom index="0" zip="afighterg.zip|afighter.zip" md5="None" asm_md5="c4dccd35f3bbbbbc23e07a298d0eeceb">
+    <rom index="0" zip="afighterg.zip|afighter.zip" md5="None" address="0x30000000" asm_md5="c4dccd35f3bbbbbc23e07a298d0eeceb">
         <part>
             00 00 00 00 00 00 00 00
             00 00 00 00 00 00 00 00

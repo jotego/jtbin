@@ -9,8 +9,7 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "tmntua.rom",
-				"md5": "a8b52cb18e4af6a8604d055151504bb3"
+				"filename": "tmntua.rom"
 			}
 		],
 		"memory_writes": [

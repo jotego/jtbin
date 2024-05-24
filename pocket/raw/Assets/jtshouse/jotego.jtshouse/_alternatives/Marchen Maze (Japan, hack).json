@@ -9,8 +9,7 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "mmaze2.rom",
-				"md5": "8861c9a297fb818aa5c26969a3b572d6"
+				"filename": "mmaze2.rom"
 			},
 			{
 				"id": 2,
@@ -19,7 +18,7 @@
 			{
 				"id": 17,
 				"filename": "beta.bin",
-				"md5": "71035230a15ff988e5823bc00a8efc50"
+				"md5": "c6a4be95256a59cbf8cdd01b7c2a6e70"
 			}
 		],
 		"memory_writes": [

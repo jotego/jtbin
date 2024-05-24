@@ -9,8 +9,7 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "vigilantg.rom",
-				"md5": "8ef8671a0b58b008995a29d539586c32"
+				"filename": "vigilantg.rom"
 			}
 		],
 		"memory_writes": [

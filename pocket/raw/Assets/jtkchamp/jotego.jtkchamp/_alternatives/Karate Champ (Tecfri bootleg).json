@@ -9,8 +9,7 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "kchamptec.rom",
-				"md5": "c38508385b3035f9bd237a931923adb1"
+				"filename": "kchamptec.rom"
 			}
 		],
 		"memory_writes": [

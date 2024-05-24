@@ -9,8 +9,7 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "cotton.rom",
-				"md5": "26cd2fc0aac8ec28f715afe419a04ac6"
+				"filename": "cotton.rom"
 			}
 		],
 		"memory_writes": [

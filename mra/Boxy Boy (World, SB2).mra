@@ -31,8 +31,8 @@
     <joystick>8</joystick>
     <rotation>horizontal</rotation>
     <region>World</region>
-    <rom index="0" zip="boxyboy.zip" md5="None" asm_md5="9ad7c2c556b392dbc6c17a9df695636e">
-        <!-- Byte 0: protection type
+    <rom index="0" zip="boxyboy.zip" md5="None" address="0x30000000" asm_md5="a5c916ffcf1235f54548f0ffc08cc95c">
+        <!-- Byte 0: bit 0-1: protection type, bit 4-5: control type (0 - normal, 1 - faceoff 4p, 2 - berabohm, 3 - quester), bit 6: 64/128kB Program ROMs
 Byte 1: key ID
 Byte 2: addr for key ID
 Byte 3: addr for RNG
@@ -45,12 +45,12 @@ Byte 7: addr for upper nibble read
             03 37 02 03 00 FF 04 FF
         </part>
         <!-- user1 - starts at 0x0 - length 0x3A0000 (22 bits) -->
-        <part name="sb1_prg0.bin" crc="8af8cb73"/>
+        <part name="sb1_prg0.bin" crc="8af8cb73" length="0x20000"/>
         <part repeat="0x60000"> FF</part>
-        <part name="sb1_prg1.bin" crc="5d1fdd94"/>
+        <part name="sb1_prg1.bin" crc="5d1fdd94" length="0x20000"/>
         <part repeat="0x2E0000"> FF</part>
         <part name="sb2_prg7.bin" crc="f570301b"/>
-        <part repeat="0x10000"> FF</part>
+        <part name="sb2_prg7.bin" crc="f570301b"/>
         <!-- JTFRAME_BA1_START -->
         <!-- audiocpu - starts at 0x3A0000 - length 0x20000 (17 bits) -->
         <part name="sb1_snd0.bin" crc="bf46a106"/>
@@ -79,8 +79,8 @@ Byte 7: addr for upper nibble read
         <part name="cus64-64a1.mcu" crc="ffb5c0bd"/>
         <!-- Total 0x691000 bytes - 6724 kBytes -->
     </rom>
-    <rom index="17" zip="jtbeta.zip" md5="None" asm_md5="71035230a15ff988e5823bc00a8efc50">
-        <part name="beta.bin" crc="f1b63018"/>
+    <rom index="17" zip="jtbeta.zip" md5="None" asm_md5="c6a4be95256a59cbf8cdd01b7c2a6e70">
+        <part name="beta.bin" crc="330da304"/>
     </rom>
     <nvram index="2" size="63552"/>
     <rom index="1">
@@ -92,5 +92,5 @@ Byte 7: addr for upper nibble read
         <dip name="Freeze" bits="1" ids="On,Off"/>
         <dip name="*Sound fix" ids="On,Off" bits="8"/>
     </switches>
-    <buttons names="Try Again,Takeback,-,Start,Coin,Core credits" default="A,B,Start,Select,-" count="2"/>
+    <buttons names="Try Again,Takeback,-,-,-,-,Start,Coin,Core credits" default="A,B,Start,Select,-" count="2"/>
 </misterromdescription>

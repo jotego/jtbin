@@ -9,8 +9,7 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "mx5000.rom",
-				"md5": "51dfe5deef23094f7b7a4d85e983ac5e"
+				"filename": "mx5000.rom"
 			}
 		],
 		"memory_writes": [

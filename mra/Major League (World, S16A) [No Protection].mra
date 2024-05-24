@@ -31,7 +31,7 @@
     <joystick/>
     <rotation>vertical (ccw)</rotation>
     <region>World</region>
-    <rom index="0" zip="mjleague.zip" md5="None" asm_md5="105cf9008e7a85a1cc33f6386a793f7e">
+    <rom index="0" zip="mjleague.zip" md5="None" address="0x30000000" asm_md5="105cf9008e7a85a1cc33f6386a793f7e">
         <part>
             00 00 00 00 00 00 00 00
             00 00 00 00 00 00 00 00

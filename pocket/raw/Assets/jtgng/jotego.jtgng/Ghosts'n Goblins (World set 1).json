@@ -9,8 +9,7 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "gng.rom",
-				"md5": "314bf8a2179fea0b42b1e675093d01b7"
+				"filename": "gng.rom"
 			}
 		],
 		"memory_writes": [

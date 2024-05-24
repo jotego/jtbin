@@ -9,8 +9,7 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "tmnt2po.rom",
-				"md5": "1b914ef0a15fbc34773a69236885181e"
+				"filename": "tmnt2po.rom"
 			}
 		],
 		"memory_writes": [

@@ -9,8 +9,7 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "mvpj.rom",
-				"md5": "cfe9f4ef18d1a092db54a550f0078e20"
+				"filename": "mvpj.rom"
 			}
 		],
 		"memory_writes": [

@@ -31,7 +31,7 @@
     <joystick>8</joystick>
     <rotation>horizontal</rotation>
     <region>World</region>
-    <rom index="0" zip="fantzn2x.zip" md5="None" asm_md5="ac119bf42d19e581a31ecbf3e60418fc">
+    <rom index="0" zip="fantzn2x.zip" md5="None" address="0x30000000" asm_md5="ac119bf42d19e581a31ecbf3e60418fc">
         <part>
             00 00 00 00 00 00 00 00
             00 00 00 00 00 00 00 00
@@ -89,8 +89,8 @@
             <part name="fz2.b11" crc="da8a95dc" map="10"/>
         </interleave>
         <part repeat="0x80000"> FF</part>
-        <!-- JTFRAME_PROM_START -->
         <!-- MCU_START -->
+        <!-- JTFRAME_PROM_START -->
         <!-- mcu - starts at 0x440000 - length 0x2000 (13 bits) -->
         <part repeat="0x1000"> FF</part>
         <part repeat="0x1000"> FF</part>

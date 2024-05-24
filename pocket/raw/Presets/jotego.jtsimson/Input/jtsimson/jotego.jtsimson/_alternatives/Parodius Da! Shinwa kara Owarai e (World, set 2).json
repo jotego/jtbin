@@ -7,17 +7,17 @@
 				"mappings": [
 					{
 						"id": 0,
-						"name": "shoot",
+						"name": "Power-up",
 						"key": "pad_btn_a"
 					},
 					{
 						"id": 1,
-						"name": "missile/bell",
+						"name": "Shoot",
 						"key": "pad_btn_b"
 					},
 					{
 						"id": 2,
-						"name": "power-up",
+						"name": "Missile/Bell",
 						"key": "pad_btn_x"
 					}
 				]

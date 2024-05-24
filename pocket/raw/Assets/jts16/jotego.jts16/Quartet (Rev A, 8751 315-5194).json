@@ -9,8 +9,7 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "quartet.rom",
-				"md5": "e050e9908f4a2f31af39064094d03f93"
+				"filename": "quartet.rom"
 			}
 		],
 		"memory_writes": [

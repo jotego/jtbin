@@ -9,8 +9,7 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "sinvasn.rom",
-				"md5": "e87eba48664693b5d77e293a5cf91a3c"
+				"filename": "sinvasn.rom"
 			}
 		],
 		"memory_writes": [

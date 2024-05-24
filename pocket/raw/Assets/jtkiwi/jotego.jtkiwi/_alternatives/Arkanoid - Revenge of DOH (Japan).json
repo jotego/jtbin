@@ -9,8 +9,7 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "arknoid2j.rom",
-				"md5": "3b1b71635490e9763db799bad848b4f9"
+				"filename": "arknoid2j.rom"
 			}
 		],
 		"memory_writes": [

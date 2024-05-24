@@ -31,7 +31,7 @@
     <joystick/>
     <rotation>horizontal</rotation>
     <region>World</region>
-    <rom index="0" zip="sjryuko.zip" md5="None" asm_md5="d796598dc8a8e8d5b5315bf1358051fa">
+    <rom index="0" zip="sjryuko.zip" md5="None" address="0x30000000" asm_md5="d796598dc8a8e8d5b5315bf1358051fa">
         <part>
             00 00 00 00 00 00 00 00
             00 00 00 00 00 00 00 00
@@ -88,8 +88,8 @@
             <part name="epr-12239-30.b8" crc="91f70c8b" map="10"/>
         </interleave>
         <part repeat="0x180000"> FF</part>
-        <!-- MCU_START -->
         <!-- JTFRAME_PROM_START -->
+        <!-- MCU_START -->
         <!-- mcu - starts at 0x440000 - length 0x2000 (13 bits) -->
         <part repeat="0x1000"> FF</part>
         <part repeat="0x1000"> FF</part>

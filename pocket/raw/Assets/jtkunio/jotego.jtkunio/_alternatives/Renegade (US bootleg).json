@@ -9,8 +9,7 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "renegadeb.rom",
-				"md5": "9a8390b8c1ce1b3ab5b50383140c67af"
+				"filename": "renegadeb.rom"
 			}
 		],
 		"memory_writes": [

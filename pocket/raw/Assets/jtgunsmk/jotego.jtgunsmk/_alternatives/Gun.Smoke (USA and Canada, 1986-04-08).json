@@ -9,8 +9,7 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "gunsmokeu.rom",
-				"md5": "030c5381e2e14eeac53111bf66742aea"
+				"filename": "gunsmokeu.rom"
 			}
 		],
 		"memory_writes": [

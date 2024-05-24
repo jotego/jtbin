@@ -9,8 +9,7 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "shaolins.rom",
-				"md5": "298df92593d7f8ee9d16710345fd47a2"
+				"filename": "shaolins.rom"
 			}
 		],
 		"memory_writes": [

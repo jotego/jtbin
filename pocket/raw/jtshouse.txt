@@ -5,6 +5,8 @@ The following arcade titles are compatible with this core. Generate
 the required .rom file using the mra tool (read below).
 Place the *.rom files in Assets/jtshouse/common
 
+Chou Zetsurinjin Berabowman (Japan, Rev C) --> berabohm.rom
+Chou Zetsurinjin Berabowman (Japan, Rev B) --> berabohmb.rom
 Blast Off (Japan) --> blastoff.rom
 Blazer (Japan) --> blazer.rom
 Boxy Boy (World, SB2) --> boxyboy.rom
@@ -23,12 +25,15 @@ Pac-Mania --> pacmania.rom
 Pac-Mania (Japan) --> pacmaniaj.rom
 Pac-Mania (111187 sound program) --> pacmaniao.rom
 Pistol Daimyo no Bouken (Japan) --> pistoldm.rom
+Quester (Japan) --> quester.rom
+Quester Special Edition (Japan) --> questers.rom
 Shadowland (YD3) --> shadowld.rom
 Souko Ban Deluxe (Japan, SB1) --> soukobdx.rom
 Splatter House (World, new version (SH3)) --> splatter.rom
 Splatter House (World, old version (SH2)) --> splatter2.rom
 Splatter House (Japan, SH1) --> splatterj.rom
 Tank Force (US, 2 Players) --> tankfrce.rom
+Tank Force (Japan) --> tankfrcej.rom
 Pro Tennis World Court (Japan) --> wldcourt.rom
 Pro Yakyuu World Stadium (Japan) --> ws.rom
 Pro Yakyuu World Stadium '89 (Japan) --> ws89.rom

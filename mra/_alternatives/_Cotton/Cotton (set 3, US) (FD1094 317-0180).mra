@@ -31,7 +31,7 @@
     <joystick>8</joystick>
     <rotation>horizontal</rotation>
     <region>World</region>
-    <rom index="0" zip="cottonu.zip|cotton.zip" md5="None" asm_md5="5a611de9bc8520954c41dd3374f8fd40">
+    <rom index="0" zip="cottonu.zip|cotton.zip" md5="None" address="0x30000000" asm_md5="5a611de9bc8520954c41dd3374f8fd40">
         <part>
             00 00 00 00 00 00 00 00
             00 00 00 00 00 00 00 00
@@ -101,8 +101,8 @@
             <part name="opr-13855.a4" crc="856f3ee2" map="01"/>
             <part name="opr-13876.b13" crc="1c5ffad8" map="10"/>
         </interleave>
-        <!-- MCU_START -->
         <!-- JTFRAME_PROM_START -->
+        <!-- MCU_START -->
         <!-- mcu - starts at 0x440000 - length 0x2000 (13 bits) -->
         <part repeat="0x1000"> FF</part>
         <part repeat="0x1000"> FF</part>

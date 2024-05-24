@@ -9,8 +9,7 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "commandob3.rom",
-				"md5": "34d5dc4ee95a5d25046f02441f424af1"
+				"filename": "commandob3.rom"
 			}
 		],
 		"memory_writes": [

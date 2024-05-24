@@ -9,8 +9,7 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "makaimurg.rom",
-				"md5": "536ee46cc9c9b0b2247a584db082b234"
+				"filename": "makaimurg.rom"
 			}
 		],
 		"memory_writes": [

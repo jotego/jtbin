@@ -9,8 +9,7 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "ddragonua.rom",
-				"md5": "40e0d52068303a2b00127991da7750cb"
+				"filename": "ddragonua.rom"
 			}
 		],
 		"memory_writes": [

@@ -9,8 +9,7 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "makaimurc.rom",
-				"md5": "e722885c7153e259df504972e610461d"
+				"filename": "makaimurc.rom"
 			}
 		],
 		"memory_writes": [

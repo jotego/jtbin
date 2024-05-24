@@ -31,7 +31,7 @@
     <joystick>4</joystick>
     <rotation>horizontal</rotation>
     <region>World</region>
-    <rom index="0" zip="higemaru.zip" md5="None" asm_md5="da45a9005c48d673d1d0fb1d2bc7c746">
+    <rom index="0" zip="higemaru.zip" md5="None" asm_md5="fd3dfa858b78ce0bba2260ba639dcd86">
         <!--  Header to identify the PCB type
         Byte 0 = 0 for 1942, 1 for Vulgus, 2 for Higemaru
         Byte 1 = XOR with flip
@@ -62,8 +62,14 @@
         <part repeat="0x1C000"> FF</part>
         <!-- JTFRAME_PROM_START -->
         <!-- proms - starts at 0x3A000 - length 0x500 (11 bits) -->
-        <part name="hgb3.l6" crc="629cebd8" length="0x100"/>
-        <part repeat="0xE0"> FF</part>
+        <part name="hgb3.l6" crc="629cebd8"/>
+        <part name="hgb3.l6" crc="629cebd8"/>
+        <part name="hgb3.l6" crc="629cebd8"/>
+        <part name="hgb3.l6" crc="629cebd8"/>
+        <part name="hgb3.l6" crc="629cebd8"/>
+        <part name="hgb3.l6" crc="629cebd8"/>
+        <part name="hgb3.l6" crc="629cebd8"/>
+        <part name="hgb3.l6" crc="629cebd8"/>
         <part name="hgb5.m4" crc="dbaa4443" length="0x100"/>
         <part name="hgb1.h7" crc="07c607ce" length="0x100"/>
         <part name="hgb4.l9" crc="712ac508" length="0x100"/>

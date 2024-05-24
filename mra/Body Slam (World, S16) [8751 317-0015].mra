@@ -31,7 +31,7 @@
     <joystick>8</joystick>
     <rotation>horizontal</rotation>
     <region>World</region>
-    <rom index="0" zip="bodyslam.zip" md5="None" asm_md5="95c7c8e42469e939eb64e7c9008b7972">
+    <rom index="0" zip="bodyslam.zip" md5="None" address="0x30000000" asm_md5="95c7c8e42469e939eb64e7c9008b7972">
         <part>
             00 00 00 00 00 00 00 00
             00 00 00 00 00 00 00 00
@@ -93,8 +93,8 @@
             <part name="epr-10019.b5" crc="e020c38b" map="10"/>
         </interleave>
         <part repeat="0x10000"> FF</part>
-        <!-- MCU_START -->
         <!-- JTFRAME_PROM_START -->
+        <!-- MCU_START -->
         <!-- mcu - starts at 0x180000 - length 0x2000 (13 bits) -->
         <part name="317-0015.bin" crc="833869e2"/>
         <part repeat="0x1000"> FF</part>

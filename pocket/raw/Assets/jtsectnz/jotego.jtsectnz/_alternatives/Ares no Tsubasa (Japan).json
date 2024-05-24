@@ -9,8 +9,7 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "lwingsj.rom",
-				"md5": "ee9098026fc4499c8979260ee1ebfcd4"
+				"filename": "lwingsj.rom"
 			}
 		],
 		"memory_writes": [

@@ -9,8 +9,7 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "tokiu.rom",
-				"md5": "7236481fa5d32948bd86ec577685ff1e"
+				"filename": "tokiu.rom"
 			}
 		],
 		"memory_writes": [

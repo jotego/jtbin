@@ -31,7 +31,7 @@
     <joystick>8</joystick>
     <rotation>horizontal</rotation>
     <region>World</region>
-    <rom index="0" zip="thunderxj.zip|thunderx.zip" md5="None" asm_md5="a2ecc81bf6a562bd8225ebbf624221c7">
+    <rom index="0" zip="thunderxj.zip|thunderx.zip" md5="None" address="0x30000000" asm_md5="a2ecc81bf6a562bd8225ebbf624221c7">
         <!--     bit   0 = GX878 (Gang Busters)
                  bits 2:1 = PCB config -> 0=Aliens, 1=Super Contra, 2=Thunder Cross -->
         <part>

@@ -9,8 +9,7 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "dumpmtmt.rom",
-				"md5": "8141d8babe5c2deb1bdc12896636b522"
+				"filename": "dumpmtmt.rom"
 			}
 		],
 		"memory_writes": [

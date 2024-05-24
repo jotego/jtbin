@@ -31,7 +31,7 @@
     <joystick>8</joystick>
     <rotation>horizontal</rotation>
     <region>World</region>
-    <rom index="0" zip="parodius.zip" md5="None" asm_md5="780fc966591b7cf66cadc1d580049b0d">
+    <rom index="0" zip="parodius.zip" md5="None" address="0x30000000" asm_md5="780fc966591b7cf66cadc1d580049b0d">
         <!--  Header to identify the PCB type
         Byte 0 = 0 - The Simpsons
                  1 - Parodius
@@ -90,5 +90,5 @@
         <dip name="Upright Controls" bits="21" ids="Dual,Single"/>
         <dip name="Service Mode" bits="22" ids="On,Off"/>
     </switches>
-    <buttons names="shoot,missile/bell,power-up,Start,Coin,Core credits" default="A,B,X,Start,Select,-" count="3"/>
+    <buttons names="Power-up,Shoot,Missile/Bell,Start,Coin,Core credits" default="A,B,X,Start,Select,-" count="3"/>
 </misterromdescription>

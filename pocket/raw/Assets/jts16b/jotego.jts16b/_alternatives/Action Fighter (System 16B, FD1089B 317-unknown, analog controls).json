@@ -9,8 +9,7 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "afighterf.rom",
-				"md5": "b056080bdefde3215f5b4572a66f3199"
+				"filename": "afighterf.rom"
 			}
 		],
 		"memory_writes": [

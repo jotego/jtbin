@@ -9,8 +9,7 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "tokia.rom",
-				"md5": "5ca8ff7a6a6699352a25677ab50fc72f"
+				"filename": "tokia.rom"
 			}
 		],
 		"memory_writes": [

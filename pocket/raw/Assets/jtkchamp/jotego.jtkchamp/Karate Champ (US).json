@@ -9,8 +9,7 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "kchamp.rom",
-				"md5": "efdeaf8ffe3311b115ffe8f9923c8c4f"
+				"filename": "kchamp.rom"
 			}
 		],
 		"memory_writes": [

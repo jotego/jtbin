@@ -9,8 +9,7 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "commandou2.rom",
-				"md5": "66183e93b466fab74c44c48fe15abcbf"
+				"filename": "commandou2.rom"
 			}
 		],
 		"memory_writes": [

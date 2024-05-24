@@ -9,8 +9,7 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "passsht16a.rom",
-				"md5": "d05f1d8fcc42dc8c87bb6b4467e6adf5"
+				"filename": "passsht16a.rom"
 			}
 		],
 		"memory_writes": [

@@ -31,7 +31,7 @@
     <joystick>8</joystick>
     <rotation>horizontal</rotation>
     <region>World</region>
-    <rom index="0" zip="shinobi1.zip|shinobi.zip" md5="None" asm_md5="2c6ca20fe0a6c0cadd7c8cfee6238d89">
+    <rom index="0" zip="shinobi1.zip|shinobi.zip" md5="None" address="0x30000000" asm_md5="2c6ca20fe0a6c0cadd7c8cfee6238d89">
         <part>
             00 00 00 00 00 00 00 00
             00 00 00 00 00 00 00 00

@@ -9,8 +9,7 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "tankfrce.rom",
-				"md5": "f8abd206a5b82f1c759f302ba16c6cd7"
+				"filename": "tankfrce.rom"
 			},
 			{
 				"id": 2,
@@ -19,7 +18,7 @@
 			{
 				"id": 17,
 				"filename": "beta.bin",
-				"md5": "71035230a15ff988e5823bc00a8efc50"
+				"md5": "c6a4be95256a59cbf8cdd01b7c2a6e70"
 			}
 		],
 		"memory_writes": [

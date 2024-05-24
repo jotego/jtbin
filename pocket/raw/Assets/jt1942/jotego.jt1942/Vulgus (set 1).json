@@ -9,8 +9,7 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "vulgus.rom",
-				"md5": "a2491b35a3630e0ff50c257ef89ca8e2"
+				"filename": "vulgus.rom"
 			}
 		],
 		"memory_writes": [

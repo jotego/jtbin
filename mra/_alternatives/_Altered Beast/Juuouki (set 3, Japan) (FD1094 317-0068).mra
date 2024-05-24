@@ -31,7 +31,7 @@
     <joystick>8</joystick>
     <rotation>horizontal</rotation>
     <region>Japan</region>
-    <rom index="0" zip="altbeastj3.zip|altbeast.zip" md5="None" asm_md5="6cc4f8fb4472788a79a68b23fc3fa2de">
+    <rom index="0" zip="altbeastj3.zip|altbeast.zip" md5="None" address="0x30000000" asm_md5="6cc4f8fb4472788a79a68b23fc3fa2de">
         <part>
             00 00 00 00 00 00 00 00
             00 00 00 00 00 00 00 00
@@ -104,8 +104,8 @@
             <part name="epr-11735.b12" crc="4fe406aa" map="10"/>
         </interleave>
         <part repeat="0x60000"> FF</part>
-        <!-- MCU_START -->
         <!-- JTFRAME_PROM_START -->
+        <!-- MCU_START -->
         <!-- mcu - starts at 0x440000 - length 0x2000 (13 bits) -->
         <part repeat="0x1000"> FF</part>
         <part repeat="0x1000"> FF</part>

@@ -9,8 +9,7 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "juju.rom",
-				"md5": "38b73e94149bd174150e63f0811cb5a4"
+				"filename": "juju.rom"
 			}
 		],
 		"memory_writes": [

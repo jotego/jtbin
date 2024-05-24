@@ -9,8 +9,7 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "pingpong.rom",
-				"md5": "3c6eaf0db6cb96ab18e8c5ca63aed2a9"
+				"filename": "pingpong.rom"
 			}
 		],
 		"memory_writes": [

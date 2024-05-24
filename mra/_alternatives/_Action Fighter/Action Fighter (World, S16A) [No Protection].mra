@@ -31,7 +31,7 @@
     <joystick>8</joystick>
     <rotation>vertical (ccw)</rotation>
     <region>World</region>
-    <rom index="0" zip="afightera.zip|afighter.zip" md5="None" asm_md5="b74941cddeabdbf21b6a939c5a059a84">
+    <rom index="0" zip="afightera.zip|afighter.zip" md5="None" address="0x30000000" asm_md5="b74941cddeabdbf21b6a939c5a059a84">
         <part>
             00 00 00 00 00 00 00 00
             00 00 00 00 00 00 00 00
@@ -89,8 +89,8 @@
             <part name="epr-10292" crc="cef289a3" map="10"/>
         </interleave>
         <part repeat="0x10000"> FF</part>
-        <!-- JTFRAME_PROM_START -->
         <!-- MCU_START -->
+        <!-- JTFRAME_PROM_START -->
         <!-- mcu - starts at 0x180000 - length 0x2000 (13 bits) -->
         <part repeat="0x1000"> FF</part>
         <part repeat="0x1000"> FF</part>

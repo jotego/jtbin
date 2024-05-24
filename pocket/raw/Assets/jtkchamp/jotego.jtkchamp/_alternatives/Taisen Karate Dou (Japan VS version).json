@@ -9,8 +9,7 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "karatevs.rom",
-				"md5": "7bb5607f428ff08fb073e017b087747a"
+				"filename": "karatevs.rom"
 			}
 		],
 		"memory_writes": [

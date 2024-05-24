@@ -9,8 +9,7 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "exedexes.rom",
-				"md5": "a31f20673d9249a66dfc00421bbeaa54"
+				"filename": "exedexes.rom"
 			}
 		],
 		"memory_writes": [

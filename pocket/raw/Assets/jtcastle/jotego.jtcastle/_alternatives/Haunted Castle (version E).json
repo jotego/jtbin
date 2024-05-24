@@ -9,8 +9,7 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "hcastlee.rom",
-				"md5": "aee30d1dcb3e2bb48ed1359eed549bf9"
+				"filename": "hcastlee.rom"
 			}
 		],
 		"memory_writes": [

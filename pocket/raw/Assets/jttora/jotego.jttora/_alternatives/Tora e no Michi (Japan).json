@@ -9,8 +9,7 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "toramich.rom",
-				"md5": "32cb4c4bd6913f32104362e761847490"
+				"filename": "toramich.rom"
 			}
 		],
 		"memory_writes": [

@@ -31,8 +31,8 @@
     <joystick>8</joystick>
     <rotation>vertical (ccw)</rotation>
     <region>World</region>
-    <rom index="0" zip="pacmania.zip" md5="None" asm_md5="6e9025aeeaa7f8403dbeeaa4435b72c8">
-        <!-- Byte 0: protection type
+    <rom index="0" zip="pacmania.zip" md5="None" address="0x30000000" asm_md5="4be255352d68850f1507e724b461a2de">
+        <!-- Byte 0: bit 0-1: protection type, bit 4-5: control type (0 - normal, 1 - faceoff 4p, 2 - berabohm, 3 - quester), bit 6: 64/128kB Program ROMs
 Byte 1: key ID
 Byte 2: addr for key ID
 Byte 3: addr for RNG
@@ -46,10 +46,10 @@ Byte 7: addr for upper nibble read
         </part>
         <!-- user1 - starts at 0x0 - length 0x3A0000 (22 bits) -->
         <part repeat="0x300000"> FF</part>
-        <part name="pn_prg-6.bin" crc="fe94900c"/>
+        <part name="pn_prg-6.bin" crc="fe94900c" length="0x20000"/>
         <part repeat="0x60000"> FF</part>
         <part name="pn2_p7.bin" crc="462fa4fd"/>
-        <part repeat="0x10000"> FF</part>
+        <part name="pn2_p7.bin" crc="462fa4fd"/>
         <!-- JTFRAME_BA1_START -->
         <!-- audiocpu - starts at 0x3A0000 - length 0x20000 (17 bits) -->
         <part name="pn2_s0.bin" crc="c10370fa"/>
@@ -79,8 +79,8 @@ Byte 7: addr for upper nibble read
         <part name="cus64-64a1.mcu" crc="ffb5c0bd"/>
         <!-- Total 0x691000 bytes - 6724 kBytes -->
     </rom>
-    <rom index="17" zip="jtbeta.zip" md5="None" asm_md5="71035230a15ff988e5823bc00a8efc50">
-        <part name="beta.bin" crc="f1b63018"/>
+    <rom index="17" zip="jtbeta.zip" md5="None" asm_md5="c6a4be95256a59cbf8cdd01b7c2a6e70">
+        <part name="beta.bin" crc="330da304"/>
     </rom>
     <nvram index="2" size="63552"/>
     <!-- Vertical game -->
@@ -95,5 +95,5 @@ Byte 7: addr for upper nibble read
         <dip name="Auto Data Sampling" bits="4" ids="On,Off"/>
         <dip name="*Sound fix" ids="On,Off" bits="8"/>
     </switches>
-    <buttons names="Jump,-,-,Start,Coin,Core credits" default="A,Start,Select,-" count="1"/>
+    <buttons names="Jump,-,-,-,-,-,Start,Coin,Core credits" default="A,Start,Select,-" count="1"/>
 </misterromdescription>

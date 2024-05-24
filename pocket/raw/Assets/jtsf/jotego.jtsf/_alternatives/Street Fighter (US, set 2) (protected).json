@@ -9,8 +9,7 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "sfua.rom",
-				"md5": "605c1e24fe4599b7d56dc13f69ae47f6"
+				"filename": "sfua.rom"
 			}
 		],
 		"memory_writes": [

@@ -31,8 +31,8 @@
     <joystick>8</joystick>
     <rotation>vertical (ccw)</rotation>
     <region>World</region>
-    <rom index="0" zip="galaga88.zip" md5="None" asm_md5="7fa29a855ff4114154da4ffd8d19589f">
-        <!-- Byte 0: protection type
+    <rom index="0" zip="galaga88.zip" md5="None" address="0x30000000" asm_md5="45799bfcc9ca0ccdf3f18eed025e597d">
+        <!-- Byte 0: bit 0-1: protection type, bit 4-5: control type (0 - normal, 1 - faceoff 4p, 2 - berabohm, 3 - quester), bit 6: 64/128kB Program ROMs
 Byte 1: key ID
 Byte 2: addr for key ID
 Byte 3: addr for RNG
@@ -46,15 +46,19 @@ Byte 7: addr for upper nibble read
         </part>
         <!-- user1 - starts at 0x0 - length 0x3A0000 (22 bits) -->
         <part name="g81_p0.bin" crc="0f0778ca"/>
-        <part repeat="0x70000"> FF</part>
+        <part name="g81_p0.bin" crc="0f0778ca"/>
+        <part repeat="0x60000"> FF</part>
         <part name="g81_p1.bin" crc="e68cb351"/>
-        <part repeat="0x1F0000"> FF</part>
+        <part name="g81_p1.bin" crc="e68cb351"/>
+        <part repeat="0x1E0000"> FF</part>
         <part name="g81_p5.bin" crc="4fbd3f6c"/>
-        <part repeat="0x70000"> FF</part>
+        <part name="g81_p5.bin" crc="4fbd3f6c"/>
+        <part repeat="0x60000"> FF</part>
         <part name="g82_p6.bin" crc="403d01c1"/>
-        <part repeat="0x70000"> FF</part>
+        <part name="g82_p6.bin" crc="403d01c1"/>
+        <part repeat="0x60000"> FF</part>
         <part name="g82_p7.bin" crc="df75b7fc"/>
-        <part repeat="0x10000"> FF</part>
+        <part name="g82_p7.bin" crc="df75b7fc"/>
         <!-- JTFRAME_BA1_START -->
         <!-- audiocpu - starts at 0x3A0000 - length 0x20000 (17 bits) -->
         <part name="g81_s0.bin" crc="164a3fdc"/>
@@ -96,8 +100,8 @@ Byte 7: addr for upper nibble read
         <part name="cus64-64a1.mcu" crc="ffb5c0bd"/>
         <!-- Total 0x691000 bytes - 6724 kBytes -->
     </rom>
-    <rom index="17" zip="jtbeta.zip" md5="None" asm_md5="71035230a15ff988e5823bc00a8efc50">
-        <part name="beta.bin" crc="f1b63018"/>
+    <rom index="17" zip="jtbeta.zip" md5="None" asm_md5="c6a4be95256a59cbf8cdd01b7c2a6e70">
+        <part name="beta.bin" crc="330da304"/>
     </rom>
     <nvram index="2" size="63552"/>
     <!-- Vertical game -->
@@ -111,5 +115,5 @@ Byte 7: addr for upper nibble read
         <dip name="Data 2/2" bits="4" ids="On,Off"/>
         <dip name="*Sound fix" ids="On,Off" bits="8"/>
     </switches>
-    <buttons names="Fire,-,-,Start,Coin,Core credits" default="A,Start,Select,-" count="1"/>
+    <buttons names="Fire,-,-,-,-,-,Start,Coin,Core credits" default="A,Start,Select,-" count="1"/>
 </misterromdescription>
