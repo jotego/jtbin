@@ -57,8 +57,8 @@
             <part name="26j5-0.bin" crc="ee555237" map="10"/>
         </interleave>
         <part repeat="0x40000"> FF</part>
-        <!-- JTFRAME_BA3_START -->
         <!-- OBJ_START -->
+        <!-- JTFRAME_BA3_START -->
         <!-- gfx2 - starts at 0x110000 - length 0x100000 (20 bits) -->
         <interleave output="16">
             <part name="26j0-0.bin" crc="db309c84" map="01"/>

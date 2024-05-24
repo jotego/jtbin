@@ -44,8 +44,8 @@
         <interleave output="16">
             <part name="04.5h" crc="8190e092" map="12"/>
         </interleave>
-        <!-- JTFRAME_BA1_START -->
         <!-- MAP1_START -->
+        <!-- JTFRAME_BA1_START -->
         <!-- tilerom - starts at 0x38000 - length 0x10000 (16 bits) -->
         <interleave output="16">
             <part name="14.5f" crc="02a899f1" map="12"/>
@@ -53,8 +53,8 @@
         <interleave output="16">
             <part name="23.8k" crc="b6dfdf85" map="12"/>
         </interleave>
-        <!-- SCR1_START -->
         <!-- JTFRAME_BA2_START -->
+        <!-- SCR1_START -->
         <!-- gfx2 - starts at 0x48000 - length 0x40000 (18 bits) -->
         <interleave output="16">
             <part name="bm19.10j" crc="868ababc" map="01"/>
@@ -78,8 +78,8 @@
             <part name="25.14l" crc="f979b2f2" map="01"/>
             <part name="24.14k" crc="a0074c68" map="10"/>
         </interleave>
-        <!-- JTFRAME_BA3_START -->
         <!-- OBJ_START -->
+        <!-- JTFRAME_BA3_START -->
         <!-- gfx4 - starts at 0x98000 - length 0x40000 (18 bits) -->
         <interleave output="16">
             <part name="10.10c" crc="de539920" map="01"/>
