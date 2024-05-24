@@ -88,8 +88,8 @@
             <part name="epr-12283.b8" crc="ae0fa085" map="10"/>
         </interleave>
         <part repeat="0x180000"> FF</part>
-        <!-- JTFRAME_PROM_START -->
         <!-- MCU_START -->
+        <!-- JTFRAME_PROM_START -->
         <!-- mcu - starts at 0x440000 - length 0x2000 (13 bits) -->
         <part name="317-0099.c2" crc="f676e3e4"/>
         <part repeat="0x1000"> FF</part>
