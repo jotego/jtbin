@@ -31,10 +31,10 @@
     <joystick>8</joystick>
     <rotation>horizontal</rotation>
     <region>World</region>
-    <rom index="0" zip="sectionza.zip|sectionz.zip" md5="None" asm_md5="a5e7eb50e997ca464164a14778caf02d">
+    <rom index="0" zip="sectionza.zip|sectionz.zip" md5="None" asm_md5="3e050cf113222e88f0bcfdc90c8cb0a0">
         <part>
             00 00 00 00 00 00 00 00
-            01 80 02 00 04 00 08 00
+            00 00 00 00 00 00 00 00
             00 00 00 00 00 00 00 00
             00 00 00 00 00 00 00 00
         </part>

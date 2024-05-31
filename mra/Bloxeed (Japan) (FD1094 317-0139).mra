@@ -31,45 +31,36 @@
     <joystick>8</joystick>
     <rotation>horizontal</rotation>
     <region>World</region>
-    <rom index="0" zip="bloxeed.zip" md5="None" address="0x30000000" asm_md5="e0e9f4b77c0238dc10ead8337d5473b4">
+    <rom index="0" zip="bloxeed.zip" md5="None" address="0x30000000" asm_md5="109cf46798f0a3818b8deaceff040181">
         <part>
-            00 00 00 00 00 00 00 00
-            00 00 00 00 00 00 00 00
+            00 00 40 00 60 00 A0 00
+            C0 00 C2 00 00 00 00 00
             00 01 00 00 00 00 00 00
             01 00 00 00 00 00 00 00
         </part>
-        <!-- maincpu - starts at 0x0 - length 0x200000 (21 bits) -->
+        <!-- maincpu - starts at 0x0 - length 0x40000 (18 bits) -->
         <interleave output="16">
             <part name="epr-12910.a5" crc="dd1bc3bf" map="01"/>
             <part name="epr-12911.a6" crc="a481581a" map="10"/>
         </interleave>
-        <part repeat="0x1C0000"> FF</part>
-        <!-- JTFRAME_BA1_START -->
-        <!-- soundcpu - starts at 0x200000 - length 0x200000 (21 bits) -->
+        <!-- soundcpu - starts at 0x40000 - length 0x20000 (17 bits) -->
         <part name="epr-12888.a4" crc="6f2fc63c"/>
-        <part repeat="0x1E0000"> FF</part>
-        <!-- JTFRAME_BA2_START -->
-        <!-- tiles - starts at 0x400000 - length 0x400000 (22 bits) -->
+        <!-- tiles - starts at 0x60000 - length 0x40000 (18 bits) -->
         <interleave output="32">
             <part name="opr-12884.b1" crc="e024aa33" map="0001"/>
             <part name="opr-12885.b2" crc="8041b814" map="0010"/>
             <part name="opr-12886.b3" crc="de32285e" map="0100"/>
             <part name="opr-12886.b3" crc="de32285e" map="1000"/>
         </interleave>
-        <part repeat="0x3C0000"> FF</part>
-        <!-- JTFRAME_BA3_START -->
-        <!-- sprites - starts at 0x800000 - length 0x800000 (23 bits) -->
+        <!-- sprites - starts at 0xA0000 - length 0x20000 (17 bits) -->
         <interleave output="16">
             <part name="opr-12887.b11" crc="f0c0f49d" map="01"/>
             <part name="opr-12891.a11" crc="90d31a8c" map="10"/>
         </interleave>
-        <part repeat="0x7E0000"> FF</part>
-        <!-- JTFRAME_PROM_START -->
-        <!-- maincpu:key - starts at 0x1000000 - length 0x2000 (13 bits) -->
+        <!-- maincpu:key - starts at 0xC0000 - length 0x2000 (13 bits) -->
         <part name="317-0139.key" crc="9aae84cb"/>
-        <!-- MCU_START -->
-        <!-- mcu - starts at 0x1002000 -->
-        <!-- Total 0x1002000 bytes - 16392 kBytes -->
+        <!-- mcu - starts at 0xC2000 -->
+        <!-- Total 0xC2000 bytes - 776 kBytes -->
     </rom>
     <rom index="17" zip="jtbeta.zip" md5="None" asm_md5="c6a4be95256a59cbf8cdd01b7c2a6e70">
         <part name="beta.bin" crc="330da304"/>

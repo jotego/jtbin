@@ -31,11 +31,11 @@
     <joystick>8</joystick>
     <rotation>horizontal</rotation>
     <region>World</region>
-    <rom index="0" zip="trojanj.zip|trojan.zip" md5="None" asm_md5="c99b24635bc080b30861f06d9cba45b6">
+    <rom index="0" zip="trojanj.zip|trojan.zip" md5="None" asm_md5="a0622ff867c3bdf30eb8209c9e38cb16">
         <part>
             02 00 00 00 00 00 00 00
-            01 80 03 C0 04 00 08 00
-            0C 00 00 00 00 00 00 00
+            00 00 00 00 00 00 00 00
+            00 00 00 00 00 00 00 00
             00 00 00 00 00 00 00 00
         </part>
         <!-- maincpu - starts at 0x0 - length 0x18000 (17 bits) -->

@@ -31,36 +31,30 @@
     <joystick>8</joystick>
     <rotation>horizontal</rotation>
     <region>World</region>
-    <rom index="0" zip="shdancer.zip" md5="None" address="0x30000000" asm_md5="dd087c8f7d7be9833fdd065a4c492bd5">
+    <rom index="0" zip="shdancer.zip" md5="None" address="0x30000000" asm_md5="f466770079c996e1346cf2e07e808853">
         <part>
-            00 00 00 00 00 00 00 00
-            00 00 00 00 00 00 00 00
+            00 00 80 00 40 01 40 02
+            40 04 40 04 00 00 00 00
             00 00 00 00 00 00 00 00
             20 00 00 00 00 00 00 00
         </part>
-        <!-- maincpu - starts at 0x0 - length 0x200000 (21 bits) -->
+        <!-- maincpu - starts at 0x0 - length 0x80000 (19 bits) -->
         <interleave output="16">
             <part name="epr-12773b.a5" crc="2596004e" map="01"/>
             <part name="epr-12774b.a6" crc="3d5b3fa9" map="10"/>
         </interleave>
-        <part repeat="0x180000"> FF</part>
-        <!-- JTFRAME_BA1_START -->
-        <!-- soundcpu - starts at 0x200000 - length 0x200000 (21 bits) -->
+        <!-- soundcpu - starts at 0x80000 - length 0xC0000 (20 bits) -->
         <part name="epr-12987.a4" crc="d1c020cc"/>
         <part repeat="0x60000"> FF</part>
         <part name="mpr-12715.b4" crc="07051a52"/>
-        <part repeat="0x140000"> FF</part>
-        <!-- JTFRAME_BA2_START -->
-        <!-- tiles - starts at 0x400000 - length 0x400000 (22 bits) -->
+        <!-- tiles - starts at 0x140000 - length 0x100000 (20 bits) -->
         <interleave output="32">
             <part name="mpr-12712.b1" crc="9bdabe3d" map="0001"/>
             <part name="mpr-12713.b2" crc="852d2b1c" map="0010"/>
             <part name="mpr-12714.b3" crc="448226ce" map="0100"/>
             <part name="mpr-12714.b3" crc="448226ce" map="1000"/>
         </interleave>
-        <part repeat="0x300000"> FF</part>
-        <!-- JTFRAME_BA3_START -->
-        <!-- sprites - starts at 0x800000 - length 0x800000 (23 bits) -->
+        <!-- sprites - starts at 0x240000 - length 0x200000 (21 bits) -->
         <interleave output="16">
             <part name="mpr-12719.b11" crc="d6888534" map="01"/>
             <part name="mpr-12726.a11" crc="ff344945" map="10"/>
@@ -77,13 +71,9 @@
             <part name="epr-12716.b8" crc="a870e629" map="01"/>
             <part name="epr-12723.a8" crc="c606cf90" map="10"/>
         </interleave>
-        <part repeat="0x600000"> FF</part>
-        <!-- JTFRAME_PROM_START -->
-        <!-- maincpu:key - starts at 0x1000000 - length 0x2000 (13 bits) -->
-        <part repeat="0x2000"> FF</part>
-        <!-- MCU_START -->
-        <!-- mcu - starts at 0x1002000 -->
-        <!-- Total 0x1002000 bytes - 16392 kBytes -->
+        <!-- maincpu:key - starts at 0x440000 -->
+        <!-- mcu - starts at 0x440000 -->
+        <!-- Total 0x440000 bytes - 4352 kBytes -->
     </rom>
     <rom index="17" zip="jtbeta.zip" md5="None" asm_md5="c6a4be95256a59cbf8cdd01b7c2a6e70">
         <part name="beta.bin" crc="330da304"/>
@@ -103,5 +93,5 @@
         <dip name="Difficulty" bits="12,13" ids="Hardest,Hard,Easy,Normal"/>
         <dip name="Time Adjust" bits="14,15" ids="2.20,2.40,3.30,3.00"/>
     </switches>
-    <buttons names="Jump,Attack,Magic with Bomb,-,Start,Coin,Core credits" default="A,B,X,Start,Select,-" count="3"/>
+    <buttons names="Attack,Jump,Magic with Bomb,-,Start,Coin,Core credits" default="A,B,X,Start,Select,-" count="3"/>
 </misterromdescription>

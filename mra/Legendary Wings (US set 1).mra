@@ -31,10 +31,10 @@
     <joystick>8</joystick>
     <rotation>vertical (cw)</rotation>
     <region>World</region>
-    <rom index="0" zip="lwings.zip" md5="None" asm_md5="9c92094526664b4d2ad9b5b41d1b495f">
+    <rom index="0" zip="lwings.zip" md5="None" asm_md5="88bbe77fb6d469ab5b26293bf2ef6701">
         <part>
             01 00 00 00 00 00 00 00
-            01 80 02 00 04 00 08 00
+            00 00 00 00 00 00 00 00
             00 00 00 00 00 00 00 00
             00 00 00 00 00 00 00 00
         </part>

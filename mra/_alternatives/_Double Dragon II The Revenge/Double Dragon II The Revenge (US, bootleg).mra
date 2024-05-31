@@ -63,8 +63,8 @@
             <part name="12" crc="6896e2f7" map="10"/>
         </interleave>
         <part repeat="0x40000"> FF</part>
-        <!-- JTFRAME_BA3_START -->
         <!-- OBJ_START -->
+        <!-- JTFRAME_BA3_START -->
         <!-- gfx2 - starts at 0x110000 - length 0x100000 (20 bits) -->
         <interleave output="16">
             <part name="27" crc="fe42df5d" map="01"/>
