@@ -10,6 +10,10 @@
 			{
 				"id": 1,
 				"filename": "afighterf.rom"
+			},
+			{
+				"id": 2,
+				"filename": "afighterf.sav"
 			}
 		],
 		"memory_writes": [

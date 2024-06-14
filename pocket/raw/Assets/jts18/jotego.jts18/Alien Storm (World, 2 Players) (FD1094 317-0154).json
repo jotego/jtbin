@@ -9,7 +9,8 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "astorm.rom"
+				"filename": "astorm.rom",
+				"md5": "86d17d9cc0760c7aea81d3793c6059c1"
 			},
 			{
 				"id": 2,

@@ -10,6 +10,10 @@
 			{
 				"id": 1,
 				"filename": "eswatj1.rom"
+			},
+			{
+				"id": 2,
+				"filename": "eswatj1.sav"
 			}
 		],
 		"memory_writes": [

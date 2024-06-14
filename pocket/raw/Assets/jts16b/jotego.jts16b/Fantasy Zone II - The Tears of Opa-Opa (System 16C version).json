@@ -10,6 +10,10 @@
 			{
 				"id": 1,
 				"filename": "fantzn2x.rom"
+			},
+			{
+				"id": 2,
+				"filename": "fantzn2x.sav"
 			}
 		],
 		"memory_writes": [

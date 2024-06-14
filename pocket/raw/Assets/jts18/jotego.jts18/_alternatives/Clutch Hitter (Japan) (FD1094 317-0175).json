@@ -1,0 +1,32 @@
+{
+	"instance":{
+		"magic": "APF_VER_1",
+		"variant_select": {
+			"id": 0,
+			"select": false
+		},
+		"data_path": "",
+		"data_slots": [
+			{
+				"id": 1,
+				"filename": "cltchitrj.rom",
+				"md5": "18aeb8e86810f5703e3300661c2b7432"
+			},
+			{
+				"id": 2,
+				"filename": "cltchitrj.sav"
+			},
+			{
+				"id": 17,
+				"filename": "beta.bin",
+				"md5": "c6a4be95256a59cbf8cdd01b7c2a6e70"
+			}
+		],
+		"memory_writes": [
+			{
+				"address": "0xf9000000",
+				"data": "0x0"
+			}
+		]
+	}
+}

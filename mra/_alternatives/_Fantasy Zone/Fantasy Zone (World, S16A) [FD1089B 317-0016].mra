@@ -117,6 +117,7 @@
         </part>
         <!-- Total 0x186100 bytes - 1560 kBytes -->
     </rom>
+    <nvram index="2" size="16384"/>
     <rom index="1">
         <part>00</part>
     </rom>

@@ -10,6 +10,10 @@
 			{
 				"id": 1,
 				"filename": "dumpmtmt.rom"
+			},
+			{
+				"id": 2,
+				"filename": "dumpmtmt.sav"
 			}
 		],
 		"memory_writes": [

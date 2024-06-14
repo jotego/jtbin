@@ -10,6 +10,10 @@
 			{
 				"id": 1,
 				"filename": "cencourt.rom"
+			},
+			{
+				"id": 2,
+				"filename": "cencourt.sav"
 			}
 		],
 		"memory_writes": [

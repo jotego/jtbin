@@ -66,8 +66,8 @@
             <part name="epr-12170.b5" crc="87354e42" map="10"/>
         </interleave>
         <part repeat="0x70000"> FF</part>
-        <!-- MCU_START -->
         <!-- JTFRAME_PROM_START -->
+        <!-- MCU_START -->
         <!-- mcu - starts at 0x180000 - length 0x2000 (13 bits) -->
         <part repeat="0x1000"> FF</part>
         <part repeat="0x1000"> FF</part>
@@ -79,6 +79,7 @@
         <part repeat="0x400"> FF</part>
         <!-- Total 0x184400 bytes - 1553 kBytes -->
     </rom>
+    <nvram index="2" size="16384"/>
     <rom index="1">
         <part>00</part>
     </rom>

@@ -33,6 +33,7 @@ Splatter House (World, new version (SH3)) --> splatter.rom
 Splatter House (World, old version (SH2)) --> splatter2.rom
 Splatter House (Japan, SH1) --> splatterj.rom
 Tank Force (US, 2 Players) --> tankfrce.rom
+Tank Force (US, 4 Players) --> tankfrce4.rom
 Tank Force (Japan) --> tankfrcej.rom
 Pro Tennis World Court (Japan) --> wldcourt.rom
 Pro Yakyuu World Stadium (Japan) --> ws.rom

@@ -9,7 +9,8 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "shdancer.rom"
+				"filename": "shdancer.rom",
+				"md5": "f466770079c996e1346cf2e07e808853"
 			},
 			{
 				"id": 2,

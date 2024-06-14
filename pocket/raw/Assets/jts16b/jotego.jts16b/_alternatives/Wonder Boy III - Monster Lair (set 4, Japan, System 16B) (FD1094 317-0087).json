@@ -10,6 +10,10 @@
 			{
 				"id": 1,
 				"filename": "wb34.rom"
+			},
+			{
+				"id": 2,
+				"filename": "wb34.sav"
 			}
 		],
 		"memory_writes": [

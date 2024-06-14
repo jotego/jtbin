@@ -10,6 +10,10 @@
 			{
 				"id": 1,
 				"filename": "shinobi4.rom"
+			},
+			{
+				"id": 2,
+				"filename": "shinobi4.sav"
 			}
 		],
 		"memory_writes": [

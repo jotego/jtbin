@@ -9,7 +9,8 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "bloxeeda.rom"
+				"filename": "bloxeeda.rom",
+				"md5": "78d65f8aba5a23318752f879fec9f6f2"
 			},
 			{
 				"id": 2,

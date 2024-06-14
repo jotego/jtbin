@@ -31,7 +31,7 @@
     <joystick>8</joystick>
     <rotation>horizontal</rotation>
     <region>World</region>
-    <rom index="0" zip="sf2qp2.zip|sf2.zip" md5="None" asm_md5="eec8ac999ee8d83fce1e0a767aae680f">
+    <rom index="0" zip="sf2qp2.zip|sf2.zip" md5="None" asm_md5="f45a379294456147ea8f8e9af5bb6da1">
         <part>
             00 04 40 04 40 05 FF FF
             FF FF FF FF FF FF FF FF
@@ -43,8 +43,10 @@
             FF FF FF FF FF FF FF FF
         </part>
         <!-- maincpu - starts at 0x0 - length 0x100000 (20 bits) -->
-        <part name="qkn.33" crc="43aa343d"/>
-        <part name="qkn.34" crc="d03b553f"/>
+        <part name="qkn.33" crc="43aa343d" map="" length="0x40000"/>
+        <part name="qkn.34" crc="d03b553f" map="" length="0x40000" offset="0x40000"/>
+        <part name="qkn.34" crc="d03b553f" map="" length="0x40000"/>
+        <part name="qkn.33" crc="43aa343d" map="" length="0x40000" offset="0x40000"/>
         <!-- audiocpu - starts at 0x100000 - length 0x10000 (16 bits) -->
         <part name="sf2_09.bin" crc="a4823a1b"/>
         <!-- oki - starts at 0x110000 - length 0x40000 (18 bits) -->

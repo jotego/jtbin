@@ -11,6 +11,8 @@ Alien Storm (Japan, 2 Players) (FD1094 317-0146) --> astormj.rom
 Alien Storm (US, 3 Players) (FD1094 317-0147) --> astormu.rom
 Bloxeed (Japan) (FD1094 317-0139) --> bloxeed.rom
 Bloxeed (Japan, earlier) (FD1094 317-0139) --> bloxeeda.rom
+Clutch Hitter (US) (FD1094 317-0176) --> cltchitr.rom
+Clutch Hitter (Japan) (FD1094 317-0175) --> cltchitrj.rom
 Shadow Dancer (World) --> shdancer.rom
 Shadow Dancer (US) --> shdancer1.rom
 Shadow Dancer (Japan) --> shdancerj.rom

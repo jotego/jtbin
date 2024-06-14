@@ -10,6 +10,10 @@
 			{
 				"id": 1,
 				"filename": "bodyslam.rom"
+			},
+			{
+				"id": 2,
+				"filename": "bodyslam.sav"
 			}
 		],
 		"memory_writes": [

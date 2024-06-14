@@ -10,6 +10,10 @@
 			{
 				"id": 1,
 				"filename": "goldnaxej.rom"
+			},
+			{
+				"id": 2,
+				"filename": "goldnaxej.sav"
 			}
 		],
 		"memory_writes": [

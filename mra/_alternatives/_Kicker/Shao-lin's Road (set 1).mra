@@ -31,30 +31,24 @@
     <joystick>4</joystick>
     <rotation>vertical (cw)</rotation>
     <region>World</region>
-    <rom index="0" zip="shaolins.zip|kicker.zip" md5="None" asm_md5="298df92593d7f8ee9d16710345fd47a2">
+    <rom index="0" zip="shaolins.zip|kicker.zip" md5="None" asm_md5="d626937d5de63b3c9e13bfa9b0b4c8ea">
         <!-- maincpu - starts at 0x0 - length 0x10000 (16 bits) -->
         <part repeat="0x6000"> FF</part>
-        <interleave output="16">
-            <part name="477l03.d9" crc="2598dfdd" map="12"/>
-        </interleave>
-        <interleave output="16">
-            <part name="477l04.d10" crc="0cf0351a" map="12"/>
-        </interleave>
-        <interleave output="16">
-            <part name="477l05.d11" crc="654037f8" map="12"/>
-        </interleave>
+        <part name="477l03.d9" crc="2598dfdd"/>
+        <part name="477l04.d10" crc="0cf0351a"/>
+        <part name="477l05.d11" crc="654037f8"/>
         <!-- SCR_START -->
         <!-- tiles - starts at 0x10000 - length 0x6000 (15 bits) -->
         <interleave output="16">
-            <part name="477j07.a11" crc="5f53ae61" map="01"/>
-            <part name="477j06.a10" crc="ff18a7ed" map="10"/>
+            <part name="477j06.a10" crc="ff18a7ed" map="01"/>
+            <part name="477j07.a11" crc="5f53ae61" map="10"/>
         </interleave>
         <part repeat="0x2000"> FF</part>
         <!-- OBJ_START -->
         <!-- sprites - starts at 0x16000 - length 0x8000 (15 bits) -->
         <interleave output="16">
-            <part name="477j01.h14" crc="61bbf797" map="01"/>
-            <part name="477j02.h15" crc="b94e645b" map="10"/>
+            <part name="477j02.h15" crc="b94e645b" map="01"/>
+            <part name="477j01.h14" crc="61bbf797" map="10"/>
         </interleave>
         <!-- PCM_START -->
         <!-- JTFRAME_PROM_START -->

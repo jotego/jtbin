@@ -10,6 +10,10 @@
 			{
 				"id": 1,
 				"filename": "defense.rom"
+			},
+			{
+				"id": 2,
+				"filename": "defense.sav"
 			}
 		],
 		"memory_writes": [

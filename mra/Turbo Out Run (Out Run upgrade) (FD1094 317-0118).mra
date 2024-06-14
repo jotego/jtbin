@@ -110,7 +110,7 @@
         <part name="317-0118.key" crc="083d7d56"/>
         <!-- Total 0x29A000 bytes - 2664 kBytes -->
     </rom>
-    <nvram index="2" size="18432"/>
+    <nvram index="2" size="32768"/>
     <rom index="1">
         <part>00</part>
     </rom>

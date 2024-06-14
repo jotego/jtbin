@@ -10,6 +10,10 @@
 			{
 				"id": 1,
 				"filename": "sonicbom.rom"
+			},
+			{
+				"id": 2,
+				"filename": "sonicbom.sav"
 			}
 		],
 		"memory_writes": [

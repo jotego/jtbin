@@ -10,6 +10,10 @@
 			{
 				"id": 1,
 				"filename": "altbeast5.rom"
+			},
+			{
+				"id": 2,
+				"filename": "altbeast5.sav"
 			}
 		],
 		"memory_writes": [

@@ -31,30 +31,24 @@
     <joystick>4</joystick>
     <rotation>vertical (cw)</rotation>
     <region>World</region>
-    <rom index="0" zip="kicker.zip" md5="None" asm_md5="12553f64903b980db89f7615c00cf622">
+    <rom index="0" zip="kicker.zip" md5="None" asm_md5="966d9254a3d3e75d35a9322fc59e6db1">
         <!-- maincpu - starts at 0x0 - length 0x10000 (16 bits) -->
         <part repeat="0x6000"> FF</part>
-        <interleave output="16">
-            <part name="477l03.d9" crc="2598dfdd" map="12"/>
-        </interleave>
-        <interleave output="16">
-            <part name="477l04.d10" crc="0cf0351a" map="12"/>
-        </interleave>
-        <interleave output="16">
-            <part name="477l05.d11" crc="654037f8" map="12"/>
-        </interleave>
+        <part name="477l03.d9" crc="2598dfdd"/>
+        <part name="477l04.d10" crc="0cf0351a"/>
+        <part name="477l05.d11" crc="654037f8"/>
         <!-- SCR_START -->
         <!-- tiles - starts at 0x10000 - length 0x6000 (15 bits) -->
         <interleave output="16">
-            <part name="477k07.a11" crc="ff6ca5df" map="01"/>
-            <part name="477k06.a10" crc="4d156afc" map="10"/>
+            <part name="477k06.a10" crc="4d156afc" map="01"/>
+            <part name="477k07.a11" crc="ff6ca5df" map="10"/>
         </interleave>
         <part repeat="0x2000"> FF</part>
         <!-- OBJ_START -->
         <!-- sprites - starts at 0x16000 - length 0x8000 (15 bits) -->
         <interleave output="16">
-            <part name="477k01.h14" crc="61bbf797" map="01"/>
-            <part name="477k02.h15" crc="b94e645b" map="10"/>
+            <part name="477k02.h15" crc="b94e645b" map="01"/>
+            <part name="477k01.h14" crc="61bbf797" map="10"/>
         </interleave>
         <!-- PCM_START -->
         <!-- JTFRAME_PROM_START -->

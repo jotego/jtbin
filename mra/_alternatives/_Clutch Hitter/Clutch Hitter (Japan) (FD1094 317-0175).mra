@@ -1,0 +1,104 @@
+<!--          FPGA arcade hardware by Jotego
+
+              This core is available for hardware compatible with MiST and MiSTer
+              Other FPGA systems may be supported by the time you read this.
+              This work is not mantained by the MiSTer project. Please contact the
+              core author for issues and updates.
+
+              (c) Jose Tejada, 2024. Please support this research
+              Patreon: https://patreon.com/jotego
+
+              The author does not endorse or participate in illegal distribution
+              of copyrighted material. This work can be used with compatible
+              software. This software can be homebrew projects or legally
+              obtained memory dumps of compatible games.
+
+              This file license is GNU GPLv2.
+              You can read the whole license file in
+              https://opensource.org/licenses/gpl-2.0.php
+
+-->
+
+<misterromdescription>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
+    <name>Clutch Hitter (Japan) (FD1094 317-0175)</name>
+    <setname>cltchitrj</setname>
+    <rbf>jts18</rbf>
+    <mameversion>0251</mameversion>
+    <year>1991</year>
+    <manufacturer>Sega</manufacturer>
+    <players>2</players>
+    <joystick>8</joystick>
+    <rotation>horizontal</rotation>
+    <region>World</region>
+    <rom index="0" zip="cltchitrj.zip|cltchitr.zip" md5="None" address="0x30000000" asm_md5="18aeb8e86810f5703e3300661c2b7432">
+        <part>
+            00 00 00 01 80 02 80 04
+            00 0B 02 0B 00 00 00 00
+            00 01 00 00 00 00 00 00
+            04 00 00 00 00 00 00 00
+        </part>
+        <!-- maincpu - starts at 0x0 - length 0x100000 (20 bits) -->
+        <interleave output="16">
+            <part name="epr-13796.a6" crc="06001c67" map="01"/>
+            <part name="epr-13783.a4" crc="e2a1d5af" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="epr-13797.a7" crc="361ade9f" map="01"/>
+            <part name="epr-13785.a5" crc="09714762" map="10"/>
+        </interleave>
+        <!-- soundcpu - starts at 0x100000 - length 0x180000 (21 bits) -->
+        <part name="epr-13778.c7" crc="35e86146"/>
+        <part repeat="0x60000"> FF</part>
+        <part name="epr-13777.c6" crc="d1524782"/>
+        <part name="epr-13776.c5" crc="282ac9fe"/>
+        <!-- tiles - starts at 0x280000 - length 0x200000 (21 bits) -->
+        <interleave output="32">
+            <part name="mpr-13773.c1" crc="3fc600e5" map="0001"/>
+            <part name="mpr-13774.c2" crc="2411a824" map="0010"/>
+            <part name="mpr-13775.c3" crc="cf527bf6" map="0100"/>
+            <part name="mpr-13775.c3" crc="cf527bf6" map="1000"/>
+        </interleave>
+        <!-- sprites - starts at 0x480000 - length 0x680000 (23 bits) -->
+        <interleave output="16">
+            <part name="mpr-13779.c10" crc="c707f416" map="01"/>
+            <part name="mpr-13787.a10" crc="f05c68c6" map="10"/>
+        </interleave>
+        <part repeat="0x100000"> FF</part>
+        <interleave output="16">
+            <part name="mpr-13780.c11" crc="a4c341e0" map="01"/>
+            <part name="mpr-13788.a11" crc="0106fea6" map="10"/>
+        </interleave>
+        <part repeat="0x100000"> FF</part>
+        <interleave output="16">
+            <part name="mpr-13781.c12" crc="f33b13af" map="01"/>
+            <part name="mpr-13789.a12" crc="09ba8835" map="10"/>
+        </interleave>
+        <part repeat="0x100000"> FF</part>
+        <interleave output="16">
+            <part name="epr-13782.c13" crc="73790852" map="01"/>
+            <part name="epr-13790.a13" crc="23849101" map="10"/>
+        </interleave>
+        <!-- maincpu:key - starts at 0xB00000 - length 0x2000 (13 bits) -->
+        <part name="317-0175.key" crc="70d9d283"/>
+        <!-- mcu - starts at 0xB02000 -->
+        <!-- Total 0xB02000 bytes - 11272 kBytes -->
+    </rom>
+    <rom index="17" zip="jtbeta.zip" md5="None" asm_md5="c6a4be95256a59cbf8cdd01b7c2a6e70">
+        <part name="beta.bin" crc="330da304"/>
+    </rom>
+    <nvram index="2" size="16384"/>
+    <rom index="1">
+        <part>00</part>
+    </rom>
+    <switches page_id="1" page_name="Switches" base="16" default="ff,fd">
+        <!-- COINAGE -->
+        <dip name="Coin A" bits="0,3" ids="Free Play or 1/1,1/1 2/3,1/1 4/5,1/1 5/6,2/1 4/3,2/1 5/3 6/4,2/3,4/1,3/1,2/1,1/6,1/5,1/4,1/3,1/2,1/1"/>
+        <dip name="Coin B" bits="4,7" ids="Free Play or 1/1,1/1 2/3,1/1 4/5,1/1 5/6,2/1 4/3,2/1 5/3 6/4,2/3,4/1,3/1,2/1,1/6,1/5,1/4,1/3,1/2,1/1"/>
+        <!-- DSW -->
+        <dip name="2 Credits to Start" bits="8" ids="On,Off"/>
+        <dip name="Demo Sounds" bits="9" ids="On,Off"/>
+        <dip name="Difficulty" bits="14,15" ids="Hard,Easiest,Easy,Normal"/>
+    </switches>
+    <buttons names="Checkmate/Advance Base,Bunt/Timeout,Pitching/Swing Bat,-,Start,Coin,Core credits" default="A,B,X,Start,Select,-" count="3"/>
+</misterromdescription>

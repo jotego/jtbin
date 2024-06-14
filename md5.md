@@ -157,6 +157,8 @@
 | chelnovu     | jtkarnov   | 45fc84d27ce7c849ba529902214c5d1a | 7f,ff        |
 | chikij       | jtcps1     | eb05493f72a6199e051ff4542ef300a6 | ff,fc,bf     |
 | choko        | jtcps2     | 9f42ff25fd71993cd48aa2948345f78e |              |
+| cltchitr     | jts18      | 168ec8aed3e9d98633213a86e3acffb9 | ff,fd        |
+| cltchitrj    | jts18      | 18aeb8e86810f5703e3300661c2b7432 | ff,fd        |
 | combatsc     | jtcomsc    | 632210364566c4af623d44a003eb95a4 | ff,7b,ff     |
 | commando     | jtcommnd   | 34d5dc4ee95a5d25046f02441f424af1 | ff,df        |
 | commandob2   | jtcommnd   | 1f32592edb0816226f515e477dcd1451 | ff,df        |
@@ -395,7 +397,7 @@
 | kchampvs2    | jtkchamp   | 188a54e52be3732f001088f98ce2613f | 9f           |
 | kchampvs3    | jtkchamp   | ca007de1df155ee90f8ca7c189d5d28a | 9f           |
 | kchampvs4    | jtkchamp   | 504c52d8eeaf105393be75574cc8c12d | 9f           |
-| kicker       | jtkicker   | 12553f64903b980db89f7615c00cf622 | ff,5a,ff     |
+| kicker       | jtkicker   | 966d9254a3d3e75d35a9322fc59e6db1 | ff,5a,ff     |
 | knights      | jtcps1     | 28d67adc3f399d60f904d6bee5669c86 | ff,fc,bf     |
 | knightsj     | jtcps1     | 7fb330ad2b2cd8359fe5bddb40728960 | ff,fc,bf     |
 | knightsja    | jtcps1     | 7fb330ad2b2cd8359fe5bddb40728960 | ff,fc,bf     |
@@ -623,7 +625,7 @@
 | secretagj    | jtslyspy   | 730e7a6151751257d98935cca45c9dd5 | 7f,ff        |
 | sectionz     | jtsectnz   | e262ac35a64ea39a0defdba0ce46489e | ff,3f        |
 | sectionza    | jtsectnz   | 3e050cf113222e88f0bcfdc90c8cb0a0 | ff,3f        |
-| sf           | jtsf       | 04af14d331248eca94dd9abb72678c4c | ff,df,ff,ff  |
+| sf           | jtsf       | a4ea3ad37936e6e3fe67a3a446181155 | ff,df,ff,ff  |
 | sf2          | jtcps1     | 616854344835ba6e5d2b121a732fe007 | ff,fc,9f     |
 | sf2acc       | jtcps1     | 73b0113f74ede17f04a33f60503b62a4 | ff,fc,9f     |
 | sf2acca      | jtcps1     | a969bea4258718dc3a8d0d8c9fa01393 | ff,fc,9f     |
@@ -654,8 +656,8 @@
 | sf2jf        | jtcps1     | c5d734357fedd761e0ffca4c203c81ef | ff,fc,9f     |
 | sf2jh        | jtcps1     | 7f92e030291f4aa2dcf2bbe8df919771 | ff,fc,9f     |
 | sf2jl        | jtcps1     | d1350afc7c5f0c0d142afe8dcb235f59 | ff,fc,9f     |
-| sf2qp1       | jtcps1     | fd85442e1702605fd49989f27b0929c0 | ff,fc,9f     |
-| sf2qp2       | jtcps1     | eec8ac999ee8d83fce1e0a767aae680f | ff,fc,9f     |
+| sf2qp1       | jtcps1     | e81baf965be7b3ff66ccdd266bea3d9c | ff,fc,9f     |
+| sf2qp2       | jtcps1     | f45a379294456147ea8f8e9af5bb6da1 | ff,fc,9f     |
 | sf2rb3       | jtcps1     | f28e25975d4d9598f099eb878bc81b38 | ff,fc,9f     |
 | sf2red       | jtcps1     | a199367b847c242ca25e3df0ca320c4b | ff,fc,9f     |
 | sf2redp2     | jtcps1     | be78347b4497cb31be8820557aa25e33 | ff,fc,9f     |
@@ -688,9 +690,9 @@
 | sfar2        | jtcps2     | 2558dee640adbc24df0f3e5e17087fe5 |              |
 | sfar3        | jtcps2     | 68632c920386dfe9eb0b7b33c726d53c |              |
 | sfau         | jtcps2     | f00a450b1f76652d196915ab4b56a2fa |              |
-| sfj          | jtsf       | ed5301ca90d1d1abd44e64330242d6f4 | ff,df,ff,ff  |
-| sfua         | jtsf       | 605c1e24fe4599b7d56dc13f69ae47f6 | ff,df,ff,ff  |
-| sfw          | jtsf       | 73d615de5a2a4810f3be75714f36a746 | ff,df,ff,ff  |
+| sfj          | jtsf       | 5d0553e66a1c4c25f624ff7d0325709f | ff,df,ff,ff  |
+| sfua         | jtsf       | 16623d99ec65901b110be46791791214 | ff,df,ff,ff  |
+| sfw          | jtsf       | 74b57623a78c64b900e4711037b121e6 | ff,df,ff,ff  |
 | sfz2a        | jtcps2     | 34599182b0cc663775441621dbdc670d |              |
 | sfz2ad       | jtcps2     | faddf7e00ac6cf4108abd3811f96e5d9 |              |
 | sfz2al       | jtcps2     | 1cba5b29579e3f7a245abea519ca8b47 |              |
@@ -734,7 +736,7 @@
 | shangon3     | jtshanon   | 9da98cae4f35abee9531bae161dcaadb | ff,fe        |
 | shangon3d    | jtshanon   | 49f4eb68bede0b67f071290135e0ac15 | ff,fe        |
 | shangonle    | jtshanon   | 44ac751a829223f70ada912c66ec1107 | ff,fe        |
-| shaolins     | jtkicker   | 298df92593d7f8ee9d16710345fd47a2 | ff,5a,ff     |
+| shaolins     | jtkicker   | d626937d5de63b3c9e13bfa9b0b4c8ea | ff,5a,ff     |
 | shdancer     | jts18      | f466770079c996e1346cf2e07e808853 | ff,fd        |
 | shdancer1    | jts18      | 789ad404c45e1652822ce1c45929f7d1 | ff,fd        |
 | shdancerj    | jts18      | 6e07d7372a48fb13cbafc99a0de6e727 | ff,fd        |
@@ -745,10 +747,10 @@
 | shinobi4     | jts16b     | 45a7fc1c237eea3c156faad42b48e085 | ff,fc        |
 | shinobi5     | jts16b     | b22790fead022eecee795c8bb9c90413 | ff,fc        |
 | shinobi6     | jts16b     | 437ca6454594366e3f36215bb48a5656 | ff,fc        |
-| sidearms     | jtsarms    | b5ba00ff5cc7967aa17239f39b8e6194 | fc,ff,ff     |
-| sidearmsj    | jtsarms    | 3a22c05edef9fcf3476468a7a569fd41 | fc,ff,ff     |
-| sidearmsu    | jtsarms    | 60925902ee7cca5fd4cf7083ada3e665 | fc,ff,ff     |
-| sidearmsur1  | jtsarms    | 784ae56ee88f2a9dcb44daeff1d60ebd | fc,ff,ff     |
+| sidearms     | jtsarms    | 63397ac253012aa87bf59cab0c9b3608 | fc,ff,ff     |
+| sidearmsj    | jtsarms    | 4a7b0e5f6c9887e1752263fa22eff527 | fc,ff,ff     |
+| sidearmsu    | jtsarms    | 2e6fe5c5581d5bceab5b62ec3f7f92ed | fc,ff,ff     |
+| sidearmsur1  | jtsarms    | da03c990a511c42f16d70939dff69ee3 | fc,ff,ff     |
 | simpsons     | jtsimson   | e9c0cc9cfe06e76ea2260419358b184d |              |
 | simpsons2p   | jtsimson   | 37f8fec68d2d1b0122413065f2ca5f1d |              |
 | simpsons2p2  | jtsimson   | 9f4c8a029a840a0a32371020d144f176 |              |
@@ -820,6 +822,7 @@
 | strideruc    | jtcps1     | d1d52503d329441ea51b411e6009f4e2 | ff,fd,ff     |
 | suprleag     | jts16b     | 60eac3924d5353c0ba872b74d0bb8242 | ff,fe        |
 | tankfrce     | jtshouse   | f8abd206a5b82f1c759f302ba16c6cd7 | ff,ff        |
+| tankfrce4    | jtshouse   | e9c9dfa2bcfa1d800dc3a8cf4229ec34 | ff,ff        |
 | tankfrcej    | jtshouse   | 55239f02c6fac6f70eb00fa584663923 | ff,ff        |
 | tetris       | jts16      | a66fee2c280d67b2820db8dda291719e | ff,fd        |
 | tetris1      | jts16b     | e9cca35f63ff528a07057065e30c5d0d | ff,fd        |

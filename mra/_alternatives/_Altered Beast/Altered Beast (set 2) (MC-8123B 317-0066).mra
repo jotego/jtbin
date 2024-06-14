@@ -93,6 +93,7 @@
         <part name="317-0066.key" crc="ed85a054"/>
         <!-- Total 0x44A000 bytes - 4392 kBytes -->
     </rom>
+    <nvram index="2" size="16384"/>
     <rom index="1">
         <part>00</part>
     </rom>

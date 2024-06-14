@@ -10,6 +10,10 @@
 			{
 				"id": 1,
 				"filename": "bayroutej.rom"
+			},
+			{
+				"id": 2,
+				"filename": "bayroutej.sav"
 			}
 		],
 		"memory_writes": [

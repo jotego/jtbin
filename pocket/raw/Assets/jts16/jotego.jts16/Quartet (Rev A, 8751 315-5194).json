@@ -10,6 +10,10 @@
 			{
 				"id": 1,
 				"filename": "quartet.rom"
+			},
+			{
+				"id": 2,
+				"filename": "quartet.sav"
 			}
 		],
 		"memory_writes": [

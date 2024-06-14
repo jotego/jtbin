@@ -10,6 +10,10 @@
 			{
 				"id": 1,
 				"filename": "ddux1.rom"
+			},
+			{
+				"id": 2,
+				"filename": "ddux1.sav"
 			}
 		],
 		"memory_writes": [

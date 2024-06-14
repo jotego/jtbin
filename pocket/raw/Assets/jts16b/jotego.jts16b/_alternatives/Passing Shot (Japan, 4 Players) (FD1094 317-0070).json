@@ -10,6 +10,10 @@
 			{
 				"id": 1,
 				"filename": "passshtj.rom"
+			},
+			{
+				"id": 2,
+				"filename": "passshtj.sav"
 			}
 		],
 		"memory_writes": [

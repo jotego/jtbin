@@ -10,6 +10,10 @@
 			{
 				"id": 1,
 				"filename": "wrestwar1.rom"
+			},
+			{
+				"id": 2,
+				"filename": "wrestwar1.sav"
 			}
 		],
 		"memory_writes": [

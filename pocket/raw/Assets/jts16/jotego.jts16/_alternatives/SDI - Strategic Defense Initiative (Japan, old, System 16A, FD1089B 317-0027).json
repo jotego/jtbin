@@ -10,6 +10,10 @@
 			{
 				"id": 1,
 				"filename": "sdia.rom"
+			},
+			{
+				"id": 2,
+				"filename": "sdia.sav"
 			}
 		],
 		"memory_writes": [

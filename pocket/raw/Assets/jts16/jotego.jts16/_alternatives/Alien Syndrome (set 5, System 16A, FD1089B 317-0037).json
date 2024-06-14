@@ -10,6 +10,10 @@
 			{
 				"id": 1,
 				"filename": "aliensyn5.rom"
+			},
+			{
+				"id": 2,
+				"filename": "aliensyn5.sav"
 			}
 		],
 		"memory_writes": [
