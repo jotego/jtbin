@@ -1,0 +1,109 @@
+<!--          FPGA arcade hardware by Jotego
+
+              This core is available for hardware compatible with MiST and MiSTer
+              Other FPGA systems may be supported by the time you read this.
+              This work is not mantained by the MiSTer project. Please contact the
+              core author for issues and updates.
+
+              (c) Jose Tejada, 2024. Please support this research
+              Patreon: https://patreon.com/jotego
+
+              The author does not endorse or participate in illegal distribution
+              of copyrighted material. This work can be used with compatible
+              software. This software can be homebrew projects or legally
+              obtained memory dumps of compatible games.
+
+              This file license is GNU GPLv2.
+              You can read the whole license file in
+              https://opensource.org/licenses/gpl-2.0.php
+
+-->
+
+<misterromdescription>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
+    <name>Rompers (Japan, old version)</name>
+    <setname>romperso</setname>
+    <rbf>jtshouse</rbf>
+    <mameversion>0251</mameversion>
+    <year>1989</year>
+    <manufacturer>Namco</manufacturer>
+    <players>2</players>
+    <joystick>8</joystick>
+    <rotation>vertical (cw)</rotation>
+    <region>World</region>
+    <rom index="0" zip="romperso.zip|rompers.zip" md5="None" address="0x30000000" asm_md5="7b5145a14d162ee34c9e6acc8bc84184">
+        <!-- Byte 0: bit 0-1: protection type, bit 4-5: control type (0 - normal, 1 - faceoff 4p, 2 - berabohm, 3 - quester), bit 6: 64/128kB Program ROMs
+Byte 1: key ID
+Byte 2: addr for key ID
+Byte 3: addr for RNG
+Byte 4: addr for nibble swap data write
+Byte 5: addr for nibble swap read
+Byte 6: addr for lower nibble read
+Byte 7: addr for upper nibble read
+ -->
+        <part>
+            03 B6 07 FF FF FF FF FF
+        </part>
+        <!-- user1 - starts at 0x0 - length 0x3A0000 (22 bits) -->
+        <part repeat="0x200000"> FF</part>
+        <part name="rp1_prg4.bin" crc="0918f06d"/>
+        <part name="rp1_prg4.bin" crc="0918f06d"/>
+        <part repeat="0x60000"> FF</part>
+        <part name="rp1_prg5.bin" crc="98bd4133"/>
+        <part name="rp1_prg5.bin" crc="98bd4133"/>
+        <part repeat="0x60000"> FF</part>
+        <part name="rp1_prg6.bin" crc="fc183345"/>
+        <part name="rp1_prg6.bin" crc="fc183345"/>
+        <part repeat="0x60000"> FF</part>
+        <part name="rp1_prg7.bin" crc="8d49f28a"/>
+        <part name="rp1_prg7.bin" crc="8d49f28a"/>
+        <!-- JTFRAME_BA1_START -->
+        <!-- audiocpu - starts at 0x3A0000 - length 0x20000 (17 bits) -->
+        <part name="rp1_snd0.bin" crc="c7c8d649"/>
+        <part repeat="0x10000"> FF</part>
+        <!-- PCM_START -->
+        <!-- voice - starts at 0x3C0000 - length 0xB0000 (20 bits) -->
+        <part name="rp_voi-0.bin" crc="11caef7e"/>
+        <part repeat="0x90000"> FF</part>
+        <!-- JTFRAME_BA2_START -->
+        <!-- c123tmap:mask - starts at 0x470000 - length 0x20000 (17 bits) -->
+        <part name="rp1_chr8.bin" crc="69cfe46a"/>
+        <part repeat="0x10000"> FF</part>
+        <!-- SCR_START -->
+        <!-- c123tmap - starts at 0x490000 - length 0x100000 (20 bits) -->
+        <part name="rp_chr-0.bin" crc="41b10ef3"/>
+        <part name="rp_chr-1.bin" crc="c18cd24e"/>
+        <part name="rp_chr-2.bin" crc="6c9a3c79"/>
+        <part name="rp_chr-3.bin" crc="473aa788"/>
+        <part repeat="0x80000"> FF</part>
+        <!-- JTFRAME_BA3_START -->
+        <!-- sprite - starts at 0x590000 - length 0x100000 (20 bits) -->
+        <part name="rp_obj-0.bin" crc="1dcbf8bb"/>
+        <part name="rp_obj-1.bin" crc="cb98e273"/>
+        <part name="rp_obj-2.bin" crc="6ebd191e"/>
+        <part name="rp_obj-3.bin" crc="7c9828a1"/>
+        <part name="rp_obj-4.bin" crc="0348220b"/>
+        <part name="rp1_obj5.bin" crc="9e2ba243"/>
+        <part repeat="0x10000"> FF</part>
+        <part name="rp1_obj6.bin" crc="6bf2aca6"/>
+        <part repeat="0x30000"> FF</part>
+        <!-- JTFRAME_PROM_START -->
+        <!-- mcu - starts at 0x690000 - length 0x1000 (12 bits) -->
+        <part name="cus64-64a1.mcu" crc="ffb5c0bd"/>
+        <!-- Total 0x691000 bytes - 6724 kBytes -->
+    </rom>
+    <rom index="17" zip="jtbeta.zip" md5="None" asm_md5="c6a4be95256a59cbf8cdd01b7c2a6e70">
+        <part name="beta.bin" crc="330da304"/>
+    </rom>
+    <nvram index="2" size="63552"/>
+    <!-- Vertical game -->
+    <rom index="1">
+        <part>01</part>
+    </rom>
+    <switches page_id="1" page_name="Switches" base="16" default="ff,fe">
+        <!-- DIPSW -->
+        <dip name="Service Mode" bits="0" ids="On,Off"/>
+        <dip name="*Sound fix" ids="On,Off" bits="8"/>
+    </switches>
+    <buttons names="Knock Down Stone Wall,-,-,-,-,-,Start,Coin,Core credits" default="A,Start,Select,-" count="1"/>
+</misterromdescription>

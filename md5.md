@@ -99,6 +99,7 @@
 | avspj        | jtcps2     | 7545a022ef849b82e814813fe1b67bc1 |              |
 | avspu        | jtcps2     | 5fe67dd2501a299a53a8033ad611a0eb |              |
 | baddudes     | jtninja    | 9a137460886b91314748c80a1b5717f0 | ff,ff        |
+| bakutotu     | jtshouse   | 60ccd018aa27cc4c8e6bcf3fe9e33523 | ff           |
 | batcir       | jtcps2     | 5de9f32085af030e5915310ef8dabd84 |              |
 | batcira      | jtcps2     | 284342d6ab79d20386a2e8ffc1cc7766 |              |
 | batcird      | jtcps2     | 32cba06a914e372d54fb1b56fadfc082 |              |
@@ -506,8 +507,8 @@
 | nemo         | jtcps1     | 96c82493c2ddea4093a27f9a1c187333 | ff,fc,bf     |
 | nemoj        | jtcps1     | bc1fd457b0a397730655309139c22eb9 | ff,fc,bf     |
 | nemor1       | jtcps1     | dbbe6ea639ceb5150d0ee1574500e48e | ff,fc,bf     |
-| ngp          | jtngp      | d87d876c4391935c9d48ef352a3ff02d |              |
-| ngpc         | jtngp      | 3655aacebb43a963607d4cf821fc1301 |              |
+| ngp          | jtngpc     | d87d876c4391935c9d48ef352a3ff02d |              |
+| ngpc         | jtngpc     | 3655aacebb43a963607d4cf821fc1301 |              |
 | nwarr        | jtcps2     | 035ba6522df30974258799303e42c4dd |              |
 | nwarra       | jtcps2     | 1eaf366cbc1d63dcae89c17b33b3dbc3 |              |
 | nwarrb       | jtcps2     | 4dc506ada5a8d13cbbcf92f1e7ba3df5 |              |
@@ -606,6 +607,8 @@
 | rockmanj     | jtcps1     | 6c5699d3d2215256f970a3e9d27a86cc | ff,fa,ff     |
 | rocnrope     | jtroc      | 3ea1ddb56be848aecc0b3b64f295ad3e | ff,5b,96     |
 | rocnropek    | jtroc      | 9a7b2a4292da9248e666abe317edf768 | ff,5b,96     |
+| rompers      | jtshouse   | 08ff77ec86c6b0087b1c6398be1c31ac | ff,fe        |
+| romperso     | jtshouse   | 7b5145a14d162ee34c9e6acc8bc84184 | ff,fe        |
 | rushcrsh     | jtrumble   | 4f09aed603e4590fd2b8cadd6a796edf | ff,73        |
 | ryukyu       | jts16b     | 8f2e0276190a2c18150cc7da4a25583f | ff,fa        |
 | ryukyua      | jts16b     | a588e0ceab5e1d557cc0188a38385750 | ff,fa        |

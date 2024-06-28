@@ -1,0 +1,118 @@
+<!--          FPGA arcade hardware by Jotego
+
+              This core is available for hardware compatible with MiST and MiSTer
+              Other FPGA systems may be supported by the time you read this.
+              This work is not mantained by the MiSTer project. Please contact the
+              core author for issues and updates.
+
+              (c) Jose Tejada, 2024. Please support this research
+              Patreon: https://patreon.com/jotego
+
+              The author does not endorse or participate in illegal distribution
+              of copyrighted material. This work can be used with compatible
+              software. This software can be homebrew projects or legally
+              obtained memory dumps of compatible games.
+
+              This file license is GNU GPLv2.
+              You can read the whole license file in
+              https://opensource.org/licenses/gpl-2.0.php
+
+-->
+
+<misterromdescription>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
+    <name>Bakutotsu Kijuutei</name>
+    <setname>bakutotu</setname>
+    <rbf>jtshouse</rbf>
+    <mameversion>0251</mameversion>
+    <year>1988</year>
+    <manufacturer>Namco</manufacturer>
+    <players>2</players>
+    <joystick>8</joystick>
+    <rotation>horizontal</rotation>
+    <region>World</region>
+    <rom index="0" zip="bakutotu.zip" md5="None" address="0x30000000" asm_md5="60ccd018aa27cc4c8e6bcf3fe9e33523">
+        <!-- Byte 0: bit 0-1: protection type, bit 4-5: control type (0 - normal, 1 - faceoff 4p, 2 - berabohm, 3 - quester), bit 6: 64/128kB Program ROMs
+Byte 1: key ID
+Byte 2: addr for key ID
+Byte 3: addr for RNG
+Byte 4: addr for nibble swap data write
+Byte 5: addr for nibble swap read
+Byte 6: addr for lower nibble read
+Byte 7: addr for upper nibble read
+ -->
+        <part>
+            02 22 00 00 00 00 00 00
+        </part>
+        <!-- user1 - starts at 0x0 - length 0x3A0000 (22 bits) -->
+        <part name="bk_prg-0.bin" crc="4529c362" length="0x20000"/>
+        <part repeat="0x60000"> FF</part>
+        <part name="bk1_p1.bin" crc="d389d6d4"/>
+        <part name="bk1_p1.bin" crc="d389d6d4"/>
+        <part repeat="0x60000"> FF</part>
+        <part name="bk1_p2.bin" crc="7a686daa"/>
+        <part name="bk1_p2.bin" crc="7a686daa"/>
+        <part repeat="0x60000"> FF</part>
+        <part name="bk1_p3.bin" crc="e608234f" length="0x20000"/>
+        <part repeat="0x60000"> FF</part>
+        <part name="bk1_p4.bin" crc="96446d48"/>
+        <part name="bk1_p4.bin" crc="96446d48"/>
+        <part repeat="0x60000"> FF</part>
+        <part name="bk1_p5.bin" crc="dceed7cb"/>
+        <part name="bk1_p5.bin" crc="dceed7cb"/>
+        <part repeat="0x60000"> FF</part>
+        <part name="bk1_p6.bin" crc="57a3ce42" length="0x20000"/>
+        <part repeat="0x60000"> FF</part>
+        <part name="bk1_prg7.bin" crc="fac1c1bf" length="0x20000"/>
+        <!-- JTFRAME_BA1_START -->
+        <!-- audiocpu - starts at 0x3A0000 - length 0x20000 (17 bits) -->
+        <part name="bk1_s0.bin" crc="c35d7df6"/>
+        <part repeat="0x10000"> FF</part>
+        <!-- PCM_START -->
+        <!-- voice - starts at 0x3C0000 - length 0xB0000 (20 bits) -->
+        <part name="bk1_v0.bin" crc="008e290e"/>
+        <part repeat="0xA0000"> FF</part>
+        <!-- JTFRAME_BA2_START -->
+        <!-- c123tmap:mask - starts at 0x470000 - length 0x20000 (17 bits) -->
+        <part name="bk_chr-8.bin" crc="6c8d4029"/>
+        <!-- SCR_START -->
+        <!-- c123tmap - starts at 0x490000 - length 0x100000 (20 bits) -->
+        <part name="bk_chr-0.bin" crc="4e011058"/>
+        <part name="bk_chr-1.bin" crc="496fcb9b"/>
+        <part name="bk_chr-2.bin" crc="dc812e28"/>
+        <part name="bk_chr-3.bin" crc="2b6120f4"/>
+        <part repeat="0x80000"> FF</part>
+        <!-- JTFRAME_BA3_START -->
+        <!-- sprite - starts at 0x590000 - length 0x100000 (20 bits) -->
+        <part name="bk_obj-0.bin" crc="88c627c1"/>
+        <part name="bk_obj-3.bin" crc="f7d1909a"/>
+        <part name="bk_obj-4.bin" crc="27ed1441"/>
+        <part name="bk_obj-3.bin" crc="f7d1909a"/>
+        <part name="bk_obj-4.bin" crc="27ed1441"/>
+        <part name="bk_obj-5.bin" crc="790560c0"/>
+        <part name="bk_obj-6.bin" crc="2cd4d2ea"/>
+        <part name="bk_obj-7.bin" crc="809aa0e6"/>
+        <!-- JTFRAME_PROM_START -->
+        <!-- mcu - starts at 0x690000 - length 0x1000 (12 bits) -->
+        <part name="cus64-64a1.mcu" crc="ffb5c0bd"/>
+        <!-- Total 0x691000 bytes - 6724 kBytes -->
+    </rom>
+    <rom index="17" zip="jtbeta.zip" md5="None" asm_md5="c6a4be95256a59cbf8cdd01b7c2a6e70">
+        <part name="beta.bin" crc="330da304"/>
+    </rom>
+    <nvram index="2" size="63552"/>
+    <rom index="1">
+        <part>00</part>
+    </rom>
+    <switches page_id="1" page_name="Switches" base="16" default="ff">
+        <!-- DIPSW -->
+        <dip name="Service Mode" bits="0" ids="On,Off"/>
+        <dip name="Invincibility (Cheat)" bits="1" ids="On,Off"/>
+        <dip name="Show Coordinates" bits="2" ids="On,Off"/>
+        <dip name="Level Selection" bits="3" ids="On,Off"/>
+        <dip name="Sprite Viewer" bits="4" ids="On,Off"/>
+        <dip name="Freeze" bits="7" ids="On,Off"/>
+        <dip name="*Sound fix" ids="On,Off" bits="8"/>
+    </switches>
+    <buttons names="Gun Shot,-,-,-,-,-,Start,Coin,Core credits" default="A,Start,Select,-" count="1"/>
+</misterromdescription>

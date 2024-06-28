@@ -221,6 +221,17 @@
 				]
 			},
 			{
+				"name": "Flip Screen",
+				"id": 8,
+				"type": "check",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 0,
+				"value": 65536,
+				"mask": "0xFFFEFFFF"
+			},
+			{
 				"name": "Default",
 				"id": 1015,
 				"type": "number_u32",

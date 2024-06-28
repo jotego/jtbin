@@ -145,6 +145,27 @@
 				]
 			},
 			{
+				"name": "PCB type",
+				"id": 7,
+				"type": "list",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 0,
+				"value": 0,
+				"mask": "0xFEFFFFFF",
+				"options": [
+					{
+						"name": "88617A",
+						"value": "0x0"
+					},
+					{
+						"name": "89626A",
+						"value": "0x1000000"
+					}
+				]
+			},
+			{
 				"name": "Default",
 				"id": 1015,
 				"type": "number_u32",

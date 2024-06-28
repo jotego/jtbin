@@ -12,6 +12,17 @@
 				"defaultval": 4,
 				"value": 4,
 				"mask": "0xFFFFFFFB"
+			},
+			{
+				"name": "Default",
+				"id": 1015,
+				"type": "number_u32",
+				"enabled": false,
+				"persist": false,
+				"writeonly": true,
+				"address": "0xfa000000",
+				"defaultval": 65535,
+				"value": 0
 			}
 		],
 		"messages": []
