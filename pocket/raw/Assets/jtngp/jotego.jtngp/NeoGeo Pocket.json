@@ -9,7 +9,8 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "ngp.rom"
+				"filename": "ngp.rom",
+				"md5": "d87d876c4391935c9d48ef352a3ff02d"
 			},
 			{
 				"id": 2,
