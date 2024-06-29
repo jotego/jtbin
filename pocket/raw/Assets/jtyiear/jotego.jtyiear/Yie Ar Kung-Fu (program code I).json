@@ -9,7 +9,8 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "yiear.rom"
+				"filename": "yiear.rom",
+				"md5": "14a57168c4354250364597062b211317"
 			}
 		],
 		"memory_writes": [

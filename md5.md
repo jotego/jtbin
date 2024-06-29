@@ -989,7 +989,7 @@
 | xmvsfu1d     | jtcps2     | cc92b85d19606f85e1972274e2a171e3 |              |
 | xmvsfur1     | jtcps2     | 0f7c305983f04d343c8d4294e90059a2 |              |
 | xmvsfur2     | jtcps2     | a0ebc0b139d37b32680d5a47901555e0 |              |
-| yiear        | jtyiear    | afb55d95baedbc4da89fc628d6586861 | ff,5b,ff     |
-| yiear2       | jtyiear    | 99583939d12b5ceadcc7a54a8c4d50f2 | ff,5b,ff     |
+| yiear        | jtyiear    | 14a57168c4354250364597062b211317 | ff,5b,ff     |
+| yiear2       | jtyiear    | 1c90854dd7d2c6f57f3bae68dfe375c5 | ff,5b,ff     |
 | youkaidk1    | jtshouse   | 7a2bd79d7c6a8bae411789e9db226622 | ff           |
 | youkaidk2    | jtshouse   | bc244d415db8f6a3acac3b62f8e3d56f | ff           |

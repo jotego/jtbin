@@ -31,36 +31,30 @@
     <joystick>8</joystick>
     <rotation>horizontal</rotation>
     <region>World</region>
-    <rom index="0" zip="yiear2.zip|yiear.zip" md5="None" asm_md5="99583939d12b5ceadcc7a54a8c4d50f2">
+    <rom index="0" zip="yiear2.zip|yiear.zip" md5="None" asm_md5="1c90854dd7d2c6f57f3bae68dfe375c5">
         <!-- maincpu - starts at 0x0 - length 0x10000 (16 bits) -->
         <part repeat="0x8000"> FF</part>
-        <interleave output="16">
-            <part name="407_g08.10d" crc="49ecd9dd" map="12"/>
-        </interleave>
-        <interleave output="16">
-            <part name="407_g07.8d" crc="bc2e1208" map="12"/>
-        </interleave>
+        <part name="407_g08.10d" crc="49ecd9dd"/>
+        <part name="407_g07.8d" crc="bc2e1208"/>
         <!-- SCR_START -->
         <!-- tiles - starts at 0x10000 - length 0x4000 (14 bits) -->
         <interleave output="16">
-            <part name="407_c01.6h" crc="b68fd91d" map="01"/>
-            <part name="407_c02.7h" crc="d9b167c6" map="10"/>
+            <part name="407_c02.7h" crc="d9b167c6" map="01"/>
+            <part name="407_c01.6h" crc="b68fd91d" map="10"/>
         </interleave>
         <!-- OBJ_START -->
         <!-- sprites - starts at 0x14000 - length 0x10000 (16 bits) -->
         <interleave output="16">
-            <part name="407_d05.16h" crc="45109b29" map="01"/>
-            <part name="407_d03.14h" crc="e6aa945b" map="10"/>
+            <part name="407_d03.14h" crc="e6aa945b" map="01"/>
+            <part name="407_d05.16h" crc="45109b29" map="10"/>
         </interleave>
         <interleave output="16">
-            <part name="407_d06.17h" crc="1d650790" map="01"/>
-            <part name="407_d04.15h" crc="cc187c22" map="10"/>
+            <part name="407_d04.15h" crc="cc187c22" map="01"/>
+            <part name="407_d06.17h" crc="1d650790" map="10"/>
         </interleave>
         <!-- PCM_START -->
         <!-- vlm - starts at 0x24000 - length 0x2000 (13 bits) -->
-        <interleave output="16">
-            <part name="407_c09.8b" crc="f75a1539" map="12"/>
-        </interleave>
+        <part name="407_c09.8b" crc="f75a1539"/>
         <!-- JTFRAME_PROM_START -->
         <!-- proms - starts at 0x26000 - length 0x20 (5 bits) -->
         <part name="407c10.1g" crc="c283d71f"/>
