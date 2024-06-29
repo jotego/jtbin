@@ -1,0 +1,28 @@
+{
+	"instance":{
+		"magic": "APF_VER_1",
+		"variant_select": {
+			"id": 0,
+			"select": false
+		},
+		"data_path": "",
+		"data_slots": [
+			{
+				"id": 1,
+				"filename": "bouldash.rom",
+				"md5": "8b470f64f4920165a6461f9ca169c933"
+			},
+			{
+				"id": 17,
+				"filename": "beta.bin",
+				"md5": "c6a4be95256a59cbf8cdd01b7c2a6e70"
+			}
+		],
+		"memory_writes": [
+			{
+				"address": "0xf9000000",
+				"data": "0x0"
+			}
+		]
+	}
+}

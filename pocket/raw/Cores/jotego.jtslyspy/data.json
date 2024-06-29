@@ -1,0 +1,52 @@
+{
+	"data":{
+		"magic": "APF_VER_1",
+		"data_slots": [
+			{
+				"name": "Arcade Game",
+				"id": 0,
+				"required": true,
+				"parameters": "0x113",
+				"extensions": [
+					"json"
+				],
+				"address": "",
+				"nonvolatile": false
+			},
+			{
+				"name": "ROM",
+				"id": 1,
+				"required": true,
+				"parameters": "0x108",
+				"extensions": [
+					"rom"
+				],
+				"address": "0x00000000",
+				"nonvolatile": false
+			},
+			{
+				"name": "NVRAM",
+				"id": 2,
+				"required": false,
+				"parameters": "0x100",
+				"extensions": [
+					"sav"
+				],
+				"address": "0x00000000",
+				"nonvolatile": true
+			},
+			{
+				"name": "JTBETA",
+				"id": 17,
+				"required": false,
+				"parameters": "0x1000000",
+				"filename": "beta.bin",
+				"extensions": [
+					"bin"
+				],
+				"address": "0x00000000",
+				"nonvolatile": false
+			}
+		]
+	}
+}

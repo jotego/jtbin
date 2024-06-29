@@ -53,8 +53,8 @@
         <interleave output="16">
             <part name="bmk23.8k" crc="17f77ef9" map="12"/>
         </interleave>
-        <!-- SCR1_START -->
         <!-- JTFRAME_BA2_START -->
+        <!-- SCR1_START -->
         <!-- gfx2 - starts at 0x48000 - length 0x40000 (18 bits) -->
         <interleave output="16">
             <part name="bm19.10j" crc="868ababc" map="01"/>
@@ -78,8 +78,8 @@
             <part name="bmk25.14l" crc="a755faf1" map="01"/>
             <part name="bmk24.14k" crc="bf186ef2" map="10"/>
         </interleave>
-        <!-- OBJ_START -->
         <!-- JTFRAME_BA3_START -->
+        <!-- OBJ_START -->
         <!-- gfx4 - starts at 0x98000 - length 0x40000 (18 bits) -->
         <interleave output="16">
             <part name="bmk10.10c" crc="1e0d9571" map="01"/>
