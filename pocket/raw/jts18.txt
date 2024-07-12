@@ -13,6 +13,9 @@ Bloxeed (Japan) (FD1094 317-0139) --> bloxeed.rom
 Bloxeed (Japan, earlier) (FD1094 317-0139) --> bloxeeda.rom
 Clutch Hitter (US) (FD1094 317-0176) --> cltchitr.rom
 Clutch Hitter (Japan) (FD1094 317-0175) --> cltchitrj.rom
+Michael Jackson's Moonwalker (World) (FD1094-8751 317-0159) --> mwalk.rom
+Michael Jackson's Moonwalker (Japan) (FD1094-8751 317-0157) --> mwalkj.rom
+Michael Jackson's Moonwalker (US) (FD1094-8751 317-0158) --> mwalku.rom
 Shadow Dancer (World) --> shdancer.rom
 Shadow Dancer (US) --> shdancer1.rom
 Shadow Dancer (Japan) --> shdancerj.rom

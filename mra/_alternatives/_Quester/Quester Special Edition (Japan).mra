@@ -83,13 +83,10 @@ Byte 7: addr for upper nibble read
         <part name="cus64-64a1.mcu" crc="ffb5c0bd"/>
         <!-- Total 0x691000 bytes - 6724 kBytes -->
     </rom>
-    <rom index="17" zip="jtbeta.zip" md5="None" asm_md5="c6a4be95256a59cbf8cdd01b7c2a6e70">
-        <part name="beta.bin" crc="330da304"/>
-    </rom>
     <nvram index="2" size="63552"/>
     <!-- Vertical game -->
     <rom index="1">
-        <part>01</part>
+        <part>01 80</part>
     </rom>
     <switches page_id="1" page_name="Switches" base="16" default="df">
         <!-- DIPSW -->

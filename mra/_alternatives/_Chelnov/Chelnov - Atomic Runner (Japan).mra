@@ -84,7 +84,7 @@
         <!-- Total 0x139800 bytes - 1254 kBytes -->
     </rom>
     <rom index="1">
-        <part>00</part>
+        <part>00 48</part>
     </rom>
     <switches page_id="1" page_name="Switches" base="16" default="7f,ff">
         <!-- DSW -->

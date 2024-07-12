@@ -61,8 +61,8 @@
             <part name="21j-9" crc="c6640aed" map="01"/>
             <part name="21j-j" crc="5fb42e7c" map="10"/>
         </interleave>
-        <!-- JTFRAME_BA3_START -->
         <!-- OBJ_START -->
+        <!-- JTFRAME_BA3_START -->
         <!-- gfx2 - starts at 0x98000 - length 0x80000 (19 bits) -->
         <interleave output="16">
             <part name="21j-a" crc="574face3" map="01"/>
@@ -89,7 +89,7 @@
         <!-- Total 0x11C100 bytes - 1136 kBytes -->
     </rom>
     <rom index="1">
-        <part>00</part>
+        <part>00 50</part>
     </rom>
     <switches page_id="1" page_name="Switches" base="16" default="ff,ff">
         <!-- DSW0 -->

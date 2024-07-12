@@ -73,7 +73,7 @@
     </rom>
     <rom index="1">
         <!-- black frame 8x0 -->
-        <part>20</part>
+        <part>20 60</part>
     </rom>
     <switches page_id="1" page_name="Switches" base="8" default="ff,7b,ff">
         <!-- COINS_DSW3 -->

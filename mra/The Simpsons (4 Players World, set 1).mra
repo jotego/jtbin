@@ -70,7 +70,7 @@
     <nvram index="2" size="128"/>
     <rom index="1">
         <!-- black frame 16x0 -->
-        <part>60</part>
+        <part>60 53</part>
     </rom>
     <buttons names="Attack,Jump,-,Start,Coin,Core credits" default="A,B,Start,Select,-" count="2"/>
 </misterromdescription>

@@ -82,7 +82,7 @@
 </rom>
     <nvram index="2" size="128"/>
     <rom index="1">
-        <part>00</part>
+        <part>00 80</part>
     </rom>
     <buttons names="Light Punch,Middle Punch,Heavy Punch,Light Kick,Middle Kick,Heavy Kick,Start,Coin,Core credits" default="A,B,X,Y,L,R,Start,Select,-" count="6"/>
 </misterromdescription>

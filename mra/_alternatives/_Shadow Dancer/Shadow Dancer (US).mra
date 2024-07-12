@@ -31,10 +31,10 @@
     <joystick>8</joystick>
     <rotation>horizontal</rotation>
     <region>World</region>
-    <rom index="0" zip="shdancer1.zip|shdancer.zip" md5="None" address="0x30000000" asm_md5="789ad404c45e1652822ce1c45929f7d1">
+    <rom index="0" zip="shdancer1.zip|shdancer.zip" md5="None" address="0x30000000" asm_md5="551f6ee63d1c276be8d42fe61a6f4741">
         <part>
-            00 00 80 00 40 01 40 02
-            40 04 40 04 00 00 00 00
+            00 00 80 00 80 02 80 03
+            80 05 80 05 00 00 00 00
             00 00 00 00 00 00 00 00
             20 00 00 00 00 00 00 00
         </part>
@@ -43,18 +43,19 @@
             <part name="epr-12771b.a5" crc="04e30c84" map="01"/>
             <part name="epr-12772b.a6" crc="6868a4d4" map="10"/>
         </interleave>
-        <!-- soundcpu - starts at 0x80000 - length 0xC0000 (20 bits) -->
+        <!-- soundcpu - starts at 0x80000 - length 0x200000 (21 bits) -->
         <part name="epr-12720.a4" crc="7a0d8de1"/>
         <part repeat="0x60000"> FF</part>
         <part name="mpr-12715.b4" crc="07051a52"/>
-        <!-- tiles - starts at 0x140000 - length 0x100000 (20 bits) -->
+        <part repeat="0x140000"> FF</part>
+        <!-- tiles - starts at 0x280000 - length 0x100000 (20 bits) -->
         <interleave output="32">
             <part name="mpr-12712.b1" crc="9bdabe3d" map="0001"/>
             <part name="mpr-12713.b2" crc="852d2b1c" map="0010"/>
             <part name="mpr-12714.b3" crc="448226ce" map="0100"/>
             <part name="mpr-12714.b3" crc="448226ce" map="1000"/>
         </interleave>
-        <!-- sprites - starts at 0x240000 - length 0x200000 (21 bits) -->
+        <!-- sprites - starts at 0x380000 - length 0x200000 (21 bits) -->
         <interleave output="16">
             <part name="mpr-12719.b11" crc="d6888534" map="01"/>
             <part name="mpr-12726.a11" crc="ff344945" map="10"/>
@@ -71,16 +72,16 @@
             <part name="epr-12716.b8" crc="a870e629" map="01"/>
             <part name="epr-12723.a8" crc="c606cf90" map="10"/>
         </interleave>
-        <!-- maincpu:key - starts at 0x440000 -->
-        <!-- mcu - starts at 0x440000 -->
-        <!-- Total 0x440000 bytes - 4352 kBytes -->
+        <!-- maincpu:key - starts at 0x580000 -->
+        <!-- mcu - starts at 0x580000 -->
+        <!-- Total 0x580000 bytes - 5632 kBytes -->
     </rom>
     <rom index="17" zip="jtbeta.zip" md5="None" asm_md5="c6a4be95256a59cbf8cdd01b7c2a6e70">
         <part name="beta.bin" crc="330da304"/>
     </rom>
     <nvram index="2" size="16384"/>
     <rom index="1">
-        <part>00</part>
+        <part>00 80</part>
     </rom>
     <switches page_id="1" page_name="Switches" base="16" default="ff,fd">
         <!-- COINAGE -->

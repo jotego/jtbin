@@ -85,10 +85,10 @@
 | armwarr1     | jtcps2     | c74f6a4dad2d00cf722f9f1cbfe8cb62 |              |
 | armwaru      | jtcps2     | 45ebf5965592dd34c41351b0806cc1fa |              |
 | armwaru1     | jtcps2     | 855ffb3470988eff51c24b046872dd45 |              |
-| astorm       | jts18      | 86d17d9cc0760c7aea81d3793c6059c1 | ff,fd        |
-| astorm3      | jts18      | f617434a6f85629f9674d962499b3ddf | ff,fd        |
-| astormj      | jts18      | 8d5f2e543e862cf801a82fa42115a677 | ff,fd        |
-| astormu      | jts18      | 1a68974b518e6fb78d61d53961cc6791 | ff,fd        |
+| astorm       | jts18      | 04e7110c53247a3cca156e5e453e422b | ff,fd        |
+| astorm3      | jts18      | 1be801f1c6bbdc90d0d1549392628b76 | ff,fd        |
+| astormj      | jts18      | 6e4a12fcc151a437111afcadec211b8a | ff,fd        |
+| astormu      | jts18      | ef7e34b5b3db428f6596f9b81f14d2f5 | ff,fd        |
 | aurail       | jts16b     | f93b74596a242dcb89d60be521fe8bf5 | ff,fd        |
 | aurail1      | jts16b     | 946db3c1eebdcb619b58bfa7ade63943 | ff,fd        |
 | aurailj      | jts16b     | c177237cada99fcbd0764f0b3cde1981 | ff,fd        |
@@ -124,8 +124,8 @@
 | blockj       | jtpang     | efce4cc299fe5a5339917bd839bede6e |              |
 | blockr1      | jtpang     | e09a193172ef3ee6478eaa3c1c199477 |              |
 | blockr2      | jtpang     | c37a1f43e34f7ba59ba34c44a67f719d |              |
-| bloxeed      | jts18      | 109cf46798f0a3818b8deaceff040181 | ff,7d        |
-| bloxeeda     | jts18      | 78d65f8aba5a23318752f879fec9f6f2 | ff,7d        |
+| bloxeed      | jts18      | f3afb888ed4d0f8cfa8d4b2c77aadbf4 | ff,7d        |
+| bloxeeda     | jts18      | 961cc4b10b07285f7a06c3d6b9853025 | ff,7d        |
 | bodyslam     | jts16      | 95c7c8e42469e939eb64e7c9008b7972 | ff,fd        |
 | bootcamp     | jtcomsc    | a83efc086b5e9a1a1ce0cc1d93ba8706 | ff,7b,ff     |
 | bootcampa    | jtcomsc    | baaa45c8f5484ad876680676b0dc8bb1 | ff,7b,ff     |
@@ -158,8 +158,8 @@
 | chelnovu     | jtkarnov   | 45fc84d27ce7c849ba529902214c5d1a | 7f,ff        |
 | chikij       | jtcps1     | eb05493f72a6199e051ff4542ef300a6 | ff,fc,bf     |
 | choko        | jtcps2     | 9f42ff25fd71993cd48aa2948345f78e |              |
-| cltchitr     | jts18      | 168ec8aed3e9d98633213a86e3acffb9 | ff,fd        |
-| cltchitrj    | jts18      | 18aeb8e86810f5703e3300661c2b7432 | ff,fd        |
+| cltchitr     | jts18      | 7e3c3ba622fdfa0e79a159372bc3d23f | ff,fd        |
+| cltchitrj    | jts18      | 4309a09d48214d3c5894f61aa387e073 | ff,fd        |
 | combatsc     | jtcomsc    | 632210364566c4af623d44a003eb95a4 | ff,7b,ff     |
 | commando     | jtcommnd   | 34d5dc4ee95a5d25046f02441f424af1 | ff,df        |
 | commandob2   | jtcommnd   | 1f32592edb0816226f515e477dcd1451 | ff,df        |
@@ -503,12 +503,15 @@
 | mvscu        | jtcps2     | 7ab4ae235575a9c25c8642ac4872be50 |              |
 | mvscud       | jtcps2     | cca776bdb9f63d5eec9707d776976318 |              |
 | mvscur1      | jtcps2     | 31f4358bfec9948fcd8d2630e8abeef2 |              |
+| mwalk        | jts18      | 48a04bc9f743eb80373b0d48e8c3a264 | ff,fd        |
+| mwalkj       | jts18      | d9c5d241b04d4f36945a2c2d16e58668 | ff,fd        |
+| mwalku       | jts18      | 5595ae9077969f27403292417874c1fa | ff,fd        |
 | mx5000       | jtmx5k     | 51dfe5deef23094f7b7a4d85e983ac5e | ff,51,ff     |
 | nemo         | jtcps1     | 96c82493c2ddea4093a27f9a1c187333 | ff,fc,bf     |
 | nemoj        | jtcps1     | bc1fd457b0a397730655309139c22eb9 | ff,fc,bf     |
 | nemor1       | jtcps1     | dbbe6ea639ceb5150d0ee1574500e48e | ff,fc,bf     |
-| ngp          | jtngpc     | d87d876c4391935c9d48ef352a3ff02d |              |
-| ngpc         | jtngpc     | 3655aacebb43a963607d4cf821fc1301 |              |
+| ngp          | jtngp      | d87d876c4391935c9d48ef352a3ff02d |              |
+| ngpc         | jtngp      | 3655aacebb43a963607d4cf821fc1301 |              |
 | nwarr        | jtcps2     | 035ba6522df30974258799303e42c4dd |              |
 | nwarra       | jtcps2     | 1eaf366cbc1d63dcae89c17b33b3dbc3 |              |
 | nwarrb       | jtcps2     | 4dc506ada5a8d13cbbcf92f1e7ba3df5 |              |
@@ -740,9 +743,9 @@
 | shangon3d    | jtshanon   | 49f4eb68bede0b67f071290135e0ac15 | ff,fe        |
 | shangonle    | jtshanon   | 44ac751a829223f70ada912c66ec1107 | ff,fe        |
 | shaolins     | jtkicker   | d626937d5de63b3c9e13bfa9b0b4c8ea | ff,5a,ff     |
-| shdancer     | jts18      | f466770079c996e1346cf2e07e808853 | ff,fd        |
-| shdancer1    | jts18      | 789ad404c45e1652822ce1c45929f7d1 | ff,fd        |
-| shdancerj    | jts18      | 6e07d7372a48fb13cbafc99a0de6e727 | ff,fd        |
+| shdancer     | jts18      | 758e6804eaf46d5dedac5177acd4be39 | ff,fd        |
+| shdancer1    | jts18      | 551f6ee63d1c276be8d42fe61a6f4741 | ff,fd        |
+| shdancerj    | jts18      | 84e5693038bf5b9a164328798bc0aa18 | ff,fd        |
 | shinobi      | jts16      | 637b1a03a438168d577ee2ce15f0585b | ff,fc        |
 | shinobi1     | jts16      | 2c6ca20fe0a6c0cadd7c8cfee6238d89 | ff,fc        |
 | shinobi2     | jts16b     | aa4d18f8a2e598ba07c6b68a724a1b57 | ff,fc        |

@@ -67,7 +67,7 @@
     </rom>
     <!-- Vertical game -->
     <rom index="1">
-        <part>01</part>
+        <part>01 D6</part>
     </rom>
     <switches page_id="1" page_name="Switches" base="16" default="ff,5b,96">
         <!-- DSW1 -->

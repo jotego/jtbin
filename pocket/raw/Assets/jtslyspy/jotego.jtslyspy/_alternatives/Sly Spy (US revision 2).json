@@ -9,8 +9,7 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "slyspy2.rom",
-				"md5": "b1ec16993f4b8d6d34022313f26f469b"
+				"filename": "slyspy2.rom"
 			},
 			{
 				"id": 17,
@@ -21,7 +20,7 @@
 		"memory_writes": [
 			{
 				"address": "0xf9000000",
-				"data": "0x0"
+				"data": "0x7000"
 			}
 		]
 	}

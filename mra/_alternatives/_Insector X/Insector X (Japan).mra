@@ -74,7 +74,7 @@
         <!-- Total 0x251800 bytes - 2374 kBytes -->
     </rom>
     <rom index="1">
-        <part>00</part>
+        <part>00 AD</part>
     </rom>
     <switches page_id="1" page_name="Switches" base="16" default="fe,ff">
         <!-- DSWA -->

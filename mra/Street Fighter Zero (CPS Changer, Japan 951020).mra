@@ -80,7 +80,7 @@
         <!-- Total 0xA50000 bytes - 10560 kBytes -->
     </rom>
     <rom index="1">
-        <part>00</part>
+        <part>00 80</part>
     </rom>
     <switches page_id="1" page_name="Switches" base="8" default="ff,ff">
         <dip name="PCB type" ids="88617A,89626A" bits="24"/>

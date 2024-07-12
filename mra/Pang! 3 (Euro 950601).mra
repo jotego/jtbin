@@ -61,7 +61,7 @@
     </rom>
     <nvram index="2" size="128"/>
     <rom index="1">
-        <part>00</part>
+        <part>00 80</part>
     </rom>
     <switches page_id="1" page_name="Switches" base="8" default="ff,ff,ff">
         <dip name="Freeze" ids="On,Off" bits="23"/>

@@ -14,17 +14,12 @@
 			{
 				"id": 2,
 				"filename": "blastoff.sav"
-			},
-			{
-				"id": 17,
-				"filename": "beta.bin",
-				"md5": "c6a4be95256a59cbf8cdd01b7c2a6e70"
 			}
 		],
 		"memory_writes": [
 			{
 				"address": "0xf9000000",
-				"data": "0x1"
+				"data": "0x6701"
 			}
 		]
 	}

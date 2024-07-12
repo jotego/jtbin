@@ -36,12 +36,9 @@
         <part name="ngp_bios.ngp" crc="6232df8d"/>
         <!-- Total 0x10000 bytes - 64 kBytes -->
     </rom>
-    <rom index="17" zip="jtbeta.zip" md5="None" asm_md5="c6a4be95256a59cbf8cdd01b7c2a6e70">
-        <part name="beta.bin" crc="330da304"/>
-    </rom>
-    <nvram index="2" size="16384"/>
+    <nvram index="2" size="12356"/>
     <rom index="1">
-        <part>00</part>
+        <part>00 80</part>
     </rom>
     <buttons names="A,B,Option,Start,Coin,Core credits" default="A,B,X,Start,Select,-" count="3"/>
 </misterromdescription>

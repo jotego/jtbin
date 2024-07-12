@@ -80,7 +80,7 @@
         <!-- Total 0x2D0000 bytes - 2880 kBytes -->
     </rom>
     <rom index="1">
-        <part>00</part>
+        <part>00 80</part>
     </rom>
     <switches page_id="1" page_name="Switches" base="8" default="ff,fb,ff,ff">
         <!-- DSWB -->

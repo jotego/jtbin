@@ -46,8 +46,8 @@
         <part name="26j6-0.bin" crc="a84b2a29"/>
         <part name="26j7-0.bin" crc="bc6a48d5"/>
         <part repeat="0x10000"> FF</part>
-        <!-- CHAR_START -->
         <!-- JTFRAME_BA2_START -->
+        <!-- CHAR_START -->
         <!-- gfx1 - starts at 0x80000 - length 0x10000 (16 bits) -->
         <part name="26a8-0e.19" crc="4e80cd36"/>
         <!-- SCR_START -->
@@ -82,7 +82,7 @@
         <!-- Total 0x220100 bytes - 2176 kBytes -->
     </rom>
     <rom index="1">
-        <part>00</part>
+        <part>00 FF</part>
     </rom>
     <switches page_id="1" page_name="Switches" base="16" default="ff,96">
         <!-- DSW0 -->

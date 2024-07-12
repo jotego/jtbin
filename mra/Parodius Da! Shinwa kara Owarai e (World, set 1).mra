@@ -73,7 +73,7 @@
     <nvram index="2" size="128"/>
     <rom index="1">
         <!-- black frame 16x0 -->
-        <part>60</part>
+        <part>60 B0</part>
     </rom>
     <switches page_id="1" page_name="Switches" base="16" default="ff,52,ff">
         <!-- DSW1 -->

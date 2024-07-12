@@ -104,7 +104,7 @@
         <!-- Total 0xC0200 bytes - 768 kBytes -->
     </rom>
     <rom index="1">
-        <part>00</part>
+        <part>00 7E</part>
     </rom>
     <switches page_id="1" page_name="Switches" base="16" default="fc,ff">
         <!-- DSWA -->

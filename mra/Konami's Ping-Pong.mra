@@ -52,7 +52,7 @@
         <!-- Total 0xC220 bytes - 48 kBytes -->
     </rom>
     <rom index="1">
-        <part>00</part>
+        <part>00 C1</part>
     </rom>
     <switches page_id="1" page_name="Switches" base="16" default="ff,fa,ff">
         <!-- DSW1 -->

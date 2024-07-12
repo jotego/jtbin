@@ -69,7 +69,7 @@
     <nvram index="2" size="4096"/>
     <!-- Vertical game -->
     <rom index="1">
-        <part>01</part>
+        <part>01 D9</part>
     </rom>
     <switches page_id="1" page_name="Switches" base="8" default="ff,5e,f7">
         <!-- DSW1 -->

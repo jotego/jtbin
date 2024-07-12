@@ -66,7 +66,7 @@
     </rom>
     <nvram index="2" size="128"/>
     <rom index="1">
-        <part>00</part>
+        <part>00 9A</part>
     </rom>
     <buttons names="button 1,button 2,-,-,Start,Coin,Core credits" default="A,B,Start,Select,-" count="2"/>
 </misterromdescription>

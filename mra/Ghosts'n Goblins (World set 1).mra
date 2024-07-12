@@ -76,7 +76,7 @@
         <patch offset="0xA07A">12 12 12</patch>
     </rom>
     <rom index="1">
-        <part>00</part>
+        <part>00 7F</part>
     </rom>
     <switches page_id="1" page_name="Switches" base="16" default="df,fb">
         <!-- DSW1 -->

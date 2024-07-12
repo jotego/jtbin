@@ -80,8 +80,8 @@
             <part name="10765.b7" crc="0a73a057" map="10"/>
         </interleave>
         <part repeat="0x1A0000"> FF</part>
-        <!-- JTFRAME_PROM_START -->
         <!-- MCU_START -->
+        <!-- JTFRAME_PROM_START -->
         <!-- mcu - starts at 0x440000 - length 0x2000 (13 bits) -->
         <part repeat="0x1000"> FF</part>
         <part repeat="0x1000"> FF</part>
@@ -115,7 +115,7 @@
     </rom>
     <nvram index="2" size="16384"/>
     <rom index="1">
-        <part>00</part>
+        <part>00 80</part>
     </rom>
     <switches page_id="1" page_name="Switches" base="16" default="ff,fd">
         <!-- DSW1 -->

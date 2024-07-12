@@ -77,7 +77,7 @@
     </rom>
     <nvram index="2" size="2048"/>
     <rom index="1">
-        <part>00</part>
+        <part>00 B9</part>
     </rom>
     <switches page_id="1" page_name="Switches" base="16" default="ff,59">
         <!-- DSW1 -->

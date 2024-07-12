@@ -68,7 +68,7 @@
     <nvram index="2" size="128"/>
     <!-- Vertical game -->
     <rom index="1">
-        <part>05</part>
+        <part>05 F3</part>
     </rom>
     <buttons names="button 1,button 2,-,-,Start,Coin,Core credits" default="A,B,Start,Select,-" count="2"/>
 </misterromdescription>

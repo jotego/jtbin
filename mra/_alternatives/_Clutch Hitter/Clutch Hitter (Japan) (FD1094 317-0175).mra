@@ -31,10 +31,10 @@
     <joystick>8</joystick>
     <rotation>horizontal</rotation>
     <region>World</region>
-    <rom index="0" zip="cltchitrj.zip|cltchitr.zip" md5="None" address="0x30000000" asm_md5="18aeb8e86810f5703e3300661c2b7432">
+    <rom index="0" zip="cltchitrj.zip|cltchitr.zip" md5="None" address="0x30000000" asm_md5="4309a09d48214d3c5894f61aa387e073">
         <part>
-            00 00 00 01 80 02 80 04
-            00 0B 02 0B 00 00 00 00
+            00 00 00 01 00 03 00 05
+            80 0B 82 0B 00 00 00 00
             00 01 00 00 00 00 00 00
             04 00 00 00 00 00 00 00
         </part>
@@ -47,19 +47,20 @@
             <part name="epr-13797.a7" crc="361ade9f" map="01"/>
             <part name="epr-13785.a5" crc="09714762" map="10"/>
         </interleave>
-        <!-- soundcpu - starts at 0x100000 - length 0x180000 (21 bits) -->
+        <!-- soundcpu - starts at 0x100000 - length 0x200000 (21 bits) -->
         <part name="epr-13778.c7" crc="35e86146"/>
         <part repeat="0x60000"> FF</part>
         <part name="epr-13777.c6" crc="d1524782"/>
         <part name="epr-13776.c5" crc="282ac9fe"/>
-        <!-- tiles - starts at 0x280000 - length 0x200000 (21 bits) -->
+        <part repeat="0x80000"> FF</part>
+        <!-- tiles - starts at 0x300000 - length 0x200000 (21 bits) -->
         <interleave output="32">
             <part name="mpr-13773.c1" crc="3fc600e5" map="0001"/>
             <part name="mpr-13774.c2" crc="2411a824" map="0010"/>
             <part name="mpr-13775.c3" crc="cf527bf6" map="0100"/>
             <part name="mpr-13775.c3" crc="cf527bf6" map="1000"/>
         </interleave>
-        <!-- sprites - starts at 0x480000 - length 0x680000 (23 bits) -->
+        <!-- sprites - starts at 0x500000 - length 0x680000 (23 bits) -->
         <interleave output="16">
             <part name="mpr-13779.c10" crc="c707f416" map="01"/>
             <part name="mpr-13787.a10" crc="f05c68c6" map="10"/>
@@ -79,17 +80,17 @@
             <part name="epr-13782.c13" crc="73790852" map="01"/>
             <part name="epr-13790.a13" crc="23849101" map="10"/>
         </interleave>
-        <!-- maincpu:key - starts at 0xB00000 - length 0x2000 (13 bits) -->
+        <!-- maincpu:key - starts at 0xB80000 - length 0x2000 (13 bits) -->
         <part name="317-0175.key" crc="70d9d283"/>
-        <!-- mcu - starts at 0xB02000 -->
-        <!-- Total 0xB02000 bytes - 11272 kBytes -->
+        <!-- mcu - starts at 0xB82000 -->
+        <!-- Total 0xB82000 bytes - 11784 kBytes -->
     </rom>
     <rom index="17" zip="jtbeta.zip" md5="None" asm_md5="c6a4be95256a59cbf8cdd01b7c2a6e70">
         <part name="beta.bin" crc="330da304"/>
     </rom>
     <nvram index="2" size="16384"/>
     <rom index="1">
-        <part>00</part>
+        <part>00 68</part>
     </rom>
     <switches page_id="1" page_name="Switches" base="16" default="ff,fd">
         <!-- COINAGE -->

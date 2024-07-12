@@ -102,7 +102,7 @@
     </rom>
     <nvram index="2" size="16384"/>
     <rom index="1">
-        <part>00</part>
+        <part>00 A3</part>
     </rom>
     <switches page_id="1" page_name="Switches" base="16" default="ff,fd">
         <!-- DSW1 -->

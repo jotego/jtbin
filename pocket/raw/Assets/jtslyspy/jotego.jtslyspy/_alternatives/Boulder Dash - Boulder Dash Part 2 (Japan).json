@@ -9,8 +9,7 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "bouldashj.rom",
-				"md5": "85af95beecf462c540bc75d74abec09c"
+				"filename": "bouldashj.rom"
 			},
 			{
 				"id": 17,
@@ -21,7 +20,7 @@
 		"memory_writes": [
 			{
 				"address": "0xf9000000",
-				"data": "0x0"
+				"data": "0xFF00"
 			}
 		]
 	}

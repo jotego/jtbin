@@ -84,8 +84,8 @@
             <part name="epr-7398.24" crc="68807b49" map="10"/>
         </interleave>
         <part repeat="0x30000"> FF</part>
-        <!-- MCU_START -->
         <!-- JTFRAME_PROM_START -->
+        <!-- MCU_START -->
         <!-- mcu - starts at 0x180000 - length 0x2000 (13 bits) -->
         <part repeat="0x1000"> FF</part>
         <part repeat="0x1000"> FF</part>
@@ -119,7 +119,7 @@
     </rom>
     <nvram index="2" size="16384"/>
     <rom index="1">
-        <part>00</part>
+        <part>00 27</part>
     </rom>
     <switches page_id="1" page_name="Switches" base="16" default="ff,fc">
         <!-- DSW1 -->

@@ -82,7 +82,7 @@
 </rom>
     <nvram index="2" size="128"/>
     <rom index="1">
-        <part>00</part>
+        <part>00 80</part>
     </rom>
     <buttons names="Shot,-,-,-,-,-,Start,Coin,Core credits" default="A,Start,Select,-" count="1"/>
 </misterromdescription>

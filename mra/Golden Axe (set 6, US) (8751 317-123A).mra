@@ -86,8 +86,8 @@
             <part name="mpr-12383.ic14" crc="5dbacf7a" map="10" length="0x20000" offset="0x20000"/>
         </interleave>
         <part repeat="0x40000"> FF</part>
-        <!-- JTFRAME_PROM_START -->
         <!-- MCU_START -->
+        <!-- JTFRAME_PROM_START -->
         <!-- mcu - starts at 0x440000 - length 0x2000 (13 bits) -->
         <part name="317-0123a.c2" crc="cf19e7d4"/>
         <part repeat="0x1000"> FF</part>
@@ -102,7 +102,7 @@
     </rom>
     <nvram index="2" size="16384"/>
     <rom index="1">
-        <part>00</part>
+        <part>00 A3</part>
     </rom>
     <switches page_id="1" page_name="Switches" base="16" default="ff,fd">
         <!-- DSW1 -->

@@ -9,14 +9,13 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "yiear.rom",
-				"md5": "14a57168c4354250364597062b211317"
+				"filename": "yiear.rom"
 			}
 		],
 		"memory_writes": [
 			{
 				"address": "0xf9000000",
-				"data": "0x0"
+				"data": "0x8000"
 			}
 		]
 	}

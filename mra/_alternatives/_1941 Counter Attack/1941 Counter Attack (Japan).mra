@@ -89,7 +89,7 @@
     </rom>
     <!-- Vertical game -->
     <rom index="1">
-        <part>05</part>
+        <part>05 80</part>
     </rom>
     <switches page_id="1" page_name="Switches" base="8" default="ff,fc,9f">
         <!-- DSWB -->
