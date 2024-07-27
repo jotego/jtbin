@@ -53,6 +53,7 @@ jobs:
           echo "Assets/${shortname}" >> file_list.txt
           echo "Platforms/${shortname}.json" >> file_list.txt
           echo "Platforms/_images/${shortname}.bin" >> file_list.txt
+          echo "Saves/${shortname}" >> file_list.txt
       - name: echo files
         run: cat file_list.txt
       - name: get version
