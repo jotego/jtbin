@@ -821,6 +821,7 @@
 | ssf2xjr1     | jtcps2     | 49635257a7dbdfb0e6d4a0bafe301844 |              |
 | ssf2xjr1d    | jtcps2     | beb5a8d344016298a391aabe64254d01 |              |
 | ssf2xjr1r    | jtcps2     | cc31ae88440df9134ee6d600e830569d |              |
+| ssriders     | jtriders   | 88130a850377514e9cd89fd749ee2c54 |              |
 | strider      | jtcps1     | 0de57eaedbb520fcb4c938b667808061 | ff,fd,ff     |
 | striderj     | jtcps1     | 49e0f70b14c4aae1bf3dc66b2fdc5e75 | 7f,ff,ff     |
 | striderjr    | jtcps1     | 977238eec575601aff60449c337e4fe6 | 7f,ff,ff     |

@@ -104,7 +104,7 @@
     <nvram index="2" size="16384"/>
     <!-- Vertical game -->
     <rom index="1">
-        <part>05 80</part>
+        <part>05 FF</part>
     </rom>
     <switches page_id="1" page_name="Switches" base="16" default="ff,fc">
         <!-- DSW1 -->
@@ -118,5 +118,5 @@
         <dip name="Difficulty" bits="14" ids="Hard,Normal"/>
         <dip name="Allow Continue" bits="15" ids="No,Yes"/>
     </switches>
-    <buttons names="Shot,Weapon A, Weapong B, Weapon C,Start,Coin,Core credits" default="A,B,X,Y,Start,Select,-" count="4"/>
+    <buttons names="Shot,Weapon A, Weapon B, Weapon C,Start,Coin,Core credits" default="A,B,X,Y,Start,Select,-" count="4"/>
 </misterromdescription>

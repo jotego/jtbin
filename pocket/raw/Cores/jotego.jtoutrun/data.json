@@ -34,6 +34,18 @@
 				],
 				"address": "0x00000000",
 				"nonvolatile": true
+			},
+			{
+				"name": "CRT config",
+				"id": 18,
+				"required": false,
+				"parameters": "0x1000000",
+				"filename": "crtcfg.bin",
+				"extensions": [
+					"bin"
+				],
+				"address": "0x00000000",
+				"nonvolatile": false
 			}
 		]
 	}
