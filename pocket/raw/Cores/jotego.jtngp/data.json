@@ -8,7 +8,8 @@
 				"required": true,
 				"parameters": "0x09",
 				"extensions": [
-					"ngp"
+					"ngp",
+					"ngc"
 				],
 				"address": "0x00000000",
 				"nonvolatile": false
