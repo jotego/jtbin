@@ -1,3 +1,7 @@
+The Neo Geo Pocket is not forwards compatible with all Neo Geo Pocket Color games. For a compatibility list, see:
+https://www.neo-geo.com/pocket/
+If you have a .ngc file which does not load, this is probably why.
+
 Place the following files in this folder:
 
 ngp.rom
