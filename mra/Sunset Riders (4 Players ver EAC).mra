@@ -32,6 +32,7 @@
     <rotation>horizontal</rotation>
     <region>World</region>
     <rom index="0" zip="ssriders.zip" md5="None" asm_md5="88130a850377514e9cd89fd749ee2c54">
+        <!-- Offsets for each ROM region. Byte 15 = game selection. -->
         <part>
             00 00 C0 00 D0 01 D0 02
             FF FF 00 00 00 00 00 00
@@ -47,14 +48,14 @@
         </interleave>
         <!-- audiocpu - starts at 0xC0000 - length 0x10000 (16 bits) -->
         <part name="064e01.2f" crc="44b9bc52"/>
-        <!-- k053260 - starts at 0xD0000 - length 0x100000 (20 bits) -->
+        <!-- pcm - starts at 0xD0000 - length 0x100000 (20 bits) -->
         <part name="064e06.1d" crc="59810df9"/>
         <!-- k052109 - starts at 0x1D0000 - length 0x100000 (20 bits) -->
         <interleave output="32">
             <part name="064e12.16k" crc="e2bdc619" map="0021"/>
             <part name="064e11.12k" crc="2d8ca8b0" map="2100"/>
         </interleave>
-        <!-- k053245 - starts at 0x2D0000 - length 0x200000 (21 bits) -->
+        <!-- obj - starts at 0x2D0000 - length 0x200000 (21 bits) -->
         <interleave output="32">
             <part name="064e09.7l" crc="4160c372" map="0021"/>
             <part name="064e07.3l" crc="64dd673c" map="2100"/>
@@ -69,13 +70,13 @@
     <rom index="2">
         <part>
 00 00 01 01 01 01 FF 00 00 00 00 00 00 00 00 00
-03 FF 00 03 01 00 00 20 00 00 00 02 00 00 00 00
+03 FF 00 03 00 00 00 20 00 00 00 02 00 00 00 00
 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
-00 00 00 00 00 00 FA 19 90 64 45 41 43 00 05 E6
+00 00 00 00 00 00 FA 1A 90 64 45 41 43 00 05 E5
 </part>
     </rom>
     <nvram index="2" size="128"/>

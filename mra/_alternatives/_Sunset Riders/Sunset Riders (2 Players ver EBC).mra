@@ -1,0 +1,86 @@
+<!--          FPGA arcade hardware by Jotego
+
+              This core is available for hardware compatible with MiST and MiSTer
+              Other FPGA systems may be supported by the time you read this.
+              This work is not mantained by the MiSTer project. Please contact the
+              core author for issues and updates.
+
+              (c) Jose Tejada, 2024. Please support this research
+              Patreon: https://patreon.com/jotego
+
+              The author does not endorse or participate in illegal distribution
+              of copyrighted material. This work can be used with compatible
+              software. This software can be homebrew projects or legally
+              obtained memory dumps of compatible games.
+
+              This file license is GNU GPLv2.
+              You can read the whole license file in
+              https://opensource.org/licenses/gpl-2.0.php
+
+-->
+
+<misterromdescription>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
+    <name>Sunset Riders (2 Players ver EBC)</name>
+    <setname>ssridersebc</setname>
+    <rbf>jtriders</rbf>
+    <mameversion>0251</mameversion>
+    <year>1991</year>
+    <manufacturer>Konami</manufacturer>
+    <players>2</players>
+    <joystick>8</joystick>
+    <rotation>horizontal</rotation>
+    <region>World</region>
+    <rom index="0" zip="ssridersebc.zip|ssriders.zip" md5="None" asm_md5="5c8a8f256649d342b44a9f8753bf9778">
+        <!-- Offsets for each ROM region. Byte 15 = game selection. -->
+        <part>
+            00 00 C0 00 D0 01 D0 02
+            FF FF 00 00 00 00 00 00
+        </part>
+        <!-- maincpu - starts at 0x0 - length 0xC0000 (20 bits) -->
+        <interleave output="16">
+            <part name="064ebc03.8g" crc="40fd4165" map="01"/>
+            <part name="064ebc02.8e" crc="9bd7d164" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="064eab05.10g" crc="51d6fbc4" map="01"/>
+            <part name="064eab04.10e" crc="ef2315bd" map="10"/>
+        </interleave>
+        <!-- audiocpu - starts at 0xC0000 - length 0x10000 (16 bits) -->
+        <part name="064e01.2f" crc="44b9bc52"/>
+        <!-- pcm - starts at 0xD0000 - length 0x100000 (20 bits) -->
+        <part name="064e06.1d" crc="59810df9"/>
+        <!-- k052109 - starts at 0x1D0000 - length 0x100000 (20 bits) -->
+        <interleave output="32">
+            <part name="064e12.16k" crc="e2bdc619" map="0021"/>
+            <part name="064e11.12k" crc="2d8ca8b0" map="2100"/>
+        </interleave>
+        <!-- obj - starts at 0x2D0000 - length 0x200000 (21 bits) -->
+        <interleave output="32">
+            <part name="064e09.7l" crc="4160c372" map="0021"/>
+            <part name="064e07.3l" crc="64dd673c" map="2100"/>
+        </interleave>
+        <!-- Total 0x4D0000 bytes - 4928 kBytes -->
+    </rom>
+    <rom index="17" zip="jtbeta.zip" md5="None" asm_md5="c6a4be95256a59cbf8cdd01b7c2a6e70">
+        <part name="beta.bin" crc="330da304"/>
+    </rom>
+    <rom index="2">
+        <part>
+00 00 01 01 01 01 00 00 00 00 00 00 00 00 00 00
+03 FF 00 03 00 00 00 20 00 00 00 02 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 FB 18 90 64 45 42 43 00 04 E7
+</part>
+    </rom>
+    <nvram index="2" size="128"/>
+    <rom index="1">
+        <!-- black frame 8x0 -->
+        <part>20 80</part>
+    </rom>
+    <buttons names="Shoot,Jump,-,Start,Coin,Core credits" default="A,B,Start,Select,-" count="2"/>
+</misterromdescription>

@@ -19,7 +19,7 @@
 		"memory_writes": [
 			{
 				"address": "0xf9000000",
-				"data": "0xA805"
+				"data": "0xA801"
 			}
 		]
 	}

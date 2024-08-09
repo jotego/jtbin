@@ -822,6 +822,18 @@
 | ssf2xjr1d    | jtcps2     | beb5a8d344016298a391aabe64254d01 |              |
 | ssf2xjr1r    | jtcps2     | cc31ae88440df9134ee6d600e830569d |              |
 | ssriders     | jtriders   | 88130a850377514e9cd89fd749ee2c54 |              |
+| ssridersabd  | jtriders   | 93905648c94cc9108e42038cea8ed776 |              |
+| ssridersadd  | jtriders   | a27a270a5c7be9ef6612dd26c17356d2 |              |
+| ssriderseaa  | jtriders   | 1588e476286100672a5dca67ed982cbe |              |
+| ssridersebc  | jtriders   | 5c8a8f256649d342b44a9f8753bf9778 |              |
+| ssridersebd  | jtriders   | 8fc5a673c12e1464e571c9dfdf73b324 |              |
+| ssridersjac  | jtriders   | d178712e912a0027d19c53ffa7a5d48d |              |
+| ssridersjad  | jtriders   | 8571eb6d796ced115756dd630889dee1 |              |
+| ssridersjbd  | jtriders   | 60f2e95563ccb53ba11a32db1f206101 |              |
+| ssridersuab  | jtriders   | ccd1684ac76616ee4cf1cf07b11395a7 |              |
+| ssridersuac  | jtriders   | 0d8975dfc5eafe743664ac99570e4864 |              |
+| ssridersubc  | jtriders   | 90f07fd479e0fcb154e71403a0239756 |              |
+| ssridersuda  | jtriders   | 5897101f424559a4f5d7446897139b12 |              |
 | strider      | jtcps1     | 0de57eaedbb520fcb4c938b667808061 | ff,fd,ff     |
 | striderj     | jtcps1     | 49e0f70b14c4aae1bf3dc66b2fdc5e75 | 7f,ff,ff     |
 | striderjr    | jtcps1     | 977238eec575601aff60449c337e4fe6 | 7f,ff,ff     |

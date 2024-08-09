@@ -82,7 +82,7 @@ Byte 7: addr for upper nibble read
     <nvram index="2" size="63552"/>
     <!-- Vertical game -->
     <rom index="1">
-        <part>05 A8</part>
+        <part>01 A8</part>
     </rom>
     <switches page_id="1" page_name="Switches" base="16" default="ff">
         <!-- DIPSW -->
