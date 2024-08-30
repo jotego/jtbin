@@ -77,7 +77,7 @@
 00 00 00 00 00 00 F3 2F 90 64 55 42 43 00 0C D0
 </part>
     </rom>
-    <nvram index="2" size="128"/>
+    <nvram index="2" size="28833"/>
     <rom index="1">
         <!-- black frame 8x0 -->
         <part>20 80</part>

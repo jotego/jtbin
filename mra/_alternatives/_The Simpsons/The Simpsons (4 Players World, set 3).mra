@@ -34,7 +34,7 @@
     <rom index="0" zip="simpsons4pe2.zip|simpsons.zip" md5="None" address="0x30000000" asm_md5="eea84781838508e6e2199add603bd6b7">
         <!--  Header to identify the PCB type
         Byte 0 = 0 - The Simpsons
-                 1 - Parodius
+                 1 - Reserved (Parodius)
                  2 - Vendetta -->
         <part>
             00 00 00 00 </part>
@@ -79,7 +79,7 @@
 00 00 00 00 00 00 00 00 00 00 00 00 3F 3F 10 10
 </part>
     </rom>
-    <nvram index="2" size="128"/>
+    <nvram index="2" size="28833"/>
     <rom index="1">
         <!-- black frame 16x0 -->
         <part>60 53</part>

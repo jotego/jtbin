@@ -23,7 +23,7 @@
     <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
     <name>Parodius Da!: Shinwa kara Owarai e (Asia)</name>
     <setname>parodiusa</setname>
-    <rbf>jtsimson</rbf>
+    <rbf>jtparoda</rbf>
     <mameversion>0251</mameversion>
     <year>1990</year>
     <manufacturer>Konami</manufacturer>
@@ -33,9 +33,8 @@
     <region>World</region>
     <rom index="0" zip="parodiusa.zip|parodius.zip" md5="None" address="0x30000000" asm_md5="81c77d3000c49656cef677b1224bc6d7">
         <!--  Header to identify the PCB type
-        Byte 0 = 0 - The Simpsons
-                 1 - Parodius
-                 2 - Vendetta -->
+        Byte 0 = 1 - Parodius
+                  -->
         <part>
             01 00 00 00 </part>
         <!-- maincpu - starts at 0x0 - length 0x80000 (19 bits) -->
@@ -65,7 +64,7 @@
         </interleave>
         <!-- Total 0x3E0000 bytes - 3968 kBytes -->
     </rom>
-    <nvram index="2" size="128"/>
+    <nvram index="2" size="28833"/>
     <rom index="1">
         <!-- black frame 16x0 -->
         <part>60 B0</part>

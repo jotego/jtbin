@@ -10,6 +10,10 @@
 			{
 				"id": 1,
 				"filename": "tmht2p.rom"
+			},
+			{
+				"id": 2,
+				"filename": "tmht2p.sav"
 			}
 		],
 		"memory_writes": [

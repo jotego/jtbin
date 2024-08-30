@@ -23,7 +23,7 @@
     <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
     <name>NeoGeo Pocket</name>
     <setname>ngp</setname>
-    <rbf>jtngp</rbf>
+    <rbf>jtngpc</rbf>
     <mameversion>0251</mameversion>
     <year>1998</year>
     <manufacturer>SNK</manufacturer>
@@ -35,6 +35,9 @@
         <!-- maincpu - starts at 0x0 - length 0x10000 (16 bits) -->
         <part name="ngp_bios.ngp" crc="6232df8d"/>
         <!-- Total 0x10000 bytes - 64 kBytes -->
+    </rom>
+    <rom index="17" zip="jtbeta.zip" md5="None" asm_md5="c6a4be95256a59cbf8cdd01b7c2a6e70">
+        <part name="beta.bin" crc="330da304"/>
     </rom>
     <nvram index="2" size="12356"/>
     <rom index="1">

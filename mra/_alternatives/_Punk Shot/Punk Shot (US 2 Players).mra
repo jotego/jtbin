@@ -71,6 +71,7 @@
         <!-- proms - starts at 0x428000 -->
         <!-- Total 0x428000 bytes - 4256 kBytes -->
     </rom>
+    <nvram index="2" size="28705"/>
     <rom index="1">
         <!-- black frame 8x0 -->
         <part>20 60</part>

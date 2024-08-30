@@ -10,6 +10,10 @@
 			{
 				"id": 1,
 				"filename": "punkshotj.rom"
+			},
+			{
+				"id": 2,
+				"filename": "punkshotj.sav"
 			}
 		],
 		"memory_writes": [

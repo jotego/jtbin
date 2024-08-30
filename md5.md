@@ -158,6 +158,12 @@
 | chelnovu     | jtkarnov   | 45fc84d27ce7c849ba529902214c5d1a | 7f,ff        |
 | chikij       | jtcps1     | eb05493f72a6199e051ff4542ef300a6 | ff,fc,bf     |
 | choko        | jtcps2     | 9f42ff25fd71993cd48aa2948345f78e |              |
+| circusc      | jtcircus   | 9fdc385413a26347c804dfcf55e3bf73 | ff,5b        |
+| circusc2     | jtcircus   | 325c47916d845a3008f6880b7122c8e3 | ff,5b        |
+| circusc3     | jtcircus   | 6a3c27826e0de23b1fbb8cf6a314b060 | ff,5b        |
+| circusc4     | jtcircus   | 33ad676cf617e4aab2913ea8f994722e | ff,5b        |
+| circuscc     | jtcircus   | 94cb6abbc1becd5ff4b0984f02fd4ff4 | ff,5b        |
+| circusce     | jtcircus   | 8237cf355ffaab2e3b7a6d05473c85ac | ff,5b        |
 | cltchitr     | jts18      | 7e3c3ba622fdfa0e79a159372bc3d23f | ff,fd        |
 | cltchitrj    | jts18      | 4309a09d48214d3c5894f61aa387e073 | ff,fd        |
 | combatsc     | jtcomsc    | 632210364566c4af623d44a003eb95a4 | ff,7b,ff     |
@@ -510,8 +516,8 @@
 | nemo         | jtcps1     | 96c82493c2ddea4093a27f9a1c187333 | ff,fc,bf     |
 | nemoj        | jtcps1     | bc1fd457b0a397730655309139c22eb9 | ff,fc,bf     |
 | nemor1       | jtcps1     | dbbe6ea639ceb5150d0ee1574500e48e | ff,fc,bf     |
-| ngp          | jtngp      | d87d876c4391935c9d48ef352a3ff02d |              |
-| ngpc         | jtngp      | 3655aacebb43a963607d4cf821fc1301 |              |
+| ngp          | jtngpc     | d87d876c4391935c9d48ef352a3ff02d |              |
+| ngpc         | jtngpc     | 3655aacebb43a963607d4cf821fc1301 |              |
 | nwarr        | jtcps2     | 035ba6522df30974258799303e42c4dd |              |
 | nwarra       | jtcps2     | 1eaf366cbc1d63dcae89c17b33b3dbc3 |              |
 | nwarrb       | jtcps2     | 4dc506ada5a8d13cbbcf92f1e7ba3df5 |              |
@@ -535,10 +541,10 @@
 | pang3b       | jtcps1     | 7bc4743339f322fe222befc1a06fd74d | ff,ff,ff     |
 | pang3j       | jtcps1     | 410670f7df493e707368d21994199c30 | ff,ff,ff     |
 | pang3r1      | jtcps1     | 9350d49c0a081371ce364bc62b153c7f | ff,ff,ff     |
-| parodius     | jtsimson   | 780fc966591b7cf66cadc1d580049b0d | ff,52,ff     |
-| parodiusa    | jtsimson   | 81c77d3000c49656cef677b1224bc6d7 | ff,52,ff     |
-| parodiuse    | jtsimson   | f2715277d32ad3f3678d4344c9fdc8ae | ff,52,ff     |
-| parodiusj    | jtsimson   | 17ae9144a8e0d8878766602745ba7440 | ff,52,ff     |
+| parodius     | jtparoda   | 780fc966591b7cf66cadc1d580049b0d | ff,52,ff     |
+| parodiusa    | jtparoda   | 81c77d3000c49656cef677b1224bc6d7 | ff,52,ff     |
+| parodiuse    | jtparoda   | f2715277d32ad3f3678d4344c9fdc8ae | ff,52,ff     |
+| parodiusj    | jtparoda   | 17ae9144a8e0d8878766602745ba7440 | ff,52,ff     |
 | passsht      | jts16b     | 6c8d0964b2bab6718ef1ddd588286f9e | ff,fe        |
 | passsht16a   | jts16      | d05f1d8fcc42dc8c87bb6b4467e6adf5 | ff,fe        |
 | passshta     | jts16b     | 322e32482d647b21e2f971f8c3ec660d | ff,f0        |

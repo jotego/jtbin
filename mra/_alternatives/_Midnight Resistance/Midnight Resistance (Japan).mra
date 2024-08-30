@@ -81,8 +81,8 @@
         <!-- mcu - starts at 0x210000 -->
         <!-- sub - starts at 0x210000 - length 0x18000 (17 bits) -->
         <part repeat="0x18000"> FF</part>
-        <!-- PROM_START -->
         <!-- JTFRAME_PROM_START -->
+        <!-- PROM_START -->
         <!-- proms - starts at 0x228000 - length 0x100 (8 bits) -->
         <part name="7114.prm" crc="eb539ffb"/>
         <!-- Total 0x228100 bytes - 2208 kBytes -->

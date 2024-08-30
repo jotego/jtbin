@@ -1,0 +1,85 @@
+<!--          FPGA arcade hardware by Jotego
+
+              This core is available for hardware compatible with MiST and MiSTer
+              Other FPGA systems may be supported by the time you read this.
+              This work is not mantained by the MiSTer project. Please contact the
+              core author for issues and updates.
+
+              (c) Jose Tejada, 2024. Please support this research
+              Patreon: https://patreon.com/jotego
+
+              The author does not endorse or participate in illegal distribution
+              of copyrighted material. This work can be used with compatible
+              software. This software can be homebrew projects or legally
+              obtained memory dumps of compatible games.
+
+              This file license is GNU GPLv2.
+              You can read the whole license file in
+              https://opensource.org/licenses/gpl-2.0.php
+
+-->
+
+<misterromdescription>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
+    <name>Circus Charlie (Centuri, earlier)</name>
+    <setname>circusce</setname>
+    <rbf>jtcircus</rbf>
+    <mameversion>0251</mameversion>
+    <year>1984</year>
+    <manufacturer>Konami (Centuri license)</manufacturer>
+    <players>2</players>
+    <joystick>2</joystick>
+    <rotation>vertical (cw)</rotation>
+    <region>World</region>
+    <rom index="0" zip="circusce.zip|circusc.zip" md5="None" asm_md5="8237cf355ffaab2e3b7a6d05473c85ac">
+        <!-- maincpu - starts at 0x0 - length 0x10000 (16 bits) -->
+        <part repeat="0x6000"> FF</part>
+        <part name="380_p05.3h" crc="7ca74494"/>
+        <part name="380_p04.4h" crc="dd0c0ee7"/>
+        <part name="380_p03.5h" crc="190247af"/>
+        <part name="380_p02.6h" crc="7e63725e"/>
+        <part name="380_p01.7h" crc="eedaa5b2"/>
+        <!-- JTFRAME_BA1_START -->
+        <!-- audiocpu - starts at 0x10000 - length 0x4000 (14 bits) -->
+        <part name="380_l14.5c" crc="607df0fb"/>
+        <part name="380_l15.7c" crc="a6ad30e1"/>
+        <!-- JTFRAME_BA2_START -->
+        <!-- tiles - starts at 0x14000 - length 0x4000 (14 bits) -->
+        <part name="380_j12.4a" crc="56e5b408"/>
+        <part name="380_j13.5a" crc="5aca0193"/>
+        <!-- JTFRAME_BA3_START -->
+        <!-- sprites - starts at 0x18000 - length 0xC000 (16 bits) -->
+        <part name="380_j06.11e" crc="df0405c6"/>
+        <part name="380_j07.12e" crc="23dfe3a6"/>
+        <part name="380_j08.13e" crc="3ba95390"/>
+        <part name="380_j09.14e" crc="a9fba85a"/>
+        <part name="380_j10.15e" crc="0532347e"/>
+        <part name="380_j11.16e" crc="e1725d24"/>
+        <!-- JTFRAME_PROM_START -->
+        <!-- proms - starts at 0x24000 - length 0x220 (10 bits) -->
+        <part name="380_j17.7b" crc="13989357"/>
+        <part name="380_j16.10c" crc="c244f2aa"/>
+        <part name="380_j18.2a" crc="10dd4eaa"/>
+        <!-- Total 0x24220 bytes - 144 kBytes -->
+    </rom>
+    <rom index="17" zip="jtbeta.zip" md5="None" asm_md5="c6a4be95256a59cbf8cdd01b7c2a6e70">
+        <part name="beta.bin" crc="330da304"/>
+    </rom>
+    <!-- Vertical game -->
+    <rom index="1">
+        <part>01 80</part>
+    </rom>
+    <switches page_id="1" page_name="Switches" base="16" default="ff,5b">
+        <!-- DSW1 -->
+        <dip name="Coin A" bits="0,3" ids="Free Play,4/3,4/1,3/4,3/2,3/1,2/5,2/3,2/1,1/7,1/6,1/5,1/4,1/3,1/2,1/1"/>
+        <dip name="Coin B" bits="4,7" ids="Free Play,4/3,4/1,3/4,3/2,3/1,2/5,2/3,2/1,1/7,1/6,1/5,1/4,1/3,1/2,1/1"/>
+        <!-- DSW2 -->
+        <dip name="Lives" bits="8,9" ids="7,5,4,3"/>
+        <dip name="Cabinet" bits="10" ids="Upright,Cocktail"/>
+        <dip name="Bonus Life" bits="11" ids="30k 110k 80k+,20k 90k 70k+"/>
+        <dip name="Difficulty" bits="13,14" ids="Hardest,Hard,Normal,Easy"/>
+        <dip name="Demo Sounds" bits="15" ids="On,Off"/>
+        <dip name="Screen flip" ids="Off,On" bits="16"/>
+    </switches>
+    <buttons names="button 1,button 2,Start,Coin,Core credits" default="A,B,Start,Select,-" count="2"/>
+</misterromdescription>
