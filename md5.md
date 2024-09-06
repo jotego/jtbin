@@ -516,8 +516,8 @@
 | nemo         | jtcps1     | 96c82493c2ddea4093a27f9a1c187333 | ff,fc,bf     |
 | nemoj        | jtcps1     | bc1fd457b0a397730655309139c22eb9 | ff,fc,bf     |
 | nemor1       | jtcps1     | dbbe6ea639ceb5150d0ee1574500e48e | ff,fc,bf     |
-| ngp          | jtngpc     | d87d876c4391935c9d48ef352a3ff02d |              |
-| ngpc         | jtngpc     | 3655aacebb43a963607d4cf821fc1301 |              |
+| ngp          | jtngp      | d87d876c4391935c9d48ef352a3ff02d |              |
+| ngpc         | jtngp      | 3655aacebb43a963607d4cf821fc1301 |              |
 | nwarr        | jtcps2     | 035ba6522df30974258799303e42c4dd |              |
 | nwarra       | jtcps2     | 1eaf366cbc1d63dcae89c17b33b3dbc3 |              |
 | nwarrb       | jtcps2     | 4dc506ada5a8d13cbbcf92f1e7ba3df5 |              |
@@ -980,6 +980,11 @@
 | ws           | jtshouse   | 19a2cf9e84115defe4e5b863a0f2cac6 | ff,ff        |
 | ws89         | jtshouse   | ecc8080a1ff473ac07a9c56dcfc1cf0e | ff           |
 | ws90         | jtshouse   | d1cacce6939feb7ce547fcb490b26575 | ff           |
+| wwfsstar     | jtwwfss    | 69a298d99856ad3c5d2d8d48cf7e7924 | ff,ff        |
+| wwfsstarj    | jtwwfss    | 1820d1799a1d9a91e5bce010e52c9f3a | ff,ff        |
+| wwfsstaru4   | jtwwfss    | 8a06b61ad8532b21cd1b6d14395295c9 | ff,ff        |
+| wwfsstaru6   | jtwwfss    | 9a5a9711906dc35bfac8c25bb7497f4e | ff,ff        |
+| wwfsstaru7   | jtwwfss    | 9b68f68ddca7286dc4ec83315195ee89 | ff,ff        |
 | xmcota       | jtcps2     | 1525d27aa5956ab9307eca7a669be2b2 |              |
 | xmcotaa      | jtcps2     | 407571cb28ffec3202edfb31e2a0dfc0 |              |
 | xmcotaar1    | jtcps2     | 4df40bac82e21b57c37b0413ae506c3a |              |

@@ -1,0 +1,91 @@
+<!--          FPGA arcade hardware by Jotego
+
+              This core is available for hardware compatible with MiST and MiSTer
+              Other FPGA systems may be supported by the time you read this.
+              This work is not mantained by the MiSTer project. Please contact the
+              core author for issues and updates.
+
+              (c) Jose Tejada, 2024. Please support this research
+              Patreon: https://patreon.com/jotego
+
+              The author does not endorse or participate in illegal distribution
+              of copyrighted material. This work can be used with compatible
+              software. This software can be homebrew projects or legally
+              obtained memory dumps of compatible games.
+
+              This file license is GNU GPLv2.
+              You can read the whole license file in
+              https://opensource.org/licenses/gpl-2.0.php
+
+-->
+
+<misterromdescription>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
+    <name>WWF Superstars (US revision 6)</name>
+    <setname>wwfsstaru6</setname>
+    <rbf>jtwwfss</rbf>
+    <mameversion>0251</mameversion>
+    <year>1989</year>
+    <manufacturer>Technos Japan</manufacturer>
+    <players>2</players>
+    <joystick>8</joystick>
+    <rotation>horizontal</rotation>
+    <region>World</region>
+    <rom index="0" zip="wwfsstaru6.zip|wwfsstar.zip" md5="None" asm_md5="9a5a9711906dc35bfac8c25bb7497f4e">
+        <!-- maincpu - starts at 0x0 - length 0x40000 (18 bits) -->
+        <interleave output="16">
+            <part name="24ad-06.35" crc="d32eee6d" map="01"/>
+            <part name="24ac-06.34" crc="924a50e4" map="10"/>
+        </interleave>
+        <!-- JTFRAME_BA1_START -->
+        <!-- audiocpu - starts at 0x40000 - length 0x8000 (15 bits) -->
+        <part name="24ab-0.12" crc="1e44f8aa"/>
+        <!-- PCM_START -->
+        <!-- oki - starts at 0x48000 - length 0x40000 (18 bits) -->
+        <part name="24a9-0.46" crc="703ff08f"/>
+        <part name="24j8-0.45" crc="61138487"/>
+        <!-- JTFRAME_BA2_START -->
+        <!-- fgtiles - starts at 0x88000 - length 0x20000 (17 bits) -->
+        <part name="24aa-0.58" crc="cb12ba40"/>
+        <!-- SCR_START -->
+        <!-- bgtiles - starts at 0xA8000 - length 0x80000 (19 bits) -->
+        <interleave output="16">
+            <part name="24j7-0.113" crc="e0a1909e" map="01"/>
+            <part name="24j6-0.112" crc="77932ef8" map="10"/>
+        </interleave>
+        <!-- JTFRAME_BA3_START -->
+        <!-- sprites - starts at 0x128000 - length 0x200000 (21 bits) -->
+        <interleave output="16">
+            <part name="c951.114" crc="fa76d1f0" map="01"/>
+            <part name="c950.117" crc="cca5703d" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="24j4-0.115" crc="c4a589a3" map="01"/>
+            <part name="24j2-0.118" crc="dc1b7600" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="24j5-0.116" crc="d6bca436" map="01"/>
+            <part name="24j3-0.119" crc="3ba12d43" map="10"/>
+        </interleave>
+        <!-- Total 0x328000 bytes - 3232 kBytes -->
+    </rom>
+    <rom index="17" zip="jtbeta.zip" md5="None" asm_md5="c6a4be95256a59cbf8cdd01b7c2a6e70">
+        <part name="beta.bin" crc="330da304"/>
+    </rom>
+    <nvram index="2" size="5636"/>
+    <rom index="1">
+        <part>00 80</part>
+    </rom>
+    <switches page_id="1" page_name="Switches" base="16" default="ff,ff">
+        <!-- DSW1 -->
+        <dip name="Coin A" bits="0,2" ids="4/1,3/1,2/1,1/5,1/4,1/3,1/2,1/1"/>
+        <dip name="Coin B" bits="3,5" ids="4/1,3/1,2/1,1/5,1/4,1/3,1/2,1/1"/>
+        <!-- DSW2 -->
+        <dip name="Difficulty" bits="8,9" ids="Hardest,Easy,Hard,Normal"/>
+        <dip name="Demo Sounds" bits="10" ids="Off,On"/>
+        <dip name="Super Techniques" bits="11" ids="Hard,Normal"/>
+        <dip name="Time" bits="12,13" ids="-5:00,-2:30,+2:30,Default"/>
+        <dip name="Health For Winning" bits="15" ids="Yes,No"/>
+    </switches>
+    <buttons names="Left Attack,Jump,Right Attack,Start,Coin,Core credits" default="A,B,X,Start,Select,-" count="3"/>
+</misterromdescription>
