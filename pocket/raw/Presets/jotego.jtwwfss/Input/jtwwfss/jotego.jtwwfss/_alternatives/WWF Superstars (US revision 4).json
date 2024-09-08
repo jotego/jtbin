@@ -7,18 +7,13 @@
 				"mappings": [
 					{
 						"id": 0,
-						"name": "Left Attack",
+						"name": "Punch",
 						"key": "pad_btn_a"
 					},
 					{
 						"id": 1,
-						"name": "Jump",
+						"name": "Kick",
 						"key": "pad_btn_b"
-					},
-					{
-						"id": 2,
-						"name": "Right Attack",
-						"key": "pad_btn_x"
 					}
 				]
 			}
