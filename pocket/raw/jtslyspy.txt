@@ -7,11 +7,11 @@ Place the *.rom files in Assets/jtslyspy/common
 
 Boulder Dash - Boulder Dash Part 2 (World) --> bouldash.rom
 Boulder Dash - Boulder Dash Part 2 (Japan) --> bouldashj.rom
-Secret Agent (World revision 3) --> secretag.rom
-Secret Agent (Japan revision 2) --> secretagj.rom
-Sly Spy (US revision 4) --> slyspy.rom
-Sly Spy (US revision 2) --> slyspy2.rom
-Sly Spy (US revision 3) --> slyspy3.rom
+Secret Agent (World, revision 3) --> secretag.rom
+Secret Agent (Japan, revision 2) --> secretagj.rom
+Sly Spy (US, revision 4) --> slyspy.rom
+Sly Spy (US, revision 2) --> slyspy2.rom
+Sly Spy (US, revision 3) --> slyspy3.rom
 
 
 These files are generated using the mra tool in:

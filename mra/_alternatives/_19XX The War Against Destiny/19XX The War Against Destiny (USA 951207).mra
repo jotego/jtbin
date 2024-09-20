@@ -19,12 +19,12 @@
 
 -->
 
-<misterromdescription default="ff,ff">
+<misterromdescription>
     <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
     <name>19XX: The War Against Destiny (USA 951207)</name>
     <setname>19xxu</setname>
     <rbf>jtcps2</rbf>
-    <mameversion>0251</mameversion>
+    <mameversion>0261</mameversion>
     <year>1996</year>
     <manufacturer>Capcom</manufacturer>
     <players>2</players>
@@ -91,5 +91,6 @@
     <rom index="1">
         <part>05 80</part>
     </rom>
+    <switches page_id="1" page_name="Switches" base="16" default="ff,ff"/>
     <buttons names="Shot,Bomb,-,-,-,-,Start,Coin,Core credits" default="A,B,Start,Select,-" count="2"/>
 </misterromdescription>

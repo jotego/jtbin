@@ -128,7 +128,7 @@
 				"mask": "0xFFFFFF7F"
 			},
 			{
-				"name": "Coin B",
+				"name": "Coin A",
 				"id": 7,
 				"type": "list",
 				"enabled": true,
@@ -173,7 +173,7 @@
 				]
 			},
 			{
-				"name": "Coin A",
+				"name": "Coin B",
 				"id": 8,
 				"type": "list",
 				"enabled": true,

@@ -24,7 +24,7 @@
     <name>MX5000</name>
     <setname>mx5000</setname>
     <rbf>jtmx5k</rbf>
-    <mameversion>0251</mameversion>
+    <mameversion>0261</mameversion>
     <year>1987</year>
     <manufacturer>Konami</manufacturer>
     <players>2</players>

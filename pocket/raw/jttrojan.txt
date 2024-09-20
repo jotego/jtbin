@@ -5,9 +5,16 @@ The following arcade titles are compatible with this core. Generate
 the required .rom file using the mra tool (read below).
 Place the *.rom files in Assets/jttrojan/common
 
+Avengers (US, revision C) --> avengers.rom
+Avengers (US, revision A) --> avengersa.rom
+Avengers (US) --> avengersb.rom
+Avengers (US, unknown revision) --> avengersc.rom
+Hissatsu Buraiken (Japan, rev. A) --> buraiken.rom
+Hissatsu Buraiken (Japan, bootleg) --> buraikenb.rom
 Trojan (US set 1) --> trojan.rom
 Trojan (US set 2) --> trojana.rom
 Tatakai no Banka (Japan) --> trojanj.rom
+Tatakai no Banka (Japan, old ver.) --> trojanjo.rom
 Trojan (Romstar) --> trojanr.rom
 
 

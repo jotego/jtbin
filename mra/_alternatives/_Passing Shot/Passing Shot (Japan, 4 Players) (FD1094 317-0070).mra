@@ -24,7 +24,7 @@
     <name>Passing Shot (Japan, 4 Players) (FD1094 317-0070)</name>
     <setname>passshtj</setname>
     <rbf>jts16b</rbf>
-    <mameversion>0251</mameversion>
+    <mameversion>0261</mameversion>
     <year>1988</year>
     <manufacturer>Sega</manufacturer>
     <players>4</players>
@@ -80,8 +80,8 @@
             <part name="opr-11867.b7" crc="81e49697" map="10"/>
         </interleave>
         <part repeat="0x1A0000"> FF</part>
-        <!-- MCU_START -->
         <!-- JTFRAME_PROM_START -->
+        <!-- MCU_START -->
         <!-- mcu - starts at 0x440000 - length 0x2000 (13 bits) -->
         <part repeat="0x1000"> FF</part>
         <part repeat="0x1000"> FF</part>

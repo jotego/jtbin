@@ -5,16 +5,16 @@ The following arcade titles are compatible with this core. Generate
 the required .rom file using the mra tool (read below).
 Place the *.rom files in Assets/jtcop/common
 
-Fighting Fantasy (Japan revision 3) --> ffantasy.rom
+Fighting Fantasy (Japan, revision 3) --> ffantasy.rom
 Fighting Fantasy (Japan) --> ffantasya.rom
 Fighting Fantasy (Japan revision ?) --> ffantasyb.rom
-Fighting Fantasy (Japan revision 2) --> ffantasyj.rom
+Fighting Fantasy (Japan, revision 2) --> ffantasyj.rom
 Hippodrome (US) --> hippodrm.rom
-Robocop (World revision 4) --> robocop.rom
+Robocop (World, revision 4) --> robocop.rom
 Robocop (Japan) --> robocopj.rom
-Robocop (US revision 1) --> robocopu.rom
-Robocop (US revision 0) --> robocopu0.rom
-Robocop (World revision 3) --> robocopw.rom
+Robocop (US, revision 1) --> robocopu.rom
+Robocop (US, revision 0) --> robocopu0.rom
+Robocop (World, revision 3) --> robocopw.rom
 
 
 These files are generated using the mra tool in:

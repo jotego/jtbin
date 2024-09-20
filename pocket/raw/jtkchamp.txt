@@ -9,6 +9,7 @@ Karate Dou (Arfyc bootleg) --> karateda.rom
 Karate Dou (Japan) --> karatedo.rom
 Taisen Karate Dou (Japan VS version) --> karatevs.rom
 Karate Champ (US) --> kchamp.rom
+Karate Champ (US, 2 players) --> kchamp2p.rom
 Karate Champ (Tecfri bootleg) --> kchamptec.rom
 Karate Champ (US VS version, set 1) --> kchampvs.rom
 Karate Champ (US VS version, set 2) --> kchampvs2.rom

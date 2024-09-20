@@ -24,7 +24,7 @@
     <name>Tetris (Set 3, Japan, S16A) [FD1094 317-0093a]</name>
     <setname>tetris3</setname>
     <rbf>jts16</rbf>
-    <mameversion>0251</mameversion>
+    <mameversion>0261</mameversion>
     <year>1988</year>
     <manufacturer>Sega</manufacturer>
     <players>2</players>
@@ -66,8 +66,8 @@
             <part name="epr-12170.b5" crc="87354e42" map="10"/>
         </interleave>
         <part repeat="0x70000"> FF</part>
-        <!-- JTFRAME_PROM_START -->
         <!-- MCU_START -->
+        <!-- JTFRAME_PROM_START -->
         <!-- mcu - starts at 0x180000 - length 0x2000 (13 bits) -->
         <part repeat="0x1000"> FF</part>
         <part repeat="0x1000"> FF</part>

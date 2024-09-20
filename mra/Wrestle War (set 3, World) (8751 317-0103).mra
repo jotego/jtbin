@@ -24,7 +24,7 @@
     <name>Wrestle War (set 3, World) (8751 317-0103)</name>
     <setname>wrestwar</setname>
     <rbf>jts16b</rbf>
-    <mameversion>0251</mameversion>
+    <mameversion>0261</mameversion>
     <year>1989</year>
     <manufacturer>Sega</manufacturer>
     <players>2</players>
@@ -90,8 +90,8 @@
             <part name="opr-12162.b11" crc="fa06fd24" map="10"/>
         </interleave>
         <part repeat="0xA0000"> FF</part>
-        <!-- JTFRAME_PROM_START -->
         <!-- MCU_START -->
+        <!-- JTFRAME_PROM_START -->
         <!-- mcu - starts at 0x440000 - length 0x2000 (13 bits) -->
         <part name="317-0103.c2" crc="aa0710f5"/>
         <part repeat="0x1000"> FF</part>

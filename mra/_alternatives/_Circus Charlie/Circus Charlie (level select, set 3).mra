@@ -24,7 +24,7 @@
     <name>Circus Charlie (level select, set 3)</name>
     <setname>circusc3</setname>
     <rbf>jtcircus</rbf>
-    <mameversion>0251</mameversion>
+    <mameversion>0261</mameversion>
     <year>1984</year>
     <manufacturer>Konami</manufacturer>
     <players>2</players>
@@ -62,9 +62,6 @@
         <part name="380_j18.2a" crc="10dd4eaa"/>
         <!-- Total 0x24220 bytes - 144 kBytes -->
     </rom>
-    <rom index="17" zip="jtbeta.zip" md5="None" asm_md5="c6a4be95256a59cbf8cdd01b7c2a6e70">
-        <part name="beta.bin" crc="330da304"/>
-    </rom>
     <!-- Vertical game -->
     <rom index="1">
         <part>01 80</part>
@@ -81,5 +78,5 @@
         <dip name="Demo Sounds" bits="15" ids="On,Off"/>
         <dip name="Screen flip" ids="Off,On" bits="16"/>
     </switches>
-    <buttons names="button 1,button 2,Start,Coin,Core credits" default="A,B,Start,Select,-" count="2"/>
+    <buttons names="Jump,-,Start,Coin,Core credits" default="A,Start,Select,-" count="1"/>
 </misterromdescription>

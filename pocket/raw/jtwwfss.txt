@@ -6,6 +6,7 @@ the required .rom file using the mra tool (read below).
 Place the *.rom files in Assets/jtwwfss/common
 
 WWF Superstars (Europe) --> wwfsstar.rom
+WWF Superstars (Canada) --> wwfsstarc.rom
 WWF Superstars (Japan) --> wwfsstarj.rom
 WWF Superstars (US revision 4) --> wwfsstaru4.rom
 WWF Superstars (US revision 6) --> wwfsstaru6.rom

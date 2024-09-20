@@ -10,11 +10,6 @@
 			{
 				"id": 1,
 				"filename": "circusc3.rom"
-			},
-			{
-				"id": 17,
-				"filename": "beta.bin",
-				"md5": "c6a4be95256a59cbf8cdd01b7c2a6e70"
 			}
 		],
 		"memory_writes": [

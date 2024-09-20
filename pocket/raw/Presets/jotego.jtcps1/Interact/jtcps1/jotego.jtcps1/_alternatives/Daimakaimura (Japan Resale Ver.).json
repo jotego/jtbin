@@ -143,31 +143,63 @@
 				"mask": "0xFFFF7FFF"
 			},
 			{
-				"name": "Lives",
+				"name": "Starting Level",
 				"id": 5,
 				"type": "list",
 				"enabled": true,
 				"persist": true,
 				"address": "0xfa000000",
-				"defaultval": 3,
+				"defaultval": 11,
 				"value": 0,
-				"mask": "0xFFFCFFFF",
+				"mask": "0xFFF0FFFF",
 				"options": [
 					{
-						"name": "6",
-						"value": "0x0"
+						"name": "Level 6 (6 lives)",
+						"value": "0x40000"
 					},
 					{
-						"name": "5",
-						"value": "0x10000"
+						"name": "Level 6 (5 lives)",
+						"value": "0x50000"
 					},
 					{
-						"name": "4",
-						"value": "0x20000"
+						"name": "Level 5-2 (4 lives)",
+						"value": "0x60000"
 					},
 					{
-						"name": "3",
-						"value": "0x30000"
+						"name": "Level 5-1 (3 lives)",
+						"value": "0x70000"
+					},
+					{
+						"name": "Level 4-2 (6 lives)",
+						"value": "0x80000"
+					},
+					{
+						"name": "Level 4-1 (5 lives)",
+						"value": "0x90000"
+					},
+					{
+						"name": "Level 3-2 (4 lives)",
+						"value": "0xA0000"
+					},
+					{
+						"name": "Level 3-1 (3 lives)",
+						"value": "0xB0000"
+					},
+					{
+						"name": "Level 2-2 (6 lives)",
+						"value": "0xC0000"
+					},
+					{
+						"name": "Level 2-1 (5 lives)",
+						"value": "0xD0000"
+					},
+					{
+						"name": "Level 1-2 (4 lives)",
+						"value": "0xE0000"
+					},
+					{
+						"name": "Level 1-1 (3 lives)",
+						"value": "0xF0000"
 					}
 				]
 			},

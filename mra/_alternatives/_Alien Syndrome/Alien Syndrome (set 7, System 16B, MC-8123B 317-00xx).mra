@@ -24,7 +24,7 @@
     <name>Alien Syndrome (set 7, System 16B, MC-8123B 317-00xx)</name>
     <setname>aliensyn7</setname>
     <rbf>jts16b</rbf>
-    <mameversion>0251</mameversion>
+    <mameversion>0261</mameversion>
     <year>1987</year>
     <manufacturer>Sega</manufacturer>
     <players>2</players>
@@ -90,8 +90,8 @@
             <part name="epr-10716.b8" crc="40ba1d48" map="10"/>
         </interleave>
         <part repeat="0x180000"> FF</part>
-        <!-- MCU_START -->
         <!-- JTFRAME_PROM_START -->
+        <!-- MCU_START -->
         <!-- mcu - starts at 0x440000 - length 0x2000 (13 bits) -->
         <part repeat="0x1000"> FF</part>
         <part repeat="0x1000"> FF</part>

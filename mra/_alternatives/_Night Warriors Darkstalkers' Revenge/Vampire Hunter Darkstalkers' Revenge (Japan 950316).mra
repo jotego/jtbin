@@ -19,12 +19,12 @@
 
 -->
 
-<misterromdescription default="ff,ff">
+<misterromdescription>
     <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
     <name>Vampire Hunter: Darkstalkers&apos; Revenge (Japan 950316)</name>
     <setname>vhuntj</setname>
     <rbf>jtcps2</rbf>
-    <mameversion>0251</mameversion>
+    <mameversion>0261</mameversion>
     <year>1995</year>
     <manufacturer>Capcom</manufacturer>
     <players>2</players>
@@ -93,5 +93,6 @@
     <rom index="1">
         <part>00 80</part>
     </rom>
+    <switches page_id="1" page_name="Switches" base="16" default="ff,ff"/>
     <buttons names="Light Punch,Middle Punch,Heavy Punch,Light Kick,Middle Kick,Heavy Kick,Start,Coin,Core credits" default="A,B,X,Y,L,R,Start,Select,-" count="6"/>
 </misterromdescription>

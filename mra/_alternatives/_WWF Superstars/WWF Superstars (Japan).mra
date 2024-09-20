@@ -24,7 +24,7 @@
     <name>WWF Superstars (Japan)</name>
     <setname>wwfsstarj</setname>
     <rbf>jtwwfss</rbf>
-    <mameversion>0251</mameversion>
+    <mameversion>0261</mameversion>
     <year>1989</year>
     <manufacturer>Technos Japan</manufacturer>
     <players>2</players>
@@ -87,5 +87,5 @@
         <dip name="Time" bits="12,13" ids="-5:00,-2:30,+2:30,Default"/>
         <dip name="Health For Winning" bits="15" ids="Yes,No"/>
     </switches>
-    <buttons names="Punch,Kick,-,Start,Coin,Core credits" default="A,B,Start,Select,-" count="2"/>
+    <buttons names="Punch,Kick,1P/2P vs CPU,Start,Coin,Core credits" default="A,B,X,Start,Select,-" count="3"/>
 </misterromdescription>

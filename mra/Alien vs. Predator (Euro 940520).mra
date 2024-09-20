@@ -19,12 +19,12 @@
 
 -->
 
-<misterromdescription default="ff,ff">
+<misterromdescription>
     <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
     <name>Alien vs. Predator (Euro 940520)</name>
     <setname>avsp</setname>
     <rbf>jtcps2</rbf>
-    <mameversion>0251</mameversion>
+    <mameversion>0261</mameversion>
     <year>1994</year>
     <manufacturer>Capcom</manufacturer>
     <players>3</players>
@@ -88,5 +88,6 @@
     <rom index="1">
         <part>00 80</part>
     </rom>
+    <switches page_id="1" page_name="Switches" base="16" default="ff,ff"/>
     <buttons names="Shoot,Attack,Jump/Dash,-,-,-,Start,Coin,Core credits" default="A,B,X,Start,Select,-" count="3"/>
 </misterromdescription>

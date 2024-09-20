@@ -14,6 +14,11 @@
 						"id": 1,
 						"name": "Kick",
 						"key": "pad_btn_b"
+					},
+					{
+						"id": 2,
+						"name": "1P/2P vs CPU",
+						"key": "pad_btn_x"
 					}
 				]
 			}

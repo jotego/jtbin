@@ -75,6 +75,7 @@ Super League (FD1094 317-0045) --> suprleag.rom
 Tetris (set 1, Japan, System 16B) (FD1094 317-0091) --> tetris1.rom
 Tetris (set 2, Japan, System 16B) (FD1094 317-0092) --> tetris2.rom
 Time Scanner (set 2, System 16B) --> timescan.rom
+Time Scanner (set 3, Japan, System 16B) (FD1089B 317-0024) --> timescan3.rom
 Toryumon --> toryumon.rom
 Tough Turf (set 1, US) (8751 317-0099) --> tturfu.rom
 Wonder Boy III - Monster Lair (set 6, World, System 16B) (8751 317-0098) --> wb3.rom

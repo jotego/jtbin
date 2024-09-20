@@ -24,7 +24,7 @@
     <name>Action Fighter (System 16B, FD1089A 317-0018)</name>
     <setname>afighterh</setname>
     <rbf>jts16b</rbf>
-    <mameversion>0251</mameversion>
+    <mameversion>0261</mameversion>
     <year>1986</year>
     <manufacturer>Sega</manufacturer>
     <players>2</players>
@@ -87,8 +87,8 @@
             <part name="epr10047.bin" crc="84a49518" map="10"/>
         </interleave>
         <part repeat="0x190000"> FF</part>
-        <!-- JTFRAME_PROM_START -->
         <!-- MCU_START -->
+        <!-- JTFRAME_PROM_START -->
         <!-- mcu - starts at 0x440000 - length 0x2000 (13 bits) -->
         <part repeat="0x1000"> FF</part>
         <part repeat="0x1000"> FF</part>

@@ -24,7 +24,7 @@
     <name>SDI: Strategic Defense Initiative (Japan, Old Ver., S16A) [FD1089B 317-0027]</name>
     <setname>sdia</setname>
     <rbf>jts16</rbf>
-    <mameversion>0251</mameversion>
+    <mameversion>0261</mameversion>
     <year>1987</year>
     <manufacturer>Sega</manufacturer>
     <players>2</players>
@@ -82,8 +82,8 @@
             <part name="epr-10765.24" crc="0a73a057" map="10"/>
         </interleave>
         <part repeat="0x20000"> FF</part>
-        <!-- JTFRAME_PROM_START -->
         <!-- MCU_START -->
+        <!-- JTFRAME_PROM_START -->
         <!-- mcu - starts at 0x180000 - length 0x2000 (13 bits) -->
         <part repeat="0x1000"> FF</part>
         <part repeat="0x1000"> FF</part>

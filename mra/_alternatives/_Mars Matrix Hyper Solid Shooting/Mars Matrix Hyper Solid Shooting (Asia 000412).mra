@@ -19,12 +19,12 @@
 
 -->
 
-<misterromdescription default="ff,ff">
+<misterromdescription>
     <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
     <name>Mars Matrix: Hyper Solid Shooting (Asia 000412)</name>
     <setname>mmatrixa</setname>
     <rbf>jtcps2</rbf>
-    <mameversion>0251</mameversion>
+    <mameversion>0261</mameversion>
     <year>2000</year>
     <manufacturer>Takumi (Capcom license)</manufacturer>
     <players>2</players>
@@ -87,5 +87,6 @@
     <rom index="1">
         <part>00 80</part>
     </rom>
+    <switches page_id="1" page_name="Switches" base="16" default="ff,ff"/>
     <buttons names="Shot,-,-,-,-,-,Start,Coin,Core credits" default="A,Start,Select,-" count="1"/>
 </misterromdescription>

@@ -1,0 +1,124 @@
+<!--          FPGA arcade hardware by Jotego
+
+              This core is available for hardware compatible with MiST and MiSTer
+              Other FPGA systems may be supported by the time you read this.
+              This work is not mantained by the MiSTer project. Please contact the
+              core author for issues and updates.
+
+              (c) Jose Tejada, 2024. Please support this research
+              Patreon: https://patreon.com/jotego
+
+              The author does not endorse or participate in illegal distribution
+              of copyrighted material. This work can be used with compatible
+              software. This software can be homebrew projects or legally
+              obtained memory dumps of compatible games.
+
+              This file license is GNU GPLv2.
+              You can read the whole license file in
+              https://opensource.org/licenses/gpl-2.0.php
+
+-->
+
+<misterromdescription>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
+    <name>Hissatsu Buraiken (Japan, bootleg)</name>
+    <setname>buraikenb</setname>
+    <rbf>jttrojan</rbf>
+    <mameversion>0261</mameversion>
+    <year>1987</year>
+    <manufacturer>bootleg</manufacturer>
+    <players>2</players>
+    <joystick>8</joystick>
+    <rotation>vertical (cw)</rotation>
+    <region>World</region>
+    <rom index="0" zip="buraikenb.zip|avengers.zip" md5="None" asm_md5="693dc7ec6e4541b856627aaa67280198">
+        <!-- Header byte 8:
+             bit 0 - Trojan
+             bit 1 - Avengers
+             bit 2 - MCU enable -->
+        <part>
+            00 00 00 00 00 00 00 00
+            02 00 00 00 00 00 00 00
+        </part>
+        <!-- maincpu - starts at 0x0 - length 0x18000 (17 bits) -->
+        <part name="a6" crc="b1c6d40d"/>
+        <part name="av_05.12n" crc="9a214b42"/>
+        <part name="a4" crc="b4ac7928"/>
+        <!-- JTFRAME_BA1_START -->
+        <!-- soundcpu - starts at 0x18000 - length 0x8000 (15 bits) -->
+        <part name="a2" crc="5e991c96"/>
+        <!-- SND2_START -->
+        <!-- adpcmcpu - starts at 0x20000 - length 0x8000 (15 bits) -->
+        <part name="av_01.6d" crc="c1e5d258"/>
+        <!-- JTFRAME_BA2_START -->
+        <!-- gfx5 - starts at 0x28000 - length 0x8000 (15 bits) -->
+        <interleave output="16">
+            <part name="av_23.9n" crc="c0a93ef6" map="12"/>
+        </interleave>
+        <!-- SCR2_START -->
+        <!-- gfx4 - starts at 0x30000 - length 0x10000 (16 bits) -->
+        <interleave output="16">
+            <part name="av_25.15n" crc="88a505a7" map="01"/>
+            <part name="av_24.13n" crc="1f4463c8" map="10"/>
+        </interleave>
+        <!-- JTFRAME_BA3_START -->
+        <!-- CHAR_START -->
+        <!-- gfx1 - starts at 0x40000 - length 0x8000 (15 bits) -->
+        <interleave output="16">
+            <part name="av_03.8k" crc="efb5883e" map="12"/>
+        </interleave>
+        <!-- SCR_START -->
+        <!-- gfx2 - starts at 0x48000 - length 0x40000 (18 bits) -->
+        <interleave output="32">
+            <part name="av_14.8b" crc="44ac2671" map="0001"/>
+            <part name="av_11.3b" crc="a2911d8b" map="0010"/>
+            <part name="av_12.4b" crc="6d5261ba" map="0100"/>
+            <part name="av_13.6b" crc="9b5ff305" map="1000"/>
+        </interleave>
+        <interleave output="32">
+            <part name="av_10.8a" crc="b1a717cb" map="0001"/>
+            <part name="av_07.3a" crc="cde78d32" map="0010"/>
+            <part name="av_08.4a" crc="a13d9f54" map="0100"/>
+            <part name="av_09.6a" crc="08323355" map="1000"/>
+        </interleave>
+        <!-- OBJ_START -->
+        <!-- gfx3 - starts at 0x88000 - length 0x40000 (18 bits) -->
+        <interleave output="16">
+            <part name="av_22.7n" crc="bdaa8b22" map="01"/>
+            <part name="av_18.7l" crc="3c876a17" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="av_20.3n" crc="566e3059" map="01"/>
+            <part name="av_16.3l" crc="4b1ff3ac" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="av_21.5n" crc="301059aa" map="01"/>
+            <part name="av_17.5l" crc="4eb543ef" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="av_19.2n" crc="a00485ec" map="01"/>
+            <part name="av_15.2l" crc="8041de7f" map="10"/>
+        </interleave>
+        <!-- JTFRAME_PROM_START -->
+        <!-- mcu - starts at 0xC8000 -->
+        <!-- Total 0xC8000 bytes - 800 kBytes -->
+    </rom>
+    <!-- Vertical game -->
+    <rom index="1">
+        <part>01 80</part>
+    </rom>
+    <switches page_id="1" page_name="Switches" base="16" default="ff,ff">
+        <!-- DSWA -->
+        <dip name="Service Mode" bits="0" ids="On,Off"/>
+        <dip name="Flip Screen" bits="1" ids="On,Off"/>
+        <dip name="Coin B" bits="2,4" ids="4/1,1/4,2/1,1/2,3/1,1/3,1/6,1/1"/>
+        <dip name="Coin A" bits="5,7" ids="4/1,1/4,2/1,1/2,3/1,1/3,1/6,1/1"/>
+        <!-- DSWB -->
+        <dip name="Allow Continue" bits="8" ids="No,Yes"/>
+        <dip name="Demo Sounds" bits="9" ids="Off,On"/>
+        <dip name="Difficulty" bits="10,11" ids="Very Hard,Easy,Hard,Normal"/>
+        <dip name="Bonus Life" bits="12,13" ids="30k 80k,20k 70k,20k 80k,20k 60k"/>
+        <dip name="Lives" bits="14,15" ids="6,4,5,3"/>
+    </switches>
+    <buttons names="Punch,Kick,Start,Coin,Core credits" default="A,B,Start,Select,-" count="2"/>
+</misterromdescription>

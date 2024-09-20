@@ -8,10 +8,10 @@ Place the *.rom files in Assets/jtsectnz/common
 Legendary Wings (US set 1) --> lwings.rom
 Legendary Wings (US set 2) --> lwings2.rom
 Legendary Wings (bootleg) --> lwingsb.rom
-Ares no Tsubasa (Japan) --> lwingsj.rom
+Ares no Tsubasa (Japan, rev. B) --> lwingsj.rom
 Ares no Tsubasa (Japan, rev. A) --> lwingsja.rom
 Section Z (set 1) --> sectionz.rom
-Section Z (set 2) --> sectionza.rom
+Section Z (set 2 rev. A) --> sectionza.rom
 
 
 These files are generated using the mra tool in:

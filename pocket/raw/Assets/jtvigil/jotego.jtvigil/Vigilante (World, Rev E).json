@@ -10,6 +10,10 @@
 			{
 				"id": 1,
 				"filename": "vigilant.rom"
+			},
+			{
+				"id": 2,
+				"filename": "vigilant.sav"
 			}
 		],
 		"memory_writes": [

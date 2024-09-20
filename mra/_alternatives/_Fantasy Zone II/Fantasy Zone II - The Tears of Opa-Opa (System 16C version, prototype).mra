@@ -24,7 +24,7 @@
     <name>Fantasy Zone II - The Tears of Opa-Opa (System 16C version, prototype)</name>
     <setname>fantzn2xp</setname>
     <rbf>jts16b</rbf>
-    <mameversion>0251</mameversion>
+    <mameversion>0261</mameversion>
     <year>2008</year>
     <manufacturer>Sega / M2</manufacturer>
     <players>2</players>
@@ -85,8 +85,8 @@
             <part name="objj.bin" crc="4535eb0e" map="10"/>
         </interleave>
         <part repeat="0xC0000"> FF</part>
-        <!-- MCU_START -->
         <!-- JTFRAME_PROM_START -->
+        <!-- MCU_START -->
         <!-- mcu - starts at 0x440000 - length 0x2000 (13 bits) -->
         <part repeat="0x1000"> FF</part>
         <part repeat="0x1000"> FF</part>

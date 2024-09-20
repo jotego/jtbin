@@ -24,7 +24,7 @@
     <name>Daimakaimura (Japan Resale Ver.)</name>
     <setname>daimakair</setname>
     <rbf>jtcps1</rbf>
-    <mameversion>0251</mameversion>
+    <mameversion>0261</mameversion>
     <year>1988</year>
     <manufacturer>Capcom</manufacturer>
     <players>2</players>
@@ -75,7 +75,7 @@
         <dip name="Bonus" bits="12,13" ids="40K 70K &amp; *80K,20K 50K &amp; *70K,10K 30K &amp; *30K,30K 60K &amp; *70K"/>
         <dip name="Freeze" bits="15" ids="On,Off"/>
         <!-- DSWC -->
-        <dip name="Lives" bits="16,17" ids="6,5,4,3"/>
+        <dip name="Starting Level" bits="16,19" ids="-,-,-,-,Level 6,Level 6,Level 5-2,Level 5-1,Level 4-2,Level 4-1,Level 3-2,Level 3-1,Level 2-2,Level 2-1,Level 1-2,Level 1-1"/>
         <dip name="Flip Screen" bits="20" ids="On,Off"/>
         <dip name="Demo Sounds" bits="21" ids="Off,On"/>
         <dip name="Allow Continue" bits="22" ids="No,Yes"/>

@@ -19,12 +19,12 @@
 
 -->
 
-<misterromdescription default="ff,ff">
+<misterromdescription>
     <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
     <name>1944: The Loop Master (Japan 000620)</name>
     <setname>1944j</setname>
     <rbf>jtcps2</rbf>
-    <mameversion>0251</mameversion>
+    <mameversion>0261</mameversion>
     <year>2000</year>
     <manufacturer>Eighting / Raizing (Capcom license)</manufacturer>
     <players>2</players>
@@ -87,5 +87,6 @@
     <rom index="1">
         <part>00 80</part>
     </rom>
+    <switches page_id="1" page_name="Switches" base="16" default="ff,ff"/>
     <buttons names="Shot,Bomb,-,-,-,-,Start,Coin,Core credits" default="A,B,Start,Select,-" count="2"/>
 </misterromdescription>

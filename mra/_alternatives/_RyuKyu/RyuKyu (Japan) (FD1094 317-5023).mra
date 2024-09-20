@@ -24,7 +24,7 @@
     <name>RyuKyu (Japan) (FD1094 317-5023)</name>
     <setname>ryukyua</setname>
     <rbf>jts16b</rbf>
-    <mameversion>0251</mameversion>
+    <mameversion>0261</mameversion>
     <year>1990</year>
     <manufacturer>Success / Sega</manufacturer>
     <players>1</players>
@@ -70,8 +70,8 @@
             <part name="opr-13357.b6" crc="f9e7cf03" map="10"/>
         </interleave>
         <part repeat="0x180000"> FF</part>
-        <!-- JTFRAME_PROM_START -->
         <!-- MCU_START -->
+        <!-- JTFRAME_PROM_START -->
         <!-- mcu - starts at 0x440000 - length 0x2000 (13 bits) -->
         <part repeat="0x1000"> FF</part>
         <part repeat="0x1000"> FF</part>

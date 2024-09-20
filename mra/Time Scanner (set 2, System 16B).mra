@@ -24,7 +24,7 @@
     <name>Time Scanner (set 2, System 16B)</name>
     <setname>timescan</setname>
     <rbf>jts16b</rbf>
-    <mameversion>0251</mameversion>
+    <mameversion>0261</mameversion>
     <year>1987</year>
     <manufacturer>Sega</manufacturer>
     <players>2</players>

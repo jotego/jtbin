@@ -1,0 +1,283 @@
+{
+	"interact":{
+		"magic": "APF_VER_1",
+		"variables": [
+			{
+				"name": "FX Volume",
+				"id": 0,
+				"type": "list",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfb000000",
+				"defaultval": 0,
+				"value": 0,
+				"mask": "0xFFFFFF3F",
+				"options": [
+					{
+						"name": "high",
+						"value": "0x00"
+					},
+					{
+						"name": "very high",
+						"value": "0x40"
+					},
+					{
+						"name": "very low",
+						"value": "0x80"
+					},
+					{
+						"name": "low",
+						"value": "0xc0"
+					}
+				]
+			},
+			{
+				"name": "Medal Setup",
+				"id": 1,
+				"type": "list",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 1,
+				"value": 0,
+				"mask": "0xFFFFFFFE",
+				"options": [
+					{
+						"name": "Don't use",
+						"value": "0x0"
+					},
+					{
+						"name": "1 Medal 1 Credit",
+						"value": "0x1"
+					}
+				]
+			},
+			{
+				"name": "Coin Setup",
+				"id": 2,
+				"type": "list",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 1,
+				"value": 0,
+				"mask": "0xFFFFFFFD",
+				"options": [
+					{
+						"name": "10 Yen",
+						"value": "0x0"
+					},
+					{
+						"name": "100 Yen",
+						"value": "0x2"
+					}
+				]
+			},
+			{
+				"name": "Change Setup",
+				"id": 3,
+				"type": "list",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 7,
+				"value": 0,
+				"mask": "0xFFFFFFE3",
+				"options": [
+					{
+						"name": "11",
+						"value": "0x0"
+					},
+					{
+						"name": "12",
+						"value": "0x4"
+					},
+					{
+						"name": "No change",
+						"value": "0x8"
+					},
+					{
+						"name": "5",
+						"value": "0xC"
+					},
+					{
+						"name": "6",
+						"value": "0x10"
+					},
+					{
+						"name": "7",
+						"value": "0x14"
+					},
+					{
+						"name": "8",
+						"value": "0x18"
+					},
+					{
+						"name": "10",
+						"value": "0x1C"
+					}
+				]
+			},
+			{
+				"name": "10 Yen Setup",
+				"id": 4,
+				"type": "list",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 3,
+				"value": 0,
+				"mask": "0xFFFFFF9F",
+				"options": [
+					{
+						"name": "Don't use",
+						"value": "0x0"
+					},
+					{
+						"name": "3 Coins/1 Credit",
+						"value": "0x20"
+					},
+					{
+						"name": "2 Coins/1 Credit",
+						"value": "0x40"
+					},
+					{
+						"name": "1 Coin/1 Credit",
+						"value": "0x60"
+					}
+				]
+			},
+			{
+				"name": "Payout Rate Setup",
+				"id": 5,
+				"type": "list",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 7,
+				"value": 0,
+				"mask": "0xFFFFF8FF",
+				"options": [
+					{
+						"name": "85%",
+						"value": "0x0"
+					},
+					{
+						"name": "90%",
+						"value": "0x100"
+					},
+					{
+						"name": "55%",
+						"value": "0x200"
+					},
+					{
+						"name": "60%",
+						"value": "0x300"
+					},
+					{
+						"name": "65%",
+						"value": "0x400"
+					},
+					{
+						"name": "70%",
+						"value": "0x500"
+					},
+					{
+						"name": "75%",
+						"value": "0x600"
+					},
+					{
+						"name": "80%",
+						"value": "0x700"
+					}
+				]
+			},
+			{
+				"name": "Demo Sounds",
+				"id": 6,
+				"type": "list",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 3,
+				"value": 0,
+				"mask": "0xFFFCFFFF",
+				"options": [
+					{
+						"name": "Off",
+						"value": "0x0"
+					},
+					{
+						"name": "Every third sound",
+						"value": "0x10000"
+					},
+					{
+						"name": "Every second sound",
+						"value": "0x20000"
+					},
+					{
+						"name": "On",
+						"value": "0x30000"
+					}
+				]
+			},
+			{
+				"name": "Clear RAM",
+				"id": 7,
+				"type": "check",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 0,
+				"value": 0,
+				"value_off": 4194304,
+				"mask": "0xFFBFFFFF"
+			},
+			{
+				"name": "Tes Mode Display",
+				"id": 8,
+				"type": "check",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 0,
+				"value": 0,
+				"value_off": 8388608,
+				"mask": "0xFF7FFFFF"
+			},
+			{
+				"name": "PCB type",
+				"id": 9,
+				"type": "list",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 0,
+				"value": 0,
+				"mask": "0xFEFFFFFF",
+				"options": [
+					{
+						"name": "88617A",
+						"value": "0x0"
+					},
+					{
+						"name": "89626A",
+						"value": "0x1000000"
+					}
+				]
+			},
+			{
+				"name": "Default",
+				"id": 1015,
+				"type": "number_u32",
+				"enabled": false,
+				"persist": false,
+				"writeonly": true,
+				"address": "0xfa000000",
+				"defaultval": 16777215,
+				"value": 0
+			}
+		],
+		"messages": []
+	}
+}

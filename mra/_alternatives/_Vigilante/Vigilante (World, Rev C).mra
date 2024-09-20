@@ -24,7 +24,7 @@
     <name>Vigilante (World, Rev C)</name>
     <setname>vigilantc</setname>
     <rbf>jtvigil</rbf>
-    <mameversion>0251</mameversion>
+    <mameversion>0261</mameversion>
     <year>1988</year>
     <manufacturer>Irem</manufacturer>
     <players>2</players>
@@ -64,6 +64,7 @@
         </interleave>
         <!-- Total 0x140000 bytes - 1280 kBytes -->
     </rom>
+    <nvram index="2" size="6148"/>
     <rom index="1">
         <part>00 59</part>
     </rom>

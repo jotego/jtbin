@@ -24,7 +24,7 @@
     <name>Quiz &amp; Dragons: Capcom Quiz Game (Japan Resale Ver. 940921)</name>
     <setname>qadjr</setname>
     <rbf>jtcps1</rbf>
-    <mameversion>0251</mameversion>
+    <mameversion>0261</mameversion>
     <year>1994</year>
     <manufacturer>Capcom</manufacturer>
     <players>2</players>
@@ -70,7 +70,7 @@
         <dip name="Free Play" bits="18" ids="On,Off"/>
         <dip name="Freeze" bits="19" ids="On,Off"/>
         <dip name="Flip Screen" bits="20" ids="On,Off"/>
-        <dip name="Demo Sounds" bits="21" ids="Off,On"/>
+        <dip name="Demo Sounds" bits="21" ids="On,Off"/>
         <dip name="Allow Continue" bits="22" ids="No,Yes"/>
         <dip name="Game Mode" bits="23" ids="Test,Game"/>
         <dip name="PCB type" ids="88617A,89626A" bits="24"/>

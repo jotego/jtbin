@@ -1,0 +1,108 @@
+<!--          FPGA arcade hardware by Jotego
+
+              This core is available for hardware compatible with MiST and MiSTer
+              Other FPGA systems may be supported by the time you read this.
+              This work is not mantained by the MiSTer project. Please contact the
+              core author for issues and updates.
+
+              (c) Jose Tejada, 2024. Please support this research
+              Patreon: https://patreon.com/jotego
+
+              The author does not endorse or participate in illegal distribution
+              of copyrighted material. This work can be used with compatible
+              software. This software can be homebrew projects or legally
+              obtained memory dumps of compatible games.
+
+              This file license is GNU GPLv2.
+              You can read the whole license file in
+              https://opensource.org/licenses/gpl-2.0.php
+
+-->
+
+<misterromdescription>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
+    <name>Nemo (Japan 901120, 89622B-3 ROM board)</name>
+    <setname>nemoj</setname>
+    <rbf>jtcps1</rbf>
+    <mameversion>0261</mameversion>
+    <year>1990</year>
+    <manufacturer>Capcom</manufacturer>
+    <players>2</players>
+    <joystick>8</joystick>
+    <rotation>horizontal</rotation>
+    <region>World</region>
+    <rom index="0" zip="nemoj.zip|nemo.zip" md5="None" asm_md5="bc1fd457b0a397730655309139c22eb9">
+        <part>
+            00 04 40 04 40 05 FF FF
+            FF FF FF FF FF FF FF FF
+            0E 45 FF FF FF FF 02 04
+            06 08 0A 00 00 0C 04 02
+            20 00 12 40 44 F3 FF 00
+            FF FF FF FF FF FF FF FF
+            FF FF FF FF FF FF FF FF
+            FF FF FF FF FF FF FF FF
+        </part>
+        <!-- maincpu - starts at 0x0 - length 0x100000 (20 bits) -->
+        <interleave output="16">
+            <part name="nmj_42a.12h" crc="55024740" map="01"/>
+            <part name="nmj_36a.12f" crc="daeceabb" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="nmj_43a.13h" crc="a948a53b" map="01"/>
+            <part name="nmj_37a.13f" crc="619068b6" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="nmj_40.10h" crc="8a4099f3" map="01"/>
+            <part name="nmj_34.10f" crc="5737feed" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="nmj_41.11h" crc="6309603d" map="01"/>
+            <part name="nmj_35.11f" crc="bd11a7f8" map="10"/>
+        </interleave>
+        <!-- audiocpu - starts at 0x100000 - length 0x10000 (16 bits) -->
+        <part name="nmj_23.13b" crc="8d3c5a42"/>
+        <!-- oki - starts at 0x110000 - length 0x40000 (18 bits) -->
+        <part name="nmj_30.12c" crc="bab333d4"/>
+        <part name="nmj_31.13c" crc="2650a0a8"/>
+        <!-- gfx - starts at 0x150000 - length 0x200000 (21 bits) -->
+        <interleave output="64">
+            <part name="nmj_09.4b" crc="9d60d286" map="00000001"/>
+            <part name="nmj_01.4a" crc="8a83f7c4" map="00000010"/>
+            <part name="nmj_13.9b" crc="a4909fe0" map="00000100"/>
+            <part name="nmj_05.9a" crc="16db1e61" map="00001000"/>
+            <part name="nmj_24.5e" crc="3312c648" map="00010000"/>
+            <part name="nmj_17.5c" crc="ccfc50e2" map="00100000"/>
+            <part name="nmj_38.8h" crc="ae98a997" map="01000000"/>
+            <part name="nmj_32.8f" crc="b3704dde" map="10000000"/>
+        </interleave>
+        <interleave output="64">
+            <part name="nmj_10.5b" crc="33c1388c" map="00000001"/>
+            <part name="nmj_02.5a" crc="84c69469" map="00000010"/>
+            <part name="nmj_14.10b" crc="66612270" map="00000100"/>
+            <part name="nmj_06.10a" crc="8b9bcf95" map="00001000"/>
+            <part name="nmj_25.7e" crc="acfc84d2" map="00010000"/>
+            <part name="nmj_18.7c" crc="4347deed" map="00100000"/>
+            <part name="nmj_39.9h" crc="6a274ecd" map="01000000"/>
+            <part name="nmj_33.9f" crc="c469dc74" map="10000000"/>
+        </interleave>
+        <!-- Total 0x350000 bytes - 3392 kBytes -->
+    </rom>
+    <rom index="1">
+        <part>00 80</part>
+    </rom>
+    <switches page_id="1" page_name="Switches" base="8" default="ff,fc,bf">
+        <!-- DSWB -->
+        <dip name="Difficulty" bits="8,10" ids="7,6,5,4,3,2,1,0"/>
+        <dip name="Life Bar" bits="11,12" ids="Minimum,Maximum,-,Medium"/>
+        <!-- DSWC -->
+        <dip name="Lives" bits="16,17" ids="4,3,1,2"/>
+        <dip name="Free Play" bits="18" ids="On,Off"/>
+        <dip name="Freeze" bits="19" ids="On,Off"/>
+        <dip name="Flip Screen" bits="20" ids="On,Off"/>
+        <dip name="Demo Sounds" bits="21" ids="On,Off"/>
+        <dip name="Allow Continue" bits="22" ids="Yes,No"/>
+        <dip name="Game Mode" bits="23" ids="Test,Game"/>
+        <dip name="PCB type" ids="88617A,89626A" bits="24"/>
+    </switches>
+    <buttons names="Attack,Jump,-,-,-,-,Start,Coin,Core credits" default="A,B,Start,Select,-" count="2"/>
+</misterromdescription>

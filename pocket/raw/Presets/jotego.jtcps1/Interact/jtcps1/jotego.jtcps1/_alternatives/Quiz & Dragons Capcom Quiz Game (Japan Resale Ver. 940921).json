@@ -38,7 +38,7 @@
 				"enabled": true,
 				"persist": true,
 				"address": "0xfa000000",
-				"defaultval": 4,
+				"defaultval": 2,
 				"value": 0,
 				"mask": "0xFFFFF8FF",
 				"options": [
@@ -133,7 +133,8 @@
 				"persist": true,
 				"address": "0xfa000000",
 				"defaultval": 1,
-				"value": 2097152,
+				"value": 0,
+				"value_off": 2097152,
 				"mask": "0xFFDFFFFF"
 			},
 			{

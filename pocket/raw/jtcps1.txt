@@ -83,12 +83,14 @@ Magic Sword: Heroic Fantasy (World 900623) --> mswordr1.rom
 Magic Sword: Heroic Fantasy (USA 900725) --> mswordu.rom
 Mega Twins (World 900619) --> mtwins.rom
 Nemo (World 901130) --> nemo.rom
-Nemo (Japan 901120) --> nemoj.rom
+Nemo (Japan 901120, 89622B-3 ROM board) --> nemoj.rom
+Nemo (Japan 901120, 89625B-1 ROM board) --> nemoja.rom
 Nemo (World 901109) --> nemor1.rom
 Pang! 3 (Euro 950601) --> pang3.rom
 Pang! 3 (bootleg, set 1) --> pang3b.rom
 Pang! 3: Kaitou Tachi no Karei na Gogo (Japan 950511) --> pang3j.rom
 Pang! 3 (Euro 950511) --> pang3r1.rom
+Gamushara Battle! Puchi Monster (Japan 990519) --> pmonster.rom
 Pnickies (Japan 940608) --> pnickj.rom
 Pokonyan! Balloon (Japan 940322) --> pokonyan.rom
 Quiz & Dragons: Capcom Quiz Game (USA 920701) --> qad.rom
@@ -102,6 +104,7 @@ Street Fighter II': Champion Edition (Accelerator Pt.II, bootleg) --> sf2accp2.r
 Street Fighter II': Champion Edition (World 920513) --> sf2ce.rom
 Street Fighter II': Champion Edition ('Taiwan' bootleg with PAL) --> sf2cebltw.rom
 Street Fighter II': Champion Edition (World 920313) --> sf2ceea.rom
+Street Fighter II': Champion Edition (World 920803) --> sf2ceec.rom
 Street Fighter II': Champion Edition (Japan 920322) --> sf2ceja.rom
 Street Fighter II': Champion Edition (Japan 920513) --> sf2cejb.rom
 Street Fighter II': Champion Edition (Japan 920803) --> sf2cejc.rom

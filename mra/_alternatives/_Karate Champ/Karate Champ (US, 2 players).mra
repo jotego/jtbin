@@ -1,0 +1,96 @@
+<!--          FPGA arcade hardware by Jotego
+
+              This core is available for hardware compatible with MiST and MiSTer
+              Other FPGA systems may be supported by the time you read this.
+              This work is not mantained by the MiSTer project. Please contact the
+              core author for issues and updates.
+
+              (c) Jose Tejada, 2024. Please support this research
+              Patreon: https://patreon.com/jotego
+
+              The author does not endorse or participate in illegal distribution
+              of copyrighted material. This work can be used with compatible
+              software. This software can be homebrew projects or legally
+              obtained memory dumps of compatible games.
+
+              This file license is GNU GPLv2.
+              You can read the whole license file in
+              https://opensource.org/licenses/gpl-2.0.php
+
+-->
+
+<misterromdescription>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
+    <name>Karate Champ (US, 2 players)</name>
+    <setname>kchamp2p</setname>
+    <rbf>jtkchamp</rbf>
+    <mameversion>0261</mameversion>
+    <year>1984</year>
+    <manufacturer>Data East USA</manufacturer>
+    <players>2</players>
+    <joystick>4</joystick>
+    <rotation>vertical (cw)</rotation>
+    <region>World</region>
+    <rom index="0" zip="kchamp2p.zip|kchamp.zip" md5="None" asm_md5="a0e0965f555d332e3033e1f4d3a7cbea">
+        <!-- maincpu - starts at 0x0 - length 0x10000 (16 bits) -->
+        <part name="karate_champ_bs14-8.ic80" crc="e9f93e89"/>
+        <part name="karate_champ_bs15-8.ic74" crc="572961f2"/>
+        <part name="karate_champ_bs16-8.ic66" crc="651a02b9"/>
+        <part name="karate_champ_bs17-8.ic60" crc="523968a4"/>
+        <part name="karate_champ_bs18-8.ic56" crc="49a18c37"/>
+        <part name="karate_champ_bs19-8.ic49" crc="9a8c9311"/>
+        <part repeat="0x4000"> FF</part>
+        <!-- JTFRAME_BA1_START -->
+        <!-- audiocpu - starts at 0x10000 - length 0x10000 (16 bits) -->
+        <part name="karate_champ_bo26-8.ic39" crc="645650de"/>
+        <part name="karate_champ_bo25-8.ic44" crc="33171e07"/>
+        <part name="karate_champ_bs24-8.ic50" crc="910b48b9"/>
+        <part name="karate_champ_bs23-8.ic57" crc="47f66aac"/>
+        <part name="karate_champ_bs22-8.ic61" crc="5928e749"/>
+        <part name="karate_champ_bs21-8.ic67" crc="ca17e3ba"/>
+        <part name="karate_champ_bs20-8.ic75" crc="ada4f2cd"/>
+        <part repeat="0x2000"> FF</part>
+        <!-- JTFRAME_BA2_START -->
+        <!-- gfx1 - starts at 0x20000 - length 0x20000 (17 bits) -->
+        <interleave output="16">
+            <part name="karate_champ_bs00-8.ic89" crc="a4fa98a1" map="01"/>
+            <part name="karate_champ_bs01-8.ic91" crc="fea09f7c" map="10"/>
+        </interleave>
+        <part repeat="0x1C000"> FF</part>
+        <!-- JTFRAME_BA3_START -->
+        <!-- gfx2 - starts at 0x40000 - length 0x20000 (17 bits) -->
+        <part name="karate_champ_bs13-8.ic128" crc="eaad4168"/>
+        <part name="karate_champ_bs04-8.ic116" crc="10a47e2d"/>
+        <part name="karate_champ_bs12-8.ic127" crc="b4842ea9"/>
+        <part name="karate_champ_bs03-8.ic115" crc="8cd166a5"/>
+        <part name="karate_champ_bs11-8.ic126" crc="4cbd3aa3"/>
+        <part name="karate_champ_bs02-8.ic114" crc="6be342a6"/>
+        <part repeat="0x4000"> FF</part>
+        <!-- Blank ends at 0x50000 -->
+        <part name="karate_champ_bs07-8.ic120" crc="cb91d16b"/>
+        <part name="karate_champ_bs10-8.ic124" crc="489c9c04"/>
+        <part name="karate_champ_bs06-8.ic119" crc="7346db8a"/>
+        <part name="karate_champ_bs09-8.ic123" crc="b78714fc"/>
+        <part name="karate_champ_bs05-8.ic118" crc="b2557102"/>
+        <part name="karate_champ_bs08-8.ic122" crc="c85aba0e"/>
+        <part repeat="0x4000"> FF</part>
+        <!-- JTFRAME_PROM_START -->
+        <!-- proms - starts at 0x60000 - length 0x300 (10 bits) -->
+        <part name="be27.ic34" crc="f05bda76"/>
+        <part name="be28.ic24" crc="d26d6fa9"/>
+        <part name="be29.ic18" crc="111ccb15"/>
+        <!-- Total 0x60300 bytes - 384 kBytes -->
+    </rom>
+    <!-- Vertical game -->
+    <rom index="1">
+        <part>01 1D</part>
+    </rom>
+    <switches page_id="1" page_name="Switches" base="16" default="9f">
+        <!-- DSW -->
+        <dip name="Difficulty" bits="4,5" ids="Hardest,Hard,Medium,Easy"/>
+        <dip name="Demo Sounds" bits="6" ids="On,Off"/>
+        <dip name="Free Play" bits="7" ids="On,Off"/>
+        <dip name="Link joysticks" ids="Off,On" bits="8"/>
+    </switches>
+    <buttons names="left(2),right(2),up(2),bottom(2),Start,Coin,Core credits" default="A,B,X,Y,Start,Select,-" count="4"/>
+</misterromdescription>

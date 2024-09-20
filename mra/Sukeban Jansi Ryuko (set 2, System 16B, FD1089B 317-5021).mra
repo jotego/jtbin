@@ -24,7 +24,7 @@
     <name>Sukeban Jansi Ryuko (set 2, System 16B, FD1089B 317-5021)</name>
     <setname>sjryuko</setname>
     <rbf>jts16b</rbf>
-    <mameversion>0251</mameversion>
+    <mameversion>0261</mameversion>
     <year>1988</year>
     <manufacturer>White Board</manufacturer>
     <players>1</players>
@@ -88,8 +88,8 @@
             <part name="epr-12239-30.b8" crc="91f70c8b" map="10"/>
         </interleave>
         <part repeat="0x180000"> FF</part>
-        <!-- JTFRAME_PROM_START -->
         <!-- MCU_START -->
+        <!-- JTFRAME_PROM_START -->
         <!-- mcu - starts at 0x440000 - length 0x2000 (13 bits) -->
         <part repeat="0x1000"> FF</part>
         <part repeat="0x1000"> FF</part>

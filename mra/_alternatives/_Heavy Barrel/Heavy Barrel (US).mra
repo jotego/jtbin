@@ -24,7 +24,7 @@
     <name>Heavy Barrel (US)</name>
     <setname>hbarrelu</setname>
     <rbf>jtninja</rbf>
-    <mameversion>0251</mameversion>
+    <mameversion>0261</mameversion>
     <year>1987</year>
     <manufacturer>Data East USA</manufacturer>
     <players>2</players>
@@ -102,8 +102,8 @@
             <part name="heavy_barrel_14.14c" crc="bedfe7f3" map="0100"/>
             <part name="heavy_barrel_10.14a" crc="47d95447" map="1000"/>
         </interleave>
-        <!-- MCU_START -->
         <!-- JTFRAME_PROM_START -->
+        <!-- MCU_START -->
         <!-- mcu - starts at 0x210000 - length 0x18000 (17 bits) -->
         <part name="heavy_barrel_31.9a" crc="239d726f"/>
         <part repeat="0x17000"> FF</part>

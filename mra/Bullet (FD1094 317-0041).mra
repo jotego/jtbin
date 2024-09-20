@@ -24,7 +24,7 @@
     <name>Bullet (FD1094 317-0041)</name>
     <setname>bullet</setname>
     <rbf>jts16b</rbf>
-    <mameversion>0251</mameversion>
+    <mameversion>0261</mameversion>
     <year>1987</year>
     <manufacturer>Sega</manufacturer>
     <players>3</players>
@@ -86,8 +86,8 @@
             <part name="epr-11006.b8" crc="6b7384f2" map="10"/>
         </interleave>
         <part repeat="0x180000"> FF</part>
-        <!-- JTFRAME_PROM_START -->
         <!-- MCU_START -->
+        <!-- JTFRAME_PROM_START -->
         <!-- mcu - starts at 0x440000 - length 0x2000 (13 bits) -->
         <part repeat="0x1000"> FF</part>
         <part repeat="0x1000"> FF</part>
