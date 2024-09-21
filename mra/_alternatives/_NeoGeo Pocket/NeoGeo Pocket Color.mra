@@ -23,7 +23,7 @@
     <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
     <name>NeoGeo Pocket Color</name>
     <setname>ngpc</setname>
-    <rbf>jtngp</rbf>
+    <rbf>jtngpc</rbf>
     <mameversion>0261</mameversion>
     <year>1999</year>
     <manufacturer>SNK</manufacturer>
