@@ -6,7 +6,6 @@ the required .rom file using the mra tool (read below).
 Place the *.rom files in Assets/jtngp/common
 
 NeoGeo Pocket --> ngp.rom
-NeoGeo Pocket Color --> ngpc.rom
 
 
 These files are generated using the mra tool in:

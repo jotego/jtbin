@@ -1,7 +1,6 @@
 Place the following files in this folder:
 
 ngp.rom
-ngpc.rom
 
 These files are generated using the mra tool in:
 https://github.com/sebdel/mra-tools-c/tree/master/release

@@ -53,8 +53,8 @@
         <interleave output="16">
             <part name="23.8k" crc="b6dfdf85" map="12"/>
         </interleave>
-        <!-- JTFRAME_BA2_START -->
         <!-- SCR1_START -->
+        <!-- JTFRAME_BA2_START -->
         <!-- gfx2 - starts at 0x48000 - length 0x40000 (18 bits) -->
         <interleave output="16">
             <part name="bm19.10j" crc="868ababc" map="01"/>

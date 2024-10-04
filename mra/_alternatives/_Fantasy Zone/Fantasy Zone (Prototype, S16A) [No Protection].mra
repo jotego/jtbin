@@ -84,8 +84,8 @@
             <part name="ic24" crc="68807b49" map="10"/>
         </interleave>
         <part repeat="0x30000"> FF</part>
-        <!-- MCU_START -->
         <!-- JTFRAME_PROM_START -->
+        <!-- MCU_START -->
         <!-- mcu - starts at 0x180000 - length 0x2000 (13 bits) -->
         <part name="8751.bin" crc="c0d325e6"/>
         <part repeat="0x1000"> FF</part>
