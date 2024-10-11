@@ -1,0 +1,32 @@
+jtxmen - Arcade compatible hardware for Pocket FPGA
+Developed by JOTEGO - https://patreon.com/jotego
+
+The following arcade titles are compatible with this core. Generate
+the required .rom file using the mra tool (read below).
+Place the *.rom files in Assets/jtxmen/common
+
+X-Men (4 Players ver EBA) --> xmen.rom
+X-Men (2 Players ver AAA) --> xmen2pa.rom
+X-Men (2 Players ver EAA) --> xmen2pe.rom
+X-Men (2 Players ver JAA) --> xmen2pj.rom
+X-Men (2 Players ver UAB) --> xmen2pu.rom
+X-Men (4 Players ver AEA) --> xmena.rom
+X-Men (4 Players ver ADA) --> xmenaa.rom
+X-Men (4 Players ver JBA) --> xmenj.rom
+X-Men (4 Players ver JEA) --> xmenja.rom
+X-Men (4 Players ver UBB) --> xmenu.rom
+X-Men (4 Players ver UEB) --> xmenua.rom
+
+
+These files are generated using the mra tool in:
+https://github.com/sebdel/mra-tools-c/tree/master/release
+
+Boogermann's ORCA tool can also be used to generate the files:
+https://github.com/opengateware/tools-orca
+
+Check out the short tutorial in:
+https://github.com/jotego/jtbin/wiki/Analogue-Pocket-Cores
+
+DISCLAIMER: This PocketFPGA core is licensed to be used only
+with legally owned dumps of videogame data. It is also licensed
+to be used with freeware (homebrew) compatible with the platform.

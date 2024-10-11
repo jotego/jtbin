@@ -1015,6 +1015,17 @@
 | xmcotar1     | jtcps2     | cd81b5463eccd80b54fb1a472471ec95 | ff,ff        |
 | xmcotar1d    | jtcps2     | 609ce07bf52a8eece2d5437c15e65505 | ff,ff        |
 | xmcotau      | jtcps2     | 47efa4ee493caf8f5563650d43553be9 | ff,ff        |
+| xmen         | jtxmen     | df3a2688733115109616b086db233b61 |              |
+| xmen2pa      | jtxmen     | 867b39225f32d652ce232b936d8fbb08 |              |
+| xmen2pe      | jtxmen     | 7cd91ae25ee98f7fb7b595229fcf4cd4 |              |
+| xmen2pj      | jtxmen     | 84790284a6eb2806a172118f457f36e6 |              |
+| xmen2pu      | jtxmen     | 3b1b92e931bcfe4e674942be738f8dfe |              |
+| xmena        | jtxmen     | 8e91f6b1262c12b775777550cd8176d9 |              |
+| xmenaa       | jtxmen     | e3c00c1d076739e45ec2477fd364291f |              |
+| xmenj        | jtxmen     | deea19f86e4181feb2c9788bc4614f61 |              |
+| xmenja       | jtxmen     | 705f6cc62a9eec7082dfbc9cab566850 |              |
+| xmenu        | jtxmen     | 55c5f9f2cc053a50ef10c737cf6f9667 |              |
+| xmenua       | jtxmen     | b15de38acc1feae310dbd1c7bec39ac3 |              |
 | xmvsf        | jtcps2     | c5f1e31f4bef2e94411fb459c65eb1a6 | ff,ff        |
 | xmvsfa       | jtcps2     | 2255740809745595daafce56e9bd2fc3 | ff,ff        |
 | xmvsfar1     | jtcps2     | d0d6f41106c621b9136eb0de5a8546b7 | ff,ff        |

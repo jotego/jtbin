@@ -64,8 +64,8 @@
         <patch offset="0x1A50">71 4E 71 4E 71 4E 71 4E 71 4E 71 4E 71 4E 71 4E 71 4E 71 4E</patch>
         <patch offset="0x13A2">71 4E</patch>
     </rom>
-    <rom index="17" zip="jtbeta.zip" md5="None" asm_md5="c6a4be95256a59cbf8cdd01b7c2a6e70">
-        <part name="beta.bin" crc="330da304"/>
+    <rom index="17" zip="jtbeta.zip" md5="None" asm_md5="576fc116dbf0329afc36037a31b14247">
+        <part name="beta.bin" crc="d6890711"/>
     </rom>
     <rom index="2">
         <part>

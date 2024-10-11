@@ -69,8 +69,8 @@
         </interleave>
         <!-- Total 0x328000 bytes - 3232 kBytes -->
     </rom>
-    <rom index="17" zip="jtbeta.zip" md5="None" asm_md5="c6a4be95256a59cbf8cdd01b7c2a6e70">
-        <part name="beta.bin" crc="330da304"/>
+    <rom index="17" zip="jtbeta.zip" md5="None" asm_md5="576fc116dbf0329afc36037a31b14247">
+        <part name="beta.bin" crc="d6890711"/>
     </rom>
     <nvram index="2" size="5636"/>
     <rom index="1">

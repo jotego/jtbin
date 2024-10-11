@@ -1,0 +1,31 @@
+{
+	"instance":{
+		"magic": "APF_VER_1",
+		"variant_select": {
+			"id": 0,
+			"select": false
+		},
+		"data_path": "",
+		"data_slots": [
+			{
+				"id": 1,
+				"filename": "xmen2pu.rom"
+			},
+			{
+				"id": 2,
+				"filename": "xmen2pu.sav"
+			},
+			{
+				"id": 17,
+				"filename": "beta.bin",
+				"md5": "576fc116dbf0329afc36037a31b14247"
+			}
+		],
+		"memory_writes": [
+			{
+				"address": "0xf9000000",
+				"data": "0x8000"
+			}
+		]
+	}
+}
