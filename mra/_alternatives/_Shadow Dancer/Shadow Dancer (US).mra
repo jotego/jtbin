@@ -94,5 +94,5 @@
         <dip name="Difficulty" bits="12,13" ids="Hardest,Hard,Easy,Normal"/>
         <dip name="Time Adjust" bits="14,15" ids="2.20,2.40,3.30,3.00"/>
     </switches>
-    <buttons names="Attack,Jump,Magic with Bomb,-,Start,Coin,Core credits" default="A,B,X,Start,Select,-" count="3"/>
+    <buttons names="Attack,Jump,Ninja Magic,-,Start,Coin,Core credits" default="A,B,X,Start,Select,-" count="3"/>
 </misterromdescription>
