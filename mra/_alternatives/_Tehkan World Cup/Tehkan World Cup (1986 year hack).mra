@@ -1,0 +1,82 @@
+<!--          FPGA arcade hardware by Jotego
+
+              This core is available for hardware compatible with MiST and MiSTer
+              Other FPGA systems may be supported by the time you read this.
+              This work is not mantained by the MiSTer project. Please contact the
+              core author for issues and updates.
+
+              (c) Jose Tejada, 2024. Please support this research
+              Patreon: https://patreon.com/jotego
+
+              The author does not endorse or participate in illegal distribution
+              of copyrighted material. This work can be used with compatible
+              software. This software can be homebrew projects or legally
+              obtained memory dumps of compatible games.
+
+              This file license is GNU GPLv2.
+              You can read the whole license file in
+              https://opensource.org/licenses/gpl-2.0.php
+
+-->
+
+<misterromdescription>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
+    <name>Tehkan World Cup (1986 year hack)</name>
+    <setname>tehkanwch</setname>
+    <rbf>jtwc</rbf>
+    <mameversion>0261</mameversion>
+    <year>1986</year>
+    <manufacturer>hack</manufacturer>
+    <players>2</players>
+    <joystick/>
+    <rotation>horizontal</rotation>
+    <region>World</region>
+    <rom index="0" zip="tehkanwch.zip|tehkanwc.zip" md5="None" asm_md5="1006261e3a82bd988f04aa9c8f84c391">
+        <!-- maincpu - starts at 0x0 - length 0xC000 (16 bits) -->
+        <part name="worldcup_3.bin" crc="dd3f789b"/>
+        <part name="worldcup_2.bin" crc="7017a221"/>
+        <part name="worldcup_1.bin" crc="8b662902"/>
+        <!-- SUB_START -->
+        <!-- sub - starts at 0xC000 - length 0x8000 (15 bits) -->
+        <part name="worldcup_6.bin" crc="70a9f883"/>
+        <!-- JTFRAME_BA1_START -->
+        <!-- audiocpu - starts at 0x14000 - length 0x4000 (14 bits) -->
+        <part name="worldcup_5.bin" crc="e3112be2"/>
+        <!-- PCM_START -->
+        <!-- adpcm - starts at 0x18000 - length 0x8000 (15 bits) -->
+        <part name="worldcup_4.bin" crc="444b5544"/>
+        <part repeat="0x4000"> FF</part>
+        <!-- JTFRAME_BA2_START -->
+        <!-- gfx1 - starts at 0x20000 - length 0x4000 (14 bits) -->
+        <part name="worldcup_9.bin" crc="a9e274f8"/>
+        <!-- SCR_START -->
+        <!-- gfx3 - starts at 0x24000 - length 0x10000 (16 bits) -->
+        <part name="worldcup_10.bin" crc="669389fc"/>
+        <part name="worldcup_11.bin" crc="4ea7586f"/>
+        <!-- JTFRAME_BA3_START -->
+        <!-- gfx2 - starts at 0x34000 - length 0x10000 (16 bits) -->
+        <part name="worldcup_7.bin" crc="055a5264"/>
+        <part name="worldcup_8.bin" crc="59faebe7"/>
+        <!-- Total 0x44000 bytes - 272 kBytes -->
+    </rom>
+    <rom index="17" zip="jtbeta.zip" md5="None" asm_md5="576fc116dbf0329afc36037a31b14247">
+        <part name="beta.bin" crc="d6890711"/>
+    </rom>
+    <nvram index="2" size="7168"/>
+    <rom index="1">
+        <part>00 80</part>
+    </rom>
+    <switches page_id="1" page_name="Switches" base="16" default="ff,ff,ff">
+        <!-- DSW2 -->
+        <dip name="Coin A" bits="0,2" ids="2/3,2/1,1/6,1/5,1/4,1/3,1/2,1/1"/>
+        <dip name="Coin B" bits="3,5" ids="2/3,2/1,1/6,1/5,1/4,1/3,1/2,1/1"/>
+        <!-- DSW3 -->
+        <dip name="1P time" bits="8,9" ids="2:30,2:00,1:00,1:30"/>
+        <dip name="Game Type" bits="15" ids="Credit In,Timer In"/>
+        <!-- P1BUT -->
+        <dip name="Difficulty" bits="16,17" ids="Very Hard,Hard,Easy,Normal"/>
+        <dip name="Timer Speed" bits="18" ids="55/60,60/60"/>
+        <dip name="Demo Sounds" bits="19" ids="Off,On"/>
+    </switches>
+    <buttons names="Kick,Start,Coin,Core credits" default="A,Start,Select,-" count="1"/>
+</misterromdescription>

@@ -861,6 +861,11 @@
 | tankfrce     | jtshouse   | f8abd206a5b82f1c759f302ba16c6cd7 | ff,ff        |
 | tankfrce4    | jtshouse   | e9c9dfa2bcfa1d800dc3a8cf4229ec34 | ff,ff        |
 | tankfrcej    | jtshouse   | 55239f02c6fac6f70eb00fa584663923 | ff,ff        |
+| tehkanwc     | jtwc       | 4f013ddf03e6bd673063ee3be29d0fd6 | ff,ff,ff     |
+| tehkanwcb    | jtwc       | c216f67867c07c21e6f44dc5acd0fac0 | ff,ff,ff     |
+| tehkanwcc    | jtwc       | 9b03bba0934f18d2c3053113cb8b9eba | ff,ff,ff     |
+| tehkanwcd    | jtwc       | b3faadb04f3c94dd1f16f0b731cb189c | ff,ff,ff     |
+| tehkanwch    | jtwc       | 1006261e3a82bd988f04aa9c8f84c391 | ff,ff,ff     |
 | tetris       | jts16      | a66fee2c280d67b2820db8dda291719e | ff,fd        |
 | tetris1      | jts16b     | e9cca35f63ff528a07057065e30c5d0d | ff,fd        |
 | tetris2      | jts16b     | 91eeb6e782d0812f8c9fa0ea9e993ff9 | ff,fd        |

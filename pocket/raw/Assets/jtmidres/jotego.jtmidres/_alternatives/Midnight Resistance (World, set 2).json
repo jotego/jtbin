@@ -10,11 +10,6 @@
 			{
 				"id": 1,
 				"filename": "midres2.rom"
-			},
-			{
-				"id": 17,
-				"filename": "beta.bin",
-				"md5": "576fc116dbf0329afc36037a31b14247"
 			}
 		],
 		"memory_writes": [

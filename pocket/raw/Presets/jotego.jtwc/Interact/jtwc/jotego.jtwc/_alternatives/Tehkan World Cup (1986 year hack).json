@@ -1,0 +1,249 @@
+{
+	"interact":{
+		"magic": "APF_VER_1",
+		"variables": [
+			{
+				"name": "Coin A",
+				"id": 0,
+				"type": "list",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 7,
+				"value": 0,
+				"mask": "0xFFFFFFF8",
+				"options": [
+					{
+						"name": "2 Coins/3 Credits",
+						"value": "0x0"
+					},
+					{
+						"name": "2 Coins/1 Credit",
+						"value": "0x1"
+					},
+					{
+						"name": "1 Coin/6 Credits",
+						"value": "0x2"
+					},
+					{
+						"name": "1 Coin/5 Credits",
+						"value": "0x3"
+					},
+					{
+						"name": "1 Coin/4 Credits",
+						"value": "0x4"
+					},
+					{
+						"name": "1 Coin/3 Credits",
+						"value": "0x5"
+					},
+					{
+						"name": "1 Coin/2 Credits",
+						"value": "0x6"
+					},
+					{
+						"name": "1 Coin/1 Credit",
+						"value": "0x7"
+					}
+				]
+			},
+			{
+				"name": "Coin B",
+				"id": 1,
+				"type": "list",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 7,
+				"value": 0,
+				"mask": "0xFFFFFFC7",
+				"options": [
+					{
+						"name": "2 Coins/3 Credits",
+						"value": "0x0"
+					},
+					{
+						"name": "2 Coins/1 Credit",
+						"value": "0x8"
+					},
+					{
+						"name": "1 Coin/6 Credits",
+						"value": "0x10"
+					},
+					{
+						"name": "1 Coin/5 Credits",
+						"value": "0x18"
+					},
+					{
+						"name": "1 Coin/4 Credits",
+						"value": "0x20"
+					},
+					{
+						"name": "1 Coin/3 Credits",
+						"value": "0x28"
+					},
+					{
+						"name": "1 Coin/2 Credits",
+						"value": "0x30"
+					},
+					{
+						"name": "1 Coin/1 Credit",
+						"value": "0x38"
+					}
+				]
+			},
+			{
+				"name": "Start Credits (P1\u0026P2)/Extra",
+				"id": 2,
+				"type": "list",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 3,
+				"value": 0,
+				"mask": "0xFFFFFF3F",
+				"options": [
+					{
+						"name": "2\u00263/67%",
+						"value": "0x0"
+					},
+					{
+						"name": "2\u00262/100%",
+						"value": "0x40"
+					},
+					{
+						"name": "1\u00261/200%",
+						"value": "0x80"
+					},
+					{
+						"name": "1\u00262/100%",
+						"value": "0xC0"
+					}
+				]
+			},
+			{
+				"name": "1P Game Time",
+				"id": 3,
+				"type": "list",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 3,
+				"value": 0,
+				"mask": "0xFFFFFCFF",
+				"options": [
+					{
+						"name": "2:30",
+						"value": "0x0"
+					},
+					{
+						"name": "2:00",
+						"value": "0x100"
+					},
+					{
+						"name": "1:00",
+						"value": "0x200"
+					},
+					{
+						"name": "1:30",
+						"value": "0x300"
+					}
+				]
+			},
+			{
+				"name": "Game Type",
+				"id": 4,
+				"type": "list",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 1,
+				"value": 0,
+				"mask": "0xFFFF7FFF",
+				"options": [
+					{
+						"name": "Credit In",
+						"value": "0x0"
+					},
+					{
+						"name": "Timer In",
+						"value": "0x8000"
+					}
+				]
+			},
+			{
+				"name": "Difficulty",
+				"id": 5,
+				"type": "list",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 3,
+				"value": 0,
+				"mask": "0xFFFCFFFF",
+				"options": [
+					{
+						"name": "Very Hard",
+						"value": "0x0"
+					},
+					{
+						"name": "Hard",
+						"value": "0x10000"
+					},
+					{
+						"name": "Easy",
+						"value": "0x20000"
+					},
+					{
+						"name": "Normal",
+						"value": "0x30000"
+					}
+				]
+			},
+			{
+				"name": "Timer Speed",
+				"id": 6,
+				"type": "list",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 1,
+				"value": 0,
+				"mask": "0xFFFBFFFF",
+				"options": [
+					{
+						"name": "55/60",
+						"value": "0x0"
+					},
+					{
+						"name": "60/60",
+						"value": "0x40000"
+					}
+				]
+			},
+			{
+				"name": "Demo Sounds",
+				"id": 7,
+				"type": "check",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 1,
+				"value": 524288,
+				"mask": "0xFFF7FFFF"
+			},
+			{
+				"name": "Default",
+				"id": 1015,
+				"type": "number_u32",
+				"enabled": false,
+				"persist": false,
+				"writeonly": true,
+				"address": "0xfa000000",
+				"defaultval": 16777215,
+				"value": 0
+			}
+		],
+		"messages": []
+	}
+}

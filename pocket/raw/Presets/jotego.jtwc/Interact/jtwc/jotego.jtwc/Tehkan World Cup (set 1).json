@@ -1,0 +1,249 @@
+{
+	"interact":{
+		"magic": "APF_VER_1",
+		"variables": [
+			{
+				"name": "Difficulty",
+				"id": 0,
+				"type": "list",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 3,
+				"value": 0,
+				"mask": "0xFFFFFFFC",
+				"options": [
+					{
+						"name": "Very Hard",
+						"value": "0x0"
+					},
+					{
+						"name": "Hard",
+						"value": "0x1"
+					},
+					{
+						"name": "Easy",
+						"value": "0x2"
+					},
+					{
+						"name": "Normal",
+						"value": "0x3"
+					}
+				]
+			},
+			{
+				"name": "Timer Speed",
+				"id": 1,
+				"type": "list",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 1,
+				"value": 0,
+				"mask": "0xFFFFFFFB",
+				"options": [
+					{
+						"name": "55/60",
+						"value": "0x0"
+					},
+					{
+						"name": "60/60",
+						"value": "0x4"
+					}
+				]
+			},
+			{
+				"name": "Demo Sounds",
+				"id": 2,
+				"type": "check",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 1,
+				"value": 8,
+				"mask": "0xFFFFFFF7"
+			},
+			{
+				"name": "Coin A",
+				"id": 3,
+				"type": "list",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 7,
+				"value": 0,
+				"mask": "0xFFFFFF8F",
+				"options": [
+					{
+						"name": "2 Coins/3 Credits",
+						"value": "0x0"
+					},
+					{
+						"name": "2 Coins/1 Credit",
+						"value": "0x10"
+					},
+					{
+						"name": "1 Coin/6 Credits",
+						"value": "0x20"
+					},
+					{
+						"name": "1 Coin/5 Credits",
+						"value": "0x30"
+					},
+					{
+						"name": "1 Coin/4 Credits",
+						"value": "0x40"
+					},
+					{
+						"name": "1 Coin/3 Credits",
+						"value": "0x50"
+					},
+					{
+						"name": "1 Coin/2 Credits",
+						"value": "0x60"
+					},
+					{
+						"name": "1 Coin/1 Credit",
+						"value": "0x70"
+					}
+				]
+			},
+			{
+				"name": "Coin B",
+				"id": 4,
+				"type": "list",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 7,
+				"value": 0,
+				"mask": "0xFFFFFC7F",
+				"options": [
+					{
+						"name": "2 Coins/3 Credits",
+						"value": "0x0"
+					},
+					{
+						"name": "2 Coins/1 Credit",
+						"value": "0x80"
+					},
+					{
+						"name": "1 Coin/6 Credits",
+						"value": "0x100"
+					},
+					{
+						"name": "1 Coin/5 Credits",
+						"value": "0x180"
+					},
+					{
+						"name": "1 Coin/4 Credits",
+						"value": "0x200"
+					},
+					{
+						"name": "1 Coin/3 Credits",
+						"value": "0x280"
+					},
+					{
+						"name": "1 Coin/2 Credits",
+						"value": "0x300"
+					},
+					{
+						"name": "1 Coin/1 Credit",
+						"value": "0x380"
+					}
+				]
+			},
+			{
+				"name": "Start Credits (P1\u0026P2)/Extra",
+				"id": 5,
+				"type": "list",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 3,
+				"value": 0,
+				"mask": "0xFFFFF3FF",
+				"options": [
+					{
+						"name": "2\u00263/67%",
+						"value": "0x0"
+					},
+					{
+						"name": "2\u00262/100%",
+						"value": "0x400"
+					},
+					{
+						"name": "1\u00261/200%",
+						"value": "0x800"
+					},
+					{
+						"name": "1\u00262/100%",
+						"value": "0xC00"
+					}
+				]
+			},
+			{
+				"name": "1P Game Time",
+				"id": 6,
+				"type": "list",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 3,
+				"value": 0,
+				"mask": "0xFFFFCFFF",
+				"options": [
+					{
+						"name": "2:30",
+						"value": "0x0"
+					},
+					{
+						"name": "2:00",
+						"value": "0x1000"
+					},
+					{
+						"name": "1:00",
+						"value": "0x2000"
+					},
+					{
+						"name": "1:30",
+						"value": "0x3000"
+					}
+				]
+			},
+			{
+				"name": "Game Type",
+				"id": 7,
+				"type": "list",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 1,
+				"value": 0,
+				"mask": "0xFFF7FFFF",
+				"options": [
+					{
+						"name": "Credit In",
+						"value": "0x0"
+					},
+					{
+						"name": "Timer In",
+						"value": "0x80000"
+					}
+				]
+			},
+			{
+				"name": "Default",
+				"id": 1015,
+				"type": "number_u32",
+				"enabled": false,
+				"persist": false,
+				"writeonly": true,
+				"address": "0xfa000000",
+				"defaultval": 16777215,
+				"value": 0
+			}
+		],
+		"messages": []
+	}
+}
