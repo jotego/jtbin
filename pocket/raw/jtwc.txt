@@ -5,6 +5,7 @@ The following arcade titles are compatible with this core. Generate
 the required .rom file using the mra tool (read below).
 Place the *.rom files in Assets/jtwc/common
 
+Gridiron Fight --> gridiron.rom
 Tehkan World Cup (set 1) --> tehkanwc.rom
 Tehkan World Cup (set 2, bootleg?) --> tehkanwcb.rom
 Tehkan World Cup (set 3, bootleg) --> tehkanwcc.rom

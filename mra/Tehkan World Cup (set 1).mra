@@ -31,7 +31,11 @@
     <joystick/>
     <rotation>horizontal</rotation>
     <region>World</region>
-    <rom index="0" zip="tehkanwc.zip" md5="None" asm_md5="4f013ddf03e6bd673063ee3be29d0fd6">
+    <rom index="0" zip="tehkanwc.zip" md5="None" asm_md5="55fb5ac5d6a2f50dbef1e4bb59d2b6b2">
+        <!-- bit 0 -> enable non-symmetric speed in Tehkan WC bootleg -->
+        <part>
+            00 00 00 00 00 00 00 00
+        </part>
         <!-- maincpu - starts at 0x0 - length 0xC000 (16 bits) -->
         <part name="twc-1.bin" crc="34d6d5ff"/>
         <part name="twc-2.bin" crc="7017a221"/>
@@ -66,7 +70,7 @@
     <rom index="1">
         <part>00 80</part>
     </rom>
-    <switches page_id="1" page_name="Switches" base="16" default="ff,ff,ff">
+    <switches page_id="1" page_name="Switches" base="8" default="ff,ff,ff">
         <!-- DSW1 -->
         <dip name="Difficulty" bits="0,1" ids="Very Hard,Hard,Easy,Normal"/>
         <dip name="Timer Speed" bits="2" ids="55/60,60/60"/>

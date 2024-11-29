@@ -1,0 +1,175 @@
+{
+	"interact":{
+		"magic": "APF_VER_1",
+		"variables": [
+			{
+				"name": "Start Credits (P1\u0026P2)/Extra",
+				"id": 0,
+				"type": "list",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 3,
+				"value": 0,
+				"mask": "0xFFFFFFFC",
+				"options": [
+					{
+						"name": "2\u00261/200% (duplicate)",
+						"value": "0x0"
+					},
+					{
+						"name": "1\u00261/200%",
+						"value": "0x1"
+					},
+					{
+						"name": "2\u00262/100%",
+						"value": "0x2"
+					},
+					{
+						"name": "1\u00262/100%",
+						"value": "0x3"
+					}
+				]
+			},
+			{
+				"name": "Formation Time (Defense)",
+				"id": 1,
+				"type": "list",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 3,
+				"value": 0,
+				"mask": "0xFFFFFFF3",
+				"options": [
+					{
+						"name": "7",
+						"value": "0x0"
+					},
+					{
+						"name": "3",
+						"value": "0x4"
+					},
+					{
+						"name": "5",
+						"value": "0x8"
+					},
+					{
+						"name": "Same as Offense",
+						"value": "0xC"
+					}
+				]
+			},
+			{
+				"name": "Timer Speed",
+				"id": 2,
+				"type": "list",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 3,
+				"value": 0,
+				"mask": "0xFFFFFFCF",
+				"options": [
+					{
+						"name": "57/60",
+						"value": "0x0"
+					},
+					{
+						"name": "54/60",
+						"value": "0x10"
+					},
+					{
+						"name": "50/60",
+						"value": "0x20"
+					},
+					{
+						"name": "60/60",
+						"value": "0x30"
+					}
+				]
+			},
+			{
+				"name": "Formation Time (Offense)",
+				"id": 3,
+				"type": "list",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 3,
+				"value": 0,
+				"mask": "0xFFFFFF3F",
+				"options": [
+					{
+						"name": "25",
+						"value": "0x0"
+					},
+					{
+						"name": "20",
+						"value": "0x40"
+					},
+					{
+						"name": "10",
+						"value": "0x80"
+					},
+					{
+						"name": "15",
+						"value": "0xC0"
+					}
+				]
+			},
+			{
+				"name": "1P Game Time",
+				"id": 4,
+				"type": "list",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 3,
+				"value": 0,
+				"mask": "0xFFFFFCFF",
+				"options": [
+					{
+						"name": "2:30",
+						"value": "0x0"
+					},
+					{
+						"name": "2:00",
+						"value": "0x100"
+					},
+					{
+						"name": "1:00",
+						"value": "0x200"
+					},
+					{
+						"name": "1:30",
+						"value": "0x300"
+					}
+				]
+			},
+			{
+				"name": "Demo Sounds",
+				"id": 5,
+				"type": "check",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 1,
+				"value": 32768,
+				"mask": "0xFFFF7FFF"
+			},
+			{
+				"name": "Default",
+				"id": 1015,
+				"type": "number_u32",
+				"enabled": false,
+				"persist": false,
+				"writeonly": true,
+				"address": "0xfa000000",
+				"defaultval": 65535,
+				"value": 0
+			}
+		],
+		"messages": []
+	}
+}

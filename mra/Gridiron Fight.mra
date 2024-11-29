@@ -1,0 +1,86 @@
+<!--          FPGA arcade hardware by Jotego
+
+              This core is available for hardware compatible with MiST and MiSTer
+              Other FPGA systems may be supported by the time you read this.
+              This work is not mantained by the MiSTer project. Please contact the
+              core author for issues and updates.
+
+              (c) Jose Tejada, 2024. Please support this research
+              Patreon: https://patreon.com/jotego
+
+              The author does not endorse or participate in illegal distribution
+              of copyrighted material. This work can be used with compatible
+              software. This software can be homebrew projects or legally
+              obtained memory dumps of compatible games.
+
+              This file license is GNU GPLv2.
+              You can read the whole license file in
+              https://opensource.org/licenses/gpl-2.0.php
+
+-->
+
+<misterromdescription>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
+    <name>Gridiron Fight</name>
+    <setname>gridiron</setname>
+    <rbf>jtwc</rbf>
+    <mameversion>0261</mameversion>
+    <year>1985</year>
+    <manufacturer>Tehkan</manufacturer>
+    <players>2</players>
+    <joystick/>
+    <rotation>horizontal</rotation>
+    <region>World</region>
+    <rom index="0" zip="gridiron.zip" md5="None" asm_md5="67078f4ef8846bf97e26398a9f6fd044">
+        <!-- bit 0 -> enable non-symmetric speed in Tehkan WC bootleg -->
+        <part>
+            00 00 00 00 00 00 00 00
+        </part>
+        <!-- maincpu - starts at 0x0 - length 0xC000 (16 bits) -->
+        <part name="gfight1.bin" crc="51612741"/>
+        <part name="gfight2.bin" crc="a678db48"/>
+        <part name="gfight3.bin" crc="8c227c33"/>
+        <!-- SUB_START -->
+        <!-- sub - starts at 0xC000 - length 0x8000 (15 bits) -->
+        <part name="gfight4.bin" crc="8821415f"/>
+        <part repeat="0x4000"> FF</part>
+        <!-- JTFRAME_BA1_START -->
+        <!-- audiocpu - starts at 0x14000 - length 0x4000 (14 bits) -->
+        <part name="gfight5.bin" crc="92ca3c07"/>
+        <!-- PCM_START -->
+        <!-- adpcm - starts at 0x18000 - length 0x8000 (15 bits) -->
+        <part name="gfight6.bin" crc="d05d463d"/>
+        <part repeat="0x4000"> FF</part>
+        <!-- JTFRAME_BA2_START -->
+        <!-- gfx1 - starts at 0x20000 - length 0x4000 (14 bits) -->
+        <part name="gfight7.bin" crc="04390cca"/>
+        <!-- SCR_START -->
+        <!-- gfx3 - starts at 0x24000 - length 0x10000 (16 bits) -->
+        <part name="gfight11.bin" crc="80b09c03"/>
+        <part name="gfight12.bin" crc="1b615eae"/>
+        <part repeat="0x8000"> FF</part>
+        <!-- JTFRAME_BA3_START -->
+        <!-- gfx2 - starts at 0x34000 - length 0xC000 (16 bits) -->
+        <part name="gfight8.bin" crc="5de6a70f"/>
+        <part name="gfight9.bin" crc="eac9dc16"/>
+        <part name="gfight10.bin" crc="61d0690f"/>
+        <!-- Total 0x40000 bytes - 256 kBytes -->
+    </rom>
+    <rom index="17" zip="jtbeta.zip" md5="None" asm_md5="576fc116dbf0329afc36037a31b14247">
+        <part name="beta.bin" crc="d6890711"/>
+    </rom>
+    <nvram index="2" size="7168"/>
+    <rom index="1">
+        <part>00 80</part>
+    </rom>
+    <switches page_id="1" page_name="Switches" base="8" default="ff,ff">
+        <!-- DSW2 -->
+        <dip name="Defns. Time" bits="2,3" ids="7,3,5,Same as Offense"/>
+        <dip name="Timer Speed" bits="4,5" ids="57/60,54/60,50/60,60/60"/>
+        <dip name="Formation Time (Offense)" bits="6,7" ids="25,20,10,15"/>
+        <!-- DSW3 -->
+        <dip name="1P time" bits="8,9" ids="2:30,2:00,1:00,1:30"/>
+        <dip name="Demo Sounds" bits="15" ids="Off,On"/>
+    </switches>
+    <buttons names="button 1,Start,Coin,Core credits" default="A,B,Start,Select,-" count="1"/>
+</misterromdescription>

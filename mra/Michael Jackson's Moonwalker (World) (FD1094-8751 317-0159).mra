@@ -31,12 +31,12 @@
     <joystick>8</joystick>
     <rotation>horizontal</rotation>
     <region>World</region>
-    <rom index="0" zip="mwalk.zip" md5="None" address="0x30000000" asm_md5="48a04bc9f743eb80373b0d48e8c3a264">
+    <rom index="0" zip="mwalk.zip" md5="None" address="0x30000000" asm_md5="52511b00bfc13ff191717607a3f72b9b">
         <part>
             00 00 80 00 80 02 80 03
             80 05 82 05 00 00 00 00
             00 01 00 01 00 00 00 00
-            01 00 00 00 00 00 00 00
+            41 00 00 00 00 00 00 00
         </part>
         <!-- maincpu - starts at 0x0 - length 0x80000 (19 bits) -->
         <interleave output="16">

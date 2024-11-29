@@ -365,6 +365,7 @@
 | goldnaxe3    | jts16b     | 3bd9b9b2d3ecdfee18f25283d232f395 | ff,fd        |
 | goldnaxej    | jts16b     | 5b3ada014852b1c7c41ef6c3002019af | ff,fd        |
 | goldnaxeu    | jts16b     | 58f320ad62fba5b276b28005a51878d7 | ff,fd        |
+| gridiron     | jtwc       | 67078f4ef8846bf97e26398a9f6fd044 | ff,ff        |
 | gryzor       | jtcontra   | 8a84bae46d2d2a4cdb7a2364f7239841 | ff,7a,ff     |
 | gryzor1      | jtcontra   | b5ff88f93a1cebec6fd192b8140763fe | ff,7a,ff     |
 | gulunpa      | jtcps1     | 2a6aba4ca3cd0cd81d9fb2494a706039 | ff,ff,df,ff  |
@@ -518,9 +519,9 @@
 | mvscu        | jtcps2     | 7ab4ae235575a9c25c8642ac4872be50 | ff,ff        |
 | mvscud       | jtcps2     | cca776bdb9f63d5eec9707d776976318 | ff,ff        |
 | mvscur1      | jtcps2     | 31f4358bfec9948fcd8d2630e8abeef2 | ff,ff        |
-| mwalk        | jts18      | 48a04bc9f743eb80373b0d48e8c3a264 | ff,fd        |
-| mwalkj       | jts18      | d9c5d241b04d4f36945a2c2d16e58668 | ff,fd        |
-| mwalku       | jts18      | 5595ae9077969f27403292417874c1fa | ff,fd        |
+| mwalk        | jts18      | 52511b00bfc13ff191717607a3f72b9b | ff,fd        |
+| mwalkj       | jts18      | e1c3906f55235736c4d92e7e87d5ac8a | ff,fd        |
+| mwalku       | jts18      | bd7eafc124dcfa000a76b911a3857dd9 | ff,fd        |
 | mx5000       | jtmx5k     | 51dfe5deef23094f7b7a4d85e983ac5e | ff,51,ff     |
 | nemo         | jtcps1     | 96c82493c2ddea4093a27f9a1c187333 | ff,fc,bf     |
 | nemoj        | jtcps1     | bc1fd457b0a397730655309139c22eb9 | ff,fc,bf     |
@@ -861,11 +862,11 @@
 | tankfrce     | jtshouse   | f8abd206a5b82f1c759f302ba16c6cd7 | ff,ff        |
 | tankfrce4    | jtshouse   | e9c9dfa2bcfa1d800dc3a8cf4229ec34 | ff,ff        |
 | tankfrcej    | jtshouse   | 55239f02c6fac6f70eb00fa584663923 | ff,ff        |
-| tehkanwc     | jtwc       | 4f013ddf03e6bd673063ee3be29d0fd6 | ff,ff,ff     |
-| tehkanwcb    | jtwc       | c216f67867c07c21e6f44dc5acd0fac0 | ff,ff,ff     |
-| tehkanwcc    | jtwc       | 9b03bba0934f18d2c3053113cb8b9eba | ff,ff,ff     |
-| tehkanwcd    | jtwc       | b3faadb04f3c94dd1f16f0b731cb189c | ff,ff,ff     |
-| tehkanwch    | jtwc       | 1006261e3a82bd988f04aa9c8f84c391 | ff,ff,ff     |
+| tehkanwc     | jtwc       | 55fb5ac5d6a2f50dbef1e4bb59d2b6b2 | ff,ff,ff     |
+| tehkanwcb    | jtwc       | a499a9b46c8cc58ed0ee8dce1f5c1efe | ff,ff,ff     |
+| tehkanwcc    | jtwc       | 0deb41b5ac41cb4416e14ad54a6982ca | ff,ff,ff     |
+| tehkanwcd    | jtwc       | f17c6f833c2cacbee2a516163d10feee | ff,ff,ff     |
+| tehkanwch    | jtwc       | 8bef286b8b411121016c45da0b2c9b1c | ff,ff,ff     |
 | tetris       | jts16      | a66fee2c280d67b2820db8dda291719e | ff,fd        |
 | tetris1      | jts16b     | e9cca35f63ff528a07057065e30c5d0d | ff,fd        |
 | tetris2      | jts16b     | 91eeb6e782d0812f8c9fa0ea9e993ff9 | ff,fd        |
