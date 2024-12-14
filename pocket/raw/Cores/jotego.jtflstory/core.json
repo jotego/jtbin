@@ -1,0 +1,37 @@
+{
+	"core":{
+		"magic": "APF_VER_1",
+		"metadata": {
+			"platform_ids": [
+				"jtflstory",
+				"jtpatreon"
+			],
+			"shortname": "jtflstory",
+			"description": "Arcade",
+			"author": "jotego",
+			"url": "https://patreon.com/jotego",
+			"version": "3b2a2fa",
+			"date_release": "2024-12-14"
+		},
+		"framework": {
+			"target_product": "Analogue Pocket",
+			"version_required": "1.1",
+			"sleep_supported": false,
+			"dock": {
+				"supported": true,
+				"analog_output": false
+			},
+			"hardware": {
+				"link_port": false,
+				"cartridge_adapter": 0
+			}
+		},
+		"cores": [
+			{
+				"name": "jtflstory",
+				"id": 0,
+				"filename": "jtflstory.rbf_r"
+			}
+		]
+	}
+}

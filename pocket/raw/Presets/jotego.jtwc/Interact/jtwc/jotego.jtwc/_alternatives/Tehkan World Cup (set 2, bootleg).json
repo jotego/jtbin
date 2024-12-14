@@ -233,6 +233,31 @@
 				]
 			},
 			{
+				"name": "Controls",
+				"id": 8,
+				"type": "list",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 3,
+				"value": 0,
+				"mask": "0xFFCFFFFF",
+				"options": [
+					{
+						"name": "D-pad",
+						"value": "0x0"
+					},
+					{
+						"name": "Analog stick",
+						"value": "0x100000"
+					},
+					{
+						"name": "Auto",
+						"value": "0x200000"
+					}
+				]
+			},
+			{
 				"name": "Default",
 				"id": 1015,
 				"type": "number_u32",

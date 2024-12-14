@@ -1,0 +1,96 @@
+<!--          FPGA arcade hardware by Jotego
+
+              This core is available for hardware compatible with MiST and MiSTer
+              Other FPGA systems may be supported by the time you read this.
+              This work is not mantained by the MiSTer project. Please contact the
+              core author for issues and updates.
+
+              (c) Jose Tejada, 2024. Please support this research
+              Patreon: https://patreon.com/jotego
+
+              The author does not endorse or participate in illegal distribution
+              of copyrighted material. This work can be used with compatible
+              software. This software can be homebrew projects or legally
+              obtained memory dumps of compatible games.
+
+              This file license is GNU GPLv2.
+              You can read the whole license file in
+              https://opensource.org/licenses/gpl-2.0.php
+
+-->
+
+<misterromdescription>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
+    <name>The FairyLand Story (earlier)</name>
+    <setname>flstoryo</setname>
+    <rbf>jtflstory</rbf>
+    <mameversion>0261</mameversion>
+    <year>1985</year>
+    <manufacturer>Taito</manufacturer>
+    <players>2</players>
+    <joystick>2</joystick>
+    <rotation>horizontal</rotation>
+    <region>World</region>
+    <rom index="0" zip="flstoryo.zip|flstory.zip" md5="None" asm_md5="78cfad32e77d8d1924929a643c5a1aaf">
+        <part>
+            00 00 00 00 00 00 00 00
+        </part>
+        <!-- maincpu - starts at 0x0 - length 0xC000 (16 bits) -->
+        <part name="cpu-a45.15" crc="f03fc969"/>
+        <part name="cpu-a45.16" crc="311aa82e"/>
+        <part name="cpu-a45.17" crc="a2b5d17d"/>
+        <!-- JTFRAME_BA1_START -->
+        <!-- audiocpu - starts at 0xC000 - length 0x10000 (16 bits) -->
+        <part name="a45_12.8" crc="d6f593fb"/>
+        <part name="a45_13.9" crc="451f92f9"/>
+        <part repeat="0xC000"> FF</part>
+        <!-- JTFRAME_BA2_START -->
+        <!-- gfx1 - starts at 0x1C000 - length 0x20000 (17 bits) -->
+        <interleave output="16">
+            <part name="vid-a45.18" crc="6f08f69e" map="01"/>
+            <part name="vid-a45.19" crc="2b572dc9" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="vid-a45.06" crc="dc856a75" map="01"/>
+            <part name="vid-a45.07" crc="aa4b0762" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="vid-a45.08" crc="d0b028ca" map="01"/>
+            <part name="vid-a45.09" crc="8336be58" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="vid-a45.20" crc="1b0edf34" map="01"/>
+            <part name="vid-a45.21" crc="fc382bd1" map="10"/>
+        </interleave>
+        <!-- JTFRAME_PROM_START -->
+        <!-- bmcu:mcu - starts at 0x3C000 - length 0x800 (11 bits) -->
+        <part name="a45-20.mcu" crc="7d2cdd9b"/>
+        <!-- Total 0x3C800 bytes - 242 kBytes -->
+    </rom>
+    <rom index="17" zip="jtbeta.zip" md5="None" asm_md5="576fc116dbf0329afc36037a31b14247">
+        <part name="beta.bin" crc="d6890711"/>
+    </rom>
+    <nvram index="2" size="4353"/>
+    <rom index="1">
+        <part>00 80</part>
+    </rom>
+    <switches page_id="1" page_name="Switches" base="16" default="ec,00,ff">
+        <!-- SWA -->
+        <dip name="Bonus Life" bits="0,1" ids="30k 100k,30k 150k,50k 150k,70k 150k"/>
+        <dip name="Free Play" bits="2" ids="On,Off"/>
+        <dip name="Lives" bits="3,4" ids="Infinite,3,4,5"/>
+        <dip name="Debug Mode" bits="5" ids="On,Off"/>
+        <dip name="Flip Screen" bits="6" ids="On,Off"/>
+        <dip name="Cabinet" bits="7" ids="Cocktail,Upright"/>
+        <!-- SWB -->
+        <dip name="Coin A" bits="8,11" ids="1/1,1/2,1/3,1/4,1/5,1/6,1/7,1/8,2/1,3/1,4/1,5/1,6/1,7/1,8/1,9/1"/>
+        <dip name="Coin B" bits="12,15" ids="1/1,1/2,1/3,1/4,1/5,1/6,1/7,1/8,2/1,3/1,4/1,5/1,6/1,7/1,8/1,9/1"/>
+        <!-- SWC -->
+        <dip name="Allow Continue" bits="19" ids="No,Yes"/>
+        <dip name="Attract Animation" bits="20" ids="Off,On"/>
+        <dip name="Leave Off" bits="21" ids="On,Off"/>
+        <dip name="Invulnerability (Cheat)" bits="22" ids="On,Off"/>
+        <dip name="Coin Slots" bits="23" ids="1,2"/>
+    </switches>
+    <buttons names="Shot,Jump,Start,Coin,Core credits" default="A,B,Start,Select,-" count="2"/>
+</misterromdescription>

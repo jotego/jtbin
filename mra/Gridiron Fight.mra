@@ -81,6 +81,7 @@
         <!-- DSW3 -->
         <dip name="1P time" bits="8,9" ids="2:30,2:00,1:00,1:30"/>
         <dip name="Demo Sounds" bits="15" ids="Off,On"/>
+        <dip name="Controls" ids="D-pad,Analog stick,Auto" bits="20,21"/>
     </switches>
     <buttons names="button 1,Start,Coin,Core credits" default="A,B,Start,Select,-" count="1"/>
 </misterromdescription>

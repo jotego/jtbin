@@ -326,6 +326,8 @@
 | ffightuc     | jtcps1     | 4bba0c070f459d2d7261417c037c8068 | ff,f4,9f     |
 | flkatck      | jtmx5k     | 7ca93f929eed63fc55bc6a8522be2574 | ff,51,ff     |
 | flkatcka     | jtmx5k     | 7ca93f929eed63fc55bc6a8522be2574 | ff,51,ff     |
+| flstory      | jtflstory  | 3e3cec9a33ffd9a42ede1be59d32dfb5 | ec,00,ff     |
+| flstoryo     | jtflstory  | 78cfad32e77d8d1924929a643c5a1aaf | ec,00,ff     |
 | forgottn     | jtcps1     | cf5e965715f2d49a611a428239b2bf39 | ff,fc,ff     |
 | forgottna    | jtcps1     | 689010e8ba9ea338634d7cba1a356b76 | ff,fc,ff     |
 | forgottnj    | jtcps1     | aedc7e205d5d3ab8e30585f6eb9a32b2 | ff,fc,ff     |
