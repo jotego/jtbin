@@ -64,7 +64,7 @@
     <rom index="1">
         <part>00 80</part>
     </rom>
-    <switches page_id="1" page_name="Switches" base="8" default="ff,ff,df,ff">
+    <switches page_id="1" page_name="Switches" base="16" default="ff,ff,df,ff">
         <!-- DSWB -->
         <dip name="Difficulty" bits="8,10" ids="8 Hardest,7 Very Hard,6 Hard,5 Medium Hard,4 Medium,3 Easy,2 Very Easy,1 Easiest"/>
         <!-- DSWC -->

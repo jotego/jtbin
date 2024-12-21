@@ -75,7 +75,7 @@
     <rom index="1">
         <part>00 80</part>
     </rom>
-    <switches page_id="1" page_name="Switches" base="8" default="ff,fc,9f">
+    <switches page_id="1" page_name="Switches" base="16" default="ff,fc,9f">
         <!-- DSWB -->
         <dip name="Difficulty" bits="8,10" ids="7,6,5,4,3,2,1,0"/>
         <dip name="Turbo Vs CPU" bits="12,15" ids="Progressive 8,Progressive 7,Progressive 6,Progressive 5,Progressive 4,Progressive 3,Progressive 2,Progressive 1,Fixed 7,Fixed 6,Fixed 5,Fixed 4,Fixed 3,Fixed 2,Fixed 1,Off"/>

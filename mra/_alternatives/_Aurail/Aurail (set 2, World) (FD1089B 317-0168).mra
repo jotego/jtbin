@@ -101,8 +101,8 @@
             <part name="mpr-13443.a4" crc="77a8989e" map="01"/>
             <part name="mpr-13464.b13" crc="551df422" map="10"/>
         </interleave>
-        <!-- MCU_START -->
         <!-- JTFRAME_PROM_START -->
+        <!-- MCU_START -->
         <!-- mcu - starts at 0x440000 - length 0x2000 (13 bits) -->
         <part repeat="0x1000"> FF</part>
         <part repeat="0x1000"> FF</part>

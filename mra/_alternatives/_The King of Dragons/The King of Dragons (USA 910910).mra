@@ -82,7 +82,7 @@
     <rom index="1">
         <part>00 80</part>
     </rom>
-    <switches page_id="1" page_name="Switches" base="8" default="ff,fc,9f">
+    <switches page_id="1" page_name="Switches" base="16" default="ff,fc,9f">
         <!-- DSWA -->
         <dip name="Play Mode" bits="4" ids="2 Players,3 Players"/>
         <!-- DSWB -->

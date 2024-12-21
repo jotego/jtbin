@@ -73,7 +73,7 @@
     <rom index="1">
         <part>00 80</part>
     </rom>
-    <switches page_id="1" page_name="Switches" base="8" default="ff,ff">
+    <switches page_id="1" page_name="Switches" base="16" default="ff,ff">
         <!-- DSW2 -->
         <dip name="Defns. Time" bits="2,3" ids="7,3,5,Same as Offense"/>
         <dip name="Timer Speed" bits="4,5" ids="57/60,54/60,50/60,60/60"/>

@@ -70,7 +70,7 @@
     <rom index="1">
         <part>00 80</part>
     </rom>
-    <switches page_id="1" page_name="Switches" base="8" default="ff,ff,ff">
+    <switches page_id="1" page_name="Switches" base="16" default="ff,ff,ff">
         <!-- DSW1 -->
         <dip name="Difficulty" bits="0,1" ids="Very Hard,Hard,Easy,Normal"/>
         <dip name="Timer Speed" bits="2" ids="55/60,60/60"/>

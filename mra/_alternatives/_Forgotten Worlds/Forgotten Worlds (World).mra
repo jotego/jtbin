@@ -95,7 +95,7 @@
     <rom index="1">
         <part>00 80</part>
     </rom>
-    <switches page_id="1" page_name="Switches" base="8" default="ff,fc,ff">
+    <switches page_id="1" page_name="Switches" base="16" default="ff,fc,ff">
         <!-- DSWA -->
         <dip name="Demo Sounds" bits="6" ids="Off,On"/>
         <dip name="Flip Screen" bits="7" ids="On,Off"/>

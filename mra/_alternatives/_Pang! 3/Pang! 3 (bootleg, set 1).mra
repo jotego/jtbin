@@ -62,7 +62,7 @@
     <rom index="1">
         <part>00 80</part>
     </rom>
-    <switches page_id="1" page_name="Switches" base="8" default="ff,ff,ff">
+    <switches page_id="1" page_name="Switches" base="16" default="ff,ff,ff">
         <!-- DSWC -->
         <dip name="Freeze" bits="3" ids="On,Off"/>
         <dip name="Freeze" ids="On,Off" bits="23"/>

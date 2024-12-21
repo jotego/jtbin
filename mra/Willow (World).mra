@@ -79,7 +79,7 @@
     <rom index="1">
         <part>00 80</part>
     </rom>
-    <switches page_id="1" page_name="Switches" base="8" default="ff,ff,fa">
+    <switches page_id="1" page_name="Switches" base="16" default="ff,ff,fa">
         <!-- DSWA -->
         <dip name="Cabinet" bits="6,7" ids="Cocktail,-,Upright 2 Players,Upright 1 Player"/>
         <!-- DSWB -->

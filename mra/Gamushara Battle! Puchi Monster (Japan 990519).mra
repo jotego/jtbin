@@ -69,7 +69,7 @@
     <rom index="1">
         <part>00 80</part>
     </rom>
-    <switches page_id="1" page_name="Switches" base="8" default="ff,ff,ff">
+    <switches page_id="1" page_name="Switches" base="16" default="ff,ff,ff">
         <!-- DSWA -->
         <dip name="Medal Setup" bits="0" ids="Don&apos;t use,1 Medal 1"/>
         <dip name="Coin Setup" bits="1" ids="10 Yen,100 Yen"/>
