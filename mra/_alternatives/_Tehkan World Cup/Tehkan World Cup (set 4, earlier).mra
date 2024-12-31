@@ -63,9 +63,6 @@
         <part name="twc-7.bin" crc="59faebe7"/>
         <!-- Total 0x44000 bytes - 272 kBytes -->
     </rom>
-    <rom index="17" zip="jtbeta.zip" md5="None" asm_md5="576fc116dbf0329afc36037a31b14247">
-        <part name="beta.bin" crc="d6890711"/>
-    </rom>
     <nvram index="2" size="7168"/>
     <rom index="1">
         <part>00 80</part>

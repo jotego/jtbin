@@ -211,6 +211,7 @@
 | daimakai     | jtcps1     | 86838f032c65d3d4539aeb3e8ba90a2f | 7f,ff,ff     |
 | daimakair    | jtcps1     | 657537b03050f067686496586e9aee76 | 7f,ff,ff     |
 | dangseed     | jtshouse   | 4b11abbde769d6753c21c9f76f01ef07 | ff           |
+| darkadv      | jttwin16   | 9770658c0ce771f5e3f2177cc6f0df20 | ff,5e,ff     |
 | ddragon      | jtdd       | 20fd26784491a8d35a4799cc4227b68a | ff,ff        |
 | ddragon2     | jtdd2      | ee5ff67deb739a89fc27b6fc0ca78e2b | ff,96        |
 | ddragon2b    | jtdd2      | e3726956c80d97b424f254c127e85b7c | ff,96        |
@@ -252,6 +253,7 @@
 | ddux1        | jts16b     | 8a2864798f5bda9129281a02f2f36f52 | ff,fe        |
 | dduxj        | jts16b     | 1c402be71147979ef55a574566457149 | ff,fe        |
 | defense      | jts16b     | 5a842e24f6f65ea50e5bb79c840e1b16 | ff,fd        |
+| devilw       | jttwin16   | 597d4b50f4d16a162961b7752bdd3ca1 | ff,5e,ff     |
 | dimahoo      | jtcps2     | b01f52a0737ffb56bd63131189b7583f | ff,ff        |
 | dimahoou     | jtcps2     | 0a6a9cf87c5d2b509947d765d170d20b | ff,ff        |
 | dimahoud     | jtcps2     | ee77a6674ab4135cf5d1f2140dd8dee3 | ff,ff        |
@@ -438,6 +440,7 @@
 | lwingsj      | jtsectnz   | 49292b2e4810e74e52dfaa099c1f33d2 | ff,ff        |
 | lwingsja     | jtsectnz   | cf46e8331f77b7e26d87cd0335564af3 | ff,ff        |
 | mach9        | jt1942     | d470962fb542b92432b24e558f7d3374 | ff,7f        |
+| majuu        | jttwin16   | d26d936b14571e0c80b3fccad0270163 | ff,5e,ff     |
 | makaimur     | jtgng      | 83aede53c1425d7453541f518b5484ba | df,fb        |
 | makaimurb    | jtgng      |                                  | df,fb        |
 | makaimurc    | jtgng      | e722885c7153e259df504972e610461d | df,fb        |
