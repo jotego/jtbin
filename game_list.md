@@ -1,5 +1,270 @@
 | Core | Game | MAME set |
 |------|------|----------|
+|midres|Midnight Resistance (World, set 1)|midres|
+|midres|Midnight Resistance (Japan)|midresj|
+|midres|Midnight Resistance (US)|midresu|
+|midres|Midnight Resistance (World, set 2)|midres2|
+|paroda|Parodius Da!: Shinwa kara Owarai e (World, set 1)|parodius|
+|paroda|Parodius Da!: Shinwa kara Owarai e (Asia)|parodiusa|
+|paroda|Parodius Da!: Shinwa kara Owarai e (Japan)|parodiusj|
+|paroda|Parodius Da!: Shinwa kara Owarai e (World, set 2)|parodiuse|
+|track|Track & Field|trackfld|
+|track|Hyper Olympic (bugfixed)|hyprolyma|
+|track|Hyper Olympic|hyprolym|
+|track|Track & Field (Centuri)|trackfldc|
+|sf|Street Fighter (US, set 1)|sf|
+|sf|Street Fighter (Japan) (protected)|sfj|
+|sf|Street Fighter (US, set 2) (protected)|sfua|
+|sf|Street Fighter (World) (protected)|sfw|
+|sbaskt|Super Basketball (version I, encrypted)|sbasketb|
+|sbaskt|Super Basketball (version E, encrypted)|sbaskete|
+|sbaskt|Super Basketball (version G, encrypted)|sbasketg|
+|sbaskt|Super Basketball (version H, unprotected)|sbasketh|
+|ninja|Bad Dudes vs. Dragonninja (US, revision 1)|baddudes|
+|ninja|Heavy Barrel (World)|hbarrel|
+|ninja|Dragonninja (Japan, revision 1)|drgninja|
+|ninja|Heavy Barrel (US)|hbarrelu|
+|biocom|Bionic Commando (Euro)|bionicc|
+|biocom|Bionic Commando (US set 1)|bionicc1|
+|biocom|Bionic Commando (US set 2)|bionicc2|
+|biocom|Bionic Commandos (bootleg, set 1)|bioniccbl|
+|biocom|Bionic Commandos (bootleg, set 2)|bioniccbl2|
+|biocom|Top Secret (Japan, old revision)|topsecrt|
+|biocom|Top Secret (Japan, revision B)|topsecrt2|
+|tmnt|M.I.A. - Missing in Action (version T)|mia|
+|tmnt|Punk Shot (US 4 Players)|punkshot|
+|tmnt|Teenage Mutant Ninja Turtles (World 4 Players, version X)|tmnt|
+|tmnt|M.I.A. - Missing in Action (version S)|mia2|
+|tmnt|Punk Shot (Japan 2 Players)|punkshotj|
+|tmnt|Punk Shot (US 2 Players)|punkshot2|
+|tmnt|Punk Shot (World 2 Players)|punkshot2e|
+|tmnt|Teenage Mutant Hero Turtles (UK 2 Players, version U)|tmht2p|
+|tmnt|Teenage Mutant Hero Turtles (UK 2 Players, version ?)|tmht2pa|
+|tmnt|Teenage Mutant Hero Turtles (UK 4 Players, version F)|tmht|
+|tmnt|Teenage Mutant Hero Turtles (UK 4 Players, version S)|tmhta|
+|tmnt|Teenage Mutant Hero Turtles (UK 4 Players, version ?)|tmhtb|
+|tmnt|Teenage Mutant Ninja Turtles (Asia 4 Players, version ?)|tmnta|
+|tmnt|Teenage Mutant Ninja Turtles (Japan 2 Players, version 1)|tmnt2pj|
+|tmnt|Teenage Mutant Ninja Turtles (Japan 4 Players, version 2)|tmntj|
+|tmnt|Teenage Mutant Ninja Turtles (Oceania 2 Players, version ?)|tmnt2po|
+|tmnt|Teenage Mutant Ninja Turtles (US 4 Players, version H)|tmntuc|
+|tmnt|Teenage Mutant Ninja Turtles (US 4 Players, version J)|tmntub|
+|tmnt|Teenage Mutant Ninja Turtles (US 4 Players, version N)|tmntua|
+|tmnt|Teenage Mutant Ninja Turtles (US 4 Players, version R)|tmntu|
+|roadf|Hyper Sports|hyperspt|
+|roadf|Road Fighter (set 1)|roadf|
+|roadf|Hyper Olympic '84|hpolym84|
+|roadf|Road Fighter (set 2)|roadf2|
+|roadf|Road Fighter (set 3, unencrypted)|roadfu|
+|labrun|Trick Trap (World?)|tricktrp|
+|labrun|Labyrinth Runner (Japan)|labyrunr|
+|labrun|Labyrinth Runner (World Ver. K)|labyrunrk|
+|commnd|Commando (World)|commando|
+|commnd|Commando (US set 1)|commandou|
+|commnd|Commando (US set 2)|commandou2|
+|commnd|Commando (bootleg set 2)|commandob2|
+|commnd|Commando (bootleg set 3)|commandob3|
+|commnd|Senjou no Ookami|commandoj|
+|commnd|Space Invasion (Europe)|sinvasn|
+|kicker|Kicker|kicker|
+|kicker|Shao-lin's Road (set 1)|shaolins|
+|mikie|Mikie|mikie|
+|mikie|Mikie (High School Graffiti)|mikiehs|
+|mikie|Shin-ip Sawon - Seok Dol-i|mikiek|
+|mikie|Shinnyuushain Tooru-kun|mikiej|
+|outrun|Out Run (sitdown-upright, Rev B)|outrun|
+|outrun|Turbo Out Run (Out Run upgrade) (FD1094 317-0118)|toutrun|
+|outrun|Out Run (Japan, deluxe sitdown) (FD1089A 317-0019)|outrundxj|
+|outrun|Out Run (deluxe sitdown earlier version)|outrundxa|
+|outrun|Out Run (deluxe sitdown) (Enhanced Edition v1.0.3)|outrundxeha|
+|outrun|Out Run (deluxe sitdown) (Enhanced Edition v2.0.3)|outrundxeh|
+|outrun|Out Run (deluxe sitdown)|outrundx|
+|outrun|Out Run (sitdown-upright, Rev A)|outrunra|
+|outrun|Out Run (sitdown-upright, Rev B) (Enhanced Edition v1.1.0)|outruneha|
+|outrun|Out Run (sitdown-upright, Rev B) (Enhanced Edition v2.0.3)|outruneh|
+|outrun|Turbo Out Run (Japan, Out Run upgrade) (FD1094 317-0117)|toutrunj|
+|outrun|Turbo Out Run (Japan, cockpit) (FD1094 317-0101)|toutrunj1|
+|outrun|Turbo Out Run (cockpit) (FD1094 317-0106)|toutrun2|
+|outrun|Turbo Out Run (cockpit) (FD1094 317-0107)|toutrun3|
+|outrun|Turbo Out Run (deluxe cockpit) (FD1094 317-0109)|toutrun1|
+|kchamp|Karate Champ (US)|kchamp|
+|kchamp|Karate Champ (Tecfri bootleg)|kchamptec|
+|kchamp|Karate Champ (US VS version, set 1)|kchampvs|
+|kchamp|Karate Champ (US VS version, set 2)|kchampvs2|
+|kchamp|Karate Champ (US VS version, set 3)|kchampvs3|
+|kchamp|Karate Champ (US VS version, set 4)|kchampvs4|
+|kchamp|Karate Champ (US, 2 players)|kchamp2p|
+|kchamp|Karate Dou (Arfyc bootleg)|karateda|
+|kchamp|Karate Dou (Japan)|karatedo|
+|kchamp|Taisen Karate Dou (Japan VS version)|karatevs|
+|ngp|NeoGeo Pocket|ngp|
+|simson|The Simpsons (4 Players World, set 1)|simpsons|
+|simson|Vendetta (World, 4 Players, ver. T)|vendetta|
+|simson|The Simpsons (2 Players Asia)|simpsons2pa|
+|simson|The Simpsons (2 Players Japan)|simpsons2pj|
+|simson|The Simpsons (2 Players World, set 1)|simpsons2p|
+|simson|The Simpsons (2 Players World, set 2)|simpsons2p2|
+|simson|The Simpsons (2 Players World, set 3)|simpsons2p3|
+|simson|The Simpsons (4 Players Asia)|simpsons4pa|
+|simson|The Simpsons (4 Players World, set 2)|simpsons4pe|
+|simson|The Simpsons (4 Players World, set 3)|simpsons4pe2|
+|simson|Crime Fighters 2 (Japan, 2 Players, ver. P)|vendetta2pp|
+|simson|Crime Fighters 2 (Japan, 4 Players, ver. N)|vendettan|
+|simson|Vendetta (Asia, 2 Players, ver. D)|vendetta2pd|
+|simson|Vendetta (Asia, 2 Players, ver. U)|vendetta2pu|
+|simson|Vendetta (Asia, 4 Players, ver. Z)|vendettaz|
+|simson|Vendetta (US, 4 Players, ver. R)|vendettar|
+|simson|Vendetta (World, 2 Players, ver. EB-A?)|vendetta2peba|
+|simson|Vendetta (World, 2 Players, ver. W)|vendetta2pw|
+|simson|Vendetta (World, 2 Players, ver. ?)|vendetta2pun|
+|simson|Vendetta (World, 4 Players, ver. ?)|vendettaun|
+|s18|Alien Storm (World, 2 Players) (FD1094 317-0154)|astorm|
+|s18|Bloxeed (Japan) (FD1094 317-0139)|bloxeed|
+|s18|Clutch Hitter (US) (FD1094 317-0176)|cltchitr|
+|s18|Michael Jackson's Moonwalker (World) (FD1094-8751 317-0159)|mwalk|
+|s18|Shadow Dancer (World)|shdancer|
+|s18|Alien Storm (Japan, 2 Players) (FD1094 317-0146)|astormj|
+|s18|Alien Storm (US, 3 Players) (FD1094 317-0147)|astormu|
+|s18|Alien Storm (World, 3 Players) (FD1094 317-0148)|astorm3|
+|s18|Bloxeed (Japan, earlier) (FD1094 317-0139)|bloxeeda|
+|s18|Clutch Hitter (Japan) (FD1094 317-0175)|cltchitrj|
+|s18|Michael Jackson's Moonwalker (Japan) (FD1094-8751 317-0157)|mwalkj|
+|s18|Michael Jackson's Moonwalker (US) (FD1094-8751 317-0158)|mwalku|
+|s18|Shadow Dancer (Japan)|shdancerj|
+|s18|Shadow Dancer (US)|shdancer1|
+|gunsmk|Gun.Smoke (World, 1985-11-15)|gunsmoke|
+|gunsmk|Gun.Smoke (Germany, 1985-11-15, censored)|gunsmokeg|
+|gunsmk|Gun.Smoke (Japan, 1985-11-15)|gunsmokej|
+|gunsmk|Gun.Smoke (USA and Canada, 1985-11-15, set 2)|gunsmokeuc|
+|gunsmk|Gun.Smoke (USA and Canada, 1986-04-08)|gunsmokeu|
+|gunsmk|Gun.Smoke (World, 1985-11-15) (bootleg)|gunsmokeb|
+|sectnz|Legendary Wings (US set 1)|lwings|
+|sectnz|Section Z (set 1)|sectionz|
+|sectnz|Ares no Tsubasa (Japan, rev. A)|lwingsja|
+|sectnz|Ares no Tsubasa (Japan, rev. B)|lwingsj|
+|sectnz|Legendary Wings (US set 2)|lwings2|
+|sectnz|Legendary Wings (bootleg)|lwingsb|
+|sectnz|Section Z (set 2 rev. A)|sectionza|
+|toki|Toki (World, set 1)|toki|
+|toki|JuJu Densetsu (Japan)|juju|
+|toki|Toki (US, set 1)|tokiu|
+|toki|Toki (US, set 2)|tokiua|
+|toki|Toki (World, set 2)|tokia|
+|tora|F-1 Dream|f1dream|
+|tora|Tiger Road (US)|tigeroad|
+|tora|Tiger Road (US, Romstar license)|tigeroadu|
+|tora|Tora e no Michi (Japan)|toramich|
+|rastan|Rastan (World Rev 1)|rastan|
+|rastan|Rastan (US Rev 1)|rastanu|
+|rastan|Rastan (US)|rastanua|
+|rastan|Rastan (US, earlier code base)|rastanub|
+|rastan|Rastan (World)|rastana|
+|rastan|Rastan (World, earlier code base)|rastanb|
+|rastan|Rastan Saga (Japan Rev 1)|rastsaga|
+|rastan|Rastan Saga (Japan Rev 1, earlier code base)|rastsagaa|
+|rastan|Rastan Saga (Japan, earlier code base)|rastsagab|
+|rastan|Rastan Saga (bootleg, Japan Rev 1, earlier code base)|rastsagaabl|
+|sarms|Side Arms - Hyper Dyne (World, 861129)|sidearms|
+|sarms|Side Arms - Hyper Dyne (Japan, 861128)|sidearmsj|
+|sarms|Side Arms - Hyper Dyne (US, 861128)|sidearmsur1|
+|sarms|Side Arms - Hyper Dyne (US, 861202)|sidearmsu|
+|flstory|The FairyLand Story|flstory|
+|flstory|The FairyLand Story (earlier)|flstoryo|
+|wwfss|WWF Superstars (Europe)|wwfsstar|
+|wwfss|WWF Superstars (Canada)|wwfsstarc|
+|wwfss|WWF Superstars (Japan)|wwfsstarj|
+|wwfss|WWF Superstars (US revision 4)|wwfsstaru4|
+|wwfss|WWF Superstars (US revision 6)|wwfsstaru6|
+|wwfss|WWF Superstars (US revision 7)|wwfsstaru7|
+|1943|1943 Kai: Midway Kaisen (Japan)|1943kai|
+|1943|1943: The Battle of Midway (Euro)|1943|
+|1943|1943: The Battle of Midway Mark II (US)|1943mii|
+|1943|1943: Midway Kaisen (Japan)|1943ja|
+|1943|1943: Midway Kaisen (Japan, Rev B)|1943j|
+|1943|1943: Midway Kaisen (Japan, no protection hack)|1943jah|
+|1943|1943: The Battle of Midway (US)|1943ua|
+|1943|1943: The Battle of Midway (US, Rev C)|1943u|
+|twin16|Devil World|devilw|
+|twin16|Dark Adventure|darkadv|
+|twin16|Majuu no Ohkoku|majuu|
+|exed|Exed Exes|exedexes|
+|exed|Savage Bees|savgbees|
+|mx5k|MX5000|mx5000|
+|mx5k|Flak Attack (Japan)|flkatck|
+|mx5k|Flak Attack (Japan, PWB 450593 sub-board)|flkatcka|
+|fround|The Final Round (version M)|fround|
+|fround|The Final Round (version L)|froundl|
+|1942|1942 (Revision B)|1942|
+|1942|Pirate Ship Higemaru|higemaru|
+|1942|Vulgus (set 1)|vulgus|
+|1942|1942 (First Version)|1942b|
+|1942|1942 (Revision A)|1942a|
+|1942|1942 (Williams Electronics license)|1942w|
+|1942|Supercharger 1942|1942h|
+|1942|Mach-9 (bootleg of Vulgus)|mach9|
+|1942|Vulgus (Japan?)|vulgusj|
+|1942|Vulgus (set 2)|vulgusa|
+|flane|Fast Lane|fastlane|
+|aliens|Aliens (World set 1)|aliens|
+|aliens|Crime Fighters (World 2 players)|crimfght|
+|aliens|Gang Busters (set 1)|gbusters|
+|aliens|Super Contra (set 1)|scontra|
+|aliens|Thunder Cross (set 1)|thunderx|
+|aliens|Aliens (Asia)|aliensa|
+|aliens|Aliens (Japan set 1)|aliensj|
+|aliens|Aliens (Japan set 2)|aliensj2|
+|aliens|Aliens (US)|aliensu|
+|aliens|Aliens (World set 2)|aliens2|
+|aliens|Aliens (World set 3)|aliens3|
+|aliens|Aliens (World set 4)|aliens4|
+|aliens|Crime Fighters (Japan 2 Players)|crimfghtj|
+|aliens|Crime Fighters (US 4 Players)|crimfghtu|
+|aliens|Crazy Cop (Japan)|crazycop|
+|aliens|Gang Busters (set 2)|gbustersa|
+|aliens|Super Contra (set 2)|scontraa|
+|aliens|Super Contra - Alien no Gyakushuu (Japan)|scontraj|
+|aliens|Thunder Cross (Japan)|thunderxj|
+|aliens|Thunder Cross (set 2)|thunderxa|
+|aliens|Thunder Cross (set 3)|thunderxb|
+|trojan|Avengers (US, revision C)|avengers|
+|trojan|Trojan (US set 1)|trojan|
+|trojan|Avengers (US)|avengersb|
+|trojan|Avengers (US, revision A)|avengersa|
+|trojan|Avengers (US, unknown revision)|avengersc|
+|trojan|Hissatsu Buraiken (Japan, bootleg)|buraikenb|
+|trojan|Hissatsu Buraiken (Japan, rev. A)|buraiken|
+|trojan|Tatakai no Banka (Japan)|trojanj|
+|trojan|Tatakai no Banka (Japan, old ver.)|trojanjo|
+|trojan|Trojan (Romstar)|trojanr|
+|trojan|Trojan (US set 2)|trojana|
+|btiger|Black Tiger|blktiger|
+|btiger|Black Dragon (Japan)|blkdrgon|
+|btiger|Black Tiger (older)|blktigera|
+|dd|Double Dragon (Japan)|ddragon|
+|dd|Double Dragon (US set 1)|ddragonu|
+|dd|Double Dragon (US set 2)|ddragonua|
+|dd|Double Dragon (US set 3)|ddragonub|
+|dd|Double Dragon (World set 1)|ddragonw|
+|dd|Double Dragon (World set 2)|ddragonw1|
+|shanon|Super Hang-On (sitdown-upright) (unprotected)|shangon|
+|shanon|Limited Edition Hang-On|shangonle|
+|shanon|Super Hang-On (mini ride-on) (FD1089B 317-0034)|shangon1|
+|shanon|Super Hang-On (mini ride-on, Rev A) (FD1089B 317-0034)|shangon2|
+|shanon|Super Hang-On (sitdown-upright) (FD1089B 317-0034)|shangon3|
+|shanon|Super Hang-On (sitdown-upright) (bootleg of FD1089B 317-0034 set)|shangon3d|
+|xmen|X-Men (4 Players ver EBA)|xmen|
+|xmen|X-Men (2 Players ver AAA)|xmen2pa|
+|xmen|X-Men (2 Players ver EAA)|xmen2pe|
+|xmen|X-Men (2 Players ver JAA)|xmen2pj|
+|xmen|X-Men (2 Players ver UAB)|xmen2pu|
+|xmen|X-Men (4 Players ver ADA)|xmenaa|
+|xmen|X-Men (4 Players ver AEA)|xmena|
+|xmen|X-Men (4 Players ver JBA)|xmenj|
+|xmen|X-Men (4 Players ver JEA)|xmenja|
+|xmen|X-Men (4 Players ver UBB)|xmenu|
+|xmen|X-Men (4 Players ver UEB)|xmenua|
+|yiear|Yie Ar Kung-Fu (program code I)|yiear|
+|yiear|Yie Ar Kung-Fu (program code G)|yiear2|
 |kiwi|Arkanoid - Revenge of DOH (World)|arknoid2|
 |kiwi|Dr. Toppel's Adventure (World)|drtoppel|
 |kiwi|Extermination (World)|extrmatn|
@@ -25,114 +290,6 @@
 |kiwi|The NewZealand Story (World, old version) (P0-041A PCB)|tnzso|
 |kiwi|The NewZealand Story (World, prototype) (P0-041-1 PCB)|tnzsop|
 |kiwi|The NewZealand Story (World, unknown version) (P0-041A PCB)|tnzsoa|
-|karnov|Chelnov - Atomic Runner (World)|chelnov|
-|karnov|Karnov (US, rev 6)|karnov|
-|karnov|Wonder Planet (Japan)|wndrplnt|
-|karnov|Chelnov - Atomic Runner (Japan)|chelnovj|
-|karnov|Chelnov - Atomic Runner (US)|chelnovu|
-|karnov|Karnov (Japan)|karnovj|
-|karnov|Karnov (US, rev 5)|karnova|
-|dd2|Double Dragon II: The Revenge (World)|ddragon2|
-|dd2|Double Dragon II: The Revenge (Japan)|ddragon2j|
-|dd2|Double Dragon II: The Revenge (US)|ddragon2u|
-|dd2|Double Dragon II: The Revenge (US, bootleg)|ddragon2b|
-|tora|F-1 Dream|f1dream|
-|tora|Tiger Road (US)|tigeroad|
-|tora|Tiger Road (US, Romstar license)|tigeroadu|
-|tora|Tora e no Michi (Japan)|toramich|
-|gng|Ghosts'n Goblins (World? set 1)|gng|
-|gng|Ghosts'n Goblins (Italian bootleg, harder)|gngblita|
-|gng|Ghosts'n Goblins (US)|gngt|
-|gng|Ghosts'n Goblins (World? set 2)|gnga|
-|gng|Ghosts'n Goblins (World? set 3)|gngc|
-|gng|Ghosts'n Goblins (prototype)|gngprot|
-|gng|Makaimura (Japan Revision B)|makaimurb|
-|gng|Makaimura (Japan Revision C)|makaimurc|
-|gng|Makaimura (Japan Revision G)|makaimurg|
-|gng|Makaimura (Japan)|makaimur|
-|ngp|NeoGeo Pocket|ngp|
-|btiger|Black Tiger|blktiger|
-|btiger|Black Dragon (Japan)|blkdrgon|
-|btiger|Black Tiger (older)|blktigera|
-|shanon|Super Hang-On (sitdown-upright) (unprotected)|shangon|
-|shanon|Limited Edition Hang-On|shangonle|
-|shanon|Super Hang-On (mini ride-on) (FD1089B 317-0034)|shangon1|
-|shanon|Super Hang-On (mini ride-on, Rev A) (FD1089B 317-0034)|shangon2|
-|shanon|Super Hang-On (sitdown-upright) (FD1089B 317-0034)|shangon3|
-|shanon|Super Hang-On (sitdown-upright) (bootleg of FD1089B 317-0034 set)|shangon3d|
-|rumble|The Speed Rumbler (set 1)|srumbler|
-|rumble|Rush & Crash (Japan)|rushcrsh|
-|rumble|The Speed Rumbler (set 2)|srumbler2|
-|rumble|The Speed Rumbler (set 3)|srumbler3|
-|s18|Alien Storm (World, 2 Players) (FD1094 317-0154)|astorm|
-|s18|Bloxeed (Japan) (FD1094 317-0139)|bloxeed|
-|s18|Clutch Hitter (US) (FD1094 317-0176)|cltchitr|
-|s18|Michael Jackson's Moonwalker (World) (FD1094-8751 317-0159)|mwalk|
-|s18|Shadow Dancer (World)|shdancer|
-|s18|Alien Storm (Japan, 2 Players) (FD1094 317-0146)|astormj|
-|s18|Alien Storm (US, 3 Players) (FD1094 317-0147)|astormu|
-|s18|Alien Storm (World, 3 Players) (FD1094 317-0148)|astorm3|
-|s18|Bloxeed (Japan, earlier) (FD1094 317-0139)|bloxeeda|
-|s18|Clutch Hitter (Japan) (FD1094 317-0175)|cltchitrj|
-|s18|Michael Jackson's Moonwalker (Japan) (FD1094-8751 317-0157)|mwalkj|
-|s18|Michael Jackson's Moonwalker (US) (FD1094-8751 317-0158)|mwalku|
-|s18|Shadow Dancer (Japan)|shdancerj|
-|s18|Shadow Dancer (US)|shdancer1|
-|dd|Double Dragon (Japan)|ddragon|
-|dd|Double Dragon (US set 1)|ddragonu|
-|dd|Double Dragon (US set 2)|ddragonua|
-|dd|Double Dragon (US set 3)|ddragonub|
-|dd|Double Dragon (World set 1)|ddragonw|
-|dd|Double Dragon (World set 2)|ddragonw1|
-|flane|Fast Lane|fastlane|
-|ngpc|NeoGeo Pocket Color|ngpc|
-|cop|Hippodrome (US)|hippodrm|
-|cop|Robocop (World, revision 4)|robocop|
-|cop|Fighting Fantasy (Japan revision ?)|ffantasyb|
-|cop|Fighting Fantasy (Japan)|ffantasya|
-|cop|Fighting Fantasy (Japan, revision 2)|ffantasyj|
-|cop|Fighting Fantasy (Japan, revision 3)|ffantasy|
-|cop|Robocop (Japan)|robocopj|
-|cop|Robocop (US, revision 0)|robocopu0|
-|cop|Robocop (US, revision 1)|robocopu|
-|cop|Robocop (World, revision 3)|robocopw|
-|paroda|Parodius Da!: Shinwa kara Owarai e (World, set 1)|parodius|
-|paroda|Parodius Da!: Shinwa kara Owarai e (Asia)|parodiusa|
-|paroda|Parodius Da!: Shinwa kara Owarai e (Japan)|parodiusj|
-|paroda|Parodius Da!: Shinwa kara Owarai e (World, set 2)|parodiuse|
-|roc|Roc'n Rope|rocnrope|
-|roc|Roc'n Rope (Kosuka)|rocnropek|
-|riders|Sunset Riders (4 Players ver EAC)|ssriders|
-|riders|Sunset Riders (2 Players ver ABD)|ssridersabd|
-|riders|Sunset Riders (2 Players ver EBC)|ssridersebc|
-|riders|Sunset Riders (2 Players ver EBD)|ssridersebd|
-|riders|Sunset Riders (2 Players ver JBD)|ssridersjbd|
-|riders|Sunset Riders (2 Players ver UBC)|ssridersubc|
-|riders|Sunset Riders (4 Players ver ADD)|ssridersadd|
-|riders|Sunset Riders (4 Players ver EAA)|ssriderseaa|
-|riders|Sunset Riders (4 Players ver JAC)|ssridersjac|
-|riders|Sunset Riders (4 Players ver JAD)|ssridersjad|
-|riders|Sunset Riders (4 Players ver UAB)|ssridersuab|
-|riders|Sunset Riders (4 Players ver UAC)|ssridersuac|
-|riders|Sunset Riders (4 Players ver UDA)|ssridersuda|
-|1942|1942 (Revision B)|1942|
-|1942|Pirate Ship Higemaru|higemaru|
-|1942|Vulgus (set 1)|vulgus|
-|1942|1942 (First Version)|1942b|
-|1942|1942 (Revision A)|1942a|
-|1942|1942 (Williams Electronics license)|1942w|
-|1942|Supercharger 1942|1942h|
-|1942|Mach-9 (bootleg of Vulgus)|mach9|
-|1942|Vulgus (Japan?)|vulgusj|
-|1942|Vulgus (set 2)|vulgusa|
-|1943|1943 Kai: Midway Kaisen (Japan)|1943kai|
-|1943|1943: The Battle of Midway (Euro)|1943|
-|1943|1943: The Battle of Midway Mark II (US)|1943mii|
-|1943|1943: Midway Kaisen (Japan)|1943ja|
-|1943|1943: Midway Kaisen (Japan, Rev B)|1943j|
-|1943|1943: Midway Kaisen (Japan, no protection hack)|1943jah|
-|1943|1943: The Battle of Midway (US)|1943ua|
-|1943|1943: The Battle of Midway (US, Rev C)|1943u|
 |shouse|Bakutotsu Kijuutei|bakutotu|
 |shouse|Blast Off (Japan)|blastoff|
 |shouse|Blazer (Japan)|blazer|
@@ -172,128 +329,6 @@
 |shouse|Splatter House (World, old version (SH2))|splatter2|
 |shouse|Tank Force (Japan)|tankfrcej|
 |shouse|Tank Force (US, 4 Players)|tankfrce4|
-|pinpon|Konami's Ping-Pong|pingpong|
-|kunio|Renegade (US)|renegade|
-|kunio|Nekketsu Kouha Kunio-kun (Japan bootleg)|kuniokunb|
-|kunio|Nekketsu Kouha Kunio-kun (Japan)|kuniokun|
-|kunio|Renegade (US bootleg)|renegadeb|
-|s16b|Alien Syndrome (set 4, System 16B, unprotected)|aliensyn|
-|s16b|Altered Beast (set 8) (8751 317-0078)|altbeast|
-|s16b|Aurail (set 3, US) (unprotected)|aurail|
-|s16b|Bay Route (set 3, World) (FD1094 317-0116)|bayroute|
-|s16b|Bullet (FD1094 317-0041)|bullet|
-|s16b|Cotton (set 4, World) (FD1094 317-0181a)|cotton|
-|s16b|Dunk Shot (Rev C, FD1089A 317-0022)|dunkshot|
-|s16b|Dynamite Dux (set 3, World) (FD1094 317-0096)|ddux|
-|s16b|E-Swat - Cyber Police (set 4, World) (FD1094 317-0130)|eswat|
-|s16b|Excite League (FD1094 317-0079)|exctleag|
-|s16b|Fantasy Zone II - The Tears of Opa-Opa (System 16C version)|fantzn2x|
-|s16b|Flash Point (set 2, Japan) (FD1094 317-0127A)|fpoint|
-|s16b|Golden Axe (set 6, US) (8751 317-123A)|goldnaxe|
-|s16b|MVP (set 2, US) (FD1094 317-0143)|mvp|
-|s16b|Passing Shot (World, 2 Players) (FD1094 317-0080)|passsht|
-|s16b|Riot City (Japan)|riotcity|
-|s16b|RyuKyu (Rev A, Japan) (FD1094 317-5023A)|ryukyu|
-|s16b|Sonic Boom (FD1094 317-0053)|sonicbom|
-|s16b|Sukeban Jansi Ryuko (set 2, System 16B, FD1089B 317-5021)|sjryuko|
-|s16b|Super League (FD1094 317-0045)|suprleag|
-|s16b|Time Scanner (set 2, System 16B)|timescan|
-|s16b|Toryumon|toryumon|
-|s16b|Tough Turf (set 1, US) (8751 317-0099)|tturfu|
-|s16b|Wonder Boy III - Monster Lair (set 6, World, System 16B) (8751 317-0098)|wb3|
-|s16b|Wrestle War (set 3, World) (8751 317-0103)|wrestwar|
-|s16b|Action Fighter (System 16B, FD1089A 317-0018)|afighterh|
-|s16b|Action Fighter (System 16B, FD1089B 317-unknown)|afighterg|
-|s16b|Action Fighter (System 16B, FD1089B 317-unknown, analog controls)|afighterf|
-|s16b|Action Fighter (System 16B, unprotected, analog controls)|afightere|
-|s16b|Alien Syndrome (set 3, System 16B, FD1089A 317-0033)|aliensyn3|
-|s16b|Alien Syndrome (set 6, Japan, new, System 16B, FD1089A 317-0033)|aliensynj|
-|s16b|Alien Syndrome (set 7, System 16B, MC-8123B 317-00xx)|aliensyn7|
-|s16b|Altered Beast (set 2) (MC-8123B 317-0066)|altbeast2|
-|s16b|Altered Beast (set 4) (MC-8123B 317-0066)|altbeast4|
-|s16b|Altered Beast (set 5) (FD1094 317-0069)|altbeast5|
-|s16b|Altered Beast (set 6) (8751 317-0076)|altbeast6|
-|s16b|Juuouki (set 1, Japan) (FD1094 317-0065)|altbeastj1|
-|s16b|Juuouki (set 3, Japan) (FD1094 317-0068)|altbeastj3|
-|s16b|Juuouki (set 7, Japan) (8751 317-0077)|altbeastj|
-|s16b|Aurail (set 1, Japan) (FD1089A 317-0167)|aurailj|
-|s16b|Aurail (set 2, World) (FD1089B 317-0168)|aurail1|
-|s16b|Bay Route (set 1, US) (unprotected)|bayroute1|
-|s16b|Bay Route (set 2, Japan) (FD1094 317-0115)|bayroutej|
-|s16b|Cotton (set 1, Japan, Rev A) (FD1094 317-0179a)|cottonja|
-|s16b|Cotton (set 2, Japan, Rev B) (FD1094 317-0179b)|cottonj|
-|s16b|Cotton (set 3, US) (FD1094 317-0180)|cottonu|
-|s16b|Dunk Shot (FD1089A 317-0022)|dunkshoto|
-|s16b|Dunk Shot (Rev A, FD1089A 317-0022)|dunkshota|
-|s16b|Dynamite Dux (set 1, World) (8751 317-0095)|ddux1|
-|s16b|Dynamite Dux (set 2, Japan) (FD1094 317-0094)|dduxj|
-|s16b|E-Swat - Cyber Police (set 1, Japan) (FD1094 317-0131)|eswatj1|
-|s16b|E-Swat - Cyber Police (set 2, Japan) (FD1094 317-0128)|eswatj|
-|s16b|E-Swat - Cyber Police (set 3, US) (FD1094 317-0129)|eswatu|
-|s16b|Fantasy Zone II - The Tears of Opa-Opa (System 16C version, prototype)|fantzn2xp|
-|s16b|Flash Point (set 1, Japan) (FD1094 317-0127A)|fpoint1|
-|s16b|Golden Axe (set 1, World) (FD1094 317-0110)|goldnaxe1|
-|s16b|Golden Axe (set 2, US) (8751 317-0112)|goldnaxe2|
-|s16b|Golden Axe (set 3, World) (FD1094 317-0120)|goldnaxe3|
-|s16b|Golden Axe (set 4, Japan) (FD1094 317-0121)|goldnaxej|
-|s16b|Golden Axe (set 5, US) (FD1094 317-0122)|goldnaxeu|
-|s16b|MVP (set 1, Japan) (FD1094 317-0142)|mvpj|
-|s16b|Center Court (World, 4 Players, prototype) (MC-8123B)|cencourt|
-|s16b|Passing Shot (Japan, 4 Players) (FD1094 317-0070)|passshtj|
-|s16b|Passing Shot (World, 4 Players) (FD1094 317-0074)|passshta|
-|s16b|RyuKyu (Japan) (FD1094 317-5023)|ryukyua|
-|s16b|Defense (System 16B, FD1089A 317-0028)|defense|
-|s16b|SDI - Strategic Defense Initiative (System 16B, FD1089A 317-0028)|sdib|
-|s16b|Shinobi (set 2, System 16B) (FD1094 317-0049)|shinobi2|
-|s16b|Shinobi (set 3, System 16B) (MC-8123B 317-0054)|shinobi3|
-|s16b|Shinobi (set 4, System 16B) (MC-8123B 317-0054)|shinobi4|
-|s16b|Shinobi (set 5, System 16B) (unprotected)|shinobi5|
-|s16b|Shinobi (set 6, System 16B) (unprotected)|shinobi6|
-|s16b|Tetris (set 1, Japan, System 16B) (FD1094 317-0091)|tetris1|
-|s16b|Tetris (set 2, Japan, System 16B) (FD1094 317-0092)|tetris2|
-|s16b|Time Scanner (set 3, Japan, System 16B) (FD1089B 317-0024)|timescan3|
-|s16b|Wonder Boy III - Monster Lair (set 2, Japan, System 16B) (FD1094 317-0085)|wb32|
-|s16b|Wonder Boy III - Monster Lair (set 3, World, System 16B) (FD1094 317-0089)|wb33|
-|s16b|Wonder Boy III - Monster Lair (set 4, Japan, System 16B) (FD1094 317-0087)|wb34|
-|s16b|Wrestle War (set 1, Japan) (FD1094 317-0090)|wrestwar1|
-|s16b|Wrestle War (set 2, World) (FD1094 317-0102)|wrestwar2|
-|gunsmk|Gun.Smoke (World, 1985-11-15)|gunsmoke|
-|gunsmk|Gun.Smoke (Germany, 1985-11-15, censored)|gunsmokeg|
-|gunsmk|Gun.Smoke (Japan, 1985-11-15)|gunsmokej|
-|gunsmk|Gun.Smoke (USA and Canada, 1985-11-15, set 2)|gunsmokeuc|
-|gunsmk|Gun.Smoke (USA and Canada, 1986-04-08)|gunsmokeu|
-|gunsmk|Gun.Smoke (World, 1985-11-15) (bootleg)|gunsmokeb|
-|simson|The Simpsons (4 Players World, set 1)|simpsons|
-|simson|Vendetta (World, 4 Players, ver. T)|vendetta|
-|simson|The Simpsons (2 Players Asia)|simpsons2pa|
-|simson|The Simpsons (2 Players Japan)|simpsons2pj|
-|simson|The Simpsons (2 Players World, set 1)|simpsons2p|
-|simson|The Simpsons (2 Players World, set 2)|simpsons2p2|
-|simson|The Simpsons (2 Players World, set 3)|simpsons2p3|
-|simson|The Simpsons (4 Players Asia)|simpsons4pa|
-|simson|The Simpsons (4 Players World, set 2)|simpsons4pe|
-|simson|The Simpsons (4 Players World, set 3)|simpsons4pe2|
-|simson|Crime Fighters 2 (Japan, 2 Players, ver. P)|vendetta2pp|
-|simson|Crime Fighters 2 (Japan, 4 Players, ver. N)|vendettan|
-|simson|Vendetta (Asia, 2 Players, ver. D)|vendetta2pd|
-|simson|Vendetta (Asia, 2 Players, ver. U)|vendetta2pu|
-|simson|Vendetta (Asia, 4 Players, ver. Z)|vendettaz|
-|simson|Vendetta (US, 4 Players, ver. R)|vendettar|
-|simson|Vendetta (World, 2 Players, ver. EB-A?)|vendetta2peba|
-|simson|Vendetta (World, 2 Players, ver. W)|vendetta2pw|
-|simson|Vendetta (World, 2 Players, ver. ?)|vendetta2pun|
-|simson|Vendetta (World, 4 Players, ver. ?)|vendettaun|
-|vigil|Vigilante (World, Rev E)|vigilant|
-|vigil|Vigilante (Japan, Rev D)|vigilantd|
-|vigil|Vigilante (US)|vigilanto|
-|vigil|Vigilante (US, Rev B)|vigilantb|
-|vigil|Vigilante (US, Rev G)|vigilantg|
-|vigil|Vigilante (World, Rev A)|vigilanta|
-|vigil|Vigilante (World, Rev C)|vigilantc|
-|ninja|Bad Dudes vs. Dragonninja (US, revision 1)|baddudes|
-|ninja|Heavy Barrel (World)|hbarrel|
-|ninja|Dragonninja (Japan, revision 1)|drgninja|
-|ninja|Heavy Barrel (US)|hbarrelu|
 |slyspy|Boulder Dash - Boulder Dash Part 2 (World)|bouldash|
 |slyspy|Secret Agent (World, revision 3)|secretag|
 |slyspy|Boulder Dash - Boulder Dash Part 2 (Japan)|bouldashj|
@@ -301,10 +336,129 @@
 |slyspy|Sly Spy (US, revision 2)|slyspy2|
 |slyspy|Sly Spy (US, revision 3)|slyspy3|
 |slyspy|Sly Spy (US, revision 4)|slyspy|
-|sf|Street Fighter (US, set 1)|sf|
-|sf|Street Fighter (Japan) (protected)|sfj|
-|sf|Street Fighter (US, set 2) (protected)|sfua|
-|sf|Street Fighter (World) (protected)|sfw|
+|circus|Circus Charlie (level select, set 1)|circusc|
+|circus|Circus Charlie (Centuri)|circuscc|
+|circus|Circus Charlie (Centuri, earlier)|circusce|
+|circus|Circus Charlie (level select, set 2)|circusc2|
+|circus|Circus Charlie (level select, set 3)|circusc3|
+|circus|Circus Charlie (no level select)|circusc4|
+|comsc|Combat School (joystick)|combatsc|
+|comsc|Boot Camp (set 1)|bootcamp|
+|comsc|Boot Camp (set 2)|bootcampa|
+|dd2|Double Dragon II: The Revenge (World)|ddragon2|
+|dd2|Double Dragon II: The Revenge (Japan)|ddragon2j|
+|dd2|Double Dragon II: The Revenge (US)|ddragon2u|
+|dd2|Double Dragon II: The Revenge (US, bootleg)|ddragon2b|
+|kunio|Renegade (US)|renegade|
+|kunio|Nekketsu Kouha Kunio-kun (Japan bootleg)|kuniokunb|
+|kunio|Nekketsu Kouha Kunio-kun (Japan)|kuniokun|
+|kunio|Renegade (US bootleg)|renegadeb|
+|s16|Ace Attacker (Japan, S16A) [FD1094 317-0060]|aceattaca|
+|s16|Action Fighter (World, S16A) [FD1089A 317-0018]|afighter|
+|s16|Alex Kidd: The Lost Stars (Set 2, World, S16A) [No Protection]|alexkidd|
+|s16|Body Slam (World, S16) [8751 317-0015]|bodyslam|
+|s16|Fantasy Zone (Rev A, World, S16A) [No Protection]|fantzone|
+|s16|Major League (World, S16A) [No Protection]|mjleague|
+|s16|Quartet (Rev A, 4p, World, S16A) [8751 315-5194]|quartet|
+|s16|Quartet 2 (World, S16A) [No Protection]|quartet2a|
+|s16|SDI: Strategic Defense Initiative (Japan, New Ver., S16A) [FD1089B 317-0027]|sdi|
+|s16|Shinobi (Set 6, World, S16A) [No Protection]|shinobi|
+|s16|Tetris (Set 4, Japan, S16A) [FD1094 317-0093]|tetris|
+|s16|Action Fighter (World, S16A) [FD1089B 317-xxxx] [Analog Controls]|afighterd|
+|s16|Action Fighter (World, S16A) [FD1089B 317-xxxx]|afighterc|
+|s16|Action Fighter (World, S16A) [No Protection] [Analog Controls]|afighterb|
+|s16|Action Fighter (World, S16A) [No Protection]|afightera|
+|s16|Alex Kidd: The Lost Stars (Set 1, World, S16A) [FD1089A 317-0021]|alexkidd1|
+|s16|Alien Syndrome (Set 1, Japan, S16A) [FD1089A 317-0033]|aliensynjo|
+|s16|Alien Syndrome (Set 2, World, S16A) [FD1089A 317-0033]|aliensyn2|
+|s16|Alien Syndrome (Set 5, World, S16A) [FD1089B 317-0037]|aliensyn5|
+|s16|Dump Matsumoto (Japan, S16A) [8751 317-0011a]|dumpmtmt|
+|s16|Fantasy Zone (Prototype, S16A) [No Protection]|fantzonepr|
+|s16|Fantasy Zone (World, S16A) [317-5000]|fantzonep|
+|s16|Fantasy Zone (World, S16A) [FD1089B 317-0016]|fantzonee|
+|s16|Fantasy Zone (World, S16A) [No Protection]|fantzone1|
+|s16|Passing Shot (Japan, 4p, S16A) [FD1094 317-0071]|passsht16a|
+|s16|Quartet (4p, World, S16A) [8751 315-5194]|quarteta|
+|s16|Quartet 2 (World, S16A) [8751 317-0010]|quartet2|
+|s16|SDI: Strategic Defense Initiative (Japan, Old Ver., S16A) [FD1089B 317-0027]|sdia|
+|s16|Shinobi (Set 1, World, S16A) [FD1094 317-0050]|shinobi1|
+|s16|Sukeban Jansi Ryuko (Set 1, Japan, S16A) [FD1089B 317-5021]|sjryuko1|
+|s16|Tetris (Set 3, Japan, S16A) [FD1094 317-0093a]|tetris3|
+|s16|Time Scanner (Set 1, World, S16A) [FD1089B 317-0024]|timescan1|
+|s16|Wonder Boy III Monster Lair (Set 1, Japan, S16A) [FD1094 317-0084]|wb31|
+|s16|Wonder Boy III Monster Lair (Set 5, Japan, S16A) [FD1089A 317-0086]|wb35|
+|karnov|Chelnov - Atomic Runner (World)|chelnov|
+|karnov|Karnov (US, rev 6)|karnov|
+|karnov|Wonder Planet (Japan)|wndrplnt|
+|karnov|Chelnov - Atomic Runner (Japan)|chelnovj|
+|karnov|Chelnov - Atomic Runner (US)|chelnovu|
+|karnov|Karnov (Japan)|karnovj|
+|karnov|Karnov (US, rev 5)|karnova|
+|castle|Haunted Castle (version M)|hcastle|
+|castle|Akuma-Jou Dracula (Japan version N)|akumajoun|
+|castle|Akuma-Jou Dracula (Japan version P)|akumajou|
+|castle|Haunted Castle (version E)|hcastlee|
+|castle|Haunted Castle (version K)|hcastlek|
+|pinpon|Konami's Ping-Pong|pingpong|
+|pang|Block Block (World 911219 Joystick)|block|
+|pang|Capcom World (Japan)|cworld|
+|pang|Dokaben (Japan)|dokaben|
+|pang|Pang (World)|pang|
+|pang|Super Pang (World 900914)|spang|
+|pang|Block Block (Japan 910910)|blockj|
+|pang|Block Block (World 910910)|blockr2|
+|pang|Block Block (World 911106 Joystick)|blockr1|
+|pang|Buster Bros. (USA)|bbros|
+|pang|Pomping World (Japan)|pompingw|
+|pang|Super Buster Bros. (USA 901001)|sbbros|
+|pang|Super Pang (Japan 901023)|spangj|
+|rumble|The Speed Rumbler (set 1)|srumbler|
+|rumble|Rush & Crash (Japan)|rushcrsh|
+|rumble|The Speed Rumbler (set 2)|srumbler2|
+|rumble|The Speed Rumbler (set 3)|srumbler3|
+|ngpc|NeoGeo Pocket Color|ngpc|
+|bubl|Bubble Bobble (Japan, Ver 0.1)|bublbobl|
+|bubl|Tokio - Scramble Formation (newer)|tokio|
+|bubl|Bubble Bobble (Japan, Ver 0.0)|bublbobl1|
+|bubl|Bubble Bobble (US, Ver 1.0)|bublboblr1|
+|bubl|Bubble Bobble (US, Ver 5.1)|bublboblr|
+|bubl|Bubble Bobble (prototype on Tokio hardware)|bublboblp|
+|bubl|Bubble Bobble: Lost Cave V1.0|bublcave10|
+|bubl|Bubble Bobble: Lost Cave V1.1|bublcave11|
+|bubl|Bubble Bobble: Lost Cave V1.2|bublcave|
+|bubl|Tokio - Scramble Formation (US)|tokiou|
+|bubl|Tokio - Scramble Formation (bootleg)|tokiob|
+|bubl|Tokio - Scramble Formation (older)|tokioo|
+|contra|Contra (US - Asia, set 1)|contra|
+|contra|Contra (Japan, set 1)|contraj|
+|contra|Contra (Japan, set 2)|contraj1|
+|contra|Contra (US - Asia, set 2)|contra1|
+|contra|Contra (US - Asia, set 3)|contrae|
+|contra|Gryzor (set 1)|gryzor|
+|contra|Gryzor (set 2)|gryzor1|
+|gng|Ghosts'n Goblins (World? set 1)|gng|
+|gng|Ghosts'n Goblins (Italian bootleg, harder)|gngblita|
+|gng|Ghosts'n Goblins (US)|gngt|
+|gng|Ghosts'n Goblins (World? set 2)|gnga|
+|gng|Ghosts'n Goblins (World? set 3)|gngc|
+|gng|Ghosts'n Goblins (prototype)|gngprot|
+|gng|Makaimura (Japan Revision B)|makaimurb|
+|gng|Makaimura (Japan Revision C)|makaimurc|
+|gng|Makaimura (Japan Revision G)|makaimurg|
+|gng|Makaimura (Japan)|makaimur|
+|riders|Sunset Riders (4 Players ver EAC)|ssriders|
+|riders|Sunset Riders (2 Players ver ABD)|ssridersabd|
+|riders|Sunset Riders (2 Players ver EBC)|ssridersebc|
+|riders|Sunset Riders (2 Players ver EBD)|ssridersebd|
+|riders|Sunset Riders (2 Players ver JBD)|ssridersjbd|
+|riders|Sunset Riders (2 Players ver UBC)|ssridersubc|
+|riders|Sunset Riders (4 Players ver ADD)|ssridersadd|
+|riders|Sunset Riders (4 Players ver EAA)|ssriderseaa|
+|riders|Sunset Riders (4 Players ver JAC)|ssridersjac|
+|riders|Sunset Riders (4 Players ver JAD)|ssridersjad|
+|riders|Sunset Riders (4 Players ver UAB)|ssridersuab|
+|riders|Sunset Riders (4 Players ver UAC)|ssridersuac|
+|riders|Sunset Riders (4 Players ver UDA)|ssridersuda|
 |cps1|1941: Counter Attack (World 900227)|1941|
 |cps1|Adventure Quiz Capcom World 2 (Japan 920611)|cworld2j|
 |cps1|Captain Commando (World 911202)|captcomm|
@@ -463,249 +617,6 @@
 |cps1|Willow (Japan)|willowj|
 |cps1|Willow (USA Old Ver.)|willowuo|
 |cps1|Willow (USA)|willowu|
-|trojan|Avengers (US, revision C)|avengers|
-|trojan|Trojan (US set 1)|trojan|
-|trojan|Avengers (US)|avengersb|
-|trojan|Avengers (US, revision A)|avengersa|
-|trojan|Avengers (US, unknown revision)|avengersc|
-|trojan|Hissatsu Buraiken (Japan, bootleg)|buraikenb|
-|trojan|Hissatsu Buraiken (Japan, rev. A)|buraiken|
-|trojan|Tatakai no Banka (Japan)|trojanj|
-|trojan|Tatakai no Banka (Japan, old ver.)|trojanjo|
-|trojan|Trojan (Romstar)|trojanr|
-|trojan|Trojan (US set 2)|trojana|
-|mikie|Mikie|mikie|
-|mikie|Mikie (High School Graffiti)|mikiehs|
-|mikie|Shin-ip Sawon - Seok Dol-i|mikiek|
-|mikie|Shinnyuushain Tooru-kun|mikiej|
-|s16|Ace Attacker (Japan, S16A) [FD1094 317-0060]|aceattaca|
-|s16|Action Fighter (World, S16A) [FD1089A 317-0018]|afighter|
-|s16|Alex Kidd: The Lost Stars (Set 2, World, S16A) [No Protection]|alexkidd|
-|s16|Body Slam (World, S16) [8751 317-0015]|bodyslam|
-|s16|Fantasy Zone (Rev A, World, S16A) [No Protection]|fantzone|
-|s16|Major League (World, S16A) [No Protection]|mjleague|
-|s16|Quartet (Rev A, 4p, World, S16A) [8751 315-5194]|quartet|
-|s16|Quartet 2 (World, S16A) [No Protection]|quartet2a|
-|s16|SDI: Strategic Defense Initiative (Japan, New Ver., S16A) [FD1089B 317-0027]|sdi|
-|s16|Shinobi (Set 6, World, S16A) [No Protection]|shinobi|
-|s16|Tetris (Set 4, Japan, S16A) [FD1094 317-0093]|tetris|
-|s16|Action Fighter (World, S16A) [FD1089B 317-xxxx] [Analog Controls]|afighterd|
-|s16|Action Fighter (World, S16A) [FD1089B 317-xxxx]|afighterc|
-|s16|Action Fighter (World, S16A) [No Protection] [Analog Controls]|afighterb|
-|s16|Action Fighter (World, S16A) [No Protection]|afightera|
-|s16|Alex Kidd: The Lost Stars (Set 1, World, S16A) [FD1089A 317-0021]|alexkidd1|
-|s16|Alien Syndrome (Set 1, Japan, S16A) [FD1089A 317-0033]|aliensynjo|
-|s16|Alien Syndrome (Set 2, World, S16A) [FD1089A 317-0033]|aliensyn2|
-|s16|Alien Syndrome (Set 5, World, S16A) [FD1089B 317-0037]|aliensyn5|
-|s16|Dump Matsumoto (Japan, S16A) [8751 317-0011a]|dumpmtmt|
-|s16|Fantasy Zone (Prototype, S16A) [No Protection]|fantzonepr|
-|s16|Fantasy Zone (World, S16A) [317-5000]|fantzonep|
-|s16|Fantasy Zone (World, S16A) [FD1089B 317-0016]|fantzonee|
-|s16|Fantasy Zone (World, S16A) [No Protection]|fantzone1|
-|s16|Passing Shot (Japan, 4p, S16A) [FD1094 317-0071]|passsht16a|
-|s16|Quartet (4p, World, S16A) [8751 315-5194]|quarteta|
-|s16|Quartet 2 (World, S16A) [8751 317-0010]|quartet2|
-|s16|SDI: Strategic Defense Initiative (Japan, Old Ver., S16A) [FD1089B 317-0027]|sdia|
-|s16|Shinobi (Set 1, World, S16A) [FD1094 317-0050]|shinobi1|
-|s16|Sukeban Jansi Ryuko (Set 1, Japan, S16A) [FD1089B 317-5021]|sjryuko1|
-|s16|Tetris (Set 3, Japan, S16A) [FD1094 317-0093a]|tetris3|
-|s16|Time Scanner (Set 1, World, S16A) [FD1089B 317-0024]|timescan1|
-|s16|Wonder Boy III Monster Lair (Set 1, Japan, S16A) [FD1094 317-0084]|wb31|
-|s16|Wonder Boy III Monster Lair (Set 5, Japan, S16A) [FD1089A 317-0086]|wb35|
-|aliens|Aliens (World set 1)|aliens|
-|aliens|Crime Fighters (World 2 players)|crimfght|
-|aliens|Gang Busters (set 1)|gbusters|
-|aliens|Super Contra (set 1)|scontra|
-|aliens|Thunder Cross (set 1)|thunderx|
-|aliens|Aliens (Asia)|aliensa|
-|aliens|Aliens (Japan set 1)|aliensj|
-|aliens|Aliens (Japan set 2)|aliensj2|
-|aliens|Aliens (US)|aliensu|
-|aliens|Aliens (World set 2)|aliens2|
-|aliens|Aliens (World set 3)|aliens3|
-|aliens|Aliens (World set 4)|aliens4|
-|aliens|Crime Fighters (Japan 2 Players)|crimfghtj|
-|aliens|Crime Fighters (US 4 Players)|crimfghtu|
-|aliens|Crazy Cop (Japan)|crazycop|
-|aliens|Gang Busters (set 2)|gbustersa|
-|aliens|Super Contra (set 2)|scontraa|
-|aliens|Super Contra - Alien no Gyakushuu (Japan)|scontraj|
-|aliens|Thunder Cross (Japan)|thunderxj|
-|aliens|Thunder Cross (set 2)|thunderxa|
-|aliens|Thunder Cross (set 3)|thunderxb|
-|circus|Circus Charlie (level select, set 1)|circusc|
-|circus|Circus Charlie (Centuri)|circuscc|
-|circus|Circus Charlie (Centuri, earlier)|circusce|
-|circus|Circus Charlie (level select, set 2)|circusc2|
-|circus|Circus Charlie (level select, set 3)|circusc3|
-|circus|Circus Charlie (no level select)|circusc4|
-|outrun|Out Run (sitdown-upright, Rev B)|outrun|
-|outrun|Turbo Out Run (Out Run upgrade) (FD1094 317-0118)|toutrun|
-|outrun|Out Run (Japan, deluxe sitdown) (FD1089A 317-0019)|outrundxj|
-|outrun|Out Run (deluxe sitdown earlier version)|outrundxa|
-|outrun|Out Run (deluxe sitdown) (Enhanced Edition v1.0.3)|outrundxeha|
-|outrun|Out Run (deluxe sitdown) (Enhanced Edition v2.0.3)|outrundxeh|
-|outrun|Out Run (deluxe sitdown)|outrundx|
-|outrun|Out Run (sitdown-upright, Rev A)|outrunra|
-|outrun|Out Run (sitdown-upright, Rev B) (Enhanced Edition v1.1.0)|outruneha|
-|outrun|Out Run (sitdown-upright, Rev B) (Enhanced Edition v2.0.3)|outruneh|
-|outrun|Turbo Out Run (Japan, Out Run upgrade) (FD1094 317-0117)|toutrunj|
-|outrun|Turbo Out Run (Japan, cockpit) (FD1094 317-0101)|toutrunj1|
-|outrun|Turbo Out Run (cockpit) (FD1094 317-0106)|toutrun2|
-|outrun|Turbo Out Run (cockpit) (FD1094 317-0107)|toutrun3|
-|outrun|Turbo Out Run (deluxe cockpit) (FD1094 317-0109)|toutrun1|
-|flstory|The FairyLand Story|flstory|
-|flstory|The FairyLand Story (earlier)|flstoryo|
-|labrun|Trick Trap (World?)|tricktrp|
-|labrun|Labyrinth Runner (Japan)|labyrunr|
-|labrun|Labyrinth Runner (World Ver. K)|labyrunrk|
-|bubl|Bubble Bobble (Japan, Ver 0.1)|bublbobl|
-|bubl|Tokio - Scramble Formation (newer)|tokio|
-|bubl|Bubble Bobble (Japan, Ver 0.0)|bublbobl1|
-|bubl|Bubble Bobble (US, Ver 1.0)|bublboblr1|
-|bubl|Bubble Bobble (US, Ver 5.1)|bublboblr|
-|bubl|Bubble Bobble (prototype on Tokio hardware)|bublboblp|
-|bubl|Bubble Bobble: Lost Cave V1.0|bublcave10|
-|bubl|Bubble Bobble: Lost Cave V1.1|bublcave11|
-|bubl|Bubble Bobble: Lost Cave V1.2|bublcave|
-|bubl|Tokio - Scramble Formation (US)|tokiou|
-|bubl|Tokio - Scramble Formation (bootleg)|tokiob|
-|bubl|Tokio - Scramble Formation (older)|tokioo|
-|cps15|Cadillacs and Dinosaurs (World 930201)|dino|
-|cps15|Muscle Bomber Duo: Ultimate Team Battle (World 931206)|mbombrd|
-|cps15|Saturday Night Slam Masters (World 930713)|slammast|
-|cps15|Tenchi wo Kurau II: Sekiheki no Tatakai (CPS Changer, Japan 921031)|wofch|
-|cps15|The Punisher (World 930422)|punisher|
-|cps15|Warriors of Fate (World 921031)|wof|
-|cps15|Cadillacs: Kyouryuu Shin Seiki (Japan 930201)|dinoj|
-|cps15|Cadillacs and Dinosaurs (Asia TW 930223)|dinoa|
-|cps15|Cadillacs and Dinosaurs (USA 930201)|dinou|
-|cps15|Muscle Bomber Duo: Heat Up Warriors (Japan 931206)|mbombrdj|
-|cps15|Muscle Bomber: The Body Explosion (Japan 930713)|mbomberj|
-|cps15|Saturday Night Slam Masters (USA 930713)|slammastu|
-|cps15|The Punisher (Hispanic 930422)|punisherh|
-|cps15|The Punisher (Japan 930422)|punisherj|
-|cps15|The Punisher (USA 930422)|punisheru|
-|cps15|Sangokushi II (Asia 921005)|wofa|
-|cps15|Tenchi wo Kurau II: Sekiheki no Tatakai (Japan 921031)|wofj|
-|cps15|Warriors of Fate (USA 921031)|wofu|
-|cps15|Warriors of Fate (World 921002)|wofr1|
-|twin16|Devil World|devilw|
-|twin16|Dark Adventure|darkadv|
-|twin16|Majuu no Ohkoku|majuu|
-|wwfss|WWF Superstars (Europe)|wwfsstar|
-|wwfss|WWF Superstars (Canada)|wwfsstarc|
-|wwfss|WWF Superstars (Japan)|wwfsstarj|
-|wwfss|WWF Superstars (US revision 4)|wwfsstaru4|
-|wwfss|WWF Superstars (US revision 6)|wwfsstaru6|
-|wwfss|WWF Superstars (US revision 7)|wwfsstaru7|
-|biocom|Bionic Commando (Euro)|bionicc|
-|biocom|Bionic Commando (US set 1)|bionicc1|
-|biocom|Bionic Commando (US set 2)|bionicc2|
-|biocom|Bionic Commandos (bootleg, set 1)|bioniccbl|
-|biocom|Bionic Commandos (bootleg, set 2)|bioniccbl2|
-|biocom|Top Secret (Japan, old revision)|topsecrt|
-|biocom|Top Secret (Japan, revision B)|topsecrt2|
-|wc|Gridiron Fight|gridiron|
-|wc|Tehkan World Cup (set 1)|tehkanwc|
-|wc|Tehkan World Cup (1986 year hack)|tehkanwch|
-|wc|Tehkan World Cup (set 2, bootleg?)|tehkanwcb|
-|wc|Tehkan World Cup (set 3, bootleg)|tehkanwcc|
-|wc|Tehkan World Cup (set 4, earlier)|tehkanwcd|
-|sectnz|Legendary Wings (US set 1)|lwings|
-|sectnz|Section Z (set 1)|sectionz|
-|sectnz|Ares no Tsubasa (Japan, rev. A)|lwingsja|
-|sectnz|Ares no Tsubasa (Japan, rev. B)|lwingsj|
-|sectnz|Legendary Wings (US set 2)|lwings2|
-|sectnz|Legendary Wings (bootleg)|lwingsb|
-|sectnz|Section Z (set 2 rev. A)|sectionza|
-|rastan|Rastan (World Rev 1)|rastan|
-|rastan|Rastan (US Rev 1)|rastanu|
-|rastan|Rastan (US)|rastanua|
-|rastan|Rastan (US, earlier code base)|rastanub|
-|rastan|Rastan (World)|rastana|
-|rastan|Rastan (World, earlier code base)|rastanb|
-|rastan|Rastan Saga (Japan Rev 1)|rastsaga|
-|rastan|Rastan Saga (Japan Rev 1, earlier code base)|rastsagaa|
-|rastan|Rastan Saga (Japan, earlier code base)|rastsagab|
-|rastan|Rastan Saga (bootleg, Japan Rev 1, earlier code base)|rastsagaabl|
-|exed|Exed Exes|exedexes|
-|exed|Savage Bees|savgbees|
-|kchamp|Karate Champ (US)|kchamp|
-|kchamp|Karate Champ (Tecfri bootleg)|kchamptec|
-|kchamp|Karate Champ (US VS version, set 1)|kchampvs|
-|kchamp|Karate Champ (US VS version, set 2)|kchampvs2|
-|kchamp|Karate Champ (US VS version, set 3)|kchampvs3|
-|kchamp|Karate Champ (US VS version, set 4)|kchampvs4|
-|kchamp|Karate Champ (US, 2 players)|kchamp2p|
-|kchamp|Karate Dou (Arfyc bootleg)|karateda|
-|kchamp|Karate Dou (Japan)|karatedo|
-|kchamp|Taisen Karate Dou (Japan VS version)|karatevs|
-|sbaskt|Super Basketball (version I, encrypted)|sbasketb|
-|sbaskt|Super Basketball (version E, encrypted)|sbaskete|
-|sbaskt|Super Basketball (version G, encrypted)|sbasketg|
-|sbaskt|Super Basketball (version H, unprotected)|sbasketh|
-|castle|Haunted Castle (version M)|hcastle|
-|castle|Akuma-Jou Dracula (Japan version N)|akumajoun|
-|castle|Akuma-Jou Dracula (Japan version P)|akumajou|
-|castle|Haunted Castle (version E)|hcastlee|
-|castle|Haunted Castle (version K)|hcastlek|
-|kicker|Kicker|kicker|
-|kicker|Shao-lin's Road (set 1)|shaolins|
-|fround|The Final Round (version M)|fround|
-|fround|The Final Round (version L)|froundl|
-|toki|Toki (World, set 1)|toki|
-|toki|JuJu Densetsu (Japan)|juju|
-|toki|Toki (US, set 1)|tokiu|
-|toki|Toki (US, set 2)|tokiua|
-|toki|Toki (World, set 2)|tokia|
-|xmen|X-Men (4 Players ver EBA)|xmen|
-|xmen|X-Men (2 Players ver AAA)|xmen2pa|
-|xmen|X-Men (2 Players ver EAA)|xmen2pe|
-|xmen|X-Men (2 Players ver JAA)|xmen2pj|
-|xmen|X-Men (2 Players ver UAB)|xmen2pu|
-|xmen|X-Men (4 Players ver ADA)|xmenaa|
-|xmen|X-Men (4 Players ver AEA)|xmena|
-|xmen|X-Men (4 Players ver JBA)|xmenj|
-|xmen|X-Men (4 Players ver JEA)|xmenja|
-|xmen|X-Men (4 Players ver UBB)|xmenu|
-|xmen|X-Men (4 Players ver UEB)|xmenua|
-|yiear|Yie Ar Kung-Fu (program code I)|yiear|
-|yiear|Yie Ar Kung-Fu (program code G)|yiear2|
-|commnd|Commando (World)|commando|
-|commnd|Commando (US set 1)|commandou|
-|commnd|Commando (US set 2)|commandou2|
-|commnd|Commando (bootleg set 2)|commandob2|
-|commnd|Commando (bootleg set 3)|commandob3|
-|commnd|Senjou no Ookami|commandoj|
-|commnd|Space Invasion (Europe)|sinvasn|
-|tmnt|M.I.A. - Missing in Action (version T)|mia|
-|tmnt|Punk Shot (US 4 Players)|punkshot|
-|tmnt|Teenage Mutant Ninja Turtles (World 4 Players, version X)|tmnt|
-|tmnt|M.I.A. - Missing in Action (version S)|mia2|
-|tmnt|Punk Shot (Japan 2 Players)|punkshotj|
-|tmnt|Punk Shot (US 2 Players)|punkshot2|
-|tmnt|Punk Shot (World 2 Players)|punkshot2e|
-|tmnt|Teenage Mutant Hero Turtles (UK 2 Players, version U)|tmht2p|
-|tmnt|Teenage Mutant Hero Turtles (UK 2 Players, version ?)|tmht2pa|
-|tmnt|Teenage Mutant Hero Turtles (UK 4 Players, version F)|tmht|
-|tmnt|Teenage Mutant Hero Turtles (UK 4 Players, version S)|tmhta|
-|tmnt|Teenage Mutant Hero Turtles (UK 4 Players, version ?)|tmhtb|
-|tmnt|Teenage Mutant Ninja Turtles (Asia 4 Players, version ?)|tmnta|
-|tmnt|Teenage Mutant Ninja Turtles (Japan 2 Players, version 1)|tmnt2pj|
-|tmnt|Teenage Mutant Ninja Turtles (Japan 4 Players, version 2)|tmntj|
-|tmnt|Teenage Mutant Ninja Turtles (Oceania 2 Players, version ?)|tmnt2po|
-|tmnt|Teenage Mutant Ninja Turtles (US 4 Players, version H)|tmntuc|
-|tmnt|Teenage Mutant Ninja Turtles (US 4 Players, version J)|tmntub|
-|tmnt|Teenage Mutant Ninja Turtles (US 4 Players, version N)|tmntua|
-|tmnt|Teenage Mutant Ninja Turtles (US 4 Players, version R)|tmntu|
-|mx5k|MX5000|mx5000|
-|mx5k|Flak Attack (Japan)|flkatck|
-|mx5k|Flak Attack (Japan, PWB 450593 sub-board)|flkatcka|
-|sarms|Side Arms - Hyper Dyne (World, 861129)|sidearms|
-|sarms|Side Arms - Hyper Dyne (Japan, 861128)|sidearmsj|
-|sarms|Side Arms - Hyper Dyne (US, 861128)|sidearmsur1|
-|sarms|Side Arms - Hyper Dyne (US, 861202)|sidearmsu|
 |cps2|1944: The Loop Master (Euro 000620)|1944|
 |cps2|19XX: The War Against Destiny (Euro 960104)|19xx|
 |cps2|Alien vs. Predator (Euro 940520)|avsp|
@@ -1022,38 +933,127 @@
 |cps2|X-Men Vs. Street Fighter (USA 961004 Phoenix Edition) (bootleg)|xmvsfu1d|
 |cps2|X-Men Vs. Street Fighter (USA 961004)|xmvsfur1|
 |cps2|X-Men Vs. Street Fighter (USA 961023)|xmvsfu|
-|comsc|Combat School (joystick)|combatsc|
-|comsc|Boot Camp (set 1)|bootcamp|
-|comsc|Boot Camp (set 2)|bootcampa|
-|midres|Midnight Resistance (World, set 1)|midres|
-|midres|Midnight Resistance (Japan)|midresj|
-|midres|Midnight Resistance (US)|midresu|
-|midres|Midnight Resistance (World, set 2)|midres2|
-|pang|Block Block (World 911219 Joystick)|block|
-|pang|Capcom World (Japan)|cworld|
-|pang|Dokaben (Japan)|dokaben|
-|pang|Pang (World)|pang|
-|pang|Super Pang (World 900914)|spang|
-|pang|Block Block (Japan 910910)|blockj|
-|pang|Block Block (World 910910)|blockr2|
-|pang|Block Block (World 911106 Joystick)|blockr1|
-|pang|Buster Bros. (USA)|bbros|
-|pang|Pomping World (Japan)|pompingw|
-|pang|Super Buster Bros. (USA 901001)|sbbros|
-|pang|Super Pang (Japan 901023)|spangj|
-|contra|Contra (US - Asia, set 1)|contra|
-|contra|Contra (Japan, set 1)|contraj|
-|contra|Contra (Japan, set 2)|contraj1|
-|contra|Contra (US - Asia, set 2)|contra1|
-|contra|Contra (US - Asia, set 3)|contrae|
-|contra|Gryzor (set 1)|gryzor|
-|contra|Gryzor (set 2)|gryzor1|
-|roadf|Hyper Sports|hyperspt|
-|roadf|Road Fighter (set 1)|roadf|
-|roadf|Hyper Olympic '84|hpolym84|
-|roadf|Road Fighter (set 2)|roadf2|
-|roadf|Road Fighter (set 3, unencrypted)|roadfu|
-|track|Track & Field|trackfld|
-|track|Hyper Olympic (bugfixed)|hyprolyma|
-|track|Hyper Olympic|hyprolym|
-|track|Track & Field (Centuri)|trackfldc|
+|s16b|Alien Syndrome (set 4, System 16B, unprotected)|aliensyn|
+|s16b|Altered Beast (set 8) (8751 317-0078)|altbeast|
+|s16b|Aurail (set 3, US) (unprotected)|aurail|
+|s16b|Bay Route (set 3, World) (FD1094 317-0116)|bayroute|
+|s16b|Bullet (FD1094 317-0041)|bullet|
+|s16b|Cotton (set 4, World) (FD1094 317-0181a)|cotton|
+|s16b|Dunk Shot (Rev C, FD1089A 317-0022)|dunkshot|
+|s16b|Dynamite Dux (set 3, World) (FD1094 317-0096)|ddux|
+|s16b|E-Swat - Cyber Police (set 4, World) (FD1094 317-0130)|eswat|
+|s16b|Excite League (FD1094 317-0079)|exctleag|
+|s16b|Fantasy Zone II - The Tears of Opa-Opa (System 16C version)|fantzn2x|
+|s16b|Flash Point (set 2, Japan) (FD1094 317-0127A)|fpoint|
+|s16b|Golden Axe (set 6, US) (8751 317-123A)|goldnaxe|
+|s16b|MVP (set 2, US) (FD1094 317-0143)|mvp|
+|s16b|Passing Shot (World, 2 Players) (FD1094 317-0080)|passsht|
+|s16b|Riot City (Japan)|riotcity|
+|s16b|RyuKyu (Rev A, Japan) (FD1094 317-5023A)|ryukyu|
+|s16b|Sonic Boom (FD1094 317-0053)|sonicbom|
+|s16b|Sukeban Jansi Ryuko (set 2, System 16B, FD1089B 317-5021)|sjryuko|
+|s16b|Super League (FD1094 317-0045)|suprleag|
+|s16b|Time Scanner (set 2, System 16B)|timescan|
+|s16b|Toryumon|toryumon|
+|s16b|Tough Turf (set 1, US) (8751 317-0099)|tturfu|
+|s16b|Wonder Boy III - Monster Lair (set 6, World, System 16B) (8751 317-0098)|wb3|
+|s16b|Wrestle War (set 3, World) (8751 317-0103)|wrestwar|
+|s16b|Action Fighter (System 16B, FD1089A 317-0018)|afighterh|
+|s16b|Action Fighter (System 16B, FD1089B 317-unknown)|afighterg|
+|s16b|Action Fighter (System 16B, FD1089B 317-unknown, analog controls)|afighterf|
+|s16b|Action Fighter (System 16B, unprotected, analog controls)|afightere|
+|s16b|Alien Syndrome (set 3, System 16B, FD1089A 317-0033)|aliensyn3|
+|s16b|Alien Syndrome (set 6, Japan, new, System 16B, FD1089A 317-0033)|aliensynj|
+|s16b|Alien Syndrome (set 7, System 16B, MC-8123B 317-00xx)|aliensyn7|
+|s16b|Altered Beast (set 2) (MC-8123B 317-0066)|altbeast2|
+|s16b|Altered Beast (set 4) (MC-8123B 317-0066)|altbeast4|
+|s16b|Altered Beast (set 5) (FD1094 317-0069)|altbeast5|
+|s16b|Altered Beast (set 6) (8751 317-0076)|altbeast6|
+|s16b|Juuouki (set 1, Japan) (FD1094 317-0065)|altbeastj1|
+|s16b|Juuouki (set 3, Japan) (FD1094 317-0068)|altbeastj3|
+|s16b|Juuouki (set 7, Japan) (8751 317-0077)|altbeastj|
+|s16b|Aurail (set 1, Japan) (FD1089A 317-0167)|aurailj|
+|s16b|Aurail (set 2, World) (FD1089B 317-0168)|aurail1|
+|s16b|Bay Route (set 1, US) (unprotected)|bayroute1|
+|s16b|Bay Route (set 2, Japan) (FD1094 317-0115)|bayroutej|
+|s16b|Cotton (set 1, Japan, Rev A) (FD1094 317-0179a)|cottonja|
+|s16b|Cotton (set 2, Japan, Rev B) (FD1094 317-0179b)|cottonj|
+|s16b|Cotton (set 3, US) (FD1094 317-0180)|cottonu|
+|s16b|Dunk Shot (FD1089A 317-0022)|dunkshoto|
+|s16b|Dunk Shot (Rev A, FD1089A 317-0022)|dunkshota|
+|s16b|Dynamite Dux (set 1, World) (8751 317-0095)|ddux1|
+|s16b|Dynamite Dux (set 2, Japan) (FD1094 317-0094)|dduxj|
+|s16b|E-Swat - Cyber Police (set 1, Japan) (FD1094 317-0131)|eswatj1|
+|s16b|E-Swat - Cyber Police (set 2, Japan) (FD1094 317-0128)|eswatj|
+|s16b|E-Swat - Cyber Police (set 3, US) (FD1094 317-0129)|eswatu|
+|s16b|Fantasy Zone II - The Tears of Opa-Opa (System 16C version, prototype)|fantzn2xp|
+|s16b|Flash Point (set 1, Japan) (FD1094 317-0127A)|fpoint1|
+|s16b|Golden Axe (set 1, World) (FD1094 317-0110)|goldnaxe1|
+|s16b|Golden Axe (set 2, US) (8751 317-0112)|goldnaxe2|
+|s16b|Golden Axe (set 3, World) (FD1094 317-0120)|goldnaxe3|
+|s16b|Golden Axe (set 4, Japan) (FD1094 317-0121)|goldnaxej|
+|s16b|Golden Axe (set 5, US) (FD1094 317-0122)|goldnaxeu|
+|s16b|MVP (set 1, Japan) (FD1094 317-0142)|mvpj|
+|s16b|Center Court (World, 4 Players, prototype) (MC-8123B)|cencourt|
+|s16b|Passing Shot (Japan, 4 Players) (FD1094 317-0070)|passshtj|
+|s16b|Passing Shot (World, 4 Players) (FD1094 317-0074)|passshta|
+|s16b|RyuKyu (Japan) (FD1094 317-5023)|ryukyua|
+|s16b|Defense (System 16B, FD1089A 317-0028)|defense|
+|s16b|SDI - Strategic Defense Initiative (System 16B, FD1089A 317-0028)|sdib|
+|s16b|Shinobi (set 2, System 16B) (FD1094 317-0049)|shinobi2|
+|s16b|Shinobi (set 3, System 16B) (MC-8123B 317-0054)|shinobi3|
+|s16b|Shinobi (set 4, System 16B) (MC-8123B 317-0054)|shinobi4|
+|s16b|Shinobi (set 5, System 16B) (unprotected)|shinobi5|
+|s16b|Shinobi (set 6, System 16B) (unprotected)|shinobi6|
+|s16b|Tetris (set 1, Japan, System 16B) (FD1094 317-0091)|tetris1|
+|s16b|Tetris (set 2, Japan, System 16B) (FD1094 317-0092)|tetris2|
+|s16b|Time Scanner (set 3, Japan, System 16B) (FD1089B 317-0024)|timescan3|
+|s16b|Wonder Boy III - Monster Lair (set 2, Japan, System 16B) (FD1094 317-0085)|wb32|
+|s16b|Wonder Boy III - Monster Lair (set 3, World, System 16B) (FD1094 317-0089)|wb33|
+|s16b|Wonder Boy III - Monster Lair (set 4, Japan, System 16B) (FD1094 317-0087)|wb34|
+|s16b|Wrestle War (set 1, Japan) (FD1094 317-0090)|wrestwar1|
+|s16b|Wrestle War (set 2, World) (FD1094 317-0102)|wrestwar2|
+|cps15|Cadillacs and Dinosaurs (World 930201)|dino|
+|cps15|Muscle Bomber Duo: Ultimate Team Battle (World 931206)|mbombrd|
+|cps15|Saturday Night Slam Masters (World 930713)|slammast|
+|cps15|Tenchi wo Kurau II: Sekiheki no Tatakai (CPS Changer, Japan 921031)|wofch|
+|cps15|The Punisher (World 930422)|punisher|
+|cps15|Warriors of Fate (World 921031)|wof|
+|cps15|Cadillacs: Kyouryuu Shin Seiki (Japan 930201)|dinoj|
+|cps15|Cadillacs and Dinosaurs (Asia TW 930223)|dinoa|
+|cps15|Cadillacs and Dinosaurs (USA 930201)|dinou|
+|cps15|Muscle Bomber Duo: Heat Up Warriors (Japan 931206)|mbombrdj|
+|cps15|Muscle Bomber: The Body Explosion (Japan 930713)|mbomberj|
+|cps15|Saturday Night Slam Masters (USA 930713)|slammastu|
+|cps15|The Punisher (Hispanic 930422)|punisherh|
+|cps15|The Punisher (Japan 930422)|punisherj|
+|cps15|The Punisher (USA 930422)|punisheru|
+|cps15|Sangokushi II (Asia 921005)|wofa|
+|cps15|Tenchi wo Kurau II: Sekiheki no Tatakai (Japan 921031)|wofj|
+|cps15|Warriors of Fate (USA 921031)|wofu|
+|cps15|Warriors of Fate (World 921002)|wofr1|
+|wc|Gridiron Fight|gridiron|
+|wc|Tehkan World Cup (set 1)|tehkanwc|
+|wc|Tehkan World Cup (1986 year hack)|tehkanwch|
+|wc|Tehkan World Cup (set 2, bootleg?)|tehkanwcb|
+|wc|Tehkan World Cup (set 3, bootleg)|tehkanwcc|
+|wc|Tehkan World Cup (set 4, earlier)|tehkanwcd|
+|cop|Hippodrome (US)|hippodrm|
+|cop|Robocop (World, revision 4)|robocop|
+|cop|Fighting Fantasy (Japan revision ?)|ffantasyb|
+|cop|Fighting Fantasy (Japan)|ffantasya|
+|cop|Fighting Fantasy (Japan, revision 2)|ffantasyj|
+|cop|Fighting Fantasy (Japan, revision 3)|ffantasy|
+|cop|Robocop (Japan)|robocopj|
+|cop|Robocop (US, revision 0)|robocopu0|
+|cop|Robocop (US, revision 1)|robocopu|
+|cop|Robocop (World, revision 3)|robocopw|
+|roc|Roc'n Rope|rocnrope|
+|roc|Roc'n Rope (Kosuka)|rocnropek|
+|vigil|Vigilante (World, Rev E)|vigilant|
+|vigil|Vigilante (Japan, Rev D)|vigilantd|
+|vigil|Vigilante (US)|vigilanto|
+|vigil|Vigilante (US, Rev B)|vigilantb|
+|vigil|Vigilante (US, Rev G)|vigilantg|
+|vigil|Vigilante (World, Rev A)|vigilanta|
+|vigil|Vigilante (World, Rev C)|vigilantc|

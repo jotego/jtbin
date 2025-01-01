@@ -5,7 +5,7 @@
               This work is not mantained by the MiSTer project. Please contact the
               core author for issues and updates.
 
-              (c) Jose Tejada, 2024. Please support this research
+              (c) Jose Tejada, 2025. Please support this research
               Patreon: https://patreon.com/jotego
 
               The author does not endorse or participate in illegal distribution
@@ -93,8 +93,8 @@
             <part name="epr-10019.b5" crc="e020c38b" map="10"/>
         </interleave>
         <part repeat="0x10000"> FF</part>
-        <!-- MCU_START -->
         <!-- JTFRAME_PROM_START -->
+        <!-- MCU_START -->
         <!-- mcu - starts at 0x180000 - length 0x2000 (13 bits) -->
         <!-- Skipping region mcu because there is no dump known -->
         <part repeat="0x2000"> FF</part>
