@@ -342,6 +342,7 @@
 | fpoint1      | jts16b     | 104febb82ea083d44525f317992142d3 | ff,fd        |
 | fround       | jtfround   | 0824f8ea07f0f330628fa9373dc13021 | ff,5e,ff     |
 | froundl      | jtfround   | b4f7a1b2506094c98fddf820462f5653 | ff,5e,ff     |
+| gaiden       | jtgaiden   | c5b2c47492aa25d9aaa10efab2547144 | ff,ff        |
 | galaga88     | jtshouse   | 45799bfcc9ca0ccdf3f18eed025e597d | ff           |
 | galaga88a    | jtshouse   | 96b874c6722c7eb7094f7dfc59faac55 | ff           |
 | galaga88j    | jtshouse   | 797660537d3cce6247fc84b7670a980e | ff           |
@@ -636,6 +637,8 @@
 | rompers      | jtshouse   | 08ff77ec86c6b0087b1c6398be1c31ac | ff,fe        |
 | romperso     | jtshouse   | 7b5145a14d162ee34c9e6acc8bc84184 | ff,fe        |
 | rushcrsh     | jtrumble   | 4f09aed603e4590fd2b8cadd6a796edf | ff,73        |
+| ryukendn     | jtgaiden   | 8bf88cefc29877f94896f4ae92c4939f | ff,ff        |
+| ryukendna    | jtgaiden   | bab876b02899e98be413632982f6f63a | ff,ff        |
 | ryukyu       | jts16b     | 8f2e0276190a2c18150cc7da4a25583f | ff,fa        |
 | ryukyua      | jts16b     | a588e0ceab5e1d557cc0188a38385750 | ff,fa        |
 | savgbees     | jtexed     | a0bfb6be669be0073f0196983de61d06 | df,ff        |
@@ -760,6 +763,8 @@
 | sgemfd       | jtcps2     | 9cc1a48318b6de08f0466e1e49386de0 | ff,ff        |
 | sgemfh       | jtcps2     | e97f8257d262cbf0060519f3062e9642 | ff,ff        |
 | shadowld     | jtshouse   | 725985aee2487e22cd7ef4ee9f0ccf19 | ff           |
+| shadoww      | jtgaiden   | c19191cc31617346f0cc296de4cdbf73 | ff,ff        |
+| shadowwa     | jtgaiden   | fb4c2d7525be63a276b42af1ef73bbba | ff,ff        |
 | shangon      | jtshanon   | 88939b6dd5728e4207375b57101466f8 | ff,fe        |
 | shangon1     | jtshanon   | 7a84ec8cb795a6b4d9b9e7afa02796d2 | ff,fe        |
 | shangon2     | jtshanon   | 5cb6ba8bdf99311f00ec92586d8c0310 | ff,fe        |

@@ -1,0 +1,120 @@
+<!--          FPGA arcade hardware by Jotego
+
+              This core is available for hardware compatible with MiST and MiSTer
+              Other FPGA systems may be supported by the time you read this.
+              This work is not mantained by the MiSTer project. Please contact the
+              core author for issues and updates.
+
+              (c) Jose Tejada, 2025. Please support this research
+              Patreon: https://patreon.com/jotego
+
+              The author does not endorse or participate in illegal distribution
+              of copyrighted material. This work can be used with compatible
+              software. This software can be homebrew projects or legally
+              obtained memory dumps of compatible games.
+
+              This file license is GNU GPLv2.
+              You can read the whole license file in
+              https://opensource.org/licenses/gpl-2.0.php
+
+-->
+
+<misterromdescription>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
+    <name>Ninja Ryukenden (Japan, set 2)</name>
+    <setname>ryukendna</setname>
+    <rbf>jtgaiden</rbf>
+    <mameversion>0261</mameversion>
+    <year>1989</year>
+    <manufacturer>Tecmo</manufacturer>
+    <players>2</players>
+    <joystick>8</joystick>
+    <rotation>horizontal</rotation>
+    <region>World</region>
+    <rom index="0" zip="ryukendna.zip|shadoww.zip" md5="None" asm_md5="bab876b02899e98be413632982f6f63a">
+        <part>
+            00 00 00 00 00 00 00 00
+        </part>
+        <!-- maincpu - starts at 0x0 - length 0x40000 (18 bits) -->
+        <interleave output="16">
+            <part name="2.4s" crc="a93a8256" map="01"/>
+            <part name="1.3s" crc="5532e302" map="10"/>
+        </interleave>
+        <!-- JTFRAME_BA1_START -->
+        <!-- audiocpu - starts at 0x40000 - length 0x10000 (16 bits) -->
+        <part name="3.4b" crc="6b686b69"/>
+        <!-- PCM_START -->
+        <!-- oki - starts at 0x50000 - length 0x20000 (17 bits) -->
+        <part name="4.4a" crc="b0e0faf9"/>
+        <!-- JTFRAME_BA2_START -->
+        <!-- gfx1 - starts at 0x70000 - length 0x10000 (16 bits) -->
+        <interleave output="16">
+            <part name="hn27512p.7a" crc="765e7baa" map="12"/>
+        </interleave>
+        <!-- OBJ_START -->
+        <!-- gfx4 - starts at 0x80000 - length 0x100000 (20 bits) -->
+        <interleave output="16">
+            <part name="7.1m" crc="016bec95" map="01"/>
+            <part name="6.3m" crc="e7ccdf9f" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="9.1n" crc="6e9b7fd3" map="01"/>
+            <part name="8.3n" crc="7ef7f880" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="11.1r" crc="7fbfdf5e" map="01"/>
+            <part name="10.3r" crc="a6451dec" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="13.1s" crc="4e56a508" map="01"/>
+            <part name="12.3s" crc="277204f0" map="10"/>
+        </interleave>
+        <!-- JTFRAME_BA3_START -->
+        <!-- gfx2 - starts at 0x180000 - length 0x80000 (19 bits) -->
+        <interleave output="16">
+            <part name="14.3a" crc="1ecfddaa" map="12"/>
+        </interleave>
+        <interleave output="16">
+            <part name="15.3b" crc="1291a696" map="12"/>
+        </interleave>
+        <interleave output="16">
+            <part name="16.1a" crc="140b47ca" map="12"/>
+        </interleave>
+        <interleave output="16">
+            <part name="17.1b" crc="7638cccb" map="12"/>
+        </interleave>
+        <!-- GFX3_START -->
+        <!-- gfx3 - starts at 0x200000 - length 0x80000 (19 bits) -->
+        <interleave output="16">
+            <part name="18.6a" crc="3fadafd6" map="12"/>
+        </interleave>
+        <interleave output="16">
+            <part name="19.6b" crc="ddae9d5b" map="12"/>
+        </interleave>
+        <interleave output="16">
+            <part name="20.4b" crc="08cf7a93" map="12"/>
+        </interleave>
+        <interleave output="16">
+            <part name="21.4b" crc="1ac892f5" map="12"/>
+        </interleave>
+        <!-- Total 0x280000 bytes - 2560 kBytes -->
+    </rom>
+    <rom index="17" zip="jtbeta.zip" md5="None" asm_md5="94c481938b4574732df7731a43c372e9">
+        <part name="beta.bin" crc="d81be000"/>
+    </rom>
+    <nvram index="2" size="36878"/>
+    <rom index="1">
+        <part>00 80</part>
+    </rom>
+    <switches page_id="1" page_name="Switches" base="16" default="ff,ff">
+        <!-- DSW -->
+        <dip name="Demo Sounds" bits="0" ids="Off,On"/>
+        <dip name="Flip Screen" bits="1" ids="On,Off"/>
+        <dip name="Coin B" bits="2,4" ids="5/1,2/1,3/1,1/2,4/1,1/3,1/4,1/1"/>
+        <dip name="Coin A" bits="5,7" ids="5/1,2/1,3/1,1/2,4/1,1/3,1/4,1/1"/>
+        <dip name="Difficulty" bits="10,11" ids="TBL 3,TBL 1,TBL 2,Normal"/>
+        <dip name="Energy" bits="12,13" ids="2,4,5,3"/>
+        <dip name="Lives" bits="14,15" ids="1,3,4,2"/>
+    </switches>
+    <buttons names="Grab,Attack,Jump,Start,Coin,Core credits" default="A,B,X,Start,Select,-" count="3"/>
+</misterromdescription>

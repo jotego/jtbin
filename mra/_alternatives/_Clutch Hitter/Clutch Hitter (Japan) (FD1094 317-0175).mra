@@ -85,8 +85,8 @@
         <!-- mcu - starts at 0xB82000 -->
         <!-- Total 0xB82000 bytes - 11784 kBytes -->
     </rom>
-    <rom index="17" zip="jtbeta.zip" md5="None" asm_md5="576fc116dbf0329afc36037a31b14247">
-        <part name="beta.bin" crc="d6890711"/>
+    <rom index="17" zip="jtbeta.zip" md5="None" asm_md5="94c481938b4574732df7731a43c372e9">
+        <part name="beta.bin" crc="d81be000"/>
     </rom>
     <nvram index="2" size="16384"/>
     <rom index="1">

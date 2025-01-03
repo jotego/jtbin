@@ -1,0 +1,219 @@
+{
+	"interact":{
+		"magic": "APF_VER_1",
+		"variables": [
+			{
+				"name": "Demo Sounds",
+				"id": 0,
+				"type": "check",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 1,
+				"value": 1,
+				"mask": "0xFFFFFFFE"
+			},
+			{
+				"name": "Flip Screen",
+				"id": 1,
+				"type": "check",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 0,
+				"value": 0,
+				"value_off": 2,
+				"mask": "0xFFFFFFFD"
+			},
+			{
+				"name": "Coin B",
+				"id": 2,
+				"type": "list",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 7,
+				"value": 0,
+				"mask": "0xFFFFFFE3",
+				"options": [
+					{
+						"name": "5 Coins/1 Credit",
+						"value": "0x0"
+					},
+					{
+						"name": "2 Coins/1 Credit",
+						"value": "0x4"
+					},
+					{
+						"name": "3 Coins/1 Credit",
+						"value": "0x8"
+					},
+					{
+						"name": "1 Coin/2 Credits",
+						"value": "0xC"
+					},
+					{
+						"name": "4 Coins/1 Credit",
+						"value": "0x10"
+					},
+					{
+						"name": "1 Coin/3 Credits",
+						"value": "0x14"
+					},
+					{
+						"name": "1 Coin/4 Credits",
+						"value": "0x18"
+					},
+					{
+						"name": "1 Coin/1 Credit",
+						"value": "0x1C"
+					}
+				]
+			},
+			{
+				"name": "Coin A",
+				"id": 3,
+				"type": "list",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 7,
+				"value": 0,
+				"mask": "0xFFFFFF1F",
+				"options": [
+					{
+						"name": "5 Coins/1 Credit",
+						"value": "0x0"
+					},
+					{
+						"name": "2 Coins/1 Credit",
+						"value": "0x20"
+					},
+					{
+						"name": "3 Coins/1 Credit",
+						"value": "0x40"
+					},
+					{
+						"name": "1 Coin/2 Credits",
+						"value": "0x60"
+					},
+					{
+						"name": "4 Coins/1 Credit",
+						"value": "0x80"
+					},
+					{
+						"name": "1 Coin/3 Credits",
+						"value": "0xA0"
+					},
+					{
+						"name": "1 Coin/4 Credits",
+						"value": "0xC0"
+					},
+					{
+						"name": "1 Coin/1 Credit",
+						"value": "0xE0"
+					}
+				]
+			},
+			{
+				"name": "Difficulty",
+				"id": 4,
+				"type": "list",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 3,
+				"value": 0,
+				"mask": "0xFFFFF3FF",
+				"options": [
+					{
+						"name": "TBL 3",
+						"value": "0x0"
+					},
+					{
+						"name": "TBL 1",
+						"value": "0x400"
+					},
+					{
+						"name": "TBL 2",
+						"value": "0x800"
+					},
+					{
+						"name": "Normal",
+						"value": "0xC00"
+					}
+				]
+			},
+			{
+				"name": "Energy",
+				"id": 5,
+				"type": "list",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 3,
+				"value": 0,
+				"mask": "0xFFFFCFFF",
+				"options": [
+					{
+						"name": "2",
+						"value": "0x0"
+					},
+					{
+						"name": "4",
+						"value": "0x1000"
+					},
+					{
+						"name": "5",
+						"value": "0x2000"
+					},
+					{
+						"name": "3",
+						"value": "0x3000"
+					}
+				]
+			},
+			{
+				"name": "Lives",
+				"id": 6,
+				"type": "list",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 3,
+				"value": 0,
+				"mask": "0xFFFF3FFF",
+				"options": [
+					{
+						"name": "1",
+						"value": "0x0"
+					},
+					{
+						"name": "3",
+						"value": "0x4000"
+					},
+					{
+						"name": "4",
+						"value": "0x8000"
+					},
+					{
+						"name": "2",
+						"value": "0xC000"
+					}
+				]
+			},
+			{
+				"name": "Default",
+				"id": 1015,
+				"type": "number_u32",
+				"enabled": false,
+				"persist": false,
+				"writeonly": true,
+				"address": "0xfa000000",
+				"defaultval": 65535,
+				"value": 0
+			}
+		],
+		"messages": []
+	}
+}

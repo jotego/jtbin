@@ -67,8 +67,8 @@
         <part name="a45-20.mcu" crc="7d2cdd9b"/>
         <!-- Total 0x3C800 bytes - 242 kBytes -->
     </rom>
-    <rom index="17" zip="jtbeta.zip" md5="None" asm_md5="576fc116dbf0329afc36037a31b14247">
-        <part name="beta.bin" crc="d6890711"/>
+    <rom index="17" zip="jtbeta.zip" md5="None" asm_md5="94c481938b4574732df7731a43c372e9">
+        <part name="beta.bin" crc="d81be000"/>
     </rom>
     <nvram index="2" size="4353"/>
     <rom index="1">
