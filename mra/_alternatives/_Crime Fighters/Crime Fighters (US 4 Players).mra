@@ -31,11 +31,14 @@
     <joystick>8</joystick>
     <rotation>horizontal</rotation>
     <region>World</region>
-    <rom index="0" zip="crimfghtu.zip|crimfght.zip" md5="None" address="0x30000000" asm_md5="eae04c550fb951a807b03b90c0a64e54">
-        <!--     bit   0 = GX878 (Gang Busters)
-                 bits 2:1 = PCB config -> 0=Aliens, 1=Super Contra, 2=Thunder Cross -->
+    <rom index="0" zip="crimfghtu.zip|crimfght.zip" md5="None" address="0x30000000" asm_md5="eb0b57afbe65732cb4236f73674ad6d8">
+        <!-- 
+        byte 0: PCB ID
+        byte 1:
+            bit    0 = GX878 (Gang Busters)
+            bits 2:1 = PCB config -> 0=Aliens, 1=Super Contra, 2=Thunder Cross -->
         <part>
-            06 00 00 00 00 00 00 00
+            01 06 00 00 00 00 00 00
         </part>
         <!-- maincpu - starts at 0x0 - length 0x30000 (18 bits) -->
         <part name="821l02.f24" crc="588e7da6"/>

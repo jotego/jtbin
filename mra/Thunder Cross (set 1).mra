@@ -31,11 +31,14 @@
     <joystick>8</joystick>
     <rotation>horizontal</rotation>
     <region>World</region>
-    <rom index="0" zip="thunderx.zip" md5="None" address="0x30000000" asm_md5="719a5706ab5e24f82b68c5d7ab7b671d">
-        <!--     bit   0 = GX878 (Gang Busters)
-                 bits 2:1 = PCB config -> 0=Aliens, 1=Super Contra, 2=Thunder Cross -->
+    <rom index="0" zip="thunderx.zip" md5="None" address="0x30000000" asm_md5="0594600f554d6dcc0221fafa84a3b0e7">
+        <!-- 
+        byte 0: PCB ID
+        byte 1:
+            bit    0 = GX878 (Gang Busters)
+            bits 2:1 = PCB config -> 0=Aliens, 1=Super Contra, 2=Thunder Cross -->
         <part>
-            04 00 00 00 00 00 00 00
+            02 04 00 00 00 00 00 00
         </part>
         <!-- maincpu - starts at 0x0 - length 0x30000 (18 bits) -->
         <part name="873-s02.k13" crc="6619333a"/>

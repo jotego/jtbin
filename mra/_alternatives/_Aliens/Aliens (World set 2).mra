@@ -32,8 +32,11 @@
     <rotation>horizontal</rotation>
     <region>World</region>
     <rom index="0" zip="aliens2.zip|aliens.zip" md5="None" address="0x30000000" asm_md5="66642a81c5f21f1ae9c62348e8882e07">
-        <!--     bit   0 = GX878 (Gang Busters)
-                 bits 2:1 = PCB config -> 0=Aliens, 1=Super Contra, 2=Thunder Cross -->
+        <!-- 
+        byte 0: PCB ID
+        byte 1:
+            bit    0 = GX878 (Gang Busters)
+            bits 2:1 = PCB config -> 0=Aliens, 1=Super Contra, 2=Thunder Cross -->
         <part>
             00 00 00 00 00 00 00 00
         </part>

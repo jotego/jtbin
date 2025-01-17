@@ -1,0 +1,106 @@
+<!--          FPGA arcade hardware by Jotego
+
+              This core is available for hardware compatible with MiST and MiSTer
+              Other FPGA systems may be supported by the time you read this.
+              This work is not mantained by the MiSTer project. Please contact the
+              core author for issues and updates.
+
+              (c) Jose Tejada, 2025. Please support this research
+              Patreon: https://patreon.com/jotego
+
+              The author does not endorse or participate in illegal distribution
+              of copyrighted material. This work can be used with compatible
+              software. This software can be homebrew projects or legally
+              obtained memory dumps of compatible games.
+
+              This file license is GNU GPLv2.
+              You can read the whole license file in
+              https://opensource.org/licenses/gpl-2.0.php
+
+-->
+
+<misterromdescription>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
+    <name>Gradius II - GOFER no Yabou (Japan New Ver.)</name>
+    <setname>gradius2</setname>
+    <rbf>jttwin16</rbf>
+    <mameversion>0261</mameversion>
+    <year>1988</year>
+    <manufacturer>Konami</manufacturer>
+    <players>2</players>
+    <joystick>8</joystick>
+    <rotation>horizontal</rotation>
+    <region>World</region>
+    <rom index="0" zip="gradius2.zip|vulcan.zip" md5="None" asm_md5="95250fdf3b379b67345dcdaf2f8817b2">
+        <part>
+            00 00 00 00 00 00 00 00
+        </part>
+        <!-- maincpu - starts at 0x0 - length 0x40000 (18 bits) -->
+        <interleave output="16">
+            <part name="785_x04.4n" crc="88e466ce" map="01"/>
+            <part name="785_x05.6n" crc="8a23a7b8" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="785_x08.4r" crc="c39c8efd" map="01"/>
+            <part name="785_x09.6r" crc="3f3d7d7a" map="10"/>
+        </interleave>
+        <!-- JTFRAME_BA1_START -->
+        <!-- sub - starts at 0x40000 - length 0x60000 (19 bits) -->
+        <interleave output="16">
+            <part name="785_p06.8n" crc="70c94bee" map="01"/>
+            <part name="785_p07.10n" crc="686d549d" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="785_p12.8s" crc="38ea402a" map="01"/>
+            <part name="785_p13.10s" crc="478fdb0a" map="10"/>
+        </interleave>
+        <part repeat="0x20000"> FF</part>
+        <!-- GFX_START -->
+        <!-- gfxrom - starts at 0xA0000 - length 0x200000 (21 bits) -->
+        <interleave output="32">
+            <part name="785f15.p13" crc="5bd239ac" map="0021"/>
+            <part name="785f17.p16" crc="4e7a7b82" map="2100"/>
+        </interleave>
+        <interleave output="32">
+            <part name="785f16.p15" crc="95c6b8a3" map="0021"/>
+            <part name="785f18.p18" crc="3f604e9a" map="2100"/>
+        </interleave>
+        <!-- JTFRAME_BA2_START -->
+        <!-- fixed - starts at 0x2A0000 - length 0x48000 (19 bits) -->
+        <part name="785_g14.d8" crc="9dcdad9d"/>
+        <part repeat="0x44000"> FF</part>
+        <!-- JTFRAME_BA3_START -->
+        <!-- audiocpu - starts at 0x2E8000 - length 0x8000 (15 bits) -->
+        <part name="785_g03.10a" crc="67a3b50d"/>
+        <!-- PCM_START -->
+        <!-- k007232 - starts at 0x2F0000 - length 0x20000 (17 bits) -->
+        <part name="785_f01.5a" crc="a0d8d69e"/>
+        <!-- UPD_START -->
+        <!-- upd - starts at 0x310000 - length 0x20000 (17 bits) -->
+        <part name="785_f02.7c" crc="c39f5ca4"/>
+        <!-- Total 0x330000 bytes - 3264 kBytes -->
+    </rom>
+    <rom index="17" zip="jtbeta.zip" md5="None" asm_md5="94c481938b4574732df7731a43c372e9">
+        <part name="beta.bin" crc="d81be000"/>
+    </rom>
+    <nvram index="2" size="315404"/>
+    <rom index="1">
+        <part>00 80</part>
+    </rom>
+    <switches page_id="1" page_name="Switches" base="16" default="ff,5a,fd">
+        <!-- DSW1 -->
+        <dip name="Coin A" bits="0,3" ids="Free Play,4/3,4/1,3/4,3/2,3/1,2/5,2/3,2/1,1/7,1/6,1/5,1/4,1/3,1/2,1/1"/>
+        <dip name="Coin B" bits="4,7" ids="None,4/3,4/1,3/4,3/2,3/1,2/5,2/3,2/1,1/7,1/6,1/5,1/4,1/3,1/2,1/1"/>
+        <!-- DSW2 -->
+        <dip name="Lives" bits="8,9" ids="7,4,3,2"/>
+        <dip name="Cabinet" bits="10" ids="Upright,Cocktail"/>
+        <dip name="Bonus Life" bits="11,12" ids="70K Only,20K Only,30K Every 200K,20K Every 150K"/>
+        <dip name="Difficulty" bits="13,14" ids="Very Difficult,Difficult,Normal,Easy"/>
+        <dip name="Demo Sounds" bits="15" ids="On,Off"/>
+        <!-- DSW3 -->
+        <dip name="Flip Screen" bits="16" ids="On,Off"/>
+        <dip name="Upright Controls" bits="17" ids="Dual,Single"/>
+        <dip name="Service Mode" bits="18" ids="On,Off"/>
+    </switches>
+    <buttons names="Special power,Shoot,Missile,Start,Coin,Core credits" default="A,B,X,Start,Select,-" count="3"/>
+</misterromdescription>

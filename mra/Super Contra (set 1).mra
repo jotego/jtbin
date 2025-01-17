@@ -31,11 +31,14 @@
     <joystick>8</joystick>
     <rotation>vertical (cw)</rotation>
     <region>World</region>
-    <rom index="0" zip="scontra.zip" md5="None" address="0x30000000" asm_md5="ffd37f90245d65425a36c8447a534517">
-        <!--     bit   0 = GX878 (Gang Busters)
-                 bits 2:1 = PCB config -> 0=Aliens, 1=Super Contra, 2=Thunder Cross -->
+    <rom index="0" zip="scontra.zip" md5="None" address="0x30000000" asm_md5="afbdf81f150f42e9f5fcb6125a941bab">
+        <!-- 
+        byte 0: PCB ID
+        byte 1:
+            bit    0 = GX878 (Gang Busters)
+            bits 2:1 = PCB config -> 0=Aliens, 1=Super Contra, 2=Thunder Cross -->
         <part>
-            02 00 00 00 00 00 00 00
+            03 02 00 00 00 00 00 00
         </part>
         <!-- maincpu - starts at 0x0 - length 0x30000 (18 bits) -->
         <part name="775-e02.k11" crc="a61c0ead"/>

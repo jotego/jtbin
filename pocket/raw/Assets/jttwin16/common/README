@@ -2,7 +2,13 @@ Place the following files in this folder:
 
 darkadv.rom
 devilw.rom
+gradius2.rom
+gradius2a.rom
+gradius2b.rom
 majuu.rom
+vulcan.rom
+vulcana.rom
+vulcanb.rom
 
 These files are generated using the mra tool in:
 https://github.com/sebdel/mra-tools-c/tree/master/release

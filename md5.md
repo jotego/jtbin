@@ -188,10 +188,10 @@
 | cottonj      | jts16b     | c5084165059e42a24446adfa41244b8a | ff,fe        |
 | cottonja     | jts16b     | 08ca2260697c55b1d31cc79480e0676d | ff,fe        |
 | cottonu      | jts16b     | 5a611de9bc8520954c41dd3374f8fd40 | ff,fe        |
-| crazycop     | jtaliens   | 78ad83d877fe97d24df37bd449b4f4fc | ff,56,ff     |
-| crimfght     | jtaliens   | a60fc1b7d6bf7e14f99abc9f8044ca52 | ff,5d,ff     |
-| crimfghtj    | jtaliens   | 983bf4ffe2b5d6a98f7cdc3d4e89b1c7 | ff,5d,ff     |
-| crimfghtu    | jtaliens   | eae04c550fb951a807b03b90c0a64e54 | 0f,5f,ff     |
+| crazycop     | jtaliens   | 39d21b4af425422761915d26d39c2456 | ff,56,ff     |
+| crimfght     | jtaliens   | 018a0aec8cbe50afaedfd79ba469d0da | ff,5d,ff     |
+| crimfghtj    | jtaliens   | e5f3ee44b1ecbdedf36cc725124fb684 | ff,5d,ff     |
+| crimfghtu    | jtaliens   | eb0b57afbe65732cb4236f73674ad6d8 | 0f,5f,ff     |
 | csclub       | jtcps2     | 9ad9e43e075769b0fad1712ae36a59bf | ff,ff        |
 | csclub1      | jtcps2     | 3efb2da0b43dd3410d7df54498c9a66c | ff,ff        |
 | csclub1d     | jtcps2     | 8602cbacd1571f5f6c10880841bcef54 | ff,ff        |
@@ -346,8 +346,8 @@
 | galaga88     | jtshouse   | 45799bfcc9ca0ccdf3f18eed025e597d | ff           |
 | galaga88a    | jtshouse   | 96b874c6722c7eb7094f7dfc59faac55 | ff           |
 | galaga88j    | jtshouse   | 797660537d3cce6247fc84b7670a980e | ff           |
-| gbusters     | jtaliens   | 10dbc0128069fa05df7b4ce997b53fd5 | ff,56,ff     |
-| gbustersa    | jtaliens   | a039c0483e4977911a9683590ae316bd | ff,56,ff     |
+| gbusters     | jtaliens   | 69f39be4c77b0e399d273efddacbb7ef | ff,56,ff     |
+| gbustersa    | jtaliens   | f7bfbd3eb253a98777797a40dfbffd4b | ff,56,ff     |
 | ghouls       | jtcps1     | 6ca0a8f1265eca0c99f28ac9e645e2eb | ff,fd,ff     |
 | ghoulsu      | jtcps1     | 3dbf285eda000132f55e31ce9ae667da | ff,fd,ff     |
 | gigawing     | jtcps2     | 671ca8537efef8e426c1e665c76a0340 | ff,ff        |
@@ -370,6 +370,9 @@
 | goldnaxe3    | jts16b     | 3bd9b9b2d3ecdfee18f25283d232f395 | ff,fd        |
 | goldnaxej    | jts16b     | 5b3ada014852b1c7c41ef6c3002019af | ff,fd        |
 | goldnaxeu    | jts16b     | 58f320ad62fba5b276b28005a51878d7 | ff,fd        |
+| gradius2     | jttwin16   | 95250fdf3b379b67345dcdaf2f8817b2 | ff,5a,fd     |
+| gradius2a    | jttwin16   | fdffc1ea927004dfdeea97ea6c8fcdf6 | ff,5a,fd     |
+| gradius2b    | jttwin16   | 81a502901c475e5b0fddba5867510fbc | ff,5a,fd     |
 | gridiron     | jtwc       | 67078f4ef8846bf97e26398a9f6fd044 | ff,ff        |
 | gryzor       | jtcontra   | 8a84bae46d2d2a4cdb7a2364f7239841 | ff,7a,ff     |
 | gryzor1      | jtcontra   | b5ff88f93a1cebec6fd192b8140763fe | ff,7a,ff     |
@@ -647,9 +650,9 @@
 | sbasketg     | jtsbaskt   | d24bb7c8ca71011f65a76783a90fb296 | ff,68        |
 | sbasketh     | jtsbaskt   | 72bb713a945f8716af2bbfd378b674cb | ff,68        |
 | sbbros       | jtpang     | c5df99210dd5f2b764165b0e9a899825 |              |
-| scontra      | jtaliens   | ffd37f90245d65425a36c8447a534517 | ff,5e,f7     |
-| scontraa     | jtaliens   | a8dac14ae9cd77f5246decf52977d4ac | ff,5e,f7     |
-| scontraj     | jtaliens   | 9d3146814b363a91629a0e2a0c87586e | ff,5e,f7     |
+| scontra      | jtaliens   | afbdf81f150f42e9f5fcb6125a941bab | ff,5e,f7     |
+| scontraa     | jtaliens   | caaf9472724cc67b3590a9e9a97847ee | ff,5e,f7     |
+| scontraj     | jtaliens   | 34697a2a2870c83d36aba5c59b0b9369 | ff,5e,f7     |
 | sdi          | jts16      | ed4e3c4a952505271874a0076c4089fd | ff,fd        |
 | sdia         | jts16      | f728c6163c6a5a2150820dc62668450a | ff,fd        |
 | sdib         | jts16b     | f7f5e7d5ca410726ecaa2af134da1913 | ff,fd        |
@@ -881,10 +884,10 @@
 | tetris1      | jts16b     | e9cca35f63ff528a07057065e30c5d0d | ff,fd        |
 | tetris2      | jts16b     | 91eeb6e782d0812f8c9fa0ea9e993ff9 | ff,fd        |
 | tetris3      | jts16      | 087b6c2e4d938e9d703895c6665a6f92 | ff,fd        |
-| thunderx     | jtaliens   | 719a5706ab5e24f82b68c5d7ab7b671d | ff,7a,ff     |
-| thunderxa    | jtaliens   | 70bd6648995047cd65d5c551e75a3bf3 | ff,7a,ff     |
-| thunderxb    | jtaliens   | 3c74200b62e7eb71d91b1f09046fb50d | ff,7a,ff     |
-| thunderxj    | jtaliens   | a2ecc81bf6a562bd8225ebbf624221c7 | ff,7e,ff     |
+| thunderx     | jtaliens   | 0594600f554d6dcc0221fafa84a3b0e7 | ff,7a,ff     |
+| thunderxa    | jtaliens   | 1e86c04a144ee7ad642464a831bb3ad6 | ff,7a,ff     |
+| thunderxb    | jtaliens   | 47d6dae5b024554e216f6fb2a9743e52 | ff,7a,ff     |
+| thunderxj    | jtaliens   | fc142741174d357de72455ece57a393b | ff,7e,ff     |
 | tigeroad     | jttora     | d05f3b49bc254d0d26d555be39002579 | ff,ff        |
 | tigeroadu    | jttora     | 126dc42382e22b5653fa2fb49502eed1 | ff,ff        |
 | timescan     | jts16b     | 9096991c6f3aab9fe5a4fffc38d927be | ff,ff,ff     |
@@ -982,6 +985,9 @@
 | vsavh        | jtcps2     | 9d982a042e7792842558d25b24d63787 | ff,ff        |
 | vsavj        | jtcps2     | 2047782a5797472463bb9855a93d8a8d | ff,ff        |
 | vsavu        | jtcps2     | 373328b8965cf472a864c8459544c7e5 | ff,ff        |
+| vulcan       | jttwin16   | 0dce789c5dc30934ffa03767474d3eee | ff,5a,fd     |
+| vulcana      | jttwin16   | 5727df52b98b4fa0e04f539ba6d37f37 | ff,5a,fd     |
+| vulcanb      | jttwin16   | 914dc30be97040a171c40596f52811ed | ff,5a,fd     |
 | vulgus       | jt1942     | a2491b35a3630e0ff50c257ef89ca8e2 | ff,7f        |
 | vulgusa      | jt1942     | 735e55870ab3af319593c8f1b4c3b5da | ff,7f        |
 | vulgusj      | jt1942     | c56ca388b18708989a7e498eab981f49 | ff,7f        |
