@@ -1027,6 +1027,7 @@
 | trojan  | Trojan (Romstar)                                                                           | trojanr       |
 | trojan  | Trojan (US set 1)                                                                          | trojan        |
 | trojan  | Trojan (US set 2)                                                                          | trojana       |
+| twin16  | Cue Brick (Japan)                                                                          | cuebrickj     |
 | twin16  | Dark Adventure                                                                             | darkadv       |
 | twin16  | Devil World                                                                                | devilw        |
 | twin16  | Gradius II - GOFER no Yabou (Japan New Ver.)                                               | gradius2      |
@@ -1069,4 +1070,4 @@
 | yiear   | Yie Ar Kung-Fu (program code G)                                                            | yiear2        |
 | yiear   | Yie Ar Kung-Fu (program code I)                                                            | yiear         |
 
-67 cores, supporting 1068 games
+67 cores, supporting 1069 games

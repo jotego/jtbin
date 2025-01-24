@@ -93,8 +93,8 @@
             <part name="epr-10019.b5" crc="e020c38b" map="10"/>
         </interleave>
         <part repeat="0x10000"> FF</part>
-        <!-- MCU_START -->
         <!-- JTFRAME_PROM_START -->
+        <!-- MCU_START -->
         <!-- mcu - starts at 0x180000 - length 0x2000 (13 bits) -->
         <part name="317-0015.bin" crc="833869e2"/>
         <part repeat="0x1000"> FF</part>

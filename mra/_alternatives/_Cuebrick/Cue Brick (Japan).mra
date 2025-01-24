@@ -1,0 +1,101 @@
+<!--          FPGA arcade hardware by Jotego
+
+              This core is available for hardware compatible with MiST and MiSTer
+              Other FPGA systems may be supported by the time you read this.
+              This work is not mantained by the MiSTer project. Please contact the
+              core author for issues and updates.
+
+              (c) Jose Tejada, 2025. Please support this research
+              Patreon: https://patreon.com/jotego
+
+              The author does not endorse or participate in illegal distribution
+              of copyrighted material. This work can be used with compatible
+              software. This software can be homebrew projects or legally
+              obtained memory dumps of compatible games.
+
+              This file license is GNU GPLv2.
+              You can read the whole license file in
+              https://opensource.org/licenses/gpl-2.0.php
+
+-->
+
+<misterromdescription>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
+    <name>Cue Brick (Japan)</name>
+    <setname>cuebrickj</setname>
+    <rbf>jttwin16</rbf>
+    <mameversion>0261</mameversion>
+    <year>1989</year>
+    <manufacturer>Konami</manufacturer>
+    <players>2</players>
+    <joystick>8</joystick>
+    <rotation>horizontal</rotation>
+    <region>World</region>
+    <rom index="0" zip="cuebrickj.zip|cuebrick.zip" md5="None" asm_md5="04bfe247a53fb88b66a330dafb73ad3b">
+        <part>
+            00 00 00 00 00 00 00 00
+        </part>
+        <!-- maincpu - starts at 0x0 - length 0x40000 (18 bits) -->
+        <interleave output="16">
+            <part name="903_e04.4n" crc="bf9c7927" map="01"/>
+            <part name="903_e05.6n" crc="8b556220" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="903_e08.4r" crc="c0a430c1" map="01"/>
+            <part name="903_e09.6r" crc="2a77554d" map="10"/>
+        </interleave>
+        <!-- JTFRAME_BA1_START -->
+        <!-- sub - starts at 0x40000 - length 0x40000 (18 bits) -->
+        <interleave output="16">
+            <part name="903_d06.8n" crc="b2cef6fe" map="01"/>
+            <part name="903_d07.10n" crc="fc0edce7" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="903_e12.8s" crc="883e3097" map="01"/>
+            <part name="903_e13.10s" crc="4fb5fb80" map="10"/>
+        </interleave>
+        <!-- data - starts at 0x80000 - length 0x220000 (22 bits) -->
+        <interleave output="16">
+            <part name="903_e10.8r" crc="417576d4" map="01"/>
+            <part name="903_e11.10r" crc="5c41faf8" map="10"/>
+        </interleave>
+        <part repeat="0x200000"> FF</part>
+        <!-- JTFRAME_BA2_START -->
+        <!-- fixed - starts at 0x2A0000 - length 0x48000 (19 bits) -->
+        <part name="903_e14.d8" crc="ddbebbd5"/>
+        <part repeat="0x44000"> FF</part>
+        <!-- JTFRAME_BA3_START -->
+        <!-- audiocpu - starts at 0x2E8000 - length 0x8000 (15 bits) -->
+        <part name="903_d03.10a" crc="455e855a"/>
+        <!-- PCM_START -->
+        <!-- k007232 - starts at 0x2F0000 - length 0x20000 (17 bits) -->
+        <part repeat="0x20000"> FF</part>
+        <!-- UPD_START -->
+        <!-- upd - starts at 0x310000 -->
+        <!-- Total 0x310000 bytes - 3136 kBytes -->
+    </rom>
+    <rom index="17" zip="jtbeta.zip" md5="None" asm_md5="94c481938b4574732df7731a43c372e9">
+        <part name="beta.bin" crc="d81be000"/>
+    </rom>
+    <nvram index="2" size="315404"/>
+    <rom index="1">
+        <!-- black frame 8x0 -->
+        <part>20 80</part>
+    </rom>
+    <switches page_id="1" page_name="Switches" base="16" default="ff,4b,fd">
+        <!-- DSW1 -->
+        <dip name="Coin A" bits="0,3" ids="Free Play,4/3,4/1,3/4,3/2,3/1,2/5,2/3,2/1,1/7,1/6,1/5,1/4,1/3,1/2,1/1"/>
+        <dip name="Coin B" bits="4,7" ids="Invalid,4/3,4/1,3/4,3/2,3/1,2/5,2/3,2/1,1/7,1/6,1/5,1/4,1/3,1/2,1/1"/>
+        <!-- DSW2 -->
+        <dip name="Cabinet" bits="10" ids="Upright,Cocktail"/>
+        <dip name="Machine Name" bits="11,12" ids="George,Johnson,Lewis,None"/>
+        <dip name="Difficulty" bits="13,14" ids="Very Difficult,Difficult,Normal,Easy"/>
+        <dip name="Demo Sounds" bits="15" ids="On,Off"/>
+        <!-- DSW3 -->
+        <dip name="Flip Screen" bits="16" ids="On,Off"/>
+        <dip name="Upright Controls" bits="17" ids="Dual,Single"/>
+        <dip name="Service Mode" bits="18" ids="On,Off"/>
+        <dip name="Stop Time" bits="19" ids="150,200"/>
+    </switches>
+    <buttons names="button 1,button 2,-,Start,Coin,Core credits" default="A,B,Start,Select,-" count="2"/>
+</misterromdescription>

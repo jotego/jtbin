@@ -199,6 +199,7 @@
 | csclubh      | jtcps2     | eaab296ad44e1f3910ce8ff8f3d09d92 | ff,ff        |
 | csclubj      | jtcps2     | 626a36b14b163d3760eb8027c69af110 | ff,ff        |
 | csclubjy     | jtcps2     | 626a36b14b163d3760eb8027c69af110 | ff,ff        |
+| cuebrickj    | jttwin16   | 04bfe247a53fb88b66a330dafb73ad3b | ff,4b,fd     |
 | cworld       | jtpang     | d4d84d29ff0060240d09ca61ce4d7508 |              |
 | cworld2j     | jtcps1     | d6ba5c2165ed4fbf889e6cec6e50ee99 | ff,fc,ff     |
 | cworld2ja    | jtcps1     | 0a1689bd618e824b7e3445176f73d373 | ff,fc,ff     |
