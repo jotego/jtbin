@@ -83,6 +83,7 @@
         <dip name="Difficulty" bits="8,10" ids="7,6,5,4,3,2,1,0"/>
         <dip name="Service Mode" bits="14" ids="On,Off"/>
         <dip name="Freeze" bits="15" ids="On,Off"/>
+        <!-- DSWC -->
         <dip name="PCB type" ids="88617A,89626A" bits="24"/>
     </switches>
     <buttons names="Shoot,Rotate left,Rotate right,-,-,-,Start,Coin,Core credits" default="A,B,X,Start,Select,-" count="3"/>

@@ -80,6 +80,10 @@
     <rom index="1">
         <part>00 80</part>
     </rom>
-    <switches page_id="1" page_name="Switches" base="16" default="ff,ff"/>
+    <switches page_id="1" page_name="Switches" base="16" default="ff,ff">
+        <!-- DSWA -->
+        <!-- DSWB -->
+        <!-- DSWC -->
+    </switches>
     <buttons names="Shot,Bomb,Rapid Shot,-,-,-,Start,Coin,Core credits" default="A,B,X,Start,Select,-" count="3"/>
 </misterromdescription>

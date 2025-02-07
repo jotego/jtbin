@@ -64,6 +64,7 @@
         <part>00 80</part>
     </rom>
     <switches page_id="1" page_name="Switches" base="16" default="ff,ff,ff">
+        <!-- DSWC -->
         <dip name="Freeze" ids="On,Off" bits="23"/>
         <dip name="PCB type" ids="88617A,89626A" bits="24"/>
     </switches>

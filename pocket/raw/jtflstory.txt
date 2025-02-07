@@ -7,6 +7,9 @@ Place the *.rom files in Assets/jtflstory/common
 
 The FairyLand Story --> flstory.rom
 The FairyLand Story (earlier) --> flstoryo.rom
+Onna Sanshirou - Typhoon Gal --> onna34ro.rom
+Onna Sanshirou - Typhoon Gal (bootleg) --> onna34roa.rom
+Rumba Lumber --> rumba.rom
 
 
 These files are generated using the mra tool in:

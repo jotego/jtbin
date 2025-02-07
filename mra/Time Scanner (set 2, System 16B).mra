@@ -109,6 +109,7 @@
         <part>05 E1</part>
     </rom>
     <switches page_id="1" page_name="Switches" base="16" default="ff,ff,ff">
+        <!-- DSW1 -->
         <!-- DSW2 -->
         <dip name="Cabinet" bits="8" ids="Cocktail,Upright"/>
         <dip name="Bonus" bits="9,12" ids="None,Ball 700k,Ball 600k,Ball 500k,Ball 400k,Ball 300k,Ball 200k,Ball 100k,Credit 200k0/400k0,Credit 1500k/300k0,Credit 1200k/2500k,Credit 100k0/200k0,Credit 1800k,Credit 1500k,Credit 100k0,Credit 1200k"/>

@@ -1,0 +1,370 @@
+{
+	"interact":{
+		"magic": "APF_VER_1",
+		"variables": [
+			{
+				"name": "Bonus Life",
+				"id": 0,
+				"type": "list",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 0,
+				"value": 0,
+				"mask": "0xFFFFFFFC",
+				"options": [
+					{
+						"name": "200000 200000",
+						"value": "0x0"
+					},
+					{
+						"name": "200000 300000",
+						"value": "0x1"
+					},
+					{
+						"name": "100000 200000",
+						"value": "0x2"
+					},
+					{
+						"name": "200000 100000",
+						"value": "0x3"
+					}
+				]
+			},
+			{
+				"name": "Free Play",
+				"id": 1,
+				"type": "check",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 0,
+				"value": 4,
+				"mask": "0xFFFFFFFB"
+			},
+			{
+				"name": "Lives",
+				"id": 2,
+				"type": "list",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 0,
+				"value": 0,
+				"mask": "0xFFFFFFE7",
+				"options": [
+					{
+						"name": "3",
+						"value": "0x0"
+					},
+					{
+						"name": "2",
+						"value": "0x8"
+					},
+					{
+						"name": "1",
+						"value": "0x10"
+					},
+					{
+						"name": "Endless (Cheat)",
+						"value": "0x18"
+					}
+				]
+			},
+			{
+				"name": "Flip Screen",
+				"id": 3,
+				"type": "check",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 0,
+				"value": 0,
+				"value_off": 64,
+				"mask": "0xFFFFFFBF"
+			},
+			{
+				"name": "Cabinet",
+				"id": 4,
+				"type": "list",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 1,
+				"value": 0,
+				"mask": "0xFFFFFF7F",
+				"options": [
+					{
+						"name": "Cocktail",
+						"value": "0x0"
+					},
+					{
+						"name": "Upright",
+						"value": "0x80"
+					}
+				]
+			},
+			{
+				"name": "Coin A",
+				"id": 5,
+				"type": "list",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 0,
+				"value": 0,
+				"mask": "0xFFFFF0FF",
+				"options": [
+					{
+						"name": "1 Coin/1 Credit",
+						"value": "0x0"
+					},
+					{
+						"name": "1 Coin/2 Credits",
+						"value": "0x100"
+					},
+					{
+						"name": "1 Coin/3 Credits",
+						"value": "0x200"
+					},
+					{
+						"name": "1 Coin/4 Credits",
+						"value": "0x300"
+					},
+					{
+						"name": "1 Coin/5 Credits",
+						"value": "0x400"
+					},
+					{
+						"name": "1 Coin/6 Credits",
+						"value": "0x500"
+					},
+					{
+						"name": "1 Coin/7 Credits",
+						"value": "0x600"
+					},
+					{
+						"name": "1 Coin/8 Credits",
+						"value": "0x700"
+					},
+					{
+						"name": "2 Coins/1 Credit",
+						"value": "0x800"
+					},
+					{
+						"name": "3 Coins/1 Credit",
+						"value": "0x900"
+					},
+					{
+						"name": "4 Coins/1 Credit",
+						"value": "0xA00"
+					},
+					{
+						"name": "5 Coins/1 Credit",
+						"value": "0xB00"
+					},
+					{
+						"name": "6 Coins/1 Credit",
+						"value": "0xC00"
+					},
+					{
+						"name": "7 Coins/1 Credit",
+						"value": "0xD00"
+					},
+					{
+						"name": "8 Coins/1 Credit",
+						"value": "0xE00"
+					},
+					{
+						"name": "9 Coins/1 Credit",
+						"value": "0xF00"
+					}
+				]
+			},
+			{
+				"name": "Coin B",
+				"id": 6,
+				"type": "list",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 0,
+				"value": 0,
+				"mask": "0xFFFF0FFF",
+				"options": [
+					{
+						"name": "1 Coin/1 Credit",
+						"value": "0x0"
+					},
+					{
+						"name": "1 Coin/2 Credits",
+						"value": "0x1000"
+					},
+					{
+						"name": "1 Coin/3 Credits",
+						"value": "0x2000"
+					},
+					{
+						"name": "1 Coin/4 Credits",
+						"value": "0x3000"
+					},
+					{
+						"name": "1 Coin/5 Credits",
+						"value": "0x4000"
+					},
+					{
+						"name": "1 Coin/6 Credits",
+						"value": "0x5000"
+					},
+					{
+						"name": "1 Coin/7 Credits",
+						"value": "0x6000"
+					},
+					{
+						"name": "1 Coin/8 Credits",
+						"value": "0x7000"
+					},
+					{
+						"name": "2 Coins/1 Credit",
+						"value": "0x8000"
+					},
+					{
+						"name": "3 Coins/1 Credit",
+						"value": "0x9000"
+					},
+					{
+						"name": "4 Coins/1 Credit",
+						"value": "0xA000"
+					},
+					{
+						"name": "5 Coins/1 Credit",
+						"value": "0xB000"
+					},
+					{
+						"name": "6 Coins/1 Credit",
+						"value": "0xC000"
+					},
+					{
+						"name": "7 Coins/1 Credit",
+						"value": "0xD000"
+					},
+					{
+						"name": "8 Coins/1 Credit",
+						"value": "0xE000"
+					},
+					{
+						"name": "9 Coins/1 Credit",
+						"value": "0xF000"
+					}
+				]
+			},
+			{
+				"name": "Invulnerability (Cheat)",
+				"id": 7,
+				"type": "check",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 0,
+				"value": 65536,
+				"mask": "0xFFFEFFFF"
+			},
+			{
+				"name": "Rack Test",
+				"id": 8,
+				"type": "check",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 0,
+				"value": 131072,
+				"mask": "0xFFFDFFFF"
+			},
+			{
+				"name": "Freeze",
+				"id": 9,
+				"type": "check",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 0,
+				"value": 524288,
+				"mask": "0xFFF7FFFF"
+			},
+			{
+				"name": "Coinage Display",
+				"id": 10,
+				"type": "check",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 1,
+				"value": 0,
+				"value_off": 1048576,
+				"mask": "0xFFEFFFFF"
+			},
+			{
+				"name": "Difficulty",
+				"id": 11,
+				"type": "list",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 0,
+				"value": 0,
+				"mask": "0xFF9FFFFF",
+				"options": [
+					{
+						"name": "Normal",
+						"value": "0x0"
+					},
+					{
+						"name": "Easy",
+						"value": "0x200000"
+					},
+					{
+						"name": "Difficult",
+						"value": "0x400000"
+					},
+					{
+						"name": "Very Difficult",
+						"value": "0x600000"
+					}
+				]
+			},
+			{
+				"name": "Coinage",
+				"id": 12,
+				"type": "list",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 1,
+				"value": 0,
+				"mask": "0xFF7FFFFF",
+				"options": [
+					{
+						"name": "A only",
+						"value": "0x0"
+					},
+					{
+						"name": "A and B",
+						"value": "0x800000"
+					}
+				]
+			},
+			{
+				"name": "Default",
+				"id": 1015,
+				"type": "number_u32",
+				"enabled": false,
+				"persist": false,
+				"writeonly": true,
+				"address": "0xfa000000",
+				"defaultval": 12583040,
+				"value": 0
+			}
+		],
+		"messages": []
+	}
+}

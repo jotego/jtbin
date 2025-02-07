@@ -97,5 +97,5 @@
         <dip name="Service Mode" bits="18" ids="On,Off"/>
         <dip name="Stop Time" bits="19" ids="150,200"/>
     </switches>
-    <buttons names="button 1,button 2,-,Start,Coin,Core credits" default="A,B,Start,Select,-" count="2"/>
+    <buttons names="Move, Warp, Stop,Start,Coin,Core credits" default="A,B,X,Start,Select,-" count="3"/>
 </misterromdescription>

@@ -84,7 +84,7 @@
     <rom index="1">
         <part>05 28</part>
     </rom>
-    <switches page_id="1" page_name="Switches" base="16" default="ff,df">
+    <switches page_id="1" page_name="Switches" base="16" default="ff,1f">
         <!-- DSW1 -->
         <dip name="Starting Area" bits="0,1" ids="6,2,4,0"/>
         <dip name="Lives" bits="2,3" ids="5,2,4,3"/>

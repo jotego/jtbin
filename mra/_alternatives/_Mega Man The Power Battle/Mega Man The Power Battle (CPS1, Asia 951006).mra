@@ -82,6 +82,7 @@
         <part>00 80</part>
     </rom>
     <switches page_id="1" page_name="Switches" base="16" default="ff,fa,ff">
+        <!-- DSWA -->
         <!-- DSWB -->
         <dip name="Difficulty" bits="8,9" ids="Hardest,Hard,Normal,Easy"/>
         <dip name="Time" bits="10,11" ids="60,70,90,100"/>

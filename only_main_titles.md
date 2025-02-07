@@ -104,6 +104,8 @@
 | dd2     | Double Dragon II: The Revenge (World)                                        | ddragon2  |
 | exed    | Exed Exes                                                                    | exedexes  |
 | flane   | Fast Lane                                                                    | fastlane  |
+| flstory | Onna Sanshirou - Typhoon Gal                                                 | onna34ro  |
+| flstory | Rumba Lumber                                                                 | rumba     |
 | flstory | The FairyLand Story                                                          | flstory   |
 | fround  | The Final Round (version M)                                                  | fround    |
 | gaiden  | Shadow Warriors (World, set 1)                                               | shadoww   |
@@ -231,4 +233,4 @@
 | xmen    | X-Men (4 Players ver EBA)                                                    | xmen      |
 | yiear   | Yie Ar Kung-Fu (program code I)                                              | yiear     |
 
-66 cores, supporting 230 games
+66 cores, supporting 232 games

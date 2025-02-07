@@ -89,6 +89,9 @@
         <part>00 80</part>
     </rom>
     <switches page_id="1" page_name="Switches" base="16" default="ff,ff">
+        <!-- DSWA -->
+        <!-- DSWB -->
+        <!-- DSWC -->
         <dip name="Spinner" ids="on,off" bits="0"/>
     </switches>
     <buttons names="Rotate CCW,Shoot,Rotate CW,-,-,-,Start,Coin,Core credits" default="A,B,X,Start,Select,-" count="3"/>

@@ -5,6 +5,7 @@ The following arcade titles are compatible with this core. Generate
 the required .rom file using the mra tool (read below).
 Place the *.rom files in Assets/jttwin16/common
 
+Cue Brick (Japan) --> cuebrickj.rom
 Dark Adventure --> darkadv.rom
 Devil World --> devilw.rom
 Gradius II - GOFER no Yabou (Japan New Ver.) --> gradius2.rom

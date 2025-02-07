@@ -92,6 +92,7 @@
         <part>05 80</part>
     </rom>
     <switches page_id="1" page_name="Switches" base="16" default="ff,f4,bf">
+        <!-- DSWA -->
         <!-- DSWB -->
         <dip name="Difficulty" bits="8,10" ids="7,6,5,4,3,2,1,0"/>
         <dip name="Bonus" bits="11,12" ids="2000k only,1.200k 3.500k,600k 2.000k and 4500k,600k &amp; *1.400k"/>

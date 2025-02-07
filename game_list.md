@@ -605,6 +605,9 @@
 | exed    | Exed Exes                                                                                  | exedexes      |
 | exed    | Savage Bees                                                                                | savgbees      |
 | flane   | Fast Lane                                                                                  | fastlane      |
+| flstory | Onna Sanshirou - Typhoon Gal                                                               | onna34ro      |
+| flstory | Onna Sanshirou - Typhoon Gal (bootleg)                                                     | onna34roa     |
+| flstory | Rumba Lumber                                                                               | rumba         |
 | flstory | The FairyLand Story                                                                        | flstory       |
 | flstory | The FairyLand Story (earlier)                                                              | flstoryo      |
 | fround  | The Final Round (version L)                                                                | froundl       |
@@ -1070,4 +1073,4 @@
 | yiear   | Yie Ar Kung-Fu (program code G)                                                            | yiear2        |
 | yiear   | Yie Ar Kung-Fu (program code I)                                                            | yiear         |
 
-67 cores, supporting 1069 games
+67 cores, supporting 1072 games

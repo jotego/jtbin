@@ -111,6 +111,7 @@
         <part>00 80</part>
     </rom>
     <switches page_id="1" page_name="Switches" base="16" default="ff,fc,bf">
+        <!-- DSWA -->
         <!-- DSWB -->
         <dip name="Enemy&apos;s attack frequency" bits="8,10" ids="8,7,6,5,4,3,2,1"/>
         <dip name="Enemy&apos;s attack power" bits="11,13" ids="1,2,3,8,7,6,5,4"/>

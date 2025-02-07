@@ -7,17 +7,17 @@
 				"mappings": [
 					{
 						"id": 0,
-						"name": "button 0",
+						"name": "Move",
 						"key": "pad_btn_a"
 					},
 					{
 						"id": 1,
-						"name": "button 1",
+						"name": " Warp",
 						"key": "pad_btn_b"
 					},
 					{
 						"id": 2,
-						"name": "button 2",
+						"name": " Stop",
 						"key": "pad_btn_x"
 					}
 				]

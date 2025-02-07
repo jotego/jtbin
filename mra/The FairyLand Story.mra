@@ -32,6 +32,20 @@
     <rotation>horizontal</rotation>
     <region>World</region>
     <rom index="0" zip="flstory.zip" md5="None" asm_md5="3e3cec9a33ffd9a42ede1be59d32dfb5">
+        <!-- 
+		byte 0: PCB id
+		byte 1: 0 == same orientation as flstory
+		        1 == flipped both XY
+		        2 =  flipped only Y - to be tested -
+		byte 2: 0 == MCU enabled
+		        1 == MCU disabled
+		byte 3: 0 == coins are active low
+		        1 ==                  high
+		byte 4: 0 == GFX config register at $DF03
+		        1 == GFX config register at $DCE0
+		byte 5: 0 == use priority RAM
+		        1 == obj always have priority
+ -->
         <part>
             00 00 00 00 00 00 00 00
         </part>
@@ -74,7 +88,7 @@
     <rom index="1">
         <part>00 80</part>
     </rom>
-    <switches page_id="1" page_name="Switches" base="16" default="ec,00,ff">
+    <switches page_id="1" page_name="Switches" base="16" default="ec,00,f8">
         <!-- SWA -->
         <dip name="Bonus Life" bits="0,1" ids="30k 100k,30k 150k,50k 150k,70k 150k"/>
         <dip name="Free Play" bits="2" ids="On,Off"/>
@@ -89,7 +103,7 @@
         <dip name="Allow Continue" bits="19" ids="No,Yes"/>
         <dip name="Attract Animation" bits="20" ids="Off,On"/>
         <dip name="Leave Off" bits="21" ids="On,Off"/>
-        <dip name="Invulnerability (Cheat)" bits="22" ids="On,Off"/>
+        <dip name="Invulnerability" bits="22" ids="On,Off"/>
         <dip name="Coin Slots" bits="23" ids="1,2"/>
     </switches>
     <buttons names="Shot,Jump,Start,Coin,Core credits" default="A,B,Start,Select,-" count="2"/>
