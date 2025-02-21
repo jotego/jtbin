@@ -20,16 +20,16 @@
 -->
 
 <misterromdescription>
-    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://jotego/jtcores"/>
+    <rotation>vertical (cw)</rotation>
     <name>Dr. Toppel&apos;s Adventure (US)</name>
     <setname>drtoppelu</setname>
-    <rbf>jtkiwi</rbf>
     <mameversion>0261</mameversion>
     <year>1987</year>
     <manufacturer>Kaneko / Taito America Corporation</manufacturer>
     <players>2</players>
+    <rbf>jtkiwi</rbf>
     <joystick>8</joystick>
-    <rotation>vertical (cw)</rotation>
     <region>World</region>
     <rom index="0" zip="drtoppelu.zip|drtoppel.zip" md5="None" asm_md5="65f40accaa9ec3b34296a31679ca898e">
         <!-- bit 0 = MCU
@@ -89,14 +89,14 @@
         <part>01 66</part>
     </rom>
     <switches page_id="1" page_name="Switches" base="16" default="fe,ff">
-        <!-- DSWA -->
+        <DSWA/>
         <dip name="Cabinet" bits="0" ids="Upright,Cocktail"/>
         <dip name="Flip Screen" bits="1" ids="On,Off"/>
         <dip name="Service Mode" bits="2" ids="On,Off"/>
         <dip name="Demo Sounds" bits="3" ids="Off,On"/>
         <dip name="Coin A" bits="4,5" ids="2/3,2/1,1/2,1/1"/>
         <dip name="Coin B" bits="6,7" ids="2/3,2/1,1/2,1/1"/>
-        <!-- DSWB -->
+        <DSWB/>
         <dip name="Difficulty" bits="8,9" ids="Hardest,Hard,Easy,Medium"/>
         <dip name="Bonus Life" bits="10,11" ids="50 100 200 200k+,30k 100k,30k only,30 100 200 100k+"/>
         <dip name="Lives" bits="12,13" ids="5,4,2,3"/>

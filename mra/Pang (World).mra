@@ -20,16 +20,16 @@
 -->
 
 <misterromdescription>
-    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://jotego/jtcores"/>
+    <rotation>horizontal</rotation>
     <name>Pang (World)</name>
     <setname>pang</setname>
-    <rbf>jtpang</rbf>
     <mameversion>0261</mameversion>
     <year>1989</year>
     <manufacturer>Mitchell</manufacturer>
     <players>2</players>
+    <rbf>jtpang</rbf>
     <joystick>4</joystick>
-    <rotation>horizontal</rotation>
     <region>World</region>
     <rom index="0" zip="pang.zip" md5="None" asm_md5="c5e7ed559af41d80dc11cfd427b4daac">
         <part>

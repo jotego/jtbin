@@ -20,16 +20,16 @@
 -->
 
 <misterromdescription>
-    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://jotego/jtcores"/>
+    <rotation>horizontal</rotation>
     <name>Nemo (World 901130)</name>
     <setname>nemo</setname>
-    <rbf>jtcps1</rbf>
     <mameversion>0261</mameversion>
     <year>1990</year>
     <manufacturer>Capcom</manufacturer>
     <players>2</players>
+    <rbf>jtcps1</rbf>
     <joystick>8</joystick>
-    <rotation>horizontal</rotation>
     <region>World</region>
     <rom index="0" zip="nemo.zip" md5="None" asm_md5="96c82493c2ddea4093a27f9a1c187333">
         <part>
@@ -70,11 +70,11 @@
         <part>00 80</part>
     </rom>
     <switches page_id="1" page_name="Switches" base="16" default="ff,fc,bf">
-        <!-- DSWA -->
-        <!-- DSWB -->
+        <DSWA/>
+        <DSWB/>
         <dip name="Difficulty" bits="8,10" ids="7,6,5,4,3,2,1,0"/>
         <dip name="Life Bar" bits="11,12" ids="Minimum,Maximum,-,Medium"/>
-        <!-- DSWC -->
+        <DSWC/>
         <dip name="Lives" bits="16,17" ids="4,3,1,2"/>
         <dip name="Free Play" bits="18" ids="On,Off"/>
         <dip name="Freeze" bits="19" ids="On,Off"/>

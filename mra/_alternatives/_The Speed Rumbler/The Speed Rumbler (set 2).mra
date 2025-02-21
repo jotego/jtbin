@@ -20,16 +20,16 @@
 -->
 
 <misterromdescription>
-    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://jotego/jtcores"/>
+    <rotation>vertical (ccw)</rotation>
     <name>The Speed Rumbler (set 2)</name>
     <setname>srumbler2</setname>
-    <rbf>jtrumble</rbf>
     <mameversion>0261</mameversion>
     <year>1986</year>
     <manufacturer>Capcom</manufacturer>
     <players>2</players>
+    <rbf>jtrumble</rbf>
     <joystick>8</joystick>
-    <rotation>vertical (ccw)</rotation>
     <region>World</region>
     <rom index="0" zip="srumbler2.zip|srumbler.zip" md5="None" asm_md5="690ff40aeb3164bc29045fa8dd3eda6b">
         <!--  Header to identify the game
@@ -97,12 +97,12 @@
         <part>05 1C</part>
     </rom>
     <switches page_id="1" page_name="Switches" base="16" default="ff,73">
-        <!-- DSW1 -->
+        <DSW1/>
         <dip name="Coin B" bits="0,2" ids="4/1,3/1,2/1,1/6,1/4,1/3,1/2,1/1"/>
         <dip name="Coin A" bits="3,5" ids="4/1,3/1,2/1,1/6,1/4,1/3,1/2,1/1"/>
         <dip name="Service Mode" bits="6" ids="On,Off"/>
         <dip name="Flip Screen" bits="7" ids="On,Off"/>
-        <!-- DSW2 -->
+        <DSW2/>
         <dip name="Lives" bits="8,9" ids="7,5,4,3"/>
         <dip name="Cabinet" bits="10" ids="Upright,Cocktail"/>
         <dip name="Bonus" bits="11,12" ids="30k 80k,20k 80k,30k 80k &amp; *80k,20k 70k &amp; *70k"/>

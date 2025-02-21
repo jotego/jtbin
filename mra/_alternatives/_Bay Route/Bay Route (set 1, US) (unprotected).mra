@@ -20,16 +20,16 @@
 -->
 
 <misterromdescription>
-    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://jotego/jtcores"/>
+    <rotation>horizontal</rotation>
     <name>Bay Route (set 1, US) (unprotected)</name>
     <setname>bayroute1</setname>
-    <rbf>jts16b</rbf>
     <mameversion>0261</mameversion>
     <year>1989</year>
     <manufacturer>Sunsoft / Sega</manufacturer>
     <players>2</players>
+    <rbf>jts16b</rbf>
     <joystick>8</joystick>
-    <rotation>horizontal</rotation>
     <region>World</region>
     <rom index="0" zip="bayroute1.zip|bayroute.zip" md5="None" address="0x30000000" asm_md5="a69e865217f4a2578c1e610629a77439">
         <part>
@@ -103,15 +103,15 @@
         <part>00 8F</part>
     </rom>
     <switches page_id="1" page_name="Switches" base="16" default="ff,bd">
-        <!-- DSW1 -->
+        <DSW1/>
         <dip name="Coin A" bits="0,3" ids="Free Play or 1/1,1/1 2/3,1/1 4/5,1/1 5/6,2/1 4/3,2/1 5/3 6/4,2/3,4/1,3/1,2/1,1/6,1/5,1/4,1/3,1/2,1/1"/>
         <dip name="Coin B" bits="4,7" ids="Free Play or 1/1,1/1 2/3,1/1 4/5,1/1 5/6,2/1 4/3,2/1 5/3 6/4,2/3,4/1,3/1,2/1,1/6,1/5,1/4,1/3,1/2,1/1"/>
-        <!-- DSW2 -->
+        <DSW2/>
         <dip name="Allow Continue" bits="8" ids="Off,On"/>
         <dip name="Demo Sounds" bits="9" ids="On,Off"/>
         <dip name="Lives" bits="10,11" ids="Free Play,1,5,3"/>
         <dip name="Bonus" bits="12,13" ids="None,200k,150k,100k"/>
         <dip name="Difficulty" bits="14,15" ids="Hardest,Hard,Normal,Easy"/>
     </switches>
-    <buttons names="Shot,Jump,Select,-,Start,Coin,Core credits" default="A,B,X,Start,Select,-" count="3"/>
+    <buttons names="Shot,Jump,Select,-,-,Start,Coin,Core credits" default="A,B,X,Start,Select,-" count="3"/>
 </misterromdescription>

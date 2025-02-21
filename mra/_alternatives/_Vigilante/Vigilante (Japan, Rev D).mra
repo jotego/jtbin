@@ -20,16 +20,16 @@
 -->
 
 <misterromdescription>
-    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://jotego/jtcores"/>
+    <rotation>horizontal</rotation>
     <name>Vigilante (Japan, Rev D)</name>
     <setname>vigilantd</setname>
-    <rbf>jtvigil</rbf>
     <mameversion>0261</mameversion>
     <year>1988</year>
     <manufacturer>Irem</manufacturer>
     <players>2</players>
+    <rbf>jtvigil</rbf>
     <joystick>8</joystick>
-    <rotation>horizontal</rotation>
     <region>World</region>
     <rom index="0" zip="vigilantd.zip|vigilant.zip" md5="None" asm_md5="824e97759ad723d3cd5546c43c11f821">
         <!-- maincpu - starts at 0x0 - length 0x20000 (17 bits) -->
@@ -69,11 +69,11 @@
         <part>00 59</part>
     </rom>
     <switches page_id="1" page_name="Switches" base="16" default="ff,fd">
-        <!-- DSW1 -->
+        <DSW1/>
         <dip name="Lives" bits="0,1" ids="5,4,2,3"/>
         <dip name="Difficulty" bits="2" ids="Hard,Normal"/>
         <dip name="Decrease of Energy" bits="3" ids="Fast,Slow"/>
-        <!-- DSW2 -->
+        <DSW2/>
         <dip name="Flip Screen" bits="8" ids="On,Off"/>
         <dip name="Cabinet" bits="9" ids="Upright,Cocktail"/>
         <dip name="Coin Mode" bits="10" ids="Mode 2,Mode 1"/>

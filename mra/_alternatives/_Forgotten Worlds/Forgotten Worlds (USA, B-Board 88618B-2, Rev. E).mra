@@ -20,16 +20,16 @@
 -->
 
 <misterromdescription>
-    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://jotego/jtcores"/>
+    <rotation>horizontal</rotation>
     <name>Forgotten Worlds (USA, B-Board 88618B-2, Rev. E)</name>
     <setname>forgottnue</setname>
-    <rbf>jtcps1</rbf>
     <mameversion>0261</mameversion>
     <year>1988</year>
     <manufacturer>Capcom</manufacturer>
     <players>2</players>
+    <rbf>jtcps1</rbf>
     <joystick>8</joystick>
-    <rotation>horizontal</rotation>
     <region>World</region>
     <rom index="0" zip="forgottnue.zip|forgottn.zip" md5="None" asm_md5="d08b3d57deced2a4e2c6ee981e369bba">
         <part>
@@ -76,14 +76,14 @@
         <part>00 80</part>
     </rom>
     <switches page_id="1" page_name="Switches" base="16" default="ff,fc,ff">
-        <!-- DSWA -->
+        <DSWA/>
         <dip name="Demo Sounds" bits="6" ids="Off,On"/>
         <dip name="Flip Screen" bits="7" ids="On,Off"/>
-        <!-- DSWB -->
+        <DSWB/>
         <dip name="Difficulty" bits="8,10" ids="7,6,5,4,3,2,1,0"/>
         <dip name="Service Mode" bits="14" ids="On,Off"/>
         <dip name="Freeze" bits="15" ids="On,Off"/>
-        <!-- DSWC -->
+        <DSWC/>
         <dip name="PCB type" ids="88617A,89626A" bits="24"/>
     </switches>
     <buttons names="Shoot,Rotate left,Rotate right,-,-,-,Start,Coin,Core credits" default="A,B,X,Start,Select,-" count="3"/>

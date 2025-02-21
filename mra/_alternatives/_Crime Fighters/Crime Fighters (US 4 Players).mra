@@ -20,16 +20,16 @@
 -->
 
 <misterromdescription>
-    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://jotego/jtcores"/>
+    <rotation>horizontal</rotation>
     <name>Crime Fighters (US 4 Players)</name>
     <setname>crimfghtu</setname>
-    <rbf>jtaliens</rbf>
     <mameversion>0261</mameversion>
     <year>1989</year>
     <manufacturer>Konami</manufacturer>
     <players>4</players>
+    <rbf>jtaliens</rbf>
     <joystick>8</joystick>
-    <rotation>horizontal</rotation>
     <region>World</region>
     <rom index="0" zip="crimfghtu.zip|crimfght.zip" md5="None" address="0x30000000" asm_md5="eb0b57afbe65732cb4236f73674ad6d8">
         <!-- 
@@ -74,13 +74,13 @@
         <part>00 E6</part>
     </rom>
     <switches page_id="1" page_name="Switches" base="16" default="0f,5f,ff">
-        <!-- DSW1 -->
+        <DSW1/>
         <dip name="Coin A" bits="0,3" ids="Free Play,4/3,4/1,3/4,3/2,3/1,2/5,2/3,2/1,1/7,1/6,1/5,1/4,1/3,1/2,1/1"/>
         <dip name="Coin B (Unused)" bits="4,7" ids="Unused,4/3,4/1,3/4,3/2,3/1,2/5,2/3,2/1,1/7,1/6,1/5,1/4,1/3,1/2,1/1"/>
-        <!-- DSW2 -->
+        <DSW2/>
         <dip name="Difficulty" bits="13,14" ids="Very Difficult,Difficult,Normal,Easy"/>
         <dip name="Demo Sounds" bits="15" ids="On,Off"/>
-        <!-- DSW3 -->
+        <DSW3/>
         <dip name="Flip Screen" bits="16" ids="On,Off"/>
         <dip name="Service Mode" bits="18" ids="On,Off"/>
     </switches>

@@ -20,16 +20,16 @@
 -->
 
 <misterromdescription>
-    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://jotego/jtcores"/>
+    <rotation>horizontal</rotation>
     <name>Willow (USA Old Ver.)</name>
     <setname>willowuo</setname>
-    <rbf>jtcps1</rbf>
     <mameversion>0261</mameversion>
     <year>1989</year>
     <manufacturer>Capcom</manufacturer>
     <players>2</players>
+    <rbf>jtcps1</rbf>
     <joystick>8</joystick>
-    <rotation>horizontal</rotation>
     <region>World</region>
     <rom index="0" zip="willowuo.zip|willow.zip" md5="None" asm_md5="f44bb34ad35e743c894a070f2ecbc3f3">
         <part>
@@ -80,13 +80,13 @@
         <part>00 80</part>
     </rom>
     <switches page_id="1" page_name="Switches" base="16" default="ff,ff,fa">
-        <!-- DSWA -->
+        <DSWA/>
         <dip name="Cabinet" bits="6,7" ids="Cocktail,-,Upright 2 Players,Upright 1 Player"/>
-        <!-- DSWB -->
+        <DSWB/>
         <dip name="Difficulty" bits="8,10" ids="8,7,6,5,1,2,3,4"/>
         <dip name="Nando Speed" bits="11,12" ids="Very Fast,Fast,Slow,Normal"/>
         <dip name="Stage Magic Continue" bits="15" ids="On,Off"/>
-        <!-- DSWC -->
+        <DSWC/>
         <dip name="Lives" bits="16,17" ids="4,3,1,2"/>
         <dip name="Vitality" bits="18,19" ids="2,5,4,3"/>
         <dip name="Flip Screen" bits="20" ids="On,Off"/>

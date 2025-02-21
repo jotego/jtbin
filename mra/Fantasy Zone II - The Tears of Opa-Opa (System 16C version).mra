@@ -20,16 +20,16 @@
 -->
 
 <misterromdescription>
-    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://jotego/jtcores"/>
+    <rotation>horizontal</rotation>
     <name>Fantasy Zone II - The Tears of Opa-Opa (System 16C version)</name>
     <setname>fantzn2x</setname>
-    <rbf>jts16b</rbf>
     <mameversion>0261</mameversion>
     <year>2008</year>
     <manufacturer>Sega / M2</manufacturer>
     <players>2</players>
+    <rbf>jts16b</rbf>
     <joystick>8</joystick>
-    <rotation>horizontal</rotation>
     <region>World</region>
     <rom index="0" zip="fantzn2x.zip" md5="None" address="0x30000000" asm_md5="ac119bf42d19e581a31ecbf3e60418fc">
         <part>
@@ -108,10 +108,10 @@
         <part>00 80</part>
     </rom>
     <switches page_id="1" page_name="Switches" base="16" default="ff,ff">
-        <!-- DSW1 -->
-        <!-- DSW2 -->
+        <DSW1/>
+        <DSW2/>
         <dip name="Lives" bits="10,11" ids="240,4,2,3"/>
         <dip name="Difficulty" bits="14,15" ids="Hardest,Hard,Easy,Normal"/>
     </switches>
-    <buttons names="Shot,Bomb,-,-,Start,Coin,Core credits" default="A,B,Start,Select,-" count="2"/>
+    <buttons names="Shot,Bomb,-,-,-,Start,Coin,Core credits" default="A,B,Start,Select,-" count="2"/>
 </misterromdescription>

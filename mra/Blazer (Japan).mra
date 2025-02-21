@@ -20,16 +20,16 @@
 -->
 
 <misterromdescription>
-    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://jotego/jtcores"/>
+    <rotation>vertical (cw)</rotation>
     <name>Blazer (Japan)</name>
     <setname>blazer</setname>
-    <rbf>jtshouse</rbf>
     <mameversion>0261</mameversion>
     <year>1987</year>
     <manufacturer>Namco</manufacturer>
     <players>2</players>
+    <rbf>jtshouse</rbf>
     <joystick>8</joystick>
-    <rotation>vertical (cw)</rotation>
     <region>World</region>
     <rom index="0" zip="blazer.zip" md5="None" address="0x30000000" asm_md5="e45c2b300a32abe7f6f6986bc22cf7a2">
         <!-- Byte 0: bit 0-1: protection type, bit 4-5: control type (0 - normal, 1 - faceoff 4p, 2 - berabohm, 3 - quester), bit 6: 64/128kB Program ROMs
@@ -109,7 +109,7 @@ Byte 7: addr for upper nibble read
         <part>01 69</part>
     </rom>
     <switches page_id="1" page_name="Switches" base="16" default="ff,ff">
-        <!-- DIPSW -->
+        <DIPSW/>
         <dip name="Service Mode" bits="0" ids="On,Off"/>
         <dip name="*Sound fix" ids="On,Off" bits="8"/>
     </switches>

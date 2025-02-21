@@ -20,16 +20,16 @@
 -->
 
 <misterromdescription>
-    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://jotego/jtcores"/>
+    <rotation>horizontal</rotation>
     <name>Dungeons &amp; Dragons: Tower of Doom (Asia 940412)</name>
     <setname>ddtoda</setname>
-    <rbf>jtcps2</rbf>
     <mameversion>0261</mameversion>
     <year>1993</year>
     <manufacturer>Capcom</manufacturer>
     <players>4</players>
+    <rbf>jtcps2</rbf>
     <joystick>8</joystick>
-    <rotation>horizontal</rotation>
     <region>World</region>
     <rom index="0" zip="ddtoda.zip|ddtod.zip|qsound.zip" md5="None" address="0x30000000" asm_md5="a6b48204a8e3d3b786a8d32f5af4b975">
         <part>
@@ -90,9 +90,9 @@
         <part>00 80</part>
     </rom>
     <switches page_id="1" page_name="Switches" base="16" default="ff,ff">
-        <!-- DSWA -->
-        <!-- DSWB -->
-        <!-- DSWC -->
+        <DSWA/>
+        <DSWB/>
+        <DSWC/>
     </switches>
     <buttons names="Attack,Jump,Item,Select,-,-,Start,Coin,Core credits" default="A,B,X,Y,Start,Select,-" count="4"/>
 </misterromdescription>

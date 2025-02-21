@@ -20,16 +20,16 @@
 -->
 
 <misterromdescription>
-    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://jotego/jtcores"/>
+    <rotation>vertical (ccw)</rotation>
     <name>Senjou no Ookami II (Japan 900302)</name>
     <setname>mercsj</setname>
-    <rbf>jtcps1</rbf>
     <mameversion>0261</mameversion>
     <year>1990</year>
     <manufacturer>Capcom</manufacturer>
     <players>3</players>
+    <rbf>jtcps1</rbf>
     <joystick>8</joystick>
-    <rotation>vertical (ccw)</rotation>
     <region>World</region>
     <rom index="0" zip="mercsj.zip|mercs.zip" md5="None" asm_md5="268b3afe8b4c94423970401d372b2383">
         <part>
@@ -102,11 +102,11 @@
         <part>05 80</part>
     </rom>
     <switches page_id="1" page_name="Switches" base="16" default="ff,fc,9f">
-        <!-- DSWA -->
-        <!-- DSWB -->
+        <DSWA/>
+        <DSWB/>
         <dip name="Difficulty" bits="8,10" ids="7,6,5,4,3,2,1,0"/>
         <dip name="Play Mode" bits="12" ids="2 Players,3 Players"/>
-        <!-- DSWC -->
+        <DSWC/>
         <dip name="Freeze" bits="19" ids="On,Off"/>
         <dip name="Flip Screen" bits="20" ids="On,Off"/>
         <dip name="Demo Sounds" bits="21" ids="On,Off"/>

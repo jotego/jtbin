@@ -20,16 +20,16 @@
 -->
 
 <misterromdescription>
-    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://jotego/jtcores"/>
+    <rotation>vertical (ccw)</rotation>
     <name>Commando (US set 2)</name>
     <setname>commandou2</setname>
-    <rbf>jtcommnd</rbf>
     <mameversion>0261</mameversion>
     <year>1985</year>
     <manufacturer>Capcom (Data East USA license)</manufacturer>
     <players>2</players>
+    <rbf>jtcommnd</rbf>
     <joystick>8</joystick>
-    <rotation>vertical (ccw)</rotation>
     <region>World</region>
     <rom index="0" zip="commandou2.zip|commando.zip" md5="None" asm_md5="66183e93b466fab74c44c48fe15abcbf">
         <!-- maincpu - starts at 0x0 - length 0xC000 (16 bits) -->
@@ -85,12 +85,12 @@
         <part>05 28</part>
     </rom>
     <switches page_id="1" page_name="Switches" base="16" default="ff,1f">
-        <!-- DSW1 -->
+        <DSW1/>
         <dip name="Starting Area" bits="0,1" ids="6,2,4,0"/>
         <dip name="Lives" bits="2,3" ids="5,2,4,3"/>
         <dip name="Coin B" bits="4,5" ids="4/1,2/1,3/1,1/1"/>
         <dip name="Coin A" bits="6,7" ids="2/1,1/2,1/3,1/1"/>
-        <!-- DSW2 -->
+        <DSW2/>
         <dip name="Bonus Life" bits="8,10" ids="None,20K 70K+,30K 80K+,10K 60K+,40K 100K+,20K 60K+,30K 70K+,10K 50K+"/>
         <dip name="Demo Sounds" bits="11" ids="Off,On"/>
         <dip name="Difficulty" bits="12" ids="Difficult,Normal"/>

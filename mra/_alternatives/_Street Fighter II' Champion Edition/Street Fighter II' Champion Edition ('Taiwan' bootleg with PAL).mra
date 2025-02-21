@@ -20,16 +20,16 @@
 -->
 
 <misterromdescription>
-    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://jotego/jtcores"/>
+    <rotation>horizontal</rotation>
     <name>Street Fighter II&apos;: Champion Edition (&apos;Taiwan&apos; bootleg with PAL)</name>
     <setname>sf2cebltw</setname>
-    <rbf>jtcps1</rbf>
     <mameversion>0261</mameversion>
     <year>1992</year>
     <manufacturer>bootleg</manufacturer>
     <players>2</players>
+    <rbf>jtcps1</rbf>
     <joystick>8</joystick>
-    <rotation>horizontal</rotation>
     <region>Taiwan</region>
     <rom index="0" zip="sf2cebltw.zip|sf2ce.zip" md5="None" asm_md5="ac54c464ecff89cdfa581e6c7f1cfc9d">
         <part>
@@ -90,10 +90,10 @@
         <part>00 80</part>
     </rom>
     <switches page_id="1" page_name="Switches" base="16" default="ff,fc,9f">
-        <!-- DSWA -->
-        <!-- DSWB -->
+        <DSWA/>
+        <DSWB/>
         <dip name="Difficulty" bits="8,10" ids="7,6,5,4,3,2,1,0"/>
-        <!-- DSWC -->
+        <DSWC/>
         <dip name="Turbo Mode" bits="16" ids="On,Off"/>
         <dip name="Free Play" bits="18" ids="On,Off"/>
         <dip name="Freeze" bits="19" ids="On,Off"/>

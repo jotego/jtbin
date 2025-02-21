@@ -20,16 +20,16 @@
 -->
 
 <misterromdescription>
-    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://jotego/jtcores"/>
+    <rotation>horizontal</rotation>
     <name>X-Men (4 Players ver UEB)</name>
     <setname>xmenua</setname>
-    <rbf>jtxmen</rbf>
     <mameversion>0261</mameversion>
     <year>1992</year>
     <manufacturer>Konami</manufacturer>
     <players>4</players>
+    <rbf>jtxmen</rbf>
     <joystick>8</joystick>
-    <rotation>horizontal</rotation>
     <region>World</region>
     <rom index="0" zip="xmenua.zip|xmen.zip" md5="None" asm_md5="b15de38acc1feae310dbd1c7bec39ac3">
         <!-- Offsets for each ROM region. Byte 15 = game selection. -->

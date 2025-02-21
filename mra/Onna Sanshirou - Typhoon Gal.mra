@@ -20,49 +20,63 @@
 -->
 
 <misterromdescription>
-    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://jotego/jtcores"/>
+    <rotation>horizontal</rotation>
     <name>Onna Sanshirou - Typhoon Gal</name>
     <setname>onna34ro</setname>
-    <rbf>jtflstory</rbf>
     <mameversion>0261</mameversion>
     <year>1985</year>
     <manufacturer>Taito</manufacturer>
     <players>2</players>
+    <rbf>jtflstory</rbf>
     <joystick>8</joystick>
-    <rotation>horizontal</rotation>
     <region>World</region>
-    <rom index="0" zip="onna34ro.zip" md5="None" asm_md5="fa46682f92a7591cce0a162f0606203e">
+    <rom index="0" zip="onna34ro.zip" md5="None" asm_md5="c3d96eb1755499825a114f5da6c5ecd7">
         <!-- 
 		byte 0: PCB id
 		byte 1: 0 == same orientation as flstory
 		        1 == flipped both XY
 		        2 =  flipped only Y - to be tested -
+		        4 =  use dipsw[24] for screen flip
 		byte 2: 0 == MCU enabled
-		        1 == MCU disabled
+		        1 ==     disabled
+		       0? == sub Z80 disabled
+		       1? ==         enabled
+		      1?? == mirror ROM bits in main CPU
+		    01??? == 2 ROM banks
+		    1???? == 4 ROM banks
 		byte 3: 0 == coins are active low
 		        1 ==                  high
+		    1???? == unused IO bits set to 1
 		byte 4: 0 == GFX config register at $DF03
 		        1 == GFX config register at $DCE0
 		byte 5: 0 == use priority RAM
 		        1 == obj always have priority
+		byte 6: 0 == 4-bit palette for background
+		        1 == 3-bit palette
+		       0? == 2 buttons
+		       1? == 6 buttons
+		      0?? == 4 banks for sprites
+		      1?? == 2 banks
  -->
         <part>
             01 01 00 00 00 00 00 00
         </part>
-        <!-- maincpu - starts at 0x0 - length 0xC000 (16 bits) -->
+        <!-- maincpu - starts at 0x0 - length 0x30000 (18 bits) -->
         <part name="a52-01-1.40c" crc="ffddcb02"/>
         <part name="a52-02-1.41c" crc="da97150d"/>
         <part name="a52-03-1.42c" crc="b9749a53"/>
+        <part repeat="0x24000"> FF</part>
         <!-- JTFRAME_BA1_START -->
-        <!-- audiocpu - starts at 0xC000 - length 0x10000 (16 bits) -->
+        <!-- audiocpu - starts at 0x30000 - length 0xC000 (16 bits) -->
         <part name="a52-12.08s" crc="28f48096"/>
         <part name="a52-13.09s" crc="4d3b16f3"/>
         <part name="a52-14.10s" crc="90a6f4e8"/>
         <part name="a52-15.37s" crc="5afc21d0"/>
         <part name="a52-16.38s" crc="ccf42aee"/>
-        <part repeat="0x6000"> FF</part>
+        <part repeat="0x2000"> FF</part>
         <!-- JTFRAME_BA2_START -->
-        <!-- gfx1 - starts at 0x1C000 - length 0x20000 (17 bits) -->
+        <!-- gfx1 - starts at 0x3C000 - length 0x20000 (17 bits) -->
         <interleave output="16">
             <part name="a52-04.11v" crc="5b126294" map="01"/>
             <part name="a52-05.35v" crc="a1a99588" map="10"/>
@@ -80,9 +94,9 @@
             <part name="a52-11.32v" crc="d1dda6b3" map="10"/>
         </interleave>
         <!-- JTFRAME_PROM_START -->
-        <!-- bmcu:mcu - starts at 0x3C000 - length 0x800 (11 bits) -->
+        <!-- bmcu:mcu - starts at 0x5C000 - length 0x800 (11 bits) -->
         <part name="a52_17.54c" crc="0ab2612e"/>
-        <!-- Total 0x3C800 bytes - 242 kBytes -->
+        <!-- Total 0x5C800 bytes - 370 kBytes -->
     </rom>
     <rom index="17" zip="jtbeta.zip" md5="None" asm_md5="94c481938b4574732df7731a43c372e9">
         <part name="beta.bin" crc="d81be000"/>
@@ -92,16 +106,16 @@
         <part>00 80</part>
     </rom>
     <switches page_id="1" page_name="Switches" base="16" default="c0,00,80">
-        <!-- SWA -->
+        <SWA/>
         <dip name="Bonus Life" bits="0,1" ids="200k 200k,200k 300k,100k 200k,200k 100k"/>
         <dip name="Free Play" bits="2" ids="Off,On"/>
         <dip name="Lives" bits="3,4" ids="3,2,1,Endless"/>
         <dip name="Flip Screen" bits="6" ids="On,Off"/>
         <dip name="Cabinet" bits="7" ids="Cocktail,Upright"/>
-        <!-- SWB -->
+        <SWB/>
         <dip name="Coin A" bits="8,11" ids="1/1,1/2,1/3,1/4,1/5,1/6,1/7,1/8,2/1,3/1,4/1,5/1,6/1,7/1,8/1,9/1"/>
         <dip name="Coin B" bits="12,15" ids="1/1,1/2,1/3,1/4,1/5,1/6,1/7,1/8,2/1,3/1,4/1,5/1,6/1,7/1,8/1,9/1"/>
-        <!-- SWC -->
+        <SWC/>
         <dip name="Invulnerability" bits="16" ids="Off,On"/>
         <dip name="Rack Test" bits="17" ids="Off,On"/>
         <dip name="Freeze" bits="19" ids="Off,On"/>
@@ -109,5 +123,5 @@
         <dip name="Difficulty" bits="21,22" ids="Normal,Easy,Difficult,Very Difficult"/>
         <dip name="Coinage" bits="23" ids="A only,A and B"/>
     </switches>
-    <buttons names="button 1,button 2,Start,Coin,Core credits" default="A,B,Start,Select,-" count="2"/>
+    <buttons names="Hit,Throw,-,-,-,-,Start,Coin,Core credits" default="A,B,Start,Select,-" count="2"/>
 </misterromdescription>

@@ -20,16 +20,16 @@
 -->
 
 <misterromdescription>
-    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://jotego/jtcores"/>
+    <rotation>horizontal</rotation>
     <name>Turbo Out Run (Japan, Out Run upgrade) (FD1094 317-0117)</name>
     <setname>toutrunj</setname>
-    <rbf>jtoutrun</rbf>
     <mameversion>0261</mameversion>
     <year>1989</year>
     <manufacturer>Sega</manufacturer>
     <players>1</players>
+    <rbf>jtoutrun</rbf>
     <joystick/>
-    <rotation>horizontal</rotation>
     <region>World</region>
     <rom index="0" zip="toutrunj.zip|toutrun.zip" md5="None" asm_md5="c56a6c6fb6f293a881d8f508079a2c2c">
         <part>
@@ -115,10 +115,10 @@
         <part>00 A9</part>
     </rom>
     <switches page_id="1" page_name="Switches" base="24" default="ff,d9">
-        <!-- COINAGE -->
+        <COINAGE/>
         <dip name="Coin A" bits="0,3" ids="Free Play or 1/1,1/1 2/3,1/1 4/5,1/1 5/6,2/1 4/3,2/1 5/3 6/4,2/3,4/1,3/1,2/1,1/6,1/5,1/4,1/3,1/2,1/1"/>
         <dip name="Coin B" bits="4,7" ids="Free Play or 1/1,1/1 2/3,1/1 4/5,1/1 5/6,2/1 4/3,2/1 5/3 6/4,2/3,4/1,3/1,2/1,1/6,1/5,1/4,1/3,1/2,1/1"/>
-        <!-- DSW -->
+        <DSW/>
         <dip name="Cabinet" bits="8,9" ids="Cockpit,Mini Up,Cockpit Conversion,Moving"/>
         <dip name="Demo Sounds" bits="10" ids="On,Off"/>
         <dip name="Turbo" bits="11" ids="Use Start Button,Use Turbo Shifter"/>

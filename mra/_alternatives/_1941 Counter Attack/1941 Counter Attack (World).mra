@@ -20,16 +20,16 @@
 -->
 
 <misterromdescription>
-    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://jotego/jtcores"/>
+    <rotation>vertical (ccw)</rotation>
     <name>1941: Counter Attack (World)</name>
     <setname>1941r1</setname>
-    <rbf>jtcps1</rbf>
     <mameversion>0261</mameversion>
     <year>1990</year>
     <manufacturer>Capcom</manufacturer>
     <players>2</players>
+    <rbf>jtcps1</rbf>
     <joystick>8</joystick>
-    <rotation>vertical (ccw)</rotation>
     <region>World</region>
     <rom index="0" zip="1941r1.zip|1941.zip" md5="None" asm_md5="46c46faf9476eaba782a0053e5b0a830">
         <part>
@@ -71,13 +71,13 @@
         <part>05 80</part>
     </rom>
     <switches page_id="1" page_name="Switches" base="16" default="ff,fc,9f">
-        <!-- DSWA -->
-        <!-- DSWB -->
+        <DSWA/>
+        <DSWB/>
         <dip name="Difficulty" bits="8,10" ids="7,6,5,4,3,2,1,0"/>
         <dip name="Level Up Timer" bits="11,12" ids="More Quickly,Quickly,Slowly,More Slowly"/>
         <dip name="Bullet&apos;s Speed" bits="13,14" ids="Very Fast,Fast,Slow,Very Slow"/>
         <dip name="Initial Vitality" bits="15" ids="4 Bars,3 Bars"/>
-        <!-- DSWC -->
+        <DSWC/>
         <dip name="Throttle Game Speed" bits="16" ids="Off,On"/>
         <dip name="Free Play" bits="18" ids="On,Off"/>
         <dip name="Freeze" bits="19" ids="On,Off"/>
@@ -85,7 +85,7 @@
         <dip name="Demo Sounds" bits="21" ids="On,Off"/>
         <dip name="Allow Continue" bits="22" ids="Yes,No"/>
         <dip name="Game Mode" bits="23" ids="Test,Game"/>
-        <!-- IN0 -->
+        <IN0/>
         <dip name="Service Mode" bits="30" ids="On,Off"/>
         <dip name="PCB type" ids="88617A,89626A" bits="24"/>
     </switches>

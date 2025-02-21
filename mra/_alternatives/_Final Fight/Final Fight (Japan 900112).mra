@@ -20,16 +20,16 @@
 -->
 
 <misterromdescription>
-    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://jotego/jtcores"/>
+    <rotation>horizontal</rotation>
     <name>Final Fight (Japan 900112)</name>
     <setname>ffightj1</setname>
-    <rbf>jtcps1</rbf>
     <mameversion>0261</mameversion>
     <year>1989</year>
     <manufacturer>Capcom</manufacturer>
     <players>2</players>
+    <rbf>jtcps1</rbf>
     <joystick>8</joystick>
-    <rotation>horizontal</rotation>
     <region>World</region>
     <rom index="0" zip="ffightj1.zip|ffight.zip" md5="None" asm_md5="9b0f5a0f99e7d52397fa928cc94b46a0">
         <part>
@@ -91,12 +91,12 @@
         <part>00 80</part>
     </rom>
     <switches page_id="1" page_name="Switches" base="16" default="ff,f4,9f">
-        <!-- DSWA -->
-        <!-- DSWB -->
+        <DSWA/>
+        <DSWB/>
         <dip name="Difficulty Level 1" bits="8,10" ids="Hardest,Harder,Hard,Medium,Normal,Easy,Easier,Easiest"/>
         <dip name="Difficulty Level 2" bits="11,12" ids="Hardest,Hard,Normal,Easy"/>
         <dip name="Bonus" bits="13,14" ids="None,100k &amp; *200k,200k,100k"/>
-        <!-- DSWC -->
+        <DSWC/>
         <dip name="Lives" bits="16,17" ids="1,4,3,2"/>
         <dip name="Free Play" bits="18" ids="On,Off"/>
         <dip name="Freeze" bits="19" ids="On,Off"/>
@@ -104,7 +104,7 @@
         <dip name="Demo Sounds" bits="21" ids="On,Off"/>
         <dip name="Allow Continue" bits="22" ids="Yes,No"/>
         <dip name="Game Mode" bits="23" ids="Test,Game"/>
-        <!-- IN0 -->
+        <IN0/>
         <dip name="Service Mode" bits="30" ids="On,Off"/>
         <dip name="PCB type" ids="88617A,89626A" bits="24"/>
     </switches>

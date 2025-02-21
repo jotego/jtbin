@@ -20,16 +20,16 @@
 -->
 
 <misterromdescription>
-    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://jotego/jtcores"/>
+    <rotation>horizontal</rotation>
     <name>Out Run (deluxe sitdown) (Enhanced Edition v2.0.3)</name>
     <setname>outrundxeh</setname>
-    <rbf>jtoutrun</rbf>
     <mameversion>0261</mameversion>
     <year>2020</year>
     <manufacturer>hack (Chris White)</manufacturer>
     <players>1</players>
+    <rbf>jtoutrun</rbf>
     <joystick/>
-    <rotation>horizontal</rotation>
     <region>World</region>
     <rom index="0" zip="outrundxeh.zip|outrun.zip" md5="None" asm_md5="8db152c7602a7d50db42be780f1a83e7">
         <part>
@@ -161,10 +161,10 @@
         <part>00 EC</part>
     </rom>
     <switches page_id="1" page_name="Switches" base="24" default="ff,fd">
-        <!-- COINAGE -->
+        <COINAGE/>
         <dip name="Coin A" bits="0,3" ids="Free Play or 1/1,1/1 2/3,1/1 4/5,1/1 5/6,2/1 4/3,2/1 5/3 6/4,2/3,4/1,3/1,2/1,1/6,1/5,1/4,1/3,1/2,1/1"/>
         <dip name="Coin B" bits="4,7" ids="Free Play or 1/1,1/1 2/3,1/1 4/5,1/1 5/6,2/1 4/3,2/1 5/3 6/4,2/3,4/1,3/1,2/1,1/6,1/5,1/4,1/3,1/2,1/1"/>
-        <!-- DSW -->
+        <DSW/>
         <dip name="Cabinet" bits="8" ids="Not Moving,Moving"/>
         <dip name="Demo Sounds" bits="9" ids="On,Off"/>
         <dip name="Speed Indicator" bits="11" ids="MPH,km/h"/>

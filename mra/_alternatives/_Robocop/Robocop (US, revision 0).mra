@@ -20,16 +20,16 @@
 -->
 
 <misterromdescription>
-    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://jotego/jtcores"/>
+    <rotation>horizontal</rotation>
     <name>Robocop (US, revision 0)</name>
     <setname>robocopu0</setname>
-    <rbf>jtcop</rbf>
     <mameversion>0261</mameversion>
     <year>1988</year>
     <manufacturer>Data East USA</manufacturer>
     <players>2</players>
+    <rbf>jtcop</rbf>
     <joystick>8</joystick>
-    <rotation>horizontal</rotation>
     <region>World</region>
     <rom index="0" zip="robocopu0.zip|robocop.zip" md5="None" asm_md5="07606e2886061ac90a52d616c346a104">
         <!-- maincpu - starts at 0x0 - length 0x80000 (19 bits) -->
@@ -103,8 +103,8 @@
         <part repeat="0x1E00"> FF</part>
         <part name="en_24.a2" crc="b8e2ca98"/>
         <part repeat="0x16000"> FF</part>
-        <!-- PROM_START -->
         <!-- JTFRAME_PROM_START -->
+        <!-- PROM_START -->
         <!-- proms - starts at 0x228000 - length 0x600 (11 bits) -->
         <part name="mb7116e_a-1.12c" crc="86e775f8"/>
         <part name="mb7122e_a-2.17e" crc="a5cda23e"/>
@@ -114,7 +114,7 @@
         <part>00 FF</part>
     </rom>
     <switches page_id="1" page_name="Switches" base="17" default="7f,ff">
-        <!-- DSW -->
+        <DSW/>
         <dip name="Coin A" bits="0,1" ids="3/1,2/1,1/2,1/1"/>
         <dip name="Coin B" bits="2,3" ids="3/1,2/1,1/2,1/1"/>
         <dip name="Demo Sounds" bits="5" ids="Off,On"/>

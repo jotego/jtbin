@@ -10,6 +10,7 @@ The FairyLand Story (earlier) --> flstoryo.rom
 Onna Sanshirou - Typhoon Gal --> onna34ro.rom
 Onna Sanshirou - Typhoon Gal (bootleg) --> onna34roa.rom
 Rumba Lumber --> rumba.rom
+Victorious Nine --> victnine.rom
 
 
 These files are generated using the mra tool in:

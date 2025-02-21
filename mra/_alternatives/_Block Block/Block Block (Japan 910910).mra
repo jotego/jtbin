@@ -20,16 +20,16 @@
 -->
 
 <misterromdescription>
-    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://jotego/jtcores"/>
+    <rotation>vertical (ccw)</rotation>
     <name>Block Block (Japan 910910)</name>
     <setname>blockj</setname>
-    <rbf>jtpang</rbf>
     <mameversion>0261</mameversion>
     <year>1991</year>
     <manufacturer>Capcom</manufacturer>
     <players>2</players>
+    <rbf>jtpang</rbf>
     <joystick/>
-    <rotation>vertical (ccw)</rotation>
     <region>World</region>
     <rom index="0" zip="blockj.zip|block.zip" md5="None" asm_md5="efce4cc299fe5a5339917bd839bede6e">
         <part>

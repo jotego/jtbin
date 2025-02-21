@@ -20,18 +20,22 @@
 -->
 
 <misterromdescription>
-    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://jotego/jtcores"/>
+    <rotation>horizontal</rotation>
     <name>Street Fighter (Japan) (protected)</name>
     <setname>sfj</setname>
-    <rbf>jtsf</rbf>
     <mameversion>0261</mameversion>
     <year>1987</year>
     <manufacturer>Capcom</manufacturer>
     <players>2</players>
+    <rbf>jtsf</rbf>
     <joystick>8</joystick>
-    <rotation>horizontal</rotation>
     <region>World</region>
-    <rom index="0" zip="sfj.zip|sf.zip" md5="None" asm_md5="5d0553e66a1c4c25f624ff7d0325709f">
+    <rom index="0" zip="sfj.zip|sf.zip" md5="None" asm_md5="db2e2d5203595c3188e5b64e830e4711">
+        <!-- byte 1, bit 0: high for Japanese cabinet and equivalents -->
+        <part>
+            00 01 00 00 00 00 00 00
+        </part>
         <!-- maincpu - starts at 0x0 - length 0x60000 (19 bits) -->
         <interleave output="16">
             <part name="sf-22.2c" crc="d3cbd09e" map="01"/>
@@ -134,7 +138,7 @@
         <part>00 FF</part>
     </rom>
     <switches page_id="1" page_name="Switches" base="16" default="ff,df,ff,ff">
-        <!-- DSW1 -->
+        <DSW1/>
         <dip name="Coin A" bits="0,2" ids="4/1,3/1,2/1,1/6,1/4,1/3,1/2,1/1"/>
         <dip name="Coin B" bits="3,5" ids="4/1,3/1,2/1,1/6,1/4,1/3,1/2,1/1"/>
         <dip name="Flip Screen" bits="8" ids="On,Off"/>
@@ -143,7 +147,7 @@
         <dip name="Demo Sounds" bits="13" ids="On,Off"/>
         <dip name="Freeze" bits="14" ids="On,Off"/>
         <dip name="Service Mode" bits="15" ids="On,Off"/>
-        <!-- DSW2 -->
+        <DSW2/>
         <dip name="Continue" bits="16,18" ids="-,-,None,1st Stage Maximum,2nd Stage Maximum,3rd Stage Maximum,4th Stage Maximum,5th Stage Maximum"/>
         <dip name="Time" bits="19,20" ids="250,200,150,100"/>
         <dip name="Difficulty" bits="21,22" ids="Very Difficult,Difficult,Easy,Normal"/>

@@ -20,16 +20,16 @@
 -->
 
 <misterromdescription>
-    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://jotego/jtcores"/>
+    <rotation>horizontal</rotation>
     <name>Tenchi wo Kurau II: Sekiheki no Tatakai (CPS Changer, Japan 921031)</name>
     <setname>wofch</setname>
-    <rbf>jtcps15</rbf>
     <mameversion>0261</mameversion>
     <year>1994</year>
     <manufacturer>Capcom</manufacturer>
     <players>2</players>
+    <rbf>jtcps15</rbf>
     <joystick>8</joystick>
-    <rotation>horizontal</rotation>
     <region>Japan</region>
     <rom index="0" zip="wofch.zip|qsound.zip" md5="None" asm_md5="48b77e2085ef0341442f2629dda27346">
         <part>
@@ -74,9 +74,9 @@
         <part>00 80</part>
     </rom>
     <switches page_id="1" page_name="Switches" base="16" default="ff,ff">
-        <!-- DSWA -->
-        <!-- DSWB -->
-        <!-- DSWC -->
+        <DSWA/>
+        <DSWB/>
+        <DSWC/>
     </switches>
     <buttons names="Attack,Jump,-,-,-,-,Start,Coin,Core credits" default="A,B,Start,Select,-" count="2"/>
 </misterromdescription>

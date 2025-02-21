@@ -20,16 +20,16 @@
 -->
 
 <misterromdescription>
-    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://jotego/jtcores"/>
+    <rotation>horizontal</rotation>
     <name>Knights of the Round (Japan 911127, B-Board 91634B-2)</name>
     <setname>knightsj</setname>
-    <rbf>jtcps1</rbf>
     <mameversion>0261</mameversion>
     <year>1991</year>
     <manufacturer>Capcom</manufacturer>
     <players>3</players>
+    <rbf>jtcps1</rbf>
     <joystick>8</joystick>
-    <rotation>horizontal</rotation>
     <region>World</region>
     <rom index="0" zip="knightsj.zip|knights.zip" md5="None" asm_md5="7fb330ad2b2cd8359fe5bddb40728960">
         <part>
@@ -69,12 +69,12 @@
         <part>00 80</part>
     </rom>
     <switches page_id="1" page_name="Switches" base="16" default="ff,fc,bf">
-        <!-- DSWA -->
-        <!-- DSWB -->
+        <DSWA/>
+        <DSWB/>
         <dip name="Enemy&apos;s attack frequency" bits="8,10" ids="8,7,6,5,4,3,2,1"/>
         <dip name="Enemy&apos;s attack power" bits="11,13" ids="1,2,3,8,7,6,5,4"/>
         <dip name="Play Mode" bits="15" ids="2 Players,3 Players"/>
-        <!-- DSWC -->
+        <DSWC/>
         <dip name="Lives" bits="16,17" ids="1,4,3,2"/>
         <dip name="Free Play" bits="18" ids="On,Off"/>
         <dip name="Freeze" bits="19" ids="On,Off"/>

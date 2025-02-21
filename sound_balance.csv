@@ -44,7 +44,7 @@ s18,fm0,1.00,fm1,1.00,pcm,0.81
 sarms,psg0,1.00,psg1,1.00,fm0,0.69,fm1,0.69
 sbaskt,vlm,1.00,psg,0.85,rdac,0.27
 sectnz,psg0,1.00,psg1,1.00,fm0,0.69,fm1,0.69
-sf,fm,0.84,pcm0,1.00,pcm1,1.00
+sf,fm,0.11,pcm0,0.33,pcm1,0.33
 shanon,fm,0.54,pcm,1.00
 shouse,fm,0.49,pcm,0.75,cus30,1.00
 simson,snd,1.00

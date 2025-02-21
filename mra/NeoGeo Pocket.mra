@@ -20,16 +20,16 @@
 -->
 
 <misterromdescription>
-    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://jotego/jtcores"/>
+    <rotation>horizontal</rotation>
     <name>NeoGeo Pocket</name>
     <setname>ngp</setname>
-    <rbf>jtngp</rbf>
     <mameversion>0261</mameversion>
     <year>1998</year>
     <manufacturer>SNK</manufacturer>
     <players>1</players>
+    <rbf>jtngp</rbf>
     <joystick>8</joystick>
-    <rotation>horizontal</rotation>
     <region>World</region>
     <rom index="0" zip="ngp.zip" md5="None" asm_md5="d87d876c4391935c9d48ef352a3ff02d">
         <!-- maincpu - starts at 0x0 - length 0x10000 (16 bits) -->

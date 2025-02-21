@@ -20,16 +20,16 @@
 -->
 
 <misterromdescription>
-    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://jotego/jtcores"/>
+    <rotation>horizontal</rotation>
     <name>Side Arms - Hyper Dyne (US, 861202)</name>
     <setname>sidearmsu</setname>
-    <rbf>jtsarms</rbf>
     <mameversion>0261</mameversion>
     <year>1986</year>
     <manufacturer>Capcom (Romstar license)</manufacturer>
     <players>2</players>
+    <rbf>jtsarms</rbf>
     <joystick>8</joystick>
-    <rotation>horizontal</rotation>
     <region>World</region>
     <rom index="0" zip="sidearmsu.zip|sidearms.zip" md5="None" asm_md5="2e6fe5c5581d5bceab5b62ec3f7f92ed">
         <!-- maincpu - starts at 0x0 - length 0x18000 (17 bits) -->
@@ -100,18 +100,18 @@
         <part>00 41</part>
     </rom>
     <switches page_id="1" page_name="Switches" base="16" default="fc,ff,ff">
-        <!-- DSW0 -->
+        <DSW0/>
         <dip name="Difficulty" bits="0,2" ids="7,6,5,4,3,2,1,0"/>
         <dip name="Lives" bits="3" ids="5,3"/>
         <dip name="Bonus Life" bits="4,5" ids="200k 200k,150k 150k,100k 100k,100k"/>
         <dip name="Flip Screen" bits="6" ids="On,Off"/>
         <dip name="Service Mode" bits="7" ids="On,Off"/>
-        <!-- DSW1 -->
+        <DSW1/>
         <dip name="Coin A" bits="8,10" ids="4/1,3/1,2/1,1/6,1/4,1/3,1/2,1/1"/>
         <dip name="Coin B" bits="11,13" ids="4/1,3/1,2/1,1/6,1/4,1/3,1/2,1/1"/>
         <dip name="Allow Continue" bits="14" ids="No,Yes"/>
         <dip name="Demo Sounds" bits="15" ids="Off,On"/>
-        <!-- SYSTEM -->
+        <SYSTEM/>
         <dip name="Freeze" bits="19" ids="On,Off"/>
     </switches>
     <buttons names="Fire-Left,Fire-Right,Power,Start,Coin,Core credits" default="A,B,X,Start,Select,-" count="3"/>

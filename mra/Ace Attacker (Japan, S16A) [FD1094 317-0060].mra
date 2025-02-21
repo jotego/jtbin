@@ -20,16 +20,16 @@
 -->
 
 <misterromdescription>
-    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://jotego/jtcores"/>
+    <rotation>vertical (ccw)</rotation>
     <name>Ace Attacker (Japan, S16A) [FD1094 317-0060]</name>
     <setname>aceattaca</setname>
-    <rbf>jts16</rbf>
     <mameversion>0261</mameversion>
     <year>1988</year>
     <manufacturer>Sega</manufacturer>
     <players>4</players>
+    <rbf>jts16</rbf>
     <joystick/>
-    <rotation>vertical (ccw)</rotation>
     <region>World</region>
     <rom index="0" zip="aceattaca.zip|aceattac.zip" md5="None" address="0x30000000" asm_md5="4e64a33047bf25de947b255977655508">
         <part>
@@ -103,14 +103,14 @@
         <part>05 80</part>
     </rom>
     <switches page_id="1" page_name="Switches" base="16" default="ff,fe">
-        <!-- DSW1 -->
+        <DSW1/>
         <dip name="Coin A" bits="0,3" ids="Free Play or 1/1,1/1 2/3,1/1 4/5,1/1 5/6,2/1 4/3,2/1 5/3 6/4,2/3,4/1,3/1,2/1,1/6,1/5,1/4,1/3,1/2,1/1"/>
         <dip name="Coin B" bits="4,7" ids="Free Play or 1/1,1/1 2/3,1/1 4/5,1/1 5/6,2/1 4/3,2/1 5/3 6/4,2/3,4/1,3/1,2/1,1/6,1/5,1/4,1/3,1/2,1/1"/>
-        <!-- DSW2 -->
+        <DSW2/>
         <dip name="Demo Sounds" bits="8" ids="On,Off"/>
         <dip name="Starting Points" bits="9,11" ids="9000,8000,7000,2000,6000,3000,4000,5000"/>
         <dip name="Point Table" bits="12,13" ids="Hardest,Hard,Easy,Normal"/>
         <dip name="Difficulty" bits="14,15" ids="Hardest,-,-,Normal"/>
     </switches>
-    <buttons names="button 1,button 2,-,-,Start,Coin,Core credits" default="A,B,Start,Select,-" count="2"/>
+    <buttons names="button 1,button 2,-,-,-,Start,Coin,Core credits" default="A,B,Start,Select,-" count="2"/>
 </misterromdescription>

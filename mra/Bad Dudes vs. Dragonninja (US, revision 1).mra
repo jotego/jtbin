@@ -20,16 +20,16 @@
 -->
 
 <misterromdescription>
-    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://jotego/jtcores"/>
+    <rotation>horizontal</rotation>
     <name>Bad Dudes vs. Dragonninja (US, revision 1)</name>
     <setname>baddudes</setname>
-    <rbf>jtninja</rbf>
     <mameversion>0261</mameversion>
     <year>1988</year>
     <manufacturer>Data East USA</manufacturer>
     <players>2</players>
+    <rbf>jtninja</rbf>
     <joystick>8</joystick>
-    <rotation>horizontal</rotation>
     <region>World</region>
     <rom index="0" zip="baddudes.zip" md5="None" asm_md5="9a137460886b91314748c80a1b5717f0">
         <!-- maincpu - starts at 0x0 - length 0x80000 (19 bits) -->
@@ -124,7 +124,7 @@
         <part>00 80</part>
     </rom>
     <switches page_id="1" page_name="Switches" base="17" default="ff,ff">
-        <!-- DSW -->
+        <DSW/>
         <dip name="Coin A" bits="0,1" ids="3/1,2/1,1/2,1/1"/>
         <dip name="Coin B" bits="2,3" ids="3/1,2/1,1/2,1/1"/>
         <dip name="Service Mode" bits="4" ids="On,Off"/>

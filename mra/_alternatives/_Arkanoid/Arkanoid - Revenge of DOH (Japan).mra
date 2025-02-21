@@ -20,16 +20,16 @@
 -->
 
 <misterromdescription>
-    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://jotego/jtcores"/>
+    <rotation>vertical (ccw)</rotation>
     <name>Arkanoid - Revenge of DOH (Japan)</name>
     <setname>arknoid2j</setname>
-    <rbf>jtkiwi</rbf>
     <mameversion>0261</mameversion>
     <year>1987</year>
     <manufacturer>Taito Corporation</manufacturer>
     <players>2</players>
+    <rbf>jtkiwi</rbf>
     <joystick/>
-    <rotation>vertical (ccw)</rotation>
     <region>World</region>
     <rom index="0" zip="arknoid2j.zip|arknoid2.zip" md5="None" asm_md5="3b1b71635490e9763db799bad848b4f9">
         <!-- bit 0 = MCU
@@ -96,14 +96,14 @@
         <part>05 93</part>
     </rom>
     <switches page_id="1" page_name="Switches" base="16" default="fe,7f">
-        <!-- DSWA -->
+        <DSWA/>
         <dip name="Cabinet" bits="0" ids="Upright,Cocktail"/>
         <dip name="Flip Screen" bits="1" ids="On,Off"/>
         <dip name="Service Mode" bits="2" ids="On,Off"/>
         <dip name="Demo Sounds" bits="3" ids="Off,On"/>
         <dip name="Coin A" bits="4,5" ids="2/3,2/1,1/2,1/1"/>
         <dip name="Coin B" bits="6,7" ids="2/3,2/1,1/2,1/1"/>
-        <!-- DSWB -->
+        <DSWB/>
         <dip name="Difficulty" bits="8,9" ids="Hardest,Hard,Easy,Medium"/>
         <dip name="Bonus Life" bits="10,11" ids="50k 150k 150k+,50k only,100k only,100k 200k 200k+"/>
         <dip name="Lives" bits="12,13" ids="5,4,2,3"/>

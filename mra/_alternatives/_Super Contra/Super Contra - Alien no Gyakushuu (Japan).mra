@@ -20,16 +20,16 @@
 -->
 
 <misterromdescription>
-    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://jotego/jtcores"/>
+    <rotation>vertical (cw)</rotation>
     <name>Super Contra - Alien no Gyakushuu (Japan)</name>
     <setname>scontraj</setname>
-    <rbf>jtaliens</rbf>
     <mameversion>0261</mameversion>
     <year>1988</year>
     <manufacturer>Konami</manufacturer>
     <players>2</players>
+    <rbf>jtaliens</rbf>
     <joystick>8</joystick>
-    <rotation>vertical (cw)</rotation>
     <region>World</region>
     <rom index="0" zip="scontraj.zip|scontra.zip" md5="None" address="0x30000000" asm_md5="34697a2a2870c83d36aba5c59b0b9369">
         <!-- 
@@ -116,15 +116,15 @@
         <part>01 D9</part>
     </rom>
     <switches page_id="1" page_name="Switches" base="16" default="ff,5a,f7">
-        <!-- DSW1 -->
+        <DSW1/>
         <dip name="Coin A" bits="0,3" ids="Free Play,4/3,4/1,3/4,3/2,3/1,2/5,2/3,2/1,1/7,1/6,1/5,1/4,1/3,1/2,1/1"/>
         <dip name="Coin B" bits="4,7" ids="No B,4/3,4/1,3/4,3/2,3/1,2/5,2/3,2/1,1/7,1/6,1/5,1/4,1/3,1/2,1/1"/>
-        <!-- DSW2 -->
+        <DSW2/>
         <dip name="Lives" bits="8,9" ids="7,5,3,2"/>
         <dip name="Bonus Life" bits="11,12" ids="50k,30k,50k 300k,30k 200k"/>
         <dip name="Difficulty" bits="13,14" ids="Very Difficult,Difficult,Normal,Easy"/>
         <dip name="Demo Sounds" bits="15" ids="On,Off"/>
-        <!-- DSW3 -->
+        <DSW3/>
         <dip name="Flip Screen" bits="16" ids="On,Off"/>
         <dip name="Service Mode" bits="18" ids="On,Off"/>
         <dip name="Max cont" bits="19" ids="5 and 4,3 and 2"/>

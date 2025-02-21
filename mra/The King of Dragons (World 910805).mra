@@ -20,16 +20,16 @@
 -->
 
 <misterromdescription>
-    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://jotego/jtcores"/>
+    <rotation>horizontal</rotation>
     <name>The King of Dragons (World 910805)</name>
     <setname>kod</setname>
-    <rbf>jtcps1</rbf>
     <mameversion>0261</mameversion>
     <year>1991</year>
     <manufacturer>Capcom</manufacturer>
     <players>3</players>
+    <rbf>jtcps1</rbf>
     <joystick>8</joystick>
-    <rotation>horizontal</rotation>
     <region>World</region>
     <rom index="0" zip="kod.zip" md5="None" asm_md5="76d1507e465c0f609a4f88f0f4d0302a">
         <part>
@@ -83,13 +83,13 @@
         <part>00 80</part>
     </rom>
     <switches page_id="1" page_name="Switches" base="16" default="ff,fc,bf">
-        <!-- DSWA -->
+        <DSWA/>
         <dip name="Play Mode" bits="4" ids="2 Players,3 Players"/>
-        <!-- DSWB -->
+        <DSWB/>
         <dip name="Difficulty" bits="8,10" ids="7,6,5,4,3,2,1,0"/>
         <dip name="Lives" bits="11,13" ids="8,7,6,5,4,3,1,2"/>
         <dip name="Bonus" bits="14,15" ids="None,160k &amp; *450k,80k &amp; *400k,200k &amp; *450k"/>
-        <!-- DSWC -->
+        <DSWC/>
         <dip name="Free Play" bits="18" ids="On,Off"/>
         <dip name="Freeze" bits="19" ids="On,Off"/>
         <dip name="Flip Screen" bits="20" ids="On,Off"/>

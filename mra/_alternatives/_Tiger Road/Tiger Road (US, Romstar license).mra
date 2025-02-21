@@ -20,16 +20,16 @@
 -->
 
 <misterromdescription>
-    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://jotego/jtcores"/>
+    <rotation>horizontal</rotation>
     <name>Tiger Road (US, Romstar license)</name>
     <setname>tigeroadu</setname>
-    <rbf>jttora</rbf>
     <mameversion>0261</mameversion>
     <year>1987</year>
     <manufacturer>Capcom (Romstar license)</manufacturer>
     <players>2</players>
+    <rbf>jttora</rbf>
     <joystick>8</joystick>
-    <rotation>horizontal</rotation>
     <region>World</region>
     <rom index="0" zip="tigeroadu.zip|tigeroad.zip" md5="None" asm_md5="126dc42382e22b5653fa2fb49502eed1">
         <!--  Header to identify the PCB type
@@ -93,7 +93,7 @@
         <part>00 21</part>
     </rom>
     <switches page_id="1" page_name="Switches" base="16" default="ff,fb">
-        <!-- DSW -->
+        <DSW/>
         <dip name="Coin B" bits="0,2" ids="4/1,3/1,2/1,1/6,1/4,1/3,1/2,1/1"/>
         <dip name="Coin A" bits="3,5" ids="4/1,3/1,2/1,1/6,1/4,1/3,1/2,1/1"/>
         <dip name="Service Mode" bits="6" ids="On,Off"/>

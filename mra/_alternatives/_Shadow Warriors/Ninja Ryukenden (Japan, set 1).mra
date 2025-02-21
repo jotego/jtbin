@@ -20,16 +20,16 @@
 -->
 
 <misterromdescription>
-    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://jotego/jtcores"/>
+    <rotation>horizontal</rotation>
     <name>Ninja Ryukenden (Japan, set 1)</name>
     <setname>ryukendn</setname>
-    <rbf>jtgaiden</rbf>
     <mameversion>0261</mameversion>
     <year>1989</year>
     <manufacturer>Tecmo</manufacturer>
     <players>2</players>
+    <rbf>jtgaiden</rbf>
     <joystick>8</joystick>
-    <rotation>horizontal</rotation>
     <region>World</region>
     <rom index="0" zip="ryukendn.zip|shadoww.zip" md5="None" asm_md5="8bf88cefc29877f94896f4ae92c4939f">
         <part>
@@ -107,7 +107,7 @@
         <part>00 80</part>
     </rom>
     <switches page_id="1" page_name="Switches" base="16" default="ff,ff">
-        <!-- DSW -->
+        <DSW/>
         <dip name="Demo Sounds" bits="0" ids="Off,On"/>
         <dip name="Flip Screen" bits="1" ids="On,Off"/>
         <dip name="Coin B" bits="2,4" ids="5/1,2/1,3/1,1/2,4/1,1/3,1/4,1/1"/>

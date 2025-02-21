@@ -20,16 +20,16 @@
 -->
 
 <misterromdescription>
-    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://jotego/jtcores"/>
+    <rotation>horizontal</rotation>
     <name>Section Z (set 2 rev. A)</name>
     <setname>sectionza</setname>
-    <rbf>jtsectnz</rbf>
     <mameversion>0261</mameversion>
     <year>1985</year>
     <manufacturer>Capcom</manufacturer>
     <players>2</players>
+    <rbf>jtsectnz</rbf>
     <joystick>8</joystick>
-    <rotation>horizontal</rotation>
     <region>World</region>
     <rom index="0" zip="sectionza.zip|sectionz.zip" md5="None" asm_md5="3e050cf113222e88f0bcfdc90c8cb0a0">
         <part>
@@ -82,13 +82,13 @@
         <part>00 21</part>
     </rom>
     <switches page_id="1" page_name="Switches" base="16" default="ff,3f">
-        <!-- DSWA -->
+        <DSWA/>
         <dip name="Service Mode" bits="0" ids="On,Off"/>
         <dip name="Flip Screen" bits="1" ids="On,Off"/>
         <dip name="Lives" bits="2,3" ids="5,2,4,3"/>
         <dip name="Coin B" bits="4,5" ids="4/1,2/1,3/1,1/1"/>
         <dip name="Coin A" bits="6,7" ids="2/1,1/2,1/3,1/1"/>
-        <!-- DSWB -->
+        <DSWB/>
         <dip name="Allow Continue" bits="8" ids="No,Yes"/>
         <dip name="Difficulty" bits="9,10" ids="Very Hard,Easy,Hard,Normal"/>
         <dip name="Bonus" bits="11,13" ids="None,30k 60k,30k 80k,20k 60k,40k 100k,20k 70k,30k 70k,20k 50k"/>

@@ -20,16 +20,16 @@
 -->
 
 <misterromdescription>
-    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://jotego/jtcores"/>
+    <rotation>horizontal</rotation>
     <name>Michael Jackson&apos;s Moonwalker (Japan) (FD1094-8751 317-0157)</name>
     <setname>mwalkj</setname>
-    <rbf>jts18</rbf>
     <mameversion>0261</mameversion>
     <year>1990</year>
     <manufacturer>Sega</manufacturer>
     <players>3</players>
+    <rbf>jts18</rbf>
     <joystick>8</joystick>
-    <rotation>horizontal</rotation>
     <region>World</region>
     <rom index="0" zip="mwalkj.zip|mwalk.zip" md5="None" address="0x30000000" asm_md5="e1c3906f55235736c4d92e7e87d5ac8a">
         <part>
@@ -90,10 +90,10 @@
         <part>00 7B</part>
     </rom>
     <switches page_id="1" page_name="Switches" base="16" default="ff,fd">
-        <!-- COINAGE -->
+        <COINAGE/>
         <dip name="Coin A" bits="0,3" ids="Free Play or 1/1,1/1 2/3,1/1 4/5,1/1 5/6,2/1 4/3,2/1 5/3 6/4,2/3,4/1,3/1,2/1,1/6,1/5,1/4,1/3,1/2,1/1"/>
         <dip name="Coin B" bits="4,7" ids="Free Play or 1/1,1/1 2/3,1/1 4/5,1/1 5/6,2/1 4/3,2/1 5/3 6/4,2/3,4/1,3/1,2/1,1/6,1/5,1/4,1/3,1/2,1/1"/>
-        <!-- DSW -->
+        <DSW/>
         <dip name="2 Credits to Start" bits="8" ids="On,Off"/>
         <dip name="Demo Sounds" bits="9" ids="On,Off"/>
         <dip name="Lives" bits="10" ids="3,2"/>

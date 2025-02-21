@@ -20,16 +20,16 @@
 -->
 
 <misterromdescription>
-    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://jotego/jtcores"/>
+    <rotation>horizontal</rotation>
     <name>The NewZealand Story (Japan, old version) (P0-041A PCB)</name>
     <setname>tnzsjo</setname>
-    <rbf>jtkiwi</rbf>
     <mameversion>0261</mameversion>
     <year>1988</year>
     <manufacturer>Taito Corporation</manufacturer>
     <players>2</players>
+    <rbf>jtkiwi</rbf>
     <joystick>8</joystick>
-    <rotation>horizontal</rotation>
     <region>World</region>
     <rom index="0" zip="tnzsjo.zip|tnzs.zip" md5="None" asm_md5="5cc97d612c2674fb9162c8d02b4b1deb">
         <!-- bit 0 = MCU
@@ -85,14 +85,14 @@
         <part>00 FF</part>
     </rom>
     <switches page_id="1" page_name="Switches" base="16" default="fe,ff">
-        <!-- DSWA -->
+        <DSWA/>
         <dip name="Cabinet" bits="0" ids="Upright,Cocktail"/>
         <dip name="Flip Screen" bits="1" ids="On,Off"/>
         <dip name="Service Mode" bits="2" ids="On,Off"/>
         <dip name="Invulnerability (Debug)" bits="3" ids="On,Off"/>
         <dip name="Coin A" bits="4,5" ids="2/3,2/1,1/2,1/1"/>
         <dip name="Coin B" bits="6,7" ids="2/3,2/1,1/2,1/1"/>
-        <!-- DSWB -->
+        <DSWB/>
         <dip name="Difficulty" bits="8,9" ids="Hardest,Hard,Easy,Medium"/>
         <dip name="Bonus Life" bits="10,11" ids="50k 150k 150k+,100k 250k 250k+,200k 300k 300k+,70k 200k 200k+"/>
         <dip name="Lives" bits="12,13" ids="4,5,2,3"/>

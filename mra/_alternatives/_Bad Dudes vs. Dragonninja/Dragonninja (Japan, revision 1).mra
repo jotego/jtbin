@@ -20,16 +20,16 @@
 -->
 
 <misterromdescription>
-    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://jotego/jtcores"/>
+    <rotation>horizontal</rotation>
     <name>Dragonninja (Japan, revision 1)</name>
     <setname>drgninja</setname>
-    <rbf>jtninja</rbf>
     <mameversion>0261</mameversion>
     <year>1988</year>
     <manufacturer>Data East Corporation</manufacturer>
     <players>2</players>
+    <rbf>jtninja</rbf>
     <joystick>8</joystick>
-    <rotation>horizontal</rotation>
     <region>World</region>
     <rom index="0" zip="drgninja.zip|baddudes.zip" md5="None" asm_md5="7f8184d0612bdffb26c41b399e6f2428">
         <!-- maincpu - starts at 0x0 - length 0x80000 (19 bits) -->
@@ -109,8 +109,8 @@
             <part name="eg10.14a" crc="eeee8a1a" map="1000"/>
         </interleave>
         <part repeat="0x20000"> FF</part>
-        <!-- MCU_START -->
         <!-- JTFRAME_PROM_START -->
+        <!-- MCU_START -->
         <!-- mcu - starts at 0x210000 - length 0x18000 (17 bits) -->
         <part name="eg31.9a" crc="657aab2d"/>
         <part repeat="0x17000"> FF</part>
@@ -124,7 +124,7 @@
         <part>00 80</part>
     </rom>
     <switches page_id="1" page_name="Switches" base="17" default="ff,ff">
-        <!-- DSW -->
+        <DSW/>
         <dip name="Coin A" bits="0,1" ids="3/1,2/1,1/2,1/1"/>
         <dip name="Coin B" bits="2,3" ids="3/1,2/1,1/2,1/1"/>
         <dip name="Service Mode" bits="4" ids="On,Off"/>

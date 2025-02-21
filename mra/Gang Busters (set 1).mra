@@ -20,16 +20,16 @@
 -->
 
 <misterromdescription>
-    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://jotego/jtcores"/>
+    <rotation>vertical (cw)</rotation>
     <name>Gang Busters (set 1)</name>
     <setname>gbusters</setname>
-    <rbf>jtaliens</rbf>
     <mameversion>0261</mameversion>
     <year>1988</year>
     <manufacturer>Konami</manufacturer>
     <players>2</players>
+    <rbf>jtaliens</rbf>
     <joystick>8</joystick>
-    <rotation>vertical (cw)</rotation>
     <region>World</region>
     <rom index="0" zip="gbusters.zip" md5="None" address="0x30000000" asm_md5="69f39be4c77b0e399d273efddacbb7ef">
         <!-- 
@@ -76,16 +76,16 @@
         <part>01 34</part>
     </rom>
     <switches page_id="1" page_name="Switches" base="16" default="ff,56,ff">
-        <!-- DSW1 -->
+        <DSW1/>
         <dip name="Coin A" bits="0,3" ids="Free Play,4/3,4/1,3/4,3/2,3/1,2/5,2/3,2/1,1/7,1/6,1/5,1/4,1/3,1/2,1/1"/>
         <dip name="Coin B" bits="4,7" ids="No B,4/3,4/1,3/4,3/2,3/1,2/5,2/3,2/1,1/7,1/6,1/5,1/4,1/3,1/2,1/1"/>
-        <!-- DSW2 -->
+        <DSW2/>
         <dip name="Lives" bits="8,9" ids="7,5,3,2"/>
         <dip name="Bullets" bits="10" ids="60,50"/>
         <dip name="Bonus Life" bits="11,12" ids="70k Only,50k Only,70 250 Every 500,50 200 Every 400"/>
         <dip name="Difficulty" bits="13,14" ids="Very Difficult,Difficult,Normal,Easy"/>
         <dip name="Demo Sounds" bits="15" ids="On,Off"/>
-        <!-- DSW3 -->
+        <DSW3/>
         <dip name="Flip Screen" bits="16" ids="On,Off"/>
         <dip name="Service Mode" bits="18" ids="On,Off"/>
     </switches>

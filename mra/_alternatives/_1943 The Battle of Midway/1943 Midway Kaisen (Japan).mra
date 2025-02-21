@@ -20,16 +20,16 @@
 -->
 
 <misterromdescription>
-    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://jotego/jtcores"/>
+    <rotation>vertical (ccw)</rotation>
     <name>1943: Midway Kaisen (Japan)</name>
     <setname>1943ja</setname>
-    <rbf>jt1943</rbf>
     <mameversion>0261</mameversion>
     <year>1987</year>
     <manufacturer>Capcom</manufacturer>
     <players>2</players>
+    <rbf>jt1943</rbf>
     <joystick>8</joystick>
-    <rotation>vertical (ccw)</rotation>
     <region>World</region>
     <rom index="0" zip="1943ja.zip|1943.zip" md5="None" asm_md5="939497c69efdd406705fb11b9a81f4cf">
         <!-- maincpu - starts at 0x0 - length 0x28000 (18 bits) -->
@@ -118,13 +118,13 @@
         <part>05 51</part>
     </rom>
     <switches page_id="1" page_name="Switches" base="16" default="f8,ff">
-        <!-- DSWA -->
+        <DSWA/>
         <dip name="Difficulty" bits="0,3" ids="16,15,14,13,12,11,10,9,8,7,6,5,4,3,2,1"/>
         <dip name="2 Player Game" bits="4" ids="1/2 Players,2/2 Players"/>
         <dip name="Cabinet" bits="5" ids="Cocktail,Upright"/>
         <dip name="Screen Stop" bits="6" ids="On,Off"/>
         <dip name="Service Mode" bits="7" ids="On,Off"/>
-        <!-- DSWB -->
+        <DSWB/>
         <dip name="Coin A" bits="8,10" ids="4/1,3/1,2/1,1/5,1/4,1/3,1/2,1/1"/>
         <dip name="Coin B" bits="11,13" ids="4/1,3/1,2/1,1/5,1/4,1/3,1/2,1/1"/>
         <dip name="Allow Continue" bits="14" ids="No,Yes"/>

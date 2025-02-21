@@ -20,16 +20,16 @@
 -->
 
 <misterromdescription>
-    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://jotego/jtcores"/>
+    <rotation>horizontal</rotation>
     <name>Bionic Commando (US set 1)</name>
     <setname>bionicc1</setname>
-    <rbf>jtbiocom</rbf>
     <mameversion>0261</mameversion>
     <year>1987</year>
     <manufacturer>Capcom</manufacturer>
     <players>2</players>
+    <rbf>jtbiocom</rbf>
     <joystick>8</joystick>
-    <rotation>horizontal</rotation>
     <region>World</region>
     <rom index="0" zip="bionicc1.zip|bionicc.zip" md5="None" asm_md5="d0dfb80382b1625256684cb22578b5c3">
         <!-- maincpu - starts at 0x0 - length 0x40000 (18 bits) -->
@@ -99,7 +99,7 @@
         <part>00 40</part>
     </rom>
     <switches page_id="1" page_name="Switches" base="16" default="ff,df">
-        <!-- DSW -->
+        <DSW/>
         <dip name="Coin A" bits="0,2" ids="4/1,3/1,2/1,1/6,1/4,1/3,1/2,1/1"/>
         <dip name="Coin B" bits="3,5" ids="4/1,3/1,2/1,1/6,1/4,1/3,1/2,1/1"/>
         <dip name="Service Mode" bits="6" ids="On,Off"/>

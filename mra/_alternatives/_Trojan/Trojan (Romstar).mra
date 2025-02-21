@@ -20,16 +20,16 @@
 -->
 
 <misterromdescription>
-    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://jotego/jtcores"/>
+    <rotation>horizontal</rotation>
     <name>Trojan (Romstar)</name>
     <setname>trojanr</setname>
-    <rbf>jttrojan</rbf>
     <mameversion>0261</mameversion>
     <year>1986</year>
     <manufacturer>Capcom (Romstar license)</manufacturer>
     <players>2</players>
+    <rbf>jttrojan</rbf>
     <joystick>8</joystick>
-    <rotation>horizontal</rotation>
     <region>World</region>
     <rom index="0" zip="trojanr.zip|trojan.zip" md5="None" asm_md5="a8a3274396b3394c55d8e25ed83218f2">
         <!-- Header byte 8:
@@ -62,8 +62,8 @@
             <part name="tb_25.15n" crc="6e38c6fa" map="01"/>
             <part name="tb_24.13n" crc="14fc6cf2" map="10"/>
         </interleave>
-        <!-- CHAR_START -->
         <!-- JTFRAME_BA3_START -->
+        <!-- CHAR_START -->
         <!-- gfx1 - starts at 0x40000 - length 0x8000 (15 bits) -->
         <interleave output="16">
             <part name="tb_03.8k" crc="581a2b4c" map="12"/>
@@ -109,11 +109,11 @@
         <part>00 7E</part>
     </rom>
     <switches page_id="1" page_name="Switches" base="16" default="fc,ff">
-        <!-- DSWA -->
+        <DSWA/>
         <dip name="Cabinet" bits="0,1" ids="Upright 1 Player,-,Upright 2 Players,Cocktail"/>
         <dip name="Bonus Life" bits="2,4" ids="None,40k 80k,20k 80k,20k 70k,20k 60k,30k 80k,30k 70k,30k 60k"/>
         <dip name="Starting Level" bits="5,7" ids="-,-,6,5,4,3,2,1"/>
-        <!-- DSWB -->
+        <DSWB/>
         <dip name="Coin A" bits="8,9" ids="2/1,1/3,1/2,1/1"/>
         <dip name="Coin B" bits="10,11" ids="4/1,3/1,2/1,1/1"/>
         <dip name="Lives" bits="12,13" ids="5,4,2,3"/>

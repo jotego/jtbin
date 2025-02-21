@@ -20,16 +20,16 @@
 -->
 
 <misterromdescription>
-    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://jotego/jtcores"/>
+    <rotation>horizontal</rotation>
     <name>Strider (USA, B-Board 90629B-3, buggy Street Fighter II conversion)</name>
     <setname>strideruc</setname>
-    <rbf>jtcps1</rbf>
     <mameversion>0261</mameversion>
     <year>1989</year>
     <manufacturer>bootleg (Capcom)</manufacturer>
     <players>2</players>
+    <rbf>jtcps1</rbf>
     <joystick>8</joystick>
-    <rotation>horizontal</rotation>
     <region>World</region>
     <rom index="0" zip="strideruc.zip|strider.zip" md5="None" asm_md5="d1d52503d329441ea51b411e6009f4e2">
         <part>
@@ -69,13 +69,13 @@
         <part>00 80</part>
     </rom>
     <switches page_id="1" page_name="Switches" base="16" default="ff,fd,ff">
-        <!-- DSWA -->
+        <DSWA/>
         <dip name="Cabinet" bits="6,7" ids="Cocktail,-,Upright 2 Players,Upright 1 Player"/>
-        <!-- DSWB -->
+        <DSWB/>
         <dip name="Difficulty" bits="8,10" ids="8,7,6,5,1,2,3,4"/>
         <dip name="Bonus" bits="12,13" ids="30K &amp; 60K only,20K &amp; 60K only,30 50 then every 70,20 40 then every 60"/>
         <dip name="Life Loss" bits="14,15" ids="-1,-,Default,-3"/>
-        <!-- DSWC -->
+        <DSWC/>
         <dip name="Lives" bits="16,17" ids="2,5,4,3"/>
         <dip name="Freeze" bits="18" ids="On,Off"/>
         <dip name="Free Play" bits="19" ids="On,Off"/>
@@ -83,7 +83,7 @@
         <dip name="Demo Sounds" bits="21" ids="Off,On"/>
         <dip name="Allow Continue" bits="22" ids="No,Yes"/>
         <dip name="Game Mode" bits="23" ids="Test,Game"/>
-        <!-- IN0 -->
+        <IN0/>
         <dip name="Service Mode" bits="30" ids="On,Off"/>
         <dip name="PCB type" ids="88617A,89626A" bits="24"/>
     </switches>

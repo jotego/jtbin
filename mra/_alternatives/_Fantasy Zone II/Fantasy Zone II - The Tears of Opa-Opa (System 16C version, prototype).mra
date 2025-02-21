@@ -20,16 +20,16 @@
 -->
 
 <misterromdescription>
-    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://jotego/jtcores"/>
+    <rotation>horizontal</rotation>
     <name>Fantasy Zone II - The Tears of Opa-Opa (System 16C version, prototype)</name>
     <setname>fantzn2xp</setname>
-    <rbf>jts16b</rbf>
     <mameversion>0261</mameversion>
     <year>2008</year>
     <manufacturer>Sega / M2</manufacturer>
     <players>2</players>
+    <rbf>jts16b</rbf>
     <joystick>8</joystick>
-    <rotation>horizontal</rotation>
     <region>World</region>
     <rom index="0" zip="fantzn2xp.zip|fantzn2x.zip" md5="None" address="0x30000000" asm_md5="813dcb28e6554253ab2718870302c812">
         <part>
@@ -85,8 +85,8 @@
             <part name="objj.bin" crc="4535eb0e" map="10"/>
         </interleave>
         <part repeat="0xC0000"> FF</part>
-        <!-- MCU_START -->
         <!-- JTFRAME_PROM_START -->
+        <!-- MCU_START -->
         <!-- mcu - starts at 0x440000 - length 0x2000 (13 bits) -->
         <part repeat="0x1000"> FF</part>
         <part repeat="0x1000"> FF</part>
@@ -104,10 +104,10 @@
         <part>00 80</part>
     </rom>
     <switches page_id="1" page_name="Switches" base="16" default="ff,ff">
-        <!-- DSW1 -->
-        <!-- DSW2 -->
+        <DSW1/>
+        <DSW2/>
         <dip name="Lives" bits="10,11" ids="240,4,2,3"/>
         <dip name="Difficulty" bits="14,15" ids="Hardest,Hard,Easy,Normal"/>
     </switches>
-    <buttons names="Shot,Bomb,-,-,Start,Coin,Core credits" default="A,B,Start,Select,-" count="2"/>
+    <buttons names="Shot,Bomb,-,-,-,Start,Coin,Core credits" default="A,B,Start,Select,-" count="2"/>
 </misterromdescription>

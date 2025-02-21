@@ -20,16 +20,16 @@
 -->
 
 <misterromdescription>
-    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://jotego/jtcores"/>
+    <rotation>horizontal</rotation>
     <name>Armored Warriors (Asia 941024)</name>
     <setname>armwara</setname>
-    <rbf>jtcps2</rbf>
     <mameversion>0261</mameversion>
     <year>1994</year>
     <manufacturer>Capcom</manufacturer>
     <players>3</players>
+    <rbf>jtcps2</rbf>
     <joystick>8</joystick>
-    <rotation>horizontal</rotation>
     <region>World</region>
     <rom index="0" zip="armwara.zip|armwar.zip|qsound.zip" md5="None" address="0x30000000" asm_md5="6a1324ffbd99e23076462d8b18f1b81d">
         <part>
@@ -94,9 +94,9 @@
         <part>00 80</part>
     </rom>
     <switches page_id="1" page_name="Switches" base="16" default="ff,ff">
-        <!-- DSWA -->
-        <!-- DSWB -->
-        <!-- DSWC -->
+        <DSWA/>
+        <DSWB/>
+        <DSWC/>
     </switches>
     <buttons names="Attack,Jump,Sub Weapons,-,-,-,Start,Coin,Core credits" default="A,B,X,Start,Select,-" count="3"/>
 </misterromdescription>

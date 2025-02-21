@@ -20,16 +20,16 @@
 -->
 
 <misterromdescription>
-    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://jotego/jtcores"/>
+    <rotation>horizontal</rotation>
     <name>Dark Adventure</name>
     <setname>darkadv</setname>
-    <rbf>jttwin16</rbf>
     <mameversion>0261</mameversion>
     <year>1987</year>
     <manufacturer>Konami</manufacturer>
     <players>3</players>
+    <rbf>jttwin16</rbf>
     <joystick>8</joystick>
-    <rotation>horizontal</rotation>
     <region>World</region>
     <rom index="0" zip="darkadv.zip|devilw.zip" md5="None" asm_md5="9770658c0ce771f5e3f2177cc6f0df20">
         <part>
@@ -92,13 +92,13 @@
         <part>00 80</part>
     </rom>
     <switches page_id="1" page_name="Switches" base="16" default="ff,5e,ff">
-        <!-- DSW1 -->
+        <DSW1/>
         <dip name="Coinage" bits="0,3" ids="Invalid,4/3,4/1,3/4,3/2,3/1,2/5,2/3,2/1,1/7,1/6,1/5,1/4,1/3,1/2,1/1"/>
-        <!-- DSW2 -->
+        <DSW2/>
         <dip name="Lives" bits="8,9" ids="7,5,3,2"/>
         <dip name="Difficulty" bits="13,14" ids="Very Difficult,Difficult,Normal,Easy"/>
         <dip name="Demo Sounds" bits="15" ids="On,Off"/>
-        <!-- DSW3 -->
+        <DSW3/>
         <dip name="Flip Screen" bits="16" ids="On,Off"/>
         <dip name="Service Mode" bits="18" ids="On,Off"/>
     </switches>

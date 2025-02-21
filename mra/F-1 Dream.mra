@@ -20,16 +20,16 @@
 -->
 
 <misterromdescription>
-    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://jotego/jtcores"/>
+    <rotation>horizontal</rotation>
     <name>F-1 Dream</name>
     <setname>f1dream</setname>
-    <rbf>jttora</rbf>
     <mameversion>0261</mameversion>
     <year>1988</year>
     <manufacturer>Capcom (Romstar license)</manufacturer>
     <players>2</players>
+    <rbf>jttora</rbf>
     <joystick>8</joystick>
-    <rotation>horizontal</rotation>
     <region>World</region>
     <rom index="0" zip="f1dream.zip" md5="None" asm_md5="c2f66b62e2a60145566d4375733ee079">
         <!--  Header to identify the PCB type
@@ -95,7 +95,7 @@
         <part>00 1D</part>
     </rom>
     <switches page_id="1" page_name="Switches" base="16" default="ff,bb">
-        <!-- DSW -->
+        <DSW/>
         <dip name="Coin B" bits="0,2" ids="4/1,3/1,2/1,1/6,1/4,1/3,1/2,1/1"/>
         <dip name="Coin A" bits="3,5" ids="4/1,3/1,2/1,1/6,1/4,1/3,1/2,1/1"/>
         <dip name="Service Mode" bits="6" ids="On,Off"/>

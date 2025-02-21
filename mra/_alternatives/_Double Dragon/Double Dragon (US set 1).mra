@@ -20,16 +20,16 @@
 -->
 
 <misterromdescription>
-    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://jotego/jtcores"/>
+    <rotation>horizontal</rotation>
     <name>Double Dragon (US set 1)</name>
     <setname>ddragonu</setname>
-    <rbf>jtdd</rbf>
     <mameversion>0261</mameversion>
     <year>1987</year>
     <manufacturer>Technos Japan (Taito America license)</manufacturer>
     <players>2</players>
+    <rbf>jtdd</rbf>
     <joystick>8</joystick>
-    <rotation>horizontal</rotation>
     <region>World</region>
     <rom index="0" zip="ddragonu.zip|ddragon.zip" md5="None" asm_md5="0d851cf215651c3324bedc071931d8e2">
         <!-- maincpu - starts at 0x0 - length 0x28000 (18 bits) -->
@@ -47,8 +47,8 @@
         <!-- ADPCM1_START -->
         <!-- adpcm2 - starts at 0x40000 - length 0x10000 (16 bits) -->
         <part name="21j-7" crc="904de6f8"/>
-        <!-- JTFRAME_BA2_START -->
         <!-- CHAR_START -->
+        <!-- JTFRAME_BA2_START -->
         <!-- gfx1 - starts at 0x50000 - length 0x8000 (15 bits) -->
         <part name="21j-5" crc="7a8b8db4"/>
         <!-- SCR_START -->
@@ -92,12 +92,12 @@
         <part>00 50</part>
     </rom>
     <switches page_id="1" page_name="Switches" base="16" default="ff,ff">
-        <!-- DSW0 -->
+        <DSW0/>
         <dip name="Coin A" bits="0,2" ids="4/1,3/1,2/1,1/5,1/4,1/3,1/2,1/1"/>
         <dip name="Coin B" bits="3,5" ids="4/1,3/1,2/1,1/5,1/4,1/3,1/2,1/1"/>
         <dip name="Cabinet" bits="6" ids="Cocktail,Upright"/>
         <dip name="Flip Screen" bits="7" ids="On,Off"/>
-        <!-- DSW1 -->
+        <DSW1/>
         <dip name="Difficulty" bits="8,9" ids="Hardest,Easy,Hard,Medium"/>
         <dip name="Demo Sounds" bits="10" ids="Off,On"/>
         <dip name="Bonus" bits="12,13" ids="40k,20k,40k &amp; *80k,30k &amp; *60k"/>

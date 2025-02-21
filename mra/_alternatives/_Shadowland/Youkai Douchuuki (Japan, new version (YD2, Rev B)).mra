@@ -20,16 +20,16 @@
 -->
 
 <misterromdescription>
-    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://jotego/jtcores"/>
+    <rotation>horizontal</rotation>
     <name>Youkai Douchuuki (Japan, new version (YD2, Rev B))</name>
     <setname>youkaidk2</setname>
-    <rbf>jtshouse</rbf>
     <mameversion>0261</mameversion>
     <year>1987</year>
     <manufacturer>Namco</manufacturer>
     <players>2</players>
+    <rbf>jtshouse</rbf>
     <joystick>8</joystick>
-    <rotation>horizontal</rotation>
     <region>World</region>
     <rom index="0" zip="youkaidk2.zip|shadowld.zip" md5="None" address="0x30000000" asm_md5="bc244d415db8f6a3acac3b62f8e3d56f">
         <!-- Byte 0: bit 0-1: protection type, bit 4-5: control type (0 - normal, 1 - faceoff 4p, 2 - berabohm, 3 - quester), bit 6: 64/128kB Program ROMs
@@ -4082,7 +4082,7 @@ FF EA D6 C2 AE 99 85 71 5C 6E 81 93 A5 A0 9C 98
         <part>00 7E</part>
     </rom>
     <switches page_id="1" page_name="Switches" base="16" default="ff">
-        <!-- DIPSW -->
+        <DIPSW/>
         <dip name="Service Mode" bits="0" ids="On,Off"/>
         <dip name="Freeze" bits="1" ids="On,Off"/>
         <dip name="Alternate sound effects" bits="2" ids="On,Off"/>

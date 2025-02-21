@@ -20,16 +20,16 @@
 -->
 
 <misterromdescription>
-    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://jotego/jtcores"/>
+    <rotation>horizontal</rotation>
     <name>Dungeons &amp; Dragons: Shadow over Mystara (USA 960209)</name>
     <setname>ddsomur1</setname>
-    <rbf>jtcps2</rbf>
     <mameversion>0261</mameversion>
     <year>1996</year>
     <manufacturer>Capcom</manufacturer>
     <players>4</players>
+    <rbf>jtcps2</rbf>
     <joystick>8</joystick>
-    <rotation>horizontal</rotation>
     <region>World</region>
     <rom index="0" zip="ddsomur1.zip|ddsom.zip|qsound.zip" md5="None" address="0x30000000" asm_md5="0fb7251f8796fe40c6037303a9dc50cb">
         <part>
@@ -94,9 +94,9 @@
         <part>00 80</part>
     </rom>
     <switches page_id="1" page_name="Switches" base="16" default="ff,ff">
-        <!-- DSWA -->
-        <!-- DSWB -->
-        <!-- DSWC -->
+        <DSWA/>
+        <DSWB/>
+        <DSWC/>
     </switches>
     <buttons names="Attack,Jump,Select,Magic,-,-,Start,Coin,Core credits" default="A,B,X,Y,Start,Select,-" count="4"/>
 </misterromdescription>

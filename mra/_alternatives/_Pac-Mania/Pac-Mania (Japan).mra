@@ -20,16 +20,16 @@
 -->
 
 <misterromdescription>
-    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://jotego/jtcores"/>
+    <rotation>vertical (cw)</rotation>
     <name>Pac-Mania (Japan)</name>
     <setname>pacmaniaj</setname>
-    <rbf>jtshouse</rbf>
     <mameversion>0261</mameversion>
     <year>1987</year>
     <manufacturer>Namco</manufacturer>
     <players>2</players>
+    <rbf>jtshouse</rbf>
     <joystick>8</joystick>
-    <rotation>vertical (cw)</rotation>
     <region>World</region>
     <rom index="0" zip="pacmaniaj.zip|pacmania.zip" md5="None" address="0x30000000" asm_md5="87842ea546d0d99ef87c9bcd2264616b">
         <!-- Byte 0: bit 0-1: protection type, bit 4-5: control type (0 - normal, 1 - faceoff 4p, 2 - berabohm, 3 - quester), bit 6: 64/128kB Program ROMs
@@ -85,7 +85,7 @@ Byte 7: addr for upper nibble read
         <part>01 A8</part>
     </rom>
     <switches page_id="1" page_name="Switches" base="16" default="ff">
-        <!-- DIPSW -->
+        <DIPSW/>
         <dip name="Service Mode" bits="0" ids="On,Off"/>
         <dip name="Freeze" bits="1" ids="On,Off"/>
         <dip name="Kick Watchdog in IRQ" bits="2" ids="Yes,No"/>

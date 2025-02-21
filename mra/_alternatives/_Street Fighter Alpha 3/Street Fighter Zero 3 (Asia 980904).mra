@@ -20,16 +20,16 @@
 -->
 
 <misterromdescription>
-    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://jotego/jtcores"/>
+    <rotation>horizontal</rotation>
     <name>Street Fighter Zero 3 (Asia 980904)</name>
     <setname>sfz3a</setname>
-    <rbf>jtcps2</rbf>
     <mameversion>0261</mameversion>
     <year>1998</year>
     <manufacturer>Capcom</manufacturer>
     <players>2</players>
+    <rbf>jtcps2</rbf>
     <joystick>8</joystick>
-    <rotation>horizontal</rotation>
     <region>World</region>
     <rom index="0" zip="sfz3a.zip|sfa3.zip|qsound.zip" md5="None" address="0x30000000" asm_md5="7f927f1c8fa4d1cd5bdb82e88f92f53e">
         <part>
@@ -94,9 +94,9 @@
         <part>00 80</part>
     </rom>
     <switches page_id="1" page_name="Switches" base="16" default="ff,ff">
-        <!-- DSWA -->
-        <!-- DSWB -->
-        <!-- DSWC -->
+        <DSWA/>
+        <DSWB/>
+        <DSWC/>
     </switches>
     <buttons names="Light Punch,Middle Punch,Heavy Punch,Light Kick,Middle Kick,Heavy Kick,Start,Coin,Core credits" default="A,B,X,Y,L,R,Start,Select,-" count="6"/>
 </misterromdescription>

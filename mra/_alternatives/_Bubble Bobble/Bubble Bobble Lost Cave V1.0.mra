@@ -20,16 +20,16 @@
 -->
 
 <misterromdescription>
-    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://jotego/jtcores"/>
+    <rotation>horizontal</rotation>
     <name>Bubble Bobble: Lost Cave V1.0</name>
     <setname>bublcave10</setname>
-    <rbf>jtbubl</rbf>
     <mameversion>0261</mameversion>
     <year>2012</year>
     <manufacturer>hack (Bisboch and Aladar)</manufacturer>
     <players>2</players>
+    <rbf>jtbubl</rbf>
     <joystick>2</joystick>
-    <rotation>horizontal</rotation>
     <region>World</region>
     <rom index="0" zip="bublcave10.zip|bublbobl.zip" md5="None" asm_md5="7710467e84e36e4ae808b76569f12f3c">
         <!--  Header to identify the PCB type
@@ -89,12 +89,12 @@
         <part>00 83</part>
     </rom>
     <switches page_id="1" page_name="Switches" base="16" default="ff,ff">
-        <!-- DSW0 -->
+        <DSW0/>
         <dip name="Flip Screen" bits="1" ids="On,Off"/>
         <dip name="Demo Sounds" bits="3" ids="Off,On"/>
         <dip name="Coin A" bits="4,5" ids="2/3,2/1,1/2,1/1"/>
         <dip name="Coin B" bits="6,7" ids="2/3,2/1,1/2,1/1"/>
-        <!-- DSW1 -->
+        <DSW1/>
         <dip name="Difficulty" bits="8,9" ids="Very Hard,Hard,Easy,Normal"/>
         <dip name="Bonus Life" bits="10,11" ids="50K 250K 500K,40K 200K 500K,20K 80K 300K,30K 100K 400K"/>
         <dip name="Lives" bits="12,13" ids="2,1,5,3"/>

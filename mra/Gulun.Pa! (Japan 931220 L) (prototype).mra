@@ -20,16 +20,16 @@
 -->
 
 <misterromdescription>
-    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://jotego/jtcores"/>
+    <rotation>horizontal</rotation>
     <name>Gulun.Pa! (Japan 931220 L) (prototype)</name>
     <setname>gulunpa</setname>
-    <rbf>jtcps1</rbf>
     <mameversion>0261</mameversion>
     <year>1993</year>
     <manufacturer>Capcom</manufacturer>
     <players>2</players>
+    <rbf>jtcps1</rbf>
     <joystick>8</joystick>
-    <rotation>horizontal</rotation>
     <region>World</region>
     <rom index="0" zip="gulunpa.zip" md5="None" asm_md5="2a6aba4ca3cd0cd81d9fb2494a706039">
         <part>
@@ -65,15 +65,15 @@
         <part>00 80</part>
     </rom>
     <switches page_id="1" page_name="Switches" base="16" default="ff,ff,df,ff">
-        <!-- DSWA -->
-        <!-- DSWB -->
+        <DSWA/>
+        <DSWB/>
         <dip name="Difficulty" bits="8,10" ids="8 Hardest,7 Very Hard,6 Hard,5 Medium Hard,4 Medium,3 Easy,2 Very Easy,1 Easiest"/>
-        <!-- DSWC -->
+        <DSWC/>
         <dip name="Freeze" bits="19" ids="On,Off"/>
         <dip name="Flip Screen" bits="20" ids="On,Off"/>
         <dip name="Demo Sounds" bits="21" ids="On,Off"/>
         <dip name="Game Mode" bits="23" ids="Test,Game"/>
-        <!-- IN0 -->
+        <IN0/>
         <dip name="Service Mode" bits="30" ids="On,Off"/>
         <dip name="PCB type" ids="88617A,89626A" bits="24"/>
     </switches>

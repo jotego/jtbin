@@ -20,16 +20,16 @@
 -->
 
 <misterromdescription>
-    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://jotego/jtcores"/>
+    <rotation>vertical (cw)</rotation>
     <name>Kageki (US)</name>
     <setname>kagekiu</setname>
-    <rbf>jtkiwi</rbf>
     <mameversion>0261</mameversion>
     <year>1988</year>
     <manufacturer>Kaneko / Taito America Corporation (Romstar license)</manufacturer>
     <players>2</players>
+    <rbf>jtkiwi</rbf>
     <joystick>8</joystick>
-    <rotation>vertical (cw)</rotation>
     <region>World</region>
     <rom index="0" zip="kagekiu.zip|kageki.zip" md5="None" asm_md5="23f9789cf08cb291937eb7673fcaaba2">
         <!-- bit 0 = MCU
@@ -87,13 +87,13 @@
         <part>01 86</part>
     </rom>
     <switches page_id="1" page_name="Switches" base="16" default="ff,ff">
-        <!-- DSWA -->
+        <DSWA/>
         <dip name="Flip Screen" bits="1" ids="On,Off"/>
         <dip name="Service Mode" bits="2" ids="On,Off"/>
         <dip name="Demo Sounds" bits="3" ids="Off,On"/>
         <dip name="Coin A" bits="4,5" ids="2/3,2/1,1/2,1/1"/>
         <dip name="Coin B" bits="6,7" ids="2/3,2/1,1/2,1/1"/>
-        <!-- DSWB -->
+        <DSWB/>
         <dip name="Difficulty" bits="8,9" ids="Hardest,Hard,Easy,Medium"/>
         <dip name="Allow Continue" bits="15" ids="No,Yes"/>
     </switches>

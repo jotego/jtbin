@@ -20,16 +20,16 @@
 -->
 
 <misterromdescription>
-    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://jotego/jtcores"/>
+    <rotation>vertical (ccw)</rotation>
     <name>Dimahoo (USA 000121 Phoenix Edition) (bootleg)</name>
     <setname>dimahoud</setname>
-    <rbf>jtcps2</rbf>
     <mameversion>0261</mameversion>
     <year>2000</year>
     <manufacturer>bootleg</manufacturer>
     <players>2</players>
+    <rbf>jtcps2</rbf>
     <joystick>8</joystick>
-    <rotation>vertical (ccw)</rotation>
     <region>World</region>
     <rom index="0" zip="dimahoud.zip|dimahoo.zip|qsound.zip" md5="None" address="0x30000000" asm_md5="ee77a6674ab4135cf5d1f2140dd8dee3">
         <part>
@@ -85,9 +85,9 @@
         <part>05 80</part>
     </rom>
     <switches page_id="1" page_name="Switches" base="16" default="ff,ff">
-        <!-- DSWA -->
-        <!-- DSWB -->
-        <!-- DSWC -->
+        <DSWA/>
+        <DSWB/>
+        <DSWC/>
     </switches>
     <buttons names="Main Shot,Bomb,Rapid Main Shot,-,-,-,Start,Coin,Core credits" default="A,B,X,Start,Select,-" count="3"/>
 </misterromdescription>

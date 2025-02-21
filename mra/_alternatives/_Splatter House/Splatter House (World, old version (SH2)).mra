@@ -20,16 +20,16 @@
 -->
 
 <misterromdescription>
-    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://jotego/jtcores"/>
+    <rotation>horizontal</rotation>
     <name>Splatter House (World, old version (SH2))</name>
     <setname>splatter2</setname>
-    <rbf>jtshouse</rbf>
     <mameversion>0261</mameversion>
     <year>1988</year>
     <manufacturer>Namco</manufacturer>
     <players>2</players>
+    <rbf>jtshouse</rbf>
     <joystick>8</joystick>
-    <rotation>horizontal</rotation>
     <region>World</region>
     <rom index="0" zip="splatter2.zip|splatter.zip" md5="None" address="0x30000000" asm_md5="5d93069ee0d77adc9cd6395902e8837a">
         <!-- Byte 0: bit 0-1: protection type, bit 4-5: control type (0 - normal, 1 - faceoff 4p, 2 - berabohm, 3 - quester), bit 6: 64/128kB Program ROMs
@@ -4087,7 +4087,7 @@ FF FF FF FF FF FF FF 20 4D D9 50 D3 7D 20 4D D9
         <part>00 5E</part>
     </rom>
     <switches page_id="1" page_name="Switches" base="16" default="ff">
-        <!-- DIPSW -->
+        <DIPSW/>
         <dip name="Service Mode" bits="0" ids="On,Off"/>
         <dip name="Debug IRQ 1/2" bits="3" ids="Yes,No"/>
         <dip name="Debug IRQ 1/2" bits="5" ids="Yes,No"/>

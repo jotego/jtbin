@@ -20,16 +20,16 @@
 -->
 
 <misterromdescription>
-    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://jotego/jtcores"/>
+    <rotation>vertical (ccw)</rotation>
     <name>Galaga &apos;88</name>
     <setname>galaga88</setname>
-    <rbf>jtshouse</rbf>
     <mameversion>0261</mameversion>
     <year>1987</year>
     <manufacturer>Namco</manufacturer>
     <players>2</players>
+    <rbf>jtshouse</rbf>
     <joystick>8</joystick>
-    <rotation>vertical (ccw)</rotation>
     <region>World</region>
     <rom index="0" zip="galaga88.zip" md5="None" address="0x30000000" asm_md5="45799bfcc9ca0ccdf3f18eed025e597d">
         <!-- Byte 0: bit 0-1: protection type, bit 4-5: control type (0 - normal, 1 - faceoff 4p, 2 - berabohm, 3 - quester), bit 6: 64/128kB Program ROMs
@@ -106,7 +106,7 @@ Byte 7: addr for upper nibble read
         <part>01 75</part>
     </rom>
     <switches page_id="1" page_name="Switches" base="16" default="ff">
-        <!-- DIPSW -->
+        <DIPSW/>
         <dip name="Service Mode" bits="0" ids="On,Off"/>
         <dip name="Data 1/2" bits="2" ids="On,Off"/>
         <dip name="Data 2/2" bits="4" ids="On,Off"/>

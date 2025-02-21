@@ -20,16 +20,16 @@
 -->
 
 <misterromdescription>
-    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://jotego/jtcores"/>
+    <rotation>horizontal</rotation>
     <name>Vendetta (Asia, 2 Players, ver. D)</name>
     <setname>vendetta2pd</setname>
-    <rbf>jtsimson</rbf>
     <mameversion>0261</mameversion>
     <year>1991</year>
     <manufacturer>Konami</manufacturer>
     <players>2</players>
+    <rbf>jtsimson</rbf>
     <joystick>8</joystick>
-    <rotation>horizontal</rotation>
     <region>World</region>
     <rom index="0" zip="vendetta2pd.zip|vendetta.zip" md5="None" address="0x30000000" asm_md5="20a1f79c3bdaf76f50dd5a156ef739d9">
         <!--  Header to identify the PCB type

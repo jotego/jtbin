@@ -20,16 +20,16 @@
 -->
 
 <misterromdescription>
-    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://jotego/jtcores"/>
+    <rotation>horizontal</rotation>
     <name>Magic Sword: Heroic Fantasy (World 900725)</name>
     <setname>msword</setname>
-    <rbf>jtcps1</rbf>
     <mameversion>0261</mameversion>
     <year>1990</year>
     <manufacturer>Capcom</manufacturer>
     <players>2</players>
+    <rbf>jtcps1</rbf>
     <joystick>8</joystick>
-    <rotation>horizontal</rotation>
     <region>World</region>
     <rom index="0" zip="msword.zip" md5="None" asm_md5="6f2bc254f588dec2f4a8a171b60c1569">
         <part>
@@ -70,12 +70,12 @@
         <part>00 80</part>
     </rom>
     <switches page_id="1" page_name="Switches" base="16" default="ff,bc,bf">
-        <!-- DSWA -->
-        <!-- DSWB -->
+        <DSWA/>
+        <DSWB/>
         <dip name="Stamina" bits="8,10" ids="8,7,6,5,4,3,2,1"/>
         <dip name="Enemy&apos;s Strength" bits="11,13" ids="8,7,6,5,1,2,3,4"/>
         <dip name="Stage Select" bits="14" ids="On,Off"/>
-        <!-- DSWC -->
+        <DSWC/>
         <dip name="Vitality Packs" bits="16,17" ids="1,4,3,2"/>
         <dip name="Free Play" bits="18" ids="On,Off"/>
         <dip name="Freeze" bits="19" ids="On,Off"/>

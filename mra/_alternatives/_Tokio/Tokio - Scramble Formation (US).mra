@@ -20,16 +20,16 @@
 -->
 
 <misterromdescription>
-    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://jotego/jtcores"/>
+    <rotation>vertical (cw)</rotation>
     <name>Tokio - Scramble Formation (US)</name>
     <setname>tokiou</setname>
-    <rbf>jtbubl</rbf>
     <mameversion>0261</mameversion>
     <year>1986</year>
     <manufacturer>Taito America Corporation (Romstar license)</manufacturer>
     <players>2</players>
+    <rbf>jtbubl</rbf>
     <joystick>8</joystick>
-    <rotation>vertical (cw)</rotation>
     <region>World</region>
     <rom index="0" zip="tokiou.zip|tokio.zip" md5="None" asm_md5="53510e372905aaa68e23552e2885d324">
         <!--  Header to identify the PCB type
@@ -99,14 +99,14 @@
         <part>01 B2</part>
     </rom>
     <switches page_id="1" page_name="Switches" base="16" default="ff,ff">
-        <!-- DSW0 -->
+        <DSW0/>
         <dip name="Cabinet" bits="0" ids="Upright,Cocktail"/>
         <dip name="Flip Screen" bits="1" ids="On,Off"/>
         <dip name="Service Mode" bits="2" ids="On,Off"/>
         <dip name="Demo Sounds" bits="3" ids="Off,On"/>
         <dip name="Coin A" bits="4,5" ids="2/3,2/1,1/2,1/1"/>
         <dip name="Coin B" bits="6,7" ids="2/3,2/1,1/2,1/1"/>
-        <!-- DSW1 -->
+        <DSW1/>
         <dip name="Enemies" bits="8" ids="Many,Few"/>
         <dip name="Enemy Shots" bits="9" ids="Many,Few"/>
         <dip name="Bonus Life" bits="10,11" ids="400K 400K,300K 400K,200K 400K,100K 400K"/>

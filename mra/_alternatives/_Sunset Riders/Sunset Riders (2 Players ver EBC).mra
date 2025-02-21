@@ -20,16 +20,16 @@
 -->
 
 <misterromdescription>
-    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://jotego/jtcores"/>
+    <rotation>horizontal</rotation>
     <name>Sunset Riders (2 Players ver EBC)</name>
     <setname>ssridersebc</setname>
-    <rbf>jtriders</rbf>
     <mameversion>0261</mameversion>
     <year>1991</year>
     <manufacturer>Konami</manufacturer>
     <players>2</players>
+    <rbf>jtriders</rbf>
     <joystick>8</joystick>
-    <rotation>horizontal</rotation>
     <region>World</region>
     <rom index="0" zip="ssridersebc.zip|ssriders.zip" md5="None" asm_md5="5c8a8f256649d342b44a9f8753bf9778">
         <!-- Offsets for each ROM region. Byte 15 = game selection. -->

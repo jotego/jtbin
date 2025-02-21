@@ -20,16 +20,16 @@
 -->
 
 <misterromdescription>
-    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://jotego/jtcores"/>
+    <rotation>horizontal</rotation>
     <name>Super Hang-On (sitdown-upright) (FD1089B 317-0034)</name>
     <setname>shangon3</setname>
-    <rbf>jtshanon</rbf>
     <mameversion>0261</mameversion>
     <year>1987</year>
     <manufacturer>Sega</manufacturer>
     <players>1</players>
+    <rbf>jtshanon</rbf>
     <joystick/>
-    <rotation>horizontal</rotation>
     <region>World</region>
     <rom index="0" zip="shangon3.zip|shangon.zip" md5="None" asm_md5="9da98cae4f35abee9531bae161dcaadb">
         <part>
@@ -148,10 +148,10 @@
         <part>00 D9</part>
     </rom>
     <switches page_id="1" page_name="Switches" base="24" default="ff,fe">
-        <!-- COINAGE -->
+        <COINAGE/>
         <dip name="Coin A" bits="0,3" ids="Free Play or 1/1,1/1 2/3,1/1 4/5,1/1 5/6,2/1 4/3,2/1 5/3 6/4,2/3,4/1,3/1,2/1,1/6,1/5,1/4,1/3,1/2,1/1"/>
         <dip name="Coin B" bits="4,7" ids="Free Play or 1/1,1/1 2/3,1/1 4/5,1/1 5/6,2/1 4/3,2/1 5/3 6/4,2/3,4/1,3/1,2/1,1/6,1/5,1/4,1/3,1/2,1/1"/>
-        <!-- DSW -->
+        <DSW/>
         <dip name="Demo Sounds" bits="8" ids="On,Off"/>
         <dip name="Difficulty" bits="9,10" ids="Hardest,Hard,Easy,Normal"/>
         <dip name="Time Adj." bits="11,12" ids="Hardest,Hard,Easy,Normal"/>

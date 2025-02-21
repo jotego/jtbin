@@ -20,16 +20,16 @@
 -->
 
 <misterromdescription>
-    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://jotego/jtcores"/>
+    <rotation>horizontal</rotation>
     <name>Wonder 3 (Japan 910520)</name>
     <setname>wonder3</setname>
-    <rbf>jtcps1</rbf>
     <mameversion>0261</mameversion>
     <year>1991</year>
     <manufacturer>Capcom</manufacturer>
     <players>2</players>
+    <rbf>jtcps1</rbf>
     <joystick>8</joystick>
-    <rotation>horizontal</rotation>
     <region>World</region>
     <rom index="0" zip="wonder3.zip|3wonders.zip" md5="None" asm_md5="cf05172a2bac132869872f0f00aa62ee">
         <part>
@@ -111,14 +111,14 @@
         <part>00 80</part>
     </rom>
     <switches page_id="1" page_name="Switches" base="16" default="ff,9a,99">
-        <!-- DSWA -->
+        <DSWA/>
         <dip name="Freeze" bits="7" ids="On,Off"/>
-        <!-- DSWB -->
+        <DSWB/>
         <dip name="Lives (Mid.W.)" bits="8,9" ids="5,3,2,1"/>
         <dip name="Gameplay (Mid.W.)" bits="10,11" ids="Hardest,Hard,Normal,Easy"/>
         <dip name="Lives (Chariot)" bits="12,13" ids="5,3,2,1"/>
         <dip name="Gameplay (Chariot)" bits="14,15" ids="Hardest,Hard,Normal,Easy"/>
-        <!-- DSWC -->
+        <DSWC/>
         <dip name="Lives (Don&apos;t Pull)" bits="16,17" ids="5,3,2,1"/>
         <dip name="Gameplay (Don&apos;t P.)" bits="18,19" ids="Hardest,Hard,Normal,Easy"/>
         <dip name="Flip Screen" bits="20" ids="On,Off"/>

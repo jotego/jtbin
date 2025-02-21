@@ -20,16 +20,16 @@
 -->
 
 <misterromdescription>
-    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://jotego/jtcores"/>
+    <rotation>vertical (cw)</rotation>
     <name>Rompers (Japan, new version (Rev B))</name>
     <setname>rompers</setname>
-    <rbf>jtshouse</rbf>
     <mameversion>0261</mameversion>
     <year>1989</year>
     <manufacturer>Namco</manufacturer>
     <players>2</players>
+    <rbf>jtshouse</rbf>
     <joystick>8</joystick>
-    <rotation>vertical (cw)</rotation>
     <region>World</region>
     <rom index="0" zip="rompers.zip" md5="None" address="0x30000000" asm_md5="08ff77ec86c6b0087b1c6398be1c31ac">
         <!-- Byte 0: bit 0-1: protection type, bit 4-5: control type (0 - normal, 1 - faceoff 4p, 2 - berabohm, 3 - quester), bit 6: 64/128kB Program ROMs
@@ -98,7 +98,7 @@ Byte 7: addr for upper nibble read
         <part>01 77</part>
     </rom>
     <switches page_id="1" page_name="Switches" base="16" default="ff,fe">
-        <!-- DIPSW -->
+        <DIPSW/>
         <dip name="Service Mode" bits="0" ids="On,Off"/>
         <dip name="*Sound fix" ids="On,Off" bits="8"/>
     </switches>

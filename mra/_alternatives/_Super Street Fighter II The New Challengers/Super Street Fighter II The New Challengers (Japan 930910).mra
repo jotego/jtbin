@@ -20,16 +20,16 @@
 -->
 
 <misterromdescription>
-    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://jotego/jtcores"/>
+    <rotation>horizontal</rotation>
     <name>Super Street Fighter II: The New Challengers (Japan 930910)</name>
     <setname>ssf2jr2</setname>
-    <rbf>jtcps2</rbf>
     <mameversion>0261</mameversion>
     <year>1993</year>
     <manufacturer>Capcom</manufacturer>
     <players>2</players>
+    <rbf>jtcps2</rbf>
     <joystick>8</joystick>
-    <rotation>horizontal</rotation>
     <region>World</region>
     <rom index="0" zip="ssf2jr2.zip|ssf2.zip|qsound.zip" md5="None" address="0x30000000" asm_md5="a05f565f33af306c7c807c40d10ca284">
         <part>
@@ -92,9 +92,9 @@ F8 77 C5 FE 6D C6 1D 21 74 DC 89 A4 01 01 02 01
         <part>00 80</part>
     </rom>
     <switches page_id="1" page_name="Switches" base="16" default="ff,ff">
-        <!-- DSWA -->
-        <!-- DSWB -->
-        <!-- DSWC -->
+        <DSWA/>
+        <DSWB/>
+        <DSWC/>
     </switches>
     <buttons names="Light Punch,Middle Punch,Heavy Punch,Light Kick,Middle Kick,Heavy Kick,Start,Coin,Core credits" default="A,B,X,Y,L,R,Start,Select,-" count="6"/>
 </misterromdescription>

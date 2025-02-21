@@ -20,16 +20,16 @@
 -->
 
 <misterromdescription>
-    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://jotego/jtcores"/>
+    <rotation>horizontal</rotation>
     <name>Gridiron Fight</name>
     <setname>gridiron</setname>
-    <rbf>jtwc</rbf>
     <mameversion>0261</mameversion>
     <year>1985</year>
     <manufacturer>Tehkan</manufacturer>
     <players>2</players>
+    <rbf>jtwc</rbf>
     <joystick/>
-    <rotation>horizontal</rotation>
     <region>World</region>
     <rom index="0" zip="gridiron.zip" md5="None" asm_md5="67078f4ef8846bf97e26398a9f6fd044">
         <!-- bit 0 -> enable non-symmetric speed in Tehkan WC bootleg -->
@@ -71,11 +71,11 @@
         <part>00 80</part>
     </rom>
     <switches page_id="1" page_name="Switches" base="16" default="ff,ff">
-        <!-- DSW2 -->
+        <DSW2/>
         <dip name="Defns. Time" bits="2,3" ids="7,3,5,Same as Offense"/>
         <dip name="Timer Speed" bits="4,5" ids="57/60,54/60,50/60,60/60"/>
         <dip name="Formation Time (Offense)" bits="6,7" ids="25,20,10,15"/>
-        <!-- DSW3 -->
+        <DSW3/>
         <dip name="1P time" bits="8,9" ids="2:30,2:00,1:00,1:30"/>
         <dip name="Demo Sounds" bits="15" ids="Off,On"/>
         <dip name="Controls" ids="D-pad,Analog stick,Auto" bits="20,21"/>

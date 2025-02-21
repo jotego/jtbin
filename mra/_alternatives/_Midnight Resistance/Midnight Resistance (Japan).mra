@@ -20,18 +20,18 @@
 -->
 
 <misterromdescription>
-    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://jotego/jtcores"/>
+    <rotation>horizontal</rotation>
     <name>Midnight Resistance (Japan)</name>
     <setname>midresj</setname>
-    <rbf>jtmidres</rbf>
     <mameversion>0261</mameversion>
     <year>1989</year>
     <manufacturer>Data East Corporation</manufacturer>
     <players>2</players>
+    <rbf>jtmidres</rbf>
     <joystick>8</joystick>
-    <rotation>horizontal</rotation>
     <region>World</region>
-    <rom index="0" zip="midresj.zip|midres.zip" md5="None" asm_md5="63bd74034743d16e7abd85dc1c0da4ff">
+    <rom index="0" zip="midresj.zip|midres.zip" md5="None" asm_md5="b3d84c17a0bb2aa91a168a1bb427baec">
         <!-- maincpu - starts at 0x0 - length 0x80000 (19 bits) -->
         <interleave output="16">
             <part name="fh12.13k" crc="45143384" map="01"/>
@@ -57,10 +57,10 @@
         <!-- gfx2 - starts at 0xD0000 - length 0x80000 (19 bits) -->
         <interleave output="16">
             <part name="fl-09.18a" crc="907d5910" map="01"/>
-            <part name="fl-08.16a" crc="a936c03c" map="10"/>
+            <part name="fl-07.15a" crc="2068c45c" map="10"/>
         </interleave>
         <interleave output="16">
-            <part name="fl-07.15a" crc="2068c45c" map="01"/>
+            <part name="fl-08.16a" crc="a936c03c" map="01"/>
             <part name="fl-06.13a" crc="b7241ab9" map="10"/>
         </interleave>
         <!-- GFX3_START -->
@@ -91,7 +91,7 @@
         <part>00 FF</part>
     </rom>
     <switches page_id="1" page_name="Switches" base="17" default="ff,bf">
-        <!-- DSW -->
+        <DSW/>
         <dip name="Demo Sounds" bits="5" ids="Off,On"/>
         <dip name="Flip Screen" bits="6" ids="On,Off"/>
         <dip name="Lives" bits="8,9" ids="Infinite,1,5,3"/>

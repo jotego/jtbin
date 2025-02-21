@@ -20,16 +20,16 @@
 -->
 
 <misterromdescription>
-    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://jotego/jtcores"/>
+    <rotation>vertical (cw)</rotation>
     <name>Karate Dou (Japan)</name>
     <setname>karatedo</setname>
-    <rbf>jtkchamp</rbf>
     <mameversion>0261</mameversion>
     <year>1984</year>
     <manufacturer>Data East Corporation</manufacturer>
     <players>2</players>
+    <rbf>jtkchamp</rbf>
     <joystick>4</joystick>
-    <rotation>vertical (cw)</rotation>
     <region>World</region>
     <rom index="0" zip="karatedo.zip|kchamp.zip" md5="None" asm_md5="5f4c4ef4a25eee6df5893aafa5fbdb47">
         <!-- maincpu - starts at 0x0 - length 0x10000 (16 bits) -->
@@ -86,7 +86,7 @@
         <part>01 1D</part>
     </rom>
     <switches page_id="1" page_name="Switches" base="16" default="3f">
-        <!-- DSW -->
+        <DSW/>
         <dip name="Difficulty" bits="4" ids="Hard,Normal"/>
         <dip name="Free Play" bits="5" ids="On,Off"/>
         <dip name="Demo Sounds" bits="6" ids="On,Off"/>

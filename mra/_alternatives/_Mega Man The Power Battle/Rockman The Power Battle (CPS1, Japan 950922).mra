@@ -20,16 +20,16 @@
 -->
 
 <misterromdescription>
-    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://jotego/jtcores"/>
+    <rotation>horizontal</rotation>
     <name>Rockman: The Power Battle (CPS1, Japan 950922)</name>
     <setname>rockmanj</setname>
-    <rbf>jtcps1</rbf>
     <mameversion>0261</mameversion>
     <year>1995</year>
     <manufacturer>Capcom</manufacturer>
     <players>2</players>
+    <rbf>jtcps1</rbf>
     <joystick>8</joystick>
-    <rotation>horizontal</rotation>
     <region>Japan</region>
     <rom index="0" zip="rockmanj.zip|megaman.zip" md5="None" asm_md5="6c5699d3d2215256f970a3e9d27a86cc">
         <part>
@@ -82,11 +82,11 @@
         <part>00 80</part>
     </rom>
     <switches page_id="1" page_name="Switches" base="16" default="ff,fa,ff">
-        <!-- DSWA -->
-        <!-- DSWB -->
+        <DSWA/>
+        <DSWB/>
         <dip name="Difficulty" bits="8,9" ids="Hardest,Hard,Normal,Easy"/>
         <dip name="Time" bits="10,11" ids="60,70,90,100"/>
-        <!-- DSWC -->
+        <DSWC/>
         <dip name="Flip Screen" bits="16" ids="On,Off"/>
         <dip name="Demo Sounds" bits="17" ids="Off,On"/>
         <dip name="Allow Continue" bits="18" ids="No,Yes"/>

@@ -20,16 +20,16 @@
 -->
 
 <misterromdescription>
-    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://jotego/jtcores"/>
+    <rotation>horizontal</rotation>
     <name>Sunset Riders (4 Players ver UAC)</name>
     <setname>ssridersuac</setname>
-    <rbf>jtriders</rbf>
     <mameversion>0261</mameversion>
     <year>1991</year>
     <manufacturer>Konami</manufacturer>
     <players>4</players>
+    <rbf>jtriders</rbf>
     <joystick>8</joystick>
-    <rotation>horizontal</rotation>
     <region>World</region>
     <rom index="0" zip="ssridersuac.zip|ssriders.zip" md5="None" asm_md5="0d8975dfc5eafe743664ac99570e4864">
         <!-- Offsets for each ROM region. Byte 15 = game selection. -->

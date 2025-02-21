@@ -20,16 +20,16 @@
 -->
 
 <misterromdescription>
-    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://jotego/jtcores"/>
+    <rotation>horizontal</rotation>
     <name>Quiz Nanairo Dreams: Nijiirochou no Kiseki (Japan 96086)</name>
     <setname>qndream</setname>
-    <rbf>jtcps2</rbf>
     <mameversion>0261</mameversion>
     <year>1996</year>
     <manufacturer>Capcom</manufacturer>
     <players>2</players>
+    <rbf>jtcps2</rbf>
     <joystick/>
-    <rotation>horizontal</rotation>
     <region>World</region>
     <rom index="0" zip="qndream.zip|qsound.zip" md5="None" address="0x30000000" asm_md5="2521df036b8be8e2bc699cb7f771927b">
         <part>
@@ -84,9 +84,9 @@
         <part>00 80</part>
     </rom>
     <switches page_id="1" page_name="Switches" base="16" default="ff,ff">
-        <!-- DSWA -->
-        <!-- DSWB -->
-        <!-- DSWC -->
+        <DSWA/>
+        <DSWB/>
+        <DSWC/>
     </switches>
     <buttons names="Button 1,Button 2,Button 3,Button 4,-,-,Start,Coin,Core credits" default="A,B,X,Y,Start,Select,-" count="4"/>
 </misterromdescription>

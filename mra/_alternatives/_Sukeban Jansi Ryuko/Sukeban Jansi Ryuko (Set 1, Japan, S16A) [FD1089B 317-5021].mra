@@ -20,16 +20,16 @@
 -->
 
 <misterromdescription>
-    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://jotego/jtcores"/>
+    <rotation>horizontal</rotation>
     <name>Sukeban Jansi Ryuko (Set 1, Japan, S16A) [FD1089B 317-5021]</name>
     <setname>sjryuko1</setname>
-    <rbf>jts16</rbf>
     <mameversion>0261</mameversion>
     <year>1987</year>
     <manufacturer>White Board</manufacturer>
     <players>1</players>
+    <rbf>jts16</rbf>
     <joystick/>
-    <rotation>horizontal</rotation>
     <region>World</region>
     <rom index="0" zip="sjryuko1.zip|sjryuko.zip" md5="None" address="0x30000000" asm_md5="7735c267ab3a53c5a032f5c49183fc14">
         <part>
@@ -123,12 +123,12 @@
         <part>00 80</part>
     </rom>
     <switches page_id="1" page_name="Switches" base="16" default="ff,fb">
-        <!-- DSW1 -->
+        <DSW1/>
         <dip name="Coin A" bits="0,3" ids="1/1,None,None,None,None,None,2/3,4/1,3/1,2/1,1/6,1/5,1/4,1/3,1/2,1/1"/>
         <dip name="Coin B" bits="4,7" ids="1/1,None,None,None,None,None,2/3,4/1,3/1,2/1,1/6,1/5,1/4,1/3,1/2,1/1"/>
-        <!-- DSW2 -->
+        <DSW2/>
         <dip name="CPU Level" bits="8,9" ids="Strong,Medium Strong,Medium Weak,Weak"/>
         <dip name="Demo Sounds" bits="10" ids="On,Off"/>
     </switches>
-    <buttons names="button 1,button 2,-,-,Start,Coin,Core credits" default="A,B,Start,Select,-" count="2"/>
+    <buttons names="button 1,button 2,-,-,-,Start,Coin,Core credits" default="A,B,Start,Select,-" count="2"/>
 </misterromdescription>

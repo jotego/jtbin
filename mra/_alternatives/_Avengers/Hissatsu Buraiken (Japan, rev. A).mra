@@ -20,16 +20,16 @@
 -->
 
 <misterromdescription>
-    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://jotego/jtcores"/>
+    <rotation>vertical (cw)</rotation>
     <name>Hissatsu Buraiken (Japan, rev. A)</name>
     <setname>buraiken</setname>
-    <rbf>jttrojan</rbf>
     <mameversion>0261</mameversion>
     <year>1987</year>
     <manufacturer>Capcom</manufacturer>
     <players>2</players>
+    <rbf>jttrojan</rbf>
     <joystick>8</joystick>
-    <rotation>vertical (cw)</rotation>
     <region>World</region>
     <rom index="0" zip="buraiken.zip|avengers.zip" md5="None" asm_md5="82102e51187d303113d420e42d443d66">
         <!-- Header byte 8:
@@ -61,8 +61,8 @@
             <part name="av_25.15n" crc="88a505a7" map="01"/>
             <part name="av_24.13n" crc="1f4463c8" map="10"/>
         </interleave>
-        <!-- CHAR_START -->
         <!-- JTFRAME_BA3_START -->
+        <!-- CHAR_START -->
         <!-- gfx1 - starts at 0x40000 - length 0x8000 (15 bits) -->
         <interleave output="16">
             <part name="av_03.8k" crc="efb5883e" map="12"/>
@@ -114,12 +114,12 @@
         <part>01 80</part>
     </rom>
     <switches page_id="1" page_name="Switches" base="16" default="ff,ff">
-        <!-- DSWA -->
+        <DSWA/>
         <dip name="Service Mode" bits="0" ids="On,Off"/>
         <dip name="Flip Screen" bits="1" ids="On,Off"/>
         <dip name="Coin B" bits="2,4" ids="4/1,1/4,2/1,1/2,3/1,1/3,1/6,1/1"/>
         <dip name="Coin A" bits="5,7" ids="4/1,1/4,2/1,1/2,3/1,1/3,1/6,1/1"/>
-        <!-- DSWB -->
+        <DSWB/>
         <dip name="Allow Continue" bits="8" ids="No,Yes"/>
         <dip name="Demo Sounds" bits="9" ids="Off,On"/>
         <dip name="Difficulty" bits="10,11" ids="Very Hard,Easy,Hard,Normal"/>

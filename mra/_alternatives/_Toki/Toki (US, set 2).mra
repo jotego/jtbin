@@ -20,16 +20,16 @@
 -->
 
 <misterromdescription>
-    <about author="Solal Jacob" webpage="https://ko-fi.com/solalretrogaming" twitter="@s_on_vg" source="https://github.com/jotego/jtcores"/>
+    <about author="Solal Jacob" webpage="https://ko-fi.com/solalretrogaming" twitter="@s_on_vg" source="https://jotego/jtcores"/>
+    <rotation>horizontal</rotation>
     <name>Toki (US, set 2)</name>
     <setname>tokiua</setname>
-    <rbf>jttoki</rbf>
     <mameversion>0261</mameversion>
     <year>1989</year>
     <manufacturer>TAD Corporation (Fabtek license)</manufacturer>
     <players>2</players>
+    <rbf>jttoki</rbf>
     <joystick>8</joystick>
-    <rotation>horizontal</rotation>
     <region>World</region>
     <rom index="0" zip="tokiua.zip|toki.zip" md5="None" asm_md5="47c22e77be894d51060c2ed4f3ed0e43">
         <!-- maincpu - starts at 0x0 - length 0x60000 (19 bits) -->
@@ -66,7 +66,7 @@
         <part>00 80</part>
     </rom>
     <switches page_id="1" page_name="Switches" base="16" default="df,ff">
-        <!-- DSW -->
+        <DSW/>
         <dip name="Joysticks" bits="5" ids="2,1"/>
         <dip name="Cabinet" bits="6" ids="Cocktail,Upright"/>
         <dip name="Flip Screen" bits="7" ids="On,Off"/>

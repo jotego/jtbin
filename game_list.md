@@ -610,6 +610,7 @@
 | flstory | Rumba Lumber                                                                               | rumba         |
 | flstory | The FairyLand Story                                                                        | flstory       |
 | flstory | The FairyLand Story (earlier)                                                              | flstoryo      |
+| flstory | Victorious Nine                                                                            | victnine      |
 | fround  | The Final Round (version L)                                                                | froundl       |
 | fround  | The Final Round (version M)                                                                | fround        |
 | gaiden  | Ninja Gaiden (US)                                                                          | gaiden        |
@@ -1073,4 +1074,4 @@
 | yiear   | Yie Ar Kung-Fu (program code G)                                                            | yiear2        |
 | yiear   | Yie Ar Kung-Fu (program code I)                                                            | yiear         |
 
-67 cores, supporting 1072 games
+67 cores, supporting 1073 games

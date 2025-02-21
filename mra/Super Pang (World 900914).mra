@@ -20,16 +20,16 @@
 -->
 
 <misterromdescription>
-    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://jotego/jtcores"/>
+    <rotation>horizontal</rotation>
     <name>Super Pang (World 900914)</name>
     <setname>spang</setname>
-    <rbf>jtpang</rbf>
     <mameversion>0261</mameversion>
     <year>1990</year>
     <manufacturer>Mitchell</manufacturer>
     <players>2</players>
+    <rbf>jtpang</rbf>
     <joystick>4</joystick>
-    <rotation>horizontal</rotation>
     <region>World</region>
     <rom index="0" zip="spang.zip" md5="None" asm_md5="9b179e173e743778be0ce2fa31c28aa9">
         <part>

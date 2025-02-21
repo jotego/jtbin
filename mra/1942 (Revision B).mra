@@ -20,16 +20,16 @@
 -->
 
 <misterromdescription>
-    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://jotego/jtcores"/>
+    <rotation>vertical (ccw)</rotation>
     <name>1942 (Revision B)</name>
     <setname>1942</setname>
-    <rbf>jt1942</rbf>
     <mameversion>0261</mameversion>
     <year>1984</year>
     <manufacturer>Capcom</manufacturer>
     <players>2</players>
+    <rbf>jt1942</rbf>
     <joystick>8</joystick>
-    <rotation>vertical (ccw)</rotation>
     <region>World</region>
     <rom index="0" zip="1942.zip" md5="None" asm_md5="8264559af87d63aaa2133335496e5718">
         <!--  Header to identify the PCB type
@@ -99,12 +99,12 @@
         <part>05 98</part>
     </rom>
     <switches page_id="1" page_name="Switches" base="16" default="77,ff">
-        <!-- DSWA -->
+        <DSWA/>
         <dip name="Coin A" bits="0,2" ids="Free Play,4/1,3/1,2/3,2/1,1/4,1/2,1/1"/>
         <dip name="Cabinet" bits="3" ids="Upright,Cocktail"/>
         <dip name="Bonus Life" bits="4,5" ids="30K 100K 100K+,30K 80K 80K+,20K 100K 100K+,20K 80K 80K+"/>
         <dip name="Lives" bits="6,7" ids="5,2,1,3"/>
-        <!-- DSWB -->
+        <DSWB/>
         <dip name="Coin B" bits="8,10" ids="Free Play,4/1,3/1,2/3,2/1,1/4,1/2,1/1"/>
         <dip name="Service Mode" bits="11" ids="On,Off"/>
         <dip name="Flip Screen" bits="12" ids="On,Off"/>

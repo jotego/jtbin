@@ -20,16 +20,16 @@
 -->
 
 <misterromdescription>
-    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://jotego/jtcores"/>
+    <rotation>horizontal</rotation>
     <name>Boulder Dash - Boulder Dash Part 2 (World)</name>
     <setname>bouldash</setname>
-    <rbf>jtslyspy</rbf>
     <mameversion>0261</mameversion>
     <year>1990</year>
     <manufacturer>Data East Corporation (licensed from First Star)</manufacturer>
     <players>2</players>
+    <rbf>jtslyspy</rbf>
     <joystick>4</joystick>
-    <rotation>horizontal</rotation>
     <region>World</region>
     <rom index="0" zip="bouldash.zip" md5="None" asm_md5="8b470f64f4920165a6461f9ca169c933">
         <!-- maincpu - starts at 0x0 - length 0x80000 (19 bits) -->
@@ -95,7 +95,7 @@
         <part>00 FF</part>
     </rom>
     <switches page_id="1" page_name="Switches" base="17" default="7f,7f">
-        <!-- DSW -->
+        <DSW/>
         <dip name="Coin A" bits="0,2" ids="3/1,2/1,1/6,1/5,1/4,1/3,1/2,1/1"/>
         <dip name="Coin B" bits="3,5" ids="3/1,2/1,1/6,1/5,1/4,1/3,1/2,1/1"/>
         <dip name="Flip Screen" bits="6" ids="On,Off"/>

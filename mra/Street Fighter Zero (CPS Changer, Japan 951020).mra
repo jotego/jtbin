@@ -20,16 +20,16 @@
 -->
 
 <misterromdescription>
-    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://jotego/jtcores"/>
+    <rotation>horizontal</rotation>
     <name>Street Fighter Zero (CPS Changer, Japan 951020)</name>
     <setname>sfzch</setname>
-    <rbf>jtcps1</rbf>
     <mameversion>0261</mameversion>
     <year>1995</year>
     <manufacturer>Capcom</manufacturer>
     <players>2</players>
+    <rbf>jtcps1</rbf>
     <joystick>8</joystick>
-    <rotation>horizontal</rotation>
     <region>Japan</region>
     <rom index="0" zip="sfzch.zip" md5="None" asm_md5="7ce5ab919d0a4ec1d0cdde7eef102076">
         <part>
@@ -83,9 +83,9 @@
         <part>00 80</part>
     </rom>
     <switches page_id="1" page_name="Switches" base="16" default="ff,ff">
-        <!-- DSWA -->
-        <!-- DSWB -->
-        <!-- DSWC -->
+        <DSWA/>
+        <DSWB/>
+        <DSWC/>
         <dip name="PCB type" ids="88617A,89626A" bits="24"/>
     </switches>
     <buttons names="LP,MP,SP,LK,MK,HK,Start,Coin,Core credits" default="A,B,X,Y,L,R,Start,Select,-" count="6"/>

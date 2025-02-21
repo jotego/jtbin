@@ -20,16 +20,16 @@
 -->
 
 <misterromdescription>
-    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://jotego/jtcores"/>
+    <rotation>horizontal</rotation>
     <name>Eco Fighters (World 931203 Phoenix Edition) (bootleg)</name>
     <setname>ecofghtrd</setname>
-    <rbf>jtcps2</rbf>
     <mameversion>0261</mameversion>
     <year>1993</year>
     <manufacturer>bootleg</manufacturer>
     <players>2</players>
+    <rbf>jtcps2</rbf>
     <joystick>8</joystick>
-    <rotation>horizontal</rotation>
     <region>World</region>
     <rom index="0" zip="ecofghtrd.zip|ecofghtr.zip|qsound.zip" md5="None" address="0x30000000" asm_md5="be19116ca6a3a4841c441da8e725f337">
         <part>
@@ -89,9 +89,9 @@
         <part>00 80</part>
     </rom>
     <switches page_id="1" page_name="Switches" base="16" default="ff,ff">
-        <!-- DSWA -->
-        <!-- DSWB -->
-        <!-- DSWC -->
+        <DSWA/>
+        <DSWB/>
+        <DSWC/>
         <dip name="Spinner" ids="on,off" bits="0"/>
     </switches>
     <buttons names="Rotate CCW,Shoot,Rotate CW,-,-,-,Start,Coin,Core credits" default="A,B,X,Start,Select,-" count="3"/>

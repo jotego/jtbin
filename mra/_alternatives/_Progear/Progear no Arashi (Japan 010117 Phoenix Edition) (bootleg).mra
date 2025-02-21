@@ -20,16 +20,16 @@
 -->
 
 <misterromdescription>
-    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://jotego/jtcores"/>
+    <rotation>horizontal</rotation>
     <name>Progear no Arashi (Japan 010117 Phoenix Edition) (bootleg)</name>
     <setname>progearjd</setname>
-    <rbf>jtcps2</rbf>
     <mameversion>0261</mameversion>
     <year>2001</year>
     <manufacturer>bootleg</manufacturer>
     <players>2</players>
+    <rbf>jtcps2</rbf>
     <joystick>8</joystick>
-    <rotation>horizontal</rotation>
     <region>World</region>
     <rom index="0" zip="progearjd.zip|progear.zip|qsound.zip" md5="None" address="0x30000000" asm_md5="0015d7f2ee628aae2841245617e2240a">
         <part>
@@ -91,9 +91,9 @@
         <part>00 80</part>
     </rom>
     <switches page_id="1" page_name="Switches" base="16" default="ff,ff">
-        <!-- DSWA -->
-        <!-- DSWB -->
-        <!-- DSWC -->
+        <DSWA/>
+        <DSWB/>
+        <DSWC/>
     </switches>
     <buttons names="Shot,Bomb,Rapid Shot,-,-,-,Start,Coin,Core credits" default="A,B,X,Start,Select,-" count="3"/>
 </misterromdescription>

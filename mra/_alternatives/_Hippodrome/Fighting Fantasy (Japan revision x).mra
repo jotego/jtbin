@@ -20,18 +20,18 @@
 -->
 
 <misterromdescription>
-    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://jotego/jtcores"/>
+    <rotation>horizontal</rotation>
     <name>Fighting Fantasy (Japan revision ?)</name>
     <setname>ffantasyb</setname>
-    <rbf>jtcop</rbf>
     <mameversion>0261</mameversion>
     <year>1989</year>
     <manufacturer>Data East Corporation</manufacturer>
     <players>2</players>
+    <rbf>jtcop</rbf>
     <joystick>8</joystick>
-    <rotation>horizontal</rotation>
     <region>World</region>
-    <rom index="0" zip="ffantasyb.zip|hippodrm.zip" md5="None" asm_md5="65f0e52ffa82126272b040a33831a7e9">
+    <rom index="0" zip="ffantasyb.zip|hippodrm.zip" md5="None" asm_md5="049cbb2ac4bccba779efd036330e0dcd">
         <!-- maincpu - starts at 0x0 - length 0x80000 (19 bits) -->
         <interleave output="16">
             <part name="ex01" crc="d2c4ab91" map="01"/>
@@ -60,12 +60,12 @@
         <!-- gfx2 - starts at 0xD0000 - length 0x80000 (19 bits) -->
         <interleave output="16">
             <part name="ex19" crc="6b80d7a3" map="01"/>
-            <part name="ex18" crc="78d3d764" map="10"/>
+            <part name="ex20" crc="ce9f5de3" map="10"/>
         </interleave>
         <part repeat="0x30000"> FF</part>
         <!-- Blank ends at 0x110000 -->
         <interleave output="16">
-            <part name="ex20" crc="ce9f5de3" map="01"/>
+            <part name="ex18" crc="78d3d764" map="01"/>
             <part name="ex21" crc="487a7ba2" map="10"/>
         </interleave>
         <part repeat="0x30000"> FF</part>
@@ -101,8 +101,8 @@
         <!-- sub - starts at 0x210000 - length 0x18000 (17 bits) -->
         <part name="ex08" crc="53010534"/>
         <part repeat="0x8000"> FF</part>
-        <!-- PROM_START -->
         <!-- JTFRAME_PROM_START -->
+        <!-- PROM_START -->
         <!-- proms - starts at 0x228000 - length 0x600 (11 bits) -->
         <part name="mb7116e_a-1.12c" crc="86e775f8"/>
         <part name="mb7122e_a-2.17e" crc="a5cda23e"/>
@@ -116,7 +116,7 @@
         <part>00 FF</part>
     </rom>
     <switches page_id="1" page_name="Switches" base="17" default="ff,ff">
-        <!-- DSW -->
+        <DSW/>
         <dip name="Coin A" bits="0,1" ids="3/1,2/1,1/2,1/1"/>
         <dip name="Coin B" bits="2,3" ids="3/1,2/1,1/2,1/1"/>
         <dip name="Demo Sounds" bits="5" ids="Off,On"/>

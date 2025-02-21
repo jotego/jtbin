@@ -20,16 +20,16 @@
 -->
 
 <misterromdescription>
-    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://jotego/jtcores"/>
+    <rotation>horizontal</rotation>
     <name>Puzz Loop 2 (Japan 010205)</name>
     <setname>pzloop2jr1</setname>
-    <rbf>jtcps2</rbf>
     <mameversion>0261</mameversion>
     <year>2001</year>
     <manufacturer>Mitchell (Capcom license)</manufacturer>
     <players>2</players>
+    <rbf>jtcps2</rbf>
     <joystick>8</joystick>
-    <rotation>horizontal</rotation>
     <region>World</region>
     <rom index="0" zip="pzloop2jr1.zip|pzloop2.zip|qsound.zip" md5="None" address="0x30000000" asm_md5="8ac4e2cfe49d65f5a1128f28c02cbcde">
         <part>
@@ -87,9 +87,9 @@
         <part>00 80</part>
     </rom>
     <switches page_id="1" page_name="Switches" base="16" default="ff,ff">
-        <!-- DSWA -->
-        <!-- DSWB -->
-        <!-- DSWC -->
+        <DSWA/>
+        <DSWB/>
+        <DSWC/>
     </switches>
     <buttons names="Shot,-,-,-,-,-,Start,Coin,Core credits" default="A,Start,Select,-" count="1"/>
 </misterromdescription>

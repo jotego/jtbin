@@ -20,16 +20,16 @@
 -->
 
 <misterromdescription>
-    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://jotego/jtcores"/>
+    <rotation>horizontal</rotation>
     <name>Insector X (Japan)</name>
     <setname>insectxj</setname>
-    <rbf>jtkiwi</rbf>
     <mameversion>0261</mameversion>
     <year>1989</year>
     <manufacturer>Taito Corporation</manufacturer>
     <players>2</players>
+    <rbf>jtkiwi</rbf>
     <joystick>8</joystick>
-    <rotation>horizontal</rotation>
     <region>World</region>
     <rom index="0" zip="insectxj.zip|insectx.zip" md5="None" asm_md5="382d7b3a550c7a5391cbc88e5f74033e">
         <!-- bit 0 = MCU
@@ -77,14 +77,14 @@
         <part>00 AD</part>
     </rom>
     <switches page_id="1" page_name="Switches" base="16" default="fe,ff">
-        <!-- DSWA -->
+        <DSWA/>
         <dip name="Cabinet" bits="0" ids="Upright,Cocktail"/>
         <dip name="Flip Screen" bits="1" ids="On,Off"/>
         <dip name="Service Mode" bits="2" ids="On,Off"/>
         <dip name="Demo Sounds" bits="3" ids="Off,On"/>
         <dip name="Coin A" bits="4,5" ids="2/3,2/1,1/2,1/1"/>
         <dip name="Coin B" bits="6,7" ids="2/3,2/1,1/2,1/1"/>
-        <!-- DSWB -->
+        <DSWB/>
         <dip name="Difficulty" bits="8,9" ids="Hardest,Easy,Hard,Medium"/>
         <dip name="Bonus Life" bits="10,11" ids="150k 650k 500k+,100k 500k 400k+,40k 240k 200k+,60k 360k 300k+"/>
         <dip name="Lives" bits="12,13" ids="1,2,4,3"/>

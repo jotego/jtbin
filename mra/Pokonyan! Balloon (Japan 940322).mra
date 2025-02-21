@@ -20,16 +20,16 @@
 -->
 
 <misterromdescription>
-    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://jotego/jtcores"/>
+    <rotation>horizontal</rotation>
     <name>Pokonyan! Balloon (Japan 940322)</name>
     <setname>pokonyan</setname>
-    <rbf>jtcps1</rbf>
     <mameversion>0261</mameversion>
     <year>1994</year>
     <manufacturer>Capcom</manufacturer>
     <players>2</players>
+    <rbf>jtcps1</rbf>
     <joystick>8</joystick>
-    <rotation>horizontal</rotation>
     <region>World</region>
     <rom index="0" zip="pokonyan.zip" md5="None" asm_md5="0c22b6a35a4c7dcf7ee3d42b04a1f1df">
         <part>
@@ -83,19 +83,19 @@
         <part>00 80</part>
     </rom>
     <switches page_id="1" page_name="Switches" base="16" default="be,fb,ff,ff">
-        <!-- DSWA -->
-        <!-- DSWB -->
+        <DSWA/>
+        <DSWB/>
         <dip name="Demo Sounds" bits="8,9" ids="Off,Every 4,Every 2,On"/>
         <dip name="Prize Mode" bits="10" ids="Not Used,Used"/>
         <dip name="Credit Mode" bits="11" ids="On,Off"/>
         <dip name="Max Stage" bits="12" ids="2,3"/>
         <dip name="Card Check" bits="13" ids="On,Off"/>
-        <!-- DSWC -->
+        <DSWC/>
         <dip name="Body Check" bits="17" ids="On,Off"/>
         <dip name="Screen Stop" bits="19" ids="On,Off"/>
         <dip name="Flip Screen" bits="20" ids="On,Off"/>
         <dip name="Service Mode" bits="23" ids="On,Off"/>
-        <!-- IN0 -->
+        <IN0/>
         <dip name="Service Mode" bits="30" ids="On,Off"/>
         <dip name="PCB type" ids="88617A,89626A" bits="24"/>
     </switches>

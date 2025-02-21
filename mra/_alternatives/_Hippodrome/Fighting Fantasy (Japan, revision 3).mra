@@ -20,16 +20,16 @@
 -->
 
 <misterromdescription>
-    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://jotego/jtcores"/>
+    <rotation>horizontal</rotation>
     <name>Fighting Fantasy (Japan, revision 3)</name>
     <setname>ffantasy</setname>
-    <rbf>jtcop</rbf>
     <mameversion>0261</mameversion>
     <year>1989</year>
     <manufacturer>Data East Corporation</manufacturer>
     <players>2</players>
+    <rbf>jtcop</rbf>
     <joystick>8</joystick>
-    <rotation>horizontal</rotation>
     <region>World</region>
     <rom index="0" zip="ffantasy.zip|hippodrm.zip" md5="None" asm_md5="9eff24d0ca0791d0ab806561515320e2">
         <!-- maincpu - starts at 0x0 - length 0x80000 (19 bits) -->
@@ -116,7 +116,7 @@
         <part>00 FF</part>
     </rom>
     <switches page_id="1" page_name="Switches" base="17" default="ff,ff">
-        <!-- DSW -->
+        <DSW/>
         <dip name="Coin A" bits="0,1" ids="3/1,2/1,1/2,1/1"/>
         <dip name="Coin B" bits="2,3" ids="3/1,2/1,1/2,1/1"/>
         <dip name="Demo Sounds" bits="5" ids="Off,On"/>

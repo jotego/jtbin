@@ -20,16 +20,16 @@
 -->
 
 <misterromdescription>
-    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://jotego/jtcores"/>
+    <rotation>horizontal</rotation>
     <name>Tehkan World Cup (set 2, bootleg?)</name>
     <setname>tehkanwcb</setname>
-    <rbf>jtwc</rbf>
     <mameversion>0261</mameversion>
     <year>1985</year>
     <manufacturer>Tehkan</manufacturer>
     <players>2</players>
+    <rbf>jtwc</rbf>
     <joystick/>
-    <rotation>horizontal</rotation>
     <region>World</region>
     <rom index="0" zip="tehkanwcb.zip|tehkanwc.zip" md5="None" asm_md5="a499a9b46c8cc58ed0ee8dce1f5c1efe">
         <!-- bit 0 -> enable non-symmetric speed in Tehkan WC bootleg -->
@@ -68,14 +68,14 @@
         <part>00 80</part>
     </rom>
     <switches page_id="1" page_name="Switches" base="16" default="ff,ff,ff">
-        <!-- DSW1 -->
+        <DSW1/>
         <dip name="Difficulty" bits="0,1" ids="Very Hard,Hard,Easy,Normal"/>
         <dip name="Timer Speed" bits="2" ids="55/60,60/60"/>
         <dip name="Demo Sounds" bits="3" ids="Off,On"/>
-        <!-- DSW2 -->
+        <DSW2/>
         <dip name="Coin A" bits="4,6" ids="2/3,2/1,1/6,1/5,1/4,1/3,1/2,1/1"/>
         <dip name="Coin B" bits="7,9" ids="2/3,2/1,1/6,1/5,1/4,1/3,1/2,1/1"/>
-        <!-- DSW3 -->
+        <DSW3/>
         <dip name="1P time" bits="12,13" ids="2:30,2:00,1:00,1:30"/>
         <dip name="Game Type" bits="19" ids="Credit In,Timer In"/>
         <dip name="Controls" ids="D-pad,Analog stick,Auto" bits="20,21"/>

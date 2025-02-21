@@ -20,16 +20,16 @@
 -->
 
 <misterromdescription>
-    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://jotego/jtcores"/>
+    <rotation>horizontal</rotation>
     <name>Chou Zetsurinjin Berabowman (Japan, Rev B)</name>
     <setname>berabohmb</setname>
-    <rbf>jtshouse</rbf>
     <mameversion>0261</mameversion>
     <year>1988</year>
     <manufacturer>Namco</manufacturer>
     <players>2</players>
+    <rbf>jtshouse</rbf>
     <joystick>8</joystick>
-    <rotation>horizontal</rotation>
     <region>World</region>
     <rom index="0" zip="berabohmb.zip|berabohm.zip" md5="None" address="0x30000000" asm_md5="45886b1dd0844e481d65affaa6f96783">
         <!-- Byte 0: bit 0-1: protection type, bit 4-5: control type (0 - normal, 1 - faceoff 4p, 2 - berabohm, 3 - quester), bit 6: 64/128kB Program ROMs
@@ -4075,7 +4075,7 @@ CD D8 E3 ED EF F2 F5 F7 5B 62 69 70 77 48 62 7D
         <part>00 E7</part>
     </rom>
     <switches page_id="1" page_name="Switches" base="16" default="ff">
-        <!-- DIPSW -->
+        <DIPSW/>
         <dip name="Service Mode" bits="0" ids="On,Off"/>
         <dip name="Invulnerability" bits="2" ids="On,Off"/>
         <dip name="Allow Continue" bits="3" ids="Off,On"/>

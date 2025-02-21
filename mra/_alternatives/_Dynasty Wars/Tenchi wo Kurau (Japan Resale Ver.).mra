@@ -20,16 +20,16 @@
 -->
 
 <misterromdescription>
-    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://jotego/jtcores"/>
+    <rotation>horizontal</rotation>
     <name>Tenchi wo Kurau (Japan Resale Ver.)</name>
     <setname>dynwarjr</setname>
-    <rbf>jtcps1</rbf>
     <mameversion>0261</mameversion>
     <year>1989</year>
     <manufacturer>Capcom</manufacturer>
     <players>2</players>
+    <rbf>jtcps1</rbf>
     <joystick>8</joystick>
-    <rotation>horizontal</rotation>
     <region>World</region>
     <rom index="0" zip="dynwarjr.zip|dynwar.zip" md5="None" asm_md5="1d45144b53742c93aa571a9c471317d6">
         <part>
@@ -69,18 +69,18 @@
         <part>00 80</part>
     </rom>
     <switches page_id="1" page_name="Switches" base="16" default="ff,ff,ff">
-        <!-- DSWA -->
+        <DSWA/>
         <dip name="Free Play" bits="7" ids="On,Off"/>
-        <!-- DSWB -->
+        <DSWB/>
         <dip name="Difficulty" bits="8,10" ids="8,7,6,5,1,2,3,4"/>
-        <!-- DSWC -->
+        <DSWC/>
         <dip name="Freeze" bits="16" ids="On,Off"/>
         <dip name="Turbo Mode" bits="17" ids="On,Off"/>
         <dip name="Flip Screen" bits="20" ids="On,Off"/>
         <dip name="Demo Sounds" bits="21" ids="Off,On"/>
         <dip name="Allow Continue" bits="22" ids="No,Yes"/>
         <dip name="Game Mode" bits="23" ids="Test,Game"/>
-        <!-- IN0 -->
+        <IN0/>
         <dip name="Service Mode" bits="30" ids="On,Off"/>
         <dip name="PCB type" ids="88617A,89626A" bits="24"/>
     </switches>

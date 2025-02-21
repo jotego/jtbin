@@ -20,16 +20,16 @@
 -->
 
 <misterromdescription>
-    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://jotego/jtcores"/>
+    <rotation>horizontal</rotation>
     <name>Sly Spy (US, revision 3)</name>
     <setname>slyspy3</setname>
-    <rbf>jtslyspy</rbf>
     <mameversion>0261</mameversion>
     <year>1989</year>
     <manufacturer>Data East USA</manufacturer>
     <players>2</players>
+    <rbf>jtslyspy</rbf>
     <joystick>8</joystick>
-    <rotation>horizontal</rotation>
     <region>World</region>
     <rom index="0" zip="slyspy3.zip|secretag.zip" md5="None" asm_md5="0e9c749b8b2930fdcdb48636f70cc24b">
         <!-- maincpu - starts at 0x0 - length 0x80000 (19 bits) -->
@@ -95,7 +95,7 @@
         <part>00 70</part>
     </rom>
     <switches page_id="1" page_name="Switches" base="17" default="7f,ff">
-        <!-- DSW -->
+        <DSW/>
         <dip name="Coin A" bits="0,1" ids="3/1,2/1,1/2,1/1"/>
         <dip name="Coin B" bits="2,3" ids="3/1,2/1,1/2,1/1"/>
         <dip name="Service Mode" bits="4" ids="On,Off"/>

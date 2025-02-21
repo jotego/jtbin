@@ -20,16 +20,16 @@
 -->
 
 <misterromdescription>
-    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://jotego/jtcores"/>
+    <rotation>horizontal</rotation>
     <name>Rastan (World)</name>
     <setname>rastana</setname>
-    <rbf>jtrastan</rbf>
     <mameversion>0261</mameversion>
     <year>1987</year>
     <manufacturer>Taito Corporation Japan</manufacturer>
     <players>2</players>
+    <rbf>jtrastan</rbf>
     <joystick>8</joystick>
-    <rotation>horizontal</rotation>
     <region>World</region>
     <rom index="0" zip="rastana.zip|rastan.zip" md5="None" asm_md5="6148baf634a68bea12bff06df7027469">
         <!-- maincpu - starts at 0x0 - length 0x60000 (19 bits) -->
@@ -78,13 +78,13 @@
         <part>00 71</part>
     </rom>
     <switches page_id="1" page_name="Switches" base="16" default="fe,ff">
-        <!-- DSWA -->
+        <DSWA/>
         <dip name="Cabinet" bits="0" ids="Upright,Cocktail"/>
         <dip name="Flip Screen" bits="1" ids="On,Off"/>
         <dip name="Service Mode" bits="2" ids="On,Off"/>
         <dip name="Coin A" bits="4,5" ids="2/3,2/1,1/2,1/1"/>
         <dip name="Coin B" bits="6,7" ids="2/3,2/1,1/2,1/1"/>
-        <!-- DSWB -->
+        <DSWB/>
         <dip name="Difficulty" bits="8,9" ids="Hardest,Hard,Easy,Medium"/>
         <dip name="1PUP" bits="10,11" ids="250 500 1000 1500 2000,200 400 800 1200 1600,150 300 600 900 1200,100 200 400 600 800"/>
         <dip name="Lives" bits="12,13" ids="6,5,4,3"/>

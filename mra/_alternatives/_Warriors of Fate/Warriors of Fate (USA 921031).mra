@@ -20,16 +20,16 @@
 -->
 
 <misterromdescription>
-    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://github.com/jotego/jtcores"/>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://jotego/jtcores"/>
+    <rotation>horizontal</rotation>
     <name>Warriors of Fate (USA 921031)</name>
     <setname>wofu</setname>
-    <rbf>jtcps15</rbf>
     <mameversion>0261</mameversion>
     <year>1992</year>
     <manufacturer>Capcom</manufacturer>
     <players>3</players>
+    <rbf>jtcps15</rbf>
     <joystick>8</joystick>
-    <rotation>horizontal</rotation>
     <region>World</region>
     <rom index="0" zip="wofu.zip|wof.zip|qsound.zip" md5="None" asm_md5="68f53e78ec9fd959f0357633cc80fff5">
         <part>
@@ -74,7 +74,7 @@
         <part>00 80</part>
     </rom>
     <switches page_id="1" page_name="Switches" base="16" default="ff">
-        <!-- DSWC -->
+        <DSWC/>
         <dip name="Freeze" bits="3" ids="On,Off"/>
     </switches>
     <buttons names="Attack,Jump,-,-,-,-,Start,Coin,Core credits" default="A,B,Start,Select,-" count="2"/>
