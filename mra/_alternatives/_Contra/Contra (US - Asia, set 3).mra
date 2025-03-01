@@ -82,7 +82,7 @@
         <part name="633e11.20g" crc="14ca5e19"/>
         <!-- Total 0x128400 bytes - 1185 kBytes -->
     </rom>
-    <!-- Vertical game -->
+    <!-- Vertical screen. -->
     <rom index="1">
         <part>01 46</part>
     </rom>

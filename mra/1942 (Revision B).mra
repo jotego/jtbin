@@ -94,7 +94,7 @@
         <part name="sb-9.m11" crc="4921635c"/>
         <!-- Total 0x3AA00 bytes - 234 kBytes -->
     </rom>
-    <!-- Vertical game -->
+    <!-- Vertical screen. Orientation reversed. -->
     <rom index="1">
         <part>05 98</part>
     </rom>

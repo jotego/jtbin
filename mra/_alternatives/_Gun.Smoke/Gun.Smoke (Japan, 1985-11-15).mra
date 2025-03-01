@@ -99,7 +99,7 @@
         <part name="g-05.01f" crc="25c90c2a"/>
         <!-- Total 0xACA00 bytes - 690 kBytes -->
     </rom>
-    <!-- Vertical game -->
+    <!-- Vertical screen. Orientation reversed. -->
     <rom index="1">
         <part>05 8C</part>
     </rom>

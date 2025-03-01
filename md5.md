@@ -172,6 +172,7 @@
 | circusce     | jtcircus   | 8237cf355ffaab2e3b7a6d05473c85ac | ff,4b        |
 | cltchitr     | jts18      | 7e3c3ba622fdfa0e79a159372bc3d23f | ff,fd        |
 | cltchitrj    | jts18      | 4309a09d48214d3c5894f61aa387e073 | ff,fd        |
+| colt         | jtflstory  | e76d8d14d50ab434f75ad705b66d7062 | bf,00,fb     |
 | combatsc     | jtcomsc    | 632210364566c4af623d44a003eb95a4 | ff,7b,5f     |
 | commando     | jtcommnd   | 34d5dc4ee95a5d25046f02441f424af1 | ff,1f        |
 | commandob2   | jtcommnd   | 1f32592edb0816226f515e477dcd1451 | ff,1f        |
@@ -391,13 +392,13 @@
 | hcastlek     | jtcastle   | 792920a9d62f4c492e6b05968e1d5d33 | ff,53,ff     |
 | higemaru     | jt1942     | fd3dfa858b78ce0bba2260ba639dcd86 | ff,fe        |
 | hippodrm     | jtcop      | a8bf65155b3daa5dcb5a00a268a09447 | ff,ff        |
-| hpolym84     | jtroadf    | 84eef0767797e5dcbf27ef3988121842 | ff,49,ff     |
+| hpolym84     | jtroadf    | dc1b46a420f87a175b025c330aa6af01 | ff,49,ff     |
 | hsf2         | jtcps2     | 88b106b19af3f0b9670729d6be1e1ef8 | ff,ff        |
 | hsf2a        | jtcps2     | 4979adb5d1b1fab8cccf1587eabb22af | ff,ff        |
 | hsf2d        | jtcps2     | c978e0dd8e4fe78a1ddb754c51c5c549 | ff,ff        |
 | hsf2j        | jtcps2     | f5668656cc694dc2a0253600120adc0b | ff,ff        |
 | hsf2j1       | jtcps2     | 15eacc24016637db1b358744e2c14bb1 | ff,ff        |
-| hyperspt     | jtroadf    | 84ce7fec1c163209927cb1cf23d9cdec | ff,49,ff     |
+| hyperspt     | jtroadf    | 5964cd567bdc916f1f80c348ff922f43 | ff,49,ff     |
 | hyprolym     | jttrack    | 04fc8923e60a5b5aff5ac48f2371b903 | ff,59        |
 | hyprolyma    | jttrack    | b889f76d2fafb4c5170557f15f29539b | ff,59        |
 | insectx      | jtkiwi     | 70716a1310f259feb93021b69248cfe8 | fe,ff        |
@@ -545,6 +546,7 @@
 | nwarrh       | jtcps2     | 7c51e5ceb41ef1354902dabbce64f56d | ff,ff        |
 | nwarru       | jtcps2     | 86d6ea6dff9499a26677d0ecf95b546e | ff,ff        |
 | nwarrud      | jtcps2     | 3d8e726031b0450554c01aa5daf86fc8 | ff,ff        |
+| nycaptor     | jtflstory  | f0641fe8ac8e800fee25de7f9fc217f8 | bf,00,fb     |
 | onna34ro     | jtflstory  | c3d96eb1755499825a114f5da6c5ecd7 | c0,00,80     |
 | onna34roa    | jtflstory  | ef8dee22b2fffd5e1991b9d976cf7974 | c0,00,80     |
 | outrun       | jtoutrun   | 712e0ad688ad6072ee01230780aabb78 | ff,f9        |
@@ -895,7 +897,7 @@
 | tigeroad     | jttora     | d05f3b49bc254d0d26d555be39002579 | ff,fb        |
 | tigeroadu    | jttora     | 126dc42382e22b5653fa2fb49502eed1 | ff,fb        |
 | timescan     | jts16b     | 9096991c6f3aab9fe5a4fffc38d927be | ff,ff,ff     |
-| timescan1    | jts16      | ddad0a50989197d365b6daabaca2152f | ff,ff,ff     |
+| timescan1    | jts16      | a01843d915ffa388e81fff9a484bda14 | ff,ff,ff     |
 | timescan3    | jts16b     |                                  | ff,ff,ff     |
 | tmht         | jttmnt     | ee4c5a737803a7cb7125d93811bdd6a6 | ff,5e,ff     |
 | tmht2p       | jttmnt     | a811b40a134905af07e43d841f9c08f3 | ff,5e,ff     |

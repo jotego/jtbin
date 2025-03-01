@@ -59,7 +59,7 @@
         <part name="d18.f9" crc="7396b374"/>
         <!-- Total 0x30500 bytes - 193 kBytes -->
     </rom>
-    <!-- Vertical game -->
+    <!-- Vertical screen. Orientation reversed. -->
     <rom index="1">
         <part>05 56</part>
     </rom>

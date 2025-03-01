@@ -113,7 +113,7 @@
         <part name="bm9.6l" crc="aeea4af7"/>
         <!-- Total 0xD8C00 bytes - 867 kBytes -->
     </rom>
-    <!-- Vertical game -->
+    <!-- Vertical screen. Orientation reversed. -->
     <rom index="1">
         <part>05 51</part>
     </rom>

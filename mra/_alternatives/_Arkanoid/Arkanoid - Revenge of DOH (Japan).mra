@@ -91,7 +91,7 @@
         <part repeat="0x75E"> FF</part>
         <!-- Total 0x251800 bytes - 2374 kBytes -->
     </rom>
-    <!-- Vertical game -->
+    <!-- Vertical screen. Orientation reversed. -->
     <rom index="1">
         <part>05 93</part>
     </rom>

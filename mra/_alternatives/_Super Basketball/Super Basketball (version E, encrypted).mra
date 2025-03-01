@@ -70,7 +70,7 @@
         <part name="405e19.16d" crc="e0bc782f"/>
         <!-- Total 0x24500 bytes - 145 kBytes -->
     </rom>
-    <!-- Vertical game -->
+    <!-- Vertical screen. -->
     <rom index="1">
         <part>01 7B</part>
     </rom>

@@ -81,7 +81,7 @@
         <part name="br25.3" crc="ba4a5651"/>
         <!-- Total 0x60300 bytes - 384 kBytes -->
     </rom>
-    <!-- Vertical game -->
+    <!-- Vertical screen. -->
     <rom index="1">
         <part>01 1D</part>
     </rom>

@@ -88,7 +88,7 @@
         <part name="ea-20.l6" crc="619f9d1e"/>
         <!-- Total 0x139800 bytes - 1254 kBytes -->
     </rom>
-    <!-- Vertical game -->
+    <!-- Vertical screen. Orientation reversed. -->
     <rom index="1">
         <part>05 60</part>
     </rom>

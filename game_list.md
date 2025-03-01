@@ -605,6 +605,8 @@
 | exed    | Exed Exes                                                                                  | exedexes      |
 | exed    | Savage Bees                                                                                | savgbees      |
 | flane   | Fast Lane                                                                                  | fastlane      |
+| flstory | Colt                                                                                       | colt          |
+| flstory | N.Y. Captor                                                                                | nycaptor      |
 | flstory | Onna Sanshirou - Typhoon Gal                                                               | onna34ro      |
 | flstory | Onna Sanshirou - Typhoon Gal (bootleg)                                                     | onna34roa     |
 | flstory | Rumba Lumber                                                                               | rumba         |
@@ -1074,4 +1076,4 @@
 | yiear   | Yie Ar Kung-Fu (program code G)                                                            | yiear2        |
 | yiear   | Yie Ar Kung-Fu (program code I)                                                            | yiear         |
 
-67 cores, supporting 1073 games
+67 cores, supporting 1075 games

@@ -78,7 +78,7 @@
         </interleave>
         <!-- Total 0xA0000 bytes - 640 kBytes -->
     </rom>
-    <!-- Vertical game -->
+    <!-- Vertical screen. -->
     <rom index="1">
         <part>01 40</part>
     </rom>

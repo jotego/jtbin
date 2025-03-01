@@ -64,8 +64,8 @@
         <part name="611g09.h7" crc="207a7b07"/>
         <!-- Total 0x2C0400 bytes - 2817 kBytes -->
     </rom>
+    <!--  8-pxl black frame on sides. -->
     <rom index="1">
-        <!-- black frame 8x0 -->
         <part>20 22</part>
     </rom>
     <switches page_id="1" page_name="Switches" base="16" default="ff,7b,5f">

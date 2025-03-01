@@ -78,7 +78,7 @@
         <part name="b06__14.1g" crc="28907072"/>
         <!-- Total 0x251800 bytes - 2374 kBytes -->
     </rom>
-    <!-- Vertical game -->
+    <!-- Vertical screen. Orientation reversed. -->
     <rom index="1">
         <part>05 71</part>
     </rom>

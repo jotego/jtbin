@@ -112,7 +112,7 @@
         <patch offset="0x8096">68 03 83</patch>
     </rom>
     <nvram index="2" size="4096"/>
-    <!-- Vertical game -->
+    <!-- Vertical screen. -->
     <rom index="1">
         <part>01 D9</part>
     </rom>

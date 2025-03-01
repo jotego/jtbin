@@ -46,7 +46,7 @@
         <part name="gx669f04.11a" crc="6d1ea61c"/>
         <!-- Total 0xE0000 bytes - 896 kBytes -->
     </rom>
-    <!-- Vertical game -->
+    <!-- Vertical screen. -->
     <rom index="1">
         <part>01 FF</part>
     </rom>

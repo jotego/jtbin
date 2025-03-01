@@ -104,7 +104,7 @@
         <part name="av.13k" crc="505a0987"/>
         <!-- Total 0xC9000 bytes - 804 kBytes -->
     </rom>
-    <!-- Vertical game -->
+    <!-- Vertical screen. -->
     <rom index="1">
         <part>01 80</part>
     </rom>

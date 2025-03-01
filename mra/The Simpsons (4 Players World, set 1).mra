@@ -81,8 +81,8 @@
 </part>
     </rom>
     <nvram index="2" size="28833"/>
+    <!-- 16-pxl black frame on sides. -->
     <rom index="1">
-        <!-- black frame 16x0 -->
         <part>60 53</part>
     </rom>
     <buttons names="Attack,Jump,-,Start,Coin,Core credits" default="A,B,Start,Select,-" count="2"/>

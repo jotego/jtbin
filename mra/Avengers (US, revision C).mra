@@ -61,8 +61,8 @@
             <part name="avu_25.15n" crc="230d9e30" map="01"/>
             <part name="avu_24.13n" crc="a6354024" map="10"/>
         </interleave>
-        <!-- CHAR_START -->
         <!-- JTFRAME_BA3_START -->
+        <!-- CHAR_START -->
         <!-- gfx1 - starts at 0x40000 - length 0x8000 (15 bits) -->
         <interleave output="16">
             <part name="av_03.8k" crc="efb5883e" map="12"/>
@@ -109,7 +109,7 @@
         <patch offset="0xC8493">a0</patch>
         <patch offset="0xC84D3">30</patch>
     </rom>
-    <!-- Vertical game -->
+    <!-- Vertical screen. -->
     <rom index="1">
         <part>01 80</part>
     </rom>

@@ -48,7 +48,7 @@
         <part name="771d02.08d" crc="3d34bb5a"/>
         <!-- Total 0x60100 bytes - 384 kBytes -->
     </rom>
-    <!-- Vertical game -->
+    <!-- Vertical screen. -->
     <rom index="1">
         <part>01 80</part>
     </rom>

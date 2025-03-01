@@ -92,7 +92,7 @@
         <part name="63s141.8j" crc="1a89a7ff"/>
         <!-- Total 0xCC300 bytes - 816 kBytes -->
     </rom>
-    <!-- Vertical game -->
+    <!-- Vertical screen. Orientation reversed. -->
     <rom index="1">
         <part>05 1C</part>
     </rom>

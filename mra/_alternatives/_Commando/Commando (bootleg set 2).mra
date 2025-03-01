@@ -80,7 +80,7 @@
         <part name="vtb6.6e" crc="0eaf5158"/>
         <!-- Total 0x4C600 bytes - 305 kBytes -->
     </rom>
-    <!-- Vertical game -->
+    <!-- Vertical screen. Orientation reversed. -->
     <rom index="1">
         <part>05 28</part>
     </rom>

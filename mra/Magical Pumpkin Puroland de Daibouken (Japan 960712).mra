@@ -70,6 +70,7 @@
         </interleave>
         <!-- Total 0x6D0000 bytes - 6976 kBytes -->
     </rom>
+    <!-- Dial controller reversed. -->
     <rom index="1">
         <part>18 80</part>
     </rom>

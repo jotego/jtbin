@@ -108,7 +108,7 @@ Byte 7: addr for upper nibble read
         <!-- Total 0x691000 bytes - 6724 kBytes -->
     </rom>
     <nvram index="2" size="63552"/>
-    <!-- Vertical game -->
+    <!-- Vertical screen. -->
     <rom index="1">
         <part>01 4E</part>
     </rom>

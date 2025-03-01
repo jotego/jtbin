@@ -31,12 +31,12 @@
     <rbf>jts16</rbf>
     <joystick>5 (half8)</joystick>
     <region>World</region>
-    <rom index="0" zip="timescan1.zip|timescan.zip" md5="None" address="0x30000000" asm_md5="ddad0a50989197d365b6daabaca2152f">
+    <rom index="0" zip="timescan1.zip|timescan.zip" md5="None" address="0x30000000" asm_md5="a01843d915ffa388e81fff9a484bda14">
         <part>
             00 00 00 00 00 00 00 00
             00 00 00 00 00 00 00 00
             02 00 00 00 00 00 00 00
-            00 00 00 00 00 00 00 00
+            1C 00 00 00 00 00 00 00
         </part>
         <!-- maincpu - starts at 0x0 - length 0x40000 (18 bits) -->
         <interleave output="16">
@@ -124,7 +124,7 @@
         <!-- Total 0x186100 bytes - 1560 kBytes -->
     </rom>
     <nvram index="2" size="16384"/>
-    <!-- Vertical game -->
+    <!-- Vertical screen. Orientation reversed. -->
     <rom index="1">
         <part>05 E4</part>
     </rom>

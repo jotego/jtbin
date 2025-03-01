@@ -79,7 +79,7 @@
         <part name="03e_e-01.bin" crc="1acee376"/>
         <!-- Total 0x2CB20 bytes - 178 kBytes -->
     </rom>
-    <!-- Vertical game -->
+    <!-- Vertical screen. Orientation reversed. -->
     <rom index="1">
         <part>05 32</part>
     </rom>

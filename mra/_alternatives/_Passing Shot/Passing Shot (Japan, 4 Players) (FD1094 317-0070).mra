@@ -95,7 +95,7 @@
         <!-- Total 0x44A000 bytes - 4392 kBytes -->
     </rom>
     <nvram index="2" size="16384"/>
-    <!-- Vertical game -->
+    <!-- Vertical screen. Orientation reversed. -->
     <rom index="1">
         <part>05 80</part>
     </rom>

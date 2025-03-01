@@ -72,8 +72,8 @@
         <!-- Total 0x428000 bytes - 4256 kBytes -->
     </rom>
     <nvram index="2" size="28705"/>
+    <!--  8-pxl black frame on sides. -->
     <rom index="1">
-        <!-- black frame 8x0 -->
         <part>20 60</part>
     </rom>
     <switches page_id="1" page_name="Switches" base="16" default="ff,7f,ff">

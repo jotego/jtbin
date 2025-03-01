@@ -66,7 +66,7 @@
         </interleave>
         <!-- Total 0x350000 bytes - 3392 kBytes -->
     </rom>
-    <!-- Vertical game -->
+    <!-- Vertical screen. Orientation reversed. -->
     <rom index="1">
         <part>05 80</part>
     </rom>

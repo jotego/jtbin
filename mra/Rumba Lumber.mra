@@ -48,6 +48,8 @@
 		byte 3: 0 == coins are active low
 		        1 ==                  high
 		    1???? == unused IO bits set to 1
+		   1????? == two PSG chips
+		  1?????? == 8kB of shared RAM
 		byte 4: 0 == GFX config register at $DF03
 		        1 == GFX config register at $DCE0
 		byte 5: 0 == use priority RAM
@@ -101,7 +103,7 @@
         <part name="beta.bin" crc="d81be000"/>
     </rom>
     <nvram index="2" size="4353"/>
-    <!-- Vertical game -->
+    <!-- Vertical screen. Orientation reversed. -->
     <rom index="1">
         <part>05 80</part>
     </rom>

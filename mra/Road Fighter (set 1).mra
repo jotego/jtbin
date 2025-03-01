@@ -76,7 +76,7 @@
         <!-- Total 0x32220 bytes - 200 kBytes -->
     </rom>
     <nvram index="2" size="2048"/>
-    <!-- Vertical game -->
+    <!-- Vertical screen. -->
     <rom index="1">
         <part>01 4B</part>
     </rom>
