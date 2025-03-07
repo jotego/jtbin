@@ -10,6 +10,9 @@ Ninja Ryukenden (Japan, set 1) --> ryukendn.rom
 Ninja Ryukenden (Japan, set 2) --> ryukendna.rom
 Shadow Warriors (World, set 1) --> shadoww.rom
 Shadow Warriors (World, set 2) --> shadowwa.rom
+Tecmo Knight --> tknight.rom
+Wild Fang - Tecmo Knight --> wildfang.rom
+Wild Fang --> wildfangs.rom
 
 
 These files are generated using the mra tool in:

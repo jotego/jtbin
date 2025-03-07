@@ -42,7 +42,7 @@
 		        1 ==     disabled
 		       0? == sub Z80 disabled
 		       1? ==         enabled
-		      1?? == mirror ROM bits in main CPU
+		      1?? == Z80 scrambled bits decoded
 		    01??? == 2 ROM banks
 		    1???? == 4 ROM banks
 		byte 3: 0 == coins are active low

@@ -620,6 +620,9 @@
 | gaiden  | Ninja Ryukenden (Japan, set 2)                                                             | ryukendna     |
 | gaiden  | Shadow Warriors (World, set 1)                                                             | shadoww       |
 | gaiden  | Shadow Warriors (World, set 2)                                                             | shadowwa      |
+| gaiden  | Tecmo Knight                                                                               | tknight       |
+| gaiden  | Wild Fang                                                                                  | wildfangs     |
+| gaiden  | Wild Fang - Tecmo Knight                                                                   | wildfang      |
 | gng     | Ghosts'n Goblins (Italian bootleg, harder)                                                 | gngblita      |
 | gng     | Ghosts'n Goblins (US)                                                                      | gngt          |
 | gng     | Ghosts'n Goblins (World? set 1)                                                            | gng           |
@@ -1076,4 +1079,4 @@
 | yiear   | Yie Ar Kung-Fu (program code G)                                                            | yiear2        |
 | yiear   | Yie Ar Kung-Fu (program code I)                                                            | yiear         |
 
-67 cores, supporting 1075 games
+67 cores, supporting 1078 games

@@ -172,7 +172,7 @@
 | circusce     | jtcircus   | 8237cf355ffaab2e3b7a6d05473c85ac | ff,4b        |
 | cltchitr     | jts18      | 7e3c3ba622fdfa0e79a159372bc3d23f | ff,fd        |
 | cltchitrj    | jts18      | 4309a09d48214d3c5894f61aa387e073 | ff,fd        |
-| colt         | jtflstory  | e76d8d14d50ab434f75ad705b66d7062 | bf,00,fb     |
+| colt         | jtflstory  | 8f8005ea8c83259e43a8a9bb4d4c872b | bf,00,fb     |
 | combatsc     | jtcomsc    | 632210364566c4af623d44a003eb95a4 | ff,7b,5f     |
 | commando     | jtcommnd   | 34d5dc4ee95a5d25046f02441f424af1 | ff,1f        |
 | commandob2   | jtcommnd   | 1f32592edb0816226f515e477dcd1451 | ff,1f        |
@@ -899,6 +899,7 @@
 | timescan     | jts16b     | 9096991c6f3aab9fe5a4fffc38d927be | ff,ff,ff     |
 | timescan1    | jts16      | a01843d915ffa388e81fff9a484bda14 | ff,ff,ff     |
 | timescan3    | jts16b     |                                  | ff,ff,ff     |
+| tknight      | jtgaiden   | b301b3f75eba4f17dd12fadc4d927f1d | ff,ff        |
 | tmht         | jttmnt     | ee4c5a737803a7cb7125d93811bdd6a6 | ff,5e,ff     |
 | tmht2p       | jttmnt     | a811b40a134905af07e43d841f9c08f3 | ff,5e,ff     |
 | tmht2pa      | jttmnt     | 160dd7b0f135466298a7eb5771f2d836 | ff,5e,ff     |
@@ -1004,6 +1005,8 @@
 | wb33         | jts16b     | 8420153c9895cb561e1d2e82f5b16537 | ff,fd        |
 | wb34         | jts16b     | 9fe77005736d05ccacf65338bec993ca | ff,fd        |
 | wb35         | jts16      | 94712db4f9ad4b34282ec310796c314b | ff,fd        |
+| wildfang     | jtgaiden   | 4390fc1c8565e99f6435b6c4e7ab6c77 | ff,ff        |
+| wildfangs    | jtgaiden   | bf02c0e3d47ce748708cd1423e9e3294 | ff,ff        |
 | willow       | jtcps1     | 5e3e5c94006cb16866627a4554c14598 | ff,ff,fa     |
 | willowj      | jtcps1     | 527ad7df6f60a5129f1669522532c45e | 7f,ff,ff     |
 | willowu      | jtcps1     | b692e6ca608e1704249ec551f4d1242d | ff,ff,fa     |

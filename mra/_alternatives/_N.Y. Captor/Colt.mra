@@ -31,7 +31,7 @@
     <rbf>jtflstory</rbf>
     <joystick/>
     <region>World</region>
-    <rom index="0" zip="colt.zip|nycaptor.zip" md5="None" asm_md5="e76d8d14d50ab434f75ad705b66d7062">
+    <rom index="0" zip="colt.zip|nycaptor.zip" md5="None" asm_md5="8f8005ea8c83259e43a8a9bb4d4c872b">
         <!-- 
 		byte 0: PCB id
 		byte 1: 0 == same orientation as flstory
@@ -42,7 +42,7 @@
 		        1 ==     disabled
 		       0? == sub Z80 disabled
 		       1? ==         enabled
-		      1?? == mirror ROM bits in main CPU
+		      1?? == Z80 scrambled bits decoded
 		    01??? == 2 ROM banks
 		    1???? == 4 ROM banks
 		byte 3: 0 == coins are active low
@@ -62,7 +62,7 @@
 		      1?? == 2 banks
  -->
         <part>
-            04 00 16 71 00 00 00 00
+            04 00 17 71 00 00 00 00
         </part>
         <!-- maincpu - starts at 0x0 - length 0x20000 (17 bits) -->
         <part name="04.bin" crc="dc61fdb2"/>

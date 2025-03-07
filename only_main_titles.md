@@ -111,6 +111,7 @@
 | flstory | Victorious Nine                                                              | victnine  |
 | fround  | The Final Round (version M)                                                  | fround    |
 | gaiden  | Shadow Warriors (World, set 1)                                               | shadoww   |
+| gaiden  | Wild Fang - Tecmo Knight                                                     | wildfang  |
 | gng     | Ghosts'n Goblins (World? set 1)                                              | gng       |
 | gunsmk  | Gun.Smoke (World, 1985-11-15)                                                | gunsmoke  |
 | karnov  | Chelnov - Atomic Runner (World)                                              | chelnov   |
@@ -235,4 +236,4 @@
 | xmen    | X-Men (4 Players ver EBA)                                                    | xmen      |
 | yiear   | Yie Ar Kung-Fu (program code I)                                              | yiear     |
 
-66 cores, supporting 234 games
+66 cores, supporting 235 games
