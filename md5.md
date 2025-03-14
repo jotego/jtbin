@@ -611,6 +611,7 @@
 | quarteta     | jts16      | 5f1a0fbbfd7bc9929ef3f8c79e31cdcd | ff,fe        |
 | quester      | jtshouse   | 7dd4fb7aacd8d661a9727439327bce5f | df           |
 | questers     | jtshouse   | 2b90d3e72360710c80d1af4f87afa20b | df           |
+| raiga        | jtgaiden   | 5706ffc84d73d5551874dd667dc21bdb | ff,5f        |
 | rastan       | jtrastan   | 8b958b5f7dea436d104db5529fc516a0 | fe,ff        |
 | rastana      | jtrastan   | 6148baf634a68bea12bff06df7027469 | fe,ff        |
 | rastanb      | jtrastan   | 11730c745ba58632959253e15d6fbb5a | fe,ff        |
@@ -872,6 +873,7 @@
 | ssridersuac  | jtriders   | 0d8975dfc5eafe743664ac99570e4864 |              |
 | ssridersubc  | jtriders   | 90f07fd479e0fcb154e71403a0239756 |              |
 | ssridersuda  | jtriders   | 5897101f424559a4f5d7446897139b12 |              |
+| stratof      | jtgaiden   | 27a9ca76157b5dd88ca06fcf33b2e068 | ff,5f        |
 | strider      | jtcps1     | 0de57eaedbb520fcb4c938b667808061 | ff,fd,ff     |
 | striderj     | jtcps1     | 49e0f70b14c4aae1bf3dc66b2fdc5e75 | 7f,ff,ff     |
 | striderjr    | jtcps1     | 977238eec575601aff60449c337e4fe6 | 7f,ff,ff     |
@@ -899,7 +901,7 @@
 | timescan     | jts16b     | 9096991c6f3aab9fe5a4fffc38d927be | ff,ff,ff     |
 | timescan1    | jts16      | a01843d915ffa388e81fff9a484bda14 | ff,ff,ff     |
 | timescan3    | jts16b     |                                  | ff,ff,ff     |
-| tknight      | jtgaiden   | b301b3f75eba4f17dd12fadc4d927f1d | ff,ff        |
+| tknight      | jtgaiden   | 59049d60f9894a5f48f2eaa7ffb81927 | ff,ff        |
 | tmht         | jttmnt     | ee4c5a737803a7cb7125d93811bdd6a6 | ff,5e,ff     |
 | tmht2p       | jttmnt     | a811b40a134905af07e43d841f9c08f3 | ff,5e,ff     |
 | tmht2pa      | jttmnt     | 160dd7b0f135466298a7eb5771f2d836 | ff,5e,ff     |
@@ -1005,8 +1007,8 @@
 | wb33         | jts16b     | 8420153c9895cb561e1d2e82f5b16537 | ff,fd        |
 | wb34         | jts16b     | 9fe77005736d05ccacf65338bec993ca | ff,fd        |
 | wb35         | jts16      | 94712db4f9ad4b34282ec310796c314b | ff,fd        |
-| wildfang     | jtgaiden   | 4390fc1c8565e99f6435b6c4e7ab6c77 | ff,ff        |
-| wildfangs    | jtgaiden   | bf02c0e3d47ce748708cd1423e9e3294 | ff,ff        |
+| wildfang     | jtgaiden   | 1e22099ec60f779d627aa82adfbb7b30 | ff,ff        |
+| wildfangs    | jtgaiden   | 48213331d47b595f5e97ebbbd3e8e337 | ff,ff        |
 | willow       | jtcps1     | 5e3e5c94006cb16866627a4554c14598 | ff,ff,fa     |
 | willowj      | jtcps1     | 527ad7df6f60a5129f1669522532c45e | 7f,ff,ff     |
 | willowu      | jtcps1     | b692e6ca608e1704249ec551f4d1242d | ff,ff,fa     |

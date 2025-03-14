@@ -618,6 +618,8 @@
 | gaiden  | Ninja Gaiden (US)                                                                          | gaiden        |
 | gaiden  | Ninja Ryukenden (Japan, set 1)                                                             | ryukendn      |
 | gaiden  | Ninja Ryukenden (Japan, set 2)                                                             | ryukendna     |
+| gaiden  | Raiga - Strato Fighter (Japan)                                                             | raiga         |
+| gaiden  | Raiga - Strato Fighter (US)                                                                | stratof       |
 | gaiden  | Shadow Warriors (World, set 1)                                                             | shadoww       |
 | gaiden  | Shadow Warriors (World, set 2)                                                             | shadowwa      |
 | gaiden  | Tecmo Knight                                                                               | tknight       |
@@ -1079,4 +1081,4 @@
 | yiear   | Yie Ar Kung-Fu (program code G)                                                            | yiear2        |
 | yiear   | Yie Ar Kung-Fu (program code I)                                                            | yiear         |
 
-67 cores, supporting 1078 games
+67 cores, supporting 1080 games

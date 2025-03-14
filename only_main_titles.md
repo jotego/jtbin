@@ -110,6 +110,7 @@
 | flstory | The FairyLand Story                                                          | flstory   |
 | flstory | Victorious Nine                                                              | victnine  |
 | fround  | The Final Round (version M)                                                  | fround    |
+| gaiden  | Raiga - Strato Fighter (US)                                                  | stratof   |
 | gaiden  | Shadow Warriors (World, set 1)                                               | shadoww   |
 | gaiden  | Wild Fang - Tecmo Knight                                                     | wildfang  |
 | gng     | Ghosts'n Goblins (World? set 1)                                              | gng       |
@@ -236,4 +237,4 @@
 | xmen    | X-Men (4 Players ver EBA)                                                    | xmen      |
 | yiear   | Yie Ar Kung-Fu (program code I)                                              | yiear     |
 
-66 cores, supporting 235 games
+66 cores, supporting 236 games

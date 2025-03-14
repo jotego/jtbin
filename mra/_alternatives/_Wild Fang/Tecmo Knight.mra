@@ -31,13 +31,16 @@
     <rbf>jtgaiden</rbf>
     <joystick>8</joystick>
     <region>World</region>
-    <rom index="0" zip="tknight.zip|wildfang.zip" md5="None" asm_md5="b301b3f75eba4f17dd12fadc4d927f1d">
+    <rom index="0" zip="tknight.zip|wildfang.zip" md5="None" asm_md5="59049d60f9894a5f48f2eaa7ffb81927">
         <!-- byte 0: 0 = no frame buffer for sprites
-                     1 =    frame buffer enabled
-                    0? = obj data delayed 10 pixels
-                    1? =                  11 pixels -->
+                     1 =    frame buffer enabled (1x)
+                    10 =    frame buffer enabled (2x)
+                   1?? = obj data delayed 1 pixel
+                 1???? = independent vertical size for objects
+             byte 1: 0 = wildfang MCU
+                     1 = raiga MCU -->
         <part>
-            03 00 00 00 00 00 00 00
+            01 00 00 00 00 00 00 00
         </part>
         <!-- maincpu - starts at 0x0 - length 0x40000 (18 bits) -->
         <interleave output="16">

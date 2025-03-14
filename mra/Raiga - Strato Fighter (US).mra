@@ -1,0 +1,96 @@
+<!--          FPGA arcade hardware by Jotego
+
+              This core is available for hardware compatible with MiST and MiSTer
+              Other FPGA systems may be supported by the time you read this.
+              This work is not mantained by the MiSTer project. Please contact the
+              core author for issues and updates.
+
+              (c) Jose Tejada, 2025. Please support this research
+              Patreon: https://patreon.com/jotego
+
+              The author does not endorse or participate in illegal distribution
+              of copyrighted material. This work can be used with compatible
+              software. This software can be homebrew projects or legally
+              obtained memory dumps of compatible games.
+
+              This file license is GNU GPLv2.
+              You can read the whole license file in
+              https://opensource.org/licenses/gpl-2.0.php
+
+-->
+
+<misterromdescription>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://jotego/jtcores"/>
+    <rotation>horizontal</rotation>
+    <name>Raiga - Strato Fighter (US)</name>
+    <setname>stratof</setname>
+    <mameversion>0261</mameversion>
+    <year>1991</year>
+    <manufacturer>Tecmo</manufacturer>
+    <players>2</players>
+    <rbf>jtgaiden</rbf>
+    <joystick>8</joystick>
+    <region>World</region>
+    <rom index="0" zip="stratof.zip" md5="None" asm_md5="27a9ca76157b5dd88ca06fcf33b2e068">
+        <!-- byte 0: 0 = no frame buffer for sprites
+                     1 =    frame buffer enabled (1x)
+                    10 =    frame buffer enabled (2x)
+                   1?? = obj data delayed 1 pixel
+                 1???? = independent vertical size for objects
+             byte 1: 0 = wildfang MCU
+                     1 = raiga MCU -->
+        <part>
+            11 01 00 00 00 00 00 00
+        </part>
+        <!-- maincpu - starts at 0x0 - length 0x40000 (18 bits) -->
+        <interleave output="16">
+            <part name="2.4s" crc="339358fa" map="01"/>
+            <part name="1.3s" crc="060822a4" map="10"/>
+        </interleave>
+        <!-- JTFRAME_BA1_START -->
+        <!-- audiocpu - starts at 0x40000 - length 0x10000 (16 bits) -->
+        <part name="a-4b.3" crc="18655c95"/>
+        <!-- PCM_START -->
+        <!-- oki - starts at 0x50000 - length 0x20000 (17 bits) -->
+        <part name="a-4a.4" crc="ef9acdcf"/>
+        <!-- JTFRAME_BA2_START -->
+        <!-- gfx1 - starts at 0x70000 - length 0x10000 (16 bits) -->
+        <interleave output="16">
+            <part name="b-7a.5" crc="6d2e4bf1" map="12"/>
+        </interleave>
+        <!-- OBJ_START -->
+        <!-- gfx4 - starts at 0x80000 - length 0x100000 (20 bits) -->
+        <interleave output="16">
+            <part name="b-1m" crc="b0de0ded" map="01"/>
+            <part name="b-2m" crc="5794ec32" map="10"/>
+        </interleave>
+        <!-- JTFRAME_BA3_START -->
+        <!-- gfx2 - starts at 0x180000 - length 0x80000 (19 bits) -->
+        <interleave output="16">
+            <part name="b-1b" crc="781d1bd2" map="12"/>
+        </interleave>
+        <!-- GFX3_START -->
+        <!-- gfx3 - starts at 0x200000 - length 0x80000 (19 bits) -->
+        <interleave output="16">
+            <part name="b-4b" crc="89468b84" map="12"/>
+        </interleave>
+        <!-- Total 0x280000 bytes - 2560 kBytes -->
+    </rom>
+    <rom index="17" zip="jtbeta.zip" md5="None" asm_md5="94c481938b4574732df7731a43c372e9">
+        <part name="beta.bin" crc="d81be000"/>
+    </rom>
+    <nvram index="2" size="36878"/>
+    <rom index="1">
+        <part>00 80</part>
+    </rom>
+    <switches page_id="1" page_name="Switches" base="16" default="ff,5f">
+        <DSW/>
+        <dip name="Coin B" bits="0,3" ids="5/1,2/1,3/2,1/4,4/1,1/6,2/5,1/2,4/3,1/7,3/1,1/3,3/4,1/5,2/3,1/1"/>
+        <dip name="Coin A" bits="4,7" ids="5/1,2/1,3/2,1/4,4/1,1/6,2/5,1/2,4/3,1/7,3/1,1/3,3/4,1/5,2/3,1/1"/>
+        <dip name="Bonus Life" bits="8,9" ids="None,100k 300k,50k only,50k 200k"/>
+        <dip name="Lives" bits="10,11" ids="2,4,5,3"/>
+        <dip name="Difficulty" bits="12,13" ids="Hardest,Normal,Hard,Easy"/>
+        <dip name="Demo Sounds" bits="15" ids="On,Off"/>
+    </switches>
+    <buttons names="button 1,button 2,-,Start,Coin,Core credits" default="A,B,Start,Select,-" count="2"/>
+</misterromdescription>
