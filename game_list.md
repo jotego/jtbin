@@ -731,6 +731,7 @@
 | pang    | Buster Bros. (USA)                                                                         | bbros         |
 | pang    | Capcom World (Japan)                                                                       | cworld        |
 | pang    | Dokaben (Japan)                                                                            | dokaben       |
+| pang    | Dokaben 2 (Japan)                                                                          | dokaben2      |
 | pang    | Pang (World)                                                                               | pang          |
 | pang    | Pomping World (Japan)                                                                      | pompingw      |
 | pang    | Super Buster Bros. (USA 901001)                                                            | sbbros        |
@@ -1081,4 +1082,4 @@
 | yiear   | Yie Ar Kung-Fu (program code G)                                                            | yiear2        |
 | yiear   | Yie Ar Kung-Fu (program code I)                                                            | yiear         |
 
-67 cores, supporting 1080 games
+67 cores, supporting 1081 games

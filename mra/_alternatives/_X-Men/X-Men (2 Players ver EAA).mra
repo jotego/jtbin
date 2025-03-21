@@ -65,9 +65,6 @@
         </interleave>
         <!-- Total 0x920000 bytes - 9344 kBytes -->
     </rom>
-    <rom index="17" zip="jtbeta.zip" md5="None" asm_md5="94c481938b4574732df7731a43c372e9">
-        <part name="beta.bin" crc="d81be000"/>
-    </rom>
     <rom index="2">
         <part>
 02 42 FD BD 02 03 00 00 03 00 00 17 00 01 00 00

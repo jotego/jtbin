@@ -43,10 +43,10 @@
             FF FF FF FF FF FF FF FF
         </part>
         <!-- maincpu - starts at 0x0 - length 0x100000 (20 bits) -->
-        <part name="stfii-qkn-cps-17.33" crc="3a9458ee" map="" length="0x40000"/>
-        <part name="stfii-qkn-cps-17.34" crc="4ed215d8" map="" length="0x40000" offset="0x40000"/>
-        <part name="stfii-qkn-cps-17.34" crc="4ed215d8" map="" length="0x40000"/>
-        <part name="stfii-qkn-cps-17.33" crc="3a9458ee" map="" length="0x40000" offset="0x40000"/>
+        <part name="stfii-qkn-cps-17.33" crc="3a9458ee" length="0x40000"/>
+        <part name="stfii-qkn-cps-17.34" crc="4ed215d8" length="0x40000" offset="0x40000"/>
+        <part name="stfii-qkn-cps-17.34" crc="4ed215d8" length="0x40000"/>
+        <part name="stfii-qkn-cps-17.33" crc="3a9458ee" length="0x40000" offset="0x40000"/>
         <!-- audiocpu - starts at 0x100000 - length 0x10000 (16 bits) -->
         <part name="sf2_09.bin" crc="a4823a1b"/>
         <!-- oki - starts at 0x110000 - length 0x40000 (18 bits) -->

@@ -139,6 +139,7 @@
 | pang    | Block Block (World 911219 Joystick)                                          | block     |
 | pang    | Capcom World (Japan)                                                         | cworld    |
 | pang    | Dokaben (Japan)                                                              | dokaben   |
+| pang    | Dokaben 2 (Japan)                                                            | dokaben2  |
 | pang    | Pang (World)                                                                 | pang      |
 | pang    | Super Pang (World 900914)                                                    | spang     |
 | paroda  | Parodius Da!: Shinwa kara Owarai e (World, set 1)                            | parodius  |
@@ -237,4 +238,4 @@
 | xmen    | X-Men (4 Players ver EBA)                                                    | xmen      |
 | yiear   | Yie Ar Kung-Fu (program code I)                                              | yiear     |
 
-66 cores, supporting 236 games
+66 cores, supporting 237 games
