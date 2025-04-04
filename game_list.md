@@ -134,7 +134,6 @@
 | cps1    | Final Fight (USA, set 2)                                                                   | ffightu1      |
 | cps1    | Final Fight (World, set 1)                                                                 | ffight        |
 | cps1    | Final Fight (World, set 2)                                                                 | ffighta       |
-| cps1    | Final Fight 30th Anniversary Edition (World, hack)                                         | ffightae      |
 | cps1    | Forgotten Worlds (Japan) (English prototype)                                               | forgottnj     |
 | cps1    | Forgotten Worlds (USA, B-Board 88618B-2, Rev. A)                                           | forgottnua    |
 | cps1    | Forgotten Worlds (USA, B-Board 88618B-2, Rev. AA)                                          | forgottnuaa   |
@@ -605,6 +604,7 @@
 | exed    | Exed Exes                                                                                  | exedexes      |
 | exed    | Savage Bees                                                                                | savgbees      |
 | flane   | Fast Lane                                                                                  | fastlane      |
+| flstory | Bronx                                                                                      | bronx         |
 | flstory | Colt                                                                                       | colt          |
 | flstory | N.Y. Captor                                                                                | nycaptor      |
 | flstory | Onna Sanshirou - Typhoon Gal                                                               | onna34ro      |

@@ -32,6 +32,7 @@
     <joystick>8</joystick>
     <region>World</region>
     <rom index="0" zip="pnickj.zip" md5="None" asm_md5="39d46d81dfc6c10c94b02cf812bfd817">
+        <!--  -->
         <part>
             00 01 40 01 40 02 FF FF
             FF FF FF FF FF FF FF FF

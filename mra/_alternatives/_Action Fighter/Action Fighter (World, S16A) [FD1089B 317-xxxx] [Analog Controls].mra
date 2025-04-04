@@ -32,6 +32,7 @@
     <joystick/>
     <region>World</region>
     <rom index="0" zip="afighterd.zip|afighter.zip" md5="None" address="0x30000000" asm_md5="871dea8ad97745ec4906d972feb96006">
+        <!--  -->
         <part>
             00 00 00 00 00 00 00 00
             00 00 00 00 00 00 00 00
@@ -89,8 +90,8 @@
             <part name="epr-10292" crc="cef289a3" map="10"/>
         </interleave>
         <part repeat="0x10000"> FF</part>
-        <!-- JTFRAME_PROM_START -->
         <!-- MCU_START -->
+        <!-- JTFRAME_PROM_START -->
         <!-- mcu - starts at 0x180000 - length 0x2000 (13 bits) -->
         <part repeat="0x1000"> FF</part>
         <part repeat="0x1000"> FF</part>

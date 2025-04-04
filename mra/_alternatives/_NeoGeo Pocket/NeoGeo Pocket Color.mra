@@ -36,8 +36,8 @@
         <part name="ngpcbios.rom" crc="6eeb6f40"/>
         <!-- Total 0x10000 bytes - 64 kBytes -->
     </rom>
-    <rom index="17" zip="jtbeta.zip" md5="None" asm_md5="94c481938b4574732df7731a43c372e9">
-        <part name="beta.bin" crc="d81be000"/>
+    <rom index="17" zip="jtbeta.zip" md5="None" asm_md5="84d30cc91cfc0f49e372c316ac73456b">
+        <part name="beta.bin" crc="5603d968"/>
     </rom>
     <nvram index="2" size="12868"/>
     <rom index="1">

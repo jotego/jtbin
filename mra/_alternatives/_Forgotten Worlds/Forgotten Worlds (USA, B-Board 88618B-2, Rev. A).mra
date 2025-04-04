@@ -32,6 +32,7 @@
     <joystick>8</joystick>
     <region>World</region>
     <rom index="0" zip="forgottnua.zip|forgottn.zip" md5="None" asm_md5="f2b2669d613ef6ba00e6e432d452c243">
+        <!--  -->
         <part>
             00 04 40 04 40 05 FF FF
             FF FF FF FF FF FF FF FF

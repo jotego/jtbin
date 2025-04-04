@@ -32,6 +32,7 @@
     <joystick/>
     <region>World</region>
     <rom index="0" zip="cworld.zip" md5="None" asm_md5="d4d84d29ff0060240d09ca61ce4d7508">
+        <!--  -->
         <part>
             04 15 26 37 40 51 62 73
             57 51 43 00 00 00 00 02

@@ -32,6 +32,7 @@
     <joystick/>
     <region>World</region>
     <rom index="0" zip="qndream.zip|qsound.zip" md5="None" address="0x30000000" asm_md5="2521df036b8be8e2bc699cb7f771927b">
+        <!--  -->
         <part>
             00 08 80 08 80 18 80 58
             FF FF FF FF FF FF FF FF

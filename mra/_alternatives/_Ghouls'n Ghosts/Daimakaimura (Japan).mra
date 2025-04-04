@@ -32,6 +32,7 @@
     <joystick>4</joystick>
     <region>World</region>
     <rom index="0" zip="daimakai.zip|ghouls.zip" md5="None" asm_md5="86838f032c65d3d4539aeb3e8ba90a2f">
+        <!--  -->
         <part>
             00 04 40 04 40 05 FF FF
             FF FF FF FF FF FF FF FF

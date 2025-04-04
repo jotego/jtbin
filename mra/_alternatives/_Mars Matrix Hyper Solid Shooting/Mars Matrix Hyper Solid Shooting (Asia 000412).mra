@@ -32,6 +32,7 @@
     <joystick>8</joystick>
     <region>World</region>
     <rom index="0" zip="mmatrixa.zip|mmatrix.zip|qsound.zip" md5="None" address="0x30000000" asm_md5="f0da3879166de7ef388cc744cd7bdd6f">
+        <!--  -->
         <part>
             00 06 80 06 80 26 80 A6
             FF FF FF FF FF FF FF FF

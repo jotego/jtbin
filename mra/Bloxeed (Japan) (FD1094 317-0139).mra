@@ -32,6 +32,7 @@
     <joystick>8</joystick>
     <region>World</region>
     <rom index="0" zip="bloxeed.zip" md5="None" address="0x30000000" asm_md5="f3afb888ed4d0f8cfa8d4b2c77aadbf4">
+        <!--  -->
         <part>
             00 00 40 00 40 02 80 02
             A0 02 A2 02 00 00 00 00
@@ -63,8 +64,8 @@
         <!-- mcu - starts at 0x2A2000 -->
         <!-- Total 0x2A2000 bytes - 2696 kBytes -->
     </rom>
-    <rom index="17" zip="jtbeta.zip" md5="None" asm_md5="94c481938b4574732df7731a43c372e9">
-        <part name="beta.bin" crc="d81be000"/>
+    <rom index="17" zip="jtbeta.zip" md5="None" asm_md5="84d30cc91cfc0f49e372c316ac73456b">
+        <part name="beta.bin" crc="5603d968"/>
     </rom>
     <nvram index="2" size="16384"/>
     <rom index="1">

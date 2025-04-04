@@ -137,6 +137,7 @@
 | bouldashj    | jtslyspy   | 85af95beecf462c540bc75d74abec09c | 7f,7f        |
 | boxyboy      | jtshouse   | a5c916ffcf1235f54548f0ffc08cc95c | ff           |
 | boxyboya     | jtshouse   | ab314fbda5b4ee3a1ff4443243ae72a7 | ff           |
+| bronx        | jtflstory  | 68cc725db932ae5cbd5a8053bad03b62 | ff,fb,ff     |
 | bublbobl     | jtbubl     | fcbcd7500f6a7421e827373cfa8890d3 | ff,ff        |
 | bublbobl1    | jtbubl     | e151ea1dcc1cd20b53ed8dcfbeb944f2 | ff,ff        |
 | bublboblp    | jtbubl     | 21bb7662906b98c2b96a95c880aee6c1 | ff,ff        |
@@ -172,7 +173,7 @@
 | circusce     | jtcircus   | 8237cf355ffaab2e3b7a6d05473c85ac | ff,4b        |
 | cltchitr     | jts18      | 7e3c3ba622fdfa0e79a159372bc3d23f | ff,fd        |
 | cltchitrj    | jts18      | 4309a09d48214d3c5894f61aa387e073 | ff,fd        |
-| colt         | jtflstory  | 8f8005ea8c83259e43a8a9bb4d4c872b | bf,00,fb     |
+| colt         | jtflstory  | de3e8d0742ea1184e03cca3d7112bf01 | bf,00,fb     |
 | combatsc     | jtcomsc    | 632210364566c4af623d44a003eb95a4 | ff,7b,5f     |
 | commando     | jtcommnd   | 34d5dc4ee95a5d25046f02441f424af1 | ff,1f        |
 | commandob2   | jtcommnd   | 1f32592edb0816226f515e477dcd1451 | ff,1f        |
@@ -318,7 +319,6 @@
 | ffantasyj    | jtcop      | ea498ab922dff05106a7049e0fccde6b | ff,ff        |
 | ffight       | jtcps1     | aca5a28ec2d82513caa50fdbe0b1973a | ff,f4,9f     |
 | ffighta      | jtcps1     | 29d2bace8e6008abd84cd88f7fcbf483 | ff,f4,9f     |
-| ffightae     | jtcps1     | 09bb8684d066501c0a82d78a02de529a | ff,f4,9f     |
 | ffightj      | jtcps1     | d6531da21a4a1fd01aa3c270786d4560 | ff,f4,9f     |
 | ffightj1     | jtcps1     | 9b0f5a0f99e7d52397fa928cc94b46a0 | ff,f4,9f     |
 | ffightj2     | jtcps1     | d7b63062aeba66b2e80c07d99694b7d8 | ff,f4,9f     |
@@ -331,8 +331,8 @@
 | ffightuc     | jtcps1     | 4bba0c070f459d2d7261417c037c8068 | ff,f4,9f     |
 | flkatck      | jtmx5k     | 7ca93f929eed63fc55bc6a8522be2574 | ff,51,ff     |
 | flkatcka     | jtmx5k     | 7ca93f929eed63fc55bc6a8522be2574 | ff,51,ff     |
-| flstory      | jtflstory  | a34da89d8e7ad785d28f03d5ac16d0e2 | ec,00,f8     |
-| flstoryo     | jtflstory  | aaadc2b1a2672a2749f4a98de55182c1 | ec,00,f8     |
+| flstory      | jtflstory  | a6532275a98d5fb2bb348aca87402378 | ec,00,f8     |
+| flstoryo     | jtflstory  | 3d1b1851a9a21be57f9cecc00521fd14 | ec,00,f8     |
 | forgottn     | jtcps1     | cf5e965715f2d49a611a428239b2bf39 | ff,fc,ff     |
 | forgottna    | jtcps1     | 689010e8ba9ea338634d7cba1a356b76 | ff,fc,ff     |
 | forgottnj    | jtcps1     | aedc7e205d5d3ab8e30585f6eb9a32b2 | ff,fc,ff     |
@@ -547,9 +547,9 @@
 | nwarrh       | jtcps2     | 7c51e5ceb41ef1354902dabbce64f56d | ff,ff        |
 | nwarru       | jtcps2     | 86d6ea6dff9499a26677d0ecf95b546e | ff,ff        |
 | nwarrud      | jtcps2     | 3d8e726031b0450554c01aa5daf86fc8 | ff,ff        |
-| nycaptor     | jtflstory  | f0641fe8ac8e800fee25de7f9fc217f8 | bf,00,fb     |
-| onna34ro     | jtflstory  | c3d96eb1755499825a114f5da6c5ecd7 | c0,00,80     |
-| onna34roa    | jtflstory  | ef8dee22b2fffd5e1991b9d976cf7974 | c0,00,80     |
+| nycaptor     | jtflstory  | b64866df467d7c461811764239d6c3bf | bf,00,fb     |
+| onna34ro     | jtflstory  | 3985d63f9ba58ec27ee13c5819d05066 | c0,00,80     |
+| onna34roa    | jtflstory  | 771ab691ec1f2e205efa9dcf987632c7 | c0,00,80     |
 | outrun       | jtoutrun   | 712e0ad688ad6072ee01230780aabb78 | ff,f9        |
 | outrundx     | jtoutrun   | 05e3145e97e3f45032863161f9662a3d | ff,fd        |
 | outrundxa    | jtoutrun   | 25622e22e367cd497bb2902361dce034 | ff,fd        |
@@ -646,7 +646,7 @@
 | rocnropek    | jtroc      | 9a7b2a4292da9248e666abe317edf768 | ff,5b,96     |
 | rompers      | jtshouse   | 08ff77ec86c6b0087b1c6398be1c31ac | ff,fe        |
 | romperso     | jtshouse   | 7b5145a14d162ee34c9e6acc8bc84184 | ff,fe        |
-| rumba        | jtflstory  | f569ea399791e6427b23a0704eeacafe | fc,00,e3     |
+| rumba        | jtflstory  | 924fc213456df0f3480c6cbf2cb84cc2 | fc,00,e3     |
 | rushcrsh     | jtrumble   | 4f09aed603e4590fd2b8cadd6a796edf | ff,73        |
 | ryukendn     | jtgaiden   | 8bf88cefc29877f94896f4ae92c4939f | ff,ff        |
 | ryukendna    | jtgaiden   | bab876b02899e98be413632982f6f63a | ff,ff        |
@@ -979,7 +979,7 @@
 | vhuntjr1     | jtcps2     | c8b09531117f16ac6e9921a3207b28e4 | ff,ff        |
 | vhuntjr1s    | jtcps2     | 0b32aa7d2331c00d712c97f373b5d570 | ff,ff        |
 | vhuntjr2     | jtcps2     | 9635726bef4f7c1c9398c589e629f489 | ff,ff        |
-| victnine     | jtflstory  | 86272b086fc89304820c170e6e1e045f | 7f,80,bf     |
+| victnine     | jtflstory  | 79b8779e686cb6f5af632cbf6bf9e2c5 | 7f,80,bf     |
 | vigilant     | jtvigil    | f702564e5e3919efcd90863604729da9 | ff,fd        |
 | vigilanta    | jtvigil    | 2e48039fa8c97c7453c0fd92559bc224 | ff,fd        |
 | vigilantb    | jtvigil    | 931bfa43ef0f61abc76f642f30d03a56 | ff,fd        |

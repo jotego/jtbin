@@ -5,6 +5,7 @@ The following arcade titles are compatible with this core. Generate
 the required .rom file using the mra tool (read below).
 Place the *.rom files in Assets/jtflstory/common
 
+Bronx --> bronx.rom
 Colt --> colt.rom
 The FairyLand Story --> flstory.rom
 The FairyLand Story (earlier) --> flstoryo.rom

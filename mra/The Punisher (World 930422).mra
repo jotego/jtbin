@@ -32,6 +32,7 @@
     <joystick>8</joystick>
     <region>World</region>
     <rom index="0" zip="punisher.zip|qsound.zip" md5="None" asm_md5="197124519e08f02d61afec66dbbb7d0a">
+        <!--  -->
         <part>
             00 06 80 06 80 0E 80 1E
             FF FF FF FF FF FF FF FF

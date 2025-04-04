@@ -32,6 +32,7 @@
     <joystick>8</joystick>
     <region>World</region>
     <rom index="0" zip="knights.zip" md5="None" asm_md5="28d67adc3f399d60f904d6bee5669c86">
+        <!--  -->
         <part>
             00 04 40 04 40 05 FF FF
             FF FF FF FF FF FF FF FF

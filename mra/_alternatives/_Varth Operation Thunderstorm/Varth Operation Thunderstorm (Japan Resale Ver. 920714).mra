@@ -32,6 +32,7 @@
     <joystick>8</joystick>
     <region>World</region>
     <rom index="0" zip="varthjr.zip|varth.zip" md5="None" asm_md5="24afdc70340b3f5a63387c9c34d6f91c">
+        <!--  -->
         <part>
             00 04 40 04 40 05 FF FF
             FF FF FF FF FF FF FF FF

@@ -32,6 +32,7 @@
     <joystick>8</joystick>
     <region>World</region>
     <rom index="0" zip="willowu.zip|willow.zip" md5="None" asm_md5="b692e6ca608e1704249ec551f4d1242d">
+        <!--  -->
         <part>
             00 04 40 04 40 05 FF FF
             FF FF FF FF FF FF FF FF

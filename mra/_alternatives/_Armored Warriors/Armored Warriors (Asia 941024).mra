@@ -32,6 +32,7 @@
     <joystick>8</joystick>
     <region>World</region>
     <rom index="0" zip="armwara.zip|armwar.zip|qsound.zip" md5="None" address="0x30000000" asm_md5="6a1324ffbd99e23076462d8b18f1b81d">
+        <!--  -->
         <part>
             00 10 00 11 00 21 00 71
             FF FF FF FF FF FF FF FF

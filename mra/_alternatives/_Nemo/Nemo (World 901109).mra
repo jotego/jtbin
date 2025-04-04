@@ -32,6 +32,7 @@
     <joystick>8</joystick>
     <region>World</region>
     <rom index="0" zip="nemor1.zip|nemo.zip" md5="None" asm_md5="dbbe6ea639ceb5150d0ee1574500e48e">
+        <!--  -->
         <part>
             00 04 40 04 40 05 FF FF
             FF FF FF FF FF FF FF FF

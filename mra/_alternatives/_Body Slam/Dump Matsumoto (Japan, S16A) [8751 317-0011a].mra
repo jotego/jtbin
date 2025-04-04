@@ -32,6 +32,7 @@
     <joystick>8</joystick>
     <region>World</region>
     <rom index="0" zip="dumpmtmt.zip|bodyslam.zip" md5="None" address="0x30000000" asm_md5="8141d8babe5c2deb1bdc12896636b522">
+        <!--  -->
         <part>
             00 00 00 00 00 00 00 00
             00 00 00 00 00 00 00 00

@@ -32,6 +32,7 @@
     <joystick>8</joystick>
     <region>World</region>
     <rom index="0" zip="majuu.zip|devilw.zip" md5="None" asm_md5="d26d936b14571e0c80b3fccad0270163">
+        <!--  -->
         <part>
             00 00 00 00 00 00 00 00
         </part>

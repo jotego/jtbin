@@ -31,7 +31,7 @@
     <rbf>jtflstory</rbf>
     <joystick>8</joystick>
     <region>World</region>
-    <rom index="0" zip="onna34roa.zip|onna34ro.zip" md5="None" asm_md5="ef8dee22b2fffd5e1991b9d976cf7974">
+    <rom index="0" zip="onna34roa.zip|onna34ro.zip" md5="None" asm_md5="771ab691ec1f2e205efa9dcf987632c7">
         <!-- 
 		byte 0: PCB id
 		byte 1: 0 == same orientation as flstory
@@ -64,13 +64,14 @@
         <part>
             01 01 01 00 00 00 00 00
         </part>
-        <!-- maincpu - starts at 0x0 - length 0x30000 (18 bits) -->
+        <!-- maincpu - starts at 0x0 - length 0xC000 (16 bits) -->
         <part name="ry-08.rom" crc="e4587b85"/>
         <part name="ry-07.rom" crc="6ffda515"/>
         <part name="ry-06.rom" crc="6fefcda8"/>
-        <part repeat="0x24000"> FF</part>
+        <!-- user1 - starts at 0xC000 - length 0x34000 (18 bits) -->
+        <part repeat="0x34000"> FF</part>
         <!-- JTFRAME_BA1_START -->
-        <!-- audiocpu - starts at 0x30000 - length 0xC000 (16 bits) -->
+        <!-- audiocpu - starts at 0x40000 - length 0xC000 (16 bits) -->
         <part name="a52-12.08s" crc="28f48096"/>
         <part name="a52-13.09s" crc="4d3b16f3"/>
         <part name="a52-14.10s" crc="90a6f4e8"/>
@@ -78,7 +79,7 @@
         <part name="a52-16.38s" crc="ccf42aee"/>
         <part repeat="0x2000"> FF</part>
         <!-- JTFRAME_BA2_START -->
-        <!-- gfx1 - starts at 0x3C000 - length 0x20000 (17 bits) -->
+        <!-- gfx1 - starts at 0x4C000 - length 0x20000 (17 bits) -->
         <interleave output="16">
             <part name="a52-04.11v" crc="5b126294" map="01"/>
             <part name="a52-05.35v" crc="a1a99588" map="10"/>
@@ -96,11 +97,11 @@
             <part name="a52-11.32v" crc="d1dda6b3" map="10"/>
         </interleave>
         <!-- JTFRAME_PROM_START -->
-        <!-- bmcu:mcu - starts at 0x5C000 -->
-        <!-- Total 0x5C000 bytes - 368 kBytes -->
+        <!-- bmcu:mcu - starts at 0x6C000 -->
+        <!-- Total 0x6C000 bytes - 432 kBytes -->
     </rom>
-    <rom index="17" zip="jtbeta.zip" md5="None" asm_md5="94c481938b4574732df7731a43c372e9">
-        <part name="beta.bin" crc="d81be000"/>
+    <rom index="17" zip="jtbeta.zip" md5="None" asm_md5="84d30cc91cfc0f49e372c316ac73456b">
+        <part name="beta.bin" crc="5603d968"/>
     </rom>
     <nvram index="2" size="4353"/>
     <rom index="1">

@@ -32,6 +32,7 @@
     <joystick>8</joystick>
     <region>World</region>
     <rom index="0" zip="cawingu.zip|cawing.zip" md5="None" asm_md5="cfa75c843b567b2767c71de8e1223492">
+        <!--  -->
         <part>
             00 04 40 04 40 05 FF FF
             FF FF FF FF FF FF FF FF

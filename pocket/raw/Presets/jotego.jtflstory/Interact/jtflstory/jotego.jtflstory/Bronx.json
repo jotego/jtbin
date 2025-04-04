@@ -1,0 +1,222 @@
+{
+	"interact":{
+		"magic": "APF_VER_1",
+		"variables": [
+			{
+				"name": "Rotate screen",
+				"id": 0,
+				"type": "check",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfb000000",
+				"defaultval": 4,
+				"value": 4,
+				"mask": "0xFFFFFFFB"
+			},
+			{
+				"name": "Service Mode",
+				"id": 1,
+				"type": "check",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 0,
+				"value": 0,
+				"value_off": 4,
+				"mask": "0xFFFFFFFB"
+			},
+			{
+				"name": "Demo Sounds",
+				"id": 2,
+				"type": "check",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 1,
+				"value": 8,
+				"mask": "0xFFFFFFF7"
+			},
+			{
+				"name": "Coin A",
+				"id": 3,
+				"type": "list",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 3,
+				"value": 0,
+				"mask": "0xFFFFFFCF",
+				"options": [
+					{
+						"name": "2 Coins/3 Credits",
+						"value": "0x0"
+					},
+					{
+						"name": "2 Coins/1 Credit",
+						"value": "0x10"
+					},
+					{
+						"name": "1 Coin/2 Credits",
+						"value": "0x20"
+					},
+					{
+						"name": "1 Coin/1 Credit",
+						"value": "0x30"
+					}
+				]
+			},
+			{
+				"name": "Coin B",
+				"id": 4,
+				"type": "list",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 3,
+				"value": 0,
+				"mask": "0xFFFFFF3F",
+				"options": [
+					{
+						"name": "2 Coins/3 Credits",
+						"value": "0x0"
+					},
+					{
+						"name": "2 Coins/1 Credit",
+						"value": "0x40"
+					},
+					{
+						"name": "1 Coin/2 Credits",
+						"value": "0x80"
+					},
+					{
+						"name": "1 Coin/1 Credit",
+						"value": "0xC0"
+					}
+				]
+			},
+			{
+				"name": "Difficulty",
+				"id": 5,
+				"type": "list",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 3,
+				"value": 0,
+				"mask": "0xFFFFFCFF",
+				"options": [
+					{
+						"name": "Hardest",
+						"value": "0x0"
+					},
+					{
+						"name": "Hard",
+						"value": "0x100"
+					},
+					{
+						"name": "Easy",
+						"value": "0x200"
+					},
+					{
+						"name": "Medium",
+						"value": "0x300"
+					}
+				]
+			},
+			{
+				"name": "Bonus Life",
+				"id": 6,
+				"type": "list",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 2,
+				"value": 0,
+				"mask": "0xFFFFF3FF",
+				"options": [
+					{
+						"name": "400k 900k 500k+",
+						"value": "0x0"
+					},
+					{
+						"name": "300k 700k 400k+",
+						"value": "0x400"
+					},
+					{
+						"name": "200k 500k 300k+",
+						"value": "0x800"
+					},
+					{
+						"name": "150k 350k 200k+",
+						"value": "0xC00"
+					}
+				]
+			},
+			{
+				"name": "Lives",
+				"id": 7,
+				"type": "list",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 3,
+				"value": 0,
+				"mask": "0xFFFFCFFF",
+				"options": [
+					{
+						"name": "1",
+						"value": "0x0"
+					},
+					{
+						"name": "4",
+						"value": "0x1000"
+					},
+					{
+						"name": "5",
+						"value": "0x2000"
+					},
+					{
+						"name": "2",
+						"value": "0x3000"
+					}
+				]
+			},
+			{
+				"name": "Reset Damage (Cheat)",
+				"id": 8,
+				"type": "check",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 0,
+				"value": 0,
+				"value_off": 32768,
+				"mask": "0xFFFF7FFF"
+			},
+			{
+				"name": "Infinite Bullets",
+				"id": 9,
+				"type": "check",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 0,
+				"value": 0,
+				"value_off": 1048576,
+				"mask": "0xFFEFFFFF"
+			},
+			{
+				"name": "Default",
+				"id": 1015,
+				"type": "number_u32",
+				"enabled": false,
+				"persist": false,
+				"writeonly": true,
+				"address": "0xfa000000",
+				"defaultval": 16776191,
+				"value": 0
+			}
+		],
+		"messages": []
+	}
+}

@@ -32,6 +32,7 @@
     <joystick>8</joystick>
     <region>Japan</region>
     <rom index="0" zip="wofch.zip|qsound.zip" md5="None" asm_md5="48b77e2085ef0341442f2629dda27346">
+        <!--  -->
         <part>
             00 04 80 04 80 0C 80 1C
             FF FF FF FF FF FF FF FF

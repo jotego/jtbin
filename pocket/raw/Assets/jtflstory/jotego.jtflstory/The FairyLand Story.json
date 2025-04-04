@@ -9,7 +9,8 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "flstory.rom"
+				"filename": "flstory.rom",
+				"md5": "a6532275a98d5fb2bb348aca87402378"
 			},
 			{
 				"id": 2,
@@ -18,7 +19,7 @@
 			{
 				"id": 17,
 				"filename": "beta.bin",
-				"md5": "94c481938b4574732df7731a43c372e9"
+				"md5": "84d30cc91cfc0f49e372c316ac73456b"
 			}
 		],
 		"memory_writes": [

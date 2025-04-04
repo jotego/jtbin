@@ -32,6 +32,7 @@
     <joystick>8</joystick>
     <region>World</region>
     <rom index="0" zip="mswordu.zip|msword.zip" md5="None" asm_md5="4b6c8d8821fa7fbc39aa55bff7385edb">
+        <!--  -->
         <part>
             00 04 40 04 40 05 FF FF
             FF FF FF FF FF FF FF FF

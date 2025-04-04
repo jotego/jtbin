@@ -32,6 +32,7 @@
     <joystick>8</joystick>
     <region>World</region>
     <rom index="0" zip="altbeast4.zip|altbeast.zip" md5="None" address="0x30000000" asm_md5="3648bd498e8485a09ad4f22f781e8f91">
+        <!--  -->
         <part>
             00 00 00 00 00 00 00 00
             00 00 00 00 00 00 00 00

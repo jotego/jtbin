@@ -104,6 +104,7 @@
 | dd2     | Double Dragon II: The Revenge (World)                                        | ddragon2  |
 | exed    | Exed Exes                                                                    | exedexes  |
 | flane   | Fast Lane                                                                    | fastlane  |
+| flstory | Bronx                                                                        | bronx     |
 | flstory | N.Y. Captor                                                                  | nycaptor  |
 | flstory | Onna Sanshirou - Typhoon Gal                                                 | onna34ro  |
 | flstory | Rumba Lumber                                                                 | rumba     |
@@ -238,4 +239,4 @@
 | xmen    | X-Men (4 Players ver EBA)                                                    | xmen      |
 | yiear   | Yie Ar Kung-Fu (program code I)                                              | yiear     |
 
-66 cores, supporting 237 games
+66 cores, supporting 238 games

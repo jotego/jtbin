@@ -32,6 +32,7 @@
     <joystick/>
     <region>World</region>
     <rom index="0" zip="mpumpkin.zip" md5="None" asm_md5="bce61e3b5079a60c89eb310ec5947167">
+        <!--  -->
         <part>
             00 02 40 02 40 03 FF FF
             FF FF FF FF FF FF FF FF

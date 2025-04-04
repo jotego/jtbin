@@ -32,6 +32,7 @@
     <joystick>8</joystick>
     <region>World</region>
     <rom index="0" zip="altbeast.zip" md5="None" address="0x30000000" asm_md5="2af9520a396cab835f837678719bc312">
+        <!--  -->
         <part>
             00 00 00 00 00 00 00 00
             00 00 00 00 00 00 00 00
@@ -79,8 +80,8 @@
             <part name="epr-11684.b8" crc="b20c0edb" map="10"/>
         </interleave>
         <part repeat="0x100000"> FF</part>
-        <!-- JTFRAME_PROM_START -->
         <!-- MCU_START -->
+        <!-- JTFRAME_PROM_START -->
         <!-- mcu - starts at 0x440000 - length 0x2000 (13 bits) -->
         <part name="317-0078.c2" crc="8101925f"/>
         <part repeat="0x1000"> FF</part>

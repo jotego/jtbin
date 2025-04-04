@@ -7,12 +7,12 @@
 				"mappings": [
 					{
 						"id": 0,
-						"name": "left(2)",
+						"name": "right(2)",
 						"key": "pad_btn_a"
 					},
 					{
 						"id": 1,
-						"name": "right(2)",
+						"name": "left(2)",
 						"key": "pad_btn_b"
 					},
 					{

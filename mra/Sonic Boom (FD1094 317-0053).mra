@@ -32,6 +32,7 @@
     <joystick>8</joystick>
     <region>World</region>
     <rom index="0" zip="sonicbom.zip" md5="None" address="0x30000000" asm_md5="cf53c5348b3217efeefadfb5612757fa">
+        <!--  -->
         <part>
             00 00 00 00 00 00 00 00
             00 00 00 00 00 00 00 00

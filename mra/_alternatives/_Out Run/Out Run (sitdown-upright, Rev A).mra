@@ -32,6 +32,7 @@
     <joystick/>
     <region>World</region>
     <rom index="0" zip="outrunra.zip|outrun.zip" md5="None" asm_md5="ec44432539dfa9b7897ac1d4be2c169a">
+        <!--  -->
         <part>
             00 00 00 00 00 00 00 00
             00 00 00 00 00 00 00 00

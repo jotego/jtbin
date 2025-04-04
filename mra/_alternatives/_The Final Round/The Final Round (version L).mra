@@ -32,6 +32,7 @@
     <joystick>8</joystick>
     <region>World</region>
     <rom index="0" zip="froundl.zip|fround.zip" md5="None" asm_md5="b4f7a1b2506094c98fddf820462f5653">
+        <!--  -->
         <part>
             00 00 00 00 00 00 00 00
         </part>

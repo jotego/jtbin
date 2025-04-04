@@ -32,6 +32,7 @@
     <joystick>8</joystick>
     <region>World</region>
     <rom index="0" zip="vulcana.zip|vulcan.zip" md5="None" asm_md5="5727df52b98b4fa0e04f539ba6d37f37">
+        <!--  -->
         <part>
             00 00 00 00 00 00 00 00
         </part>

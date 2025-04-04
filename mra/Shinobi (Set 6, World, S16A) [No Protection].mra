@@ -32,6 +32,7 @@
     <joystick>8</joystick>
     <region>World</region>
     <rom index="0" zip="shinobi.zip" md5="None" address="0x30000000" asm_md5="637b1a03a438168d577ee2ce15f0585b">
+        <!--  -->
         <part>
             00 00 00 00 00 00 00 00
             00 00 00 00 00 00 00 00
@@ -81,8 +82,8 @@
             <part name="epr-11293.29" crc="41f41063" map="01"/>
             <part name="epr-11297.30" crc="b6e1fd72" map="10"/>
         </interleave>
-        <!-- MCU_START -->
         <!-- JTFRAME_PROM_START -->
+        <!-- MCU_START -->
         <!-- mcu - starts at 0x180000 - length 0x2000 (13 bits) -->
         <part repeat="0x1000"> FF</part>
         <part repeat="0x1000"> FF</part>

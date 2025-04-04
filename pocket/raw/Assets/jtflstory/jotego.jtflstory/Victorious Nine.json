@@ -9,7 +9,8 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "victnine.rom"
+				"filename": "victnine.rom",
+				"md5": "79b8779e686cb6f5af632cbf6bf9e2c5"
 			},
 			{
 				"id": 2,
@@ -18,7 +19,7 @@
 			{
 				"id": 17,
 				"filename": "beta.bin",
-				"md5": "94c481938b4574732df7731a43c372e9"
+				"md5": "84d30cc91cfc0f49e372c316ac73456b"
 			}
 		],
 		"memory_writes": [

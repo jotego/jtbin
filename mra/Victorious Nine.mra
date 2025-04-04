@@ -31,7 +31,7 @@
     <rbf>jtflstory</rbf>
     <joystick>8</joystick>
     <region>World</region>
-    <rom index="0" zip="victnine.zip" md5="None" asm_md5="86272b086fc89304820c170e6e1e045f">
+    <rom index="0" zip="victnine.zip" md5="None" asm_md5="79b8779e686cb6f5af632cbf6bf9e2c5">
         <!-- 
 		byte 0: PCB id
 		byte 1: 0 == same orientation as flstory
@@ -64,16 +64,17 @@
         <part>
             03 00 00 00 01 01 07 00
         </part>
-        <!-- maincpu - starts at 0x0 - length 0x30000 (18 bits) -->
+        <!-- maincpu - starts at 0x0 - length 0xC000 (16 bits) -->
         <part name="a16-19.1" crc="deb7c439"/>
         <part name="a16-20.2" crc="60cdb6ae"/>
         <part name="a16-21.3" crc="121bea03"/>
         <part name="a16-22.4" crc="b20e3027"/>
         <part name="a16-23.5" crc="95fe9cb7"/>
         <part name="a16-24.6" crc="32b5c155"/>
-        <part repeat="0x24000"> FF</part>
+        <!-- user1 - starts at 0xC000 - length 0x34000 (18 bits) -->
+        <part repeat="0x34000"> FF</part>
         <!-- JTFRAME_BA1_START -->
-        <!-- audiocpu - starts at 0x30000 - length 0xC000 (16 bits) -->
+        <!-- audiocpu - starts at 0x40000 - length 0xC000 (16 bits) -->
         <part name="a16-12.8" crc="4b9bff43"/>
         <part name="a16-13.9" crc="355121b9"/>
         <part name="a16-14.10" crc="0f33ef4d"/>
@@ -81,7 +82,7 @@
         <part name="a16-16.38" crc="9395351b"/>
         <part name="a16-17.39" crc="872270b3"/>
         <!-- JTFRAME_BA2_START -->
-        <!-- gfx1 - starts at 0x3C000 - length 0x20000 (17 bits) -->
+        <!-- gfx1 - starts at 0x4C000 - length 0x20000 (17 bits) -->
         <interleave output="16">
             <part name="a16-06-1.7" crc="b708134d" map="01"/>
             <part name="a16-04.5" crc="b2fae99f" map="10"/>
@@ -100,12 +101,12 @@
         </interleave>
         <part repeat="0x10000"> FF</part>
         <!-- JTFRAME_PROM_START -->
-        <!-- bmcu:mcu - starts at 0x5C000 - length 0x800 (11 bits) -->
+        <!-- bmcu:mcu - starts at 0x6C000 - length 0x800 (11 bits) -->
         <part name="a16-18.54" crc="5198ef59"/>
-        <!-- Total 0x5C800 bytes - 370 kBytes -->
+        <!-- Total 0x6C800 bytes - 434 kBytes -->
     </rom>
-    <rom index="17" zip="jtbeta.zip" md5="None" asm_md5="94c481938b4574732df7731a43c372e9">
-        <part name="beta.bin" crc="d81be000"/>
+    <rom index="17" zip="jtbeta.zip" md5="None" asm_md5="84d30cc91cfc0f49e372c316ac73456b">
+        <part name="beta.bin" crc="5603d968"/>
     </rom>
     <nvram index="2" size="4353"/>
     <rom index="1">

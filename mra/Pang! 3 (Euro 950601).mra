@@ -32,6 +32,7 @@
     <joystick>4</joystick>
     <region>World</region>
     <rom index="0" zip="pang3.zip" md5="None" asm_md5="e53b10d4f19c2deec4d94c28fcedf066">
+        <!--  -->
         <part>
             00 04 80 04 80 05 FF FF
             FF FF FF FF FF FF FF FF

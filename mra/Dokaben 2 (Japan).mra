@@ -32,6 +32,7 @@
     <joystick>4</joystick>
     <region>World</region>
     <rom index="0" zip="dokaben2.zip" md5="None" asm_md5="be97dfbe39de4bbd1e3a8fbe4b409093">
+        <!--  -->
         <part>
             76 54 32 10 01 23 45 67
             AA 55 A5 00 00 00 00 00

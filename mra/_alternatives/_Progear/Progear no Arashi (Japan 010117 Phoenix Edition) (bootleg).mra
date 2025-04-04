@@ -32,6 +32,7 @@
     <joystick>8</joystick>
     <region>World</region>
     <rom index="0" zip="progearjd.zip|progear.zip|qsound.zip" md5="None" address="0x30000000" asm_md5="0015d7f2ee628aae2841245617e2240a">
+        <!--  -->
         <part>
             00 04 80 04 80 24 80 64
             FF FF FF FF FF FF FF FF

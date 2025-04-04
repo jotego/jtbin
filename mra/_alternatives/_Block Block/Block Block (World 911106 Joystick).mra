@@ -32,6 +32,7 @@
     <joystick>2</joystick>
     <region>World</region>
     <rom index="0" zip="blockr1.zip|block.zip" md5="None" asm_md5="e09a193172ef3ee6478eaa3c1c199477">
+        <!--  -->
         <part>
             02 46 13 57 64 20 75 31
             00 02 01 00 00 00 00 01

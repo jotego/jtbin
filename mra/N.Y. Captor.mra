@@ -31,7 +31,7 @@
     <rbf>jtflstory</rbf>
     <joystick/>
     <region>World</region>
-    <rom index="0" zip="nycaptor.zip" md5="None" asm_md5="f0641fe8ac8e800fee25de7f9fc217f8">
+    <rom index="0" zip="nycaptor.zip" md5="None" asm_md5="b64866df467d7c461811764239d6c3bf">
         <!-- 
 		byte 0: PCB id
 		byte 1: 0 == same orientation as flstory
@@ -72,17 +72,18 @@
         <part name="a50_01" crc="0965f84a"/>
         <part repeat="0x8000"> FF</part>
         <!-- SUB_START -->
-        <!-- sub - starts at 0x20000 - length 0x10000 (16 bits) -->
+        <!-- sub - starts at 0x20000 - length 0x8000 (15 bits) -->
         <part name="a50_05-2" crc="7796655a"/>
         <part name="a50_06" crc="450d6783"/>
-        <part repeat="0x8000"> FF</part>
+        <!-- user1 - starts at 0x28000 - length 0x18000 (17 bits) -->
+        <part repeat="0x18000"> FF</part>
         <!-- JTFRAME_BA1_START -->
-        <!-- audiocpu - starts at 0x30000 - length 0xC000 (16 bits) -->
+        <!-- audiocpu - starts at 0x40000 - length 0xC000 (16 bits) -->
         <part name="a50_15" crc="f8a604e5"/>
         <part name="a50_16" crc="fc24e11d"/>
         <part repeat="0x4000"> FF</part>
         <!-- JTFRAME_BA2_START -->
-        <!-- gfx1 - starts at 0x3C000 - length 0x20000 (17 bits) -->
+        <!-- gfx1 - starts at 0x4C000 - length 0x20000 (17 bits) -->
         <interleave output="16">
             <part name="a50_07" crc="b3b330cf" map="01"/>
             <part name="a50_08" crc="3c31be14" map="10"/>
@@ -100,12 +101,12 @@
             <part name="a50_14" crc="24b2f1bf" map="10"/>
         </interleave>
         <!-- JTFRAME_PROM_START -->
-        <!-- bmcu:mcu - starts at 0x5C000 - length 0x800 (11 bits) -->
+        <!-- bmcu:mcu - starts at 0x6C000 - length 0x800 (11 bits) -->
         <part name="a50_17" crc="69fe08dc"/>
-        <!-- Total 0x5C800 bytes - 370 kBytes -->
+        <!-- Total 0x6C800 bytes - 434 kBytes -->
     </rom>
-    <rom index="17" zip="jtbeta.zip" md5="None" asm_md5="94c481938b4574732df7731a43c372e9">
-        <part name="beta.bin" crc="d81be000"/>
+    <rom index="17" zip="jtbeta.zip" md5="None" asm_md5="84d30cc91cfc0f49e372c316ac73456b">
+        <part name="beta.bin" crc="5603d968"/>
     </rom>
     <nvram index="2" size="4353"/>
     <!-- Light gun -->

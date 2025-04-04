@@ -32,6 +32,7 @@
     <joystick>8</joystick>
     <region>World</region>
     <rom index="0" zip="ryukyua.zip|ryukyu.zip" md5="None" address="0x30000000" asm_md5="a588e0ceab5e1d557cc0188a38385750">
+        <!--  -->
         <part>
             00 00 00 00 00 00 00 00
             00 00 00 00 00 00 00 00

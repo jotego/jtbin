@@ -32,6 +32,7 @@
     <joystick>8</joystick>
     <region>World</region>
     <rom index="0" zip="darkadv.zip|devilw.zip" md5="None" asm_md5="9770658c0ce771f5e3f2177cc6f0df20">
+        <!--  -->
         <part>
             00 00 00 00 00 00 00 00
         </part>

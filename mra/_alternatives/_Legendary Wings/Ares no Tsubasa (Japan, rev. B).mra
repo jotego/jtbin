@@ -32,6 +32,7 @@
     <joystick>8</joystick>
     <region>World</region>
     <rom index="0" zip="lwingsj.zip|lwings.zip" md5="None" asm_md5="49292b2e4810e74e52dfaa099c1f33d2">
+        <!--  -->
         <part>
             01 00 00 00 00 00 00 00
             00 00 00 00 00 00 00 00

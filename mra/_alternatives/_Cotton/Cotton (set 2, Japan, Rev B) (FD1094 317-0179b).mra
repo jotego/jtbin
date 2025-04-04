@@ -32,6 +32,7 @@
     <joystick>8</joystick>
     <region>Japan</region>
     <rom index="0" zip="cottonj.zip|cotton.zip" md5="None" address="0x30000000" asm_md5="c5084165059e42a24446adfa41244b8a">
+        <!--  -->
         <part>
             00 00 00 00 00 00 00 00
             00 00 00 00 00 00 00 00

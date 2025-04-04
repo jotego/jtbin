@@ -32,6 +32,7 @@
     <joystick>8</joystick>
     <region>World</region>
     <rom index="0" zip="gulunpa.zip" md5="None" asm_md5="2a6aba4ca3cd0cd81d9fb2494a706039">
+        <!--  -->
         <part>
             00 01 40 01 40 02 FF FF
             FF FF FF FF FF FF FF FF

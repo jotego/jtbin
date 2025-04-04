@@ -32,6 +32,7 @@
     <joystick>8</joystick>
     <region>Japan</region>
     <rom index="0" zip="wb34.zip|wb3.zip" md5="None" address="0x30000000" asm_md5="9fe77005736d05ccacf65338bec993ca">
+        <!--  -->
         <part>
             00 00 00 00 00 00 00 00
             00 00 00 00 00 00 00 00

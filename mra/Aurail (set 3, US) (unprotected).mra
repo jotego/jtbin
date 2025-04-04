@@ -32,6 +32,7 @@
     <joystick>8</joystick>
     <region>World</region>
     <rom index="0" zip="aurail.zip" md5="None" address="0x30000000" asm_md5="f93b74596a242dcb89d60be521fe8bf5">
+        <!--  -->
         <part>
             00 00 00 00 00 00 00 00
             00 00 00 00 00 00 00 00

@@ -32,6 +32,7 @@
     <joystick>8</joystick>
     <region>World</region>
     <rom index="0" zip="bayroute.zip" md5="None" address="0x30000000" asm_md5="0c6f4a603f793bf706e2e904f4f23d34">
+        <!--  -->
         <part>
             00 00 00 00 00 00 00 00
             00 00 00 00 00 00 00 00
@@ -74,8 +75,8 @@
             <part name="mpr-12468.b6" crc="d89c77de" map="10"/>
         </interleave>
         <part repeat="0x180000"> FF</part>
-        <!-- JTFRAME_PROM_START -->
         <!-- MCU_START -->
+        <!-- JTFRAME_PROM_START -->
         <!-- mcu - starts at 0x440000 - length 0x2000 (13 bits) -->
         <part repeat="0x1000"> FF</part>
         <part repeat="0x1000"> FF</part>

@@ -32,6 +32,7 @@
     <joystick>4</joystick>
     <region>World</region>
     <rom index="0" zip="bbros.zip|pang.zip" md5="None" asm_md5="9de58b1f2f1bb6b871befa9cfb569ac6">
+        <!--  -->
         <part>
             01 23 45 67 76 54 32 10
             65 48 24 00 00 00 00 00

@@ -32,6 +32,7 @@
     <joystick/>
     <region>World</region>
     <rom index="0" zip="shangon2.zip|shangon.zip" md5="None" asm_md5="5cb6ba8bdf99311f00ec92586d8c0310">
+        <!--  -->
         <part>
             03 01 00 00 00 00 00 00
             00 00 00 00 00 00 00 00

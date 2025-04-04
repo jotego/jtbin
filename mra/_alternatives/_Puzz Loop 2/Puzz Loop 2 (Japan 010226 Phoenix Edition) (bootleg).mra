@@ -32,6 +32,7 @@
     <joystick>8</joystick>
     <region>World</region>
     <rom index="0" zip="pzloop2jd.zip|pzloop2.zip|qsound.zip" md5="None" address="0x30000000" asm_md5="6545381800fad4f7278d119f319944c0">
+        <!--  -->
         <part>
             00 08 80 08 80 18 80 58
             FF FF FF FF FF FF FF FF

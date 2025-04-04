@@ -32,6 +32,7 @@
     <joystick>8</joystick>
     <region>World</region>
     <rom index="0" zip="cuebrickj.zip|cuebrick.zip" md5="None" asm_md5="04bfe247a53fb88b66a330dafb73ad3b">
+        <!--  -->
         <part>
             00 00 00 00 00 00 00 00
         </part>

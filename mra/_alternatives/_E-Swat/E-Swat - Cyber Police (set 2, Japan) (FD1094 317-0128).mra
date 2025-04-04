@@ -32,6 +32,7 @@
     <joystick>8</joystick>
     <region>Japan</region>
     <rom index="0" zip="eswatj.zip|eswat.zip" md5="None" address="0x30000000" asm_md5="486798c31678dea81c2c318db62aaad6">
+        <!--  -->
         <part>
             00 00 00 00 00 00 00 00
             00 00 00 00 00 00 00 00

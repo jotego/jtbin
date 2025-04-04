@@ -31,7 +31,7 @@
     <rbf>jtflstory</rbf>
     <joystick>8</joystick>
     <region>World</region>
-    <rom index="0" zip="rumba.zip" md5="None" asm_md5="f569ea399791e6427b23a0704eeacafe">
+    <rom index="0" zip="rumba.zip" md5="None" asm_md5="924fc213456df0f3480c6cbf2cb84cc2">
         <!-- 
 		byte 0: PCB id
 		byte 1: 0 == same orientation as flstory
@@ -64,19 +64,20 @@
         <part>
             02 12 00 01 01 01 00 00
         </part>
-        <!-- maincpu - starts at 0x0 - length 0x30000 (18 bits) -->
+        <!-- maincpu - starts at 0x0 - length 0xC000 (16 bits) -->
         <part name="a23_01-1.bin" crc="4bea6e18"/>
         <part name="a23_02-1.bin" crc="08f98c6f"/>
         <part name="a23_03-1.bin" crc="ab595427"/>
-        <part repeat="0x24000"> FF</part>
+        <!-- user1 - starts at 0xC000 - length 0x34000 (18 bits) -->
+        <part repeat="0x34000"> FF</part>
         <!-- JTFRAME_BA1_START -->
-        <!-- audiocpu - starts at 0x30000 - length 0xC000 (16 bits) -->
+        <!-- audiocpu - starts at 0x40000 - length 0xC000 (16 bits) -->
         <part name="a23_08-1.bin" crc="a18eae00"/>
         <part name="a23_09.bin" crc="d0a101d3"/>
         <part name="a23_10.bin" crc="f9447bd4"/>
         <part repeat="0x6000"> FF</part>
         <!-- JTFRAME_BA2_START -->
-        <!-- gfx1 - starts at 0x3C000 - length 0x20000 (17 bits) -->
+        <!-- gfx1 - starts at 0x4C000 - length 0x20000 (17 bits) -->
         <interleave output="16">
             <part name="a23_06.bin" crc="bf1e3a7f" map="01"/>
             <part name="a23_04.bin" crc="1d4f001f" map="10"/>
@@ -95,12 +96,12 @@
         </interleave>
         <part repeat="0x10000"> FF</part>
         <!-- JTFRAME_PROM_START -->
-        <!-- bmcu:mcu - starts at 0x5C000 - length 0x800 (11 bits) -->
+        <!-- bmcu:mcu - starts at 0x6C000 - length 0x800 (11 bits) -->
         <part name="a23_11.bin" crc="fddc99ce"/>
-        <!-- Total 0x5C800 bytes - 370 kBytes -->
+        <!-- Total 0x6C800 bytes - 434 kBytes -->
     </rom>
-    <rom index="17" zip="jtbeta.zip" md5="None" asm_md5="94c481938b4574732df7731a43c372e9">
-        <part name="beta.bin" crc="d81be000"/>
+    <rom index="17" zip="jtbeta.zip" md5="None" asm_md5="84d30cc91cfc0f49e372c316ac73456b">
+        <part name="beta.bin" crc="5603d968"/>
     </rom>
     <nvram index="2" size="4353"/>
     <!-- Vertical screen. Orientation reversed. -->

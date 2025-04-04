@@ -32,6 +32,7 @@
     <joystick>8</joystick>
     <region>World</region>
     <rom index="0" zip="sfar3.zip|sfa.zip|qsound.zip" md5="None" address="0x30000000" asm_md5="68632c920386dfe9eb0b7b33c726d53c">
+        <!--  -->
         <part>
             00 08 00 09 00 19 00 59
             FF FF FF FF FF FF FF FF

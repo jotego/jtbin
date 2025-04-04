@@ -32,6 +32,7 @@
     <joystick>8</joystick>
     <region>World</region>
     <rom index="0" zip="fantzone.zip" md5="None" address="0x30000000" asm_md5="a4721e6639defe60c00a62ef7b5b5020">
+        <!--  -->
         <part>
             00 00 00 00 00 00 00 00
             00 00 00 00 00 00 00 00

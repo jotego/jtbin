@@ -32,6 +32,7 @@
     <joystick>8</joystick>
     <region>World</region>
     <rom index="0" zip="goldnaxeu.zip|goldnaxe.zip" md5="None" address="0x30000000" asm_md5="58f320ad62fba5b276b28005a51878d7">
+        <!--  -->
         <part>
             00 00 00 00 00 00 00 00
             00 00 00 00 00 00 00 00
@@ -86,8 +87,8 @@
             <part name="mpr-12383.ic14" crc="5dbacf7a" map="10" length="0x20000" offset="0x20000"/>
         </interleave>
         <part repeat="0x40000"> FF</part>
-        <!-- MCU_START -->
         <!-- JTFRAME_PROM_START -->
+        <!-- MCU_START -->
         <!-- mcu - starts at 0x440000 - length 0x2000 (13 bits) -->
         <part repeat="0x1000"> FF</part>
         <part repeat="0x1000"> FF</part>

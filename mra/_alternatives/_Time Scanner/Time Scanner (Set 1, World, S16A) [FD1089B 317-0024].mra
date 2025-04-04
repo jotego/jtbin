@@ -32,6 +32,7 @@
     <joystick>5 (half8)</joystick>
     <region>World</region>
     <rom index="0" zip="timescan1.zip|timescan.zip" md5="None" address="0x30000000" asm_md5="a01843d915ffa388e81fff9a484bda14">
+        <!--  -->
         <part>
             00 00 00 00 00 00 00 00
             00 00 00 00 00 00 00 00
@@ -90,8 +91,8 @@
             <part name="epr-10555.30" crc="2143c471" map="10"/>
         </interleave>
         <part repeat="0x10000"> FF</part>
-        <!-- MCU_START -->
         <!-- JTFRAME_PROM_START -->
+        <!-- MCU_START -->
         <!-- mcu - starts at 0x180000 - length 0x2000 (13 bits) -->
         <part repeat="0x1000"> FF</part>
         <part repeat="0x1000"> FF</part>

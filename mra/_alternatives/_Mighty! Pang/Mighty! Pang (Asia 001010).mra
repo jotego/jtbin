@@ -32,6 +32,7 @@
     <joystick>8</joystick>
     <region>World</region>
     <rom index="0" zip="mpanga.zip|mpang.zip|qsound.zip" md5="None" address="0x30000000" asm_md5="65499c3ba743992e2f0f7f1a4ddbdc48">
+        <!--  -->
         <part>
             00 04 80 04 80 14 80 54
             FF FF FF FF FF FF FF FF

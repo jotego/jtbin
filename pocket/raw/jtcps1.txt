@@ -36,7 +36,6 @@ Tenchi wo Kurau (Japan) --> dynwarj.rom
 Tenchi wo Kurau (Japan Resale Ver.) --> dynwarjr.rom
 Final Fight (World, set 1) --> ffight.rom
 Final Fight (World, set 2) --> ffighta.rom
-Final Fight 30th Anniversary Edition (World, hack) --> ffightae.rom
 Final Fight (Japan) --> ffightj.rom
 Final Fight (Japan 900112) --> ffightj1.rom
 Final Fight (Japan 900305) --> ffightj2.rom

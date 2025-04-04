@@ -32,6 +32,7 @@
     <joystick>8</joystick>
     <region>World</region>
     <rom index="0" zip="dynwara.zip|dynwar.zip" md5="None" asm_md5="14ed7e040f9327a0469961ba4870c16c">
+        <!--  -->
         <part>
             00 04 40 04 40 05 FF FF
             FF FF FF FF FF FF FF FF

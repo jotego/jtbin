@@ -32,6 +32,7 @@
     <joystick>4</joystick>
     <region>World</region>
     <rom index="0" zip="ghoulsu.zip|ghouls.zip" md5="None" asm_md5="3dbf285eda000132f55e31ce9ae667da">
+        <!--  -->
         <part>
             00 04 40 04 40 05 FF FF
             FF FF FF FF FF FF FF FF

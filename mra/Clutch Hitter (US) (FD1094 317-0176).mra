@@ -32,6 +32,7 @@
     <joystick>8</joystick>
     <region>World</region>
     <rom index="0" zip="cltchitr.zip" md5="None" address="0x30000000" asm_md5="7e3c3ba622fdfa0e79a159372bc3d23f">
+        <!--  -->
         <part>
             00 00 00 01 00 03 00 05
             00 0A 02 0A 00 00 00 00
@@ -79,8 +80,8 @@
         <!-- mcu - starts at 0xA02000 -->
         <!-- Total 0xA02000 bytes - 10248 kBytes -->
     </rom>
-    <rom index="17" zip="jtbeta.zip" md5="None" asm_md5="94c481938b4574732df7731a43c372e9">
-        <part name="beta.bin" crc="d81be000"/>
+    <rom index="17" zip="jtbeta.zip" md5="None" asm_md5="84d30cc91cfc0f49e372c316ac73456b">
+        <part name="beta.bin" crc="5603d968"/>
     </rom>
     <nvram index="2" size="16384"/>
     <rom index="1">

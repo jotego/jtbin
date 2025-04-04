@@ -32,6 +32,7 @@
     <joystick>8</joystick>
     <region>World</region>
     <rom index="0" zip="wrestwar2.zip|wrestwar.zip" md5="None" address="0x30000000" asm_md5="e1b30e2d9895d7ece41c7e0ecd8bde27">
+        <!--  -->
         <part>
             00 00 00 00 00 00 00 00
             00 00 00 00 00 00 00 00

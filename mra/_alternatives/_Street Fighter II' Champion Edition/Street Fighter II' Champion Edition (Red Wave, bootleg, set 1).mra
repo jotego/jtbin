@@ -32,6 +32,7 @@
     <joystick>8</joystick>
     <region>World</region>
     <rom index="0" zip="sf2red.zip|sf2ce.zip" md5="None" asm_md5="a199367b847c242ca25e3df0ca320c4b">
+        <!--  -->
         <part>
             00 06 40 06 40 07 FF FF
             FF FF FF FF FF FF FF FF

@@ -32,6 +32,7 @@
     <joystick>8</joystick>
     <region>World</region>
     <rom index="0" zip="defense.zip|sdi.zip" md5="None" address="0x30000000" asm_md5="5a842e24f6f65ea50e5bb79c840e1b16">
+        <!--  -->
         <part>
             00 00 00 00 00 00 00 00
             00 00 00 00 00 00 00 00

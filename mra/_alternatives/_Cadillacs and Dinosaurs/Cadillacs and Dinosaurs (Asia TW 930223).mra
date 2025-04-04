@@ -32,6 +32,7 @@
     <joystick>8</joystick>
     <region>World</region>
     <rom index="0" zip="dinoa.zip|dino.zip|qsound.zip" md5="None" asm_md5="beab07c1ce2192cac113f1e0ab6151b7">
+        <!--  -->
         <part>
             00 06 80 06 80 0E 80 1E
             FF FF FF FF FF FF FF FF

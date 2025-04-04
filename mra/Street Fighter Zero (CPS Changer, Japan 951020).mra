@@ -32,6 +32,7 @@
     <joystick>8</joystick>
     <region>Japan</region>
     <rom index="0" zip="sfzch.zip" md5="None" asm_md5="7ce5ab919d0a4ec1d0cdde7eef102076">
+        <!--  -->
         <part>
             00 08 40 08 40 09 FF FF
             FF FF FF FF FF FF FF FF

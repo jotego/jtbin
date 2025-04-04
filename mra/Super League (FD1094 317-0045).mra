@@ -32,6 +32,7 @@
     <joystick/>
     <region>World</region>
     <rom index="0" zip="suprleag.zip" md5="None" address="0x30000000" asm_md5="60eac3924d5353c0ba872b74d0bb8242">
+        <!--  -->
         <part>
             00 00 00 00 00 00 00 00
             00 00 00 00 00 00 00 00

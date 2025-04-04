@@ -32,6 +32,7 @@
     <joystick>8</joystick>
     <region>World</region>
     <rom index="0" zip="ffightj3.zip|ffight.zip" md5="None" asm_md5="bb6c9748030105a50ec7608efba4729b">
+        <!--  -->
         <part>
             00 04 40 04 40 05 FF FF
             FF FF FF FF FF FF FF FF

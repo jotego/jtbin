@@ -32,6 +32,7 @@
     <joystick>8</joystick>
     <region>World</region>
     <rom index="0" zip="captcommjr1.zip|captcomm.zip" md5="None" asm_md5="e3e8559da07ed54e230726c261c9b3ce">
+        <!--  -->
         <part>
             00 05 40 05 40 06 FF FF
             FF FF FF FF FF FF FF FF

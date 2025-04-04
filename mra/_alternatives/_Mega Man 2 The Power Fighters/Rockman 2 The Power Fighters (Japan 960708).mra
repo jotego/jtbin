@@ -32,6 +32,7 @@
     <joystick>8</joystick>
     <region>World</region>
     <rom index="0" zip="rockman2j.zip|megaman2.zip|qsound.zip" md5="None" address="0x30000000" asm_md5="947a8ef6dd75a535d030faf144d8dc2e">
+        <!--  -->
         <part>
             00 06 00 07 00 17 00 57
             FF FF FF FF FF FF FF FF

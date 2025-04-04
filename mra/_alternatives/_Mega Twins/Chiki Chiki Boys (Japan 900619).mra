@@ -32,6 +32,7 @@
     <joystick>8</joystick>
     <region>World</region>
     <rom index="0" zip="chikij.zip|mtwins.zip" md5="None" asm_md5="eb05493f72a6199e051ff4542ef300a6">
+        <!--  -->
         <part>
             00 04 40 04 40 05 FF FF
             FF FF FF FF FF FF FF FF

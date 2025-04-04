@@ -32,6 +32,7 @@
     <joystick>8</joystick>
     <region>World</region>
     <rom index="0" zip="cybotsud.zip|cybots.zip|qsound.zip" md5="None" address="0x30000000" asm_md5="1d24397adb133647b22766e9e6ca112e">
+        <!--  -->
         <part>
             00 10 00 11 00 21 00 A1
             FF FF FF FF FF FF FF FF

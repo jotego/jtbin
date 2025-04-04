@@ -32,6 +32,7 @@
     <joystick>8</joystick>
     <region>World</region>
     <rom index="0" zip="3wondersr1.zip|3wonders.zip" md5="None" asm_md5="ddf11a4fa7a6c4d70c95f2516b86f1fe">
+        <!--  -->
         <part>
             00 04 40 04 40 05 FF FF
             FF FF FF FF FF FF FF FF

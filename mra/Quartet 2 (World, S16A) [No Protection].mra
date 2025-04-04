@@ -32,6 +32,7 @@
     <joystick>8</joystick>
     <region>World</region>
     <rom index="0" zip="quartet2a.zip|quartet.zip" md5="None" address="0x30000000" asm_md5="86cddb335eb3851cedf9ae7d47a70470">
+        <!--  -->
         <part>
             00 00 00 00 00 00 00 00
             00 00 00 00 00 00 00 00
