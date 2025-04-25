@@ -1,0 +1,270 @@
+{
+	"interact":{
+		"magic": "APF_VER_1",
+		"variables": [
+			{
+				"name": "Coin B",
+				"id": 0,
+				"type": "list",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 3,
+				"value": 0,
+				"mask": "0xFFFFFFFC",
+				"options": [
+					{
+						"name": "3 Coins/1 Credit",
+						"value": "0x0"
+					},
+					{
+						"name": "2 Coins/1 Credit",
+						"value": "0x1"
+					},
+					{
+						"name": "1 Coin/2 Credits",
+						"value": "0x2"
+					},
+					{
+						"name": "1 Coin/1 Credit",
+						"value": "0x3"
+					}
+				]
+			},
+			{
+				"name": "Freeze",
+				"id": 1,
+				"type": "check",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 0,
+				"value": 0,
+				"value_off": 4,
+				"mask": "0xFFFFFFFB"
+			},
+			{
+				"name": "Invulnerability",
+				"id": 2,
+				"type": "check",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 0,
+				"value": 0,
+				"value_off": 8,
+				"mask": "0xFFFFFFF7"
+			},
+			{
+				"name": "Demo Sounds",
+				"id": 3,
+				"type": "check",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 1,
+				"value": 16,
+				"mask": "0xFFFFFFEF"
+			},
+			{
+				"name": "Coin A",
+				"id": 4,
+				"type": "list",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 3,
+				"value": 0,
+				"mask": "0xFFFFFF9F",
+				"options": [
+					{
+						"name": "3 Coins/1 Credit",
+						"value": "0x0"
+					},
+					{
+						"name": "2 Coins/1 Credit",
+						"value": "0x20"
+					},
+					{
+						"name": "1 Coin/2 Credits",
+						"value": "0x40"
+					},
+					{
+						"name": "1 Coin/1 Credit",
+						"value": "0x60"
+					}
+				]
+			},
+			{
+				"name": "Service Mode",
+				"id": 5,
+				"type": "check",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 0,
+				"value": 0,
+				"value_off": 128,
+				"mask": "0xFFFFFF7F"
+			},
+			{
+				"name": "Continues",
+				"id": 6,
+				"type": "list",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 1,
+				"value": 0,
+				"mask": "0xFFFFFEFF",
+				"options": [
+					{
+						"name": "3",
+						"value": "0x0"
+					},
+					{
+						"name": "6",
+						"value": "0x100"
+					}
+				]
+			},
+			{
+				"name": "Cabinet",
+				"id": 7,
+				"type": "list",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 3,
+				"value": 0,
+				"mask": "0xFFFFF9FF",
+				"options": [
+					{
+						"name": "Cocktail",
+						"value": "0x0"
+					},
+					{
+						"name": "Upright 1 Player",
+						"value": "0x200"
+					},
+					{
+						"name": "Upright 2 Players",
+						"value": "0x400"
+					},
+					{
+						"name": "Upright 1 Player",
+						"value": "0x600"
+					}
+				]
+			},
+			{
+				"name": "Level Select (Cheat)",
+				"id": 8,
+				"type": "check",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 1,
+				"value": 0,
+				"value_off": 2048,
+				"mask": "0xFFFFF7FF"
+			},
+			{
+				"name": "Difficulty",
+				"id": 9,
+				"type": "list",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 1,
+				"value": 0,
+				"mask": "0xFFFFEFFF",
+				"options": [
+					{
+						"name": "Easy",
+						"value": "0x0"
+					},
+					{
+						"name": "Normal",
+						"value": "0x1000"
+					}
+				]
+			},
+			{
+				"name": "Timer value",
+				"id": 10,
+				"type": "list",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 0,
+				"value": 0,
+				"mask": "0xFFFFDFFF",
+				"options": [
+					{
+						"name": "150 secs",
+						"value": "0x0"
+					},
+					{
+						"name": "120 secs",
+						"value": "0x2000"
+					}
+				]
+			},
+			{
+				"name": "Bonus Life",
+				"id": 11,
+				"type": "list",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 1,
+				"value": 0,
+				"mask": "0xFFFFBFFF",
+				"options": [
+					{
+						"name": "100k, 300k",
+						"value": "0x0"
+					},
+					{
+						"name": "70k, 200k",
+						"value": "0x4000"
+					}
+				]
+			},
+			{
+				"name": "Lives",
+				"id": 12,
+				"type": "list",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 1,
+				"value": 0,
+				"mask": "0xFFFF7FFF",
+				"options": [
+					{
+						"name": "5",
+						"value": "0x0"
+					},
+					{
+						"name": "3",
+						"value": "0x8000"
+					}
+				]
+			},
+			{
+				"name": "Default",
+				"id": 1015,
+				"type": "number_u32",
+				"enabled": false,
+				"persist": false,
+				"writeonly": true,
+				"address": "0xfa000000",
+				"defaultval": 65495,
+				"value": 0
+			}
+		],
+		"messages": []
+	}
+}

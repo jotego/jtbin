@@ -37,7 +37,6 @@ rastan,fm,0.45,pcm,1.00
 riders,k60,1.00
 roadf,vlm,1.00,psg,0.85,rdac,0.27
 roc,psg0a,1.00,psg0b,1.00,psg0c,1.00,psg1a,1.00,psg1b,1.00,psg1c,1.00
-rthunder,fm,0.57,pcm,1.00,cus30,0.72
 rumble,psg0,1.00,psg1,1.00,fm0,0.69,fm1,0.69
 s16,fm,1.00,pcm,0.67
 s16b,fm,0.19,pcm,1.00
@@ -50,6 +49,7 @@ shanon,fm,0.54,pcm,1.00
 shouse,fm,0.49,pcm,0.75,cus30,1.00
 simson,snd,1.00
 slyspy,opn,0.25,opl,0.25,psg,0.31,pcm,1.00
+thundr,fm,0.09,pcm0,1.00,pcm1,1.00,cus30,0.58
 tmnt,fm,1.00,k60,1.00,pcm,0.27,title,0.34,upd,0.85
 tokitora,fm0,0.62,fm1,0.62,psg0,0.72,psg1,0.72,pcm,1.00
 track,vlm,1.00,psg,0.85,rdac,0.27

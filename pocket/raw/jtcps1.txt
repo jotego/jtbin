@@ -89,7 +89,6 @@ Pang! 3 (Euro 950601) --> pang3.rom
 Pang! 3 (bootleg, set 1) --> pang3b.rom
 Pang! 3: Kaitou Tachi no Karei na Gogo (Japan 950511) --> pang3j.rom
 Pang! 3 (Euro 950511) --> pang3r1.rom
-Gamushara Battle! Puchi Monster (Japan 990519) --> pmonster.rom
 Pnickies (Japan 940608) --> pnickj.rom
 Pokonyan! Balloon (Japan 940322) --> pokonyan.rom
 Quiz & Dragons: Capcom Quiz Game (USA 920701) --> qad.rom

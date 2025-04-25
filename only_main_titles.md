@@ -29,7 +29,6 @@
 | cps1    | Dynasty Wars (USA, B-Board 89624B-?)                                         | dynwar    |
 | cps1    | Final Fight (World, set 1)                                                   | ffight    |
 | cps1    | Forgotten Worlds (World, newer)                                              | forgottn  |
-| cps1    | Gamushara Battle! Puchi Monster (Japan 990519)                               | pmonster  |
 | cps1    | Ghouls'n Ghosts (World)                                                      | ghouls    |
 | cps1    | Gulun.Pa! (Japan 931220 L) (prototype)                                       | gulunpa   |
 | cps1    | Knights of the Round (World 911127)                                          | knights   |
@@ -221,6 +220,7 @@
 | simson  | Vendetta (World, 4 Players, ver. T)                                          | vendetta  |
 | slyspy  | Boulder Dash - Boulder Dash Part 2 (World)                                   | bouldash  |
 | slyspy  | Secret Agent (World, revision 3)                                             | secretag  |
+| thundr  | Rolling Thunder (rev 3)                                                      | rthunder  |
 | tmnt    | M.I.A. - Missing in Action (version T)                                       | mia       |
 | tmnt    | Punk Shot (US 4 Players)                                                     | punkshot  |
 | tmnt    | Teenage Mutant Ninja Turtles (World 4 Players, version X)                    | tmnt      |
@@ -239,4 +239,4 @@
 | xmen    | X-Men (4 Players ver EBA)                                                    | xmen      |
 | yiear   | Yie Ar Kung-Fu (program code I)                                              | yiear     |
 
-66 cores, supporting 238 games
+67 cores, supporting 238 games

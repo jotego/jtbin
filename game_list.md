@@ -142,7 +142,6 @@
 | cps1    | Forgotten Worlds (USA, B-Board 88621B-2, Rev. C)                                           | forgottnu     |
 | cps1    | Forgotten Worlds (World)                                                                   | forgottna     |
 | cps1    | Forgotten Worlds (World, newer)                                                            | forgottn      |
-| cps1    | Gamushara Battle! Puchi Monster (Japan 990519)                                             | pmonster      |
 | cps1    | Ghouls'n Ghosts (USA)                                                                      | ghoulsu       |
 | cps1    | Ghouls'n Ghosts (World)                                                                    | ghouls        |
 | cps1    | Gulun.Pa! (Japan 931220 L) (prototype)                                                     | gulunpa       |
@@ -995,6 +994,11 @@
 | slyspy  | Sly Spy (US, revision 2)                                                                   | slyspy2       |
 | slyspy  | Sly Spy (US, revision 3)                                                                   | slyspy3       |
 | slyspy  | Sly Spy (US, revision 4)                                                                   | slyspy        |
+| thundr  | Rolling Thunder (oldest)                                                                   | rthunder0     |
+| thundr  | Rolling Thunder (rev 1)                                                                    | rthunder1     |
+| thundr  | Rolling Thunder (rev 2)                                                                    | rthunder2     |
+| thundr  | Rolling Thunder (rev 3)                                                                    | rthunder      |
+| thundr  | Rolling Thunder (rev 3, hack)                                                              | rthundera     |
 | tmnt    | M.I.A. - Missing in Action (version S)                                                     | mia2          |
 | tmnt    | M.I.A. - Missing in Action (version T)                                                     | mia           |
 | tmnt    | Punk Shot (Japan 2 Players)                                                                | punkshotj     |
@@ -1082,4 +1086,4 @@
 | yiear   | Yie Ar Kung-Fu (program code G)                                                            | yiear2        |
 | yiear   | Yie Ar Kung-Fu (program code I)                                                            | yiear         |
 
-67 cores, supporting 1081 games
+68 cores, supporting 1085 games

@@ -580,7 +580,6 @@
 | pgearr1      | jtcps2     | 0005502bf24103341c096a807ddfa0e6 | ff,ff        |
 | pingpong     | jtpinpon   | 3c6eaf0db6cb96ab18e8c5ca63aed2a9 | ff,fa,ff     |
 | pistoldm     | jtshouse   | f2cbddfb4450b46563b02de50d227f2e | ff,ff        |
-| pmonster     | jtcps1     |                                  | ff,ff,ff     |
 | pnickj       | jtcps1     | 39d46d81dfc6c10c94b02cf812bfd817 | ff,fc,ff     |
 | pokonyan     | jtcps1     | 0c22b6a35a4c7dcf7ee3d42b04a1f1df | be,fb,ff,ff  |
 | pompingw     | jtpang     | 6be48a4c0844f8c6737f13d6e239a358 |              |
@@ -646,6 +645,11 @@
 | rocnropek    | jtroc      | 9a7b2a4292da9248e666abe317edf768 | ff,5b,96     |
 | rompers      | jtshouse   | 08ff77ec86c6b0087b1c6398be1c31ac | ff,fe        |
 | romperso     | jtshouse   | 7b5145a14d162ee34c9e6acc8bc84184 | ff,fe        |
+| rthunder     | jtthundr   | 6d523a4467b2903c1cd5c887a6a19407 | ff,d7        |
+| rthunder0    | jtthundr   | 6638336490ff7df5687bb482726d35f2 | ff,f8        |
+| rthunder1    | jtthundr   | ef5e0a299d55abe5130deaa0578d1618 | ff,f8        |
+| rthunder2    | jtthundr   | 2180ae8c3b9a746140e2744c073bab03 | ff,f8        |
+| rthundera    | jtthundr   | 248c42aec4e440eb82741fdaecffe55d | ff,f8        |
 | rumba        | jtflstory  | 924fc213456df0f3480c6cbf2cb84cc2 | fc,00,e3     |
 | rushcrsh     | jtrumble   | 4f09aed603e4590fd2b8cadd6a796edf | ff,73        |
 | ryukendn     | jtgaiden   | 8bf88cefc29877f94896f4ae92c4939f | ff,ff        |
