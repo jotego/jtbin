@@ -33,13 +33,14 @@
     <region>World</region>
     <rom index="0" zip="rthunder1.zip|rthunder.zip" md5="None" asm_md5="ef5e0a299d55abe5130deaa0578d1618">
         <!-- 
-  1[0]: scr2bpp    Scroll uses only 2 color planes
+  1[0]: nobank     No ROM for upper tilemap bank
   2[0]: sndext_en  Additional board for PCM sound
   3[0]: nocpu2     Keeps CPU2 in reset state
   4[0]: mcualt     Alternative mapping for MCU ROM
+  4[1]: scrhflip   Ignore flip bit and reverse H scroll
   5[0]: roishtar   Special SUB/MCU mapping for roishtar
-  5[0]: genpeitd   Special SUB/MCU mapping for genpei
-  6[0]: wndrmomo   Special SUB/MCU mapping for wndrmomo -->
+  6[0]: genpeitd   Special SUB/MCU mapping for genpei
+  7[0]: wndrmomo   Special SUB/MCU mapping for wndrmomo -->
         <part>
             00 00 01 00 00 00 00 00
         </part>

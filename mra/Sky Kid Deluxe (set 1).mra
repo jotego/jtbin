@@ -1,0 +1,123 @@
+<!--          FPGA arcade hardware by Jotego
+
+              This core is available for hardware compatible with MiST and MiSTer
+              Other FPGA systems may be supported by the time you read this.
+              This work is not mantained by the MiSTer project. Please contact the
+              core author for issues and updates.
+
+              (c) Jose Tejada, 2025. Please support this research
+              Patreon: https://patreon.com/jotego
+
+              The author does not endorse or participate in illegal distribution
+              of copyrighted material. This work can be used with compatible
+              software. This software can be homebrew projects or legally
+              obtained memory dumps of compatible games.
+
+              This file license is GNU GPLv2.
+              You can read the whole license file in
+              https://opensource.org/licenses/gpl-2.0.php
+
+-->
+
+<misterromdescription>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://jotego/jtcores"/>
+    <rotation>horizontal</rotation>
+    <name>Sky Kid Deluxe (set 1)</name>
+    <setname>skykiddx</setname>
+    <mameversion>0261</mameversion>
+    <year>1986</year>
+    <manufacturer>Namco</manufacturer>
+    <players>2</players>
+    <rbf>jtthundr</rbf>
+    <joystick>8</joystick>
+    <region>World</region>
+    <rom index="0" zip="skykiddx.zip" md5="None" asm_md5="ac4fd67d84dcdc55ad4d6599322b7258">
+        <!-- 
+  1[0]: nobank     No ROM for upper tilemap bank
+  2[0]: sndext_en  Additional board for PCM sound
+  3[0]: nocpu2     Keeps CPU2 in reset state
+  4[0]: mcualt     Alternative mapping for MCU ROM
+  4[1]: scrhflip   Ignore flip bit and reverse H scroll
+  5[0]: roishtar   Special SUB/MCU mapping for roishtar
+  6[0]: genpeitd   Special SUB/MCU mapping for genpei
+  7[0]: wndrmomo   Special SUB/MCU mapping for wndrmomo -->
+        <part>
+            00 01 00 01 03 00 00 00
+        </part>
+        <!-- cpu1 - starts at 0x0 - length 0x10000 (16 bits) -->
+        <part name="sk3_2.9d" crc="74b8f8e2"/>
+        <part name="sk3_1b.9c" crc="767b3514"/>
+        <!-- EXT_START -->
+        <!-- user1 - starts at 0x10000 - length 0x40000 (18 bits) -->
+        <part repeat="0x40000"> FF</part>
+        <!-- JTFRAME_BA1_START -->
+        <!-- cpu2 - starts at 0x50000 - length 0x10000 (16 bits) -->
+        <part repeat="0x8000"> FF</part>
+        <part name="sk3_3.12c" crc="6d1084c4"/>
+        <!-- PCM_START -->
+        <!-- namco2 - starts at 0x60000 - length 0x70000 (19 bits) -->
+        <part repeat="0x70000"> FF</part>
+        <!-- JTFRAME_BA2_START -->
+        <!-- gfx1 - starts at 0xD0000 - length 0x20000 (17 bits) -->
+        <interleave output="32">
+            <part name="sk3_9.7r" crc="48675b17" map="0021" length="0x8000"/>
+            <part name="sk3_10.7s" crc="7418465a" map="0100" length="0x4000"/>
+            <part name="sk3_10.7s" crc="7418465a" map="1000" length="0x4000"/>
+        </interleave>
+        <part repeat="0x10000"> FF</part>
+        <!-- SCR1_START -->
+        <!-- gfx2 - starts at 0xF0000 - length 0x10000 (16 bits) -->
+        <interleave output="32">
+            <part name="sk3_7.4r" crc="4036b735" map="0021" length="0x8000"/>
+            <part name="sk3_8.4s" crc="044bfd21" map="0100" length="0x4000"/>
+            <part name="sk3_8.4s" crc="044bfd21" map="1000" length="0x4000"/>
+        </interleave>
+        <!-- JTFRAME_BA3_START -->
+        <!-- gfx3 - starts at 0x100000 - length 0x100000 (20 bits) -->
+        <part name="sk3_5.12h" crc="5c7d4399"/>
+        <part name="sk3_5.12h" crc="5c7d4399"/>
+        <part name="sk3_5.12h" crc="5c7d4399"/>
+        <part name="sk3_5.12h" crc="5c7d4399"/>
+        <part name="sk3_6.12k" crc="c908a3b2"/>
+        <part name="sk3_6.12k" crc="c908a3b2"/>
+        <part name="sk3_6.12k" crc="c908a3b2"/>
+        <part name="sk3_6.12k" crc="c908a3b2"/>
+        <part repeat="0xC0000"> FF</part>
+        <!-- MCUSUB_START -->
+        <!-- mcusub - starts at 0x200000 - length 0x8000 (15 bits) -->
+        <part name="sk3_4.6b" crc="e6cae2d6"/>
+        <part repeat="0x4000"> FF</part>
+        <!-- JTFRAME_PROM_START -->
+        <!-- mcu - starts at 0x208000 - length 0x1000 (12 bits) -->
+        <part name="cus60-60a1.mcu" crc="076ea82a"/>
+        <!-- proms - starts at 0x209000 - length 0x1440 (13 bits) -->
+        <part name="sk3-1.3r" crc="9e81dedd"/>
+        <part name="sk3-2.3s" crc="cbfec4dd"/>
+        <part name="sk3-3.4v" crc="81714109"/>
+        <part name="sk3-4.5v" crc="1bf25acc"/>
+        <part name="sk3-5.6u" crc="e4130804"/>
+        <part name="sk3-5.6u" crc="e4130804"/>
+        <!-- Total 0x20A440 bytes - 2089 kBytes -->
+    </rom>
+    <rom index="17" zip="jtbeta.zip" md5="None" asm_md5="84d30cc91cfc0f49e372c316ac73456b">
+        <part name="beta.bin" crc="5603d968"/>
+    </rom>
+    <nvram index="2" size="24598"/>
+    <rom index="1">
+        <part>00 80</part>
+    </rom>
+    <switches page_id="1" page_name="Switches" base="16" default="ff,ff">
+        <DSWA/>
+        <dip name="Coin B" bits="0,1" ids="3/1,2/1,1/2,1/1"/>
+        <dip name="Freeze" bits="2" ids="On,Off"/>
+        <dip name="Level Select (Cheat)" bits="3" ids="On,Off"/>
+        <dip name="Demo Sounds" bits="4" ids="Off,On"/>
+        <dip name="Coin A" bits="5,6" ids="3/1,2/1,1/2,1/1"/>
+        <dip name="Service Mode" bits="7" ids="On,Off"/>
+        <DSWB/>
+        <dip name="Flip Screen" bits="8" ids="On,Off"/>
+        <dip name="Bonus Life" bits="12,13" ids="20k Every 80k,20k 80k,30k Every 90k,30k 90k"/>
+        <dip name="Lives" bits="14,15" ids="5,2,1,3"/>
+    </switches>
+    <buttons names="Shot,Roll/Bomb,-,Start,Coin,Core credits" default="A,B,Start,Select,-" count="2"/>
+</misterromdescription>

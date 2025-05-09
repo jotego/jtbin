@@ -999,6 +999,8 @@
 | thundr  | Rolling Thunder (rev 2)                                                                    | rthunder2     |
 | thundr  | Rolling Thunder (rev 3)                                                                    | rthunder      |
 | thundr  | Rolling Thunder (rev 3, hack)                                                              | rthundera     |
+| thundr  | Sky Kid Deluxe (set 1)                                                                     | skykiddx      |
+| thundr  | Sky Kid Deluxe (set 2)                                                                     | skykiddxo     |
 | tmnt    | M.I.A. - Missing in Action (version S)                                                     | mia2          |
 | tmnt    | M.I.A. - Missing in Action (version T)                                                     | mia           |
 | tmnt    | Punk Shot (Japan 2 Players)                                                                | punkshotj     |
@@ -1086,4 +1088,4 @@
 | yiear   | Yie Ar Kung-Fu (program code G)                                                            | yiear2        |
 | yiear   | Yie Ar Kung-Fu (program code I)                                                            | yiear         |
 
-68 cores, supporting 1085 games
+68 cores, supporting 1087 games
