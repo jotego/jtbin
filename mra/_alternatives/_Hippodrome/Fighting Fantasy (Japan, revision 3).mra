@@ -63,7 +63,7 @@
             <part name="ew20" crc="ce9f5de3" map="10"/>
         </interleave>
         <part repeat="0x30000"> FF</part>
-        <!-- Blank ends at 0x110000 -->
+        <!-- Blank ends at 0x40000 -->
         <interleave output="16">
             <part name="ew18" crc="78d3d764" map="01"/>
             <part name="ew21" crc="487a7ba2" map="10"/>
@@ -76,7 +76,7 @@
             <part name="ew22" crc="e55669aa" map="10"/>
         </interleave>
         <part repeat="0x10000"> FF</part>
-        <!-- Blank ends at 0x170000 -->
+        <!-- Blank ends at 0x20000 -->
         <interleave output="16">
             <part name="ew24" crc="4e1bc2a4" map="01"/>
             <part name="ew23" crc="9ecf479e" map="10"/>
@@ -101,8 +101,8 @@
         <!-- sub - starts at 0x210000 - length 0x18000 (17 bits) -->
         <part name="ew08" crc="53010534"/>
         <part repeat="0x8000"> FF</part>
-        <!-- PROM_START -->
         <!-- JTFRAME_PROM_START -->
+        <!-- PROM_START -->
         <!-- proms - starts at 0x228000 - length 0x600 (11 bits) -->
         <part name="mb7116e_a-1.12c" crc="86e775f8"/>
         <part name="mb7122e_a-2.17e" crc="a5cda23e"/>

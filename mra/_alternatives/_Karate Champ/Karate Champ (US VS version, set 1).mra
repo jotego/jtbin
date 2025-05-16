@@ -67,7 +67,7 @@
         <part name="bs02.a5" crc="4cbd3aa3"/>
         <part name="bs08.c5" crc="6be342a6"/>
         <part repeat="0x4000"> FF</part>
-        <!-- Blank ends at 0x50000 -->
+        <!-- Blank ends at 0x10000 -->
         <part name="bs03.a6" crc="8dcd271a"/>
         <part name="bs09.c6" crc="4ee1dba7"/>
         <part name="bs04.a8" crc="7346db8a"/>

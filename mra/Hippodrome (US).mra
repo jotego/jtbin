@@ -63,7 +63,7 @@
             <part name="ew20" crc="ce9f5de3" map="10"/>
         </interleave>
         <part repeat="0x30000"> FF</part>
-        <!-- Blank ends at 0x110000 -->
+        <!-- Blank ends at 0x40000 -->
         <interleave output="16">
             <part name="ew18" crc="78d3d764" map="01"/>
             <part name="ew21" crc="487a7ba2" map="10"/>
@@ -76,7 +76,7 @@
             <part name="ew22" crc="e55669aa" map="10"/>
         </interleave>
         <part repeat="0x10000"> FF</part>
-        <!-- Blank ends at 0x170000 -->
+        <!-- Blank ends at 0x20000 -->
         <interleave output="16">
             <part name="ew24" crc="4e1bc2a4" map="01"/>
             <part name="ew23" crc="9ecf479e" map="10"/>

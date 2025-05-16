@@ -5,6 +5,7 @@ The following arcade titles are compatible with this core. Generate
 the required .rom file using the mra tool (read below).
 Place the *.rom files in Assets/jtthundr/common
 
+Hopping Mappy --> hopmappy.rom
 Rolling Thunder (rev 3) --> rthunder.rom
 Rolling Thunder (oldest) --> rthunder0.rom
 Rolling Thunder (rev 1) --> rthunder1.rom
@@ -12,6 +13,7 @@ Rolling Thunder (rev 2) --> rthunder2.rom
 Rolling Thunder (rev 3, hack) --> rthundera.rom
 Sky Kid Deluxe (set 1) --> skykiddx.rom
 Sky Kid Deluxe (set 2) --> skykiddxo.rom
+Wonder Momo --> wndrmomo.rom
 
 
 These files are generated using the mra tool in:

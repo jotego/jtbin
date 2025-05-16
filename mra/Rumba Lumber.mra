@@ -100,9 +100,6 @@
         <part name="a23_11.bin" crc="fddc99ce"/>
         <!-- Total 0x6C800 bytes - 434 kBytes -->
     </rom>
-    <rom index="17" zip="jtbeta.zip" md5="None" asm_md5="84d30cc91cfc0f49e372c316ac73456b">
-        <part name="beta.bin" crc="5603d968"/>
-    </rom>
     <nvram index="2" size="4353"/>
     <!-- Vertical screen. Orientation reversed. -->
     <rom index="1">

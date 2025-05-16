@@ -66,7 +66,7 @@
         <part name="k-11_2764.k12" crc="4cbd3aa3"/>
         <part name="k-2_2764.j12" crc="6be342a6"/>
         <part repeat="0x4000"> FF</part>
-        <!-- Blank ends at 0x50000 -->
+        <!-- Blank ends at 0x10000 -->
         <part name="k-7_2764.k4" crc="40f2b6fb"/>
         <part name="k-10_2764.k9" crc="325c0a97"/>
         <part name="k-6_2764.k2" crc="7346db8a"/>

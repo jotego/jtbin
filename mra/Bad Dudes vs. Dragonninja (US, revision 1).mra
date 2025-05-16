@@ -70,7 +70,7 @@
             <part name="ei22.14f" crc="b893d880" map="10"/>
         </interleave>
         <part repeat="0x20000"> FF</part>
-        <!-- Blank ends at 0x110000 -->
+        <!-- Blank ends at 0x40000 -->
         <interleave output="16">
             <part name="ei20.17d" crc="e11e988f" map="01"/>
             <part name="ei24.17f" crc="6f226dda" map="10"/>
@@ -109,8 +109,8 @@
             <part name="ei10.14a" crc="eeee8a1a" map="1000"/>
         </interleave>
         <part repeat="0x20000"> FF</part>
-        <!-- MCU_START -->
         <!-- JTFRAME_PROM_START -->
+        <!-- MCU_START -->
         <!-- mcu - starts at 0x210000 - length 0x18000 (17 bits) -->
         <part name="ei31.9a" crc="2a8745d2"/>
         <part repeat="0x17000"> FF</part>

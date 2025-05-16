@@ -31,9 +31,9 @@
     <rbf>jtthundr</rbf>
     <joystick>8</joystick>
     <region>World</region>
-    <rom index="0" zip="skykiddx.zip" md5="None" asm_md5="ac4fd67d84dcdc55ad4d6599322b7258">
+    <rom index="0" zip="skykiddx.zip" md5="None" asm_md5="3d239b357131eabb0abff62dd0b52c1b">
         <!-- 
-  1[0]: nobank     No ROM for upper tilemap bank
+  1[0]: only2bpp   Only 2bpp for backgrounds
   2[0]: sndext_en  Additional board for PCM sound
   3[0]: nocpu2     Keeps CPU2 in reset state
   4[0]: mcualt     Alternative mapping for MCU ROM
@@ -42,7 +42,7 @@
   6[0]: genpeitd   Special SUB/MCU mapping for genpei
   7[0]: wndrmomo   Special SUB/MCU mapping for wndrmomo -->
         <part>
-            00 01 00 01 03 00 00 00
+            00 00 00 01 03 00 00 00
         </part>
         <!-- cpu1 - starts at 0x0 - length 0x10000 (16 bits) -->
         <part name="sk3_2.9d" crc="74b8f8e2"/>
@@ -64,7 +64,11 @@
             <part name="sk3_10.7s" crc="7418465a" map="0100" length="0x4000"/>
             <part name="sk3_10.7s" crc="7418465a" map="1000" length="0x4000"/>
         </interleave>
-        <part repeat="0x10000"> FF</part>
+        <interleave output="32">
+            <part name="sk3_9.7r" crc="48675b17" map="0021" length="0x8000"/>
+            <part name="sk3_10.7s" crc="7418465a" map="0100" length="0x4000"/>
+            <part name="sk3_10.7s" crc="7418465a" map="1000" length="0x4000"/>
+        </interleave>
         <!-- SCR1_START -->
         <!-- gfx2 - starts at 0xF0000 - length 0x10000 (16 bits) -->
         <interleave output="32">
@@ -82,7 +86,30 @@
         <part name="sk3_6.12k" crc="c908a3b2"/>
         <part name="sk3_6.12k" crc="c908a3b2"/>
         <part name="sk3_6.12k" crc="c908a3b2"/>
-        <part repeat="0xC0000"> FF</part>
+        <part name="sk3_5.12h" crc="5c7d4399"/>
+        <part name="sk3_5.12h" crc="5c7d4399"/>
+        <part name="sk3_5.12h" crc="5c7d4399"/>
+        <part name="sk3_5.12h" crc="5c7d4399"/>
+        <part name="sk3_6.12k" crc="c908a3b2"/>
+        <part name="sk3_6.12k" crc="c908a3b2"/>
+        <part name="sk3_6.12k" crc="c908a3b2"/>
+        <part name="sk3_6.12k" crc="c908a3b2"/>
+        <part name="sk3_5.12h" crc="5c7d4399"/>
+        <part name="sk3_5.12h" crc="5c7d4399"/>
+        <part name="sk3_5.12h" crc="5c7d4399"/>
+        <part name="sk3_5.12h" crc="5c7d4399"/>
+        <part name="sk3_6.12k" crc="c908a3b2"/>
+        <part name="sk3_6.12k" crc="c908a3b2"/>
+        <part name="sk3_6.12k" crc="c908a3b2"/>
+        <part name="sk3_6.12k" crc="c908a3b2"/>
+        <part name="sk3_5.12h" crc="5c7d4399"/>
+        <part name="sk3_5.12h" crc="5c7d4399"/>
+        <part name="sk3_5.12h" crc="5c7d4399"/>
+        <part name="sk3_5.12h" crc="5c7d4399"/>
+        <part name="sk3_6.12k" crc="c908a3b2"/>
+        <part name="sk3_6.12k" crc="c908a3b2"/>
+        <part name="sk3_6.12k" crc="c908a3b2"/>
+        <part name="sk3_6.12k" crc="c908a3b2"/>
         <!-- MCUSUB_START -->
         <!-- mcusub - starts at 0x200000 - length 0x8000 (15 bits) -->
         <part name="sk3_4.6b" crc="e6cae2d6"/>

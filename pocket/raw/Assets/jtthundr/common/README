@@ -1,5 +1,6 @@
 Place the following files in this folder:
 
+hopmappy.rom
 rthunder.rom
 rthunder0.rom
 rthunder1.rom
@@ -7,6 +8,7 @@ rthunder2.rom
 rthundera.rom
 skykiddx.rom
 skykiddxo.rom
+wndrmomo.rom
 
 These files are generated using the mra tool in:
 https://github.com/sebdel/mra-tools-c/tree/master/release

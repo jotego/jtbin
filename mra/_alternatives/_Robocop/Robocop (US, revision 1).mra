@@ -63,7 +63,7 @@
             <part name="ep18" crc="b6580b5e" map="10"/>
         </interleave>
         <part repeat="0x20000"> FF</part>
-        <!-- Blank ends at 0x110000 -->
+        <!-- Blank ends at 0x40000 -->
         <interleave output="16">
             <part name="ep21" crc="187929b2" map="01"/>
             <part name="ep19" crc="9bad01c7" map="10"/>
@@ -76,7 +76,7 @@
             <part name="ep17" crc="84aae89d" map="10"/>
         </interleave>
         <part repeat="0x10000"> FF</part>
-        <!-- Blank ends at 0x170000 -->
+        <!-- Blank ends at 0x20000 -->
         <interleave output="16">
             <part name="ep14" crc="ca56ceda" map="01"/>
             <part name="ep16" crc="e7fa4d58" map="10"/>

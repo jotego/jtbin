@@ -1,0 +1,139 @@
+<!--          FPGA arcade hardware by Jotego
+
+              This core is available for hardware compatible with MiST and MiSTer
+              Other FPGA systems may be supported by the time you read this.
+              This work is not mantained by the MiSTer project. Please contact the
+              core author for issues and updates.
+
+              (c) Jose Tejada, 2025. Please support this research
+              Patreon: https://patreon.com/jotego
+
+              The author does not endorse or participate in illegal distribution
+              of copyrighted material. This work can be used with compatible
+              software. This software can be homebrew projects or legally
+              obtained memory dumps of compatible games.
+
+              This file license is GNU GPLv2.
+              You can read the whole license file in
+              https://opensource.org/licenses/gpl-2.0.php
+
+-->
+
+<misterromdescription>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://jotego/jtcores"/>
+    <rotation>horizontal</rotation>
+    <name>Wonder Momo</name>
+    <setname>wndrmomo</setname>
+    <mameversion>0261</mameversion>
+    <year>1987</year>
+    <manufacturer>Namco</manufacturer>
+    <players>2</players>
+    <rbf>jtthundr</rbf>
+    <joystick>8</joystick>
+    <region>World</region>
+    <rom index="0" zip="wndrmomo.zip" md5="None" asm_md5="b4230321ca4fd152b3d4c7bf81391a94">
+        <!-- 
+  1[0]: only2bpp   Only 2bpp for backgrounds
+  2[0]: sndext_en  Additional board for PCM sound
+  3[0]: nocpu2     Keeps CPU2 in reset state
+  4[0]: mcualt     Alternative mapping for MCU ROM
+  4[1]: scrhflip   Ignore flip bit and reverse H scroll
+  5[0]: roishtar   Special SUB/MCU mapping for roishtar
+  6[0]: genpeitd   Special SUB/MCU mapping for genpei
+  7[0]: wndrmomo   Special SUB/MCU mapping for wndrmomo -->
+        <part>
+            00 00 01 00 00 00 00 01
+        </part>
+        <!-- cpu1 - starts at 0x0 - length 0x10000 (16 bits) -->
+        <part repeat="0x8000"> FF</part>
+        <part name="wm1_1.9c" crc="34b50bf0"/>
+        <!-- EXT_START -->
+        <!-- user1 - starts at 0x10000 - length 0x40000 (18 bits) -->
+        <part name="wm1_16.f1" crc="e565f8f3"/>
+        <part repeat="0x30000"> FF</part>
+        <!-- JTFRAME_BA1_START -->
+        <!-- cpu2 - starts at 0x50000 - length 0x10000 (16 bits) -->
+        <part repeat="0x8000"> FF</part>
+        <part name="wm1_2.12c" crc="3181efd0"/>
+        <!-- PCM_START -->
+        <!-- namco2 - starts at 0x60000 - length 0x70000 (19 bits) -->
+        <part name="wm1_17.f3" crc="bea3c318"/>
+        <part repeat="0x10000"> FF</part>
+        <part name="wm1_18.h3" crc="6d73bcc5"/>
+        <part repeat="0x10000"> FF</part>
+        <part name="wm1_19.k3" crc="d288e912"/>
+        <part repeat="0x10000"> FF</part>
+        <part name="wm1_20.m3" crc="076a72cb"/>
+        <!-- JTFRAME_BA2_START -->
+        <!-- gfx1 - starts at 0xD0000 - length 0x20000 (17 bits) -->
+        <interleave output="32">
+            <part name="wm1_6.7r" crc="93955fbb" map="0021" length="0x8000"/>
+            <part name="wm1_7.7s" crc="7d662527" map="0100" length="0x4000"/>
+            <part name="wm1_7.7s" crc="7d662527" map="1000" length="0x4000"/>
+        </interleave>
+        <interleave output="32">
+            <part name="wm1_6.7r" crc="93955fbb" map="0021" length="0x8000"/>
+            <part name="wm1_7.7s" crc="7d662527" map="0100" length="0x4000"/>
+            <part name="wm1_7.7s" crc="7d662527" map="1000" length="0x4000"/>
+        </interleave>
+        <!-- SCR1_START -->
+        <!-- gfx2 - starts at 0xF0000 - length 0x10000 (16 bits) -->
+        <interleave output="32">
+            <part name="wm1_4.4r" crc="bbe67836" map="0021" length="0x8000"/>
+            <part name="wm1_5.4s" crc="a81b481f" map="0100" length="0x4000"/>
+            <part name="wm1_5.4s" crc="a81b481f" map="1000" length="0x4000"/>
+        </interleave>
+        <!-- JTFRAME_BA3_START -->
+        <!-- gfx3 - starts at 0x100000 - length 0x100000 (20 bits) -->
+        <part name="wm1_8.12h" crc="14f52e72"/>
+        <part name="wm1_8.12h" crc="14f52e72"/>
+        <part name="wm1_9.12k" crc="16f8cdae"/>
+        <part name="wm1_9.12k" crc="16f8cdae"/>
+        <part name="wm1_10.12l" crc="bfbc1896"/>
+        <part name="wm1_10.12l" crc="bfbc1896"/>
+        <part name="wm1_11.12m" crc="d775ddb2"/>
+        <part name="wm1_11.12m" crc="d775ddb2"/>
+        <part name="wm1_12.12p" crc="de64c12f"/>
+        <part name="wm1_12.12p" crc="de64c12f"/>
+        <part name="wm1_13.12r" crc="cfe589ad"/>
+        <part name="wm1_13.12r" crc="cfe589ad"/>
+        <part name="wm1_14.12t" crc="2ae21a53"/>
+        <part name="wm1_14.12t" crc="2ae21a53"/>
+        <part name="wm1_15.12u" crc="b5c98be0"/>
+        <part name="wm1_15.12u" crc="b5c98be0"/>
+        <!-- MCUSUB_START -->
+        <!-- mcusub - starts at 0x200000 - length 0x8000 (15 bits) -->
+        <part name="wm1_3.6b" crc="55f01df7"/>
+        <!-- JTFRAME_PROM_START -->
+        <!-- mcu - starts at 0x208000 - length 0x1000 (12 bits) -->
+        <part name="cus60-60a1.mcu" crc="076ea82a"/>
+        <!-- proms - starts at 0x209000 - length 0x1440 (13 bits) -->
+        <part name="wm1-1.3r" crc="1af8ade8"/>
+        <part name="wm1-2.3s" crc="8694e213"/>
+        <part name="wm1-3.4v" crc="2ffaf9a4"/>
+        <part name="wm1-4.5v" crc="f4e83e0b"/>
+        <part name="wm1-5.6u" crc="e4130804"/>
+        <part name="wm1-5.6u" crc="e4130804"/>
+        <!-- Total 0x20A440 bytes - 2089 kBytes -->
+    </rom>
+    <rom index="17" zip="jtbeta.zip" md5="None" asm_md5="84d30cc91cfc0f49e372c316ac73456b">
+        <part name="beta.bin" crc="5603d968"/>
+    </rom>
+    <nvram index="2" size="24598"/>
+    <rom index="1">
+        <part>00 80</part>
+    </rom>
+    <switches page_id="1" page_name="Switches" base="16" default="f7,fb">
+        <DSWA/>
+        <dip name="Coin B" bits="0,1" ids="3/1,2/1,1/2,1/1"/>
+        <dip name="Freeze" bits="2" ids="On,Off"/>
+        <dip name="Level Select" bits="3" ids="On,Off"/>
+        <dip name="Demo Sounds" bits="4" ids="Off,On"/>
+        <dip name="Coin A" bits="5,6" ids="3/1,2/1,1/2,1/1"/>
+        <dip name="Service Mode" bits="7" ids="On,Off"/>
+        <DSWB/>
+        <dip name="Flip Screen" bits="8" ids="On,Off"/>
+        <dip name="Cabinet" bits="9,10" ids="Cocktail,Upright 1 Player,Upright 2 Players,Cocktail"/>
+    </switches>
+    <buttons names="Kick,Jump,-,Start,Coin,Core credits" default="A,B,Start,Select,-" count="2"/>
+</misterromdescription>

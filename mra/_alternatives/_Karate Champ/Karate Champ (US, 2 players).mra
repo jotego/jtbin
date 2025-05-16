@@ -66,7 +66,7 @@
         <part name="karate_champ_bs11-8.ic126" crc="4cbd3aa3"/>
         <part name="karate_champ_bs02-8.ic114" crc="6be342a6"/>
         <part repeat="0x4000"> FF</part>
-        <!-- Blank ends at 0x50000 -->
+        <!-- Blank ends at 0x10000 -->
         <part name="karate_champ_bs07-8.ic120" crc="cb91d16b"/>
         <part name="karate_champ_bs10-8.ic124" crc="489c9c04"/>
         <part name="karate_champ_bs06-8.ic119" crc="7346db8a"/>

@@ -393,6 +393,7 @@
 | hcastlek     | jtcastle   | 792920a9d62f4c492e6b05968e1d5d33 | ff,53,ff     |
 | higemaru     | jt1942     | fd3dfa858b78ce0bba2260ba639dcd86 | ff,fe        |
 | hippodrm     | jtcop      | a8bf65155b3daa5dcb5a00a268a09447 | ff,ff        |
+| hopmappy     | jtthundr   | 0368097e4cd23eb28787baa7b2f60122 | ff,ff        |
 | hpolym84     | jtroadf    | dc1b46a420f87a175b025c330aa6af01 | ff,49,ff     |
 | hsf2         | jtcps2     | 88b106b19af3f0b9670729d6be1e1ef8 | ff,ff        |
 | hsf2a        | jtcps2     | 4979adb5d1b1fab8cccf1587eabb22af | ff,ff        |
@@ -813,8 +814,8 @@
 | sinvasn      | jtcommnd   | e87eba48664693b5d77e293a5cf91a3c | ff,1f        |
 | sjryuko      | jts16b     | d796598dc8a8e8d5b5315bf1358051fa | ff,fb        |
 | sjryuko1     | jts16      | 7735c267ab3a53c5a032f5c49183fc14 | ff,fb        |
-| skykiddx     | jtthundr   | ac4fd67d84dcdc55ad4d6599322b7258 | ff,ff        |
-| skykiddxo    | jtthundr   | 718ead207cc7899973d1ea28187750f8 | ff,ff        |
+| skykiddx     | jtthundr   | 3d239b357131eabb0abff62dd0b52c1b | ff,ff        |
+| skykiddxo    | jtthundr   | 297d05aedceff12ecd2b083c18443e43 | ff,ff        |
 | slammast     | jtcps15    | 313b1b55f32092e408b79fd7a34a0962 | ff           |
 | slammastu    | jtcps15    | ce1b77141ec7606bd656100d9a41e0e2 | ff           |
 | slyspy       | jtslyspy   | e497455caff76c29998aeff151420b06 | 7f,ff        |
@@ -1021,6 +1022,7 @@
 | willowu      | jtcps1     | b692e6ca608e1704249ec551f4d1242d | ff,ff,fa     |
 | willowuo     | jtcps1     | f44bb34ad35e743c894a070f2ecbc3f3 | ff,ff,fa     |
 | wldcourt     | jtshouse   | 73a8feb291eed11fa7e10b127d7542fc | ff           |
+| wndrmomo     | jtthundr   | b4230321ca4fd152b3d4c7bf81391a94 | f7,fb        |
 | wndrplnt     | jtkarnov   | e81ae47504db6a4446676dfb39dfbab0 | 7f,ff        |
 | wof          | jtcps15    | 0e41c840a0f9d1c443c0e388c73dc11c | ff           |
 | wofa         | jtcps15    | 62ace165f74e3b5e07cd788edea93b67 | ff           |
