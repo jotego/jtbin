@@ -30,6 +30,7 @@ mikie,psg1,0.66,psg2,0.66,rdac,1.00
 mx5k,fm,1.00,pcm,0.39
 ngpngpcninja,opn,0.25,opl,0.25,psg,0.31,pcm,1.00
 outrun,fm,0.54,pcm,1.00
+paclan,cus30,1.00
 pang,pcm,0.69,fm,1.00
 paroda,snd,1.00
 pinpon,ti1,1.00

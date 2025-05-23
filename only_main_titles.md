@@ -136,6 +136,7 @@
 | ninja   | Heavy Barrel (World)                                                         | hbarrel   |
 | outrun  | Out Run (sitdown-upright, Rev B)                                             | outrun    |
 | outrun  | Turbo Out Run (Out Run upgrade) (FD1094 317-0118)                            | toutrun   |
+| paclan  | Pac-Land (World)                                                             | pacland   |
 | pang    | Block Block (World 911219 Joystick)                                          | block     |
 | pang    | Capcom World (Japan)                                                         | cworld    |
 | pang    | Dokaben (Japan)                                                              | dokaben   |
@@ -242,4 +243,4 @@
 | xmen    | X-Men (4 Players ver EBA)                                                    | xmen      |
 | yiear   | Yie Ar Kung-Fu (program code I)                                              | yiear     |
 
-67 cores, supporting 241 games
+68 cores, supporting 242 games

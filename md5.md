@@ -560,6 +560,12 @@
 | outruneh     | jtoutrun   | daf7666a4f8a42933a0605a646765ae3 | ff,f9        |
 | outruneha    | jtoutrun   | 0603751fbd5551ed1be0189e474978a9 | ff,f9        |
 | outrunra     | jtoutrun   | ec44432539dfa9b7897ac1d4be2c169a | ff,f9        |
+| pacland      | jtpaclan   | 9e0caa424015e165459a3f31af4db251 | ff,ff,ff     |
+| paclandj     | jtpaclan   | f6ccb063f46e1dbe5f5451cf3b0930a7 | ff,ff,ff     |
+| paclandjo    | jtpaclan   | e7698756ace9974909304961eaac145d | ff,ff,ff     |
+| paclandjo2   | jtpaclan   | d8be73db708eeaac158b175a33f7595d | ff,ff,ff     |
+| paclandm     | jtpaclan   | 5bab831e7340321bfc9cce8ae19e42e9 | ff,ff,ff     |
+| paclandm2    | jtpaclan   | 17deff744e17b156b4a80c2448d00179 | ff,ff,ff     |
 | pacmania     | jtshouse   | 4be255352d68850f1507e724b461a2de | ff           |
 | pacmaniaj    | jtshouse   | 87842ea546d0d99ef87c9bcd2264616b | ff           |
 | pacmaniao    | jtshouse   | 64f82f00b9b2929769f45b288bf614e2 | ff           |

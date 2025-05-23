@@ -1,0 +1,32 @@
+{
+	"instance":{
+		"magic": "APF_VER_1",
+		"variant_select": {
+			"id": 0,
+			"select": false
+		},
+		"data_path": "",
+		"data_slots": [
+			{
+				"id": 1,
+				"filename": "pacland.rom",
+				"md5": "9e0caa424015e165459a3f31af4db251"
+			},
+			{
+				"id": 2,
+				"filename": "pacland.sav"
+			},
+			{
+				"id": 17,
+				"filename": "beta.bin",
+				"md5": "84d30cc91cfc0f49e372c316ac73456b"
+			}
+		],
+		"memory_writes": [
+			{
+				"address": "0xf9000000",
+				"data": "0x8000"
+			}
+		]
+	}
+}

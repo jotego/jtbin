@@ -723,6 +723,12 @@
 | outrun  | Turbo Out Run (cockpit) (FD1094 317-0106)                                                  | toutrun2      |
 | outrun  | Turbo Out Run (cockpit) (FD1094 317-0107)                                                  | toutrun3      |
 | outrun  | Turbo Out Run (deluxe cockpit) (FD1094 317-0109)                                           | toutrun1      |
+| paclan  | Pac-Land (Bally-Midway)                                                                    | paclandm2     |
+| paclan  | Pac-Land (Japan new)                                                                       | paclandj      |
+| paclan  | Pac-Land (Japan old)                                                                       | paclandjo     |
+| paclan  | Pac-Land (Japan older)                                                                     | paclandjo2    |
+| paclan  | Pac-Land (Midway)                                                                          | paclandm      |
+| paclan  | Pac-Land (World)                                                                           | pacland       |
 | pang    | Block Block (Japan 910910)                                                                 | blockj        |
 | pang    | Block Block (World 910910)                                                                 | blockr2       |
 | pang    | Block Block (World 911106 Joystick)                                                        | blockr1       |
@@ -1090,4 +1096,4 @@
 | yiear   | Yie Ar Kung-Fu (program code G)                                                            | yiear2        |
 | yiear   | Yie Ar Kung-Fu (program code I)                                                            | yiear         |
 
-68 cores, supporting 1089 games
+69 cores, supporting 1095 games

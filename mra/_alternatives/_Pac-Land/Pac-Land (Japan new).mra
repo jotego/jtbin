@@ -1,0 +1,101 @@
+<!--          FPGA arcade hardware by Jotego
+
+              This core is available for hardware compatible with MiST and MiSTer
+              Other FPGA systems may be supported by the time you read this.
+              This work is not mantained by the MiSTer project. Please contact the
+              core author for issues and updates.
+
+              (c) Jose Tejada, 2025. Please support this research
+              Patreon: https://patreon.com/jotego
+
+              The author does not endorse or participate in illegal distribution
+              of copyrighted material. This work can be used with compatible
+              software. This software can be homebrew projects or legally
+              obtained memory dumps of compatible games.
+
+              This file license is GNU GPLv2.
+              You can read the whole license file in
+              https://opensource.org/licenses/gpl-2.0.php
+
+-->
+
+<misterromdescription>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://jotego/jtcores"/>
+    <rotation>horizontal</rotation>
+    <name>Pac-Land (Japan new)</name>
+    <setname>paclandj</setname>
+    <mameversion>0261</mameversion>
+    <year>1984</year>
+    <manufacturer>Namco</manufacturer>
+    <players>2</players>
+    <rbf>jtpaclan</rbf>
+    <joystick/>
+    <region>World</region>
+    <rom index="0" zip="paclandj.zip|pacland.zip" md5="None" asm_md5="f6ccb063f46e1dbe5f5451cf3b0930a7">
+        <!--  -->
+        <part>
+            00 00 00 00 00 00 00 00
+        </part>
+        <!-- maincpu - starts at 0x0 - length 0x20000 (17 bits) -->
+        <part repeat="0x8000"> FF</part>
+        <part name="pl6_01.8b" crc="4c96e11c"/>
+        <part name="pl6_02.8d" crc="8cf5bd8d"/>
+        <part name="pl1_3.8e" crc="aa9fa739"/>
+        <part name="pl1_4.8f" crc="2b895a90"/>
+        <part name="pl1_5.8h" crc="7af66200"/>
+        <part name="pl1_6.8j" crc="b01e59a9"/>
+        <!-- JTFRAME_BA1_START -->
+        <!-- mcusub - starts at 0x20000 - length 0x2000 (13 bits) -->
+        <part name="pl1_7.3e" crc="8c5becae"/>
+        <!-- JTFRAME_BA2_START -->
+        <!-- fg_chars - starts at 0x22000 - length 0x2000 (13 bits) -->
+        <part name="pl6_12.6n" crc="c8cb61ab"/>
+        <!-- BG_START -->
+        <!-- bg_chars - starts at 0x24000 - length 0x2000 (13 bits) -->
+        <part name="pl1_13.6t" crc="6c5ed9ae"/>
+        <!-- JTFRAME_BA3_START -->
+        <!-- sprites - starts at 0x26000 - length 0x10000 (16 bits) -->
+        <interleave output="16">
+            <part name="pl1_9b.6f" crc="80768a87" map="01"/>
+            <part name="pl1_10b.7e" crc="ffd9d66e" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="pl1_8.6e" crc="2b20e46d" map="01"/>
+            <part name="pl1_11.7f" crc="c59775d8" map="10"/>
+        </interleave>
+        <!-- JTFRAME_PROM_START -->
+        <!-- mcu - starts at 0x36000 - length 0x1000 (12 bits) -->
+        <part name="cus60-60a1.mcu" crc="076ea82a"/>
+        <!-- proms - starts at 0x37000 - length 0x1400 (13 bits) -->
+        <part name="pl1-2.1t" crc="472885de"/>
+        <part name="pl1-1.1r" crc="a78ebdaf"/>
+        <part name="pl1-5.5t" crc="4b7ee712"/>
+        <part name="pl1-4.4n" crc="3a7be418"/>
+        <part name="pl1-3.6l" crc="80558da8"/>
+        <!-- Total 0x38400 bytes - 225 kBytes -->
+    </rom>
+    <rom index="17" zip="jtbeta.zip" md5="None" asm_md5="84d30cc91cfc0f49e372c316ac73456b">
+        <part name="beta.bin" crc="5603d968"/>
+    </rom>
+    <nvram index="2" size="16388"/>
+    <rom index="1">
+        <part>00 80</part>
+    </rom>
+    <switches page_id="1" page_name="Switches" base="16" default="ff,ff,ff">
+        <DSWA/>
+        <dip name="Coin B" bits="0,1" ids="3/1,2/1,1/2,1/1"/>
+        <dip name="Demo Sounds" bits="2" ids="Off,On"/>
+        <dip name="Coin A" bits="3,4" ids="3/1,2/1,1/2,1/1"/>
+        <dip name="Lives" bits="5,6" ids="5,4,2,3"/>
+        <dip name="Service Mode" bits="7" ids="On,Off"/>
+        <DSWB/>
+        <dip name="Trip Select" bits="8" ids="Off,On"/>
+        <dip name="Freeze" bits="9" ids="On,Off"/>
+        <dip name="Round Select" bits="10" ids="On,Off"/>
+        <dip name="Difficulty" bits="11,12" ids="D,C,B,A"/>
+        <dip name="Bonus" bits="13,15" ids="40K,40K 100K 200K,30K 80K 150K,50K 150K every 200K,30K 80K every 100K,40 100 180 300 500 1M,30 100 200 400 600 1M,30 80 150 300 500 1M"/>
+        <IN0/>
+        <dip name="Cabinet" bits="23" ids="Cocktail,Upright"/>
+    </switches>
+    <buttons names="Jump,-,-,Start,Coin,Core credits" default="A,Start,Select,-" count="1"/>
+</misterromdescription>
