@@ -1000,6 +1000,7 @@
 | slyspy  | Sly Spy (US, revision 2)                                                                   | slyspy2       |
 | slyspy  | Sly Spy (US, revision 3)                                                                   | slyspy3       |
 | slyspy  | Sly Spy (US, revision 4)                                                                   | slyspy        |
+| thundr  | Genpei ToumaDen                                                                            | genpeitd      |
 | thundr  | Hopping Mappy                                                                              | hopmappy      |
 | thundr  | Rolling Thunder (oldest)                                                                   | rthunder0     |
 | thundr  | Rolling Thunder (rev 1)                                                                    | rthunder1     |
@@ -1008,6 +1009,7 @@
 | thundr  | Rolling Thunder (rev 3, hack)                                                              | rthundera     |
 | thundr  | Sky Kid Deluxe (set 1)                                                                     | skykiddx      |
 | thundr  | Sky Kid Deluxe (set 2)                                                                     | skykiddxo     |
+| thundr  | The Return of Ishtar                                                                       | roishtar      |
 | thundr  | Wonder Momo                                                                                | wndrmomo      |
 | tmnt    | M.I.A. - Missing in Action (version S)                                                     | mia2          |
 | tmnt    | M.I.A. - Missing in Action (version T)                                                     | mia           |
@@ -1096,4 +1098,4 @@
 | yiear   | Yie Ar Kung-Fu (program code G)                                                            | yiear2        |
 | yiear   | Yie Ar Kung-Fu (program code I)                                                            | yiear         |
 
-69 cores, supporting 1095 games
+69 cores, supporting 1097 games

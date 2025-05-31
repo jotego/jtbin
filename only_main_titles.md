@@ -221,9 +221,11 @@
 | simson  | Vendetta (World, 4 Players, ver. T)                                          | vendetta  |
 | slyspy  | Boulder Dash - Boulder Dash Part 2 (World)                                   | bouldash  |
 | slyspy  | Secret Agent (World, revision 3)                                             | secretag  |
+| thundr  | Genpei ToumaDen                                                              | genpeitd  |
 | thundr  | Hopping Mappy                                                                | hopmappy  |
 | thundr  | Rolling Thunder (rev 3)                                                      | rthunder  |
 | thundr  | Sky Kid Deluxe (set 1)                                                       | skykiddx  |
+| thundr  | The Return of Ishtar                                                         | roishtar  |
 | thundr  | Wonder Momo                                                                  | wndrmomo  |
 | tmnt    | M.I.A. - Missing in Action (version T)                                       | mia       |
 | tmnt    | Punk Shot (US 4 Players)                                                     | punkshot  |
@@ -243,4 +245,4 @@
 | xmen    | X-Men (4 Players ver EBA)                                                    | xmen      |
 | yiear   | Yie Ar Kung-Fu (program code I)                                              | yiear     |
 
-68 cores, supporting 242 games
+68 cores, supporting 244 games

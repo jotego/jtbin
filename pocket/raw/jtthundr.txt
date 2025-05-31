@@ -5,7 +5,9 @@ The following arcade titles are compatible with this core. Generate
 the required .rom file using the mra tool (read below).
 Place the *.rom files in Assets/jtthundr/common
 
+Genpei ToumaDen --> genpeitd.rom
 Hopping Mappy --> hopmappy.rom
+The Return of Ishtar --> roishtar.rom
 Rolling Thunder (rev 3) --> rthunder.rom
 Rolling Thunder (oldest) --> rthunder0.rom
 Rolling Thunder (rev 1) --> rthunder1.rom

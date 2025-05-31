@@ -31,7 +31,7 @@
     <rbf>jtthundr</rbf>
     <joystick>8</joystick>
     <region>World</region>
-    <rom index="0" zip="skykiddx.zip" md5="None" asm_md5="3d239b357131eabb0abff62dd0b52c1b">
+    <rom index="0" zip="skykiddx.zip" md5="None" asm_md5="46d03b25406e72ddf48e802a2a5e47ef">
         <!-- 
   1[0]: only2bpp   Only 2bpp for backgrounds
   2[0]: sndext_en  Additional board for PCM sound
@@ -39,8 +39,9 @@
   4[0]: mcualt     Alternative mapping for MCU ROM
   4[1]: scrhflip   Ignore flip bit and reverse H scroll
   5[0]: roishtar   Special SUB/MCU mapping for roishtar
-  6[0]: genpeitd   Special SUB/MCU mapping for genpei
-  7[0]: wndrmomo   Special SUB/MCU mapping for wndrmomo -->
+  5[1]: genpeitd   Special SUB/MCU mapping for genpei
+  5[2]: wndrmomo   Special SUB/MCU mapping for wndrmomo
+  5[3]: metrocrs   Special SUB/MCU mapping for Metro Cross -->
         <part>
             00 00 00 01 03 00 00 00
         </part>
@@ -55,7 +56,8 @@
         <part repeat="0x8000"> FF</part>
         <part name="sk3_3.12c" crc="6d1084c4"/>
         <!-- PCM_START -->
-        <!-- namco2 - starts at 0x60000 - length 0x70000 (19 bits) -->
+        <!-- namco2 - starts at 0x60000 -->
+        <!-- chars - starts at 0x60000 - length 0x70000 (19 bits) -->
         <part repeat="0x70000"> FF</part>
         <!-- JTFRAME_BA2_START -->
         <!-- gfx1 - starts at 0xD0000 - length 0x20000 (17 bits) -->
@@ -113,15 +115,15 @@
         <!-- MCUSUB_START -->
         <!-- mcusub - starts at 0x200000 - length 0x8000 (15 bits) -->
         <part name="sk3_4.6b" crc="e6cae2d6"/>
-        <part repeat="0x4000"> FF</part>
+        <part name="sk3_4.6b" crc="e6cae2d6"/>
         <!-- JTFRAME_PROM_START -->
         <!-- mcu - starts at 0x208000 - length 0x1000 (12 bits) -->
         <part name="cus60-60a1.mcu" crc="076ea82a"/>
         <!-- proms - starts at 0x209000 - length 0x1440 (13 bits) -->
-        <part name="sk3-1.3r" crc="9e81dedd"/>
-        <part name="sk3-2.3s" crc="cbfec4dd"/>
         <part name="sk3-3.4v" crc="81714109"/>
         <part name="sk3-4.5v" crc="1bf25acc"/>
+        <part name="sk3-1.3r" crc="9e81dedd"/>
+        <part name="sk3-2.3s" crc="cbfec4dd"/>
         <part name="sk3-5.6u" crc="e4130804"/>
         <part name="sk3-5.6u" crc="e4130804"/>
         <!-- Total 0x20A440 bytes - 2089 kBytes -->

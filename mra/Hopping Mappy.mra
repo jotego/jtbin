@@ -31,7 +31,7 @@
     <rbf>jtthundr</rbf>
     <joystick>8</joystick>
     <region>World</region>
-    <rom index="0" zip="hopmappy.zip" md5="None" asm_md5="0368097e4cd23eb28787baa7b2f60122">
+    <rom index="0" zip="hopmappy.zip" md5="None" asm_md5="ad8b4445c2f1844487efdc9666f4abeb">
         <!-- 
   1[0]: only2bpp   Only 2bpp for backgrounds
   2[0]: sndext_en  Additional board for PCM sound
@@ -39,8 +39,9 @@
   4[0]: mcualt     Alternative mapping for MCU ROM
   4[1]: scrhflip   Ignore flip bit and reverse H scroll
   5[0]: roishtar   Special SUB/MCU mapping for roishtar
-  6[0]: genpeitd   Special SUB/MCU mapping for genpei
-  7[0]: wndrmomo   Special SUB/MCU mapping for wndrmomo -->
+  5[1]: genpeitd   Special SUB/MCU mapping for genpei
+  5[2]: wndrmomo   Special SUB/MCU mapping for wndrmomo
+  5[3]: metrocrs   Special SUB/MCU mapping for Metro Cross -->
         <part>
             00 01 00 01 01 00 00 00
         </part>
@@ -55,7 +56,8 @@
         <part repeat="0xC000"> FF</part>
         <part name="hm1_2.12c" crc="c46cda65"/>
         <!-- PCM_START -->
-        <!-- namco2 - starts at 0x60000 - length 0x70000 (19 bits) -->
+        <!-- namco2 - starts at 0x60000 -->
+        <!-- chars - starts at 0x60000 - length 0x70000 (19 bits) -->
         <part repeat="0x70000"> FF</part>
         <!-- JTFRAME_BA2_START -->
         <!-- gfx1 - starts at 0xD0000 - length 0x20000 (17 bits) -->
@@ -129,10 +131,10 @@
         <!-- mcu - starts at 0x208000 - length 0x1000 (12 bits) -->
         <part name="cus60-60a1.mcu" crc="076ea82a"/>
         <!-- proms - starts at 0x209000 - length 0x1440 (13 bits) -->
-        <part name="hm1-1.3r" crc="cc801088"/>
-        <part name="hm1-2.3s" crc="a1cb71c5"/>
         <part name="hm1-3.4v" crc="e362d613"/>
         <part name="hm1-4.5v" crc="678252b4"/>
+        <part name="hm1-1.3r" crc="cc801088"/>
+        <part name="hm1-2.3s" crc="a1cb71c5"/>
         <part name="hm1-5.6u" crc="475bf500"/>
         <part name="hm1-5.6u" crc="475bf500"/>
         <!-- Total 0x20A440 bytes - 2089 kBytes -->

@@ -31,7 +31,7 @@
     <rbf>jtthundr</rbf>
     <joystick>4</joystick>
     <region>World</region>
-    <rom index="0" zip="rthunder2.zip|rthunder.zip" md5="None" asm_md5="2180ae8c3b9a746140e2744c073bab03">
+    <rom index="0" zip="rthunder2.zip|rthunder.zip" md5="None" asm_md5="87125ca0f5d8ecfe6520605079defa59">
         <!-- 
   1[0]: only2bpp   Only 2bpp for backgrounds
   2[0]: sndext_en  Additional board for PCM sound
@@ -39,8 +39,9 @@
   4[0]: mcualt     Alternative mapping for MCU ROM
   4[1]: scrhflip   Ignore flip bit and reverse H scroll
   5[0]: roishtar   Special SUB/MCU mapping for roishtar
-  6[0]: genpeitd   Special SUB/MCU mapping for genpei
-  7[0]: wndrmomo   Special SUB/MCU mapping for wndrmomo -->
+  5[1]: genpeitd   Special SUB/MCU mapping for genpei
+  5[2]: wndrmomo   Special SUB/MCU mapping for wndrmomo
+  5[3]: metrocrs   Special SUB/MCU mapping for Metro Cross -->
         <part>
             00 00 01 00 00 00 00 00
         </part>
@@ -58,10 +59,11 @@
         <part name="rt2_3.12d" crc="f5d439d8"/>
         <part name="rt2_2.12c" crc="1c0e29e0"/>
         <!-- PCM_START -->
-        <!-- namco2 - starts at 0x60000 - length 0x70000 (19 bits) -->
+        <!-- namco2 - starts at 0x60000 - length 0x30000 (18 bits) -->
         <part name="rt1_21.f3" crc="454968f3"/>
         <part repeat="0x10000"> FF</part>
         <part name="rt2_22.h3" crc="fe963e72"/>
+        <!-- chars - starts at 0x90000 - length 0x40000 (18 bits) -->
         <part repeat="0x40000"> FF</part>
         <!-- JTFRAME_BA2_START -->
         <!-- gfx1 - starts at 0xD0000 - length 0x20000 (17 bits) -->
@@ -102,10 +104,10 @@
         <!-- mcu - starts at 0x208000 - length 0x1000 (12 bits) -->
         <part name="cus60-60a1.mcu" crc="076ea82a"/>
         <!-- proms - starts at 0x209000 - length 0x1440 (13 bits) -->
-        <part name="rt1-1.3r" crc="8ef3bb9d"/>
-        <part name="rt1-2.3s" crc="6510a8f2"/>
         <part name="rt1-3.4v" crc="95c7d944"/>
         <part name="rt1-4.5v" crc="1391fec9"/>
+        <part name="rt1-1.3r" crc="8ef3bb9d"/>
+        <part name="rt1-2.3s" crc="6510a8f2"/>
         <part name="rt1-5.6u" crc="e4130804"/>
         <part name="rt1-5.6u" crc="e4130804"/>
         <!-- Total 0x20A440 bytes - 2089 kBytes -->

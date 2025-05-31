@@ -31,7 +31,7 @@
     <rbf>jtthundr</rbf>
     <joystick>8</joystick>
     <region>World</region>
-    <rom index="0" zip="wndrmomo.zip" md5="None" asm_md5="b4230321ca4fd152b3d4c7bf81391a94">
+    <rom index="0" zip="wndrmomo.zip" md5="None" asm_md5="23b42976e7f94461c41125ba5b84ea0c">
         <!-- 
   1[0]: only2bpp   Only 2bpp for backgrounds
   2[0]: sndext_en  Additional board for PCM sound
@@ -39,10 +39,11 @@
   4[0]: mcualt     Alternative mapping for MCU ROM
   4[1]: scrhflip   Ignore flip bit and reverse H scroll
   5[0]: roishtar   Special SUB/MCU mapping for roishtar
-  6[0]: genpeitd   Special SUB/MCU mapping for genpei
-  7[0]: wndrmomo   Special SUB/MCU mapping for wndrmomo -->
+  5[1]: genpeitd   Special SUB/MCU mapping for genpei
+  5[2]: wndrmomo   Special SUB/MCU mapping for wndrmomo
+  5[3]: metrocrs   Special SUB/MCU mapping for Metro Cross -->
         <part>
-            00 00 01 00 00 00 00 01
+            00 00 01 00 00 04 00 00
         </part>
         <!-- cpu1 - starts at 0x0 - length 0x10000 (16 bits) -->
         <part repeat="0x8000"> FF</part>
@@ -65,6 +66,7 @@
         <part repeat="0x10000"> FF</part>
         <part name="wm1_20.m3" crc="076a72cb"/>
         <!-- JTFRAME_BA2_START -->
+        <!-- chars - starts at 0xD0000 -->
         <!-- gfx1 - starts at 0xD0000 - length 0x20000 (17 bits) -->
         <interleave output="32">
             <part name="wm1_6.7r" crc="93955fbb" map="0021" length="0x8000"/>
@@ -108,10 +110,10 @@
         <!-- mcu - starts at 0x208000 - length 0x1000 (12 bits) -->
         <part name="cus60-60a1.mcu" crc="076ea82a"/>
         <!-- proms - starts at 0x209000 - length 0x1440 (13 bits) -->
-        <part name="wm1-1.3r" crc="1af8ade8"/>
-        <part name="wm1-2.3s" crc="8694e213"/>
         <part name="wm1-3.4v" crc="2ffaf9a4"/>
         <part name="wm1-4.5v" crc="f4e83e0b"/>
+        <part name="wm1-1.3r" crc="1af8ade8"/>
+        <part name="wm1-2.3s" crc="8694e213"/>
         <part name="wm1-5.6u" crc="e4130804"/>
         <part name="wm1-5.6u" crc="e4130804"/>
         <!-- Total 0x20A440 bytes - 2089 kBytes -->

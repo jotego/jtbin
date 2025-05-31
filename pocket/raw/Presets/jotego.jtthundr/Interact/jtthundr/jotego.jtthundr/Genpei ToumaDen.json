@@ -1,0 +1,213 @@
+{
+	"interact":{
+		"magic": "APF_VER_1",
+		"variables": [
+			{
+				"name": "Coin B",
+				"id": 0,
+				"type": "list",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 3,
+				"value": 0,
+				"mask": "0xFFFFFFFC",
+				"options": [
+					{
+						"name": "3 Coins/1 Credit",
+						"value": "0x0"
+					},
+					{
+						"name": "2 Coins/1 Credit",
+						"value": "0x1"
+					},
+					{
+						"name": "1 Coin/2 Credits",
+						"value": "0x2"
+					},
+					{
+						"name": "1 Coin/1 Credit",
+						"value": "0x3"
+					}
+				]
+			},
+			{
+				"name": "Freeze",
+				"id": 1,
+				"type": "check",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 0,
+				"value": 0,
+				"value_off": 4,
+				"mask": "0xFFFFFFFB"
+			},
+			{
+				"name": "Allow Continue",
+				"id": 2,
+				"type": "check",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 1,
+				"value": 8,
+				"mask": "0xFFFFFFF7"
+			},
+			{
+				"name": "Demo Sounds",
+				"id": 3,
+				"type": "check",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 1,
+				"value": 16,
+				"mask": "0xFFFFFFEF"
+			},
+			{
+				"name": "Coin A",
+				"id": 4,
+				"type": "list",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 3,
+				"value": 0,
+				"mask": "0xFFFFFF9F",
+				"options": [
+					{
+						"name": "3 Coins/1 Credit",
+						"value": "0x0"
+					},
+					{
+						"name": "2 Coins/1 Credit",
+						"value": "0x20"
+					},
+					{
+						"name": "1 Coin/2 Credits",
+						"value": "0x40"
+					},
+					{
+						"name": "1 Coin/1 Credit",
+						"value": "0x60"
+					}
+				]
+			},
+			{
+				"name": "Service Mode",
+				"id": 5,
+				"type": "check",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 0,
+				"value": 0,
+				"value_off": 128,
+				"mask": "0xFFFFFF7F"
+			},
+			{
+				"name": "Flip Screen",
+				"id": 6,
+				"type": "check",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 0,
+				"value": 256,
+				"mask": "0xFFFFFEFF"
+			},
+			{
+				"name": "Cabinet",
+				"id": 7,
+				"type": "list",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 0,
+				"value": 0,
+				"mask": "0xFFFFFDFF",
+				"options": [
+					{
+						"name": "Upright",
+						"value": "0x0"
+					},
+					{
+						"name": "Cocktail",
+						"value": "0x200"
+					}
+				]
+			},
+			{
+				"name": "Difficulty",
+				"id": 8,
+				"type": "list",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 3,
+				"value": 0,
+				"mask": "0xFFFFCFFF",
+				"options": [
+					{
+						"name": "Hardest",
+						"value": "0x0"
+					},
+					{
+						"name": "Hard",
+						"value": "0x1000"
+					},
+					{
+						"name": "Easy",
+						"value": "0x2000"
+					},
+					{
+						"name": "Normal",
+						"value": "0x3000"
+					}
+				]
+			},
+			{
+				"name": "Candle",
+				"id": 9,
+				"type": "list",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 3,
+				"value": 0,
+				"mask": "0xFFFF3FFF",
+				"options": [
+					{
+						"name": "70",
+						"value": "0x0"
+					},
+					{
+						"name": "60",
+						"value": "0x4000"
+					},
+					{
+						"name": "40",
+						"value": "0x8000"
+					},
+					{
+						"name": "50",
+						"value": "0xC000"
+					}
+				]
+			},
+			{
+				"name": "Default",
+				"id": 1015,
+				"type": "number_u32",
+				"enabled": false,
+				"persist": false,
+				"writeonly": true,
+				"address": "0xfa000000",
+				"defaultval": 65532,
+				"value": 0
+			}
+		],
+		"messages": []
+	}
+}
