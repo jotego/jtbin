@@ -351,7 +351,7 @@
 | galaga88j    | jtshouse   | 797660537d3cce6247fc84b7670a980e | ff           |
 | gbusters     | jtaliens   | 69f39be4c77b0e399d273efddacbb7ef | ff,56,ff     |
 | gbustersa    | jtaliens   | f7bfbd3eb253a98777797a40dfbffd4b | ff,56,ff     |
-| genpeitd     | jtthundr   | 6fef21513575f2bee492564eb29492a6 | ff,fc        |
+| genpeitd     | jtthundr   | 47927f87590c91bb40c83524de670e14 | ff,fc        |
 | ghouls       | jtcps1     | 6ca0a8f1265eca0c99f28ac9e645e2eb | ff,fd,ff     |
 | ghoulsu      | jtcps1     | 3dbf285eda000132f55e31ce9ae667da | ff,fd,ff     |
 | gigawing     | jtcps2     | 671ca8537efef8e426c1e665c76a0340 | ff,ff        |
@@ -394,7 +394,7 @@
 | hcastlek     | jtcastle   | 792920a9d62f4c492e6b05968e1d5d33 | ff,53,ff     |
 | higemaru     | jt1942     | fd3dfa858b78ce0bba2260ba639dcd86 | ff,fe        |
 | hippodrm     | jtcop      | a8bf65155b3daa5dcb5a00a268a09447 | ff,ff        |
-| hopmappy     | jtthundr   | ad8b4445c2f1844487efdc9666f4abeb | ff,ff        |
+| hopmappy     | jtthundr   | ceda8abc8a55b64229d3485d7852241c | ff,ff        |
 | hpolym84     | jtroadf    | dc1b46a420f87a175b025c330aa6af01 | ff,49,ff     |
 | hsf2         | jtcps2     | 88b106b19af3f0b9670729d6be1e1ef8 | ff,ff        |
 | hsf2a        | jtcps2     | 4979adb5d1b1fab8cccf1587eabb22af | ff,ff        |
@@ -467,6 +467,8 @@
 | mercsj       | jtcps1     | 268b3afe8b4c94423970401d372b2383 | ff,fc,9f     |
 | mercsu       | jtcps1     | 9ef14cf80363f9679d61f9b48a3906db | ff,fc,9f     |
 | mercsur1     | jtcps1     | 04c9aebe115e425e22e73fae1c3bf9d8 | ff,fc,9f     |
+| metrocrs     | jtthundr   | b5962e0b737efa2f93929ec5735181e7 | ff,ff,ff     |
+| metrocrsa    | jtthundr   | 58505097bf5cb57a5a3c8ded7209be2f | ff,ff,ff     |
 | mia          | jttmnt     | 5f769f3867971538eb3402f0fbdf9b88 | ff,2e,ff     |
 | mia2         | jttmnt     | 9910372f578c6ab2a3b0dce22c840290 | ff,2e,ff     |
 | midres       | jtmidres   | 3c59966af0bb84caeea5a6bc7a84e4e8 | ff,bf        |
@@ -651,14 +653,14 @@
 | rockmanj     | jtcps1     | 6c5699d3d2215256f970a3e9d27a86cc | ff,fa,ff     |
 | rocnrope     | jtroc      | 3ea1ddb56be848aecc0b3b64f295ad3e | ff,5b,96     |
 | rocnropek    | jtroc      | 9a7b2a4292da9248e666abe317edf768 | ff,5b,96     |
-| roishtar     | jtthundr   | 97313b71ef3177c023692239fe8e9649 | ff,bf        |
+| roishtar     | jtthundr   | c16a0cae381034b5aa6aa6bf810daf3c | ff,bf        |
 | rompers      | jtshouse   | 08ff77ec86c6b0087b1c6398be1c31ac | ff,fe        |
 | romperso     | jtshouse   | 7b5145a14d162ee34c9e6acc8bc84184 | ff,fe        |
-| rthunder     | jtthundr   | 6e267e9caa71eaff38fbd79a8fb3a448 | ff,d7        |
-| rthunder0    | jtthundr   | 48b9b0423834e48000453ae5646d3cc8 | ff,f8        |
-| rthunder1    | jtthundr   | df4c86bf0ff38517aa82eb58a201a7dd | ff,f8        |
-| rthunder2    | jtthundr   | 87125ca0f5d8ecfe6520605079defa59 | ff,f8        |
-| rthundera    | jtthundr   | 567e25faee2d20e90c869baa721d5b5c | ff,f8        |
+| rthunder     | jtthundr   | 7ceb720c3a39513ca6ff2f3ceaa99864 | ff,d7        |
+| rthunder0    | jtthundr   | 9c68d1d96a0d107b08f0da4dab2e67a6 | ff,f8        |
+| rthunder1    | jtthundr   | aca346b4f3a12ce8f7aed6c417f8415d | ff,f8        |
+| rthunder2    | jtthundr   | fa4d6999a8ddb1df96997fdeaef59a18 | ff,f8        |
+| rthundera    | jtthundr   | d0aba8f190c6991607f221d4ff17db0c | ff,f8        |
 | rumba        | jtflstory  | 924fc213456df0f3480c6cbf2cb84cc2 | fc,00,e3     |
 | rushcrsh     | jtrumble   | 4f09aed603e4590fd2b8cadd6a796edf | ff,73        |
 | ryukendn     | jtgaiden   | 8bf88cefc29877f94896f4ae92c4939f | ff,ff        |
@@ -822,8 +824,8 @@
 | sinvasn      | jtcommnd   | e87eba48664693b5d77e293a5cf91a3c | ff,1f        |
 | sjryuko      | jts16b     | d796598dc8a8e8d5b5315bf1358051fa | ff,fb        |
 | sjryuko1     | jts16      | 7735c267ab3a53c5a032f5c49183fc14 | ff,fb        |
-| skykiddx     | jtthundr   | 46d03b25406e72ddf48e802a2a5e47ef | ff,ff        |
-| skykiddxo    | jtthundr   | 3cb1198231d11a8997b61a5a6288feea | ff,ff        |
+| skykiddx     | jtthundr   | 12f572219662825ca0120185a0a0afd6 | ff,ff        |
+| skykiddxo    | jtthundr   | 83d7c4a38fb179dae25917875ef100f1 | ff,ff        |
 | slammast     | jtcps15    | 313b1b55f32092e408b79fd7a34a0962 | ff           |
 | slammastu    | jtcps15    | ce1b77141ec7606bd656100d9a41e0e2 | ff           |
 | slyspy       | jtslyspy   | e497455caff76c29998aeff151420b06 | 7f,ff        |
@@ -1030,7 +1032,7 @@
 | willowu      | jtcps1     | b692e6ca608e1704249ec551f4d1242d | ff,ff,fa     |
 | willowuo     | jtcps1     | f44bb34ad35e743c894a070f2ecbc3f3 | ff,ff,fa     |
 | wldcourt     | jtshouse   | 73a8feb291eed11fa7e10b127d7542fc | ff           |
-| wndrmomo     | jtthundr   | 23b42976e7f94461c41125ba5b84ea0c | f7,fb        |
+| wndrmomo     | jtthundr   | 3582847800970c18fc80da6755a0db48 | f7,fb        |
 | wndrplnt     | jtkarnov   | e81ae47504db6a4446676dfb39dfbab0 | 7f,ff        |
 | wof          | jtcps15    | 0e41c840a0f9d1c443c0e388c73dc11c | ff           |
 | wofa         | jtcps15    | 62ace165f74e3b5e07cd788edea93b67 | ff           |

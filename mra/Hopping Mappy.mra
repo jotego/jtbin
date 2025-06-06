@@ -31,19 +31,23 @@
     <rbf>jtthundr</rbf>
     <joystick>8</joystick>
     <region>World</region>
-    <rom index="0" zip="hopmappy.zip" md5="None" asm_md5="ad8b4445c2f1844487efdc9666f4abeb">
+    <rom index="0" zip="hopmappy.zip" md5="None" asm_md5="ceda8abc8a55b64229d3485d7852241c">
         <!-- 
   1[0]: only2bpp   Only 2bpp for backgrounds
-  2[0]: sndext_en  Additional board for PCM sound
-  3[0]: nocpu2     Keeps CPU2 in reset state
-  4[0]: mcualt     Alternative mapping for MCU ROM
-  4[1]: scrhflip   Ignore flip bit and reverse H scroll
-  5[0]: roishtar   Special SUB/MCU mapping for roishtar
-  5[1]: genpeitd   Special SUB/MCU mapping for genpei
-  5[2]: wndrmomo   Special SUB/MCU mapping for wndrmomo
-  5[3]: metrocrs   Special SUB/MCU mapping for Metro Cross -->
+  1[1]: sndext_en  Additional board for PCM sound
+  1[2]: nocpu2     Keeps CPU2 in reset state
+  1[3]: mcualt     Alternative mapping for MCU ROM
+  1[4]: scrhflip   Ignore flip bit and reverse H scroll
+  1[5]: plane3inv  Invert data for color plane 3
+  2[0]: roishtar   Special SUB/MCU mapping for roishtar
+  2[1]: genpeitd   Special SUB/MCU mapping for genpei
+  2[2]: wndrmomo   Special SUB/MCU mapping for wndrmomo
+  2[3]: metrocrs   Special SUB/MCU mapping for Metro Cross
+2[7],3[7:0]: objhos     Object H offset
+4[7:0]: objvos     Object V offset bits 7-0
+6[3:0]: scrhos     Horizontal offset on CUS42 (signed) -->
         <part>
-            00 01 00 01 01 00 00 00
+            00 0D 00 00 00 00 00 00
         </part>
         <!-- cpu1 - starts at 0x0 - length 0x10000 (16 bits) -->
         <part repeat="0x8000"> FF</part>

@@ -223,6 +223,7 @@
 | slyspy  | Secret Agent (World, revision 3)                                             | secretag  |
 | thundr  | Genpei ToumaDen                                                              | genpeitd  |
 | thundr  | Hopping Mappy                                                                | hopmappy  |
+| thundr  | Metro-Cross (set 1)                                                          | metrocrs  |
 | thundr  | Rolling Thunder (rev 3)                                                      | rthunder  |
 | thundr  | Sky Kid Deluxe (set 1)                                                       | skykiddx  |
 | thundr  | The Return of Ishtar                                                         | roishtar  |
@@ -245,4 +246,4 @@
 | xmen    | X-Men (4 Players ver EBA)                                                    | xmen      |
 | yiear   | Yie Ar Kung-Fu (program code I)                                              | yiear     |
 
-68 cores, supporting 244 games
+68 cores, supporting 245 games

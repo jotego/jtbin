@@ -7,6 +7,8 @@ Place the *.rom files in Assets/jtthundr/common
 
 Genpei ToumaDen --> genpeitd.rom
 Hopping Mappy --> hopmappy.rom
+Metro-Cross (set 1) --> metrocrs.rom
+Metro-Cross (set 2) --> metrocrsa.rom
 The Return of Ishtar --> roishtar.rom
 Rolling Thunder (rev 3) --> rthunder.rom
 Rolling Thunder (oldest) --> rthunder0.rom

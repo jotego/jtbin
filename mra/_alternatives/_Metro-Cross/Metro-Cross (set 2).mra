@@ -1,0 +1,189 @@
+<!--          FPGA arcade hardware by Jotego
+
+              This core is available for hardware compatible with MiST and MiSTer
+              Other FPGA systems may be supported by the time you read this.
+              This work is not mantained by the MiSTer project. Please contact the
+              core author for issues and updates.
+
+              (c) Jose Tejada, 2025. Please support this research
+              Patreon: https://patreon.com/jotego
+
+              The author does not endorse or participate in illegal distribution
+              of copyrighted material. This work can be used with compatible
+              software. This software can be homebrew projects or legally
+              obtained memory dumps of compatible games.
+
+              This file license is GNU GPLv2.
+              You can read the whole license file in
+              https://opensource.org/licenses/gpl-2.0.php
+
+-->
+
+<misterromdescription>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://jotego/jtcores"/>
+    <rotation>horizontal</rotation>
+    <name>Metro-Cross (set 2)</name>
+    <setname>metrocrsa</setname>
+    <mameversion>0261</mameversion>
+    <year>1985</year>
+    <manufacturer>Namco</manufacturer>
+    <players>2</players>
+    <rbf>jtthundr</rbf>
+    <joystick>8</joystick>
+    <region>World</region>
+    <rom index="0" zip="metrocrsa.zip|metrocrs.zip" md5="None" asm_md5="58505097bf5cb57a5a3c8ded7209be2f">
+        <!-- 
+  1[0]: only2bpp   Only 2bpp for backgrounds
+  1[1]: sndext_en  Additional board for PCM sound
+  1[2]: nocpu2     Keeps CPU2 in reset state
+  1[3]: mcualt     Alternative mapping for MCU ROM
+  1[4]: scrhflip   Ignore flip bit and reverse H scroll
+  1[5]: plane3inv  Invert data for color plane 3
+  2[0]: roishtar   Special SUB/MCU mapping for roishtar
+  2[1]: genpeitd   Special SUB/MCU mapping for genpei
+  2[2]: wndrmomo   Special SUB/MCU mapping for wndrmomo
+  2[3]: metrocrs   Special SUB/MCU mapping for Metro Cross
+2[7],3[7:0]: objhos     Object H offset
+4[7:0]: objvos     Object V offset bits 7-0
+6[3:0]: scrhos     Horizontal offset on CUS42 (signed) -->
+        <part>
+            00 05 88 FC 00 00 06 00
+        </part>
+        <!-- cpu1 - starts at 0x0 - length 0x10000 (16 bits) -->
+        <part repeat="0x6000"> FF</part>
+        <part name="mc2-3.9b" crc="ffe08075"/>
+        <part name="mc2-1.9a" crc="05a239ea"/>
+        <part name="mc2-2.9a" crc="db9b0e6d"/>
+        <!-- EXT_START -->
+        <!-- user1 - starts at 0x10000 - length 0x40000 (18 bits) -->
+        <part repeat="0x40000"> FF</part>
+        <!-- JTFRAME_BA1_START -->
+        <!-- cpu2 - starts at 0x50000 -->
+        <!-- namco2 - starts at 0x50000 -->
+        <!-- chars - starts at 0x50000 - length 0x80000 (19 bits) -->
+        <part name="mc1-5.3j" crc="9b5ea33a"/>
+        <part repeat="0x7E000"> FF</part>
+        <!-- JTFRAME_BA2_START -->
+        <!-- gfx1 - starts at 0xD0000 - length 0x20000 (17 bits) -->
+        <interleave output="32">
+            <part name="mc1-7.4p" crc="c9dfa003" map="0021" length="0x4000"/>
+            <part name="mc1-7.4p" crc="c9dfa003" map="2100" length="0x4000"/>
+        </interleave>
+        <interleave output="32">
+            <part name="mc1-6.4n" crc="9686dc3c" map="0021" length="0x4000"/>
+            <part name="mc1-6.4n" crc="9686dc3c" map="2100" length="0x4000"/>
+        </interleave>
+        <interleave output="32">
+            <part name="mc1-7.4p" crc="c9dfa003" map="0021" length="0x4000"/>
+            <part name="mc1-7.4p" crc="c9dfa003" map="2100" length="0x4000"/>
+        </interleave>
+        <interleave output="32">
+            <part name="mc1-6.4n" crc="9686dc3c" map="0021" length="0x4000"/>
+            <part name="mc1-6.4n" crc="9686dc3c" map="2100" length="0x4000"/>
+        </interleave>
+        <!-- SCR1_START -->
+        <!-- gfx2 - starts at 0xF0000 - length 0x10000 (16 bits) -->
+        <part repeat="0x10000"> FF</part>
+        <!-- JTFRAME_BA3_START -->
+        <!-- gfx3 - starts at 0x100000 - length 0x100000 (20 bits) -->
+        <part name="mc1-8.8k" crc="265b31fa"/>
+        <part name="mc1-9.8l" crc="541ec029"/>
+        <part name="mc1-8.8k" crc="265b31fa"/>
+        <part name="mc1-9.8l" crc="541ec029"/>
+        <part name="mc1-8.8k" crc="265b31fa"/>
+        <part name="mc1-9.8l" crc="541ec029"/>
+        <part name="mc1-8.8k" crc="265b31fa"/>
+        <part name="mc1-9.8l" crc="541ec029"/>
+        <part name="mc1-8.8k" crc="265b31fa"/>
+        <part name="mc1-9.8l" crc="541ec029"/>
+        <part name="mc1-8.8k" crc="265b31fa"/>
+        <part name="mc1-9.8l" crc="541ec029"/>
+        <part name="mc1-8.8k" crc="265b31fa"/>
+        <part name="mc1-9.8l" crc="541ec029"/>
+        <part name="mc1-8.8k" crc="265b31fa"/>
+        <part name="mc1-9.8l" crc="541ec029"/>
+        <part name="mc1-8.8k" crc="265b31fa"/>
+        <part name="mc1-9.8l" crc="541ec029"/>
+        <part name="mc1-8.8k" crc="265b31fa"/>
+        <part name="mc1-9.8l" crc="541ec029"/>
+        <part name="mc1-8.8k" crc="265b31fa"/>
+        <part name="mc1-9.8l" crc="541ec029"/>
+        <part name="mc1-8.8k" crc="265b31fa"/>
+        <part name="mc1-9.8l" crc="541ec029"/>
+        <part name="mc1-8.8k" crc="265b31fa"/>
+        <part name="mc1-9.8l" crc="541ec029"/>
+        <part name="mc1-8.8k" crc="265b31fa"/>
+        <part name="mc1-9.8l" crc="541ec029"/>
+        <part name="mc1-8.8k" crc="265b31fa"/>
+        <part name="mc1-9.8l" crc="541ec029"/>
+        <part name="mc1-8.8k" crc="265b31fa"/>
+        <part name="mc1-9.8l" crc="541ec029"/>
+        <part name="mc1-8.8k" crc="265b31fa"/>
+        <part name="mc1-9.8l" crc="541ec029"/>
+        <part name="mc1-8.8k" crc="265b31fa"/>
+        <part name="mc1-9.8l" crc="541ec029"/>
+        <part name="mc1-8.8k" crc="265b31fa"/>
+        <part name="mc1-9.8l" crc="541ec029"/>
+        <part name="mc1-8.8k" crc="265b31fa"/>
+        <part name="mc1-9.8l" crc="541ec029"/>
+        <part name="mc1-8.8k" crc="265b31fa"/>
+        <part name="mc1-9.8l" crc="541ec029"/>
+        <part name="mc1-8.8k" crc="265b31fa"/>
+        <part name="mc1-9.8l" crc="541ec029"/>
+        <part name="mc1-8.8k" crc="265b31fa"/>
+        <part name="mc1-9.8l" crc="541ec029"/>
+        <part name="mc1-8.8k" crc="265b31fa"/>
+        <part name="mc1-9.8l" crc="541ec029"/>
+        <part name="mc1-8.8k" crc="265b31fa"/>
+        <part name="mc1-9.8l" crc="541ec029"/>
+        <part name="mc1-8.8k" crc="265b31fa"/>
+        <part name="mc1-9.8l" crc="541ec029"/>
+        <part name="mc1-8.8k" crc="265b31fa"/>
+        <part name="mc1-9.8l" crc="541ec029"/>
+        <part name="mc1-8.8k" crc="265b31fa"/>
+        <part name="mc1-9.8l" crc="541ec029"/>
+        <part name="mc1-8.8k" crc="265b31fa"/>
+        <part name="mc1-9.8l" crc="541ec029"/>
+        <part name="mc1-8.8k" crc="265b31fa"/>
+        <part name="mc1-9.8l" crc="541ec029"/>
+        <part name="mc1-8.8k" crc="265b31fa"/>
+        <part name="mc1-9.8l" crc="541ec029"/>
+        <part name="mc1-8.8k" crc="265b31fa"/>
+        <part name="mc1-9.8l" crc="541ec029"/>
+        <!-- MCUSUB_START -->
+        <!-- mcusub - starts at 0x200000 - length 0x8000 (15 bits) -->
+        <part name="mc1-4.3b" crc="9c88f898"/>
+        <part name="mc1-4.3b" crc="9c88f898"/>
+        <part name="mc1-4.3b" crc="9c88f898"/>
+        <part name="mc1-4.3b" crc="9c88f898"/>
+        <!-- JTFRAME_PROM_START -->
+        <!-- mcu - starts at 0x208000 - length 0x1000 (12 bits) -->
+        <part name="cus60-60a1.mcu" crc="076ea82a"/>
+        <!-- proms - starts at 0x209000 - length 0x1000 (12 bits) -->
+        <part name="mc1-1.1n" crc="32a78a8b"/>
+        <part name="mc1-2.2m" crc="6f4dca7b"/>
+        <!-- Total 0x20A000 bytes - 2088 kBytes -->
+    </rom>
+    <rom index="17" zip="jtbeta.zip" md5="None" asm_md5="84d30cc91cfc0f49e372c316ac73456b">
+        <part name="beta.bin" crc="5603d968"/>
+    </rom>
+    <nvram index="2" size="24598"/>
+    <rom index="1">
+        <part>00 80</part>
+    </rom>
+    <switches page_id="1" page_name="Switches" base="16" default="ff,ff,ff">
+        <DSWA/>
+        <dip name="Coin B" bits="0,1" ids="3/1,2/1,1/2,1/1"/>
+        <dip name="Allow Continue" bits="2" ids="No,Yes"/>
+        <dip name="Difficulty" bits="3,4" ids="Very Hard,Hard,Easy,Normal"/>
+        <dip name="Coin A" bits="5,6" ids="3/1,2/1,1/2,1/1"/>
+        <dip name="Service Mode" bits="7" ids="On,Off"/>
+        <DSWB/>
+        <dip name="Freeze" bits="13" ids="On,Off"/>
+        <dip name="Round Select" bits="14" ids="On,Off"/>
+        <dip name="Demo Sounds" bits="15" ids="Off,On"/>
+        <EDGE/>
+        <dip name="Cabinet" bits="17" ids="Cocktail,Upright"/>
+    </switches>
+    <buttons names="Jump,-,-,Start,Coin,Core credits" default="A,Start,Select,-" count="1"/>
+</misterromdescription>

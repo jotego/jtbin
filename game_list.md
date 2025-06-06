@@ -1002,6 +1002,8 @@
 | slyspy  | Sly Spy (US, revision 4)                                                                   | slyspy        |
 | thundr  | Genpei ToumaDen                                                                            | genpeitd      |
 | thundr  | Hopping Mappy                                                                              | hopmappy      |
+| thundr  | Metro-Cross (set 1)                                                                        | metrocrs      |
+| thundr  | Metro-Cross (set 2)                                                                        | metrocrsa     |
 | thundr  | Rolling Thunder (oldest)                                                                   | rthunder0     |
 | thundr  | Rolling Thunder (rev 1)                                                                    | rthunder1     |
 | thundr  | Rolling Thunder (rev 2)                                                                    | rthunder2     |
@@ -1098,4 +1100,4 @@
 | yiear   | Yie Ar Kung-Fu (program code G)                                                            | yiear2        |
 | yiear   | Yie Ar Kung-Fu (program code I)                                                            | yiear         |
 
-69 cores, supporting 1097 games
+69 cores, supporting 1099 games
