@@ -61,6 +61,7 @@
         <!-- Total 0x1E500 bytes - 121 kBytes -->
         <patch offset="0x58C6">3d 3d</patch>
     </rom>
+    <nvram index="2" size="2048"/>
     <!-- Vertical screen. -->
     <rom index="1">
         <part>01 E3</part>

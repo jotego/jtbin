@@ -903,6 +903,9 @@
 | s18     | Bloxeed (Japan, earlier) (FD1094 317-0139)                                                 | bloxeeda      |
 | s18     | Clutch Hitter (Japan) (FD1094 317-0175)                                                    | cltchitrj     |
 | s18     | Clutch Hitter (US) (FD1094 317-0176)                                                       | cltchitr      |
+| s18     | Laser Ghost (Japan) (FD1094 317-0164)                                                      | lghostj       |
+| s18     | Laser Ghost (US) (FD1094 317-0165)                                                         | lghostu       |
+| s18     | Laser Ghost (World) (FD1094 317-0166)                                                      | lghost        |
 | s18     | Michael Jackson's Moonwalker (Japan) (FD1094-8751 317-0157)                                | mwalkj        |
 | s18     | Michael Jackson's Moonwalker (US) (FD1094-8751 317-0158)                                   | mwalku        |
 | s18     | Michael Jackson's Moonwalker (World) (FD1094-8751 317-0159)                                | mwalk         |
@@ -1100,4 +1103,4 @@
 | yiear   | Yie Ar Kung-Fu (program code G)                                                            | yiear2        |
 | yiear   | Yie Ar Kung-Fu (program code I)                                                            | yiear         |
 
-69 cores, supporting 1099 games
+69 cores, supporting 1102 games

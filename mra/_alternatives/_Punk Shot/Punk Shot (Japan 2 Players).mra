@@ -76,7 +76,7 @@
     <rom index="1">
         <part>20 60</part>
     </rom>
-    <switches page_id="1" page_name="Switches" base="16" default="ff,5b,ff">
+    <switches page_id="1" page_name="Switches" base="20" default="ff,5b,ff">
         <COINS_DSW3/>
         <dip name="Flip Screen" bits="16" ids="On,Off"/>
         <dip name="Service Mode" bits="18" ids="On,Off"/>

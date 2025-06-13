@@ -1,0 +1,112 @@
+<!--          FPGA arcade hardware by Jotego
+
+              This core is available for hardware compatible with MiST and MiSTer
+              Other FPGA systems may be supported by the time you read this.
+              This work is not mantained by the MiSTer project. Please contact the
+              core author for issues and updates.
+
+              (c) Jose Tejada, 2025. Please support this research
+              Patreon: https://patreon.com/jotego
+
+              The author does not endorse or participate in illegal distribution
+              of copyrighted material. This work can be used with compatible
+              software. This software can be homebrew projects or legally
+              obtained memory dumps of compatible games.
+
+              This file license is GNU GPLv2.
+              You can read the whole license file in
+              https://opensource.org/licenses/gpl-2.0.php
+
+-->
+
+<misterromdescription>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://jotego/jtcores"/>
+    <rotation>horizontal</rotation>
+    <name>Laser Ghost (US) (FD1094 317-0165)</name>
+    <setname>lghostu</setname>
+    <mameversion>0261</mameversion>
+    <year>1990</year>
+    <manufacturer>Sega</manufacturer>
+    <players>3</players>
+    <rbf>jts18</rbf>
+    <joystick/>
+    <region>World</region>
+    <rom index="0" zip="lghostu.zip|lghost.zip" md5="None" address="0x30000000" asm_md5="acc382949de57bdf09d68ddfc14cffd8">
+        <!--  -->
+        <part>
+            00 00 00 01 00 03 00 04
+            00 0B 02 0B 00 00 00 00
+            00 01 00 00 00 00 00 00
+            04 00 00 00 00 00 00 00
+        </part>
+        <!-- maincpu - starts at 0x0 - length 0x100000 (20 bits) -->
+        <interleave output="16">
+            <part name="epr-13428.a6" crc="276775f5" map="01"/>
+            <part name="epr-13427.a4" crc="5bf8fb6b" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="epr-13413.a7" crc="656b3bd8" map="01"/>
+            <part name="epr-13411.a5" crc="5160167b" map="10"/>
+        </interleave>
+        <!-- soundcpu - starts at 0x100000 - length 0x200000 (21 bits) -->
+        <part name="epr-13417.c7" crc="cd7beb49"/>
+        <part repeat="0x60000"> FF</part>
+        <part name="mpr-13420.c6" crc="3de0dee4"/>
+        <part repeat="0x40000"> FF</part>
+        <part name="mpr-13419.c5" crc="e7021b0a"/>
+        <part repeat="0x40000"> FF</part>
+        <part name="mpr-13418.c4" crc="0732594d"/>
+        <part repeat="0x40000"> FF</part>
+        <!-- tiles - starts at 0x300000 - length 0x100000 (20 bits) -->
+        <interleave output="32">
+            <part name="epr-13414.c1" crc="dada2419" map="0001"/>
+            <part name="epr-13415.c2" crc="bbb62c48" map="0010"/>
+            <part name="epr-13416.c3" crc="1d11dbae" map="0100"/>
+            <part name="epr-13416.c3" crc="1d11dbae" map="1000"/>
+        </interleave>
+        <!-- sprites - starts at 0x400000 - length 0x700000 (23 bits) -->
+        <interleave output="16">
+            <part name="epr-13604.c10" crc="4009c8e5" map="01"/>
+            <part name="epr-13603.a10" crc="5350a94e" map="10"/>
+        </interleave>
+        <part repeat="0x100000"> FF</part>
+        <interleave output="16">
+            <part name="mpr-13424.c11" crc="fb98d920" map="01"/>
+            <part name="mpr-13421.a11" crc="2fc75890" map="10"/>
+        </interleave>
+        <part repeat="0x100000"> FF</part>
+        <interleave output="16">
+            <part name="mpr-13425.c12" crc="f8252589" map="01"/>
+            <part name="mpr-13422.a12" crc="48a0754d" map="10"/>
+        </interleave>
+        <part repeat="0x100000"> FF</part>
+        <interleave output="16">
+            <part name="mpr-13426.c13" crc="5cfb1e25" map="01"/>
+            <part name="mpr-13423.a13" crc="335bbc9d" map="10"/>
+        </interleave>
+        <!-- maincpu:key - starts at 0xB00000 - length 0x2000 (13 bits) -->
+        <part name="317-0165.key" crc="a04267ab"/>
+        <!-- mcu - starts at 0xB02000 -->
+        <!-- Total 0xB02000 bytes - 11272 kBytes -->
+    </rom>
+    <rom index="17" zip="jtbeta.zip" md5="None" asm_md5="84d30cc91cfc0f49e372c316ac73456b">
+        <part name="beta.bin" crc="5603d968"/>
+    </rom>
+    <nvram index="2" size="16384"/>
+    <!-- Light gun -->
+    <rom index="1">
+        <part>02 80</part>
+    </rom>
+    <switches page_id="1" page_name="Switches" base="16" default="ff,fd">
+        <COINAGE/>
+        <dip name="Coin A" bits="0,3" ids="Free Play or 1/1,1/1 2/3,1/1 4/5,1/1 5/6,2/1 4/3,2/1 5/3 6/4,2/3,4/1,3/1,2/1,1/6,1/5,1/4,1/3,1/2,1/1"/>
+        <dip name="Coin B" bits="4,7" ids="Free Play or 1/1,1/1 2/3,1/1 4/5,1/1 5/6,2/1 4/3,2/1 5/3 6/4,2/3,4/1,3/1,2/1,1/6,1/5,1/4,1/3,1/2,1/1"/>
+        <DSW/>
+        <dip name="2 Credits to Start" bits="8" ids="On,Off"/>
+        <dip name="Demo Sounds" bits="9" ids="On,Off"/>
+        <dip name="Difficulty" bits="10,12" ids="Extra Hardest,Harder,Hardest,Easiest,Hard,Easier,Easy,Normal"/>
+        <dip name="Allow Continue" bits="13" ids="No,Yes"/>
+        <dip name="Coin Chute" bits="14" ids="Common,Individual"/>
+    </switches>
+    <buttons names="Laser Gun,Special Weapon,-,-,Start,Coin,Core credits" default="A,B,Start,Select,-" count="2"/>
+</misterromdescription>

@@ -3,8 +3,37 @@
 		"magic": "APF_VER_1",
 		"variables": [
 			{
-				"name": "Flip Screen",
+				"name": "Player 1 is",
 				"id": 0,
+				"type": "list",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfb000000",
+				"defaultval": 0,
+				"value": 0,
+				"mask": "0xFFF3FFFF",
+				"options": [
+					{
+						"name": "First",
+						"value": "0x00000"
+					},
+					{
+						"name": "Second",
+						"value": "0x40000"
+					},
+					{
+						"name": "Third",
+						"value": "0x80000"
+					},
+					{
+						"name": "Fourth",
+						"value": "0xC0000"
+					}
+				]
+			},
+			{
+				"name": "Flip Screen",
+				"id": 1,
 				"type": "check",
 				"enabled": true,
 				"persist": true,
@@ -16,7 +45,7 @@
 			},
 			{
 				"name": "Service Mode",
-				"id": 1,
+				"id": 2,
 				"type": "check",
 				"enabled": true,
 				"persist": true,
@@ -28,7 +57,7 @@
 			},
 			{
 				"name": "Freeze",
-				"id": 2,
+				"id": 3,
 				"type": "check",
 				"enabled": true,
 				"persist": true,
@@ -40,7 +69,7 @@
 			},
 			{
 				"name": "Coinage",
-				"id": 3,
+				"id": 4,
 				"type": "list",
 				"enabled": true,
 				"persist": true,
@@ -117,7 +146,7 @@
 			},
 			{
 				"name": "Continue",
-				"id": 4,
+				"id": 5,
 				"type": "list",
 				"enabled": true,
 				"persist": true,
@@ -138,7 +167,7 @@
 			},
 			{
 				"name": "Energy",
-				"id": 5,
+				"id": 6,
 				"type": "list",
 				"enabled": true,
 				"persist": true,
@@ -167,7 +196,7 @@
 			},
 			{
 				"name": "Period Length",
-				"id": 6,
+				"id": 7,
 				"type": "list",
 				"enabled": true,
 				"persist": true,
@@ -196,7 +225,7 @@
 			},
 			{
 				"name": "Difficulty",
-				"id": 7,
+				"id": 8,
 				"type": "list",
 				"enabled": true,
 				"persist": true,
@@ -225,7 +254,7 @@
 			},
 			{
 				"name": "Demo Sounds",
-				"id": 8,
+				"id": 9,
 				"type": "check",
 				"enabled": true,
 				"persist": true,

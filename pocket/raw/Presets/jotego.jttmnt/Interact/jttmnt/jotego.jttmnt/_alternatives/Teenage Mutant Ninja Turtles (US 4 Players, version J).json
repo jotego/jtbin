@@ -3,8 +3,37 @@
 		"magic": "APF_VER_1",
 		"variables": [
 			{
-				"name": "Coinage",
+				"name": "Player 1 is",
 				"id": 0,
+				"type": "list",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfb000000",
+				"defaultval": 0,
+				"value": 0,
+				"mask": "0xFFF3FFFF",
+				"options": [
+					{
+						"name": "First",
+						"value": "0x00000"
+					},
+					{
+						"name": "Second",
+						"value": "0x40000"
+					},
+					{
+						"name": "Third",
+						"value": "0x80000"
+					},
+					{
+						"name": "Fourth",
+						"value": "0xC0000"
+					}
+				]
+			},
+			{
+				"name": "Coinage",
+				"id": 1,
 				"type": "list",
 				"enabled": true,
 				"persist": true,
@@ -81,7 +110,7 @@
 			},
 			{
 				"name": "Lives",
-				"id": 1,
+				"id": 2,
 				"type": "list",
 				"enabled": true,
 				"persist": true,
@@ -110,7 +139,7 @@
 			},
 			{
 				"name": "Difficulty",
-				"id": 2,
+				"id": 3,
 				"type": "list",
 				"enabled": true,
 				"persist": true,
@@ -139,7 +168,7 @@
 			},
 			{
 				"name": "Demo Sounds",
-				"id": 3,
+				"id": 4,
 				"type": "check",
 				"enabled": true,
 				"persist": true,
@@ -151,7 +180,7 @@
 			},
 			{
 				"name": "Flip Screen",
-				"id": 4,
+				"id": 5,
 				"type": "check",
 				"enabled": true,
 				"persist": true,
@@ -163,7 +192,7 @@
 			},
 			{
 				"name": "Service Mode",
-				"id": 5,
+				"id": 6,
 				"type": "check",
 				"enabled": true,
 				"persist": true,

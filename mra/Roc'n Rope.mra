@@ -66,6 +66,7 @@
         <!-- Total 0x18220 bytes - 96 kBytes -->
         <patch offset="0x103D">BA</patch>
     </rom>
+    <nvram index="2" size="2048"/>
     <!-- Vertical screen. -->
     <rom index="1">
         <part>01 D6</part>

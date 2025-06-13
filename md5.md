@@ -441,6 +441,9 @@
 | kuniokunb    | jtkunio    | 528dc7d21a8640bc053a980bd8d253f8 | bf,ff        |
 | labyrunr     | jtlabrun   | 7432285ff67a0ccdda24a8b3857c73ea | ff,5a,f7     |
 | labyrunrk    | jtlabrun   | 2e65ac5cc154346d24d55bbdb63fe371 | ff,5a,f7     |
+| lghost       | jts18      | 264049e91887284d433fd296a016f17a | ff,fd        |
+| lghostj      | jts18      | 6d65c211d4fd20afdf310fd69fb27e84 | ff,fd        |
+| lghostu      | jts18      | acc382949de57bdf09d68ddfc14cffd8 | ff,fd        |
 | lostwrld     | jtcps1     | 4f822f40f9abcec0592ace9f41079bf4 | ff,fc,ff     |
 | lostwrldo    | jtcps1     | d00971c0579013041fcfc1ad83ac0035 | ff,fc,ff     |
 | lwings       | jtsectnz   | 88bbe77fb6d469ab5b26293bf2ef6701 | ff,ff        |

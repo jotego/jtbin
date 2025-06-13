@@ -10,6 +10,10 @@
 			{
 				"id": 1,
 				"filename": "yiear.rom"
+			},
+			{
+				"id": 2,
+				"filename": "yiear.sav"
 			}
 		],
 		"memory_writes": [
