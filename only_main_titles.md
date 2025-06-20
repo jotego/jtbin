@@ -190,6 +190,7 @@
 | s18     | Alien Storm (World, 2 Players) (FD1094 317-0154)                             | astorm    |
 | s18     | Bloxeed (Japan) (FD1094 317-0139)                                            | bloxeed   |
 | s18     | Clutch Hitter (US) (FD1094 317-0176)                                         | cltchitr  |
+| s18     | Desert Breaker (World) (FD1094 317-0196)                                     | desertbr  |
 | s18     | Laser Ghost (World) (FD1094 317-0166)                                        | lghost    |
 | s18     | Michael Jackson's Moonwalker (World) (FD1094-8751 317-0159)                  | mwalk     |
 | s18     | Shadow Dancer (World)                                                        | shdancer  |
@@ -247,4 +248,4 @@
 | xmen    | X-Men (4 Players ver EBA)                                                    | xmen      |
 | yiear   | Yie Ar Kung-Fu (program code I)                                              | yiear     |
 
-68 cores, supporting 246 games
+68 cores, supporting 247 games

@@ -31,8 +31,13 @@
     <rbf>jts16</rbf>
     <joystick>8</joystick>
     <region>World</region>
-    <rom index="0" zip="fantzone1.zip|fantzone.zip" md5="None" address="0x30000000" asm_md5="28778fea6ec5061248d8f3d2400bcf07">
-        <!--  -->
+    <rom index="0" zip="fantzone1.zip|fantzone.zip" md5="None" asm_md5="28778fea6ec5061248d8f3d2400bcf07">
+        <!--         byte 0x10[0]: FD1089A
+        byte 0x10[1]: FD1089B
+        byte 0x11[0]: FD1094
+        byte 0x13[0]: i8751
+        byte 0x18:    board type
+ -->
         <part>
             00 00 00 00 00 00 00 00
             00 00 00 00 00 00 00 00
@@ -85,8 +90,8 @@
             <part name="epr-7398.24" crc="68807b49" map="10"/>
         </interleave>
         <part repeat="0x30000"> FF</part>
-        <!-- MCU_START -->
         <!-- JTFRAME_PROM_START -->
+        <!-- MCU_START -->
         <!-- mcu - starts at 0x180000 - length 0x2000 (13 bits) -->
         <part repeat="0x1000"> FF</part>
         <part repeat="0x1000"> FF</part>
@@ -100,7 +105,7 @@
     </rom>
     <nvram index="2" size="16384"/>
     <rom index="1">
-        <part>00 27</part>
+        <part>00 80</part>
     </rom>
     <switches page_id="1" page_name="Switches" base="16" default="ff,fc">
         <DSW1/>

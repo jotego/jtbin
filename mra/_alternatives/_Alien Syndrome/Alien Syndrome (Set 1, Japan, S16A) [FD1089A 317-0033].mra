@@ -31,8 +31,13 @@
     <rbf>jts16</rbf>
     <joystick>8</joystick>
     <region>Japan</region>
-    <rom index="0" zip="aliensynjo.zip|aliensyn.zip" md5="None" address="0x30000000" asm_md5="f684b5a0e51797a4a983820a68d005ec">
-        <!--  -->
+    <rom index="0" zip="aliensynjo.zip|aliensyn.zip" md5="None" asm_md5="f684b5a0e51797a4a983820a68d005ec">
+        <!--         byte 0x10[0]: FD1089A
+        byte 0x10[1]: FD1089B
+        byte 0x11[0]: FD1094
+        byte 0x13[0]: i8751
+        byte 0x18:    board type
+ -->
         <part>
             00 00 00 00 00 00 00 00
             00 00 00 00 00 00 00 00
@@ -89,8 +94,8 @@
             <part name="epr-10712.29" crc="876ad019" map="01"/>
             <part name="epr-10716.30" crc="40ba1d48" map="10"/>
         </interleave>
-        <!-- MCU_START -->
         <!-- JTFRAME_PROM_START -->
+        <!-- MCU_START -->
         <!-- mcu - starts at 0x180000 - length 0x2000 (13 bits) -->
         <part repeat="0x1000"> FF</part>
         <part repeat="0x1000"> FF</part>

@@ -31,7 +31,7 @@
     <rbf>jts16b</rbf>
     <joystick>8</joystick>
     <region>World</region>
-    <rom index="0" zip="shinobi6.zip|shinobi.zip" md5="None" address="0x30000000" asm_md5="437ca6454594366e3f36215bb48a5656">
+    <rom index="0" zip="shinobi6.zip|shinobi.zip" md5="None" asm_md5="437ca6454594366e3f36215bb48a5656">
         <!--  -->
         <part>
             00 00 00 00 00 00 00 00

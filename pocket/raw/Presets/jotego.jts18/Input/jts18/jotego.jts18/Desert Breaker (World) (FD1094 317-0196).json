@@ -7,17 +7,17 @@
 				"mappings": [
 					{
 						"id": 0,
-						"name": "Accelerate",
+						"name": "Shot",
 						"key": "pad_btn_a"
 					},
 					{
 						"id": 1,
-						"name": "Brake",
+						"name": "Speed Run",
 						"key": "pad_btn_b"
 					},
 					{
 						"id": 2,
-						"name": "Supercharger",
+						"name": "Bomb",
 						"key": "pad_btn_x"
 					}
 				]

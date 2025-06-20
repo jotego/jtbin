@@ -256,6 +256,8 @@
 | ddux1        | jts16b     | 8a2864798f5bda9129281a02f2f36f52 | ff,fe        |
 | dduxj        | jts16b     | 1c402be71147979ef55a574566457149 | ff,fe        |
 | defense      | jts16b     | 5a842e24f6f65ea50e5bb79c840e1b16 | ff,fd        |
+| desertbr     | jts18      | 9a8aff4bbdd8c38dd0b9902552c3953a | ff,fd        |
+| desertbrj    | jts18      | 00ea6ecd1e599ae011b53bac2d9aa9a1 | ff,fd        |
 | devilw       | jttwin16   | 597d4b50f4d16a162961b7752bdd3ca1 | ff,5e,ff     |
 | dimahoo      | jtcps2     | b01f52a0737ffb56bd63131189b7583f | ff,ff        |
 | dimahoou     | jtcps2     | 0a6a9cf87c5d2b509947d765d170d20b | ff,ff        |
@@ -441,9 +443,9 @@
 | kuniokunb    | jtkunio    | 528dc7d21a8640bc053a980bd8d253f8 | bf,ff        |
 | labyrunr     | jtlabrun   | 7432285ff67a0ccdda24a8b3857c73ea | ff,5a,f7     |
 | labyrunrk    | jtlabrun   | 2e65ac5cc154346d24d55bbdb63fe371 | ff,5a,f7     |
-| lghost       | jts18      | 264049e91887284d433fd296a016f17a | ff,fd        |
-| lghostj      | jts18      | 6d65c211d4fd20afdf310fd69fb27e84 | ff,fd        |
-| lghostu      | jts18      | acc382949de57bdf09d68ddfc14cffd8 | ff,fd        |
+| lghost       | jts18      | 264049e91887284d433fd296a016f17a | ff,e5        |
+| lghostj      | jts18      | 6d65c211d4fd20afdf310fd69fb27e84 | ff,e5        |
+| lghostu      | jts18      | acc382949de57bdf09d68ddfc14cffd8 | ff,e5        |
 | lostwrld     | jtcps1     | 4f822f40f9abcec0592ace9f41079bf4 | ff,fc,ff     |
 | lostwrldo    | jtcps1     | d00971c0579013041fcfc1ad83ac0035 | ff,fc,ff     |
 | lwings       | jtsectnz   | 88bbe77fb6d469ab5b26293bf2ef6701 | ff,ff        |

@@ -31,7 +31,7 @@
     <rbf>jts16b</rbf>
     <joystick>8</joystick>
     <region>Japan</region>
-    <rom index="0" zip="bayroutej.zip|bayroute.zip" md5="None" address="0x30000000" asm_md5="2c03630c997951b067f5bdc89459c2e4">
+    <rom index="0" zip="bayroutej.zip|bayroute.zip" md5="None" asm_md5="2c03630c997951b067f5bdc89459c2e4">
         <!--  -->
         <part>
             00 00 00 00 00 00 00 00

@@ -31,7 +31,7 @@
     <rbf>jts16b</rbf>
     <joystick>8</joystick>
     <region>Japan</region>
-    <rom index="0" zip="cottonja.zip|cotton.zip" md5="None" address="0x30000000" asm_md5="08ca2260697c55b1d31cc79480e0676d">
+    <rom index="0" zip="cottonja.zip|cotton.zip" md5="None" asm_md5="08ca2260697c55b1d31cc79480e0676d">
         <!--  -->
         <part>
             00 00 00 00 00 00 00 00

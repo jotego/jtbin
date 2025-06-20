@@ -903,6 +903,8 @@
 | s18     | Bloxeed (Japan, earlier) (FD1094 317-0139)                                                 | bloxeeda      |
 | s18     | Clutch Hitter (Japan) (FD1094 317-0175)                                                    | cltchitrj     |
 | s18     | Clutch Hitter (US) (FD1094 317-0176)                                                       | cltchitr      |
+| s18     | Desert Breaker (Japan) (FD1094 317-0194)                                                   | desertbrj     |
+| s18     | Desert Breaker (World) (FD1094 317-0196)                                                   | desertbr      |
 | s18     | Laser Ghost (Japan) (FD1094 317-0164)                                                      | lghostj       |
 | s18     | Laser Ghost (US) (FD1094 317-0165)                                                         | lghostu       |
 | s18     | Laser Ghost (World) (FD1094 317-0166)                                                      | lghost        |
@@ -1103,4 +1105,4 @@
 | yiear   | Yie Ar Kung-Fu (program code G)                                                            | yiear2        |
 | yiear   | Yie Ar Kung-Fu (program code I)                                                            | yiear         |
 
-69 cores, supporting 1102 games
+69 cores, supporting 1104 games

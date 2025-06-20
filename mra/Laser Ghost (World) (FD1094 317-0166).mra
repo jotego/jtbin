@@ -31,7 +31,7 @@
     <rbf>jts18</rbf>
     <joystick/>
     <region>World</region>
-    <rom index="0" zip="lghost.zip" md5="None" address="0x30000000" asm_md5="264049e91887284d433fd296a016f17a">
+    <rom index="0" zip="lghost.zip" md5="None" asm_md5="264049e91887284d433fd296a016f17a">
         <!--  -->
         <part>
             00 00 00 01 00 03 00 04
@@ -97,7 +97,7 @@
     <rom index="1">
         <part>02 80</part>
     </rom>
-    <switches page_id="1" page_name="Switches" base="16" default="ff,fd">
+    <switches page_id="1" page_name="Switches" base="16" default="ff,e5">
         <COINAGE/>
         <dip name="Coin A" bits="0,3" ids="Free Play or 1/1,1/1 2/3,1/1 4/5,1/1 5/6,2/1 4/3,2/1 5/3 6/4,2/3,4/1,3/1,2/1,1/6,1/5,1/4,1/3,1/2,1/1"/>
         <dip name="Coin B" bits="4,7" ids="Free Play or 1/1,1/1 2/3,1/1 4/5,1/1 5/6,2/1 4/3,2/1 5/3 6/4,2/3,4/1,3/1,2/1,1/6,1/5,1/4,1/3,1/2,1/1"/>

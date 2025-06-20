@@ -9,17 +9,22 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "shangon3d.rom"
+				"filename": "desertbr.rom"
 			},
 			{
 				"id": 2,
-				"filename": "shangon3d.sav"
+				"filename": "desertbr.sav"
+			},
+			{
+				"id": 17,
+				"filename": "beta.bin",
+				"md5": "84d30cc91cfc0f49e372c316ac73456b"
 			}
 		],
 		"memory_writes": [
 			{
 				"address": "0xf9000000",
-				"data": "0xD900"
+				"data": "0x4005"
 			}
 		]
 	}

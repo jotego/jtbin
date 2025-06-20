@@ -31,7 +31,7 @@
     <rbf>jtaliens</rbf>
     <joystick>8</joystick>
     <region>World</region>
-    <rom index="0" zip="crimfghtj.zip|crimfght.zip" md5="None" address="0x30000000" asm_md5="e5f3ee44b1ecbdedf36cc725124fb684">
+    <rom index="0" zip="crimfghtj.zip|crimfght.zip" md5="None" asm_md5="e5f3ee44b1ecbdedf36cc725124fb684">
         <!-- 
         byte 0: PCB ID
         byte 1:

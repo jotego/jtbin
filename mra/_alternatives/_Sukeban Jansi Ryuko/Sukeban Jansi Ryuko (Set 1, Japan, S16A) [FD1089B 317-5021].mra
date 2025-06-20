@@ -31,8 +31,13 @@
     <rbf>jts16</rbf>
     <joystick/>
     <region>World</region>
-    <rom index="0" zip="sjryuko1.zip|sjryuko.zip" md5="None" address="0x30000000" asm_md5="7735c267ab3a53c5a032f5c49183fc14">
-        <!--  -->
+    <rom index="0" zip="sjryuko1.zip|sjryuko.zip" md5="None" asm_md5="7735c267ab3a53c5a032f5c49183fc14">
+        <!--         byte 0x10[0]: FD1089A
+        byte 0x10[1]: FD1089B
+        byte 0x11[0]: FD1094
+        byte 0x13[0]: i8751
+        byte 0x18:    board type
+ -->
         <part>
             00 00 00 00 00 00 00 00
             00 00 00 00 00 00 00 00

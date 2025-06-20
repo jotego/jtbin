@@ -31,7 +31,7 @@
     <rbf>jts18</rbf>
     <joystick>8</joystick>
     <region>World</region>
-    <rom index="0" zip="mwalku.zip|mwalk.zip" md5="None" address="0x30000000" asm_md5="bd7eafc124dcfa000a76b911a3857dd9">
+    <rom index="0" zip="mwalku.zip|mwalk.zip" md5="None" asm_md5="bd7eafc124dcfa000a76b911a3857dd9">
         <!--  -->
         <part>
             00 00 80 00 80 02 80 03

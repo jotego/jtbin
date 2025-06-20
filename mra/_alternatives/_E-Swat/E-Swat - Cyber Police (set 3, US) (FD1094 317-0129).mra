@@ -31,7 +31,7 @@
     <rbf>jts16b</rbf>
     <joystick>8</joystick>
     <region>World</region>
-    <rom index="0" zip="eswatu.zip|eswat.zip" md5="None" address="0x30000000" asm_md5="b5483c042484243a0b667901220e88ca">
+    <rom index="0" zip="eswatu.zip|eswat.zip" md5="None" asm_md5="b5483c042484243a0b667901220e88ca">
         <!--  -->
         <part>
             00 00 00 00 00 00 00 00

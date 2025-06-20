@@ -31,7 +31,7 @@
     <rbf>jts16b</rbf>
     <joystick>8</joystick>
     <region>Japan</region>
-    <rom index="0" zip="aurailj.zip|aurail.zip" md5="None" address="0x30000000" asm_md5="c177237cada99fcbd0764f0b3cde1981">
+    <rom index="0" zip="aurailj.zip|aurail.zip" md5="None" asm_md5="c177237cada99fcbd0764f0b3cde1981">
         <!--  -->
         <part>
             00 00 00 00 00 00 00 00

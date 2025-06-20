@@ -31,8 +31,13 @@
     <rbf>jts16</rbf>
     <joystick>8</joystick>
     <region>World</region>
-    <rom index="0" zip="shinobi1.zip|shinobi.zip" md5="None" address="0x30000000" asm_md5="2c6ca20fe0a6c0cadd7c8cfee6238d89">
-        <!--  -->
+    <rom index="0" zip="shinobi1.zip|shinobi.zip" md5="None" asm_md5="2c6ca20fe0a6c0cadd7c8cfee6238d89">
+        <!--         byte 0x10[0]: FD1089A
+        byte 0x10[1]: FD1089B
+        byte 0x11[0]: FD1094
+        byte 0x13[0]: i8751
+        byte 0x18:    board type
+ -->
         <part>
             00 00 00 00 00 00 00 00
             00 00 00 00 00 00 00 00
@@ -82,8 +87,8 @@
             <part name="epr-11293.29" crc="41f41063" map="01"/>
             <part name="epr-11297.30" crc="b6e1fd72" map="10"/>
         </interleave>
-        <!-- JTFRAME_PROM_START -->
         <!-- MCU_START -->
+        <!-- JTFRAME_PROM_START -->
         <!-- mcu - starts at 0x180000 - length 0x2000 (13 bits) -->
         <part repeat="0x1000"> FF</part>
         <part repeat="0x1000"> FF</part>
@@ -97,7 +102,7 @@
     </rom>
     <nvram index="2" size="16384"/>
     <rom index="1">
-        <part>00 7C</part>
+        <part>00 80</part>
     </rom>
     <switches page_id="1" page_name="Switches" base="16" default="ff,fc">
         <DSW1/>

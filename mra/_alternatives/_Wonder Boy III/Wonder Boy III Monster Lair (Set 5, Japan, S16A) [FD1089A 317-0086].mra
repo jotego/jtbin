@@ -31,8 +31,13 @@
     <rbf>jts16</rbf>
     <joystick>8</joystick>
     <region>Japan</region>
-    <rom index="0" zip="wb35.zip|wb3.zip" md5="None" address="0x30000000" asm_md5="94712db4f9ad4b34282ec310796c314b">
-        <!--  -->
+    <rom index="0" zip="wb35.zip|wb3.zip" md5="None" asm_md5="94712db4f9ad4b34282ec310796c314b">
+        <!--         byte 0x10[0]: FD1089A
+        byte 0x10[1]: FD1089B
+        byte 0x11[0]: FD1094
+        byte 0x13[0]: i8751
+        byte 0x18:    board type
+ -->
         <part>
             00 00 00 00 00 00 00 00
             00 00 00 00 00 00 00 00
@@ -116,7 +121,7 @@
     </rom>
     <nvram index="2" size="16384"/>
     <rom index="1">
-        <part>00 CA</part>
+        <part>00 80</part>
     </rom>
     <switches page_id="1" page_name="Switches" base="16" default="ff,fd">
         <DSW1/>

@@ -3,8 +3,19 @@
 		"magic": "APF_VER_1",
 		"variables": [
 			{
-				"name": "Coin A",
+				"name": "Rotate screen",
 				"id": 0,
+				"type": "check",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfb000000",
+				"defaultval": 4,
+				"value": 4,
+				"mask": "0xFFFFFFFB"
+			},
+			{
+				"name": "Coin A",
+				"id": 1,
 				"type": "list",
 				"enabled": true,
 				"persist": true,
@@ -81,7 +92,7 @@
 			},
 			{
 				"name": "Coin B",
-				"id": 1,
+				"id": 2,
 				"type": "list",
 				"enabled": true,
 				"persist": true,
@@ -157,56 +168,111 @@
 				]
 			},
 			{
+				"name": "Credits to Start",
+				"id": 3,
+				"type": "list",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 1,
+				"value": 0,
+				"mask": "0xFFFFFEFF",
+				"options": [
+					{
+						"name": "2",
+						"value": "0x0"
+					},
+					{
+						"name": "1",
+						"value": "0x100"
+					}
+				]
+			},
+			{
 				"name": "Demo Sounds",
-				"id": 2,
+				"id": 4,
 				"type": "check",
 				"enabled": true,
 				"persist": true,
 				"address": "0xfa000000",
 				"defaultval": 1,
 				"value": 0,
-				"value_off": 256,
-				"mask": "0xFFFFFEFF"
+				"value_off": 512,
+				"mask": "0xFFFFFDFF"
 			},
 			{
-				"name": "Difficulty",
-				"id": 3,
+				"name": "Play Mode",
+				"id": 5,
 				"type": "list",
 				"enabled": true,
 				"persist": true,
 				"address": "0xfa000000",
-				"defaultval": 3,
+				"defaultval": 1,
 				"value": 0,
-				"mask": "0xFFFFF9FF",
+				"mask": "0xFFFFF7FF",
 				"options": [
 					{
-						"name": "Hardest",
+						"name": "2 players",
 						"value": "0x0"
 					},
 					{
-						"name": "Hard",
-						"value": "0x200"
-					},
-					{
-						"name": "Easy",
-						"value": "0x400"
-					},
-					{
-						"name": "Normal",
-						"value": "0x600"
+						"name": "3 players",
+						"value": "0x800"
 					}
 				]
 			},
 			{
-				"name": "Time Adj.",
-				"id": 4,
+				"name": "Coin Chute",
+				"id": 6,
+				"type": "list",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 1,
+				"value": 0,
+				"mask": "0xFFFFEFFF",
+				"options": [
+					{
+						"name": "Individual",
+						"value": "0x0"
+					},
+					{
+						"name": "Common",
+						"value": "0x1000"
+					}
+				]
+			},
+			{
+				"name": "Start Button",
+				"id": 7,
+				"type": "list",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 1,
+				"value": 0,
+				"mask": "0xFFFFDFFF",
+				"options": [
+					{
+						"name": "Unused",
+						"value": "0x0"
+					},
+					{
+						"name": "Use",
+						"value": "0x2000"
+					}
+				]
+			},
+			{
+				"name": "Difficulty",
+				"id": 8,
 				"type": "list",
 				"enabled": true,
 				"persist": true,
 				"address": "0xfa000000",
 				"defaultval": 3,
 				"value": 0,
-				"mask": "0xFFFFE7FF",
+				"mask": "0xFFFF3FFF",
 				"options": [
 					{
 						"name": "Hardest",
@@ -214,15 +280,15 @@
 					},
 					{
 						"name": "Hard",
-						"value": "0x800"
+						"value": "0x4000"
 					},
 					{
 						"name": "Easy",
-						"value": "0x1000"
+						"value": "0x8000"
 					},
 					{
 						"name": "Normal",
-						"value": "0x1800"
+						"value": "0xC000"
 					}
 				]
 			},
@@ -234,7 +300,7 @@
 				"persist": false,
 				"writeonly": true,
 				"address": "0xfa000000",
-				"defaultval": 65534,
+				"defaultval": 65533,
 				"value": 0
 			}
 		],

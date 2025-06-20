@@ -13,6 +13,8 @@ Bloxeed (Japan) (FD1094 317-0139) --> bloxeed.rom
 Bloxeed (Japan, earlier) (FD1094 317-0139) --> bloxeeda.rom
 Clutch Hitter (US) (FD1094 317-0176) --> cltchitr.rom
 Clutch Hitter (Japan) (FD1094 317-0175) --> cltchitrj.rom
+Desert Breaker (World) (FD1094 317-0196) --> desertbr.rom
+Desert Breaker (Japan) (FD1094 317-0194) --> desertbrj.rom
 Laser Ghost (World) (FD1094 317-0166) --> lghost.rom
 Laser Ghost (Japan) (FD1094 317-0164) --> lghostj.rom
 Laser Ghost (US) (FD1094 317-0165) --> lghostu.rom

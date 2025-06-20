@@ -31,8 +31,13 @@
     <rbf>jts16</rbf>
     <joystick/>
     <region>World</region>
-    <rom index="0" zip="afighterb.zip|afighter.zip" md5="None" address="0x30000000" asm_md5="c37af54a4250428c8114c856b509c6da">
-        <!--  -->
+    <rom index="0" zip="afighterb.zip|afighter.zip" md5="None" asm_md5="c37af54a4250428c8114c856b509c6da">
+        <!--         byte 0x10[0]: FD1089A
+        byte 0x10[1]: FD1089B
+        byte 0x11[0]: FD1094
+        byte 0x13[0]: i8751
+        byte 0x18:    board type
+ -->
         <part>
             00 00 00 00 00 00 00 00
             00 00 00 00 00 00 00 00
@@ -106,7 +111,7 @@
     <nvram index="2" size="16384"/>
     <!-- Vertical screen. Orientation reversed. -->
     <rom index="1">
-        <part>05 59</part>
+        <part>05 80</part>
     </rom>
     <switches page_id="1" page_name="Switches" base="16" default="ff,fc">
         <DSW1/>

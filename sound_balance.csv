@@ -39,9 +39,9 @@ riders,k60,1.00
 roadf,vlm,1.00,psg,0.85,rdac,0.27
 roc,psg0a,1.00,psg0b,1.00,psg0c,1.00,psg1a,1.00,psg1b,1.00,psg1c,1.00
 rumble,psg0,1.00,psg1,1.00,fm0,0.69,fm1,0.69
-s16,fm,1.00,pcm,0.67
+s16,fm,0.34,pcm,1.00
 s16b,fm,0.19,pcm,1.00
-s18,fm0,1.00,fm1,1.00,pcm,0.81
+s18,fm0,0.40,fm1,0.40,pcm,1.50
 sarms,psg0,1.00,psg1,1.00,fm0,0.69,fm1,0.69
 sbaskt,vlm,1.00,psg,0.85,rdac,0.27
 sectnz,psg0,1.00,psg1,1.00,fm0,0.69,fm1,0.69
