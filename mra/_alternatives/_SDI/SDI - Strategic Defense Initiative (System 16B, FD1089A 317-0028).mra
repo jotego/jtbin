@@ -31,7 +31,7 @@
     <rbf>jts16b</rbf>
     <joystick>8</joystick>
     <region>World</region>
-    <rom index="0" zip="sdib.zip|sdi.zip" md5="None" asm_md5="f7f5e7d5ca410726ecaa2af134da1913">
+    <rom index="0" zip="sdib.zip|sdi.zip" md5="None" address="0x30000000" asm_md5="f7f5e7d5ca410726ecaa2af134da1913">
         <!--  -->
         <part>
             00 00 00 00 00 00 00 00
@@ -81,8 +81,8 @@
             <part name="10765.b7" crc="0a73a057" map="10"/>
         </interleave>
         <part repeat="0x1A0000"> FF</part>
-        <!-- JTFRAME_PROM_START -->
         <!-- MCU_START -->
+        <!-- JTFRAME_PROM_START -->
         <!-- mcu - starts at 0x440000 - length 0x2000 (13 bits) -->
         <part repeat="0x1000"> FF</part>
         <part repeat="0x1000"> FF</part>

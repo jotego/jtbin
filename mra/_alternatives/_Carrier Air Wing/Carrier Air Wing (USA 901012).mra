@@ -31,7 +31,7 @@
     <rbf>jtcps1</rbf>
     <joystick>8</joystick>
     <region>World</region>
-    <rom index="0" zip="cawingur1.zip|cawing.zip" md5="None" asm_md5="0c44231618c31346561314a1cd0643fe">
+    <rom index="0" zip="cawingur1.zip|cawing.zip" md5="None" address="0x30000000" asm_md5="0c44231618c31346561314a1cd0643fe">
         <!--  -->
         <part>
             00 04 40 04 40 05 FF FF

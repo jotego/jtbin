@@ -1,5 +1,8 @@
 Place the following files in this folder:
 
+lgtnfght.rom
+lgtnfghta.rom
+lgtnfghtu.rom
 ssriders.rom
 ssridersabd.rom
 ssridersadd.rom
@@ -13,6 +16,7 @@ ssridersuab.rom
 ssridersuac.rom
 ssridersubc.rom
 ssridersuda.rom
+trigon.rom
 
 These files are generated using the mra tool in:
 https://github.com/sebdel/mra-tools-c/tree/master/release

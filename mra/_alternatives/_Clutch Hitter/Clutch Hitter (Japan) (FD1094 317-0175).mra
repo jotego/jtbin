@@ -31,7 +31,7 @@
     <rbf>jts18</rbf>
     <joystick>8</joystick>
     <region>World</region>
-    <rom index="0" zip="cltchitrj.zip|cltchitr.zip" md5="None" asm_md5="4309a09d48214d3c5894f61aa387e073">
+    <rom index="0" zip="cltchitrj.zip|cltchitr.zip" md5="None" address="0x30000000" asm_md5="4309a09d48214d3c5894f61aa387e073">
         <!--  -->
         <part>
             00 00 00 01 00 03 00 05

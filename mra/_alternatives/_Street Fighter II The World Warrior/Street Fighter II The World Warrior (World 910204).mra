@@ -31,7 +31,7 @@
     <rbf>jtcps1</rbf>
     <joystick>8</joystick>
     <region>World</region>
-    <rom index="0" zip="sf2ea.zip|sf2.zip" md5="None" asm_md5="a40dda2a20b9a0db1d3093e32ac5df02">
+    <rom index="0" zip="sf2ea.zip|sf2.zip" md5="None" address="0x30000000" asm_md5="a40dda2a20b9a0db1d3093e32ac5df02">
         <!--  -->
         <part>
             00 04 40 04 40 05 FF FF

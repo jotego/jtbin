@@ -31,7 +31,7 @@
     <rbf>jts16</rbf>
     <joystick>8</joystick>
     <region>World</region>
-    <rom index="0" zip="quartet.zip" md5="None" asm_md5="e050e9908f4a2f31af39064094d03f93">
+    <rom index="0" zip="quartet.zip" md5="None" address="0x30000000" asm_md5="e050e9908f4a2f31af39064094d03f93">
         <!--         byte 0x10[0]: FD1089A
         byte 0x10[1]: FD1089B
         byte 0x11[0]: FD1094

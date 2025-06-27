@@ -31,7 +31,7 @@
     <rbf>jts16</rbf>
     <joystick>8</joystick>
     <region>World</region>
-    <rom index="0" zip="quarteta.zip|quartet.zip" md5="None" asm_md5="5f1a0fbbfd7bc9929ef3f8c79e31cdcd">
+    <rom index="0" zip="quarteta.zip|quartet.zip" md5="None" address="0x30000000" asm_md5="5f1a0fbbfd7bc9929ef3f8c79e31cdcd">
         <!--         byte 0x10[0]: FD1089A
         byte 0x10[1]: FD1089B
         byte 0x11[0]: FD1094
@@ -99,8 +99,8 @@
             <part name="epr-7472.5b" crc="8e2762ec" map="10"/>
         </interleave>
         <part repeat="0x10000"> FF</part>
-        <!-- JTFRAME_PROM_START -->
         <!-- MCU_START -->
+        <!-- JTFRAME_PROM_START -->
         <!-- mcu - starts at 0x180000 - length 0x2000 (13 bits) -->
         <part name="315-5194.mcu" crc="b7298f66"/>
         <part repeat="0x1000"> FF</part>

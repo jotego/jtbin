@@ -31,7 +31,7 @@
     <rbf>jtcps15</rbf>
     <joystick>8</joystick>
     <region>World</region>
-    <rom index="0" zip="slammastu.zip|slammast.zip|qsound.zip" md5="None" asm_md5="ce1b77141ec7606bd656100d9a41e0e2">
+    <rom index="0" zip="slammastu.zip|slammast.zip|qsound.zip" md5="None" address="0x30000000" asm_md5="ce1b77141ec7606bd656100d9a41e0e2">
         <!--  -->
         <part>
             00 08 80 08 80 18 80 30

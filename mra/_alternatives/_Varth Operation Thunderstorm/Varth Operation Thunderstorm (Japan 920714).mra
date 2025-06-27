@@ -31,7 +31,7 @@
     <rbf>jtcps1</rbf>
     <joystick>8</joystick>
     <region>World</region>
-    <rom index="0" zip="varthj.zip|varth.zip" md5="None" asm_md5="81e438fea2b897e543aee29b38c0e7b2">
+    <rom index="0" zip="varthj.zip|varth.zip" md5="None" address="0x30000000" asm_md5="81e438fea2b897e543aee29b38c0e7b2">
         <!--  -->
         <part>
             00 04 40 04 40 05 FF FF

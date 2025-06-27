@@ -31,7 +31,7 @@
     <rbf>jtcps2</rbf>
     <joystick>8</joystick>
     <region>World</region>
-    <rom index="0" zip="mmatrixd.zip|mmatrix.zip|qsound.zip" md5="None" asm_md5="4ff87422d9cdbbcdd32c315498e011b3">
+    <rom index="0" zip="mmatrixd.zip|mmatrix.zip|qsound.zip" md5="None" address="0x30000000" asm_md5="4ff87422d9cdbbcdd32c315498e011b3">
         <!--  -->
         <part>
             00 06 80 06 80 26 80 A6

@@ -757,6 +757,9 @@
 | rastan  | Rastan Saga (Japan Rev 1, earlier code base)                                               | rastsagaa     |
 | rastan  | Rastan Saga (Japan, earlier code base)                                                     | rastsagab     |
 | rastan  | Rastan Saga (bootleg, Japan Rev 1, earlier code base)                                      | rastsagaabl   |
+| riders  | Lightning Fighters (Asia)                                                                  | lgtnfghta     |
+| riders  | Lightning Fighters (US)                                                                    | lgtnfghtu     |
+| riders  | Lightning Fighters (World)                                                                 | lgtnfght      |
 | riders  | Sunset Riders (2 Players ver ABD)                                                          | ssridersabd   |
 | riders  | Sunset Riders (2 Players ver EBC)                                                          | ssridersebc   |
 | riders  | Sunset Riders (2 Players ver EBD)                                                          | ssridersebd   |
@@ -770,6 +773,7 @@
 | riders  | Sunset Riders (4 Players ver UAB)                                                          | ssridersuab   |
 | riders  | Sunset Riders (4 Players ver UAC)                                                          | ssridersuac   |
 | riders  | Sunset Riders (4 Players ver UDA)                                                          | ssridersuda   |
+| riders  | Trigon (Japan)                                                                             | trigon        |
 | roadf   | Hyper Olympic '84                                                                          | hpolym84      |
 | roadf   | Hyper Sports                                                                               | hyperspt      |
 | roadf   | Road Fighter (set 1)                                                                       | roadf         |
@@ -1105,4 +1109,4 @@
 | yiear   | Yie Ar Kung-Fu (program code G)                                                            | yiear2        |
 | yiear   | Yie Ar Kung-Fu (program code I)                                                            | yiear         |
 
-69 cores, supporting 1104 games
+69 cores, supporting 1108 games

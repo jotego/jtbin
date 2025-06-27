@@ -31,7 +31,7 @@
     <rbf>jts16b</rbf>
     <joystick>5 (half8)</joystick>
     <region>Japan</region>
-    <rom index="0" zip="tetris1.zip|tetris.zip" md5="None" asm_md5="e9cca35f63ff528a07057065e30c5d0d">
+    <rom index="0" zip="tetris1.zip|tetris.zip" md5="None" address="0x30000000" asm_md5="e9cca35f63ff528a07057065e30c5d0d">
         <!--  -->
         <part>
             00 00 00 00 00 00 00 00
@@ -65,8 +65,8 @@
             <part name="epr-12170.b5" crc="87354e42" map="10"/>
         </interleave>
         <part repeat="0x1F0000"> FF</part>
-        <!-- JTFRAME_PROM_START -->
         <!-- MCU_START -->
+        <!-- JTFRAME_PROM_START -->
         <!-- mcu - starts at 0x440000 - length 0x2000 (13 bits) -->
         <part repeat="0x1000"> FF</part>
         <part repeat="0x1000"> FF</part>

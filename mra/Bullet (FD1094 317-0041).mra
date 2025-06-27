@@ -31,7 +31,7 @@
     <rbf>jts16b</rbf>
     <joystick>8</joystick>
     <region>World</region>
-    <rom index="0" zip="bullet.zip" md5="None" asm_md5="f90ca9abd612f8446da2f62d90790bbc">
+    <rom index="0" zip="bullet.zip" md5="None" address="0x30000000" asm_md5="f90ca9abd612f8446da2f62d90790bbc">
         <!--  -->
         <part>
             00 00 00 00 00 00 00 00

@@ -31,7 +31,7 @@
     <rbf>jtcps2</rbf>
     <joystick>8</joystick>
     <region>World</region>
-    <rom index="0" zip="dimahoud.zip|dimahoo.zip|qsound.zip" md5="None" asm_md5="ee77a6674ab4135cf5d1f2140dd8dee3">
+    <rom index="0" zip="dimahoud.zip|dimahoo.zip|qsound.zip" md5="None" address="0x30000000" asm_md5="ee77a6674ab4135cf5d1f2140dd8dee3">
         <!--  -->
         <part>
             00 08 00 09 00 29 00 69

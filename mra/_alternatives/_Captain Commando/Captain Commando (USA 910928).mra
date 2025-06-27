@@ -31,7 +31,7 @@
     <rbf>jtcps1</rbf>
     <joystick>8</joystick>
     <region>World</region>
-    <rom index="0" zip="captcommu.zip|captcomm.zip" md5="None" asm_md5="8f86943af3b78618df0d103597b0c453">
+    <rom index="0" zip="captcommu.zip|captcomm.zip" md5="None" address="0x30000000" asm_md5="8f86943af3b78618df0d103597b0c453">
         <!--  -->
         <part>
             00 05 40 05 40 06 FF FF

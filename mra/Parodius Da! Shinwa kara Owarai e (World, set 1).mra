@@ -31,7 +31,7 @@
     <rbf>jtparoda</rbf>
     <joystick>8</joystick>
     <region>World</region>
-    <rom index="0" zip="parodius.zip" md5="None" asm_md5="780fc966591b7cf66cadc1d580049b0d">
+    <rom index="0" zip="parodius.zip" md5="None" address="0x30000000" asm_md5="780fc966591b7cf66cadc1d580049b0d">
         <!--  Header to identify the PCB type
         Byte 0 = 1 - Parodius
                   -->

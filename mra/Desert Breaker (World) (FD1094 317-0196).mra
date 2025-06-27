@@ -31,7 +31,7 @@
     <rbf>jts18</rbf>
     <joystick>8</joystick>
     <region>World</region>
-    <rom index="0" zip="desertbr.zip" md5="None" asm_md5="9a8aff4bbdd8c38dd0b9902552c3953a">
+    <rom index="0" zip="desertbr.zip" md5="None" address="0x30000000" asm_md5="9a8aff4bbdd8c38dd0b9902552c3953a">
         <!--  -->
         <part>
             00 00 00 02 00 04 00 08

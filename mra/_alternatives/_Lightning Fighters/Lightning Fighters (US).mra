@@ -1,0 +1,84 @@
+<!--          FPGA arcade hardware by Jotego
+
+              This core is available for hardware compatible with MiST and MiSTer
+              Other FPGA systems may be supported by the time you read this.
+              This work is not mantained by the MiSTer project. Please contact the
+              core author for issues and updates.
+
+              (c) Jose Tejada, 2025. Please support this research
+              Patreon: https://patreon.com/jotego
+
+              The author does not endorse or participate in illegal distribution
+              of copyrighted material. This work can be used with compatible
+              software. This software can be homebrew projects or legally
+              obtained memory dumps of compatible games.
+
+              This file license is GNU GPLv2.
+              You can read the whole license file in
+              https://opensource.org/licenses/gpl-2.0.php
+
+-->
+
+<misterromdescription>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://jotego/jtcores"/>
+    <rotation>vertical (cw)</rotation>
+    <name>Lightning Fighters (US)</name>
+    <setname>lgtnfghtu</setname>
+    <mameversion>0261</mameversion>
+    <year>1990</year>
+    <manufacturer>Konami</manufacturer>
+    <players>2</players>
+    <rbf>jtriders</rbf>
+    <joystick>8</joystick>
+    <region>World</region>
+    <rom index="0" zip="lgtnfghtu.zip|lgtnfght.zip" md5="None" asm_md5="2e54e4563d7a487e22db382b9f93b622">
+        <!-- Offsets for each ROM region. Byte 15 = game selection. -->
+        <part>
+            00 00 40 00 C8 00 C8 01
+            FF FF 00 00 00 00 00 02
+        </part>
+        <!-- maincpu - starts at 0x0 - length 0x40000 (18 bits) -->
+        <interleave output="16">
+            <part name="939m03.e15" crc="6db6659d" map="01"/>
+            <part name="939m02.e11" crc="61a12184" map="10"/>
+        </interleave>
+        <!-- audiocpu - starts at 0x40000 - length 0x8000 (15 bits) -->
+        <part name="939e01.d7" crc="4a5fc848"/>
+        <!-- pcm - starts at 0x48000 - length 0x80000 (19 bits) -->
+        <part name="939a04.c5" crc="c24e2b6e"/>
+        <!-- k052109 - starts at 0xC8000 - length 0x100000 (20 bits) -->
+        <interleave output="32">
+            <part name="939a07.k14" crc="7955dfcf" map="0021"/>
+            <part name="939a08.k19" crc="ed95b385" map="2100"/>
+        </interleave>
+        <!-- obj - starts at 0x1C8000 - length 0x100000 (20 bits) -->
+        <interleave output="32">
+            <part name="939a06.k8" crc="e393c206" map="0021"/>
+            <part name="939a05.k2" crc="3662d47a" map="2100"/>
+        </interleave>
+        <!-- Total 0x2C8000 bytes - 2848 kBytes -->
+    </rom>
+    <rom index="17" zip="jtbeta.zip" md5="None" asm_md5="84d30cc91cfc0f49e372c316ac73456b">
+        <part name="beta.bin" crc="5603d968"/>
+    </rom>
+    <nvram index="2" size="37025"/>
+    <!-- Vertical screen. -->
+    <rom index="1">
+        <part>01 80</part>
+    </rom>
+    <switches page_id="1" page_name="Switches" base="20" default="5e,ff,fd">
+        <DSW1/>
+        <dip name="Lives" bits="0,1" ids="7,5,3,2"/>
+        <dip name="Bonus Life" bits="3,4" ids="None,200K Only,150K 500K,100K 400K"/>
+        <dip name="Difficulty" bits="5,6" ids="Very Difficult,Difficult,Normal,Easy"/>
+        <dip name="Demo Sounds" bits="7" ids="On,Off"/>
+        <DSW2/>
+        <dip name="Coin A" bits="8,11" ids="Free Play,4/3,4/1,3/4,3/2,3/1,2/5,2/3,2/1,1/7,1/6,1/5,1/4,1/3,1/2,1/1"/>
+        <dip name="Coin B" bits="12,15" ids="No B,4/3,4/1,3/4,3/2,3/1,2/5,2/3,2/1,1/7,1/6,1/5,1/4,1/3,1/2,1/1"/>
+        <DSW3/>
+        <dip name="Flip Screen" bits="16" ids="On,Off"/>
+        <dip name="Sound" bits="17" ids="Stereo,Mono"/>
+        <dip name="Service Mode" bits="18" ids="On,Off"/>
+    </switches>
+    <buttons names="button 1,button 2,-,Start,Coin,Core credits" default="A,B,Start,Select,-" count="2"/>
+</misterromdescription>

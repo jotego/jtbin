@@ -31,7 +31,7 @@
     <rbf>jts18</rbf>
     <joystick>8</joystick>
     <region>World</region>
-    <rom index="0" zip="bloxeed.zip" md5="None" asm_md5="f3afb888ed4d0f8cfa8d4b2c77aadbf4">
+    <rom index="0" zip="bloxeed.zip" md5="None" address="0x30000000" asm_md5="f3afb888ed4d0f8cfa8d4b2c77aadbf4">
         <!--  -->
         <part>
             00 00 40 00 40 02 80 02

@@ -31,7 +31,7 @@
     <rbf>jtaliens</rbf>
     <joystick>8</joystick>
     <region>World</region>
-    <rom index="0" zip="aliens3.zip|aliens.zip" md5="None" asm_md5="93902f225a0f6a89e6853fecbf2e3444">
+    <rom index="0" zip="aliens3.zip|aliens.zip" md5="None" address="0x30000000" asm_md5="93902f225a0f6a89e6853fecbf2e3444">
         <!-- 
         byte 0: PCB ID
         byte 1:

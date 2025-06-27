@@ -446,6 +446,9 @@
 | lghost       | jts18      | 264049e91887284d433fd296a016f17a | ff,e5        |
 | lghostj      | jts18      | 6d65c211d4fd20afdf310fd69fb27e84 | ff,e5        |
 | lghostu      | jts18      | acc382949de57bdf09d68ddfc14cffd8 | ff,e5        |
+| lgtnfght     | jtriders   | e103f936e216d794c1017160258162f9 | 5e,ff,fd     |
+| lgtnfghta    | jtriders   | 9906f6ce54061daefb8077deef269ea1 | 5e,ff,fd     |
+| lgtnfghtu    | jtriders   | 2e54e4563d7a487e22db382b9f93b622 | 5e,ff,fd     |
 | lostwrld     | jtcps1     | 4f822f40f9abcec0592ace9f41079bf4 | ff,fc,ff     |
 | lostwrldo    | jtcps1     | d00971c0579013041fcfc1ad83ac0035 | ff,fc,ff     |
 | lwings       | jtsectnz   | 88bbe77fb6d469ab5b26293bf2ef6701 | ff,ff        |
@@ -967,6 +970,7 @@
 | trackfld     | jttrack    | 97597056bec9459cc0c954a254a19640 | ff,59        |
 | trackfldc    | jttrack    | b680ca50d26b1cade2c2bddbc98540ac | ff,59        |
 | tricktrp     | jtlabrun   | 3e5dbbefbd2de31e43420016a8907428 | ff,5a,f7     |
+| trigon       | jtriders   | 44ae8c9a64de0490012da06e7f33f68f | 56,ff,fd     |
 | trojan       | jttrojan   | 78d1648e25cc28d5bbe79315194122ca | fc,ff        |
 | trojana      | jttrojan   | 3af25b8da1d1a4f5eac2ba76b9d5d2d4 | fc,ff        |
 | trojanj      | jttrojan   | c5728879326fc6946f1b025f937fb930 | fc,ff        |

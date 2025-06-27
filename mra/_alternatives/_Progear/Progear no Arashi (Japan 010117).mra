@@ -31,7 +31,7 @@
     <rbf>jtcps2</rbf>
     <joystick>8</joystick>
     <region>World</region>
-    <rom index="0" zip="progearj.zip|progear.zip|qsound.zip" md5="None" asm_md5="2e8b562f5113aa4eecaab509e103dae4">
+    <rom index="0" zip="progearj.zip|progear.zip|qsound.zip" md5="None" address="0x30000000" asm_md5="2e8b562f5113aa4eecaab509e103dae4">
         <!--  -->
         <part>
             00 04 80 04 80 24 80 64

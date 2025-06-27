@@ -31,7 +31,7 @@
     <rbf>jtcps1</rbf>
     <joystick>8</joystick>
     <region>Taiwan</region>
-    <rom index="0" zip="sf2cebltw.zip|sf2ce.zip" md5="None" asm_md5="ac54c464ecff89cdfa581e6c7f1cfc9d">
+    <rom index="0" zip="sf2cebltw.zip|sf2ce.zip" md5="None" address="0x30000000" asm_md5="ac54c464ecff89cdfa581e6c7f1cfc9d">
         <!--  -->
         <part>
             00 06 40 06 40 07 FF FF

@@ -31,7 +31,7 @@
     <rbf>jts16b</rbf>
     <joystick>8</joystick>
     <region>Japan</region>
-    <rom index="0" zip="aliensynj.zip|aliensyn.zip" md5="None" asm_md5="02c3db80879f98435a07fd25add38610">
+    <rom index="0" zip="aliensynj.zip|aliensyn.zip" md5="None" address="0x30000000" asm_md5="02c3db80879f98435a07fd25add38610">
         <!--  -->
         <part>
             00 00 00 00 00 00 00 00

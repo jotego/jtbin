@@ -31,7 +31,7 @@
     <rbf>jtcps15</rbf>
     <joystick>8</joystick>
     <region>World</region>
-    <rom index="0" zip="punisherh.zip|punisher.zip|qsound.zip" md5="None" asm_md5="68975f8d997bdef8ab75b7c9344fc53e">
+    <rom index="0" zip="punisherh.zip|punisher.zip|qsound.zip" md5="None" address="0x30000000" asm_md5="68975f8d997bdef8ab75b7c9344fc53e">
         <!--  -->
         <part>
             00 06 80 06 80 0E 80 1E

@@ -31,7 +31,7 @@
     <rbf>jtcps2</rbf>
     <joystick>8</joystick>
     <region>World</region>
-    <rom index="0" zip="megaman2.zip|qsound.zip" md5="None" asm_md5="ce7990fd88f87a4b72b5705e7ef290a7">
+    <rom index="0" zip="megaman2.zip|qsound.zip" md5="None" address="0x30000000" asm_md5="ce7990fd88f87a4b72b5705e7ef290a7">
         <!--  -->
         <part>
             00 06 00 07 00 17 00 57

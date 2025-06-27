@@ -31,7 +31,7 @@
     <rbf>jts16b</rbf>
     <joystick>8</joystick>
     <region>Japan</region>
-    <rom index="0" zip="altbeastj1.zip|altbeast.zip" md5="None" asm_md5="c7124c354dcbbb050745594cf79df0b4">
+    <rom index="0" zip="altbeastj1.zip|altbeast.zip" md5="None" address="0x30000000" asm_md5="c7124c354dcbbb050745594cf79df0b4">
         <!--  -->
         <part>
             00 00 00 00 00 00 00 00
@@ -80,8 +80,8 @@
             <part name="epr-11684.b8" crc="b20c0edb" map="10"/>
         </interleave>
         <part repeat="0x100000"> FF</part>
-        <!-- MCU_START -->
         <!-- JTFRAME_PROM_START -->
+        <!-- MCU_START -->
         <!-- mcu - starts at 0x440000 - length 0x2000 (13 bits) -->
         <part repeat="0x1000"> FF</part>
         <part repeat="0x1000"> FF</part>

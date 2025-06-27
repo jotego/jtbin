@@ -5,6 +5,9 @@ The following arcade titles are compatible with this core. Generate
 the required .rom file using the mra tool (read below).
 Place the *.rom files in Assets/jtriders/common
 
+Lightning Fighters (World) --> lgtnfght.rom
+Lightning Fighters (Asia) --> lgtnfghta.rom
+Lightning Fighters (US) --> lgtnfghtu.rom
 Sunset Riders (4 Players ver EAC) --> ssriders.rom
 Sunset Riders (2 Players ver ABD) --> ssridersabd.rom
 Sunset Riders (4 Players ver ADD) --> ssridersadd.rom
@@ -18,6 +21,7 @@ Sunset Riders (4 Players ver UAB) --> ssridersuab.rom
 Sunset Riders (4 Players ver UAC) --> ssridersuac.rom
 Sunset Riders (2 Players ver UBC) --> ssridersubc.rom
 Sunset Riders (4 Players ver UDA) --> ssridersuda.rom
+Trigon (Japan) --> trigon.rom
 
 
 These files are generated using the mra tool in:

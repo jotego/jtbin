@@ -31,7 +31,7 @@
     <rbf>jtaliens</rbf>
     <joystick>8</joystick>
     <region>World</region>
-    <rom index="0" zip="scontraa.zip|scontra.zip" md5="None" asm_md5="caaf9472724cc67b3590a9e9a97847ee">
+    <rom index="0" zip="scontraa.zip|scontra.zip" md5="None" address="0x30000000" asm_md5="caaf9472724cc67b3590a9e9a97847ee">
         <!-- 
         byte 0: PCB ID
         byte 1:

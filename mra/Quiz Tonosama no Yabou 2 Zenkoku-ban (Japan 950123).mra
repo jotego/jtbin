@@ -31,7 +31,7 @@
     <rbf>jtcps1</rbf>
     <joystick/>
     <region>World</region>
-    <rom index="0" zip="qtono2j.zip" md5="None" asm_md5="1fc1cbaf01b7834908c9058afaaf4578">
+    <rom index="0" zip="qtono2j.zip" md5="None" address="0x30000000" asm_md5="1fc1cbaf01b7834908c9058afaaf4578">
         <!--  -->
         <part>
             00 04 40 04 40 05 FF FF

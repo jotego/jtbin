@@ -31,7 +31,7 @@
     <rbf>jtsimson</rbf>
     <joystick>8</joystick>
     <region>World</region>
-    <rom index="0" zip="vendettan.zip|vendetta.zip" md5="None" asm_md5="81c619369eb62011b4dc65504d3272ba">
+    <rom index="0" zip="vendettan.zip|vendetta.zip" md5="None" address="0x30000000" asm_md5="81c619369eb62011b4dc65504d3272ba">
         <!--  Header to identify the PCB type
         Byte 0 = 0 - The Simpsons
                  1 - Reserved (Parodius)

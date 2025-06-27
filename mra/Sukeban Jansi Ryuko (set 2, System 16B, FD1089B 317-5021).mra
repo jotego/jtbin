@@ -31,7 +31,7 @@
     <rbf>jts16b</rbf>
     <joystick/>
     <region>World</region>
-    <rom index="0" zip="sjryuko.zip" md5="None" asm_md5="d796598dc8a8e8d5b5315bf1358051fa">
+    <rom index="0" zip="sjryuko.zip" md5="None" address="0x30000000" asm_md5="d796598dc8a8e8d5b5315bf1358051fa">
         <!--  -->
         <part>
             00 00 00 00 00 00 00 00

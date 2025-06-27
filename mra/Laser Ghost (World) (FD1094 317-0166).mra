@@ -31,7 +31,7 @@
     <rbf>jts18</rbf>
     <joystick/>
     <region>World</region>
-    <rom index="0" zip="lghost.zip" md5="None" asm_md5="264049e91887284d433fd296a016f17a">
+    <rom index="0" zip="lghost.zip" md5="None" address="0x30000000" asm_md5="264049e91887284d433fd296a016f17a">
         <!--  -->
         <part>
             00 00 00 01 00 03 00 04

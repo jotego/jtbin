@@ -31,7 +31,7 @@
     <rbf>jtaliens</rbf>
     <joystick>8</joystick>
     <region>World</region>
-    <rom index="0" zip="thunderxb.zip|thunderx.zip" md5="None" asm_md5="47d6dae5b024554e216f6fb2a9743e52">
+    <rom index="0" zip="thunderxb.zip|thunderx.zip" md5="None" address="0x30000000" asm_md5="47d6dae5b024554e216f6fb2a9743e52">
         <!-- 
         byte 0: PCB ID
         byte 1:

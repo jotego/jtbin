@@ -31,7 +31,7 @@
     <rbf>jts18</rbf>
     <joystick>8</joystick>
     <region>World</region>
-    <rom index="0" zip="shdancer1.zip|shdancer.zip" md5="None" asm_md5="551f6ee63d1c276be8d42fe61a6f4741">
+    <rom index="0" zip="shdancer1.zip|shdancer.zip" md5="None" address="0x30000000" asm_md5="551f6ee63d1c276be8d42fe61a6f4741">
         <!--  -->
         <part>
             00 00 80 00 80 02 80 03

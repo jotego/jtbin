@@ -31,7 +31,7 @@
     <rbf>jts16b</rbf>
     <joystick>8</joystick>
     <region>World</region>
-    <rom index="0" zip="toryumon.zip" md5="None" asm_md5="1af2f900df45b579cdbd5afab88def89">
+    <rom index="0" zip="toryumon.zip" md5="None" address="0x30000000" asm_md5="1af2f900df45b579cdbd5afab88def89">
         <!--  -->
         <part>
             00 00 00 00 00 00 00 00

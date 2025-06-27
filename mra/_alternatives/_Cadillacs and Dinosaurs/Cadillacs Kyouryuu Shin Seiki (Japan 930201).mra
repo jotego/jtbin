@@ -31,7 +31,7 @@
     <rbf>jtcps15</rbf>
     <joystick>8</joystick>
     <region>World</region>
-    <rom index="0" zip="dinoj.zip|dino.zip|qsound.zip" md5="None" asm_md5="5b16a312e8da3d2963860f26d8bb21a5">
+    <rom index="0" zip="dinoj.zip|dino.zip|qsound.zip" md5="None" address="0x30000000" asm_md5="5b16a312e8da3d2963860f26d8bb21a5">
         <!--  -->
         <part>
             00 06 80 06 80 0E 80 1E
