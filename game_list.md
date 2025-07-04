@@ -18,6 +18,9 @@
 | 1943    | 1943: The Battle of Midway (US)                                                            | 1943ua        |
 | 1943    | 1943: The Battle of Midway (US, Rev C)                                                     | 1943u         |
 | 1943    | 1943: The Battle of Midway Mark II (US)                                                    | 1943mii       |
+| ajax    | Ajax                                                                                       | ajax          |
+| ajax    | Ajax (Japan)                                                                               | ajaxj         |
+| ajax    | Typhoon                                                                                    | typhoon       |
 | aliens  | Aliens (Asia)                                                                              | aliensa       |
 | aliens  | Aliens (Japan set 1)                                                                       | aliensj       |
 | aliens  | Aliens (Japan set 2)                                                                       | aliensj2      |
@@ -1109,4 +1112,4 @@
 | yiear   | Yie Ar Kung-Fu (program code G)                                                            | yiear2        |
 | yiear   | Yie Ar Kung-Fu (program code I)                                                            | yiear         |
 
-69 cores, supporting 1108 games
+70 cores, supporting 1111 games

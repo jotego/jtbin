@@ -44,6 +44,8 @@
 | afighterf    | jts16b     | b056080bdefde3215f5b4572a66f3199 | ff,fc        |
 | afighterg    | jts16b     | c4dccd35f3bbbbbc23e07a298d0eeceb | ff,fc        |
 | afighterh    | jts16b     | 80aa8ee3170c5744cfbc131964efa6b2 | ff,fc        |
+| ajax         | jtajax     | 6faa8409a0ad1f9fc16362d7ce91f2c0 | ff,5a,ff     |
+| ajaxj        | jtajax     | ccbc9aa6ea57fa76d7429d3e6828c8ca | ff,5a,ff     |
 | akumajou     | jtcastle   | 859530c99173bd7c47b85af4b230a1de | ff,53,ff     |
 | akumajoun    | jtcastle   | 5b4cfc76c4e5b30762d872bf639bd19d | ff,53,ff     |
 | alexkidd     | jts16      | 0473183f9a3116bd99b9066032dc7cf3 | ff,fc        |
@@ -446,9 +448,9 @@
 | lghost       | jts18      | 264049e91887284d433fd296a016f17a | ff,e5        |
 | lghostj      | jts18      | 6d65c211d4fd20afdf310fd69fb27e84 | ff,e5        |
 | lghostu      | jts18      | acc382949de57bdf09d68ddfc14cffd8 | ff,e5        |
-| lgtnfght     | jtriders   | e103f936e216d794c1017160258162f9 | 5e,ff,fd     |
-| lgtnfghta    | jtriders   | 9906f6ce54061daefb8077deef269ea1 | 5e,ff,fd     |
-| lgtnfghtu    | jtriders   | 2e54e4563d7a487e22db382b9f93b622 | 5e,ff,fd     |
+| lgtnfght     | jtriders   | bd8a83484838bd53179346784d2d8c1c | 5e,ff,fd     |
+| lgtnfghta    | jtriders   | 249ce102d7f32b87db1e78be81ada658 | 5e,ff,fd     |
+| lgtnfghtu    | jtriders   | 45cc184e4ef3b5bb9f11f3ee5e45cc6d | 5e,ff,fd     |
 | lostwrld     | jtcps1     | 4f822f40f9abcec0592ace9f41079bf4 | ff,fc,ff     |
 | lostwrldo    | jtcps1     | d00971c0579013041fcfc1ad83ac0035 | ff,fc,ff     |
 | lwings       | jtsectnz   | 88bbe77fb6d469ab5b26293bf2ef6701 | ff,ff        |
@@ -886,19 +888,19 @@
 | ssf2xjr1     | jtcps2     | 49635257a7dbdfb0e6d4a0bafe301844 | ff,ff        |
 | ssf2xjr1d    | jtcps2     | beb5a8d344016298a391aabe64254d01 | ff,ff        |
 | ssf2xjr1r    | jtcps2     | cc31ae88440df9134ee6d600e830569d | ff,ff        |
-| ssriders     | jtriders   | 88130a850377514e9cd89fd749ee2c54 |              |
-| ssridersabd  | jtriders   | 93905648c94cc9108e42038cea8ed776 |              |
-| ssridersadd  | jtriders   | a27a270a5c7be9ef6612dd26c17356d2 |              |
-| ssriderseaa  | jtriders   | 1588e476286100672a5dca67ed982cbe |              |
-| ssridersebc  | jtriders   | 5c8a8f256649d342b44a9f8753bf9778 |              |
-| ssridersebd  | jtriders   | 8fc5a673c12e1464e571c9dfdf73b324 |              |
-| ssridersjac  | jtriders   | d178712e912a0027d19c53ffa7a5d48d |              |
-| ssridersjad  | jtriders   | 8571eb6d796ced115756dd630889dee1 |              |
-| ssridersjbd  | jtriders   | 60f2e95563ccb53ba11a32db1f206101 |              |
-| ssridersuab  | jtriders   | ccd1684ac76616ee4cf1cf07b11395a7 |              |
-| ssridersuac  | jtriders   | 0d8975dfc5eafe743664ac99570e4864 |              |
-| ssridersubc  | jtriders   | 90f07fd479e0fcb154e71403a0239756 |              |
-| ssridersuda  | jtriders   | 5897101f424559a4f5d7446897139b12 |              |
+| ssriders     | jtriders   | d2ccd581af6a884d8a8573c033a1f3a5 |              |
+| ssridersabd  | jtriders   | 4bf677f12abaa95ca2ff462a55619dc0 |              |
+| ssridersadd  | jtriders   | a2050577c16d8ecbdb0aa82c81683bfb |              |
+| ssriderseaa  | jtriders   | 53e8762ed6e03e8df363610caf4d2159 |              |
+| ssridersebc  | jtriders   | e7ce594df1818b55b8d9e8207db67f02 |              |
+| ssridersebd  | jtriders   | 1433dbb8b8d2a91e79ce61c3cce4200c |              |
+| ssridersjac  | jtriders   | 30a17538ca00c0c84bb0a84f3ee78fd7 |              |
+| ssridersjad  | jtriders   | 5ea3fc86e6afe600692819422233ea2f |              |
+| ssridersjbd  | jtriders   | 849e8f98a8fef2a2b6df52fa7066b751 |              |
+| ssridersuab  | jtriders   | ac3473084a76568d035799c81a6e81d7 |              |
+| ssridersuac  | jtriders   | 4ea915913f3787228aa21ba81c8fa200 |              |
+| ssridersubc  | jtriders   | 9fec54ffa9b272eca7198c14b95e88c1 |              |
+| ssridersuda  | jtriders   | 5decaa4ae76feeeb70d96c81d043b6e3 |              |
 | stratof      | jtgaiden   | 27a9ca76157b5dd88ca06fcf33b2e068 | ff,5f        |
 | strider      | jtcps1     | 0de57eaedbb520fcb4c938b667808061 | ff,fd,ff     |
 | striderj     | jtcps1     | 49e0f70b14c4aae1bf3dc66b2fdc5e75 | 7f,ff,ff     |
@@ -970,13 +972,14 @@
 | trackfld     | jttrack    | 97597056bec9459cc0c954a254a19640 | ff,59        |
 | trackfldc    | jttrack    | b680ca50d26b1cade2c2bddbc98540ac | ff,59        |
 | tricktrp     | jtlabrun   | 3e5dbbefbd2de31e43420016a8907428 | ff,5a,f7     |
-| trigon       | jtriders   | 44ae8c9a64de0490012da06e7f33f68f | 56,ff,fd     |
+| trigon       | jtriders   | 356f26330cb5e1a4df43f29647c9581b | 56,ff,fd     |
 | trojan       | jttrojan   | 78d1648e25cc28d5bbe79315194122ca | fc,ff        |
 | trojana      | jttrojan   | 3af25b8da1d1a4f5eac2ba76b9d5d2d4 | fc,ff        |
 | trojanj      | jttrojan   | c5728879326fc6946f1b025f937fb930 | fc,ff        |
 | trojanjo     | jttrojan   | f3d0dadfe4b57e1251771272f1f9a509 | fc,ff        |
 | trojanr      | jttrojan   | a8a3274396b3394c55d8e25ed83218f2 | fc,ff        |
 | tturfu       | jts16b     | 56ff0f22b78e17f55709141a47654c27 | ff,2c        |
+| typhoon      | jtajax     | 3dec72fa56206b9c590cffd4590f770b | ff,5a,ff     |
 | uecology     | jtcps2     | 6b282bbb2210a2cd48a15b7370a24986 | ff,ff        |
 | unsquad      | jtcps1     | d0a58d408b392b4f2051a9a7db890bda | ff,fc,9f     |
 | vampj        | jtcps2     | 316636c0c12dc02e655cd2999d32ec65 | ff,ff        |

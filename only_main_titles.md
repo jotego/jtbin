@@ -6,6 +6,7 @@
 | 1943    | 1943 Kai: Midway Kaisen (Japan)                                              | 1943kai   |
 | 1943    | 1943: The Battle of Midway (Euro)                                            | 1943      |
 | 1943    | 1943: The Battle of Midway Mark II (US)                                      | 1943mii   |
+| ajax    | Ajax                                                                         | ajax      |
 | aliens  | Aliens (World set 1)                                                         | aliens    |
 | aliens  | Crime Fighters (World 2 players)                                             | crimfght  |
 | aliens  | Gang Busters (set 1)                                                         | gbusters  |
@@ -249,4 +250,4 @@
 | xmen    | X-Men (4 Players ver EBA)                                                    | xmen      |
 | yiear   | Yie Ar Kung-Fu (program code I)                                              | yiear     |
 
-68 cores, supporting 248 games
+69 cores, supporting 249 games

@@ -1,0 +1,139 @@
+<!--          FPGA arcade hardware by Jotego
+
+              This core is available for hardware compatible with MiST and MiSTer
+              Other FPGA systems may be supported by the time you read this.
+              This work is not mantained by the MiSTer project. Please contact the
+              core author for issues and updates.
+
+              (c) Jose Tejada, 2025. Please support this research
+              Patreon: https://patreon.com/jotego
+
+              The author does not endorse or participate in illegal distribution
+              of copyrighted material. This work can be used with compatible
+              software. This software can be homebrew projects or legally
+              obtained memory dumps of compatible games.
+
+              This file license is GNU GPLv2.
+              You can read the whole license file in
+              https://opensource.org/licenses/gpl-2.0.php
+
+-->
+
+<misterromdescription>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://jotego/jtcores"/>
+    <rotation>vertical (cw)</rotation>
+    <name>Ajax</name>
+    <setname>ajax</setname>
+    <mameversion>0261</mameversion>
+    <year>1987</year>
+    <manufacturer>Konami</manufacturer>
+    <players>2</players>
+    <rbf>jtajax</rbf>
+    <joystick>8</joystick>
+    <region>World</region>
+    <rom index="0" zip="ajax.zip" md5="None" address="0x30000000" asm_md5="6faa8409a0ad1f9fc16362d7ce91f2c0">
+        <!--  -->
+        <part>
+            00 00 00 00 00 00 00 00
+        </part>
+        <!-- maincpu - starts at 0x0 - length 0x20000 (17 bits) -->
+        <part name="770_m01.n11" crc="4a64e53a"/>
+        <part name="770_l02.n12" crc="ad7d592b"/>
+        <!-- SUB_START -->
+        <!-- sub - starts at 0x20000 - length 0x18000 (17 bits) -->
+        <part name="770_f04.g16" crc="e0e4ec9c"/>
+        <part name="770_l05.i16" crc="ed64fbb2"/>
+        <!-- JTFRAME_BA1_START -->
+        <!-- audiocpu - starts at 0x38000 - length 0x8000 (15 bits) -->
+        <part name="770_h03.f16" crc="2ffd2afc"/>
+        <!-- PCM_START -->
+        <!-- k007232_1 - starts at 0x40000 - length 0x40000 (18 bits) -->
+        <part name="770c10-a.a7" crc="e45ec094"/>
+        <part name="770c10-b.a6" crc="349db7d3"/>
+        <part name="770c10-c.a5" crc="71cb1f05"/>
+        <part name="770c10-d.a4" crc="e8ab1844"/>
+        <!-- PCM2_START -->
+        <!-- k007232_2 - starts at 0x80000 - length 0x80000 (19 bits) -->
+        <part name="770c11-a.c6" crc="8cccd9e0"/>
+        <part name="770c11-b.c5" crc="0af2fedd"/>
+        <part name="770c11-c.c4" crc="7471f24a"/>
+        <part name="770c11-d.c3" crc="a58be323"/>
+        <part name="770c11-e.b7" crc="dd553541"/>
+        <part name="770c11-f.b6" crc="3f78bd0f"/>
+        <part name="770c11-g.b5" crc="078c51b2"/>
+        <part name="770c11-h.b4" crc="7300c2e1"/>
+        <!-- JTFRAME_BA2_START -->
+        <!-- k052109 - starts at 0x100000 - length 0x80000 (19 bits) -->
+        <interleave output="32">
+            <part name="770c13-a.f3" crc="4ef6fff2" map="0001"/>
+            <part name="770c13-c.f4" crc="97ffbab6" map="0010"/>
+            <part name="770c12-a.f5" crc="6c0ade68" map="0100"/>
+            <part name="770c12-c.f6" crc="61fc39cc" map="1000"/>
+        </interleave>
+        <interleave output="32">
+            <part name="770c13-b.e3" crc="86fdd706" map="0001"/>
+            <part name="770c13-d.e4" crc="7d7acb2d" map="0010"/>
+            <part name="770c12-b.e5" crc="5f221cc6" map="0100"/>
+            <part name="770c12-d.e6" crc="f1edb2f4" map="1000"/>
+        </interleave>
+        <!-- JTFRAME_BA3_START -->
+        <!-- k051960 - starts at 0x180000 - length 0x100000 (20 bits) -->
+        <interleave output="32">
+            <part name="770c08-e.f11" crc="6d43afde" map="0001"/>
+            <part name="770c08-a.f10" crc="efd29a56" map="0010"/>
+            <part name="770c09-e.f9" crc="17b482c9" map="0100"/>
+            <part name="770c09-a.f8" crc="76690fb8" map="1000"/>
+        </interleave>
+        <interleave output="32">
+            <part name="770c08-f.e11" crc="f5ba59aa" map="0001"/>
+            <part name="770c08-b.e10" crc="f3374014" map="0010"/>
+            <part name="770c09-f.e9" crc="cba4b47e" map="0100"/>
+            <part name="770c09-b.e8" crc="cd1709d1" map="1000"/>
+        </interleave>
+        <interleave output="32">
+            <part name="770c08-g.d11" crc="17da8f6d" map="0001"/>
+            <part name="770c08-c.d10" crc="28e7088f" map="0010"/>
+            <part name="770c09-g.d9" crc="77d58ea0" map="0100"/>
+            <part name="770c09-c.d8" crc="bfd080b8" map="1000"/>
+        </interleave>
+        <interleave output="32">
+            <part name="770c08-h.c11" crc="d97d4b15" map="0001"/>
+            <part name="770c08-d.c10" crc="91591777" map="0010"/>
+            <part name="770c09-h.c9" crc="494a9090" map="0100"/>
+            <part name="770c09-d.c8" crc="6f955600" map="1000"/>
+        </interleave>
+        <!-- PSAC_START -->
+        <!-- k051316 - starts at 0x280000 - length 0x80000 (19 bits) -->
+        <part name="770c06.f4" crc="d0c592ee"/>
+        <part name="770c07.h4" crc="0b399fb1"/>
+        <!-- JTFRAME_PROM_START -->
+        <!-- proms - starts at 0x300000 - length 0x200 (9 bits) -->
+        <part name="63s241.j11" crc="9bdd719f"/>
+        <!-- Total 0x300200 bytes - 3072 kBytes -->
+    </rom>
+    <rom index="17" zip="jtbeta.zip" md5="None" asm_md5="3e2d7474f2c93d482866bc2952047160">
+        <part name="beta.bin" crc="32970d5"/>
+    </rom>
+    <nvram index="2" size="23584"/>
+    <!-- Vertical screen.  8-pxl black frame on sides. -->
+    <rom index="1">
+        <part>21 80</part>
+    </rom>
+    <switches page_id="1" page_name="Switches" base="16" default="ff,5a,ff">
+        <DSW1/>
+        <dip name="Coin A" bits="0,3" ids="Free Play,4/3,4/1,3/4,3/2,3/1,2/5,2/3,2/1,1/7,1/6,1/5,1/4,1/3,1/2,1/1"/>
+        <dip name="Coin B" bits="4,7" ids="No B,4/3,4/1,3/4,3/2,3/1,2/5,2/3,2/1,1/7,1/6,1/5,1/4,1/3,1/2,1/1"/>
+        <DSW2/>
+        <dip name="Lives" bits="8,9" ids="7,5,3,2"/>
+        <dip name="Cabinet" bits="10" ids="Upright,Cocktail"/>
+        <dip name="Bonus Life" bits="11,12" ids="50k,30k,50k 200k,30k 150k"/>
+        <dip name="Difficulty" bits="13,14" ids="Very Difficult,Difficult,Normal,Easy"/>
+        <dip name="Demo Sounds" bits="15" ids="On,Off"/>
+        <DSW3/>
+        <dip name="Flip Screen" bits="16" ids="On,Off"/>
+        <dip name="Upright Controls" bits="17" ids="Dual,Single"/>
+        <dip name="Service Mode" bits="18" ids="On,Off"/>
+        <dip name="3D Control" bits="19" ids="Inverted,Normal"/>
+    </switches>
+    <buttons names="Machine Gun,Missile,Super Weapon,Start,Coin,Core credits" default="A,B,X,Start,Select,-" count="3"/>
+</misterromdescription>

@@ -122,8 +122,8 @@
         <part name="wm1-5.6u" crc="e4130804"/>
         <!-- Total 0x20A440 bytes - 2089 kBytes -->
     </rom>
-    <rom index="17" zip="jtbeta.zip" md5="None" asm_md5="84d30cc91cfc0f49e372c316ac73456b">
-        <part name="beta.bin" crc="5603d968"/>
+    <rom index="17" zip="jtbeta.zip" md5="None" asm_md5="3e2d7474f2c93d482866bc2952047160">
+        <part name="beta.bin" crc="32970d5"/>
     </rom>
     <nvram index="2" size="24598"/>
     <rom index="1">

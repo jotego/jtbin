@@ -31,11 +31,11 @@
     <rbf>jtriders</rbf>
     <joystick>8</joystick>
     <region>World</region>
-    <rom index="0" zip="ssridersjbd.zip|ssriders.zip" md5="None" asm_md5="60f2e95563ccb53ba11a32db1f206101">
+    <rom index="0" zip="ssridersjbd.zip|ssriders.zip" md5="None" address="0x30000000" asm_md5="849e8f98a8fef2a2b6df52fa7066b751">
         <!-- Offsets for each ROM region. Byte 15 = game selection. -->
         <part>
             00 00 C0 00 D0 01 D0 02
-            FF FF 00 00 00 00 00 00
+            FF FF 00 00 00 00 00 01
         </part>
         <!-- maincpu - starts at 0x0 - length 0xC0000 (20 bits) -->
         <interleave output="16">
@@ -60,10 +60,12 @@
             <part name="064e09.7l" crc="4160c372" map="0021"/>
             <part name="064e07.3l" crc="64dd673c" map="2100"/>
         </interleave>
+        <!-- z-tiles - starts at 0x4D0000 -->
+        <!-- z-tilemap - starts at 0x4D0000 -->
         <!-- Total 0x4D0000 bytes - 4928 kBytes -->
     </rom>
-    <rom index="17" zip="jtbeta.zip" md5="None" asm_md5="84d30cc91cfc0f49e372c316ac73456b">
-        <part name="beta.bin" crc="5603d968"/>
+    <rom index="17" zip="jtbeta.zip" md5="None" asm_md5="3e2d7474f2c93d482866bc2952047160">
+        <part name="beta.bin" crc="32970d5"/>
     </rom>
     <rom index="2">
         <part>
@@ -82,5 +84,5 @@
     <rom index="1">
         <part>20 80</part>
     </rom>
-    <buttons names="Shoot,Jump,-,Start,Coin,Core credits" default="A,B,Start,Select,-" count="2"/>
+    <buttons names="Shoot,Jump,-,-,Start,Coin,Core credits" default="A,B,Start,Select,-" count="2"/>
 </misterromdescription>

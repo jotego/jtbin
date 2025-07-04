@@ -31,11 +31,11 @@
     <rbf>jtriders</rbf>
     <joystick>8</joystick>
     <region>World</region>
-    <rom index="0" zip="lgtnfght.zip" md5="None" asm_md5="e103f936e216d794c1017160258162f9">
+    <rom index="0" zip="lgtnfght.zip" md5="None" address="0x30000000" asm_md5="bd8a83484838bd53179346784d2d8c1c">
         <!-- Offsets for each ROM region. Byte 15 = game selection. -->
         <part>
             00 00 40 00 C8 00 C8 01
-            FF FF 00 00 00 00 00 02
+            FF FF 00 00 00 00 00 04
         </part>
         <!-- maincpu - starts at 0x0 - length 0x40000 (18 bits) -->
         <interleave output="16">
@@ -56,10 +56,12 @@
             <part name="939a06.k8" crc="e393c206" map="0021"/>
             <part name="939a05.k2" crc="3662d47a" map="2100"/>
         </interleave>
+        <!-- z-tiles - starts at 0x2C8000 -->
+        <!-- z-tilemap - starts at 0x2C8000 -->
         <!-- Total 0x2C8000 bytes - 2848 kBytes -->
     </rom>
-    <rom index="17" zip="jtbeta.zip" md5="None" asm_md5="84d30cc91cfc0f49e372c316ac73456b">
-        <part name="beta.bin" crc="5603d968"/>
+    <rom index="17" zip="jtbeta.zip" md5="None" asm_md5="3e2d7474f2c93d482866bc2952047160">
+        <part name="beta.bin" crc="32970d5"/>
     </rom>
     <nvram index="2" size="37025"/>
     <!-- Vertical screen. -->
@@ -80,5 +82,5 @@
         <dip name="Sound" bits="17" ids="Stereo,Mono"/>
         <dip name="Service Mode" bits="18" ids="On,Off"/>
     </switches>
-    <buttons names="button 1,button 2,-,Start,Coin,Core credits" default="A,B,Start,Select,-" count="2"/>
+    <buttons names="button 1,button 2,-,-,Start,Coin,Core credits" default="A,B,Start,Select,-" count="2"/>
 </misterromdescription>
