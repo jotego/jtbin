@@ -27,7 +27,7 @@
 				"mirror": 0
 			},
 			{
-				"width": 304,
+				"width": 288,
 				"height": 224,
 				"aspect_w": 12,
 				"aspect_h": 8,
@@ -39,7 +39,15 @@
 				"height": 224,
 				"aspect_w": 12,
 				"aspect_h": 8,
-				"rotation": 0,
+				"rotation": 270,
+				"mirror": 0
+			},
+			{
+				"width": 288,
+				"height": 224,
+				"aspect_w": 12,
+				"aspect_h": 8,
+				"rotation": 90,
 				"mirror": 0
 			},
 			{
@@ -48,6 +56,14 @@
 				"aspect_w": 12,
 				"aspect_h": 8,
 				"rotation": 0,
+				"mirror": 0
+			},
+			{
+				"width": 272,
+				"height": 224,
+				"aspect_w": 12,
+				"aspect_h": 8,
+				"rotation": 270,
 				"mirror": 0
 			}
 		],
