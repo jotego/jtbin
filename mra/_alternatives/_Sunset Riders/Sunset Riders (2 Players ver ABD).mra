@@ -79,7 +79,7 @@
 00 00 00 00 00 00 FB 1B 90 64 41 42 44 00 04 E4
 </part>
     </rom>
-    <nvram index="2" size="37025"/>
+    <nvram index="2" size="39105"/>
     <!--  8-pxl black frame on sides. -->
     <rom index="1">
         <part>20 80</part>

@@ -1,12 +1,12 @@
 1942,psg0,1.00,psg1,1.00
 1943,psg0,1.00,psg1,1.00,fm0,0.73,fm1,0.73
-ajax,fm,1.00,pcm1,0.37,pcm2,0.37
+ajax,fm,1.00,pcm1,0.12,pcm2,0.15
 aliens,fm,1.00,pcm,0.23
 biocom,fm,1.00
 btiger,psg0,1.00,psg1,1.00,fm0,0.81,fm1,0.81
 bubl,fm03,0.84,fm26,0.84,psg,1.00
 castle,fm,1.00,scc,0.42,pcm_a,0.45,pcm_b,0.56
-circus,psg1,1.00,psg2,1.00,rdac,0.42
+circus,psg1,0.50,psg2,0.50,rdac,0.21
 commnd,psg0,1.00,psg1,1.00,fm0,0.94,fm1,0.94
 comsc,fm,0.45,pcm,1.00,psga,0.37,psgb,0.37,psgc,0.37
 contra,fm,1.00
@@ -54,7 +54,7 @@ simson,snd,1.00
 slyspy,opn,0.25,opl,0.25,psg,0.31,pcm,1.00
 thundr,fm,0.03,pcm0,1.00,pcm1,1.00,cus30,0.23
 tmnt,fm,1.00,k60,1.00,pcm,0.27,title,0.34,upd,0.85
-tokitora,fm0,0.62,fm1,0.62,psg0,0.72,psg1,0.72,pcm,1.00
+tokitora,fm0,0.21,fm1,0.21,psg0,0.24,psg1,0.24,pcm,1.00
 track,vlm,1.00,psg,0.85,rdac,0.27
 trojan,psg0,1.00,psg1,1.00,fm0,0.39,fm1,0.39,pcm,0.87
 twin16,fm,1.98,pcm,0.30,upd,1.40

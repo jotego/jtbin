@@ -31,10 +31,10 @@
     <rbf>jtriders</rbf>
     <joystick>8</joystick>
     <region>World</region>
-    <rom index="0" zip="lgtnfghta.zip|lgtnfght.zip" md5="None" address="0x30000000" asm_md5="249ce102d7f32b87db1e78be81ada658">
+    <rom index="0" zip="lgtnfghta.zip|lgtnfght.zip" md5="None" address="0x30000000" asm_md5="85a9f883bfa74e73d11d0c24e4540914">
         <!-- Offsets for each ROM region. Byte 15 = game selection. -->
         <part>
-            00 00 40 00 C8 00 C8 01
+            00 00 40 00 D0 00 D0 01
             FF FF 00 00 00 00 00 04
         </part>
         <!-- maincpu - starts at 0x0 - length 0x40000 (18 bits) -->
@@ -42,28 +42,29 @@
             <part name="939j_03.e15" crc="8d4da7b7" map="01"/>
             <part name="939j_02.e11" crc="bbbb4a74" map="10"/>
         </interleave>
-        <!-- audiocpu - starts at 0x40000 - length 0x8000 (15 bits) -->
+        <!-- audiocpu - starts at 0x40000 - length 0x10000 (16 bits) -->
         <part name="939e01.d7" crc="4a5fc848"/>
-        <!-- pcm - starts at 0x48000 - length 0x80000 (19 bits) -->
+        <part repeat="0x8000"> FF</part>
+        <!-- pcm - starts at 0x50000 - length 0x80000 (19 bits) -->
         <part name="939a04.c5" crc="c24e2b6e"/>
-        <!-- k052109 - starts at 0xC8000 - length 0x100000 (20 bits) -->
+        <!-- k052109 - starts at 0xD0000 - length 0x100000 (20 bits) -->
         <interleave output="32">
             <part name="939a07.k14" crc="7955dfcf" map="0021"/>
             <part name="939a08.k19" crc="ed95b385" map="2100"/>
         </interleave>
-        <!-- obj - starts at 0x1C8000 - length 0x100000 (20 bits) -->
+        <!-- obj - starts at 0x1D0000 - length 0x100000 (20 bits) -->
         <interleave output="32">
             <part name="939a06.k8" crc="e393c206" map="0021"/>
             <part name="939a05.k2" crc="3662d47a" map="2100"/>
         </interleave>
-        <!-- z-tiles - starts at 0x2C8000 -->
-        <!-- z-tilemap - starts at 0x2C8000 -->
-        <!-- Total 0x2C8000 bytes - 2848 kBytes -->
+        <!-- z-tiles - starts at 0x2D0000 -->
+        <!-- z-tilemap - starts at 0x2D0000 -->
+        <!-- Total 0x2D0000 bytes - 2880 kBytes -->
     </rom>
     <rom index="17" zip="jtbeta.zip" md5="None" asm_md5="3e2d7474f2c93d482866bc2952047160">
         <part name="beta.bin" crc="32970d5"/>
     </rom>
-    <nvram index="2" size="37025"/>
+    <nvram index="2" size="39105"/>
     <!-- Vertical screen. -->
     <rom index="1">
         <part>01 80</part>
