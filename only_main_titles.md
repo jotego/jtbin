@@ -225,6 +225,7 @@
 | simson  | Vendetta (World, 4 Players, ver. T)                                          | vendetta  |
 | slyspy  | Boulder Dash - Boulder Dash Part 2 (World)                                   | bouldash  |
 | slyspy  | Secret Agent (World, revision 3)                                             | secretag  |
+| suratk  | Surprise Attack (World ver. K)                                               | suratk    |
 | thundr  | Genpei ToumaDen                                                              | genpeitd  |
 | thundr  | Hopping Mappy                                                                | hopmappy  |
 | thundr  | Metro-Cross (set 1)                                                          | metrocrs  |
@@ -250,4 +251,4 @@
 | xmen    | X-Men (4 Players ver EBA)                                                    | xmen      |
 | yiear   | Yie Ar Kung-Fu (program code I)                                              | yiear     |
 
-69 cores, supporting 249 games
+70 cores, supporting 250 games

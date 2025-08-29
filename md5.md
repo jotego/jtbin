@@ -908,6 +908,9 @@
 | striderua    | jtcps1     | 1313f2c0949e67b8c4dab96dd71856a4 | ff,fd,ff     |
 | strideruc    | jtcps1     | d1d52503d329441ea51b411e6009f4e2 | ff,fd,ff     |
 | suprleag     | jts16b     | 60eac3924d5353c0ba872b74d0bb8242 | ff,fe        |
+| suratk       | jtsuratk   | 419d2d5789cbb026af0e9479a45db972 | ff,5a,ff     |
+| suratka      | jtsuratk   | 8a07490ca45722dee0fc2dcc894c2058 | ff,5a,ff     |
+| suratkj      | jtsuratk   | 68bffa11c72a2e78d0090e296cee6fc5 | ff,5a,ff     |
 | tankfrce     | jtshouse   | f8abd206a5b82f1c759f302ba16c6cd7 | ff,ff        |
 | tankfrce4    | jtshouse   | e9c9dfa2bcfa1d800dc3a8cf4229ec34 | ff,ff        |
 | tankfrcej    | jtshouse   | 55239f02c6fac6f70eb00fa584663923 | ff,ff        |

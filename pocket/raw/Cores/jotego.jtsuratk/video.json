@@ -1,0 +1,91 @@
+{
+	"video":{
+		"magic": "APF_VER_1",
+		"scaler_modes": [
+			{
+				"width": 320,
+				"height": 224,
+				"aspect_w": 4,
+				"aspect_h": 3,
+				"rotation": 0,
+				"mirror": 0
+			},
+			{
+				"width": 320,
+				"height": 224,
+				"aspect_w": 4,
+				"aspect_h": 3,
+				"rotation": 270,
+				"mirror": 0
+			},
+			{
+				"width": 320,
+				"height": 224,
+				"aspect_w": 4,
+				"aspect_h": 3,
+				"rotation": 90,
+				"mirror": 0
+			},
+			{
+				"width": 304,
+				"height": 224,
+				"aspect_w": 4,
+				"aspect_h": 3,
+				"rotation": 0,
+				"mirror": 0
+			},
+			{
+				"width": 304,
+				"height": 224,
+				"aspect_w": 4,
+				"aspect_h": 3,
+				"rotation": 270,
+				"mirror": 0
+			},
+			{
+				"width": 304,
+				"height": 224,
+				"aspect_w": 4,
+				"aspect_h": 3,
+				"rotation": 90,
+				"mirror": 0
+			},
+			{
+				"width": 288,
+				"height": 224,
+				"aspect_w": 4,
+				"aspect_h": 3,
+				"rotation": 0,
+				"mirror": 0
+			},
+			{
+				"width": 288,
+				"height": 224,
+				"aspect_w": 4,
+				"aspect_h": 3,
+				"rotation": 270,
+				"mirror": 0
+			}
+		],
+		"display_modes": [
+			{
+				"id": "0x10"
+			},
+			{
+				"id": "0x20"
+			},
+			{
+				"id": "0x30"
+			},
+			{
+				"id": "0x40"
+			},
+			{
+				"id": "0xE0"
+			},
+			{
+				"id": "0xE1"
+			}
+		]
+	}
+}

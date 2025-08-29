@@ -64,7 +64,7 @@
     <rom index="17" zip="jtbeta.zip" md5="None" asm_md5="3e2d7474f2c93d482866bc2952047160">
         <part name="beta.bin" crc="32970d5"/>
     </rom>
-    <nvram index="2" size="39105"/>
+    <nvram index="2" size="41153"/>
     <!-- Vertical screen. -->
     <rom index="1">
         <part>01 80</part>

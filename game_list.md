@@ -1012,6 +1012,9 @@
 | slyspy  | Sly Spy (US, revision 2)                                                                   | slyspy2       |
 | slyspy  | Sly Spy (US, revision 3)                                                                   | slyspy3       |
 | slyspy  | Sly Spy (US, revision 4)                                                                   | slyspy        |
+| suratk  | Surprise Attack (Asia ver. L)                                                              | suratka       |
+| suratk  | Surprise Attack (Japan ver. M)                                                             | suratkj       |
+| suratk  | Surprise Attack (World ver. K)                                                             | suratk        |
 | thundr  | Genpei ToumaDen                                                                            | genpeitd      |
 | thundr  | Hopping Mappy                                                                              | hopmappy      |
 | thundr  | Metro-Cross (set 1)                                                                        | metrocrs      |
@@ -1112,4 +1115,4 @@
 | yiear   | Yie Ar Kung-Fu (program code G)                                                            | yiear2        |
 | yiear   | Yie Ar Kung-Fu (program code I)                                                            | yiear         |
 
-70 cores, supporting 1111 games
+71 cores, supporting 1114 games

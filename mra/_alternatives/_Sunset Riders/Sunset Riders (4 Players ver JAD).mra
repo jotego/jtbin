@@ -79,7 +79,7 @@
 00 00 00 00 00 00 FA 13 90 64 4A 41 44 00 05 EC
 </part>
     </rom>
-    <nvram index="2" size="39105"/>
+    <nvram index="2" size="41153"/>
     <!--  8-pxl black frame on sides. -->
     <rom index="1">
         <part>20 80</part>
