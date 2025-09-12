@@ -365,6 +365,9 @@
 | gigawingh    | jtcps2     | 819747aa3c92a6477deb2732b564e488 | ff,ff        |
 | gigawingj    | jtcps2     | c571194944d0f14c69a9a5e55187bb42 | ff,ff        |
 | gigawingjd   | jtcps2     | 35a91a708bec512a9687bf1455af5e1f | ff,ff        |
+| glfgreat     | jtriders   | d0844ff078dffe19e4352232a5321f46 | ff,59,ff     |
+| glfgreatj    | jtriders   | 714025fd4733d480aac5b709fdadd0da | ff,51,ff     |
+| glfgreatu    | jtriders   | 7abc14ebf18bf9d812d1eb8cc1ad3ea4 | ff,51,ff     |
 | gmahou       | jtcps2     | fbf2c537cbdb9de26f34c884a39afc56 | ff,ff        |
 | gng          | jtgng      | 314bf8a2179fea0b42b1e675093d01b7 | df,fb        |
 | gnga         | jtgng      | de19abb643030aa57121d5f733b1055e | df,fb        |

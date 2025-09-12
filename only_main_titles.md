@@ -147,6 +147,7 @@
 | paroda  | Parodius Da!: Shinwa kara Owarai e (World, set 1)                            | parodius  |
 | pinpon  | Konami's Ping-Pong                                                           | pingpong  |
 | rastan  | Rastan (World Rev 1)                                                         | rastan    |
+| riders  | Golfing Greats (World, version L)                                            | glfgreat  |
 | riders  | Lightning Fighters (World)                                                   | lgtnfght  |
 | riders  | Sunset Riders (4 Players ver EAC)                                            | ssriders  |
 | roadf   | Hyper Sports                                                                 | hyperspt  |
@@ -251,4 +252,4 @@
 | xmen    | X-Men (4 Players ver EBA)                                                    | xmen      |
 | yiear   | Yie Ar Kung-Fu (program code I)                                              | yiear     |
 
-70 cores, supporting 250 games
+70 cores, supporting 251 games
