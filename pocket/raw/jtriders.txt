@@ -6,7 +6,6 @@ the required .rom file using the mra tool (read below).
 Place the *.rom files in Assets/jtriders/common
 
 Golfing Greats (World, version L) --> glfgreat.rom
-Golfing Greats (Japan, version J) --> glfgreatj.rom
 Golfing Greats (US, version K) --> glfgreatu.rom
 Lightning Fighters (World) --> lgtnfght.rom
 Lightning Fighters (Asia) --> lgtnfghta.rom

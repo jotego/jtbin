@@ -31,7 +31,7 @@
     <rbf>jtriders</rbf>
     <joystick>8</joystick>
     <region>World</region>
-    <rom index="0" zip="glfgreat.zip" md5="None" address="0x30000000" asm_md5="d0844ff078dffe19e4352232a5321f46">
+    <rom index="0" zip="glfgreat.zip" md5="None" address="0x30000000" asm_md5="1db21ccfe6f782c3ead070c66a091717">
         <!-- Offsets for each ROM region. Byte 15 = game selection. -->
         <part>
             00 00 40 00 50 01 50 02
@@ -44,7 +44,7 @@
         </interleave>
         <!-- audiocpu - starts at 0x40000 - length 0x10000 (16 bits) -->
         <part name="061f01.4e" crc="ab9a2a57"/>
-        <part repeat="0x8000"> FF</part>
+        <part name="061f01.4e" crc="ab9a2a57"/>
         <!-- pcm - starts at 0x50000 - length 0x100000 (20 bits) -->
         <part name="061e04.1d" crc="7921d8df"/>
         <!-- k052109 - starts at 0x150000 - length 0x100000 (20 bits) -->

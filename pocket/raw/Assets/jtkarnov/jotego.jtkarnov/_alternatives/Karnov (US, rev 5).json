@@ -10,6 +10,10 @@
 			{
 				"id": 1,
 				"filename": "karnova.rom"
+			},
+			{
+				"id": 2,
+				"filename": "karnova.sav"
 			}
 		],
 		"memory_writes": [

@@ -10,6 +10,10 @@
 			{
 				"id": 1,
 				"filename": "chelnov.rom"
+			},
+			{
+				"id": 2,
+				"filename": "chelnov.sav"
 			}
 		],
 		"memory_writes": [

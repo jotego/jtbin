@@ -99,8 +99,8 @@
             <part name="epr-10019.b5" crc="e020c38b" map="10"/>
         </interleave>
         <part repeat="0x10000"> FF</part>
-        <!-- JTFRAME_PROM_START -->
         <!-- MCU_START -->
+        <!-- JTFRAME_PROM_START -->
         <!-- mcu - starts at 0x180000 - length 0x2000 (13 bits) -->
         <!-- Skipping region mcu because there is no dump known -->
         <part repeat="0x2000"> FF</part>

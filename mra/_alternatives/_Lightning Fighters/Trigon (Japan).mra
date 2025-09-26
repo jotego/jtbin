@@ -31,7 +31,7 @@
     <rbf>jtriders</rbf>
     <joystick>8</joystick>
     <region>World</region>
-    <rom index="0" zip="trigon.zip|lgtnfght.zip" md5="None" address="0x30000000" asm_md5="0fcc95eb1f246ab7134fec0e2c111805">
+    <rom index="0" zip="trigon.zip|lgtnfght.zip" md5="None" address="0x30000000" asm_md5="afec8997cd8a110769ac178bd21a1795">
         <!-- Offsets for each ROM region. Byte 15 = game selection. -->
         <part>
             00 00 40 00 D0 00 D0 01
@@ -44,7 +44,7 @@
         </interleave>
         <!-- audiocpu - starts at 0x40000 - length 0x10000 (16 bits) -->
         <part name="939e01.d7" crc="4a5fc848"/>
-        <part repeat="0x8000"> FF</part>
+        <part name="939e01.d7" crc="4a5fc848"/>
         <!-- pcm - starts at 0x50000 - length 0x80000 (19 bits) -->
         <part name="939a04.c5" crc="c24e2b6e"/>
         <!-- k052109 - starts at 0xD0000 - length 0x100000 (20 bits) -->

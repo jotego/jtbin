@@ -83,6 +83,7 @@
         <part name="ee-16.l6" crc="41816132"/>
         <!-- Total 0x139800 bytes - 1254 kBytes -->
     </rom>
+    <nvram index="2" size="8216"/>
     <rom index="1">
         <part>00 48</part>
     </rom>

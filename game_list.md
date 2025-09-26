@@ -760,7 +760,6 @@
 | rastan  | Rastan Saga (Japan Rev 1, earlier code base)                                               | rastsagaa     |
 | rastan  | Rastan Saga (Japan, earlier code base)                                                     | rastsagab     |
 | rastan  | Rastan Saga (bootleg, Japan Rev 1, earlier code base)                                      | rastsagaabl   |
-| riders  | Golfing Greats (Japan, version J)                                                          | glfgreatj     |
 | riders  | Golfing Greats (US, version K)                                                             | glfgreatu     |
 | riders  | Golfing Greats (World, version L)                                                          | glfgreat      |
 | riders  | Lightning Fighters (Asia)                                                                  | lgtnfghta     |
@@ -1118,4 +1117,4 @@
 | yiear   | Yie Ar Kung-Fu (program code G)                                                            | yiear2        |
 | yiear   | Yie Ar Kung-Fu (program code I)                                                            | yiear         |
 
-71 cores, supporting 1117 games
+71 cores, supporting 1116 games

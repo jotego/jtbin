@@ -365,9 +365,8 @@
 | gigawingh    | jtcps2     | 819747aa3c92a6477deb2732b564e488 | ff,ff        |
 | gigawingj    | jtcps2     | c571194944d0f14c69a9a5e55187bb42 | ff,ff        |
 | gigawingjd   | jtcps2     | 35a91a708bec512a9687bf1455af5e1f | ff,ff        |
-| glfgreat     | jtriders   | d0844ff078dffe19e4352232a5321f46 | ff,59,ff     |
-| glfgreatj    | jtriders   | 714025fd4733d480aac5b709fdadd0da | ff,51,ff     |
-| glfgreatu    | jtriders   | 7abc14ebf18bf9d812d1eb8cc1ad3ea4 | ff,51,ff     |
+| glfgreat     | jtriders   | 1db21ccfe6f782c3ead070c66a091717 | ff,59,ff     |
+| glfgreatu    | jtriders   | 180da16e2723440784013c31b65f0005 | ff,51,ff     |
 | gmahou       | jtcps2     | fbf2c537cbdb9de26f34c884a39afc56 | ff,ff        |
 | gng          | jtgng      | 314bf8a2179fea0b42b1e675093d01b7 | df,fb        |
 | gnga         | jtgng      | de19abb643030aa57121d5f733b1055e | df,fb        |
@@ -451,9 +450,9 @@
 | lghost       | jts18      | 264049e91887284d433fd296a016f17a | ff,e5        |
 | lghostj      | jts18      | 6d65c211d4fd20afdf310fd69fb27e84 | ff,e5        |
 | lghostu      | jts18      | acc382949de57bdf09d68ddfc14cffd8 | ff,e5        |
-| lgtnfght     | jtriders   | 4b7223b6ff41279cbf5d603d5b2011b2 | 5e,ff,fd     |
-| lgtnfghta    | jtriders   | 85a9f883bfa74e73d11d0c24e4540914 | 5e,ff,fd     |
-| lgtnfghtu    | jtriders   | 909e71a6e86f2a5467f5c8e2d7bc7a7d | 5e,ff,fd     |
+| lgtnfght     | jtriders   | 7573f35ae74d2502328cd862471ac62e | 5e,ff,fd     |
+| lgtnfghta    | jtriders   | 917ae975b1f64eb63d44ee00282a8b70 | 5e,ff,fd     |
+| lgtnfghtu    | jtriders   | de42c38cccd2ec2813e108b3725ec455 | 5e,ff,fd     |
 | lostwrld     | jtcps1     | 4f822f40f9abcec0592ace9f41079bf4 | ff,fc,ff     |
 | lostwrldo    | jtcps1     | d00971c0579013041fcfc1ad83ac0035 | ff,fc,ff     |
 | lwings       | jtsectnz   | 88bbe77fb6d469ab5b26293bf2ef6701 | ff,ff        |
@@ -978,7 +977,7 @@
 | trackfld     | jttrack    | 97597056bec9459cc0c954a254a19640 | ff,59        |
 | trackfldc    | jttrack    | b680ca50d26b1cade2c2bddbc98540ac | ff,59        |
 | tricktrp     | jtlabrun   | 3e5dbbefbd2de31e43420016a8907428 | ff,5a,f7     |
-| trigon       | jtriders   | 0fcc95eb1f246ab7134fec0e2c111805 | 56,ff,fd     |
+| trigon       | jtriders   | afec8997cd8a110769ac178bd21a1795 | 56,ff,fd     |
 | trojan       | jttrojan   | 78d1648e25cc28d5bbe79315194122ca | fc,ff        |
 | trojana      | jttrojan   | 3af25b8da1d1a4f5eac2ba76b9d5d2d4 | fc,ff        |
 | trojanj      | jttrojan   | c5728879326fc6946f1b025f937fb930 | fc,ff        |
