@@ -1,0 +1,91 @@
+<!--          FPGA arcade hardware by Jotego
+
+              This core is available for hardware compatible with MiST and MiSTer
+              Other FPGA systems may be supported by the time you read this.
+              This work is not mantained by the MiSTer project. Please contact the
+              core author for issues and updates.
+
+              (c) Jose Tejada, 2025. Please support this research
+              Patreon: https://patreon.com/jotego
+
+              The author does not endorse or participate in illegal distribution
+              of copyrighted material. This work can be used with compatible
+              software. This software can be homebrew projects or legally
+              obtained memory dumps of compatible games.
+
+              This file license is GNU GPLv2.
+              You can read the whole license file in
+              https://opensource.org/licenses/gpl-2.0.php
+
+-->
+
+<misterromdescription>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://jotego/jtcores"/>
+    <rotation>horizontal</rotation>
+    <name>Teenage Mutant Ninja Turtles - Turtles in Time (4 Players ver UAA)</name>
+    <setname>tmnt2</setname>
+    <mameversion>0261</mameversion>
+    <year>1991</year>
+    <manufacturer>Konami</manufacturer>
+    <players>4</players>
+    <rbf>jtriders</rbf>
+    <joystick>8</joystick>
+    <region>World</region>
+    <rom index="0" zip="tmnt2.zip" md5="None" address="0x30000000" asm_md5="da3f35de4efd173160cc8acafcd58a8a">
+        <!-- Offsets for each ROM region. Byte 15 = game selection. -->
+        <part>
+            00 00 80 00 90 02 90 03
+            FF FF 00 00 00 00 00 02
+        </part>
+        <!-- maincpu - starts at 0x0 - length 0x80000 (19 bits) -->
+        <interleave output="16">
+            <part name="063uaa03.8g" crc="0541fec9" map="01"/>
+            <part name="063uaa02.8e" crc="58d5c93d" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="063uaa05.10g" crc="9c428273" map="01"/>
+            <part name="063uaa04.10e" crc="1d441a7d" map="10"/>
+        </interleave>
+        <!-- audiocpu - starts at 0x80000 - length 0x10000 (16 bits) -->
+        <part name="063b01.2f" crc="364f548a"/>
+        <!-- pcm - starts at 0x90000 - length 0x200000 (21 bits) -->
+        <part name="063b06.1d" crc="1e510aa5"/>
+        <!-- k052109 - starts at 0x290000 - length 0x100000 (20 bits) -->
+        <interleave output="32">
+            <part name="063b12.16k" crc="d3283d19" map="0021"/>
+            <part name="063b11.12k" crc="6ebc0c15" map="2100"/>
+        </interleave>
+        <!-- obj - starts at 0x390000 - length 0x300000 (22 bits) -->
+        <interleave output="32">
+            <part name="063b09.7l" crc="2d7a9d2a" map="0021"/>
+            <part name="063b07.3l" crc="d9bee7bf" map="2100"/>
+        </interleave>
+        <interleave output="32">
+            <part name="063b10.7k" crc="f2dd296e" map="0021"/>
+            <part name="063b08.3k" crc="3b1ae36f" map="2100"/>
+        </interleave>
+        <!-- z-tiles - starts at 0x690000 -->
+        <!-- z-tilemap - starts at 0x690000 -->
+        <!-- Total 0x690000 bytes - 6720 kBytes -->
+    </rom>
+    <rom index="17" zip="jtbeta.zip" md5="None" asm_md5="3e2d7474f2c93d482866bc2952047160">
+        <part name="beta.bin" crc="32970d5"/>
+    </rom>
+    <rom index="2">
+        <part>
+03 CC FC 33 90 63 55 41 41 00 00 00 00 01 01 01
+00 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+</part>
+    </rom>
+    <nvram index="2" size="41153"/>
+    <rom index="1">
+        <part>00 80</part>
+    </rom>
+    <buttons names="Shoot,Jump,-,-,Start,Coin,Core credits" default="A,B,Start,Select,-" count="2"/>
+</misterromdescription>

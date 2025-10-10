@@ -3,7 +3,7 @@
 		"magic": "APF_VER_1",
 		"variables": [
 			{
-				"name": "Coin B",
+				"name": "Coin A",
 				"id": 0,
 				"type": "list",
 				"enabled": true,
@@ -11,7 +11,7 @@
 				"address": "0xfa000000",
 				"defaultval": 15,
 				"value": 0,
-				"mask": "0xFFFFFFF0",
+				"mask": "0xFFFFFF0F",
 				"options": [
 					{
 						"name": "Free Play",
@@ -19,63 +19,63 @@
 					},
 					{
 						"name": "2 Coins/1 Credit",
-						"value": "0x1"
+						"value": "0x10"
 					},
 					{
 						"name": "3 Coins/2 Credits",
-						"value": "0x2"
+						"value": "0x20"
 					},
 					{
 						"name": "1 Coin/4 Credits",
-						"value": "0x3"
+						"value": "0x30"
 					},
 					{
 						"name": "4 Coins/1 Credit",
-						"value": "0x4"
+						"value": "0x40"
 					},
 					{
 						"name": "1 Coin/6 Credits",
-						"value": "0x5"
+						"value": "0x50"
 					},
 					{
 						"name": "2 Coins/5 Credits",
-						"value": "0x6"
+						"value": "0x60"
 					},
 					{
 						"name": "1 Coin/2 Credits",
-						"value": "0x7"
+						"value": "0x70"
 					},
 					{
 						"name": "4 Coins/3 Credits",
-						"value": "0x8"
+						"value": "0x80"
 					},
 					{
 						"name": "1 Coin/7 Credits",
-						"value": "0x9"
+						"value": "0x90"
 					},
 					{
 						"name": "3 Coins/1 Credit",
-						"value": "0xA"
+						"value": "0xA0"
 					},
 					{
 						"name": "1 Coin/3 Credits",
-						"value": "0xB"
+						"value": "0xB0"
 					},
 					{
 						"name": "3 Coins/4 Credits",
-						"value": "0xC"
+						"value": "0xC0"
 					},
 					{
 						"name": "1 Coin/5 Credits",
-						"value": "0xD"
+						"value": "0xD0"
 					},
 					{
 						"name": "2 Coins/3 Credits",
-						"value": "0xE"
+						"value": "0xE0"
 					},
 					{
 						"name": "1 Coin/1 Credit",
-						"value": "0xF"
+						"value": "0xF0"
 					}
 				]
 			},

@@ -31,10 +31,11 @@
     <rbf>jtwc</rbf>
     <joystick/>
     <region>World</region>
-    <rom index="0" zip="gridiron.zip" md5="None" asm_md5="67078f4ef8846bf97e26398a9f6fd044">
-        <!-- bit 0 -> enable non-symmetric speed in Tehkan WC bootleg -->
+    <rom index="0" zip="gridiron.zip" md5="None" asm_md5="a4f3b95edc9ccbcc47d7a93567ae116c">
+        <!-- "bit 0 -> enable non-symmetric speed in Tehkan WC bootleg
+              bit 1 -> No DIPSW1 -->
         <part>
-            00 00 00 00 00 00 00 00
+            02 00 00 00 00 00 00 00
         </part>
         <!-- maincpu - starts at 0x0 - length 0xC000 (16 bits) -->
         <part name="gfight1.bin" crc="51612741"/>

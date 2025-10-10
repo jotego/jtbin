@@ -150,6 +150,7 @@
 | riders  | Golfing Greats (World, version L)                                            | glfgreat  |
 | riders  | Lightning Fighters (World)                                                   | lgtnfght  |
 | riders  | Sunset Riders (4 Players ver EAC)                                            | ssriders  |
+| riders  | Teenage Mutant Ninja Turtles - Turtles in Time (4 Players ver UAA)           | tmnt2     |
 | roadf   | Hyper Sports                                                                 | hyperspt  |
 | roadf   | Road Fighter (set 1)                                                         | roadf     |
 | roc     | Roc'n Rope                                                                   | rocnrope  |
@@ -252,4 +253,4 @@
 | xmen    | X-Men (4 Players ver EBA)                                                    | xmen      |
 | yiear   | Yie Ar Kung-Fu (program code I)                                              | yiear     |
 
-70 cores, supporting 251 games
+70 cores, supporting 252 games

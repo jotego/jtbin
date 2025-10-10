@@ -32,7 +32,8 @@
     <joystick/>
     <region>World</region>
     <rom index="0" zip="tehkanwc.zip" md5="None" asm_md5="55fb5ac5d6a2f50dbef1e4bb59d2b6b2">
-        <!-- bit 0 -> enable non-symmetric speed in Tehkan WC bootleg -->
+        <!-- "bit 0 -> enable non-symmetric speed in Tehkan WC bootleg
+              bit 1 -> No DIPSW1 -->
         <part>
             00 00 00 00 00 00 00 00
         </part>

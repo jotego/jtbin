@@ -778,6 +778,12 @@
 | riders  | Sunset Riders (4 Players ver UAB)                                                          | ssridersuab   |
 | riders  | Sunset Riders (4 Players ver UAC)                                                          | ssridersuac   |
 | riders  | Sunset Riders (4 Players ver UDA)                                                          | ssridersuda   |
+| riders  | Teenage Mutant Hero Turtles - Turtles in Time (2 Players ver EBA)                          | tmht22pe      |
+| riders  | Teenage Mutant Hero Turtles - Turtles in Time (4 Players ver EAA)                          | tmht24pe      |
+| riders  | Teenage Mutant Ninja Turtles - Turtles in Time (2 Players ver UDA)                         | tmnt22pu      |
+| riders  | Teenage Mutant Ninja Turtles - Turtles in Time (4 Players ver ADA)                         | tmnt2a        |
+| riders  | Teenage Mutant Ninja Turtles - Turtles in Time (4 Players ver UAA)                         | tmnt2         |
+| riders  | Teenage Mutant Ninja Turtles - Turtles in Time (4 Players ver UEA)                         | tmnt24pu      |
 | riders  | Trigon (Japan)                                                                             | trigon        |
 | roadf   | Hyper Olympic '84                                                                          | hpolym84      |
 | roadf   | Hyper Sports                                                                               | hyperspt      |
@@ -1117,4 +1123,4 @@
 | yiear   | Yie Ar Kung-Fu (program code G)                                                            | yiear2        |
 | yiear   | Yie Ar Kung-Fu (program code I)                                                            | yiear         |
 
-71 cores, supporting 1116 games
+71 cores, supporting 1122 games

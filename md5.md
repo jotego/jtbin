@@ -151,11 +151,11 @@
 | bullet       | jts16b     | f90ca9abd612f8446da2f62d90790bbc | ff,fd        |
 | buraiken     | jttrojan   | 82102e51187d303113d420e42d443d66 | ff,ff        |
 | buraikenb    | jttrojan   | 693dc7ec6e4541b856627aaa67280198 | ff,ff        |
-| captcomm     | jtcps1     | 6544482d4fdffd3567d47e75daf0c42f | ff,f4,bf     |
-| captcommj    | jtcps1     | 14b7f6326731641ab30f448963553ed3 | ff,f4,bf     |
-| captcommjr1  | jtcps1     | e3e8559da07ed54e230726c261c9b3ce | ff,f4,bf     |
-| captcommr1   | jtcps1     | 86767a85489e48a65bbaa61f31ea68bf | ff,f4,bf     |
-| captcommu    | jtcps1     | 8f86943af3b78618df0d103597b0c453 | ff,f4,bf     |
+| captcomm     | jtcps1     | 6544482d4fdffd3567d47e75daf0c42f | ff,f4,9f     |
+| captcommj    | jtcps1     | 14b7f6326731641ab30f448963553ed3 | ff,f4,9f     |
+| captcommjr1  | jtcps1     | e3e8559da07ed54e230726c261c9b3ce | ff,f4,9f     |
+| captcommr1   | jtcps1     | 86767a85489e48a65bbaa61f31ea68bf | ff,f4,9f     |
+| captcommu    | jtcps1     | 8f86943af3b78618df0d103597b0c453 | ff,f4,9f     |
 | cawing       | jtcps1     | df07f29994f8b9121b2ed3ae88b14dc9 | ff,fc,bf     |
 | cawingj      | jtcps1     | a68ddbd5dfa5e69bdef92c60c72b5543 | ff,fc,bf     |
 | cawingr1     | jtcps1     | 496c2ed7e3b8a2ee97312e1fca7fd359 | ff,fc,bf     |
@@ -383,7 +383,7 @@
 | gradius2     | jttwin16   | 95250fdf3b379b67345dcdaf2f8817b2 | ff,5a,fd     |
 | gradius2a    | jttwin16   | fdffc1ea927004dfdeea97ea6c8fcdf6 | ff,5a,fd     |
 | gradius2b    | jttwin16   | 81a502901c475e5b0fddba5867510fbc | ff,5a,fd     |
-| gridiron     | jtwc       | 67078f4ef8846bf97e26398a9f6fd044 | ff,ff        |
+| gridiron     | jtwc       | a4f3b95edc9ccbcc47d7a93567ae116c | ff,ff        |
 | gryzor       | jtcontra   | 8a84bae46d2d2a4cdb7a2364f7239841 | ff,7a,ff     |
 | gryzor1      | jtcontra   | b5ff88f93a1cebec6fd192b8140763fe | ff,7a,ff     |
 | gulunpa      | jtcps1     | 2a6aba4ca3cd0cd81d9fb2494a706039 | ff,ff,df,ff  |
@@ -437,11 +437,11 @@
 | knightsj     | jtcps1     | 7fb330ad2b2cd8359fe5bddb40728960 | ff,fc,bf     |
 | knightsja    | jtcps1     | 7fb330ad2b2cd8359fe5bddb40728960 | ff,fc,bf     |
 | knightsu     | jtcps1     | 8f736f7ea9aa351831a79cb9ca61345e | ff,fc,bf     |
-| kod          | jtcps1     | 76d1507e465c0f609a4f88f0f4d0302a | ff,fc,bf     |
-| kodj         | jtcps1     | 2010f2e8f9467b2af86ecea9bf052900 | ff,fc,bf     |
-| kodja        | jtcps1     | 2010f2e8f9467b2af86ecea9bf052900 | ff,fc,bf     |
-| kodr1        | jtcps1     | afe8e010fb9b89b2d1a4eda0b6f034ee | ff,fc,bf     |
-| kodr2        | jtcps1     | 7558b2d5197f46234e2e3c53f4a0f13a | ff,fc,bf     |
+| kod          | jtcps1     | 76d1507e465c0f609a4f88f0f4d0302a | ff,fc,9f     |
+| kodj         | jtcps1     | 2010f2e8f9467b2af86ecea9bf052900 | ff,fc,9f     |
+| kodja        | jtcps1     | 2010f2e8f9467b2af86ecea9bf052900 | ff,fc,9f     |
+| kodr1        | jtcps1     | afe8e010fb9b89b2d1a4eda0b6f034ee | ff,fc,9f     |
+| kodr2        | jtcps1     | 7558b2d5197f46234e2e3c53f4a0f13a | ff,fc,9f     |
 | kodu         | jtcps1     | afdd82f2b6afa54cc9ddf529142028c3 | ff,fc,9f     |
 | kuniokun     | jtkunio    | 01ec6ae252b989a7fd9f1f611899141a | bf,ff        |
 | kuniokunb    | jtkunio    | 528dc7d21a8640bc053a980bd8d253f8 | bf,ff        |
@@ -528,10 +528,10 @@
 | mshvsfu      | jtcps2     | 5ee1da84aa4a5093e8e2cd64d1d7ceb3 | ff,ff        |
 | mshvsfu1     | jtcps2     | 19653ffd253dcadc2a2805b9db5e4622 | ff,ff        |
 | mshvsfu1d    | jtcps2     | bc642ed7856a9c3bd6208f96cd24369f | ff,ff        |
-| msword       | jtcps1     | 6f2bc254f588dec2f4a8a171b60c1569 | ff,bc,bf     |
-| mswordj      | jtcps1     | 076aa2d126fff85fa16ff884efea725e | ff,bc,bf     |
-| mswordr1     | jtcps1     | 1fbaf7c606da3cac099baf66c2796db0 | ff,bc,bf     |
-| mswordu      | jtcps1     | 4b6c8d8821fa7fbc39aa55bff7385edb | ff,bc,bf     |
+| msword       | jtcps1     | 6f2bc254f588dec2f4a8a171b60c1569 | ff,bc,9f     |
+| mswordj      | jtcps1     | 076aa2d126fff85fa16ff884efea725e | ff,bc,9f     |
+| mswordr1     | jtcps1     | 1fbaf7c606da3cac099baf66c2796db0 | ff,bc,9f     |
+| mswordu      | jtcps1     | 4b6c8d8821fa7fbc39aa55bff7385edb | ff,bc,9f     |
 | mtwins       | jtcps1     | f60b14e19d52490bd893b61ffcf7f063 | ff,fc,bf     |
 | mvp          | jts16b     | a75306c32b4a3e52506fdc2eec069c05 | ff,fd        |
 | mvpj         | jts16b     | cfe9f4ef18d1a092db54a550f0078e20 | ff,fd        |
@@ -551,10 +551,10 @@
 | mwalkj       | jts18      | e1c3906f55235736c4d92e7e87d5ac8a | ff,fd        |
 | mwalku       | jts18      | bd7eafc124dcfa000a76b911a3857dd9 | ff,fd        |
 | mx5000       | jtmx5k     | 51dfe5deef23094f7b7a4d85e983ac5e | ff,51,ff     |
-| nemo         | jtcps1     | 96c82493c2ddea4093a27f9a1c187333 | ff,fc,bf     |
-| nemoj        | jtcps1     | bc1fd457b0a397730655309139c22eb9 | ff,fc,bf     |
-| nemoja       | jtcps1     | 720a746ce0fe4d680a3441ec8c48e38b | ff,fc,bf     |
-| nemor1       | jtcps1     | dbbe6ea639ceb5150d0ee1574500e48e | ff,fc,bf     |
+| nemo         | jtcps1     | 96c82493c2ddea4093a27f9a1c187333 | ff,fc,9f     |
+| nemoj        | jtcps1     | bc1fd457b0a397730655309139c22eb9 | ff,fc,9f     |
+| nemoja       | jtcps1     | 720a746ce0fe4d680a3441ec8c48e38b | ff,fc,9f     |
+| nemor1       | jtcps1     | dbbe6ea639ceb5150d0ee1574500e48e | ff,fc,9f     |
 | ngp          | jtngp      | d87d876c4391935c9d48ef352a3ff02d |              |
 | ngpc         | jtngpc     | 3655aacebb43a963607d4cf821fc1301 |              |
 | nwarr        | jtcps2     | 035ba6522df30974258799303e42c4dd | ff,ff        |
@@ -936,11 +936,17 @@
 | timescan3    | jts16b     |                                  | ff,ff,ff     |
 | tknight      | jtgaiden   | 59049d60f9894a5f48f2eaa7ffb81927 | ff,ff        |
 | tmht         | jttmnt     | ee4c5a737803a7cb7125d93811bdd6a6 | ff,5e,ff     |
+| tmht22pe     | jtriders   | e7a5fadde66910974813f3caa17bd82b |              |
+| tmht24pe     | jtriders   | 6c376e72ecaf5b36162a23c0932aa055 |              |
 | tmht2p       | jttmnt     | a811b40a134905af07e43d841f9c08f3 | ff,5e,ff     |
 | tmht2pa      | jttmnt     | 160dd7b0f135466298a7eb5771f2d836 | ff,5e,ff     |
 | tmhta        | jttmnt     | efbed05d527fc095f62cd841fe1abf5d | ff,5e,ff     |
 | tmhtb        | jttmnt     | 6880c250a2be3c2cfe71f2241e9ac1da | ff,5e,ff     |
 | tmnt         | jttmnt     | 0cb03fa627e8bd4c0b09618325ee144a | ff,5e,ff     |
+| tmnt2        | jtriders   | da3f35de4efd173160cc8acafcd58a8a |              |
+| tmnt22pu     | jtriders   | 5c15a7b78ffd88240a392d48b537e5bb |              |
+| tmnt24pu     | jtriders   | dedf2a893c982eb8af9995ccdf5f005d |              |
+| tmnt2a       | jtriders   | 6ae293173c3872a3870b3150bdea4b60 |              |
 | tmnt2pj      | jttmnt     | b3c94b6477a2d11275c7283c55389dc4 | ff,5e,ff     |
 | tmnt2po      | jttmnt     | 1b914ef0a15fbc34773a69236885181e | ff,5e,ff     |
 | tmnta        | jttmnt     | 88a35f9060a645b334fa5cdf9f30773a | ff,5e,ff     |
@@ -990,11 +996,11 @@
 | vampj        | jtcps2     | 316636c0c12dc02e655cd2999d32ec65 | ff,ff        |
 | vampja       | jtcps2     | 8a11c65280dfd51f2afa6986b5dc26d6 | ff,ff        |
 | vampjr1      | jtcps2     | 22a8f400e0381d69f557f553ddc47ff1 | ff,ff        |
-| varth        | jtcps1     | 77cb793841b0336c769da0f216595ed1 | ff,f4,bf     |
-| varthj       | jtcps1     | 81e438fea2b897e543aee29b38c0e7b2 | ff,f4,bf     |
-| varthjr      | jtcps1     | 24afdc70340b3f5a63387c9c34d6f91c | ff,f4,bf     |
-| varthr1      | jtcps1     | 4535ba8f74f54c4ae7de56a9f9406e6e | ff,f4,bf     |
-| varthu       | jtcps1     | fef9e2c5962208623efe2249e813fdbc | ff,f4,bf     |
+| varth        | jtcps1     | 77cb793841b0336c769da0f216595ed1 | ff,f4,9f     |
+| varthj       | jtcps1     | 81e438fea2b897e543aee29b38c0e7b2 | ff,f4,9f     |
+| varthjr      | jtcps1     | 24afdc70340b3f5a63387c9c34d6f91c | ff,f4,9f     |
+| varthr1      | jtcps1     | 4535ba8f74f54c4ae7de56a9f9406e6e | ff,f4,9f     |
+| varthu       | jtcps1     | fef9e2c5962208623efe2249e813fdbc | ff,f4,9f     |
 | vendetta     | jtsimson   | 359653a2b2e7dd54a195352bb8f2de87 |              |
 | vendetta2pd  | jtsimson   | 20a1f79c3bdaf76f50dd5a156ef739d9 |              |
 | vendetta2peba | jtsimson   | e5f3156ae7b910aa43f98be0f10e7cac |              |
