@@ -193,11 +193,13 @@
 | s16b    | Wrestle War (set 3, World) (8751 317-0103)                                   | wrestwar  |
 | s18     | Alien Storm (World, 2 Players) (FD1094 317-0154)                             | astorm    |
 | s18     | Bloxeed (Japan) (FD1094 317-0139)                                            | bloxeed   |
+| s18     | Clockwork Aquario (prototype)                                                | aquario   |
 | s18     | Clutch Hitter (US) (FD1094 317-0176)                                         | cltchitr  |
 | s18     | Desert Breaker (World) (FD1094 317-0196)                                     | desertbr  |
 | s18     | Laser Ghost (World) (FD1094 317-0166)                                        | lghost    |
 | s18     | Michael Jackson's Moonwalker (World) (FD1094-8751 317-0159)                  | mwalk     |
 | s18     | Shadow Dancer (World)                                                        | shdancer  |
+| s18     | Wally wo Sagase! (rev B, Japan, 2 players) (FD1094 317-0197B)                | wwallyj   |
 | sarms   | Side Arms - Hyper Dyne (World, 861129)                                       | sidearms  |
 | sbaskt  | Super Basketball (version I, encrypted)                                      | sbasketb  |
 | sectnz  | Legendary Wings (US set 1)                                                   | lwings    |
@@ -253,4 +255,4 @@
 | xmen    | X-Men (4 Players ver EBA)                                                    | xmen      |
 | yiear   | Yie Ar Kung-Fu (program code I)                                              | yiear     |
 
-70 cores, supporting 252 games
+70 cores, supporting 254 games

@@ -1,5 +1,6 @@
 Place the following files in this folder:
 
+aquario.rom
 astorm.rom
 astorm3.rom
 astormj.rom
@@ -19,6 +20,9 @@ mwalku.rom
 shdancer.rom
 shdancer1.rom
 shdancerj.rom
+wwallyj.rom
+wwallyja.rom
+wwallyja3p.rom
 
 These files are generated using the mra tool in:
 https://github.com/sebdel/mra-tools-c/tree/master/release

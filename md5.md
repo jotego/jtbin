@@ -73,6 +73,7 @@
 | altbeastj    | jts16b     | 5b2eef8d585ed5505463960c0fba3a53 | ff,fd        |
 | altbeastj1   | jts16b     | c7124c354dcbbb050745594cf79df0b4 | ff,fd        |
 | altbeastj3   | jts16b     | 6cc4f8fb4472788a79a68b23fc3fa2de | ff,fd        |
+| aquario      | jts18      | d3a2aa270fec4a787440f994c9998ae4 | ff,f7        |
 | area88       | jtcps1     | 6454eb2d74631208ece064404009e98f | ff,fc,9f     |
 | area88r      | jtcps1     | 8781a8fb123ef1850338fb732ecbb42c | ff,fc,9f     |
 | arknoid2     | jtkiwi     | 7586279997dac5121b3b2ecc1c6ad29b | fe,7f        |
@@ -94,10 +95,10 @@
 | aurail       | jts16b     | f93b74596a242dcb89d60be521fe8bf5 | ff,fd        |
 | aurail1      | jts16b     | 946db3c1eebdcb619b58bfa7ade63943 | ff,fd        |
 | aurailj      | jts16b     | c177237cada99fcbd0764f0b3cde1981 | ff,fd        |
-| avengers     | jttrojan   | c7cb8950b8b304758ff87fc176d26e42 | ff,ff        |
-| avengersa    | jttrojan   | cda528aec7146f81bf3eee55a82e1167 | ff,ff        |
-| avengersb    | jttrojan   | 64d40e64c8aeea52401d7c267ccf5e50 | ff,ff        |
-| avengersc    | jttrojan   | 20d721bc0abcb4baa61309eeac19b4b5 | ff,ff        |
+| avengers     | jttrojan   |                                  | ff,ff        |
+| avengersa    | jttrojan   |                                  | ff,ff        |
+| avengersb    | jttrojan   |                                  | ff,ff        |
+| avengersc    | jttrojan   |                                  | ff,ff        |
 | avsp         | jtcps2     | b6404697e8a4c5285ae41600a9c041d2 | ff,ff        |
 | avspa        | jtcps2     | 01d8a842de5eac22b89556d0d9ca77c8 | ff,ff        |
 | avspd        | jtcps2     | 1a0c720bc66ba16c74d8d79e14e487af | ff,ff        |
@@ -149,8 +150,8 @@
 | bublcave10   | jtbubl     | 7710467e84e36e4ae808b76569f12f3c | ff,ff        |
 | bublcave11   | jtbubl     | d4a47ffdc71e6c6f147054af03032067 | ff,ff        |
 | bullet       | jts16b     | f90ca9abd612f8446da2f62d90790bbc | ff,fd        |
-| buraiken     | jttrojan   | 82102e51187d303113d420e42d443d66 | ff,ff        |
-| buraikenb    | jttrojan   | 693dc7ec6e4541b856627aaa67280198 | ff,ff        |
+| buraiken     | jttrojan   |                                  | ff,ff        |
+| buraikenb    | jttrojan   |                                  | ff,ff        |
 | captcomm     | jtcps1     | 6544482d4fdffd3567d47e75daf0c42f | ff,f4,9f     |
 | captcommj    | jtcps1     | 14b7f6326731641ab30f448963553ed3 | ff,f4,9f     |
 | captcommjr1  | jtcps1     | e3e8559da07ed54e230726c261c9b3ce | ff,f4,9f     |
@@ -1070,6 +1071,9 @@
 | ws           | jtshouse   | 19a2cf9e84115defe4e5b863a0f2cac6 | ff,ff        |
 | ws89         | jtshouse   | ecc8080a1ff473ac07a9c56dcfc1cf0e | ff           |
 | ws90         | jtshouse   | d1cacce6939feb7ce547fcb490b26575 | ff           |
+| wwallyj      | jts18      | 7a1269fa70febb1c3cc3ce9d43931878 | ff,fd        |
+| wwallyja     | jts18      | f6ee2ab77eb6617337ada148f316b30b | ff,fd        |
+| wwallyja3p   | jts18      | 336ef2c56322b7ac73194db765e631fe | ff,fd        |
 | wwfsstar     | jtwwfss    | 69a298d99856ad3c5d2d8d48cf7e7924 | ff,ff        |
 | wwfsstarc    | jtwwfss    |                                  | ff,ff        |
 | wwfsstarj    | jtwwfss    | 1820d1799a1d9a91e5bce010e52c9f3a | ff,ff        |

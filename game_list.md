@@ -916,6 +916,7 @@
 | s18     | Alien Storm (World, 3 Players) (FD1094 317-0148)                                           | astorm3       |
 | s18     | Bloxeed (Japan) (FD1094 317-0139)                                                          | bloxeed       |
 | s18     | Bloxeed (Japan, earlier) (FD1094 317-0139)                                                 | bloxeeda      |
+| s18     | Clockwork Aquario (prototype)                                                              | aquario       |
 | s18     | Clutch Hitter (Japan) (FD1094 317-0175)                                                    | cltchitrj     |
 | s18     | Clutch Hitter (US) (FD1094 317-0176)                                                       | cltchitr      |
 | s18     | Desert Breaker (Japan) (FD1094 317-0194)                                                   | desertbrj     |
@@ -929,6 +930,9 @@
 | s18     | Shadow Dancer (Japan)                                                                      | shdancerj     |
 | s18     | Shadow Dancer (US)                                                                         | shdancer1     |
 | s18     | Shadow Dancer (World)                                                                      | shdancer      |
+| s18     | Wally wo Sagase! (rev A, Japan, 2 players) (FD1094 317-0197A)                              | wwallyja      |
+| s18     | Wally wo Sagase! (rev A, Japan, 3 players) (FD1094 317-0198A)                              | wwallyja3p    |
+| s18     | Wally wo Sagase! (rev B, Japan, 2 players) (FD1094 317-0197B)                              | wwallyj       |
 | sarms   | Side Arms - Hyper Dyne (Japan, 861128)                                                     | sidearmsj     |
 | sarms   | Side Arms - Hyper Dyne (US, 861128)                                                        | sidearmsur1   |
 | sarms   | Side Arms - Hyper Dyne (US, 861202)                                                        | sidearmsu     |
@@ -1123,4 +1127,4 @@
 | yiear   | Yie Ar Kung-Fu (program code G)                                                            | yiear2        |
 | yiear   | Yie Ar Kung-Fu (program code I)                                                            | yiear         |
 
-71 cores, supporting 1122 games
+71 cores, supporting 1126 games

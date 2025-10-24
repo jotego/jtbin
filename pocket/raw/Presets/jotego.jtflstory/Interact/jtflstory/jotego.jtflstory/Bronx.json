@@ -14,8 +14,37 @@
 				"mask": "0xFFFFFFFB"
 			},
 			{
-				"name": "Service Mode",
+				"name": "Lightgun sensitivity",
 				"id": 1,
+				"type": "list",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfb000004",
+				"defaultval": 3,
+				"value": 0,
+				"mask": "0xFFFFFFFC",
+				"options": [
+					{
+						"name": "very high",
+						"value": "0x1"
+					},
+					{
+						"name": "high",
+						"value": "0x0"
+					},
+					{
+						"name": "low",
+						"value": "0x3"
+					},
+					{
+						"name": "very low",
+						"value": "0x2"
+					}
+				]
+			},
+			{
+				"name": "Service Mode",
+				"id": 2,
 				"type": "check",
 				"enabled": true,
 				"persist": true,
@@ -27,7 +56,7 @@
 			},
 			{
 				"name": "Demo Sounds",
-				"id": 2,
+				"id": 3,
 				"type": "check",
 				"enabled": true,
 				"persist": true,
@@ -38,7 +67,7 @@
 			},
 			{
 				"name": "Coin A",
-				"id": 3,
+				"id": 4,
 				"type": "list",
 				"enabled": true,
 				"persist": true,
@@ -67,7 +96,7 @@
 			},
 			{
 				"name": "Coin B",
-				"id": 4,
+				"id": 5,
 				"type": "list",
 				"enabled": true,
 				"persist": true,
@@ -96,7 +125,7 @@
 			},
 			{
 				"name": "Difficulty",
-				"id": 5,
+				"id": 6,
 				"type": "list",
 				"enabled": true,
 				"persist": true,
@@ -125,7 +154,7 @@
 			},
 			{
 				"name": "Bonus Life",
-				"id": 6,
+				"id": 7,
 				"type": "list",
 				"enabled": true,
 				"persist": true,
@@ -154,7 +183,7 @@
 			},
 			{
 				"name": "Lives",
-				"id": 7,
+				"id": 8,
 				"type": "list",
 				"enabled": true,
 				"persist": true,
@@ -183,7 +212,7 @@
 			},
 			{
 				"name": "Reset Damage (Cheat)",
-				"id": 8,
+				"id": 9,
 				"type": "check",
 				"enabled": true,
 				"persist": true,
@@ -195,7 +224,7 @@
 			},
 			{
 				"name": "Infinite Bullets",
-				"id": 9,
+				"id": 10,
 				"type": "check",
 				"enabled": true,
 				"persist": true,

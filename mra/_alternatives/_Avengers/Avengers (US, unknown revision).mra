@@ -31,7 +31,7 @@
     <rbf>jttrojan</rbf>
     <joystick>8</joystick>
     <region>World</region>
-    <rom index="0" zip="avengersc.zip|avengers.zip" md5="None" asm_md5="20d721bc0abcb4baa61309eeac19b4b5">
+    <rom index="0" zip="avengersc.zip|avengers.zip" md5="None">
         <!-- Header byte 8:
              bit 0 - Trojan
              bit 1 - Avengers
@@ -61,8 +61,8 @@
             <part name="avu_25.15n" crc="230d9e30" map="01"/>
             <part name="avu_24.13n" crc="a6354024" map="10"/>
         </interleave>
-        <!-- JTFRAME_BA3_START -->
         <!-- CHAR_START -->
+        <!-- JTFRAME_BA3_START -->
         <!-- gfx1 - starts at 0x40000 - length 0x8000 (15 bits) -->
         <interleave output="16">
             <part name="av_03.8k" crc="efb5883e" map="12"/>

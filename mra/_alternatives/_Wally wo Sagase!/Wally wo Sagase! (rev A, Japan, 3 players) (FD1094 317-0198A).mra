@@ -1,0 +1,96 @@
+<!--          FPGA arcade hardware by Jotego
+
+              This core is available for hardware compatible with MiST and MiSTer
+              Other FPGA systems may be supported by the time you read this.
+              This work is not mantained by the MiSTer project. Please contact the
+              core author for issues and updates.
+
+              (c) Jose Tejada, 2025. Please support this research
+              Patreon: https://patreon.com/jotego
+
+              The author does not endorse or participate in illegal distribution
+              of copyrighted material. This work can be used with compatible
+              software. This software can be homebrew projects or legally
+              obtained memory dumps of compatible games.
+
+              This file license is GNU GPLv2.
+              You can read the whole license file in
+              https://opensource.org/licenses/gpl-2.0.php
+
+-->
+
+<misterromdescription>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://jotego/jtcores"/>
+    <rotation>horizontal</rotation>
+    <name>Wally wo Sagase! (rev A, Japan, 3 players) (FD1094 317-0198A)</name>
+    <setname>wwallyja3p</setname>
+    <mameversion>0261</mameversion>
+    <year>1992</year>
+    <manufacturer>Sega</manufacturer>
+    <players>3</players>
+    <rbf>jts18</rbf>
+    <joystick/>
+    <region>Japan</region>
+    <rom index="0" zip="wwallyja3p.zip|wwallyj.zip" md5="None" address="0x30000000" asm_md5="336ef2c56322b7ac73194db765e631fe">
+        <!--  -->
+        <part>
+            00 00 80 00 80 02 80 03
+            80 08 82 08 00 00 00 00
+            00 01 00 00 00 00 00 00
+            02 00 00 00 00 00 00 00
+        </part>
+        <!-- maincpu - starts at 0x0 - length 0x80000 (19 bits) -->
+        <interleave output="16">
+            <part name="epr-14731a.a6" crc="64328385" map="01"/>
+            <part name="epr-14730a.a4" crc="d897bcc6" map="10"/>
+        </interleave>
+        <!-- soundcpu - starts at 0x80000 - length 0x200000 (21 bits) -->
+        <part name="epr-14725.c7" crc="2b29684f"/>
+        <part repeat="0x60000"> FF</part>
+        <part name="mpr-14724.c6" crc="47cbea86"/>
+        <part name="mpr-14723.c5" crc="bc5adc27"/>
+        <part name="mpr-14722.c4" crc="1bd081f8"/>
+        <!-- tiles - starts at 0x280000 - length 0x100000 (20 bits) -->
+        <interleave output="32">
+            <part name="mpr-14719.c1" crc="8b58c743" map="0001"/>
+            <part name="mpr-14720.c2" crc="f96d19f4" map="0010"/>
+            <part name="mpr-14721.c3" crc="c4ced91d" map="0100"/>
+            <part name="mpr-14721.c3" crc="c4ced91d" map="1000"/>
+        </interleave>
+        <!-- sprites - starts at 0x380000 - length 0x500000 (23 bits) -->
+        <interleave output="16">
+            <part name="mpr-14726.c10" crc="7213d1d3" map="01"/>
+            <part name="mpr-14732.a10" crc="04ced549" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="mpr-14727.c11" crc="3b74e0f0" map="01"/>
+            <part name="mpr-14733.a11" crc="6da0444f" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="mpr-14728.c12" crc="5b921587" map="01"/>
+            <part name="mpr-14734.a12" crc="6f3f5ed9" map="10"/>
+        </interleave>
+        <!-- maincpu:key - starts at 0x880000 - length 0x2000 (13 bits) -->
+        <part name="317-0198a.key" crc="32d313a4"/>
+        <!-- mcu - starts at 0x882000 -->
+        <!-- Total 0x882000 bytes - 8712 kBytes -->
+    </rom>
+    <rom index="17" zip="jtbeta.zip" md5="None" asm_md5="3e2d7474f2c93d482866bc2952047160">
+        <part name="beta.bin" crc="32970d5"/>
+    </rom>
+    <nvram index="2" size="16384"/>
+    <rom index="1">
+        <part>00 6E</part>
+    </rom>
+    <switches page_id="1" page_name="Switches" base="16" default="ff,fd">
+        <COINAGE/>
+        <dip name="Coin A" bits="0,3" ids="Free Play or 1/1,1/1 2/3,1/1 4/5,1/1 5/6,2/1 4/3,2/1 5/3 6/4,2/3,4/1,3/1,2/1,1/6,1/5,1/4,1/3,1/2,1/1"/>
+        <dip name="Coin B" bits="4,7" ids="Free Play or 1/1,1/1 2/3,1/1 4/5,1/1 5/6,2/1 4/3,2/1 5/3 6/4,2/3,4/1,3/1,2/1,1/6,1/5,1/4,1/3,1/2,1/1"/>
+        <DSW/>
+        <dip name="2 Credits to Start" bits="8" ids="On,Off"/>
+        <dip name="Demo Sounds" bits="9" ids="On,Off"/>
+        <dip name="Coin Chute" bits="10" ids="Common,Individual"/>
+        <dip name="Difficulty" bits="13,14" ids="Hardest,Hard,Easy,Normal"/>
+    </switches>
+    <buttons names="Confirm,-,-,-,Start,Coin,Core credits" default="A,Start,Select,-" count="1"/>
+</misterromdescription>

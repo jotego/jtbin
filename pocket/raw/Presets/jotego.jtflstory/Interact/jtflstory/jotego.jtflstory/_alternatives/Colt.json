@@ -3,8 +3,37 @@
 		"magic": "APF_VER_1",
 		"variables": [
 			{
-				"name": "Bonus Life",
+				"name": "Lightgun sensitivity",
 				"id": 0,
+				"type": "list",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfb000004",
+				"defaultval": 3,
+				"value": 0,
+				"mask": "0xFFFFFFFC",
+				"options": [
+					{
+						"name": "very high",
+						"value": "0x1"
+					},
+					{
+						"name": "high",
+						"value": "0x0"
+					},
+					{
+						"name": "low",
+						"value": "0x3"
+					},
+					{
+						"name": "very low",
+						"value": "0x2"
+					}
+				]
+			},
+			{
+				"name": "Bonus Life",
+				"id": 1,
 				"type": "list",
 				"enabled": true,
 				"persist": true,
@@ -33,7 +62,7 @@
 			},
 			{
 				"name": "Infinite Bullets",
-				"id": 1,
+				"id": 2,
 				"type": "check",
 				"enabled": true,
 				"persist": true,
@@ -45,7 +74,7 @@
 			},
 			{
 				"name": "Lives",
-				"id": 2,
+				"id": 3,
 				"type": "list",
 				"enabled": true,
 				"persist": true,
@@ -74,7 +103,7 @@
 			},
 			{
 				"name": "Free Play",
-				"id": 3,
+				"id": 4,
 				"type": "check",
 				"enabled": true,
 				"persist": true,
@@ -86,7 +115,7 @@
 			},
 			{
 				"name": "Allow Continue",
-				"id": 4,
+				"id": 5,
 				"type": "check",
 				"enabled": true,
 				"persist": true,
@@ -98,7 +127,7 @@
 			},
 			{
 				"name": "Demo Sounds",
-				"id": 5,
+				"id": 6,
 				"type": "check",
 				"enabled": true,
 				"persist": true,
@@ -109,7 +138,7 @@
 			},
 			{
 				"name": "Coin A",
-				"id": 6,
+				"id": 7,
 				"type": "list",
 				"enabled": true,
 				"persist": true,
@@ -186,7 +215,7 @@
 			},
 			{
 				"name": "Coin B",
-				"id": 7,
+				"id": 8,
 				"type": "list",
 				"enabled": true,
 				"persist": true,
@@ -263,7 +292,7 @@
 			},
 			{
 				"name": "Freeze",
-				"id": 8,
+				"id": 9,
 				"type": "check",
 				"enabled": true,
 				"persist": true,
@@ -275,7 +304,7 @@
 			},
 			{
 				"name": "Training Spot",
-				"id": 9,
+				"id": 10,
 				"type": "check",
 				"enabled": true,
 				"persist": true,
@@ -286,7 +315,7 @@
 			},
 			{
 				"name": "Difficulty",
-				"id": 10,
+				"id": 11,
 				"type": "list",
 				"enabled": true,
 				"persist": true,
@@ -315,7 +344,7 @@
 			},
 			{
 				"name": "Coinage Display",
-				"id": 11,
+				"id": 12,
 				"type": "check",
 				"enabled": true,
 				"persist": true,
@@ -326,7 +355,7 @@
 			},
 			{
 				"name": "Reset Damage",
-				"id": 12,
+				"id": 13,
 				"type": "list",
 				"enabled": true,
 				"persist": true,
@@ -344,18 +373,6 @@
 						"value": "0x200000"
 					}
 				]
-			},
-			{
-				"name": "No Hit (Cheat)",
-				"id": 13,
-				"type": "check",
-				"enabled": true,
-				"persist": true,
-				"address": "0xfa000000",
-				"defaultval": 0,
-				"value": 0,
-				"value_off": 4194304,
-				"mask": "0xFFBFFFFF"
 			},
 			{
 				"name": "Default",
