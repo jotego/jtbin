@@ -44,7 +44,8 @@
              bit 0 = service XOR
              bit 1 = button aid
              bit 2 = 3 MHz for FM module
-             bit 3 = Kabuki Z with different memory map   -->
+             bit 3 = Kabuki Z with different memory map
+             bit 4 = 13 bits tilemap code -->
         <part>
             03 03 00 00 </part>
         <!-- maincpu - starts at 0x0 - length 0x20000 (17 bits) -->

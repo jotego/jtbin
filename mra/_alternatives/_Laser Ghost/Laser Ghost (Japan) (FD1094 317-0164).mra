@@ -89,9 +89,6 @@
         <!-- mcu - starts at 0xB02000 -->
         <!-- Total 0xB02000 bytes - 11272 kBytes -->
     </rom>
-    <rom index="17" zip="jtbeta.zip" md5="None" asm_md5="64bf6f32556d237ec04d22062b462fde">
-        <part name="beta.bin" crc="84dbdb6d"/>
-    </rom>
     <nvram index="2" size="16384"/>
     <!-- Light gun -->
     <rom index="1">

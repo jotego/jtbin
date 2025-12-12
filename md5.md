@@ -278,9 +278,9 @@
 | dokaben      | jtpang     | aed01410541f90abb2ae92f2a2dab45f |              |
 | dokaben2     | jtpang     | be97dfbe39de4bbd1e3a8fbe4b409093 |              |
 | drgninja     | jtninja    | 7f8184d0612bdffb26c41b399e6f2428 | ff,ff        |
-| drtoppel     | jtkiwi     | 3c672dd2cd71cc489382ba09aa732b34 | fe,ff        |
-| drtoppelj    | jtkiwi     | 8b519a1d1fcd91748684962121300d1a | fe,ff        |
-| drtoppelu    | jtkiwi     | 65f40accaa9ec3b34296a31679ca898e | fe,ff        |
+| drtoppel     | jtkiwi     | 9fe58312fd09b1f45592df79c9fb6551 | fe,ff        |
+| drtoppelj    | jtkiwi     | 353f1ea1938b30281fa8a02b3641bb08 | fe,ff        |
+| drtoppelu    | jtkiwi     | e1b01d90a11177ea96adae5f3c77084b | fe,ff        |
 | dspirit      | jtshouse   | f74acdfc93b19b69b7668ca0f03ecb3c | ff           |
 | dspirit1     | jtshouse   | 486c045de83094d9bb6cb964cb10238b | ff           |
 | dspirit2     | jtshouse   | 3c7e87c4ca1d154cbf0c9cf19519d58d | ff           |

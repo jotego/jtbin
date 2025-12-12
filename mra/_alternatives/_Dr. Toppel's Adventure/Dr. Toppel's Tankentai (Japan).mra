@@ -31,7 +31,7 @@
     <rbf>jtkiwi</rbf>
     <joystick>8</joystick>
     <region>World</region>
-    <rom index="0" zip="drtoppelj.zip|drtoppel.zip" md5="None" asm_md5="8b519a1d1fcd91748684962121300d1a">
+    <rom index="0" zip="drtoppelj.zip|drtoppel.zip" md5="None" asm_md5="353f1ea1938b30281fa8a02b3641bb08">
         <!-- bit 0 = MCU
              bit 1 = color PROM
              bit 2 = Kabuki Z (specific sound features)
@@ -44,9 +44,10 @@
              bit 0 = service XOR
              bit 1 = button aid
              bit 2 = 3 MHz for FM module
-             bit 3 = Kabuki Z with different memory map   -->
+             bit 3 = Kabuki Z with different memory map
+             bit 4 = 13 bits tilemap code -->
         <part>
-            03 00 00 00 </part>
+            03 10 00 00 </part>
         <!-- maincpu - starts at 0x0 - length 0x20000 (17 bits) -->
         <part name="b19__09.11c" crc="3e654f82"/>
         <part name="b19__10.9c" crc="7e72fd25"/>

@@ -83,9 +83,6 @@
         <!-- mcu - starts at 0x680000 -->
         <!-- Total 0x680000 bytes - 6656 kBytes -->
     </rom>
-    <rom index="17" zip="jtbeta.zip" md5="None" asm_md5="64bf6f32556d237ec04d22062b462fde">
-        <part name="beta.bin" crc="84dbdb6d"/>
-    </rom>
     <nvram index="2" size="16384"/>
     <!-- Vertical screen. -->
     <rom index="1">
