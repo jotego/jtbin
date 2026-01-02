@@ -613,6 +613,8 @@
 | pnickj       | jtcps1     | 39d46d81dfc6c10c94b02cf812bfd817 | ff,fc,ff     |
 | pokonyan     | jtcps1     | 0c22b6a35a4c7dcf7ee3d42b04a1f1df | be,fb,ff,ff  |
 | pompingw     | jtpang     | 6be48a4c0844f8c6737f13d6e239a358 |              |
+| prmrsocr     | jtprmr     | 8bbe3dc529c084d115f4e650a34fd770 | ff,ef        |
+| prmrsocrj    | jtprmr     | ee63d5e7b418b0786ddcf6ffc213d2fc | ff,ef        |
 | progear      | jtcps2     | 1104d941c107b26220d065299c2b15d6 | ff,ff        |
 | progeara     | jtcps2     | a45b4075d1a07daaa99074082f3de434 | ff,ff        |
 | progearj     | jtcps2     | 2e8b562f5113aa4eecaab509e103dae4 | ff,ff        |
@@ -1070,10 +1072,10 @@
 | wndrmomo     | jtthundr   | 3582847800970c18fc80da6755a0db48 | f7,fb        |
 | wndrplnt     | jtkarnov   | e81ae47504db6a4446676dfb39dfbab0 | 7f,ff        |
 | wof          | jtcps15    | 0e41c840a0f9d1c443c0e388c73dc11c | ff           |
-| wofa         | jtcps15    | 62ace165f74e3b5e07cd788edea93b67 | ff           |
-| wofch        | jtcps15    | 48b77e2085ef0341442f2629dda27346 | ff,ff        |
+| wofa         | jtcps15    | 81138646f5359db9295de1d96072f767 | ff           |
+| wofch        | jtcps15    | c24a8e920055ae2d37ec990523ec0a11 | ff,ff        |
 | wofj         | jtcps15    | 86b9b805367cf1470739b3a563c2d00d | ff           |
-| wofr1        | jtcps15    | 8a9da03c9d081e3afeed1b6a1dc78630 | ff           |
+| wofr1        | jtcps15    | 1d54678f654c625d4f43386ea9a093e4 | ff           |
 | wofu         | jtcps15    | 68f53e78ec9fd959f0357633cc80fff5 | ff           |
 | wonder3      | jtcps1     | cf05172a2bac132869872f0f00aa62ee | ff,9a,99     |
 | wrestwar     | jts16b     | 2b5f95a8e696e54ed21149606b6ae9b0 | ff,fd        |

@@ -5,7 +5,7 @@
               This work is not mantained by the MiSTer project. Please contact the
               core author for issues and updates.
 
-              (c) Jose Tejada, 2025. Please support this research
+              (c) Jose Tejada, 2026. Please support this research
               Patreon: https://patreon.com/jotego
 
               The author does not endorse or participate in illegal distribution
@@ -73,9 +73,6 @@
         <part name="pl1-4.4n" crc="3a7be418"/>
         <part name="pl1-3.6l" crc="80558da8"/>
         <!-- Total 0x38400 bytes - 225 kBytes -->
-    </rom>
-    <rom index="17" zip="jtbeta.zip" md5="None" asm_md5="64bf6f32556d237ec04d22062b462fde">
-        <part name="beta.bin" crc="84dbdb6d"/>
     </rom>
     <nvram index="2" size="16388"/>
     <rom index="1">

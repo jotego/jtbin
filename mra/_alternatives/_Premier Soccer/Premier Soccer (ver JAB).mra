@@ -1,0 +1,93 @@
+<!--          FPGA arcade hardware by Jotego
+
+              This core is available for hardware compatible with MiST and MiSTer
+              Other FPGA systems may be supported by the time you read this.
+              This work is not mantained by the MiSTer project. Please contact the
+              core author for issues and updates.
+
+              (c) Jose Tejada, 2026. Please support this research
+              Patreon: https://patreon.com/jotego
+
+              The author does not endorse or participate in illegal distribution
+              of copyrighted material. This work can be used with compatible
+              software. This software can be homebrew projects or legally
+              obtained memory dumps of compatible games.
+
+              This file license is GNU GPLv2.
+              You can read the whole license file in
+              https://opensource.org/licenses/gpl-2.0.php
+
+-->
+
+<misterromdescription>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://jotego/jtcores"/>
+    <rotation>horizontal</rotation>
+    <name>Premier Soccer (ver JAB)</name>
+    <setname>prmrsocrj</setname>
+    <mameversion>0261</mameversion>
+    <year>1993</year>
+    <manufacturer>Konami</manufacturer>
+    <players>2</players>
+    <rbf>jtprmr</rbf>
+    <joystick>8</joystick>
+    <region>World</region>
+    <rom index="0" zip="prmrsocrj.zip|prmrsocr.zip" md5="None" address="0x30000000" asm_md5="ee63d5e7b418b0786ddcf6ffc213d2fc">
+        <!-- Offsets for each ROM region. Byte 15 = game selection. -->
+        <part>
+            00 00 80 00 A0 02 20 03
+            FF FF 00 00 00 00 00 01
+        </part>
+        <!-- maincpu - starts at 0x0 - length 0x80000 (19 bits) -->
+        <interleave output="16">
+            <part name="101jab07.4h" crc="06e7acaf" map="01"/>
+            <part name="101jab08.1h" crc="c22b528c" map="10"/>
+        </interleave>
+        <!-- audiocpu - starts at 0x80000 - length 0x20000 (17 bits) -->
+        <part name="101c05.5e" crc="02c3679f"/>
+        <!-- pcm - starts at 0xA0000 - length 0x200000 (21 bits) -->
+        <part name="101a06.1d" crc="4f48e043"/>
+        <!-- k052109 - starts at 0x2A0000 - length 0x80000 (19 bits) -->
+        <interleave output="32">
+            <part name="101a12.12l" crc="33530d7f" map="0021" length="0x40000"/>
+            <part name="101a11.12k" crc="7f773271" map="2100" length="0x40000"/>
+        </interleave>
+        <!-- JTFRAME_BA3_START -->
+        <!-- obj - starts at 0x320000 - length 0x400000 (22 bits) -->
+        <interleave output="16">
+            <part name="101a09.3l" crc="b6a1b424" map="01"/>
+            <part name="101a10.8l" crc="bbd58adc" map="10"/>
+        </interleave>
+        <!-- PSC_START -->
+        <!-- z-tiles - starts at 0x720000 - length 0x80000 (19 bits) -->
+        <part name="101a03.18f" crc="59a1a91c"/>
+        <!-- PSCMAP_START -->
+        <!-- z-tilemap - starts at 0x7A0000 - length 0x40000 (18 bits) -->
+        <interleave output="16">
+            <part name="101a02.16d" crc="222869c7" map="01"/>
+            <part name="101a01.18d" crc="716f910f" map="10"/>
+        </interleave>
+        <!-- Total 0x7E0000 bytes - 8064 kBytes -->
+    </rom>
+    <rom index="2">
+        <part>
+03 F1 FC 0E 91 01 45 41 42 00 00 00 02 03 80 14
+FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+</part>
+    </rom>
+    <nvram index="2" size="41153"/>
+    <!--  8-pxl black frame on sides. -->
+    <rom index="1">
+        <part>20 80</part>
+    </rom>
+    <switches page_id="1" page_name="Switches" base="16" default="ff,ef">
+        <P1_COINS/>
+        <dip name="Sound" bits="12" ids="Stereo,Mono"/>
+    </switches>
+    <buttons names="Shoot,Pass,-,Start,Coin,Core credits" default="A,B,Start,Select,-" count="2"/>
+</misterromdescription>

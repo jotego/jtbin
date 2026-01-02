@@ -753,6 +753,8 @@
 | paroda  | Surprise Attack (Japan ver. M)                                                             | suratkj       |
 | paroda  | Surprise Attack (World ver. K)                                                             | suratk        |
 | pinpon  | Konami's Ping-Pong                                                                         | pingpong      |
+| prmr    | Premier Soccer (ver EAB)                                                                   | prmrsocr      |
+| prmr    | Premier Soccer (ver JAB)                                                                   | prmrsocrj     |
 | rastan  | Rastan (US Rev 1)                                                                          | rastanu       |
 | rastan  | Rastan (US)                                                                                | rastanua      |
 | rastan  | Rastan (US, earlier code base)                                                             | rastanub      |
@@ -1138,4 +1140,4 @@
 | yiear   | Yie Ar Kung-Fu (program code G)                                                            | yiear2        |
 | yiear   | Yie Ar Kung-Fu (program code I)                                                            | yiear         |
 
-71 cores, supporting 1137 games
+72 cores, supporting 1139 games
