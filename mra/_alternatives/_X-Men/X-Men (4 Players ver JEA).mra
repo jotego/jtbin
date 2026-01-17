@@ -31,7 +31,7 @@
     <rbf>jtxmen</rbf>
     <joystick>8</joystick>
     <region>World</region>
-    <rom index="0" zip="xmenja.zip|xmen.zip" md5="None" asm_md5="705f6cc62a9eec7082dfbc9cab566850">
+    <rom index="0" zip="xmenja.zip|xmen.zip" md5="None" address="0x30000000" asm_md5="705f6cc62a9eec7082dfbc9cab566850">
         <!-- Offsets for each ROM region. Byte 15 = game selection. -->
         <part>
             00 00 00 01 20 03 20 05

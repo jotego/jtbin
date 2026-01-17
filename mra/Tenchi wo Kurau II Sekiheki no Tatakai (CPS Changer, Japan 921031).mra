@@ -91,5 +91,5 @@
         <DSWB/>
         <DSWC/>
     </switches>
-    <buttons names="Attack,Jump,-,-,-,-,Start,Coin,Core credits" default="A,B,Start,Select,-" count="2"/>
+    <buttons names="Attack,Jump,Mega,-,-,-,Start,Coin,Core credits" default="A,B,X,Start,Select,-" count="3"/>
 </misterromdescription>
