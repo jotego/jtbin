@@ -406,7 +406,7 @@
 | hcastle      | jtcastle   | fa57e3e98d64b6ec7ae38c38eec37dba | ff,53,ff     |
 | hcastlee     | jtcastle   | aee30d1dcb3e2bb48ed1359eed549bf9 | ff,53,ff     |
 | hcastlek     | jtcastle   | 792920a9d62f4c492e6b05968e1d5d33 | ff,53,ff     |
-| higemaru     | jt1942     | fd3dfa858b78ce0bba2260ba639dcd86 | ff,fe        |
+| higemaru     | jt1942     | 4b24cc8caa1046dc6e4a03ccff0f67dc | ff,fe        |
 | hippodrm     | jtcop      | a8bf65155b3daa5dcb5a00a268a09447 | ff,ff        |
 | hopmappy     | jtthundr   | ceda8abc8a55b64229d3485d7852241c | ff,ff        |
 | hpolym84     | jtroadf    | dc1b46a420f87a175b025c330aa6af01 | ff,49,ff     |
@@ -683,7 +683,7 @@
 | rthunder1    | jtthundr   | aca346b4f3a12ce8f7aed6c417f8415d | ff,f8        |
 | rthunder2    | jtthundr   | fa4d6999a8ddb1df96997fdeaef59a18 | ff,f8        |
 | rthundera    | jtthundr   | d0aba8f190c6991607f221d4ff17db0c | ff,f8        |
-| rumba        | jtflstory  | 924fc213456df0f3480c6cbf2cb84cc2 | fc,00,e3     |
+| rumba        | jtflstory  | 9b60927acf8ccbb4730991ce176c7672 | fc,00,e3     |
 | rungun       | jtrungun   | ef58338c6eec144686d3634228a6f277 | 8f           |
 | runguna      | jtrungun   | 4ecfd8f43f496898e2803c6d70e27b57 | 8f           |
 | rungunb      | jtrungun   | a48060b299b11885042121486de4a8ec | 8f           |
@@ -1054,7 +1054,7 @@
 | vulcana      | jttwin16   | 5727df52b98b4fa0e04f539ba6d37f37 | ff,5a,fd     |
 | vulcanb      | jttwin16   | 914dc30be97040a171c40596f52811ed | ff,5a,fd     |
 | vulgus       | jt1942     | a2491b35a3630e0ff50c257ef89ca8e2 | ff,7f        |
-| vulgusa      | jt1942     | 735e55870ab3af319593c8f1b4c3b5da | ff,7f        |
+| vulgusa      | jt1942     | 2f6f260149cd30ab59f5d484f35ab238 | ff,7f        |
 | vulgusj      | jt1942     | c56ca388b18708989a7e498eab981f49 | ff,7f        |
 | wb3          | jts16b     | f3e0c4dbf684ce6212e5eaf89545f0e9 | ff,fd        |
 | wb31         | jts16      | 60351f24d4ed05826bfc0f948c081c3b | ff,fd        |

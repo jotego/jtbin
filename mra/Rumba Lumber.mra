@@ -31,7 +31,7 @@
     <rbf>jtflstory</rbf>
     <joystick>8</joystick>
     <region>World</region>
-    <rom index="0" zip="rumba.zip" md5="None" asm_md5="924fc213456df0f3480c6cbf2cb84cc2">
+    <rom index="0" zip="rumba.zip" md5="None" asm_md5="9b60927acf8ccbb4730991ce176c7672">
         <!-- 
 		byte 0: PCB id
 		byte 1: 0 == same orientation as flstory
@@ -62,7 +62,7 @@
 		      1?? == 2 banks
  -->
         <part>
-            02 12 00 01 01 01 00 00
+            02 10 00 01 01 01 00 00
         </part>
         <!-- maincpu - starts at 0x0 - length 0xC000 (16 bits) -->
         <part name="a23_01-1.bin" crc="4bea6e18"/>
