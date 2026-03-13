@@ -1,11 +1,12 @@
 Place the following files in this folder:
 
 ddragon.rom
+ddragona.rom
+ddragonbl2.rom
+ddragonj.rom
 ddragonu.rom
 ddragonua.rom
 ddragonub.rom
-ddragonw.rom
-ddragonw1.rom
 
 These files are generated using the mra tool in:
 https://github.com/sebdel/mra-tools-c/tree/master/release

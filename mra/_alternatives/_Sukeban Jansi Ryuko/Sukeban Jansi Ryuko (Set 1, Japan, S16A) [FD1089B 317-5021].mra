@@ -24,7 +24,7 @@
     <rotation>horizontal</rotation>
     <name>Sukeban Jansi Ryuko (Set 1, Japan, S16A) [FD1089B 317-5021]</name>
     <setname>sjryuko1</setname>
-    <mameversion>0261</mameversion>
+    <mameversion>0282</mameversion>
     <year>1987</year>
     <manufacturer>White Board</manufacturer>
     <players>1</players>
@@ -58,7 +58,7 @@
         <!-- soundcpu - starts at 0x40000 - length 0x8000 (15 bits) -->
         <part name="epr-12227.12" crc="5b12409d"/>
         <!-- PCM_START -->
-        <!-- n7751data - starts at 0x48000 - length 0x40000 (18 bits) -->
+        <!-- upd7751data - starts at 0x48000 - length 0x40000 (18 bits) -->
         <part name="epr-12228.1" crc="6b2e6aef"/>
         <part name="epr-12229.2" crc="b7aa015c"/>
         <part name="epr-12230.4" crc="d0f61fd4"/>
@@ -100,7 +100,7 @@
         <!-- maincpu:key - starts at 0x182000 - length 0x2000 (13 bits) -->
         <part name="317-5021.key" crc="8e40b2ab"/>
         <!-- N7751_START -->
-        <!-- n7751 - starts at 0x184000 - length 0x400 (10 bits) -->
+        <!-- upd7751 - starts at 0x184000 - length 0x400 (10 bits) -->
         <part name="7751.bin" crc="6a9534fc"/>
         <part repeat="0x1C00"> FF</part>
         <!-- FD1089 base table starts at 0x186000 -->

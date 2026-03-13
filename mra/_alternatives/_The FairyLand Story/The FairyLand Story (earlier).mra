@@ -24,7 +24,7 @@
     <rotation>horizontal</rotation>
     <name>The FairyLand Story (earlier)</name>
     <setname>flstoryo</setname>
-    <mameversion>0261</mameversion>
+    <mameversion>0282</mameversion>
     <year>1985</year>
     <manufacturer>Taito</manufacturer>
     <players>2</players>
@@ -76,7 +76,7 @@
         <part name="a45_13.9" crc="451f92f9"/>
         <part repeat="0x8000"> FF</part>
         <!-- JTFRAME_BA2_START -->
-        <!-- gfx1 - starts at 0x4C000 - length 0x20000 (17 bits) -->
+        <!-- tiles - starts at 0x4C000 - length 0x20000 (17 bits) -->
         <interleave output="16">
             <part name="vid-a45.18" crc="6f08f69e" map="01"/>
             <part name="vid-a45.19" crc="2b572dc9" map="10"/>

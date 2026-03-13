@@ -21,7 +21,7 @@ Gang Busters (set 1) --> gbusters.rom
 Gang Busters (set 2) --> gbustersa.rom
 Super Contra (set 1) --> scontra.rom
 Super Contra (set 2) --> scontraa.rom
-Super Contra - Alien no Gyakushuu (Japan) --> scontraj.rom
+Super Contra: Alien no Gyakushuu (Japan) --> scontraj.rom
 Thunder Cross (set 1) --> thunderx.rom
 Thunder Cross (set 2) --> thunderxa.rom
 Thunder Cross (set 3) --> thunderxb.rom

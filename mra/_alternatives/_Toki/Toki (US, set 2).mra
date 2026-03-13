@@ -24,7 +24,7 @@
     <rotation>horizontal</rotation>
     <name>Toki (US, set 2)</name>
     <setname>tokiua</setname>
-    <mameversion>0261</mameversion>
+    <mameversion>0282</mameversion>
     <year>1989</year>
     <manufacturer>TAD Corporation (Fabtek license)</manufacturer>
     <players>2</players>
@@ -41,15 +41,15 @@
             <part name="3.k12" crc="a01a5b10" map="01"/>
             <part name="5.m12" crc="d6a82808" map="10"/>
         </interleave>
-        <!-- gfx1 - starts at 0x60000 - length 0x20000 (17 bits) -->
+        <!-- chars - starts at 0x60000 - length 0x20000 (17 bits) -->
         <part name="1.c5" crc="8aa964a2"/>
         <part name="2.c3" crc="86e87e48"/>
-        <!-- gfx2 - starts at 0x80000 - length 0x100000 (20 bits) -->
+        <!-- sprites - starts at 0x80000 - length 0x100000 (20 bits) -->
         <part name="toki_obj1.c20" crc="a27a80ba"/>
         <part name="toki_obj2.c22" crc="fa687718"/>
-        <!-- gfx3 - starts at 0x180000 - length 0x80000 (19 bits) -->
+        <!-- bgtiles - starts at 0x180000 - length 0x80000 (19 bits) -->
         <part name="toki_bk1.cd8" crc="fdaa5f4b"/>
-        <!-- gfx4 - starts at 0x200000 - length 0x80000 (19 bits) -->
+        <!-- fgtiles - starts at 0x200000 - length 0x80000 (19 bits) -->
         <part name="toki_bk2.ef8" crc="d86ac664"/>
         <!-- JTFRAME_BA1_START -->
         <!-- audiocpu - starts at 0x280000 - length 0x12000 (17 bits) -->

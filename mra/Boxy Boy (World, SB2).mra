@@ -24,7 +24,7 @@
     <rotation>horizontal</rotation>
     <name>Boxy Boy (World, SB2)</name>
     <setname>boxyboy</setname>
-    <mameversion>0261</mameversion>
+    <mameversion>0282</mameversion>
     <year>1990</year>
     <manufacturer>Namco</manufacturer>
     <players>2</players>
@@ -44,7 +44,7 @@ Byte 7: addr for upper nibble read
         <part>
             03 37 02 03 00 FF 04 FF
         </part>
-        <!-- user1 - starts at 0x0 - length 0x3A0000 (22 bits) -->
+        <!-- mainrom - starts at 0x0 - length 0x3A0000 (22 bits) -->
         <part name="sb1_prg0.bin" crc="8af8cb73" length="0x20000"/>
         <part repeat="0x60000"> FF</part>
         <part name="sb1_prg1.bin" crc="5d1fdd94" length="0x20000"/>

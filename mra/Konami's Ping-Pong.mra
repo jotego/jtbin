@@ -24,12 +24,12 @@
     <rotation>horizontal</rotation>
     <name>Konami&apos;s Ping-Pong</name>
     <setname>pingpong</setname>
-    <mameversion>0261</mameversion>
+    <mameversion>0282</mameversion>
     <year>1985</year>
     <manufacturer>Konami</manufacturer>
     <players>2</players>
     <rbf>jtpinpon</rbf>
-    <joystick>2</joystick>
+    <joystick/>
     <region>World</region>
     <rom index="0" zip="pingpong.zip" md5="None" asm_md5="3c6eaf0db6cb96ab18e8c5ca63aed2a9">
         <!-- maincpu - starts at 0x0 - length 0x8000 (15 bits) -->
@@ -63,5 +63,5 @@
         <SYSTEM/>
         <dip name="Service Mode" bits="13" ids="On,Off"/>
     </switches>
-    <buttons names="Button 1, button 2,Start,Coin,Core credits" default="A,B,Start,Select,-" count="2"/>
+    <buttons names="Button 1, button 2,-,-,Start,Coin,Core credits" default="A,B,Start,Select,-" count="2"/>
 </misterromdescription>

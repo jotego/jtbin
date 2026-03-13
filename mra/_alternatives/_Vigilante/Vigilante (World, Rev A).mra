@@ -24,7 +24,7 @@
     <rotation>horizontal</rotation>
     <name>Vigilante (World, Rev A)</name>
     <setname>vigilanta</setname>
-    <mameversion>0261</mameversion>
+    <mameversion>0282</mameversion>
     <year>1988</year>
     <manufacturer>Irem</manufacturer>
     <players>2</players>
@@ -43,17 +43,17 @@
         <!-- m72 - starts at 0x30000 - length 0x10000 (16 bits) -->
         <part name="vg_a-4d-a.ic26" crc="9b85101d"/>
         <!-- JTFRAME_BA2_START -->
-        <!-- gfx1 - starts at 0x40000 - length 0x40000 (18 bits) -->
+        <!-- chars - starts at 0x40000 - length 0x40000 (18 bits) -->
         <interleave output="16">
             <part name="613.ic34" crc="ee7a6c2f" map="01"/>
             <part name="614.ic35" crc="6422e8ba" map="10"/>
         </interleave>
         <!-- SCR2_START -->
-        <!-- gfx3 - starts at 0x80000 - length 0x40000 (18 bits) -->
+        <!-- bgtiles - starts at 0x80000 - length 0x40000 (18 bits) -->
         <part name="619.ic2" crc="9e2f8759"/>
         <part name="612.ic4" crc="85057c81"/>
         <!-- JTFRAME_BA3_START -->
-        <!-- gfx2 - starts at 0xC0000 - length 0x80000 (19 bits) -->
+        <!-- sprites - starts at 0xC0000 - length 0x80000 (19 bits) -->
         <interleave output="16">
             <part name="616.ic62" crc="fbe9552d" map="01"/>
             <part name="618.ic64" crc="afb77461" map="10"/>

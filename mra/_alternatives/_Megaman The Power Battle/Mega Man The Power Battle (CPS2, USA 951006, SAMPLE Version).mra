@@ -24,7 +24,7 @@
     <rotation>horizontal</rotation>
     <name>Mega Man: The Power Battle (CPS2, USA 951006, SAMPLE Version)</name>
     <setname>mmancp2u</setname>
-    <mameversion>0261</mameversion>
+    <mameversion>0282</mameversion>
     <year>1995</year>
     <manufacturer>Capcom</manufacturer>
     <players>2</players>

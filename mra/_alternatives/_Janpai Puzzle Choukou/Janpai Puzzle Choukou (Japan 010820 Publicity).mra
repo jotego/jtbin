@@ -1,0 +1,87 @@
+<!--          FPGA arcade hardware by Jotego
+
+              This core is available for hardware compatible with MiST and MiSTer
+              Other FPGA systems may be supported by the time you read this.
+              This work is not mantained by the MiSTer project. Please contact the
+              core author for issues and updates.
+
+              (c) Jose Tejada, 2026. Please support this research
+              Patreon: https://patreon.com/jotego
+
+              The author does not endorse or participate in illegal distribution
+              of copyrighted material. This work can be used with compatible
+              software. This software can be homebrew projects or legally
+              obtained memory dumps of compatible games.
+
+              This file license is GNU GPLv2.
+              You can read the whole license file in
+              https://opensource.org/licenses/gpl-2.0.php
+
+-->
+
+<misterromdescription>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://jotego/jtcores"/>
+    <rotation>horizontal</rotation>
+    <name>Janpai Puzzle Choukou (Japan 010820 Publicity)</name>
+    <setname>chokop</setname>
+    <mameversion>0282</mameversion>
+    <year>2001</year>
+    <manufacturer>Mitchell (Capcom license)</manufacturer>
+    <players>1</players>
+    <rbf>jtcps2</rbf>
+    <joystick>8</joystick>
+    <region>World</region>
+    <rom index="0" zip="chokop.zip|choko.zip|qsound.zip" md5="None" address="0x30000000">
+        <!--  -->
+        <part>
+            00 04 80 04 80 10 80 50
+            FF FF FF FF FF FF FF FF
+            32 FF 00 02 04 06 26 28
+            2A 2C 2E 00 00 30 02 04
+            08 30 FF FF FF FF FF FF
+            FF FF FF FF </part>
+        <!-- key - starts at 0x0 - length 0x14 (5 bits) -->
+        <part name="phoenix.key" crc="2cf772b0"/>
+        <!-- maincpu - starts at 0x14 - length 0x100000 (20 bits) -->
+        <part name="tkojp_03.bin" crc="4d857f39"/>
+        <part name="tkojp_04.bin" crc="137afb29"/>
+        <!-- audiocpu - starts at 0x100014 - length 0x20000 (17 bits) -->
+        <part name="tko_01.bin" crc="6eda50c2"/>
+        <!-- qsound - starts at 0x120014 - length 0x300000 (22 bits) -->
+        <part name="tko_11.bin" crc="ca7179b1"/>
+        <part name="tko_12.bin" crc="83a4e635"/>
+        <!-- gfx - starts at 0x420014 - length 0x1000000 (24 bits) -->
+        <part repeat="0x800000"> FF</part>
+        <interleave output="64">
+            <part name="tko_14.bin" crc="336e8aa2" map="00000021"/>
+            <part name="tko_16.bin" crc="e8429b54" map="00002100"/>
+            <part name="tko_18.bin" crc="62092fbd" map="00210000"/>
+            <part name="tko_20.bin" crc="b468a666" map="21000000"/>
+        </interleave>
+        <!-- firmware - starts at 0x1420014 - length 0x2000 (13 bits) -->
+        <part name="dl-1425.bin" crc="d6cf5ef5" length="0x2000"/>
+        <!-- Total 0x1422014 bytes - 20616 kBytes -->
+    </rom>
+    <rom index="2">
+        <part>
+01 00 01 00 00 01 00 00 00 00 00 00 00 00 00 00
+01 03 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+05 20 00 07 41 50 4A 34 50 20 4E 41 20 47 20 34
+01 00 01 00 00 01 00 00 00 00 00 00 00 00 00 00
+01 03 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+05 20 00 07 41 50 4A 34 50 20 4E 41 20 47 20 34
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+</part>
+    </rom>
+    <nvram index="2" size="128"/>
+    <rom index="1">
+        <part>00 80</part>
+    </rom>
+    <switches page_id="1" page_name="Switches" base="16" default="ff,ff">
+        <DSWA/>
+        <DSWB/>
+        <DSWC/>
+    </switches>
+    <buttons names="Select,Cancel,Help,-,-,-,Start,Coin,Core credits" default="A,B,X,Start,Select,-" count="3"/>
+</misterromdescription>

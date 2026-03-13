@@ -24,7 +24,7 @@
     <rotation>horizontal</rotation>
     <name>Rolling Thunder (rev 3)</name>
     <setname>rthunder</setname>
-    <mameversion>0261</mameversion>
+    <mameversion>0282</mameversion>
     <year>1986</year>
     <manufacturer>Namco</manufacturer>
     <players>2</players>
@@ -53,7 +53,7 @@
         <part repeat="0x8000"> FF</part>
         <part name="rt3_1b.9c" crc="7d252a1b"/>
         <!-- EXT_START -->
-        <!-- user1 - starts at 0x10000 - length 0x40000 (18 bits) -->
+        <!-- bankeddata - starts at 0x10000 - length 0x40000 (18 bits) -->
         <part name="rt1_17.f1" crc="766af455"/>
         <part name="rt1_18.h1" crc="3f9f2f5d"/>
         <part name="rt3_19.k1" crc="c16675e9"/>
@@ -70,21 +70,21 @@
         <!-- chars - starts at 0x90000 - length 0x40000 (18 bits) -->
         <part repeat="0x40000"> FF</part>
         <!-- JTFRAME_BA2_START -->
-        <!-- gfx1 - starts at 0xD0000 - length 0x20000 (17 bits) -->
+        <!-- tiles_0 - starts at 0xD0000 - length 0x20000 (17 bits) -->
         <interleave output="32">
             <part name="rt1_7.7r" crc="a85efa39" map="0021" length="0x10000"/>
             <part name="rt1_8.7s" crc="f7a95820" map="0100" length="0x8000"/>
             <part name="rt1_8.7s" crc="f7a95820" map="1000" length="0x8000"/>
         </interleave>
         <!-- SCR1_START -->
-        <!-- gfx2 - starts at 0xF0000 - length 0x10000 (16 bits) -->
+        <!-- tiles_1 - starts at 0xF0000 - length 0x10000 (16 bits) -->
         <interleave output="32">
             <part name="rt1_5.4r" crc="d0fc470b" map="0021" length="0x8000"/>
             <part name="rt1_6.4s" crc="6b57edb2" map="0100" length="0x4000"/>
             <part name="rt1_6.4s" crc="6b57edb2" map="1000" length="0x4000"/>
         </interleave>
         <!-- JTFRAME_BA3_START -->
-        <!-- gfx3 - starts at 0x100000 - length 0x100000 (20 bits) -->
+        <!-- sprites - starts at 0x100000 - length 0x100000 (20 bits) -->
         <part name="rt1_9.12h" crc="8e070561"/>
         <part name="rt1_9.12h" crc="8e070561"/>
         <part name="rt1_10.12k" crc="cb8fb607"/>

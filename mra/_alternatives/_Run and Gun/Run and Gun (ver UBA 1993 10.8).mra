@@ -23,15 +23,15 @@
     <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://jotego/jtcores"/>
     <rotation>horizontal</rotation>
     <name>Run and Gun (ver UBA 1993 10.8)</name>
-    <setname>rungunua</setname>
-    <mameversion>0261</mameversion>
+    <setname>rungunuba</setname>
+    <mameversion>0282</mameversion>
     <year>1993</year>
     <manufacturer>Konami</manufacturer>
     <players>4</players>
     <rbf>jtrungun</rbf>
     <joystick>8</joystick>
     <region>World</region>
-    <rom index="0" zip="rungunua.zip|rungun.zip" md5="None" asm_md5="7eddabc0da5cb0966e6d9e3c83bbc64f">
+    <rom index="0" zip="rungunuba.zip|rungun.zip" md5="None" asm_md5="7eddabc0da5cb0966e6d9e3c83bbc64f">
         <!-- maincpu - starts at 0x0 - length 0x300000 (22 bits) -->
         <interleave output="16">
             <part name="247uba04.bin" crc="3f255a4a" map="01"/>
@@ -71,8 +71,8 @@
     </rom>
     <rom index="2">
         <part>
-04 3B FB C4 92 47 55 42 41 00 15 03 07 03 00 00
-00 00 00 07 07 00 07 1E 01 15 20 00 01 00 00 00
+04 14 FB EB 92 47 45 41 41 00 15 03 07 03 00 00
+00 00 00 00 00 00 00 1E 00 15 20 00 01 00 00 00
 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00

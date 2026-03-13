@@ -24,7 +24,7 @@
     <rotation>horizontal</rotation>
     <name>Tenchi wo Kurau II: Sekiheki no Tatakai (CPS Changer, Japan 921031)</name>
     <setname>wofch</setname>
-    <mameversion>0261</mameversion>
+    <mameversion>0282</mameversion>
     <year>1994</year>
     <manufacturer>Capcom</manufacturer>
     <players>2</players>
@@ -91,5 +91,5 @@
         <DSWB/>
         <DSWC/>
     </switches>
-    <buttons names="Attack,Jump,Mega,-,-,-,Start,Coin,Core credits" default="A,B,X,Start,Select,-" count="3"/>
+    <buttons names="Attack,Jump,Mega,Y,L,R,Start,Coin,Core credits" default="A,B,X,Y,L,R,Start,Select,-" count="6"/>
 </misterromdescription>

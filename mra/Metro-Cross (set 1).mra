@@ -24,7 +24,7 @@
     <rotation>horizontal</rotation>
     <name>Metro-Cross (set 1)</name>
     <setname>metrocrs</setname>
-    <mameversion>0261</mameversion>
+    <mameversion>0282</mameversion>
     <year>1985</year>
     <manufacturer>Namco</manufacturer>
     <players>2</players>
@@ -55,7 +55,7 @@
         <part name="mc1-1.9a" crc="10b0977e"/>
         <part name="mc1-2.9b" crc="5c846f35"/>
         <!-- EXT_START -->
-        <!-- user1 - starts at 0x10000 - length 0x40000 (18 bits) -->
+        <!-- bankeddata - starts at 0x10000 - length 0x40000 (18 bits) -->
         <part repeat="0x40000"> FF</part>
         <!-- JTFRAME_BA1_START -->
         <!-- cpu2 - starts at 0x50000 -->
@@ -64,7 +64,7 @@
         <part name="mc1-5.3j" crc="9b5ea33a"/>
         <part repeat="0x7E000"> FF</part>
         <!-- JTFRAME_BA2_START -->
-        <!-- gfx1 - starts at 0xD0000 - length 0x20000 (17 bits) -->
+        <!-- tiles_0 - starts at 0xD0000 - length 0x20000 (17 bits) -->
         <interleave output="32">
             <part name="mc1-7.4p" crc="c9dfa003" map="0021" length="0x4000"/>
             <part name="mc1-7.4p" crc="c9dfa003" map="2100" length="0x4000"/>
@@ -82,10 +82,10 @@
             <part name="mc1-6.4n" crc="9686dc3c" map="2100" length="0x4000"/>
         </interleave>
         <!-- SCR1_START -->
-        <!-- gfx2 - starts at 0xF0000 - length 0x10000 (16 bits) -->
+        <!-- tiles_1 - starts at 0xF0000 - length 0x10000 (16 bits) -->
         <part repeat="0x10000"> FF</part>
         <!-- JTFRAME_BA3_START -->
-        <!-- gfx3 - starts at 0x100000 - length 0x100000 (20 bits) -->
+        <!-- sprites - starts at 0x100000 - length 0x100000 (20 bits) -->
         <part name="mc1-8.8k" crc="265b31fa"/>
         <part name="mc1-9.8l" crc="541ec029"/>
         <part name="mc1-8.8k" crc="265b31fa"/>

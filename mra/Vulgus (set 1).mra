@@ -24,14 +24,14 @@
     <rotation>vertical (ccw)</rotation>
     <name>Vulgus (set 1)</name>
     <setname>vulgus</setname>
-    <mameversion>0261</mameversion>
+    <mameversion>0282</mameversion>
     <year>1984</year>
     <manufacturer>Capcom</manufacturer>
     <players>2</players>
     <rbf>jt1942</rbf>
     <joystick>8</joystick>
     <region>World</region>
-    <rom index="0" zip="vulgus.zip" md5="None" asm_md5="a2491b35a3630e0ff50c257ef89ca8e2">
+    <rom index="0" zip="vulgus.zip" md5="None" asm_md5="091c69e9bdddf4b289166b65594fa43c">
         <!--  Header to identify the PCB type
         Byte 0 = 0 for 1942, 1 for Vulgus, 2 for Higemaru
         Byte 1 = XOR with flip
@@ -83,7 +83,7 @@
         <!-- charprom - starts at 0x3A000 -->
         <!-- tileprom - starts at 0x3A000 -->
         <!-- sprprom - starts at 0x3A000 -->
-        <!-- proms - starts at 0x3A000 - length 0xA00 (12 bits) -->
+        <!-- proms - starts at 0x3A000 - length 0x900 (12 bits) -->
         <part name="e8.bin" crc="06a83606"/>
         <part name="e9.bin" crc="beacf13c"/>
         <part name="e10.bin" crc="de1fb621"/>
@@ -92,8 +92,9 @@
         <part name="j2.bin" crc="d0842029"/>
         <part name="e8.bin" crc="06a83606"/>
         <part name="e8.bin" crc="06a83606"/>
-        <part name="82s126.9k" crc="32b10521"/>
         <part name="82s129.8n" crc="4921635c"/>
+        <!-- irqprom - starts at 0x3A900 - length 0x100 (8 bits) -->
+        <part name="82s126.9k" crc="32b10521"/>
         <!-- Total 0x3AA00 bytes - 234 kBytes -->
     </rom>
     <!-- Vertical screen. Orientation reversed. -->

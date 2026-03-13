@@ -24,7 +24,7 @@
     <rotation>vertical (cw)</rotation>
     <name>Pac-Mania (Japan)</name>
     <setname>pacmaniaj</setname>
-    <mameversion>0261</mameversion>
+    <mameversion>0282</mameversion>
     <year>1987</year>
     <manufacturer>Namco</manufacturer>
     <players>2</players>
@@ -44,7 +44,7 @@ Byte 7: addr for upper nibble read
         <part>
             02 12 00 00 00 00 00 00
         </part>
-        <!-- user1 - starts at 0x0 - length 0x3A0000 (22 bits) -->
+        <!-- mainrom - starts at 0x0 - length 0x3A0000 (22 bits) -->
         <part repeat="0x300000"> FF</part>
         <part name="pn_prg-6.bin" crc="fe94900c" length="0x20000"/>
         <part repeat="0x60000"> FF</part>

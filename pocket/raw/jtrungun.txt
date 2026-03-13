@@ -8,7 +8,10 @@ Place the *.rom files in Assets/jtrungun/common
 Run and Gun (ver EAA 1993 10.8) --> rungun.rom
 Run and Gun (ver EAA 1993 10.4) --> runguna.rom
 Run and Gun (ver EAA 1993 9.10, prototype?) --> rungunb.rom
-Run and Gun (ver UBA 1993 10.8) --> rungunua.rom
+Run and Gun (ver UAB 1993  9.10, dedicated twin cabinet) --> rungunuaad.rom
+Run and Gun (ver UAB 1993 10.12, dedicated twin cabinet) --> rungunuabd.rom
+Run and Gun (ver UBA 1993 10.8) --> rungunuba.rom
+Run and Gun (ver UBA 1993 10.8) (dual screen with demux adapter) --> rungunubad.rom
 
 
 These files are generated using the mra tool in:

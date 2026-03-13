@@ -24,7 +24,7 @@
     <rotation>horizontal</rotation>
     <name>Sky Kid Deluxe (set 1)</name>
     <setname>skykiddx</setname>
-    <mameversion>0261</mameversion>
+    <mameversion>0282</mameversion>
     <year>1986</year>
     <manufacturer>Namco</manufacturer>
     <players>2</players>
@@ -53,7 +53,7 @@
         <part name="sk3_2.9d" crc="74b8f8e2"/>
         <part name="sk3_1b.9c" crc="767b3514"/>
         <!-- EXT_START -->
-        <!-- user1 - starts at 0x10000 - length 0x40000 (18 bits) -->
+        <!-- bankeddata - starts at 0x10000 - length 0x40000 (18 bits) -->
         <part repeat="0x40000"> FF</part>
         <!-- JTFRAME_BA1_START -->
         <!-- cpu2 - starts at 0x50000 - length 0x10000 (16 bits) -->
@@ -64,7 +64,7 @@
         <!-- chars - starts at 0x60000 - length 0x70000 (19 bits) -->
         <part repeat="0x70000"> FF</part>
         <!-- JTFRAME_BA2_START -->
-        <!-- gfx1 - starts at 0xD0000 - length 0x20000 (17 bits) -->
+        <!-- tiles_0 - starts at 0xD0000 - length 0x20000 (17 bits) -->
         <interleave output="32">
             <part name="sk3_9.7r" crc="48675b17" map="0021" length="0x8000"/>
             <part name="sk3_10.7s" crc="7418465a" map="0100" length="0x4000"/>
@@ -76,14 +76,14 @@
             <part name="sk3_10.7s" crc="7418465a" map="1000" length="0x4000"/>
         </interleave>
         <!-- SCR1_START -->
-        <!-- gfx2 - starts at 0xF0000 - length 0x10000 (16 bits) -->
+        <!-- tiles_1 - starts at 0xF0000 - length 0x10000 (16 bits) -->
         <interleave output="32">
             <part name="sk3_7.4r" crc="4036b735" map="0021" length="0x8000"/>
             <part name="sk3_8.4s" crc="044bfd21" map="0100" length="0x4000"/>
             <part name="sk3_8.4s" crc="044bfd21" map="1000" length="0x4000"/>
         </interleave>
         <!-- JTFRAME_BA3_START -->
-        <!-- gfx3 - starts at 0x100000 - length 0x100000 (20 bits) -->
+        <!-- sprites - starts at 0x100000 - length 0x100000 (20 bits) -->
         <part name="sk3_5.12h" crc="5c7d4399"/>
         <part name="sk3_5.12h" crc="5c7d4399"/>
         <part name="sk3_5.12h" crc="5c7d4399"/>

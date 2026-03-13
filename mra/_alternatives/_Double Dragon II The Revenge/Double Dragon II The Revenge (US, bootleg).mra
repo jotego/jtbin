@@ -23,15 +23,15 @@
     <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://jotego/jtcores"/>
     <rotation>horizontal</rotation>
     <name>Double Dragon II: The Revenge (US, bootleg)</name>
-    <setname>ddragon2b</setname>
-    <mameversion>0261</mameversion>
+    <setname>ddragon2bl</setname>
+    <mameversion>0282</mameversion>
     <year>1988</year>
     <manufacturer>bootleg</manufacturer>
     <players>2</players>
     <rbf>jtdd2</rbf>
     <joystick>8</joystick>
     <region>World</region>
-    <rom index="0" zip="ddragon2b.zip|ddragon2.zip" md5="None" asm_md5="e3726956c80d97b424f254c127e85b7c">
+    <rom index="0" zip="ddragon2bl.zip|ddragon2.zip" md5="None" asm_md5="28177b5bd4f6c5d36f531ccb093c2ddc">
         <!-- maincpu - starts at 0x0 - length 0x28000 (18 bits) -->
         <part name="4" crc="78750947"/>
         <part name="5" crc="49ddddcd"/>
@@ -50,47 +50,35 @@
         <part repeat="0x10000"> FF</part>
         <!-- JTFRAME_BA2_START -->
         <!-- CHAR_START -->
-        <!-- gfx1 - starts at 0x80000 - length 0x10000 (16 bits) -->
+        <!-- chars - starts at 0x80000 - length 0x10000 (16 bits) -->
         <part name="1" crc="3ad1049c"/>
         <!-- SCR_START -->
-        <!-- gfx3 - starts at 0x90000 - length 0x80000 (19 bits) -->
+        <!-- tiles - starts at 0x90000 - length 0x80000 (19 bits) -->
         <interleave output="16">
             <part name="15" crc="3c3f16f6" map="01"/>
-            <part name="14" crc="e92f91f4" map="10"/>
+            <part name="13" crc="7c21be72" map="10"/>
         </interleave>
         <interleave output="16">
-            <part name="13" crc="7c21be72" map="01"/>
+            <part name="14" crc="e92f91f4" map="01"/>
             <part name="12" crc="6896e2f7" map="10"/>
         </interleave>
         <part repeat="0x40000"> FF</part>
-        <!-- OBJ_START -->
         <!-- JTFRAME_BA3_START -->
-        <!-- gfx2 - starts at 0x110000 - length 0x100000 (20 bits) -->
+        <!-- OBJ_START -->
+        <!-- sprites - starts at 0x110000 - length 0x100000 (20 bits) -->
         <interleave output="16">
             <part name="27" crc="fe42df5d" map="01"/>
-            <part name="21" crc="32ab0897" map="10"/>
+            <part name="22" crc="82e952c9" map="10"/>
         </interleave>
         <interleave output="16">
             <part name="26" crc="42f582c6" map="01"/>
-            <part name="20" crc="a68e168f" map="10"/>
+            <part name="25" crc="4a4a085d" map="10"/>
         </interleave>
         <interleave output="16">
             <part name="23" crc="e157319f" map="01"/>
-            <part name="17" crc="882f99b1" map="10"/>
+            <part name="24" crc="c9d52536" map="10"/>
         </interleave>
-        <interleave output="16">
-            <part name="22" crc="82e952c9" map="01"/>
-            <part name="16" crc="e2fe3eca" map="10"/>
-        </interleave>
-        <interleave output="16">
-            <part name="25" crc="4a4a085d" map="01"/>
-            <part name="18" crc="0e1c6c63" map="10"/>
-        </interleave>
-        <interleave output="16">
-            <part name="24" crc="c9d52536" map="01"/>
-            <part name="19" crc="0e21eae0" map="10"/>
-        </interleave>
-        <part repeat="0x40000"> FF</part>
+        <part repeat="0xA0000"> FF</part>
         <!-- MCU_START -->
         <!-- sub - starts at 0x210000 - length 0x10000 (16 bits) -->
         <part name="2" crc="ea437867"/>

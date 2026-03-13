@@ -24,19 +24,21 @@
     <rotation>vertical (cw)</rotation>
     <name>Labyrinth Runner (Japan)</name>
     <setname>labyrunr</setname>
-    <mameversion>0261</mameversion>
+    <mameversion>0282</mameversion>
     <year>1987</year>
     <manufacturer>Konami</manufacturer>
     <players>2</players>
     <rbf>jtlabrun</rbf>
     <joystick>8</joystick>
     <region>World</region>
-    <rom index="0" zip="labyrunr.zip|tricktrp.zip" md5="None" asm_md5="7432285ff67a0ccdda24a8b3857c73ea">
+    <rom index="0" zip="labyrunr.zip|tricktrp.zip" md5="None" asm_md5="f20c44739c3319d118d04d2cc6920800">
         <!-- maincpu - starts at 0x0 - length 0x20000 (17 bits) -->
         <part name="771j04.10f" crc="354a41d0"/>
         <part name="771j03.08f" crc="12b49044"/>
         <!-- gfx - starts at 0x20000 - length 0x40000 (18 bits) -->
-        <part name="771d01.14a" crc="15c8f5f9"/>
+        <interleave output="16">
+            <part name="771d01.14a" crc="15c8f5f9" map="12"/>
+        </interleave>
         <!-- proms - starts at 0x60000 - length 0x100 (8 bits) -->
         <part name="771d02.08d" crc="3d34bb5a"/>
         <!-- Total 0x60100 bytes - 384 kBytes -->

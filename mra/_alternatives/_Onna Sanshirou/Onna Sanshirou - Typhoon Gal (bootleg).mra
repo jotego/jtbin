@@ -24,9 +24,9 @@
     <rotation>horizontal</rotation>
     <name>Onna Sanshirou - Typhoon Gal (bootleg)</name>
     <setname>onna34roa</setname>
-    <mameversion>0261</mameversion>
+    <mameversion>0282</mameversion>
     <year>1985</year>
-    <manufacturer>Taito</manufacturer>
+    <manufacturer>bootleg</manufacturer>
     <players>2</players>
     <rbf>jtflstory</rbf>
     <joystick>8</joystick>
@@ -79,7 +79,7 @@
         <part name="a52-16.38s" crc="ccf42aee"/>
         <part repeat="0x2000"> FF</part>
         <!-- JTFRAME_BA2_START -->
-        <!-- gfx1 - starts at 0x4C000 - length 0x20000 (17 bits) -->
+        <!-- tiles - starts at 0x4C000 - length 0x20000 (17 bits) -->
         <interleave output="16">
             <part name="a52-04.11v" crc="5b126294" map="01"/>
             <part name="a52-05.35v" crc="a1a99588" map="10"/>

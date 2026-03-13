@@ -112,25 +112,16 @@
 				]
 			},
 			{
-				"name": "Cabinet",
+				"name": "Flip Screen",
 				"id": 3,
-				"type": "list",
+				"type": "check",
 				"enabled": true,
 				"persist": true,
 				"address": "0xfa000000",
-				"defaultval": 1,
+				"defaultval": 0,
 				"value": 0,
-				"mask": "0xFFFFFFDF",
-				"options": [
-					{
-						"name": "Cocktail",
-						"value": "0x0"
-					},
-					{
-						"name": "Upright",
-						"value": "0x20"
-					}
-				]
+				"value_off": 32,
+				"mask": "0xFFFFFFDF"
 			},
 			{
 				"name": "Screen Stop",

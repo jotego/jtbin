@@ -24,7 +24,7 @@
     <rotation>horizontal</rotation>
     <name>Pac-Land (Bally-Midway)</name>
     <setname>paclandm2</setname>
-    <mameversion>0261</mameversion>
+    <mameversion>0282</mameversion>
     <year>1984</year>
     <manufacturer>Namco (Bally Midway license)</manufacturer>
     <players>2</players>

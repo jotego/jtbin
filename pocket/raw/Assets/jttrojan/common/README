@@ -11,6 +11,7 @@ trojana.rom
 trojanj.rom
 trojanjo.rom
 trojanr.rom
+trojanra.rom
 
 These files are generated using the mra tool in:
 https://github.com/sebdel/mra-tools-c/tree/master/release

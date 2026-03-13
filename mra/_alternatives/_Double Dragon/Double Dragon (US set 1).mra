@@ -24,7 +24,7 @@
     <rotation>horizontal</rotation>
     <name>Double Dragon (US set 1)</name>
     <setname>ddragonu</setname>
-    <mameversion>0261</mameversion>
+    <mameversion>0282</mameversion>
     <year>1987</year>
     <manufacturer>Technos Japan (Taito America license)</manufacturer>
     <players>2</players>
@@ -49,10 +49,10 @@
         <part name="21j-7" crc="904de6f8"/>
         <!-- JTFRAME_BA2_START -->
         <!-- CHAR_START -->
-        <!-- gfx1 - starts at 0x50000 - length 0x8000 (15 bits) -->
+        <!-- chars - starts at 0x50000 - length 0x8000 (15 bits) -->
         <part name="21j-5" crc="7a8b8db4"/>
         <!-- SCR_START -->
-        <!-- gfx3 - starts at 0x58000 - length 0x40000 (18 bits) -->
+        <!-- tiles - starts at 0x58000 - length 0x40000 (18 bits) -->
         <interleave output="16">
             <part name="21j-8" crc="7c435887" map="01"/>
             <part name="21j-i" crc="5effb0a0" map="10"/>
@@ -63,7 +63,7 @@
         </interleave>
         <!-- JTFRAME_BA3_START -->
         <!-- OBJ_START -->
-        <!-- gfx2 - starts at 0x98000 - length 0x80000 (19 bits) -->
+        <!-- sprites - starts at 0x98000 - length 0x80000 (19 bits) -->
         <interleave output="16">
             <part name="21j-a" crc="574face3" map="01"/>
             <part name="21j-e" crc="a0a0c261" map="10"/>

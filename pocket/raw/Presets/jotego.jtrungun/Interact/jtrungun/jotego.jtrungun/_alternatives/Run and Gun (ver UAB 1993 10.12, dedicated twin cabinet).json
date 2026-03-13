@@ -1,0 +1,55 @@
+{
+	"interact":{
+		"magic": "APF_VER_1",
+		"variables": [
+			{
+				"name": "Unknown",
+				"id": 0,
+				"type": "check",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 0,
+				"value": 0,
+				"value_off": 16,
+				"mask": "0xFFFFFFEF"
+			},
+			{
+				"name": "Unknown",
+				"id": 1,
+				"type": "check",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 0,
+				"value": 0,
+				"value_off": 32,
+				"mask": "0xFFFFFFDF"
+			},
+			{
+				"name": "Unknown",
+				"id": 2,
+				"type": "check",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 0,
+				"value": 0,
+				"value_off": 64,
+				"mask": "0xFFFFFFBF"
+			},
+			{
+				"name": "Default",
+				"id": 1015,
+				"type": "number_u32",
+				"enabled": false,
+				"persist": false,
+				"writeonly": true,
+				"address": "0xfa000000",
+				"defaultval": 255,
+				"value": 0
+			}
+		],
+		"messages": []
+	}
+}

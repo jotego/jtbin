@@ -7,8 +7,8 @@ Place the *.rom files in Assets/jtmikie/common
 
 Mikie --> mikie.rom
 Mikie (High School Graffiti) --> mikiehs.rom
-Shinnyuushain Tooru-kun --> mikiej.rom
-Shin-ip Sawon - Seok Dol-i --> mikiek.rom
+Shinnyuu Shain Tooru-kun (Japan) --> mikiej.rom
+Shin-ip Sawon - Seok Dol-i (Korea) --> mikiek.rom
 
 
 These files are generated using the mra tool in:

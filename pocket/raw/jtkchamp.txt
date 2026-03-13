@@ -7,14 +7,14 @@ Place the *.rom files in Assets/jtkchamp/common
 
 Karate Dou (Arfyc bootleg) --> karateda.rom
 Karate Dou (Japan) --> karatedo.rom
-Taisen Karate Dou (Japan VS version) --> karatevs.rom
+Taisen Karate Dou (Japan) --> karatevs.rom
 Karate Champ (US) --> kchamp.rom
 Karate Champ (US, 2 players) --> kchamp2p.rom
 Karate Champ (Tecfri bootleg) --> kchamptec.rom
-Karate Champ (US VS version, set 1) --> kchampvs.rom
-Karate Champ (US VS version, set 2) --> kchampvs2.rom
-Karate Champ (US VS version, set 3) --> kchampvs3.rom
-Karate Champ (US VS version, set 4) --> kchampvs4.rom
+Karate Champ: Player Vs Player (US, set 1) --> kchampvs.rom
+Karate Champ: Player Vs Player (US, set 2) --> kchampvs2.rom
+Karate Champ: Player Vs Player (US, set 3) --> kchampvs3.rom
+Karate Champ: Player Vs Player (US, set 4) --> kchampvs4.rom
 
 
 These files are generated using the mra tool in:

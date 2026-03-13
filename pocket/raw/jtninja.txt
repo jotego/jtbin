@@ -8,7 +8,8 @@ Place the *.rom files in Assets/jtninja/common
 Bad Dudes vs. Dragonninja (US, revision 1) --> baddudes.rom
 Dragonninja (Japan, revision 1) --> drgninja.rom
 Heavy Barrel (World) --> hbarrel.rom
-Heavy Barrel (US) --> hbarrelu.rom
+Heavy Barrel (US, revision 3) --> hbarrelu.rom
+Heavy Barrel (US, revision 1) --> hbarrelua.rom
 
 
 These files are generated using the mra tool in:

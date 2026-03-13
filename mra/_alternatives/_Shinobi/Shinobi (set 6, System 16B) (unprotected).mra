@@ -24,7 +24,7 @@
     <rotation>horizontal</rotation>
     <name>Shinobi (set 6, System 16B) (unprotected)</name>
     <setname>shinobi6</setname>
-    <mameversion>0261</mameversion>
+    <mameversion>0282</mameversion>
     <year>1987</year>
     <manufacturer>Sega</manufacturer>
     <players>2</players>
@@ -71,8 +71,8 @@
             <part name="mpr-11369.b6" crc="d751d2a2" map="10"/>
         </interleave>
         <part repeat="0x180000"> FF</part>
-        <!-- JTFRAME_PROM_START -->
         <!-- MCU_START -->
+        <!-- JTFRAME_PROM_START -->
         <!-- mcu - starts at 0x440000 - length 0x2000 (13 bits) -->
         <part repeat="0x1000"> FF</part>
         <part repeat="0x1000"> FF</part>

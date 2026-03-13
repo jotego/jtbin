@@ -23,15 +23,15 @@
     <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://jotego/jtcores"/>
     <rotation>horizontal</rotation>
     <name>Double Dragon (World set 2)</name>
-    <setname>ddragonw1</setname>
-    <mameversion>0261</mameversion>
+    <setname>ddragona</setname>
+    <mameversion>0282</mameversion>
     <year>1987</year>
     <manufacturer>Technos Japan (Taito license)</manufacturer>
     <players>2</players>
     <rbf>jtdd</rbf>
     <joystick>8</joystick>
     <region>World</region>
-    <rom index="0" zip="ddragonw1.zip|ddragon.zip" md5="None" asm_md5="1ad0b8f13ffb42924fbc05b349c9e8fa">
+    <rom index="0" zip="ddragona.zip|ddragon.zip" md5="None" asm_md5="1ad0b8f13ffb42924fbc05b349c9e8fa">
         <!-- maincpu - starts at 0x0 - length 0x28000 (18 bits) -->
         <part name="21a-2-4.25" crc="5cd67657"/>
         <part name="21a-3.24" crc="dbf24897"/>
@@ -49,10 +49,10 @@
         <part name="21j-7" crc="904de6f8"/>
         <!-- CHAR_START -->
         <!-- JTFRAME_BA2_START -->
-        <!-- gfx1 - starts at 0x50000 - length 0x8000 (15 bits) -->
+        <!-- chars - starts at 0x50000 - length 0x8000 (15 bits) -->
         <part name="21j-5" crc="7a8b8db4"/>
         <!-- SCR_START -->
-        <!-- gfx3 - starts at 0x58000 - length 0x40000 (18 bits) -->
+        <!-- tiles - starts at 0x58000 - length 0x40000 (18 bits) -->
         <interleave output="16">
             <part name="21j-8" crc="7c435887" map="01"/>
             <part name="21j-i" crc="5effb0a0" map="10"/>
@@ -63,7 +63,7 @@
         </interleave>
         <!-- OBJ_START -->
         <!-- JTFRAME_BA3_START -->
-        <!-- gfx2 - starts at 0x98000 - length 0x80000 (19 bits) -->
+        <!-- sprites - starts at 0x98000 - length 0x80000 (19 bits) -->
         <interleave output="16">
             <part name="21j-a" crc="574face3" map="01"/>
             <part name="21j-e" crc="a0a0c261" map="10"/>

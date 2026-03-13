@@ -24,7 +24,7 @@
     <rotation>vertical (ccw)</rotation>
     <name>Major League (World, S16A) [No Protection]</name>
     <setname>mjleague</setname>
-    <mameversion>0261</mameversion>
+    <mameversion>0282</mameversion>
     <year>1985</year>
     <manufacturer>Sega</manufacturer>
     <players>2</players>
@@ -62,7 +62,7 @@
         <!-- soundcpu - starts at 0x40000 - length 0x8000 (15 bits) -->
         <part name="epr-7054c.1b" crc="4443b744"/>
         <!-- PCM_START -->
-        <!-- n7751data - starts at 0x48000 - length 0x40000 (18 bits) -->
+        <!-- upd7751data - starts at 0x48000 - length 0x40000 (18 bits) -->
         <part name="epr-7063.1a" crc="45d8908a"/>
         <part name="epr-7065.2a" crc="8c8f8cff"/>
         <part name="epr-7064.3a" crc="159f6636"/>
@@ -108,7 +108,7 @@
         <!-- maincpu:key - starts at 0x182000 - length 0x2000 (13 bits) -->
         <part repeat="0x2000"> FF</part>
         <!-- N7751_START -->
-        <!-- n7751 - starts at 0x184000 - length 0x400 (10 bits) -->
+        <!-- upd7751 - starts at 0x184000 - length 0x400 (10 bits) -->
         <part name="7751.bin" crc="6a9534fc"/>
         <!-- Total 0x184400 bytes - 1553 kBytes -->
     </rom>

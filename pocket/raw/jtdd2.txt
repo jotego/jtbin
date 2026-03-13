@@ -6,7 +6,7 @@ the required .rom file using the mra tool (read below).
 Place the *.rom files in Assets/jtdd2/common
 
 Double Dragon II: The Revenge (World) --> ddragon2.rom
-Double Dragon II: The Revenge (US, bootleg) --> ddragon2b.rom
+Double Dragon II: The Revenge (US, bootleg) --> ddragon2bl.rom
 Double Dragon II: The Revenge (Japan) --> ddragon2j.rom
 Double Dragon II: The Revenge (US) --> ddragon2u.rom
 

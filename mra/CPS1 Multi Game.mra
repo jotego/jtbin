@@ -1,0 +1,112 @@
+<!--          FPGA arcade hardware by Jotego
+
+              This core is available for hardware compatible with MiST and MiSTer
+              Other FPGA systems may be supported by the time you read this.
+              This work is not mantained by the MiSTer project. Please contact the
+              core author for issues and updates.
+
+              (c) Jose Tejada, 2026. Please support this research
+              Patreon: https://patreon.com/jotego
+
+              The author does not endorse or participate in illegal distribution
+              of copyrighted material. This work can be used with compatible
+              software. This software can be homebrew projects or legally
+              obtained memory dumps of compatible games.
+
+              This file license is GNU GPLv2.
+              You can read the whole license file in
+              https://opensource.org/licenses/gpl-2.0.php
+
+-->
+
+<misterromdescription>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://jotego/jtcores"/>
+    <rotation>horizontal</rotation>
+    <name>CPS1 Multi Game</name>
+    <setname>cps1mult</setname>
+    <mameversion>0282</mameversion>
+    <year>20??</year>
+    <manufacturer>bootleg</manufacturer>
+    <players>2</players>
+    <rbf>jtcps1</rbf>
+    <joystick>8</joystick>
+    <region>World</region>
+    <rom index="0" zip="cps1mult.zip" md5="None" address="0x30000000">
+        <!--  -->
+        <part>
+            00 00 00 04 00 14 FF FF
+            FF FF FF FF FF FF FF FF
+            FF FF FF FF FF FF FF FF
+            FF FF FF FF FF FF FF FF
+            FF FF FF FF FF FF FF FF
+            FF FF FF FF FF FF FF FF
+            FF FF FF FF FF FF FF FF
+            FF FF FF FF FF FF FF FF
+        </part>
+        <!-- maincpu - starts at 0x0 - length 0x4000000 (26 bits) -->
+        <interleave output="16">
+            <part name="prg_0.bin" crc="cbb4062c" map="12"/>
+        </interleave>
+        <interleave output="16">
+            <part name="prg_1.bin" crc="e434b882" map="12"/>
+        </interleave>
+        <interleave output="16">
+            <part name="prg_2.bin" crc="2ce2fc75" map="12"/>
+        </interleave>
+        <interleave output="16">
+            <part name="prg_3.bin" crc="0a93b43e" map="12"/>
+        </interleave>
+        <interleave output="16">
+            <part name="prg_4.bin" crc="80b6dfb3" map="12"/>
+        </interleave>
+        <interleave output="16">
+            <part name="prg_5.bin" crc="bfa503e7" map="12"/>
+        </interleave>
+        <interleave output="16">
+            <part name="prg_6.bin" crc="977d2d34" map="12"/>
+        </interleave>
+        <interleave output="16">
+            <part name="prg_7.bin" crc="65b0d8fd" map="12"/>
+        </interleave>
+        <!-- audiocpu - starts at 0x4000000 - length 0x100000 (20 bits) -->
+        <part name="m1_074733.bin" crc="fbb43b64"/>
+        <!-- oki - starts at 0x4100000 - length 0x400000 (22 bits) -->
+        <part name="mx29f1610mcpsop44.u18" crc="69cd2a53"/>
+        <part name="mx29f1610mcpsop44.u19a" crc="4a0cebaa"/>
+        <!-- gfx - starts at 0x4500000 - length 0x8000000 (27 bits) -->
+        <part name="ca_0.bin" crc="6819f572"/>
+        <part name="ca_1.bin" crc="f18256d2"/>
+        <part name="ca_2.bin" crc="1f474165"/>
+        <part name="ca_3.bin" crc="1f7f36a7"/>
+        <part name="ca_4.bin" crc="b6c2ae5c"/>
+        <part name="ca_5.bin" crc="68e7b97e"/>
+        <part name="ca_6.bin" crc="d7df2079"/>
+        <part name="ca_7.bin" crc="76c35a1f"/>
+        <part name="cb_0.bin" crc="c9ca6efc"/>
+        <part name="cb_1.bin" crc="c53de0e5"/>
+        <part name="cb_2.bin" crc="2934a28c"/>
+        <part name="cb_3.bin" crc="ca41ae19"/>
+        <part name="cb_4.bin" crc="b9ea6163"/>
+        <part name="cb_5.bin" crc="74a402f2"/>
+        <part name="cb_6.bin" crc="73f471e1"/>
+        <part name="cb_7.bin" crc="7570e1f0"/>
+        <!-- Total 0xC500000 bytes - 201728 kBytes -->
+    </rom>
+    <rom index="1">
+        <part>00 80</part>
+    </rom>
+    <switches page_id="1" page_name="Switches" base="16" default="ff,fc,9f">
+        <DSWA/>
+        <DSWB/>
+        <dip name="Difficulty" bits="8,10" ids="7,6,5,4,3,2,1,0"/>
+        <DSWC/>
+        <dip name="Free Play" bits="18" ids="On,Off"/>
+        <dip name="Freeze" bits="19" ids="On,Off"/>
+        <dip name="Flip Screen" bits="20" ids="On,Off"/>
+        <dip name="Demo Sounds" bits="21" ids="On,Off"/>
+        <dip name="Allow Continue" bits="22" ids="Yes,No"/>
+        <dip name="Game Mode" bits="23" ids="Test,Game"/>
+        <dip name="PCB type" ids="88617A,89626A" bits="24"/>
+    </switches>
+    <buttons names="button 1,button 2,-,-,-,-,Start,Coin,Core credits" default="A,B,Start,Select,-" count="2"/>
+</misterromdescription>

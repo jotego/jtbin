@@ -24,14 +24,14 @@
     <rotation>horizontal</rotation>
     <name>Bay Route (set 1, US) (unprotected)</name>
     <setname>bayroute1</setname>
-    <mameversion>0261</mameversion>
+    <mameversion>0282</mameversion>
     <year>1989</year>
     <manufacturer>Sunsoft / Sega</manufacturer>
     <players>2</players>
     <rbf>jts16b</rbf>
     <joystick>8</joystick>
     <region>World</region>
-    <rom index="0" zip="bayroute1.zip|bayroute.zip" md5="None" address="0x30000000" asm_md5="a69e865217f4a2578c1e610629a77439">
+    <rom index="0" zip="bayroute1.zip|bayroute.zip" md5="None" address="0x30000000" asm_md5="e94df438aa18497bb40221ca866b8a42">
         <!--  -->
         <part>
             00 00 00 00 00 00 00 00
@@ -55,8 +55,12 @@
         <part repeat="0x20000"> FF</part>
         <!-- JTFRAME_BA1_START -->
         <!-- soundcpu - starts at 0x80000 - length 0xC0000 (20 bits) -->
-        <!-- Skipping region soundcpu because there is no dump known -->
-        <part repeat="0xC0000"> FF</part>
+        <part name="sound.a7" crc="e91e55cb"/>
+        <part name="sound.a8" crc="077e9981"/>
+        <part name="sound.a9" crc="3c3f5f41"/>
+        <part name="sound.a10" crc="7c251347"/>
+        <part name="sound.a11" crc="a602ea2d"/>
+        <part repeat="0x70000"> FF</part>
         <!-- JTFRAME_BA2_START -->
         <!-- gfx1 - starts at 0x140000 - length 0x100000 (20 bits) -->
         <interleave output="32">

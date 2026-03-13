@@ -6,6 +6,7 @@ the required .rom file using the mra tool (read below).
 Place the *.rom files in Assets/jtlabrun/common
 
 Labyrinth Runner (Japan) --> labyrunr.rom
+Labyrinth Runner (World Ver. F) --> labyrunrf.rom
 Labyrinth Runner (World Ver. K) --> labyrunrk.rom
 Trick Trap (World?) --> tricktrp.rom
 

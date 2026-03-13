@@ -24,7 +24,7 @@
     <rotation>vertical (cw)</rotation>
     <name>Dragon Spirit (DS2)</name>
     <setname>dspirit2</setname>
-    <mameversion>0261</mameversion>
+    <mameversion>0282</mameversion>
     <year>1987</year>
     <manufacturer>Namco</manufacturer>
     <players>2</players>
@@ -44,7 +44,7 @@ Byte 7: addr for upper nibble read
         <part>
             01 36 00 00 00 00 00 00
         </part>
-        <!-- user1 - starts at 0x0 - length 0x3A0000 (22 bits) -->
+        <!-- mainrom - starts at 0x0 - length 0x3A0000 (22 bits) -->
         <part name="ds1_p0.bin" crc="b22a2856"/>
         <part name="ds1_p0.bin" crc="b22a2856"/>
         <part repeat="0x60000"> FF</part>

@@ -24,7 +24,7 @@
     <rotation>vertical (ccw)</rotation>
     <name>Action Fighter (System 16B, FD1089A 317-0018)</name>
     <setname>afighterh</setname>
-    <mameversion>0261</mameversion>
+    <mameversion>0282</mameversion>
     <year>1986</year>
     <manufacturer>Sega</manufacturer>
     <players>2</players>

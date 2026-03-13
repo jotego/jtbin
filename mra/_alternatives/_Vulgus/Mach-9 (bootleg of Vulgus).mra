@@ -24,14 +24,14 @@
     <rotation>vertical (ccw)</rotation>
     <name>Mach-9 (bootleg of Vulgus)</name>
     <setname>mach9</setname>
-    <mameversion>0261</mameversion>
+    <mameversion>0282</mameversion>
     <year>1984</year>
-    <manufacturer>bootleg (ITISA)</manufacturer>
+    <manufacturer>bootleg (Itisa)</manufacturer>
     <players>2</players>
     <rbf>jt1942</rbf>
     <joystick>8</joystick>
     <region>World</region>
-    <rom index="0" zip="mach9.zip|vulgus.zip" md5="None" asm_md5="d470962fb542b92432b24e558f7d3374">
+    <rom index="0" zip="mach9.zip|vulgus.zip" md5="None" asm_md5="ded0246093e4aff20238b344f58a58de">
         <!--  Header to identify the PCB type
         Byte 0 = 0 for 1942, 1 for Vulgus, 2 for Higemaru
         Byte 1 = XOR with flip
@@ -83,7 +83,7 @@
         <!-- charprom - starts at 0x3A000 -->
         <!-- tileprom - starts at 0x3A000 -->
         <!-- sprprom - starts at 0x3A000 -->
-        <!-- proms - starts at 0x3A000 - length 0xA00 (12 bits) -->
+        <!-- proms - starts at 0x3A000 - length 0x900 (12 bits) -->
         <part name="82s129_8e.bin" crc="06a83606"/>
         <part name="82s129_9e.bin" crc="beacf13c"/>
         <part name="82s129_10e.bin" crc="8404067c"/>
@@ -92,8 +92,9 @@
         <part name="82s129_2j.bin" crc="d0842029"/>
         <part name="82s129_8e.bin" crc="06a83606"/>
         <part name="82s129_8e.bin" crc="06a83606"/>
-        <part name="82s129_9k.bin" crc="32b10521"/>
         <part name="82s129_8n.bin" crc="4921635c"/>
+        <!-- irqprom - starts at 0x3A900 - length 0x100 (8 bits) -->
+        <part name="82s129_9k.bin" crc="32b10521"/>
         <!-- Total 0x3AA00 bytes - 234 kBytes -->
     </rom>
     <!-- Vertical screen. Orientation reversed. -->

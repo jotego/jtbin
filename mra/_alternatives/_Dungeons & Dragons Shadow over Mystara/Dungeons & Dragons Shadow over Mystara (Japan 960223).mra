@@ -23,15 +23,15 @@
     <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://jotego/jtcores"/>
     <rotation>horizontal</rotation>
     <name>Dungeons &amp; Dragons: Shadow over Mystara (Japan 960223)</name>
-    <setname>ddsomjr2</setname>
-    <mameversion>0261</mameversion>
+    <setname>ddsomjr1</setname>
+    <mameversion>0282</mameversion>
     <year>1996</year>
     <manufacturer>Capcom</manufacturer>
     <players>4</players>
     <rbf>jtcps2</rbf>
     <joystick>8</joystick>
     <region>World</region>
-    <rom index="0" zip="ddsomjr2.zip|ddsom.zip|qsound.zip" md5="None" address="0x30000000" asm_md5="11cbf01eebc2d00104d3320f50bc27cc">
+    <rom index="0" zip="ddsomjr1.zip|ddsom.zip|qsound.zip" md5="None" address="0x30000000" asm_md5="11cbf01eebc2d00104d3320f50bc27cc">
         <!--  -->
         <part>
             00 10 00 11 00 21 00 81
@@ -43,10 +43,10 @@
         <!-- key - starts at 0x0 - length 0x14 (5 bits) -->
         <part name="ddsomj.key" crc="d8dadb22"/>
         <!-- maincpu - starts at 0x14 - length 0x400000 (22 bits) -->
-        <part name="dd2j.03b" crc="b2fd4a24"/>
-        <part name="dd2j.04b" crc="3a68c310"/>
-        <part name="dd2.05b" crc="aa56f42f"/>
-        <part name="dd2.06b" crc="2f8cd040"/>
+        <part name="dd2j.03e" crc="b2fd4a24"/>
+        <part name="dd2j.04e" crc="3a68c310"/>
+        <part name="dd2.05e" crc="aa56f42f"/>
+        <part name="dd2.06e" crc="2f8cd040"/>
         <part name="dd2.07" crc="909a0b8b"/>
         <part name="dd2.08" crc="e53c4d01"/>
         <part name="dd2.09" crc="5f86279f"/>

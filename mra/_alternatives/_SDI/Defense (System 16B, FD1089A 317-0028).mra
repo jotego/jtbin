@@ -24,7 +24,7 @@
     <rotation>horizontal</rotation>
     <name>Defense (System 16B, FD1089A 317-0028)</name>
     <setname>defense</setname>
-    <mameversion>0261</mameversion>
+    <mameversion>0282</mameversion>
     <year>1987</year>
     <manufacturer>Sega</manufacturer>
     <players>2</players>
@@ -81,8 +81,8 @@
             <part name="10765.b7" crc="0a73a057" map="10"/>
         </interleave>
         <part repeat="0x1A0000"> FF</part>
-        <!-- JTFRAME_PROM_START -->
         <!-- MCU_START -->
+        <!-- JTFRAME_PROM_START -->
         <!-- mcu - starts at 0x440000 - length 0x2000 (13 bits) -->
         <part repeat="0x1000"> FF</part>
         <part repeat="0x1000"> FF</part>

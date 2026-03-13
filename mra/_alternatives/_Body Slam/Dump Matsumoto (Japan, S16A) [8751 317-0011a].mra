@@ -24,7 +24,7 @@
     <rotation>horizontal</rotation>
     <name>Dump Matsumoto (Japan, S16A) [8751 317-0011a]</name>
     <setname>dumpmtmt</setname>
-    <mameversion>0261</mameversion>
+    <mameversion>0282</mameversion>
     <year>1986</year>
     <manufacturer>Sega</manufacturer>
     <players>2</players>
@@ -62,7 +62,7 @@
         <!-- soundcpu - starts at 0x40000 - length 0x8000 (15 bits) -->
         <part name="epr-7710a.b1" crc="a19b8ba8"/>
         <!-- PCM_START -->
-        <!-- n7751data - starts at 0x48000 - length 0x40000 (18 bits) -->
+        <!-- upd7751data - starts at 0x48000 - length 0x40000 (18 bits) -->
         <part name="epr-7711.c1" crc="efa9aabd"/>
         <part name="epr-7712.c2" crc="7bcd85cf"/>
         <part name="epr-7713.c3" crc="33f292e7"/>
@@ -108,7 +108,7 @@
         <!-- maincpu:key - starts at 0x182000 - length 0x2000 (13 bits) -->
         <part repeat="0x2000"> FF</part>
         <!-- N7751_START -->
-        <!-- n7751 - starts at 0x184000 - length 0x400 (10 bits) -->
+        <!-- upd7751 - starts at 0x184000 - length 0x400 (10 bits) -->
         <part name="7751.bin" crc="6a9534fc"/>
         <!-- Total 0x184400 bytes - 1553 kBytes -->
     </rom>

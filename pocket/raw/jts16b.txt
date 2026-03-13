@@ -40,10 +40,10 @@ Defense (System 16B, FD1089A 317-0028) --> defense.rom
 Dunk Shot (Rev C, FD1089A 317-0022) --> dunkshot.rom
 Dunk Shot (Rev A, FD1089A 317-0022) --> dunkshota.rom
 Dunk Shot (FD1089A 317-0022) --> dunkshoto.rom
-E-Swat - Cyber Police (set 4, World) (FD1094 317-0130) --> eswat.rom
-E-Swat - Cyber Police (set 2, Japan) (FD1094 317-0128) --> eswatj.rom
-E-Swat - Cyber Police (set 1, Japan) (FD1094 317-0131) --> eswatj1.rom
-E-Swat - Cyber Police (set 3, US) (FD1094 317-0129) --> eswatu.rom
+Cyber Police ESWAT (set 4, World) (FD1094 317-0130) --> eswat.rom
+Cyber Police ESWAT (set 2, Japan) (FD1094 317-0128) --> eswatj.rom
+Cyber Police ESWAT (set 1, Japan) (FD1094 317-0131) --> eswatj1.rom
+Cyber Police ESWAT (set 3, US) (FD1094 317-0129) --> eswatu.rom
 Excite League (FD1094 317-0079) --> exctleag.rom
 Fantasy Zone II - The Tears of Opa-Opa (System 16C version) --> fantzn2x.rom
 Fantasy Zone II - The Tears of Opa-Opa (System 16C version, prototype) --> fantzn2xp.rom

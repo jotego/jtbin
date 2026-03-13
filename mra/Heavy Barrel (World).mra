@@ -24,7 +24,7 @@
     <rotation>vertical (ccw)</rotation>
     <name>Heavy Barrel (World)</name>
     <setname>hbarrel</setname>
-    <mameversion>0261</mameversion>
+    <mameversion>0282</mameversion>
     <year>1987</year>
     <manufacturer>Data East Corporation</manufacturer>
     <players>2</players>
@@ -55,13 +55,13 @@
         <part name="ec08.2c" crc="2159a609"/>
         <part repeat="0x10000"> FF</part>
         <!-- JTFRAME_BA2_START -->
-        <!-- gfx1 - starts at 0xB0000 - length 0x20000 (17 bits) -->
+        <!-- char - starts at 0xB0000 - length 0x20000 (17 bits) -->
         <interleave output="16">
             <part name="ec25.15h" crc="2e5732a2" map="01"/>
             <part name="ec26.16h" crc="161a2c4d" map="10"/>
         </interleave>
         <!-- GFX2_START -->
-        <!-- gfx2 - starts at 0xD0000 - length 0x80000 (19 bits) -->
+        <!-- tiles1 - starts at 0xD0000 - length 0x80000 (19 bits) -->
         <interleave output="16">
             <part name="ec18.14d" crc="ef664373" map="01"/>
             <part name="ec22.14f" crc="50d6a1ad" map="10"/>
@@ -79,7 +79,7 @@
             <part name="ec23.15f" crc="bbdaf771" map="10"/>
         </interleave>
         <!-- GFX3_START -->
-        <!-- gfx3 - starts at 0x150000 - length 0x40000 (18 bits) -->
+        <!-- tiles2 - starts at 0x150000 - length 0x40000 (18 bits) -->
         <interleave output="16">
             <part name="ec30.9h" crc="5855e8ef" map="01"/>
             <part name="ec28.9f" crc="33ce2b1a" map="10"/>
@@ -89,7 +89,7 @@
             <part name="ec27.8f" crc="99db7b9c" map="10"/>
         </interleave>
         <!-- JTFRAME_BA3_START -->
-        <!-- gfx4 - starts at 0x190000 - length 0x80000 (19 bits) -->
+        <!-- sprites - starts at 0x190000 - length 0x80000 (19 bits) -->
         <interleave output="32">
             <part name="ec15.16c" crc="21816707" map="0001"/>
             <part name="ec11.16a" crc="5c768315" map="0010"/>
@@ -102,8 +102,8 @@
             <part name="ec14.14c" crc="bedfe7f3" map="0100"/>
             <part name="ec10.14a" crc="47d95447" map="1000"/>
         </interleave>
-        <!-- JTFRAME_PROM_START -->
         <!-- MCU_START -->
+        <!-- JTFRAME_PROM_START -->
         <!-- mcu - starts at 0x210000 - length 0x18000 (17 bits) -->
         <part name="ec31-e.9a" crc="bf93a2ec"/>
         <part repeat="0x17000"> FF</part>

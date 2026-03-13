@@ -24,21 +24,21 @@
     <rotation>horizontal</rotation>
     <name>Sangokushi II (Asia 921005)</name>
     <setname>wofa</setname>
-    <mameversion>0261</mameversion>
+    <mameversion>0282</mameversion>
     <year>1992</year>
     <manufacturer>Capcom</manufacturer>
     <players>3</players>
     <rbf>jtcps15</rbf>
     <joystick>8</joystick>
     <region>World</region>
-    <rom index="0" zip="wofa.zip|wof.zip|qsound.zip" md5="None" address="0x30000000" asm_md5="81138646f5359db9295de1d96072f767">
+    <rom index="0" zip="wofa.zip|wof.zip|qsound.zip" md5="None" address="0x30000000" asm_md5="62ace165f74e3b5e07cd788edea93b67">
         <!--  -->
         <part>
             00 04 80 04 80 0C 80 1C
             FF FF FF FF FF FF FF FF
             32 FF 00 02 04 06 26 28
             2A 2C 2E 36 30 30 02 04
-            08 30 25 40 88 73 FF 30
+            08 30 25 40 88 73 FF 20
             FF FF FF FF FF FF FF FF
             01 23 45 67 54 16 30 72
             51 51 51 FF FF FF FF FF

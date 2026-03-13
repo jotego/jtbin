@@ -24,7 +24,7 @@
     <rotation>vertical (ccw)</rotation>
     <name>Action Fighter (World, S16A) [FD1089B 317-xxxx] [Analog Controls]</name>
     <setname>afighterd</setname>
-    <mameversion>0261</mameversion>
+    <mameversion>0282</mameversion>
     <year>1986</year>
     <manufacturer>Sega</manufacturer>
     <players>1</players>
@@ -62,7 +62,7 @@
         <!-- soundcpu - starts at 0x40000 - length 0x8000 (15 bits) -->
         <part name="epr-10284.12" crc="8ff09116"/>
         <!-- PCM_START -->
-        <!-- n7751data - starts at 0x48000 - length 0x40000 (18 bits) -->
+        <!-- upd7751data - starts at 0x48000 - length 0x40000 (18 bits) -->
         <part repeat="0x40000"> FF</part>
         <!-- JTFRAME_BA2_START -->
         <!-- gfx1 - starts at 0x88000 - length 0x78000 (19 bits) -->
@@ -104,7 +104,7 @@
         <!-- maincpu:key - starts at 0x182000 - length 0x2000 (13 bits) -->
         <part name="317-0018.key" crc="65b5b1af"/>
         <!-- N7751_START -->
-        <!-- n7751 - starts at 0x184000 - length 0x400 (10 bits) -->
+        <!-- upd7751 - starts at 0x184000 - length 0x400 (10 bits) -->
         <part repeat="0x400"> FF</part>
         <part repeat="0x1C00"> FF</part>
         <!-- FD1089 base table starts at 0x186000 -->

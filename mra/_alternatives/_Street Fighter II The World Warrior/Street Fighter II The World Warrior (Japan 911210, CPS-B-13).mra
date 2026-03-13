@@ -24,7 +24,7 @@
     <rotation>horizontal</rotation>
     <name>Street Fighter II: The World Warrior (Japan 911210, CPS-B-13)</name>
     <setname>sf2j</setname>
-    <mameversion>0261</mameversion>
+    <mameversion>0282</mameversion>
     <year>1991</year>
     <manufacturer>Capcom</manufacturer>
     <players>2</players>

@@ -37,7 +37,7 @@
 | aliens  | Gang Busters (set 2)                                                                       | gbustersa     |
 | aliens  | Super Contra (set 1)                                                                       | scontra       |
 | aliens  | Super Contra (set 2)                                                                       | scontraa      |
-| aliens  | Super Contra - Alien no Gyakushuu (Japan)                                                  | scontraj      |
+| aliens  | Super Contra: Alien no Gyakushuu (Japan)                                                   | scontraj      |
 | aliens  | Thunder Cross (Japan)                                                                      | thunderxj     |
 | aliens  | Thunder Cross (set 1)                                                                      | thunderx      |
 | aliens  | Thunder Cross (set 2)                                                                      | thunderxa     |
@@ -64,6 +64,7 @@
 | bubl    | Tokio - Scramble Formation (bootleg)                                                       | tokiob        |
 | bubl    | Tokio - Scramble Formation (newer)                                                         | tokio         |
 | bubl    | Tokio - Scramble Formation (older)                                                         | tokioo        |
+| cal50   | Caliber 50 (Ver. 1.01)                                                                     | calibr50      |
 | castle  | Akuma-Jou Dracula (Japan version N)                                                        | akumajoun     |
 | castle  | Akuma-Jou Dracula (Japan version P)                                                        | akumajou      |
 | castle  | Haunted Castle (version E)                                                                 | hcastlee      |
@@ -111,6 +112,7 @@
 | cps1    | Adventure Quiz Capcom World 2 (Japan 920611, B-Board 91634B-2)                             | cworld2jb     |
 | cps1    | Area 88 (Japan Resale Ver.)                                                                | area88r       |
 | cps1    | Area 88 (Japan)                                                                            | area88        |
+| cps1    | CPS1 Multi Game                                                                            | cps1mult      |
 | cps1    | Captain Commando (Japan 910928)                                                            | captcommjr1   |
 | cps1    | Captain Commando (Japan 911202)                                                            | captcommj     |
 | cps1    | Captain Commando (USA 910928)                                                              | captcommu     |
@@ -165,12 +167,12 @@
 | cps1    | Mercs (USA 900302)                                                                         | mercsur1      |
 | cps1    | Mercs (USA 900608)                                                                         | mercsu        |
 | cps1    | Mercs (World 900302)                                                                       | mercs         |
-| cps1    | Nemo (Japan 901120, 89622B-3 ROM board)                                                    | nemoj         |
+| cps1    | Nemo (Japan 901120, 88622B-3 ROM board)                                                    | nemoj         |
 | cps1    | Nemo (Japan 901120, 89625B-1 ROM board)                                                    | nemoja        |
 | cps1    | Nemo (World 901109)                                                                        | nemor1        |
 | cps1    | Nemo (World 901130)                                                                        | nemo          |
-| cps1    | Pang! 3 (Euro 950511)                                                                      | pang3r1       |
-| cps1    | Pang! 3 (Euro 950601)                                                                      | pang3         |
+| cps1    | Pang! 3 (Europe 950511)                                                                    | pang3r1       |
+| cps1    | Pang! 3 (Europe 950601)                                                                    | pang3         |
 | cps1    | Pang! 3 (bootleg, set 1)                                                                   | pang3b        |
 | cps1    | Pang! 3: Kaitou Tachi no Karei na Gogo (Japan 950511)                                      | pang3j        |
 | cps1    | Pnickies (Japan 940608)                                                                    | pnickj        |
@@ -187,13 +189,13 @@
 | cps1    | Street Fighter II': Champion Edition (Accelerator!, bootleg, set 1)                        | sf2acc        |
 | cps1    | Street Fighter II': Champion Edition (Accelerator!, bootleg, set 2)                        | sf2acca       |
 | cps1    | Street Fighter II': Champion Edition (Japan 920322)                                        | sf2ceja       |
+| cps1    | Street Fighter II': Champion Edition (Japan 920322, UPL bootleg?)                          | sf2ceupl      |
 | cps1    | Street Fighter II': Champion Edition (Japan 920513)                                        | sf2cejb       |
 | cps1    | Street Fighter II': Champion Edition (Japan 920803)                                        | sf2cejc       |
 | cps1    | Street Fighter II': Champion Edition (Rainbow, bootleg, set 3)                             | sf2rb3        |
 | cps1    | Street Fighter II': Champion Edition (Red Wave PtII, bootleg)                              | sf2redp2      |
 | cps1    | Street Fighter II': Champion Edition (Red Wave, bootleg, set 1)                            | sf2red        |
 | cps1    | Street Fighter II': Champion Edition (Taiwan 920313)                                       | sf2cet        |
-| cps1    | Street Fighter II': Champion Edition (UPL bootleg)                                         | sf2ceupl      |
 | cps1    | Street Fighter II': Champion Edition (USA 920313)                                          | sf2ceua       |
 | cps1    | Street Fighter II': Champion Edition (USA 920513)                                          | sf2ceub       |
 | cps1    | Street Fighter II': Champion Edition (USA 920803)                                          | sf2ceuc       |
@@ -243,6 +245,7 @@
 | cps1    | The King of Dragons (World 910711)                                                         | kodr1         |
 | cps1    | The King of Dragons (World 910731)                                                         | kodr2         |
 | cps1    | The King of Dragons (World 910805)                                                         | kod           |
+| cps1    | Three Wonders (Italian bootleg)                                                            | 3wondersbi    |
 | cps1    | Three Wonders (World 910513)                                                               | 3wondersr1    |
 | cps1    | Three Wonders (World 910520)                                                               | 3wonders      |
 | cps1    | Three Wonders (hack)                                                                       | 3wondersh     |
@@ -277,14 +280,14 @@
 | cps15   | Warriors of Fate (USA 921031)                                                              | wofu          |
 | cps15   | Warriors of Fate (World 921002)                                                            | wofr1         |
 | cps15   | Warriors of Fate (World 921031)                                                            | wof           |
-| cps2    | 1944: The Loop Master (Euro 000620)                                                        | 1944          |
+| cps2    | 1944: The Loop Master (Europe 000620)                                                      | 1944          |
 | cps2    | 1944: The Loop Master (Japan 000620)                                                       | 1944j         |
 | cps2    | 1944: The Loop Master (USA 000620 Phoenix Edition) (bootleg)                               | 1944d         |
 | cps2    | 1944: The Loop Master (USA 000620)                                                         | 1944u         |
 | cps2    | 19XX: The War Against Destiny (Asia 951207)                                                | 19xxar1       |
 | cps2    | 19XX: The War Against Destiny (Asia 960104)                                                | 19xxa         |
 | cps2    | 19XX: The War Against Destiny (Brazil 951218)                                              | 19xxb         |
-| cps2    | 19XX: The War Against Destiny (Euro 960104)                                                | 19xx          |
+| cps2    | 19XX: The War Against Destiny (Europe 960104)                                              | 19xx          |
 | cps2    | 19XX: The War Against Destiny (Hispanic 951218)                                            | 19xxh         |
 | cps2    | 19XX: The War Against Destiny (Japan 951207)                                               | 19xxjr2       |
 | cps2    | 19XX: The War Against Destiny (Japan 951225)                                               | 19xxjr1       |
@@ -292,63 +295,63 @@
 | cps2    | 19XX: The War Against Destiny (USA 951207 Phoenix Edition) (bootleg)                       | 19xxd         |
 | cps2    | 19XX: The War Against Destiny (USA 951207)                                                 | 19xxu         |
 | cps2    | Alien vs. Predator (Asia 940520)                                                           | avspa         |
-| cps2    | Alien vs. Predator (Euro 940520 Phoenix Edition) (bootleg)                                 | avspd         |
-| cps2    | Alien vs. Predator (Euro 940520)                                                           | avsp          |
+| cps2    | Alien vs. Predator (Europe 940520 Phoenix Edition) (bootleg)                               | avspd         |
+| cps2    | Alien vs. Predator (Europe 940520)                                                         | avsp          |
 | cps2    | Alien vs. Predator (Hispanic 940520)                                                       | avsph         |
 | cps2    | Alien vs. Predator (Japan 940520)                                                          | avspj         |
 | cps2    | Alien vs. Predator (USA 940520)                                                            | avspu         |
 | cps2    | Armored Warriors (Asia 940920)                                                             | armwarar1     |
 | cps2    | Armored Warriors (Asia 941024)                                                             | armwara       |
 | cps2    | Armored Warriors (Brazil 941024)                                                           | armwarb       |
-| cps2    | Armored Warriors (Euro 941011 Phoenix Edition) (bootleg)                                   | armwar1d      |
-| cps2    | Armored Warriors (Euro 941011)                                                             | armwarr1      |
-| cps2    | Armored Warriors (Euro 941024)                                                             | armwar        |
+| cps2    | Armored Warriors (Europe 941011 Phoenix Edition) (bootleg)                                 | armwar1d      |
+| cps2    | Armored Warriors (Europe 941011)                                                           | armwarr1      |
+| cps2    | Armored Warriors (Europe 941024)                                                           | armwar        |
 | cps2    | Armored Warriors (USA 940920)                                                              | armwaru1      |
 | cps2    | Armored Warriors (USA 941024)                                                              | armwaru       |
 | cps2    | Battle Circuit (Asia 970319)                                                               | batcira       |
-| cps2    | Battle Circuit (Euro 970319 Phoenix Edition) (bootleg)                                     | batcird       |
-| cps2    | Battle Circuit (Euro 970319)                                                               | batcir        |
+| cps2    | Battle Circuit (Europe 970319 Phoenix Edition) (bootleg)                                   | batcird       |
+| cps2    | Battle Circuit (Europe 970319)                                                             | batcir        |
 | cps2    | Battle Circuit (Japan 970319)                                                              | batcirj       |
 | cps2    | Capcom Sports Club (Asia 970722)                                                           | cscluba       |
-| cps2    | Capcom Sports Club (Euro 970722 Phoenix Edition) (bootleg)                                 | csclub1d      |
-| cps2    | Capcom Sports Club (Euro 970722)                                                           | csclub1       |
-| cps2    | Capcom Sports Club (Euro 971017)                                                           | csclub        |
+| cps2    | Capcom Sports Club (Europe 970722 Phoenix Edition) (bootleg)                               | csclub1d      |
+| cps2    | Capcom Sports Club (Europe 970722)                                                         | csclub1       |
+| cps2    | Capcom Sports Club (Europe 971017)                                                         | csclub        |
 | cps2    | Capcom Sports Club (Hispanic 970722)                                                       | csclubh       |
 | cps2    | Capcom Sports Club (Japan 970722)                                                          | csclubj       |
 | cps2    | Capcom Sports Club (Japan 970722, yellow case)                                             | csclubjy      |
-| cps2    | Cyberbots: Fullmetal Madness (Euro 950424)                                                 | cybots        |
+| cps2    | Cyberbots: Fullmetal Madness (Europe 950424)                                               | cybots        |
 | cps2    | Cyberbots: Fullmetal Madness (Japan 950420)                                                | cybotsj       |
 | cps2    | Cyberbots: Fullmetal Madness (Japan 950424) (decrypted bootleg)                            | cybotsjd      |
 | cps2    | Cyberbots: Fullmetal Madness (USA 950424 Phoenix Edition) (bootleg)                        | cybotsud      |
 | cps2    | Cyberbots: Fullmetal Madness (USA 950424)                                                  | cybotsu       |
 | cps2    | Darkstalkers: The Night Warriors (Asia 940705)                                             | dstlka        |
-| cps2    | Darkstalkers: The Night Warriors (Euro 940705)                                             | dstlk         |
+| cps2    | Darkstalkers: The Night Warriors (Europe 940705)                                           | dstlk         |
 | cps2    | Darkstalkers: The Night Warriors (Hispanic 940818)                                         | dstlkh        |
 | cps2    | Darkstalkers: The Night Warriors (USA 940705 Phoenix Edition) (bootleg)                    | dstlku1d      |
 | cps2    | Darkstalkers: The Night Warriors (USA 940705)                                              | dstlkur1      |
 | cps2    | Darkstalkers: The Night Warriors (USA 940818)                                              | dstlku        |
-| cps2    | Dimahoo (Euro 000121)                                                                      | dimahoo       |
+| cps2    | Dimahoo (Europe 000121)                                                                    | dimahoo       |
 | cps2    | Dimahoo (USA 000121 Phoenix Edition) (bootleg)                                             | dimahoud      |
 | cps2    | Dimahoo (USA 000121)                                                                       | dimahoou      |
 | cps2    | Dungeons & Dragons: Shadow over Mystara (Asia 960208)                                      | ddsomar1      |
 | cps2    | Dungeons & Dragons: Shadow over Mystara (Asia 960619)                                      | ddsoma        |
 | cps2    | Dungeons & Dragons: Shadow over Mystara (Brazil 960223)                                    | ddsomb        |
-| cps2    | Dungeons & Dragons: Shadow over Mystara (Euro 960208)                                      | ddsomr3       |
-| cps2    | Dungeons & Dragons: Shadow over Mystara (Euro 960209)                                      | ddsomr2       |
-| cps2    | Dungeons & Dragons: Shadow over Mystara (Euro 960223)                                      | ddsomr1       |
-| cps2    | Dungeons & Dragons: Shadow over Mystara (Euro 960619)                                      | ddsom         |
+| cps2    | Dungeons & Dragons: Shadow over Mystara (Europe 960208)                                    | ddsomr3       |
+| cps2    | Dungeons & Dragons: Shadow over Mystara (Europe 960209)                                    | ddsomr2       |
+| cps2    | Dungeons & Dragons: Shadow over Mystara (Europe 960223)                                    | ddsomr1       |
+| cps2    | Dungeons & Dragons: Shadow over Mystara (Europe 960619)                                    | ddsom         |
 | cps2    | Dungeons & Dragons: Shadow over Mystara (Hispanic 960223)                                  | ddsomh        |
-| cps2    | Dungeons & Dragons: Shadow over Mystara (Japan 960206)                                     | ddsomjr1      |
-| cps2    | Dungeons & Dragons: Shadow over Mystara (Japan 960223)                                     | ddsomjr2      |
+| cps2    | Dungeons & Dragons: Shadow over Mystara (Japan 960206)                                     | ddsomjr2      |
+| cps2    | Dungeons & Dragons: Shadow over Mystara (Japan 960223)                                     | ddsomjr1      |
 | cps2    | Dungeons & Dragons: Shadow over Mystara (Japan 960619)                                     | ddsomj        |
 | cps2    | Dungeons & Dragons: Shadow over Mystara (USA 960209)                                       | ddsomur1      |
 | cps2    | Dungeons & Dragons: Shadow over Mystara (USA 960619 Phoenix Edition) (bootleg)             | ddsomud       |
 | cps2    | Dungeons & Dragons: Shadow over Mystara (USA 960619)                                       | ddsomu        |
 | cps2    | Dungeons & Dragons: Tower of Doom (Asia 940113)                                            | ddtodar1      |
 | cps2    | Dungeons & Dragons: Tower of Doom (Asia 940412)                                            | ddtoda        |
-| cps2    | Dungeons & Dragons: Tower of Doom (Euro 940113)                                            | ddtodr1       |
-| cps2    | Dungeons & Dragons: Tower of Doom (Euro 940412 Phoenix Edition) (bootleg)                  | ddtodd        |
-| cps2    | Dungeons & Dragons: Tower of Doom (Euro 940412)                                            | ddtod         |
+| cps2    | Dungeons & Dragons: Tower of Doom (Europe 940113)                                          | ddtodr1       |
+| cps2    | Dungeons & Dragons: Tower of Doom (Europe 940412 Phoenix Edition) (bootleg)                | ddtodd        |
+| cps2    | Dungeons & Dragons: Tower of Doom (Europe 940412)                                          | ddtod         |
 | cps2    | Dungeons & Dragons: Tower of Doom (Hispanic 940113)                                        | ddtodhr2      |
 | cps2    | Dungeons & Dragons: Tower of Doom (Hispanic 940125)                                        | ddtodhr1      |
 | cps2    | Dungeons & Dragons: Tower of Doom (Hispanic 940412)                                        | ddtodh        |
@@ -373,9 +376,11 @@
 | cps2    | Great Mahou Daisakusen (Japan 000121)                                                      | gmahou        |
 | cps2    | Hyper Street Fighter II: The Anniversary Edition (Asia 040202 Phoenix Edition) (bootleg)   | hsf2d         |
 | cps2    | Hyper Street Fighter II: The Anniversary Edition (Asia 040202)                             | hsf2a         |
-| cps2    | Hyper Street Fighter II: The Anniversary Edition (Japan 031222)                            | hsf2j1        |
+| cps2    | Hyper Street Fighter II: The Anniversary Edition (Japan 031222)                            | hsf2j2        |
+| cps2    | Hyper Street Fighter II: The Anniversary Edition (Japan 040123)                            | hsf2j1        |
 | cps2    | Hyper Street Fighter II: The Anniversary Edition (Japan 040202)                            | hsf2j         |
 | cps2    | Hyper Street Fighter II: The Anniversary Edition (USA 040202)                              | hsf2          |
+| cps2    | Janpai Puzzle Choukou (Japan 010820 Publicity)                                             | chokop        |
 | cps2    | Janpai Puzzle Choukou (Japan 010820)                                                       | choko         |
 | cps2    | Jyangokushi: Haoh no Saihai (Japan 990527)                                                 | jyangoku      |
 | cps2    | Mars Matrix: Hyper Solid Shooting (Asia 000412)                                            | mmatrixa      |
@@ -385,17 +390,17 @@
 | cps2    | Marvel Super Heroes (Asia 951024)                                                          | msha          |
 | cps2    | Marvel Super Heroes (Brazil 951024)                                                        | mshbr1        |
 | cps2    | Marvel Super Heroes (Brazil 951117)                                                        | mshb          |
-| cps2    | Marvel Super Heroes (Euro 951024)                                                          | msh           |
+| cps2    | Marvel Super Heroes (Europe 951024)                                                        | msh           |
 | cps2    | Marvel Super Heroes (Hispanic 951117)                                                      | mshh          |
 | cps2    | Marvel Super Heroes (Japan 951024)                                                         | mshjr1        |
 | cps2    | Marvel Super Heroes (Japan 951117)                                                         | mshj          |
-| cps2    | Marvel Super Heroes (US 951024 Phoenix Edition) (bootleg)                                  | mshud         |
+| cps2    | Marvel Super Heroes (USA 951024 Phoenix Edition) (bootleg)                                 | mshud         |
 | cps2    | Marvel Super Heroes (USA 951024)                                                           | mshu          |
 | cps2    | Marvel Super Heroes Vs. Street Fighter (Asia 970620)                                       | mshvsfa1      |
 | cps2    | Marvel Super Heroes Vs. Street Fighter (Asia 970625)                                       | mshvsfa       |
 | cps2    | Marvel Super Heroes Vs. Street Fighter (Brazil 970625)                                     | mshvsfb1      |
 | cps2    | Marvel Super Heroes Vs. Street Fighter (Brazil 970827)                                     | mshvsfb       |
-| cps2    | Marvel Super Heroes Vs. Street Fighter (Euro 970625)                                       | mshvsf        |
+| cps2    | Marvel Super Heroes Vs. Street Fighter (Europe 970625)                                     | mshvsf        |
 | cps2    | Marvel Super Heroes Vs. Street Fighter (Hispanic 970625)                                   | mshvsfh       |
 | cps2    | Marvel Super Heroes Vs. Street Fighter (Japan 970625)                                      | mshvsfj2      |
 | cps2    | Marvel Super Heroes Vs. Street Fighter (Japan 970702)                                      | mshvsfj1      |
@@ -406,8 +411,8 @@
 | cps2    | Marvel Vs. Capcom: Clash of Super Heroes (Asia 980112)                                     | mvscar1       |
 | cps2    | Marvel Vs. Capcom: Clash of Super Heroes (Asia 980123)                                     | mvsca         |
 | cps2    | Marvel Vs. Capcom: Clash of Super Heroes (Brazil 980123)                                   | mvscb         |
-| cps2    | Marvel Vs. Capcom: Clash of Super Heroes (Euro 980112)                                     | mvscr1        |
-| cps2    | Marvel Vs. Capcom: Clash of Super Heroes (Euro 980123)                                     | mvsc          |
+| cps2    | Marvel Vs. Capcom: Clash of Super Heroes (Europe 980112)                                   | mvscr1        |
+| cps2    | Marvel Vs. Capcom: Clash of Super Heroes (Europe 980123)                                   | mvsc          |
 | cps2    | Marvel Vs. Capcom: Clash of Super Heroes (Hispanic 980123)                                 | mvsch         |
 | cps2    | Marvel Vs. Capcom: Clash of Super Heroes (Japan 980112)                                    | mvscjr1       |
 | cps2    | Marvel Vs. Capcom: Clash of Super Heroes (Japan 980123)                                    | mvscj         |
@@ -423,13 +428,13 @@
 | cps2    | Mega Man: The Power Battle (CPS2, USA 950926, SAMPLE Version)                              | mmancp2ur1    |
 | cps2    | Mega Man: The Power Battle (CPS2, USA 951006, SAMPLE Version)                              | mmancp2u      |
 | cps2    | Mighty! Pang (Asia 001010)                                                                 | mpanga        |
-| cps2    | Mighty! Pang (Euro 000925)                                                                 | mpangr1       |
-| cps2    | Mighty! Pang (Euro 001010)                                                                 | mpang         |
+| cps2    | Mighty! Pang (Europe 000925)                                                               | mpangr1       |
+| cps2    | Mighty! Pang (Europe 001010)                                                               | mpang         |
 | cps2    | Mighty! Pang (Japan 001011)                                                                | mpangj        |
 | cps2    | Mighty! Pang (USA 001010)                                                                  | mpangu        |
 | cps2    | Night Warriors: Darkstalkers' Revenge (Asia 950302)                                        | nwarra        |
 | cps2    | Night Warriors: Darkstalkers' Revenge (Brazil 950403)                                      | nwarrb        |
-| cps2    | Night Warriors: Darkstalkers' Revenge (Euro 950316)                                        | nwarr         |
+| cps2    | Night Warriors: Darkstalkers' Revenge (Europe 950316)                                      | nwarr         |
 | cps2    | Night Warriors: Darkstalkers' Revenge (Hispanic 950403)                                    | nwarrh        |
 | cps2    | Night Warriors: Darkstalkers' Revenge (USA 950406 Phoenix Edition) (bootleg)               | nwarrud       |
 | cps2    | Night Warriors: Darkstalkers' Revenge (USA 950406)                                         | nwarru        |
@@ -442,34 +447,35 @@
 | cps2    | Progear no Arashi (Japan 010117 Phoenix Edition) (bootleg)                                 | progearjd     |
 | cps2    | Progear no Arashi (Japan 010117)                                                           | progearj      |
 | cps2    | Progear no Arashi (Japan 010117) (decrypted bootleg)                                       | progearjbl    |
-| cps2    | Puzz Loop 2 (Euro 010302)                                                                  | pzloop2       |
+| cps2    | Puzz Loop 2 (Europe 010302)                                                                | pzloop2       |
+| cps2    | Puzz Loop 2 (Japan 010201 Publicity)                                                       | pzloop2jp     |
 | cps2    | Puzz Loop 2 (Japan 010205)                                                                 | pzloop2jr1    |
 | cps2    | Puzz Loop 2 (Japan 010226 Phoenix Edition) (bootleg)                                       | pzloop2jd     |
 | cps2    | Puzz Loop 2 (Japan 010226)                                                                 | pzloop2j      |
-| cps2    | Quiz Nanairo Dreams: Nijiirochou no Kiseki (Japan 96086)                                   | qndream       |
+| cps2    | Quiz Nanairo Dreams: Nijiirochou no Kiseki (Japan 960826)                                  | qndream       |
 | cps2    | Ring of Destruction: Slammasters II (Asia 940831)                                          | ringdesta     |
 | cps2    | Ring of Destruction: Slammasters II (Brazil 940902)                                        | ringdestb     |
-| cps2    | Ring of Destruction: Slammasters II (Euro 940902 Phoenix Edition) (bootleg)                | ringdstd      |
-| cps2    | Ring of Destruction: Slammasters II (Euro 940902)                                          | ringdest      |
+| cps2    | Ring of Destruction: Slammasters II (Europe 940902 Phoenix Edition) (bootleg)              | ringdstd      |
+| cps2    | Ring of Destruction: Slammasters II (Europe 940902)                                        | ringdest      |
 | cps2    | Ring of Destruction: Slammasters II (Hispanic 940902)                                      | ringdesth     |
 | cps2    | Rockman 2: The Power Fighters (Japan 960708)                                               | rockman2j     |
 | cps2    | Rockman: The Power Battle (CPS2, Japan 950922)                                             | rmancp2j      |
-| cps2    | Street Fighter Alpha 2 (Euro 960229)                                                       | sfa2          |
+| cps2    | Street Fighter Alpha 2 (Europe 960229)                                                     | sfa2          |
 | cps2    | Street Fighter Alpha 2 (USA 960306)                                                        | sfa2ur1       |
 | cps2    | Street Fighter Alpha 2 (USA 960430)                                                        | sfa2u         |
 | cps2    | Street Fighter Alpha 3 (Brazil 980629)                                                     | sfa3b         |
-| cps2    | Street Fighter Alpha 3 (Euro 980904)                                                       | sfa3          |
+| cps2    | Street Fighter Alpha 3 (Europe 980904)                                                     | sfa3          |
 | cps2    | Street Fighter Alpha 3 (Hispanic 980629)                                                   | sfa3hr1       |
 | cps2    | Street Fighter Alpha 3 (Hispanic 980904)                                                   | sfa3h         |
 | cps2    | Street Fighter Alpha 3 (USA 980616, SAMPLE Version)                                        | sfa3us        |
 | cps2    | Street Fighter Alpha 3 (USA 980629)                                                        | sfa3ur1       |
 | cps2    | Street Fighter Alpha 3 (USA 980904 Phoenix Edition) (bootleg)                              | sfa3ud        |
 | cps2    | Street Fighter Alpha 3 (USA 980904)                                                        | sfa3u         |
-| cps2    | Street Fighter Alpha: Warriors' Dreams (Euro 950605)                                       | sfar3         |
-| cps2    | Street Fighter Alpha: Warriors' Dreams (Euro 950627)                                       | sfar2         |
-| cps2    | Street Fighter Alpha: Warriors' Dreams (Euro 950718)                                       | sfar1         |
-| cps2    | Street Fighter Alpha: Warriors' Dreams (Euro 950727 Phoenix Edition) (bootleg)             | sfad          |
-| cps2    | Street Fighter Alpha: Warriors' Dreams (Euro 950727)                                       | sfa           |
+| cps2    | Street Fighter Alpha: Warriors' Dreams (Europe 950605)                                     | sfar3         |
+| cps2    | Street Fighter Alpha: Warriors' Dreams (Europe 950627)                                     | sfar2         |
+| cps2    | Street Fighter Alpha: Warriors' Dreams (Europe 950718)                                     | sfar1         |
+| cps2    | Street Fighter Alpha: Warriors' Dreams (Europe 950727 Phoenix Edition) (bootleg)           | sfad          |
+| cps2    | Street Fighter Alpha: Warriors' Dreams (Europe 950727)                                     | sfa           |
 | cps2    | Street Fighter Alpha: Warriors' Dreams (USA 950627)                                        | sfau          |
 | cps2    | Street Fighter Zero (Asia 950605)                                                          | sfzar1        |
 | cps2    | Street Fighter Zero (Asia 950627)                                                          | sfza          |
@@ -501,14 +507,14 @@
 | cps2    | Street Fighter Zero 3 (Japan 980629)                                                       | sfz3jr2       |
 | cps2    | Street Fighter Zero 3 (Japan 980727)                                                       | sfz3jr1       |
 | cps2    | Street Fighter Zero 3 (Japan 980904)                                                       | sfz3j         |
-| cps2    | Super Gem Fighter Mini Mix (USA 970904 Phoenix Edition) (bootleg)                          | sgemfd        |
-| cps2    | Super Gem Fighter Mini Mix (USA 970904)                                                    | sgemf         |
 | cps2    | Super Gem Fighter: Mini Mix (Asia 970904)                                                  | sgemfa        |
 | cps2    | Super Gem Fighter: Mini Mix (Hispanic 970904)                                              | sgemfh        |
+| cps2    | Super Gem Fighter: Mini Mix (USA 970904 Phoenix Edition) (bootleg)                         | sgemfd        |
+| cps2    | Super Gem Fighter: Mini Mix (USA 970904)                                                   | sgemf         |
 | cps2    | Super Muscle Bomber: The International Blowout (Japan 940808)                              | smbombr1      |
 | cps2    | Super Muscle Bomber: The International Blowout (Japan 940831)                              | smbomb        |
 | cps2    | Super Puzzle Fighter II Turbo (Asia 960529)                                                | spf2ta        |
-| cps2    | Super Puzzle Fighter II Turbo (Euro 960529)                                                | spf2t         |
+| cps2    | Super Puzzle Fighter II Turbo (Europe 960529)                                              | spf2t         |
 | cps2    | Super Puzzle Fighter II Turbo (Hispanic 960531)                                            | spf2th        |
 | cps2    | Super Puzzle Fighter II Turbo (USA 960620 Phoenix Edition) (bootleg)                       | spf2td        |
 | cps2    | Super Puzzle Fighter II Turbo (USA 960620)                                                 | spf2tu        |
@@ -554,8 +560,8 @@
 | cps2    | Vampire Savior 2: The Lord of Vampire (Japan 970913)                                       | vsav2         |
 | cps2    | Vampire Savior: The Lord of Vampire (Asia 970519)                                          | vsava         |
 | cps2    | Vampire Savior: The Lord of Vampire (Brazil 970519)                                        | vsavb         |
-| cps2    | Vampire Savior: The Lord of Vampire (Euro 970519 Phoenix Edition) (bootleg)                | vsavd         |
-| cps2    | Vampire Savior: The Lord of Vampire (Euro 970519)                                          | vsav          |
+| cps2    | Vampire Savior: The Lord of Vampire (Europe 970519 Phoenix Edition) (bootleg)              | vsavd         |
+| cps2    | Vampire Savior: The Lord of Vampire (Europe 970519)                                        | vsav          |
 | cps2    | Vampire Savior: The Lord of Vampire (Hispanic 970519)                                      | vsavh         |
 | cps2    | Vampire Savior: The Lord of Vampire (Japan 970519)                                         | vsavj         |
 | cps2    | Vampire Savior: The Lord of Vampire (USA 970519)                                           | vsavu         |
@@ -567,13 +573,14 @@
 | cps2    | X-Men Vs. Street Fighter (Asia 961004)                                                     | xmvsfar1      |
 | cps2    | X-Men Vs. Street Fighter (Asia 961023)                                                     | xmvsfa        |
 | cps2    | X-Men Vs. Street Fighter (Brazil 961023)                                                   | xmvsfb        |
-| cps2    | X-Men Vs. Street Fighter (Euro 960910)                                                     | xmvsfr1       |
-| cps2    | X-Men Vs. Street Fighter (Euro 961004)                                                     | xmvsf         |
+| cps2    | X-Men Vs. Street Fighter (Europe 960910)                                                   | xmvsfr1       |
+| cps2    | X-Men Vs. Street Fighter (Europe 961004)                                                   | xmvsf         |
 | cps2    | X-Men Vs. Street Fighter (Hispanic 961004)                                                 | xmvsfh        |
-| cps2    | X-Men Vs. Street Fighter (Japan 960909)                                                    | xmvsfjr3      |
-| cps2    | X-Men Vs. Street Fighter (Japan 960910)                                                    | xmvsfjr2      |
-| cps2    | X-Men Vs. Street Fighter (Japan 961004)                                                    | xmvsfjr1      |
-| cps2    | X-Men Vs. Street Fighter (Japan 961023)                                                    | xmvsfj        |
+| cps2    | X-Men Vs. Street Fighter (Japan 960909)                                                    | xmvsfjr4      |
+| cps2    | X-Men Vs. Street Fighter (Japan 960910)                                                    | xmvsfjr3      |
+| cps2    | X-Men Vs. Street Fighter (Japan 961004)                                                    | xmvsfjr2      |
+| cps2    | X-Men Vs. Street Fighter (Japan 961023)                                                    | xmvsfjr1      |
+| cps2    | X-Men Vs. Street Fighter (Japan 970113)                                                    | xmvsfj        |
 | cps2    | X-Men Vs. Street Fighter (USA 960910)                                                      | xmvsfur2      |
 | cps2    | X-Men Vs. Street Fighter (USA 961004 Phoenix Edition) (bootleg)                            | xmvsfu1d      |
 | cps2    | X-Men Vs. Street Fighter (USA 961004)                                                      | xmvsfur1      |
@@ -582,9 +589,9 @@
 | cps2    | X-Men: Children of the Atom (Asia 941219)                                                  | xmcotaar1     |
 | cps2    | X-Men: Children of the Atom (Asia 950105)                                                  | xmcotaa       |
 | cps2    | X-Men: Children of the Atom (Brazil 950331)                                                | xmcotab       |
-| cps2    | X-Men: Children of the Atom (Euro 950105 Phoenix Edition) (bootleg)                        | xmcotar1d     |
-| cps2    | X-Men: Children of the Atom (Euro 950105)                                                  | xmcotar1      |
-| cps2    | X-Men: Children of the Atom (Euro 950331)                                                  | xmcota        |
+| cps2    | X-Men: Children of the Atom (Europe 950105 Phoenix Edition) (bootleg)                      | xmcotar1d     |
+| cps2    | X-Men: Children of the Atom (Europe 950105)                                                | xmcotar1      |
+| cps2    | X-Men: Children of the Atom (Europe 950331)                                                | xmcota        |
 | cps2    | X-Men: Children of the Atom (Hispanic 950105)                                              | xmcotahr1     |
 | cps2    | X-Men: Children of the Atom (Hispanic 950331)                                              | xmcotah       |
 | cps2    | X-Men: Children of the Atom (Japan 941208 rent version)                                    | xmcotajr      |
@@ -593,25 +600,26 @@
 | cps2    | X-Men: Children of the Atom (Japan 941222)                                                 | xmcotaj1      |
 | cps2    | X-Men: Children of the Atom (Japan 950105)                                                 | xmcotaj       |
 | cps2    | X-Men: Children of the Atom (USA 950105)                                                   | xmcotau       |
-| dd      | Double Dragon (Japan)                                                                      | ddragon       |
+| dd      | Double Dragon (Japan set 1)                                                                | ddragonj      |
 | dd      | Double Dragon (US set 1)                                                                   | ddragonu      |
 | dd      | Double Dragon (US set 2)                                                                   | ddragonua     |
 | dd      | Double Dragon (US set 3)                                                                   | ddragonub     |
-| dd      | Double Dragon (World set 1)                                                                | ddragonw      |
-| dd      | Double Dragon (World set 2)                                                                | ddragonw1     |
+| dd      | Double Dragon (World set 1)                                                                | ddragon       |
+| dd      | Double Dragon (World set 2)                                                                | ddragona      |
+| dd      | Double Dragon (bootleg)                                                                    | ddragonbl2    |
 | dd2     | Double Dragon II: The Revenge (Japan)                                                      | ddragon2j     |
 | dd2     | Double Dragon II: The Revenge (US)                                                         | ddragon2u     |
-| dd2     | Double Dragon II: The Revenge (US, bootleg)                                                | ddragon2b     |
+| dd2     | Double Dragon II: The Revenge (US, bootleg)                                                | ddragon2bl    |
 | dd2     | Double Dragon II: The Revenge (World)                                                      | ddragon2      |
 | exed    | Exed Exes                                                                                  | exedexes      |
 | exed    | Savage Bees                                                                                | savgbees      |
 | flane   | Fast Lane                                                                                  | fastlane      |
-| flstory | Bronx                                                                                      | bronx         |
-| flstory | Colt                                                                                       | colt          |
-| flstory | N.Y. Captor                                                                                | nycaptor      |
-| flstory | Onna Sanshirou - Typhoon Gal                                                               | onna34ro      |
+| flstory | Bronx (bootleg of Cycle Shooting)                                                          | bronx         |
+| flstory | Colt (bootleg of N.Y. Captor)                                                              | colt          |
+| flstory | N.Y. Captor (rev 2)                                                                        | nycaptor      |
 | flstory | Onna Sanshirou - Typhoon Gal (bootleg)                                                     | onna34roa     |
-| flstory | Rumba Lumber                                                                               | rumba         |
+| flstory | Onna Sanshirou - Typhoon Gal (rev 1)                                                       | onna34ro      |
+| flstory | Rumba Lumber (rev 1)                                                                       | rumba         |
 | flstory | The FairyLand Story                                                                        | flstory       |
 | flstory | The FairyLand Story (earlier)                                                              | flstoryo      |
 | flstory | Victorious Nine                                                                            | victnine      |
@@ -624,18 +632,21 @@
 | gaiden  | Raiga - Strato Fighter (US)                                                                | stratof       |
 | gaiden  | Shadow Warriors (World, set 1)                                                             | shadoww       |
 | gaiden  | Shadow Warriors (World, set 2)                                                             | shadowwa      |
-| gaiden  | Tecmo Knight                                                                               | tknight       |
-| gaiden  | Wild Fang                                                                                  | wildfangs     |
-| gaiden  | Wild Fang - Tecmo Knight                                                                   | wildfang      |
+| gaiden  | Tecmo Knight (US)                                                                          | tknight       |
+| gaiden  | Wild Fang (Japan)                                                                          | wildfangs     |
+| gaiden  | Wild Fang - Tecmo Knight (World?)                                                          | wildfang      |
+| gng     | Diamond Run                                                                                | diamrun       |
 | gng     | Ghosts'n Goblins (Italian bootleg, harder)                                                 | gngblita      |
 | gng     | Ghosts'n Goblins (US)                                                                      | gngt          |
 | gng     | Ghosts'n Goblins (World? set 1)                                                            | gng           |
 | gng     | Ghosts'n Goblins (World? set 2)                                                            | gnga          |
 | gng     | Ghosts'n Goblins (World? set 3)                                                            | gngc          |
+| gng     | Ghosts'n Goblins (bootleg)                                                                 | gngbla        |
 | gng     | Ghosts'n Goblins (prototype)                                                               | gngprot       |
-| gng     | Makaimura (Japan Revision B)                                                               | makaimurb     |
-| gng     | Makaimura (Japan Revision C)                                                               | makaimurc     |
-| gng     | Makaimura (Japan Revision G)                                                               | makaimurg     |
+| gng     | Makaimura (Japan revision B bootleg)                                                       | makaimurbbl   |
+| gng     | Makaimura (Japan revision B)                                                               | makaimurb     |
+| gng     | Makaimura (Japan revision C)                                                               | makaimurc     |
+| gng     | Makaimura (Japan revision G)                                                               | makaimurg     |
 | gng     | Makaimura (Japan)                                                                          | makaimur      |
 | gunsmk  | Gun.Smoke (Germany, 1985-11-15, censored)                                                  | gunsmokeg     |
 | gunsmk  | Gun.Smoke (Japan, 1985-11-15)                                                              | gunsmokej     |
@@ -643,23 +654,23 @@
 | gunsmk  | Gun.Smoke (USA and Canada, 1986-04-08)                                                     | gunsmokeu     |
 | gunsmk  | Gun.Smoke (World, 1985-11-15)                                                              | gunsmoke      |
 | gunsmk  | Gun.Smoke (World, 1985-11-15) (bootleg)                                                    | gunsmokeb     |
-| karnov  | Chelnov - Atomic Runner (Japan)                                                            | chelnovj      |
-| karnov  | Chelnov - Atomic Runner (US)                                                               | chelnovu      |
-| karnov  | Chelnov - Atomic Runner (World)                                                            | chelnov       |
+| karnov  | Atomic Runner Chelnov (Japan)                                                              | chelnovj      |
+| karnov  | Atomic Runner Chelnov (US)                                                                 | chelnovu      |
+| karnov  | Atomic Runner Chelnov (World)                                                              | chelnov       |
 | karnov  | Karnov (Japan)                                                                             | karnovj       |
 | karnov  | Karnov (US, rev 5)                                                                         | karnova       |
 | karnov  | Karnov (US, rev 6)                                                                         | karnov        |
 | karnov  | Wonder Planet (Japan)                                                                      | wndrplnt      |
 | kchamp  | Karate Champ (Tecfri bootleg)                                                              | kchamptec     |
-| kchamp  | Karate Champ (US VS version, set 1)                                                        | kchampvs      |
-| kchamp  | Karate Champ (US VS version, set 2)                                                        | kchampvs2     |
-| kchamp  | Karate Champ (US VS version, set 3)                                                        | kchampvs3     |
-| kchamp  | Karate Champ (US VS version, set 4)                                                        | kchampvs4     |
 | kchamp  | Karate Champ (US)                                                                          | kchamp        |
 | kchamp  | Karate Champ (US, 2 players)                                                               | kchamp2p      |
+| kchamp  | Karate Champ: Player Vs Player (US, set 1)                                                 | kchampvs      |
+| kchamp  | Karate Champ: Player Vs Player (US, set 2)                                                 | kchampvs2     |
+| kchamp  | Karate Champ: Player Vs Player (US, set 3)                                                 | kchampvs3     |
+| kchamp  | Karate Champ: Player Vs Player (US, set 4)                                                 | kchampvs4     |
 | kchamp  | Karate Dou (Arfyc bootleg)                                                                 | karateda      |
 | kchamp  | Karate Dou (Japan)                                                                         | karatedo      |
-| kchamp  | Taisen Karate Dou (Japan VS version)                                                       | karatevs      |
+| kchamp  | Taisen Karate Dou (Japan)                                                                  | karatevs      |
 | kicker  | Kicker                                                                                     | kicker        |
 | kicker  | Shao-lin's Road (set 1)                                                                    | shaolins      |
 | kiwi    | Arkanoid - Revenge of DOH (Japan bootleg)                                                  | arknoid2b     |
@@ -692,6 +703,7 @@
 | kunio   | Renegade (US bootleg)                                                                      | renegadeb     |
 | kunio   | Renegade (US)                                                                              | renegade      |
 | labrun  | Labyrinth Runner (Japan)                                                                   | labyrunr      |
+| labrun  | Labyrinth Runner (World Ver. F)                                                            | labyrunrf     |
 | labrun  | Labyrinth Runner (World Ver. K)                                                            | labyrunrk     |
 | labrun  | Trick Trap (World?)                                                                        | tricktrp      |
 | midres  | Midnight Resistance (Japan)                                                                | midresj       |
@@ -700,8 +712,8 @@
 | midres  | Midnight Resistance (World, set 2)                                                         | midres2       |
 | mikie   | Mikie                                                                                      | mikie         |
 | mikie   | Mikie (High School Graffiti)                                                               | mikiehs       |
-| mikie   | Shin-ip Sawon - Seok Dol-i                                                                 | mikiek        |
-| mikie   | Shinnyuushain Tooru-kun                                                                    | mikiej        |
+| mikie   | Shin-ip Sawon - Seok Dol-i (Korea)                                                         | mikiek        |
+| mikie   | Shinnyuu Shain Tooru-kun (Japan)                                                           | mikiej        |
 | mx5k    | Flak Attack (Japan)                                                                        | flkatck       |
 | mx5k    | Flak Attack (Japan, PWB 450593 sub-board)                                                  | flkatcka      |
 | mx5k    | MX5000                                                                                     | mx5000        |
@@ -709,7 +721,8 @@
 | ngpc    | NeoGeo Pocket Color                                                                        | ngpc          |
 | ninja   | Bad Dudes vs. Dragonninja (US, revision 1)                                                 | baddudes      |
 | ninja   | Dragonninja (Japan, revision 1)                                                            | drgninja      |
-| ninja   | Heavy Barrel (US)                                                                          | hbarrelu      |
+| ninja   | Heavy Barrel (US, revision 1)                                                              | hbarrelua     |
+| ninja   | Heavy Barrel (US, revision 3)                                                              | hbarrelu      |
 | ninja   | Heavy Barrel (World)                                                                       | hbarrel       |
 | outrun  | Out Run (Japan, deluxe sitdown) (FD1089A 317-0019)                                         | outrundxj     |
 | outrun  | Out Run (deluxe sitdown earlier version)                                                   | outrundxa     |
@@ -783,12 +796,13 @@
 | riders  | Sunset Riders (4 Players ver UAB)                                                          | ssridersuab   |
 | riders  | Sunset Riders (4 Players ver UAC)                                                          | ssridersuac   |
 | riders  | Sunset Riders (4 Players ver UDA)                                                          | ssridersuda   |
-| riders  | Teenage Mutant Hero Turtles - Turtles in Time (2 Players ver EBA)                          | tmht22pe      |
-| riders  | Teenage Mutant Hero Turtles - Turtles in Time (4 Players ver EAA)                          | tmht24pe      |
-| riders  | Teenage Mutant Ninja Turtles - Turtles in Time (2 Players ver UDA)                         | tmnt22pu      |
-| riders  | Teenage Mutant Ninja Turtles - Turtles in Time (4 Players ver ADA)                         | tmnt2a        |
-| riders  | Teenage Mutant Ninja Turtles - Turtles in Time (4 Players ver UAA)                         | tmnt2         |
-| riders  | Teenage Mutant Ninja Turtles - Turtles in Time (4 Players ver UEA)                         | tmnt24pu      |
+| riders  | Teenage Mutant Hero Turtles: Turtles in Time (2 Players ver EBA)                           | tmht22pe      |
+| riders  | Teenage Mutant Hero Turtles: Turtles in Time (4 Players ver EAA)                           | tmht24pe      |
+| riders  | Teenage Mutant Ninja Turtles: Turtles in Time (2 Players ver UDA)                          | tmnt22pu      |
+| riders  | Teenage Mutant Ninja Turtles: Turtles in Time (4 Players ver ADA)                          | tmnt2a        |
+| riders  | Teenage Mutant Ninja Turtles: Turtles in Time (4 Players ver OAA)                          | tmnt2o        |
+| riders  | Teenage Mutant Ninja Turtles: Turtles in Time (4 Players ver UAA)                          | tmnt2         |
+| riders  | Teenage Mutant Ninja Turtles: Turtles in Time (4 Players ver UEA)                          | tmnt24pu      |
 | riders  | Trigon (Japan)                                                                             | trigon        |
 | roadf   | Hyper Olympic '84                                                                          | hpolym84      |
 | roadf   | Hyper Sports                                                                               | hyperspt      |
@@ -804,7 +818,10 @@
 | rungun  | Run and Gun (ver EAA 1993 10.4)                                                            | runguna       |
 | rungun  | Run and Gun (ver EAA 1993 10.8)                                                            | rungun        |
 | rungun  | Run and Gun (ver EAA 1993 9.10, prototype?)                                                | rungunb       |
-| rungun  | Run and Gun (ver UBA 1993 10.8)                                                            | rungunua      |
+| rungun  | Run and Gun (ver UAB 1993  9.10, dedicated twin cabinet)                                   | rungunuaad    |
+| rungun  | Run and Gun (ver UAB 1993 10.12, dedicated twin cabinet)                                   | rungunuabd    |
+| rungun  | Run and Gun (ver UBA 1993 10.8)                                                            | rungunuba     |
+| rungun  | Run and Gun (ver UBA 1993 10.8) (dual screen with demux adapter)                           | rungunubad    |
 | s16     | Ace Attacker (Japan, S16A) [FD1094 317-0060]                                               | aceattaca     |
 | s16     | Action Fighter (World, S16A) [FD1089A 317-0018]                                            | afighter      |
 | s16     | Action Fighter (World, S16A) [FD1089B 317-xxxx]                                            | afighterc     |
@@ -864,6 +881,10 @@
 | s16b    | Cotton (set 2, Japan, Rev B) (FD1094 317-0179b)                                            | cottonj       |
 | s16b    | Cotton (set 3, US) (FD1094 317-0180)                                                       | cottonu       |
 | s16b    | Cotton (set 4, World) (FD1094 317-0181a)                                                   | cotton        |
+| s16b    | Cyber Police ESWAT (set 1, Japan) (FD1094 317-0131)                                        | eswatj1       |
+| s16b    | Cyber Police ESWAT (set 2, Japan) (FD1094 317-0128)                                        | eswatj        |
+| s16b    | Cyber Police ESWAT (set 3, US) (FD1094 317-0129)                                           | eswatu        |
+| s16b    | Cyber Police ESWAT (set 4, World) (FD1094 317-0130)                                        | eswat         |
 | s16b    | Defense (System 16B, FD1089A 317-0028)                                                     | defense       |
 | s16b    | Dunk Shot (FD1089A 317-0022)                                                               | dunkshoto     |
 | s16b    | Dunk Shot (Rev A, FD1089A 317-0022)                                                        | dunkshota     |
@@ -871,10 +892,6 @@
 | s16b    | Dynamite Dux (set 1, World) (8751 317-0095)                                                | ddux1         |
 | s16b    | Dynamite Dux (set 2, Japan) (FD1094 317-0094)                                              | dduxj         |
 | s16b    | Dynamite Dux (set 3, World) (FD1094 317-0096)                                              | ddux          |
-| s16b    | E-Swat - Cyber Police (set 1, Japan) (FD1094 317-0131)                                     | eswatj1       |
-| s16b    | E-Swat - Cyber Police (set 2, Japan) (FD1094 317-0128)                                     | eswatj        |
-| s16b    | E-Swat - Cyber Police (set 3, US) (FD1094 317-0129)                                        | eswatu        |
-| s16b    | E-Swat - Cyber Police (set 4, World) (FD1094 317-0130)                                     | eswat         |
 | s16b    | Excite League (FD1094 317-0079)                                                            | exctleag      |
 | s16b    | Fantasy Zone II - The Tears of Opa-Opa (System 16C version)                                | fantzn2x      |
 | s16b    | Fantasy Zone II - The Tears of Opa-Opa (System 16C version, prototype)                     | fantzn2xp     |
@@ -949,21 +966,21 @@
 | s18     | Wally wo Sagase! (rev A, Japan, 2 players) (FD1094 317-0197A)                              | wwallyja      |
 | s18     | Wally wo Sagase! (rev A, Japan, 3 players) (FD1094 317-0198A)                              | wwallyja3p    |
 | s18     | Wally wo Sagase! (rev B, Japan, 2 players) (FD1094 317-0197B)                              | wwallyj       |
-| sarms   | Side Arms - Hyper Dyne (Japan, 861128)                                                     | sidearmsj     |
-| sarms   | Side Arms - Hyper Dyne (US, 861128)                                                        | sidearmsur1   |
-| sarms   | Side Arms - Hyper Dyne (US, 861202)                                                        | sidearmsu     |
-| sarms   | Side Arms - Hyper Dyne (World, 861129)                                                     | sidearms      |
+| sarms   | Hyper Dyne Side Arms (Japan, 861128)                                                       | sidearmsj     |
+| sarms   | Hyper Dyne Side Arms (US, 861128)                                                          | sidearmsur1   |
+| sarms   | Hyper Dyne Side Arms (US, 861202)                                                          | sidearmsu     |
+| sarms   | Hyper Dyne Side Arms (World, 861129)                                                       | sidearms      |
 | sbaskt  | Super Basketball (version E, encrypted)                                                    | sbaskete      |
 | sbaskt  | Super Basketball (version G, encrypted)                                                    | sbasketg      |
 | sbaskt  | Super Basketball (version H, unprotected)                                                  | sbasketh      |
 | sbaskt  | Super Basketball (version I, encrypted)                                                    | sbasketb      |
 | sectnz  | Ares no Tsubasa (Japan, rev. A)                                                            | lwingsja      |
 | sectnz  | Ares no Tsubasa (Japan, rev. B)                                                            | lwingsj       |
-| sectnz  | Legendary Wings (US set 1)                                                                 | lwings        |
-| sectnz  | Legendary Wings (US set 2)                                                                 | lwings2       |
+| sectnz  | Legendary Wings (US)                                                                       | lwingsa       |
+| sectnz  | Legendary Wings (US, rev. C)                                                               | lwings        |
 | sectnz  | Legendary Wings (bootleg)                                                                  | lwingsb       |
-| sectnz  | Section Z (set 1)                                                                          | sectionz      |
-| sectnz  | Section Z (set 2 rev. A)                                                                   | sectionza     |
+| sectnz  | Section Z (Japan, rev. A)                                                                  | sectionza     |
+| sectnz  | Section Z (US)                                                                             | sectionz      |
 | sf      | Street Fighter (Japan) (protected)                                                         | sfj           |
 | sf      | Street Fighter (US, set 1)                                                                 | sf            |
 | sf      | Street Fighter (US, set 2) (protected)                                                     | sfua          |
@@ -1055,6 +1072,7 @@
 | thundr  | Wonder Momo                                                                                | wndrmomo      |
 | tmnt    | M.I.A. - Missing in Action (version S)                                                     | mia2          |
 | tmnt    | M.I.A. - Missing in Action (version T)                                                     | mia           |
+| tmnt    | Punk Shot (Asia 2 Players, hacked?)                                                        | punkshot2a    |
 | tmnt    | Punk Shot (Japan 2 Players)                                                                | punkshotj     |
 | tmnt    | Punk Shot (US 2 Players)                                                                   | punkshot2     |
 | tmnt    | Punk Shot (US 4 Players)                                                                   | punkshot      |
@@ -1086,27 +1104,28 @@
 | track   | Hyper Olympic (bugfixed)                                                                   | hyprolyma     |
 | track   | Track & Field                                                                              | trackfld      |
 | track   | Track & Field (Centuri)                                                                    | trackfldc     |
-| trojan  | Avengers (US)                                                                              | avengersb     |
-| trojan  | Avengers (US, revision A)                                                                  | avengersa     |
-| trojan  | Avengers (US, revision C)                                                                  | avengers      |
-| trojan  | Avengers (US, unknown revision)                                                            | avengersc     |
+| trojan  | Avengers (US)                                                                              | avengersc     |
+| trojan  | Avengers (US, rev. A)                                                                      | avengersb     |
+| trojan  | Avengers (US, rev. C)                                                                      | avengersa     |
+| trojan  | Avengers (US, rev. D)                                                                      | avengers      |
 | trojan  | Hissatsu Buraiken (Japan, bootleg)                                                         | buraikenb     |
 | trojan  | Hissatsu Buraiken (Japan, rev. A)                                                          | buraiken      |
 | trojan  | Tatakai no Banka (Japan)                                                                   | trojanj       |
 | trojan  | Tatakai no Banka (Japan, old ver.)                                                         | trojanjo      |
-| trojan  | Trojan (Romstar)                                                                           | trojanr       |
+| trojan  | Trojan (Romstar, set 1)                                                                    | trojanr       |
+| trojan  | Trojan (Romstar, set 2)                                                                    | trojanra      |
 | trojan  | Trojan (US set 1)                                                                          | trojan        |
 | trojan  | Trojan (US set 2)                                                                          | trojana       |
 | twin16  | Cue Brick (Japan)                                                                          | cuebrickj     |
 | twin16  | Dark Adventure                                                                             | darkadv       |
 | twin16  | Devil World                                                                                | devilw        |
-| twin16  | Gradius II - GOFER no Yabou (Japan New Ver.)                                               | gradius2      |
-| twin16  | Gradius II - GOFER no Yabou (Japan Old Ver.)                                               | gradius2a     |
-| twin16  | Gradius II - GOFER no Yabou (Japan Older Ver.)                                             | gradius2b     |
-| twin16  | Majuu no Ohkoku                                                                            | majuu         |
-| twin16  | Vulcan Venture (New)                                                                       | vulcan        |
-| twin16  | Vulcan Venture (Old)                                                                       | vulcana       |
-| twin16  | Vulcan Venture (Oldest)                                                                    | vulcanb       |
+| twin16  | Gradius II: GOFER no Yabou (Japan, new)                                                    | gradius2      |
+| twin16  | Gradius II: GOFER no Yabou (Japan, old)                                                    | gradius2a     |
+| twin16  | Gradius II: GOFER no Yabou (Japan, older)                                                  | gradius2b     |
+| twin16  | Majuu no Ohkoku (Japan)                                                                    | majuu         |
+| twin16  | Vulcan Venture (new)                                                                       | vulcan        |
+| twin16  | Vulcan Venture (old)                                                                       | vulcana       |
+| twin16  | Vulcan Venture (older)                                                                     | vulcanb       |
 | vigil   | Vigilante (Japan, Rev D)                                                                   | vigilantd     |
 | vigil   | Vigilante (US)                                                                             | vigilanto     |
 | vigil   | Vigilante (US, Rev B)                                                                      | vigilantb     |
@@ -1114,7 +1133,8 @@
 | vigil   | Vigilante (World, Rev A)                                                                   | vigilanta     |
 | vigil   | Vigilante (World, Rev C)                                                                   | vigilantc     |
 | vigil   | Vigilante (World, Rev E)                                                                   | vigilant      |
-| wc      | Gridiron Fight                                                                             | gridiron      |
+| wc      | All American Football (Tecmo, Japan)                                                       | aafootb       |
+| wc      | Gridiron Fight (World)                                                                     | gridiron      |
 | wc      | Tehkan World Cup (1986 year hack)                                                          | tehkanwch     |
 | wc      | Tehkan World Cup (set 1)                                                                   | tehkanwc      |
 | wc      | Tehkan World Cup (set 2, bootleg?)                                                         | tehkanwcb     |
@@ -1137,7 +1157,7 @@
 | xmen    | X-Men (4 Players ver JEA)                                                                  | xmenja        |
 | xmen    | X-Men (4 Players ver UBB)                                                                  | xmenu         |
 | xmen    | X-Men (4 Players ver UEB)                                                                  | xmenua        |
-| yiear   | Yie Ar Kung-Fu (program code G)                                                            | yiear2        |
-| yiear   | Yie Ar Kung-Fu (program code I)                                                            | yiear         |
+| yiear   | Yie Ar Kung-Fu (version G)                                                                 | yiear2        |
+| yiear   | Yie Ar Kung-Fu (version I)                                                                 | yiear         |
 
-72 cores, supporting 1139 games
+73 cores, supporting 1159 games

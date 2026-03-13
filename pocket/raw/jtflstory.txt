@@ -5,14 +5,14 @@ The following arcade titles are compatible with this core. Generate
 the required .rom file using the mra tool (read below).
 Place the *.rom files in Assets/jtflstory/common
 
-Bronx --> bronx.rom
-Colt --> colt.rom
+Bronx (bootleg of Cycle Shooting) --> bronx.rom
+Colt (bootleg of N.Y. Captor) --> colt.rom
 The FairyLand Story --> flstory.rom
 The FairyLand Story (earlier) --> flstoryo.rom
-N.Y. Captor --> nycaptor.rom
-Onna Sanshirou - Typhoon Gal --> onna34ro.rom
+N.Y. Captor (rev 2) --> nycaptor.rom
+Onna Sanshirou - Typhoon Gal (rev 1) --> onna34ro.rom
 Onna Sanshirou - Typhoon Gal (bootleg) --> onna34roa.rom
-Rumba Lumber --> rumba.rom
+Rumba Lumber (rev 1) --> rumba.rom
 Victorious Nine --> victnine.rom
 
 

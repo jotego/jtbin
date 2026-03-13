@@ -8,13 +8,13 @@ Place the *.rom files in Assets/jttwin16/common
 Cue Brick (Japan) --> cuebrickj.rom
 Dark Adventure --> darkadv.rom
 Devil World --> devilw.rom
-Gradius II - GOFER no Yabou (Japan New Ver.) --> gradius2.rom
-Gradius II - GOFER no Yabou (Japan Old Ver.) --> gradius2a.rom
-Gradius II - GOFER no Yabou (Japan Older Ver.) --> gradius2b.rom
-Majuu no Ohkoku --> majuu.rom
-Vulcan Venture (New) --> vulcan.rom
-Vulcan Venture (Old) --> vulcana.rom
-Vulcan Venture (Oldest) --> vulcanb.rom
+Gradius II: GOFER no Yabou (Japan, new) --> gradius2.rom
+Gradius II: GOFER no Yabou (Japan, old) --> gradius2a.rom
+Gradius II: GOFER no Yabou (Japan, older) --> gradius2b.rom
+Majuu no Ohkoku (Japan) --> majuu.rom
+Vulcan Venture (new) --> vulcan.rom
+Vulcan Venture (old) --> vulcana.rom
+Vulcan Venture (older) --> vulcanb.rom
 
 
 These files are generated using the mra tool in:

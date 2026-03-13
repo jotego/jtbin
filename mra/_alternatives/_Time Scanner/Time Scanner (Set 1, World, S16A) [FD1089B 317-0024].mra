@@ -24,7 +24,7 @@
     <rotation>vertical (ccw)</rotation>
     <name>Time Scanner (Set 1, World, S16A) [FD1089B 317-0024]</name>
     <setname>timescan1</setname>
-    <mameversion>0261</mameversion>
+    <mameversion>0282</mameversion>
     <year>1987</year>
     <manufacturer>Sega</manufacturer>
     <players>2</players>
@@ -62,7 +62,7 @@
         <!-- soundcpu - starts at 0x40000 - length 0x8000 (15 bits) -->
         <part name="epr-10546.12" crc="1ebee5cc"/>
         <!-- PCM_START -->
-        <!-- n7751data - starts at 0x48000 - length 0x40000 (18 bits) -->
+        <!-- upd7751data - starts at 0x48000 - length 0x40000 (18 bits) -->
         <part name="epr-10547.1" crc="d24ffc4b"/>
         <part repeat="0x38000"> FF</part>
         <!-- JTFRAME_BA2_START -->
@@ -96,8 +96,8 @@
             <part name="epr-10555.30" crc="2143c471" map="10"/>
         </interleave>
         <part repeat="0x10000"> FF</part>
-        <!-- JTFRAME_PROM_START -->
         <!-- MCU_START -->
+        <!-- JTFRAME_PROM_START -->
         <!-- mcu - starts at 0x180000 - length 0x2000 (13 bits) -->
         <part repeat="0x1000"> FF</part>
         <part repeat="0x1000"> FF</part>
@@ -105,7 +105,7 @@
         <!-- maincpu:key - starts at 0x182000 - length 0x2000 (13 bits) -->
         <part name="317-0024.key" crc="dcd41d24"/>
         <!-- N7751_START -->
-        <!-- n7751 - starts at 0x184000 - length 0x400 (10 bits) -->
+        <!-- upd7751 - starts at 0x184000 - length 0x400 (10 bits) -->
         <part name="7751.bin" crc="6a9534fc"/>
         <part repeat="0x1C00"> FF</part>
         <!-- FD1089 base table starts at 0x186000 -->

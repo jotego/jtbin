@@ -5,12 +5,13 @@ The following arcade titles are compatible with this core. Generate
 the required .rom file using the mra tool (read below).
 Place the *.rom files in Assets/jtdd/common
 
-Double Dragon (Japan) --> ddragon.rom
+Double Dragon (World set 1) --> ddragon.rom
+Double Dragon (World set 2) --> ddragona.rom
+Double Dragon (bootleg) --> ddragonbl2.rom
+Double Dragon (Japan set 1) --> ddragonj.rom
 Double Dragon (US set 1) --> ddragonu.rom
 Double Dragon (US set 2) --> ddragonua.rom
 Double Dragon (US set 3) --> ddragonub.rom
-Double Dragon (World set 1) --> ddragonw.rom
-Double Dragon (World set 2) --> ddragonw1.rom
 
 
 These files are generated using the mra tool in:

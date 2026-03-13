@@ -24,7 +24,7 @@
     <rotation>horizontal</rotation>
     <name>Pac-Land (World)</name>
     <setname>pacland</setname>
-    <mameversion>0261</mameversion>
+    <mameversion>0282</mameversion>
     <year>1984</year>
     <manufacturer>Namco</manufacturer>
     <players>2</players>

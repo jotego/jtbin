@@ -16,6 +16,7 @@
 | btiger  | Black Tiger                                                                  | blktiger  |
 | bubl    | Bubble Bobble (Japan, Ver 0.1)                                               | bublbobl  |
 | bubl    | Tokio - Scramble Formation (newer)                                           | tokio     |
+| cal50   | Caliber 50 (Ver. 1.01)                                                       | calibr50  |
 | castle  | Haunted Castle (version M)                                                   | hcastle   |
 | circus  | Circus Charlie (level select, set 1)                                         | circusc   |
 | commnd  | Commando (World)                                                             | commando  |
@@ -25,6 +26,7 @@
 | cop     | Robocop (World, revision 4)                                                  | robocop   |
 | cps1    | 1941: Counter Attack (World 900227)                                          | 1941      |
 | cps1    | Adventure Quiz Capcom World 2 (Japan 920611)                                 | cworld2j  |
+| cps1    | CPS1 Multi Game                                                              | cps1mult  |
 | cps1    | Captain Commando (World 911202)                                              | captcomm  |
 | cps1    | Carrier Air Wing (World 901012)                                              | cawing    |
 | cps1    | Dynasty Wars (USA, B-Board 89624B-?)                                         | dynwar    |
@@ -39,7 +41,7 @@
 | cps1    | Mega Twins (World 900619)                                                    | mtwins    |
 | cps1    | Mercs (World 900302)                                                         | mercs     |
 | cps1    | Nemo (World 901130)                                                          | nemo      |
-| cps1    | Pang! 3 (Euro 950601)                                                        | pang3     |
+| cps1    | Pang! 3 (Europe 950601)                                                      | pang3     |
 | cps1    | Pnickies (Japan 940608)                                                      | pnickj    |
 | cps1    | Pokonyan! Balloon (Japan 940322)                                             | pokonyan  |
 | cps1    | Quiz & Dragons: Capcom Quiz Game (USA 920701)                                | qad       |
@@ -60,66 +62,68 @@
 | cps15   | Tenchi wo Kurau II: Sekiheki no Tatakai (CPS Changer, Japan 921031)          | wofch     |
 | cps15   | The Punisher (World 930422)                                                  | punisher  |
 | cps15   | Warriors of Fate (World 921031)                                              | wof       |
-| cps2    | 1944: The Loop Master (Euro 000620)                                          | 1944      |
-| cps2    | 19XX: The War Against Destiny (Euro 960104)                                  | 19xx      |
-| cps2    | Alien vs. Predator (Euro 940520)                                             | avsp      |
-| cps2    | Armored Warriors (Euro 941024)                                               | armwar    |
-| cps2    | Battle Circuit (Euro 970319)                                                 | batcir    |
-| cps2    | Capcom Sports Club (Euro 971017)                                             | csclub    |
-| cps2    | Cyberbots: Fullmetal Madness (Euro 950424)                                   | cybots    |
-| cps2    | Darkstalkers: The Night Warriors (Euro 940705)                               | dstlk     |
-| cps2    | Dimahoo (Euro 000121)                                                        | dimahoo   |
-| cps2    | Dungeons & Dragons: Shadow over Mystara (Euro 960619)                        | ddsom     |
-| cps2    | Dungeons & Dragons: Tower of Doom (Euro 940412)                              | ddtod     |
+| cps2    | 1944: The Loop Master (Europe 000620)                                        | 1944      |
+| cps2    | 19XX: The War Against Destiny (Europe 960104)                                | 19xx      |
+| cps2    | Alien vs. Predator (Europe 940520)                                           | avsp      |
+| cps2    | Armored Warriors (Europe 941024)                                             | armwar    |
+| cps2    | Battle Circuit (Europe 970319)                                               | batcir    |
+| cps2    | Capcom Sports Club (Europe 971017)                                           | csclub    |
+| cps2    | Cyberbots: Fullmetal Madness (Europe 950424)                                 | cybots    |
+| cps2    | Darkstalkers: The Night Warriors (Europe 940705)                             | dstlk     |
+| cps2    | Dimahoo (Europe 000121)                                                      | dimahoo   |
+| cps2    | Dungeons & Dragons: Shadow over Mystara (Europe 960619)                      | ddsom     |
+| cps2    | Dungeons & Dragons: Tower of Doom (Europe 940412)                            | ddtod     |
 | cps2    | Eco Fighters (World 931203)                                                  | ecofghtr  |
 | cps2    | Giga Wing (USA 990222)                                                       | gigawing  |
 | cps2    | Hyper Street Fighter II: The Anniversary Edition (USA 040202)                | hsf2      |
 | cps2    | Janpai Puzzle Choukou (Japan 010820)                                         | choko     |
 | cps2    | Jyangokushi: Haoh no Saihai (Japan 990527)                                   | jyangoku  |
 | cps2    | Mars Matrix: Hyper Solid Shooting (USA 000412)                               | mmatrix   |
-| cps2    | Marvel Super Heroes (Euro 951024)                                            | msh       |
-| cps2    | Marvel Super Heroes Vs. Street Fighter (Euro 970625)                         | mshvsf    |
-| cps2    | Marvel Vs. Capcom: Clash of Super Heroes (Euro 980123)                       | mvsc      |
+| cps2    | Marvel Super Heroes (Europe 951024)                                          | msh       |
+| cps2    | Marvel Super Heroes Vs. Street Fighter (Europe 970625)                       | mshvsf    |
+| cps2    | Marvel Vs. Capcom: Clash of Super Heroes (Europe 980123)                     | mvsc      |
 | cps2    | Mega Man 2: The Power Fighters (USA 960708)                                  | megaman2  |
-| cps2    | Mighty! Pang (Euro 001010)                                                   | mpang     |
-| cps2    | Night Warriors: Darkstalkers' Revenge (Euro 950316)                          | nwarr     |
+| cps2    | Mighty! Pang (Europe 001010)                                                 | mpang     |
+| cps2    | Night Warriors: Darkstalkers' Revenge (Europe 950316)                        | nwarr     |
 | cps2    | Progear (USA 010117)                                                         | progear   |
-| cps2    | Puzz Loop 2 (Euro 010302)                                                    | pzloop2   |
-| cps2    | Quiz Nanairo Dreams: Nijiirochou no Kiseki (Japan 96086)                     | qndream   |
-| cps2    | Ring of Destruction: Slammasters II (Euro 940902)                            | ringdest  |
-| cps2    | Street Fighter Alpha 2 (Euro 960229)                                         | sfa2      |
-| cps2    | Street Fighter Alpha 3 (Euro 980904)                                         | sfa3      |
-| cps2    | Street Fighter Alpha: Warriors' Dreams (Euro 950727)                         | sfa       |
+| cps2    | Puzz Loop 2 (Europe 010302)                                                  | pzloop2   |
+| cps2    | Quiz Nanairo Dreams: Nijiirochou no Kiseki (Japan 960826)                    | qndream   |
+| cps2    | Ring of Destruction: Slammasters II (Europe 940902)                          | ringdest  |
+| cps2    | Street Fighter Alpha 2 (Europe 960229)                                       | sfa2      |
+| cps2    | Street Fighter Alpha 3 (Europe 980904)                                       | sfa3      |
+| cps2    | Street Fighter Alpha: Warriors' Dreams (Europe 950727)                       | sfa       |
 | cps2    | Street Fighter Zero 2 Alpha (Asia 960826)                                    | sfz2al    |
-| cps2    | Super Gem Fighter Mini Mix (USA 970904)                                      | sgemf     |
-| cps2    | Super Puzzle Fighter II Turbo (Euro 960529)                                  | spf2t     |
+| cps2    | Super Gem Fighter: Mini Mix (USA 970904)                                     | sgemf     |
+| cps2    | Super Puzzle Fighter II Turbo (Europe 960529)                                | spf2t     |
 | cps2    | Super Street Fighter II Turbo (World 940223)                                 | ssf2t     |
 | cps2    | Super Street Fighter II: The New Challengers (World 931005)                  | ssf2      |
 | cps2    | Vampire Hunter 2: Darkstalkers Revenge (Japan 970929)                        | vhunt2    |
 | cps2    | Vampire Savior 2: The Lord of Vampire (Japan 970913)                         | vsav2     |
-| cps2    | Vampire Savior: The Lord of Vampire (Euro 970519)                            | vsav      |
-| cps2    | X-Men Vs. Street Fighter (Euro 961004)                                       | xmvsf     |
-| cps2    | X-Men: Children of the Atom (Euro 950331)                                    | xmcota    |
-| dd      | Double Dragon (Japan)                                                        | ddragon   |
+| cps2    | Vampire Savior: The Lord of Vampire (Europe 970519)                          | vsav      |
+| cps2    | X-Men Vs. Street Fighter (Europe 961004)                                     | xmvsf     |
+| cps2    | X-Men: Children of the Atom (Europe 950331)                                  | xmcota    |
+| dd      | Double Dragon (World set 1)                                                  | ddragon   |
 | dd2     | Double Dragon II: The Revenge (World)                                        | ddragon2  |
 | exed    | Exed Exes                                                                    | exedexes  |
 | flane   | Fast Lane                                                                    | fastlane  |
-| flstory | Bronx                                                                        | bronx     |
-| flstory | N.Y. Captor                                                                  | nycaptor  |
-| flstory | Onna Sanshirou - Typhoon Gal                                                 | onna34ro  |
-| flstory | Rumba Lumber                                                                 | rumba     |
+| flstory | Bronx (bootleg of Cycle Shooting)                                            | bronx     |
+| flstory | N.Y. Captor (rev 2)                                                          | nycaptor  |
+| flstory | Onna Sanshirou - Typhoon Gal (rev 1)                                         | onna34ro  |
+| flstory | Rumba Lumber (rev 1)                                                         | rumba     |
 | flstory | The FairyLand Story                                                          | flstory   |
 | flstory | Victorious Nine                                                              | victnine  |
 | fround  | The Final Round (version M)                                                  | fround    |
 | gaiden  | Raiga - Strato Fighter (US)                                                  | stratof   |
 | gaiden  | Shadow Warriors (World, set 1)                                               | shadoww   |
-| gaiden  | Wild Fang - Tecmo Knight                                                     | wildfang  |
+| gaiden  | Wild Fang - Tecmo Knight (World?)                                            | wildfang  |
+| gng     | Diamond Run                                                                  | diamrun   |
 | gng     | Ghosts'n Goblins (World? set 1)                                              | gng       |
 | gunsmk  | Gun.Smoke (World, 1985-11-15)                                                | gunsmoke  |
-| karnov  | Chelnov - Atomic Runner (World)                                              | chelnov   |
+| karnov  | Atomic Runner Chelnov (World)                                                | chelnov   |
 | karnov  | Karnov (US, rev 6)                                                           | karnov    |
 | karnov  | Wonder Planet (Japan)                                                        | wndrplnt  |
 | kchamp  | Karate Champ (US)                                                            | kchamp    |
+| kchamp  | Karate Champ: Player Vs Player (US, set 1)                                   | kchampvs  |
 | kicker  | Kicker                                                                       | kicker    |
 | kiwi    | Arkanoid - Revenge of DOH (World)                                            | arknoid2  |
 | kiwi    | Dr. Toppel's Adventure (World)                                               | drtoppel  |
@@ -152,7 +156,7 @@
 | riders  | Golfing Greats (World, version L)                                            | glfgreat  |
 | riders  | Lightning Fighters (World)                                                   | lgtnfght  |
 | riders  | Sunset Riders (4 Players ver EAC)                                            | ssriders  |
-| riders  | Teenage Mutant Ninja Turtles - Turtles in Time (4 Players ver UAA)           | tmnt2     |
+| riders  | Teenage Mutant Ninja Turtles: Turtles in Time (4 Players ver UAA)            | tmnt2     |
 | roadf   | Hyper Sports                                                                 | hyperspt  |
 | roadf   | Road Fighter (set 1)                                                         | roadf     |
 | roc     | Roc'n Rope                                                                   | rocnrope  |
@@ -175,9 +179,9 @@
 | s16b    | Bay Route (set 3, World) (FD1094 317-0116)                                   | bayroute  |
 | s16b    | Bullet (FD1094 317-0041)                                                     | bullet    |
 | s16b    | Cotton (set 4, World) (FD1094 317-0181a)                                     | cotton    |
+| s16b    | Cyber Police ESWAT (set 4, World) (FD1094 317-0130)                          | eswat     |
 | s16b    | Dunk Shot (Rev C, FD1089A 317-0022)                                          | dunkshot  |
 | s16b    | Dynamite Dux (set 3, World) (FD1094 317-0096)                                | ddux      |
-| s16b    | E-Swat - Cyber Police (set 4, World) (FD1094 317-0130)                       | eswat     |
 | s16b    | Excite League (FD1094 317-0079)                                              | exctleag  |
 | s16b    | Fantasy Zone II - The Tears of Opa-Opa (System 16C version)                  | fantzn2x  |
 | s16b    | Flash Point (set 2, Japan) (FD1094 317-0127A)                                | fpoint    |
@@ -205,10 +209,10 @@
 | s18     | Michael Jackson's Moonwalker (World) (FD1094-8751 317-0159)                  | mwalk     |
 | s18     | Shadow Dancer (World)                                                        | shdancer  |
 | s18     | Wally wo Sagase! (rev B, Japan, 2 players) (FD1094 317-0197B)                | wwallyj   |
-| sarms   | Side Arms - Hyper Dyne (World, 861129)                                       | sidearms  |
+| sarms   | Hyper Dyne Side Arms (World, 861129)                                         | sidearms  |
 | sbaskt  | Super Basketball (version I, encrypted)                                      | sbasketb  |
-| sectnz  | Legendary Wings (US set 1)                                                   | lwings    |
-| sectnz  | Section Z (set 1)                                                            | sectionz  |
+| sectnz  | Legendary Wings (US, rev. C)                                                 | lwings    |
+| sectnz  | Section Z (US)                                                               | sectionz  |
 | sf      | Street Fighter (US, set 1)                                                   | sf        |
 | shanon  | Super Hang-On (sitdown-upright) (unprotected)                                | shangon   |
 | shouse  | Bakutotsu Kijuutei                                                           | bakutotu  |
@@ -248,15 +252,15 @@
 | tora    | F-1 Dream                                                                    | f1dream   |
 | tora    | Tiger Road (US)                                                              | tigeroad  |
 | track   | Track & Field                                                                | trackfld  |
-| trojan  | Avengers (US, revision C)                                                    | avengers  |
+| trojan  | Avengers (US, rev. D)                                                        | avengers  |
 | trojan  | Trojan (US set 1)                                                            | trojan    |
 | twin16  | Devil World                                                                  | devilw    |
-| twin16  | Vulcan Venture (New)                                                         | vulcan    |
+| twin16  | Vulcan Venture (new)                                                         | vulcan    |
 | vigil   | Vigilante (World, Rev E)                                                     | vigilant  |
-| wc      | Gridiron Fight                                                               | gridiron  |
+| wc      | Gridiron Fight (World)                                                       | gridiron  |
 | wc      | Tehkan World Cup (set 1)                                                     | tehkanwc  |
 | wwfss   | WWF Superstars (Europe)                                                      | wwfsstar  |
 | xmen    | X-Men (4 Players ver EBA)                                                    | xmen      |
-| yiear   | Yie Ar Kung-Fu (program code I)                                              | yiear     |
+| yiear   | Yie Ar Kung-Fu (version I)                                                   | yiear     |
 
-71 cores, supporting 258 games
+72 cores, supporting 262 games

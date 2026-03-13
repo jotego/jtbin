@@ -5,8 +5,8 @@ The following arcade titles are compatible with this core. Generate
 the required .rom file using the mra tool (read below).
 Place the *.rom files in Assets/jtyiear/common
 
-Yie Ar Kung-Fu (program code I) --> yiear.rom
-Yie Ar Kung-Fu (program code G) --> yiear2.rom
+Yie Ar Kung-Fu (version I) --> yiear.rom
+Yie Ar Kung-Fu (version G) --> yiear2.rom
 
 
 These files are generated using the mra tool in:

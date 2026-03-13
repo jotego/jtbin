@@ -9,11 +9,11 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "hsf2j1.rom"
+				"filename": "hsf2j2.rom"
 			},
 			{
 				"id": 2,
-				"filename": "hsf2j1.sav"
+				"filename": "hsf2j2.sav"
 			}
 		],
 		"memory_writes": [

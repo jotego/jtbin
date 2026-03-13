@@ -24,7 +24,7 @@
     <rotation>horizontal</rotation>
     <name>Tetris (Set 4, Japan, S16A) [FD1094 317-0093]</name>
     <setname>tetris</setname>
-    <mameversion>0261</mameversion>
+    <mameversion>0282</mameversion>
     <year>1988</year>
     <manufacturer>Sega</manufacturer>
     <players>2</players>
@@ -54,7 +54,7 @@
         <!-- soundcpu - starts at 0x40000 - length 0x8000 (15 bits) -->
         <part name="epr-12205.rom" crc="6695dc99"/>
         <!-- PCM_START -->
-        <!-- n7751data - starts at 0x48000 - length 0x40000 (18 bits) -->
+        <!-- upd7751data - starts at 0x48000 - length 0x40000 (18 bits) -->
         <part repeat="0x40000"> FF</part>
         <!-- JTFRAME_BA2_START -->
         <!-- gfx1 - starts at 0x88000 - length 0x78000 (19 bits) -->
@@ -72,8 +72,8 @@
             <part name="epr-12170.b5" crc="87354e42" map="10"/>
         </interleave>
         <part repeat="0x70000"> FF</part>
-        <!-- MCU_START -->
         <!-- JTFRAME_PROM_START -->
+        <!-- MCU_START -->
         <!-- mcu - starts at 0x180000 - length 0x2000 (13 bits) -->
         <part repeat="0x1000"> FF</part>
         <part repeat="0x1000"> FF</part>
@@ -81,7 +81,7 @@
         <!-- maincpu:key - starts at 0x182000 - length 0x2000 (13 bits) -->
         <part name="317-0093.key" crc="e0064442"/>
         <!-- N7751_START -->
-        <!-- n7751 - starts at 0x184000 - length 0x400 (10 bits) -->
+        <!-- upd7751 - starts at 0x184000 - length 0x400 (10 bits) -->
         <part repeat="0x400"> FF</part>
         <!-- Total 0x184400 bytes - 1553 kBytes -->
     </rom>

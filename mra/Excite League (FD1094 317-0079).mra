@@ -24,7 +24,7 @@
     <rotation>horizontal</rotation>
     <name>Excite League (FD1094 317-0079)</name>
     <setname>exctleag</setname>
-    <mameversion>0261</mameversion>
+    <mameversion>0282</mameversion>
     <year>1988</year>
     <manufacturer>Sega</manufacturer>
     <players>2</players>
@@ -93,8 +93,8 @@
             <part name="epr-11957.b8" crc="218f835b" map="10"/>
         </interleave>
         <part repeat="0x180000"> FF</part>
-        <!-- JTFRAME_PROM_START -->
         <!-- MCU_START -->
+        <!-- JTFRAME_PROM_START -->
         <!-- mcu - starts at 0x440000 - length 0x2000 (13 bits) -->
         <part repeat="0x1000"> FF</part>
         <part repeat="0x1000"> FF</part>

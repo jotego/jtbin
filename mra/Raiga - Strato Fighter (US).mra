@@ -24,7 +24,7 @@
     <rotation>horizontal</rotation>
     <name>Raiga - Strato Fighter (US)</name>
     <setname>stratof</setname>
-    <mameversion>0261</mameversion>
+    <mameversion>0282</mameversion>
     <year>1991</year>
     <manufacturer>Tecmo</manufacturer>
     <players>2</players>
@@ -54,23 +54,23 @@
         <!-- oki - starts at 0x50000 - length 0x20000 (17 bits) -->
         <part name="a-4a.4" crc="ef9acdcf"/>
         <!-- JTFRAME_BA2_START -->
-        <!-- gfx1 - starts at 0x70000 - length 0x10000 (16 bits) -->
+        <!-- txtiles - starts at 0x70000 - length 0x10000 (16 bits) -->
         <interleave output="16">
             <part name="b-7a.5" crc="6d2e4bf1" map="12"/>
         </interleave>
         <!-- OBJ_START -->
-        <!-- gfx4 - starts at 0x80000 - length 0x100000 (20 bits) -->
+        <!-- sprites - starts at 0x80000 - length 0x100000 (20 bits) -->
         <interleave output="16">
             <part name="b-1m" crc="b0de0ded" map="01"/>
             <part name="b-2m" crc="5794ec32" map="10"/>
         </interleave>
         <!-- JTFRAME_BA3_START -->
-        <!-- gfx2 - starts at 0x180000 - length 0x80000 (19 bits) -->
+        <!-- bgtiles - starts at 0x180000 - length 0x80000 (19 bits) -->
         <interleave output="16">
             <part name="b-1b" crc="781d1bd2" map="12"/>
         </interleave>
         <!-- GFX3_START -->
-        <!-- gfx3 - starts at 0x200000 - length 0x80000 (19 bits) -->
+        <!-- fgtiles - starts at 0x200000 - length 0x80000 (19 bits) -->
         <interleave output="16">
             <part name="b-4b" crc="89468b84" map="12"/>
         </interleave>

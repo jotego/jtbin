@@ -23,15 +23,15 @@
     <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://jotego/jtcores"/>
     <rotation>vertical (cw)</rotation>
     <name>Avengers (US)</name>
-    <setname>avengersb</setname>
-    <mameversion>0261</mameversion>
+    <setname>avengersc</setname>
+    <mameversion>0282</mameversion>
     <year>1987</year>
     <manufacturer>Capcom</manufacturer>
     <players>2</players>
     <rbf>jttrojan</rbf>
     <joystick>8</joystick>
     <region>World</region>
-    <rom index="0" zip="avengersb.zip|avengers.zip" md5="None" asm_md5="99198c18c0d0e48559e89c934854f81d">
+    <rom index="0" zip="avengersc.zip|avengers.zip" md5="None" asm_md5="99198c18c0d0e48559e89c934854f81d">
         <!-- Header byte 8:
              bit 0 - Trojan
              bit 1 - Avengers

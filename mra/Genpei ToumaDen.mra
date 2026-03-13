@@ -24,7 +24,7 @@
     <rotation>horizontal</rotation>
     <name>Genpei ToumaDen</name>
     <setname>genpeitd</setname>
-    <mameversion>0261</mameversion>
+    <mameversion>0282</mameversion>
     <year>1986</year>
     <manufacturer>Namco</manufacturer>
     <players>2</players>
@@ -53,7 +53,7 @@
         <part repeat="0x8000"> FF</part>
         <part name="gt1_1b.9c" crc="75396194"/>
         <!-- EXT_START -->
-        <!-- user1 - starts at 0x10000 - length 0x40000 (18 bits) -->
+        <!-- bankeddata - starts at 0x10000 - length 0x40000 (18 bits) -->
         <part name="gt1_10b.f1" crc="5721ad0d"/>
         <part repeat="0x30000"> FF</part>
         <!-- JTFRAME_BA1_START -->
@@ -68,21 +68,21 @@
         <!-- chars - starts at 0xC0000 - length 0x10000 (16 bits) -->
         <part repeat="0x10000"> FF</part>
         <!-- JTFRAME_BA2_START -->
-        <!-- gfx1 - starts at 0xD0000 - length 0x20000 (17 bits) -->
+        <!-- tiles_0 - starts at 0xD0000 - length 0x20000 (17 bits) -->
         <interleave output="32">
             <part name="gt1_7.7r" crc="ea77a211" map="0021" length="0x10000"/>
             <part name="gt1_6.7s" crc="1b128a2e" map="0100" length="0x8000"/>
             <part name="gt1_6.7s" crc="1b128a2e" map="1000" length="0x8000"/>
         </interleave>
         <!-- SCR1_START -->
-        <!-- gfx2 - starts at 0xF0000 - length 0x10000 (16 bits) -->
+        <!-- tiles_1 - starts at 0xF0000 - length 0x10000 (16 bits) -->
         <interleave output="32">
             <part name="gt1_5.4r" crc="44d58b06" map="0021" length="0x8000"/>
             <part name="gt1_4.4s" crc="db8d45b0" map="0100" length="0x4000"/>
             <part name="gt1_4.4s" crc="db8d45b0" map="1000" length="0x4000"/>
         </interleave>
         <!-- JTFRAME_BA3_START -->
-        <!-- gfx3 - starts at 0x100000 - length 0x100000 (20 bits) -->
+        <!-- sprites - starts at 0x100000 - length 0x100000 (20 bits) -->
         <part name="gt1_11.12h" crc="3181a5fe" length="0x20000"/>
         <part name="gt1_12.12k" crc="76b729ab" length="0x20000"/>
         <part name="gt1_13.12l" crc="e332a36e" length="0x20000"/>

@@ -24,7 +24,7 @@
     <rotation>horizontal</rotation>
     <name>Trojan (US set 2)</name>
     <setname>trojana</setname>
-    <mameversion>0261</mameversion>
+    <mameversion>0282</mameversion>
     <year>1986</year>
     <manufacturer>Capcom</manufacturer>
     <players>2</players>
@@ -41,9 +41,9 @@
             01 00 00 00 00 00 00 00
         </part>
         <!-- maincpu - starts at 0x0 - length 0x18000 (17 bits) -->
-        <part name="tb6.13n" crc="aa127a5b"/>
+        <part name="tb_06.13n" crc="aa127a5b"/>
         <part name="tb_05.12n" crc="9273b264"/>
-        <part name="tb4.10n" crc="0113a551"/>
+        <part name="tb_04.10n" crc="0113a551"/>
         <!-- JTFRAME_BA1_START -->
         <!-- soundcpu - starts at 0x18000 - length 0x8000 (15 bits) -->
         <part name="tb_02.15h" crc="21154797"/>
@@ -62,8 +62,8 @@
             <part name="tb_25.15n" crc="6e38c6fa" map="01"/>
             <part name="tb_24.13n" crc="14fc6cf2" map="10"/>
         </interleave>
-        <!-- JTFRAME_BA3_START -->
         <!-- CHAR_START -->
+        <!-- JTFRAME_BA3_START -->
         <!-- gfx1 - starts at 0x40000 - length 0x8000 (15 bits) -->
         <interleave output="16">
             <part name="tb_03.8k" crc="581a2b4c" map="12"/>

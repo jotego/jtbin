@@ -5,9 +5,9 @@ The following arcade titles are compatible with this core. Generate
 the required .rom file using the mra tool (read below).
 Place the *.rom files in Assets/jtkarnov/common
 
-Chelnov - Atomic Runner (World) --> chelnov.rom
-Chelnov - Atomic Runner (Japan) --> chelnovj.rom
-Chelnov - Atomic Runner (US) --> chelnovu.rom
+Atomic Runner Chelnov (World) --> chelnov.rom
+Atomic Runner Chelnov (Japan) --> chelnovj.rom
+Atomic Runner Chelnov (US) --> chelnovu.rom
 Karnov (US, rev 6) --> karnov.rom
 Karnov (US, rev 5) --> karnova.rom
 Karnov (Japan) --> karnovj.rom

@@ -1,0 +1,98 @@
+<!--          FPGA arcade hardware by Jotego
+
+              This core is available for hardware compatible with MiST and MiSTer
+              Other FPGA systems may be supported by the time you read this.
+              This work is not mantained by the MiSTer project. Please contact the
+              core author for issues and updates.
+
+              (c) Jose Tejada, 2026. Please support this research
+              Patreon: https://patreon.com/jotego
+
+              The author does not endorse or participate in illegal distribution
+              of copyrighted material. This work can be used with compatible
+              software. This software can be homebrew projects or legally
+              obtained memory dumps of compatible games.
+
+              This file license is GNU GPLv2.
+              You can read the whole license file in
+              https://opensource.org/licenses/gpl-2.0.php
+
+-->
+
+<misterromdescription>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://jotego/jtcores"/>
+    <rotation>horizontal</rotation>
+    <name>Puzz Loop 2 (Japan 010201 Publicity)</name>
+    <setname>pzloop2jp</setname>
+    <mameversion>0282</mameversion>
+    <year>2001</year>
+    <manufacturer>Mitchell (Capcom license)</manufacturer>
+    <players>2</players>
+    <rbf>jtcps2</rbf>
+    <joystick>8</joystick>
+    <region>World</region>
+    <rom index="0" zip="pzloop2jp.zip|pzloop2.zip|qsound.zip" md5="None" address="0x30000000">
+        <!--  -->
+        <part>
+            00 08 80 08 80 18 80 58
+            FF FF FF FF FF FF FF FF
+            32 FF 00 02 04 06 26 28
+            2A 2C 2E 00 00 30 02 04
+            08 30 FF FF FF FF FF FF
+            FD FF FF FF </part>
+        <!-- key - starts at 0x0 - length 0x14 (5 bits) -->
+        <part name="phoenix.key" crc="2cf772b0"/>
+        <!-- maincpu - starts at 0x14 - length 0x200000 (21 bits) -->
+        <part name="pl2j_03.bin" crc="e9f904c3"/>
+        <part name="pl2j_04.bin" crc="61c7c18f"/>
+        <part name="pl2j_05.bin" crc="ee6da97c"/>
+        <part name="pl2j_06.bin" crc="97e1c3ac"/>
+        <!-- audiocpu - starts at 0x200014 - length 0x20000 (17 bits) -->
+        <part name="pl2_01.bin" crc="35697569"/>
+        <!-- qsound - starts at 0x220014 - length 0x400000 (22 bits) -->
+        <interleave output="16">
+            <part name="pl2-11m.bin" crc="85d8fbe8" map="12"/>
+        </interleave>
+        <interleave output="16">
+            <part name="pl2-12m.bin" crc="1ed62584" map="12"/>
+        </interleave>
+        <!-- gfx - starts at 0x620014 - length 0x1000000 (24 bits) -->
+        <interleave output="64">
+            <part name="pl2-13m.bin" crc="5f3b5f91" map="00000021"/>
+            <part name="pl2-15m.bin" crc="3702f309" map="00002100"/>
+            <part name="pl2-17m.bin" crc="62d3fce9" map="00210000"/>
+            <part name="pl2-19m.bin" crc="6dcbd8ce" map="21000000"/>
+        </interleave>
+        <interleave output="64">
+            <part name="pl2-14m.bin" crc="2e22e71a" map="00000021"/>
+            <part name="pl2-16m.bin" crc="38090022" map="00002100"/>
+            <part name="pl2-18m.bin" crc="33afdd44" map="00210000"/>
+            <part name="pl2-20m.bin" crc="d4ae0278" map="21000000"/>
+        </interleave>
+        <!-- firmware - starts at 0x1620014 - length 0x2000 (13 bits) -->
+        <part name="dl-1425.bin" crc="d6cf5ef5" length="0x2000"/>
+        <!-- Total 0x1622014 bytes - 22664 kBytes -->
+    </rom>
+    <rom index="2">
+        <part>
+01 00 01 00 00 01 00 01 00 02 00 00 00 00 00 00
+01 03 00 01 00 00 00 00 00 00 00 00 00 00 00 00
+03 01 0A 02 4C 50 45 32 49 4D 43 54 45 48 4C 4C
+01 00 01 00 00 01 00 01 00 02 00 00 00 00 00 00
+01 03 00 01 00 00 00 00 00 00 00 00 00 00 00 00
+03 01 0A 02 4C 50 45 32 49 4D 43 54 45 48 4C 4C
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+</part>
+    </rom>
+    <nvram index="2" size="128"/>
+    <rom index="1">
+        <part>00 80</part>
+    </rom>
+    <switches page_id="1" page_name="Switches" base="16" default="ff,ff">
+        <DSWA/>
+        <DSWB/>
+        <DSWC/>
+    </switches>
+    <buttons names="Shot,-,-,-,-,-,Start,Coin,Core credits" default="A,Start,Select,-" count="1"/>
+</misterromdescription>

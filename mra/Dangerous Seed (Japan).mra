@@ -24,7 +24,7 @@
     <rotation>vertical (cw)</rotation>
     <name>Dangerous Seed (Japan)</name>
     <setname>dangseed</setname>
-    <mameversion>0261</mameversion>
+    <mameversion>0282</mameversion>
     <year>1989</year>
     <manufacturer>Namco</manufacturer>
     <players>2</players>
@@ -44,7 +44,7 @@ Byte 7: addr for upper nibble read
         <part>
             03 34 06 FF 05 FF 00 04
         </part>
-        <!-- user1 - starts at 0x0 - length 0x3A0000 (22 bits) -->
+        <!-- mainrom - starts at 0x0 - length 0x3A0000 (22 bits) -->
         <part repeat="0x280000"> FF</part>
         <part name="dr_prg-5.bin" crc="7986bbdd" length="0x20000"/>
         <part repeat="0x60000"> FF</part>

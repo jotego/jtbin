@@ -1,0 +1,82 @@
+{
+	"interact":{
+		"magic": "APF_VER_1",
+		"variables": [
+			{
+				"name": "Monitors",
+				"id": 0,
+				"type": "list",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 1,
+				"value": 0,
+				"mask": "0xFFFFFFEF",
+				"options": [
+					{
+						"name": "1",
+						"value": "0x0"
+					},
+					{
+						"name": "2",
+						"value": "0x10"
+					}
+				]
+			},
+			{
+				"name": "Number of players",
+				"id": 1,
+				"type": "list",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 1,
+				"value": 0,
+				"mask": "0xFFFFFFDF",
+				"options": [
+					{
+						"name": "2",
+						"value": "0x0"
+					},
+					{
+						"name": "4",
+						"value": "0x20"
+					}
+				]
+			},
+			{
+				"name": "Sound Output",
+				"id": 2,
+				"type": "list",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 0,
+				"value": 0,
+				"mask": "0xFFFFFFBF",
+				"options": [
+					{
+						"name": "Stereo",
+						"value": "0x0"
+					},
+					{
+						"name": "Mono",
+						"value": "0x40"
+					}
+				]
+			},
+			{
+				"name": "Default",
+				"id": 1015,
+				"type": "number_u32",
+				"enabled": false,
+				"persist": false,
+				"writeonly": true,
+				"address": "0xfa000000",
+				"defaultval": 191,
+				"value": 0
+			}
+		],
+		"messages": []
+	}
+}

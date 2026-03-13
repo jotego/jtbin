@@ -24,14 +24,14 @@
     <rotation>vertical (ccw)</rotation>
     <name>Space Invasion (Europe)</name>
     <setname>sinvasn</setname>
-    <mameversion>0261</mameversion>
+    <mameversion>0282</mameversion>
     <year>1985</year>
     <manufacturer>Capcom</manufacturer>
     <players>2</players>
     <rbf>jtcommnd</rbf>
     <joystick>8</joystick>
     <region>World</region>
-    <rom index="0" zip="sinvasn.zip|commando.zip" md5="None" asm_md5="e87eba48664693b5d77e293a5cf91a3c">
+    <rom index="0" zip="sinvasn.zip|commando.zip" md5="None" asm_md5="9848a282697289bf26a681561c6b90ca">
         <!-- maincpu - starts at 0x0 - length 0xC000 (16 bits) -->
         <part name="sp04.9m" crc="33f9601e"/>
         <part name="sp03.8m" crc="c7fb43b3"/>
@@ -71,13 +71,14 @@
             <part name="vt16.10a" crc="14178237" map="1000"/>
         </interleave>
         <!-- JTFRAME_PROM_START -->
-        <!-- proms - starts at 0x4C000 - length 0x600 (11 bits) -->
+        <!-- proms - starts at 0x4C000 - length 0x500 (11 bits) -->
         <part name="vtb1.1d" crc="3aba15a1"/>
         <part name="vtb2.2d" crc="88865754"/>
         <part name="vtb3.3d" crc="4c14c3f6"/>
         <part name="vtb4.1h" crc="b388c246"/>
-        <part name="vtb5.6l" crc="712ac508"/>
         <part name="vtb6.6e" crc="0eaf5158"/>
+        <!-- irqprom - starts at 0x4C500 - length 0x100 (8 bits) -->
+        <part name="vtb5.6l" crc="712ac508"/>
         <!-- Total 0x4C600 bytes - 305 kBytes -->
     </rom>
     <!-- Vertical screen. Orientation reversed. -->

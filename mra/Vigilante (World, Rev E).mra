@@ -24,7 +24,7 @@
     <rotation>horizontal</rotation>
     <name>Vigilante (World, Rev E)</name>
     <setname>vigilant</setname>
-    <mameversion>0261</mameversion>
+    <mameversion>0282</mameversion>
     <year>1988</year>
     <manufacturer>Irem</manufacturer>
     <players>2</players>
@@ -43,20 +43,20 @@
         <!-- m72 - starts at 0x30000 - length 0x10000 (16 bits) -->
         <part name="vg_a-4d-.ic26" crc="9b85101d"/>
         <!-- JTFRAME_BA2_START -->
-        <!-- gfx1 - starts at 0x40000 - length 0x40000 (18 bits) -->
+        <!-- chars - starts at 0x40000 - length 0x40000 (18 bits) -->
         <interleave output="16">
             <part name="vg_b-4f-.ic34" crc="01579d20" map="01"/>
             <part name="vg_b-4j-.ic35" crc="4f5872f0" map="10"/>
         </interleave>
         <part repeat="0x20000"> FF</part>
         <!-- SCR2_START -->
-        <!-- gfx3 - starts at 0x80000 - length 0x40000 (18 bits) -->
+        <!-- bgtiles - starts at 0x80000 - length 0x40000 (18 bits) -->
         <part name="vg_b-1d-.ic2" crc="81b1ee5c"/>
         <part name="vg_b-1f-.ic3" crc="d0d33673"/>
         <part name="vg_b-1h-.ic4" crc="aae81695"/>
         <part repeat="0x10000"> FF</part>
         <!-- JTFRAME_BA3_START -->
-        <!-- gfx2 - starts at 0xC0000 - length 0x80000 (19 bits) -->
+        <!-- sprites - starts at 0xC0000 - length 0x80000 (19 bits) -->
         <interleave output="16">
             <part name="vg_b-6l-.ic62" crc="fbe9552d" map="01"/>
             <part name="vg_b-6p-.ic64" crc="afb77461" map="10"/>

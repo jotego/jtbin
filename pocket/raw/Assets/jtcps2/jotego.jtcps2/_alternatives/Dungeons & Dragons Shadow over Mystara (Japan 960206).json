@@ -9,11 +9,11 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "ddsomjr1.rom"
+				"filename": "ddsomjr2.rom"
 			},
 			{
 				"id": 2,
-				"filename": "ddsomjr1.sav"
+				"filename": "ddsomjr2.sav"
 			}
 		],
 		"memory_writes": [

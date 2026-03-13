@@ -24,7 +24,7 @@
     <rotation>horizontal</rotation>
     <name>NeoGeo Pocket</name>
     <setname>ngp</setname>
-    <mameversion>0261</mameversion>
+    <mameversion>0282</mameversion>
     <year>1998</year>
     <manufacturer>SNK</manufacturer>
     <players>1</players>

@@ -24,7 +24,7 @@
     <rotation>horizontal</rotation>
     <name>Wonder Momo</name>
     <setname>wndrmomo</setname>
-    <mameversion>0261</mameversion>
+    <mameversion>0282</mameversion>
     <year>1987</year>
     <manufacturer>Namco</manufacturer>
     <players>2</players>
@@ -53,7 +53,7 @@
         <part repeat="0x8000"> FF</part>
         <part name="wm1_1.9c" crc="34b50bf0"/>
         <!-- EXT_START -->
-        <!-- user1 - starts at 0x10000 - length 0x40000 (18 bits) -->
+        <!-- bankeddata - starts at 0x10000 - length 0x40000 (18 bits) -->
         <part name="wm1_16.f1" crc="e565f8f3"/>
         <part repeat="0x30000"> FF</part>
         <!-- JTFRAME_BA1_START -->
@@ -71,7 +71,7 @@
         <part name="wm1_20.m3" crc="076a72cb"/>
         <!-- JTFRAME_BA2_START -->
         <!-- chars - starts at 0xD0000 -->
-        <!-- gfx1 - starts at 0xD0000 - length 0x20000 (17 bits) -->
+        <!-- tiles_0 - starts at 0xD0000 - length 0x20000 (17 bits) -->
         <interleave output="32">
             <part name="wm1_6.7r" crc="93955fbb" map="0021" length="0x8000"/>
             <part name="wm1_7.7s" crc="7d662527" map="0100" length="0x4000"/>
@@ -83,14 +83,14 @@
             <part name="wm1_7.7s" crc="7d662527" map="1000" length="0x4000"/>
         </interleave>
         <!-- SCR1_START -->
-        <!-- gfx2 - starts at 0xF0000 - length 0x10000 (16 bits) -->
+        <!-- tiles_1 - starts at 0xF0000 - length 0x10000 (16 bits) -->
         <interleave output="32">
             <part name="wm1_4.4r" crc="bbe67836" map="0021" length="0x8000"/>
             <part name="wm1_5.4s" crc="a81b481f" map="0100" length="0x4000"/>
             <part name="wm1_5.4s" crc="a81b481f" map="1000" length="0x4000"/>
         </interleave>
         <!-- JTFRAME_BA3_START -->
-        <!-- gfx3 - starts at 0x100000 - length 0x100000 (20 bits) -->
+        <!-- sprites - starts at 0x100000 - length 0x100000 (20 bits) -->
         <part name="wm1_8.12h" crc="14f52e72"/>
         <part name="wm1_8.12h" crc="14f52e72"/>
         <part name="wm1_9.12k" crc="16f8cdae"/>

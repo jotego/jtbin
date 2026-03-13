@@ -24,7 +24,7 @@
     <rotation>vertical (cw)</rotation>
     <name>Ajax (Japan)</name>
     <setname>ajaxj</setname>
-    <mameversion>0261</mameversion>
+    <mameversion>0282</mameversion>
     <year>1987</year>
     <manufacturer>Konami</manufacturer>
     <players>2</players>
@@ -74,9 +74,9 @@
         <!-- Total 0x300200 bytes - 3072 kBytes -->
     </rom>
     <nvram index="2" size="23584"/>
-    <!-- Vertical screen.  8-pxl black frame on sides. -->
+    <!-- Vertical screen. -->
     <rom index="1">
-        <part>21 80</part>
+        <part>01 80</part>
     </rom>
     <switches page_id="1" page_name="Switches" base="16" default="ff,5a,ff">
         <DSW1/>

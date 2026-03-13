@@ -24,12 +24,12 @@
     <rotation>horizontal</rotation>
     <name>Cue Brick (Japan)</name>
     <setname>cuebrickj</setname>
-    <mameversion>0261</mameversion>
+    <mameversion>0282</mameversion>
     <year>1989</year>
     <manufacturer>Konami</manufacturer>
     <players>2</players>
     <rbf>jttwin16</rbf>
-    <joystick>8</joystick>
+    <joystick>4</joystick>
     <region>World</region>
     <rom index="0" zip="cuebrickj.zip|cuebrick.zip" md5="None" asm_md5="04bfe247a53fb88b66a330dafb73ad3b">
         <!--  -->
@@ -80,7 +80,7 @@
     <rom index="1">
         <part>20 80</part>
     </rom>
-    <switches page_id="1" page_name="Switches" base="20" default="ff,4b,fd">
+    <switches page_id="1" page_name="Switches" base="20" default="ff,4b,ff">
         <DSW1/>
         <dip name="Coin A" bits="0,3" ids="Free Play,4/3,4/1,3/4,3/2,3/1,2/5,2/3,2/1,1/7,1/6,1/5,1/4,1/3,1/2,1/1"/>
         <dip name="Coin B" bits="4,7" ids="Invalid,4/3,4/1,3/4,3/2,3/1,2/5,2/3,2/1,1/7,1/6,1/5,1/4,1/3,1/2,1/1"/>

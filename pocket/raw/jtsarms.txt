@@ -5,10 +5,10 @@ The following arcade titles are compatible with this core. Generate
 the required .rom file using the mra tool (read below).
 Place the *.rom files in Assets/jtsarms/common
 
-Side Arms - Hyper Dyne (World, 861129) --> sidearms.rom
-Side Arms - Hyper Dyne (Japan, 861128) --> sidearmsj.rom
-Side Arms - Hyper Dyne (US, 861202) --> sidearmsu.rom
-Side Arms - Hyper Dyne (US, 861128) --> sidearmsur1.rom
+Hyper Dyne Side Arms (World, 861129) --> sidearms.rom
+Hyper Dyne Side Arms (Japan, 861128) --> sidearmsj.rom
+Hyper Dyne Side Arms (US, 861202) --> sidearmsu.rom
+Hyper Dyne Side Arms (US, 861128) --> sidearmsur1.rom
 
 
 These files are generated using the mra tool in:

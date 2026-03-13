@@ -14,7 +14,7 @@
 				"mask": "0xFFFFFFFB"
 			},
 			{
-				"name": "Difficulty",
+				"name": "Bonus Life",
 				"id": 1,
 				"type": "list",
 				"enabled": true,
@@ -25,19 +25,19 @@
 				"mask": "0xFFFFFFFC",
 				"options": [
 					{
-						"name": "Hardest",
+						"name": "250k, 500k, 2M, 5M",
 						"value": "0x0"
 					},
 					{
-						"name": "Hard",
+						"name": "100k, 250k and every 500k",
 						"value": "0x1"
 					},
 					{
-						"name": "Easy",
+						"name": "100k and every 250k",
 						"value": "0x2"
 					},
 					{
-						"name": "Normal",
+						"name": "50k, 100k and every 250k",
 						"value": "0x3"
 					}
 				]

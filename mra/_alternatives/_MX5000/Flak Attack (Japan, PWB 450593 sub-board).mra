@@ -24,14 +24,14 @@
     <rotation>vertical (cw)</rotation>
     <name>Flak Attack (Japan, PWB 450593 sub-board)</name>
     <setname>flkatcka</setname>
-    <mameversion>0261</mameversion>
+    <mameversion>0282</mameversion>
     <year>1987</year>
     <manufacturer>Konami</manufacturer>
     <players>2</players>
     <rbf>jtmx5k</rbf>
     <joystick>8</joystick>
     <region>World</region>
-    <rom index="0" zip="flkatcka.zip|mx5000.zip" md5="None" asm_md5="7ca93f929eed63fc55bc6a8522be2574">
+    <rom index="0" zip="flkatcka.zip|mx5000.zip" md5="None" asm_md5="8d143cea36cb3022486b374c8c999be8">
         <!-- maincpu - starts at 0x0 - length 0x10000 (16 bits) -->
         <part name="669_p01.16c" crc="c5cd2807"/>
         <!-- SND_START -->
@@ -41,20 +41,20 @@
         <!-- GFX_START -->
         <!-- gfx - starts at 0x20000 - length 0x80000 (19 bits) -->
         <interleave output="16">
-            <part name="669_f03e.4d" crc="95a57a26" map="01"/>
-            <part name="669_f03a.4b" crc="f0ed4c1e" map="10"/>
+            <part name="669_f03a.4b" crc="f0ed4c1e" map="01"/>
+            <part name="669_f03e.4d" crc="95a57a26" map="10"/>
         </interleave>
         <interleave output="16">
-            <part name="669_f03f.5d" crc="c6c9903e" map="01"/>
-            <part name="669_f03b.5b" crc="e2593f3c" map="10"/>
+            <part name="669_f03b.5b" crc="e2593f3c" map="01"/>
+            <part name="669_f03f.5d" crc="c6c9903e" map="10"/>
         </interleave>
         <interleave output="16">
-            <part name="669_f03g.6d" crc="70d35fbd" map="01"/>
-            <part name="669_f03c.6b" crc="47be92dd" map="10"/>
+            <part name="669_f03c.6b" crc="47be92dd" map="01"/>
+            <part name="669_f03g.6d" crc="70d35fbd" map="10"/>
         </interleave>
         <interleave output="16">
-            <part name="669_f03h.7d" crc="abfe76e7" map="01"/>
-            <part name="669_f03d.7b" crc="18d48f9e" map="10"/>
+            <part name="669_f03d.7b" crc="18d48f9e" map="01"/>
+            <part name="669_f03h.7d" crc="abfe76e7" map="10"/>
         </interleave>
         <!-- PCM_START -->
         <!-- k007232 - starts at 0xA0000 - length 0x40000 (18 bits) -->

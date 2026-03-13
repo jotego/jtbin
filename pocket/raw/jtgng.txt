@@ -5,16 +5,19 @@ The following arcade titles are compatible with this core. Generate
 the required .rom file using the mra tool (read below).
 Place the *.rom files in Assets/jtgng/common
 
+Diamond Run --> diamrun.rom
 Ghosts'n Goblins (World? set 1) --> gng.rom
 Ghosts'n Goblins (World? set 2) --> gnga.rom
+Ghosts'n Goblins (bootleg) --> gngbla.rom
 Ghosts'n Goblins (Italian bootleg, harder) --> gngblita.rom
 Ghosts'n Goblins (World? set 3) --> gngc.rom
 Ghosts'n Goblins (prototype) --> gngprot.rom
 Ghosts'n Goblins (US) --> gngt.rom
 Makaimura (Japan) --> makaimur.rom
-Makaimura (Japan Revision B) --> makaimurb.rom
-Makaimura (Japan Revision C) --> makaimurc.rom
-Makaimura (Japan Revision G) --> makaimurg.rom
+Makaimura (Japan revision B) --> makaimurb.rom
+Makaimura (Japan revision B bootleg) --> makaimurbbl.rom
+Makaimura (Japan revision C) --> makaimurc.rom
+Makaimura (Japan revision G) --> makaimurg.rom
 
 
 These files are generated using the mra tool in:

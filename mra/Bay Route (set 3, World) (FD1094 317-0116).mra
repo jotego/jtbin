@@ -24,7 +24,7 @@
     <rotation>horizontal</rotation>
     <name>Bay Route (set 3, World) (FD1094 317-0116)</name>
     <setname>bayroute</setname>
-    <mameversion>0261</mameversion>
+    <mameversion>0282</mameversion>
     <year>1989</year>
     <manufacturer>Sunsoft / Sega</manufacturer>
     <players>2</players>
@@ -75,8 +75,8 @@
             <part name="mpr-12468.b6" crc="d89c77de" map="10"/>
         </interleave>
         <part repeat="0x180000"> FF</part>
-        <!-- MCU_START -->
         <!-- JTFRAME_PROM_START -->
+        <!-- MCU_START -->
         <!-- mcu - starts at 0x440000 - length 0x2000 (13 bits) -->
         <part repeat="0x1000"> FF</part>
         <part repeat="0x1000"> FF</part>

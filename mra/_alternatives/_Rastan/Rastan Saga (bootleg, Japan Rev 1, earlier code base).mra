@@ -24,9 +24,9 @@
     <rotation>horizontal</rotation>
     <name>Rastan Saga (bootleg, Japan Rev 1, earlier code base)</name>
     <setname>rastsagaabl</setname>
-    <mameversion>0261</mameversion>
+    <mameversion>0282</mameversion>
     <year>1987</year>
-    <manufacturer>Taito Corporation</manufacturer>
+    <manufacturer>bootleg</manufacturer>
     <players>2</players>
     <rbf>jtrastan</rbf>
     <joystick>8</joystick>

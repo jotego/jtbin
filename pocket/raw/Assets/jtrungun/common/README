@@ -3,7 +3,10 @@ Place the following files in this folder:
 rungun.rom
 runguna.rom
 rungunb.rom
-rungunua.rom
+rungunuaad.rom
+rungunuabd.rom
+rungunuba.rom
+rungunubad.rom
 
 These files are generated using the mra tool in:
 https://github.com/sebdel/mra-tools-c/tree/master/release

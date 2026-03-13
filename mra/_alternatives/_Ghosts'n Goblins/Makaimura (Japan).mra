@@ -24,12 +24,12 @@
     <rotation>horizontal</rotation>
     <name>Makaimura (Japan)</name>
     <setname>makaimur</setname>
-    <mameversion>0261</mameversion>
+    <mameversion>0282</mameversion>
     <year>1985</year>
     <manufacturer>Capcom</manufacturer>
     <players>2</players>
     <rbf>jtgng</rbf>
-    <joystick>8</joystick>
+    <joystick>4</joystick>
     <region>World</region>
     <rom index="0" zip="makaimur.zip|gng.zip" md5="None" asm_md5="83aede53c1425d7453541f518b5484ba">
         <!-- maincpu - starts at 0x0 - length 0x14000 (17 bits) -->

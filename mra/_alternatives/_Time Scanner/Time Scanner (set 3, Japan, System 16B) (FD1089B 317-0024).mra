@@ -24,7 +24,7 @@
     <rotation>vertical (ccw)</rotation>
     <name>Time Scanner (set 3, Japan, System 16B) (FD1089B 317-0024)</name>
     <setname>timescan3</setname>
-    <mameversion>0261</mameversion>
+    <mameversion>0282</mameversion>
     <year>1987</year>
     <manufacturer>Sega</manufacturer>
     <players>2</players>

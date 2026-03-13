@@ -5,6 +5,7 @@ aliens,fm,1.00,pcm,0.23
 biocom,fm,1.00
 btiger,psg0,1.00,psg1,1.00,fm0,0.81,fm1,0.81
 bubl,fm03,0.84,fm26,0.84,psg,1.00
+cal50,pcm_4k,1.00,pcm_8k,1.00
 castle,fm,1.00,scc,0.42,pcm_a,0.45,pcm_b,0.56
 circus,psg1,0.50,psg2,0.50,rdac,0.21
 commnd,psg0,1.00,psg1,1.00,fm0,0.94,fm1,0.94

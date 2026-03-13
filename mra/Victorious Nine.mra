@@ -24,7 +24,7 @@
     <rotation>horizontal</rotation>
     <name>Victorious Nine</name>
     <setname>victnine</setname>
-    <mameversion>0261</mameversion>
+    <mameversion>0282</mameversion>
     <year>1984</year>
     <manufacturer>Taito</manufacturer>
     <players>2</players>
@@ -82,7 +82,7 @@
         <part name="a16-16.38" crc="9395351b"/>
         <part name="a16-17.39" crc="872270b3"/>
         <!-- JTFRAME_BA2_START -->
-        <!-- gfx1 - starts at 0x4C000 - length 0x20000 (17 bits) -->
+        <!-- tiles - starts at 0x4C000 - length 0x20000 (17 bits) -->
         <interleave output="16">
             <part name="a16-06-1.7" crc="b708134d" map="01"/>
             <part name="a16-04.5" crc="b2fae99f" map="10"/>

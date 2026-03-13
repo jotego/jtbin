@@ -24,14 +24,14 @@
     <rotation>vertical (ccw)</rotation>
     <name>Commando (World)</name>
     <setname>commando</setname>
-    <mameversion>0261</mameversion>
+    <mameversion>0282</mameversion>
     <year>1985</year>
     <manufacturer>Capcom</manufacturer>
     <players>2</players>
     <rbf>jtcommnd</rbf>
     <joystick>8</joystick>
     <region>World</region>
-    <rom index="0" zip="commando.zip" md5="None" asm_md5="34d5dc4ee95a5d25046f02441f424af1">
+    <rom index="0" zip="commando.zip" md5="None" asm_md5="9f2c1c988ae4b08fa7f9c75aa3b1b74c">
         <!-- maincpu - starts at 0x0 - length 0xC000 (16 bits) -->
         <part name="cm04.9m" crc="8438b694"/>
         <part name="cm03.8m" crc="35486542"/>
@@ -71,13 +71,14 @@
             <part name="vt16.10a" crc="14178237" map="1000"/>
         </interleave>
         <!-- JTFRAME_PROM_START -->
-        <!-- proms - starts at 0x4C000 - length 0x600 (11 bits) -->
+        <!-- proms - starts at 0x4C000 - length 0x500 (11 bits) -->
         <part name="vtb1.1d" crc="3aba15a1"/>
         <part name="vtb2.2d" crc="88865754"/>
         <part name="vtb3.3d" crc="4c14c3f6"/>
         <part name="vtb4.1h" crc="b388c246"/>
-        <part name="vtb5.6l" crc="712ac508"/>
         <part name="vtb6.6e" crc="0eaf5158"/>
+        <!-- irqprom - starts at 0x4C500 - length 0x100 (8 bits) -->
+        <part name="vtb5.6l" crc="712ac508"/>
         <!-- Total 0x4C600 bytes - 305 kBytes -->
     </rom>
     <!-- Vertical screen. Orientation reversed. -->

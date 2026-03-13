@@ -24,7 +24,7 @@
     <rotation>horizontal</rotation>
     <name>Nemo (Japan 901120, 89625B-1 ROM board)</name>
     <setname>nemoja</setname>
-    <mameversion>0261</mameversion>
+    <mameversion>0282</mameversion>
     <year>1990</year>
     <manufacturer>Capcom</manufacturer>
     <players>2</players>

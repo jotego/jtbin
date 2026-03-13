@@ -24,14 +24,14 @@
     <rotation>vertical (ccw)</rotation>
     <name>Savage Bees</name>
     <setname>savgbees</setname>
-    <mameversion>0261</mameversion>
+    <mameversion>0282</mameversion>
     <year>1985</year>
     <manufacturer>Capcom (Memetron license)</manufacturer>
     <players>2</players>
     <rbf>jtexed</rbf>
     <joystick>8</joystick>
     <region>World</region>
-    <rom index="0" zip="savgbees.zip|exedexes.zip" md5="None" asm_md5="a0bfb6be669be0073f0196983de61d06">
+    <rom index="0" zip="savgbees.zip|exedexes.zip" md5="None" asm_md5="ab756bdbc02c673b2048c8a5b135ad6a">
         <!-- maincpu - starts at 0x0 - length 0xC000 (16 bits) -->
         <part name="ee04e.11m" crc="c0caf442"/>
         <part name="ee03e.10m" crc="9cd70ae1"/>
@@ -64,7 +64,9 @@
             <part name="j11_ee10.bin" crc="bc83e265" map="10"/>
         </interleave>
         <!-- JTFRAME_PROM_START -->
-        <!-- proms - starts at 0x2C000 - length 0xB20 (12 bits) -->
+        <!-- irqprom - starts at 0x2C000 - length 0x100 (8 bits) -->
+        <part name="06l_e-06.bin" crc="712ac508"/>
+        <!-- proms - starts at 0x2C100 - length 0xA20 (12 bits) -->
         <part name="02d_e-02.bin" crc="8d0d5935"/>
         <part name="03d_e-03.bin" crc="d3c17efc"/>
         <part name="04d_e-04.bin" crc="58ba964c"/>
@@ -73,7 +75,6 @@
         <part name="c04_e-07.bin" crc="850064e0"/>
         <part name="l09_e-11.bin" crc="2bb68710"/>
         <part name="l10_e-12.bin" crc="173184ef"/>
-        <part name="06l_e-06.bin" crc="712ac508"/>
         <part name="k06_e-08.bin" crc="0eaf5158"/>
         <part name="l03_e-09.bin" crc="0d968558"/>
         <part name="03e_e-01.bin" crc="1acee376"/>
@@ -85,7 +86,7 @@
     </rom>
     <switches page_id="1" page_name="Switches" base="16" default="df,ff">
         <DSW0/>
-        <dip name="Difficulty" bits="0,1" ids="Hardest,Hard,Easy,Normal"/>
+        <dip name="Bonus Life" bits="0,1" ids="250k 500k 2M 5M,100 250 &amp; *500,100k &amp; *250k,50k 100k &amp; *250k"/>
         <dip name="Lives" bits="2,3" ids="5,2,1,3"/>
         <dip name="2 Players Game" bits="4" ids="1,2"/>
         <dip name="Language" bits="5" ids="English,Japanese"/>

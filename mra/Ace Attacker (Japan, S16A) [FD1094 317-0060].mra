@@ -24,7 +24,7 @@
     <rotation>vertical (ccw)</rotation>
     <name>Ace Attacker (Japan, S16A) [FD1094 317-0060]</name>
     <setname>aceattaca</setname>
-    <mameversion>0261</mameversion>
+    <mameversion>0282</mameversion>
     <year>1988</year>
     <manufacturer>Sega</manufacturer>
     <players>4</players>
@@ -57,7 +57,7 @@
         <!-- soundcpu - starts at 0x40000 - length 0x8000 (15 bits) -->
         <part name="epr-11578.12" crc="3d58e39a"/>
         <!-- PCM_START -->
-        <!-- n7751data - starts at 0x48000 - length 0x40000 (18 bits) -->
+        <!-- upd7751data - starts at 0x48000 - length 0x40000 (18 bits) -->
         <part name="epr-11579.1" crc="1a994135"/>
         <part name="epr-11580.2" crc="961646ed"/>
         <part name="epr-11581.4" crc="d271a6e5"/>
@@ -99,7 +99,7 @@
         <!-- maincpu:key - starts at 0x182000 - length 0x2000 (13 bits) -->
         <part name="317-0060.key" crc="f4ee940f"/>
         <!-- N7751_START -->
-        <!-- n7751 - starts at 0x184000 - length 0x400 (10 bits) -->
+        <!-- upd7751 - starts at 0x184000 - length 0x400 (10 bits) -->
         <part name="7751.bin" crc="6a9534fc"/>
         <!-- Total 0x184400 bytes - 1553 kBytes -->
     </rom>

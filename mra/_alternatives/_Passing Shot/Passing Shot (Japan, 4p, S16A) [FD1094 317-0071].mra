@@ -24,7 +24,7 @@
     <rotation>vertical (ccw)</rotation>
     <name>Passing Shot (Japan, 4p, S16A) [FD1094 317-0071]</name>
     <setname>passsht16a</setname>
-    <mameversion>0261</mameversion>
+    <mameversion>0282</mameversion>
     <year>1988</year>
     <manufacturer>Sega</manufacturer>
     <players>4</players>
@@ -54,7 +54,7 @@
         <!-- soundcpu - starts at 0x40000 - length 0x8000 (15 bits) -->
         <part name="epr-11837.12" crc="74d11552"/>
         <!-- PCM_START -->
-        <!-- n7751data - starts at 0x48000 - length 0x40000 (18 bits) -->
+        <!-- upd7751data - starts at 0x48000 - length 0x40000 (18 bits) -->
         <part name="epr-11838.1" crc="a465cd69"/>
         <part name="epr-11839.2" crc="99de6197"/>
         <part name="epr-11840.4" crc="9854e8b3"/>
@@ -84,8 +84,8 @@
             <part name="epr-11847.24" crc="81e49697" map="10"/>
         </interleave>
         <part repeat="0x20000"> FF</part>
-        <!-- MCU_START -->
         <!-- JTFRAME_PROM_START -->
+        <!-- MCU_START -->
         <!-- mcu - starts at 0x180000 - length 0x2000 (13 bits) -->
         <part repeat="0x1000"> FF</part>
         <part repeat="0x1000"> FF</part>
@@ -93,7 +93,7 @@
         <!-- maincpu:key - starts at 0x182000 - length 0x2000 (13 bits) -->
         <part name="317-0071.key" crc="c69949ec"/>
         <!-- N7751_START -->
-        <!-- n7751 - starts at 0x184000 - length 0x400 (10 bits) -->
+        <!-- upd7751 - starts at 0x184000 - length 0x400 (10 bits) -->
         <part name="7751.bin" crc="6a9534fc"/>
         <!-- Total 0x184400 bytes - 1553 kBytes -->
     </rom>

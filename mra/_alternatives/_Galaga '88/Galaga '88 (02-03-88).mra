@@ -24,7 +24,7 @@
     <rotation>vertical (cw)</rotation>
     <name>Galaga &apos;88 (02-03-88)</name>
     <setname>galaga88a</setname>
-    <mameversion>0261</mameversion>
+    <mameversion>0282</mameversion>
     <year>1987</year>
     <manufacturer>Namco</manufacturer>
     <players>2</players>
@@ -44,7 +44,7 @@ Byte 7: addr for upper nibble read
         <part>
             02 31 00 00 00 00 00 00
         </part>
-        <!-- user1 - starts at 0x0 - length 0x3A0000 (22 bits) -->
+        <!-- mainrom - starts at 0x0 - length 0x3A0000 (22 bits) -->
         <part name="g81_p0.bin" crc="0f0778ca"/>
         <part name="g81_p0.bin" crc="0f0778ca"/>
         <part repeat="0x60000"> FF</part>

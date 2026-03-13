@@ -24,7 +24,7 @@
     <rotation>horizontal</rotation>
     <name>Pro Tennis World Court (Japan)</name>
     <setname>wldcourt</setname>
-    <mameversion>0261</mameversion>
+    <mameversion>0282</mameversion>
     <year>1988</year>
     <manufacturer>Namco</manufacturer>
     <players>2</players>
@@ -44,7 +44,7 @@ Byte 7: addr for upper nibble read
         <part>
             01 35 00 00 00 00 00 00
         </part>
-        <!-- user1 - starts at 0x0 - length 0x3A0000 (22 bits) -->
+        <!-- mainrom - starts at 0x0 - length 0x3A0000 (22 bits) -->
         <part repeat="0x300000"> FF</part>
         <part name="wc1_prg6.bin" crc="e9216b9e"/>
         <part name="wc1_prg6.bin" crc="e9216b9e"/>

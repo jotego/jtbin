@@ -19,6 +19,21 @@
 						"id": 2,
 						"name": "Mega",
 						"key": "pad_btn_x"
+					},
+					{
+						"id": 3,
+						"name": "Y",
+						"key": "pad_btn_y"
+					},
+					{
+						"id": 4,
+						"name": "L",
+						"key": "pad_trig_l"
+					},
+					{
+						"id": 5,
+						"name": "R",
+						"key": "pad_trig_r"
 					}
 				]
 			}

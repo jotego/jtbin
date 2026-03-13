@@ -224,7 +224,7 @@
 				"enabled": true,
 				"persist": true,
 				"address": "0xfa000000",
-				"defaultval": 1,
+				"defaultval": 0,
 				"value": 0,
 				"mask": "0xFFFFF7FF",
 				"options": [
@@ -308,7 +308,7 @@
 				"persist": false,
 				"writeonly": true,
 				"address": "0xfa000000",
-				"defaultval": 65384,
+				"defaultval": 65376,
 				"value": 0
 			}
 		],

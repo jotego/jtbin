@@ -1,0 +1,96 @@
+<!--          FPGA arcade hardware by Jotego
+
+              This core is available for hardware compatible with MiST and MiSTer
+              Other FPGA systems may be supported by the time you read this.
+              This work is not mantained by the MiSTer project. Please contact the
+              core author for issues and updates.
+
+              (c) Jose Tejada, 2026. Please support this research
+              Patreon: https://patreon.com/jotego
+
+              The author does not endorse or participate in illegal distribution
+              of copyrighted material. This work can be used with compatible
+              software. This software can be homebrew projects or legally
+              obtained memory dumps of compatible games.
+
+              This file license is GNU GPLv2.
+              You can read the whole license file in
+              https://opensource.org/licenses/gpl-2.0.php
+
+-->
+
+<misterromdescription>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://jotego/jtcores"/>
+    <rotation>horizontal</rotation>
+    <name>Run and Gun (ver UBA 1993 10.8) (dual screen with demux adapter)</name>
+    <setname>rungunubad</setname>
+    <mameversion>0282</mameversion>
+    <year>1993</year>
+    <manufacturer>Konami</manufacturer>
+    <players>4</players>
+    <rbf>jtrungun</rbf>
+    <joystick>8</joystick>
+    <region>World</region>
+    <rom index="0" zip="rungunubad.zip|rungun.zip" md5="None" asm_md5="7eddabc0da5cb0966e6d9e3c83bbc64f">
+        <!-- maincpu - starts at 0x0 - length 0x300000 (22 bits) -->
+        <interleave output="16">
+            <part name="247uba04.bin" crc="3f255a4a" map="01"/>
+            <part name="247uba03.bin" crc="c24d7500" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="247b02.21n" crc="d088c9de" map="01"/>
+            <part name="247b01.23n" crc="2d774f27" map="10"/>
+        </interleave>
+        <!-- JTFRAME_BA1_START -->
+        <!-- soundcpu - starts at 0x300000 - length 0x20000 (17 bits) -->
+        <part name="247a05" crc="64e85430"/>
+        <!-- PCM_START -->
+        <!-- k054539 - starts at 0x320000 - length 0x400000 (22 bits) -->
+        <part name="247-a06" crc="b8b2a67e"/>
+        <part name="247-a07" crc="0108142d"/>
+        <!-- JTFRAME_BA2_START -->
+        <!-- gfx1 - starts at 0x720000 - length 0x200000 (21 bits) -->
+        <part name="247a13" crc="c5a8ef29"/>
+        <!-- FIX_START -->
+        <!-- fix - starts at 0x920000 - length 0x20000 (17 bits) -->
+        <interleave output="16">
+            <part name="247-a12" crc="57a8d26e" map="12"/>
+        </interleave>
+        <!-- JTFRAME_BA3_START -->
+        <!-- obj - starts at 0x940000 - length 0x800000 (23 bits) -->
+        <interleave output="64">
+            <part name="247-a11" crc="c3f60854" map="00000021"/>
+            <part name="247-a08" crc="3e315eef" map="00002100"/>
+            <part name="247-a09" crc="5ca7bc06" map="00210000"/>
+            <part name="247-a10" crc="a5ccd243" map="21000000"/>
+        </interleave>
+        <!-- Total 0x1140000 bytes - 17664 kBytes -->
+    </rom>
+    <rom index="17" zip="jtbeta.zip" md5="None" asm_md5="64bf6f32556d237ec04d22062b462fde">
+        <part name="beta.bin" crc="84dbdb6d"/>
+    </rom>
+    <rom index="2">
+        <part>
+04 14 FB EB 92 47 45 41 41 00 15 03 07 03 00 00
+00 00 00 00 00 00 00 1E 00 15 20 00 01 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+</part>
+    </rom>
+    <nvram index="2" size="121024"/>
+    <rom index="1">
+        <part>00 80</part>
+    </rom>
+    <switches page_id="1" page_name="Switches" base="16" default="bf">
+        <DSW/>
+        <dip name="Monitors" bits="4" ids="1,2"/>
+        <dip name="Number of players" bits="5" ids="2,4"/>
+        <dip name="Sound Output" bits="6" ids="Stereo,Mono"/>
+        <SYSTEM/>
+    </switches>
+    <buttons names="Shoot/Jump,Pass/Steal,Select,Start,Coin,Core credits" default="A,B,X,Start,Select,-" count="3"/>
+</misterromdescription>
