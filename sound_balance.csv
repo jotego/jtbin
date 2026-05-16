@@ -12,7 +12,7 @@ commnd,psg0,1.00,psg1,1.00,fm0,0.94,fm1,0.94
 comsc,fm,0.45,pcm,1.00,psga,0.37,psgb,0.37,psgc,0.37
 contra,fm,1.00
 cop,opn,0.25,opl,0.25,psg,0.31,pcm,1.00
-dd,pcm_a,1.00,pcm_b,1.00,fm,0.71
+cps1dd,pcm_a,1.00,pcm_b,1.00,fm,0.71
 dd2,pcm,1.50,fm,0.75
 exed,psg0,0.53,psg1,1.00,psg2,1.00
 flane,pcm0,1.00,pcm1,1.00
@@ -20,6 +20,7 @@ flstory,msm,1.00,psg,0.91,psg2,0.91,dac,0.91
 fround,fm,1.00,pcm,0.15,upd,0.35
 gaiden,pcm,0.80,fm0,0.26,fm1,0.26,psg0,0.16,psg1,0.16
 gng,psg0,0.59,psg1,0.59,fm0,0.30,fm1,0.30
+grad3,fm,1.98,pcm,1.25
 gunsmk,psg0,0.59,psg1,0.59,fm0,0.30,fm1,0.30
 karnov,opn,0.70,opl,0.70,psg,1.00
 kchamp,psg0a,0.46,psg0bc,0.78,psg1,0.59,pcm,1.00,dac,0.72

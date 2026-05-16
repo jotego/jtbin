@@ -31,10 +31,10 @@
     <rbf>jtcps1</rbf>
     <joystick>4</joystick>
     <region>World</region>
-    <rom index="0" zip="ghouls.zip" md5="None" address="0x30000000" asm_md5="6ca0a8f1265eca0c99f28ac9e645e2eb">
+    <rom index="0" zip="ghouls.zip" md5="None" address="0x30000000" asm_md5="73d8ad013dc3d5c4ef4edcabf93b8125">
         <!--  -->
         <part>
-            00 04 40 04 40 05 FF FF
+            00 00 00 08 80 08 80 0A
             FF FF FF FF FF FF FF FF
             FF 00 FF FF FF FF 26 28
             2A 2C 2E 00 00 30 02 04
@@ -43,7 +43,7 @@
             FF FF FF FF FF FF FF FF
             FF FF FF FF FF FF FF FF
         </part>
-        <!-- maincpu - starts at 0x0 - length 0x100000 (20 bits) -->
+        <!-- maincpu - starts at 0x0 - length 0x200000 (21 bits) -->
         <interleave output="16">
             <part name="dme_30.10j" crc="7ac8407a" map="01"/>
             <part name="dme_29.10h" crc="166a58a2" map="10"/>
@@ -55,11 +55,17 @@
         <interleave output="16">
             <part name="dm-17.7j" crc="3ea1b0f2" map="12"/>
         </interleave>
-        <!-- audiocpu - starts at 0x100000 - length 0x10000 (16 bits) -->
+        <part repeat="0x100000"> FF</part>
+        <!-- JTFRAME_BA1_START -->
+        <!-- audiocpu - starts at 0x200000 - length 0x20000 (17 bits) -->
         <part name="26.10a" crc="3692f6e5"/>
-        <!-- oki - starts at 0x110000 - length 0x40000 (18 bits) -->
+        <part repeat="0x10000"> FF</part>
+        <!-- JTFRAME_BA2_START -->
+        <!-- oki - starts at 0x220000 - length 0x80000 (19 bits) -->
         <part repeat="0x40000"> FF</part>
-        <!-- gfx - starts at 0x150000 - length 0x300000 (22 bits) -->
+        <part repeat="0x40000"> FF</part>
+        <!-- JTFRAME_BA3_START -->
+        <!-- gfx - starts at 0x2A0000 - length 0x300000 (22 bits) -->
         <interleave output="64">
             <part name="dm-05.3a" crc="0ba9c0b0" map="00000021"/>
             <part name="dm-07.3f" crc="5d760ab9" map="00002100"/>
@@ -86,7 +92,7 @@
             <part name="16.4h" crc="f187ba1c" map="01000000"/>
             <part name="25.7h" crc="29f79c78" map="10000000"/>
         </interleave>
-        <!-- Total 0x450000 bytes - 4416 kBytes -->
+        <!-- Total 0x5A0000 bytes - 5760 kBytes -->
     </rom>
     <rom index="1">
         <part>00 80</part>

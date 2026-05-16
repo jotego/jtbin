@@ -81,6 +81,7 @@
         <part name="963a30.g7" crc="abd82680"/>
         <part name="963a31.g19" crc="f8004a1c"/>
         <!-- Total 0x428200 bytes - 4256 kBytes -->
+        <!-- Adding 8 bytes to the patch offset to make up for the MRA header -->
         <patch offset="0x1076">71 4E 71 4E 71 4E</patch>
     </rom>
     <nvram index="2" size="28705"/>

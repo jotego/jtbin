@@ -6,9 +6,9 @@ the required .rom file using the mra tool (read below).
 Place the *.rom files in Assets/jttrack/common
 
 Hyper Olympic --> hyprolym.rom
-Hyper Olympic (bugfixed) --> hyprolyma.rom
 Track & Field --> trackfld.rom
 Track & Field (Centuri) --> trackfldc.rom
+Track & Field (NZ bootleg?) --> trackfldnz.rom
 
 
 These files are generated using the mra tool in:

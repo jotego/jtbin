@@ -63,6 +63,7 @@
         <!-- z-tiles - starts at 0x4D0000 -->
         <!-- z-tilemap - starts at 0x4D0000 -->
         <!-- Total 0x4D0000 bytes - 4928 kBytes -->
+        <!-- Adding 16 bytes to the patch offset to make up for the MRA header -->
         <patch offset="0x1A50">71 4E 71 4E 71 4E 71 4E 71 4E 71 4E 71 4E 71 4E 71 4E 71 4E</patch>
         <patch offset="0x13A2">71 4E</patch>
     </rom>

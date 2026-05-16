@@ -31,10 +31,10 @@
     <rbf>jtcps1</rbf>
     <joystick>8</joystick>
     <region>World</region>
-    <rom index="0" zip="area88r.zip|unsquad.zip" md5="None" address="0x30000000" asm_md5="8781a8fb123ef1850338fb732ecbb42c">
+    <rom index="0" zip="area88r.zip|unsquad.zip" md5="None" address="0x30000000" asm_md5="75918d8a5c211a29e466b5a39e679a10">
         <!--  -->
         <part>
-            00 04 80 04 80 05 FF FF
+            00 00 00 08 80 08 80 0A
             FF FF FF FF FF FF FF FF
             32 FF 00 02 04 06 26 28
             2A 2C 2E 00 00 30 02 04
@@ -43,22 +43,27 @@
             FF FF FF FF FF FF FF FF
             FF FF FF FF FF FF FF FF
         </part>
-        <!-- maincpu - starts at 0x0 - length 0x100000 (20 bits) -->
+        <!-- maincpu - starts at 0x0 - length 0x200000 (21 bits) -->
         <part name="araj_23.8f" crc="7045d6cb"/>
         <part name="araj_22.7f" crc="9913002e"/>
-        <!-- audiocpu - starts at 0x100000 - length 0x20000 (17 bits) -->
+        <part repeat="0x100000"> FF</part>
+        <!-- JTFRAME_BA1_START -->
+        <!-- audiocpu - starts at 0x200000 - length 0x20000 (17 bits) -->
         <part name="ara_09.12a" crc="af88359c"/>
-        <!-- oki - starts at 0x120000 - length 0x40000 (18 bits) -->
+        <!-- JTFRAME_BA2_START -->
+        <!-- oki - starts at 0x220000 - length 0x80000 (19 bits) -->
         <part name="ara_18.11c" crc="584b43a9"/>
         <part repeat="0x20000"> FF</part>
-        <!-- gfx - starts at 0x160000 - length 0x200000 (21 bits) -->
+        <part repeat="0x40000"> FF</part>
+        <!-- JTFRAME_BA3_START -->
+        <!-- gfx - starts at 0x2A0000 - length 0x200000 (21 bits) -->
         <interleave output="64">
             <part name="ara_01.3a" crc="bf4575d8" map="00000021"/>
             <part name="ara_02.4a" crc="a02945f4" map="00002100"/>
             <part name="ara_03.5a" crc="5965ca8d" map="00210000"/>
             <part name="ara_04.6a" crc="ac6db17d" map="21000000"/>
         </interleave>
-        <!-- Total 0x360000 bytes - 3456 kBytes -->
+        <!-- Total 0x4A0000 bytes - 4736 kBytes -->
     </rom>
     <rom index="1">
         <part>00 80</part>

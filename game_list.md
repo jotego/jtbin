@@ -635,7 +635,6 @@
 | gaiden  | Tecmo Knight (US)                                                                          | tknight       |
 | gaiden  | Wild Fang (Japan)                                                                          | wildfangs     |
 | gaiden  | Wild Fang - Tecmo Knight (World?)                                                          | wildfang      |
-| gng     | Diamond Run                                                                                | diamrun       |
 | gng     | Ghosts'n Goblins (Italian bootleg, harder)                                                 | gngblita      |
 | gng     | Ghosts'n Goblins (US)                                                                      | gngt          |
 | gng     | Ghosts'n Goblins (World? set 1)                                                            | gng           |
@@ -648,6 +647,11 @@
 | gng     | Makaimura (Japan revision C)                                                               | makaimurc     |
 | gng     | Makaimura (Japan revision G)                                                               | makaimurg     |
 | gng     | Makaimura (Japan)                                                                          | makaimur      |
+| grad3   | Gradius III (Asia)                                                                         | gradius3a     |
+| grad3   | Gradius III (World, version R)                                                             | gradius3      |
+| grad3   | Gradius III: Densetsu kara Shinwa e (Japan, version 3, newer)                              | gradius3j     |
+| grad3   | Gradius III: Densetsu kara Shinwa e (Japan, version S)                                     | gradius3ja    |
+| grad3   | Gradius III: Densetsu kara Shinwa e (Japan, version S, split)                              | gradius3jas   |
 | gunsmk  | Gun.Smoke (Germany, 1985-11-15, censored)                                                  | gunsmokeg     |
 | gunsmk  | Gun.Smoke (Japan, 1985-11-15)                                                              | gunsmokej     |
 | gunsmk  | Gun.Smoke (USA and Canada, 1985-11-15, set 2)                                              | gunsmokeuc    |
@@ -1101,9 +1105,9 @@
 | tora    | Tiger Road (US, Romstar license)                                                           | tigeroadu     |
 | tora    | Tora e no Michi (Japan)                                                                    | toramich      |
 | track   | Hyper Olympic                                                                              | hyprolym      |
-| track   | Hyper Olympic (bugfixed)                                                                   | hyprolyma     |
 | track   | Track & Field                                                                              | trackfld      |
 | track   | Track & Field (Centuri)                                                                    | trackfldc     |
+| track   | Track & Field (NZ bootleg?)                                                                | trackfldnz    |
 | trojan  | Avengers (US)                                                                              | avengersc     |
 | trojan  | Avengers (US, rev. A)                                                                      | avengersb     |
 | trojan  | Avengers (US, rev. C)                                                                      | avengersa     |
@@ -1133,7 +1137,6 @@
 | vigil   | Vigilante (World, Rev A)                                                                   | vigilanta     |
 | vigil   | Vigilante (World, Rev C)                                                                   | vigilantc     |
 | vigil   | Vigilante (World, Rev E)                                                                   | vigilant      |
-| wc      | All American Football (Tecmo, Japan)                                                       | aafootb       |
 | wc      | Gridiron Fight (World)                                                                     | gridiron      |
 | wc      | Tehkan World Cup (1986 year hack)                                                          | tehkanwch     |
 | wc      | Tehkan World Cup (set 1)                                                                   | tehkanwc      |
@@ -1160,4 +1163,4 @@
 | yiear   | Yie Ar Kung-Fu (version G)                                                                 | yiear2        |
 | yiear   | Yie Ar Kung-Fu (version I)                                                                 | yiear         |
 
-73 cores, supporting 1159 games
+74 cores, supporting 1162 games

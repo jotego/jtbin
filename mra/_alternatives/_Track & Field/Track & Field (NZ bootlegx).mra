@@ -1,0 +1,96 @@
+<!--          FPGA arcade hardware by Jotego
+
+              This core is available for hardware compatible with MiST and MiSTer
+              Other FPGA systems may be supported by the time you read this.
+              This work is not mantained by the MiSTer project. Please contact the
+              core author for issues and updates.
+
+              (c) Jose Tejada, 2026. Please support this research
+              Patreon: https://patreon.com/jotego
+
+              The author does not endorse or participate in illegal distribution
+              of copyrighted material. This work can be used with compatible
+              software. This software can be homebrew projects or legally
+              obtained memory dumps of compatible games.
+
+              This file license is GNU GPLv2.
+              You can read the whole license file in
+              https://opensource.org/licenses/gpl-2.0.php
+
+-->
+
+<misterromdescription>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://jotego/jtcores"/>
+    <rotation>horizontal</rotation>
+    <name>Track &amp; Field (NZ bootleg?)</name>
+    <setname>trackfldnz</setname>
+    <mameversion>0282</mameversion>
+    <year>1982</year>
+    <manufacturer>bootleg? (Goldberg Enterprizes Inc.)</manufacturer>
+    <players>4</players>
+    <rbf>jttrack</rbf>
+    <joystick/>
+    <region>World</region>
+    <rom index="0" zip="trackfldnz.zip|trackfld.zip" md5="None" asm_md5="7e435b9985f39500fb8f76cf725a9580">
+        <!-- maincpu - starts at 0x0 - length 0x10000 (16 bits) -->
+        <part repeat="0x6000"> FF</part>
+        <part name="gold.7a" crc="77ea4509"/>
+        <part name="gold.6a" crc="a13f3131"/>
+        <part name="gold.5a" crc="b0abe171"/>
+        <part name="gold.4a" crc="fee9b922"/>
+        <part name="gold.2a" crc="ad6dc048"/>
+        <!-- SND_START -->
+        <!-- audiocpu - starts at 0x10000 - length 0x2000 (13 bits) -->
+        <part name="gold.2d" crc="95bf79b6"/>
+        <!-- SCR_START -->
+        <!-- gfx2 - starts at 0x12000 - length 0xE000 (16 bits) -->
+        <interleave output="16">
+            <part name="gold.2k" crc="50075768" map="12"/>
+        </interleave>
+        <interleave output="16">
+            <part name="gold.4k" crc="dda9e29f" map="12"/>
+        </interleave>
+        <interleave output="16">
+            <part name="gold.5k" crc="c2166a5c" map="12"/>
+        </interleave>
+        <part repeat="0x8000"> FF</part>
+        <!-- OBJ_START -->
+        <!-- gfx1 - starts at 0x20000 - length 0x10000 (16 bits) -->
+        <interleave output="16">
+            <part name="gold.20a" crc="82e2185a" map="01"/>
+            <part name="gold.17a" crc="d9faf183" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="gold.21a" crc="800ff1f1" map="01"/>
+            <part name="gold.19a" crc="5886c802" map="10"/>
+        </interleave>
+        <part repeat="0x8000"> FF</part>
+        <!-- PCM_START -->
+        <!-- vlm - starts at 0x30000 - length 0x2000 (13 bits) -->
+        <part name="gold.d9" crc="f546a56b"/>
+        <!-- JTFRAME_PROM_START -->
+        <!-- proms - starts at 0x32000 - length 0x220 (10 bits) -->
+        <part name="gold.2g" crc="d55f30b5"/>
+        <part name="gold.18d" crc="d2ba4d32"/>
+        <part name="gold.4j" crc="053e5861"/>
+        <!-- Total 0x32220 bytes - 200 kBytes -->
+    </rom>
+    <nvram index="2" size="2048"/>
+    <rom index="1">
+        <part>00 B9</part>
+    </rom>
+    <switches page_id="1" page_name="Switches" base="16" default="ff,59">
+        <DSW1/>
+        <dip name="Coin A" bits="0,3" ids="Free Play,4/3,4/1,3/4,3/2,3/1,2/5,2/3,2/1,1/7,1/6,1/5,1/4,1/3,1/2,1/1"/>
+        <dip name="Coin B" bits="4,7" ids="No B,4/3,4/1,3/4,3/2,3/1,2/5,2/3,2/1,1/7,1/6,1/5,1/4,1/3,1/2,1/1"/>
+        <DSW2/>
+        <dip name="Lives" bits="8" ids="2,1"/>
+        <dip name="After ending" bits="9" ids="Game Continues,Game Over"/>
+        <dip name="Cabinet" bits="10" ids="Upright,Cocktail"/>
+        <dip name="Bonus Life" bits="11" ids="100k,None"/>
+        <dip name="Records" bits="12" ids="Erase on Reset,Don&apos;t Erase"/>
+        <dip name="Difficulty" bits="13,14" ids="Difficult,Hard,Normal,Easy"/>
+        <dip name="Demo Sounds" bits="15" ids="On,Off"/>
+    </switches>
+    <buttons names="Left, Centre, Right,Start,Coin,Core credits" default="A,B,X,Start,Select,-" count="3"/>
+</misterromdescription>

@@ -116,8 +116,8 @@
 | gaiden  | Raiga - Strato Fighter (US)                                                  | stratof   |
 | gaiden  | Shadow Warriors (World, set 1)                                               | shadoww   |
 | gaiden  | Wild Fang - Tecmo Knight (World?)                                            | wildfang  |
-| gng     | Diamond Run                                                                  | diamrun   |
 | gng     | Ghosts'n Goblins (World? set 1)                                              | gng       |
+| grad3   | Gradius III (World, version R)                                               | gradius3  |
 | gunsmk  | Gun.Smoke (World, 1985-11-15)                                                | gunsmoke  |
 | karnov  | Atomic Runner Chelnov (World)                                                | chelnov   |
 | karnov  | Karnov (US, rev 6)                                                           | karnov    |
@@ -263,4 +263,4 @@
 | xmen    | X-Men (4 Players ver EBA)                                                    | xmen      |
 | yiear   | Yie Ar Kung-Fu (version I)                                                   | yiear     |
 
-72 cores, supporting 262 games
+73 cores, supporting 262 games

@@ -31,10 +31,10 @@
     <rbf>jtcps1</rbf>
     <joystick>8</joystick>
     <region>World</region>
-    <rom index="0" zip="captcomm.zip" md5="None" address="0x30000000" asm_md5="6544482d4fdffd3567d47e75daf0c42f">
+    <rom index="0" zip="captcomm.zip" md5="None" address="0x30000000" asm_md5="d128f2db0bec96969366a58d81c8fc74">
         <!--  -->
         <part>
-            00 05 40 05 40 06 FF FF
+            00 00 00 08 80 08 80 0A
             FF FF FF FF FF FF FF FF
             FF FF 06 04 02 00 20 2E
             2C 2A 28 36 38 30 20 12
@@ -43,19 +43,25 @@
             FF FF FF FF FF FF FF FF
             FF FF FF FF FF FF FF FF
         </part>
-        <!-- maincpu - starts at 0x0 - length 0x140000 (21 bits) -->
+        <!-- maincpu - starts at 0x0 - length 0x200000 (21 bits) -->
         <part name="cce_23f.8f" crc="42c814c5"/>
         <part name="cc_22f.7f" crc="0fd34195"/>
         <interleave output="16">
             <part name="cc_28f.9f" crc="fc3c2906" map="01"/>
             <part name="cc_24f.9e" crc="3a794f25" map="10"/>
         </interleave>
-        <!-- audiocpu - starts at 0x140000 - length 0x10000 (16 bits) -->
+        <part repeat="0xC0000"> FF</part>
+        <!-- JTFRAME_BA1_START -->
+        <!-- audiocpu - starts at 0x200000 - length 0x20000 (17 bits) -->
         <part name="cc_09.11a" crc="698e8b58"/>
-        <!-- oki - starts at 0x150000 - length 0x40000 (18 bits) -->
+        <part repeat="0x10000"> FF</part>
+        <!-- JTFRAME_BA2_START -->
+        <!-- oki - starts at 0x220000 - length 0x80000 (19 bits) -->
         <part name="cc_18.11c" crc="6de2c2db"/>
         <part name="cc_19.12c" crc="b99091ae"/>
-        <!-- gfx - starts at 0x190000 - length 0x400000 (22 bits) -->
+        <part repeat="0x40000"> FF</part>
+        <!-- JTFRAME_BA3_START -->
+        <!-- gfx - starts at 0x2A0000 - length 0x400000 (22 bits) -->
         <interleave output="64">
             <part name="cc-5m.3a" crc="7261d8ba" map="00000021"/>
             <part name="cc-7m.5a" crc="6a60f949" map="00002100"/>
@@ -68,7 +74,7 @@
             <part name="cc-2m.8a" crc="0c69f151" map="00210000"/>
             <part name="cc-4m.10a" crc="1f9ebb97" map="21000000"/>
         </interleave>
-        <!-- Total 0x590000 bytes - 5696 kBytes -->
+        <!-- Total 0x6A0000 bytes - 6784 kBytes -->
     </rom>
     <rom index="1">
         <part>00 80</part>

@@ -31,10 +31,10 @@
     <rbf>jtcps1</rbf>
     <joystick>8</joystick>
     <region>World</region>
-    <rom index="0" zip="striderj.zip|strider.zip" md5="None" address="0x30000000" asm_md5="49e0f70b14c4aae1bf3dc66b2fdc5e75">
+    <rom index="0" zip="striderj.zip|strider.zip" md5="None" address="0x30000000" asm_md5="3a45511f45be7911e629f19279626a1c">
         <!--  -->
         <part>
-            00 04 40 04 40 05 FF FF
+            00 00 00 08 80 08 80 0A
             FF FF FF FF FF FF FF FF
             FF 00 FF FF FF FF 26 28
             2A 2C 2E 00 00 30 02 04
@@ -43,7 +43,7 @@
             FF FF FF FF FF FF FF FF
             FF FF FF FF FF FF FF FF
         </part>
-        <!-- maincpu - starts at 0x0 - length 0x100000 (20 bits) -->
+        <!-- maincpu - starts at 0x0 - length 0x200000 (21 bits) -->
         <interleave output="16">
             <part name="sth_42.12h" crc="4037f65f" map="01"/>
             <part name="sth_36.12f" crc="53c7b006" map="10"/>
@@ -60,12 +60,18 @@
             <part name="sth_41.11h" crc="50af457f" map="01"/>
             <part name="sth_35.11f" crc="5cc429da" map="10"/>
         </interleave>
-        <!-- audiocpu - starts at 0x100000 - length 0x10000 (16 bits) -->
+        <part repeat="0x100000"> FF</part>
+        <!-- JTFRAME_BA1_START -->
+        <!-- audiocpu - starts at 0x200000 - length 0x20000 (17 bits) -->
         <part name="sth_23.13c" crc="2ed403bc"/>
-        <!-- oki - starts at 0x110000 - length 0x40000 (18 bits) -->
+        <part repeat="0x10000"> FF</part>
+        <!-- JTFRAME_BA2_START -->
+        <!-- oki - starts at 0x220000 - length 0x80000 (19 bits) -->
         <part name="sth_30.12e" crc="4386bc80"/>
         <part name="sth_31.13e" crc="444536d7"/>
-        <!-- gfx - starts at 0x150000 - length 0x400000 (22 bits) -->
+        <part repeat="0x40000"> FF</part>
+        <!-- JTFRAME_BA3_START -->
+        <!-- gfx - starts at 0x2A0000 - length 0x400000 (22 bits) -->
         <interleave output="64">
             <part name="sth_09.4b" crc="1ef6bfbd" map="00000001"/>
             <part name="sth_01.4a" crc="1e21b0c1" map="00000010"/>
@@ -106,7 +112,7 @@
             <part name="sth_29.11e" crc="34ae2997" map="01000000"/>
             <part name="sth_22.11c" crc="78dd9c48" map="10000000"/>
         </interleave>
-        <!-- Total 0x550000 bytes - 5440 kBytes -->
+        <!-- Total 0x6A0000 bytes - 6784 kBytes -->
     </rom>
     <rom index="1">
         <part>00 80</part>

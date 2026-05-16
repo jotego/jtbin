@@ -5,7 +5,6 @@ The following arcade titles are compatible with this core. Generate
 the required .rom file using the mra tool (read below).
 Place the *.rom files in Assets/jts18/common
 
-Clockwork Aquario (prototype) --> aquario.rom
 Alien Storm (World, 2 Players) (FD1094 317-0154) --> astorm.rom
 Alien Storm (World, 3 Players) (FD1094 317-0148) --> astorm3.rom
 Alien Storm (Japan, 2 Players) (FD1094 317-0146) --> astormj.rom
@@ -35,6 +34,7 @@ Shadow Dancer (Japan) --> shdancerj.rom
 Wally wo Sagase! (rev B, Japan, 2 players) (FD1094 317-0197B) --> wwallyj.rom
 Wally wo Sagase! (rev A, Japan, 2 players) (FD1094 317-0197A) --> wwallyja.rom
 Wally wo Sagase! (rev A, Japan, 3 players) (FD1094 317-0198A) --> wwallyja3p.rom
+Clockwork Aquario (prototype) --> aquario.rom
 
 
 These files are generated using the mra tool in:

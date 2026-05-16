@@ -31,10 +31,10 @@
     <rbf>jtcps1</rbf>
     <joystick>8</joystick>
     <region>World</region>
-    <rom index="0" zip="unsquad.zip" md5="None" address="0x30000000" asm_md5="d0a58d408b392b4f2051a9a7db890bda">
+    <rom index="0" zip="unsquad.zip" md5="None" address="0x30000000" asm_md5="318d8593bbc3aa78a0d394bd02b5ca8f">
         <!--  -->
         <part>
-            00 04 40 04 40 05 FF FF
+            00 00 00 08 80 08 80 0A
             FF FF FF FF FF FF FF FF
             32 41 FF FF FF FF 26 28
             2A 2C 2E 00 00 30 08 10
@@ -43,7 +43,7 @@
             FF FF FF FF FF FF FF FF
             FF FF FF FF FF FF FF FF
         </part>
-        <!-- maincpu - starts at 0x0 - length 0x100000 (20 bits) -->
+        <!-- maincpu - starts at 0x0 - length 0x200000 (21 bits) -->
         <interleave output="16">
             <part name="aru_35.11h" crc="8b954b59" map="01"/>
             <part name="aru_30.11f" crc="24d8f88d" map="10"/>
@@ -53,19 +53,25 @@
             <part name="aru_31.12f" crc="33e9694b" map="10"/>
         </interleave>
         <part name="ar-32m.8h" crc="ae1d7fb0"/>
-        <!-- audiocpu - starts at 0x100000 - length 0x10000 (16 bits) -->
+        <part repeat="0x100000"> FF</part>
+        <!-- JTFRAME_BA1_START -->
+        <!-- audiocpu - starts at 0x200000 - length 0x20000 (17 bits) -->
         <part name="ar_09.12b" crc="f3dd1367"/>
-        <!-- oki - starts at 0x110000 - length 0x40000 (18 bits) -->
+        <part repeat="0x10000"> FF</part>
+        <!-- JTFRAME_BA2_START -->
+        <!-- oki - starts at 0x220000 - length 0x80000 (19 bits) -->
         <part name="aru_18.11c" crc="584b43a9"/>
         <part repeat="0x20000"> FF</part>
-        <!-- gfx - starts at 0x150000 - length 0x200000 (21 bits) -->
+        <part repeat="0x40000"> FF</part>
+        <!-- JTFRAME_BA3_START -->
+        <!-- gfx - starts at 0x2A0000 - length 0x200000 (21 bits) -->
         <interleave output="64">
             <part name="ar-5m.7a" crc="bf4575d8" map="00000021"/>
             <part name="ar-7m.9a" crc="a02945f4" map="00002100"/>
             <part name="ar-1m.3a" crc="5965ca8d" map="00210000"/>
             <part name="ar-3m.5a" crc="ac6db17d" map="21000000"/>
         </interleave>
-        <!-- Total 0x350000 bytes - 3392 kBytes -->
+        <!-- Total 0x4A0000 bytes - 4736 kBytes -->
     </rom>
     <rom index="1">
         <part>00 80</part>

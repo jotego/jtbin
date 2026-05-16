@@ -65,6 +65,7 @@
             <part name="072-b11.16l" crc="55fab05d" map="21000000"/>
         </interleave>
         <!-- Total 0x6E0000 bytes - 7040 kBytes -->
+        <!-- Adding 4 bytes to the patch offset to make up for the MRA header -->
         <patch offset="0x787FF">68 00 a9</patch>
     </rom>
     <rom index="2">

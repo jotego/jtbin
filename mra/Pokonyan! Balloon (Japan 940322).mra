@@ -31,10 +31,10 @@
     <rbf>jtcps1</rbf>
     <joystick>8</joystick>
     <region>World</region>
-    <rom index="0" zip="pokonyan.zip" md5="None" address="0x30000000" asm_md5="0c22b6a35a4c7dcf7ee3d42b04a1f1df">
+    <rom index="0" zip="pokonyan.zip" md5="None" address="0x30000000" asm_md5="0f0d11f395d441ef6c325c6f4609f32a">
         <!--  -->
         <part>
-            00 02 40 02 40 03 FF FF
+            00 00 00 08 80 08 80 0A
             FF FF FF FF FF FF FF FF
             32 FF 00 02 04 06 26 28
             2A 2C 2E 36 00 30 02 04
@@ -43,7 +43,7 @@
             FF FF FF FF FF FF FF FF
             FF FF FF FF FF FF FF FF
         </part>
-        <!-- maincpu - starts at 0x0 - length 0x80000 (19 bits) -->
+        <!-- maincpu - starts at 0x0 - length 0x200000 (21 bits) -->
         <interleave output="16">
             <part name="xmqq-12h.bin" crc="2d7ee2e9" map="01"/>
             <part name="xmqq-12f.bin" crc="196297bf" map="10"/>
@@ -52,12 +52,18 @@
             <part name="xmqq-13h.bin" crc="3fefe432" map="01"/>
             <part name="xmqq-13f.bin" crc="8f6abf26" map="10"/>
         </interleave>
-        <!-- audiocpu - starts at 0x80000 - length 0x10000 (16 bits) -->
+        <part repeat="0x180000"> FF</part>
+        <!-- JTFRAME_BA1_START -->
+        <!-- audiocpu - starts at 0x200000 - length 0x20000 (17 bits) -->
         <part name="xmqq-13b.bin" crc="4e8b81a8"/>
-        <!-- oki - starts at 0x90000 - length 0x40000 (18 bits) -->
+        <part repeat="0x10000"> FF</part>
+        <!-- JTFRAME_BA2_START -->
+        <!-- oki - starts at 0x220000 - length 0x80000 (19 bits) -->
         <part name="xmqq-12c.bin" crc="71ac69ad"/>
         <part name="xmqq-13c.bin" crc="71e29699"/>
-        <!-- gfx - starts at 0xD0000 - length 0x200000 (21 bits) -->
+        <part repeat="0x40000"> FF</part>
+        <!-- JTFRAME_BA3_START -->
+        <!-- gfx - starts at 0x2A0000 - length 0x200000 (21 bits) -->
         <interleave output="64">
             <part name="xmqq-4b.bin" crc="933ab76d" map="00000001"/>
             <part name="xmqq-4a.bin" crc="b098e7a9" map="00000010"/>
@@ -78,7 +84,7 @@
             <part name="xmqq-9h.bin" crc="3cd8594b" map="01000000"/>
             <part name="xmqq-9f.bin" crc="1ec10bed" map="10000000"/>
         </interleave>
-        <!-- Total 0x2D0000 bytes - 2880 kBytes -->
+        <!-- Total 0x4A0000 bytes - 4736 kBytes -->
     </rom>
     <rom index="1">
         <part>00 80</part>

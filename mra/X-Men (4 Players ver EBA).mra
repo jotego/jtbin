@@ -64,6 +64,7 @@
             <part name="065-a11.1l" crc="46da948e" map="21000000"/>
         </interleave>
         <!-- Total 0x920000 bytes - 9344 kBytes -->
+        <!-- Adding 16 bytes to the patch offset to make up for the MRA header -->
         <patch offset="0x21C0">71 4E 71 4E</patch>
         <patch offset="0x21D6">71 4E 71 4E 71 4E</patch>
     </rom>

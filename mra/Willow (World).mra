@@ -31,10 +31,10 @@
     <rbf>jtcps1</rbf>
     <joystick>8</joystick>
     <region>World</region>
-    <rom index="0" zip="willow.zip" md5="None" address="0x30000000" asm_md5="5e3e5c94006cb16866627a4554c14598">
+    <rom index="0" zip="willow.zip" md5="None" address="0x30000000" asm_md5="de031263f056ea3681c8df4beeca5017">
         <!--  -->
         <part>
-            00 04 40 04 40 05 FF FF
+            00 00 00 08 80 08 80 0A
             FF FF FF FF FF FF FF FF
             FF 00 FF FF FF FF 30 2E
             2C 2A 28 00 00 26 20 10
@@ -43,7 +43,7 @@
             FF FF FF FF FF FF FF FF
             FF FF FF FF FF FF FF FF
         </part>
-        <!-- maincpu - starts at 0x0 - length 0x100000 (20 bits) -->
+        <!-- maincpu - starts at 0x0 - length 0x200000 (21 bits) -->
         <interleave output="16">
             <part name="wle_35.11h" crc="2e64623b" map="01"/>
             <part name="wle_30.11f" crc="15372aa2" map="10"/>
@@ -53,12 +53,18 @@
             <part name="wlu_31.12f" crc="0eb48a83" map="10"/>
         </interleave>
         <part name="wlm-32.8h" crc="dfd9f643"/>
-        <!-- audiocpu - starts at 0x100000 - length 0x10000 (16 bits) -->
+        <part repeat="0x100000"> FF</part>
+        <!-- JTFRAME_BA1_START -->
+        <!-- audiocpu - starts at 0x200000 - length 0x20000 (17 bits) -->
         <part name="wl_09.12b" crc="f6b3d060"/>
-        <!-- oki - starts at 0x110000 - length 0x40000 (18 bits) -->
+        <part repeat="0x10000"> FF</part>
+        <!-- JTFRAME_BA2_START -->
+        <!-- oki - starts at 0x220000 - length 0x80000 (19 bits) -->
         <part name="wl_18.11c" crc="bde23d4d"/>
         <part name="wl_19.12c" crc="683898f5"/>
-        <!-- gfx - starts at 0x150000 - length 0x300000 (22 bits) -->
+        <part repeat="0x40000"> FF</part>
+        <!-- JTFRAME_BA3_START -->
+        <!-- gfx - starts at 0x2A0000 - length 0x300000 (22 bits) -->
         <interleave output="64">
             <part name="wlm-7.7a" crc="afa74b73" map="00000021"/>
             <part name="wlm-5.9a" crc="12a0dc0b" map="00002100"/>
@@ -75,7 +81,7 @@
             <part name="wl_22.5d" crc="fd3f89f0" map="01000000"/>
             <part name="wl_12.5c" crc="7da49d69" map="10000000"/>
         </interleave>
-        <!-- Total 0x450000 bytes - 4416 kBytes -->
+        <!-- Total 0x5A0000 bytes - 5760 kBytes -->
     </rom>
     <rom index="1">
         <part>00 80</part>

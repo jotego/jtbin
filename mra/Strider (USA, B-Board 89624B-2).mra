@@ -31,10 +31,10 @@
     <rbf>jtcps1</rbf>
     <joystick>8</joystick>
     <region>World</region>
-    <rom index="0" zip="strider.zip" md5="None" address="0x30000000" asm_md5="0de57eaedbb520fcb4c938b667808061">
+    <rom index="0" zip="strider.zip" md5="None" address="0x30000000" asm_md5="d167e62402fd5385d9213cedd6151412">
         <!--  -->
         <part>
-            00 04 40 04 40 05 FF FF
+            00 00 00 08 80 08 80 0A
             FF FF FF FF FF FF FF FF
             FF 00 FF FF FF FF 26 28
             2A 2C 2E 00 00 30 02 04
@@ -43,7 +43,7 @@
             FF FF FF FF FF FF FF FF
             FF FF FF FF FF FF FF FF
         </part>
-        <!-- maincpu - starts at 0x0 - length 0x100000 (20 bits) -->
+        <!-- maincpu - starts at 0x0 - length 0x200000 (21 bits) -->
         <interleave output="16">
             <part name="35.11h" crc="5463aaa3" map="01"/>
             <part name="30.11f" crc="da997474" map="10"/>
@@ -53,12 +53,18 @@
             <part name="31.12f" crc="d20786db" map="10"/>
         </interleave>
         <part name="st-14.8h" crc="9b3cfc08"/>
-        <!-- audiocpu - starts at 0x100000 - length 0x10000 (16 bits) -->
+        <part repeat="0x100000"> FF</part>
+        <!-- JTFRAME_BA1_START -->
+        <!-- audiocpu - starts at 0x200000 - length 0x20000 (17 bits) -->
         <part name="09.12b" crc="2ed403bc"/>
-        <!-- oki - starts at 0x110000 - length 0x40000 (18 bits) -->
+        <part repeat="0x10000"> FF</part>
+        <!-- JTFRAME_BA2_START -->
+        <!-- oki - starts at 0x220000 - length 0x80000 (19 bits) -->
         <part name="18.11c" crc="4386bc80"/>
         <part name="19.12c" crc="444536d7"/>
-        <!-- gfx - starts at 0x150000 - length 0x400000 (22 bits) -->
+        <part repeat="0x40000"> FF</part>
+        <!-- JTFRAME_BA3_START -->
+        <!-- gfx - starts at 0x2A0000 - length 0x400000 (22 bits) -->
         <interleave output="64">
             <part name="st-2.8a" crc="4eee9aea" map="00000021"/>
             <part name="st-11.10a" crc="2d7f21e4" map="00002100"/>
@@ -71,7 +77,7 @@
             <part name="st-4.3a" crc="b7d04e8b" map="00210000"/>
             <part name="st-8.5a" crc="6b4713b4" map="21000000"/>
         </interleave>
-        <!-- Total 0x550000 bytes - 5440 kBytes -->
+        <!-- Total 0x6A0000 bytes - 6784 kBytes -->
     </rom>
     <rom index="1">
         <part>00 80</part>

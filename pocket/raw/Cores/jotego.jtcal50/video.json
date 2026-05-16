@@ -3,7 +3,7 @@
 		"magic": "APF_VER_1",
 		"scaler_modes": [
 			{
-				"width": 376,
+				"width": 384,
 				"height": 240,
 				"aspect_w": 4,
 				"aspect_h": 3,
@@ -11,7 +11,7 @@
 				"mirror": 0
 			},
 			{
-				"width": 376,
+				"width": 384,
 				"height": 240,
 				"aspect_w": 4,
 				"aspect_h": 3,
@@ -19,7 +19,7 @@
 				"mirror": 0
 			},
 			{
-				"width": 376,
+				"width": 384,
 				"height": 240,
 				"aspect_w": 4,
 				"aspect_h": 3,
@@ -27,7 +27,7 @@
 				"mirror": 0
 			},
 			{
-				"width": 360,
+				"width": 368,
 				"height": 240,
 				"aspect_w": 4,
 				"aspect_h": 3,
@@ -35,7 +35,7 @@
 				"mirror": 0
 			},
 			{
-				"width": 360,
+				"width": 368,
 				"height": 240,
 				"aspect_w": 4,
 				"aspect_h": 3,
@@ -43,7 +43,7 @@
 				"mirror": 0
 			},
 			{
-				"width": 360,
+				"width": 368,
 				"height": 240,
 				"aspect_w": 4,
 				"aspect_h": 3,
@@ -51,7 +51,7 @@
 				"mirror": 0
 			},
 			{
-				"width": 344,
+				"width": 352,
 				"height": 240,
 				"aspect_w": 4,
 				"aspect_h": 3,
@@ -59,7 +59,7 @@
 				"mirror": 0
 			},
 			{
-				"width": 344,
+				"width": 352,
 				"height": 240,
 				"aspect_w": 4,
 				"aspect_h": 3,

@@ -103,6 +103,7 @@
         <!-- mcu - starts at 0xC8000 - length 0x1000 (12 bits) -->
         <part name="av.13k" crc="505a0987"/>
         <!-- Total 0xC9000 bytes - 804 kBytes -->
+        <!-- Adding 16 bytes to the patch offset to make up for the MRA header -->
         <patch offset="0xC8B94">02</patch>
         <patch offset="0xC8491">00</patch>
         <patch offset="0xC84F0">00</patch>

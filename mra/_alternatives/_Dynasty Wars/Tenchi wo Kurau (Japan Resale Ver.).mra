@@ -31,10 +31,10 @@
     <rbf>jtcps1</rbf>
     <joystick>8</joystick>
     <region>World</region>
-    <rom index="0" zip="dynwarjr.zip|dynwar.zip" md5="None" address="0x30000000" asm_md5="1d45144b53742c93aa571a9c471317d6">
+    <rom index="0" zip="dynwarjr.zip|dynwar.zip" md5="None" address="0x30000000" asm_md5="b5e20c17286d7bcd3d7695f435040922">
         <!--  -->
         <part>
-            00 04 80 04 80 05 FF FF
+            00 00 00 08 80 08 80 0A
             FF FF FF FF FF FF FF FF
             32 FF 00 02 04 06 26 28
             2A 2C 2E 00 00 30 02 04
@@ -43,15 +43,20 @@
             FF FF FF FF FF FF FF FF
             FF FF FF FF FF FF FF FF
         </part>
-        <!-- maincpu - starts at 0x0 - length 0x100000 (20 bits) -->
+        <!-- maincpu - starts at 0x0 - length 0x200000 (21 bits) -->
         <part name="tk1j_23.8f" crc="088a3009"/>
         <part name="tk1j_22.7f" crc="93654bcf"/>
-        <!-- audiocpu - starts at 0x100000 - length 0x20000 (17 bits) -->
+        <part repeat="0x100000"> FF</part>
+        <!-- JTFRAME_BA1_START -->
+        <!-- audiocpu - starts at 0x200000 - length 0x20000 (17 bits) -->
         <part name="tk1_09.12a" crc="db77d899"/>
-        <!-- oki - starts at 0x120000 - length 0x40000 (18 bits) -->
+        <!-- JTFRAME_BA2_START -->
+        <!-- oki - starts at 0x220000 - length 0x80000 (19 bits) -->
         <part name="tk1_18.11c" crc="7e5f6cb4"/>
         <part name="tk1_19.12c" crc="4a30c737"/>
-        <!-- gfx - starts at 0x160000 - length 0x400000 (22 bits) -->
+        <part repeat="0x40000"> FF</part>
+        <!-- JTFRAME_BA3_START -->
+        <!-- gfx - starts at 0x2A0000 - length 0x400000 (22 bits) -->
         <interleave output="64">
             <part name="tk1_01.3a" crc="f64bb6a0" map="00000021"/>
             <part name="tk1_02.4a" crc="21fe6274" map="00002100"/>
@@ -64,7 +69,7 @@
             <part name="tk1_07.9a" crc="ca5c687c" map="00210000"/>
             <part name="tk1_08.10a" crc="f9fe6591" map="21000000"/>
         </interleave>
-        <!-- Total 0x560000 bytes - 5504 kBytes -->
+        <!-- Total 0x6A0000 bytes - 6784 kBytes -->
     </rom>
     <rom index="1">
         <part>00 80</part>

@@ -64,6 +64,7 @@
             <part name="955d06.k8" crc="f4252875" map="2100"/>
         </interleave>
         <!-- Total 0x3E0000 bytes - 3968 kBytes -->
+        <!-- Adding 4 bytes to the patch offset to make up for the MRA header -->
         <patch offset="0x80015">00 00 00</patch>
         <patch offset="0x805EA">00 00 00</patch>
         <patch offset="0x805FC">00 00</patch>

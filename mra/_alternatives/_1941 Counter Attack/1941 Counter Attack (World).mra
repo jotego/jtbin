@@ -31,10 +31,10 @@
     <rbf>jtcps1</rbf>
     <joystick>8</joystick>
     <region>World</region>
-    <rom index="0" zip="1941r1.zip|1941.zip" md5="None" address="0x30000000" asm_md5="46c46faf9476eaba782a0053e5b0a830">
+    <rom index="0" zip="1941r1.zip|1941.zip" md5="None" address="0x30000000" asm_md5="3b62202ab99b37a845ab38c152240963">
         <!--  -->
         <part>
-            00 04 40 04 40 05 FF FF
+            00 00 00 08 80 08 80 0A
             FF FF FF FF FF FF FF FF
             20 05 FF FF FF FF 28 2A
             2C 2E 30 00 00 32 02 08
@@ -43,7 +43,7 @@
             FF FF FF FF FF FF FF FF
             FF FF FF FF FF FF FF FF
         </part>
-        <!-- maincpu - starts at 0x0 - length 0x100000 (20 bits) -->
+        <!-- maincpu - starts at 0x0 - length 0x200000 (21 bits) -->
         <interleave output="16">
             <part name="41e_35.11h" crc="d63942b3" map="01"/>
             <part name="41e_30.11f" crc="9deb1e75" map="10"/>
@@ -53,19 +53,25 @@
             <part name="41e_31.12f" crc="df201112" map="10"/>
         </interleave>
         <part name="41-32m.8h" crc="4e9648ca"/>
-        <!-- audiocpu - starts at 0x100000 - length 0x10000 (16 bits) -->
+        <part repeat="0x100000"> FF</part>
+        <!-- JTFRAME_BA1_START -->
+        <!-- audiocpu - starts at 0x200000 - length 0x20000 (17 bits) -->
         <part name="41_9.12b" crc="0f9d8527"/>
-        <!-- oki - starts at 0x110000 - length 0x40000 (18 bits) -->
+        <part repeat="0x10000"> FF</part>
+        <!-- JTFRAME_BA2_START -->
+        <!-- oki - starts at 0x220000 - length 0x80000 (19 bits) -->
         <part name="41_18.11c" crc="d1f15aeb"/>
         <part name="41_19.12c" crc="15aec3a6"/>
-        <!-- gfx - starts at 0x150000 - length 0x200000 (21 bits) -->
+        <part repeat="0x40000"> FF</part>
+        <!-- JTFRAME_BA3_START -->
+        <!-- gfx - starts at 0x2A0000 - length 0x200000 (21 bits) -->
         <interleave output="64">
             <part name="41-5m.7a" crc="01d1cb11" map="00000021"/>
             <part name="41-7m.9a" crc="aeaa3509" map="00002100"/>
             <part name="41-1m.3a" crc="ff77985a" map="00210000"/>
             <part name="41-3m.5a" crc="983be58f" map="21000000"/>
         </interleave>
-        <!-- Total 0x350000 bytes - 3392 kBytes -->
+        <!-- Total 0x4A0000 bytes - 4736 kBytes -->
     </rom>
     <!-- Vertical screen. Orientation reversed. -->
     <rom index="1">

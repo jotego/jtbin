@@ -68,6 +68,7 @@
             <part name="870c17.p16" crc="2bc99ff8" map="2100"/>
         </interleave>
         <!-- Total 0x2EC000 bytes - 2992 kBytes -->
+        <!-- Adding 8 bytes to the patch offset to make up for the MRA header -->
         <patch offset="0x1060">12 11</patch>
     </rom>
     <nvram index="2" size="40971"/>

@@ -1,0 +1,116 @@
+<!--          FPGA arcade hardware by Jotego
+
+              This core is available for hardware compatible with MiST and MiSTer
+              Other FPGA systems may be supported by the time you read this.
+              This work is not mantained by the MiSTer project. Please contact the
+              core author for issues and updates.
+
+              (c) Jose Tejada, 2026. Please support this research
+              Patreon: https://patreon.com/jotego
+
+              The author does not endorse or participate in illegal distribution
+              of copyrighted material. This work can be used with compatible
+              software. This software can be homebrew projects or legally
+              obtained memory dumps of compatible games.
+
+              This file license is GNU GPLv2.
+              You can read the whole license file in
+              https://opensource.org/licenses/gpl-2.0.php
+
+-->
+
+<misterromdescription>
+    <about author="Fulvio Venturelli" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://jotego/jtcores"/>
+    <rotation>horizontal</rotation>
+    <name>Gradius III (Asia)</name>
+    <setname>gradius3a</setname>
+    <mameversion>0282</mameversion>
+    <year>1989</year>
+    <manufacturer>Konami</manufacturer>
+    <players>2</players>
+    <rbf>jtgrad3</rbf>
+    <joystick>8</joystick>
+    <region>World</region>
+    <rom index="0" zip="gradius3a.zip|gradius3.zip" md5="None" address="0x30000000" asm_md5="f38c639d841c187d95f480434962a7c8">
+        <!--  -->
+        <part>
+            00 00 00 00 00 00 00 00
+        </part>
+        <!-- maincpu - starts at 0x0 - length 0x40000 (18 bits) -->
+        <interleave output="16">
+            <part name="945_12.e15" crc="e9771b91" map="01"/>
+            <part name="945_13.f15" crc="9974fe6b" map="10"/>
+        </interleave>
+        <!-- JTFRAME_BA1_START -->
+        <!-- sub - starts at 0x40000 - length 0x100000 (20 bits) -->
+        <interleave output="16">
+            <part name="945_m08.n17" crc="74e981d2" map="01"/>
+            <part name="945_m09.r17" crc="b4a6df25" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="945_l06a.n11" crc="e1fd75b6" map="01"/>
+            <part name="945_l06b.r11" crc="83772304" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="945_l07a.n15" crc="96222d04" map="01"/>
+            <part name="945_l07c.r15" crc="c1e399b6" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="945_l07b.n13" crc="5e209d01" map="01"/>
+            <part name="945_l07d.r13" crc="4c16d4bd" map="10"/>
+        </interleave>
+        <!-- GFX_START -->
+        <!-- k051960 - starts at 0x140000 - length 0x200000 (21 bits) -->
+        <interleave output="32">
+            <part name="945_a02.l3" crc="4dfffd74" map="0021"/>
+            <part name="945_a01.h3" crc="339d6dd2" map="2100"/>
+        </interleave>
+        <interleave output="32">
+            <part name="945_l04a.k6" crc="884e21ee" map="0001"/>
+            <part name="945_l04c.m6" crc="45bcd921" map="0010"/>
+            <part name="945_l03a.e6" crc="a67ef087" map="0100"/>
+            <part name="945_l03c.h6" crc="a56be17a" map="1000"/>
+        </interleave>
+        <interleave output="32">
+            <part name="945_l04b.k8" crc="843bc67d" map="0001"/>
+            <part name="945_l04d.m8" crc="0a98d08e" map="0010"/>
+            <part name="945_l03b.e8" crc="933e68b9" map="0100"/>
+            <part name="945_l03d.h8" crc="f375e87b" map="1000"/>
+        </interleave>
+        <!-- JTFRAME_BA2_START -->
+        <!-- audiocpu - starts at 0x340000 - length 0x10000 (16 bits) -->
+        <part name="945_m05.d9" crc="c8c45365"/>
+        <!-- PCM_START -->
+        <!-- k007232 - starts at 0x350000 - length 0x80000 (19 bits) -->
+        <part name="945_a10.b15" crc="1d083e10"/>
+        <part name="945_l11a.c18" crc="6043f4eb"/>
+        <part name="945_l11b.c20" crc="89ea3baf"/>
+        <!-- JTFRAME_PROM_START -->
+        <!-- proms - starts at 0x3D0000 - length 0x100 (8 bits) -->
+        <part name="945l14.j28" crc="c778c189"/>
+        <!-- Total 0x3D0100 bytes - 3904 kBytes -->
+    </rom>
+    <rom index="17" zip="jtbeta.zip" md5="None" asm_md5="64bf6f32556d237ec04d22062b462fde">
+        <part name="beta.bin" crc="84dbdb6d"/>
+    </rom>
+    <nvram index="2" size="4096"/>
+    <rom index="1">
+        <part>00 80</part>
+    </rom>
+    <switches page_id="1" page_name="Switches" base="20" default="ff,5a,ff">
+        <DSW1/>
+        <dip name="Coin A" bits="0,3" ids="Free Play,4/3,4/1,3/4,3/2,3/1,2/5,2/3,2/1,1/7,1/6,1/5,1/4,1/3,1/2,1/1"/>
+        <dip name="Coin B" bits="4,7" ids="Invalid,4/3,4/1,3/4,3/2,3/1,2/5,2/3,2/1,1/7,1/6,1/5,1/4,1/3,1/2,1/1"/>
+        <DSW2/>
+        <dip name="Lives" bits="8,9" ids="7,5,3,2"/>
+        <dip name="Cabinet" bits="10" ids="Upright,Cocktail"/>
+        <dip name="Bonus Life" bits="11,12" ids="100k only,50k only,100k &amp; *100k,20k &amp; *70k"/>
+        <dip name="Difficulty" bits="13,14" ids="Hardest,Hard,Normal,Easy"/>
+        <dip name="Demo Sounds" bits="15" ids="On,Off"/>
+        <DSW3/>
+        <dip name="Flip Screen" bits="16" ids="On,Off"/>
+        <dip name="Upright Controls" bits="17" ids="Dual,Single"/>
+        <dip name="Service Mode" bits="18" ids="On,Off"/>
+    </switches>
+    <buttons names="Power-Up,Shoot,Missile,Start,Coin,Core credits" default="A,B,X,Start,Select,-" count="3"/>
+</misterromdescription>

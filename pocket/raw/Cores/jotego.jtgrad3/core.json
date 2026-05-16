@@ -1,0 +1,37 @@
+{
+	"core":{
+		"magic": "APF_VER_1",
+		"metadata": {
+			"platform_ids": [
+				"jtgrad3",
+				"jtpatreon"
+			],
+			"shortname": "jtgrad3",
+			"description": "Arcade",
+			"author": "jotego",
+			"url": "https://patreon.com/jotego",
+			"version": "430bfb3",
+			"date_release": "2026-05-16"
+		},
+		"framework": {
+			"target_product": "Analogue Pocket",
+			"version_required": "1.1",
+			"sleep_supported": false,
+			"dock": {
+				"supported": true,
+				"analog_output": false
+			},
+			"hardware": {
+				"link_port": false,
+				"cartridge_adapter": 0
+			}
+		},
+		"cores": [
+			{
+				"name": "jtgrad3",
+				"id": 0,
+				"filename": "jtgrad3.rbf_r"
+			}
+		]
+	}
+}

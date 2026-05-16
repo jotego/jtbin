@@ -132,9 +132,6 @@
         <part name="sk3-5.6u" crc="e4130804"/>
         <!-- Total 0x20A440 bytes - 2089 kBytes -->
     </rom>
-    <rom index="17" zip="jtbeta.zip" md5="None" asm_md5="64bf6f32556d237ec04d22062b462fde">
-        <part name="beta.bin" crc="84dbdb6d"/>
-    </rom>
     <nvram index="2" size="24598"/>
     <rom index="1">
         <part>00 80</part>
