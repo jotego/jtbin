@@ -31,10 +31,10 @@
     <rbf>jtcps1</rbf>
     <joystick>8</joystick>
     <region>World</region>
-    <rom index="0" zip="mercsj.zip|mercs.zip" md5="None" address="0x30000000" asm_md5="06e1c5bca42a7e70413df360ed6308b3">
+    <rom index="0" zip="mercsj.zip|mercs.zip" md5="None" address="0x30000000" asm_md5="268b3afe8b4c94423970401d372b2383">
         <!--  -->
         <part>
-            00 00 00 08 80 08 80 0A
+            00 04 40 04 40 05 FF FF
             FF FF FF FF FF FF FF FF
             20 42 FF FF FF FF 2C 2A
             28 26 24 36 00 22 02 04
@@ -43,7 +43,7 @@
             FF FF FF FF FF FF FF FF
             FF FF FF FF FF FF FF FF
         </part>
-        <!-- maincpu - starts at 0x0 - length 0x200000 (21 bits) -->
+        <!-- maincpu - starts at 0x0 - length 0x100000 (20 bits) -->
         <interleave output="16">
             <part name="so2_42.12h" crc="2c3884c6" map="01"/>
             <part name="so2_36.12f" crc="e17f9bf7" map="10"/>
@@ -60,18 +60,12 @@
             <part name="so2_41.11h" crc="914f85e0" map="01"/>
             <part name="so2_35.11f" crc="7d24394d" map="10"/>
         </interleave>
-        <part repeat="0x100000"> FF</part>
-        <!-- JTFRAME_BA1_START -->
-        <!-- audiocpu - starts at 0x200000 - length 0x20000 (17 bits) -->
+        <!-- audiocpu - starts at 0x100000 - length 0x10000 (16 bits) -->
         <part name="so2_23.13b" crc="d09d7c7a"/>
-        <part repeat="0x10000"> FF</part>
-        <!-- JTFRAME_BA2_START -->
-        <!-- oki - starts at 0x220000 - length 0x80000 (19 bits) -->
+        <!-- oki - starts at 0x110000 - length 0x40000 (18 bits) -->
         <part name="so2_30.12c" crc="bbea1643"/>
         <part name="so2_31.13c" crc="ac58aa71"/>
-        <part repeat="0x40000"> FF</part>
-        <!-- JTFRAME_BA3_START -->
-        <!-- gfx - starts at 0x2A0000 - length 0x300000 (22 bits) -->
+        <!-- gfx - starts at 0x150000 - length 0x300000 (22 bits) -->
         <interleave output="64">
             <part name="so2_09.4b" crc="690c261d" map="00000001"/>
             <part name="so2_01.4a" crc="31fd2715" map="00000010"/>
@@ -102,7 +96,7 @@
             <part name="so2_28.10e" crc="fce9a377" map="01000000"/>
             <part name="so2_21.10c" crc="b7df8a06" map="10000000"/>
         </interleave>
-        <!-- Total 0x5A0000 bytes - 5760 kBytes -->
+        <!-- Total 0x450000 bytes - 4416 kBytes -->
     </rom>
     <!-- Vertical screen. Orientation reversed. -->
     <rom index="1">

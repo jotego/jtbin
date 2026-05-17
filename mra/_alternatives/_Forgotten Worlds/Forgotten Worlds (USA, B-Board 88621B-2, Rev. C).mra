@@ -31,10 +31,10 @@
     <rbf>jtcps1</rbf>
     <joystick>8</joystick>
     <region>World</region>
-    <rom index="0" zip="forgottnu.zip|forgottn.zip" md5="None" address="0x30000000" asm_md5="57fa3aafd24a74c101a6136a5794fdcb">
+    <rom index="0" zip="forgottnu.zip|forgottn.zip" md5="None" address="0x30000000" asm_md5="0ecd354f4dd47a67eb5d4e32f6b74f2a">
         <!--  -->
         <part>
-            00 00 00 08 80 08 80 0A
+            00 04 40 04 40 05 FF FF
             FF FF FF FF FF FF FF FF
             FF 00 FF FF FF FF 26 28
             2A 2C 2E 00 00 30 02 04
@@ -43,7 +43,7 @@
             FF FF FF FF FF FF FF FF
             FF FF FF FF FF FF FF FF
         </part>
-        <!-- maincpu - starts at 0x0 - length 0x200000 (21 bits) -->
+        <!-- maincpu - starts at 0x0 - length 0x100000 (20 bits) -->
         <interleave output="16">
             <part name="lw15c.12h" crc="1b70f216" map="01"/>
             <part name="lw11c.12f" crc="e62742b6" map="10"/>
@@ -53,18 +53,12 @@
             <part name="lw10c.13f" crc="8f5ea3f5" map="10"/>
         </interleave>
         <part name="lw-07.10g" crc="fd252a26"/>
-        <part repeat="0x100000"> FF</part>
-        <!-- JTFRAME_BA1_START -->
-        <!-- audiocpu - starts at 0x200000 - length 0x20000 (17 bits) -->
+        <!-- audiocpu - starts at 0x100000 - length 0x10000 (16 bits) -->
         <part name="lw_00.13c" crc="59df2a63"/>
-        <part repeat="0x10000"> FF</part>
-        <!-- JTFRAME_BA2_START -->
-        <!-- oki - starts at 0x220000 - length 0x80000 (19 bits) -->
+        <!-- oki - starts at 0x110000 - length 0x40000 (18 bits) -->
         <part name="lw-03u.12e" crc="807d051f"/>
         <part name="lw-04u.13e" crc="e6cd098e"/>
-        <part repeat="0x40000"> FF</part>
-        <!-- JTFRAME_BA3_START -->
-        <!-- gfx - starts at 0x2A0000 - length 0x400000 (22 bits) -->
+        <!-- gfx - starts at 0x150000 - length 0x400000 (22 bits) -->
         <interleave output="64">
             <part name="lw_2.2b" crc="4bd75fee" map="00000001"/>
             <part name="lw_1.2a" crc="65f41485" map="00000010"/>
@@ -95,7 +89,7 @@
             <part name="lw-06.9d" crc="5b9edffc" map="00210000" length="0x40000" offset="0x40000"/>
             <part name="lw-13.10d" crc="8e058ef5" map="21000000" length="0x40000" offset="0x40000"/>
         </interleave>
-        <!-- Total 0x6A0000 bytes - 6784 kBytes -->
+        <!-- Total 0x550000 bytes - 5440 kBytes -->
     </rom>
     <rom index="1">
         <part>00 80</part>

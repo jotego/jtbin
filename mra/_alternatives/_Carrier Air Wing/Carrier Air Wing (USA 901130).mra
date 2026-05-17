@@ -31,10 +31,10 @@
     <rbf>jtcps1</rbf>
     <joystick>8</joystick>
     <region>World</region>
-    <rom index="0" zip="cawingu.zip|cawing.zip" md5="None" address="0x30000000" asm_md5="59889f9f4610552ae658c2099ff355c1">
+    <rom index="0" zip="cawingu.zip|cawing.zip" md5="None" address="0x30000000" asm_md5="cfa75c843b567b2767c71de8e1223492">
         <!--  -->
         <part>
-            00 00 00 08 80 08 80 0A
+            00 04 40 04 40 05 FF FF
             FF FF FF FF FF FF FF FF
             20 05 FF FF FF FF 28 2A
             2C 2E 30 00 00 32 02 08
@@ -43,7 +43,7 @@
             FF FF FF FF FF FF FF FF
             FF FF FF FF FF FF FF FF
         </part>
-        <!-- maincpu - starts at 0x0 - length 0x200000 (21 bits) -->
+        <!-- maincpu - starts at 0x0 - length 0x100000 (20 bits) -->
         <interleave output="16">
             <part name="cau_42.12h" crc="d89e00be" map="01"/>
             <part name="cau_36.12f" crc="c2574c0c" map="10"/>
@@ -60,18 +60,12 @@
             <part name="cau_41.11h" crc="2a44bfe5" map="01"/>
             <part name="cau_35.11f" crc="74c2ddf0" map="10"/>
         </interleave>
-        <part repeat="0x100000"> FF</part>
-        <!-- JTFRAME_BA1_START -->
-        <!-- audiocpu - starts at 0x200000 - length 0x20000 (17 bits) -->
+        <!-- audiocpu - starts at 0x100000 - length 0x10000 (16 bits) -->
         <part name="cau_23.13b" crc="96fe7485"/>
-        <part repeat="0x10000"> FF</part>
-        <!-- JTFRAME_BA2_START -->
-        <!-- oki - starts at 0x220000 - length 0x80000 (19 bits) -->
+        <!-- oki - starts at 0x110000 - length 0x40000 (18 bits) -->
         <part name="cau_30.12c" crc="4a613a2c"/>
         <part name="cau_31.13c" crc="74584493"/>
-        <part repeat="0x40000"> FF</part>
-        <!-- JTFRAME_BA3_START -->
-        <!-- gfx - starts at 0x2A0000 - length 0x200000 (21 bits) -->
+        <!-- gfx - starts at 0x150000 - length 0x200000 (21 bits) -->
         <interleave output="64">
             <part name="cau_09.4b" crc="d4b17c3a" map="00000001"/>
             <part name="cau_01.4a" crc="34c3094e" map="00000010"/>
@@ -92,7 +86,7 @@
             <part name="cau_39.9h" crc="147be975" map="01000000"/>
             <part name="cau_33.9f" crc="8560c130" map="10000000"/>
         </interleave>
-        <!-- Total 0x4A0000 bytes - 4736 kBytes -->
+        <!-- Total 0x350000 bytes - 3392 kBytes -->
     </rom>
     <rom index="1">
         <part>00 80</part>

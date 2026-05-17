@@ -31,10 +31,10 @@
     <rbf>jtcps1</rbf>
     <joystick>8</joystick>
     <region>World</region>
-    <rom index="0" zip="pnickj.zip" md5="None" address="0x30000000" asm_md5="34f569b436bbfef9fb2d0be6e7eb27e1">
+    <rom index="0" zip="pnickj.zip" md5="None" address="0x30000000" asm_md5="39d46d81dfc6c10c94b02cf812bfd817">
         <!--  -->
         <part>
-            00 00 00 08 80 08 80 0A
+            00 01 40 01 40 02 FF FF
             FF FF FF FF FF FF FF FF
             32 FF 00 02 04 06 26 28
             2A 2C 2E 00 00 30 02 04
@@ -43,23 +43,17 @@
             FF FF FF FF FF FF FF FF
             FF FF FF FF FF FF FF FF
         </part>
-        <!-- maincpu - starts at 0x0 - length 0x200000 (21 bits) -->
+        <!-- maincpu - starts at 0x0 - length 0x40000 (18 bits) -->
         <interleave output="16">
             <part name="pnij_42.12h" crc="c085dfaf" map="01"/>
             <part name="pnij_36.12f" crc="2d4ffb2b" map="10"/>
         </interleave>
-        <part repeat="0x1C0000"> FF</part>
-        <!-- JTFRAME_BA1_START -->
-        <!-- audiocpu - starts at 0x200000 - length 0x20000 (17 bits) -->
+        <!-- audiocpu - starts at 0x40000 - length 0x10000 (16 bits) -->
         <part name="pnij_17.13b" crc="e86f787a"/>
-        <part repeat="0x10000"> FF</part>
-        <!-- JTFRAME_BA2_START -->
-        <!-- oki - starts at 0x220000 - length 0x80000 (19 bits) -->
+        <!-- oki - starts at 0x50000 - length 0x40000 (18 bits) -->
         <part name="pnij_24.12c" crc="5092257d"/>
         <part name="pnij_25.13c" crc="22109aaa"/>
-        <part repeat="0x40000"> FF</part>
-        <!-- JTFRAME_BA3_START -->
-        <!-- gfx - starts at 0x2A0000 - length 0x200000 (21 bits) -->
+        <!-- gfx - starts at 0x90000 - length 0x200000 (21 bits) -->
         <interleave output="64">
             <part name="pnij_09.4b" crc="48177b0a" map="00000001"/>
             <part name="pnij_01.4a" crc="01a0f311" map="00000010"/>
@@ -80,7 +74,7 @@
             <part name="pnij_39.9h" crc="70fbe579" map="01000000"/>
             <part name="pnij_33.9f" crc="3ed2c680" map="10000000"/>
         </interleave>
-        <!-- Total 0x4A0000 bytes - 4736 kBytes -->
+        <!-- Total 0x290000 bytes - 2624 kBytes -->
     </rom>
     <rom index="1">
         <part>00 80</part>

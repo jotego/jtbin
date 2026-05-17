@@ -34,7 +34,7 @@
     <rom index="0" zip="cps1mult.zip" md5="None" address="0x30000000">
         <!--  -->
         <part>
-            00 00 00 00 00 04 00 14
+            00 00 00 04 00 14 FF FF
             FF FF FF FF FF FF FF FF
             FF FF FF FF FF FF FF FF
             FF FF FF FF FF FF FF FF

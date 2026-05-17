@@ -31,10 +31,10 @@
     <rbf>jtcps1</rbf>
     <joystick>8</joystick>
     <region>World</region>
-    <rom index="0" zip="sf2em.zip|sf2.zip" md5="None" address="0x30000000" asm_md5="eede240afdbfc5728ffc459c17abd225">
+    <rom index="0" zip="sf2em.zip|sf2.zip" md5="None" address="0x30000000" asm_md5="29d37b501a280225522c62d5172ab0d1">
         <!--  -->
         <part>
-            00 00 00 08 80 08 80 0A
+            00 04 40 04 40 05 FF FF
             FF FF FF FF FF FF FF FF
             08 47 FF FF FF FF 14 12
             10 0E 0C 36 00 0A 08 14
@@ -43,7 +43,7 @@
             FF FF FF FF FF FF FF FF
             FF FF FF FF FF FF FF FF
         </part>
-        <!-- maincpu - starts at 0x0 - length 0x200000 (21 bits) -->
+        <!-- maincpu - starts at 0x0 - length 0x100000 (20 bits) -->
         <interleave output="16">
             <part name="sf2e_37.11f" crc="f11b3d64" map="01"/>
             <part name="sf2e_30.11e" crc="997bdac4" map="10"/>
@@ -60,18 +60,12 @@
             <part name="sf2_36.10f" crc="db66b127" map="01"/>
             <part name="sf2_29.10e" crc="fdd0b5c1" map="10"/>
         </interleave>
-        <part repeat="0x100000"> FF</part>
-        <!-- JTFRAME_BA1_START -->
-        <!-- audiocpu - starts at 0x200000 - length 0x20000 (17 bits) -->
+        <!-- audiocpu - starts at 0x100000 - length 0x10000 (16 bits) -->
         <part name="sf2_9.12a" crc="a4823a1b"/>
-        <part repeat="0x10000"> FF</part>
-        <!-- JTFRAME_BA2_START -->
-        <!-- oki - starts at 0x220000 - length 0x80000 (19 bits) -->
+        <!-- oki - starts at 0x110000 - length 0x40000 (18 bits) -->
         <part name="sf2_18.11c" crc="7f162009"/>
         <part name="sf2_19.12c" crc="beade53f"/>
-        <part repeat="0x40000"> FF</part>
-        <!-- JTFRAME_BA3_START -->
-        <!-- gfx - starts at 0x2A0000 - length 0x600000 (23 bits) -->
+        <!-- gfx - starts at 0x150000 - length 0x600000 (23 bits) -->
         <interleave output="64">
             <part name="sf2-5m.4a" crc="22c9cc8e" map="00000021"/>
             <part name="sf2-7m.6a" crc="57213be8" map="00002100"/>
@@ -90,7 +84,7 @@
             <part name="sf2-9m.3d" crc="c1befaa8" map="00210000"/>
             <part name="sf2-11m.5d" crc="0627c831" map="21000000"/>
         </interleave>
-        <!-- Total 0x8A0000 bytes - 8832 kBytes -->
+        <!-- Total 0x750000 bytes - 7488 kBytes -->
     </rom>
     <rom index="1">
         <part>00 80</part>

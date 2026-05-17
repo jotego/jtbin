@@ -31,10 +31,10 @@
     <rbf>jtcps1</rbf>
     <joystick>8</joystick>
     <region>World</region>
-    <rom index="0" zip="kodr2.zip|kod.zip" md5="None" address="0x30000000" asm_md5="8ed75af2a6d23a1022c538c440dd1196">
+    <rom index="0" zip="kodr2.zip|kod.zip" md5="None" address="0x30000000" asm_md5="7558b2d5197f46234e2e3c53f4a0f13a">
         <!--  -->
         <part>
-            00 00 00 08 80 08 80 0A
+            00 04 40 04 40 05 FF FF
             FF FF FF FF FF FF FF FF
             FF FF 1E 1C 1A 18 20 2E
             2C 2A 28 36 00 30 30 08
@@ -43,7 +43,7 @@
             FF FF FF FF FF FF FF FF
             FF FF FF FF FF FF FF FF
         </part>
-        <!-- maincpu - starts at 0x0 - length 0x200000 (21 bits) -->
+        <!-- maincpu - starts at 0x0 - length 0x100000 (20 bits) -->
         <interleave output="16">
             <part name="kde_37.11f" crc="d1276c1c" map="01"/>
             <part name="kde_30.11e" crc="f8dc4ce3" map="10"/>
@@ -60,18 +60,12 @@
             <part name="kd_36.10f" crc="3c66c32b" map="01"/>
             <part name="kd_29.10e" crc="0360fa72" map="10"/>
         </interleave>
-        <part repeat="0x100000"> FF</part>
-        <!-- JTFRAME_BA1_START -->
-        <!-- audiocpu - starts at 0x200000 - length 0x20000 (17 bits) -->
+        <!-- audiocpu - starts at 0x100000 - length 0x10000 (16 bits) -->
         <part name="kd_9.12a" crc="bac6ec26"/>
-        <part repeat="0x10000"> FF</part>
-        <!-- JTFRAME_BA2_START -->
-        <!-- oki - starts at 0x220000 - length 0x80000 (19 bits) -->
+        <!-- oki - starts at 0x110000 - length 0x40000 (18 bits) -->
         <part name="kd_18.11c" crc="4c63181d"/>
         <part name="kd_19.12c" crc="92941b80"/>
-        <part repeat="0x40000"> FF</part>
-        <!-- JTFRAME_BA3_START -->
-        <!-- gfx - starts at 0x2A0000 - length 0x400000 (22 bits) -->
+        <!-- gfx - starts at 0x150000 - length 0x400000 (22 bits) -->
         <interleave output="64">
             <part name="kd-5m.4a" crc="e45b8701" map="00000021"/>
             <part name="kd-7m.6a" crc="a7750322" map="00002100"/>
@@ -84,7 +78,7 @@
             <part name="kd-2m.3c" crc="9ef36604" map="00210000"/>
             <part name="kd-4m.5c" crc="402b9b4f" map="21000000"/>
         </interleave>
-        <!-- Total 0x6A0000 bytes - 6784 kBytes -->
+        <!-- Total 0x550000 bytes - 5440 kBytes -->
     </rom>
     <rom index="1">
         <part>00 80</part>

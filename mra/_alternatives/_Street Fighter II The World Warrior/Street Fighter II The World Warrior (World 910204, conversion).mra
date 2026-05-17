@@ -31,10 +31,10 @@
     <rbf>jtcps1</rbf>
     <joystick>8</joystick>
     <region>World</region>
-    <rom index="0" zip="sf2en.zip|sf2.zip" md5="None" address="0x30000000" asm_md5="c7dcbddd04c8786cae890f68fc52b34b">
+    <rom index="0" zip="sf2en.zip|sf2.zip" md5="None" address="0x30000000" asm_md5="a40dda2a20b9a0db1d3093e32ac5df02">
         <!--  -->
         <part>
-            00 00 00 08 80 08 80 0A
+            00 04 40 04 40 05 FF FF
             FF FF FF FF FF FF FF FF
             08 47 FF FF FF FF 14 12
             10 0E 0C 36 00 0A 08 14
@@ -43,7 +43,7 @@
             FF FF FF FF FF FF FF FF
             FF FF FF FF FF FF FF FF
         </part>
-        <!-- maincpu - starts at 0x0 - length 0x200000 (21 bits) -->
+        <!-- maincpu - starts at 0x0 - length 0x100000 (20 bits) -->
         <interleave output="16">
             <part name="epr-b-09.12h" crc="1c1266b3" map="01"/>
             <part name="epr-b-05.12f" crc="bc02c14c" map="10"/>
@@ -60,18 +60,12 @@
             <part name="epr-b-08.11h" crc="db66b127" map="01"/>
             <part name="epr-b-04.11f" crc="fdd0b5c1" map="10"/>
         </interleave>
-        <part repeat="0x100000"> FF</part>
-        <!-- JTFRAME_BA1_START -->
-        <!-- audiocpu - starts at 0x200000 - length 0x20000 (17 bits) -->
+        <!-- audiocpu - starts at 0x100000 - length 0x10000 (16 bits) -->
         <part name="27c512.13b" crc="a4823a1b"/>
-        <part repeat="0x10000"> FF</part>
-        <!-- JTFRAME_BA2_START -->
-        <!-- oki - starts at 0x220000 - length 0x80000 (19 bits) -->
+        <!-- oki - starts at 0x110000 - length 0x40000 (18 bits) -->
         <part name="epr-b-01.12c" crc="7f162009"/>
         <part name="epr-b-02.13c" crc="beade53f"/>
-        <part repeat="0x40000"> FF</part>
-        <!-- JTFRAME_BA3_START -->
-        <!-- gfx - starts at 0x2A0000 - length 0x600000 (23 bits) -->
+        <!-- gfx - starts at 0x150000 - length 0x600000 (23 bits) -->
         <interleave output="64">
             <part name="epr-b-18.5e" crc="88f3485a" map="00000001"/>
             <part name="epr-b-13.5c" crc="63d63e0c" map="00000010"/>
@@ -102,7 +96,7 @@
             <part name="epr-b-12.12b" crc="c9d4ed76" map="01000000"/>
             <part name="epr-b-06.12a" crc="67dcc295" map="10000000"/>
         </interleave>
-        <!-- Total 0x8A0000 bytes - 8832 kBytes -->
+        <!-- Total 0x750000 bytes - 7488 kBytes -->
     </rom>
     <rom index="1">
         <part>00 80</part>

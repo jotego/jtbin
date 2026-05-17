@@ -31,10 +31,10 @@
     <rbf>jtcps1</rbf>
     <joystick>4</joystick>
     <region>World</region>
-    <rom index="0" zip="pang3b.zip|pang3.zip" md5="None" address="0x30000000" asm_md5="3cb5dedac2ad52d100e89f68490ea469">
+    <rom index="0" zip="pang3b.zip|pang3.zip" md5="None" address="0x30000000" asm_md5="7bc4743339f322fe222befc1a06fd74d">
         <!--  -->
         <part>
-            00 00 00 08 80 08 80 0A
+            00 04 20 04 20 05 FF FF
             FF FF FF FF FF FF FF FF
             32 FF 00 02 04 06 26 28
             2A 2C 2E 00 00 30 02 04
@@ -43,28 +43,22 @@
             FF FF FF FF FF FF FF FF
             FF FF FF FF FF FF FF FF
         </part>
-        <!-- maincpu - starts at 0x0 - length 0x200000 (21 bits) -->
+        <!-- maincpu - starts at 0x0 - length 0x100000 (20 bits) -->
         <part name="pa3w_17.11l" crc="12138234"/>
         <part name="pa3w_16.10l" crc="d1ba585c"/>
-        <part repeat="0x100000"> FF</part>
-        <!-- JTFRAME_BA1_START -->
-        <!-- audiocpu - starts at 0x200000 - length 0x20000 (17 bits) -->
+        <!-- audiocpu - starts at 0x100000 - length 0x8000 (15 bits) -->
         <part name="pa3_11.11f" crc="90a08c46"/>
-        <part repeat="0x18000"> FF</part>
-        <!-- JTFRAME_BA2_START -->
-        <!-- oki - starts at 0x220000 - length 0x80000 (19 bits) -->
+        <!-- oki - starts at 0x108000 - length 0x40000 (18 bits) -->
         <part name="pa3_05.10d" crc="73a10d5d"/>
         <part name="pa3_06.11d" crc="affa4f82"/>
-        <part repeat="0x40000"> FF</part>
-        <!-- JTFRAME_BA3_START -->
-        <!-- gfx - starts at 0x2A0000 - length 0x400000 (22 bits) -->
+        <!-- gfx - starts at 0x148000 - length 0x400000 (22 bits) -->
         <interleave output="64">
             <part name="pa3-01m.2c" crc="068a152c" map="00000021" length="0x100000"/>
             <part name="pa3-07m.2f" crc="3a4a619d" map="00002100" length="0x100000"/>
             <part name="pa3-01m.2c" crc="068a152c" map="00210000" length="0x100000" offset="0x100000"/>
             <part name="pa3-07m.2f" crc="3a4a619d" map="21000000" length="0x100000" offset="0x100000"/>
         </interleave>
-        <!-- Total 0x6A0000 bytes - 6784 kBytes -->
+        <!-- Total 0x548000 bytes - 5408 kBytes -->
     </rom>
     <rom index="1">
         <part>00 80</part>

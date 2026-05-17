@@ -31,10 +31,10 @@
     <rbf>jtcps1</rbf>
     <joystick/>
     <region>World</region>
-    <rom index="0" zip="mpumpkin.zip" md5="None" address="0x30000000" asm_md5="d116335db1f75f551b576fcf96f730b8">
+    <rom index="0" zip="mpumpkin.zip" md5="None" address="0x30000000" asm_md5="bce61e3b5079a60c89eb310ec5947167">
         <!--  -->
         <part>
-            00 00 00 08 80 08 80 0A
+            00 02 40 02 40 03 FF FF
             FF FF FF FF FF FF FF FF
             32 FF 00 02 04 06 26 28
             2A 2C 2E 00 00 30 02 04
@@ -43,20 +43,14 @@
             FF FF FF FF FF FF FF FF
             FF FF FF FF FF FF FF FF
         </part>
-        <!-- maincpu - starts at 0x0 - length 0x200000 (21 bits) -->
+        <!-- maincpu - starts at 0x0 - length 0x80000 (19 bits) -->
         <part name="mpa_23.8f" crc="38b9883a"/>
-        <part repeat="0x180000"> FF</part>
-        <!-- JTFRAME_BA1_START -->
-        <!-- audiocpu - starts at 0x200000 - length 0x20000 (17 bits) -->
+        <!-- audiocpu - starts at 0x80000 - length 0x10000 (16 bits) -->
         <part name="mpa_09.12a" crc="0b5b1b72"/>
-        <part repeat="0x10000"> FF</part>
-        <!-- JTFRAME_BA2_START -->
-        <!-- oki - starts at 0x220000 - length 0x80000 (19 bits) -->
+        <!-- oki - starts at 0x90000 - length 0x40000 (18 bits) -->
         <part name="mpa_18.11c" crc="cef6d39e"/>
         <part name="mpa_19.12c" crc="24947f8e"/>
-        <part repeat="0x40000"> FF</part>
-        <!-- JTFRAME_BA3_START -->
-        <!-- gfx - starts at 0x2A0000 - length 0x600000 (23 bits) -->
+        <!-- gfx - starts at 0xD0000 - length 0x600000 (23 bits) -->
         <interleave output="64">
             <part name="mpa_01.3a" crc="7c8c0c22" map="00000021"/>
             <part name="mpa_02.4a" crc="23f95339" map="00002100"/>
@@ -75,7 +69,7 @@
             <part name="mpa_12.5c" crc="87b88629" map="00210000"/>
             <part name="mpa_13.6c" crc="a09a6acf" map="21000000"/>
         </interleave>
-        <!-- Total 0x8A0000 bytes - 8832 kBytes -->
+        <!-- Total 0x6D0000 bytes - 6976 kBytes -->
     </rom>
     <!-- Dial controller reversed. -->
     <rom index="1">

@@ -31,10 +31,10 @@
     <rbf>jtcps1</rbf>
     <joystick>4</joystick>
     <region>World</region>
-    <rom index="0" zip="pang3.zip" md5="None" address="0x30000000" asm_md5="51e2955c80ca5970423e7393c2ed4ec2">
+    <rom index="0" zip="pang3.zip" md5="None" address="0x30000000" asm_md5="e53b10d4f19c2deec4d94c28fcedf066">
         <!--  -->
         <part>
-            00 00 00 08 80 08 80 0A
+            00 04 80 04 80 05 FF FF
             FF FF FF FF FF FF FF FF
             32 FF 00 02 04 06 26 28
             2A 2C 2E 00 00 30 02 04
@@ -43,27 +43,22 @@
             FF FF FF FF FF FF FF FF
             FF FF FF FF FF FF FF FF
         </part>
-        <!-- maincpu - starts at 0x0 - length 0x200000 (21 bits) -->
+        <!-- maincpu - starts at 0x0 - length 0x100000 (20 bits) -->
         <part name="pa3e_17a.11l" crc="a213fa80"/>
         <part name="pa3e_16a.10l" crc="7169ea67"/>
-        <part repeat="0x100000"> FF</part>
-        <!-- JTFRAME_BA1_START -->
-        <!-- audiocpu - starts at 0x200000 - length 0x20000 (17 bits) -->
+        <!-- audiocpu - starts at 0x100000 - length 0x20000 (17 bits) -->
         <part name="pa3_11.11f" crc="cb1423a2"/>
-        <!-- JTFRAME_BA2_START -->
-        <!-- oki - starts at 0x220000 - length 0x80000 (19 bits) -->
+        <!-- oki - starts at 0x120000 - length 0x40000 (18 bits) -->
         <part name="pa3_05.10d" crc="73a10d5d"/>
         <part name="pa3_06.11d" crc="affa4f82"/>
-        <part repeat="0x40000"> FF</part>
-        <!-- JTFRAME_BA3_START -->
-        <!-- gfx - starts at 0x2A0000 - length 0x400000 (22 bits) -->
+        <!-- gfx - starts at 0x160000 - length 0x400000 (22 bits) -->
         <interleave output="64">
             <part name="pa3-01m.2c" crc="068a152c" map="00000021" length="0x100000"/>
             <part name="pa3-07m.2f" crc="3a4a619d" map="00002100" length="0x100000"/>
             <part name="pa3-01m.2c" crc="068a152c" map="00210000" length="0x100000" offset="0x100000"/>
             <part name="pa3-07m.2f" crc="3a4a619d" map="21000000" length="0x100000" offset="0x100000"/>
         </interleave>
-        <!-- Total 0x6A0000 bytes - 6784 kBytes -->
+        <!-- Total 0x560000 bytes - 5504 kBytes -->
     </rom>
     <nvram index="2" size="128"/>
     <rom index="1">

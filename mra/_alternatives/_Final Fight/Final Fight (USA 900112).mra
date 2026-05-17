@@ -31,10 +31,10 @@
     <rbf>jtcps1</rbf>
     <joystick>8</joystick>
     <region>World</region>
-    <rom index="0" zip="ffightua.zip|ffight.zip" md5="None" address="0x30000000" asm_md5="aef68fe25c89cee3e593e6f9eab63757">
+    <rom index="0" zip="ffightua.zip|ffight.zip" md5="None" address="0x30000000" asm_md5="c8d9e27331fe8917669dade4341799dc">
         <!--  -->
         <part>
-            00 00 00 08 80 08 80 0A
+            00 04 40 04 40 05 FF FF
             FF FF FF FF FF FF FF FF
             FF 00 FF FF FF FF 26 28
             2A 2C 2E 00 00 30 02 04
@@ -43,7 +43,7 @@
             FF FF FF FF FF FF FF FF
             FF FF FF FF FF FF FF FF
         </part>
-        <!-- maincpu - starts at 0x0 - length 0x200000 (21 bits) -->
+        <!-- maincpu - starts at 0x0 - length 0x100000 (20 bits) -->
         <interleave output="16">
             <part name="ffu_42.11h" crc="f4bb480e" map="01"/>
             <part name="ffu_36.11f" crc="e2a48af9" map="10"/>
@@ -53,25 +53,19 @@
             <part name="ffu_37.12f" crc="c371c667" map="10"/>
         </interleave>
         <part name="ff-32m.8h" crc="c747696e"/>
-        <part repeat="0x100000"> FF</part>
-        <!-- JTFRAME_BA1_START -->
-        <!-- audiocpu - starts at 0x200000 - length 0x20000 (17 bits) -->
+        <!-- audiocpu - starts at 0x100000 - length 0x10000 (16 bits) -->
         <part name="ff_09.12b" crc="b8367eb5"/>
-        <part repeat="0x10000"> FF</part>
-        <!-- JTFRAME_BA2_START -->
-        <!-- oki - starts at 0x220000 - length 0x80000 (19 bits) -->
+        <!-- oki - starts at 0x110000 - length 0x40000 (18 bits) -->
         <part name="ff_18.11c" crc="375c66e7"/>
         <part name="ff_19.12c" crc="1ef137f9"/>
-        <part repeat="0x40000"> FF</part>
-        <!-- JTFRAME_BA3_START -->
-        <!-- gfx - starts at 0x2A0000 - length 0x200000 (21 bits) -->
+        <!-- gfx - starts at 0x150000 - length 0x200000 (21 bits) -->
         <interleave output="64">
             <part name="ff-5m.7a" crc="9c284108" map="00000021"/>
             <part name="ff-7m.9a" crc="a7584dfb" map="00002100"/>
             <part name="ff-1m.3a" crc="0b605e44" map="00210000"/>
             <part name="ff-3m.5a" crc="52291cd2" map="21000000"/>
         </interleave>
-        <!-- Total 0x4A0000 bytes - 4736 kBytes -->
+        <!-- Total 0x350000 bytes - 3392 kBytes -->
     </rom>
     <rom index="1">
         <part>00 80</part>

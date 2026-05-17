@@ -31,10 +31,10 @@
     <rbf>jtcps1</rbf>
     <joystick>8</joystick>
     <region>Japan</region>
-    <rom index="0" zip="sfzch.zip" md5="None" address="0x30000000" asm_md5="de024dcd1b6e896a7707251e2eb28e1b">
+    <rom index="0" zip="sfzch.zip" md5="None" address="0x30000000" asm_md5="7ce5ab919d0a4ec1d0cdde7eef102076">
         <!--  -->
         <part>
-            00 00 00 08 80 08 80 0A
+            00 08 40 08 40 09 FF FF
             FF FF FF FF FF FF FF FF
             32 FF 00 02 04 06 26 28
             2A 2C 2E 36 30 30 02 04
@@ -48,17 +48,12 @@
         <part name="sfza22" crc="8d9b2480"/>
         <part name="sfzch21" crc="5435225d"/>
         <part name="sfza20" crc="806e8f38"/>
-        <!-- JTFRAME_BA1_START -->
-        <!-- audiocpu - starts at 0x200000 - length 0x20000 (17 bits) -->
+        <!-- audiocpu - starts at 0x200000 - length 0x10000 (16 bits) -->
         <part name="sfz_09.12a" crc="c772628b"/>
-        <part repeat="0x10000"> FF</part>
-        <!-- JTFRAME_BA2_START -->
-        <!-- oki - starts at 0x220000 - length 0x80000 (19 bits) -->
+        <!-- oki - starts at 0x210000 - length 0x40000 (18 bits) -->
         <part name="sfz_18.11c" crc="61022b2d"/>
         <part name="sfz_19.12c" crc="3b5886d5"/>
-        <part repeat="0x40000"> FF</part>
-        <!-- JTFRAME_BA3_START -->
-        <!-- gfx - starts at 0x2A0000 - length 0x800000 (23 bits) -->
+        <!-- gfx - starts at 0x250000 - length 0x800000 (23 bits) -->
         <interleave output="64">
             <part name="sfz_01.3a" crc="0dd53e62" map="00000021"/>
             <part name="sfz_02.4a" crc="94c31e3f" map="00002100"/>
@@ -83,7 +78,7 @@
             <part name="sfz_16.9c" crc="19a5abd6" map="00210000"/>
             <part name="sfz_17.10c" crc="248b3b73" map="21000000"/>
         </interleave>
-        <!-- Total 0xAA0000 bytes - 10880 kBytes -->
+        <!-- Total 0xA50000 bytes - 10560 kBytes -->
     </rom>
     <rom index="1">
         <part>00 80</part>

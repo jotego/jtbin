@@ -31,10 +31,10 @@
     <rbf>jtcps1</rbf>
     <joystick>8</joystick>
     <region>World</region>
-    <rom index="0" zip="nemoj.zip|nemo.zip" md5="None" address="0x30000000" asm_md5="842a5b0d6f19a226d944b000822dfbd9">
+    <rom index="0" zip="nemoj.zip|nemo.zip" md5="None" address="0x30000000" asm_md5="bc1fd457b0a397730655309139c22eb9">
         <!--  -->
         <part>
-            00 00 00 08 80 08 80 0A
+            00 04 40 04 40 05 FF FF
             FF FF FF FF FF FF FF FF
             0E 45 FF FF FF FF 02 04
             06 08 0A 00 00 0C 04 02
@@ -43,7 +43,7 @@
             FF FF FF FF FF FF FF FF
             FF FF FF FF FF FF FF FF
         </part>
-        <!-- maincpu - starts at 0x0 - length 0x200000 (21 bits) -->
+        <!-- maincpu - starts at 0x0 - length 0x100000 (20 bits) -->
         <interleave output="16">
             <part name="nmj_42a.12h" crc="55024740" map="01"/>
             <part name="nmj_36a.12f" crc="daeceabb" map="10"/>
@@ -60,18 +60,12 @@
             <part name="nmj_41.11h" crc="6309603d" map="01"/>
             <part name="nmj_35.11f" crc="bd11a7f8" map="10"/>
         </interleave>
-        <part repeat="0x100000"> FF</part>
-        <!-- JTFRAME_BA1_START -->
-        <!-- audiocpu - starts at 0x200000 - length 0x20000 (17 bits) -->
+        <!-- audiocpu - starts at 0x100000 - length 0x10000 (16 bits) -->
         <part name="nmj_23.13b" crc="8d3c5a42"/>
-        <part repeat="0x10000"> FF</part>
-        <!-- JTFRAME_BA2_START -->
-        <!-- oki - starts at 0x220000 - length 0x80000 (19 bits) -->
+        <!-- oki - starts at 0x110000 - length 0x40000 (18 bits) -->
         <part name="nmj_30.12c" crc="bab333d4"/>
         <part name="nmj_31.13c" crc="2650a0a8"/>
-        <part repeat="0x40000"> FF</part>
-        <!-- JTFRAME_BA3_START -->
-        <!-- gfx - starts at 0x2A0000 - length 0x200000 (21 bits) -->
+        <!-- gfx - starts at 0x150000 - length 0x200000 (21 bits) -->
         <interleave output="64">
             <part name="nmj_09.4b" crc="9d60d286" map="00000001"/>
             <part name="nmj_01.4a" crc="8a83f7c4" map="00000010"/>
@@ -92,7 +86,7 @@
             <part name="nmj_39.9h" crc="6a274ecd" map="01000000"/>
             <part name="nmj_33.9f" crc="c469dc74" map="10000000"/>
         </interleave>
-        <!-- Total 0x4A0000 bytes - 4736 kBytes -->
+        <!-- Total 0x350000 bytes - 3392 kBytes -->
     </rom>
     <rom index="1">
         <part>00 80</part>

@@ -34,7 +34,7 @@
     <rom index="0" zip="3wondersbi.zip|3wonders.zip" md5="None" address="0x30000000">
         <!--  -->
         <part>
-            00 00 00 08 80 08 80 0A
+            00 04 40 04 40 06 FF FF
             FF FF FF FF FF FF FF FF
             FF FF FF FF FF FF FF FF
             FF FF FF FF FF FF FF FF
@@ -43,21 +43,16 @@
             FF FF FF FF FF FF FF FF
             FF FF FF FF FF FF FF FF
         </part>
-        <!-- maincpu - starts at 0x0 - length 0x200000 (21 bits) -->
+        <!-- maincpu - starts at 0x0 - length 0x100000 (20 bits) -->
         <interleave output="16">
             <part name="4.u8" crc="67a60fe6" map="01"/>
             <part name="3.u11" crc="65ae8c7e" map="10"/>
         </interleave>
-        <part repeat="0x100000"> FF</part>
-        <!-- JTFRAME_BA1_START -->
-        <!-- audiocpu - starts at 0x200000 - length 0x20000 (17 bits) -->
+        <!-- audiocpu - starts at 0x100000 - length 0x10000 (16 bits) -->
         <part name="1.u18" crc="9f4017fb"/>
-        <part repeat="0x10000"> FF</part>
-        <!-- JTFRAME_BA2_START -->
-        <!-- oki - starts at 0x220000 - length 0x80000 (19 bits) -->
+        <!-- oki - starts at 0x110000 - length 0x80000 (19 bits) -->
         <part name="2.u24" crc="db01f9fe"/>
-        <!-- JTFRAME_BA3_START -->
-        <!-- gfx - starts at 0x2A0000 - length 0x500000 (23 bits) -->
+        <!-- gfx - starts at 0x190000 - length 0x500000 (23 bits) -->
         <part name="5.u140" crc="156c487b"/>
         <part name="6.u128" crc="b671f752"/>
         <part name="7.u126" crc="2f835213"/>
@@ -68,7 +63,7 @@
         <part name="12.u137" crc="7dff1790"/>
         <part name="13.u130" crc="1054d40c"/>
         <part name="14.u129" crc="2e32610b"/>
-        <!-- Total 0x7A0000 bytes - 7808 kBytes -->
+        <!-- Total 0x690000 bytes - 6720 kBytes -->
     </rom>
     <rom index="1">
         <part>00 80</part>

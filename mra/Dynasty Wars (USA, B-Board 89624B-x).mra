@@ -31,10 +31,10 @@
     <rbf>jtcps1</rbf>
     <joystick>8</joystick>
     <region>World</region>
-    <rom index="0" zip="dynwar.zip" md5="None" address="0x30000000" asm_md5="d3fe15d0d80a2127069da7852578f084">
+    <rom index="0" zip="dynwar.zip" md5="None" address="0x30000000" asm_md5="38c64741d4ce69186c4eed0a0599e2ae">
         <!--  -->
         <part>
-            00 00 00 08 80 08 80 0A
+            00 04 40 04 40 05 FF FF
             FF FF FF FF FF FF FF FF
             20 02 FF FF FF FF 2C 2A
             28 26 24 00 00 22 02 04
@@ -43,7 +43,7 @@
             FF FF FF FF FF FF FF FF
             FF FF FF FF FF FF FF FF
         </part>
-        <!-- maincpu - starts at 0x0 - length 0x200000 (21 bits) -->
+        <!-- maincpu - starts at 0x0 - length 0x100000 (20 bits) -->
         <interleave output="16">
             <part name="35.11h" crc="e41fff2f" map="01"/>
             <part name="30.11f" crc="f9ec6d68" map="10"/>
@@ -53,18 +53,12 @@
             <part name="31.12f" crc="e3de76ff" map="10"/>
         </interleave>
         <part name="tkm-9.8h" crc="93654bcf"/>
-        <part repeat="0x100000"> FF</part>
-        <!-- JTFRAME_BA1_START -->
-        <!-- audiocpu - starts at 0x200000 - length 0x20000 (17 bits) -->
+        <!-- audiocpu - starts at 0x100000 - length 0x10000 (16 bits) -->
         <part name="tke_17.12b" crc="b3b79d4f"/>
-        <part repeat="0x10000"> FF</part>
-        <!-- JTFRAME_BA2_START -->
-        <!-- oki - starts at 0x220000 - length 0x80000 (19 bits) -->
+        <!-- oki - starts at 0x110000 - length 0x40000 (18 bits) -->
         <part name="tke_18.11c" crc="ac6e307d"/>
         <part name="tke_19.12c" crc="068741db"/>
-        <part repeat="0x40000"> FF</part>
-        <!-- JTFRAME_BA3_START -->
-        <!-- gfx - starts at 0x2A0000 - length 0x400000 (22 bits) -->
+        <!-- gfx - starts at 0x150000 - length 0x400000 (22 bits) -->
         <interleave output="64">
             <part name="tkm-5.7a" crc="f64bb6a0" map="00000021"/>
             <part name="tkm-8.9a" crc="21fe6274" map="00002100"/>
@@ -77,7 +71,7 @@
             <part name="tkm-2.4a" crc="ca5c687c" map="00210000"/>
             <part name="tkm-3.6a" crc="f9fe6591" map="21000000"/>
         </interleave>
-        <!-- Total 0x6A0000 bytes - 6784 kBytes -->
+        <!-- Total 0x550000 bytes - 5440 kBytes -->
     </rom>
     <rom index="1">
         <part>00 80</part>

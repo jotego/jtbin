@@ -31,10 +31,10 @@
     <rbf>jtcps1</rbf>
     <joystick>8</joystick>
     <region>World</region>
-    <rom index="0" zip="knights.zip" md5="None" address="0x30000000" asm_md5="8b22a8ab6298008c6e66779a46888652">
+    <rom index="0" zip="knights.zip" md5="None" address="0x30000000" asm_md5="28d67adc3f399d60f904d6bee5669c86">
         <!--  -->
         <part>
-            00 00 00 08 80 08 80 0A
+            00 04 40 04 40 05 FF FF
             FF FF FF FF FF FF FF FF
             FF FF 06 04 02 00 28 26
             24 22 20 36 00 30 20 10
@@ -43,21 +43,15 @@
             FF FF FF FF FF FF FF FF
             FF FF FF FF FF FF FF FF
         </part>
-        <!-- maincpu - starts at 0x0 - length 0x200000 (21 bits) -->
+        <!-- maincpu - starts at 0x0 - length 0x100000 (20 bits) -->
         <part name="kr_23e.8f" crc="1b3997eb"/>
         <part name="kr_22.7f" crc="d0b671a9"/>
-        <part repeat="0x100000"> FF</part>
-        <!-- JTFRAME_BA1_START -->
-        <!-- audiocpu - starts at 0x200000 - length 0x20000 (17 bits) -->
+        <!-- audiocpu - starts at 0x100000 - length 0x10000 (16 bits) -->
         <part name="kr_09.11a" crc="5e44d9ee"/>
-        <part repeat="0x10000"> FF</part>
-        <!-- JTFRAME_BA2_START -->
-        <!-- oki - starts at 0x220000 - length 0x80000 (19 bits) -->
+        <!-- oki - starts at 0x110000 - length 0x40000 (18 bits) -->
         <part name="kr_18.11c" crc="da69d15f"/>
         <part name="kr_19.12c" crc="bfc654e9"/>
-        <part repeat="0x40000"> FF</part>
-        <!-- JTFRAME_BA3_START -->
-        <!-- gfx - starts at 0x2A0000 - length 0x400000 (22 bits) -->
+        <!-- gfx - starts at 0x150000 - length 0x400000 (22 bits) -->
         <interleave output="64">
             <part name="kr-5m.3a" crc="9e36c1a4" map="00000021"/>
             <part name="kr-7m.5a" crc="c5832cae" map="00002100"/>
@@ -70,7 +64,7 @@
             <part name="kr-2m.8a" crc="0200bc3d" map="00210000"/>
             <part name="kr-4m.10a" crc="0bb2b4e7" map="21000000"/>
         </interleave>
-        <!-- Total 0x6A0000 bytes - 6784 kBytes -->
+        <!-- Total 0x550000 bytes - 5440 kBytes -->
     </rom>
     <rom index="1">
         <part>00 80</part>
