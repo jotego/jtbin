@@ -101,8 +101,8 @@
         <!-- sub - starts at 0x210000 - length 0x18000 (17 bits) -->
         <part name="ew08" crc="53010534"/>
         <part repeat="0x8000"> FF</part>
-        <!-- PROM_START -->
         <!-- JTFRAME_PROM_START -->
+        <!-- PROM_START -->
         <!-- proms - starts at 0x228000 - length 0x600 (11 bits) -->
         <part name="mb7116e_a-1.12c" crc="86e775f8"/>
         <part name="mb7122e_a-2.17e" crc="a5cda23e"/>

@@ -12,7 +12,7 @@ commnd,psg0,1.00,psg1,1.00,fm0,0.94,fm1,0.94
 comsc,fm,0.45,pcm,1.00,psga,0.37,psgb,0.37,psgc,0.37
 contra,fm,1.00
 cop,opn,0.25,opl,0.25,psg,0.31,pcm,1.00
-cps1dd,pcm_a,1.00,pcm_b,1.00,fm,0.71
+cps3dd,pcm_a,1.00,pcm_b,1.00,fm,0.71
 dd2,pcm,1.50,fm,0.75
 exed,psg0,0.53,psg1,1.00,psg2,1.00
 flane,pcm0,1.00,pcm1,1.00
@@ -51,7 +51,7 @@ sarms,psg0,1.00,psg1,1.00,fm0,0.69,fm1,0.69
 sbaskt,vlm,1.00,psg,0.85,rdac,0.27
 sectnz,psg0,1.00,psg1,1.00,fm0,0.69,fm1,0.69
 sf,fm,0.11,pcm0,0.33,pcm1,0.33
-shanon,fm,0.54,pcm,1.00
+shanon,fm,0.68,pcm,1.25
 shouse,fm,0.49,pcm,0.75,cus30,1.00
 simson,snd,1.00
 slyspy,opn,0.25,opl,0.25,psg,0.31,pcm,1.00

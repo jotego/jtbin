@@ -68,8 +68,8 @@
         <!-- z-tilemap - starts at 0x690000 -->
         <!-- Total 0x690000 bytes - 6720 kBytes -->
     </rom>
-    <rom index="17" zip="jtbeta.zip" md5="None" asm_md5="64bf6f32556d237ec04d22062b462fde">
-        <part name="beta.bin" crc="84dbdb6d"/>
+    <rom index="17" zip="jtbeta.zip" md5="None" asm_md5="5a2b1e5d0672c729eee562b43e70cc7f">
+        <part name="beta.bin" crc="8b6976d8"/>
     </rom>
     <rom index="2">
         <part>

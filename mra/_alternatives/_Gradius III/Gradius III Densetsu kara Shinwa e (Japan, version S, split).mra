@@ -31,7 +31,7 @@
     <rbf>jtgrad3</rbf>
     <joystick>8</joystick>
     <region>World</region>
-    <rom index="0" zip="gradius3jas.zip|gradius3.zip" md5="None" address="0x30000000" asm_md5="c85fd5ac4f68d6444a13cade70356d17">
+    <rom index="0" zip="gradius3jas.zip|gradius3.zip" md5="None" address="0x30000000" asm_md5="1a47c630f3f0d93681a530614126d63f">
         <!--  -->
         <part>
             00 00 00 00 00 00 00 00
@@ -90,8 +90,10 @@
         <part name="945_m05.d9" crc="c8c45365"/>
         <!-- PCM_START -->
         <!-- k007232 - starts at 0x350000 - length 0x80000 (19 bits) -->
-        <part name="945_a10a.c14" crc="ec717414"/>
-        <part name="945_a10b.c16" crc="709e30e4"/>
+        <interleave output="16">
+            <part name="945_a10a.c14" crc="ec717414" map="01"/>
+            <part name="945_a10b.c16" crc="709e30e4" map="10"/>
+        </interleave>
         <part name="945_l11a.c18" crc="6043f4eb"/>
         <part name="945_l11b.c20" crc="89ea3baf"/>
         <!-- JTFRAME_PROM_START -->
@@ -99,8 +101,8 @@
         <part name="945l14.j28" crc="c778c189"/>
         <!-- Total 0x3D0100 bytes - 3904 kBytes -->
     </rom>
-    <rom index="17" zip="jtbeta.zip" md5="None" asm_md5="64bf6f32556d237ec04d22062b462fde">
-        <part name="beta.bin" crc="84dbdb6d"/>
+    <rom index="17" zip="jtbeta.zip" md5="None" asm_md5="5a2b1e5d0672c729eee562b43e70cc7f">
+        <part name="beta.bin" crc="8b6976d8"/>
     </rom>
     <nvram index="2" size="4096"/>
     <rom index="1">
@@ -121,5 +123,5 @@
         <dip name="Upright Controls" bits="17" ids="Dual,Single"/>
         <dip name="Service Mode" bits="18" ids="On,Off"/>
     </switches>
-    <buttons names="Power-Up,Shoot,Missile,Start,Coin,Core credits" default="A,B,X,Start,Select,-" count="3"/>
+    <buttons names="Shoot,Power-Up,Missile,Start,Coin,Core credits" default="A,B,X,Start,Select,-" count="3"/>
 </misterromdescription>

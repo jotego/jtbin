@@ -600,6 +600,10 @@
 | cps2    | X-Men: Children of the Atom (Japan 941222)                                                 | xmcotaj1      |
 | cps2    | X-Men: Children of the Atom (Japan 950105)                                                 | xmcotaj       |
 | cps2    | X-Men: Children of the Atom (USA 950105)                                                   | xmcotau       |
+| cps3    | Red Earth (Asia 961023, NO CD)                                                             | redearthnr1   |
+| cps3    | Red Earth (Asia 961121, NO CD)                                                             | redearthn     |
+| cps3    | Street Fighter III: New Generation (Asia 970204, NO CD, BIOS set 1)                        | sfiiin        |
+| cps3    | Street Fighter III: New Generation (Asia 970204, NO CD, BIOS set 2)                        | sfiiina       |
 | dd      | Double Dragon (Japan set 1)                                                                | ddragonj      |
 | dd      | Double Dragon (US set 1)                                                                   | ddragonu      |
 | dd      | Double Dragon (US set 2)                                                                   | ddragonua     |
@@ -1163,4 +1167,4 @@
 | yiear   | Yie Ar Kung-Fu (version G)                                                                 | yiear2        |
 | yiear   | Yie Ar Kung-Fu (version I)                                                                 | yiear         |
 
-74 cores, supporting 1162 games
+75 cores, supporting 1166 games

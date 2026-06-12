@@ -90,8 +90,8 @@
         <part name="945l14.j28" crc="c778c189"/>
         <!-- Total 0x3D0100 bytes - 3904 kBytes -->
     </rom>
-    <rom index="17" zip="jtbeta.zip" md5="None" asm_md5="64bf6f32556d237ec04d22062b462fde">
-        <part name="beta.bin" crc="84dbdb6d"/>
+    <rom index="17" zip="jtbeta.zip" md5="None" asm_md5="5a2b1e5d0672c729eee562b43e70cc7f">
+        <part name="beta.bin" crc="8b6976d8"/>
     </rom>
     <nvram index="2" size="4096"/>
     <rom index="1">
@@ -112,5 +112,5 @@
         <dip name="Upright Controls" bits="17" ids="Dual,Single"/>
         <dip name="Service Mode" bits="18" ids="On,Off"/>
     </switches>
-    <buttons names="Power-Up,Shoot,Missile,Start,Coin,Core credits" default="A,B,X,Start,Select,-" count="3"/>
+    <buttons names="Shoot,Power-Up,Missile,Start,Coin,Core credits" default="A,B,X,Start,Select,-" count="3"/>
 </misterromdescription>
