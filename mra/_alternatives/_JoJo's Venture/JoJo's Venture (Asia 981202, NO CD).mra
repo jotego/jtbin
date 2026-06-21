@@ -1,0 +1,127 @@
+<!--          FPGA arcade hardware by Jotego
+
+              This core is available for hardware compatible with MiST and MiSTer
+              Other FPGA systems may be supported by the time you read this.
+              This work is not mantained by the MiSTer project. Please contact the
+              core author for issues and updates.
+
+              (c) Jose Tejada, 2026. Please support this research
+              Patreon: https://patreon.com/jotego
+
+              The author does not endorse or participate in illegal distribution
+              of copyrighted material. This work can be used with compatible
+              software. This software can be homebrew projects or legally
+              obtained memory dumps of compatible games.
+
+              This file license is GNU GPLv2.
+              You can read the whole license file in
+              https://opensource.org/licenses/gpl-2.0.php
+
+-->
+
+<misterromdescription>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://jotego/jtcores"/>
+    <rotation>horizontal</rotation>
+    <name>JoJo&apos;s Venture (Asia 981202, NO CD)</name>
+    <setname>jojonr2</setname>
+    <mameversion>0282</mameversion>
+    <year>1998</year>
+    <manufacturer>Capcom</manufacturer>
+    <players>2</players>
+    <rbf>jtcps3</rbf>
+    <joystick>8</joystick>
+    <region>World</region>
+    <rom index="0" zip="jojonr2.zip|jojo.zip" md5="None" address="0x30000000" asm_md5="6e5d626dcadcbbd0b35b1b2e159985ff">
+        <!--  -->
+        <part>
+            00 08 00 88 01 88 02 88
+            02 C8 03 48 00 00 00 00
+            02 20 3E E3 01 30 19 72
+            00 00 00 00 00 00 00 00
+        </part>
+        <!-- bios - starts at 0x0 - length 0x80000 (19 bits) -->
+        <part name="jojo_asia_nocd.29f400.u2" crc="05b4f953"/>
+        <!-- simm1.0 - starts at 0x80000 - length 0x800000 (23 bits) -->
+        <interleave output="32">
+            <part name="jojo-simm1.1" crc="6dd177c8" map="0001"/>
+            <part name="jojo-simm1.0" crc="e06ba886" map="0010"/>
+            <part name="jojo-simm1.3" crc="66d865ac" map="0100"/>
+            <part name="jojo-simm1.2" crc="d35a15e0" map="1000"/>
+        </interleave>
+        <!-- simm3.0 - starts at 0x880000 - length 0x1000000 (24 bits) -->
+        <interleave output="16">
+            <part name="jojo-simm3.1" crc="43d053d3" map="01"/>
+            <part name="jojo-simm3.0" crc="de7fc9c1" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="jojo-simm3.3" crc="4da4985b" map="01"/>
+            <part name="jojo-simm3.2" crc="2ffd7fa5" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="jojo-simm3.5" crc="edb2a266" map="01"/>
+            <part name="jojo-simm3.4" crc="fde98d72" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="jojo-simm3.7" crc="56fe1a9f" map="01"/>
+            <part name="jojo-simm3.6" crc="be7cf319" map="10"/>
+        </interleave>
+        <!-- simm4.0 - starts at 0x1880000 - length 0x1000000 (24 bits) -->
+        <interleave output="16">
+            <part name="jojo-simm4.1" crc="b62b2719" map="01"/>
+            <part name="jojo-simm4.0" crc="c4e7bf68" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="jojo-simm4.3" crc="9af0ad79" map="01"/>
+            <part name="jojo-simm4.2" crc="18d15809" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="jojo-simm4.5" crc="5e001fd1" map="01"/>
+            <part name="jojo-simm4.4" crc="4124c1f0" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="jojo-simm4.7" crc="2511572a" map="01"/>
+            <part name="jojo-simm4.6" crc="9affa23b" map="10"/>
+        </interleave>
+        <!-- simm5.0 - starts at 0x2880000 - length 0x400000 (22 bits) -->
+        <interleave output="16">
+            <part name="jojo-simm5.1" crc="734fd162" map="01"/>
+            <part name="jojo-simm5.0" crc="797615fc" map="10"/>
+        </interleave>
+        <!-- simm2.0 - starts at 0x2C80000 - length 0x800000 (23 bits) -->
+        <interleave output="32">
+            <part name="jojo-simm2.1" crc="c891c887" map="0001"/>
+            <part name="jojo-simm2.0" crc="417e5dc1" map="0010"/>
+            <part name="jojo-simm2.3" crc="1fd1d3e4" map="0100"/>
+            <part name="jojo-simm2.2" crc="1e101f30" map="1000"/>
+        </interleave>
+        <!-- simm6.0 - starts at 0x3480000 -->
+        <!-- simm6.1 - starts at 0x3480000 -->
+        <!-- simm6.2 - starts at 0x3480000 -->
+        <!-- simm6.3 - starts at 0x3480000 -->
+        <!-- simm6.4 - starts at 0x3480000 -->
+        <!-- simm6.5 - starts at 0x3480000 -->
+        <!-- simm6.6 - starts at 0x3480000 -->
+        <!-- simm6.7 - starts at 0x3480000 -->
+        <!-- Total 0x3480000 bytes - 53760 kBytes -->
+    </rom>
+    <rom index="17" zip="jtbeta.zip" md5="None" asm_md5="5a2b1e5d0672c729eee562b43e70cc7f">
+        <part name="beta.bin" crc="8b6976d8"/>
+    </rom>
+    <rom index="2">
+        <part>
+00 00 01 00 01 01 00 00 00 00 01 01 00 00 00 00
+00 00 00 00 01 07 00 00 01 00 01 01 00 00 00 01
+00 00 00 00 00 00 00 00 00 00 00 00 02 4B 4A 4A
+00 00 01 00 01 01 00 00 00 00 01 01 00 00 00 00
+00 00 00 00 01 07 00 00 01 00 01 01 00 00 00 01
+00 00 00 00 00 00 00 00 00 00 00 00 02 4B 4A 4A
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+</part>
+    </rom>
+    <nvram index="2" size="128"/>
+    <rom index="1">
+        <part>00 80</part>
+    </rom>
+    <buttons names="Light,Middle,Heavy,Stand On,-,-,Start,Coin,Core credits" default="A,B,X,Y,Start,Select,-" count="4"/>
+</misterromdescription>

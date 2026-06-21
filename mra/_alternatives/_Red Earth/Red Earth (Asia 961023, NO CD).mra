@@ -31,11 +31,11 @@
     <rbf>jtcps3</rbf>
     <joystick>8</joystick>
     <region>World</region>
-    <rom index="0" zip="redearthnr1.zip|redearth.zip" md5="None" address="0x30000000" asm_md5="6067157d6374ce6f80595f53521db515">
+    <rom index="0" zip="redearthnr1.zip|redearth.zip" md5="None" address="0x30000000" asm_md5="3d1b7b3c8ebcf183fc2d329e60b82677">
         <!--  -->
         <part>
-            00 88 00 88 01 88 02 88
-            FF FF 00 00 00 00 00 00
+            00 08 00 88 01 88 02 88
+            02 C8 02 C8 00 00 00 00
             9E 30 0A B1 A1 75 B8 2C
             00 00 00 00 00 00 00 00
         </part>
@@ -48,11 +48,6 @@
             <part name="redearthr1-simm1.3" crc="13ebc21d" map="0100"/>
             <part name="redearthr1-simm1.2" crc="2caf8995" map="1000"/>
         </interleave>
-        <!-- JTFRAME_BA1_START -->
-        <!-- simm2.0 - starts at 0x880000 -->
-        <!-- simm2.1 - starts at 0x880000 -->
-        <!-- simm2.2 - starts at 0x880000 -->
-        <!-- simm2.3 - starts at 0x880000 -->
         <!-- simm3.0 - starts at 0x880000 - length 0x1000000 (24 bits) -->
         <interleave output="16">
             <part name="redearth-simm3.1" crc="56734de6" map="01"/>
@@ -70,7 +65,6 @@
             <part name="redearth-simm3.7" crc="f770acd0" map="01"/>
             <part name="redearth-simm3.6" crc="aeff8f54" map="10"/>
         </interleave>
-        <!-- JTFRAME_BA2_START -->
         <!-- simm4.0 - starts at 0x1880000 - length 0x1000000 (24 bits) -->
         <interleave output="16">
             <part name="redearth-simm4.1" crc="2048e103" map="01"/>
@@ -88,12 +82,15 @@
             <part name="redearth-simm4.7" crc="2449cf3b" map="01"/>
             <part name="redearth-simm4.6" crc="c7528df1" map="10"/>
         </interleave>
-        <!-- JTFRAME_BA3_START -->
         <!-- simm5.0 - starts at 0x2880000 - length 0x400000 (22 bits) -->
         <interleave output="16">
             <part name="redearth-simm5.1" crc="9b8cb56b" map="01"/>
             <part name="redearth-simm5.0" crc="424451b9" map="10"/>
         </interleave>
+        <!-- simm2.0 - starts at 0x2C80000 -->
+        <!-- simm2.1 - starts at 0x2C80000 -->
+        <!-- simm2.2 - starts at 0x2C80000 -->
+        <!-- simm2.3 - starts at 0x2C80000 -->
         <!-- simm6.0 - starts at 0x2C80000 -->
         <!-- simm6.1 - starts at 0x2C80000 -->
         <!-- simm6.2 - starts at 0x2C80000 -->

@@ -31,11 +31,11 @@
     <rbf>jtcps3</rbf>
     <joystick>8</joystick>
     <region>World</region>
-    <rom index="0" zip="sfiiina.zip|sfiii.zip" md5="None" address="0x30000000" asm_md5="b7537c36214c93f9bc5ffbdc5e0bd9d1">
+    <rom index="0" zip="sfiiina.zip|sfiii.zip" md5="None" address="0x30000000" asm_md5="51cff9772d8ec10af56f38132a7d955e">
         <!--  -->
         <part>
-            00 88 00 88 01 88 02 88
-            FF FF 00 00 00 00 00 00
+            00 08 00 88 01 88 02 88
+            02 C8 02 C8 00 00 00 00
             B5 FE 05 3E FC 03 92 5A
             00 00 00 00 00 00 00 00
         </part>
@@ -48,11 +48,6 @@
             <part name="sfiii-simm1.3" crc="ea4ca054" map="0100"/>
             <part name="sfiii-simm1.2" crc="0d8f2680" map="1000"/>
         </interleave>
-        <!-- JTFRAME_BA1_START -->
-        <!-- simm2.0 - starts at 0x880000 -->
-        <!-- simm2.1 - starts at 0x880000 -->
-        <!-- simm2.2 - starts at 0x880000 -->
-        <!-- simm2.3 - starts at 0x880000 -->
         <!-- simm3.0 - starts at 0x880000 - length 0x1000000 (24 bits) -->
         <interleave output="16">
             <part name="sfiii-simm3.1" crc="5c356f2f" map="01"/>
@@ -70,7 +65,6 @@
             <part name="sfiii-simm3.7" crc="7f44395c" map="01"/>
             <part name="sfiii-simm3.6" crc="e9eb7a26" map="10"/>
         </interleave>
-        <!-- JTFRAME_BA2_START -->
         <!-- simm4.0 - starts at 0x1880000 - length 0x1000000 (24 bits) -->
         <interleave output="16">
             <part name="sfiii-simm4.1" crc="6e2c4c94" map="01"/>
@@ -88,12 +82,15 @@
             <part name="sfiii-simm4.7" crc="362c01b7" map="01"/>
             <part name="sfiii-simm4.6" crc="e85b9fdd" map="10"/>
         </interleave>
-        <!-- JTFRAME_BA3_START -->
         <!-- simm5.0 - starts at 0x2880000 - length 0x400000 (22 bits) -->
         <interleave output="16">
             <part name="sfiii-simm5.1" crc="c6f1c066" map="01"/>
             <part name="sfiii-simm5.0" crc="9bc108b2" map="10"/>
         </interleave>
+        <!-- simm2.0 - starts at 0x2C80000 -->
+        <!-- simm2.1 - starts at 0x2C80000 -->
+        <!-- simm2.2 - starts at 0x2C80000 -->
+        <!-- simm2.3 - starts at 0x2C80000 -->
         <!-- simm6.0 - starts at 0x2C80000 -->
         <!-- simm6.1 - starts at 0x2C80000 -->
         <!-- simm6.2 - starts at 0x2C80000 -->
