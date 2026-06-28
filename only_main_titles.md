@@ -102,7 +102,9 @@
 | cps2    | Vampire Savior: The Lord of Vampire (Europe 970519)                          | vsav      |
 | cps2    | X-Men Vs. Street Fighter (Europe 961004)                                     | xmvsf     |
 | cps2    | X-Men: Children of the Atom (Europe 950331)                                  | xmcota    |
+| cps3    | JoJo's Venture (Asia 990128, NO CD)                                          | jojon     |
 | cps3    | Red Earth (Asia 961121, NO CD)                                               | redearthn |
+| cps3    | Street Fighter III 2nd Impact: Giant Attack (Asia 970930, NO CD)             | sfiii2n   |
 | cps3    | Street Fighter III: New Generation (Asia 970204, NO CD, BIOS set 1)          | sfiiin    |
 | dd      | Double Dragon (World set 1)                                                  | ddragon   |
 | dd2     | Double Dragon II: The Revenge (World)                                        | ddragon2  |
@@ -265,4 +267,4 @@
 | xmen    | X-Men (4 Players ver EBA)                                                    | xmen      |
 | yiear   | Yie Ar Kung-Fu (version I)                                                   | yiear     |
 
-74 cores, supporting 264 games
+74 cores, supporting 266 games

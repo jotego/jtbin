@@ -433,6 +433,9 @@
 | insectx      | jtkiwi     | 70716a1310f259feb93021b69248cfe8 | fe,ff        |
 | insectxbl    | jtkiwi     | 0f1fa4881ac2194d848bb02140bf8b32 | fe,ff        |
 | insectxj     | jtkiwi     | 382d7b3a550c7a5391cbc88e5f74033e | fe,ff        |
+| jojon        | jtcps3     | 6b091408cec42d736fbbb84baef2ef40 |              |
+| jojonr1      | jtcps3     | acb566ff89cf65bbd83a136c12e11355 |              |
+| jojonr2      | jtcps3     | 3fdd95cd13b37673fafbcd191a5a3706 |              |
 | juju         | jttoki     | 38b73e94149bd174150e63f0811cb5a4 | df,ff        |
 | jyangoku     | jtcps2     | 7ae7b0471ea7dde0b0ff13962bfddcc8 | ff,ff        |
 | kageki       | jtkiwi     | d2f330f88ad450df36e63f2de82bebc0 | ff,ff        |
@@ -670,8 +673,8 @@
 | rastsagaa    | jtrastan   | ef4e52889856332024d6bda1789d7a23 | fe,ff        |
 | rastsagaabl  | jtrastan   | b58fd892743e1bde971615553cf66349 | fe,ff        |
 | rastsagab    | jtrastan   | f5650d6ddf071dc003936c4d8d71d004 | fe,ff        |
-| redearthn    | jtcps3     | d0d00bd13a188176ea3bee7867039a61 |              |
-| redearthnr1  | jtcps3     | 6067157d6374ce6f80595f53521db515 |              |
+| redearthn    | jtcps3     | 945b7d6ec16ca43f6cd59273fe4c718c |              |
+| redearthnr1  | jtcps3     | 130cc7906390cc65c8e737571775b3d6 |              |
 | renegade     | jtkunio    | 2129de6d1efcbc2e10912dbcd3814279 | bf,ff        |
 | renegadeb    | jtkunio    | 9a8390b8c1ce1b3ab5b50383140c67af | bf,ff        |
 | ringdest     | jtcps2     | 50e7406316328c41e215bbe0a5e89556 | ff,ff        |
@@ -796,8 +799,9 @@
 | sfar2        | jtcps2     | 2558dee640adbc24df0f3e5e17087fe5 | ff,ff        |
 | sfar3        | jtcps2     | 68632c920386dfe9eb0b7b33c726d53c | ff,ff        |
 | sfau         | jtcps2     | f00a450b1f76652d196915ab4b56a2fa | ff,ff        |
-| sfiiin       | jtcps3     | a79b473cc57985d4f6e9885c094ab27e |              |
-| sfiiina      | jtcps3     | b7537c36214c93f9bc5ffbdc5e0bd9d1 |              |
+| sfiii2n      | jtcps3     | 5df07e2a318bd41ba5f00374d7a21fac |              |
+| sfiiin       | jtcps3     | 5499875d4e3457c28d9eeebe2779af02 |              |
+| sfiiina      | jtcps3     | 58158a7a8ed5490f90672b792b7fa88a |              |
 | sfj          | jtsf       | db2e2d5203595c3188e5b64e830e4711 | ff,df,ff,ff  |
 | sfua         | jtsf       | d89f870fb3d284541d5880f911b9e5c4 | ff,df,ff,ff  |
 | sfw          | jtsf       | 5979ab3df3c497c1c94bf9e6aa5b9934 | ff,df,ff,ff  |

@@ -31,13 +31,13 @@
     <rbf>jtcps3</rbf>
     <joystick>8</joystick>
     <region>World</region>
-    <rom index="0" zip="jojonr1.zip|jojo.zip" md5="None" address="0x30000000" asm_md5="b11c62831e8f02031d1e10648840cea0">
+    <rom index="0" zip="jojonr1.zip|jojo.zip" md5="None" address="0x30000000" asm_md5="acb566ff89cf65bbd83a136c12e11355">
         <!--  -->
         <part>
             00 08 00 88 01 88 02 88
             02 C8 03 48 00 00 00 00
             02 20 3E E3 01 30 19 72
-            00 00 00 00 00 00 00 00
+            04 00 00 00 00 00 00 00
         </part>
         <!-- bios - starts at 0x0 - length 0x80000 (19 bits) -->
         <part name="jojo_asia_nocd.29f400.u2" crc="05b4f953"/>

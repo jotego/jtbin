@@ -31,13 +31,13 @@
     <rbf>jtcps3</rbf>
     <joystick>8</joystick>
     <region>World</region>
-    <rom index="0" zip="sfiiina.zip|sfiii.zip" md5="None" address="0x30000000" asm_md5="51cff9772d8ec10af56f38132a7d955e">
+    <rom index="0" zip="sfiiina.zip|sfiii.zip" md5="None" address="0x30000000" asm_md5="58158a7a8ed5490f90672b792b7fa88a">
         <!--  -->
         <part>
             00 08 00 88 01 88 02 88
             02 C8 02 C8 00 00 00 00
             B5 FE 05 3E FC 03 92 5A
-            00 00 00 00 00 00 00 00
+            04 00 00 00 00 00 00 00
         </part>
         <!-- bios - starts at 0x0 - length 0x80000 (19 bits) -->
         <part name="sfiii_asia_nocd.29f400.u2" crc="73e32463"/>

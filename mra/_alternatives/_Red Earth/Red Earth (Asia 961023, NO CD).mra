@@ -31,13 +31,13 @@
     <rbf>jtcps3</rbf>
     <joystick>8</joystick>
     <region>World</region>
-    <rom index="0" zip="redearthnr1.zip|redearth.zip" md5="None" address="0x30000000" asm_md5="3d1b7b3c8ebcf183fc2d329e60b82677">
+    <rom index="0" zip="redearthnr1.zip|redearth.zip" md5="None" address="0x30000000" asm_md5="130cc7906390cc65c8e737571775b3d6">
         <!--  -->
         <part>
             00 08 00 88 01 88 02 88
             02 C8 02 C8 00 00 00 00
             9E 30 0A B1 A1 75 B8 2C
-            00 00 00 00 00 00 00 00
+            04 00 00 00 00 00 00 00
         </part>
         <!-- bios - starts at 0x0 - length 0x80000 (19 bits) -->
         <part name="redearth_asia_nocd.29f400.u2" crc="7a4f0851"/>

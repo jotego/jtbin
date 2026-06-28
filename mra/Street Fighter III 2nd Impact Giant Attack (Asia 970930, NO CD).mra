@@ -1,0 +1,139 @@
+<!--          FPGA arcade hardware by Jotego
+
+              This core is available for hardware compatible with MiST and MiSTer
+              Other FPGA systems may be supported by the time you read this.
+              This work is not mantained by the MiSTer project. Please contact the
+              core author for issues and updates.
+
+              (c) Jose Tejada, 2026. Please support this research
+              Patreon: https://patreon.com/jotego
+
+              The author does not endorse or participate in illegal distribution
+              of copyrighted material. This work can be used with compatible
+              software. This software can be homebrew projects or legally
+              obtained memory dumps of compatible games.
+
+              This file license is GNU GPLv2.
+              You can read the whole license file in
+              https://opensource.org/licenses/gpl-2.0.php
+
+-->
+
+<misterromdescription>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://jotego/jtcores"/>
+    <rotation>horizontal</rotation>
+    <name>Street Fighter III 2nd Impact: Giant Attack (Asia 970930, NO CD)</name>
+    <setname>sfiii2n</setname>
+    <mameversion>0282</mameversion>
+    <year>1997</year>
+    <manufacturer>Capcom</manufacturer>
+    <players>2</players>
+    <rbf>jtcps3</rbf>
+    <joystick>8</joystick>
+    <region>World</region>
+    <rom index="0" zip="sfiii2n.zip|sfiii2.zip" md5="None" address="0x30000000" asm_md5="5df07e2a318bd41ba5f00374d7a21fac">
+        <!--  -->
+        <part>
+            00 08 00 88 01 88 02 88
+            03 88 04 08 00 00 00 00
+            00 00 00 00 00 00 00 00
+            01 00 00 00 00 00 00 00
+        </part>
+        <!-- bios - starts at 0x0 - length 0x80000 (19 bits) -->
+        <part name="sfiii2_asia_nocd.29f400.u2" crc="fd297c0d"/>
+        <!-- simm1.0 - starts at 0x80000 - length 0x800000 (23 bits) -->
+        <interleave output="32">
+            <part name="sfiii2-simm1.1" crc="2a3a8ef6" map="0001"/>
+            <part name="sfiii2-simm1.0" crc="2d666f0b" map="0010"/>
+            <part name="sfiii2-simm1.3" crc="87ded8a3" map="0100"/>
+            <part name="sfiii2-simm1.2" crc="161d2206" map="1000"/>
+        </interleave>
+        <!-- simm3.0 - starts at 0x880000 - length 0x1000000 (24 bits) -->
+        <interleave output="16">
+            <part name="sfiii2-simm3.1" crc="1f2aa34b" map="01"/>
+            <part name="sfiii2-simm3.0" crc="dab2d766" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="sfiii2-simm3.3" crc="e05ef205" map="01"/>
+            <part name="sfiii2-simm3.2" crc="6f1a04eb" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="sfiii2-simm3.5" crc="6962872e" map="01"/>
+            <part name="sfiii2-simm3.4" crc="affb074f" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="sfiii2-simm3.7" crc="e18f479e" map="01"/>
+            <part name="sfiii2-simm3.6" crc="6eed87de" map="10"/>
+        </interleave>
+        <!-- simm4.0 - starts at 0x1880000 - length 0x1000000 (24 bits) -->
+        <interleave output="16">
+            <part name="sfiii2-simm4.1" crc="3e16af6e" map="01"/>
+            <part name="sfiii2-simm4.0" crc="764c2503" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="sfiii2-simm4.3" crc="e30cbd9c" map="01"/>
+            <part name="sfiii2-simm4.2" crc="215705e6" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="sfiii2-simm4.5" crc="4e8db013" map="01"/>
+            <part name="sfiii2-simm4.4" crc="4185ded9" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="sfiii2-simm4.7" crc="bb8f80a5" map="01"/>
+            <part name="sfiii2-simm4.6" crc="08df48ce" map="10"/>
+        </interleave>
+        <!-- simm5.0 - starts at 0x2880000 - length 0x1000000 (24 bits) -->
+        <interleave output="16">
+            <part name="sfiii2-simm5.1" crc="6b7c550e" map="01"/>
+            <part name="sfiii2-simm5.0" crc="ebdc4787" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="sfiii2-simm5.3" crc="3f2ac3e9" map="01"/>
+            <part name="sfiii2-simm5.2" crc="56ff8c50" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="sfiii2-simm5.5" crc="520c0af6" map="01"/>
+            <part name="sfiii2-simm5.4" crc="48cda50e" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="sfiii2-simm5.7" crc="93ffa199" map="01"/>
+            <part name="sfiii2-simm5.6" crc="2edc5986" map="10"/>
+        </interleave>
+        <!-- simm2.0 - starts at 0x3880000 - length 0x800000 (23 bits) -->
+        <interleave output="32">
+            <part name="sfiii2-simm2.1" crc="67585033" map="0001"/>
+            <part name="sfiii2-simm2.0" crc="94a4ce0f" map="0010"/>
+            <part name="sfiii2-simm2.3" crc="623c09ca" map="0100"/>
+            <part name="sfiii2-simm2.2" crc="fabffcd5" map="1000"/>
+        </interleave>
+        <!-- simm6.0 - starts at 0x4080000 -->
+        <!-- simm6.1 - starts at 0x4080000 -->
+        <!-- simm6.2 - starts at 0x4080000 -->
+        <!-- simm6.3 - starts at 0x4080000 -->
+        <!-- simm6.4 - starts at 0x4080000 -->
+        <!-- simm6.5 - starts at 0x4080000 -->
+        <!-- simm6.6 - starts at 0x4080000 -->
+        <!-- simm6.7 - starts at 0x4080000 -->
+        <!-- Total 0x4080000 bytes - 66048 kBytes -->
+    </rom>
+    <rom index="17" zip="jtbeta.zip" md5="None" asm_md5="5a2b1e5d0672c729eee562b43e70cc7f">
+        <part name="beta.bin" crc="8b6976d8"/>
+    </rom>
+    <rom index="2">
+        <part>
+01 01 00 00 00 00 01 00 02 00 00 01 00 00 01 02
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+01 01 02 00 01 00 00 01 01 25 09 97 20 41 47 33
+01 01 00 00 00 00 01 00 02 00 00 01 00 00 01 02
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+01 01 02 00 01 00 00 01 01 25 09 97 20 41 47 33
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+</part>
+    </rom>
+    <nvram index="2" size="128"/>
+    <rom index="1">
+        <part>00 80</part>
+    </rom>
+    <buttons names="Light Punch,Middle Punch,Heavy Punch,Light Kick,Middle Kick,Heavy Kick,Start,Coin,Core credits" default="A,B,X,Y,L,R,Start,Select,-" count="6"/>
+</misterromdescription>
