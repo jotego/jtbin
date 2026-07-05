@@ -10,6 +10,10 @@
 			{
 				"id": 1,
 				"filename": "tokiu.rom"
+			},
+			{
+				"id": 2,
+				"filename": "tokiu.sav"
 			}
 		],
 		"memory_writes": [

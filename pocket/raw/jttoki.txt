@@ -5,6 +5,9 @@ The following arcade titles are compatible with this core. Generate
 the required .rom file using the mra tool (read below).
 Place the *.rom files in Assets/jttoki/common
 
+Cabal (World, Joystick) --> cabal.rom
+Cabal (Korea?, Joystick) --> cabala.rom
+Cabal (UK, Joystick) --> cabalukj.rom
 JuJu Densetsu (Japan) --> juju.rom
 Toki (World, set 1) --> toki.rom
 Toki (World, set 2) --> tokia.rom

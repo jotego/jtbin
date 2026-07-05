@@ -108,6 +108,7 @@
 | cps3    | Street Fighter III: New Generation (Asia 970204, NO CD, BIOS set 1)          | sfiiin    |
 | dd      | Double Dragon (World set 1)                                                  | ddragon   |
 | dd2     | Double Dragon II: The Revenge (World)                                        | ddragon2  |
+| ddrbl   | Double Dribble                                                               | ddribble  |
 | exed    | Exed Exes                                                                    | exedexes  |
 | flane   | Fast Lane                                                                    | fastlane  |
 | flstory | Bronx (bootleg of Cycle Shooting)                                            | bronx     |
@@ -117,6 +118,10 @@
 | flstory | The FairyLand Story                                                          | flstory   |
 | flstory | Victorious Nine                                                              | victnine  |
 | fround  | The Final Round (version M)                                                  | fround    |
+| gae1    | Big Karnak (ver. 1.0, checksum 1e38c94)                                      | bigkarnk  |
+| gae1    | Biomechanical Toy (ver. 1.0.1885, checksum 69f5e032)                         | biomtoy   |
+| gae1    | Squash (World, ver. 1.0, checksum 015aef61)                                  | squash    |
+| gae1    | Thunder Hoop (ver. 1, checksum 02a09f7d)                                     | thoop     |
 | gaiden  | Raiga - Strato Fighter (US)                                                  | stratof   |
 | gaiden  | Shadow Warriors (World, set 1)                                               | shadoww   |
 | gaiden  | Wild Fang - Tecmo Knight (World?)                                            | wildfang  |
@@ -252,6 +257,7 @@
 | tmnt    | M.I.A. - Missing in Action (version T)                                       | mia       |
 | tmnt    | Punk Shot (US 4 Players)                                                     | punkshot  |
 | tmnt    | Teenage Mutant Ninja Turtles (World 4 Players, version X)                    | tmnt      |
+| toki    | Cabal (World, Joystick)                                                      | cabal     |
 | toki    | Toki (World, set 1)                                                          | toki      |
 | tora    | F-1 Dream                                                                    | f1dream   |
 | tora    | Tiger Road (US)                                                              | tigeroad  |
@@ -267,4 +273,4 @@
 | xmen    | X-Men (4 Players ver EBA)                                                    | xmen      |
 | yiear   | Yie Ar Kung-Fu (version I)                                                   | yiear     |
 
-74 cores, supporting 266 games
+76 cores, supporting 272 games

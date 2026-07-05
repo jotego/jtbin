@@ -1,0 +1,28 @@
+jtgae1 - Arcade compatible hardware for Pocket FPGA
+Developed by JOTEGO - https://patreon.com/jotego
+
+The following arcade titles are compatible with this core. Generate
+the required .rom file using the mra tool (read below).
+Place the *.rom files in Assets/jtgae1/common
+
+Big Karnak (ver. 1.0, checksum 1e38c94) --> bigkarnk.rom
+Biomechanical Toy (ver. 1.0.1885, checksum 69f5e032) --> biomtoy.rom
+Biomechanical Toy (ver. 1.0.1884, checksum 3f316c70) --> biomtoya.rom
+Biomechanical Toy (ver. 1.0.1878, checksum d84b28ff) --> biomtoyb.rom
+Biomechanical Toy (ver. 1.0.1870, checksum ba682195) --> biomtoyc.rom
+Squash (World, ver. 1.0, checksum 015aef61) --> squash.rom
+Thunder Hoop (ver. 1, checksum 02a09f7d) --> thoop.rom
+
+
+These files are generated using the mra tool in:
+https://github.com/sebdel/mra-tools-c/tree/master/release
+
+Boogermann's ORCA tool can also be used to generate the files:
+https://github.com/opengateware/tools-orca
+
+Check out the short tutorial in:
+https://github.com/jotego/jtbin/wiki/Analogue-Pocket-Cores
+
+DISCLAIMER: This PocketFPGA core is licensed to be used only
+with legally owned dumps of videogame data. It is also licensed
+to be used with freeware (homebrew) compatible with the platform.

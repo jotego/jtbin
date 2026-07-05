@@ -1,0 +1,101 @@
+<!--          FPGA arcade hardware by Jotego
+
+              This core is available for hardware compatible with MiST and MiSTer
+              Other FPGA systems may be supported by the time you read this.
+              This work is not mantained by the MiSTer project. Please contact the
+              core author for issues and updates.
+
+              (c) Jose Tejada, 2026. Please support this research
+              Patreon: https://patreon.com/jotego
+
+              The author does not endorse or participate in illegal distribution
+              of copyrighted material. This work can be used with compatible
+              software. This software can be homebrew projects or legally
+              obtained memory dumps of compatible games.
+
+              This file license is GNU GPLv2.
+              You can read the whole license file in
+              https://opensource.org/licenses/gpl-2.0.php
+
+-->
+
+<misterromdescription>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://jotego/jtcores"/>
+    <rotation>horizontal</rotation>
+    <name>Biomechanical Toy (ver. 1.0.1878, checksum d84b28ff)</name>
+    <setname>biomtoyb</setname>
+    <mameversion>0282</mameversion>
+    <year>1995</year>
+    <manufacturer>Gaelco / Zeus</manufacturer>
+    <players>2</players>
+    <rbf>jtgae1</rbf>
+    <joystick>8</joystick>
+    <region>World</region>
+    <rom index="0" zip="biomtoyb.zip|biomtoy.zip" md5="None" asm_md5="20acddb708a37f526e63bedc3ed9a807">
+        <!-- 
+  0[0]: squash     Squash game select
+  0[1]: thoop      Thunder Hoop game select
+  0[2]: biomtoy    Biomechanical Toy game select
+  0[4]: bigkarnk   Big Karnak game select
+  0[3]: vcrypt     Video write encryption enable
+1[5:0]: vram_p1    Gaelco VRAM decrypt P1 key
+  2[0]: gfx_4m     Use the full 4 MB graphics window
+3[5:0]: spr_force_high Sprite color threshold for highest priority -->
+        <part>
+            04 00 01 38 00 00 00 00
+        </part>
+        <!-- maincpu - starts at 0x0 - length 0x100000 (20 bits) -->
+        <interleave output="16">
+            <part name="16.d16" crc="b35e3ca6" map="01"/>
+            <part name="18.d18" crc="2dfadee3" map="10"/>
+        </interleave>
+        <!-- JTFRAME_BA1_START -->
+        <!-- gfx - starts at 0x100000 - length 0x400000 (22 bits) -->
+        <interleave output="32">
+            <part name="j6" crc="e923728b" map="0001" length="0x40000"/>
+            <part name="j7" crc="0e18fac2" map="0010" length="0x40000"/>
+            <part name="j9" crc="1c93f050" map="0100" length="0x40000"/>
+            <part name="j10" crc="8e3e96cc" map="1000" length="0x40000"/>
+        </interleave>
+        <interleave output="32">
+            <part name="h6" crc="9416a729" map="0001" length="0x40000"/>
+            <part name="h7" crc="9c984d7b" map="0010" length="0x40000"/>
+            <part name="h9" crc="8c1f6718" map="0100" length="0x40000"/>
+            <part name="h10" crc="aca1702b" map="1000" length="0x40000"/>
+        </interleave>
+        <interleave output="32">
+            <part name="j6" crc="e923728b" map="0001" length="0x40000" offset="0x40000"/>
+            <part name="j7" crc="0e18fac2" map="0010" length="0x40000" offset="0x40000"/>
+            <part name="j9" crc="1c93f050" map="0100" length="0x40000" offset="0x40000"/>
+            <part name="j10" crc="8e3e96cc" map="1000" length="0x40000" offset="0x40000"/>
+        </interleave>
+        <interleave output="32">
+            <part name="h6" crc="9416a729" map="0001" length="0x40000" offset="0x40000"/>
+            <part name="h7" crc="9c984d7b" map="0010" length="0x40000" offset="0x40000"/>
+            <part name="h9" crc="8c1f6718" map="0100" length="0x40000" offset="0x40000"/>
+            <part name="h10" crc="aca1702b" map="1000" length="0x40000" offset="0x40000"/>
+        </interleave>
+        <!-- JTFRAME_BA2_START -->
+        <!-- oki - starts at 0x500000 - length 0x100000 (20 bits) -->
+        <part name="c1" crc="edf77532"/>
+        <part name="c3" crc="c3aea660"/>
+        <!-- JTFRAME_BA3_START -->
+        <!-- snd0 - starts at 0x600000 -->
+        <!-- Total 0x600000 bytes - 6144 kBytes -->
+    </rom>
+    <nvram index="2" size="32768"/>
+    <rom index="1">
+        <part>00 80</part>
+    </rom>
+    <switches page_id="1" page_name="Switches" base="16" default="ff,fb">
+        <DSW1/>
+        <dip name="Coin A" bits="0,3" ids="Free Play,-,-,-,-,-,2/3,4/1,3/1,2/1,1/6,1/5,1/4,1/3,1/2,1/1"/>
+        <dip name="Coin B" bits="4,7" ids="Free Play,-,-,-,-,-,2/3,4/1,3/1,2/1,1/6,1/5,1/4,1/3,1/2,1/1"/>
+        <DSW2/>
+        <dip name="Service Mode" bits="8" ids="On,Off"/>
+        <dip name="Demo Sounds" bits="11" ids="Off,On"/>
+        <dip name="Lives" bits="12,13" ids="4,2,1,3"/>
+        <dip name="Difficulty" bits="14,15" ids="Hardest,Easy,Hard,Normal"/>
+    </switches>
+    <buttons names="Fire,Jump,Start,Coin,Core credits" default="A,B,Start,Select,-" count="2"/>
+</misterromdescription>

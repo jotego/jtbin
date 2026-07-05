@@ -1,0 +1,37 @@
+{
+	"core":{
+		"magic": "APF_VER_1",
+		"metadata": {
+			"platform_ids": [
+				"jtddrbl",
+				"jtpatreon"
+			],
+			"shortname": "jtddrbl",
+			"description": "Arcade",
+			"author": "jotego",
+			"url": "https://patreon.com/jotego",
+			"version": "38ddf4f",
+			"date_release": "2026-07-05"
+		},
+		"framework": {
+			"target_product": "Analogue Pocket",
+			"version_required": "1.1",
+			"sleep_supported": false,
+			"dock": {
+				"supported": true,
+				"analog_output": false
+			},
+			"hardware": {
+				"link_port": false,
+				"cartridge_adapter": 0
+			}
+		},
+		"cores": [
+			{
+				"name": "jtddrbl",
+				"id": 0,
+				"filename": "jtddrbl.rbf_r"
+			}
+		]
+	}
+}

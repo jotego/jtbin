@@ -10,6 +10,10 @@
 			{
 				"id": 1,
 				"filename": "toki.rom"
+			},
+			{
+				"id": 2,
+				"filename": "toki.sav"
 			}
 		],
 		"memory_writes": [

@@ -619,6 +619,8 @@
 | dd2     | Double Dragon II: The Revenge (US)                                                         | ddragon2u     |
 | dd2     | Double Dragon II: The Revenge (US, bootleg)                                                | ddragon2bl    |
 | dd2     | Double Dragon II: The Revenge (World)                                                      | ddragon2      |
+| ddrbl   | Double Dribble                                                                             | ddribble      |
+| ddrbl   | Double Dribble (prototype?)                                                                | ddribblep     |
 | exed    | Exed Exes                                                                                  | exedexes      |
 | exed    | Savage Bees                                                                                | savgbees      |
 | flane   | Fast Lane                                                                                  | fastlane      |
@@ -633,6 +635,13 @@
 | flstory | Victorious Nine                                                                            | victnine      |
 | fround  | The Final Round (version L)                                                                | froundl       |
 | fround  | The Final Round (version M)                                                                | fround        |
+| gae1    | Big Karnak (ver. 1.0, checksum 1e38c94)                                                    | bigkarnk      |
+| gae1    | Biomechanical Toy (ver. 1.0.1870, checksum ba682195)                                       | biomtoyc      |
+| gae1    | Biomechanical Toy (ver. 1.0.1878, checksum d84b28ff)                                       | biomtoyb      |
+| gae1    | Biomechanical Toy (ver. 1.0.1884, checksum 3f316c70)                                       | biomtoya      |
+| gae1    | Biomechanical Toy (ver. 1.0.1885, checksum 69f5e032)                                       | biomtoy       |
+| gae1    | Squash (World, ver. 1.0, checksum 015aef61)                                                | squash        |
+| gae1    | Thunder Hoop (ver. 1, checksum 02a09f7d)                                                   | thoop         |
 | gaiden  | Ninja Gaiden (US)                                                                          | gaiden        |
 | gaiden  | Ninja Ryukenden (Japan, set 1)                                                             | ryukendn      |
 | gaiden  | Ninja Ryukenden (Japan, set 2)                                                             | ryukendna     |
@@ -1103,6 +1112,9 @@
 | tmnt    | Teenage Mutant Ninja Turtles (US 4 Players, version N)                                     | tmntua        |
 | tmnt    | Teenage Mutant Ninja Turtles (US 4 Players, version R)                                     | tmntu         |
 | tmnt    | Teenage Mutant Ninja Turtles (World 4 Players, version X)                                  | tmnt          |
+| toki    | Cabal (Korea?, Joystick)                                                                   | cabala        |
+| toki    | Cabal (UK, Joystick)                                                                       | cabalukj      |
+| toki    | Cabal (World, Joystick)                                                                    | cabal         |
 | toki    | JuJu Densetsu (Japan)                                                                      | juju          |
 | toki    | Toki (US, set 1)                                                                           | tokiu         |
 | toki    | Toki (US, set 2)                                                                           | tokiua        |
@@ -1171,4 +1183,4 @@
 | yiear   | Yie Ar Kung-Fu (version G)                                                                 | yiear2        |
 | yiear   | Yie Ar Kung-Fu (version I)                                                                 | yiear         |
 
-75 cores, supporting 1170 games
+77 cores, supporting 1182 games

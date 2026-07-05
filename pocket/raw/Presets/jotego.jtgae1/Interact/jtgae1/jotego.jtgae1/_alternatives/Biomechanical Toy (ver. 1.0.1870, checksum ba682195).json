@@ -1,0 +1,214 @@
+{
+	"interact":{
+		"magic": "APF_VER_1",
+		"variables": [
+			{
+				"name": "Coin B",
+				"id": 0,
+				"type": "list",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 10,
+				"value": 0,
+				"mask": "0xFFFFFFF0",
+				"options": [
+					{
+						"name": "Free Play (if Coin A too)",
+						"value": "0x0"
+					},
+					{
+						"name": "2 Coins/3 Credits",
+						"value": "0x6"
+					},
+					{
+						"name": "1 Coin/2 Credits",
+						"value": "0x7"
+					},
+					{
+						"name": "Free Play (if Coin A too)",
+						"value": "0x8"
+					},
+					{
+						"name": "2 Coins/1 Credit",
+						"value": "0x9"
+					},
+					{
+						"name": "3 Coins/2 Credits",
+						"value": "0xA"
+					},
+					{
+						"name": "1 Coin/3 Credits",
+						"value": "0xB"
+					},
+					{
+						"name": "Free Play (if Coin A too)",
+						"value": "0xC"
+					},
+					{
+						"name": "1 Coin/5 Credits",
+						"value": "0xD"
+					},
+					{
+						"name": "4 Coins/1 Credit",
+						"value": "0xE"
+					},
+					{
+						"name": "1 Coin/1 Credit",
+						"value": "0xF"
+					}
+				]
+			},
+			{
+				"name": "Coin A",
+				"id": 1,
+				"type": "list",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 10,
+				"value": 0,
+				"mask": "0xFFFFFF0F",
+				"options": [
+					{
+						"name": "Free Play (if Coin B too)",
+						"value": "0x0"
+					},
+					{
+						"name": "2 Coins/3 Credits",
+						"value": "0x60"
+					},
+					{
+						"name": "1 Coin/2 Credits",
+						"value": "0x70"
+					},
+					{
+						"name": "Free Play (if Coin B too)",
+						"value": "0x80"
+					},
+					{
+						"name": "2 Coins/1 Credit",
+						"value": "0x90"
+					},
+					{
+						"name": "3 Coins/2 Credits",
+						"value": "0xA0"
+					},
+					{
+						"name": "1 Coin/3 Credits",
+						"value": "0xB0"
+					},
+					{
+						"name": "Free Play (if Coin B too)",
+						"value": "0xC0"
+					},
+					{
+						"name": "1 Coin/5 Credits",
+						"value": "0xD0"
+					},
+					{
+						"name": "4 Coins/1 Credit",
+						"value": "0xE0"
+					},
+					{
+						"name": "1 Coin/1 Credit",
+						"value": "0xF0"
+					}
+				]
+			},
+			{
+				"name": "Service Mode",
+				"id": 2,
+				"type": "check",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 0,
+				"value": 0,
+				"value_off": 256,
+				"mask": "0xFFFFFEFF"
+			},
+			{
+				"name": "Demo Sounds",
+				"id": 3,
+				"type": "check",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 1,
+				"value": 2048,
+				"mask": "0xFFFFF7FF"
+			},
+			{
+				"name": "Lives",
+				"id": 4,
+				"type": "list",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 3,
+				"value": 0,
+				"mask": "0xFFFFCFFF",
+				"options": [
+					{
+						"name": "4",
+						"value": "0x0"
+					},
+					{
+						"name": "2",
+						"value": "0x1000"
+					},
+					{
+						"name": "1",
+						"value": "0x2000"
+					},
+					{
+						"name": "3",
+						"value": "0x3000"
+					}
+				]
+			},
+			{
+				"name": "Difficulty",
+				"id": 5,
+				"type": "list",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 3,
+				"value": 0,
+				"mask": "0xFFFF3FFF",
+				"options": [
+					{
+						"name": "Hardest",
+						"value": "0x0"
+					},
+					{
+						"name": "Easy",
+						"value": "0x4000"
+					},
+					{
+						"name": "Hard",
+						"value": "0x8000"
+					},
+					{
+						"name": "Normal",
+						"value": "0xC000"
+					}
+				]
+			},
+			{
+				"name": "Default",
+				"id": 1015,
+				"type": "number_u32",
+				"enabled": false,
+				"persist": false,
+				"writeonly": true,
+				"address": "0xfa000000",
+				"defaultval": 65531,
+				"value": 0
+			}
+		],
+		"messages": []
+	}
+}

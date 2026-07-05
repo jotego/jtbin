@@ -1,0 +1,98 @@
+<!--          FPGA arcade hardware by Jotego
+
+              This core is available for hardware compatible with MiST and MiSTer
+              Other FPGA systems may be supported by the time you read this.
+              This work is not mantained by the MiSTer project. Please contact the
+              core author for issues and updates.
+
+              (c) Jose Tejada, 2026. Please support this research
+              Patreon: https://patreon.com/jotego
+
+              The author does not endorse or participate in illegal distribution
+              of copyrighted material. This work can be used with compatible
+              software. This software can be homebrew projects or legally
+              obtained memory dumps of compatible games.
+
+              This file license is GNU GPLv2.
+              You can read the whole license file in
+              https://opensource.org/licenses/gpl-2.0.php
+
+-->
+
+<misterromdescription>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://jotego/jtcores"/>
+    <rotation>horizontal</rotation>
+    <name>Double Dribble (prototype?)</name>
+    <setname>ddribblep</setname>
+    <mameversion>0282</mameversion>
+    <year>1986</year>
+    <manufacturer>Konami</manufacturer>
+    <players>2</players>
+    <rbf>jtddrbl</rbf>
+    <joystick>8</joystick>
+    <region>World</region>
+    <rom index="0" zip="ddribblep.zip|ddribble.zip" md5="None" asm_md5="b441853af08f536854a7b76024ebdc6a">
+        <!-- maincpu - starts at 0x0 - length 0x10000 (16 bits) -->
+        <part name="ebs_11-19.c19" crc="0a81c926"/>
+        <!-- JTFRAME_BA1_START -->
+        <!-- subcpu - starts at 0x10000 - length 0x8000 (15 bits) -->
+        <part name="eb_11-19.c12" crc="22130292"/>
+        <!-- audiocpu - starts at 0x18000 - length 0x8000 (15 bits) -->
+        <part name="master_sound.a6" crc="090e3a31"/>
+        <!-- vlm - starts at 0x20000 - length 0x20000 (17 bits) -->
+        <part name="voice_00.e7" crc="8bd0fcf7"/>
+        <part name="voice_10.d7" crc="b4c97494"/>
+        <!-- JTFRAME_BA2_START -->
+        <!-- gfx1 - starts at 0x40000 - length 0x40000 (18 bits) -->
+        <interleave output="16">
+            <part name="v1a.e12" crc="53724765" map="01"/>
+            <part name="v1b.e13" crc="d9dc6f1a" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="01a.e11" crc="1ae5d725" map="01"/>
+            <part name="01b.d14" crc="054c5242" map="10"/>
+        </interleave>
+        <!-- JTFRAME_BA3_START -->
+        <!-- gfx2 - starts at 0x80000 - length 0x80000 (19 bits) -->
+        <interleave output="16">
+            <part name="v2a00.i13" crc="a33f7d6d" map="01"/>
+            <part name="v2b00.i12" crc="e63759bb" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="v2a10.h13" crc="8fbc7454" map="01"/>
+            <part name="v2b10.h12" crc="8a7d4062" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="02a00.i11" crc="6751a942" map="01"/>
+            <part name="02b00_11-4.i8.bin" crc="460aa7b4" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="02a10.h11" crc="bc5ff11c" map="01"/>
+            <part name="02b10.h8" crc="2cc7ee28" map="10"/>
+        </interleave>
+        <!-- JTFRAME_PROM_START -->
+        <!-- proms - starts at 0x100000 - length 0x100 (8 bits) -->
+        <part name="6301-1.i15" crc="f34617ad"/>
+        <!-- Total 0x100100 bytes - 1024 kBytes -->
+    </rom>
+    <rom index="17" zip="jtbeta.zip" md5="None" asm_md5="5a2b1e5d0672c729eee562b43e70cc7f">
+        <part name="beta.bin" crc="8b6976d8"/>
+    </rom>
+    <rom index="1">
+        <part>00 80</part>
+    </rom>
+    <switches page_id="1" page_name="Switches" base="16" default="ff,20,fd">
+        <DSW1/>
+        <dip name="Coin A" bits="0,3" ids="4/5,4/3,4/1,3/4,3/2,3/1,2/5,2/3,2/1,1/7,1/6,1/5,1/4,1/3,1/2,1/1"/>
+        <dip name="Coin B" bits="4,7" ids="4/5,4/3,4/1,3/4,3/2,3/1,2/5,2/3,2/1,1/7,1/6,1/5,1/4,1/3,1/2,1/1"/>
+        <DSW2/>
+        <dip name="Cabinet" bits="10" ids="Upright,Cocktail"/>
+        <dip name="Difficulty" bits="13,14" ids="Hardest,Hard,Normal,Easy"/>
+        <dip name="Demo Sounds" bits="15" ids="On,Off"/>
+        <DSW3/>
+        <dip name="Flip Screen" bits="16" ids="On,Off"/>
+        <dip name="Service Mode" bits="18" ids="On,Off"/>
+        <dip name="vs match with 1 credit" bits="19" ids="On,Off"/>
+    </switches>
+    <buttons names="Pass,Shoot,Steal,Start,Coin,Core credits" default="A,B,X,Start,Select,-" count="3"/>
+</misterromdescription>

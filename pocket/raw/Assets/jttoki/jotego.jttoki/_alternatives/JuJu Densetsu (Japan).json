@@ -10,6 +10,10 @@
 			{
 				"id": 1,
 				"filename": "juju.rom"
+			},
+			{
+				"id": 2,
+				"filename": "juju.sav"
 			}
 		],
 		"memory_writes": [

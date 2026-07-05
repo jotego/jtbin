@@ -1,0 +1,195 @@
+{
+	"interact":{
+		"magic": "APF_VER_1",
+		"variables": [
+			{
+				"name": "Coin Mode",
+				"id": 0,
+				"type": "list",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 1,
+				"value": 0,
+				"mask": "0xFFFFFFEF",
+				"options": [
+					{
+						"name": "Mode 2",
+						"value": "0x0"
+					},
+					{
+						"name": "Mode 1",
+						"value": "0x10"
+					}
+				]
+			},
+			{
+				"name": "Invert Buttons",
+				"id": 1,
+				"type": "check",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 0,
+				"value": 0,
+				"value_off": 32,
+				"mask": "0xFFFFFFDF"
+			},
+			{
+				"name": "Flip Screen",
+				"id": 2,
+				"type": "check",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 0,
+				"value": 0,
+				"value_off": 64,
+				"mask": "0xFFFFFFBF"
+			},
+			{
+				"name": "Trackball",
+				"id": 3,
+				"type": "list",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 1,
+				"value": 0,
+				"mask": "0xFFFFFF7F",
+				"options": [
+					{
+						"name": "Large",
+						"value": "0x0"
+					},
+					{
+						"name": "Small",
+						"value": "0x80"
+					}
+				]
+			},
+			{
+				"name": "Lives",
+				"id": 4,
+				"type": "list",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 3,
+				"value": 0,
+				"mask": "0xFFFFFCFF",
+				"options": [
+					{
+						"name": "121 (Cheat)",
+						"value": "0x0"
+					},
+					{
+						"name": "5",
+						"value": "0x100"
+					},
+					{
+						"name": "2",
+						"value": "0x200"
+					},
+					{
+						"name": "3",
+						"value": "0x300"
+					}
+				]
+			},
+			{
+				"name": "Bonus Life",
+				"id": 5,
+				"type": "list",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 3,
+				"value": 0,
+				"mask": "0xFFFFF3FF",
+				"options": [
+					{
+						"name": "300k Only",
+						"value": "0x0"
+					},
+					{
+						"name": "300k 1000k 700k+",
+						"value": "0x400"
+					},
+					{
+						"name": "200k 800k 600k+",
+						"value": "0x800"
+					},
+					{
+						"name": "150k 650k 500k+",
+						"value": "0xC00"
+					}
+				]
+			},
+			{
+				"name": "Difficulty",
+				"id": 6,
+				"type": "list",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 2,
+				"value": 0,
+				"mask": "0xFFFFCFFF",
+				"options": [
+					{
+						"name": "Very Hard",
+						"value": "0x0"
+					},
+					{
+						"name": "Hard",
+						"value": "0x1000"
+					},
+					{
+						"name": "Normal",
+						"value": "0x2000"
+					},
+					{
+						"name": "Easy",
+						"value": "0x3000"
+					}
+				]
+			},
+			{
+				"name": "Unknown",
+				"id": 7,
+				"type": "check",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 0,
+				"value": 0,
+				"value_off": 16384,
+				"mask": "0xFFFFBFFF"
+			},
+			{
+				"name": "Demo Sounds",
+				"id": 8,
+				"type": "check",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 1,
+				"value": 32768,
+				"mask": "0xFFFF7FFF"
+			},
+			{
+				"name": "Default",
+				"id": 1015,
+				"type": "number_u32",
+				"enabled": false,
+				"persist": false,
+				"writeonly": true,
+				"address": "0xfa000000",
+				"defaultval": 65519,
+				"value": 0
+			}
+		],
+		"messages": []
+	}
+}

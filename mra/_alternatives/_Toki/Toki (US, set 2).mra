@@ -31,7 +31,12 @@
     <rbf>jttoki</rbf>
     <joystick>8</joystick>
     <region>World</region>
-    <rom index="0" zip="tokiua.zip|toki.zip" md5="None" asm_md5="47c22e77be894d51060c2ed4f3ed0e43">
+    <rom index="0" zip="tokiua.zip|toki.zip" md5="None" asm_md5="de3c915d3516d035d4bb619fefd708f1">
+        <!--     byte 0: 00 = Toki/Juju
+            01 = Cabal joystick hardware
+ -->
+        <part>
+            00 00 00 00 </part>
         <!-- maincpu - starts at 0x0 - length 0x60000 (19 bits) -->
         <interleave output="16">
             <part name="4u.k10" crc="ca2f50d9" map="01"/>
@@ -41,27 +46,34 @@
             <part name="3.k12" crc="a01a5b10" map="01"/>
             <part name="5.m12" crc="d6a82808" map="10"/>
         </interleave>
-        <!-- chars - starts at 0x60000 - length 0x20000 (17 bits) -->
-        <part name="1.c5" crc="8aa964a2"/>
-        <part name="2.c3" crc="86e87e48"/>
-        <!-- sprites - starts at 0x80000 - length 0x100000 (20 bits) -->
-        <part name="toki_obj1.c20" crc="a27a80ba"/>
-        <part name="toki_obj2.c22" crc="fa687718"/>
-        <!-- bgtiles - starts at 0x180000 - length 0x80000 (19 bits) -->
-        <part name="toki_bk1.cd8" crc="fdaa5f4b"/>
-        <!-- fgtiles - starts at 0x200000 - length 0x80000 (19 bits) -->
-        <part name="toki_bk2.ef8" crc="d86ac664"/>
         <!-- JTFRAME_BA1_START -->
-        <!-- audiocpu - starts at 0x280000 - length 0x12000 (17 bits) -->
+        <!-- audiocpu - starts at 0x60000 - length 0x12000 (17 bits) -->
         <part name="8.m3" crc="6c87c4c5"/>
         <part name="7.m7" crc="a67969c4"/>
-        <!-- oki - starts at 0x292000 - length 0x20000 (17 bits) -->
+        <!-- oki - starts at 0x72000 - length 0x20000 (17 bits) -->
         <part name="9.m1" crc="ae7a6b8b"/>
-        <!-- proms - starts at 0x2B2000 - length 0x200 (9 bits) -->
+        <!-- adpcm1 - starts at 0x92000 -->
+        <!-- adpcm2 - starts at 0x92000 - length 0x2000 (13 bits) -->
+        <part repeat="0x2000"> FF</part>
+        <!-- JTFRAME_BA2_START -->
+        <!-- chars - starts at 0x94000 - length 0x20000 (17 bits) -->
+        <part name="1.c5" crc="8aa964a2"/>
+        <part name="2.c3" crc="86e87e48"/>
+        <!-- GFX3_START -->
+        <!-- bgtiles - starts at 0xB4000 - length 0x80000 (19 bits) -->
+        <part name="toki_bk1.cd8" crc="fdaa5f4b"/>
+        <!-- fgtiles - starts at 0x134000 - length 0x80000 (19 bits) -->
+        <part name="toki_bk2.ef8" crc="d86ac664"/>
+        <!-- JTFRAME_BA3_START -->
+        <!-- sprites - starts at 0x1B4000 - length 0x100000 (20 bits) -->
+        <part name="toki_obj1.c20" crc="a27a80ba"/>
+        <part name="toki_obj2.c22" crc="fa687718"/>
+        <!-- proms - starts at 0x2B4000 - length 0x200 (9 bits) -->
         <part name="prom26.b6" crc="ea6312c6"/>
         <part name="prom27.j3" crc="e616ae85"/>
-        <!-- Total 0x2B2200 bytes - 2760 kBytes -->
+        <!-- Total 0x2B4200 bytes - 2768 kBytes -->
     </rom>
+    <nvram index="2" size="12288"/>
     <rom index="1">
         <part>00 80</part>
     </rom>
@@ -76,5 +88,5 @@
         <dip name="Allow Continue" bits="14" ids="No,Yes"/>
         <dip name="Demo Sounds" bits="15" ids="Off,On"/>
     </switches>
-    <buttons names="Shoot,Jump,Start,Coin,Core credits" default="A,B,Start,Select,-" count="2"/>
+    <buttons names="Shoot,Jump,-,Start,Coin,Core credits" default="A,B,Start,Select,-" count="2"/>
 </misterromdescription>

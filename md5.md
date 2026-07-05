@@ -118,6 +118,11 @@
 | bbros        | jtpang     | 9de58b1f2f1bb6b871befa9cfb569ac6 |              |
 | berabohm     | jtshouse   | 433ffd320fef1eeb23d46560ee19b748 | ff           |
 | berabohmb    | jtshouse   | 45886b1dd0844e481d65affaa6f96783 | ff           |
+| bigkarnk     | jtgae1     | 50682bf5a495b4afdda3dbee741b4103 | ff,ce,ff     |
+| biomtoy      | jtgae1     | 7ccc73a0b93ced66c786787b7a8f38cb | ff,fb        |
+| biomtoya     | jtgae1     | 8a9884fd541be3c45109c43f3a0a9b91 | ff,fb        |
+| biomtoyb     | jtgae1     | 20acddb708a37f526e63bedc3ed9a807 | ff,fb        |
+| biomtoyc     | jtgae1     | 29a264cf8bee9eefa8b72f4bc265f23e | ff,fb        |
 | bionicc      | jtbiocom   | 3fa0938c679e107f6029456a46faed4b | ff,df        |
 | bionicc1     | jtbiocom   | d0dfb80382b1625256684cb22578b5c3 | ff,df        |
 | bionicc2     | jtbiocom   | 890e141794e2b6f5acc859253a0ae010 | ff,df        |
@@ -153,6 +158,9 @@
 | bullet       | jts16b     | f90ca9abd612f8446da2f62d90790bbc | ff,fd        |
 | buraiken     | jttrojan   | 3d6424fa5a6ac722992d0c7075c59042 | ff,ff        |
 | buraikenb    | jttrojan   | 693dc7ec6e4541b856627aaa67280198 | ff,ff        |
+| cabal        | jttoki     | 0ed17bf18dcb89cc4e44a45967ad4193 | ff,ef        |
+| cabala       | jttoki     | 13366b66ba641342489832a686429b79 | ff,ef        |
+| cabalukj     | jttoki     | 8fbd3dd93123807063602381cb297d63 | ff,ef        |
 | calibr50     | jtcal50    | 082fec853839484a01a90748d5d34716 | ff,fd        |
 | captcomm     | jtcps1     | 6544482d4fdffd3567d47e75daf0c42f | ff,f4,9f     |
 | captcommj    | jtcps1     | 14b7f6326731641ab30f448963553ed3 | ff,f4,9f     |
@@ -239,6 +247,8 @@
 | ddragonu     | jtdd       | 0d851cf215651c3324bedc071931d8e2 | ff,ff        |
 | ddragonua    | jtdd       | 40e0d52068303a2b00127991da7750cb | ff,ff        |
 | ddragonub    | jtdd       | c56c079a914912eb1d3d9a04cbc6c425 | ff,ff        |
+| ddribble     | jtddrbl    | 93d6823f9afc87900832fa6e3b77d34c | ff,20,fd     |
+| ddribblep    | jtddrbl    | b441853af08f536854a7b76024ebdc6a | ff,20,fd     |
 | ddsom        | jtcps2     | e23626e398ef135e535e3a71aca0e64d | ff,ff        |
 | ddsoma       | jtcps2     | 51cd59228ba84105c3bf6d68e989bed2 | ff,ff        |
 | ddsomar1     | jtcps2     | 6db1cb0ff14abe82f3e4949d73c845fb | ff,ff        |
@@ -436,7 +446,7 @@
 | jojon        | jtcps3     | 6b091408cec42d736fbbb84baef2ef40 |              |
 | jojonr1      | jtcps3     | acb566ff89cf65bbd83a136c12e11355 |              |
 | jojonr2      | jtcps3     | 3fdd95cd13b37673fafbcd191a5a3706 |              |
-| juju         | jttoki     | 38b73e94149bd174150e63f0811cb5a4 | df,ff        |
+| juju         | jttoki     | c98f2d75bf7957b3e1189176452e2ef7 | df,ff        |
 | jyangoku     | jtcps2     | 7ae7b0471ea7dde0b0ff13962bfddcc8 | ff,ff        |
 | kageki       | jtkiwi     | d2f330f88ad450df36e63f2de82bebc0 | ff,ff        |
 | kagekih      | jtkiwi     | 42102bebd90944cd3e66eda8de060bcb | ff,ff        |
@@ -900,6 +910,7 @@
 | splatter     | jtshouse   | f3759260532015e11f8894a27860e3cd | ff           |
 | splatter2    | jtshouse   | 5d93069ee0d77adc9cd6395902e8837a | ff           |
 | splatterj    | jtshouse   | fd2763c3e367a29f758df3d8198483ab | ff           |
+| squash       | jtgae1     | 35b811b62f73285d2fdf46b4ba677766 | ff,df        |
 | srumbler     | jtrumble   | ca8dfc45b6c2bc43818e26c2a73614de | ff,73        |
 | srumbler2    | jtrumble   | 690ff40aeb3164bc29045fa8dd3eda6b | ff,73        |
 | srumbler3    | jtrumble   | 107617e23ae1fe6d8b581b64c267adad | ff,73        |
@@ -966,6 +977,7 @@
 | tetris1      | jts16b     | e9cca35f63ff528a07057065e30c5d0d | ff,fd        |
 | tetris2      | jts16b     | 91eeb6e782d0812f8c9fa0ea9e993ff9 | ff,fd        |
 | tetris3      | jts16      | 087b6c2e4d938e9d703895c6665a6f92 | ff,fd        |
+| thoop        | jtgae1     | 55af085fec197935dc2c9e232e3c21e8 | ff,cf        |
 | thunderx     | jtaliens   | 0594600f554d6dcc0221fafa84a3b0e7 | ff,7a,ff     |
 | thunderxa    | jtaliens   | 1e86c04a144ee7ad642464a831bb3ad6 | ff,7a,ff     |
 | thunderxb    | jtaliens   | 47d6dae5b024554e216f6fb2a9743e52 | ff,7a,ff     |
@@ -1004,14 +1016,14 @@
 | tnzsoa       | jtkiwi     | 6ad3765d3584a88f4fc53661683f14f4 | fe,ff        |
 | tnzsop       | jtkiwi     | 8f0223d475a84ce98ccf5c8a0a3d0905 | fe,ff        |
 | tnzsuo       | jtkiwi     | 8150dddcf9f52643a5d3c9d032e526ff | fe,ff        |
-| toki         | jttoki     | ae111807dd42167b8805493a946efe92 | df,ff        |
-| tokia        | jttoki     | 5ca8ff7a6a6699352a25677ab50fc72f | df,ff        |
+| toki         | jttoki     | e3387d4aae994cacfed2193c359882c5 | df,ff        |
+| tokia        | jttoki     | 81f04cb3a16e34a20720bdba289d8e70 | df,ff        |
 | tokio        | jtbubl     | a16d11118acc27f5802e5a292a29a712 | ff,ff        |
 | tokiob       | jtbubl     | fd37a47f72184caf3c60c6187db54788 | ff,ff        |
 | tokioo       | jtbubl     | 57a5c7a2954cbf851962aa960878433a | ff,ff        |
 | tokiou       | jtbubl     | 53510e372905aaa68e23552e2885d324 | ff,ff        |
-| tokiu        | jttoki     | 7236481fa5d32948bd86ec577685ff1e | df,ff        |
-| tokiua       | jttoki     | 47c22e77be894d51060c2ed4f3ed0e43 | df,ff        |
+| tokiu        | jttoki     | e3381f82cb59e93f761e24d752054ab0 | df,ff        |
+| tokiua       | jttoki     | de3c915d3516d035d4bb619fefd708f1 | df,ff        |
 | topsecrt     | jtbiocom   | 685ea63491f6d89e485d0d5619c4bd23 | ff,df        |
 | topsecrt2    | jtbiocom   | a0e127acf4aa7292fdc1c37f4bd721e6 | ff,df        |
 | toramich     | jttora     | 32cb4c4bd6913f32104362e761847490 | ff,fb        |
