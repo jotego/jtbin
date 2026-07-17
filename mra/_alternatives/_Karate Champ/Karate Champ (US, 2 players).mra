@@ -31,7 +31,7 @@
     <rbf>jtkchamp</rbf>
     <joystick>4</joystick>
     <region>World</region>
-    <rom index="0" zip="kchamp2p.zip|kchamp.zip" md5="None" asm_md5="a0e0965f555d332e3033e1f4d3a7cbea">
+    <rom index="0" zip="kchamp2p.zip|kchamp.zip" md5="None" asm_md5="ea5117310a9042422e9d43646074e619">
         <!-- maincpu - starts at 0x0 - length 0x10000 (16 bits) -->
         <part name="karate_champ_bs14-8.ic80" crc="e9f93e89"/>
         <part name="karate_champ_bs15-8.ic74" crc="572961f2"/>

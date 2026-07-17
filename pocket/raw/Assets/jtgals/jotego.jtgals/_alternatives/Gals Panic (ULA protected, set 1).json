@@ -9,17 +9,22 @@
 		"data_slots": [
 			{
 				"id": 1,
-				"filename": "cps1mult.rom"
+				"filename": "galpanicb.rom"
 			},
 			{
 				"id": 2,
-				"filename": "cps1mult.sav"
+				"filename": "galpanicb.sav"
+			},
+			{
+				"id": 17,
+				"filename": "beta.bin",
+				"md5": "5a2b1e5d0672c729eee562b43e70cc7f"
 			}
 		],
 		"memory_writes": [
 			{
 				"address": "0xf9000000",
-				"data": "0x8000"
+				"data": "0x8001"
 			}
 		]
 	}

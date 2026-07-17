@@ -26,7 +26,6 @@ Carrier Air Wing (World 901009) --> cawingr1.rom
 Carrier Air Wing (USA 901130) --> cawingu.rom
 Carrier Air Wing (USA 901012) --> cawingur1.rom
 Chiki Chiki Boys (Japan 900619) --> chikij.rom
-CPS1 Multi Game --> cps1mult.rom
 Adventure Quiz Capcom World 2 (Japan 920611) --> cworld2j.rom
 Adventure Quiz Capcom World 2 (Japan 920611, B-Board 90629B-3, no battery) --> cworld2ja.rom
 Adventure Quiz Capcom World 2 (Japan 920611, B-Board 91634B-2) --> cworld2jb.rom

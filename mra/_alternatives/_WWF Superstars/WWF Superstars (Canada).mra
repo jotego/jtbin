@@ -31,7 +31,7 @@
     <rbf>jtwwfss</rbf>
     <joystick>8</joystick>
     <region>World</region>
-    <rom index="0" zip="wwfsstarc.zip|wwfsstar.zip" md5="None">
+    <rom index="0" zip="wwfsstarc.zip|wwfsstar.zip" md5="None" asm_md5="945440456eb110e2fc29ea8107d0a9d2">
         <!-- maincpu - starts at 0x0 - length 0x40000 (18 bits) -->
         <interleave output="16">
             <part name="24ad-0c.ic35" crc="154bf54c" map="01"/>

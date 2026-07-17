@@ -31,7 +31,7 @@
     <rbf>jtgng</rbf>
     <joystick>4</joystick>
     <region>World</region>
-    <rom index="0" zip="makaimurbbl.zip|gng.zip" md5="None" asm_md5="3229bd682feb8968b098eb2060bc1ef0">
+    <rom index="0" zip="makaimurbbl.zip|gng.zip" md5="None" asm_md5="79cdf6f8babec273e45ee3d7aeaedd9c">
         <!-- maincpu - starts at 0x0 - length 0x14000 (17 bits) -->
         <part name="gg4.bin" crc="ac0b25fb"/>
         <part name="gg5.bin" crc="f8bda78f"/>

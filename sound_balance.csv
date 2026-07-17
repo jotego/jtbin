@@ -3,6 +3,7 @@
 ajax,fm,1.00,pcm1,0.12,pcm2,0.15
 aliens,fm,1.00,pcm,0.23
 biocom,fm,1.00
+blkout,fm,0.16,pcm,1.00
 btiger,psg0,1.00,psg1,1.00,fm0,0.81,fm1,0.81
 bubl,fm03,0.84,fm26,0.84,psg,1.00
 cal50,pcm_4k,1.00,pcm_8k,1.00
@@ -22,6 +23,7 @@ flstory,msm,1.00,psg,0.91,psg2,0.91,dac,0.91
 fround,fm,1.00,pcm,0.15,upd,0.35
 gae1,opl,0.17,pcm,1.00
 gaiden,pcm,0.80,fm0,0.26,fm1,0.26,psg0,0.16,psg1,0.16
+gals,pcm,1.00
 gng,psg0,0.59,psg1,0.59,fm0,0.30,fm1,0.30
 grad3,fm,1.98,pcm,1.25
 gunsmk,psg0,0.59,psg1,0.59,fm0,0.30,fm1,0.30
@@ -43,7 +45,7 @@ pinpon,ti1,1.00
 prmr,k539,1.98
 rastan,fm,0.45,pcm,1.00
 riders,k60,0.90
-roadf,vlm,1.00,psg,0.85,rdac,0.27
+roadf,vlm,1.00,psg,0.42,rdac,0.13
 roc,psg0a,1.00,psg0b,1.00,psg0c,1.00,psg1a,1.00,psg1b,1.00,psg1c,1.00
 rumble,psg0,1.00,psg1,1.00,fm0,0.69,fm1,0.69
 rungun,k539,1.98
@@ -51,7 +53,7 @@ s16,fm,0.34,pcm,1.00
 s16b,fm,0.19,pcm,1.00
 s18,fm0,1.00,fm1,1.00,pcm,0.81
 sarms,psg0,1.00,psg1,1.00,fm0,0.69,fm1,0.69
-sbaskt,vlm,1.00,psg,0.85,rdac,0.27
+sbaskt,vlm,1.00,psg,0.42,rdac,0.13
 sectnz,psg0,1.00,psg1,1.00,fm0,0.69,fm1,0.69
 sf,fm,0.11,pcm0,0.33,pcm1,0.33
 shanon,fm,0.68,pcm,1.25
@@ -62,7 +64,7 @@ thundr,fm,0.07,pcm0,1.98,pcm1,1.98,cus30,0.46
 tmnt,fm,1.00,k60,1.00,pcm,0.27,title,0.34,upd,0.85
 toki,fm,1.00,pcm0,1.00,pcm1,1.00
 tora,fm0,0.21,fm1,0.21,psg0,0.24,psg1,0.24,pcm,1.00
-track,vlm,1.00,psg,0.85,rdac,0.27
+track,vlm,1.00,psg,0.42,rdac,0.13
 trojan,psg0,1.00,psg1,1.00,fm0,0.39,fm1,0.39,pcm,0.87
 twin16,fm,1.98,pcm,0.30,upd,1.40
 vigil,pcm,0.40,fm,0.22

@@ -26,7 +26,6 @@
 | cop     | Robocop (World, revision 4)                                                  | robocop   |
 | cps1    | 1941: Counter Attack (World 900227)                                          | 1941      |
 | cps1    | Adventure Quiz Capcom World 2 (Japan 920611)                                 | cworld2j  |
-| cps1    | CPS1 Multi Game                                                              | cps1mult  |
 | cps1    | Captain Commando (World 911202)                                              | captcomm  |
 | cps1    | Carrier Air Wing (World 901012)                                              | cawing    |
 | cps1    | Dynasty Wars (USA, B-Board 89624B-?)                                         | dynwar    |
@@ -125,6 +124,7 @@
 | gaiden  | Raiga - Strato Fighter (US)                                                  | stratof   |
 | gaiden  | Shadow Warriors (World, set 1)                                               | shadoww   |
 | gaiden  | Wild Fang - Tecmo Knight (World?)                                            | wildfang  |
+| gals    | Gals Panic (unprotected, ver. 2.0)                                           | galpanic  |
 | gng     | Ghosts'n Goblins (World? set 1)                                              | gng       |
 | grad3   | Gradius III (World, version R)                                               | gradius3  |
 | gunsmk  | Gun.Smoke (World, 1985-11-15)                                                | gunsmoke  |
@@ -273,4 +273,4 @@
 | xmen    | X-Men (4 Players ver EBA)                                                    | xmen      |
 | yiear   | Yie Ar Kung-Fu (version I)                                                   | yiear     |
 
-76 cores, supporting 272 games
+77 cores, supporting 272 games

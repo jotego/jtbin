@@ -92,5 +92,5 @@
         <dip name="Unknown" bits="14" ids="On,Off"/>
         <dip name="Demo Sounds" bits="15" ids="Off,On"/>
     </switches>
-    <buttons names="Fire,Roll,Grenade,Start,Coin,Core credits" default="A,B,X,Start,Select,-" count="3"/>
+    <buttons names="Fire,Grenade,Roll,Start,Coin,Core credits" default="A,B,X,Start,Select,-" count="3"/>
 </misterromdescription>

@@ -12,12 +12,12 @@
 					},
 					{
 						"id": 1,
-						"name": "Roll",
+						"name": "Grenade",
 						"key": "pad_btn_b"
 					},
 					{
 						"id": 2,
-						"name": "Grenade",
+						"name": "Roll",
 						"key": "pad_btn_x"
 					}
 				]

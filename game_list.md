@@ -112,7 +112,6 @@
 | cps1    | Adventure Quiz Capcom World 2 (Japan 920611, B-Board 91634B-2)                             | cworld2jb     |
 | cps1    | Area 88 (Japan Resale Ver.)                                                                | area88r       |
 | cps1    | Area 88 (Japan)                                                                            | area88        |
-| cps1    | CPS1 Multi Game                                                                            | cps1mult      |
 | cps1    | Captain Commando (Japan 910928)                                                            | captcommjr1   |
 | cps1    | Captain Commando (Japan 911202)                                                            | captcommj     |
 | cps1    | Captain Commando (USA 910928)                                                              | captcommu     |
@@ -652,6 +651,10 @@
 | gaiden  | Tecmo Knight (US)                                                                          | tknight       |
 | gaiden  | Wild Fang (Japan)                                                                          | wildfangs     |
 | gaiden  | Wild Fang - Tecmo Knight (World?)                                                          | wildfang      |
+| gals    | Gals Panic (ULA protected, set 1)                                                          | galpanicb     |
+| gals    | Gals Panic (ULA protected, set 2)                                                          | galpanicc     |
+| gals    | Gals Panic (unprotected)                                                                   | galpanica     |
+| gals    | Gals Panic (unprotected, ver. 2.0)                                                         | galpanic      |
 | gng     | Ghosts'n Goblins (Italian bootleg, harder)                                                 | gngblita      |
 | gng     | Ghosts'n Goblins (US)                                                                      | gngt          |
 | gng     | Ghosts'n Goblins (World? set 1)                                                            | gng           |
@@ -1183,4 +1186,4 @@
 | yiear   | Yie Ar Kung-Fu (version G)                                                                 | yiear2        |
 | yiear   | Yie Ar Kung-Fu (version I)                                                                 | yiear         |
 
-77 cores, supporting 1182 games
+78 cores, supporting 1185 games

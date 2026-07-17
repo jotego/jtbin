@@ -31,7 +31,7 @@
     <rbf>jttrojan</rbf>
     <joystick>8</joystick>
     <region>World</region>
-    <rom index="0" zip="avengersc.zip|avengers.zip" md5="None" asm_md5="99198c18c0d0e48559e89c934854f81d">
+    <rom index="0" zip="avengersc.zip|avengers.zip" md5="None" asm_md5="64d40e64c8aeea52401d7c267ccf5e50">
         <!-- Header byte 8:
              bit 0 - Trojan
              bit 1 - Avengers

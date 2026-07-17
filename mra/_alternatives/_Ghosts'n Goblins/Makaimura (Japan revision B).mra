@@ -31,7 +31,7 @@
     <rbf>jtgng</rbf>
     <joystick>4</joystick>
     <region>World</region>
-    <rom index="0" zip="makaimurb.zip|gng.zip" md5="None">
+    <rom index="0" zip="makaimurb.zip|gng.zip" md5="None" asm_md5="bdb2a98ea37da4fa7be8c8244502c1f3">
         <!-- maincpu - starts at 0x0 - length 0x14000 (17 bits) -->
         <part name="mj03b.8n" crc="0ba14114"/>
         <part name="mj04b.10n" crc="f8bda78f"/>
