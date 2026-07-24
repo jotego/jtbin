@@ -160,7 +160,9 @@
 | paroda  | Parodius Da!: Shinwa kara Owarai e (World, set 1)                            | parodius  |
 | paroda  | Surprise Attack (World ver. K)                                               | suratk    |
 | pinpon  | Konami's Ping-Pong                                                           | pingpong  |
+| pktgal  | Pocket Gal (Japan)                                                           | pcktgal   |
 | prmr    | Premier Soccer (ver EAB)                                                     | prmrsocr  |
+| rastan  | Operation Wolf (World, rev 2, set 1)                                         | opwolf    |
 | rastan  | Rastan (World Rev 1)                                                         | rastan    |
 | riders  | Golfing Greats (World, version L)                                            | glfgreat  |
 | riders  | Lightning Fighters (World)                                                   | lgtnfght  |
@@ -273,4 +275,4 @@
 | xmen    | X-Men (4 Players ver EBA)                                                    | xmen      |
 | yiear   | Yie Ar Kung-Fu (version I)                                                   | yiear     |
 
-77 cores, supporting 272 games
+78 cores, supporting 274 games

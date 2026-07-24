@@ -1,0 +1,124 @@
+{
+	"interact":{
+		"magic": "APF_VER_1",
+		"variables": [
+			{
+				"name": "Coinage",
+				"id": 0,
+				"type": "list",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 3,
+				"value": 0,
+				"mask": "0xFFFFFFFC",
+				"options": [
+					{
+						"name": "2 Coins/1 Credit",
+						"value": "0x0"
+					},
+					{
+						"name": "1 Coin/3 Credits",
+						"value": "0x1"
+					},
+					{
+						"name": "1 Coin/2 Credits",
+						"value": "0x2"
+					},
+					{
+						"name": "1 Coin/1 Credit",
+						"value": "0x3"
+					}
+				]
+			},
+			{
+				"name": "Flip Screen",
+				"id": 1,
+				"type": "check",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 0,
+				"value": 0,
+				"value_off": 4,
+				"mask": "0xFFFFFFFB"
+			},
+			{
+				"name": "Allow 2 Players Game",
+				"id": 2,
+				"type": "check",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 1,
+				"value": 8,
+				"mask": "0xFFFFFFF7"
+			},
+			{
+				"name": "Demo Sounds",
+				"id": 3,
+				"type": "check",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 1,
+				"value": 16,
+				"mask": "0xFFFFFFEF"
+			},
+			{
+				"name": "Time",
+				"id": 4,
+				"type": "list",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 1,
+				"value": 0,
+				"mask": "0xFFFFFFDF",
+				"options": [
+					{
+						"name": "100",
+						"value": "0x0"
+					},
+					{
+						"name": "120",
+						"value": "0x20"
+					}
+				]
+			},
+			{
+				"name": "Lives",
+				"id": 5,
+				"type": "list",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 0,
+				"value": 0,
+				"mask": "0xFFFFFFBF",
+				"options": [
+					{
+						"name": "3",
+						"value": "0x0"
+					},
+					{
+						"name": "4",
+						"value": "0x40"
+					}
+				]
+			},
+			{
+				"name": "Default",
+				"id": 1015,
+				"type": "number_u32",
+				"enabled": false,
+				"persist": false,
+				"writeonly": true,
+				"address": "0xfa000000",
+				"defaultval": 191,
+				"value": 0
+			}
+		],
+		"messages": []
+	}
+}

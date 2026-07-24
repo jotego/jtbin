@@ -97,5 +97,5 @@
         <dip name="Lives" bits="12,13" ids="4,2,1,3"/>
         <dip name="Difficulty" bits="14,15" ids="Hardest,Easy,Hard,Normal"/>
     </switches>
-    <buttons names="Fire,Jump,Start,Coin,Core credits" default="A,B,Start,Select,-" count="2"/>
+    <buttons names="Jump,Fire,Start,Coin,Core credits" default="A,B,Start,Select,-" count="2"/>
 </misterromdescription>

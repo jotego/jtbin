@@ -16,7 +16,7 @@ cop,opn,0.25,opl,0.25,psg,0.31,pcm,1.00
 cps3,snd,1.99
 dd,pcm_a,1.00,pcm_b,1.00,fm,0.71
 dd2,pcm,1.50,fm,0.75
-ddrbl,fm,0.16,psga,0.07,psgb,0.07,psgc,0.07,vlm,1.00
+ddrbl,fm,0.11,psga,0.03,psgb,0.03,psgc,0.03,vlm,1.00
 exed,psg0,0.53,psg1,1.00,psg2,1.00
 flane,pcm0,1.00,pcm1,1.00
 flstory,msm,1.00,psg,0.91,psg2,0.91,dac,0.91
@@ -42,9 +42,9 @@ paclan,cus30,1.00
 pang,pcm,0.69,fm,1.00
 paroda,snd,1.00
 pinpon,ti1,1.00
+pktgal,jt03_fm,0.45,jt03_psg,0.65,ym3812,0.60,pcm,1.00
 prmr,k539,1.98
-rastan,fm,0.45,pcm,1.00
-riders,k60,0.90
+rastanriders,k60,0.90
 roadf,vlm,1.00,psg,0.42,rdac,0.13
 roc,psg0a,1.00,psg0b,1.00,psg0c,1.00,psg1a,1.00,psg1b,1.00,psg1c,1.00
 rumble,psg0,1.00,psg1,1.00,fm0,0.69,fm1,0.69

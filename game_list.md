@@ -790,8 +790,21 @@
 | paroda  | Surprise Attack (Japan ver. M)                                                             | suratkj       |
 | paroda  | Surprise Attack (World ver. K)                                                             | suratk        |
 | pinpon  | Konami's Ping-Pong                                                                         | pingpong      |
+| pktgal  | Pocket Gal (Japan)                                                                         | pcktgal       |
+| pktgal  | Pocket Gal (Yada East bootleg)                                                             | pcktgalb      |
+| pktgal  | Pocket Gal - unknown card game                                                             | pcktgalba     |
+| pktgal  | Pocket Gal 2 (English)                                                                     | pcktgal2      |
+| pktgal  | Pocket Gal 2 (Japanese)                                                                    | pcktgal2j     |
+| pktgal  | Super Pool III (English)                                                                   | spool3        |
+| pktgal  | Super Pool III (I-Vics)                                                                    | spool3i       |
 | prmr    | Premier Soccer (ver EAB)                                                                   | prmrsocr      |
 | prmr    | Premier Soccer (ver JAB)                                                                   | prmrsocrj     |
+| rastan  | Operation Wolf (Japan, SC)                                                                 | opwolfjsc     |
+| rastan  | Operation Wolf (Japan, prototype)                                                          | opwolfp       |
+| rastan  | Operation Wolf (Japan, rev 2)                                                              | opwolfj       |
+| rastan  | Operation Wolf (US, rev 2)                                                                 | opwolfu       |
+| rastan  | Operation Wolf (World, rev 2, set 1)                                                       | opwolf        |
+| rastan  | Operation Wolf (World, rev 2, set 2)                                                       | opwolfa       |
 | rastan  | Rastan (US Rev 1)                                                                          | rastanu       |
 | rastan  | Rastan (US)                                                                                | rastanua      |
 | rastan  | Rastan (US, earlier code base)                                                             | rastanub      |
@@ -1186,4 +1199,4 @@
 | yiear   | Yie Ar Kung-Fu (version G)                                                                 | yiear2        |
 | yiear   | Yie Ar Kung-Fu (version I)                                                                 | yiear         |
 
-78 cores, supporting 1185 games
+79 cores, supporting 1198 games

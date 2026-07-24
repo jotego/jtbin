@@ -7,12 +7,12 @@
 				"mappings": [
 					{
 						"id": 0,
-						"name": "Hit",
+						"name": "Slow",
 						"key": "pad_btn_a"
 					},
 					{
 						"id": 1,
-						"name": "Slow",
+						"name": "Hit",
 						"key": "pad_btn_b"
 					}
 				]

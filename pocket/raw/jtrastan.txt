@@ -5,6 +5,12 @@ The following arcade titles are compatible with this core. Generate
 the required .rom file using the mra tool (read below).
 Place the *.rom files in Assets/jtrastan/common
 
+Operation Wolf (World, rev 2, set 1) --> opwolf.rom
+Operation Wolf (World, rev 2, set 2) --> opwolfa.rom
+Operation Wolf (Japan, rev 2) --> opwolfj.rom
+Operation Wolf (Japan, SC) --> opwolfjsc.rom
+Operation Wolf (Japan, prototype) --> opwolfp.rom
+Operation Wolf (US, rev 2) --> opwolfu.rom
 Rastan (World Rev 1) --> rastan.rom
 Rastan (World) --> rastana.rom
 Rastan (World, earlier code base) --> rastanb.rom

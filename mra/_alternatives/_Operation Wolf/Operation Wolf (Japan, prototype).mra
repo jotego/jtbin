@@ -1,0 +1,96 @@
+<!--          FPGA arcade hardware by Jotego
+
+              This core is available for hardware compatible with MiST and MiSTer
+              Other FPGA systems may be supported by the time you read this.
+              This work is not mantained by the MiSTer project. Please contact the
+              core author for issues and updates.
+
+              (c) Jose Tejada, 2026. Please support this research
+              Patreon: https://patreon.com/jotego
+
+              The author does not endorse or participate in illegal distribution
+              of copyrighted material. This work can be used with compatible
+              software. This software can be homebrew projects or legally
+              obtained memory dumps of compatible games.
+
+              This file license is GNU GPLv2.
+              You can read the whole license file in
+              https://opensource.org/licenses/gpl-2.0.php
+
+-->
+
+<misterromdescription>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://jotego/jtcores"/>
+    <rotation>horizontal</rotation>
+    <name>Operation Wolf (Japan, prototype)</name>
+    <setname>opwolfp</setname>
+    <mameversion>0282</mameversion>
+    <year>1987</year>
+    <manufacturer>Taito Corporation</manufacturer>
+    <players>1</players>
+    <rbf>jtrastan</rbf>
+    <joystick/>
+    <region>World</region>
+    <rom index="0" zip="opwolfp.zip|opwolf.zip|cchip.zip" md5="None" asm_md5="da8e75c0ccc5e6974b2dd65a340f6541">
+        <!-- 
+  0[0]: opwolf     Operation Wolf hardware
+  0[1]: cchip      C-chip present
+1[7:0]: gun_xoff8  Light-gun X offset (signed)
+2[7:0]: gun_yoff8  Light-gun Y offset (signed) -->
+        <part>
+            01 1A FA 00 00 00 00 00
+            00 00 00 00 00 00 00 00
+        </part>
+        <!-- maincpu - starts at 0x0 - length 0x60000 (19 bits) -->
+        <interleave output="16">
+            <part name="ic30" crc="d90cebb2" map="01"/>
+            <part name="ic40" crc="81f56008" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="ic29" crc="5ce89249" map="01"/>
+            <part name="ic39" crc="aeef5cfc" map="10"/>
+        </interleave>
+        <part repeat="0x20000"> FF</part>
+        <!-- JTFRAME_BA1_START -->
+        <!-- audiocpu - starts at 0x60000 - length 0x10000 (16 bits) -->
+        <part name="ic10" crc="684b40dd"/>
+        <!-- PCM_START -->
+        <!-- adpcm - starts at 0x70000 - length 0x90000 (20 bits) -->
+        <part name="b20-08.21" crc="f3e19c64"/>
+        <part repeat="0x10000"> FF</part>
+        <!-- JTFRAME_BA2_START -->
+        <!-- pc080sn - starts at 0x100000 - length 0x80000 (19 bits) -->
+        <part name="b20-13.13" crc="f6acdab1"/>
+        <!-- JTFRAME_BA3_START -->
+        <!-- pc090oj - starts at 0x180000 - length 0x80000 (19 bits) -->
+        <part name="b20-06.ic72" crc="89f889e5"/>
+        <!-- JTFRAME_PROM_START -->
+        <!-- cchip_bios - starts at 0x200000 -->
+        <!-- cchip_eprom - starts at 0x200000 -->
+        <!-- Total 0x200000 bytes - 2048 kBytes -->
+    </rom>
+    <rom index="17" zip="jtbeta.zip" md5="None" asm_md5="5a2b1e5d0672c729eee562b43e70cc7f">
+        <part name="beta.bin" crc="8b6976d8"/>
+    </rom>
+    <nvram index="2" size="1024"/>
+    <!-- Light gun -->
+    <rom index="1">
+        <part>02 71</part>
+    </rom>
+    <switches page_id="1" page_name="Switches" base="16" default="ff,ff">
+        <DSWA/>
+        <dip name="Allow Continue" bits="1" ids="Yes,No"/>
+        <dip name="Service Mode" bits="2" ids="On,Off"/>
+        <dip name="Demo Sounds" bits="3" ids="Off,On"/>
+        <dip name="Coin A" bits="4,5" ids="4/1,3/1,2/1,1/1"/>
+        <dip name="Coin B" bits="6,7" ids="1/6,1/4,1/3,1/2"/>
+        <DSWB/>
+        <dip name="Difficulty" bits="8,9" ids="Hardest,Hard,Easy,Medium"/>
+        <dip name="Ammo Magazines at Start" bits="10,11" ids="4,5,7,6"/>
+        <dip name="Display Hit Percentage (Cheat)" bits="12" ids="Yes,No"/>
+        <dip name="Infinite Health (Cheat)" bits="13" ids="Yes,No"/>
+        <dip name="Infinite Ammo (Cheat)" bits="14" ids="Yes,No"/>
+        <dip name="Language" bits="15" ids="English,Japanese"/>
+    </switches>
+    <buttons names="Bullet,Grenade,Start,Coin,Core credits" default="A,B,Start,Select,-" count="2"/>
+</misterromdescription>

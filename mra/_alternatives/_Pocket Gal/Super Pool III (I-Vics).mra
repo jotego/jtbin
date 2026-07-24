@@ -1,0 +1,87 @@
+<!--          FPGA arcade hardware by Jotego
+
+              This core is available for hardware compatible with MiST and MiSTer
+              Other FPGA systems may be supported by the time you read this.
+              This work is not mantained by the MiSTer project. Please contact the
+              core author for issues and updates.
+
+              (c) Jose Tejada, 2026. Please support this research
+              Patreon: https://patreon.com/jotego
+
+              The author does not endorse or participate in illegal distribution
+              of copyrighted material. This work can be used with compatible
+              software. This software can be homebrew projects or legally
+              obtained memory dumps of compatible games.
+
+              This file license is GNU GPLv2.
+              You can read the whole license file in
+              https://opensource.org/licenses/gpl-2.0.php
+
+-->
+
+<misterromdescription>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://jotego/jtcores"/>
+    <rotation>horizontal</rotation>
+    <name>Super Pool III (I-Vics)</name>
+    <setname>spool3i</setname>
+    <mameversion>0282</mameversion>
+    <year>1990</year>
+    <manufacturer>Data East Corporation (I-Vics license)</manufacturer>
+    <players>2</players>
+    <rbf>jtpktgal</rbf>
+    <joystick>8</joystick>
+    <region>World</region>
+    <rom index="0" zip="spool3i.zip|pcktgal.zip" md5="None" asm_md5="b470d00d20cd60fb621554bea7b9d95c">
+        <!--     byte 0: runtime variant flags
+        bit 0 = original Data East char ROM transform
+        bit 1 = bootleg graphics/BAC06 layout
+        bit 2 = DECO 222 encrypted sound CPU opcodes
+
+    `pcktgalba` is included as the Pocket Gal side of the MAME machine.
+    Its unrelated card-game PCB regions are skipped in the ROM layout.
+
+  0[0]: char_orig  Original Data East character ROM transform
+  0[1]: char_bootleg Bootleg graphics and BAC06 layout
+  0[2]: deco222    DECO 222 encrypted sound CPU opcodes -->
+        <part>
+            01 00 00 00 </part>
+        <!-- maincpu - starts at 0x0 - length 0x10000 (16 bits) -->
+        <part name="de1.bin" crc="a59980fe"/>
+        <!-- JTFRAME_BA1_START -->
+        <!-- audiocpu - starts at 0x10000 - length 0x10000 (16 bits) -->
+        <part name="eb03-2.f2" crc="9408ffb4"/>
+        <!-- JTFRAME_BA2_START -->
+        <!-- chars - starts at 0x20000 - length 0x20000 (17 bits) -->
+        <interleave output="32">
+            <part name="deco2.bin" crc="0a23f0cf" map="0001" length="0x8000" offset="0x8000"/>
+            <part name="deco3.bin" crc="55ea7c45" map="0010" length="0x8000" offset="0x8000"/>
+            <part name="deco2.bin" crc="0a23f0cf" map="0100" length="0x8000"/>
+            <part name="deco3.bin" crc="55ea7c45" map="1000" length="0x8000"/>
+        </interleave>
+        <!-- JTFRAME_BA3_START -->
+        <!-- sprites - starts at 0x40000 - length 0x10000 (16 bits) -->
+        <part name="eb00.a1" crc="6c1a14a8"/>
+        <!-- JTFRAME_PROM_START -->
+        <!-- proms - starts at 0x50000 - length 0x400 (10 bits) -->
+        <part name="eb05.k14" crc="3b6198cb"/>
+        <part name="eb06.k15" crc="1fbd4b59"/>
+        <!-- Total 0x50400 bytes - 321 kBytes -->
+    </rom>
+    <rom index="17" zip="jtbeta.zip" md5="None" asm_md5="5a2b1e5d0672c729eee562b43e70cc7f">
+        <part name="beta.bin" crc="8b6976d8"/>
+    </rom>
+    <nvram index="2" size="2584"/>
+    <rom index="1">
+        <part>00 80</part>
+    </rom>
+    <switches page_id="1" page_name="Switches" base="16" default="bf">
+        <DSW/>
+        <dip name="Coinage" bits="0,1" ids="2/1,1/3,1/2,1/1"/>
+        <dip name="Flip Screen" bits="2" ids="On,Off"/>
+        <dip name="Allow 2 Players Game" bits="3" ids="No,Yes"/>
+        <dip name="Demo Sounds" bits="4" ids="Off,On"/>
+        <dip name="Time" bits="5" ids="100,120"/>
+        <dip name="Lives" bits="6" ids="3,4"/>
+    </switches>
+    <buttons names="Shot,Trick,Start,Coin,Core credits" default="A,B,Start,Select,-" count="2"/>
+</misterromdescription>

@@ -31,7 +31,16 @@
     <rbf>jtrastan</rbf>
     <joystick>8</joystick>
     <region>World</region>
-    <rom index="0" zip="rastanua.zip|rastan.zip" md5="None" asm_md5="ccdfdb413aaf8cd7ddfedab7bb9ffcb3">
+    <rom index="0" zip="rastanua.zip|rastan.zip|cchip.zip" md5="None" asm_md5="6f10760eafa97561b95b324037ae7656">
+        <!-- 
+  0[0]: opwolf     Operation Wolf hardware
+  0[1]: cchip      C-chip present
+1[7:0]: gun_xoff8  Light-gun X offset (signed)
+2[7:0]: gun_yoff8  Light-gun Y offset (signed) -->
+        <part>
+            00 00 00 00 00 00 00 00
+            00 00 00 00 00 00 00 00
+        </part>
         <!-- maincpu - starts at 0x0 - length 0x60000 (19 bits) -->
         <interleave output="16">
             <part name="b04-37.7" crc="ecf20bdd" map="01"/>
@@ -49,10 +58,11 @@
         <!-- audiocpu - starts at 0x60000 - length 0x10000 (16 bits) -->
         <part name="b04-19.49" crc="ee81fdd8"/>
         <!-- PCM_START -->
-        <!-- adpcm - starts at 0x70000 - length 0x10000 (16 bits) -->
+        <!-- adpcm - starts at 0x70000 - length 0x90000 (20 bits) -->
         <part name="b04-20.76" crc="fd1a34cc"/>
+        <part repeat="0x80000"> FF</part>
         <!-- JTFRAME_BA2_START -->
-        <!-- pc080sn - starts at 0x80000 - length 0x80000 (19 bits) -->
+        <!-- pc080sn - starts at 0x100000 - length 0x80000 (19 bits) -->
         <interleave output="16">
             <part name="b04-01.40" crc="cd30de19" map="01"/>
             <part name="b04-02.67" crc="54040fec" map="10"/>
@@ -62,7 +72,7 @@
             <part name="b04-04.66" crc="94737e93" map="10"/>
         </interleave>
         <!-- JTFRAME_BA3_START -->
-        <!-- pc090oj - starts at 0x100000 - length 0x80000 (19 bits) -->
+        <!-- pc090oj - starts at 0x180000 - length 0x80000 (19 bits) -->
         <interleave output="16">
             <part name="b04-05.15" crc="c22d94ac" map="01"/>
             <part name="b04-06.28" crc="002ccf39" map="10"/>
@@ -71,7 +81,13 @@
             <part name="b04-07.14" crc="b5632a51" map="01"/>
             <part name="b04-08.27" crc="feafca05" map="10"/>
         </interleave>
-        <!-- Total 0x180000 bytes - 1536 kBytes -->
+        <!-- JTFRAME_PROM_START -->
+        <!-- cchip_bios - starts at 0x200000 -->
+        <!-- cchip_eprom - starts at 0x200000 -->
+        <!-- Total 0x200000 bytes - 2048 kBytes -->
+    </rom>
+    <rom index="17" zip="jtbeta.zip" md5="None" asm_md5="5a2b1e5d0672c729eee562b43e70cc7f">
+        <part name="beta.bin" crc="8b6976d8"/>
     </rom>
     <nvram index="2" size="1024"/>
     <rom index="1">

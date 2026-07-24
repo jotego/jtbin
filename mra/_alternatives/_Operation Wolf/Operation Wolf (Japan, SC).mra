@@ -1,0 +1,96 @@
+<!--          FPGA arcade hardware by Jotego
+
+              This core is available for hardware compatible with MiST and MiSTer
+              Other FPGA systems may be supported by the time you read this.
+              This work is not mantained by the MiSTer project. Please contact the
+              core author for issues and updates.
+
+              (c) Jose Tejada, 2026. Please support this research
+              Patreon: https://patreon.com/jotego
+
+              The author does not endorse or participate in illegal distribution
+              of copyrighted material. This work can be used with compatible
+              software. This software can be homebrew projects or legally
+              obtained memory dumps of compatible games.
+
+              This file license is GNU GPLv2.
+              You can read the whole license file in
+              https://opensource.org/licenses/gpl-2.0.php
+
+-->
+
+<misterromdescription>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://jotego/jtcores"/>
+    <rotation>horizontal</rotation>
+    <name>Operation Wolf (Japan, SC)</name>
+    <setname>opwolfjsc</setname>
+    <mameversion>0282</mameversion>
+    <year>1987</year>
+    <manufacturer>Taito Corporation</manufacturer>
+    <players>1</players>
+    <rbf>jtrastan</rbf>
+    <joystick/>
+    <region>World</region>
+    <rom index="0" zip="opwolfjsc.zip|opwolf.zip|cchip.zip" md5="None" asm_md5="9d4e035dfeaf307701ebeb40cf934d46">
+        <!-- 
+  0[0]: opwolf     Operation Wolf hardware
+  0[1]: cchip      C-chip present
+1[7:0]: gun_xoff8  Light-gun X offset (signed)
+2[7:0]: gun_yoff8  Light-gun Y offset (signed) -->
+        <part>
+            03 15 F8 00 00 00 00 00
+            00 00 00 00 00 00 00 00
+        </part>
+        <!-- maincpu - starts at 0x0 - length 0x60000 (19 bits) -->
+        <interleave output="16">
+            <part name="b20_26.ic30.27512" crc="644dd415" map="01"/>
+            <part name="b20_27.ic40.27512" crc="6bd02046" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="b20-18.29" crc="fd202470" map="01"/>
+            <part name="b20-04.39" crc="216b4838" map="10"/>
+        </interleave>
+        <part repeat="0x20000"> FF</part>
+        <!-- JTFRAME_BA1_START -->
+        <!-- audiocpu - starts at 0x60000 - length 0x10000 (16 bits) -->
+        <part name="b20-07.10" crc="45c7ace3"/>
+        <!-- PCM_START -->
+        <!-- adpcm - starts at 0x70000 - length 0x90000 (20 bits) -->
+        <part name="b20-08.21" crc="f3e19c64"/>
+        <part repeat="0x10000"> FF</part>
+        <!-- JTFRAME_BA2_START -->
+        <!-- pc080sn - starts at 0x100000 - length 0x80000 (19 bits) -->
+        <part name="b20-13.13" crc="f6acdab1"/>
+        <!-- JTFRAME_BA3_START -->
+        <!-- pc090oj - starts at 0x180000 - length 0x80000 (19 bits) -->
+        <part name="b20-14.72" crc="89f889e5"/>
+        <!-- JTFRAME_PROM_START -->
+        <!-- cchip_bios - starts at 0x200000 - length 0x1000 (12 bits) -->
+        <part name="cchip_upd78c11.bin" crc="43021521" length="0x1000"/>
+        <!-- cchip_eprom - starts at 0x201000 - length 0x2000 (13 bits) -->
+        <part name="b20-18.73" crc="5987b4e9" length="0x2000"/>
+        <!-- Total 0x203000 bytes - 2060 kBytes -->
+    </rom>
+    <rom index="17" zip="jtbeta.zip" md5="None" asm_md5="5a2b1e5d0672c729eee562b43e70cc7f">
+        <part name="beta.bin" crc="8b6976d8"/>
+    </rom>
+    <nvram index="2" size="1024"/>
+    <!-- Light gun -->
+    <rom index="1">
+        <part>02 71</part>
+    </rom>
+    <switches page_id="1" page_name="Switches" base="16" default="ff,3f">
+        <DSWA/>
+        <dip name="Allow Continue" bits="1" ids="Yes,No"/>
+        <dip name="Service Mode" bits="2" ids="On,Off"/>
+        <dip name="Demo Sounds" bits="3" ids="Off,On"/>
+        <dip name="Coin A" bits="4,5" ids="2/3,2/1,1/2,1/1"/>
+        <dip name="Coin B" bits="6,7" ids="2/3,2/1,1/2,1/1"/>
+        <DSWB/>
+        <dip name="Difficulty" bits="8,9" ids="Hardest,Hard,Easy,Medium"/>
+        <dip name="Ammo Magazines at Start" bits="10,11" ids="4,5,7,6"/>
+        <dip name="Discount When Continuing" bits="14" ids="Yes,No"/>
+        <dip name="Language" bits="15" ids="English,Japanese"/>
+    </switches>
+    <buttons names="Bullet,Grenade,Start,Coin,Core credits" default="A,B,Start,Select,-" count="2"/>
+</misterromdescription>

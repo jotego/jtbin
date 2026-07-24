@@ -604,6 +604,12 @@
 | nycaptor     | jtflstory  | b64866df467d7c461811764239d6c3bf | bf,00,fb     |
 | onna34ro     | jtflstory  | 3985d63f9ba58ec27ee13c5819d05066 | c0,00,80     |
 | onna34roa    | jtflstory  | 771ab691ec1f2e205efa9dcf987632c7 | c0,00,80     |
+| opwolf       | jtrastan   | 0bf5165a3de65bd59460e77168d0f6e6 | ff,3f        |
+| opwolfa      | jtrastan   | c9400c5f98045f4e7d509e4b9e4521c1 | ff,3f        |
+| opwolfj      | jtrastan   | 9b4e7d3cdf198e0de953b252e3db9e07 | ff,3f        |
+| opwolfjsc    | jtrastan   | 9d4e035dfeaf307701ebeb40cf934d46 | ff,3f        |
+| opwolfp      | jtrastan   | da8e75c0ccc5e6974b2dd65a340f6541 | ff,ff        |
+| opwolfu      | jtrastan   | a300202c645c2c6a17b153747e601b92 | ff,3f        |
 | outrun       | jtoutrun   | 712e0ad688ad6072ee01230780aabb78 | ff,f9        |
 | outrundx     | jtoutrun   | 05e3145e97e3f45032863161f9662a3d | ff,fd        |
 | outrundxa    | jtoutrun   | 25622e22e367cd497bb2902361dce034 | ff,fd        |
@@ -635,6 +641,11 @@
 | passsht16a   | jts16      | d05f1d8fcc42dc8c87bb6b4467e6adf5 | ff,fe        |
 | passshta     | jts16b     | 322e32482d647b21e2f971f8c3ec660d | ff,f0        |
 | passshtj     | jts16b     | 82f1844775534726ce9900b102370359 | ff,f0        |
+| pcktgal      | jtpktgal   | 7ad26a38b15f4c18f2a4c3df6fb458ea | bf           |
+| pcktgal2     | jtpktgal   | 3668d305cc22de2a3d80dab49b29594e | bf           |
+| pcktgal2j    | jtpktgal   | f088a40692793fb8fe8875a14cc5b117 | bf           |
+| pcktgalb     | jtpktgal   | 736b2ca5ded1f8cf5d505c168c177067 | bf           |
+| pcktgalba    | jtpktgal   | 661a2b54bbeb2aa103043997c2ca0f0f | bf           |
 | pfghtj       | jtcps2     | 15a248764f2a5389ab6d2036b1f3d728 | ff,ff        |
 | pgear        | jtcps2     | 860523a37f3cac75f3133f1f71586c19 | ff,ff        |
 | pgearr1      | jtcps2     | 0005502bf24103341c096a807ddfa0e6 | ff,ff        |
@@ -676,16 +687,16 @@
 | quester      | jtshouse   | 7dd4fb7aacd8d661a9727439327bce5f | df           |
 | questers     | jtshouse   | 2b90d3e72360710c80d1af4f87afa20b | df           |
 | raiga        | jtgaiden   | 5706ffc84d73d5551874dd667dc21bdb | ff,5f        |
-| rastan       | jtrastan   | 8b958b5f7dea436d104db5529fc516a0 | fe,ff        |
-| rastana      | jtrastan   | 6148baf634a68bea12bff06df7027469 | fe,ff        |
-| rastanb      | jtrastan   | 11730c745ba58632959253e15d6fbb5a | fe,ff        |
-| rastanu      | jtrastan   | 13f181de12b379db538ba1fdf995658e | fe,ff        |
-| rastanua     | jtrastan   | ccdfdb413aaf8cd7ddfedab7bb9ffcb3 | fe,ff        |
-| rastanub     | jtrastan   | 8e91337be3271303c15d0ac7e5299c4a | fe,ff        |
-| rastsaga     | jtrastan   | 7fdd1b89b170b25228033a3064f3d6e5 | fe,ff        |
-| rastsagaa    | jtrastan   | ef4e52889856332024d6bda1789d7a23 | fe,ff        |
-| rastsagaabl  | jtrastan   | b58fd892743e1bde971615553cf66349 | fe,ff        |
-| rastsagab    | jtrastan   | f5650d6ddf071dc003936c4d8d71d004 | fe,ff        |
+| rastan       | jtrastan   | 83b9852110051d12ccf6033709ffcfd4 | fe,ff        |
+| rastana      | jtrastan   | 2c3cb59e95b8d40b19e1e86412933b4c | fe,ff        |
+| rastanb      | jtrastan   | 43548f62bcd0379299053d66122889d4 | fe,ff        |
+| rastanu      | jtrastan   | f05afd7483862ac995eabd300dc9af3f | fe,ff        |
+| rastanua     | jtrastan   | 6f10760eafa97561b95b324037ae7656 | fe,ff        |
+| rastanub     | jtrastan   | fb7e6abe996ab10bc97bcae5dbde4efe | fe,ff        |
+| rastsaga     | jtrastan   | ea73199d982eda9c156f9f42b15abca6 | fe,ff        |
+| rastsagaa    | jtrastan   | 8ae6e078c48d450892178fe67d33fce5 | fe,ff        |
+| rastsagaabl  | jtrastan   | b9ccbb552bcf223730269915c230c4df | fe,ff        |
+| rastsagab    | jtrastan   | efc377d5aedcd989246218e2d3922124 | fe,ff        |
 | redearthn    | jtcps3     | 945b7d6ec16ca43f6cd59273fe4c718c |              |
 | redearthnr1  | jtcps3     | 130cc7906390cc65c8e737571775b3d6 |              |
 | renegade     | jtkunio    | 2129de6d1efcbc2e10912dbcd3814279 | bf,ff        |
@@ -913,6 +924,8 @@
 | splatter     | jtshouse   | f3759260532015e11f8894a27860e3cd | ff           |
 | splatter2    | jtshouse   | 5d93069ee0d77adc9cd6395902e8837a | ff           |
 | splatterj    | jtshouse   | fd2763c3e367a29f758df3d8198483ab | ff           |
+| spool3       | jtpktgal   | 59d96c885dcb16b82b5134cdab5441ca | bf           |
+| spool3i      | jtpktgal   | b470d00d20cd60fb621554bea7b9d95c | bf           |
 | squash       | jtgae1     | 35b811b62f73285d2fdf46b4ba677766 | ff,df        |
 | srumbler     | jtrumble   | ca8dfc45b6c2bc43818e26c2a73614de | ff,73        |
 | srumbler2    | jtrumble   | 690ff40aeb3164bc29045fa8dd3eda6b | ff,73        |

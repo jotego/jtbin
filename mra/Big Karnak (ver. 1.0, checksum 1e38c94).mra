@@ -85,5 +85,5 @@
         <SERVICE/>
         <dip name="Go to test mode now" bits="17" ids="On,Off"/>
     </switches>
-    <buttons names="Fire,Jump,Start,Coin,Core credits" default="A,B,Start,Select,-" count="2"/>
+    <buttons names="Jump,Fire,Start,Coin,Core credits" default="A,B,Start,Select,-" count="2"/>
 </misterromdescription>

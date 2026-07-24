@@ -82,5 +82,5 @@
         <dip name="Service Mode" bits="15" ids="On,Off"/>
         <UNK/>
     </switches>
-    <buttons names="Hit,Slow,Start,Coin,Core credits" default="A,B,Start,Select,-" count="2"/>
+    <buttons names="Slow,Hit,Start,Coin,Core credits" default="A,B,Start,Select,-" count="2"/>
 </misterromdescription>
