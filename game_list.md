@@ -203,8 +203,10 @@
 | cps1    | Street Fighter II': Champion Edition (World 920513)                                        | sf2ce         |
 | cps1    | Street Fighter II': Champion Edition (World 920803)                                        | sf2ceec       |
 | cps1    | Street Fighter II': Champion Edition (YYC, bootleg)                                        | sf2yyc        |
+| cps1    | Street Fighter II': Champion Re-Edit (Hack, v0.29.7)                                       | sf2cre        |
 | cps1    | Street Fighter II': Hyper Fighting (USA 921209)                                            | sf2hfu        |
 | cps1    | Street Fighter II': Hyper Fighting (World 921209)                                          | sf2hf         |
+| cps1    | Street Fighter II': Special Champion Edition (Sr Street hack)                              | sf2hfsce      |
 | cps1    | Street Fighter II: The World Warrior (Japan 910214)                                        | sf2ja         |
 | cps1    | Street Fighter II: The World Warrior (Japan 910306)                                        | sf2jc         |
 | cps1    | Street Fighter II: The World Warrior (Japan 910411)                                        | sf2jf         |
@@ -757,6 +759,7 @@
 | outrun  | Out Run (sitdown-upright, Rev B)                                                           | outrun        |
 | outrun  | Out Run (sitdown-upright, Rev B) (Enhanced Edition v1.1.0)                                 | outruneha     |
 | outrun  | Out Run (sitdown-upright, Rev B) (Enhanced Edition v2.0.3)                                 | outruneh      |
+| outrun  | Out Run (sitdown-upright, Rev B) (added music)                                             | outrunm       |
 | outrun  | Turbo Out Run (Japan, Out Run upgrade) (FD1094 317-0117)                                   | toutrunj      |
 | outrun  | Turbo Out Run (Japan, cockpit) (FD1094 317-0101)                                           | toutrunj1     |
 | outrun  | Turbo Out Run (Out Run upgrade) (FD1094 317-0118)                                          | toutrun       |
@@ -805,6 +808,9 @@
 | rastan  | Operation Wolf (US, rev 2)                                                                 | opwolfu       |
 | rastan  | Operation Wolf (World, rev 2, set 1)                                                       | opwolf        |
 | rastan  | Operation Wolf (World, rev 2, set 2)                                                       | opwolfa       |
+| rastan  | Rainbow Islands                                                                            | rbislando     |
+| rastan  | Rainbow Islands (rev 1)                                                                    | rbisland      |
+| rastan  | Rainbow Islands - Extra Version                                                            | rbislande     |
 | rastan  | Rastan (US Rev 1)                                                                          | rastanu       |
 | rastan  | Rastan (US)                                                                                | rastanua      |
 | rastan  | Rastan (US, earlier code base)                                                             | rastanub      |
@@ -1128,6 +1134,9 @@
 | tmnt    | Teenage Mutant Ninja Turtles (US 4 Players, version N)                                     | tmntua        |
 | tmnt    | Teenage Mutant Ninja Turtles (US 4 Players, version R)                                     | tmntu         |
 | tmnt    | Teenage Mutant Ninja Turtles (World 4 Players, version X)                                  | tmnt          |
+| tmnt    | Thunder Cross II (Asia)                                                                    | thndrx2a      |
+| tmnt    | Thunder Cross II (Japan)                                                                   | thndrx2j      |
+| tmnt    | Thunder Cross II (World)                                                                   | thndrx2       |
 | toki    | Cabal (Korea?, Joystick)                                                                   | cabala        |
 | toki    | Cabal (UK, Joystick)                                                                       | cabalukj      |
 | toki    | Cabal (World, Joystick)                                                                    | cabal         |
@@ -1199,4 +1208,4 @@
 | yiear   | Yie Ar Kung-Fu (version G)                                                                 | yiear2        |
 | yiear   | Yie Ar Kung-Fu (version I)                                                                 | yiear         |
 
-79 cores, supporting 1198 games
+79 cores, supporting 1207 games

@@ -46,7 +46,9 @@
 | cps1    | Quiz & Dragons: Capcom Quiz Game (USA 920701)                                | qad       |
 | cps1    | Quiz Tonosama no Yabou 2: Zenkoku-ban (Japan 950123)                         | qtono2j   |
 | cps1    | Street Fighter II': Champion Edition (World 920513)                          | sf2ce     |
+| cps1    | Street Fighter II': Champion Re-Edit (Hack, v0.29.7)                         | sf2cre    |
 | cps1    | Street Fighter II': Hyper Fighting (World 921209)                            | sf2hf     |
+| cps1    | Street Fighter II': Special Champion Edition (Sr Street hack)                | sf2hfsce  |
 | cps1    | Street Fighter II: The World Warrior (World 910522)                          | sf2       |
 | cps1    | Street Fighter Zero (CPS Changer, Japan 951020)                              | sfzch     |
 | cps1    | Strider (USA, B-Board 89624B-2)                                              | strider   |
@@ -163,6 +165,8 @@
 | pktgal  | Pocket Gal (Japan)                                                           | pcktgal   |
 | prmr    | Premier Soccer (ver EAB)                                                     | prmrsocr  |
 | rastan  | Operation Wolf (World, rev 2, set 1)                                         | opwolf    |
+| rastan  | Rainbow Islands (rev 1)                                                      | rbisland  |
+| rastan  | Rainbow Islands - Extra Version                                              | rbislande |
 | rastan  | Rastan (World Rev 1)                                                         | rastan    |
 | riders  | Golfing Greats (World, version L)                                            | glfgreat  |
 | riders  | Lightning Fighters (World)                                                   | lgtnfght  |
@@ -259,6 +263,7 @@
 | tmnt    | M.I.A. - Missing in Action (version T)                                       | mia       |
 | tmnt    | Punk Shot (US 4 Players)                                                     | punkshot  |
 | tmnt    | Teenage Mutant Ninja Turtles (World 4 Players, version X)                    | tmnt      |
+| tmnt    | Thunder Cross II (World)                                                     | thndrx2   |
 | toki    | Cabal (World, Joystick)                                                      | cabal     |
 | toki    | Toki (World, set 1)                                                          | toki      |
 | tora    | F-1 Dream                                                                    | f1dream   |
@@ -275,4 +280,4 @@
 | xmen    | X-Men (4 Players ver EBA)                                                    | xmen      |
 | yiear   | Yie Ar Kung-Fu (version I)                                                   | yiear     |
 
-78 cores, supporting 274 games
+78 cores, supporting 279 games

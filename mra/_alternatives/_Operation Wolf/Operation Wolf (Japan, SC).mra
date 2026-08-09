@@ -31,17 +31,18 @@
     <rbf>jtrastan</rbf>
     <joystick/>
     <region>World</region>
-    <rom index="0" zip="opwolfjsc.zip|opwolf.zip|cchip.zip" md5="None" asm_md5="9d4e035dfeaf307701ebeb40cf934d46">
+    <rom index="0" zip="opwolfjsc.zip|opwolf.zip|cchip.zip" md5="None" address="0x30000000" asm_md5="c41959a6ef5c024a8ae6a9c806294b12">
         <!-- 
-  0[0]: opwolf     Operation Wolf hardware
-  0[1]: cchip      C-chip present
+  0[0]: rastan     Rastan hardware
+  0[1]: opwolf     Operation Wolf hardware
+  0[2]: rbisland   Rainbow Islands
+  0[3]: cchip      C-chip present
 1[7:0]: gun_xoff8  Light-gun X offset (signed)
 2[7:0]: gun_yoff8  Light-gun Y offset (signed) -->
         <part>
-            03 15 F8 00 00 00 00 00
-            00 00 00 00 00 00 00 00
+            0A 15 FC 00 00 00 00 00
         </part>
-        <!-- maincpu - starts at 0x0 - length 0x60000 (19 bits) -->
+        <!-- maincpu - starts at 0x0 - length 0x80000 (19 bits) -->
         <interleave output="16">
             <part name="b20_26.ic30.27512" crc="644dd415" map="01"/>
             <part name="b20_27.ic40.27512" crc="6bd02046" map="10"/>
@@ -50,26 +51,26 @@
             <part name="b20-18.29" crc="fd202470" map="01"/>
             <part name="b20-04.39" crc="216b4838" map="10"/>
         </interleave>
-        <part repeat="0x20000"> FF</part>
+        <part repeat="0x40000"> FF</part>
         <!-- JTFRAME_BA1_START -->
-        <!-- audiocpu - starts at 0x60000 - length 0x10000 (16 bits) -->
+        <!-- audiocpu - starts at 0x80000 - length 0x10000 (16 bits) -->
         <part name="b20-07.10" crc="45c7ace3"/>
         <!-- PCM_START -->
-        <!-- adpcm - starts at 0x70000 - length 0x90000 (20 bits) -->
+        <!-- adpcm - starts at 0x90000 - length 0x80000 (19 bits) -->
         <part name="b20-08.21" crc="f3e19c64"/>
-        <part repeat="0x10000"> FF</part>
         <!-- JTFRAME_BA2_START -->
-        <!-- pc080sn - starts at 0x100000 - length 0x80000 (19 bits) -->
+        <!-- pc080sn - starts at 0x110000 - length 0x80000 (19 bits) -->
         <part name="b20-13.13" crc="f6acdab1"/>
         <!-- JTFRAME_BA3_START -->
-        <!-- pc090oj - starts at 0x180000 - length 0x80000 (19 bits) -->
+        <!-- pc090oj - starts at 0x190000 - length 0xF0000 (20 bits) -->
         <part name="b20-14.72" crc="89f889e5"/>
+        <part repeat="0x70000"> FF</part>
         <!-- JTFRAME_PROM_START -->
-        <!-- cchip_bios - starts at 0x200000 - length 0x1000 (12 bits) -->
+        <!-- cchip_bios - starts at 0x280000 - length 0x1000 (12 bits) -->
         <part name="cchip_upd78c11.bin" crc="43021521" length="0x1000"/>
-        <!-- cchip_eprom - starts at 0x201000 - length 0x2000 (13 bits) -->
+        <!-- cchip_eprom - starts at 0x281000 - length 0x2000 (13 bits) -->
         <part name="b20-18.73" crc="5987b4e9" length="0x2000"/>
-        <!-- Total 0x203000 bytes - 2060 kBytes -->
+        <!-- Total 0x283000 bytes - 2572 kBytes -->
     </rom>
     <rom index="17" zip="jtbeta.zip" md5="None" asm_md5="5a2b1e5d0672c729eee562b43e70cc7f">
         <part name="beta.bin" crc="8b6976d8"/>
@@ -77,7 +78,7 @@
     <nvram index="2" size="1024"/>
     <!-- Light gun -->
     <rom index="1">
-        <part>02 71</part>
+        <part>02 80</part>
     </rom>
     <switches page_id="1" page_name="Switches" base="16" default="ff,3f">
         <DSWA/>
@@ -89,7 +90,7 @@
         <DSWB/>
         <dip name="Difficulty" bits="8,9" ids="Hardest,Hard,Easy,Medium"/>
         <dip name="Ammo Magazines at Start" bits="10,11" ids="4,5,7,6"/>
-        <dip name="Discount When Continuing" bits="14" ids="Yes,No"/>
+        <dip name="Continue discount" bits="14" ids="Yes,No"/>
         <dip name="Language" bits="15" ids="English,Japanese"/>
     </switches>
     <buttons names="Bullet,Grenade,Start,Coin,Core credits" default="A,B,Start,Select,-" count="2"/>

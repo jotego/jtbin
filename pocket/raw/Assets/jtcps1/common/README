@@ -157,6 +157,8 @@ willowj.rom
 willowu.rom
 willowuo.rom
 wonder3.rom
+sf2cre.rom
+sf2hfsce.rom
 
 These files are generated using the mra tool in:
 https://github.com/sebdel/mra-tools-c/tree/master/release

@@ -7,12 +7,12 @@
 				"mappings": [
 					{
 						"id": 0,
-						"name": "Bullet",
+						"name": "Slash",
 						"key": "pad_btn_a"
 					},
 					{
 						"id": 1,
-						"name": "Grenade",
+						"name": "Jump",
 						"key": "pad_btn_b"
 					}
 				]

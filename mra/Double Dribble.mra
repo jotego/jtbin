@@ -62,9 +62,6 @@
         <part name="690a11.i15" crc="f34617ad"/>
         <!-- Total 0x100100 bytes - 1024 kBytes -->
     </rom>
-    <rom index="17" zip="jtbeta.zip" md5="None" asm_md5="5a2b1e5d0672c729eee562b43e70cc7f">
-        <part name="beta.bin" crc="8b6976d8"/>
-    </rom>
     <rom index="1">
         <part>00 80</part>
     </rom>

@@ -16,6 +16,9 @@ rastsaga.rom
 rastsagaa.rom
 rastsagaabl.rom
 rastsagab.rom
+rbisland.rom
+rbislande.rom
+rbislando.rom
 
 These files are generated using the mra tool in:
 https://github.com/sebdel/mra-tools-c/tree/master/release

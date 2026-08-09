@@ -162,6 +162,8 @@ Willow (Japan) --> willowj.rom
 Willow (USA) --> willowu.rom
 Willow (USA Old Ver.) --> willowuo.rom
 Wonder 3 (Japan 910520) --> wonder3.rom
+Street Fighter II': Champion Re-Edit (Hack, v0.29.7) --> sf2cre.rom
+Street Fighter II': Special Champion Edition (Sr Street hack) --> sf2hfsce.rom
 
 
 These files are generated using the mra tool in:

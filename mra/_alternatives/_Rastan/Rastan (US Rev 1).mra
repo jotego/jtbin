@@ -31,17 +31,18 @@
     <rbf>jtrastan</rbf>
     <joystick>8</joystick>
     <region>World</region>
-    <rom index="0" zip="rastanu.zip|rastan.zip|cchip.zip" md5="None" asm_md5="f05afd7483862ac995eabd300dc9af3f">
+    <rom index="0" zip="rastanu.zip|rastan.zip|cchip.zip" md5="None" address="0x30000000" asm_md5="86a3fded2531b70aabbc54fd64f794c4">
         <!-- 
-  0[0]: opwolf     Operation Wolf hardware
-  0[1]: cchip      C-chip present
+  0[0]: rastan     Rastan hardware
+  0[1]: opwolf     Operation Wolf hardware
+  0[2]: rbisland   Rainbow Islands
+  0[3]: cchip      C-chip present
 1[7:0]: gun_xoff8  Light-gun X offset (signed)
 2[7:0]: gun_yoff8  Light-gun Y offset (signed) -->
         <part>
-            00 00 00 00 00 00 00 00
-            00 00 00 00 00 00 00 00
+            01 00 00 00 00 00 00 00
         </part>
-        <!-- maincpu - starts at 0x0 - length 0x60000 (19 bits) -->
+        <!-- maincpu - starts at 0x0 - length 0x80000 (19 bits) -->
         <interleave output="16">
             <part name="b04-37.7" crc="ecf20bdd" map="01"/>
             <part name="b04-38.19" crc="1c91dbb1" map="10"/>
@@ -54,15 +55,16 @@
             <part name="b04-41-1.9" crc="bd403269" map="01"/>
             <part name="b04-42.21" crc="1857a7cb" map="10"/>
         </interleave>
+        <part repeat="0x20000"> FF</part>
         <!-- JTFRAME_BA1_START -->
-        <!-- audiocpu - starts at 0x60000 - length 0x10000 (16 bits) -->
+        <!-- audiocpu - starts at 0x80000 - length 0x10000 (16 bits) -->
         <part name="b04-19.49" crc="ee81fdd8"/>
         <!-- PCM_START -->
-        <!-- adpcm - starts at 0x70000 - length 0x90000 (20 bits) -->
+        <!-- adpcm - starts at 0x90000 - length 0x80000 (19 bits) -->
         <part name="b04-20.76" crc="fd1a34cc"/>
-        <part repeat="0x80000"> FF</part>
+        <part repeat="0x70000"> FF</part>
         <!-- JTFRAME_BA2_START -->
-        <!-- pc080sn - starts at 0x100000 - length 0x80000 (19 bits) -->
+        <!-- pc080sn - starts at 0x110000 - length 0x80000 (19 bits) -->
         <interleave output="16">
             <part name="b04-01.40" crc="cd30de19" map="01"/>
             <part name="b04-02.67" crc="54040fec" map="10"/>
@@ -72,7 +74,7 @@
             <part name="b04-04.66" crc="94737e93" map="10"/>
         </interleave>
         <!-- JTFRAME_BA3_START -->
-        <!-- pc090oj - starts at 0x180000 - length 0x80000 (19 bits) -->
+        <!-- pc090oj - starts at 0x190000 - length 0x80000 (19 bits) -->
         <interleave output="16">
             <part name="b04-05.15" crc="c22d94ac" map="01"/>
             <part name="b04-06.28" crc="002ccf39" map="10"/>
@@ -81,17 +83,16 @@
             <part name="b04-07.14" crc="b5632a51" map="01"/>
             <part name="b04-08.27" crc="feafca05" map="10"/>
         </interleave>
-        <!-- JTFRAME_PROM_START -->
-        <!-- cchip_bios - starts at 0x200000 -->
-        <!-- cchip_eprom - starts at 0x200000 -->
-        <!-- Total 0x200000 bytes - 2048 kBytes -->
+        <!-- cchip_bios - starts at 0x210000 -->
+        <!-- cchip_eprom - starts at 0x210000 -->
+        <!-- Total 0x210000 bytes - 2112 kBytes -->
     </rom>
     <rom index="17" zip="jtbeta.zip" md5="None" asm_md5="5a2b1e5d0672c729eee562b43e70cc7f">
         <part name="beta.bin" crc="8b6976d8"/>
     </rom>
     <nvram index="2" size="1024"/>
     <rom index="1">
-        <part>00 71</part>
+        <part>00 80</part>
     </rom>
     <switches page_id="1" page_name="Switches" base="16" default="fe,ff">
         <DSWA/>

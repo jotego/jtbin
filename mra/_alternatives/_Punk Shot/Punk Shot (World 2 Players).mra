@@ -31,10 +31,11 @@
     <rbf>jttmnt</rbf>
     <joystick>8</joystick>
     <region>World</region>
-    <rom index="0" zip="punkshot2e.zip|punkshot.zip" md5="None" asm_md5="b471b58178c34c316d654e6669929dc7">
+    <rom index="0" zip="punkshot2e.zip|punkshot.zip" md5="None" asm_md5="45096293724f67ed5e11cff8912dd6ee">
         <!--     byte 0: 00 = TMNT
             01 = MIA
-            02 = Punk Shot -->
+            02 = Punk Shot
+            03 = Thunder Cross II -->
         <part>
             02 00 00 00 00 00 00 00
         </part>
@@ -45,33 +46,37 @@
         </interleave>
         <part repeat="0x20000"> FF</part>
         <!-- JTFRAME_BA1_START -->
-        <!-- audiocpu - starts at 0x60000 - length 0x8000 (15 bits) -->
+        <!-- audiocpu - starts at 0x60000 - length 0x10000 (16 bits) -->
         <part name="907f01.e8" crc="f040c484"/>
+        <part repeat="0x8000"> FF</part>
         <!-- PCM_START -->
-        <!-- k007232 - starts at 0x68000 -->
-        <!-- k053260 - starts at 0x68000 - length 0x80000 (19 bits) -->
+        <!-- k007232 - starts at 0x70000 -->
+        <!-- k053260 - starts at 0x70000 - length 0x80000 (19 bits) -->
         <part name="907d04.d3" crc="090feb5e"/>
-        <!-- upd - starts at 0xE8000 -->
-        <!-- title - starts at 0xE8000 - length 0x40000 (18 bits) -->
-        <part repeat="0x40000"> FF</part>
+        <!-- UPD_START -->
+        <!-- upd - starts at 0xF0000 - length 0x20000 (17 bits) -->
+        <part repeat="0x20000"> FF</part>
+        <!-- TITLE_START -->
+        <!-- title - starts at 0x110000 - length 0x80000 (19 bits) -->
+        <part repeat="0x80000"> FF</part>
         <!-- JTFRAME_BA2_START -->
-        <!-- k052109 - starts at 0x128000 - length 0x100000 (20 bits) -->
+        <!-- k052109 - starts at 0x190000 - length 0x100000 (20 bits) -->
         <interleave output="32">
             <part name="907d06.e23" crc="f5cc38f4" map="0021"/>
             <part name="907d05.e22" crc="e25774c1" map="2100"/>
         </interleave>
         <part repeat="0x80000"> FF</part>
         <!-- JTFRAME_BA3_START -->
-        <!-- k051960 - starts at 0x228000 - length 0x200000 (21 bits) -->
+        <!-- k051960 - starts at 0x290000 - length 0x200000 (21 bits) -->
         <interleave output="32">
             <part name="907d08.k7" crc="d5ac8d9d" map="0012"/>
             <part name="907d07.k2" crc="b0fe4543" map="1200"/>
         </interleave>
         <!-- JTFRAME_PROM_START -->
-        <!-- proms - starts at 0x428000 -->
-        <!-- Total 0x428000 bytes - 4256 kBytes -->
+        <!-- proms - starts at 0x490000 -->
+        <!-- Total 0x490000 bytes - 4672 kBytes -->
     </rom>
-    <nvram index="2" size="28705"/>
+    <nvram index="2" size="28833"/>
     <!--  8-pxl black frame on sides. -->
     <rom index="1">
         <part>20 60</part>

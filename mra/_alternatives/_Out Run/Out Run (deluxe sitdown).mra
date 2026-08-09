@@ -31,7 +31,7 @@
     <rbf>jtoutrun</rbf>
     <joystick/>
     <region>World</region>
-    <rom index="0" zip="outrundx.zip|outrun.zip" md5="None" asm_md5="05e3145e97e3f45032863161f9662a3d">
+    <rom index="0" zip="outrundx.zip|outrun.zip" md5="None" asm_md5="a634c1ed4f01ee56fc44e79739fe9cf5">
         <!--  -->
         <part>
             00 00 00 00 00 00 00 00
@@ -61,7 +61,7 @@
         <!-- SND_START -->
         <!-- soundcpu - starts at 0xC0000 - length 0x10000 (16 bits) -->
         <part name="epr-10187.88" crc="a10abaa9"/>
-        <part repeat="0x8000"> FF</part>
+        <part name="epr-10187.88" crc="a10abaa9"/>
         <!-- PCM_START -->
         <!-- pcm - starts at 0xD0000 - length 0x60000 (19 bits) -->
         <part name="opr-10193.66" crc="bcd10dde"/>

@@ -1,0 +1,81 @@
+{
+	"interact":{
+		"magic": "APF_VER_1",
+		"variables": [
+			{
+				"name": "Player 1 is",
+				"id": 0,
+				"type": "list",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfb000000",
+				"defaultval": 0,
+				"value": 0,
+				"mask": "0xFFF3FFFF",
+				"options": [
+					{
+						"name": "First",
+						"value": "0x00000"
+					},
+					{
+						"name": "Second",
+						"value": "0x40000"
+					},
+					{
+						"name": "Third",
+						"value": "0x80000"
+					},
+					{
+						"name": "Fourth",
+						"value": "0xC0000"
+					}
+				]
+			},
+			{
+				"name": "Service Mode",
+				"id": 1,
+				"type": "check",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 1,
+				"value": 0,
+				"value_off": 1,
+				"mask": "0xFFFFFFFE"
+			},
+			{
+				"name": "FM in mono mode",
+				"id": 2,
+				"type": "list",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 1,
+				"value": 0,
+				"mask": "0xFFFFFFFD",
+				"options": [
+					{
+						"name": "Centre",
+						"value": "0x0"
+					},
+					{
+						"name": "Original",
+						"value": "0x2"
+					}
+				]
+			},
+			{
+				"name": "Default",
+				"id": 1015,
+				"type": "number_u32",
+				"enabled": false,
+				"persist": false,
+				"writeonly": true,
+				"address": "0xfa000000",
+				"defaultval": 65535,
+				"value": 0
+			}
+		],
+		"messages": []
+	}
+}

@@ -31,7 +31,7 @@
     <rbf>jtkiwi</rbf>
     <joystick/>
     <region>World</region>
-    <rom index="0" zip="arknoid2b.zip|arknoid2.zip" md5="None" asm_md5="943428558049333ced2643ae1961ae0f">
+    <rom index="0" zip="arknoid2b.zip|arknoid2.zip" md5="None" asm_md5="abc8b0413cfba8681f0915e3ad244f55">
         <!-- bit 0 = MCU
              bit 1 = color PROM
              bit 2 = Kabuki Z (specific sound features)
@@ -81,15 +81,20 @@
             04 07 00 93 00 00 93 23 00 D7 15 35 65 85 A5 23
             55 90 23 55 02 86 15 B8 20 B9 60 23 00 A0 18 E9
             1D 23 AA 90 23 AA 02 86 27 B8 30 B9 04 D6 2D 22
-            A5 A0 18 E9 2D 23 5A 90 23 5A 02 86 3B BF 00 86
-            43 04 6D D6 3F 22 76 54 A8 FC 03 BF 96 3F FF 68
-            AF 02 04 3F A5 AC 03 3F 96 62 BD 00 14 82 FF 02
-            04 3F FC 03 EB 96 3F FF C6 6D CF 04 3F 23 04 3A
-            09 43 0F A8 23 05 3A 09 77 77 77 77 43 F0 58 02
-            04 3F 23 00 26 88 43 10 46 8C 43 20 A8 C6 9C DE
-            C6 9C FF 03 F7 F6 9C 1F F8 90 AE 83 F8 AE 23 00
-            90 83 </part>
-        <part repeat="0x75E"> FF</part>
+            A5 A0 18 E9 2D 23 5A 90 23 5A 02 86 3B BF 00 BD
+            00 23 D3 62 55 86 49 04 75 14 8D D6 45 22 76 5C
+            A8 FC 03 BF 96 45 FF 68 AF 02 04 45 A5 AC 03 3F
+            96 6A FD 90 BD 00 FF 02 04 45 FC 03 EB 96 45 FF
+            C6 75 CF 04 45 23 00 90 23 04 3A 09 43 0F A8 23
+            05 3A 09 77 77 77 77 43 F0 58 02 04 45 42 96 B5
+            23 00 26 96 43 10 46 9A 43 20 AA FA 53 10 C6 A7
+            FE 53 10 96 A7 14 B6 FA 53 20 C6 B3 FE 53 20 96
+            B3 14 CF FA AE 83 BD 10 B8 34 F0 17 A0 A9 B8 30
+            F0 D9 96 CE B8 34 23 00 A0 B8 31 F0 14 EB 83 FD
+            96 D4 BD 20 B8 35 F0 17 A0 A9 B8 32 F0 D9 96 EA
+            B8 35 23 00 A0 B8 33 F0 14 EB 83 A9 FF 69 A9 03
+            F7 E6 F6 BF 09 83 F9 AF 83 </part>
+        <part repeat="0x707"> FF</part>
         <!-- Total 0x251800 bytes - 2374 kBytes -->
     </rom>
     <!-- Vertical screen. Orientation reversed. -->

@@ -1,0 +1,100 @@
+<!--          FPGA arcade hardware by Jotego
+
+              This core is available for hardware compatible with MiST and MiSTer
+              Other FPGA systems may be supported by the time you read this.
+              This work is not mantained by the MiSTer project. Please contact the
+              core author for issues and updates.
+
+              (c) Jose Tejada, 2026. Please support this research
+              Patreon: https://patreon.com/jotego
+
+              The author does not endorse or participate in illegal distribution
+              of copyrighted material. This work can be used with compatible
+              software. This software can be homebrew projects or legally
+              obtained memory dumps of compatible games.
+
+              This file license is GNU GPLv2.
+              You can read the whole license file in
+              https://opensource.org/licenses/gpl-2.0.php
+
+-->
+
+<misterromdescription>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://jotego/jtcores"/>
+    <rotation>horizontal</rotation>
+    <name>Thunder Cross II (World)</name>
+    <setname>thndrx2</setname>
+    <mameversion>0282</mameversion>
+    <year>1991</year>
+    <manufacturer>Konami</manufacturer>
+    <players>2</players>
+    <rbf>jttmnt</rbf>
+    <joystick>8</joystick>
+    <region>World</region>
+    <rom index="0" zip="thndrx2.zip" md5="None" asm_md5="5ac02867a823cf547cc2a94135bb39c8">
+        <!--     byte 0: 00 = TMNT
+            01 = MIA
+            02 = Punk Shot
+            03 = Thunder Cross II -->
+        <part>
+            03 00 00 00 00 00 00 00
+        </part>
+        <!-- maincpu - starts at 0x0 - length 0x60000 (19 bits) -->
+        <interleave output="16">
+            <part name="073-ea-l03.12c" crc="738ed007" map="01"/>
+            <part name="073-ea-l02.11c" crc="eae02b51" map="10"/>
+        </interleave>
+        <part repeat="0x20000"> FF</part>
+        <!-- JTFRAME_BA1_START -->
+        <!-- audiocpu - starts at 0x60000 - length 0x10000 (16 bits) -->
+        <part name="073-c01.4f" crc="44ebe83c"/>
+        <!-- PCM_START -->
+        <!-- k007232 - starts at 0x70000 -->
+        <!-- k053260 - starts at 0x70000 - length 0x80000 (19 bits) -->
+        <part name="073-b04.2d" crc="05287a0b"/>
+        <!-- UPD_START -->
+        <!-- upd - starts at 0xF0000 - length 0x20000 (17 bits) -->
+        <part repeat="0x20000"> FF</part>
+        <!-- TITLE_START -->
+        <!-- title - starts at 0x110000 - length 0x80000 (19 bits) -->
+        <part repeat="0x80000"> FF</part>
+        <!-- JTFRAME_BA2_START -->
+        <!-- k052109 - starts at 0x190000 - length 0x100000 (20 bits) -->
+        <interleave output="32">
+            <part name="073-c06.16k" crc="24e22b42" map="0021"/>
+            <part name="073-c05.12k" crc="952a935f" map="2100"/>
+        </interleave>
+        <!-- JTFRAME_BA3_START -->
+        <!-- k051960 - starts at 0x290000 - length 0x200000 (21 bits) -->
+        <interleave output="32">
+            <part name="073-c08.3k" crc="09fab3ab" map="0012"/>
+            <part name="073-c07.7k" crc="14e93f38" map="1200"/>
+        </interleave>
+        <part repeat="0x100000"> FF</part>
+        <!-- JTFRAME_PROM_START -->
+        <!-- proms - starts at 0x490000 -->
+        <!-- Total 0x490000 bytes - 4672 kBytes -->
+    </rom>
+    <rom index="2">
+        <part>
+00 00 40 C0 80 00 00 2E FF FF FF FF FF FF FF FF
+FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+</part>
+    </rom>
+    <nvram index="2" size="28833"/>
+    <!--  8-pxl black frame on sides. -->
+    <rom index="1">
+        <part>20 80</part>
+    </rom>
+    <switches page_id="1" page_name="Switches" base="20" default="ff,ff">
+        <dip name="Service Mode" ids="On,Off" bits="0"/>
+        <dip name="FM in mono mode" ids="Centre,Original" bits="1"/>
+    </switches>
+    <buttons names="Shot, Option,-,Start,Coin,Core credits" default="A,B,Start,Select,-" count="2"/>
+</misterromdescription>

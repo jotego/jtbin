@@ -63,7 +63,7 @@
         <part repeat="0x20000"> FF</part>
         <!-- SND_START -->
         <!-- soundcpu - starts at 0xC0000 - length 0x10000 (16 bits) -->
-        <part name="epr-12300.ic88" crc="e8ff7011"/>
+        <part name="epr-12300.ic88" crc="e8ff7011" length="0x10000"/>
         <!-- PCM_START -->
         <!-- pcm - starts at 0xD0000 - length 0x60000 (19 bits) -->
         <part name="epr-12301.ic66" crc="6e78ad15" length="0x10000"/>

@@ -20,6 +20,7 @@ Turbo Out Run (cockpit) (FD1094 317-0106) --> toutrun2.rom
 Turbo Out Run (cockpit) (FD1094 317-0107) --> toutrun3.rom
 Turbo Out Run (Japan, Out Run upgrade) (FD1094 317-0117) --> toutrunj.rom
 Turbo Out Run (Japan, cockpit) (FD1094 317-0101) --> toutrunj1.rom
+Out Run (sitdown-upright, Rev B) (added music) --> outrunm.rom
 
 
 These files are generated using the mra tool in:

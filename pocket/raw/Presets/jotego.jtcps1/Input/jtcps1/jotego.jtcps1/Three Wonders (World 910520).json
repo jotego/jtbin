@@ -7,13 +7,33 @@
 				"mappings": [
 					{
 						"id": 0,
-						"name": "Attack/Shot/P.Block",
+						"name": "LP",
 						"key": "pad_btn_a"
 					},
 					{
 						"id": 1,
-						"name": "Jump/T.Shot/P.Block",
+						"name": "MP",
 						"key": "pad_btn_b"
+					},
+					{
+						"id": 2,
+						"name": "SP",
+						"key": "pad_btn_x"
+					},
+					{
+						"id": 3,
+						"name": "LK",
+						"key": "pad_btn_y"
+					},
+					{
+						"id": 4,
+						"name": "MK",
+						"key": "pad_trig_l"
+					},
+					{
+						"id": 5,
+						"name": "HK",
+						"key": "pad_trig_r"
 					}
 				]
 			}
