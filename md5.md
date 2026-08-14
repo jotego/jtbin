@@ -698,9 +698,9 @@
 | rastsagaa    | jtrastan   | 8ab782b8f2f84bcc25ae72eaa312a08c | fe,ff        |
 | rastsagaabl  | jtrastan   | 0444cbc2054e031af8456afdde49c2ad | fe,ff        |
 | rastsagab    | jtrastan   | f6c8c0de082536c90423e66fb5cd6594 | fe,ff        |
-| rbisland     | jtrastan   | 2fa9715c940f4a0b06e09ce85b3a32c8 | fe,bf        |
-| rbislande    | jtrastan   | 2ab0c7e3a5c8d5728b50f3d1addd0228 | fe,bf        |
-| rbislando    | jtrastan   | 196bec8abffdece3ecc62fcbb7ed711e | fe,bf        |
+| rbisland     | jtrastan   | 9d255d7a03560e1b7df1f4763f9a4479 | fe,bf        |
+| rbislande    | jtrastan   | 67381419e7122c563c346cc67ddf16e4 | fe,bf        |
+| rbislando    | jtrastan   | a6c478487cf6fc0c1392faaf919f2857 | fe,bf        |
 | redearthn    | jtcps3     | 945b7d6ec16ca43f6cd59273fe4c718c |              |
 | redearthnr1  | jtcps3     | 130cc7906390cc65c8e737571775b3d6 |              |
 | renegade     | jtkunio    | 2129de6d1efcbc2e10912dbcd3814279 | bf,ff        |

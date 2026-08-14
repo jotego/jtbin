@@ -96,6 +96,7 @@
         <dip name="Hurricane Kick" bits="11" ids="Easy,Normal"/>
         <dip name="Timer" bits="12,13" ids="Very Fast,Fast,Slow,Normal"/>
         <dip name="Lives" bits="14,15" ids="4,3,2,1"/>
+        <dip name="Turbo" ids="off,on" bits="16"/>
     </switches>
     <buttons names="Left Attack,Jump,Right Attack,Start,Coin,Core credits" default="A,B,X,Start,Select,-" count="3"/>
 </misterromdescription>

@@ -31,7 +31,7 @@
     <rbf>jtrastan</rbf>
     <joystick>2</joystick>
     <region>World</region>
-    <rom index="0" zip="rbisland.zip|cchip.zip" md5="None" address="0x30000000" asm_md5="2fa9715c940f4a0b06e09ce85b3a32c8">
+    <rom index="0" zip="rbisland.zip|cchip.zip" md5="None" address="0x30000000" asm_md5="9d255d7a03560e1b7df1f4763f9a4479">
         <!-- 
   0[0]: rastan     Rastan hardware
   0[1]: opwolf     Operation Wolf hardware
@@ -72,8 +72,8 @@
             <part name="b22-02.5" crc="1b87ecf0" map="12"/>
         </interleave>
         <interleave output="16">
-            <part name="b22-12.7" crc="67a76dc6" map="01"/>
-            <part name="b22-13.6" crc="2fda099f" map="10"/>
+            <part name="b22-13.6" crc="2fda099f" map="01"/>
+            <part name="b22-12.7" crc="67a76dc6" map="10"/>
         </interleave>
         <part repeat="0x50000"> FF</part>
         <!-- JTFRAME_PROM_START -->
@@ -86,7 +86,7 @@
     <rom index="17" zip="jtbeta.zip" md5="None" asm_md5="5a2b1e5d0672c729eee562b43e70cc7f">
         <part name="beta.bin" crc="8b6976d8"/>
     </rom>
-    <nvram index="2" size="1024"/>
+    <nvram index="2" size="77857"/>
     <rom index="1">
         <part>00 80</part>
     </rom>
@@ -106,5 +106,5 @@
         <dip name="Language" bits="14" ids="English,Japanese"/>
         <dip name="Coin Mode" bits="15" ids="Mode B,Mode A"/>
     </switches>
-    <buttons names="Jump,Rainbow,Start,Coin,Core credits" default="A,B,Start,Select,-" count="2"/>
+    <buttons names="Rainbow,Jump,Start,Coin,Core credits" default="A,B,Start,Select,-" count="2"/>
 </misterromdescription>
