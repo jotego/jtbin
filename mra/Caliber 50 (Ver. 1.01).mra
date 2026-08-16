@@ -74,9 +74,9 @@
         <part name="beta.bin" crc="8b6976d8"/>
     </rom>
     <nvram index="2" size="26636"/>
-    <!-- Vertical screen. Orientation reversed.  8-pxl black frame on sides. -->
+    <!-- Vertical screen. Orientation reversed. -->
     <rom index="1">
-        <part>25 80</part>
+        <part>05 80</part>
     </rom>
     <switches page_id="1" page_name="Switches" base="16" default="ff,fd">
         <DSW/>
@@ -92,5 +92,5 @@
         <dip name="Erase Backup Ram" bits="13" ids="Off,On"/>
         <dip name="Licensor Option" bits="14" ids="Option 2,Option 1"/>
     </switches>
-    <buttons names="Shoot,Grenade,Turn Left,Turn Right,Start,Coin,Core credits" default="A,B,X,Y,Start,Select,-" count="4"/>
+    <buttons names="Shoot,Grenade,Turn Right,Turn Left,Start,Coin,Core credits" default="A,B,X,Y,Start,Select,-" count="4"/>
 </misterromdescription>

@@ -13,6 +13,7 @@
 | aliens  | Super Contra (set 1)                                                         | scontra   |
 | aliens  | Thunder Cross (set 1)                                                        | thunderx  |
 | biocom  | Bionic Commando (Euro)                                                       | bionicc   |
+| blkout  | Block Out (set 1)                                                            | blockout  |
 | btiger  | Black Tiger                                                                  | blktiger  |
 | bubl    | Bubble Bobble (Japan, Ver 0.1)                                               | bublbobl  |
 | bubl    | Tokio - Scramble Formation (newer)                                           | tokio     |
@@ -137,6 +138,7 @@
 | kchamp  | Karate Champ: Player Vs Player (US, set 1)                                   | kchampvs  |
 | kicker  | Kicker                                                                       | kicker    |
 | kiwi    | Arkanoid - Revenge of DOH (World)                                            | arknoid2  |
+| kiwi    | Chuka Taisen (World) (P0-028-A PCB)                                          | chukatai  |
 | kiwi    | Dr. Toppel's Adventure (World)                                               | drtoppel  |
 | kiwi    | Extermination (World)                                                        | extrmatn  |
 | kiwi    | Insector X (World)                                                           | insectx   |
@@ -274,10 +276,11 @@
 | twin16  | Devil World                                                                  | devilw    |
 | twin16  | Vulcan Venture (new)                                                         | vulcan    |
 | vigil   | Vigilante (World, Rev E)                                                     | vigilant  |
+| vlfied  | Volfied (World, rev 1)                                                       | volfied   |
 | wc      | Gridiron Fight (World)                                                       | gridiron  |
 | wc      | Tehkan World Cup (set 1)                                                     | tehkanwc  |
 | wwfss   | WWF Superstars (Europe)                                                      | wwfsstar  |
 | xmen    | X-Men (4 Players ver EBA)                                                    | xmen      |
 | yiear   | Yie Ar Kung-Fu (version I)                                                   | yiear     |
 
-78 cores, supporting 279 games
+80 cores, supporting 282 games

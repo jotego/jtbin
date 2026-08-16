@@ -135,6 +135,10 @@
 | blktigera    | jtbtiger   | acadf2e0bc8d647911cb8ea0dfea6d00 | ff,6f        |
 | block        | jtpang     | ade60f22d41f074ea4ff215c16fa0971 |              |
 | blockj       | jtpang     | efce4cc299fe5a5339917bd839bede6e |              |
+| blockout     | jtblkout   | 732b534db4d6d97f2d97bc31940d2703 | ff,ff        |
+| blockout2    | jtblkout   | 987e1c7f51a4ec7ded7bdb34deaa3787 | ff,ff        |
+| blockout3    | jtblkout   | 7e873a8f65a0b30e97dc42cad122f955 | ff,ff        |
+| blockoutj    | jtblkout   | a5e755fbcbd4646de89305790da2cc47 | ff,ff        |
 | blockr1      | jtpang     | e09a193172ef3ee6478eaa3c1c199477 |              |
 | blockr2      | jtpang     | c37a1f43e34f7ba59ba34c44a67f719d |              |
 | bloxeed      | jts18      | f3afb888ed4d0f8cfa8d4b2c77aadbf4 | ff,7d        |
@@ -179,6 +183,10 @@
 | chikij       | jtcps1     | eb05493f72a6199e051ff4542ef300a6 | ff,fc,bf     |
 | choko        | jtcps2     | 9f42ff25fd71993cd48aa2948345f78e | ff,ff        |
 | chokop       | jtcps2     |                                  | ff,ff        |
+| chukatai     | jtkiwi     | fe0919994480b5d79e5597a022af8773 | fe,ff        |
+| chukataij    | jtkiwi     | e700e2e824609ca917b2434e211fafde | fe,ff        |
+| chukataija   | jtkiwi     | 4306aae8a1533c33a64506421014e416 | fe,ff        |
+| chukataiu    | jtkiwi     | a160a6f037ab71ceefaa0c811c9e2ded | fe,ff        |
 | circusc      | jtcircus   | 9fdc385413a26347c804dfcf55e3bf73 | ff,4b        |
 | circusc2     | jtcircus   | 325c47916d845a3008f6880b7122c8e3 | ff,4b        |
 | circusc3     | jtcircus   | 6a3c27826e0de23b1fbb8cf6a314b060 | ff,4b        |
@@ -1108,6 +1116,12 @@
 | vigilantd    | jtvigil    | 824e97759ad723d3cd5546c43c11f821 | ff,fd        |
 | vigilantg    | jtvigil    | 8ef8671a0b58b008995a29d539586c32 | ff,fd        |
 | vigilanto    | jtvigil    | 96f203c2b9dafd289200c67e6dd705d7 | ff,fd        |
+| volfied      | jtvlfied   | b13a11876d446c27da0d8ccac560c6bc | fe,7f        |
+| volfiedj     | jtvlfied   | 7e58f9870c76ff28e664160246cde7b0 | fe,7f        |
+| volfiedjo    | jtvlfied   | 77a5de93619a952659b26e845dc404ed | fe,7f        |
+| volfiedo     | jtvlfied   | 44f94f74b32fc7f67d781264548bcb0c | fe,7f        |
+| volfiedu     | jtvlfied   | ada2260f7c2f41fb5fa647f0df047f15 | fe,7f        |
+| volfieduo    | jtvlfied   | 67cfdecb27550c9f6507e5054bbf9de6 | fe,7f        |
 | vsav         | jtcps2     | 969ac9f7b8019cd7b3552bfeb95d00e2 | ff,ff        |
 | vsav2        | jtcps2     | 7c1593eb99c7aa2176e7c7ca18461b98 | ff,ff        |
 | vsav2d       | jtcps2     | cc44629c15463525ac6f67a1be94ac20 | ff,ff        |

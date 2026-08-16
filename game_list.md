@@ -49,6 +49,10 @@
 | biocom  | Bionic Commandos (bootleg, set 2)                                                          | bioniccbl2    |
 | biocom  | Top Secret (Japan, old revision)                                                           | topsecrt      |
 | biocom  | Top Secret (Japan, revision B)                                                             | topsecrt2     |
+| blkout  | Block Out (Europe and Oceania)                                                             | blockout3     |
+| blkout  | Block Out (Japan)                                                                          | blockoutj     |
+| blkout  | Block Out (set 1)                                                                          | blockout      |
+| blkout  | Block Out (set 2)                                                                          | blockout2     |
 | btiger  | Black Dragon (Japan)                                                                       | blkdrgon      |
 | btiger  | Black Tiger                                                                                | blktiger      |
 | btiger  | Black Tiger (older)                                                                        | blktigera     |
@@ -703,6 +707,10 @@
 | kiwi    | Arkanoid - Revenge of DOH (Japan)                                                          | arknoid2j     |
 | kiwi    | Arkanoid - Revenge of DOH (US)                                                             | arknoid2u     |
 | kiwi    | Arkanoid - Revenge of DOH (World)                                                          | arknoid2      |
+| kiwi    | Chuka Taisen (Japan) (P0-025-A PCB)                                                        | chukataija    |
+| kiwi    | Chuka Taisen (Japan) (P0-028-A PCB)                                                        | chukataij     |
+| kiwi    | Chuka Taisen (US) (P0-028-A PCB)                                                           | chukataiu     |
+| kiwi    | Chuka Taisen (World) (P0-028-A PCB)                                                        | chukatai      |
 | kiwi    | Dr. Toppel's Adventure (US)                                                                | drtoppelu     |
 | kiwi    | Dr. Toppel's Adventure (World)                                                             | drtoppel      |
 | kiwi    | Dr. Toppel's Tankentai (Japan)                                                             | drtoppelj     |
@@ -1182,6 +1190,12 @@
 | vigil   | Vigilante (World, Rev A)                                                                   | vigilanta     |
 | vigil   | Vigilante (World, Rev C)                                                                   | vigilantc     |
 | vigil   | Vigilante (World, Rev E)                                                                   | vigilant      |
+| vlfied  | Volfied (Japan)                                                                            | volfiedjo     |
+| vlfied  | Volfied (Japan, rev 1)                                                                     | volfiedj      |
+| vlfied  | Volfied (US)                                                                               | volfieduo     |
+| vlfied  | Volfied (US, rev 1)                                                                        | volfiedu      |
+| vlfied  | Volfied (World)                                                                            | volfiedo      |
+| vlfied  | Volfied (World, rev 1)                                                                     | volfied       |
 | wc      | Gridiron Fight (World)                                                                     | gridiron      |
 | wc      | Tehkan World Cup (1986 year hack)                                                          | tehkanwch     |
 | wc      | Tehkan World Cup (set 1)                                                                   | tehkanwc      |
@@ -1208,4 +1222,4 @@
 | yiear   | Yie Ar Kung-Fu (version G)                                                                 | yiear2        |
 | yiear   | Yie Ar Kung-Fu (version I)                                                                 | yiear         |
 
-79 cores, supporting 1207 games
+81 cores, supporting 1221 games

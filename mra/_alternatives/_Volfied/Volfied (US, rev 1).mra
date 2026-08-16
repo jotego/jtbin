@@ -1,0 +1,106 @@
+<!--          FPGA arcade hardware by Jotego
+
+              This core is available for hardware compatible with MiST and MiSTer
+              Other FPGA systems may be supported by the time you read this.
+              This work is not mantained by the MiSTer project. Please contact the
+              core author for issues and updates.
+
+              (c) Jose Tejada, 2026. Please support this research
+              Patreon: https://patreon.com/jotego
+
+              The author does not endorse or participate in illegal distribution
+              of copyrighted material. This work can be used with compatible
+              software. This software can be homebrew projects or legally
+              obtained memory dumps of compatible games.
+
+              This file license is GNU GPLv2.
+              You can read the whole license file in
+              https://opensource.org/licenses/gpl-2.0.php
+
+-->
+
+<misterromdescription>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://jotego/jtcores"/>
+    <rotation>vertical (ccw)</rotation>
+    <name>Volfied (US, rev 1)</name>
+    <setname>volfiedu</setname>
+    <mameversion>0282</mameversion>
+    <year>1989</year>
+    <manufacturer>Taito America Corporation</manufacturer>
+    <players>2</players>
+    <rbf>jtvlfied</rbf>
+    <joystick>4</joystick>
+    <region>World</region>
+    <rom index="0" zip="volfiedu.zip|volfied.zip|cchip.zip" md5="None" asm_md5="ada2260f7c2f41fb5fa647f0df047f15">
+        <!-- maincpu - starts at 0x0 - length 0x100000 (20 bits) -->
+        <interleave output="16">
+            <part name="c04-08-1.10" crc="19f7e66b" map="01"/>
+            <part name="c04-12-1.30" crc="afb6a058" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="c04-24-1.9" crc="c499346f" map="01"/>
+            <part name="c04-11-1.29" crc="1aaf6e9b" map="10"/>
+        </interleave>
+        <part repeat="0x40000"> FF</part>
+        <interleave output="16">
+            <part name="c04-22.9" crc="f405d465" map="01"/>
+            <part name="c04-20.7" crc="0aea651f" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="c04-21.8" crc="8598d38e" map="01"/>
+            <part name="c04-19.6" crc="231493ae" map="10"/>
+        </interleave>
+        <!-- JTFRAME_BA1_START -->
+        <!-- audiocpu - starts at 0x100000 - length 0x20000 (17 bits) -->
+        <part name="c04-06.71" crc="b70106b2"/>
+        <part repeat="0x18000"> FF</part>
+        <!-- JTFRAME_BA2_START -->
+        <!-- pc090oj - starts at 0x120000 - length 0xE0000 (20 bits) -->
+        <interleave output="16">
+            <part name="c04-16.2" crc="8c2476ef" map="01"/>
+            <part name="c04-18.4" crc="7665212c" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="c04-15.1" crc="7c50b978" map="01"/>
+            <part name="c04-17.3" crc="c62fdeb8" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="c04-10.15" crc="429b6b49" map="01"/>
+            <part name="c04-09.14" crc="c78cf057" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="c04-10.15" crc="429b6b49" map="01"/>
+            <part name="c04-09.14" crc="c78cf057" map="10"/>
+        </interleave>
+        <part repeat="0x20000"> FF</part>
+        <!-- JTFRAME_PROM_START -->
+        <!-- JTFRAME_BA3_START -->
+        <!-- cchip_bios - starts at 0x200000 - length 0x1000 (12 bits) -->
+        <part name="cchip_upd78c11.bin" crc="43021521" length="0x1000"/>
+        <!-- cchip_eprom - starts at 0x201000 - length 0x2000 (13 bits) -->
+        <part name="cchip_c04-23" crc="46b0b479" length="0x2000"/>
+        <!-- Total 0x203000 bytes - 2060 kBytes -->
+    </rom>
+    <rom index="17" zip="jtbeta.zip" md5="None" asm_md5="5a2b1e5d0672c729eee562b43e70cc7f">
+        <part name="beta.bin" crc="8b6976d8"/>
+    </rom>
+    <!-- Vertical screen. Orientation reversed. -->
+    <rom index="1">
+        <part>05 80</part>
+    </rom>
+    <switches page_id="1" page_name="Switches" base="16" default="fe,7f">
+        <DSWA/>
+        <dip name="Cabinet" bits="0" ids="Upright,Cocktail"/>
+        <dip name="Flip Screen" bits="1" ids="On,Off"/>
+        <dip name="Service Mode" bits="2" ids="On,Off"/>
+        <dip name="Demo Sounds" bits="3" ids="Off,On"/>
+        <dip name="Coinage" bits="4,5" ids="4/1,3/1,2/1,1/1"/>
+        <DSWB/>
+        <dip name="Bonus" bits="8,9" ids="100k 500k,70k 280k 1400k,20 40 120 480 2400,50k 150k 600k 3000k"/>
+        <dip name="Difficulty" bits="10,11" ids="Hardest,Hard,Easy,Medium"/>
+        <dip name="Lives" bits="12,13" ids="6,5,4,3"/>
+        <dip name="32768 Lives (Cheat)" bits="14" ids="On,Off"/>
+        <dip name="Language" bits="15" ids="English,Japanese"/>
+    </switches>
+    <buttons names="button 1,Start,Coin,Core credits" default="A,B,Start,Select,-" count="1"/>
+</misterromdescription>

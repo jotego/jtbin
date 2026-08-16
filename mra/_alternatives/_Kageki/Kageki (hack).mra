@@ -45,7 +45,8 @@
              bit 1 = button aid
              bit 2 = 3 MHz for FM module
              bit 3 = Kabuki Z with different memory map
-             bit 4 = 13 bits tilemap code -->
+             bit 4 = 13 bits tilemap code
+             bit 5 = PSG channels summed, not shorted -->
         <part>
             08 00 00 00 </part>
         <!-- maincpu - starts at 0x0 - length 0x20000 (17 bits) -->

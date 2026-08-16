@@ -1,0 +1,71 @@
+<!--          FPGA arcade hardware by Jotego
+
+              This core is available for hardware compatible with MiST and MiSTer
+              Other FPGA systems may be supported by the time you read this.
+              This work is not mantained by the MiSTer project. Please contact the
+              core author for issues and updates.
+
+              (c) Jose Tejada, 2026. Please support this research
+              Patreon: https://patreon.com/jotego
+
+              The author does not endorse or participate in illegal distribution
+              of copyrighted material. This work can be used with compatible
+              software. This software can be homebrew projects or legally
+              obtained memory dumps of compatible games.
+
+              This file license is GNU GPLv2.
+              You can read the whole license file in
+              https://opensource.org/licenses/gpl-2.0.php
+
+-->
+
+<misterromdescription>
+    <about author="Andrea Bogazzi" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://jotego/jtcores"/>
+    <rotation>horizontal</rotation>
+    <name>Block Out (set 1)</name>
+    <setname>blockout</setname>
+    <mameversion>0282</mameversion>
+    <year>1989</year>
+    <manufacturer>Technos Japan / California Dreams</manufacturer>
+    <players>2</players>
+    <rbf>jtblkout</rbf>
+    <joystick>8</joystick>
+    <region>World</region>
+    <rom index="0" zip="blockout.zip" md5="None" asm_md5="732b534db4d6d97f2d97bc31940d2703">
+        <!--  Header to identify the PCB type
+        Byte 0 = 0 for blockout, 1 for blockoutj
+
+  0[0]: blockout   Blockout
+  0[1]: blockoutj  Blockoutj -->
+        <part>
+            01 00 00 00 </part>
+        <!-- maincpu - starts at 0x0 - length 0x40000 (18 bits) -->
+        <interleave output="16">
+            <part name="bo29a1-2.bin" crc="5984d5a2" map="01"/>
+            <part name="bo29a0-2.bin" crc="b0103427" map="10"/>
+        </interleave>
+        <!-- JTFRAME_BA1_START -->
+        <!-- audiocpu - starts at 0x40000 - length 0x8000 (15 bits) -->
+        <part name="bo29e3-0.bin" crc="3ea01f78"/>
+        <!-- PCM_START -->
+        <!-- oki - starts at 0x48000 - length 0x20000 (17 bits) -->
+        <part name="bo29e2-0.bin" crc="15c5a99d"/>
+        <!-- Total 0x68000 bytes - 416 kBytes -->
+    </rom>
+    <rom index="17" zip="jtbeta.zip" md5="None" asm_md5="5a2b1e5d0672c729eee562b43e70cc7f">
+        <part name="beta.bin" crc="8b6976d8"/>
+    </rom>
+    <rom index="1">
+        <part>00 80</part>
+    </rom>
+    <switches page_id="1" page_name="Switches" base="16" default="ff,ff">
+        <DSW1/>
+        <dip name="Coinage" bits="0,1" ids="3/1,2/1,1/2,1/1"/>
+        <dip name="1 Coin to Continue" bits="4" ids="On,Off"/>
+        <dip name="Demo Sounds" bits="5" ids="Off,On"/>
+        <DSW2/>
+        <dip name="Difficulty" bits="8,9" ids="Very Hard,Hard,Easy,Normal"/>
+        <dip name="Rotate Buttons" bits="10" ids="2,3"/>
+    </switches>
+    <buttons names="A,B,C,Drop,Start,Coin,Core credits" default="A,B,X,Y,Start,Select,-" count="4"/>
+</misterromdescription>

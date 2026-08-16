@@ -9,6 +9,10 @@ Arkanoid - Revenge of DOH (World) --> arknoid2.rom
 Arkanoid - Revenge of DOH (Japan bootleg) --> arknoid2b.rom
 Arkanoid - Revenge of DOH (Japan) --> arknoid2j.rom
 Arkanoid - Revenge of DOH (US) --> arknoid2u.rom
+Chuka Taisen (World) (P0-028-A PCB) --> chukatai.rom
+Chuka Taisen (Japan) (P0-028-A PCB) --> chukataij.rom
+Chuka Taisen (Japan) (P0-025-A PCB) --> chukataija.rom
+Chuka Taisen (US) (P0-028-A PCB) --> chukataiu.rom
 Dr. Toppel's Adventure (World) --> drtoppel.rom
 Dr. Toppel's Tankentai (Japan) --> drtoppelj.rom
 Dr. Toppel's Adventure (US) --> drtoppelu.rom
