@@ -107,6 +107,7 @@
 | cps3    | JoJo's Venture (Asia 990128, NO CD)                                          | jojon     |
 | cps3    | Red Earth (Asia 961121, NO CD)                                               | redearthn |
 | cps3    | Street Fighter III 2nd Impact: Giant Attack (Asia 970930, NO CD)             | sfiii2n   |
+| cps3    | Street Fighter III 3rd Strike: Fight for the Future (Japan 990512, NO CD)    | sfiii3nr1 |
 | cps3    | Street Fighter III: New Generation (Asia 970204, NO CD, BIOS set 1)          | sfiiin    |
 | dd      | Double Dragon (World set 1)                                                  | ddragon   |
 | dd2     | Double Dragon II: The Revenge (World)                                        | ddragon2  |
@@ -283,4 +284,4 @@
 | xmen    | X-Men (4 Players ver EBA)                                                    | xmen      |
 | yiear   | Yie Ar Kung-Fu (version I)                                                   | yiear     |
 
-80 cores, supporting 282 games
+80 cores, supporting 283 games

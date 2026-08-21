@@ -611,6 +611,10 @@
 | cps3    | Red Earth (Asia 961023, NO CD)                                                             | redearthnr1   |
 | cps3    | Red Earth (Asia 961121, NO CD)                                                             | redearthn     |
 | cps3    | Street Fighter III 2nd Impact: Giant Attack (Asia 970930, NO CD)                           | sfiii2n       |
+| cps3    | Street Fighter III 3rd Strike: Fight for the Future (Asia 990512, NO CD)                   | sfiii3nar1    |
+| cps3    | Street Fighter III 3rd Strike: Fight for the Future (Asia 990608, NO CD)                   | sfiii3na      |
+| cps3    | Street Fighter III 3rd Strike: Fight for the Future (Japan 990512, NO CD)                  | sfiii3nr1     |
+| cps3    | Street Fighter III 3rd Strike: Fight for the Future (Japan 990608, NO CD)                  | sfiii3n       |
 | cps3    | Street Fighter III: New Generation (Asia 970204, NO CD, BIOS set 1)                        | sfiiin        |
 | cps3    | Street Fighter III: New Generation (Asia 970204, NO CD, BIOS set 2)                        | sfiiina       |
 | dd      | Double Dragon (Japan set 1)                                                                | ddragonj      |
@@ -1222,4 +1226,4 @@
 | yiear   | Yie Ar Kung-Fu (version G)                                                                 | yiear2        |
 | yiear   | Yie Ar Kung-Fu (version I)                                                                 | yiear         |
 
-81 cores, supporting 1221 games
+81 cores, supporting 1225 games

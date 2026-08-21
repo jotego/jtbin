@@ -838,6 +838,10 @@
 | sfar3        | jtcps2     | 68632c920386dfe9eb0b7b33c726d53c | ff,ff        |
 | sfau         | jtcps2     | f00a450b1f76652d196915ab4b56a2fa | ff,ff        |
 | sfiii2n      | jtcps3     | 5df07e2a318bd41ba5f00374d7a21fac |              |
+| sfiii3n      | jtcps3     | ec04b2743ca465fce0cb80cc0c08a013 |              |
+| sfiii3na     | jtcps3     | bd7db8d31073308ca1692ab90ecf4c38 |              |
+| sfiii3nar1   | jtcps3     | e9cdc282f82d2aa87ccab7631d97d824 |              |
+| sfiii3nr1    | jtcps3     | 6c7e06a6de0419816931ef6398a010d0 |              |
 | sfiiin       | jtcps3     | 5499875d4e3457c28d9eeebe2779af02 |              |
 | sfiiina      | jtcps3     | 58158a7a8ed5490f90672b792b7fa88a |              |
 | sfj          | jtsf       | db2e2d5203595c3188e5b64e830e4711 | ff,df,ff,ff  |
