@@ -77,7 +77,7 @@
         <!-- Total 0x490000 bytes - 4672 kBytes -->
     </rom>
     <nvram index="2" size="28833"/>
-    <!--  8-pxl black frame on sides. -->
+    <!-- 8-pxl black frame on sides. -->
     <rom index="1">
         <part>20 60</part>
     </rom>

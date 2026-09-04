@@ -67,9 +67,6 @@
         <part name="eb06.k15" crc="1fbd4b59"/>
         <!-- Total 0x50400 bytes - 321 kBytes -->
     </rom>
-    <rom index="17" zip="jtbeta.zip" md5="None" asm_md5="5a2b1e5d0672c729eee562b43e70cc7f">
-        <part name="beta.bin" crc="8b6976d8"/>
-    </rom>
     <nvram index="2" size="2584"/>
     <rom index="1">
         <part>00 80</part>

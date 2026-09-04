@@ -105,10 +105,7 @@
         <!-- Total 0xC9000 bytes - 804 kBytes -->
         <!-- Adding 16 bytes to the patch offset to make up for the MRA header -->
         <patch offset="0xC8B94">02</patch>
-        <patch offset="0xC8491">00</patch>
-        <patch offset="0xC84F0">00</patch>
-        <patch offset="0xC8493">a0</patch>
-        <patch offset="0xC84D3">30</patch>
+        <patch offset="0x1024D">01</patch>
     </rom>
     <!-- Vertical screen. -->
     <rom index="1">

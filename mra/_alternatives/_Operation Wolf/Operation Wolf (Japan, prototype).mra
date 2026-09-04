@@ -76,7 +76,7 @@
     <rom index="1">
         <part>02 80</part>
     </rom>
-    <switches page_id="1" page_name="Switches" base="16" default="ff,ff">
+    <switches page_id="1" page_name="Switches" base="16" default="fd,fe">
         <DSWA/>
         <dip name="Allow Continue" bits="1" ids="Yes,No"/>
         <dip name="Service Mode" bits="2" ids="On,Off"/>

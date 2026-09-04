@@ -1,0 +1,92 @@
+<!--          FPGA arcade hardware by Jotego
+
+              This core is available for hardware compatible with MiST and MiSTer
+              Other FPGA systems may be supported by the time you read this.
+              This work is not mantained by the MiSTer project. Please contact the
+              core author for issues and updates.
+
+              (c) Jose Tejada, 2026. Please support this research
+              Patreon: https://patreon.com/jotego
+
+              The author does not endorse or participate in illegal distribution
+              of copyrighted material. This work can be used with compatible
+              software. This software can be homebrew projects or legally
+              obtained memory dumps of compatible games.
+
+              This file license is GNU GPLv2.
+              You can read the whole license file in
+              https://opensource.org/licenses/gpl-2.0.php
+
+-->
+
+<misterromdescription>
+    <about author="jotego,Andrea Bogazzi" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://jotego/jtcores"/>
+    <rotation>horizontal</rotation>
+    <name>Last Striker - Kyuukyoku no Striker</name>
+    <setname>kyustrkr</setname>
+    <mameversion>0282</mameversion>
+    <year>1989</year>
+    <manufacturer>East Technology</manufacturer>
+    <players>2</players>
+    <rbf>jttaitox</rbf>
+    <joystick>8</joystick>
+    <region>World</region>
+    <rom index="0" zip="kyustrkr.zip|cchip.zip" md5="None" asm_md5="b300b73109638b8cfb3d9da8d55e05c7">
+        <!-- 
+  0[0]: cchip      Taito P0-039A (C-chip)
+  0[1]: ym2151     Taito P0-051A (PC060HA + YM2151) -->
+        <part>
+            00 00 00 00 00 00 00 00
+            00 00 00 00 00 00 00 00
+        </part>
+        <!-- maincpu - starts at 0x0 - length 0x90000 (20 bits) -->
+        <interleave output="16">
+            <part name="po.4a" crc="0100361e" map="01"/>
+            <part name="pe.9a" crc="082b5f96" map="10"/>
+        </interleave>
+        <part repeat="0x50000"> FF</part>
+        <!-- JTFRAME_BA1_START -->
+        <!-- audiocpu - starts at 0x90000 - length 0x10000 (16 bits) -->
+        <part name="ic.18d" crc="92cfb788"/>
+        <!-- PCM_START -->
+        <!-- adpcma - starts at 0xA0000 - length 0x160000 (21 bits) -->
+        <part name="m-8-4.u1" crc="d3f6047a"/>
+        <part repeat="0x140000"> FF</part>
+        <!-- JTFRAME_BA2_START -->
+        <!-- gfx1 - starts at 0x200000 - length 0x200000 (21 bits) -->
+        <interleave output="32">
+            <part name="m-8-1.u5" crc="9d95aad6" map="0001"/>
+            <part name="m-8-3.u3" crc="1c4084e6" map="0010"/>
+            <part name="m-8-0.u6" crc="0dfb6ed3" map="0100"/>
+            <part name="m-8-2.u4" crc="ada21c4d" map="1000"/>
+        </interleave>
+        <part repeat="0x180000"> FF</part>
+        <!-- JTFRAME_BA3_START -->
+        <!-- adpcmb - starts at 0x400000 - length 0x20000 (17 bits) -->
+        <part name="m-8-5.u2" crc="d9d90e0a"/>
+        <!-- cchip_bios - starts at 0x420000 -->
+        <!-- cchip_eprom - starts at 0x420000 -->
+        <!-- Total 0x420000 bytes - 4224 kBytes -->
+    </rom>
+    <rom index="17" zip="jtbeta.zip" md5="None" asm_md5="5a2b1e5d0672c729eee562b43e70cc7f">
+        <part name="beta.bin" crc="8b6976d8"/>
+    </rom>
+    <nvram index="2" size="21504"/>
+    <rom index="1">
+        <part>00 80</part>
+    </rom>
+    <switches page_id="1" page_name="Switches" base="16" default="df,ba">
+        <DSWA/>
+        <dip name="Coin A" bits="0,1" ids="2/3,2/1,1/2,1/1"/>
+        <dip name="Coin B" bits="2,3" ids="2/3,2/1,1/2,1/1"/>
+        <dip name="Difficulty" bits="5,6" ids="Hardest,Hard,Medium,Easy"/>
+        <dip name="Debug Mode" bits="7" ids="On,Off"/>
+        <DSWB/>
+        <dip name="Demo Sounds" bits="8" ids="On,Off"/>
+        <dip name="Flip Screen" bits="9" ids="Off,On"/>
+        <dip name="Allow Continue" bits="10" ids="Yes,No"/>
+        <dip name="Language" bits="14" ids="English,Japanese"/>
+        <dip name="Service Mode" bits="15" ids="On,Off"/>
+    </switches>
+    <buttons names="Short Pass,Long Pass,Shoot,Start,Coin,Core credits" default="A,B,X,Start,Select,-" count="3"/>
+</misterromdescription>

@@ -58,7 +58,7 @@
         <part name="768b12.d20" crc="362544b8"/>
         <!-- Total 0x2B0500 bytes - 2753 kBytes -->
     </rom>
-    <!--  8-pxl black frame on sides. -->
+    <!-- 8-pxl black frame on sides. -->
     <rom index="1">
         <part>20 47</part>
     </rom>

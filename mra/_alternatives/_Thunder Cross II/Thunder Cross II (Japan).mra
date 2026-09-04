@@ -88,7 +88,7 @@ FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
 </part>
     </rom>
     <nvram index="2" size="28833"/>
-    <!--  8-pxl black frame on sides. -->
+    <!-- 8-pxl black frame on sides. -->
     <rom index="1">
         <part>20 80</part>
     </rom>

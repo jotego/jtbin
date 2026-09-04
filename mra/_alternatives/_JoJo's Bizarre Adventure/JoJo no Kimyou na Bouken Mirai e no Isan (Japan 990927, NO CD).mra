@@ -1,0 +1,142 @@
+<!--          FPGA arcade hardware by Jotego
+
+              This core is available for hardware compatible with MiST and MiSTer
+              Other FPGA systems may be supported by the time you read this.
+              This work is not mantained by the MiSTer project. Please contact the
+              core author for issues and updates.
+
+              (c) Jose Tejada, 2026. Please support this research
+              Patreon: https://patreon.com/jotego
+
+              The author does not endorse or participate in illegal distribution
+              of copyrighted material. This work can be used with compatible
+              software. This software can be homebrew projects or legally
+              obtained memory dumps of compatible games.
+
+              This file license is GNU GPLv2.
+              You can read the whole license file in
+              https://opensource.org/licenses/gpl-2.0.php
+
+-->
+
+<misterromdescription>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://jotego/jtcores"/>
+    <rotation>horizontal</rotation>
+    <name>JoJo no Kimyou na Bouken: Mirai e no Isan (Japan 990927, NO CD)</name>
+    <setname>jojobanr1</setname>
+    <mameversion>0282</mameversion>
+    <year>1999</year>
+    <manufacturer>Capcom</manufacturer>
+    <players>2</players>
+    <rbf>jtcps3</rbf>
+    <joystick>8</joystick>
+    <region>World</region>
+    <rom index="0" zip="jojobanr1.zip|jojoba.zip" md5="None" address="0x30000000" asm_md5="80f5b3a9b7fabfdb2e7c3ffdfcdc956b">
+        <!--  -->
+        <part>
+            00 08 00 88 01 88 02 88
+            03 88 04 08 00 00 00 00
+            23 32 3E E3 03 02 19 72
+            04 00 00 00 00 00 00 00
+        </part>
+        <!-- bios - starts at 0x0 - length 0x80000 (19 bits) -->
+        <part name="jojoba_japan_nocd.29f400.u2" crc="4dab19f5"/>
+        <!-- simm1.0 - starts at 0x80000 - length 0x800000 (23 bits) -->
+        <interleave output="32">
+            <part name="jojoba-simm1.1" crc="d7590b59" map="0001"/>
+            <part name="jojoba-simm1.0" crc="adcd8377" map="0010"/>
+            <part name="jojoba-simm1.3" crc="c95450c3" map="0100"/>
+            <part name="jojoba-simm1.2" crc="e62e240b" map="1000"/>
+        </interleave>
+        <!-- simm3.0 - starts at 0x880000 - length 0x1000000 (24 bits) -->
+        <interleave output="16">
+            <part name="jojoba-simm3.1" crc="9b3406d3" map="01"/>
+            <part name="jojoba-simm3.0" crc="4d16e111" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="jojoba-simm3.3" crc="954b9c7d" map="01"/>
+            <part name="jojoba-simm3.2" crc="f2414997" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="jojoba-simm3.5" crc="20a70bb4" map="01"/>
+            <part name="jojoba-simm3.4" crc="625adc1d" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="jojoba-simm3.7" crc="0bd0de7a" map="01"/>
+            <part name="jojoba-simm3.6" crc="a10ec5af" map="10"/>
+        </interleave>
+        <!-- simm4.0 - starts at 0x1880000 - length 0x1000000 (24 bits) -->
+        <interleave output="16">
+            <part name="jojoba-simm4.1" crc="8f4c42fb" map="01"/>
+            <part name="jojoba-simm4.0" crc="6ea14adc" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="jojoba-simm4.3" crc="93ccc470" map="01"/>
+            <part name="jojoba-simm4.2" crc="ef0586d1" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="jojoba-simm4.5" crc="03e66850" map="01"/>
+            <part name="jojoba-simm4.4" crc="3d9ec7d2" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="jojoba-simm4.7" crc="36392b87" map="01"/>
+            <part name="jojoba-simm4.6" crc="01606ac3" map="10"/>
+        </interleave>
+        <!-- simm5.0 - starts at 0x2880000 - length 0x1000000 (24 bits) -->
+        <interleave output="16">
+            <part name="jojoba-simm5.1" crc="cf7d7ca6" map="01"/>
+            <part name="jojoba-simm5.0" crc="2ef8c60c" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="jojoba-simm5.3" crc="9bfec049" map="01"/>
+            <part name="jojoba-simm5.2" crc="b7815bfa" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="jojoba-simm5.5" crc="55e7a042" map="01"/>
+            <part name="jojoba-simm5.4" crc="d167536b" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="jojoba-simm5.7" crc="8c8be520" map="01"/>
+            <part name="jojoba-simm5.6" crc="4fb32906" map="10"/>
+        </interleave>
+        <!-- simm2.0 - starts at 0x3880000 - length 0x800000 (23 bits) -->
+        <interleave output="32">
+            <part name="jojoba-simm2.1" crc="01dd3a01" map="0001"/>
+            <part name="jojoba-simm2.0" crc="535f2eba" map="0010"/>
+            <part name="jojoba-simm2.3" crc="acdc9aca" map="0100"/>
+            <part name="jojoba-simm2.2" crc="61432672" map="1000"/>
+        </interleave>
+        <!-- simm6.0 - starts at 0x4080000 -->
+        <!-- simm6.1 - starts at 0x4080000 -->
+        <!-- simm6.2 - starts at 0x4080000 -->
+        <!-- simm6.3 - starts at 0x4080000 -->
+        <!-- simm6.4 - starts at 0x4080000 -->
+        <!-- simm6.5 - starts at 0x4080000 -->
+        <!-- simm6.6 - starts at 0x4080000 -->
+        <!-- simm6.7 - starts at 0x4080000 -->
+        <!-- Total 0x4080000 bytes - 66048 kBytes -->
+    </rom>
+    <rom index="17" zip="jtbeta.zip" md5="None" asm_md5="5a2b1e5d0672c729eee562b43e70cc7f">
+        <part name="beta.bin" crc="8b6976d8"/>
+    </rom>
+    <rom index="2">
+        <part>
+00 00 01 00 01 01 00 00 00 01 01 01 00 00 00 00
+00 00 00 00 01 01 00 00 00 00 01 01 00 00 00 01
+00 00 00 00 00 00 00 00 00 00 00 00 01 4D 4A 4A
+00 00 01 00 01 01 00 00 00 01 01 01 00 00 00 00
+00 00 00 00 01 01 00 00 00 00 01 01 00 00 00 01
+00 00 00 00 00 00 00 00 00 00 00 00 01 4D 4A 4A
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+</part>
+    </rom>
+    <nvram index="2" size="128"/>
+    <rom index="1">
+        <part>00 80</part>
+    </rom>
+    <switches page_id="1" page_name="Switches" base="16" default="ff,ff">
+        <dip name="BIOS region" ids="Japan,Asia,Europe,USA,Hispanic,Brazil,Oceania,Original" bits="0,2"/>
+    </switches>
+    <buttons names="Light,Middle,Heavy,Stand On,-,-,Start,Coin,Core credits" default="A,B,X,Y,Start,Select,-" count="4"/>
+</misterromdescription>

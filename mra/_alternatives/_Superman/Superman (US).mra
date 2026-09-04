@@ -1,0 +1,99 @@
+<!--          FPGA arcade hardware by Jotego
+
+              This core is available for hardware compatible with MiST and MiSTer
+              Other FPGA systems may be supported by the time you read this.
+              This work is not mantained by the MiSTer project. Please contact the
+              core author for issues and updates.
+
+              (c) Jose Tejada, 2026. Please support this research
+              Patreon: https://patreon.com/jotego
+
+              The author does not endorse or participate in illegal distribution
+              of copyrighted material. This work can be used with compatible
+              software. This software can be homebrew projects or legally
+              obtained memory dumps of compatible games.
+
+              This file license is GNU GPLv2.
+              You can read the whole license file in
+              https://opensource.org/licenses/gpl-2.0.php
+
+-->
+
+<misterromdescription>
+    <about author="jotego,Andrea Bogazzi" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://jotego/jtcores"/>
+    <rotation>horizontal</rotation>
+    <name>Superman (US)</name>
+    <setname>supermanu</setname>
+    <mameversion>0282</mameversion>
+    <year>1988</year>
+    <manufacturer>Taito Corporation</manufacturer>
+    <players>2</players>
+    <rbf>jttaitox</rbf>
+    <joystick>8</joystick>
+    <region>World</region>
+    <rom index="0" zip="supermanu.zip|superman.zip|cchip.zip" md5="None" asm_md5="b000c268db7c6cc818821187e3658e8f">
+        <!-- 
+  0[0]: cchip      Taito P0-039A (C-chip)
+  0[1]: ym2151     Taito P0-051A (PC060HA + YM2151) -->
+        <part>
+            01 00 00 00 00 00 00 00
+            00 00 00 00 00 00 00 00
+        </part>
+        <!-- maincpu - starts at 0x0 - length 0x90000 (20 bits) -->
+        <interleave output="16">
+            <part name="b61_07.a5" crc="fddb9953" map="01"/>
+            <part name="b61_09.a10" crc="640f1d58" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="b61_12.a3" crc="064d3bfe" map="01"/>
+            <part name="b61_08.a8" crc="79fc028e" map="10"/>
+        </interleave>
+        <part repeat="0x10000"> FF</part>
+        <!-- JTFRAME_BA1_START -->
+        <!-- audiocpu - starts at 0x90000 - length 0x10000 (16 bits) -->
+        <part name="b61_10.d18" crc="6efe79e8"/>
+        <!-- PCM_START -->
+        <!-- adpcma - starts at 0xA0000 - length 0x160000 (21 bits) -->
+        <part name="b61-01.e18" crc="3cf99786"/>
+        <part repeat="0xE0000"> FF</part>
+        <!-- JTFRAME_BA2_START -->
+        <!-- gfx1 - starts at 0x200000 - length 0x200000 (21 bits) -->
+        <interleave output="16">
+            <part name="b61-16.j1" crc="3622ed2f" map="01"/>
+            <part name="b61-14.f1" crc="89368c3e" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="b61-17.k1" crc="c34f27e0" map="01"/>
+            <part name="b61-15.h1" crc="910cc4f9" map="10"/>
+        </interleave>
+        <!-- JTFRAME_BA3_START -->
+        <!-- adpcmb - starts at 0x400000 - length 0x80000 (19 bits) -->
+        <part repeat="0x80000"> FF</part>
+        <!-- JTFRAME_PROM_START -->
+        <!-- CCHIP_START -->
+        <!-- cchip_bios - starts at 0x480000 - length 0x1000 (12 bits) -->
+        <part name="cchip_upd78c11.bin" crc="43021521" length="0x1000"/>
+        <!-- cchip_eprom - starts at 0x481000 - length 0x2000 (13 bits) -->
+        <part name="b61_11.m11" crc="3bc5d44b" length="0x2000"/>
+        <!-- Total 0x483000 bytes - 4620 kBytes -->
+    </rom>
+    <rom index="17" zip="jtbeta.zip" md5="None" asm_md5="5a2b1e5d0672c729eee562b43e70cc7f">
+        <part name="beta.bin" crc="8b6976d8"/>
+    </rom>
+    <nvram index="2" size="21504"/>
+    <rom index="1">
+        <part>00 80</part>
+    </rom>
+    <switches page_id="1" page_name="Switches" base="16" default="ff,ff">
+        <DSWA/>
+        <dip name="Flip Screen" bits="1" ids="On,Off"/>
+        <dip name="Service Mode" bits="2" ids="On,Off"/>
+        <dip name="Demo Sounds" bits="3" ids="Off,On"/>
+        <dip name="Coinage" bits="4,5" ids="4/1,3/1,2/1,1/1"/>
+        <dip name="Continue" bits="6,7" ids="3/1,2/1,1/1,Same as Start"/>
+        <DSWB/>
+        <dip name="Difficulty" bits="8,9" ids="Hardest,Hard,Easy,Medium"/>
+        <dip name="Lives" bits="12,13" ids="5,4,2,3"/>
+    </switches>
+    <buttons names="Punch,Kick,-,Start,Coin,Core credits" default="A,B,Start,Select,-" count="2"/>
+</misterromdescription>

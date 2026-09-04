@@ -122,6 +122,7 @@
         <dip name="Flip Screen" bits="16" ids="On,Off"/>
         <dip name="Upright Controls" bits="17" ids="Dual,Single"/>
         <dip name="Service Mode" bits="18" ids="On,Off"/>
+        <dip name="Turbo" ids="On,Off" bits="20"/>
     </switches>
     <buttons names="Shoot,Power-Up,Missile,Start,Coin,Core credits" default="A,B,X,Start,Select,-" count="3"/>
 </misterromdescription>

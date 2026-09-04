@@ -1,0 +1,101 @@
+<!--          FPGA arcade hardware by Jotego
+
+              This core is available for hardware compatible with MiST and MiSTer
+              Other FPGA systems may be supported by the time you read this.
+              This work is not mantained by the MiSTer project. Please contact the
+              core author for issues and updates.
+
+              (c) Jose Tejada, 2026. Please support this research
+              Patreon: https://patreon.com/jotego
+
+              The author does not endorse or participate in illegal distribution
+              of copyrighted material. This work can be used with compatible
+              software. This software can be homebrew projects or legally
+              obtained memory dumps of compatible games.
+
+              This file license is GNU GPLv2.
+              You can read the whole license file in
+              https://opensource.org/licenses/gpl-2.0.php
+
+-->
+
+<misterromdescription>
+    <about author="jotego,Andrea Bogazzi" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://jotego/jtcores"/>
+    <rotation>horizontal</rotation>
+    <name>Gigandes (earlier)</name>
+    <setname>gigandesa</setname>
+    <mameversion>0282</mameversion>
+    <year>1989</year>
+    <manufacturer>East Technology</manufacturer>
+    <players>2</players>
+    <rbf>jttaitox</rbf>
+    <joystick>8</joystick>
+    <region>World</region>
+    <rom index="0" zip="gigandesa.zip|gigandes.zip|cchip.zip" md5="None" asm_md5="be2751848ea481b7952342122251c46a">
+        <!-- 
+  0[0]: cchip      Taito P0-039A (C-chip)
+  0[1]: ym2151     Taito P0-051A (PC060HA + YM2151) -->
+        <part>
+            00 00 00 00 00 00 00 00
+            00 00 00 00 00 00 00 00
+        </part>
+        <!-- maincpu - starts at 0x0 - length 0x90000 (20 bits) -->
+        <interleave output="16">
+            <part name="east-3.5a" crc="9cef82af" map="01"/>
+            <part name="east-1.10a" crc="290c50e0" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="east_4.3a" crc="a647310a" map="01"/>
+            <part name="east_2.8a" crc="dd94b4d0" map="10"/>
+        </interleave>
+        <part repeat="0x10000"> FF</part>
+        <!-- JTFRAME_BA1_START -->
+        <!-- audiocpu - starts at 0x90000 - length 0x10000 (16 bits) -->
+        <part name="east_5.17d" crc="b24ab5f4"/>
+        <!-- PCM_START -->
+        <!-- adpcma - starts at 0xA0000 - length 0x160000 (21 bits) -->
+        <part name="east-10.16e" crc="ca0ac419"/>
+        <part repeat="0xE0000"> FF</part>
+        <!-- JTFRAME_BA2_START -->
+        <!-- gfx1 - starts at 0x200000 - length 0x200000 (21 bits) -->
+        <interleave output="16">
+            <part name="east_9.3j" crc="5c5e6898" map="01"/>
+            <part name="east_8.3f" crc="75eece28" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="east_6.3k" crc="52db30e9" map="01"/>
+            <part name="east_7.3h" crc="b179a76a" map="10"/>
+        </interleave>
+        <!-- JTFRAME_BA3_START -->
+        <!-- adpcmb - starts at 0x400000 - length 0x80000 (19 bits) -->
+        <part name="east-11.16f" crc="92111f96"/>
+        <!-- CCHIP_START -->
+        <!-- JTFRAME_PROM_START -->
+        <!-- cchip_bios - starts at 0x480000 -->
+        <!-- cchip_eprom - starts at 0x480000 -->
+        <!-- Total 0x480000 bytes - 4608 kBytes -->
+    </rom>
+    <rom index="17" zip="jtbeta.zip" md5="None" asm_md5="5a2b1e5d0672c729eee562b43e70cc7f">
+        <part name="beta.bin" crc="8b6976d8"/>
+    </rom>
+    <nvram index="2" size="21504"/>
+    <rom index="1">
+        <part>00 80</part>
+    </rom>
+    <switches page_id="1" page_name="Switches" base="16" default="df,98">
+        <DSWA/>
+        <dip name="Coin A" bits="0,1" ids="2/3,2/1,1/2,1/1"/>
+        <dip name="Coin B" bits="2,3" ids="2/3,2/1,1/2,1/1"/>
+        <dip name="Difficulty" bits="5,6" ids="Hardest,Hard,Medium,Easy"/>
+        <dip name="Debug Mode" bits="7" ids="On,Off"/>
+        <DSWB/>
+        <dip name="Demo Sounds" bits="8" ids="On,Off"/>
+        <dip name="Flip Screen" bits="9" ids="Off,On"/>
+        <dip name="Allow Continue" bits="10" ids="Yes,No"/>
+        <dip name="Lives" bits="11,12" ids="6,5,4,3"/>
+        <dip name="Controls" bits="13" ids="Dual,Single"/>
+        <dip name="Language" bits="14" ids="English,Japanese"/>
+        <dip name="Service Mode" bits="15" ids="On,Off"/>
+    </switches>
+    <buttons names="Shot,Bomb,-,Start,Coin,Core credits" default="A,B,Start,Select,-" count="2"/>
+</misterromdescription>

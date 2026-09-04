@@ -73,7 +73,7 @@
     </rom>
     <!-- Dial controller reversed. -->
     <rom index="1">
-        <part>18 80</part>
+        <part>00 80 03</part>
     </rom>
     <switches page_id="1" page_name="Switches" base="16" default="be,fb,ff,ff">
         <DSWA/>

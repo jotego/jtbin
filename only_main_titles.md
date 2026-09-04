@@ -104,10 +104,11 @@
 | cps2    | Vampire Savior: The Lord of Vampire (Europe 970519)                          | vsav      |
 | cps2    | X-Men Vs. Street Fighter (Europe 961004)                                     | xmvsf     |
 | cps2    | X-Men: Children of the Atom (Europe 950331)                                  | xmcota    |
+| cps3    | JoJo no Kimyou na Bouken: Mirai e no Isan (Japan 991015, NO CD)              | jojoban   |
 | cps3    | JoJo's Venture (Asia 990128, NO CD)                                          | jojon     |
 | cps3    | Red Earth (Asia 961121, NO CD)                                               | redearthn |
 | cps3    | Street Fighter III 2nd Impact: Giant Attack (Asia 970930, NO CD)             | sfiii2n   |
-| cps3    | Street Fighter III 3rd Strike: Fight for the Future (Japan 990512, NO CD)    | sfiii3nr1 |
+| cps3    | Street Fighter III 3rd Strike: Fight for the Future (Japan 990608, NO CD)    | sfiii3n   |
 | cps3    | Street Fighter III: New Generation (Asia 970204, NO CD, BIOS set 1)          | sfiiin    |
 | dd      | Double Dragon (World set 1)                                                  | ddragon   |
 | dd2     | Double Dragon II: The Revenge (World)                                        | ddragon2  |
@@ -256,6 +257,11 @@
 | simson  | Vendetta (World, 4 Players, ver. T)                                          | vendetta  |
 | slyspy  | Boulder Dash - Boulder Dash Part 2 (World)                                   | bouldash  |
 | slyspy  | Secret Agent (World, revision 3)                                             | secretag  |
+| taitox  | Balloon Brothers                                                             | ballbros  |
+| taitox  | Gigandes                                                                     | gigandes  |
+| taitox  | Last Striker - Kyuukyoku no Striker                                          | kyustrkr  |
+| taitox  | Superman (World)                                                             | superman  |
+| taitox  | Twin Hawk (World)                                                            | twinhawk  |
 | thundr  | Genpei ToumaDen                                                              | genpeitd  |
 | thundr  | Hopping Mappy                                                                | hopmappy  |
 | thundr  | Metro-Cross (set 1)                                                          | metrocrs  |
@@ -284,4 +290,4 @@
 | xmen    | X-Men (4 Players ver EBA)                                                    | xmen      |
 | yiear   | Yie Ar Kung-Fu (version I)                                                   | yiear     |
 
-80 cores, supporting 283 games
+81 cores, supporting 289 games

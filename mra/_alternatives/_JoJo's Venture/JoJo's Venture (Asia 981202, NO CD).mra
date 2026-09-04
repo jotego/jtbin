@@ -123,5 +123,8 @@
     <rom index="1">
         <part>00 80</part>
     </rom>
+    <switches page_id="1" page_name="Switches" base="16" default="ff,ff">
+        <dip name="BIOS region" ids="Japan,Asia,Europe,USA,Hispanic,Brazil,Oceania,Original" bits="0,2"/>
+    </switches>
     <buttons names="Light,Middle,Heavy,Stand On,-,-,Start,Coin,Core credits" default="A,B,X,Y,Start,Select,-" count="4"/>
 </misterromdescription>

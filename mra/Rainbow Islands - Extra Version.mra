@@ -87,8 +87,9 @@
         <part name="beta.bin" crc="8b6976d8"/>
     </rom>
     <nvram index="2" size="77857"/>
+    <!-- 8-line black frame on top/bottom. -->
     <rom index="1">
-        <part>00 80</part>
+        <part>08 80</part>
     </rom>
     <switches page_id="1" page_name="Switches" base="16" default="fe,bf">
         <DSWA/>

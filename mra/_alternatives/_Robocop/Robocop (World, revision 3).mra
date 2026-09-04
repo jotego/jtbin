@@ -103,8 +103,8 @@
         <part repeat="0x1E00"> FF</part>
         <part name="en_24.a2" crc="b8e2ca98"/>
         <part repeat="0x16000"> FF</part>
-        <!-- PROM_START -->
         <!-- JTFRAME_PROM_START -->
+        <!-- PROM_START -->
         <!-- proms - starts at 0x228000 - length 0x600 (11 bits) -->
         <part name="mb7116e_a-1.12c" crc="86e775f8"/>
         <part name="mb7122e_a-2.17e" crc="a5cda23e"/>

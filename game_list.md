@@ -605,6 +605,11 @@
 | cps2    | X-Men: Children of the Atom (Japan 941222)                                                 | xmcotaj1      |
 | cps2    | X-Men: Children of the Atom (Japan 950105)                                                 | xmcotaj       |
 | cps2    | X-Men: Children of the Atom (USA 950105)                                                   | xmcotau       |
+| cps3    | JoJo no Kimyou na Bouken: Mirai e no Isan (Japan 990913, NO CD)                            | jojobanr2     |
+| cps3    | JoJo no Kimyou na Bouken: Mirai e no Isan (Japan 990927, NO CD)                            | jojobanr1     |
+| cps3    | JoJo no Kimyou na Bouken: Mirai e no Isan (Japan 991015, NO CD)                            | jojoban       |
+| cps3    | JoJo's Bizarre Adventure (Europe 990913, NO CD)                                            | jojobaner2    |
+| cps3    | JoJo's Bizarre Adventure (Europe 990927, NO CD)                                            | jojobaner1    |
 | cps3    | JoJo's Venture (Asia 981202, NO CD)                                                        | jojonr2       |
 | cps3    | JoJo's Venture (Asia 990108, NO CD)                                                        | jojonr1       |
 | cps3    | JoJo's Venture (Asia 990128, NO CD)                                                        | jojon         |
@@ -1112,6 +1117,16 @@
 | slyspy  | Sly Spy (US, revision 2)                                                                   | slyspy2       |
 | slyspy  | Sly Spy (US, revision 3)                                                                   | slyspy3       |
 | slyspy  | Sly Spy (US, revision 4)                                                                   | slyspy        |
+| taitox  | Balloon Brothers                                                                           | ballbros      |
+| taitox  | Daisenpu (Japan)                                                                           | daisenpu      |
+| taitox  | Gigandes                                                                                   | gigandes      |
+| taitox  | Gigandes (earlier)                                                                         | gigandesa     |
+| taitox  | Last Striker - Kyuukyoku no Striker                                                        | kyustrkr      |
+| taitox  | Superman (Japan)                                                                           | supermanj     |
+| taitox  | Superman (US)                                                                              | supermanu     |
+| taitox  | Superman (World)                                                                           | superman      |
+| taitox  | Twin Hawk (US)                                                                             | twinhawku     |
+| taitox  | Twin Hawk (World)                                                                          | twinhawk      |
 | thundr  | Genpei ToumaDen                                                                            | genpeitd      |
 | thundr  | Hopping Mappy                                                                              | hopmappy      |
 | thundr  | Metro-Cross (set 1)                                                                        | metrocrs      |
@@ -1226,4 +1241,4 @@
 | yiear   | Yie Ar Kung-Fu (version G)                                                                 | yiear2        |
 | yiear   | Yie Ar Kung-Fu (version I)                                                                 | yiear         |
 
-81 cores, supporting 1225 games
+82 cores, supporting 1240 games

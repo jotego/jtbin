@@ -31,7 +31,7 @@
     <rbf>jt1943</rbf>
     <joystick>8</joystick>
     <region>World</region>
-    <rom index="0" zip="1943mii.zip" md5="None" asm_md5="320715f0f37e39a6689bafc00a2f3386">
+    <rom index="0" zip="1943mii.zip" md5="None" asm_md5="8d8062d528d64791a1471a460c5a2921">
         <!-- maincpu - starts at 0x0 - length 0x28000 (18 bits) -->
         <part name="01.12d" crc="8ba22485"/>
         <part name="02.13d" crc="659a5455"/>
@@ -53,8 +53,8 @@
         <interleave output="16">
             <part name="23.8k" crc="b6dfdf85" map="12"/>
         </interleave>
-        <!-- SCR1_START -->
         <!-- JTFRAME_BA2_START -->
+        <!-- SCR1_START -->
         <!-- gfx2 - starts at 0x48000 - length 0x40000 (18 bits) -->
         <interleave output="16">
             <part name="bm19.10j" crc="868ababc" map="01"/>
@@ -78,8 +78,8 @@
             <part name="25.14l" crc="f979b2f2" map="01"/>
             <part name="24.14k" crc="a0074c68" map="10"/>
         </interleave>
-        <!-- JTFRAME_BA3_START -->
         <!-- OBJ_START -->
+        <!-- JTFRAME_BA3_START -->
         <!-- gfx4 - starts at 0x98000 - length 0x40000 (18 bits) -->
         <interleave output="16">
             <part name="10.10c" crc="de539920" map="01"/>
@@ -98,7 +98,9 @@
             <part name="09.14a" crc="70d9f9a7" map="10"/>
         </interleave>
         <!-- JTFRAME_PROM_START -->
-        <!-- proms - starts at 0xD8000 - length 0xC00 (12 bits) -->
+        <!-- mcu - starts at 0xD8000 - length 0x1000 (12 bits) -->
+        <part name="bm.7k" crc="cf4781bf"/>
+        <!-- proms - starts at 0xD9000 - length 0xC00 (12 bits) -->
         <part name="10.7l" crc="db53adf0"/>
         <part name="11.12l" crc="6fb2e170"/>
         <part name="bmk1.12a" crc="e001ea33"/>
@@ -111,7 +113,7 @@
         <part name="7.7c" crc="76307f8d"/>
         <part name="8.8c" crc="dad17e2d"/>
         <part name="9.6l" crc="75d5cc90"/>
-        <!-- Total 0xD8C00 bytes - 867 kBytes -->
+        <!-- Total 0xD9C00 bytes - 871 kBytes -->
     </rom>
     <!-- Vertical screen. Orientation reversed. -->
     <rom index="1">

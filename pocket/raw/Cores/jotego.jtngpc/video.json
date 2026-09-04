@@ -35,16 +35,16 @@
 				"mirror": 0
 			},
 			{
-				"width": 144,
-				"height": 152,
+				"width": 160,
+				"height": 136,
 				"aspect_w": 160,
 				"aspect_h": 152,
 				"rotation": 270,
 				"mirror": 0
 			},
 			{
-				"width": 144,
-				"height": 152,
+				"width": 160,
+				"height": 136,
 				"aspect_w": 160,
 				"aspect_h": 152,
 				"rotation": 90,
@@ -59,8 +59,8 @@
 				"mirror": 0
 			},
 			{
-				"width": 128,
-				"height": 152,
+				"width": 160,
+				"height": 120,
 				"aspect_w": 160,
 				"aspect_h": 152,
 				"rotation": 270,

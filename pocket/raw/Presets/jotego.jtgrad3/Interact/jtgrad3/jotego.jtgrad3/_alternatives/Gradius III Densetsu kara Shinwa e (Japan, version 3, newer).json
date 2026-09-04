@@ -351,6 +351,18 @@
 				"mask": "0xFFFBFFFF"
 			},
 			{
+				"name": "Turbo",
+				"id": 11,
+				"type": "check",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 1,
+				"value": 0,
+				"value_off": 1048576,
+				"mask": "0xFFEFFFFF"
+			},
+			{
 				"name": "Default",
 				"id": 1015,
 				"type": "number_u32",

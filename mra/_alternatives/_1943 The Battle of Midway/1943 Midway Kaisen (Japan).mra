@@ -31,7 +31,7 @@
     <rbf>jt1943</rbf>
     <joystick>8</joystick>
     <region>World</region>
-    <rom index="0" zip="1943ja.zip|1943.zip" md5="None" asm_md5="939497c69efdd406705fb11b9a81f4cf">
+    <rom index="0" zip="1943ja.zip|1943.zip" md5="None" asm_md5="14962303b69181934b38eefcaf4bc889">
         <!-- maincpu - starts at 0x0 - length 0x28000 (18 bits) -->
         <part name="bm01.12d" crc="232df705"/>
         <part name="bm02.13d" crc="af971575"/>
@@ -44,8 +44,8 @@
         <interleave output="16">
             <part name="bm04.5h" crc="46cb9d3d" map="12"/>
         </interleave>
-        <!-- JTFRAME_BA1_START -->
         <!-- MAP1_START -->
+        <!-- JTFRAME_BA1_START -->
         <!-- tilerom - starts at 0x38000 - length 0x10000 (16 bits) -->
         <interleave output="16">
             <part name="bm14.5f" crc="4d3c6401" map="12"/>
@@ -78,8 +78,8 @@
             <part name="bm25.14l" crc="092cf9c1" map="01"/>
             <part name="bm24.14k" crc="11134036" map="10"/>
         </interleave>
-        <!-- JTFRAME_BA3_START -->
         <!-- OBJ_START -->
+        <!-- JTFRAME_BA3_START -->
         <!-- gfx4 - starts at 0x98000 - length 0x40000 (18 bits) -->
         <interleave output="16">
             <part name="bm10.10c" crc="8438a44a" map="01"/>
@@ -98,7 +98,9 @@
             <part name="bm09.14a" crc="92408400" map="10"/>
         </interleave>
         <!-- JTFRAME_PROM_START -->
-        <!-- proms - starts at 0xD8000 - length 0xC00 (12 bits) -->
+        <!-- mcu - starts at 0xD8000 - length 0x1000 (12 bits) -->
+        <part name="bm.7k" crc="cf4781bf"/>
+        <!-- proms - starts at 0xD9000 - length 0xC00 (12 bits) -->
         <part name="bm10.7l" crc="33c2491c"/>
         <part name="bm11.12l" crc="405aae37"/>
         <part name="bm1.12a" crc="74421f18"/>
@@ -111,7 +113,7 @@
         <part name="bm7.7c" crc="b56f30c3"/>
         <part name="bm8.8c" crc="c2010a9e"/>
         <part name="bm9.6l" crc="aeea4af7"/>
-        <!-- Total 0xD8C00 bytes - 867 kBytes -->
+        <!-- Total 0xD9C00 bytes - 871 kBytes -->
     </rom>
     <!-- Vertical screen. Orientation reversed. -->
     <rom index="1">

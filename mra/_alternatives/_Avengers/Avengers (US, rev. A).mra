@@ -61,8 +61,8 @@
             <part name="avu_25.15n" crc="230d9e30" map="01"/>
             <part name="avu_24.13n" crc="a6354024" map="10"/>
         </interleave>
-        <!-- CHAR_START -->
         <!-- JTFRAME_BA3_START -->
+        <!-- CHAR_START -->
         <!-- gfx1 - starts at 0x40000 - length 0x8000 (15 bits) -->
         <interleave output="16">
             <part name="av_03.8k" crc="efb5883e" map="12"/>
@@ -105,10 +105,7 @@
         <!-- Total 0xC9000 bytes - 804 kBytes -->
         <!-- Adding 16 bytes to the patch offset to make up for the MRA header -->
         <patch offset="0xC8B94">02</patch>
-        <patch offset="0xC8491">00</patch>
-        <patch offset="0xC84F0">00</patch>
-        <patch offset="0xC8493">a0</patch>
-        <patch offset="0xC84D3">30</patch>
+        <patch offset="0x1024D">01</patch>
     </rom>
     <!-- Vertical screen. -->
     <rom index="1">
