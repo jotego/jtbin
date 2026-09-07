@@ -1,0 +1,179 @@
+<!--          FPGA arcade hardware by Jotego
+
+              This core is available for hardware compatible with MiST and MiSTer
+              Other FPGA systems may be supported by the time you read this.
+              This work is not mantained by the MiSTer project. Please contact the
+              core author for issues and updates.
+
+              (c) Jose Tejada, 2026. Please support this research
+              Patreon: https://patreon.com/jotego
+
+              The author does not endorse or participate in illegal distribution
+              of copyrighted material. This work can be used with compatible
+              software. This software can be homebrew projects or legally
+              obtained memory dumps of compatible games.
+
+              This file license is GNU GPLv2.
+              You can read the whole license file in
+              https://opensource.org/licenses/gpl-2.0.php
+
+-->
+
+<misterromdescription>
+    <about author="jotego,niknak" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://jotego/jtcores"/>
+    <rotation>horizontal</rotation>
+    <name>Space Harrier (Rev A, 8751 315-5163A)</name>
+    <setname>sharrier</setname>
+    <mameversion>0282</mameversion>
+    <year>1985</year>
+    <manufacturer>Sega</manufacturer>
+    <players>1</players>
+    <rbf>jtharier</rbf>
+    <joystick/>
+    <region>World</region>
+    <rom index="0" zip="sharrier.zip" md5="None" asm_md5="84c7403d2b6e3bbec2e64af60da55c04">
+        <!-- 
+  0[0]: i8751      i8751 MCU
+  0[1]: fd1089     FC1089B
+  0[2]: blank4     IPL2 set at blank
+  1[0]: ym2151     YM2151
+  2[0]: cab1p      1P at bit 6
+  3[0]: hicol      6144 colors
+4[2:0]: adc        ADC channels -->
+        <part>
+            01 00 00 00 02 00 00 00
+        </part>
+        <!-- maincpu - starts at 0x0 - length 0x40000 (18 bits) -->
+        <interleave output="16">
+            <part name="epr-7184a.ic84" crc="e1934a51" map="01"/>
+            <part name="epr-7188a.ic97" crc="45e173c3" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="epr-7185.ic85" crc="ce78045c" map="01"/>
+            <part name="epr-7189.ic98" crc="40b1309f" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="epr-7186.ic86" crc="79b367d7" map="01"/>
+            <part name="epr-7190.ic99" crc="f6391091" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="epr-7187.ic87" crc="70cb72ef" map="01"/>
+            <part name="epr-7191.ic100" crc="6171e9d3" map="10"/>
+        </interleave>
+        <!-- JTFRAME_BA1_START -->
+        <!-- subcpu - starts at 0x40000 - length 0x40000 (18 bits) -->
+        <interleave output="16">
+            <part name="epr-7183.ic67" crc="a6153af8" map="01"/>
+            <part name="epr-7182.ic54" crc="d7c535b6" map="10"/>
+        </interleave>
+        <part repeat="0x30000"> FF</part>
+        <!-- SND_START -->
+        <!-- soundcpu - starts at 0x80000 - length 0x8000 (15 bits) -->
+        <part name="epr-7234.ic73" crc="d6397933"/>
+        <part name="epr-7233.ic72" crc="504e76d9"/>
+        <!-- PCM_START -->
+        <!-- pcm - starts at 0x88000 - length 0x20000 (17 bits) -->
+        <part name="epr-7231.ic5" crc="871c6b14"/>
+        <part name="epr-7232.ic6" crc="4b59340c"/>
+        <part repeat="0x10000"> FF</part>
+        <!-- JTFRAME_BA2_START -->
+        <!-- gfx1 - starts at 0xA8000 - length 0x20000 (17 bits) -->
+        <interleave output="32">
+            <part name="epr-7196.ic31" crc="347fa325" map="0001"/>
+            <part name="epr-7197.ic46" crc="39d98bd1" map="0010"/>
+            <part name="epr-7198.ic60" crc="3da3ea6b" map="0100"/>
+            <part name="epr-7198.ic60" crc="3da3ea6b" map="1000"/>
+        </interleave>
+        <!-- JTFRAME_BA3_START -->
+        <!-- sprites - starts at 0xC8000 - length 0x100000 (20 bits) -->
+        <interleave output="32">
+            <part name="epr-7230.ic36" crc="93e2d264" map="0001"/>
+            <part name="epr-7222.ic28" crc="edbf5fc3" map="0010"/>
+            <part name="epr-7214.ic18" crc="e8c537d8" map="0100"/>
+            <part name="epr-7206.ic8" crc="22844fa4" map="1000"/>
+        </interleave>
+        <interleave output="32">
+            <part name="epr-7229.ic35" crc="cd6e7500" map="0001"/>
+            <part name="epr-7221.ic27" crc="41f25a9c" map="0010"/>
+            <part name="epr-7213.ic17" crc="5bb09a67" map="0100"/>
+            <part name="epr-7205.ic7" crc="dcaa2ebf" map="1000"/>
+        </interleave>
+        <interleave output="32">
+            <part name="epr-7228.ic34" crc="d5e15e66" map="0001"/>
+            <part name="epr-7220.ic26" crc="ac62ae2e" map="0010"/>
+            <part name="epr-7212.ic16" crc="9c782295" map="0100"/>
+            <part name="epr-7204.ic6" crc="3711105c" map="1000"/>
+        </interleave>
+        <interleave output="32">
+            <part name="epr-7227.ic33" crc="60d7c1bb" map="0001"/>
+            <part name="epr-7219.ic25" crc="f6330038" map="0010"/>
+            <part name="epr-7211.ic15" crc="60737b98" map="0100"/>
+            <part name="epr-7203.ic5" crc="70fb5ebb" map="1000"/>
+        </interleave>
+        <interleave output="32">
+            <part name="epr-7226.ic32" crc="6d7b5c97" map="0001"/>
+            <part name="epr-7218.ic24" crc="cebf797c" map="0010"/>
+            <part name="epr-7210.ic14" crc="24596a8b" map="0100"/>
+            <part name="epr-7202.ic4" crc="b537d082" map="1000"/>
+        </interleave>
+        <interleave output="32">
+            <part name="epr-7225.ic31" crc="5e784271" map="0001"/>
+            <part name="epr-7217.ic23" crc="510e5e10" map="0010"/>
+            <part name="epr-7209.ic13" crc="7a2dad15" map="0100"/>
+            <part name="epr-7201.ic3" crc="f5ba4e08" map="1000"/>
+        </interleave>
+        <interleave output="32">
+            <part name="epr-7224.ic30" crc="ec42c9ef" map="0001"/>
+            <part name="epr-7216.ic22" crc="6d4a7d7a" map="0010"/>
+            <part name="epr-7208.ic12" crc="0f732717" map="0100"/>
+            <part name="epr-7200.ic2" crc="fc3bf8f3" map="1000"/>
+        </interleave>
+        <interleave output="32">
+            <part name="epr-7223.ic29" crc="ed51fdc4" map="0001"/>
+            <part name="epr-7215.ic21" crc="dfe75f3d" map="0010"/>
+            <part name="epr-7207.ic11" crc="a2c07741" map="0100"/>
+            <part name="epr-7199.ic1" crc="b191e22f" map="1000"/>
+        </interleave>
+        <!-- ROAD_START -->
+        <!-- segaic16road - starts at 0x1C8000 - length 0x8000 (15 bits) -->
+        <!-- Singleton region. The files are merged with themselves. -->
+        <interleave output="16">
+            <part name="epr-7181.ic2" crc="b4740419" offset="0x0000" map="01" length="0x4000"/>
+            <part name="epr-7181.ic2" crc="b4740419" offset="0x4000" map="10" length="0x4000"/>
+        </interleave>
+        <!-- ZOOM_START -->
+        <!-- sprites:zoom - starts at 0x1D0000 - length 0x2000 (13 bits) -->
+        <part name="epr-6844.ic123" crc="e3ec7bd6"/>
+        <!-- JTFRAME_PROM_START -->
+        <!-- MCU_START -->
+        <!-- mcu - starts at 0x1D2000 - length 0x1000 (12 bits) -->
+        <part name="315-5163a.ic32" crc="203dffeb"/>
+        <!-- MAINKEY_START -->
+        <!-- maincpu:key - starts at 0x1D3000 - length 0x2000 (13 bits) -->
+        <part repeat="0x2000"> FF</part>
+        <!-- Total 0x1D5000 bytes - 1876 kBytes -->
+    </rom>
+    <rom index="17" zip="jtbeta.zip" md5="None" asm_md5="5a2b1e5d0672c729eee562b43e70cc7f">
+        <part name="beta.bin" crc="8b6976d8"/>
+    </rom>
+    <nvram index="2" size="45056"/>
+    <rom index="1">
+        <part>00 A0</part>
+    </rom>
+    <switches page_id="1" page_name="Switches" base="16" default="ff,fc,ff">
+        <COINAGE/>
+        <dip name="Coin A" bits="0,3" ids="1/1,1/1 2/3,1/1 4/5,1/1 5/6,2/1 4/3,2/1 5/3 6/4,2/3,4/1,3/1,2/1,1/6,1/5,1/4,1/3,1/2,1/1"/>
+        <dip name="Coin B" bits="4,7" ids="1/1,1/1 2/3,1/1 4/5,1/1 5/6,2/1 4/3,2/1 5/3 6/4,2/3,4/1,3/1,2/1,1/6,1/5,1/4,1/3,1/2,1/1"/>
+        <DSW/>
+        <dip name="Cabinet" bits="8" ids="Upright,Moving"/>
+        <dip name="Demo Sounds" bits="9" ids="On,Off"/>
+        <dip name="Lives" bits="10,11" ids="5,4,2,3"/>
+        <dip name="Bonus Life" bits="12" ids="7M,5M"/>
+        <dip name="Trial Time" bits="13" ids="On,Off"/>
+        <dip name="Difficulty" bits="14,15" ids="Hardest,Hard,Easy,Medium"/>
+        <dip name="Stick Direction" ids="Normal,Arcade" bits="16"/>
+        <dip name="D-Pad Control" ids="Console,Arcade" bits="17"/>
+        <dip name="V Glyph Fix" ids="On,Off" bits="18"/>
+    </switches>
+    <buttons names="Fire,Fire 2,Fire 3,Start,Coin,Core credits" default="A,B,X,Start,Select,-" count="3"/>
+</misterromdescription>

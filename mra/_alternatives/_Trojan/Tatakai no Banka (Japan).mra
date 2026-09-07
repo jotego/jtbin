@@ -61,8 +61,8 @@
             <part name="tb_25.15n" crc="6e38c6fa" map="01"/>
             <part name="tb_24.13n" crc="14fc6cf2" map="10"/>
         </interleave>
-        <!-- CHAR_START -->
         <!-- JTFRAME_BA3_START -->
+        <!-- CHAR_START -->
         <!-- gfx1 - starts at 0x40000 - length 0x8000 (15 bits) -->
         <interleave output="16">
             <part name="tb_03.8k" crc="581a2b4c" map="12"/>

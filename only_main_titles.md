@@ -133,6 +133,8 @@
 | gng     | Ghosts'n Goblins (World? set 1)                                              | gng       |
 | grad3   | Gradius III (World, version R)                                               | gradius3  |
 | gunsmk  | Gun.Smoke (World, 1985-11-15)                                                | gunsmoke  |
+| harier  | Enduro Racer (Rev A, YM2151, FD1089B 317-0013A)                              | enduror   |
+| harier  | Space Harrier (Rev A, 8751 315-5163A)                                        | sharrier  |
 | karnov  | Atomic Runner Chelnov (World)                                                | chelnov   |
 | karnov  | Karnov (US, rev 6)                                                           | karnov    |
 | karnov  | Wonder Planet (Japan)                                                        | wndrplnt  |
@@ -290,4 +292,4 @@
 | xmen    | X-Men (4 Players ver EBA)                                                    | xmen      |
 | yiear   | Yie Ar Kung-Fu (version I)                                                   | yiear     |
 
-81 cores, supporting 289 games
+82 cores, supporting 291 games

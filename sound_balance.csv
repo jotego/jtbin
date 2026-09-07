@@ -27,6 +27,7 @@ gals,pcm,1.00
 gng,psg0,0.59,psg1,0.59,fm0,0.30,fm1,0.30
 grad3,fm,1.98,pcm,0.58
 gunsmk,psg0,0.59,psg1,0.59,fm0,0.30,fm1,0.30
+harier,fm,0.33,opn,0.33,psg,0.17,pcm,1.00
 karnov,opn,0.70,opl,0.70,psg,1.00
 kchamp,psg0a,0.46,psg0bc,0.78,psg1,0.59,pcm,1.00,dac,0.72
 kicker,ti1,1.00,ti2,1.00

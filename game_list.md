@@ -693,6 +693,12 @@
 | gunsmk  | Gun.Smoke (USA and Canada, 1986-04-08)                                                     | gunsmokeu     |
 | gunsmk  | Gun.Smoke (World, 1985-11-15)                                                              | gunsmoke      |
 | gunsmk  | Gun.Smoke (World, 1985-11-15) (bootleg)                                                    | gunsmokeb     |
+| harier  | Enduro Racer (Rev A, YM2151, FD1089B 317-0013A)                                            | enduror       |
+| harier  | Enduro Racer (Rev A, YM2151, mask ROM sprites, FD1089B 317-0013A)                          | endurora      |
+| harier  | Enduro Racer (YM2151, FD1089B 317-0013A)                                                   | endurorb      |
+| harier  | Enduro Racer (YM2203, FD1089B 317-0013A)                                                   | enduror1      |
+| harier  | Space Harrier (8751 315-5163)                                                              | sharrier1     |
+| harier  | Space Harrier (Rev A, 8751 315-5163A)                                                      | sharrier      |
 | karnov  | Atomic Runner Chelnov (Japan)                                                              | chelnovj      |
 | karnov  | Atomic Runner Chelnov (US)                                                                 | chelnovu      |
 | karnov  | Atomic Runner Chelnov (World)                                                              | chelnov       |
@@ -1241,4 +1247,4 @@
 | yiear   | Yie Ar Kung-Fu (version G)                                                                 | yiear2        |
 | yiear   | Yie Ar Kung-Fu (version I)                                                                 | yiear         |
 
-82 cores, supporting 1240 games
+83 cores, supporting 1246 games

@@ -328,6 +328,10 @@
 | ecofghtrh    | jtcps2     | 661ad32e45a124e5e81f73f15095d164 | ff,ff        |
 | ecofghtru    | jtcps2     | eaf77e47cca677daa96d6d5cef43273c | ff,ff        |
 | ecofghtru1   | jtcps2     | bfff557ed77fbe7c767b5254bae2cd79 | ff,ff        |
+| enduror      | jtharier   | 2910a1a558f055d49bd8fff60bc302e1 | ff,7e,ff     |
+| enduror1     | jtharier   | 4f10817d4f2ae30e358a2024dfa573e0 | ff,7e,ff     |
+| endurora     | jtharier   | 2910a1a558f055d49bd8fff60bc302e1 | ff,7e,ff     |
+| endurorb     | jtharier   | d9597e4f627cba450e25888c1b255a15 | ff,7e,ff     |
 | eswat        | jts16b     | 31a8d31e285d861d7114170526c1cdb3 | ff,fd        |
 | eswatj       | jts16b     | 486798c31678dea81c2c318db62aaad6 | ff,fd        |
 | eswatj1      | jts16b     | 92797fa5af53e07f842a3ef411f891fa | ff,fd        |
@@ -903,6 +907,8 @@
 | shangon3d    | jtshanon   | 49f4eb68bede0b67f071290135e0ac15 | ff,fe        |
 | shangonle    | jtshanon   | 44ac751a829223f70ada912c66ec1107 | ff,fe        |
 | shaolins     | jtkicker   | d626937d5de63b3c9e13bfa9b0b4c8ea | ff,5a,ff     |
+| sharrier     | jtharier   | 84c7403d2b6e3bbec2e64af60da55c04 | ff,fc,ff     |
+| sharrier1    | jtharier   | 98bd8b3781d1f0b3827640e96f9be4e9 | ff,fc,ff     |
 | shdancer     | jts18      | 758e6804eaf46d5dedac5177acd4be39 | ff,fd        |
 | shdancer1    | jts18      | 551f6ee63d1c276be8d42fe61a6f4741 | ff,fd        |
 | shdancerj    | jts18      | 84e5693038bf5b9a164328798bc0aa18 | ff,fd        |
