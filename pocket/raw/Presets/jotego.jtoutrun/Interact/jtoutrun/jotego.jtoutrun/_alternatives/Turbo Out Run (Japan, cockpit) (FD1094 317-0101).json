@@ -277,6 +277,39 @@
 				]
 			},
 			{
+				"name": "Gear Button",
+				"id": 7,
+				"type": "list",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 1,
+				"value": 0,
+				"mask": "0xFFFEFFFF",
+				"options": [
+					{
+						"name": "Toggle",
+						"value": "0x0"
+					},
+					{
+						"name": "Hold for Low",
+						"value": "0x10000"
+					}
+				]
+			},
+			{
+				"name": "Gear Indicator",
+				"id": 8,
+				"type": "check",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 1,
+				"value": 0,
+				"value_off": 131072,
+				"mask": "0xFFFDFFFF"
+			},
+			{
 				"name": "Default",
 				"id": 1015,
 				"type": "number_u32",
@@ -284,7 +317,7 @@
 				"persist": false,
 				"writeonly": true,
 				"address": "0xfa000000",
-				"defaultval": 65528,
+				"defaultval": 16775423,
 				"value": 0
 			}
 		],

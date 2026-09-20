@@ -8,17 +8,17 @@
 					{
 						"id": 0,
 						"name": "Shot (Up)",
-						"key": "pad_btn_a"
+						"key": "pad_btn_x"
 					},
 					{
 						"id": 1,
 						"name": "Shot (Right)",
-						"key": "pad_btn_b"
+						"key": "pad_btn_a"
 					},
 					{
 						"id": 2,
 						"name": "Shot (Behind)",
-						"key": "pad_btn_x"
+						"key": "pad_btn_b"
 					},
 					{
 						"id": 3,

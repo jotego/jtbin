@@ -13,7 +13,7 @@
 					{
 						"id": 1,
 						"name": "left(2)",
-						"key": "pad_btn_b"
+						"key": "pad_btn_y"
 					},
 					{
 						"id": 2,
@@ -23,7 +23,7 @@
 					{
 						"id": 3,
 						"name": "bottom(2)",
-						"key": "pad_btn_y"
+						"key": "pad_btn_b"
 					}
 				]
 			}

@@ -30,14 +30,14 @@
   Free-BRAM: 13
 - core: jtbubl
   target: mist
-  sta: 3.494ns
+  sta: 3.280ns
   LE: 87%
   BRAM: 77%
   Free-BRAM: 15
 - core: jtcastle
   target: mist
-  sta: 3.122ns
-  LE: 76%
+  sta: 2.933ns
+  LE: 77%
   BRAM: 73%
   Free-BRAM: 18
 - core: jtcircus
@@ -54,7 +54,7 @@
   Free-BRAM: 31
 - core: jtcomsc
   target: mist
-  sta: 2.778ns
+  sta: 3.139ns
   LE: 76%
   BRAM: 73%
   Free-BRAM: 18
@@ -66,26 +66,26 @@
   Free-BRAM: 22
 - core: jtcop
   target: mist
-  sta: 3.116ns
+  sta: 3.835ns
   LE: 90%
   BRAM: 73%
   Free-BRAM: 18
 - core: jtcps1
   target: mist
-  sta: -0.587ns
-  LE: 91%
+  sta: -0.417ns
+  LE: 92%
   BRAM: 73%
   Free-BRAM: 18
 - core: jtcps15
   target: mist
-  sta: -0.024ns
-  LE: 74%
+  sta: -0.448ns
+  LE: 73%
   BRAM: 91%
   Free-BRAM: 6
 - core: jtcps2
   target: mist
-  sta: -0.814ns
-  LE: 78%
+  sta: -0.172ns
+  LE: 77%
   BRAM: 100%
   Free-BRAM: 0
 - core: jtdd
@@ -96,7 +96,7 @@
   Free-BRAM: 30
 - core: jtdd2
   target: mist
-  sta: 1.824ns
+  sta: 1.510ns
   LE: 80%
   BRAM: 56%
   Free-BRAM: 29
@@ -120,37 +120,37 @@
   Free-BRAM: 28
 - core: jtflstory
   target: mist
-  sta: 3.361ns
+  sta: 3.107ns
   LE: 86%
   BRAM: 50%
   Free-BRAM: 33
 - core: jtgae1
   target: mist
-  sta: -2.396ns
+  sta: -2.088ns
   LE: 72%
   BRAM: 79%
   Free-BRAM: 14
 - core: jtgng
   target: mist
-  sta: 3.006ns
+  sta: 2.651ns
   LE: 62%
   BRAM: 50%
   Free-BRAM: 33
 - core: jtgunsmk
   target: mist
-  sta: 3.277ns
+  sta: 3.400ns
   LE: 61%
   BRAM: 59%
   Free-BRAM: 27
 - core: jtkarnov
   target: mist
-  sta: 0.306ns
+  sta: 2.696ns
   LE: 94%
   BRAM: 68%
   Free-BRAM: 21
 - core: jtkchamp
   target: mist
-  sta: 3.642ns
+  sta: 3.651ns
   LE: 44%
   BRAM: 42%
   Free-BRAM: 38
@@ -162,7 +162,7 @@
   Free-BRAM: 45
 - core: jtkiwi
   target: mist
-  sta: 2.737ns
+  sta: 3.376ns
   LE: 56%
   BRAM: 100%
   Free-BRAM: 0
@@ -180,7 +180,7 @@
   Free-BRAM: 36
 - core: jtmidres
   target: mist
-  sta: 3.602ns
+  sta: 3.990ns
   LE: 81%
   BRAM: 65%
   Free-BRAM: 23
@@ -198,13 +198,13 @@
   Free-BRAM: 17
 - core: jtninja
   target: mist
-  sta: 3.538ns
-  LE: 93%
+  sta: 2.834ns
+  LE: 92%
   BRAM: 56%
   Free-BRAM: 29
 - core: jtpaclan
   target: mist
-  sta: 2.141ns
+  sta: 2.623ns
   LE: 46%
   BRAM: 65%
   Free-BRAM: 23
@@ -216,14 +216,14 @@
   Free-BRAM: 28
 - core: jtparoda
   target: mist
-  sta: 1.631ns
+  sta: 1.697ns
   LE: 82%
   BRAM: 89%
   Free-BRAM: 7
 - core: jtpinpon
   target: mist
-  sta: 4.575ns
-  LE: 27%
+  sta: 4.715ns
+  LE: 28%
   BRAM: 29%
   Free-BRAM: 47
 - core: jtpktgal
@@ -234,7 +234,7 @@
   Free-BRAM: 42
 - core: jtrastan
   target: mist
-  sta: 2.742ns
+  sta: 2.991ns
   LE: 94%
   BRAM: 100%
   Free-BRAM: 0
@@ -246,7 +246,7 @@
   Free-BRAM: 40
 - core: jtroc
   target: mist
-  sta: 4.042ns
+  sta: 3.412ns
   LE: 47%
   BRAM: 41%
   Free-BRAM: 39
@@ -276,38 +276,38 @@
   Free-BRAM: 33
 - core: jtsf
   target: mist
-  sta: 1.153ns
+  sta: 0.286ns
   LE: 99%
   BRAM: 70%
   Free-BRAM: 20
 - core: jtsimson
   target: mist
-  sta: 1.733ns
+  sta: 1.124ns
   LE: 83%
   BRAM: 89%
   Free-BRAM: 7
 - core: jtslyspy
   target: mist
-  sta: 3.194ns
-  LE: 81%
+  sta: 3.045ns
+  LE: 80%
   BRAM: 56%
   Free-BRAM: 29
 - core: jtthundr
   target: mist
-  sta: 1.137ns
-  LE: 91%
+  sta: 1.091ns
+  LE: 92%
   BRAM: 91%
   Free-BRAM: 6
 - core: jttmnt
   target: mist
-  sta: 1.892ns
+  sta: 0.735ns
   LE: 95%
   BRAM: 82%
   Free-BRAM: 12
 - core: jttora
   target: mist
-  sta: 3.220ns
-  LE: 96%
+  sta: 2.794ns
+  LE: 95%
   BRAM: 85%
   Free-BRAM: 10
 - core: jttrack
@@ -318,25 +318,25 @@
   Free-BRAM: 41
 - core: jttrojan
   target: mist
-  sta: 2.955ns
+  sta: 3.243ns
   LE: 90%
   BRAM: 65%
   Free-BRAM: 23
 - core: jtvigil
   target: mist
-  sta: 0.041ns
+  sta: 0.291ns
   LE: 63%
   BRAM: 48%
   Free-BRAM: 34
 - core: jtwc
   target: mist
-  sta: 2.652ns
+  sta: 3.020ns
   LE: 59%
   BRAM: 50%
   Free-BRAM: 33
 - core: jtwwfss
   target: mist
-  sta: 1.949ns
+  sta: 2.103ns
   LE: 80%
   BRAM: 52%
   Free-BRAM: 32
@@ -354,7 +354,7 @@
   Free-BRAM: 445
 - core: jt1943
   target: mister
-  sta: 0.703ns
+  sta: 0.579ns
   LE: 37%
   BRAM: 32%
   Free-BRAM: 377
@@ -372,13 +372,13 @@
   Free-BRAM: 416
 - core: jtbiocom
   target: mister
-  sta: 0.399ns
-  LE: 39%
+  sta: 0.647ns
+  LE: 40%
   BRAM: 28%
   Free-BRAM: 399
 - core: jtblkout
   target: mister
-  sta: 0.564ns
+  sta: 0.551ns
   LE: 39%
   BRAM: 49%
   Free-BRAM: 280
@@ -390,22 +390,22 @@
   Free-BRAM: 404
 - core: jtbubl
   target: mister
-  sta: 0.297ns
+  sta: 0.549ns
   LE: 39%
   BRAM: 26%
   Free-BRAM: 408
 - core: jtcal50
   target: mister
-  sta: 0.458ns
+  sta: 0.395ns
   LE: 40%
   BRAM: 48%
   Free-BRAM: 286
 - core: jtcastle
   target: mister
-  sta: 0.278ns
+  sta: 0.570ns
   LE: 35%
-  BRAM: 23%
-  Free-BRAM: 425
+  BRAM: 26%
+  Free-BRAM: 410
 - core: jtcircus
   target: mister
   sta: 0.588ns
@@ -426,40 +426,40 @@
   Free-BRAM: 425
 - core: jtcontra
   target: mister
-  sta: 0.350ns
+  sta: 0.239ns
   LE: 37%
-  BRAM: 20%
-  Free-BRAM: 442
+  BRAM: 23%
+  Free-BRAM: 428
 - core: jtcop
   target: mister
-  sta: 0.618ns
+  sta: 0.422ns
   LE: 39%
   BRAM: 26%
   Free-BRAM: 409
 - core: jtcps1
   target: mister
-  sta: 0.247ns
+  sta: 0.454ns
   LE: 40%
   BRAM: 24%
   Free-BRAM: 418
 - core: jtcps15
   target: mister
-  sta: 0.564ns
-  LE: 39%
+  sta: 0.301ns
+  LE: 38%
   BRAM: 27%
   Free-BRAM: 402
 - core: jtcps2
   target: mister
-  sta: 0.416ns
-  LE: 39%
+  sta: 0.546ns
+  LE: 40%
   BRAM: 29%
   Free-BRAM: 390
 - core: jtcps3
   target: mister
-  sta: -0.132ns
+  sta: -0.252ns
   LE: 51%
-  BRAM: 94%
-  Free-BRAM: 32
+  BRAM: 97%
+  Free-BRAM: 18
 - core: jtdd
   target: mister
   sta: 0.452ns
@@ -468,7 +468,7 @@
   Free-BRAM: 433
 - core: jtdd2
   target: mister
-  sta: 0.494ns
+  sta: 0.497ns
   LE: 38%
   BRAM: 22%
   Free-BRAM: 433
@@ -486,37 +486,37 @@
   Free-BRAM: 437
 - core: jtflane
   target: mister
-  sta: 0.663ns
+  sta: 0.726ns
   LE: 33%
   BRAM: 21%
   Free-BRAM: 437
 - core: jtflstory
   target: mister
-  sta: 0.253ns
+  sta: 0.235ns
   LE: 39%
   BRAM: 20%
   Free-BRAM: 441
 - core: jtfround
   target: mister
-  sta: 0.385ns
+  sta: 0.622ns
   LE: 42%
   BRAM: 28%
   Free-BRAM: 400
 - core: jtgae1
   target: mister
-  sta: 0.401ns
+  sta: 0.435ns
   LE: 40%
   BRAM: 26%
   Free-BRAM: 410
 - core: jtgaiden
   target: mister
-  sta: 0.310ns
+  sta: 0.534ns
   LE: 40%
   BRAM: 36%
   Free-BRAM: 352
 - core: jtgals
   target: mister
-  sta: 0.380ns
+  sta: 0.436ns
   LE: 36%
   BRAM: 91%
   Free-BRAM: 50
@@ -528,7 +528,7 @@
   Free-BRAM: 432
 - core: jtgrad3
   target: mister
-  sta: 0.303ns
+  sta: 0.397ns
   LE: 47%
   BRAM: 34%
   Free-BRAM: 364
@@ -540,19 +540,19 @@
   Free-BRAM: 426
 - core: jtharier
   target: mister
-  sta: 0.383ns
+  sta: 0.554ns
   LE: 55%
   BRAM: 43%
   Free-BRAM: 317
 - core: jtkarnov
   target: mister
-  sta: 0.598ns
+  sta: 0.333ns
   LE: 42%
   BRAM: 25%
   Free-BRAM: 414
 - core: jtkchamp
   target: mister
-  sta: 0.337ns
+  sta: 0.484ns
   LE: 30%
   BRAM: 19%
   Free-BRAM: 449
@@ -564,7 +564,7 @@
   Free-BRAM: 456
 - core: jtkiwi
   target: mister
-  sta: 0.501ns
+  sta: 0.562ns
   LE: 37%
   BRAM: 29%
   Free-BRAM: 392
@@ -582,7 +582,7 @@
   Free-BRAM: 437
 - core: jtmidres
   target: mister
-  sta: 0.451ns
+  sta: 0.497ns
   LE: 37%
   BRAM: 24%
   Free-BRAM: 419
@@ -594,25 +594,25 @@
   Free-BRAM: 453
 - core: jtmx5k
   target: mister
-  sta: 0.349ns
-  LE: 35%
-  BRAM: 21%
-  Free-BRAM: 435
+  sta: 0.372ns
+  LE: 36%
+  BRAM: 24%
+  Free-BRAM: 421
 - core: jtninja
   target: mister
-  sta: 0.499ns
+  sta: 0.493ns
   LE: 45%
   BRAM: 25%
   Free-BRAM: 412
 - core: jtoutrun
   target: mister
-  sta: 0.699ns
+  sta: 0.446ns
   LE: 47%
   BRAM: 47%
   Free-BRAM: 295
 - core: jtpaclan
   target: mister
-  sta: 0.678ns
+  sta: 0.454ns
   LE: 30%
   BRAM: 22%
   Free-BRAM: 431
@@ -624,13 +624,13 @@
   Free-BRAM: 433
 - core: jtparoda
   target: mister
-  sta: 0.320ns
+  sta: 0.219ns
   LE: 36%
   BRAM: 27%
   Free-BRAM: 404
 - core: jtpinpon
   target: mister
-  sta: 0.384ns
+  sta: 0.435ns
   LE: 26%
   BRAM: 17%
   Free-BRAM: 458
@@ -642,19 +642,19 @@
   Free-BRAM: 436
 - core: jtprmr
   target: mister
-  sta: 0.592ns
+  sta: 0.441ns
   LE: 38%
   BRAM: 38%
   Free-BRAM: 345
 - core: jtrastan
   target: mister
-  sta: 0.595ns
+  sta: 0.441ns
   LE: 42%
   BRAM: 38%
   Free-BRAM: 341
 - core: jtriders
   target: mister
-  sta: 0.595ns
+  sta: 0.439ns
   LE: 43%
   BRAM: 84%
   Free-BRAM: 91
@@ -666,7 +666,7 @@
   Free-BRAM: 451
 - core: jtroc
   target: mister
-  sta: 0.171ns
+  sta: 0.406ns
   LE: 31%
   BRAM: 19%
   Free-BRAM: 450
@@ -678,25 +678,25 @@
   Free-BRAM: 419
 - core: jtrungun
   target: mister
-  sta: 0.523ns
+  sta: 0.634ns
   LE: 40%
   BRAM: 78%
   Free-BRAM: 119
 - core: jts16
   target: mister
-  sta: 0.244ns
+  sta: 0.662ns
   LE: 45%
-  BRAM: 26%
-  Free-BRAM: 409
+  BRAM: 29%
+  Free-BRAM: 394
 - core: jts16b
   target: mister
-  sta: 0.506ns
+  sta: 0.627ns
   LE: 46%
-  BRAM: 26%
-  Free-BRAM: 411
+  BRAM: 28%
+  Free-BRAM: 396
 - core: jts18
   target: mister
-  sta: 0.489ns
+  sta: 0.501ns
   LE: 60%
   BRAM: 67%
   Free-BRAM: 185
@@ -720,61 +720,61 @@
   Free-BRAM: 433
 - core: jtsf
   target: mister
-  sta: 0.617ns
+  sta: 0.708ns
   LE: 45%
-  BRAM: 21%
-  Free-BRAM: 438
+  BRAM: 24%
+  Free-BRAM: 423
 - core: jtshanon
   target: mister
-  sta: 0.399ns
+  sta: 0.810ns
   LE: 42%
   BRAM: 40%
   Free-BRAM: 333
 - core: jtshouse
   target: mister
-  sta: 0.450ns
+  sta: 0.542ns
   LE: 47%
   BRAM: 62%
   Free-BRAM: 209
 - core: jtsimson
   target: mister
-  sta: 0.476ns
-  LE: 36%
+  sta: 0.586ns
+  LE: 37%
   BRAM: 27%
   Free-BRAM: 404
 - core: jtslyspy
   target: mister
-  sta: 0.547ns
+  sta: 0.420ns
   LE: 36%
   BRAM: 23%
   Free-BRAM: 425
 - core: jttaitox
   target: mister
-  sta: 0.530ns
-  LE: 48%
+  sta: 0.671ns
+  LE: 47%
   BRAM: 35%
   Free-BRAM: 362
 - core: jtthundr
   target: mister
-  sta: 0.514ns
+  sta: 0.480ns
   LE: 42%
   BRAM: 26%
   Free-BRAM: 409
 - core: jttmnt
   target: mister
-  sta: 0.153ns
+  sta: 0.419ns
   LE: 41%
   BRAM: 24%
   Free-BRAM: 419
 - core: jttoki
   target: mister
-  sta: 0.666ns
+  sta: 0.450ns
   LE: 38%
   BRAM: 23%
   Free-BRAM: 424
 - core: jttora
   target: mister
-  sta: 0.656ns
+  sta: 0.437ns
   LE: 44%
   BRAM: 27%
   Free-BRAM: 401
@@ -786,43 +786,43 @@
   Free-BRAM: 452
 - core: jttrojan
   target: mister
-  sta: 0.683ns
-  LE: 40%
+  sta: 0.577ns
+  LE: 41%
   BRAM: 25%
   Free-BRAM: 415
 - core: jttwin16
   target: mister
-  sta: 0.329ns
+  sta: 0.462ns
   LE: 49%
   BRAM: 86%
   Free-BRAM: 78
 - core: jtvigil
   target: mister
-  sta: 0.562ns
+  sta: 0.836ns
   LE: 32%
   BRAM: 21%
   Free-BRAM: 439
 - core: jtvlfied
   target: mister
-  sta: 0.359ns
+  sta: 0.556ns
   LE: 39%
   BRAM: 31%
   Free-BRAM: 380
 - core: jtwc
   target: mister
-  sta: 0.442ns
+  sta: 0.429ns
   LE: 34%
   BRAM: 20%
   Free-BRAM: 443
 - core: jtwwfss
   target: mister
-  sta: 0.677ns
+  sta: 0.373ns
   LE: 39%
   BRAM: 21%
   Free-BRAM: 436
 - core: jtxmen
   target: mister
-  sta: 0.435ns
+  sta: 0.601ns
   LE: 37%
   BRAM: 40%
   Free-BRAM: 333
@@ -832,507 +832,495 @@
   LE: 29%
   BRAM: 17%
   Free-BRAM: 460
-- core: neogeopocket-color
-  target: mister
-  sta: 0.560ns
-  LE: 36%
-  BRAM: 57%
-  Free-BRAM: 238
-- core: neogeopocket
-  target: mister
-  sta: 0.373ns
-  LE: 35%
-  BRAM: 57%
-  Free-BRAM: 240
 - core: jt1942
   target: pocket
-  sta: 4.180ns
+  sta: 4.196ns
   LE: 28%
   BRAM: 11%
   Free-BRAM: 274
 - core: jt1943
   target: pocket
-  sta: 3.643ns
-  LE: 43%
+  sta: 3.377ns
+  LE: 44%
   BRAM: 33%
   Free-BRAM: 206
 - core: jtajax
   target: pocket
-  sta: 1.819ns
+  sta: 1.999ns
   LE: 48%
   BRAM: 23%
   Free-BRAM: 236
 - core: jtaliens
   target: pocket
-  sta: 1.680ns
-  LE: 39%
+  sta: 2.075ns
+  LE: 40%
   BRAM: 19%
   Free-BRAM: 248
 - core: jtbiocom
   target: pocket
-  sta: 2.734ns
+  sta: 2.627ns
   LE: 49%
   BRAM: 25%
   Free-BRAM: 230
 - core: jtblkout
   target: pocket
-  sta: 2.270ns
+  sta: 2.957ns
   LE: 49%
   BRAM: 65%
   Free-BRAM: 109
 - core: jtbtiger
   target: pocket
-  sta: 2.678ns
-  LE: 43%
+  sta: 3.574ns
+  LE: 44%
   BRAM: 24%
   Free-BRAM: 233
 - core: jtbubl
   target: pocket
-  sta: 3.428ns
+  sta: 4.002ns
   LE: 48%
   BRAM: 23%
   Free-BRAM: 238
 - core: jtcal50
   target: pocket
-  sta: 3.487ns
+  sta: 3.140ns
   LE: 51%
   BRAM: 62%
   Free-BRAM: 117
 - core: jtcastle
   target: pocket
-  sta: 1.846ns
+  sta: 3.044ns
   LE: 43%
   BRAM: 23%
   Free-BRAM: 237
 - core: jtcircus
   target: pocket
-  sta: 3.354ns
+  sta: 4.372ns
   LE: 29%
   BRAM: 9%
   Free-BRAM: 281
 - core: jtcommnd
   target: pocket
-  sta: 3.803ns
-  LE: 32%
+  sta: 3.668ns
+  LE: 33%
   BRAM: 19%
   Free-BRAM: 251
 - core: jtcomsc
   target: pocket
-  sta: 3.106ns
+  sta: 2.546ns
   LE: 47%
   BRAM: 19%
   Free-BRAM: 249
 - core: jtcontra
   target: pocket
-  sta: 3.195ns
-  LE: 47%
+  sta: 3.019ns
+  LE: 48%
   BRAM: 17%
   Free-BRAM: 256
 - core: jtcop
   target: pocket
-  sta: 3.327ns
+  sta: 2.805ns
   LE: 50%
   BRAM: 22%
   Free-BRAM: 240
 - core: jtcps1
   target: pocket
-  sta: 0.563ns
-  LE: 49%
+  sta: 0.534ns
+  LE: 50%
   BRAM: 20%
   Free-BRAM: 247
 - core: jtcps15
   target: pocket
-  sta: 0.468ns
+  sta: 0.414ns
   LE: 45%
   BRAM: 24%
   Free-BRAM: 233
 - core: jtcps2
   target: pocket
-  sta: 0.417ns
+  sta: 0.332ns
   LE: 48%
   BRAM: 29%
   Free-BRAM: 219
 - core: jtdd
   target: pocket
-  sta: 3.647ns
+  sta: 3.773ns
   LE: 44%
   BRAM: 14%
   Free-BRAM: 264
 - core: jtdd2
   target: pocket
-  sta: 3.240ns
+  sta: 3.058ns
   LE: 47%
   BRAM: 15%
   Free-BRAM: 261
 - core: jtddrbl
   target: pocket
-  sta: 2.246ns
+  sta: 2.176ns
   LE: 52%
   BRAM: 20%
   Free-BRAM: 247
 - core: jtexed
   target: pocket
-  sta: 4.108ns
+  sta: 4.379ns
   LE: 29%
   BRAM: 14%
   Free-BRAM: 266
 - core: jtflane
   target: pocket
-  sta: 4.510ns
+  sta: 4.219ns
   LE: 28%
   BRAM: 13%
   Free-BRAM: 267
 - core: jtflstory
   target: pocket
-  sta: 3.442ns
+  sta: 3.481ns
   LE: 48%
   BRAM: 12%
   Free-BRAM: 272
 - core: jtfround
   target: pocket
-  sta: 1.889ns
+  sta: 1.756ns
   LE: 56%
   BRAM: 25%
   Free-BRAM: 230
 - core: jtgae1
   target: pocket
-  sta: 0.756ns
+  sta: 0.945ns
   LE: 51%
   BRAM: 22%
   Free-BRAM: 239
 - core: jtgaiden
   target: pocket
-  sta: 3.688ns
+  sta: 3.011ns
   LE: 53%
   BRAM: 44%
   Free-BRAM: 173
 - core: jtgals
   target: pocket
-  sta: 1.258ns
+  sta: 1.578ns
   LE: 43%
   BRAM: 97%
   Free-BRAM: 8
 - core: jtgng
   target: pocket
-  sta: 3.382ns
+  sta: 3.137ns
   LE: 35%
   BRAM: 18%
   Free-BRAM: 253
 - core: jtgrad3
   target: pocket
-  sta: 2.472ns
-  LE: 66%
+  sta: 2.283ns
+  LE: 67%
   BRAM: 36%
   Free-BRAM: 196
 - core: jtgunsmk
   target: pocket
-  sta: 3.044ns
+  sta: 3.280ns
   LE: 33%
   BRAM: 20%
   Free-BRAM: 247
 - core: jtharier
   target: pocket
-  sta: 1.465ns
+  sta: 1.454ns
   LE: 85%
   BRAM: 52%
   Free-BRAM: 147
 - core: jtkarnov
   target: pocket
-  sta: 4.102ns
-  LE: 53%
+  sta: 4.105ns
+  LE: 54%
   BRAM: 21%
   Free-BRAM: 244
 - core: jtkchamp
   target: pocket
-  sta: 4.393ns
+  sta: 4.052ns
   LE: 28%
   BRAM: 10%
   Free-BRAM: 277
 - core: jtkicker
   target: pocket
-  sta: 4.330ns
+  sta: 4.022ns
   LE: 23%
   BRAM: 8%
   Free-BRAM: 284
 - core: jtkiwi
   target: pocket
-  sta: 3.466ns
-  LE: 43%
+  sta: 3.136ns
+  LE: 44%
   BRAM: 30%
   Free-BRAM: 217
 - core: jtkunio
   target: pocket
-  sta: 3.657ns
-  LE: 34%
+  sta: 3.564ns
+  LE: 35%
   BRAM: 14%
   Free-BRAM: 265
 - core: jtlabrun
   target: pocket
-  sta: 3.946ns
-  LE: 36%
+  sta: 3.738ns
+  LE: 37%
   BRAM: 17%
   Free-BRAM: 257
 - core: jtmidres
   target: pocket
-  sta: 3.582ns
-  LE: 45%
+  sta: 3.369ns
+  LE: 46%
   BRAM: 20%
   Free-BRAM: 245
 - core: jtmikie
   target: pocket
-  sta: 4.231ns
-  LE: 28%
+  sta: 3.943ns
+  LE: 29%
   BRAM: 8%
   Free-BRAM: 282
 - core: jtmx5k
   target: pocket
-  sta: 4.012ns
+  sta: 3.570ns
   LE: 37%
   BRAM: 19%
   Free-BRAM: 251
 - core: jtngp
   target: pocket
-  sta: 0.665ns
+  sta: 1.465ns
   LE: 39%
   BRAM: 80%
   Free-BRAM: 63
 - core: jtngpc
   target: pocket
-  sta: 0.683ns
-  LE: 39%
+  sta: 1.649ns
+  LE: 40%
   BRAM: 80%
   Free-BRAM: 61
 - core: jtninja
   target: pocket
-  sta: 3.195ns
+  sta: 2.754ns
   LE: 56%
   BRAM: 20%
   Free-BRAM: 245
 - core: jtoutrun
   target: pocket
-  sta: 0.594ns
+  sta: 0.226ns
   LE: 68%
   BRAM: 60%
   Free-BRAM: 123
 - core: jtpaclan
   target: pocket
-  sta: 3.348ns
+  sta: 2.365ns
   LE: 30%
   BRAM: 15%
   Free-BRAM: 263
 - core: jtpang
   target: pocket
-  sta: 3.992ns
+  sta: 4.244ns
   LE: 25%
   BRAM: 16%
   Free-BRAM: 259
 - core: jtparoda
   target: pocket
-  sta: 1.416ns
+  sta: 2.289ns
   LE: 43%
   BRAM: 24%
   Free-BRAM: 235
 - core: jtpinpon
   target: pocket
-  sta: 4.027ns
-  LE: 19%
+  sta: 4.415ns
+  LE: 20%
   BRAM: 7%
   Free-BRAM: 286
 - core: jtpktgal
   target: pocket
-  sta: 3.698ns
-  LE: 34%
+  sta: 4.004ns
+  LE: 35%
   BRAM: 13%
   Free-BRAM: 267
 - core: jtprmr
   target: pocket
-  sta: 4.137ns
+  sta: 2.516ns
   LE: 47%
   BRAM: 43%
   Free-BRAM: 176
 - core: jtrastan
   target: pocket
-  sta: 2.342ns
-  LE: 54%
+  sta: 2.355ns
+  LE: 55%
   BRAM: 44%
   Free-BRAM: 174
 - core: jtriders
   target: pocket
-  sta: 2.727ns
+  sta: 2.322ns
   LE: 57%
   BRAM: 58%
   Free-BRAM: 130
 - core: jtroadf
   target: pocket
-  sta: 3.324ns
+  sta: 4.042ns
   LE: 33%
   BRAM: 9%
   Free-BRAM: 279
 - core: jtroc
   target: pocket
-  sta: 2.746ns
+  sta: 3.672ns
   LE: 30%
   BRAM: 10%
   Free-BRAM: 278
 - core: jtrumble
   target: pocket
-  sta: 4.070ns
-  LE: 35%
+  sta: 3.520ns
+  LE: 36%
   BRAM: 22%
   Free-BRAM: 241
 - core: jtrungun
   target: pocket
-  sta: 0.520ns
-  LE: 49%
+  sta: 0.953ns
+  LE: 50%
   BRAM: 76%
   Free-BRAM: 74
 - core: jts16
   target: pocket
-  sta: 2.177ns
+  sta: 2.351ns
   LE: 64%
   BRAM: 26%
   Free-BRAM: 228
 - core: jts16b
   target: pocket
-  sta: 2.320ns
-  LE: 66%
+  sta: 2.574ns
+  LE: 67%
   BRAM: 25%
   Free-BRAM: 230
 - core: jts18
   target: pocket
-  sta: 0.438ns
-  LE: 98%
+  sta: 0.430ns
+  LE: 99%
   BRAM: 92%
   Free-BRAM: 24
 - core: jtsarms
   target: pocket
-  sta: 3.154ns
+  sta: 3.955ns
   LE: 34%
   BRAM: 19%
   Free-BRAM: 250
 - core: jtsbaskt
   target: pocket
-  sta: 3.147ns
+  sta: 3.539ns
   LE: 33%
   BRAM: 11%
   Free-BRAM: 275
 - core: jtsectnz
   target: pocket
-  sta: 3.665ns
-  LE: 32%
+  sta: 4.099ns
+  LE: 33%
   BRAM: 18%
   Free-BRAM: 253
 - core: jtsf
   target: pocket
-  sta: 1.578ns
+  sta: 1.155ns
   LE: 65%
   BRAM: 17%
   Free-BRAM: 255
 - core: jtshanon
   target: pocket
-  sta: 3.148ns
+  sta: 3.060ns
   LE: 56%
   BRAM: 48%
   Free-BRAM: 161
 - core: jtshouse
   target: pocket
-  sta: 1.874ns
-  LE: 65%
+  sta: 1.950ns
+  LE: 66%
   BRAM: 86%
   Free-BRAM: 43
 - core: jtsimson
   target: pocket
-  sta: 0.322ns
-  LE: 44%
+  sta: 0.605ns
+  LE: 45%
   BRAM: 23%
   Free-BRAM: 236
 - core: jtslyspy
   target: pocket
-  sta: 3.123ns
-  LE: 44%
+  sta: 3.929ns
+  LE: 45%
   BRAM: 19%
   Free-BRAM: 251
 - core: jttaitox
   target: pocket
-  sta: 2.862ns
+  sta: 3.238ns
   LE: 67%
   BRAM: 39%
   Free-BRAM: 188
 - core: jtthundr
   target: pocket
-  sta: 1.715ns
+  sta: 1.754ns
   LE: 56%
   BRAM: 22%
   Free-BRAM: 240
 - core: jttmnt
   target: pocket
-  sta: 2.098ns
+  sta: 2.379ns
   LE: 53%
   BRAM: 19%
   Free-BRAM: 249
 - core: jttoki
   target: pocket
-  sta: 1.984ns
+  sta: 2.458ns
   LE: 46%
   BRAM: 19%
   Free-BRAM: 250
 - core: jttora
   target: pocket
-  sta: 1.950ns
+  sta: 3.942ns
   LE: 59%
   BRAM: 25%
   Free-BRAM: 230
 - core: jttrack
   target: pocket
-  sta: 3.570ns
-  LE: 32%
+  sta: 2.657ns
+  LE: 33%
   BRAM: 9%
   Free-BRAM: 280
 - core: jttrojan
   target: pocket
-  sta: 3.572ns
+  sta: 3.480ns
   LE: 49%
   BRAM: 21%
   Free-BRAM: 244
 - core: jttwin16
   target: pocket
-  sta: 2.015ns
-  LE: 71%
+  sta: 2.114ns
+  LE: 72%
   BRAM: 47%
   Free-BRAM: 164
 - core: jtvigil
   target: pocket
-  sta: 1.520ns
-  LE: 32%
+  sta: 2.242ns
+  LE: 33%
   BRAM: 13%
   Free-BRAM: 268
 - core: jtvlfied
   target: pocket
-  sta: 3.474ns
-  LE: 49%
+  sta: 3.410ns
+  LE: 48%
   BRAM: 33%
   Free-BRAM: 206
 - core: jtwc
   target: pocket
-  sta: 3.543ns
-  LE: 38%
+  sta: 3.994ns
+  LE: 39%
   BRAM: 11%
   Free-BRAM: 273
 - core: jtwwfss
   target: pocket
-  sta: 2.609ns
+  sta: 2.321ns
   LE: 49%
   BRAM: 14%
   Free-BRAM: 265
 - core: jtxmen
   target: pocket
-  sta: 2.374ns
-  LE: 44%
+  sta: 2.225ns
+  LE: 45%
   BRAM: 46%
   Free-BRAM: 165
 - core: jtyiear
   target: pocket
-  sta: 3.857ns
+  sta: 3.415ns
   LE: 25%
   BRAM: 6%
   Free-BRAM: 288
@@ -1368,13 +1356,13 @@
   Free-BRAM: 10
 - core: jtbubl
   target: sidi
-  sta: 3.609ns
-  LE: 93%
+  sta: 3.038ns
+  LE: 92%
   BRAM: 85%
   Free-BRAM: 10
 - core: jtcastle
   target: sidi
-  sta: 2.887ns
+  sta: 2.185ns
   LE: 68%
   BRAM: 80%
   Free-BRAM: 13
@@ -1392,8 +1380,8 @@
   Free-BRAM: 26
 - core: jtcomsc
   target: sidi
-  sta: 3.151ns
-  LE: 69%
+  sta: 3.511ns
+  LE: 70%
   BRAM: 80%
   Free-BRAM: 13
 - core: jtcontra
@@ -1404,25 +1392,25 @@
   Free-BRAM: 15
 - core: jtcop
   target: sidi
-  sta: 3.831ns
-  LE: 91%
+  sta: 3.726ns
+  LE: 92%
   BRAM: 80%
   Free-BRAM: 13
 - core: jtcps1
   target: sidi
-  sta: -0.789ns
+  sta: -0.672ns
   LE: 92%
   BRAM: 80%
   Free-BRAM: 13
 - core: jtcps15
   target: sidi
-  sta: -0.447ns
-  LE: 81%
+  sta: -0.536ns
+  LE: 80%
   BRAM: 92%
   Free-BRAM: 5
 - core: jtcps2
   target: sidi
-  sta: -0.237ns
+  sta: -0.656ns
   LE: 85%
   BRAM: 100%
   Free-BRAM: 0
@@ -1434,8 +1422,8 @@
   Free-BRAM: 25
 - core: jtdd2
   target: sidi
-  sta: 2.323ns
-  LE: 81%
+  sta: 1.988ns
+  LE: 80%
   BRAM: 64%
   Free-BRAM: 24
 - core: jtddrbl
@@ -1458,37 +1446,37 @@
   Free-BRAM: 27
 - core: jtflstory
   target: sidi
-  sta: 2.609ns
+  sta: 2.363ns
   LE: 93%
   BRAM: 52%
   Free-BRAM: 32
 - core: jtgae1
   target: sidi
-  sta: -0.751ns
+  sta: -0.089ns
   LE: 90%
   BRAM: 82%
   Free-BRAM: 12
 - core: jtgng
   target: sidi
-  sta: 2.498ns
+  sta: 2.404ns
   LE: 67%
   BRAM: 58%
   Free-BRAM: 28
 - core: jtgunsmk
   target: sidi
-  sta: 3.501ns
+  sta: 3.736ns
   LE: 66%
   BRAM: 67%
   Free-BRAM: 22
 - core: jtkarnov
   target: sidi
-  sta: 2.516ns
+  sta: 2.665ns
   LE: 99%
   BRAM: 76%
   Free-BRAM: 16
 - core: jtkchamp
   target: sidi
-  sta: 4.732ns
+  sta: 4.860ns
   LE: 49%
   BRAM: 44%
   Free-BRAM: 37
@@ -1512,7 +1500,7 @@
   Free-BRAM: 30
 - core: jtmidres
   target: sidi
-  sta: 3.487ns
+  sta: 2.992ns
   LE: 85%
   BRAM: 73%
   Free-BRAM: 18
@@ -1530,14 +1518,14 @@
   Free-BRAM: 12
 - core: jtninja
   target: sidi
-  sta: 2.696ns
+  sta: 3.132ns
   LE: 98%
   BRAM: 73%
   Free-BRAM: 18
 - core: jtpaclan
   target: sidi
-  sta: 2.388ns
-  LE: 50%
+  sta: 2.242ns
+  LE: 51%
   BRAM: 67%
   Free-BRAM: 22
 - core: jtpang
@@ -1548,13 +1536,13 @@
   Free-BRAM: 26
 - core: jtparoda
   target: sidi
-  sta: 0.920ns
+  sta: 1.443ns
   LE: 81%
   BRAM: 97%
   Free-BRAM: 2
 - core: jtpinpon
   target: sidi
-  sta: 4.726ns
+  sta: 4.882ns
   LE: 30%
   BRAM: 30%
   Free-BRAM: 46
@@ -1566,8 +1554,8 @@
   Free-BRAM: 37
 - core: jtrastan
   target: sidi
-  sta: 1.521ns
-  LE: 93%
+  sta: 2.078ns
+  LE: 92%
   BRAM: 100%
   Free-BRAM: 0
 - core: jtroadf
@@ -1578,7 +1566,7 @@
   Free-BRAM: 39
 - core: jtroc
   target: sidi
-  sta: 3.592ns
+  sta: 3.527ns
   LE: 51%
   BRAM: 42%
   Free-BRAM: 38
@@ -1608,25 +1596,25 @@
   Free-BRAM: 28
 - core: jtsimson
   target: sidi
-  sta: 1.429ns
+  sta: 1.108ns
   LE: 83%
   BRAM: 97%
   Free-BRAM: 2
 - core: jtslyspy
   target: sidi
-  sta: 4.160ns
-  LE: 85%
+  sta: 4.099ns
+  LE: 84%
   BRAM: 65%
   Free-BRAM: 23
 - core: jtthundr
   target: sidi
-  sta: 1.819ns
+  sta: 0.892ns
   LE: 94%
   BRAM: 98%
   Free-BRAM: 1
 - core: jttmnt
   target: sidi
-  sta: 1.121ns
+  sta: 1.958ns
   LE: 95%
   BRAM: 89%
   Free-BRAM: 7
@@ -1638,26 +1626,26 @@
   Free-BRAM: 40
 - core: jttrojan
   target: sidi
-  sta: 3.061ns
-  LE: 93%
+  sta: 3.040ns
+  LE: 92%
   BRAM: 73%
   Free-BRAM: 18
 - core: jtvigil
   target: sidi
-  sta: 1.289ns
+  sta: 1.478ns
   LE: 62%
   BRAM: 56%
   Free-BRAM: 29
 - core: jtwc
   target: sidi
-  sta: 3.197ns
-  LE: 64%
+  sta: 2.837ns
+  LE: 65%
   BRAM: 52%
   Free-BRAM: 32
 - core: jtwwfss
   target: sidi
-  sta: 2.073ns
-  LE: 91%
+  sta: 1.105ns
+  LE: 90%
   BRAM: 58%
   Free-BRAM: 28
 - core: jtyiear
@@ -1686,19 +1674,19 @@
   Free-BRAM: 351
 - core: jtaliens
   target: sidi128
-  sta: 2.454ns
+  sta: 2.755ns
   LE: 15%
   BRAM: 16%
   Free-BRAM: 362
 - core: jtbiocom
   target: sidi128
-  sta: 1.820ns
+  sta: 2.035ns
   LE: 18%
   BRAM: 19%
   Free-BRAM: 349
 - core: jtblkout
   target: sidi128
-  sta: 4.380ns
+  sta: 4.510ns
   LE: 17%
   BRAM: 48%
   Free-BRAM: 225
@@ -1710,19 +1698,19 @@
   Free-BRAM: 356
 - core: jtbubl
   target: sidi128
-  sta: 3.219ns
+  sta: 3.171ns
   LE: 18%
   BRAM: 17%
   Free-BRAM: 359
 - core: jtcal50
   target: sidi128
-  sta: 3.692ns
+  sta: 3.350ns
   LE: 17%
   BRAM: 46%
   Free-BRAM: 235
 - core: jtcastle
   target: sidi128
-  sta: 3.056ns
+  sta: 2.849ns
   LE: 13%
   BRAM: 17%
   Free-BRAM: 359
@@ -1740,7 +1728,7 @@
   Free-BRAM: 371
 - core: jtcomsc
   target: sidi128
-  sta: 3.993ns
+  sta: 2.951ns
   LE: 13%
   BRAM: 15%
   Free-BRAM: 369
@@ -1752,25 +1740,25 @@
   Free-BRAM: 370
 - core: jtcop
   target: sidi128
-  sta: 4.180ns
-  LE: 18%
+  sta: 3.904ns
+  LE: 17%
   BRAM: 16%
   Free-BRAM: 361
 - core: jtcps1
   target: sidi128
-  sta: -0.001ns
+  sta: -0.181ns
   LE: 20%
   BRAM: 17%
   Free-BRAM: 359
 - core: jtcps15
   target: sidi128
-  sta: -0.902ns
+  sta: -0.984ns
   LE: 18%
   BRAM: 17%
   Free-BRAM: 357
 - core: jtcps2
   target: sidi128
-  sta: -1.012ns
+  sta: -0.946ns
   LE: 19%
   BRAM: 21%
   Free-BRAM: 342
@@ -1782,13 +1770,13 @@
   Free-BRAM: 383
 - core: jtdd2
   target: sidi128
-  sta: 2.119ns
+  sta: 2.957ns
   LE: 15%
   BRAM: 13%
   Free-BRAM: 378
 - core: jtddrbl
   target: sidi128
-  sta: 1.321ns
+  sta: 1.616ns
   LE: 18%
   BRAM: 14%
   Free-BRAM: 370
@@ -1806,67 +1794,67 @@
   Free-BRAM: 387
 - core: jtflstory
   target: sidi128
-  sta: 2.599ns
+  sta: 3.033ns
   LE: 19%
   BRAM: 10%
   Free-BRAM: 390
 - core: jtfround
   target: sidi128
-  sta: 3.471ns
-  LE: 21%
+  sta: 3.087ns
+  LE: 20%
   BRAM: 20%
   Free-BRAM: 346
 - core: jtgae1
   target: sidi128
-  sta: 0.447ns
+  sta: 1.245ns
   LE: 17%
   BRAM: 16%
   Free-BRAM: 361
 - core: jtgaiden
   target: sidi128
-  sta: 3.381ns
+  sta: 3.337ns
   LE: 18%
   BRAM: 32%
   Free-BRAM: 293
 - core: jtgals
   target: sidi128
-  sta: 4.523ns
+  sta: 4.469ns
   LE: 14%
   BRAM: 70%
   Free-BRAM: 129
 - core: jtgng
   target: sidi128
-  sta: 2.698ns
+  sta: 2.478ns
   LE: 12%
   BRAM: 13%
   Free-BRAM: 376
 - core: jtgrad3
   target: sidi128
-  sta: 3.213ns
+  sta: 3.053ns
   LE: 26%
   BRAM: 28%
   Free-BRAM: 313
 - core: jtgunsmk
   target: sidi128
-  sta: 3.381ns
+  sta: 3.263ns
   LE: 13%
   BRAM: 15%
   Free-BRAM: 367
 - core: jtharier
   target: sidi128
-  sta: 1.196ns
+  sta: 1.442ns
   LE: 33%
   BRAM: 39%
   Free-BRAM: 265
 - core: jtkarnov
   target: sidi128
-  sta: 3.177ns
+  sta: 3.710ns
   LE: 21%
   BRAM: 16%
   Free-BRAM: 365
 - core: jtkchamp
   target: sidi128
-  sta: 5.000ns
+  sta: 5.448ns
   LE: 11%
   BRAM: 8%
   Free-BRAM: 397
@@ -1878,7 +1866,7 @@
   Free-BRAM: 404
 - core: jtkiwi
   target: sidi128
-  sta: 2.562ns
+  sta: 2.937ns
   LE: 15%
   BRAM: 22%
   Free-BRAM: 336
@@ -1896,7 +1884,7 @@
   Free-BRAM: 376
 - core: jtmidres
   target: sidi128
-  sta: 2.906ns
+  sta: 4.033ns
   LE: 16%
   BRAM: 15%
   Free-BRAM: 366
@@ -1914,19 +1902,19 @@
   Free-BRAM: 367
 - core: jtninja
   target: sidi128
-  sta: 3.598ns
+  sta: 4.100ns
   LE: 21%
   BRAM: 16%
   Free-BRAM: 362
 - core: jtoutrun
   target: sidi128
-  sta: 2.655ns
+  sta: 2.562ns
   LE: 26%
   BRAM: 44%
   Free-BRAM: 242
 - core: jtpaclan
   target: sidi128
-  sta: 3.039ns
+  sta: 3.059ns
   LE: 10%
   BRAM: 11%
   Free-BRAM: 386
@@ -1938,13 +1926,13 @@
   Free-BRAM: 379
 - core: jtparoda
   target: sidi128
-  sta: 2.635ns
-  LE: 16%
+  sta: 1.776ns
+  LE: 15%
   BRAM: 18%
   Free-BRAM: 354
 - core: jtpinpon
   target: sidi128
-  sta: 4.799ns
+  sta: 5.501ns
   LE: 6%
   BRAM: 5%
   Free-BRAM: 409
@@ -1956,19 +1944,19 @@
   Free-BRAM: 389
 - core: jtprmr
   target: sidi128
-  sta: 3.873ns
+  sta: 3.120ns
   LE: 18%
   BRAM: 31%
   Free-BRAM: 298
 - core: jtrastan
   target: sidi128
-  sta: 1.452ns
+  sta: 0.912ns
   LE: 18%
   BRAM: 34%
   Free-BRAM: 287
 - core: jtriders
   target: sidi128
-  sta: 3.224ns
+  sta: 2.816ns
   LE: 23%
   BRAM: 91%
   Free-BRAM: 37
@@ -1980,7 +1968,7 @@
   Free-BRAM: 398
 - core: jtroc
   target: sidi128
-  sta: 3.815ns
+  sta: 3.932ns
   LE: 11%
   BRAM: 8%
   Free-BRAM: 398
@@ -1992,31 +1980,31 @@
   Free-BRAM: 360
 - core: jtrungun
   target: sidi128
-  sta: 0.156ns
+  sta: 0.161ns
   LE: 18%
   BRAM: 85%
   Free-BRAM: 65
 - core: jts16
   target: sidi128
-  sta: 2.303ns
+  sta: 1.869ns
   LE: 23%
   BRAM: 21%
   Free-BRAM: 342
 - core: jts16b
   target: sidi128
-  sta: 1.739ns
+  sta: 1.925ns
   LE: 25%
   BRAM: 20%
   Free-BRAM: 344
 - core: jts18
   target: sidi128
-  sta: 2.542ns
+  sta: 2.122ns
   LE: 38%
   BRAM: 53%
   Free-BRAM: 203
 - core: jtsarms
   target: sidi128
-  sta: 3.533ns
+  sta: 3.412ns
   LE: 12%
   BRAM: 14%
   Free-BRAM: 373
@@ -2034,61 +2022,61 @@
   Free-BRAM: 374
 - core: jtsf
   target: sidi128
-  sta: 1.743ns
+  sta: 1.205ns
   LE: 24%
   BRAM: 13%
   Free-BRAM: 374
 - core: jtshanon
   target: sidi128
-  sta: 2.174ns
+  sta: 2.961ns
   LE: 21%
   BRAM: 35%
   Free-BRAM: 280
 - core: jtshouse
   target: sidi128
-  sta: 1.740ns
+  sta: 1.928ns
   LE: 22%
   BRAM: 64%
   Free-BRAM: 156
 - core: jtsimson
   target: sidi128
-  sta: 2.254ns
+  sta: 2.188ns
   LE: 16%
   BRAM: 18%
   Free-BRAM: 354
 - core: jtslyspy
   target: sidi128
-  sta: 3.753ns
+  sta: 3.754ns
   LE: 15%
   BRAM: 14%
   Free-BRAM: 372
 - core: jttaitox
   target: sidi128
-  sta: 1.877ns
+  sta: 1.923ns
   LE: 27%
   BRAM: 30%
   Free-BRAM: 302
 - core: jtthundr
   target: sidi128
-  sta: 1.957ns
+  sta: 2.872ns
   LE: 18%
   BRAM: 17%
   Free-BRAM: 358
 - core: jttmnt
   target: sidi128
-  sta: 3.624ns
+  sta: 3.434ns
   LE: 20%
   BRAM: 16%
   Free-BRAM: 361
 - core: jttoki
   target: sidi128
-  sta: 1.906ns
+  sta: 3.140ns
   LE: 17%
   BRAM: 15%
   Free-BRAM: 368
 - core: jttora
   target: sidi128
-  sta: 2.585ns
+  sta: 3.223ns
   LE: 21%
   BRAM: 19%
   Free-BRAM: 352
@@ -2100,43 +2088,43 @@
   Free-BRAM: 403
 - core: jttrojan
   target: sidi128
-  sta: 2.028ns
+  sta: 1.872ns
   LE: 19%
   BRAM: 16%
   Free-BRAM: 364
 - core: jttwin16
   target: sidi128
-  sta: 2.851ns
+  sta: 2.650ns
   LE: 27%
   BRAM: 94%
   Free-BRAM: 25
 - core: jtvigil
   target: sidi128
-  sta: 2.629ns
+  sta: 2.294ns
   LE: 11%
   BRAM: 10%
   Free-BRAM: 387
 - core: jtvlfied
   target: sidi128
-  sta: 1.248ns
+  sta: 2.073ns
   LE: 19%
   BRAM: 25%
   Free-BRAM: 325
 - core: jtwc
   target: sidi128
-  sta: 3.415ns
+  sta: 3.500ns
   LE: 13%
   BRAM: 9%
   Free-BRAM: 395
 - core: jtwwfss
   target: sidi128
-  sta: 3.121ns
+  sta: 3.494ns
   LE: 17%
   BRAM: 12%
   Free-BRAM: 382
 - core: jtxmen
   target: sidi128
-  sta: 3.646ns
+  sta: 3.676ns
   LE: 16%
   BRAM: 35%
   Free-BRAM: 281

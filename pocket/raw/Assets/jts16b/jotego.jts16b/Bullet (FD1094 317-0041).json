@@ -20,6 +20,10 @@
 			{
 				"address": "0xf9000000",
 				"data": "0xF300"
+			},
+			{
+				"address": "0xfc000000",
+				"data": "0xFF3102"
 			}
 		]
 	}

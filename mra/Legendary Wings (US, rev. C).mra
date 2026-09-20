@@ -47,7 +47,6 @@
         <!-- soundcpu - starts at 0x18000 - length 0x8000 (15 bits) -->
         <part name="lw_04.11e" crc="a20337a2"/>
         <!-- CHAR_START -->
-        <!-- adpcm - starts at 0x20000 -->
         <!-- gfx1 - starts at 0x20000 - length 0x20000 (17 bits) -->
         <interleave output="16">
             <part name="lw_05.9h" crc="091d923c" map="12"/>

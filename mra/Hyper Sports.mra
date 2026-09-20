@@ -103,5 +103,5 @@
         <dip name="Records" bits="11" ids="Erase on Reset,Don&apos;t Erase"/>
         <dip name="Difficulty" bits="12,15" ids="Difficult 4,Difficult 3,Difficult 2,Difficult 1,Normal 8,Normal 7,Normal 6,Normal 5,Normal 4,Normal 3,Normal 2,Normal 1,Easy 4,Easy 3,Easy 2,Easy 1"/>
     </switches>
-    <buttons names="Left button, Centre button, Right button,Start,Coin,Core credits" default="A,B,X,Start,Select,-" count="3"/>
+    <buttons names="Left button, Centre button, Right button,Start,Coin,Core credits" default="Y,X,A,Start,Select,-" count="3"/>
 </misterromdescription>

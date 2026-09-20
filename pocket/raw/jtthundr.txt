@@ -5,6 +5,8 @@ The following arcade titles are compatible with this core. Generate
 the required .rom file using the mra tool (read below).
 Place the *.rom files in Assets/jtthundr/common
 
+Alien Sector --> aliensec.rom
+Baraduke --> baraduke.rom
 Genpei ToumaDen --> genpeitd.rom
 Hopping Mappy --> hopmappy.rom
 Metro-Cross (set 1) --> metrocrs.rom

@@ -47,7 +47,6 @@
         <!-- soundcpu - starts at 0x18000 - length 0x8000 (15 bits) -->
         <part name="ic37.bin" crc="a20337a2"/>
         <!-- CHAR_START -->
-        <!-- adpcm - starts at 0x20000 -->
         <!-- gfx1 - starts at 0x20000 - length 0x20000 (17 bits) -->
         <interleave output="16">
             <part name="ic60.bin" crc="091d923c" map="12"/>

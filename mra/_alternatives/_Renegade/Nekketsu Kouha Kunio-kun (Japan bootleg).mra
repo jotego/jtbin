@@ -83,5 +83,5 @@
         <DSW2/>
         <dip name="Difficulty" bits="8,9" ids="Very Hard,Hard,Easy,Normal"/>
     </switches>
-    <buttons names="Hit Left,Jump,Hit Right,Start,Coin,Core credits" default="A,B,X,Start,Select,-" count="3"/>
+    <buttons names="Hit Left,Jump,Hit Right,Start,Coin,Core credits" default="Y,X,A,Start,Select,-" count="3"/>
 </misterromdescription>

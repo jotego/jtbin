@@ -12,18 +12,8 @@
 					},
 					{
 						"id": 1,
-						"name": "Weapon A",
+						"name": "Special Weapon",
 						"key": "pad_btn_b"
-					},
-					{
-						"id": 2,
-						"name": " Weapong B",
-						"key": "pad_btn_x"
-					},
-					{
-						"id": 3,
-						"name": " Weapon C",
-						"key": "pad_btn_y"
 					}
 				]
 			}

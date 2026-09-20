@@ -129,5 +129,5 @@
         <dip name="Bonus Life" bits="12,13" ids="150k 300k 450k,100k 200k 300k,50k 120k 190k,30k 80k 160k"/>
         <dip name="Allow Continue" bits="14" ids="Yes,No"/>
     </switches>
-    <buttons names="Shot,Bomb,Turn left,Turn right,-,Start,Coin,Core credits" default="A,B,X,Y,Start,Select,-" count="4"/>
+    <buttons names="Shot,Bomb,Turn left,Turn right,-,Start,Coin,Core credits" default="Y,B,L,R,Start,Select,-" count="4"/>
 </misterromdescription>

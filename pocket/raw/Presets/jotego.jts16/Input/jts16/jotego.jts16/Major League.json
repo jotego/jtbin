@@ -7,23 +7,28 @@
 				"mappings": [
 					{
 						"id": 0,
-						"name": "Shot",
+						"name": "button 0",
 						"key": "pad_btn_a"
 					},
 					{
 						"id": 1,
-						"name": "Weapon A",
+						"name": "button 1",
 						"key": "pad_btn_b"
 					},
 					{
 						"id": 2,
-						"name": " Weapong B",
+						"name": "button 2",
 						"key": "pad_btn_x"
 					},
 					{
 						"id": 3,
-						"name": " Weapon C",
+						"name": "button 3",
 						"key": "pad_btn_y"
+					},
+					{
+						"id": 4,
+						"name": "button 4",
+						"key": "pad_trig_l"
 					}
 				]
 			}

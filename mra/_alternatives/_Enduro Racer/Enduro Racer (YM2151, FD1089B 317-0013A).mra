@@ -36,6 +36,7 @@
   0[0]: i8751      i8751 MCU
   0[1]: fd1089     FC1089B
   0[2]: blank4     IPL2 set at blank
+  0[3]: hangon     Hang-On board
   1[0]: ym2151     YM2151
   2[0]: cab1p      1P at bit 6
   3[0]: hicol      6144 colors
@@ -141,8 +142,8 @@
         <!-- ZOOM_START -->
         <!-- sprites:zoom - starts at 0x1D0000 - length 0x2000 (13 bits) -->
         <part name="epr-6844.ic123" crc="e3ec7bd6"/>
-        <!-- MCU_START -->
         <!-- JTFRAME_PROM_START -->
+        <!-- MCU_START -->
         <!-- mcu - starts at 0x1D2000 - length 0x1000 (12 bits) -->
         <part repeat="0x1000"> FF</part>
         <!-- MAINKEY_START -->
@@ -187,5 +188,5 @@
         <dip name="Time Control" bits="13,14" ids="Hardest,Hard,Easy,Medium"/>
         <dip name="Demo Sounds" bits="15" ids="On,Off"/>
     </switches>
-    <buttons names="button 1,button 2,-,Start,Coin,Core credits" default="A,B,Start,Select,-" count="2"/>
+    <buttons names="Accelerate,Brake,-,Start,Coin,Core credits" default="A,B,Start,Select,-" count="2"/>
 </misterromdescription>

@@ -8,12 +8,12 @@
 					{
 						"id": 0,
 						"name": "Rotate Left",
-						"key": "pad_btn_a"
+						"key": "pad_trig_l"
 					},
 					{
 						"id": 1,
 						"name": "Rotate Right",
-						"key": "pad_btn_b"
+						"key": "pad_trig_r"
 					}
 				]
 			}

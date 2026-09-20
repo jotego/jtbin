@@ -7,18 +7,13 @@
 				"mappings": [
 					{
 						"id": 0,
-						"name": "Short Pass",
+						"name": "Action",
 						"key": "pad_btn_a"
 					},
 					{
 						"id": 1,
-						"name": "Long Pass",
+						"name": "-",
 						"key": "pad_btn_b"
-					},
-					{
-						"id": 2,
-						"name": "Shoot",
-						"key": "pad_btn_x"
 					}
 				]
 			}

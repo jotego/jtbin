@@ -7,8 +7,13 @@
 				"mappings": [
 					{
 						"id": 0,
-						"name": "",
+						"name": "Accelerate",
 						"key": "pad_btn_a"
+					},
+					{
+						"id": 1,
+						"name": "Brake",
+						"key": "pad_btn_b"
 					}
 				]
 			}

@@ -36,7 +36,6 @@
         <part name="555_e04.7a" crc="18552f8f"/>
         <part name="555_e03.6a" crc="ae5f01e8"/>
         <!-- SCR_START -->
-        <!-- audiocpu - starts at 0x8000 -->
         <!-- tiles - starts at 0x8000 - length 0x2000 (13 bits) -->
         <interleave output="16">
             <part name="555_e01.7h" crc="d1d6f090" map="12"/>

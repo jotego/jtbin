@@ -8,17 +8,17 @@
 					{
 						"id": 0,
 						"name": "Fire-Left",
-						"key": "pad_btn_a"
+						"key": "pad_btn_y"
 					},
 					{
 						"id": 1,
 						"name": "Fire-Right",
-						"key": "pad_btn_b"
+						"key": "pad_btn_a"
 					},
 					{
 						"id": 2,
 						"name": "Power",
-						"key": "pad_btn_x"
+						"key": "pad_btn_b"
 					}
 				]
 			}

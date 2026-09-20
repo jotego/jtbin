@@ -73,18 +73,14 @@
             <part name="fn-08" crc="5ac97178" map="10"/>
         </interleave>
         <!-- JTFRAME_BA3_START -->
-        <!-- sprites - starts at 0x190000 - length 0x80000 (19 bits) -->
+        <!-- sprites - starts at 0x190000 - length 0x98000 (20 bits) -->
         <interleave output="32">
             <part name="fn-01" crc="9333121b" map="0001"/>
             <part name="fn-00" crc="ec18d098" map="0010"/>
             <part name="fn-03" crc="254ba60f" map="0100"/>
             <part name="fn-02" crc="4f060cba" map="1000"/>
         </interleave>
-        <part repeat="0x40000"> FF</part>
-        <!-- MCU_START -->
-        <!-- mcu - starts at 0x210000 -->
-        <!-- sub - starts at 0x210000 - length 0x18000 (17 bits) -->
-        <part repeat="0x18000"> FF</part>
+        <part repeat="0x58000"> FF</part>
         <!-- JTFRAME_PROM_START -->
         <!-- PROM_START -->
         <!-- proms - starts at 0x228000 - length 0x100 (8 bits) -->

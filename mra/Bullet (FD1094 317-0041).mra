@@ -87,8 +87,8 @@
             <part name="epr-11006.b8" crc="6b7384f2" map="10"/>
         </interleave>
         <part repeat="0x180000"> FF</part>
-        <!-- JTFRAME_PROM_START -->
         <!-- MCU_START -->
+        <!-- JTFRAME_PROM_START -->
         <!-- mcu - starts at 0x440000 - length 0x2000 (13 bits) -->
         <part repeat="0x1000"> FF</part>
         <part repeat="0x1000"> FF</part>
@@ -114,5 +114,5 @@
         <dip name="Demo Sounds" bits="9" ids="On,Off"/>
         <dip name="Lives" bits="10,11" ids="2,5,4,3"/>
     </switches>
-    <buttons names="Shot (Up),Shot (Right),Shot (Behind),Shot (Left),-,Start,Coin,Core credits" default="A,B,X,Y,Start,Select,-" count="4"/>
+    <buttons names="Shot (Up),Shot (Right),Shot (Behind),Shot (Left),-,Start,Coin,Core credits" default="X,A,B,Y,Start,Select,-" count="4"/>
 </misterromdescription>

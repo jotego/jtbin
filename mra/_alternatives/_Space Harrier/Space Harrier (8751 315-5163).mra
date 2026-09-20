@@ -36,6 +36,7 @@
   0[0]: i8751      i8751 MCU
   0[1]: fd1089     FC1089B
   0[2]: blank4     IPL2 set at blank
+  0[3]: hangon     Hang-On board
   1[0]: ym2151     YM2151
   2[0]: cab1p      1P at bit 6
   3[0]: hicol      6144 colors
@@ -144,8 +145,8 @@
         <!-- ZOOM_START -->
         <!-- sprites:zoom - starts at 0x1D0000 - length 0x2000 (13 bits) -->
         <part name="epr-6844.ic123" crc="e3ec7bd6"/>
-        <!-- JTFRAME_PROM_START -->
         <!-- MCU_START -->
+        <!-- JTFRAME_PROM_START -->
         <!-- mcu - starts at 0x1D2000 - length 0x1000 (12 bits) -->
         <part name="315-5163.ic32" crc="52b0c81a"/>
         <!-- MAINKEY_START -->

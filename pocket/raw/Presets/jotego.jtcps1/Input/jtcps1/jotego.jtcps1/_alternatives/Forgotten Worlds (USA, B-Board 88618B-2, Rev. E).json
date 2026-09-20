@@ -8,17 +8,17 @@
 					{
 						"id": 0,
 						"name": "Shoot",
-						"key": "pad_btn_a"
+						"key": "pad_btn_y"
 					},
 					{
 						"id": 1,
 						"name": "Rotate left",
-						"key": "pad_btn_b"
+						"key": "pad_trig_l"
 					},
 					{
 						"id": 2,
 						"name": "Rotate right",
-						"key": "pad_btn_x"
+						"key": "pad_trig_r"
 					}
 				]
 			}

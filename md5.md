@@ -56,6 +56,7 @@
 | aliens3      | jtaliens   | 93902f225a0f6a89e6853fecbf2e3444 | ff,5e,ff     |
 | aliens4      | jtaliens   | 740b7c941c1890c6fa59fe837af8dd69 | ff,5e,ff     |
 | aliensa      | jtaliens   | 6a9a9bb2588e06c5717e172595ae8f5b | ff,5e,ff     |
+| aliensec     | jtthundr   | 5733520c758aef5064711ae6c2e97d97 | ff,ff,ff     |
 | aliensj      | jtaliens   | 62f796a4fda1e5aa73abad65dc8b9656 | ff,5e,ff     |
 | aliensj2     | jtaliens   | 580fba2da02b54c3ea8fd259edaa87be | ff,5e,ff     |
 | aliensu      | jtaliens   | 7458d38926ecc5f7048a72e34c06f27b | ff,5e,ff     |
@@ -109,6 +110,7 @@
 | baddudes     | jtninja    | 9a137460886b91314748c80a1b5717f0 | ff,ff        |
 | bakutotu     | jtshouse   | 60ccd018aa27cc4c8e6bcf3fe9e33523 | ff           |
 | ballbros     | jttaitox   | 7cbde2339160a98bf0d580136fc7e88f | df,9e        |
+| baraduke     | jtthundr   | 9d8ba1ac352a3c92e771f984672d469c | ff,ff,ff     |
 | batcir       | jtcps2     | 5de9f32085af030e5915310ef8dabd84 | ff,ff        |
 | batcira      | jtcps2     | 284342d6ab79d20386a2e8ffc1cc7766 | ff,ff        |
 | batcird      | jtcps2     | 32cba06a914e372d54fb1b56fadfc082 | ff,ff        |
@@ -441,6 +443,9 @@
 | gunsmokeu    | jtgunsmk   | 030c5381e2e14eeac53111bf66742aea | f7,ff        |
 | gunsmokeuc   | jtgunsmk   | ecd2f603cf9d0520f66c98f81d93da5a | f7,ff        |
 | hamaway      | jts18      | 78169596e29f5efdfdd1ee35ab61ddae | ff,bf        |
+| hangon       | jtharier   | 8da35365a9f8b8c3aaa5f14b32bc249e | ff,fe,ff     |
+| hangon1      | jtharier   | 7c4fe3c2016c0f441b902470f165ef11 | ff,fe,ff     |
+| hangon2      | jtharier   | dd4faaf360506575f8b7bc04c53d8dd5 | ff,fe,ff     |
 | hbarrel      | jtninja    | c064f3fc2e628fa68953a5a81700539b | ff,bf        |
 | hbarrelu     | jtninja    |                                  | ff,bf        |
 | hbarrelua    | jtninja    | 2b1e251a9a99f04b47169625acb208ef | ff,bf        |
@@ -632,16 +637,16 @@
 | opwolfjsc    | jtrastan   | c41959a6ef5c024a8ae6a9c806294b12 | fd,3e        |
 | opwolfp      | jtrastan   | 8dd80a34184ae3c370aec7e059beddaa | fd,fe        |
 | opwolfu      | jtrastan   | 0fd4ef2d7a1969510df344a14702ece7 | fd,3e        |
-| outrun       | jtoutrun   | da3de79a3aa7c3611b14b2fcd2e9c649 | ff,f9        |
-| outrundx     | jtoutrun   | a634c1ed4f01ee56fc44e79739fe9cf5 | ff,fd        |
-| outrundxa    | jtoutrun   | 1bd4a598832601c602c0e6cdc1b42730 | ff,fd        |
-| outrundxeh   | jtoutrun   | 1aa677fa954c1de87f55b90e51218064 | ff,fd        |
-| outrundxeha  | jtoutrun   | aa3ac091ce6e6967a92f11674163dc5e | ff,fd        |
-| outrundxj    | jtoutrun   | ed3f405241ba86d3477fe379156c6b7d | ff,fd        |
-| outruneh     | jtoutrun   | 38cda82d46b14168445ab7bdf7767a17 | ff,f9        |
-| outruneha    | jtoutrun   | b886686d7da75069490e8ffc811aa4f4 | ff,f9        |
-| outrunm      | jtoutrun   |                                  | ff,f9        |
-| outrunra     | jtoutrun   | 2bd9cf9df6ce6a178bb7cdf3b7850ade | ff,f9        |
+| outrun       | jtoutrun   | da3de79a3aa7c3611b14b2fcd2e9c649 | ff,f9,ff     |
+| outrundx     | jtoutrun   | a634c1ed4f01ee56fc44e79739fe9cf5 | ff,fd,ff     |
+| outrundxa    | jtoutrun   | 1bd4a598832601c602c0e6cdc1b42730 | ff,fd,ff     |
+| outrundxeh   | jtoutrun   | 1aa677fa954c1de87f55b90e51218064 | ff,fd,ff     |
+| outrundxeha  | jtoutrun   | aa3ac091ce6e6967a92f11674163dc5e | ff,fd,ff     |
+| outrundxj    | jtoutrun   | ed3f405241ba86d3477fe379156c6b7d | ff,fd,ff     |
+| outruneh     | jtoutrun   | 38cda82d46b14168445ab7bdf7767a17 | ff,f9,ff     |
+| outruneha    | jtoutrun   | b886686d7da75069490e8ffc811aa4f4 | ff,f9,ff     |
+| outrunm      | jtoutrun   |                                  | ff,f9,ff     |
+| outrunra     | jtoutrun   | 2bd9cf9df6ce6a178bb7cdf3b7850ade | ff,f9,ff     |
 | pacland      | jtpaclan   | 9e0caa424015e165459a3f31af4db251 | ff,ff,ff     |
 | paclandj     | jtpaclan   | f6ccb063f46e1dbe5f5451cf3b0930a7 | ff,ff,ff     |
 | paclandjo    | jtpaclan   | e7698756ace9974909304961eaac145d | ff,ff,ff     |
@@ -1084,12 +1089,12 @@
 | topsecrt2    | jtbiocom   | a0e127acf4aa7292fdc1c37f4bd721e6 | ff,df        |
 | toramich     | jttora     | 32cb4c4bd6913f32104362e761847490 | ff,fb        |
 | toryumon     | jts16b     | 1af2f900df45b579cdbd5afab88def89 | ff,fe        |
-| toutrun      | jtoutrun   | 44219ddaa2201c084697f4adb2ea80ce | ff,d9        |
-| toutrun1     | jtoutrun   | 8876c7a4830f0af811c4580ac403198d | ff,db        |
-| toutrun2     | jtoutrun   | 944284233d5158d190b96ab6726c3925 | ff,f8        |
-| toutrun3     | jtoutrun   | f02ef8f063cd3c432fb13f0de126f9ee | ff,d8        |
-| toutrunj     | jtoutrun   | c56a6c6fb6f293a881d8f508079a2c2c | ff,d9        |
-| toutrunj1    | jtoutrun   | e42bd2f42d3892cd6bc17e7575c5107c | ff,f8        |
+| toutrun      | jtoutrun   | 44219ddaa2201c084697f4adb2ea80ce | ff,d9,ff     |
+| toutrun1     | jtoutrun   | 8876c7a4830f0af811c4580ac403198d | ff,db,ff     |
+| toutrun2     | jtoutrun   | 944284233d5158d190b96ab6726c3925 | ff,f8,ff     |
+| toutrun3     | jtoutrun   | f02ef8f063cd3c432fb13f0de126f9ee | ff,d8,ff     |
+| toutrunj     | jtoutrun   | c56a6c6fb6f293a881d8f508079a2c2c | ff,d9,ff     |
+| toutrunj1    | jtoutrun   | e42bd2f42d3892cd6bc17e7575c5107c | ff,f8,ff     |
 | trackfld     | jttrack    | 97597056bec9459cc0c954a254a19640 | ff,59        |
 | trackfldc    | jttrack    | b680ca50d26b1cade2c2bddbc98540ac | ff,59        |
 | trackfldnz   | jttrack    | 7e435b9985f39500fb8f76cf725a9580 | ff,59        |

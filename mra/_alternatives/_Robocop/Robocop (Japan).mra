@@ -98,7 +98,6 @@
         </interleave>
         <part repeat="0x20000"> FF</part>
         <!-- MCU_START -->
-        <!-- mcu - starts at 0x210000 -->
         <!-- sub - starts at 0x210000 - length 0x18000 (17 bits) -->
         <part repeat="0x1E00"> FF</part>
         <part name="en_24.a2" crc="b8e2ca98"/>

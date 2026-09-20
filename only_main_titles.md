@@ -134,6 +134,7 @@
 | grad3   | Gradius III (World, version R)                                               | gradius3  |
 | gunsmk  | Gun.Smoke (World, 1985-11-15)                                                | gunsmoke  |
 | harier  | Enduro Racer (Rev A, YM2151, FD1089B 317-0013A)                              | enduror   |
+| harier  | Hang-On (Rev A)                                                              | hangon    |
 | harier  | Space Harrier (Rev A, 8751 315-5163A)                                        | sharrier  |
 | karnov  | Atomic Runner Chelnov (World)                                                | chelnov   |
 | karnov  | Karnov (US, rev 6)                                                           | karnov    |
@@ -264,6 +265,7 @@
 | taitox  | Last Striker - Kyuukyoku no Striker                                          | kyustrkr  |
 | taitox  | Superman (World)                                                             | superman  |
 | taitox  | Twin Hawk (World)                                                            | twinhawk  |
+| thundr  | Alien Sector                                                                 | aliensec  |
 | thundr  | Genpei ToumaDen                                                              | genpeitd  |
 | thundr  | Hopping Mappy                                                                | hopmappy  |
 | thundr  | Metro-Cross (set 1)                                                          | metrocrs  |
@@ -292,4 +294,4 @@
 | xmen    | X-Men (4 Players ver EBA)                                                    | xmen      |
 | yiear   | Yie Ar Kung-Fu (version I)                                                   | yiear     |
 
-82 cores, supporting 291 games
+82 cores, supporting 293 games

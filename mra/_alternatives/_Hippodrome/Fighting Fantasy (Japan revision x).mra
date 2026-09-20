@@ -97,7 +97,6 @@
             <part name="ex12" crc="a2d244bc" map="1000"/>
         </interleave>
         <!-- MCU_START -->
-        <!-- mcu - starts at 0x210000 -->
         <!-- sub - starts at 0x210000 - length 0x18000 (17 bits) -->
         <part name="ex08" crc="53010534"/>
         <part repeat="0x8000"> FF</part>

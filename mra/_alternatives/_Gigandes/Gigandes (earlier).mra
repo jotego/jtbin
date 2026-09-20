@@ -69,8 +69,8 @@
         <!-- JTFRAME_BA3_START -->
         <!-- adpcmb - starts at 0x400000 - length 0x80000 (19 bits) -->
         <part name="east-11.16f" crc="92111f96"/>
-        <!-- CCHIP_START -->
         <!-- JTFRAME_PROM_START -->
+        <!-- CCHIP_START -->
         <!-- cchip_bios - starts at 0x480000 -->
         <!-- cchip_eprom - starts at 0x480000 -->
         <!-- Total 0x480000 bytes - 4608 kBytes -->

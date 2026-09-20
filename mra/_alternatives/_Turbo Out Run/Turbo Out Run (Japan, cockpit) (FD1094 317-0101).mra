@@ -122,12 +122,16 @@
         <!-- maincpu:key - starts at 0x298000 - length 0x2000 (13 bits) -->
         <part name="317-0101.key" crc="eb636314"/>
         <!-- Total 0x29A000 bytes - 2664 kBytes -->
+        <!-- Adding 16 bytes to the patch offset to make up for the MRA header -->
+        <patch offset="0x140B8">B9 0E 19 AE 6C B1</patch>
+        <patch offset="0x3EA10">E7 08 40 10 53 C7 94 85 04 A5 01 A7 2D F3 5C ED 10 8F 11 C6 59 8E 18 CF AF E2 84 E5 47 53 51 E6 FA AD 18 CF 71 0E 71 0E 71 0E 71 0E 67 C3 92 44 79 0A 59 8E 62 EF 71 0E E9 C3 09 AE 79 0A 12 45 8C 07 71 0E 67 EB E9 8D B6 50 FA AD C2 BB C1 CB CF 8D 88 CF 31 45 53 6C 71 0E B9 0E 11 87 31 66 DF 0C 03 03 B9 0E CC 8D C6 F1 75 0E</patch>
+        <patch offset="0x3EA7C">11 00 62 0D 02 00 00 86 49 48 00 20 11 00 62 0D 02 00 00 86 4F 4C 00 57</patch>
     </rom>
     <nvram index="2" size="32768"/>
     <rom index="1">
         <part>00 A9</part>
     </rom>
-    <switches page_id="1" page_name="Switches" base="24" default="ff,f8">
+    <switches page_id="1" page_name="Switches" base="24" default="ff,f8,ff">
         <COINAGE/>
         <dip name="Coin A" bits="0,3" ids="Free Play or 1/1,1/1 2/3,1/1 4/5,1/1 5/6,2/1 4/3,2/1 5/3 6/4,2/3,4/1,3/1,2/1,1/6,1/5,1/4,1/3,1/2,1/1"/>
         <dip name="Coin B" bits="4,7" ids="Free Play or 1/1,1/1 2/3,1/1 4/5,1/1 5/6,2/1 4/3,2/1 5/3 6/4,2/3,4/1,3/1,2/1,1/6,1/5,1/4,1/3,1/2,1/1"/>
@@ -137,6 +141,8 @@
         <dip name="Turbo" bits="11" ids="Unused,Use Turbo Shifter"/>
         <dip name="Time Adjust" bits="12,13" ids="Hardest,Hard,Easy,Normal"/>
         <dip name="Difficulty" bits="14,15" ids="Hardest,Hard,Easy,Normal"/>
+        <dip name="Gear Button" ids="Toggle,Hold for Low" bits="16"/>
+        <dip name="Gear Indicator" ids="On,Off" bits="17"/>
     </switches>
     <buttons names="Accelerate,Brake,Gear (Low / High),Nitro,Start,Coin,Core credits" default="A,B,X,Y,Start,Select,-" count="4"/>
 </misterromdescription>

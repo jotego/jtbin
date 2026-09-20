@@ -127,6 +127,7 @@
         <dip name="Difficulty" bits="8,9" ids="Hardest,Hard,Easy,Normal"/>
         <dip name="Lives" bits="12,13" ids="5,2,4,3"/>
         <dip name="Character Test" bits="15" ids="On,Off"/>
+        <dip name="Flip" ids="Off,On" bits="1"/>
     </switches>
     <buttons names="Cut,Unused,Start,Coin,Core credits" default="A,B,Start,Select,-" count="2"/>
 </misterromdescription>

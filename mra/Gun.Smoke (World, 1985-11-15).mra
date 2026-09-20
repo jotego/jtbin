@@ -117,5 +117,5 @@
         <dip name="Allow Continue" bits="14" ids="No,Yes"/>
         <dip name="Demo Sounds" bits="15" ids="Off,On"/>
     </switches>
-    <buttons names="Shoot left,Shoot centre,Shoot right,Start,Coin,Core credits" default="A,B,X,Start,Select,-" count="3"/>
+    <buttons names="Shoot left,Shoot centre,Shoot right,Start,Coin,Core credits" default="Y,X,A,Start,Select,-" count="3"/>
 </misterromdescription>

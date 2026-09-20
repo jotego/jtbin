@@ -70,16 +70,13 @@
             <part name="fl-10.20a" crc="92245b29" map="10"/>
         </interleave>
         <!-- JTFRAME_BA3_START -->
-        <!-- sprites - starts at 0x190000 - length 0x80000 (19 bits) -->
+        <!-- sprites - starts at 0x190000 - length 0x98000 (20 bits) -->
         <interleave output="32">
             <part name="fl-01.4a" crc="2c8b35a7" map="0001"/>
             <part name="fl-03.8a" crc="1eefed3c" map="0010"/>
             <part name="fl-00.2a" crc="756fb801" map="0100"/>
             <part name="fl-02.6a" crc="54d2c120" map="1000"/>
         </interleave>
-        <!-- MCU_START -->
-        <!-- mcu - starts at 0x210000 -->
-        <!-- sub - starts at 0x210000 - length 0x18000 (17 bits) -->
         <part repeat="0x18000"> FF</part>
         <!-- JTFRAME_PROM_START -->
         <!-- PROM_START -->
@@ -98,5 +95,5 @@
         <dip name="Difficulty" bits="10,11" ids="Hardest,Hard,Easy,Normal"/>
         <dip name="Allow Continue" bits="14" ids="Yes,No"/>
     </switches>
-    <buttons names="Shot,Jump,Turn left,Turn right,-,Start,Coin,Core credits" default="A,B,X,Y,Start,Select,-" count="4"/>
+    <buttons names="Shot,Jump,Turn left,Turn right,-,Start,Coin,Core credits" default="Y,B,L,R,Start,Select,-" count="4"/>
 </misterromdescription>

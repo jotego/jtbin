@@ -697,6 +697,9 @@
 | harier  | Enduro Racer (Rev A, YM2151, mask ROM sprites, FD1089B 317-0013A)                          | endurora      |
 | harier  | Enduro Racer (YM2151, FD1089B 317-0013A)                                                   | endurorb      |
 | harier  | Enduro Racer (YM2203, FD1089B 317-0013A)                                                   | enduror1      |
+| harier  | Hang-On                                                                                    | hangon1       |
+| harier  | Hang-On (Rev A)                                                                            | hangon        |
+| harier  | Hang-On (Rev A, ride-on)                                                                   | hangon2       |
 | harier  | Space Harrier (8751 315-5163)                                                              | sharrier1     |
 | harier  | Space Harrier (Rev A, 8751 315-5163A)                                                      | sharrier      |
 | karnov  | Atomic Runner Chelnov (Japan)                                                              | chelnovj      |
@@ -1133,6 +1136,8 @@
 | taitox  | Superman (World)                                                                           | superman      |
 | taitox  | Twin Hawk (US)                                                                             | twinhawku     |
 | taitox  | Twin Hawk (World)                                                                          | twinhawk      |
+| thundr  | Alien Sector                                                                               | aliensec      |
+| thundr  | Baraduke                                                                                   | baraduke      |
 | thundr  | Genpei ToumaDen                                                                            | genpeitd      |
 | thundr  | Hopping Mappy                                                                              | hopmappy      |
 | thundr  | Metro-Cross (set 1)                                                                        | metrocrs      |
@@ -1247,4 +1252,4 @@
 | yiear   | Yie Ar Kung-Fu (version G)                                                                 | yiear2        |
 | yiear   | Yie Ar Kung-Fu (version I)                                                                 | yiear         |
 
-83 cores, supporting 1246 games
+83 cores, supporting 1251 games

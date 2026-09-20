@@ -8,17 +8,17 @@
 					{
 						"id": 0,
 						"name": "Left",
-						"key": "pad_btn_a"
+						"key": "pad_btn_y"
 					},
 					{
 						"id": 1,
 						"name": " Centre",
-						"key": "pad_btn_b"
+						"key": "pad_btn_x"
 					},
 					{
 						"id": 2,
 						"name": " Right",
-						"key": "pad_btn_x"
+						"key": "pad_btn_a"
 					}
 				]
 			}

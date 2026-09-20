@@ -36,12 +36,11 @@
         <part>
             00 00 00 00 00 00 00 00
         </part>
-        <!-- maincpu - starts at 0x0 - length 0x40000 (18 bits) -->
+        <!-- maincpu - starts at 0x0 - length 0xA0000 (20 bits) -->
         <interleave output="16">
             <part name="870_m20.bin" crc="b1c79d6a" map="01"/>
             <part name="870_m21.bin" crc="436dbffb" map="10"/>
         </interleave>
-        <!-- data - starts at 0x40000 - length 0x60000 (19 bits) -->
         <part repeat="0x60000"> FF</part>
         <!-- JTFRAME_BA1_START -->
         <!-- audiocpu - starts at 0xA0000 - length 0x8000 (15 bits) -->

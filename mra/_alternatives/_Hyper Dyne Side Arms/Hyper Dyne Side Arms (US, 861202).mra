@@ -114,5 +114,5 @@
         <SYSTEM/>
         <dip name="Freeze" bits="19" ids="On,Off"/>
     </switches>
-    <buttons names="Fire-Left,Fire-Right,Power,Start,Coin,Core credits" default="A,B,X,Start,Select,-" count="3"/>
+    <buttons names="Fire-Left,Fire-Right,Power,Start,Coin,Core credits" default="Y,A,B,Start,Select,-" count="3"/>
 </misterromdescription>
