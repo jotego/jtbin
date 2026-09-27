@@ -116,8 +116,8 @@
         <!-- simm6.7 - starts at 0x4080000 -->
         <!-- Total 0x4080000 bytes - 66048 kBytes -->
     </rom>
-    <rom index="17" zip="jtbeta.zip" md5="None" asm_md5="5a2b1e5d0672c729eee562b43e70cc7f">
-        <part name="beta.bin" crc="8b6976d8"/>
+    <rom index="17" zip="jtbeta.zip" md5="None" asm_md5="7ecc1117032b37ba8a571c5a05db418c">
+        <part name="beta.bin" crc="3df60dfd"/>
     </rom>
     <rom index="2">
         <part>

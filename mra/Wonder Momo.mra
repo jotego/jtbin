@@ -37,7 +37,7 @@
   1[1]: sndext_en  Additional board for PCM sound
   1[2]: nocpu2     Keeps CPU2 in reset state
   1[3]: mcualt     Alternative mapping for MCU ROM
-  1[4]: scrhflip   Ignore flip bit and reverse H scroll
+  1[4]: scrhflip   Ignore flip bit and reverse H and V scroll
   1[5]: plane3inv  Invert data for color plane 3
   2[0]: roishtar   Special SUB/MCU mapping for roishtar
   2[1]: genpeitd   Special SUB/MCU mapping for genpei

@@ -102,8 +102,8 @@
             <part name="ec14.14c" crc="bedfe7f3" map="0100"/>
             <part name="ec10.14a" crc="47d95447" map="1000"/>
         </interleave>
-        <!-- JTFRAME_PROM_START -->
         <!-- MCU_START -->
+        <!-- JTFRAME_PROM_START -->
         <!-- mcu - starts at 0x210000 - length 0x18000 (17 bits) -->
         <part name="ec31-e.9a" crc="bf93a2ec"/>
         <part repeat="0x17000"> FF</part>

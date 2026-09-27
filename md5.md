@@ -699,6 +699,7 @@
 | punkshot2a   | jttmnt     |                                  | ff,7f,ff     |
 | punkshot2e   | jttmnt     | 45096293724f67ed5e11cff8912dd6ee | ff,7f,ff     |
 | punkshotj    | jttmnt     | 1fc97d8432a389d2b9929c04a215874d | ff,5b,ff     |
+| pyros        | jtwardnr   | e3981567364b6de110b26e5d0f832603 | 01,00        |
 | pzloop2      | jtcps2     | 1e52a337b3145823c43122abad5ab2db | ff,ff        |
 | pzloop2j     | jtcps2     | 2005f74ca24858fb5511c48a77c6ae5d | ff,ff        |
 | pzloop2jd    | jtcps2     | 6545381800fad4f7278d119f319944c0 | ff,ff        |
@@ -940,8 +941,8 @@
 | sinvasn      | jtcommnd   | 9848a282697289bf26a681561c6b90ca | ff,1f        |
 | sjryuko      | jts16b     | d796598dc8a8e8d5b5315bf1358051fa | ff,fb        |
 | sjryuko1     | jts16      | 7735c267ab3a53c5a032f5c49183fc14 | ff,fb        |
-| skykiddx     | jtthundr   | 12f572219662825ca0120185a0a0afd6 | ff,ff        |
-| skykiddxo    | jtthundr   | 83d7c4a38fb179dae25917875ef100f1 | ff,ff        |
+| skykiddx     | jtthundr   | 5da2d21899483cadc1074b82cb582cd6 | ff,ff        |
+| skykiddxo    | jtthundr   | 1c52b8b17cb8e80448315a2b1d4c7a59 | ff,ff        |
 | slammast     | jtcps15    | 313b1b55f32092e408b79fd7a34a0962 | ff           |
 | slammastu    | jtcps15    | ce1b77141ec7606bd656100d9a41e0e2 | ff           |
 | slyspy       | jtslyspy   | e497455caff76c29998aeff151420b06 | 7f,ff        |
@@ -1167,6 +1168,8 @@
 | vulgus       | jt1942     | 091c69e9bdddf4b289166b65594fa43c | ff,7f        |
 | vulgusa      | jt1942     | d26e07acc0e6fbbaa57b11f38f90809b | ff,7f        |
 | vulgusj      | jt1942     | 1f120b8857f5df3543d2f7ebc9a385d0 | ff,7f        |
+| wardner      | jtwardnr   | 9a369a0af5cd009ec83943d92800a50b | 01,00        |
+| wardnerj     | jtwardnr   | f139fbecad24c4b5abf118431da72b46 | 01,00        |
 | wb3          | jts16b     | f3e0c4dbf684ce6212e5eaf89545f0e9 | ff,fd        |
 | wb31         | jts16      | 60351f24d4ed05826bfc0f948c081c3b | ff,fd        |
 | wb32         | jts16b     | bf3916c9bf199b8006f8dba5e3272f86 | ff,fd        |

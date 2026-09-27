@@ -109,8 +109,8 @@
             <part name="ei10.14a" crc="eeee8a1a" map="1000"/>
         </interleave>
         <part repeat="0x20000"> FF</part>
-        <!-- JTFRAME_PROM_START -->
         <!-- MCU_START -->
+        <!-- JTFRAME_PROM_START -->
         <!-- mcu - starts at 0x210000 - length 0x18000 (17 bits) -->
         <part name="ei31.9a" crc="2a8745d2"/>
         <part repeat="0x17000"> FF</part>

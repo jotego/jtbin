@@ -288,10 +288,11 @@
 | twin16  | Vulcan Venture (new)                                                         | vulcan    |
 | vigil   | Vigilante (World, Rev E)                                                     | vigilant  |
 | vlfied  | Volfied (World, rev 1)                                                       | volfied   |
+| wardnr  | Wardner (World)                                                              | wardner   |
 | wc      | Gridiron Fight (World)                                                       | gridiron  |
 | wc      | Tehkan World Cup (set 1)                                                     | tehkanwc  |
 | wwfss   | WWF Superstars (Europe)                                                      | wwfsstar  |
 | xmen    | X-Men (4 Players ver EBA)                                                    | xmen      |
 | yiear   | Yie Ar Kung-Fu (version I)                                                   | yiear     |
 
-82 cores, supporting 293 games
+83 cores, supporting 294 games

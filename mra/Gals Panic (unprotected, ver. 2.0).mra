@@ -65,8 +65,8 @@
         <part name="pm006e.67" crc="57aec037"/>
         <!-- Total 0x600000 bytes - 6144 kBytes -->
     </rom>
-    <rom index="17" zip="jtbeta.zip" md5="None" asm_md5="5a2b1e5d0672c729eee562b43e70cc7f">
-        <part name="beta.bin" crc="8b6976d8"/>
+    <rom index="17" zip="jtbeta.zip" md5="None" asm_md5="7ecc1117032b37ba8a571c5a05db418c">
+        <part name="beta.bin" crc="3df60dfd"/>
     </rom>
     <nvram index="2" size="272384"/>
     <!-- Vertical screen. -->

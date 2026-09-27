@@ -64,14 +64,14 @@
         <!-- JTFRAME_BA3_START -->
         <!-- adpcmb - starts at 0x400000 - length 0x80000 (19 bits) -->
         <part name="east-11" crc="92111f96"/>
-        <!-- CCHIP_START -->
         <!-- JTFRAME_PROM_START -->
+        <!-- CCHIP_START -->
         <!-- cchip_bios - starts at 0x480000 -->
         <!-- cchip_eprom - starts at 0x480000 -->
         <!-- Total 0x480000 bytes - 4608 kBytes -->
     </rom>
-    <rom index="17" zip="jtbeta.zip" md5="None" asm_md5="5a2b1e5d0672c729eee562b43e70cc7f">
-        <part name="beta.bin" crc="8b6976d8"/>
+    <rom index="17" zip="jtbeta.zip" md5="None" asm_md5="7ecc1117032b37ba8a571c5a05db418c">
+        <part name="beta.bin" crc="3df60dfd"/>
     </rom>
     <nvram index="2" size="21504"/>
     <rom index="1">

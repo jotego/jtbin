@@ -72,6 +72,7 @@ trojan,psg0,1.00,psg1,1.00,fm0,0.39,fm1,0.39,pcm,0.87
 twin16,fm,1.98,pcm,0.30,upd,1.40
 vigil,pcm,0.40,fm,0.22
 vlfied,fm,1.00,psg,0.95
+wardnr,fm,1.00
 wc,pcmsnd,1.00,psg0,0.27,psg1,0.27
 wwfss,pcm,1.00,fm,0.12
 xmen,k539,1.98

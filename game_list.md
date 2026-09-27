@@ -1226,6 +1226,9 @@
 | vlfied  | Volfied (US, rev 1)                                                                        | volfiedu      |
 | vlfied  | Volfied (World)                                                                            | volfiedo      |
 | vlfied  | Volfied (World, rev 1)                                                                     | volfied       |
+| wardnr  | Pyros (US)                                                                                 | pyros         |
+| wardnr  | Wardner (World)                                                                            | wardner       |
+| wardnr  | Wardner no Mori (Japan)                                                                    | wardnerj      |
 | wc      | Gridiron Fight (World)                                                                     | gridiron      |
 | wc      | Tehkan World Cup (1986 year hack)                                                          | tehkanwch     |
 | wc      | Tehkan World Cup (set 1)                                                                   | tehkanwc      |
@@ -1252,4 +1255,4 @@
 | yiear   | Yie Ar Kung-Fu (version G)                                                                 | yiear2        |
 | yiear   | Yie Ar Kung-Fu (version I)                                                                 | yiear         |
 
-83 cores, supporting 1251 games
+84 cores, supporting 1254 games
