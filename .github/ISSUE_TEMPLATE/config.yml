@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Game or core bugs
+    url: https://github.com/jotego/jtcores/issues/new
+    about: Report bugs in games or FPGA cores in the JTCORES source code repository.
