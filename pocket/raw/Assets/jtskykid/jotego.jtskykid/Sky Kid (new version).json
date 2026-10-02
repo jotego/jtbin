@@ -1,0 +1,30 @@
+{
+	"instance":{
+		"magic": "APF_VER_1",
+		"variant_select": {
+			"id": 0,
+			"select": false
+		},
+		"data_path": "",
+		"data_slots": [
+			{
+				"id": 1,
+				"filename": "skykid.rom"
+			},
+			{
+				"id": 2,
+				"filename": "skykid.sav"
+			}
+		],
+		"memory_writes": [
+			{
+				"address": "0xf9000000",
+				"data": "0x8000"
+			},
+			{
+				"address": "0xfc000000",
+				"data": "0x543210"
+			}
+		]
+	}
+}

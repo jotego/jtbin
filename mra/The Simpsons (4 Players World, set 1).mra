@@ -35,7 +35,8 @@
         <!--  Header to identify the PCB type
         Byte 0 = 0 - The Simpsons
                  1 - Reserved (Parodius)
-                 2 - Vendetta -->
+                 2 - Vendetta
+                 3 - Escape Kids -->
         <part>
             00 00 00 00 </part>
         <!-- maincpu - starts at 0x0 - length 0x80000 (19 bits) -->
@@ -67,6 +68,9 @@
         <!-- Total 0x6E0000 bytes - 7040 kBytes -->
         <!-- Adding 4 bytes to the patch offset to make up for the MRA header -->
         <patch offset="0x787FF">68 00 a9</patch>
+    </rom>
+    <rom index="17" zip="jtbeta.zip" md5="None" asm_md5="7ecc1117032b37ba8a571c5a05db418c">
+        <part name="beta.bin" crc="3df60dfd"/>
     </rom>
     <rom index="2">
         <part>

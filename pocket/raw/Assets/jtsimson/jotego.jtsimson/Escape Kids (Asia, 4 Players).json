@@ -1,0 +1,35 @@
+{
+	"instance":{
+		"magic": "APF_VER_1",
+		"variant_select": {
+			"id": 0,
+			"select": false
+		},
+		"data_path": "",
+		"data_slots": [
+			{
+				"id": 1,
+				"filename": "esckids.rom"
+			},
+			{
+				"id": 2,
+				"filename": "esckids.sav"
+			},
+			{
+				"id": 17,
+				"filename": "beta.bin",
+				"md5": "7ecc1117032b37ba8a571c5a05db418c"
+			}
+		],
+		"memory_writes": [
+			{
+				"address": "0xf9000000",
+				"data": "0x8000"
+			},
+			{
+				"address": "0xfc000000",
+				"data": "0x543210"
+			}
+		]
+	}
+}

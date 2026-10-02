@@ -1101,6 +1101,8 @@
 | shouse  | Youkai Douchuuki (Japan, old version (YD1))                                                | youkaidk1     |
 | simson  | Crime Fighters 2 (Japan, 2 Players, ver. P)                                                | vendetta2pp   |
 | simson  | Crime Fighters 2 (Japan, 4 Players, ver. N)                                                | vendettan     |
+| simson  | Escape Kids (Asia, 4 Players)                                                              | esckids       |
+| simson  | Escape Kids (Japan, 2 Players)                                                             | esckidsj      |
 | simson  | The Simpsons (2 Players Asia)                                                              | simpsons2pa   |
 | simson  | The Simpsons (2 Players Japan)                                                             | simpsons2pj   |
 | simson  | The Simpsons (2 Players World, set 1)                                                      | simpsons2p    |
@@ -1119,6 +1121,11 @@
 | simson  | Vendetta (World, 2 Players, ver. W)                                                        | vendetta2pw   |
 | simson  | Vendetta (World, 4 Players, ver. ?)                                                        | vendettaun    |
 | simson  | Vendetta (World, 4 Players, ver. T)                                                        | vendetta      |
+| skykid  | Dragon Buster                                                                              | drgnbstr      |
+| skykid  | Sky Kid (CUS60 version)                                                                    | skykidd       |
+| skykid  | Sky Kid (Sipem)                                                                            | skykids       |
+| skykid  | Sky Kid (new version)                                                                      | skykid        |
+| skykid  | Sky Kid (old version)                                                                      | skykido       |
 | slyspy  | Boulder Dash - Boulder Dash Part 2 (Japan)                                                 | bouldashj     |
 | slyspy  | Boulder Dash - Boulder Dash Part 2 (World)                                                 | bouldash      |
 | slyspy  | Secret Agent (Japan, revision 2)                                                           | secretagj     |
@@ -1255,4 +1262,4 @@
 | yiear   | Yie Ar Kung-Fu (version G)                                                                 | yiear2        |
 | yiear   | Yie Ar Kung-Fu (version I)                                                                 | yiear         |
 
-84 cores, supporting 1254 games
+85 cores, supporting 1261 games

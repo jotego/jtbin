@@ -303,6 +303,7 @@
 | dinou        | jtcps15    | 4ebb0eb94f9c729ea3539ceea6ac8ec2 | ff           |
 | dokaben      | jtpang     | aed01410541f90abb2ae92f2a2dab45f |              |
 | dokaben2     | jtpang     | be97dfbe39de4bbd1e3a8fbe4b409093 |              |
+| drgnbstr     | jtskykid   | 012c76736a4ae1e08f341ef4d2043392 | ff,ff,ff     |
 | drgninja     | jtninja    | 7f8184d0612bdffb26c41b399e6f2428 | ff,ff        |
 | drtoppel     | jtkiwi     | 9fe58312fd09b1f45592df79c9fb6551 | fe,ff        |
 | drtoppelj    | jtkiwi     | 353f1ea1938b30281fa8a02b3641bb08 | fe,ff        |
@@ -334,6 +335,8 @@
 | enduror1     | jtharier   | 4f10817d4f2ae30e358a2024dfa573e0 | ff,7e,ff     |
 | endurora     | jtharier   | 2910a1a558f055d49bd8fff60bc302e1 | ff,7e,ff     |
 | endurorb     | jtharier   | d9597e4f627cba450e25888c1b255a15 | ff,7e,ff     |
+| esckids      | jtsimson   | 99a85d4efac1abee80481ef8360ccb89 |              |
+| esckidsj     | jtsimson   | 64ddf0697bedcd7f4b53d4690dacc3b8 |              |
 | eswat        | jts16b     | 31a8d31e285d861d7114170526c1cdb3 | ff,fd        |
 | eswatj       | jts16b     | 486798c31678dea81c2c318db62aaad6 | ff,fd        |
 | eswatj1      | jts16b     | 92797fa5af53e07f842a3ef411f891fa | ff,fd        |
@@ -941,8 +944,12 @@
 | sinvasn      | jtcommnd   | 9848a282697289bf26a681561c6b90ca | ff,1f        |
 | sjryuko      | jts16b     | d796598dc8a8e8d5b5315bf1358051fa | ff,fb        |
 | sjryuko1     | jts16      | 7735c267ab3a53c5a032f5c49183fc14 | ff,fb        |
+| skykid       | jtskykid   | 1ea75f2538a539cd642d392987059ff2 | ff,ff,ff     |
+| skykidd      | jtskykid   | 2c6e76d6c3623fa0df586106ad4ddcc2 | ff,ff,ff     |
 | skykiddx     | jtthundr   | 5da2d21899483cadc1074b82cb582cd6 | ff,ff        |
 | skykiddxo    | jtthundr   | 1c52b8b17cb8e80448315a2b1d4c7a59 | ff,ff        |
+| skykido      | jtskykid   | 78ed7164147c16f28a9eb1cb6a4aa172 | ff,ff,ff     |
+| skykids      | jtskykid   | 3850717b3ae96df6e3bb2c0423f25bd3 | ff,ff,ff     |
 | slammast     | jtcps15    | 313b1b55f32092e408b79fd7a34a0962 | ff           |
 | slammastu    | jtcps15    | ce1b77141ec7606bd656100d9a41e0e2 | ff           |
 | slyspy       | jtslyspy   | e497455caff76c29998aeff151420b06 | 7f,ff        |

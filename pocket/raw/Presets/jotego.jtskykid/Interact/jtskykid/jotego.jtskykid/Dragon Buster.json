@@ -1,0 +1,277 @@
+{
+	"interact":{
+		"magic": "APF_VER_1",
+		"variables": [
+			{
+				"name": "Cabinet",
+				"id": 0,
+				"type": "list",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 1,
+				"value": 0,
+				"mask": "0xFFFDFFFF",
+				"options": [
+					{
+						"name": "Cocktail",
+						"value": "0x0"
+					},
+					{
+						"name": "Upright",
+						"value": "0x20000"
+					}
+				]
+			},
+			{
+				"name": "Coin B",
+				"id": 1,
+				"type": "list",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 3,
+				"value": 0,
+				"mask": "0xFFFFFFFC",
+				"options": [
+					{
+						"name": "3 Coins/1 Credit",
+						"value": "0x0"
+					},
+					{
+						"name": "2 Coins/1 Credit",
+						"value": "0x1"
+					},
+					{
+						"name": "1 Coin/2 Credits",
+						"value": "0x2"
+					},
+					{
+						"name": "1 Coin/1 Credit",
+						"value": "0x3"
+					}
+				]
+			},
+			{
+				"name": "Freeze",
+				"id": 2,
+				"type": "check",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 0,
+				"value": 0,
+				"value_off": 4,
+				"mask": "0xFFFFFFFB"
+			},
+			{
+				"name": "Round Skip",
+				"id": 3,
+				"type": "check",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 0,
+				"value": 0,
+				"value_off": 8,
+				"mask": "0xFFFFFFF7"
+			},
+			{
+				"name": "Demo Sounds",
+				"id": 4,
+				"type": "check",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 1,
+				"value": 16,
+				"mask": "0xFFFFFFEF"
+			},
+			{
+				"name": "Coin A",
+				"id": 5,
+				"type": "list",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 3,
+				"value": 0,
+				"mask": "0xFFFFFF9F",
+				"options": [
+					{
+						"name": "3 Coins/1 Credit",
+						"value": "0x0"
+					},
+					{
+						"name": "2 Coins/1 Credit",
+						"value": "0x20"
+					},
+					{
+						"name": "1 Coin/2 Credits",
+						"value": "0x40"
+					},
+					{
+						"name": "1 Coin/1 Credit",
+						"value": "0x60"
+					}
+				]
+			},
+			{
+				"name": "Service Mode",
+				"id": 6,
+				"type": "check",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 0,
+				"value": 0,
+				"value_off": 128,
+				"mask": "0xFFFFFF7F"
+			},
+			{
+				"name": "Allow Continue",
+				"id": 7,
+				"type": "check",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 1,
+				"value": 256,
+				"mask": "0xFFFFFEFF"
+			},
+			{
+				"name": "Bonus Level",
+				"id": 8,
+				"type": "list",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 1,
+				"value": 0,
+				"mask": "0xFFFFFDFF",
+				"options": [
+					{
+						"name": "Partial",
+						"value": "0x0"
+					},
+					{
+						"name": "Full",
+						"value": "0x200"
+					}
+				]
+			},
+			{
+				"name": "Bonus Vitality",
+				"id": 9,
+				"type": "list",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 3,
+				"value": 0,
+				"mask": "0xFFFFF3FF",
+				"options": [
+					{
+						"name": "64",
+						"value": "0x0"
+					},
+					{
+						"name": "32/64",
+						"value": "0x400"
+					},
+					{
+						"name": "48/64",
+						"value": "0x800"
+					},
+					{
+						"name": "None",
+						"value": "0xC00"
+					}
+				]
+			},
+			{
+				"name": "Starting Vitality",
+				"id": 10,
+				"type": "list",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 3,
+				"value": 0,
+				"mask": "0xFFFFCFFF",
+				"options": [
+					{
+						"name": "160",
+						"value": "0x0"
+					},
+					{
+						"name": "96",
+						"value": "0x1000"
+					},
+					{
+						"name": "64",
+						"value": "0x2000"
+					},
+					{
+						"name": "128",
+						"value": "0x3000"
+					}
+				]
+			},
+			{
+				"name": "Level of Monster",
+				"id": 11,
+				"type": "list",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 1,
+				"value": 0,
+				"mask": "0xFFFFBFFF",
+				"options": [
+					{
+						"name": "Difficult",
+						"value": "0x0"
+					},
+					{
+						"name": "Normal",
+						"value": "0x4000"
+					}
+				]
+			},
+			{
+				"name": "Spurt Time",
+				"id": 12,
+				"type": "list",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 1,
+				"value": 0,
+				"mask": "0xFFFF7FFF",
+				"options": [
+					{
+						"name": "Difficult",
+						"value": "0x0"
+					},
+					{
+						"name": "Normal",
+						"value": "0x8000"
+					}
+				]
+			},
+			{
+				"name": "Default",
+				"id": 1015,
+				"type": "number_u32",
+				"enabled": false,
+				"persist": false,
+				"writeonly": true,
+				"address": "0xfa000000",
+				"defaultval": 16777215,
+				"value": 0
+			}
+		],
+		"messages": []
+	}
+}

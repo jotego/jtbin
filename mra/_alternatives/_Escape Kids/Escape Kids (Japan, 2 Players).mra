@@ -1,0 +1,89 @@
+<!--          FPGA arcade hardware by Jotego
+
+              This core is available for hardware compatible with MiST and MiSTer
+              Other FPGA systems may be supported by the time you read this.
+              This work is not mantained by the MiSTer project. Please contact the
+              core author for issues and updates.
+
+              (c) Jose Tejada, 2026. Please support this research
+              Patreon: https://patreon.com/jotego
+
+              The author does not endorse or participate in illegal distribution
+              of copyrighted material. This work can be used with compatible
+              software. This software can be homebrew projects or legally
+              obtained memory dumps of compatible games.
+
+              This file license is GNU GPLv2.
+              You can read the whole license file in
+              https://opensource.org/licenses/gpl-2.0.php
+
+-->
+
+<misterromdescription>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://jotego/jtcores"/>
+    <rotation>horizontal</rotation>
+    <name>Escape Kids (Japan, 2 Players)</name>
+    <setname>esckidsj</setname>
+    <mameversion>0282</mameversion>
+    <year>1991</year>
+    <manufacturer>Konami</manufacturer>
+    <players>2</players>
+    <rbf>jtsimson</rbf>
+    <joystick>8</joystick>
+    <region>World</region>
+    <rom index="0" zip="esckidsj.zip|esckids.zip" md5="None" address="0x30000000" asm_md5="64ddf0697bedcd7f4b53d4690dacc3b8">
+        <!--  Header to identify the PCB type
+        Byte 0 = 0 - The Simpsons
+                 1 - Reserved (Parodius)
+                 2 - Vendetta
+                 3 - Escape Kids -->
+        <part>
+            03 00 00 00 </part>
+        <!-- maincpu - starts at 0x0 - length 0x80000 (19 bits) -->
+        <part name="975r01" crc="7b5c5572"/>
+        <part repeat="0x60000"> FF</part>
+        <!-- JTFRAME_BA1_START -->
+        <!-- audiocpu - starts at 0x80000 - length 0x20000 (17 bits) -->
+        <part name="975f02" crc="994fb229"/>
+        <part repeat="0x10000"> FF</part>
+        <!-- PCM_START -->
+        <!-- pcm - starts at 0xA0000 - length 0x140000 (21 bits) -->
+        <part name="975c03" crc="dc4a1707"/>
+        <part repeat="0xC0000"> FF</part>
+        <!-- JTFRAME_BA2_START -->
+        <!-- tiles - starts at 0x1E0000 - length 0x100000 (20 bits) -->
+        <interleave output="32">
+            <part name="975c09" crc="bc52210e" map="0021"/>
+            <part name="975c08" crc="fcff9256" map="2100"/>
+        </interleave>
+        <!-- JTFRAME_BA3_START -->
+        <!-- obj - starts at 0x2E0000 - length 0x400000 (22 bits) -->
+        <interleave output="64">
+            <part name="975c04" crc="15688a6f" map="00000021"/>
+            <part name="975c05" crc="1ff33bb7" map="00002100"/>
+            <part name="975c06" crc="36d410f9" map="00210000"/>
+            <part name="975c07" crc="97ec541e" map="21000000"/>
+        </interleave>
+        <!-- Total 0x6E0000 bytes - 7040 kBytes -->
+    </rom>
+    <rom index="17" zip="jtbeta.zip" md5="None" asm_md5="7ecc1117032b37ba8a571c5a05db418c">
+        <part name="beta.bin" crc="3df60dfd"/>
+    </rom>
+    <rom index="2">
+        <part>
+57 41 44 30 00 49 53 48 30 00 49 55 43 30 00 42
+41 44 30 00 4B 4F 59 30 00 4F 4F 55 30 00 41 44
+43 30 00 57 41 44 30 00 49 53 48 30 00 49 55 43
+30 00 42 41 44 30 00 4B 4F 59 30 00 4F 4F 55 30
+00 41 44 43 30 00 57 41 44 30 00 49 53 48 30 00
+49 55 43 30 00 42 41 44 30 00 4B 4F 59 30 00 4F
+4F 55 30 00 41 44 43 30 00 00 00 00 02 01 01 00
+01 01 FF FF FF FF FF FF FF FF FF FF FF FF 22 2C
+</part>
+    </rom>
+    <nvram index="2" size="28833"/>
+    <rom index="1">
+        <part>00 80</part>
+    </rom>
+    <buttons names="Jump,Dash,-,Start,Coin,Core credits" default="A,B,Start,Select,-" count="2"/>
+</misterromdescription>

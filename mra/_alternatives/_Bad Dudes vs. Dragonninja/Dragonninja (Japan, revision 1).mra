@@ -109,8 +109,8 @@
             <part name="eg10.14a" crc="eeee8a1a" map="1000"/>
         </interleave>
         <part repeat="0x20000"> FF</part>
-        <!-- MCU_START -->
         <!-- JTFRAME_PROM_START -->
+        <!-- MCU_START -->
         <!-- mcu - starts at 0x210000 - length 0x18000 (17 bits) -->
         <part name="eg31.9a" crc="657aab2d"/>
         <part repeat="0x17000"> FF</part>

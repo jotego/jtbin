@@ -14,6 +14,11 @@
 			{
 				"id": 2,
 				"filename": "simpsons4pe2.sav"
+			},
+			{
+				"id": 17,
+				"filename": "beta.bin",
+				"md5": "7ecc1117032b37ba8a571c5a05db418c"
 			}
 		],
 		"memory_writes": [

@@ -83,9 +83,6 @@
         <part name="cchip_b39-05.53" crc="397735e3" length="0x2000"/>
         <!-- Total 0x283000 bytes - 2572 kBytes -->
     </rom>
-    <rom index="17" zip="jtbeta.zip" md5="None" asm_md5="7ecc1117032b37ba8a571c5a05db418c">
-        <part name="beta.bin" crc="3df60dfd"/>
-    </rom>
     <nvram index="2" size="77857"/>
     <!-- 8-line black frame on top/bottom. -->
     <rom index="1">

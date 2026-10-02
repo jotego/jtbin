@@ -256,8 +256,11 @@
 | shouse  | Shadowland (YD3)                                                             | shadowld  |
 | shouse  | Splatter House (World, new version (SH3))                                    | splatter  |
 | shouse  | Tank Force (US, 2 Players)                                                   | tankfrce  |
+| simson  | Escape Kids (Asia, 4 Players)                                                | esckids   |
 | simson  | The Simpsons (4 Players World, set 1)                                        | simpsons  |
 | simson  | Vendetta (World, 4 Players, ver. T)                                          | vendetta  |
+| skykid  | Dragon Buster                                                                | drgnbstr  |
+| skykid  | Sky Kid (new version)                                                        | skykid    |
 | slyspy  | Boulder Dash - Boulder Dash Part 2 (World)                                   | bouldash  |
 | slyspy  | Secret Agent (World, revision 3)                                             | secretag  |
 | taitox  | Balloon Brothers                                                             | ballbros  |
@@ -295,4 +298,4 @@
 | xmen    | X-Men (4 Players ver EBA)                                                    | xmen      |
 | yiear   | Yie Ar Kung-Fu (version I)                                                   | yiear     |
 
-83 cores, supporting 294 games
+84 cores, supporting 297 games

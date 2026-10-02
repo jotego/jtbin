@@ -112,8 +112,8 @@
         <!-- Total 0x29A000 bytes - 2664 kBytes -->
         <!-- Adding 16 bytes to the patch offset to make up for the MRA header -->
         <patch offset="0x14184">B9 0E CC B9 36 76 71 0E 71 0E</patch>
-        <patch offset="0x3EB10">E7 08 40 10 1A FF DC 99 59 9E DB 9F 13 92 39 61 CB D5 19 FC 5C B9 18 DD 27 F9 75 62 0A FF 37 63 CC B9 1B DD 3D BA 59 D4 79 0A CC B9 9B 40 3D B2 7C 99 79 0A 93 61 8C 07 99 90 5E B9 DD 70 19 BC 6D D3 71 0E 2F D1 CF 99 DD 70 19 BC 8F E1 B9 0E CC 99 5A 68 DF 0C 03 03 D7 B9 58 BD FC 53 59 9D 4F 96 75 0E</patch>
-        <patch offset="0x3EB74">11 00 62 0D 02 00 00 86 49 48 00 20 11 00 62 0D 02 00 00 86 4F 4C 00 57</patch>
+        <patch offset="0x3EB10">E7 08 40 10 1A FF DC 99 59 9E DB 9F 13 92 3D 63 CB D5 19 FC 5C B9 18 DD 27 F9 77 62 0A FF 37 63 CC B9 1B DD 3D BA D9 B4 79 0A CC B9 9B 40 3D B2 FE 99 98 F5 5C 99 19 BE D9 97 71 0E 3D B2 59 DD DC 53 19 BC 39 75 18 58 CF 99 BD F7 19 BC 6D DB 71 0E B9 0E 19 BD 2B 3B DF 0C 03 03 D7 BC 58 BD AD F7 59 9D 4F 96 75 0E</patch>
+        <patch offset="0x3EB78">11 00 62 0D 02 00 00 86 49 48 00 20 11 00 62 0D 02 00 00 86 4F 4C 00 57</patch>
     </rom>
     <nvram index="2" size="32768"/>
     <rom index="1">

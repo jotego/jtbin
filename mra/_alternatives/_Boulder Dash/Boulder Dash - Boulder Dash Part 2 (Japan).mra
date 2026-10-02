@@ -81,8 +81,8 @@
             <part name="fn-02" crc="4f060cba" map="1000"/>
         </interleave>
         <part repeat="0x58000"> FF</part>
-        <!-- JTFRAME_PROM_START -->
         <!-- PROM_START -->
+        <!-- JTFRAME_PROM_START -->
         <!-- proms - starts at 0x228000 - length 0x100 (8 bits) -->
         <part name="ta-16.21k" crc="ad26e8d4"/>
         <!-- Total 0x228100 bytes - 2208 kBytes -->

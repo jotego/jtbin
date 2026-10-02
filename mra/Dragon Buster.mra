@@ -1,0 +1,105 @@
+<!--          FPGA arcade hardware by Jotego
+
+              This core is available for hardware compatible with MiST and MiSTer
+              Other FPGA systems may be supported by the time you read this.
+              This work is not mantained by the MiSTer project. Please contact the
+              core author for issues and updates.
+
+              (c) Jose Tejada, 2026. Please support this research
+              Patreon: https://patreon.com/jotego
+
+              The author does not endorse or participate in illegal distribution
+              of copyrighted material. This work can be used with compatible
+              software. This software can be homebrew projects or legally
+              obtained memory dumps of compatible games.
+
+              This file license is GNU GPLv2.
+              You can read the whole license file in
+              https://opensource.org/licenses/gpl-2.0.php
+
+-->
+
+<misterromdescription>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://jotego/jtcores"/>
+    <rotation>horizontal</rotation>
+    <name>Dragon Buster</name>
+    <setname>drgnbstr</setname>
+    <mameversion>0282</mameversion>
+    <year>1984</year>
+    <manufacturer>Namco</manufacturer>
+    <players>2</players>
+    <rbf>jtskykid</rbf>
+    <joystick>4</joystick>
+    <region>World</region>
+    <rom index="0" zip="drgnbstr.zip" md5="None" asm_md5="012c76736a4ae1e08f341ef4d2043392">
+        <!-- 
+  1[0]: rot180     Rotate the output 180 degrees -->
+        <part>
+            00 00 00 00 00 00 00 00
+        </part>
+        <!-- maincpu - starts at 0x0 - length 0xC000 (16 bits) -->
+        <part name="db1_2b.6c" crc="0f11cd17"/>
+        <part name="db1_1.6b" crc="1c7c1821"/>
+        <part name="db1_3.6d" crc="6da169ae"/>
+        <!-- JTFRAME_BA1_START -->
+        <!-- mcusub - starts at 0xC000 - length 0x2000 (13 bits) -->
+        <part name="db1_4.3c" crc="8a0b1fc1"/>
+        <!-- JTFRAME_BA2_START -->
+        <!-- chars - starts at 0xE000 - length 0x2000 (13 bits) -->
+        <part name="db1_6.6l" crc="c080b66c"/>
+        <!-- BG_START -->
+        <!-- tiles - starts at 0x10000 - length 0x2000 (13 bits) -->
+        <part name="db1_5.7e" crc="28129aed"/>
+        <!-- JTFRAME_BA3_START -->
+        <!-- sprites - starts at 0x12000 - length 0x10000 (16 bits) -->
+        <interleave output="16">
+            <part name="db1_8.10n" crc="11942c61" map="01" length="0x2000"/>
+            <part name="db1_7.10m" crc="cc130fe2" map="10" length="0x2000"/>
+        </interleave>
+        <interleave output="16">
+            <part name="db1_8.10n" crc="11942c61" map="01" length="0x2000" offset="0x2000"/>
+            <part name="db1_7.10m" crc="cc130fe2" map="10" length="0x2000"/>
+        </interleave>
+        <interleave output="16">
+            <part name="db1_7.10m" crc="cc130fe2" map="01" length="0x2000" offset="0x2000"/>
+            <part name="db1_7.10m" crc="cc130fe2" map="10" length="0x2000"/>
+        </interleave>
+        <interleave output="16">
+            <part name="db1_7.10m" crc="cc130fe2" map="01" length="0x2000" offset="0x2000"/>
+            <part name="db1_7.10m" crc="cc130fe2" map="10" length="0x2000"/>
+        </interleave>
+        <!-- JTFRAME_PROM_START -->
+        <!-- mcu - starts at 0x22000 - length 0x1000 (12 bits) -->
+        <part name="cus60-60a1.mcu" crc="076ea82a"/>
+        <!-- proms - starts at 0x23000 - length 0x700 (11 bits) -->
+        <part name="db1-1.2n" crc="3f8cce97"/>
+        <part name="db1-2.2p" crc="afe32436"/>
+        <part name="db1-3.2r" crc="c95ff576"/>
+        <part name="db1-4.5n" crc="b2180c21"/>
+        <part name="db1-5.6n" crc="5e2b3f74"/>
+        <!-- Total 0x23700 bytes - 141 kBytes -->
+    </rom>
+    <nvram index="2" size="14336"/>
+    <rom index="1">
+        <part>00 80</part>
+    </rom>
+    <switches page_id="1" page_name="Switches" base="16" default="ff,ff,ff">
+        <BUTTON2/>
+        <dip name="Cabinet" bits="17" ids="Cocktail,Upright"/>
+        <DSWA/>
+        <dip name="Coin B" bits="0,1" ids="3/1,2/1,1/2,1/1"/>
+        <dip name="Freeze" bits="2" ids="On,Off"/>
+        <dip name="Round Skip" bits="3" ids="On,Off"/>
+        <dip name="Demo Sounds" bits="4" ids="Off,On"/>
+        <dip name="Coin A" bits="5,6" ids="3/1,2/1,1/2,1/1"/>
+        <dip name="Service Mode" bits="7" ids="On,Off"/>
+        <DSWB/>
+        <dip name="Allow Continue" bits="8" ids="No,Yes"/>
+        <dip name="Bonus Level" bits="9" ids="Partial,Full"/>
+        <dip name="Bonus Vitality" bits="10,11" ids="64,32/64,48/64,None"/>
+        <dip name="Starting Vitality" bits="12,13" ids="160,96,64,128"/>
+        <dip name="Level of Monster" bits="14" ids="Difficult,Normal"/>
+        <dip name="Spurt Time" bits="15" ids="Difficult,Normal"/>
+    </switches>
+    <buttons names="Attack,Jump,Start,Coin,Core credits" default="A,B,Start,Select,-" count="2"/>
+</misterromdescription>

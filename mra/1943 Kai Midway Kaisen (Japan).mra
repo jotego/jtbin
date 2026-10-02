@@ -44,8 +44,8 @@
         <interleave output="16">
             <part name="bmk04.5h" crc="884a8692" map="12"/>
         </interleave>
-        <!-- JTFRAME_BA1_START -->
         <!-- MAP1_START -->
+        <!-- JTFRAME_BA1_START -->
         <!-- tilerom - starts at 0x38000 - length 0x10000 (16 bits) -->
         <interleave output="16">
             <part name="bmk14.5f" crc="cf0f5a53" map="12"/>
