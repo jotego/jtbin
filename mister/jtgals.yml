@@ -1,0 +1,6 @@
+- core: jtgals
+  target: mister
+  sta: 0.193ns
+  LE: 36%
+  BRAM: 91%
+  Free-BRAM: 50

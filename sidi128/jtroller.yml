@@ -1,0 +1,6 @@
+- core: jtroller
+  target: sidi128
+  sta: 0.777ns
+  LE: 14%
+  BRAM: 12%
+  Free-BRAM: 381

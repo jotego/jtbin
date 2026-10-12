@@ -1,0 +1,128 @@
+<!--          FPGA arcade hardware by Jotego
+
+              This core is available for hardware compatible with MiST and MiSTer
+              Other FPGA systems may be supported by the time you read this.
+              This work is not mantained by the MiSTer project. Please contact the
+              core author for issues and updates.
+
+              (c) Jose Tejada, 2026. Please support this research
+              Patreon: https://patreon.com/jotego
+
+              The author does not endorse or participate in illegal distribution
+              of copyrighted material. This work can be used with compatible
+              software. This software can be homebrew projects or legally
+              obtained memory dumps of compatible games.
+
+              This file license is GNU GPLv2.
+              You can read the whole license file in
+              https://opensource.org/licenses/gpl-2.0.php
+
+-->
+
+<misterromdescription>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://jotego/jtcores"/>
+    <rotation>horizontal</rotation>
+    <name>&apos;88 Games</name>
+    <setname>88games</setname>
+    <mameversion>0282</mameversion>
+    <year>1988</year>
+    <manufacturer>Konami</manufacturer>
+    <players>4</players>
+    <rbf>jt88game</rbf>
+    <joystick/>
+    <region>World</region>
+    <rom index="0" zip="88games.zip" md5="None" address="0x30000000" asm_md5="1c860dbdb600a179b6a79ba00afe7590">
+        <!--  -->
+        <part>
+            00 00 00 00 00 00 00 00
+        </part>
+        <!-- maincpu - starts at 0x0 - length 0x20000 (17 bits) -->
+        <part repeat="0x8000"> FF</part>
+        <part name="861m01.k18" crc="4a4e2959"/>
+        <part name="861m02.k16" crc="e19f15f6"/>
+        <!-- JTFRAME_BA1_START -->
+        <!-- audiocpu - starts at 0x20000 - length 0x8000 (15 bits) -->
+        <part name="861d01.d9" crc="0ff1dec0"/>
+        <!-- UPD1_START -->
+        <!-- upd1 - starts at 0x28000 - length 0x20000 (17 bits) -->
+        <part name="861a07.a" crc="5d035d69"/>
+        <part name="861a07.b" crc="6337dd91"/>
+        <!-- UPD2_START -->
+        <!-- upd2 - starts at 0x48000 - length 0xB8000 (20 bits) -->
+        <part name="861a07.c" crc="5067a38b"/>
+        <part name="861a07.d" crc="86731451"/>
+        <part repeat="0x98000"> FF</part>
+        <!-- JTFRAME_BA2_START -->
+        <!-- k052109 - starts at 0x100000 - length 0x100000 (20 bits) -->
+        <interleave output="32">
+            <part name="861a08.a" crc="77a00dd6" map="0001"/>
+            <part name="861a08.c" crc="b422edfc" map="0010"/>
+            <part name="861a09.a" crc="df8917b6" map="0100"/>
+            <part name="861a09.c" crc="f577b88f" map="1000"/>
+        </interleave>
+        <interleave output="32">
+            <part name="861a08.b" crc="28a8304f" map="0001"/>
+            <part name="861a08.d" crc="e01a3802" map="0010"/>
+            <part name="861a09.b" crc="4917158d" map="0100"/>
+            <part name="861a09.d" crc="2bb3282c" map="1000"/>
+        </interleave>
+        <part repeat="0x80000"> FF</part>
+        <!-- JTFRAME_BA3_START -->
+        <!-- k051960 - starts at 0x200000 - length 0x100000 (20 bits) -->
+        <interleave output="32">
+            <part name="861a06.e" crc="6f96651c" map="0001"/>
+            <part name="861a06.a" crc="85e2e30e" map="0010"/>
+            <part name="861a05.e" crc="725af3fc" map="0100"/>
+            <part name="861a05.a" crc="cedc19d0" map="1000"/>
+        </interleave>
+        <interleave output="32">
+            <part name="861a06.f" crc="88310bf3" map="0001"/>
+            <part name="861a06.b" crc="ce17eaf0" map="0010"/>
+            <part name="861a05.f" crc="32d830ca" map="0100"/>
+            <part name="861a05.b" crc="db2a8808" map="1000"/>
+        </interleave>
+        <interleave output="32">
+            <part name="861a06.g" crc="4a55beb3" map="0001"/>
+            <part name="861a06.c" crc="a568b34e" map="0010"/>
+            <part name="861a05.g" crc="fd51c4ea" map="0100"/>
+            <part name="861a05.c" crc="cf03c449" map="1000"/>
+        </interleave>
+        <interleave output="32">
+            <part name="861a06.h" crc="d906b79b" map="0001"/>
+            <part name="861a06.d" crc="bc70ab39" map="0010"/>
+            <part name="861a05.h" crc="60d0c8a5" map="0100"/>
+            <part name="861a05.d" crc="97d78c77" map="1000"/>
+        </interleave>
+        <!-- PSAC_START -->
+        <!-- k051316 - starts at 0x300000 - length 0x40000 (18 bits) -->
+        <part name="861a04.a" crc="092a8b15"/>
+        <part name="861a04.b" crc="75744b56"/>
+        <part name="861a04.c" crc="a00021c5"/>
+        <part name="861a04.d" crc="d208304c"/>
+        <!-- JTFRAME_PROM_START -->
+        <!-- proms - starts at 0x340000 - length 0x100 (8 bits) -->
+        <part name="861.g3" crc="429785db"/>
+        <!-- Total 0x340100 bytes - 3328 kBytes -->
+    </rom>
+    <rom index="17" zip="jtbeta.zip" md5="None" asm_md5="7ecc1117032b37ba8a571c5a05db418c">
+        <part name="beta.bin" crc="3df60dfd"/>
+    </rom>
+    <nvram index="2" size="2048"/>
+    <rom index="1">
+        <part>00 80</part>
+    </rom>
+    <switches page_id="1" page_name="Switches" base="16" default="ff,7b,ff">
+        <DSW1/>
+        <dip name="Coin A" bits="0,3" ids="Free Play,4/3,4/1,3/4,3/2,3/1,2/5,2/3,2/1,1/7,1/6,1/5,1/4,1/3,1/2,1/1"/>
+        <dip name="Coin B" bits="4,7" ids="No B,4/3,4/1,3/4,3/2,3/1,2/5,2/3,2/1,1/7,1/6,1/5,1/4,1/3,1/2,1/1"/>
+        <DSW2/>
+        <dip name="Cabinet" bits="9,10" ids="Upright,Upright,Cocktail,Cocktail"/>
+        <dip name="Difficulty" bits="13,14" ids="Hardest,Hard,Normal,Easy"/>
+        <dip name="Demo Sounds" bits="15" ids="On,Off"/>
+        <IN0/>
+        <dip name="Flip Screen" bits="20" ids="On,Off"/>
+        <dip name="Records" bits="21" ids="Keep,Erase"/>
+        <dip name="Service Mode" bits="22" ids="On,Off"/>
+    </switches>
+    <buttons names="Left button,Centre button,Right button,Start,Coin,Core credits" default="Y,X,A,Start,Select,-" count="3"/>
+</misterromdescription>

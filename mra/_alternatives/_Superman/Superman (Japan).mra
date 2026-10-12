@@ -69,8 +69,8 @@
         <!-- JTFRAME_BA3_START -->
         <!-- adpcmb - starts at 0x400000 - length 0x80000 (19 bits) -->
         <part repeat="0x80000"> FF</part>
-        <!-- CCHIP_START -->
         <!-- JTFRAME_PROM_START -->
+        <!-- CCHIP_START -->
         <!-- cchip_bios - starts at 0x480000 - length 0x1000 (12 bits) -->
         <part name="cchip_upd78c11.bin" crc="43021521" length="0x1000"/>
         <!-- cchip_eprom - starts at 0x481000 - length 0x2000 (13 bits) -->

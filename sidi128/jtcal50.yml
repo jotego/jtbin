@@ -1,0 +1,6 @@
+- core: jtcal50
+  target: sidi128
+  sta: 3.350ns
+  LE: 17%
+  BRAM: 46%
+  Free-BRAM: 235

@@ -1,0 +1,121 @@
+<!--          FPGA arcade hardware by Jotego
+
+              This core is available for hardware compatible with MiST and MiSTer
+              Other FPGA systems may be supported by the time you read this.
+              This work is not mantained by the MiSTer project. Please contact the
+              core author for issues and updates.
+
+              (c) Jose Tejada, 2026. Please support this research
+              Patreon: https://patreon.com/jotego
+
+              The author does not endorse or participate in illegal distribution
+              of copyrighted material. This work can be used with compatible
+              software. This software can be homebrew projects or legally
+              obtained memory dumps of compatible games.
+
+              This file license is GNU GPLv2.
+              You can read the whole license file in
+              https://opensource.org/licenses/gpl-2.0.php
+
+-->
+
+<misterromdescription>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://jotego/jtcores"/>
+    <rotation>vertical (ccw)</rotation>
+    <name>Sky Shark (bootleg)</name>
+    <setname>skysharkb</setname>
+    <mameversion>0282</mameversion>
+    <year>1987</year>
+    <manufacturer>bootleg</manufacturer>
+    <players>2</players>
+    <rbf>jtktiger</rbf>
+    <joystick>8</joystick>
+    <region>World</region>
+    <rom index="0" zip="skysharkb.zip|fshark.zip" md5="None" asm_md5="0763da44e24fe7e4928a8848605e216f">
+        <!-- 
+  0[0]: tcobr      Twin Cobra board
+  0[1]: fast       68000 at 10 MHz -->
+        <part>
+            00 00 00 00 00 00 00 00
+        </part>
+        <!-- maincpu - starts at 0x0 - length 0x40000 (18 bits) -->
+        <interleave output="16">
+            <part name="1q.ic17" crc="d1f39ed2" map="01"/>
+            <part name="1r.ic18" crc="ea4bcb43" map="10"/>
+        </interleave>
+        <part repeat="0x20000"> FF</part>
+        <!-- JTFRAME_BA1_START -->
+        <!-- audiocpu - starts at 0x40000 - length 0x8000 (15 bits) -->
+        <part name="1p.ic16" crc="f0b98af2"/>
+        <!-- DSP_START -->
+        <!-- dsp - starts at 0x48000 - length 0x1000 (12 bits) -->
+        <interleave output="16">
+            <part name="82s191_r.bin" crc="5b96ae3f" map="01"/>
+            <part name="82s191_l.bin" crc="d5dfc8dd" map="10"/>
+        </interleave>
+        <!-- JTFRAME_BA2_START -->
+        <!-- chars - starts at 0x49000 - length 0x10000 (16 bits) -->
+        <interleave output="32">
+            <part name="1g.ic7" crc="9d3f698d" map="0001"/>
+            <part name="1e.ic5" crc="543bbb81" map="0010"/>
+            <part name="1f.ic6" crc="d357f494" map="0100"/>
+            <part name="1f.ic6" crc="d357f494" map="1000"/>
+        </interleave>
+        <!-- BG_START -->
+        <!-- bg_tiles - starts at 0x59000 - length 0x20000 (17 bits) -->
+        <interleave output="32">
+            <part name="1h.ic8" crc="ef0cf49c" map="0001"/>
+            <part name="1k.ic11" crc="f5799422" map="0010"/>
+            <part name="1j.ic10" crc="4bd099ff" map="0100"/>
+            <part name="1i.ic9" crc="230f1582" map="1000"/>
+        </interleave>
+        <!-- FG_START -->
+        <!-- fg_tiles - starts at 0x79000 - length 0x40000 (18 bits) -->
+        <interleave output="32">
+            <part name="1l.ic12" crc="733b9997" map="0001"/>
+            <part name="1o.ic15" crc="8b70ef32" map="0010"/>
+            <part name="1n.ic14" crc="f711ba7d" map="0100"/>
+            <part name="1m.ic13" crc="62532cd3" map="1000"/>
+        </interleave>
+        <part repeat="0x20000"> FF</part>
+        <!-- JTFRAME_BA3_START -->
+        <!-- obj - starts at 0xB9000 - length 0x40000 (18 bits) -->
+        <interleave output="32">
+            <part name="1a.ic1" crc="2234b424" map="0001"/>
+            <part name="1b.ic2" crc="30d4c9a8" map="0010"/>
+            <part name="1c.ic3" crc="64f3d88f" map="0100"/>
+            <part name="1d.ic4" crc="3b23a9fc" map="1000"/>
+        </interleave>
+        <!-- JTFRAME_PROM_START -->
+        <!-- proms - starts at 0xF9000 - length 0x260 (10 bits) -->
+        <part name="82s129.ic41" crc="24e7d62f"/>
+        <part name="82s129.ic40" crc="a50cef09"/>
+        <part name="82s123.ic42" crc="f72482db"/>
+        <part name="82s123.ic50" crc="bc88cced"/>
+        <part name="82s123.ic99" crc="4fb5df2a"/>
+        <!-- Total 0xF9260 bytes - 996 kBytes -->
+    </rom>
+    <rom index="17" zip="jtbeta.zip" md5="None" asm_md5="7ecc1117032b37ba8a571c5a05db418c">
+        <part name="beta.bin" crc="3df60dfd"/>
+    </rom>
+    <!-- Vertical screen. Orientation reversed. -->
+    <rom index="1">
+        <part>05 80</part>
+    </rom>
+    <switches page_id="1" page_name="Switches" base="16" default="01,00">
+        <DSWA/>
+        <dip name="Cabinet" bits="0" ids="Cocktail,Upright"/>
+        <dip name="Flip Screen" bits="1" ids="Off,On"/>
+        <dip name="Service Mode" bits="2" ids="Off,On"/>
+        <dip name="Demo Sounds" bits="3" ids="On,Off"/>
+        <dip name="Coin A" bits="4,5" ids="1/1,1/2,2/1,2/3"/>
+        <dip name="Coin B" bits="6,7" ids="1/1,1/2,2/1,2/3"/>
+        <DSWB/>
+        <dip name="Difficulty" bits="8,9" ids="Normal,Easy,Hard,Very Hard"/>
+        <dip name="Bonus Life" bits="10,11" ids="50k 200k 150k+,70k 270k 200k+,50k Only,100k Only"/>
+        <dip name="Lives" bits="12,13" ids="3,5,1,2"/>
+        <dip name="Dip Switch Display" bits="14" ids="Off,On"/>
+        <dip name="Allow Continue" bits="15" ids="No,Yes"/>
+    </switches>
+    <buttons names="Shot,Bomb,Start,Coin,Core credits" default="A,B,Start,Select,-" count="2"/>
+</misterromdescription>

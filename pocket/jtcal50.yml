@@ -1,0 +1,6 @@
+- core: jtcal50
+  target: pocket
+  sta: 3.535ns
+  LE: 51%
+  BRAM: 62%
+  Free-BRAM: 116

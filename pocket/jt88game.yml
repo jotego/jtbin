@@ -1,0 +1,6 @@
+- core: jt88game
+  target: pocket
+  sta: 1.165ns
+  LE: 43%
+  BRAM: 21%
+  Free-BRAM: 244

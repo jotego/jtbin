@@ -1,0 +1,6 @@
+- core: jtgals
+  target: sidi128
+  sta: 4.469ns
+  LE: 14%
+  BRAM: 70%
+  Free-BRAM: 129

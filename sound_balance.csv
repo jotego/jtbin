@@ -1,5 +1,6 @@
 1942,psg0,0.40,psg1,0.40
 1943,psg0,1.00,psg1,1.00,fm0,0.73,fm1,0.73
+88game,fm,1.00,pcm,0.28
 ajax,fm,1.00,pcm1,0.12,pcm2,0.15
 aliens,fm,1.00,pcm,0.23
 biocom,fm,1.00
@@ -32,6 +33,7 @@ karnov,opn,0.70,opl,0.70,psg,1.00
 kchamp,psg0a,0.46,psg0bc,0.78,psg1,0.59,pcm,1.00,dac,0.72
 kicker,ti1,1.00,ti2,1.00
 kiwi,fm,0.50,psg,0.41,pcm,1.00
+ktiger,fm,1.00
 kunio,fm,1.00,pcm,0.93
 labrun,psg0,1.00,psg1,1.00,fm0,0.55,fm1,0.55
 midres,opn,0.25,opl,0.25,psg,0.31,pcm,1.00
@@ -49,6 +51,7 @@ prmr,k539,1.98
 rastanriders,k60,0.90
 roadf,vlm,1.00,psg,0.42,rdac,0.13
 roc,psg0a,1.00,psg0b,1.00,psg0c,1.00,psg1a,1.00,psg1b,1.00,psg1c,1.00
+roller,fm,1.00,pcm,1.00
 rumble,psg0,1.00,psg1,1.00,fm0,0.69,fm1,0.69
 rungun,k539,1.98
 s16,fm,0.34,pcm,1.00
@@ -62,6 +65,7 @@ shanon,fm,0.68,pcm,1.25
 shouse,fm,0.49,pcm,0.75,cus30,1.00
 simson,snd,1.00
 skykid,cus30,1.00
+slap,psg1,1.00,psg2,1.00
 slyspy,opn,0.25,opl,0.25,psg,0.31,pcm,1.00
 taitox,sup,1.00,psg,0.44,fm,1.00
 thundr,fm,0.07,pcm0,1.98,pcm1,1.98,cus30,0.46

@@ -1,0 +1,6 @@
+- core: jtcal50
+  target: mister
+  sta: 0.792ns
+  LE: 40%
+  BRAM: 48%
+  Free-BRAM: 285

@@ -73,8 +73,8 @@
             <part name="c04-09.14" crc="c78cf057" map="10"/>
         </interleave>
         <part repeat="0x20000"> FF</part>
-        <!-- JTFRAME_PROM_START -->
         <!-- JTFRAME_BA3_START -->
+        <!-- JTFRAME_PROM_START -->
         <!-- cchip_bios - starts at 0x200000 - length 0x1000 (12 bits) -->
         <part name="cchip_upd78c11.bin" crc="43021521" length="0x1000"/>
         <!-- cchip_eprom - starts at 0x201000 - length 0x2000 (13 bits) -->

@@ -1,0 +1,6 @@
+- core: jtroller
+  target: mister
+  sta: 0.293ns
+  LE: 39%
+  BRAM: 22%
+  Free-BRAM: 433

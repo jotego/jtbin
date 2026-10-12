@@ -1,0 +1,6 @@
+- core: jt88game
+  target: sidi
+  sta: 0.301ns
+  LE: 76%
+  BRAM: 88%
+  Free-BRAM: 8

@@ -1,0 +1,6 @@
+- core: jtroller
+  target: pocket
+  sta: 1.504ns
+  LE: 45%
+  BRAM: 16%
+  Free-BRAM: 258

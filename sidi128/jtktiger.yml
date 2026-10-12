@@ -1,0 +1,6 @@
+- core: jtktiger
+  target: sidi128
+  sta: 3.149ns
+  LE: 15%
+  BRAM: 22%
+  Free-BRAM: 335

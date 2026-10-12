@@ -1,0 +1,122 @@
+<!--          FPGA arcade hardware by Jotego
+
+              This core is available for hardware compatible with MiST and MiSTer
+              Other FPGA systems may be supported by the time you read this.
+              This work is not mantained by the MiSTer project. Please contact the
+              core author for issues and updates.
+
+              (c) Jose Tejada, 2026. Please support this research
+              Patreon: https://patreon.com/jotego
+
+              The author does not endorse or participate in illegal distribution
+              of copyrighted material. This work can be used with compatible
+              software. This software can be homebrew projects or legally
+              obtained memory dumps of compatible games.
+
+              This file license is GNU GPLv2.
+              You can read the whole license file in
+              https://opensource.org/licenses/gpl-2.0.php
+
+-->
+
+<misterromdescription>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://jotego/jtcores"/>
+    <rotation>vertical (ccw)</rotation>
+    <name>Twin Cobra (World)</name>
+    <setname>twincobr</setname>
+    <mameversion>0282</mameversion>
+    <year>1987</year>
+    <manufacturer>Toaplan / Taito Corporation</manufacturer>
+    <players>2</players>
+    <rbf>jtktiger</rbf>
+    <joystick>8</joystick>
+    <region>World</region>
+    <rom index="0" zip="twincobr.zip" md5="None" asm_md5="36bfbd1bfeb6e17eccfe4ec27893f5b6">
+        <!-- 
+  0[0]: tcobr      Twin Cobra board
+  0[1]: fast       68000 at 10 MHz -->
+        <part>
+            03 00 00 00 00 00 00 00
+        </part>
+        <!-- maincpu - starts at 0x0 - length 0x40000 (18 bits) -->
+        <interleave output="16">
+            <part name="b30_03.7h" crc="41be6978" map="01"/>
+            <part name="b30_01.7j" crc="07f64d13" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="b30_27_ii.8h" crc="d7d1e317" map="01"/>
+            <part name="b30_26_ii.8j" crc="3a646618" map="10"/>
+        </interleave>
+        <part repeat="0x10000"> FF</part>
+        <!-- JTFRAME_BA1_START -->
+        <!-- audiocpu - starts at 0x40000 - length 0x8000 (15 bits) -->
+        <part name="b30_05_ii.4f" crc="e37b3c44"/>
+        <!-- DSP_START -->
+        <!-- dsp - starts at 0x48000 - length 0x1000 (12 bits) -->
+        <interleave output="16">
+            <part name="dsp_22.bin" crc="79389a71" map="01"/>
+            <part name="dsp_21.bin" crc="2d135376" map="10"/>
+        </interleave>
+        <!-- JTFRAME_BA2_START -->
+        <!-- chars - starts at 0x49000 - length 0x10000 (16 bits) -->
+        <interleave output="32">
+            <part name="b30_08.8c" crc="0a254133" map="0001"/>
+            <part name="b30_07.10b" crc="e9e2d4b1" map="0010"/>
+            <part name="b30_06.8b" crc="a599d845" map="0100"/>
+            <part name="b30_06.8b" crc="a599d845" map="1000"/>
+        </interleave>
+        <!-- BG_START -->
+        <!-- bg_tiles - starts at 0x59000 - length 0x20000 (17 bits) -->
+        <interleave output="32">
+            <part name="b30_12.16c" crc="b5d48389" map="0001"/>
+            <part name="b30_11.14c" crc="97f20fdc" map="0010"/>
+            <part name="b30_10.12c" crc="170c01db" map="0100"/>
+            <part name="b30_09.10c" crc="44f5accd" map="1000"/>
+        </interleave>
+        <!-- FG_START -->
+        <!-- fg_tiles - starts at 0x79000 - length 0x40000 (18 bits) -->
+        <interleave output="32">
+            <part name="b30_16.20b" crc="15b3991d" map="0001"/>
+            <part name="b30_15.18b" crc="d9e2e55d" map="0010"/>
+            <part name="b30_13.18c" crc="13daeac8" map="0100"/>
+            <part name="b30_14.20c" crc="8cc79357" map="1000"/>
+        </interleave>
+        <!-- JTFRAME_BA3_START -->
+        <!-- obj - starts at 0xB9000 - length 0x40000 (18 bits) -->
+        <interleave output="32">
+            <part name="b30_20.12d" crc="cb4092b8" map="0001"/>
+            <part name="b30_19.14d" crc="9cb8675e" map="0010"/>
+            <part name="b30_18.15d" crc="806fb374" map="0100"/>
+            <part name="b30_17.16d" crc="4264bff8" map="1000"/>
+        </interleave>
+        <!-- JTFRAME_PROM_START -->
+        <!-- proms - starts at 0xF9000 - length 0x260 (10 bits) -->
+        <part name="82s129.d3" crc="24e7d62f"/>
+        <part name="82s129.d4" crc="a50cef09"/>
+        <part name="82s123.d2" crc="f72482db"/>
+        <part name="82s123.e18" crc="bc88cced"/>
+        <part name="82s123.b24" crc="4fb5df2a"/>
+        <!-- Total 0xF9260 bytes - 996 kBytes -->
+    </rom>
+    <rom index="17" zip="jtbeta.zip" md5="None" asm_md5="7ecc1117032b37ba8a571c5a05db418c">
+        <part name="beta.bin" crc="3df60dfd"/>
+    </rom>
+    <!-- Vertical screen. Orientation reversed. -->
+    <rom index="1">
+        <part>05 80</part>
+    </rom>
+    <switches page_id="1" page_name="Switches" base="16" default="00,00">
+        <DSWA/>
+        <dip name="Flip Screen" bits="1" ids="Off,On"/>
+        <dip name="Service Mode" bits="2" ids="Off,On"/>
+        <dip name="Demo Sounds" bits="3" ids="On,Off"/>
+        <dip name="Coin A" bits="4,5" ids="1/1,2/1,3/1,4/1"/>
+        <dip name="Coin B" bits="6,7" ids="1/2,1/3,1/4,1/6"/>
+        <DSWB/>
+        <dip name="Difficulty" bits="8,9" ids="Normal,Easy,Hard,Very Hard"/>
+        <dip name="Bonus Life" bits="10,11" ids="50k 200k 150k+,70k 270k 200k+,50k Only,100k Only"/>
+        <dip name="Lives" bits="12,13" ids="3,5,4,2"/>
+        <dip name="Dip Switch Display" bits="14" ids="Off,On"/>
+    </switches>
+    <buttons names="Shot,Bomb,Start,Coin,Core credits" default="A,B,Start,Select,-" count="2"/>
+</misterromdescription>

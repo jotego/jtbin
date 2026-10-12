@@ -1,0 +1,6 @@
+- core: jt88game
+  target: mist
+  sta: 0.528ns
+  LE: 76%
+  BRAM: 80%
+  Free-BRAM: 13

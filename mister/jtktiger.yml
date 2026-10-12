@@ -1,0 +1,6 @@
+- core: jtktiger
+  target: mister
+  sta: 0.267ns
+  LE: 35%
+  BRAM: 30%
+  Free-BRAM: 388

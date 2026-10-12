@@ -18,6 +18,9 @@
 | 1943    | 1943: The Battle of Midway (US)                                                            | 1943ua        |
 | 1943    | 1943: The Battle of Midway (US, Rev C)                                                     | 1943u         |
 | 1943    | 1943: The Battle of Midway Mark II (US)                                                    | 1943mii       |
+| 88game  | '88 Games                                                                                  | 88games       |
+| 88game  | Hyper Sports Special (Japan)                                                               | hypsptsp      |
+| 88game  | Konami '88                                                                                 | konami88      |
 | ajax    | Ajax                                                                                       | ajax          |
 | ajax    | Ajax (Japan)                                                                               | ajaxj         |
 | ajax    | Typhoon                                                                                    | typhoon       |
@@ -750,6 +753,15 @@
 | kiwi    | The NewZealand Story (World, old version) (P0-041A PCB)                                    | tnzso         |
 | kiwi    | The NewZealand Story (World, prototype) (P0-041-1 PCB)                                     | tnzsop        |
 | kiwi    | The NewZealand Story (World, unknown version) (P0-041A PCB)                                | tnzsoa        |
+| ktiger  | Flying Shark (World)                                                                       | fshark        |
+| ktiger  | Hishou Zame (Japan)                                                                        | hishouza      |
+| ktiger  | Kyukyoku Tiger (Japan, 2 player alternate)                                                 | ktigera       |
+| ktiger  | Kyukyoku Tiger (Japan, 2 player cooperative)                                               | ktiger        |
+| ktiger  | Sky Shark (US, set 1)                                                                      | skyshark      |
+| ktiger  | Sky Shark (US, set 2)                                                                      | skysharka     |
+| ktiger  | Sky Shark (bootleg)                                                                        | skysharkb     |
+| ktiger  | Twin Cobra (US)                                                                            | twincobru     |
+| ktiger  | Twin Cobra (World)                                                                         | twincobr      |
 | kunio   | Nekketsu Kouha Kunio-kun (Japan bootleg)                                                   | kuniokunb     |
 | kunio   | Nekketsu Kouha Kunio-kun (Japan)                                                           | kuniokun      |
 | kunio   | Renegade (US bootleg)                                                                      | renegadeb     |
@@ -880,6 +892,9 @@
 | roadf   | Road Fighter (set 3, unencrypted)                                                          | roadfu        |
 | roc     | Roc'n Rope                                                                                 | rocnrope      |
 | roc     | Roc'n Rope (Kosuka)                                                                        | rocnropek     |
+| roller  | Rollergames (Asia)                                                                         | rollerga      |
+| roller  | Rollergames (Japan)                                                                        | rollergj      |
+| roller  | Rollergames (US)                                                                           | rollerg       |
 | rumble  | Rush & Crash (Japan)                                                                       | rushcrsh      |
 | rumble  | The Speed Rumbler (set 1)                                                                  | srumbler      |
 | rumble  | The Speed Rumbler (set 2)                                                                  | srumbler2     |
@@ -1126,6 +1141,11 @@
 | skykid  | Sky Kid (Sipem)                                                                            | skykids       |
 | skykid  | Sky Kid (new version)                                                                      | skykid        |
 | skykid  | Sky Kid (old version)                                                                      | skykido       |
+| slap    | Alcon (US)                                                                                 | alcon         |
+| slap    | Slap Fight (A76 set, GX-006-A PCB)                                                         | slapfigha     |
+| slap    | Slap Fight (A77 set, 8606M PCB)                                                            | slapfigh      |
+| slap    | Tiger-Heli (Japan)                                                                         | tigerhj       |
+| slap    | Tiger-Heli (US)                                                                            | tigerh        |
 | slyspy  | Boulder Dash - Boulder Dash Part 2 (Japan)                                                 | bouldashj     |
 | slyspy  | Boulder Dash - Boulder Dash Part 2 (World)                                                 | bouldash      |
 | slyspy  | Secret Agent (Japan, revision 2)                                                           | secretagj     |
@@ -1262,4 +1282,4 @@
 | yiear   | Yie Ar Kung-Fu (version G)                                                                 | yiear2        |
 | yiear   | Yie Ar Kung-Fu (version I)                                                                 | yiear         |
 
-85 cores, supporting 1261 games
+89 cores, supporting 1281 games

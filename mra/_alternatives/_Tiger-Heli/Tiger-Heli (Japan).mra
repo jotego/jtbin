@@ -1,0 +1,113 @@
+<!--          FPGA arcade hardware by Jotego
+
+              This core is available for hardware compatible with MiST and MiSTer
+              Other FPGA systems may be supported by the time you read this.
+              This work is not mantained by the MiSTer project. Please contact the
+              core author for issues and updates.
+
+              (c) Jose Tejada, 2026. Please support this research
+              Patreon: https://patreon.com/jotego
+
+              The author does not endorse or participate in illegal distribution
+              of copyrighted material. This work can be used with compatible
+              software. This software can be homebrew projects or legally
+              obtained memory dumps of compatible games.
+
+              This file license is GNU GPLv2.
+              You can read the whole license file in
+              https://opensource.org/licenses/gpl-2.0.php
+
+-->
+
+<misterromdescription>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://jotego/jtcores"/>
+    <rotation>vertical (ccw)</rotation>
+    <name>Tiger-Heli (Japan)</name>
+    <setname>tigerhj</setname>
+    <mameversion>0282</mameversion>
+    <year>1985</year>
+    <manufacturer>Toaplan / Taito</manufacturer>
+    <players>2</players>
+    <rbf>jtslap</rbf>
+    <joystick>8</joystick>
+    <region>World</region>
+    <rom index="0" zip="tigerhj.zip|tigerh.zip" md5="None" asm_md5="1830fa1ee55b6ef6330fdf17a30a8295">
+        <!-- Byte 12: bit 0 A76 main-latch screen flip; bit 1 Tiger-Heli fixed ROM, MCU status polarity, main-latch flip and sound divider. -->
+        <part>
+            00 00 01 00 02 00 05 00
+            07 00 07 08 02 00 00 00
+        </part>
+        <!-- maincpu - starts at 0x0 - length 0x10000 (16 bits) -->
+        <part name="a47_00.8p" crc="cbdbe3cc"/>
+        <part name="a47_01.8n" crc="65df2152"/>
+        <part name="a47_02.8k" crc="633d324b"/>
+        <part repeat="0x4000"> FF</part>
+        <!-- JTFRAME_BA1_START -->
+        <!-- audiocpu - starts at 0x10000 - length 0x10000 (16 bits) -->
+        <part name="a47_03.12d" crc="d105260f"/>
+        <part repeat="0xE000"> FF</part>
+        <!-- JTFRAME_BA2_START -->
+        <!-- gfx1 - starts at 0x20000 - length 0x4000 (14 bits) -->
+        <interleave output="16">
+            <part name="a47_04.6g" crc="cd59628e" map="01"/>
+            <part name="a47_05.6f" crc="c5325b49" map="10"/>
+        </interleave>
+        <!-- SCR_START -->
+        <!-- gfx2 - starts at 0x24000 - length 0x2C000 (18 bits) -->
+        <interleave output="32">
+            <part name="a47_06.6p" crc="11fbcc8c" map="0001"/>
+            <part name="a47_07.6n" crc="02fdd429" map="0010"/>
+            <part name="a47_08.6m" crc="e539af2b" map="0100"/>
+            <part name="a47_09.4m" crc="31fae8a8" map="1000"/>
+        </interleave>
+        <interleave output="32">
+            <part name="a47_06.6p" crc="11fbcc8c" map="0001"/>
+            <part name="a47_07.6n" crc="02fdd429" map="0010"/>
+            <part name="a47_08.6m" crc="e539af2b" map="0100"/>
+            <part name="a47_09.4m" crc="31fae8a8" map="1000"/>
+        </interleave>
+        <part repeat="0xC000"> FF</part>
+        <!-- JTFRAME_BA3_START -->
+        <!-- gfx3 - starts at 0x50000 - length 0x20000 (17 bits) -->
+        <interleave output="32">
+            <part name="a47_10.6h" crc="e1cf844e" map="0001"/>
+            <part name="a47_11.8h" crc="744fae9b" map="0010"/>
+            <part name="a47_12.6j" crc="c064ecdb" map="0100"/>
+            <part name="a47_13.8j" crc="739a7e7e" map="1000"/>
+        </interleave>
+        <interleave output="32">
+            <part name="a47_10.6h" crc="e1cf844e" map="0001"/>
+            <part name="a47_11.8h" crc="744fae9b" map="0010"/>
+            <part name="a47_12.6j" crc="c064ecdb" map="0100"/>
+            <part name="a47_13.8j" crc="739a7e7e" map="1000"/>
+        </interleave>
+        <!-- JTFRAME_PROM_START -->
+        <!-- mcu - starts at 0x70000 - length 0x800 (11 bits) -->
+        <part name="a47_14.6a" crc="4042489f"/>
+        <!-- PAL_START -->
+        <!-- proms - starts at 0x70800 - length 0x300 (10 bits) -->
+        <part name="82s129.12q" crc="2c69350d"/>
+        <part name="82s129.12m" crc="7142e972"/>
+        <part name="82s129.12n" crc="25f273f2"/>
+        <!-- Total 0x70B00 bytes - 450 kBytes -->
+    </rom>
+    <nvram index="2" size="10244"/>
+    <!-- Vertical screen. Orientation reversed. -->
+    <rom index="1">
+        <part>05 80</part>
+    </rom>
+    <switches page_id="1" page_name="Switches" base="16" default="6f,eb">
+        <DSW1/>
+        <dip name="Coinage" bits="0,2" ids="Free Play,-,3/1,2/3,2/1,1/3,1/2,1/1"/>
+        <dip name="Demo Sounds" bits="3" ids="Off,On"/>
+        <dip name="Cabinet" bits="4" ids="Upright,Cocktail"/>
+        <dip name="Flip Screen" bits="5" ids="On,Off"/>
+        <dip name="Service Mode" bits="6" ids="On,Off"/>
+        <dip name="Player Speed" bits="7" ids="Fast,Normal"/>
+        <DSW2/>
+        <dip name="Lives" bits="8,9" ids="2,1,5,3"/>
+        <dip name="Difficulty" bits="10,11" ids="Hardest,Hard,Medium,Easy"/>
+        <dip name="Bonus Life" bits="12" ids="50k &amp; *120k,20k &amp; *80k"/>
+    </switches>
+    <buttons names="Fire,Bomb,Start,Coin,Core credits" default="A,B,Start,Select,-" count="2"/>
+</misterromdescription>

@@ -6,6 +6,7 @@
 | 1943    | 1943 Kai: Midway Kaisen (Japan)                                              | 1943kai   |
 | 1943    | 1943: The Battle of Midway (Euro)                                            | 1943      |
 | 1943    | 1943: The Battle of Midway Mark II (US)                                      | 1943mii   |
+| 88game  | '88 Games                                                                    | 88games   |
 | ajax    | Ajax                                                                         | ajax      |
 | aliens  | Aliens (World set 1)                                                         | aliens    |
 | aliens  | Crime Fighters (World 2 players)                                             | crimfght  |
@@ -149,6 +150,8 @@
 | kiwi    | Insector X (World)                                                           | insectx   |
 | kiwi    | Kageki (World)                                                               | kageki    |
 | kiwi    | The NewZealand Story (World, new version) (P0-043A PCB)                      | tnzs      |
+| ktiger  | Flying Shark (World)                                                         | fshark    |
+| ktiger  | Twin Cobra (World)                                                           | twincobr  |
 | kunio   | Renegade (US)                                                                | renegade  |
 | labrun  | Trick Trap (World?)                                                          | tricktrp  |
 | midres  | Midnight Resistance (World, set 1)                                           | midres    |
@@ -182,6 +185,7 @@
 | roadf   | Hyper Sports                                                                 | hyperspt  |
 | roadf   | Road Fighter (set 1)                                                         | roadf     |
 | roc     | Roc'n Rope                                                                   | rocnrope  |
+| roller  | Rollergames (US)                                                             | rollerg   |
 | rumble  | The Speed Rumbler (set 1)                                                    | srumbler  |
 | rungun  | Run and Gun (ver EAA 1993 10.8)                                              | rungun    |
 | s16     | Ace Attacker (Japan, S16A) [FD1094 317-0060]                                 | aceattaca |
@@ -261,6 +265,8 @@
 | simson  | Vendetta (World, 4 Players, ver. T)                                          | vendetta  |
 | skykid  | Dragon Buster                                                                | drgnbstr  |
 | skykid  | Sky Kid (new version)                                                        | skykid    |
+| slap    | Alcon (US)                                                                   | alcon     |
+| slap    | Tiger-Heli (US)                                                              | tigerh    |
 | slyspy  | Boulder Dash - Boulder Dash Part 2 (World)                                   | bouldash  |
 | slyspy  | Secret Agent (World, revision 3)                                             | secretag  |
 | taitox  | Balloon Brothers                                                             | ballbros  |
@@ -298,4 +304,4 @@
 | xmen    | X-Men (4 Players ver EBA)                                                    | xmen      |
 | yiear   | Yie Ar Kung-Fu (version I)                                                   | yiear     |
 
-84 cores, supporting 297 games
+88 cores, supporting 303 games

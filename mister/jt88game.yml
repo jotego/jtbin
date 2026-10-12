@@ -1,0 +1,6 @@
+- core: jt88game
+  target: mister
+  sta: 0.228ns
+  LE: 36%
+  BRAM: 26%
+  Free-BRAM: 411

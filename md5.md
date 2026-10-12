@@ -35,6 +35,7 @@
 | 3wondersbi   | jtcps1     |                                  | ff,9a,99     |
 | 3wondersh    | jtcps1     | 9e78eb9c9944cc9ea26c5a83d4980c96 | ff,9a,99     |
 | 3wondersr1   | jtcps1     | ddf11a4fa7a6c4d70c95f2516b86f1fe | ff,9a,99     |
+| 88games      | jt88game   | 1c860dbdb600a179b6a79ba00afe7590 | ff,7b,ff     |
 | aceattaca    | jts16      | 4e64a33047bf25de947b255977655508 | ff,fe        |
 | afighter     | jts16      | a24497bdc8ffb81cbe2d6c7fbb4819a4 | ff,fc        |
 | afightera    | jts16      | b74941cddeabdbf21b6a939c5a059a84 | ff,fc        |
@@ -49,6 +50,7 @@
 | ajaxj        | jtajax     | ccbc9aa6ea57fa76d7429d3e6828c8ca | ff,5a,ff     |
 | akumajou     | jtcastle   | 859530c99173bd7c47b85af4b230a1de | ff,53,ff     |
 | akumajoun    | jtcastle   | 5b4cfc76c4e5b30762d872bf639bd19d | ff,53,ff     |
+| alcon        | jtslap     | 853446b853193c16def6bfc1fe455f33 | 7f,ff        |
 | alexkidd     | jts16      | 0473183f9a3116bd99b9066032dc7cf3 | ff,fc        |
 | alexkidd1    | jts16      | 25fdf3b31fb46912a0beedb64ca49a5b | ff,fc        |
 | aliens       | jtaliens   | c29784def287afe117fd37d4a22bd15b | ff,5e,ff     |
@@ -389,6 +391,7 @@
 | fpoint1      | jts16b     | 104febb82ea083d44525f317992142d3 | ff,fd        |
 | fround       | jtfround   | 0824f8ea07f0f330628fa9373dc13021 | ff,5e,ff     |
 | froundl      | jtfround   | b4f7a1b2506094c98fddf820462f5653 | ff,5e,ff     |
+| fshark       | jtktiger   | 3ae1198982191f9bd3c1dbc66bbb4296 | 01,80        |
 | gaiden       | jtgaiden   | c5b2c47492aa25d9aaa10efab2547144 | ff,ff        |
 | galaga88     | jtshouse   | 45799bfcc9ca0ccdf3f18eed025e597d | ff           |
 | galaga88a    | jtshouse   | 96b874c6722c7eb7094f7dfc59faac55 | ff           |
@@ -457,6 +460,7 @@
 | hcastlek     | jtcastle   | 792920a9d62f4c492e6b05968e1d5d33 | ff,53,ff     |
 | higemaru     | jt1942     | d751784265f9dc0764ec50c914ccb9eb | ff,fe        |
 | hippodrm     | jtcop      | a8bf65155b3daa5dcb5a00a268a09447 | ff,ff        |
+| hishouza     | jtktiger   | 297e66888184a407736b463f5ca1bb93 | 01,00        |
 | hopmappy     | jtthundr   | ceda8abc8a55b64229d3485d7852241c | ff,ff        |
 | hpolym84     | jtroadf    | dc1b46a420f87a175b025c330aa6af01 | ff,49,ff     |
 | hsf2         | jtcps2     | 88b106b19af3f0b9670729d6be1e1ef8 | ff,ff        |
@@ -467,6 +471,7 @@
 | hsf2j2       | jtcps2     | 15eacc24016637db1b358744e2c14bb1 | ff,ff        |
 | hyperspt     | jtroadf    | 5964cd567bdc916f1f80c348ff922f43 | ff,49,ff     |
 | hyprolym     | jttrack    | 04fc8923e60a5b5aff5ac48f2371b903 | ff,59        |
+| hypsptsp     | jt88game   | ea8b7024ca61b00c0b4e4d7f62797659 | ff,7b,ff     |
 | insectx      | jtkiwi     | 70716a1310f259feb93021b69248cfe8 | fe,ff        |
 | insectxbl    | jtkiwi     | 0f1fa4881ac2194d848bb02140bf8b32 | fe,ff        |
 | insectxj     | jtkiwi     | 382d7b3a550c7a5391cbc88e5f74033e | fe,ff        |
@@ -508,6 +513,9 @@
 | kodr1        | jtcps1     | afe8e010fb9b89b2d1a4eda0b6f034ee | ff,fc,9f     |
 | kodr2        | jtcps1     | 7558b2d5197f46234e2e3c53f4a0f13a | ff,fc,9f     |
 | kodu         | jtcps1     | afdd82f2b6afa54cc9ddf529142028c3 | ff,fc,9f     |
+| konami88     | jt88game   | 1b0caa6ac57fc8d1026f53ba9e30a74e | ff,7b,ff     |
+| ktiger       | jtktiger   | c7f0e60c46c22198eb4c3d8dfb7658f4 | 00,00        |
+| ktigera      | jtktiger   | ce9e52f5e80be09f33510f0ccdc11d0e | 01,80        |
 | kuniokun     | jtkunio    | 01ec6ae252b989a7fd9f1f611899141a | bf,ff        |
 | kuniokunb    | jtkunio    | 528dc7d21a8640bc053a980bd8d253f8 | bf,ff        |
 | kyustrkr     | jttaitox   | b300b73109638b8cfb3d9da8d55e05c7 | df,ba        |
@@ -756,6 +764,9 @@
 | rocnrope     | jtroc      | 3ea1ddb56be848aecc0b3b64f295ad3e | ff,5b,96     |
 | rocnropek    | jtroc      | 9a7b2a4292da9248e666abe317edf768 | ff,5b,96     |
 | roishtar     | jtthundr   | c16a0cae381034b5aa6aa6bf810daf3c | ff,bf        |
+| rollerg      | jtroller   | 567a114e83b6f5bbf0927a2f44c06a0e | ff,55,ff     |
+| rollerga     | jtroller   | bfa7675d440907f3fde51c15d9bbc023 | ff,55,ff     |
+| rollergj     | jtroller   | 35ea7ef9e15c92eac5ed3f5597d24fad | ff,55,ff     |
 | rompers      | jtshouse   | 08ff77ec86c6b0087b1c6398be1c31ac | ff,fe        |
 | romperso     | jtshouse   | 7b5145a14d162ee34c9e6acc8bc84184 | ff,fe        |
 | rthunder     | jtthundr   | 7ceb720c3a39513ca6ff2f3ceaa99864 | ff,d7        |
@@ -950,8 +961,13 @@
 | skykiddxo    | jtthundr   | 1c52b8b17cb8e80448315a2b1d4c7a59 | ff,ff        |
 | skykido      | jtskykid   | 78ed7164147c16f28a9eb1cb6a4aa172 | ff,ff,ff     |
 | skykids      | jtskykid   | 3850717b3ae96df6e3bb2c0423f25bd3 | ff,ff,ff     |
+| skyshark     | jtktiger   | c7d9f8dbeee53d86bd946062cc1b16d5 | 01,80        |
+| skysharka    | jtktiger   | 0bf342360d4f2df216bbb2453241d07f | 01,80        |
+| skysharkb    | jtktiger   | 0763da44e24fe7e4928a8848605e216f | 01,00        |
 | slammast     | jtcps15    | 313b1b55f32092e408b79fd7a34a0962 | ff           |
 | slammastu    | jtcps15    | ce1b77141ec7606bd656100d9a41e0e2 | ff           |
+| slapfigh     | jtslap     | daa794a705fc41575d3214dfe28b09f5 | 7f,ff        |
+| slapfigha    | jtslap     | 437e17ceb9e20639c0e7025102012ae1 | 7f,ff        |
 | slyspy       | jtslyspy   | e497455caff76c29998aeff151420b06 | 7f,ff        |
 | slyspy2      | jtslyspy   | b1ec16993f4b8d6d34022313f26f469b | 7f,ff        |
 | slyspy3      | jtslyspy   | 0e9c749b8b2930fdcdb48636f70cc24b | 7f,ff        |
@@ -1051,6 +1067,8 @@
 | thunderxa    | jtaliens   | 1e86c04a144ee7ad642464a831bb3ad6 | ff,7a,ff     |
 | thunderxb    | jtaliens   | 47d6dae5b024554e216f6fb2a9743e52 | ff,7a,ff     |
 | thunderxj    | jtaliens   | fc142741174d357de72455ece57a393b | ff,7e,ff     |
+| tigerh       | jtslap     | d4658a6bccd8f7ea4a06ef8b3657b654 | 6f,eb        |
+| tigerhj      | jtslap     | 1830fa1ee55b6ef6330fdf17a30a8295 | 6f,eb        |
 | tigeroad     | jttora     | d05f3b49bc254d0d26d555be39002579 | ff,fb        |
 | tigeroadu    | jttora     | 126dc42382e22b5653fa2fb49502eed1 | ff,fb        |
 | timescan     | jts16b     | 9096991c6f3aab9fe5a4fffc38d927be | ff,ff,ff     |
@@ -1115,6 +1133,8 @@
 | trojanr      | jttrojan   | a8a3274396b3394c55d8e25ed83218f2 | fc,ff        |
 | trojanra     | jttrojan   | f3d0dadfe4b57e1251771272f1f9a509 | fc,ff        |
 | tturfu       | jts16b     | 56ff0f22b78e17f55709141a47654c27 | ff,2c        |
+| twincobr     | jtktiger   | 36bfbd1bfeb6e17eccfe4ec27893f5b6 | 00,00        |
+| twincobru    | jtktiger   | 33ddfbdbe760b4ceabf9f6e43ba57772 | 00,00        |
 | twinhawk     | jttaitox   | 34c4fa9d15cec53b90a0336cf04e987d | ff,7f        |
 | twinhawku    | jttaitox   | 9bccbd55ef76882a18c04a17b0627a56 | ff,7f        |
 | typhoon      | jtajax     | 3dec72fa56206b9c590cffd4590f770b | ff,5a,ff     |
