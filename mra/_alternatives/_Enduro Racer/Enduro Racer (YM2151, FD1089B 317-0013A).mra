@@ -142,8 +142,8 @@
         <!-- ZOOM_START -->
         <!-- sprites:zoom - starts at 0x1D0000 - length 0x2000 (13 bits) -->
         <part name="epr-6844.ic123" crc="e3ec7bd6"/>
-        <!-- JTFRAME_PROM_START -->
         <!-- MCU_START -->
+        <!-- JTFRAME_PROM_START -->
         <!-- mcu - starts at 0x1D2000 - length 0x1000 (12 bits) -->
         <part repeat="0x1000"> FF</part>
         <!-- MAINKEY_START -->

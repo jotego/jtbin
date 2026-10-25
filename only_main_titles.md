@@ -13,6 +13,8 @@
 | aliens  | Gang Busters (set 1)                                                         | gbusters  |
 | aliens  | Super Contra (set 1)                                                         | scontra   |
 | aliens  | Thunder Cross (set 1)                                                        | thunderx  |
+| arblst  | Arbalester                                                                   | arbalest  |
+| arblst  | Meta Fox                                                                     | metafox   |
 | biocom  | Bionic Commando (Euro)                                                       | bionicc   |
 | blkout  | Block Out (set 1)                                                            | blockout  |
 | btiger  | Black Tiger                                                                  | blktiger  |
@@ -157,6 +159,7 @@
 | midres  | Midnight Resistance (World, set 1)                                           | midres    |
 | mikie   | Mikie                                                                        | mikie     |
 | mx5k    | MX5000                                                                       | mx5000    |
+| narc    | Narc (rev 7.00)                                                              | narc      |
 | ngp     | NeoGeo Pocket                                                                | ngp       |
 | ninja   | Bad Dudes vs. Dragonninja (US, revision 1)                                   | baddudes  |
 | ninja   | Heavy Barrel (World)                                                         | hbarrel   |
@@ -304,4 +307,4 @@
 | xmen    | X-Men (4 Players ver EBA)                                                    | xmen      |
 | yiear   | Yie Ar Kung-Fu (version I)                                                   | yiear     |
 
-88 cores, supporting 303 games
+90 cores, supporting 306 games

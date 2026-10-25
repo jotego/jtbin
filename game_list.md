@@ -45,6 +45,8 @@
 | aliens  | Thunder Cross (set 1)                                                                      | thunderx      |
 | aliens  | Thunder Cross (set 2)                                                                      | thunderxa     |
 | aliens  | Thunder Cross (set 3)                                                                      | thunderxb     |
+| arblst  | Arbalester                                                                                 | arbalest      |
+| arblst  | Meta Fox                                                                                   | metafox       |
 | biocom  | Bionic Commando (Euro)                                                                     | bionicc       |
 | biocom  | Bionic Commando (US set 1)                                                                 | bionicc1      |
 | biocom  | Bionic Commando (US set 2)                                                                 | bionicc2      |
@@ -781,6 +783,12 @@
 | mx5k    | Flak Attack (Japan)                                                                        | flkatck       |
 | mx5k    | Flak Attack (Japan, PWB 450593 sub-board)                                                  | flkatcka      |
 | mx5k    | MX5000                                                                                     | mx5000        |
+| narc    | Narc (rev 1.80)                                                                            | narc1         |
+| narc    | Narc (rev 2.00)                                                                            | narc2         |
+| narc    | Narc (rev 3.20)                                                                            | narc3         |
+| narc    | Narc (rev 4.00)                                                                            | narc4         |
+| narc    | Narc (rev 6.00)                                                                            | narc6         |
+| narc    | Narc (rev 7.00)                                                                            | narc          |
 | ngp     | NeoGeo Pocket                                                                              | ngp           |
 | ngpc    | NeoGeo Pocket Color                                                                        | ngpc          |
 | ninja   | Bad Dudes vs. Dragonninja (US, revision 1)                                                 | baddudes      |
@@ -1282,4 +1290,4 @@
 | yiear   | Yie Ar Kung-Fu (version G)                                                                 | yiear2        |
 | yiear   | Yie Ar Kung-Fu (version I)                                                                 | yiear         |
 
-89 cores, supporting 1281 games
+91 cores, supporting 1289 games

@@ -3,6 +3,7 @@
 88game,fm,1.00,pcm,0.28
 ajax,fm,1.00,pcm1,0.12,pcm2,0.15
 aliens,fm,1.00,pcm,0.23
+arblst,pcm_l,1.90,pcm_r,1.90
 biocom,fm,1.00
 blkout,fm,0.16,pcm,1.00
 btiger,psg0,1.00,psg1,1.00,fm0,0.81,fm1,0.81
@@ -40,6 +41,7 @@ midres,opn,0.25,opl,0.25,psg,0.31,pcm,1.00
 mikie,psg1,0.66,psg2,0.66,rdac,1.00
 moo,k539,1.98
 mx5k,fm,1.00,pcm,0.39
+narc,fm,0.06,ex,0.08,cv,0.30,dacm,0.16,dacs,0.28
 ngpngpcninja,opn,0.25,opl,0.25,psg,0.31,pcm,1.00
 outrun,fm,0.54,pcm,1.00
 paclan,cus30,1.00

@@ -1,0 +1,95 @@
+<!--          FPGA arcade hardware by Jotego
+
+              This core is available for hardware compatible with MiST and MiSTer
+              Other FPGA systems may be supported by the time you read this.
+              This work is not mantained by the MiSTer project. Please contact the
+              core author for issues and updates.
+
+              (c) Jose Tejada, 2026. Please support this research
+              Patreon: https://patreon.com/jotego
+
+              The author does not endorse or participate in illegal distribution
+              of copyrighted material. This work can be used with compatible
+              software. This software can be homebrew projects or legally
+              obtained memory dumps of compatible games.
+
+              This file license is GNU GPLv2.
+              You can read the whole license file in
+              https://opensource.org/licenses/gpl-2.0.php
+
+-->
+
+<misterromdescription>
+    <about author="jotego" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://jotego/jtcores"/>
+    <rotation>vertical (ccw)</rotation>
+    <name>Meta Fox</name>
+    <setname>metafox</setname>
+    <mameversion>0282</mameversion>
+    <year>1989</year>
+    <manufacturer>Jordan I.S. / Seta</manufacturer>
+    <players>2</players>
+    <rbf>jtarblst</rbf>
+    <joystick>8</joystick>
+    <region>World</region>
+    <rom index="0" zip="metafox.zip" md5="None" asm_md5="5170ec77e10b43b52d2aeb77fdbbc61d">
+        <!-- Seta downtown.cpp (metafox-class) family header, decoded in jtarbalest_game.v.
+        byte 0 = game_id (0=metafox, 1=arbalest). Bytes 1..15 reserved. -->
+        <part>
+            00 00 00 00 00 00 00 00
+            00 00 00 00 00 00 00 00
+        </part>
+        <!-- maincpu - starts at 0x0 - length 0xA0000 (20 bits) -->
+        <interleave output="16">
+            <part name="p1004162" crc="b6356c9a" map="01"/>
+            <part name="p1003161" crc="4fd6e6a1" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="up001001" crc="0db7a505" map="01"/>
+            <part name="up001002" crc="ce91c987" map="10"/>
+        </interleave>
+        <!-- JTFRAME_BA1_START -->
+        <!-- sub - starts at 0xA0000 - length 0x40000 (18 bits) -->
+        <part name="up001005" crc="2ac5e3e3"/>
+        <part repeat="0x3E000"> FF</part>
+        <!-- PCM_START -->
+        <!-- x1snd - starts at 0xE0000 - length 0x100000 (20 bits) -->
+        <part name="up001015" crc="2e20e39f"/>
+        <part name="up001014" crc="fca6315e"/>
+        <!-- JTFRAME_BA2_START -->
+        <!-- tiles - starts at 0x1E0000 - length 0x200000 (21 bits) -->
+        <interleave output="16">
+            <part name="up001010" crc="bfbab472" map="01"/>
+            <part name="up001012" crc="fed2c5f9" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="up001011" crc="26cea381" map="01"/>
+            <part name="up001013" crc="adabf9ea" map="10"/>
+        </interleave>
+        <!-- JTFRAME_BA3_START -->
+        <!-- sprites - starts at 0x3E0000 - length 0x100000 (20 bits) -->
+        <interleave output="32">
+            <part name="p1006163" crc="80f69c7c" map="0001"/>
+            <part name="p1007164" crc="d137e1a3" map="0010"/>
+            <part name="p1008165" crc="57494f2b" map="0100"/>
+            <part name="p1009166" crc="8344afd2" map="1000"/>
+        </interleave>
+        <!-- Total 0x4E0000 bytes - 4992 kBytes -->
+    </rom>
+    <nvram index="2" size="34828"/>
+    <!-- Vertical screen. Orientation reversed. -->
+    <rom index="1">
+        <part>05 80</part>
+    </rom>
+    <switches page_id="1" page_name="Switches" base="16" default="ff,f1">
+        <DSW/>
+        <dip name="Flip Screen" bits="1" ids="On,Off"/>
+        <dip name="Service Mode" bits="2" ids="On,Off"/>
+        <dip name="Demo Sounds" bits="3" ids="Off,On"/>
+        <dip name="Coin A" bits="4,5" ids="4/1,3/1,2/1,1/1"/>
+        <dip name="Coin B" bits="6,7" ids="1/6,1/4,1/3,1/2"/>
+        <dip name="Difficulty" bits="8,9" ids="Hardest,Hard,Easy,Normal"/>
+        <dip name="Bonus Life" bits="10,11" ids="600k &amp; 900k,900K Only,600K Only,None"/>
+        <dip name="Lives" bits="12,13" ids="2,1,5,3"/>
+    </switches>
+    <buttons names="Shot,Bomb,Start,Coin,Core credits" default="A,B,Start,Select,-" count="2"/>
+</misterromdescription>

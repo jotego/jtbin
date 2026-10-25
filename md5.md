@@ -78,6 +78,7 @@
 | altbeastj1   | jts16b     | c7124c354dcbbb050745594cf79df0b4 | ff,fd        |
 | altbeastj3   | jts16b     | 6cc4f8fb4472788a79a68b23fc3fa2de | ff,fd        |
 | aquario      | jts18      |                                  | ff,f7        |
+| arbalest     | jtarblst   | 073d6afb7ef99a79959125927419362e | ff,ff        |
 | area88       | jtcps1     | 6454eb2d74631208ece064404009e98f | ff,fc,9f     |
 | area88r      | jtcps1     | 8781a8fb123ef1850338fb732ecbb42c | ff,fc,9f     |
 | arknoid2     | jtkiwi     | 1e73e1c17dae4a9b1bf1c395e4bc53f0 | fe,7f        |
@@ -555,6 +556,7 @@
 | mercsj       | jtcps1     | 268b3afe8b4c94423970401d372b2383 | ff,fc,9f     |
 | mercsu       | jtcps1     | 9ef14cf80363f9679d61f9b48a3906db | ff,fc,9f     |
 | mercsur1     | jtcps1     | 04c9aebe115e425e22e73fae1c3bf9d8 | ff,fc,9f     |
+| metafox      | jtarblst   | 5170ec77e10b43b52d2aeb77fdbbc61d | ff,f1        |
 | metrocrs     | jtthundr   | b5962e0b737efa2f93929ec5735181e7 | ff,ff,ff     |
 | metrocrsa    | jtthundr   | 58505097bf5cb57a5a3c8ded7209be2f | ff,ff,ff     |
 | mia          | jttmnt     | b1606ff6cd377c88f3252b2b3cb3003e | ff,2e,ff     |
@@ -627,6 +629,12 @@
 | mwalkj       | jts18      | e1c3906f55235736c4d92e7e87d5ac8a | ff,fd        |
 | mwalku       | jts18      | bd7eafc124dcfa000a76b911a3857dd9 | ff,fd        |
 | mx5000       | jtmx5k     | 51dfe5deef23094f7b7a4d85e983ac5e | ff,51,ff     |
+| narc         | jtnarc     | aeb51d5e01865b659596b7e61efe66f2 |              |
+| narc1        | jtnarc     | 2f8455fb549dc9a6c1bfebd9ec5e8255 |              |
+| narc2        | jtnarc     | e0094574093c4c6e45f8ff087b530ed6 |              |
+| narc3        | jtnarc     | ebfc93a53e323fc629d417cc224c6a86 |              |
+| narc4        | jtnarc     | de82039ef193c033f9574246c66e1616 |              |
+| narc6        | jtnarc     | 529fc2c44c067c21b73f7eb5840598d0 |              |
 | nemo         | jtcps1     | 96c82493c2ddea4093a27f9a1c187333 | ff,fc,9f     |
 | nemoj        | jtcps1     | bc1fd457b0a397730655309139c22eb9 | ff,fc,9f     |
 | nemoja       | jtcps1     | 720a746ce0fe4d680a3441ec8c48e38b | ff,fc,9f     |
