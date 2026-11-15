@@ -504,6 +504,7 @@
 | kchampvs3    | jtkchamp   |                                  | 9f           |
 | kchampvs4    | jtkchamp   |                                  | 9f           |
 | kicker       | jtkicker   | 966d9254a3d3e75d35a9322fc59e6db1 | ff,5a,ff     |
+| kikcubic     | jtmeikyu   | af6ea7b6ad9aeb40f7c0d001c42de38d | ff,d5        |
 | knights      | jtcps1     | 28d67adc3f399d60f904d6bee5669c86 | ff,fc,bf     |
 | knightsj     | jtcps1     | 7fb330ad2b2cd8359fe5bddb40728960 | ff,fc,bf     |
 | knightsja    | jtcps1     | 7fb330ad2b2cd8359fe5bddb40728960 | ff,fc,bf     |
@@ -552,6 +553,12 @@
 | megaman2h    | jtcps2     | f506faeb4a4d8c28421ba2255f1c4629 | ff,ff        |
 | megamana     | jtcps1     | 7fce1fe09da1d3a8b6b5f0427c7c0f2c | ff,fa,ff     |
 | megamn2d     | jtcps2     | 5db26f37f2b13ed828d5dec650ddd84e | ff,ff        |
+| megazone     | jtmzone    | 5fdca75da5459ff95354f028efc103ae | ff,5b        |
+| megazonea    | jtmzone    | 3ebf3e0e58e6481618be1ea996871a8f | ff,5b        |
+| megazoneb    | jtmzone    | 6cc9cc71bd64b6f682b3643e59bb8add | ff,5b        |
+| megazoneh    | jtmzone    | 563a233f27720a4525995fa8057be3e0 | ff,5b        |
+| megazonei    | jtmzone    | 4a4dfbabad354bfb606b77c3283867c8 | ff,5b        |
+| megazonej    | jtmzone    | d23970dd398f4fc53e5e1c5f01fe6c5e | ff,5b        |
 | mercs        | jtcps1     | e1b28ce03f8845c2facc5b090324f66b | ff,fc,9f     |
 | mercsj       | jtcps1     | 268b3afe8b4c94423970401d372b2383 | ff,fc,9f     |
 | mercsu       | jtcps1     | 9ef14cf80363f9679d61f9b48a3906db | ff,fc,9f     |
@@ -630,10 +637,16 @@
 | mwalku       | jts18      | bd7eafc124dcfa000a76b911a3857dd9 | ff,fd        |
 | mx5000       | jtmx5k     | 51dfe5deef23094f7b7a4d85e983ac5e | ff,51,ff     |
 | narc         | jtnarc     | aeb51d5e01865b659596b7e61efe66f2 |              |
+| narc         | jtnarc     | aeb51d5e01865b659596b7e61efe66f2 |              |
+| narc1        | jtnarc     | 2f8455fb549dc9a6c1bfebd9ec5e8255 |              |
 | narc1        | jtnarc     | 2f8455fb549dc9a6c1bfebd9ec5e8255 |              |
 | narc2        | jtnarc     | e0094574093c4c6e45f8ff087b530ed6 |              |
+| narc2        | jtnarc     | e0094574093c4c6e45f8ff087b530ed6 |              |
+| narc3        | jtnarc     | ebfc93a53e323fc629d417cc224c6a86 |              |
 | narc3        | jtnarc     | ebfc93a53e323fc629d417cc224c6a86 |              |
 | narc4        | jtnarc     | de82039ef193c033f9574246c66e1616 |              |
+| narc4        | jtnarc     | de82039ef193c033f9574246c66e1616 |              |
+| narc6        | jtnarc     | 529fc2c44c067c21b73f7eb5840598d0 |              |
 | narc6        | jtnarc     | 529fc2c44c067c21b73f7eb5840598d0 |              |
 | nemo         | jtcps1     | 96c82493c2ddea4093a27f9a1c187333 | ff,fc,9f     |
 | nemoj        | jtcps1     | bc1fd457b0a397730655309139c22eb9 | ff,fc,9f     |

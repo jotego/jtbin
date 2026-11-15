@@ -138,5 +138,5 @@
         <dip name="Extra Ship Cost" bits="12,13" ids="20k,15000,10k,5000"/>
         <dip name="Difficulty" bits="14,15" ids="Hardest,Hard,Easy,Normal"/>
     </switches>
-    <buttons names="Shot,Bomb,-,-,-,Start,Coin,Core credits" default="A,B,Start,Select,-" count="2"/>
+    <buttons names="Shot,Bomb,-,-,-,Start,Coin,Core credits,Test,Service" default="A,B,Start,Select,L2,R2,L3" count="2"/>
 </misterromdescription>

@@ -86,8 +86,8 @@
             <part name="mpr-12623.b6" crc="6773fef6" map="10" length="0x20000" offset="0x20000"/>
         </interleave>
         <part repeat="0x40000"> FF</part>
-        <!-- MCU_START -->
         <!-- JTFRAME_PROM_START -->
+        <!-- MCU_START -->
         <!-- mcu - starts at 0x440000 - length 0x2000 (13 bits) -->
         <part repeat="0x1000"> FF</part>
         <part repeat="0x1000"> FF</part>
@@ -116,5 +116,5 @@
         <dip name="Difficulty" bits="12,13" ids="Hardest,Hard,Easy,Normal"/>
         <dip name="Lives" bits="14,15" ids="1,2,4,3"/>
     </switches>
-    <buttons names="Shot,Jump,Special Weapons,-,-,Start,Coin,Core credits" default="A,B,X,Start,Select,-" count="3"/>
+    <buttons names="Shot,Jump,Special Weapons,-,-,Start,Coin,Core credits,Test,Service" default="A,B,X,Start,Select,L2,R2,L3" count="3"/>
 </misterromdescription>

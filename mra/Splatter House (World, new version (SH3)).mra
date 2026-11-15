@@ -4096,5 +4096,5 @@ FF FF FF FF FF FF FF 20 4D D9 50 D3 7D 20 4D D9
         <dip name="Debug IRQ 2/2" bits="7" ids="Yes,No"/>
         <dip name="*Sound fix" ids="On,Off" bits="8"/>
     </switches>
-    <buttons names="Attack,Jump,-,-,-,-,Start,Coin,Core credits" default="A,B,Start,Select,-" count="2"/>
+    <buttons names="Attack,Jump,-,-,-,-,Start,Coin,Core credits,Test,Service" default="A,B,Start,Select,L2,R2,L3" count="2"/>
 </misterromdescription>

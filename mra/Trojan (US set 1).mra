@@ -62,8 +62,8 @@
             <part name="tb_25.15n" crc="6e38c6fa" map="01"/>
             <part name="tb_24.13n" crc="14fc6cf2" map="10"/>
         </interleave>
-        <!-- CHAR_START -->
         <!-- JTFRAME_BA3_START -->
+        <!-- CHAR_START -->
         <!-- gfx1 - starts at 0x40000 - length 0x8000 (15 bits) -->
         <interleave output="16">
             <part name="tb_03.8k" crc="581a2b4c" map="12"/>
@@ -119,5 +119,5 @@
         <dip name="Flip Screen" bits="14" ids="On,Off"/>
         <dip name="Allow Continue" bits="15" ids="No,Yes"/>
     </switches>
-    <buttons names="Attack,Jump,Start,Coin,Core credits" default="A,B,Start,Select,-" count="2"/>
+    <buttons names="Attack,Jump,Start,Coin,Core credits,Test,Service" default="A,B,Start,Select,L2,R2,L3" count="2"/>
 </misterromdescription>

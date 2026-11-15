@@ -91,5 +91,5 @@ Byte 7: addr for upper nibble read
         <dip name="Service Mode" bits="0" ids="On,Off"/>
         <dip name="*Sound fix" ids="On,Off" bits="8"/>
     </switches>
-    <buttons names="Shot/Bomber,-,-,-,-,-,Start,Coin,Core credits" default="A,Start,Select,-" count="1"/>
+    <buttons names="Shot/Bomber,-,-,-,-,-,Start,Coin,Core credits,Test,Service" default="A,Start,Select,L2,R2,L3" count="1"/>
 </misterromdescription>

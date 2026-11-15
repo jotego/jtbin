@@ -178,5 +178,5 @@
         <dip name="Gear Button" ids="Toggle,Hold for Low" bits="16"/>
         <dip name="Gear Indicator" ids="On,Off" bits="17"/>
     </switches>
-    <buttons names="Accelerate,Brake,Gear (Low / High),-,Start,Coin,Core credits" default="A,B,X,Start,Select,-" count="3"/>
+    <buttons names="Accelerate,Brake,Gear (Low / High),-,Start,Coin,Core credits,Test,Service" default="A,B,X,Start,Select,L2,R2,L3" count="3"/>
 </misterromdescription>

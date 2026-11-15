@@ -94,5 +94,5 @@
         <dip name="Bonus" bits="11,13" ids="None,30k 60k,30k 80k,20k 60k,40k 100k,20k 70k,30k 70k,20k 50k"/>
         <dip name="Cabinet" bits="14,15" ids="Upright One Player,Upright Two Players,-,Cocktail"/>
     </switches>
-    <buttons names="Shoot,Turn,Start,Coin,Core credits" default="A,B,Start,Select,-" count="2"/>
+    <buttons names="Shoot,Turn,Start,Coin,Core credits,Test,Service" default="A,B,Start,Select,L2,R2,L3" count="2"/>
 </misterromdescription>

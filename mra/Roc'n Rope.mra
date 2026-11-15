@@ -85,5 +85,5 @@
         <dip name="Repeated Bonus" bits="19,21" ids="80k,70k,60k,50k,40k,40k,40k,40k"/>
         <dip name="Grant Repeated Bonus" bits="22" ids="Yes,No"/>
     </switches>
-    <buttons names="Rope,Flash,Start,Coin,Core credits" default="A,B,Start,Select,-" count="2"/>
+    <buttons names="Rope,Flash,Start,Coin,Core credits,Test,Service" default="A,B,Start,Select,L2,R2,L3" count="2"/>
 </misterromdescription>

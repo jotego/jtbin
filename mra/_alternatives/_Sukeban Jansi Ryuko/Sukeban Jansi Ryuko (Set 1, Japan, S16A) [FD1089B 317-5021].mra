@@ -136,5 +136,5 @@
         <dip name="CPU Level" bits="8,9" ids="Strong,Medium Strong,Medium Weak,Weak"/>
         <dip name="Demo Sounds" bits="10" ids="On,Off"/>
     </switches>
-    <buttons names="button 1,button 2,-,-,-,Start,Coin,Core credits" default="A,B,Start,Select,-" count="2"/>
+    <buttons names="button 1,button 2,-,-,-,Start,Coin,Core credits,Test,Service" default="A,B,Start,Select,L2,R2,L3" count="2"/>
 </misterromdescription>

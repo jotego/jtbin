@@ -80,5 +80,5 @@
         <dip name="Unknown" bits="14" ids="On,Off"/>
         <dip name="High Speed Mode" bits="15" ids="Off,On"/>
     </switches>
-    <buttons names="Change Direction Block,-,-,-,Start,Coin,Core credits" default="A,Start,Select,-" count="1"/>
+    <buttons names="Change Direction Block,-,-,-,Start,Coin,Core credits,Test,Service" default="A,Start,Select,L2,R2,L3" count="1"/>
 </misterromdescription>

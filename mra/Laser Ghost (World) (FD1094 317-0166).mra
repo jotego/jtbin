@@ -105,5 +105,5 @@
         <dip name="Allow Continue" bits="13" ids="No,Yes"/>
         <dip name="Coin Chute" bits="14" ids="Common,Individual"/>
     </switches>
-    <buttons names="Laser Gun,Special Weapon,-,-,Start,Coin,Core credits" default="A,B,Start,Select,-" count="2"/>
+    <buttons names="Laser Gun,Special Weapon,-,-,Start,Coin,Core credits,Test,Service" default="A,B,Start,Select,L2,R2,L3" count="2"/>
 </misterromdescription>

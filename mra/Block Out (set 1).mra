@@ -64,5 +64,5 @@
         <dip name="Difficulty" bits="8,9" ids="Very Hard,Hard,Easy,Normal"/>
         <dip name="Rotate Buttons" bits="10" ids="2,3"/>
     </switches>
-    <buttons names="A,B,C,Drop,Start,Coin,Core credits" default="A,B,X,Y,Start,Select,-" count="4"/>
+    <buttons names="A,B,C,Drop,Start,Coin,Core credits,Test,Service" default="A,B,X,Y,Start,Select,L2,R2,L3" count="4"/>
 </misterromdescription>

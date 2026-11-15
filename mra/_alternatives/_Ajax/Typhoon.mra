@@ -94,5 +94,5 @@
         <dip name="Service Mode" bits="18" ids="On,Off"/>
         <dip name="3D Control" bits="19" ids="Inverted,Normal"/>
     </switches>
-    <buttons names="Machine Gun,Missile,Super Weapon,Start,Coin,Core credits" default="A,B,X,Start,Select,-" count="3"/>
+    <buttons names="Machine Gun,Missile,Super Weapon,Start,Coin,Core credits,Test,Service" default="A,B,X,Start,Select,L2,R2,L3" count="3"/>
 </misterromdescription>

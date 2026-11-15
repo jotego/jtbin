@@ -91,5 +91,5 @@
         <dip name="Color Change" bits="14" ids="Less,More"/>
         <dip name="Service Mode" bits="15" ids="On,Off"/>
     </switches>
-    <buttons names="Action,-,-,Start,Coin,Core credits" default="A,B,Start,Select,-" count="1"/>
+    <buttons names="Action,-,-,Start,Coin,Core credits,Test,Service" default="A,Start,Select,L2,R2,L3" count="1"/>
 </misterromdescription>

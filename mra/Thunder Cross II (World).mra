@@ -96,5 +96,5 @@ FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
         <dip name="Service Mode" ids="On,Off" bits="0"/>
         <dip name="FM in mono mode" ids="Centre,Original" bits="1"/>
     </switches>
-    <buttons names="Shot, Option,-,Start,Coin,Core credits" default="A,B,Start,Select,-" count="2"/>
+    <buttons names="Shot, Option,-,Start,Coin,Core credits,Test,Service" default="A,B,Start,Select,L2,R2,L3" count="2"/>
 </misterromdescription>

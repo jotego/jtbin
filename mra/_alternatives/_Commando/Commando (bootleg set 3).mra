@@ -98,5 +98,5 @@
         <dip name="Difficulty" bits="12" ids="Difficult,Normal"/>
         <dip name="Flip Screen" bits="13" ids="Off,On"/>
     </switches>
-    <buttons names="Shoot,Grenade,Start,Coin,Core credits" default="A,B,Start,Select,-" count="2"/>
+    <buttons names="Shoot,Grenade,Start,Coin,Core credits,Test,Service" default="A,B,Start,Select,L2,R2,L3" count="2"/>
 </misterromdescription>

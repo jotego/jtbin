@@ -93,5 +93,5 @@
         <dip name="Clear Round Allowed" bits="14" ids="1,2"/>
         <dip name="2 Cell Move" bits="15" ids="No,Yes"/>
     </switches>
-    <buttons names="Rotate,Rotate,Rotate,-,-,Start,Coin,Core credits" default="A,B,X,Start,Select,-" count="3"/>
+    <buttons names="Rotate,Rotate,Rotate,-,-,Start,Coin,Core credits,Test,Service" default="A,B,X,Start,Select,L2,R2,L3" count="3"/>
 </misterromdescription>

@@ -85,5 +85,5 @@
         <dip name="Upright Controls" bits="21" ids="Dual,Single"/>
         <dip name="Service Mode" bits="22" ids="On,Off"/>
     </switches>
-    <buttons names="Power-up,Shoot,Missile/Bell,Start,Coin,Core credits" default="A,B,X,Start,Select,-" count="3"/>
+    <buttons names="Power-up,Shoot,Missile/Bell,Start,Coin,Core credits,Test,Service" default="A,B,X,Start,Select,L2,R2,L3" count="3"/>
 </misterromdescription>

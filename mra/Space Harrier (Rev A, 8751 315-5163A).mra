@@ -176,5 +176,5 @@
         <dip name="D-Pad Control" ids="Console,Arcade" bits="17"/>
         <dip name="V Glyph Fix" ids="On,Off" bits="18"/>
     </switches>
-    <buttons names="Fire,Fire 2,Fire 3,Start,Coin,Core credits" default="A,B,X,Start,Select,-" count="3"/>
+    <buttons names="Fire,Fire 2,Fire 3,Start,Coin,Core credits,Test,Service" default="A,B,X,Start,Select,L2,R2,L3" count="3"/>
 </misterromdescription>

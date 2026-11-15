@@ -125,5 +125,5 @@
         <dip name="Service Mode" bits="22" ids="On,Off"/>
         <dip name="Rounds Per Game" bits="23" ids="1,4"/>
     </switches>
-    <buttons names="Left button,Centre button,Right button,Start,Coin,Core credits" default="Y,X,A,Start,Select,-" count="3"/>
+    <buttons names="Left button,Centre button,Right button,Start,Coin,Core credits,Test,Service" default="Y,X,A,Start,Select,L2,R2,L3" count="3"/>
 </misterromdescription>

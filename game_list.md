@@ -772,6 +772,7 @@
 | labrun  | Labyrinth Runner (World Ver. F)                                                            | labyrunrf     |
 | labrun  | Labyrinth Runner (World Ver. K)                                                            | labyrunrk     |
 | labrun  | Trick Trap (World?)                                                                        | tricktrp      |
+| meikyu  | Meikyu Jima (Japan)                                                                        | kikcubic      |
 | midres  | Midnight Resistance (Japan)                                                                | midresj       |
 | midres  | Midnight Resistance (US)                                                                   | midresu       |
 | midres  | Midnight Resistance (World, set 1)                                                         | midres        |
@@ -783,6 +784,18 @@
 | mx5k    | Flak Attack (Japan)                                                                        | flkatck       |
 | mx5k    | Flak Attack (Japan, PWB 450593 sub-board)                                                  | flkatcka      |
 | mx5k    | MX5000                                                                                     | mx5000        |
+| mzone   | Mega Zone (program code H)                                                                 | megazoneh     |
+| mzone   | Mega Zone (program code I)                                                                 | megazonei     |
+| mzone   | Mega Zone (program code J)                                                                 | megazonej     |
+| mzone   | Mega Zone (program code L)                                                                 | megazone      |
+| mzone   | Mega Zone (unknown program code 1)                                                         | megazonea     |
+| mzone   | Mega Zone (unknown program code 2)                                                         | megazoneb     |
+| narc    | Narc (15kHz) (rev 1.80)                                                                    | narc1         |
+| narc    | Narc (15kHz) (rev 2.00)                                                                    | narc2         |
+| narc    | Narc (15kHz) (rev 3.20)                                                                    | narc3         |
+| narc    | Narc (15kHz) (rev 4.00)                                                                    | narc4         |
+| narc    | Narc (15kHz) (rev 6.00)                                                                    | narc6         |
+| narc    | Narc (15kHz) (rev 7.00)                                                                    | narc          |
 | narc    | Narc (rev 1.80)                                                                            | narc1         |
 | narc    | Narc (rev 2.00)                                                                            | narc2         |
 | narc    | Narc (rev 3.20)                                                                            | narc3         |
@@ -1290,4 +1303,4 @@
 | yiear   | Yie Ar Kung-Fu (version G)                                                                 | yiear2        |
 | yiear   | Yie Ar Kung-Fu (version I)                                                                 | yiear         |
 
-91 cores, supporting 1289 games
+93 cores, supporting 1302 games

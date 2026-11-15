@@ -104,5 +104,5 @@
         <dip name="Lives" bits="14,15" ids="Infinite,4,3,2"/>
         <dip name="Turbo" ids="off,on" bits="16"/>
     </switches>
-    <buttons names="Kick,Jump,Punch,Start,Coin,Core credits" default="A,B,X,Start,Select,-" count="3"/>
+    <buttons names="Kick,Jump,Punch,Start,Coin,Core credits,Test,Service" default="A,B,X,Start,Select,L2,R2,L3" count="3"/>
 </misterromdescription>

@@ -94,8 +94,8 @@
             <part name="epr-10712.29" crc="876ad019" map="01"/>
             <part name="epr-10716.30" crc="40ba1d48" map="10"/>
         </interleave>
-        <!-- MCU_START -->
         <!-- JTFRAME_PROM_START -->
+        <!-- MCU_START -->
         <!-- mcu - starts at 0x180000 - length 0x2000 (13 bits) -->
         <part repeat="0x1000"> FF</part>
         <part repeat="0x1000"> FF</part>
@@ -141,5 +141,5 @@
         <dip name="Timer" bits="12,13" ids="120,130,140,150"/>
         <dip name="Difficulty" bits="14,15" ids="Hardest,Hard,Easy,Normal"/>
     </switches>
-    <buttons names="Shot,-,-,-,-,Start,Coin,Core credits" default="A,Start,Select,-" count="1"/>
+    <buttons names="Shot,-,-,-,-,Start,Coin,Core credits,Test,Service" default="A,Start,Select,L2,R2,L3" count="1"/>
 </misterromdescription>

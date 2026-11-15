@@ -117,5 +117,5 @@
         <dip name="Credits Needed" bits="8" ids="2 To Start,1 To Start"/>
         <dip name="Demo Sounds" bits="9" ids="On,Off"/>
     </switches>
-    <buttons names="Attack,Jump,Magic,-,-,Start,Coin,Core credits" default="A,B,X,Start,Select,-" count="3"/>
+    <buttons names="Attack,Jump,Magic,-,-,Start,Coin,Core credits,Test,Service" default="A,B,X,Start,Select,L2,R2,L3" count="3"/>
 </misterromdescription>

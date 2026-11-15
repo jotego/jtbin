@@ -4087,5 +4087,5 @@ F5 22 00 F8 FF 01 0C 0E E9 56 00 6C E9 49 E8 9A
         <dip name="Freeze" bits="7" ids="On,Off"/>
         <dip name="*Sound fix" ids="On,Off" bits="8"/>
     </switches>
-    <buttons names="Gun Shot,-,-,-,-,-,Start,Coin,Core credits" default="A,Start,Select,-" count="1"/>
+    <buttons names="Gun Shot,-,-,-,-,-,Start,Coin,Core credits,Test,Service" default="A,Start,Select,L2,R2,L3" count="1"/>
 </misterromdescription>

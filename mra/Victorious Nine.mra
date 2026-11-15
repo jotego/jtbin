@@ -123,5 +123,5 @@
         <dip name="No Hit" bits="21" ids="On,Off"/>
         <dip name="Coinage" bits="22" ids="1-Way,2-Way"/>
     </switches>
-    <buttons names="Button 1,Button 2,Button 3,Button 4,Button 5,Button 6,Start,Coin,Core credits" default="A,B,X,Y,L,R,Start,Select,-" count="6"/>
+    <buttons names="Button 1,Button 2,Button 3,Button 4,Button 5,Button 6,Start,Coin,Core credits,Test,Service" default="A,B,X,Y,L,R,Start,Select,L2,R2,L3" count="6"/>
 </misterromdescription>

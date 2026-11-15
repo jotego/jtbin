@@ -95,5 +95,5 @@
         <dip name="Service Mode" bits="30" ids="On,Off"/>
         <dip name="PCB type" ids="88617A,89626A" bits="24"/>
     </switches>
-    <buttons names="Attack,Jump,-,-,-,-,Start,Coin,Core credits" default="A,B,Start,Select,-" count="2"/>
+    <buttons names="Attack,Jump,-,-,-,-,Start,Coin,Core credits,Test,Service" default="A,B,Start,Select,L2,R2,L3" count="2"/>
 </misterromdescription>

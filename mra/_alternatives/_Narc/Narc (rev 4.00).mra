@@ -75,6 +75,7 @@
         <part name="rev2_narc_sound_rom_u37.u37" crc="29dbeffd"/>
         <part name="rev2_narc_sound_rom_u38.u38" crc="09b03b80"/>
         <!-- JTFRAME_BA2_START -->
+        <!-- JTFRAME_BA1_START -->
         <!-- gfx - starts at 0x160000 - length 0x3C0000 (22 bits) -->
         <interleave output="32">
             <part name="rev2_narc_image_rom_u94.u94" crc="ca3194e4" map="0001"/>
@@ -172,5 +173,5 @@
     <rom index="1">
         <part>00 B5</part>
     </rom>
-    <buttons names="Fire,Jump,Rocket Bomb,Crouch,Service,Start,Coin,Core credits" default="A,B,X,Y,L,Start,Select,-" count="5"/>
+    <buttons names="Fire,Jump,Rocket Bomb,Crouch,Service,Start,Coin,Core credits,Test,Service" default="A,B,X,Y,L,Start,Select,L2,R2,L3" count="5"/>
 </misterromdescription>

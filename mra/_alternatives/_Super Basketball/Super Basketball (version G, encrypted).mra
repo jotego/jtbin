@@ -87,5 +87,5 @@
         <dip name="Difficulty" bits="13,14" ids="Hardest,Hard,Medium,Easy"/>
         <dip name="Demo Sounds" bits="15" ids="On,Off"/>
     </switches>
-    <buttons names="Bounce,Throw,Pass,Start,Coin,Core credits" default="A,B,X,Start,Select,-" count="3"/>
+    <buttons names="Bounce,Throw,Pass,Start,Coin,Core credits,Test,Service" default="A,B,X,Start,Select,L2,R2,L3" count="3"/>
 </misterromdescription>

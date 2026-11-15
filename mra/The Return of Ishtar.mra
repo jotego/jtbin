@@ -159,5 +159,5 @@
         <dip name="Flip Screen" bits="14" ids="Off,On"/>
         <dip name="Freeze" bits="15" ids="On,Off"/>
     </switches>
-    <buttons names="Cast Spell,Select Spell,Swap,Start,Coin,Core credits" default="A,B,X,Start,Select,-" count="3"/>
+    <buttons names="Cast Spell,Select Spell,Swap,Start,Coin,Core credits,Test,Service" default="A,B,X,Start,Select,L2,R2,L3" count="3"/>
 </misterromdescription>

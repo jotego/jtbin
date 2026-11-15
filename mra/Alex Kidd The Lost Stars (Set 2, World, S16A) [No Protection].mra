@@ -120,5 +120,5 @@
         <dip name="Bonus" bits="12,13" ids="None,40k,10k,20k"/>
         <dip name="Time Adjust" bits="14,15" ids="40,50,70,60"/>
     </switches>
-    <buttons names="Jump/Swim,Shot,-,-,-,Start,Coin,Core credits" default="A,B,Start,Select,-" count="2"/>
+    <buttons names="Jump/Swim,Shot,-,-,-,Start,Coin,Core credits,Test,Service" default="A,B,Start,Select,L2,R2,L3" count="2"/>
 </misterromdescription>

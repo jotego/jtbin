@@ -96,5 +96,5 @@
         <dip name="Difficulty" bits="10,12" ids="Special,Easiest,Easier,Easy,Hard,Harder,Hardest,Normal"/>
         <dip name="Coin Chutes" bits="13" ids="1,2"/>
     </switches>
-    <buttons names="Attack,Roll,Special,-,Start,Coin,Core credits" default="A,B,X,Start,Select,-" count="3"/>
+    <buttons names="Attack,Roll,Special,-,Start,Coin,Core credits,Test,Service" default="A,B,X,Start,Select,L2,R2,L3" count="3"/>
 </misterromdescription>

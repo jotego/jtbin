@@ -84,5 +84,5 @@
         <dip name="Game Mode" bits="23" ids="Test,Game"/>
         <dip name="PCB type" ids="88617A,89626A" bits="24"/>
     </switches>
-    <buttons names="Attack,Jump,Special,-,-,-,Start,Coin,Core credits" default="A,B,X,Start,Select,-" count="3"/>
+    <buttons names="Attack,Jump,Special,-,-,-,Start,Coin,Core credits,Test,Service" default="A,B,X,Start,Select,L2,R2,L3" count="3"/>
 </misterromdescription>

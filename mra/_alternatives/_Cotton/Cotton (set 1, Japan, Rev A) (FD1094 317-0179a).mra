@@ -102,8 +102,8 @@
             <part name="opr-13855.a4" crc="856f3ee2" map="01"/>
             <part name="opr-13876.b13" crc="1c5ffad8" map="10"/>
         </interleave>
-        <!-- MCU_START -->
         <!-- JTFRAME_PROM_START -->
+        <!-- MCU_START -->
         <!-- mcu - starts at 0x440000 - length 0x2000 (13 bits) -->
         <part repeat="0x1000"> FF</part>
         <part repeat="0x1000"> FF</part>
@@ -129,5 +129,5 @@
         <dip name="Lives" bits="9,10" ids="5,4,2,3"/>
         <dip name="Difficulty" bits="11,12" ids="Hardest,Hard,Easy,Normal"/>
     </switches>
-    <buttons names="Shoot/Magic,Bomb/Nymphs,-,-,-,Start,Coin,Core credits" default="A,B,Start,Select,-" count="2"/>
+    <buttons names="Shoot/Magic,Bomb/Nymphs,-,-,-,Start,Coin,Core credits,Test,Service" default="A,B,Start,Select,L2,R2,L3" count="2"/>
 </misterromdescription>

@@ -62,5 +62,5 @@
         <SYSTEM/>
         <dip name="Service Mode" bits="13" ids="On,Off"/>
     </switches>
-    <buttons names="Button 1, button 2,-,-,Start,Coin,Core credits" default="A,B,Start,Select,-" count="2"/>
+    <buttons names="Button 1, button 2,-,-,Start,Coin,Core credits,Test,Service" default="A,B,Start,Select,L2,R2,L3" count="2"/>
 </misterromdescription>

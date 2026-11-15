@@ -138,5 +138,5 @@
         <dip name="Flip Screen" bits="8" ids="On,Off"/>
         <dip name="Cabinet" bits="9,10" ids="Cocktail,Upright 1 Player,Upright 2 Players,Cocktail"/>
     </switches>
-    <buttons names="Kick,Jump,-,Start,Coin,Core credits" default="A,B,Start,Select,-" count="2"/>
+    <buttons names="Kick,Jump,-,Start,Coin,Core credits,Test,Service" default="A,B,Start,Select,L2,R2,L3" count="2"/>
 </misterromdescription>

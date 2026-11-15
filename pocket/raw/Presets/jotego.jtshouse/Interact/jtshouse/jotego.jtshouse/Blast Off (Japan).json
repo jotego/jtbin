@@ -38,6 +38,17 @@
 				"mask": "0xFFFFFEFF"
 			},
 			{
+				"name": "*Flip screen",
+				"id": 3,
+				"type": "check",
+				"enabled": true,
+				"persist": true,
+				"address": "0xfa000000",
+				"defaultval": 0,
+				"value": 512,
+				"mask": "0xFFFFFDFF"
+			},
+			{
 				"name": "Default",
 				"id": 1015,
 				"type": "number_u32",

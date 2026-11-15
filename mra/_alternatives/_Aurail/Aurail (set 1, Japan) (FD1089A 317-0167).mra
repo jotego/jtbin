@@ -152,5 +152,5 @@
         <dip name="Controller" bits="14" ids="2 Players Side,1 Player Side"/>
         <dip name="Special Function Mode" bits="15" ids="On,Off"/>
     </switches>
-    <buttons names="Rapid Shot,Kite/Turn,Shield,-,-,Start,Coin,Core credits" default="A,B,X,Start,Select,-" count="3"/>
+    <buttons names="Rapid Shot,Kite/Turn,Shield,-,-,Start,Coin,Core credits,Test,Service" default="A,B,X,Start,Select,L2,R2,L3" count="3"/>
 </misterromdescription>

@@ -110,5 +110,5 @@
         <dip name="Point Table" bits="12,13" ids="Hardest,Hard,Easy,Normal"/>
         <dip name="Difficulty" bits="14,15" ids="Hardest,Hard,Easy,Normal"/>
     </switches>
-    <buttons names="Flat,Slice,Lob,Top Spin,-,Start,Coin,Core credits" default="A,B,X,Y,Start,Select,-" count="4"/>
+    <buttons names="Flat,Slice,Lob,Top Spin,-,Start,Coin,Core credits,Test,Service" default="A,B,X,Y,Start,Select,L2,R2,L3" count="4"/>
 </misterromdescription>

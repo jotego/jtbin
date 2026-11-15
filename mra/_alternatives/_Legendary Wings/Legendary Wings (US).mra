@@ -94,5 +94,5 @@
         <dip name="Allow Continue" bits="12" ids="No,Yes"/>
         <dip name="Bonus" bits="13,15" ids="None,30k &amp; *60k,30k &amp; *80k,20k &amp; *60k,40k &amp; *100k,20k &amp; *70k,30k &amp; *70k,20k &amp; *50k"/>
     </switches>
-    <buttons names="Shoot,Bomb,Start,Coin,Core credits" default="A,B,Start,Select,-" count="2"/>
+    <buttons names="Shoot,Bomb,Start,Coin,Core credits,Test,Service" default="A,B,Start,Select,L2,R2,L3" count="2"/>
 </misterromdescription>

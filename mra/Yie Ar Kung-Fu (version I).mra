@@ -79,5 +79,5 @@
         <dip name="Upright Controls" bits="17" ids="Dual,Single"/>
         <dip name="Service Mode" bits="18" ids="On,Off"/>
     </switches>
-    <buttons names="Punch,Kick,-,Start,Coin,Core credits" default="A,B,Start,Select,-" count="2"/>
+    <buttons names="Punch,Kick,-,Start,Coin,Core credits,Test,Service" default="A,B,Start,Select,L2,R2,L3" count="2"/>
 </misterromdescription>

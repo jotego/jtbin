@@ -120,5 +120,5 @@
         <dip name="Dip Switch Display" bits="14" ids="Off,On"/>
         <dip name="Allow Continue" bits="15" ids="No,Yes"/>
     </switches>
-    <buttons names="Shot,Bomb,Start,Coin,Core credits" default="A,B,Start,Select,-" count="2"/>
+    <buttons names="Shot,Bomb,Start,Coin,Core credits,Test,Service" default="A,B,Start,Select,L2,R2,L3" count="2"/>
 </misterromdescription>

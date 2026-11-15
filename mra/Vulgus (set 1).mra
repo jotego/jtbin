@@ -113,5 +113,5 @@
         <dip name="Cabinet" bits="15" ids="Upright,Cocktail"/>
         <dip name="Flip Screen" ids="Off,On" bits="16"/>
     </switches>
-    <buttons names="Shoot,Bomb,Start,Coin,Core credits" default="A,B,Start,Select,-" count="2"/>
+    <buttons names="Shoot,Bomb,Start,Coin,Core credits,Test,Service" default="A,B,Start,Select,L2,R2,L3" count="2"/>
 </misterromdescription>

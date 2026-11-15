@@ -92,5 +92,5 @@ Byte 7: addr for upper nibble read
         <dip name="Auto Data Sampling" bits="4" ids="On,Off"/>
         <dip name="*Sound fix" ids="On,Off" bits="8"/>
     </switches>
-    <buttons names="Jump,-,-,-,-,-,Start,Coin,Core credits" default="A,Start,Select,-" count="1"/>
+    <buttons names="Jump,-,-,-,-,-,Start,Coin,Core credits,Test,Service" default="A,Start,Select,L2,R2,L3" count="1"/>
 </misterromdescription>

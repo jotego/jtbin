@@ -80,5 +80,5 @@
         <dip name="Demo Sounds" bits="14" ids="Off,On"/>
         <dip name="Flip" ids="Off,On" bits="1"/>
     </switches>
-    <buttons names="Cut,Unused,Start,Coin,Core credits" default="A,B,Start,Select,-" count="2"/>
+    <buttons names="Cut,Unused,Start,Coin,Core credits,Test,Service" default="A,B,Start,Select,L2,R2,L3" count="2"/>
 </misterromdescription>

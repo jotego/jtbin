@@ -81,8 +81,8 @@
             <part name="fn-02" crc="4f060cba" map="1000"/>
         </interleave>
         <part repeat="0x58000"> FF</part>
-        <!-- JTFRAME_PROM_START -->
         <!-- PROM_START -->
+        <!-- JTFRAME_PROM_START -->
         <!-- proms - starts at 0x228000 - length 0x100 (8 bits) -->
         <part name="ta-16.21k" crc="ad26e8d4"/>
         <!-- Total 0x228100 bytes - 2208 kBytes -->
@@ -102,5 +102,5 @@
         <dip name="Allow Continue" bits="14" ids="No,Yes"/>
         <dip name="Demo Sounds" bits="15" ids="On,Off"/>
     </switches>
-    <buttons names="Shot,Jump,-,-,-,Start,Coin,Core credits" default="A,B,Start,Select,-" count="2"/>
+    <buttons names="Shot,Jump,-,-,-,Start,Coin,Core credits,Test,Service" default="A,B,Start,Select,L2,R2,L3" count="2"/>
 </misterromdescription>

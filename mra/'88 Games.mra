@@ -124,5 +124,5 @@
         <dip name="Records" bits="21" ids="Keep,Erase"/>
         <dip name="Service Mode" bits="22" ids="On,Off"/>
     </switches>
-    <buttons names="Left button,Centre button,Right button,Start,Coin,Core credits" default="Y,X,A,Start,Select,-" count="3"/>
+    <buttons names="Left button,Centre button,Right button,Start,Coin,Core credits,Test,Service" default="Y,X,A,Start,Select,L2,R2,L3" count="3"/>
 </misterromdescription>

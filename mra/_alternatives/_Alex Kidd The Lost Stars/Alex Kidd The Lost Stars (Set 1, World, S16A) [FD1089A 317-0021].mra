@@ -92,8 +92,8 @@
             <part name="epr-10444.30" crc="82115823" map="10"/>
         </interleave>
         <part repeat="0x10000"> FF</part>
-        <!-- JTFRAME_PROM_START -->
         <!-- MCU_START -->
+        <!-- JTFRAME_PROM_START -->
         <!-- mcu - starts at 0x180000 - length 0x2000 (13 bits) -->
         <part repeat="0x1000"> FF</part>
         <part repeat="0x1000"> FF</part>
@@ -140,5 +140,5 @@
         <dip name="Bonus" bits="12,13" ids="None,40k,10k,20k"/>
         <dip name="Time Adjust" bits="14,15" ids="40,50,70,60"/>
     </switches>
-    <buttons names="Jump/Swim,Shot,-,-,-,Start,Coin,Core credits" default="A,B,Start,Select,-" count="2"/>
+    <buttons names="Jump/Swim,Shot,-,-,-,Start,Coin,Core credits,Test,Service" default="A,B,Start,Select,L2,R2,L3" count="2"/>
 </misterromdescription>

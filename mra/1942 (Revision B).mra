@@ -112,5 +112,5 @@
         <dip name="Difficulty" bits="13,14" ids="Very Difficult,Difficult,Easy,Normal"/>
         <dip name="Screen Stop" bits="15" ids="On,Off"/>
     </switches>
-    <buttons names="Shoot,Roll,Start,Coin,Core credits" default="A,B,Start,Select,-" count="2"/>
+    <buttons names="Shoot,Roll,Start,Coin,Core credits,Test,Service" default="A,B,Start,Select,L2,R2,L3" count="2"/>
 </misterromdescription>

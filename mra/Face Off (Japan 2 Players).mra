@@ -4070,5 +4070,5 @@ FF FF FF FF FF FF FF 20 8A DA 8D D4 CE 20 8A DA
         <dip name="Service Mode" bits="0" ids="On,Off"/>
         <dip name="*Sound fix" ids="On,Off" bits="8"/>
     </switches>
-    <buttons names="Shot,Pass/Shoot,-,-,-,-,Start,Coin,Core credits" default="A,B,Start,Select,-" count="2"/>
+    <buttons names="Shot,Pass/Shoot,-,-,-,-,Start,Coin,Core credits,Test,Service" default="A,B,Start,Select,L2,R2,L3" count="2"/>
 </misterromdescription>

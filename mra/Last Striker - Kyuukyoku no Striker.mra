@@ -88,5 +88,5 @@
         <dip name="Language" bits="14" ids="English,Japanese"/>
         <dip name="Service Mode" bits="15" ids="On,Off"/>
     </switches>
-    <buttons names="Short Pass,Long Pass,Shoot,Start,Coin,Core credits" default="A,B,X,Start,Select,-" count="3"/>
+    <buttons names="Short Pass,Long Pass,Shoot,Start,Coin,Core credits,Test,Service" default="A,B,X,Start,Select,L2,R2,L3" count="3"/>
 </misterromdescription>

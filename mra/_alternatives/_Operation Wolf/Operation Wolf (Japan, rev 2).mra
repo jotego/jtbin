@@ -90,5 +90,5 @@
         <dip name="Continue discount" bits="14" ids="Yes,No"/>
         <dip name="Language" bits="15" ids="English,Japanese"/>
     </switches>
-    <buttons names="Bullet,Grenade,Start,Coin,Core credits" default="A,B,Start,Select,-" count="2"/>
+    <buttons names="Bullet,Grenade,Start,Coin,Core credits,Test,Service" default="A,B,Start,Select,L2,R2,L3" count="2"/>
 </misterromdescription>

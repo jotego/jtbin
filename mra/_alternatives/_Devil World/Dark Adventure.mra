@@ -100,5 +100,5 @@
         <dip name="Flip Screen" bits="16" ids="On,Off"/>
         <dip name="Service Mode" bits="18" ids="On,Off"/>
     </switches>
-    <buttons names="Power up,Shoot,Jump,Start,Coin,Core credits" default="A,B,X,Start,Select,-" count="3"/>
+    <buttons names="Power up,Shoot,Jump,Start,Coin,Core credits,Test,Service" default="A,B,X,Start,Select,L2,R2,L3" count="3"/>
 </misterromdescription>

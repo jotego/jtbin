@@ -92,5 +92,5 @@
         <dip name="Demo Music" bits="13" ids="Off,On"/>
         <dip name="Flip Screen" bits="14" ids="On,Off"/>
     </switches>
-    <buttons names="Action,-,Start,Coin,Core credits" default="A,Start,Select,-" count="1"/>
+    <buttons names="Action,-,Start,Coin,Core credits,Test,Service" default="A,Start,Select,L2,R2,L3" count="1"/>
 </misterromdescription>

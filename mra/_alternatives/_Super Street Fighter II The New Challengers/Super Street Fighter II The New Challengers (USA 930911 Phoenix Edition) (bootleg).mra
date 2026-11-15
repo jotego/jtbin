@@ -97,5 +97,5 @@ F8 D8 77 C5 66 FE 6D C6 B0 1D 21 74 DC 6E 89 A4
         <DSWB/>
         <DSWC/>
     </switches>
-    <buttons names="Light Punch,Middle Punch,Heavy Punch,Light Kick,Middle Kick,Heavy Kick,Start,Coin,Core credits" default="A,B,X,Y,L,R,Start,Select,-" count="6"/>
+    <buttons names="Light Punch,Middle Punch,Heavy Punch,Light Kick,Middle Kick,Heavy Kick,Start,Coin,Core credits,Test,Service" default="A,B,X,Y,L,R,Start,Select,L2,R2,L3" count="6"/>
 </misterromdescription>

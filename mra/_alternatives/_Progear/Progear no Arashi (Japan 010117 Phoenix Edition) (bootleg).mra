@@ -96,5 +96,5 @@
         <DSWB/>
         <DSWC/>
     </switches>
-    <buttons names="Shot,Bomb,Rapid Shot,-,-,-,Start,Coin,Core credits" default="A,B,X,Start,Select,-" count="3"/>
+    <buttons names="Shot,Bomb,Rapid Shot,-,-,-,Start,Coin,Core credits,Test,Service" default="A,B,X,Start,Select,L2,R2,L3" count="3"/>
 </misterromdescription>

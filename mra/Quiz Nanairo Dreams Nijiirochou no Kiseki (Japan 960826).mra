@@ -89,5 +89,5 @@
         <DSWB/>
         <DSWC/>
     </switches>
-    <buttons names="Button 1,Button 2,Button 3,Button 4,-,-,Start,Coin,Core credits" default="A,B,X,Y,Start,Select,-" count="4"/>
+    <buttons names="Button 1,Button 2,Button 3,Button 4,-,-,Start,Coin,Core credits,Test,Service" default="A,B,X,Y,Start,Select,L2,R2,L3" count="4"/>
 </misterromdescription>

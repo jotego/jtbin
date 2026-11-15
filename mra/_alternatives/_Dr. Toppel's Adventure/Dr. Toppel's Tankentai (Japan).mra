@@ -103,5 +103,5 @@
         <dip name="Bonus Life" bits="10,11" ids="50 100 200 200k+,30k 100k,30k only,30 100 200 100k+"/>
         <dip name="Lives" bits="12,13" ids="5,4,2,3"/>
     </switches>
-    <buttons names="button 1,button 2,-,Start,Coin,Core credits" default="A,B,Start,Select,-" count="2"/>
+    <buttons names="button 1,button 2,-,Start,Coin,Core credits,Test,Service" default="A,B,Start,Select,L2,R2,L3" count="2"/>
 </misterromdescription>

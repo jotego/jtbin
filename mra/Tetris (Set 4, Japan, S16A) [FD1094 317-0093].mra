@@ -97,5 +97,5 @@
         <dip name="Demo Sounds" bits="9" ids="On,Off"/>
         <dip name="Difficulty" bits="12,13" ids="Hardest,Hard,Easy,Normal"/>
     </switches>
-    <buttons names="Rotate,Rotate,Rotate,-,-,Start,Coin,Core credits" default="A,B,X,Start,Select,-" count="3"/>
+    <buttons names="Rotate,Rotate,Rotate,-,-,Start,Coin,Core credits,Test,Service" default="A,B,X,Start,Select,L2,R2,L3" count="3"/>
 </misterromdescription>

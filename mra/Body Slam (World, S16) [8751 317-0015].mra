@@ -125,5 +125,5 @@
         <dip name="Timer Speed" bits="10,11" ids="Fastest,Fast,Slow,Slowest"/>
         <dip name="Difficulty" bits="14,15" ids="Hardest,Hard,Easy,Normal"/>
     </switches>
-    <buttons names="Punch/Throw,Kick/Pin,Get Up/Tag,-,-,Start,Coin,Core credits" default="A,B,X,Start,Select,-" count="3"/>
+    <buttons names="Punch/Throw,Kick/Pin,Get Up/Tag,-,-,Start,Coin,Core credits,Test,Service" default="A,B,X,Start,Select,L2,R2,L3" count="3"/>
 </misterromdescription>

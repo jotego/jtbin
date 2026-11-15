@@ -101,5 +101,5 @@
         <dip name="32768 Lives (Cheat)" bits="14" ids="On,Off"/>
         <dip name="Language" bits="15" ids="English,Japanese"/>
     </switches>
-    <buttons names="button 1,Start,Coin,Core credits" default="A,B,Start,Select,-" count="1"/>
+    <buttons names="button 1,Start,Coin,Core credits,Test,Service" default="A,Start,Select,L2,R2,L3" count="1"/>
 </misterromdescription>

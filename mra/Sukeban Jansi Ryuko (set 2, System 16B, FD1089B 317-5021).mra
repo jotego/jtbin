@@ -89,8 +89,8 @@
             <part name="epr-12239-30.b8" crc="91f70c8b" map="10"/>
         </interleave>
         <part repeat="0x180000"> FF</part>
-        <!-- JTFRAME_PROM_START -->
         <!-- MCU_START -->
+        <!-- JTFRAME_PROM_START -->
         <!-- mcu - starts at 0x440000 - length 0x2000 (13 bits) -->
         <part repeat="0x1000"> FF</part>
         <part repeat="0x1000"> FF</part>
@@ -134,5 +134,5 @@
         <dip name="CPU Level" bits="8,9" ids="Strong,Medium Strong,Medium Weak,Weak"/>
         <dip name="Demo Sounds" bits="10" ids="On,Off"/>
     </switches>
-    <buttons names="none,-,-,-,-,Start,Coin,Core credits" default="A,Start,Select,-" count="1"/>
+    <buttons names="none,-,-,-,-,Start,Coin,Core credits,Test,Service" default="A,Start,Select,L2,R2,L3" count="1"/>
 </misterromdescription>

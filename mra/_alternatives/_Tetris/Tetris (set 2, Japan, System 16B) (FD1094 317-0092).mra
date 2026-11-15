@@ -65,8 +65,8 @@
             <part name="mpr-12195.b5" crc="d6a02cba" map="10"/>
         </interleave>
         <part repeat="0x1E0000"> FF</part>
-        <!-- JTFRAME_PROM_START -->
         <!-- MCU_START -->
+        <!-- JTFRAME_PROM_START -->
         <!-- mcu - starts at 0x440000 - length 0x2000 (13 bits) -->
         <part repeat="0x1000"> FF</part>
         <part repeat="0x1000"> FF</part>
@@ -91,5 +91,5 @@
         <dip name="Demo Sounds" bits="9" ids="On,Off"/>
         <dip name="Difficulty" bits="12,13" ids="Hardest,Hard,Easy,Normal"/>
     </switches>
-    <buttons names="Rotate,Rotate,Rotate,-,-,Start,Coin,Core credits" default="A,B,X,Start,Select,-" count="3"/>
+    <buttons names="Rotate,Rotate,Rotate,-,-,Start,Coin,Core credits,Test,Service" default="A,B,X,Start,Select,L2,R2,L3" count="3"/>
 </misterromdescription>

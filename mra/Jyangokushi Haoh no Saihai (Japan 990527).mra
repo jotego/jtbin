@@ -87,5 +87,5 @@
         <DSWB/>
         <DSWC/>
     </switches>
-    <buttons names="Tsumo,Open Menu,-,-,-,-,Start,Coin,Core credits" default="A,B,Start,Select,-" count="2"/>
+    <buttons names="Tsumo,Open Menu,-,-,-,-,Start,Coin,Core credits,Test,Service" default="A,B,Start,Select,L2,R2,L3" count="2"/>
 </misterromdescription>

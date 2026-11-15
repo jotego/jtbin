@@ -81,8 +81,8 @@
             <part name="opr-11867.b7" crc="81e49697" map="10"/>
         </interleave>
         <part repeat="0x1A0000"> FF</part>
-        <!-- MCU_START -->
         <!-- JTFRAME_PROM_START -->
+        <!-- MCU_START -->
         <!-- mcu - starts at 0x440000 - length 0x2000 (13 bits) -->
         <part repeat="0x1000"> FF</part>
         <part repeat="0x1000"> FF</part>
@@ -110,5 +110,5 @@
         <dip name="Point Table" bits="12,13" ids="Hardest,Hard,Easy,Normal"/>
         <dip name="Difficulty" bits="14,15" ids="Hardest,Hard,Easy,Normal"/>
     </switches>
-    <buttons names="Flat,Slice,Lob,Top Spin,-,Start,Coin,Core credits" default="A,B,X,Y,Start,Select,-" count="4"/>
+    <buttons names="Flat,Slice,Lob,Top Spin,-,Start,Coin,Core credits,Test,Service" default="A,B,X,Y,Start,Select,L2,R2,L3" count="4"/>
 </misterromdescription>

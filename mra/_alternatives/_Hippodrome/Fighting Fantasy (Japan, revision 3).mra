@@ -100,8 +100,8 @@
         <!-- sub - starts at 0x210000 - length 0x18000 (17 bits) -->
         <part name="ew08" crc="53010534"/>
         <part repeat="0x8000"> FF</part>
-        <!-- PROM_START -->
         <!-- JTFRAME_PROM_START -->
+        <!-- PROM_START -->
         <!-- proms - starts at 0x228000 - length 0x600 (11 bits) -->
         <part name="mb7116e_a-1.12c" crc="86e775f8"/>
         <part name="mb7122e_a-2.17e" crc="a5cda23e"/>
@@ -125,5 +125,5 @@
         <dip name="Energy scale" bits="12,13" ids="High,Very Low,Low,Medium"/>
         <dip name="Player strength" bits="14" ids="None,2 Dots"/>
     </switches>
-    <buttons names="Attack,Jump,-,-,-,Start,Coin,Core credits" default="A,B,Start,Select,-" count="2"/>
+    <buttons names="Attack,Jump,-,-,-,Start,Coin,Core credits,Test,Service" default="A,B,Start,Select,L2,R2,L3" count="2"/>
 </misterromdescription>

@@ -89,5 +89,5 @@
         <dip name="Flip Screen" bits="16" ids="On,Off"/>
         <dip name="Service Mode" bits="18" ids="On,Off"/>
     </switches>
-    <buttons names="Shoot,Super shot,-,Start,Coin,Core credits" default="A,B,Start,Select,-" count="2"/>
+    <buttons names="Shoot,Super shot,-,Start,Coin,Core credits,Test,Service" default="A,B,Start,Select,L2,R2,L3" count="2"/>
 </misterromdescription>

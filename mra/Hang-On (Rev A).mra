@@ -159,5 +159,5 @@
         <dip name="Time Adj." bits="11,12" ids="Hardest,Hard,Medium,Normal"/>
         <dip name="Play Music" bits="13" ids="Off,On"/>
     </switches>
-    <buttons names="Accelerate,Brake,-,Start,Coin,Core credits" default="A,B,Start,Select,-" count="2"/>
+    <buttons names="Accelerate,Brake,-,Start,Coin,Core credits,Test,Service" default="A,B,Start,Select,L2,R2,L3" count="2"/>
 </misterromdescription>

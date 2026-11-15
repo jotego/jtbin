@@ -87,8 +87,8 @@
             <part name="epr-11293.29" crc="41f41063" map="01"/>
             <part name="epr-11297.30" crc="b6e1fd72" map="10"/>
         </interleave>
-        <!-- MCU_START -->
         <!-- JTFRAME_PROM_START -->
+        <!-- MCU_START -->
         <!-- mcu - starts at 0x180000 - length 0x2000 (13 bits) -->
         <part repeat="0x1000"> FF</part>
         <part repeat="0x1000"> FF</part>
@@ -116,5 +116,5 @@
         <dip name="Enemy&apos;s Bullet Speed" bits="14" ids="Fast,Slow"/>
         <dip name="Language" bits="15" ids="English,Japanese"/>
     </switches>
-    <buttons names="Shuriken,Jump,Magic,-,-,Start,Coin,Core credits" default="A,B,X,Start,Select,-" count="3"/>
+    <buttons names="Shuriken,Jump,Magic,-,-,Start,Coin,Core credits,Test,Service" default="A,B,X,Start,Select,L2,R2,L3" count="3"/>
 </misterromdescription>

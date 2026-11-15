@@ -4089,5 +4089,5 @@ FF EA D6 C2 AE 99 85 71 5C 6E 81 93 A5 A0 9C 98
         <dip name="Alternate sound effects" bits="2" ids="On,Off"/>
         <dip name="*Sound fix" ids="On,Off" bits="8"/>
     </switches>
-    <buttons names="Telekinesis Launch,Jump,-,-,-,-,Start,Coin,Core credits" default="A,B,Start,Select,-" count="2"/>
+    <buttons names="Telekinesis Launch,Jump,-,-,-,-,Start,Coin,Core credits,Test,Service" default="A,B,Start,Select,L2,R2,L3" count="2"/>
 </misterromdescription>

@@ -156,9 +156,12 @@
 | ktiger  | Twin Cobra (World)                                                           | twincobr  |
 | kunio   | Renegade (US)                                                                | renegade  |
 | labrun  | Trick Trap (World?)                                                          | tricktrp  |
+| meikyu  | Meikyu Jima (Japan)                                                          | kikcubic  |
 | midres  | Midnight Resistance (World, set 1)                                           | midres    |
 | mikie   | Mikie                                                                        | mikie     |
 | mx5k    | MX5000                                                                       | mx5000    |
+| mzone   | Mega Zone (program code L)                                                   | megazone  |
+| narc    | Narc (15kHz) (rev 7.00)                                                      | narc      |
 | narc    | Narc (rev 7.00)                                                              | narc      |
 | ngp     | NeoGeo Pocket                                                                | ngp       |
 | ninja   | Bad Dudes vs. Dragonninja (US, revision 1)                                   | baddudes  |
@@ -307,4 +310,4 @@
 | xmen    | X-Men (4 Players ver EBA)                                                    | xmen      |
 | yiear   | Yie Ar Kung-Fu (version I)                                                   | yiear     |
 
-90 cores, supporting 306 games
+92 cores, supporting 309 games

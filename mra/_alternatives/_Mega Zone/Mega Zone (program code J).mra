@@ -1,0 +1,91 @@
+<!--          FPGA arcade hardware by Jotego
+
+              This core is available for hardware compatible with MiST and MiSTer
+              Other FPGA systems may be supported by the time you read this.
+              This work is not mantained by the MiSTer project. Please contact the
+              core author for issues and updates.
+
+              (c) Jose Tejada, 2026. Please support this research
+              Patreon: https://patreon.com/jotego
+
+              The author does not endorse or participate in illegal distribution
+              of copyrighted material. This work can be used with compatible
+              software. This software can be homebrew projects or legally
+              obtained memory dumps of compatible games.
+
+              This file license is GNU GPLv2.
+              You can read the whole license file in
+              https://opensource.org/licenses/gpl-2.0.php
+
+-->
+
+<misterromdescription>
+    <about author="Ulf Skutnabba" webpage="https://patreon.com/jotego" twitter="@topapate" source="https://jotego/jtcores"/>
+    <rotation>vertical (cw)</rotation>
+    <name>Mega Zone (program code J)</name>
+    <setname>megazonej</setname>
+    <mameversion>0282</mameversion>
+    <year>1983</year>
+    <manufacturer>Konami (Interlogic / Kosuka license)</manufacturer>
+    <players>2</players>
+    <rbf>jtmzone</rbf>
+    <joystick>8</joystick>
+    <region>World</region>
+    <rom index="0" zip="megazonej.zip|megazone.zip" md5="None" asm_md5="d23970dd398f4fc53e5e1c5f01fe6c5e">
+        <!-- maincpu - starts at 0x0 - length 0x10000 (16 bits) -->
+        <part repeat="0x6000"> FF</part>
+        <part name="319_j07.11h" crc="5161a523"/>
+        <part name="319_j06.9h" crc="7344c3de"/>
+        <part name="319_j05.8h" crc="affa492b"/>
+        <part name="319_j04.7h" crc="03544ab3"/>
+        <part name="319_j03.6h" crc="0d95cc0a"/>
+        <!-- SND_START -->
+        <!-- audiocpu - starts at 0x10000 - length 0x2000 (13 bits) -->
+        <part name="319e02.6d" crc="d5d45edb"/>
+        <!-- MCU_ROM_START -->
+        <!-- daccpu - starts at 0x12000 - length 0x1000 (12 bits) -->
+        <part name="319e01.3a" crc="ed5725a0"/>
+        <!-- OBJ_START -->
+        <!-- gfx1 - starts at 0x13000 - length 0x8000 (15 bits) -->
+        <interleave output="16">
+            <part name="319e11.3e" crc="965a7ff6" map="01"/>
+            <part name="319e10.3d" crc="7bb1aeee" map="10"/>
+        </interleave>
+        <interleave output="16">
+            <part name="319e09.2e" crc="5eaa7f3e" map="01"/>
+            <part name="319e08.2d" crc="6add71b1" map="10"/>
+        </interleave>
+        <!-- SCR_START -->
+        <!-- gfx2 - starts at 0x1B000 - length 0x4000 (14 bits) -->
+        <part name="319_g12.8c" crc="07b8b24b"/>
+        <part name="319_g13.10c" crc="3d8f3743"/>
+        <!-- JTFRAME_PROM_START -->
+        <!-- proms - starts at 0x1F000 - length 0x260 (10 bits) -->
+        <part name="319b18.a16" crc="23cb02af"/>
+        <part name="319b16.c6" crc="5748e933"/>
+        <part name="319b17.a11" crc="1fbfce73"/>
+        <part name="319b14.e7" crc="55044268"/>
+        <part name="319b15.e8" crc="31fd7ab9"/>
+        <!-- Total 0x1F260 bytes - 124 kBytes -->
+    </rom>
+    <rom index="17" zip="jtbeta.zip" md5="None" asm_md5="7ecc1117032b37ba8a571c5a05db418c">
+        <part name="beta.bin" crc="3df60dfd"/>
+    </rom>
+    <nvram index="2" size="7172"/>
+    <!-- Vertical screen. -->
+    <rom index="1">
+        <part>01 80</part>
+    </rom>
+    <switches page_id="1" page_name="Switches" base="16" default="ff,5b">
+        <DSW1/>
+        <dip name="Coin A" bits="0,3" ids="Free Play,4/3,4/1,3/4,3/2,3/1,2/5,2/3,2/1,1/7,1/6,1/5,1/4,1/3,1/2,1/1"/>
+        <dip name="Coin B" bits="4,7" ids="No B,4/3,4/1,3/4,3/2,3/1,2/5,2/3,2/1,1/7,1/6,1/5,1/4,1/3,1/2,1/1"/>
+        <DSW2/>
+        <dip name="Lives" bits="8,9" ids="7,5,4,3"/>
+        <dip name="Cabinet" bits="10" ids="Upright,Cocktail"/>
+        <dip name="Bonus Life" bits="11,12" ids="30k 100k 100k+,30k 90k 90k+,20k 80k 80k+,20k 70k 70k+"/>
+        <dip name="Difficulty" bits="13,14" ids="Hardest,Hard,Normal,Easy"/>
+        <dip name="Demo Sounds" bits="15" ids="On,Off"/>
+    </switches>
+    <buttons names="Fire,-,Start,Coin,Core credits,Test,Service" default="A,Start,Select,L2,R2,L3" count="1"/>
+</misterromdescription>

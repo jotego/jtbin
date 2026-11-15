@@ -104,5 +104,5 @@
         <dip name="Bonus" bits="12,13" ids="None,200k,150k,100k"/>
         <dip name="Difficulty" bits="14,15" ids="Hardest,Hard,Normal,Easy"/>
     </switches>
-    <buttons names="Shot,Jump,Select,-,-,Start,Coin,Core credits" default="A,B,X,Start,Select,-" count="3"/>
+    <buttons names="Shot,Jump,Select,-,-,Start,Coin,Core credits,Test,Service" default="A,B,X,Start,Select,L2,R2,L3" count="3"/>
 </misterromdescription>

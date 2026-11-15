@@ -77,5 +77,5 @@
         <dip name="Service Mode" bits="18" ids="On,Off"/>
         <dip name="Continue" bits="19" ids="No,Up to 3 Times"/>
     </switches>
-    <buttons names="Attack,Jump,-,Start,Coin,Core credits" default="A,B,Start,Select,-" count="2"/>
+    <buttons names="Attack,Jump,-,Start,Coin,Core credits,Test,Service" default="A,B,Start,Select,L2,R2,L3" count="2"/>
 </misterromdescription>

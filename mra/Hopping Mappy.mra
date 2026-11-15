@@ -161,5 +161,5 @@
         <dip name="Demo Sounds" bits="14" ids="Off,On"/>
         <dip name="Difficulty" bits="15" ids="Hard,Easy"/>
     </switches>
-    <buttons names="Fast,-,-,Start,Coin,Core credits" default="A,Start,Select,-" count="1"/>
+    <buttons names="Fast,-,-,Start,Coin,Core credits,Test,Service" default="A,Start,Select,L2,R2,L3" count="1"/>
 </misterromdescription>

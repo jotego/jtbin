@@ -121,5 +121,5 @@
         <dip name="Time Limits" bits="11,13" ids="8 Hardest,4,6,2,7,3,5,1 Normal"/>
         <dip name="Difficulty" bits="14,15" ids="Hardest,Hard,Easy,Normal"/>
     </switches>
-    <buttons names="Change,Select,Chase,-,-,Start,Coin,Core credits" default="A,B,X,Start,Select,-" count="3"/>
+    <buttons names="Change,Select,Chase,-,-,Start,Coin,Core credits,Test,Service" default="A,B,X,Start,Select,L2,R2,L3" count="3"/>
 </misterromdescription>

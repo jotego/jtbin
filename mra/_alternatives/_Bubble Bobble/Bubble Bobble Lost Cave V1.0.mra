@@ -102,5 +102,5 @@
         <dip name="Language" ids="English,Japanese" bits="0"/>
         <dip name="Operation" ids="Test,Game" bits="2"/>
     </switches>
-    <buttons names="Jump,Shoot,Start,Coin,Core credits" default="A,B,Start,Select,-" count="2"/>
+    <buttons names="Jump,Shoot,Start,Coin,Core credits,Test,Service" default="A,B,Start,Select,L2,R2,L3" count="2"/>
 </misterromdescription>

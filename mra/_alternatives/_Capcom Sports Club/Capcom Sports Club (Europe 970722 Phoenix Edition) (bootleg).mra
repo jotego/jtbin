@@ -126,5 +126,5 @@
         <DSWB/>
         <DSWC/>
     </switches>
-    <buttons names="Shoot/Weak Shot,Pass/Strong Shot,Dash/Lob/Jump,-,-,-,Start,Coin,Core credits" default="A,B,X,Start,Select,-" count="3"/>
+    <buttons names="Shoot/Weak Shot,Pass/Strong Shot,Dash/Lob/Jump,-,-,-,Start,Coin,Core credits,Test,Service" default="A,B,X,Start,Select,L2,R2,L3" count="3"/>
 </misterromdescription>

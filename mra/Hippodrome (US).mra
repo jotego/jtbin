@@ -125,5 +125,5 @@
         <dip name="Energy scale" bits="12,13" ids="High,Very Low,Low,Medium"/>
         <dip name="Player strength" bits="14" ids="3 Dots,2 Dots"/>
     </switches>
-    <buttons names="Attack,Jump,-,-,-,Start,Coin,Core credits" default="A,B,Start,Select,-" count="2"/>
+    <buttons names="Attack,Jump,-,-,-,Start,Coin,Core credits,Test,Service" default="A,B,Start,Select,L2,R2,L3" count="2"/>
 </misterromdescription>

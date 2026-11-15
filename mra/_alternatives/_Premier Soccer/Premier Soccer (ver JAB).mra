@@ -89,5 +89,5 @@ FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
         <P1_COINS/>
         <dip name="Sound" bits="12" ids="Stereo,Mono"/>
     </switches>
-    <buttons names="Shoot,Pass,-,Start,Coin,Core credits" default="A,B,Start,Select,-" count="2"/>
+    <buttons names="Shoot,Pass,-,Start,Coin,Core credits,Test,Service" default="A,B,Start,Select,L2,R2,L3" count="2"/>
 </misterromdescription>

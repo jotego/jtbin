@@ -127,5 +127,5 @@
         <dip name="Starting Points" bits="10,11" ids="10k,5000,3000,2000"/>
         <dip name="Team Select" bits="12" ids="Off,On"/>
     </switches>
-    <buttons names="button 1,button 2,-,-,-,Start,Coin,Core credits" default="A,B,Start,Select,-" count="2"/>
+    <buttons names="button 1,button 2,-,-,-,Start,Coin,Core credits,Test,Service" default="A,B,Start,Select,L2,R2,L3" count="2"/>
 </misterromdescription>

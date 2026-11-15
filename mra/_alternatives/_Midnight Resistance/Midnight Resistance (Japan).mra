@@ -78,8 +78,8 @@
             <part name="fl-02.6a" crc="54d2c120" map="1000"/>
         </interleave>
         <part repeat="0x18000"> FF</part>
-        <!-- PROM_START -->
         <!-- JTFRAME_PROM_START -->
+        <!-- PROM_START -->
         <!-- proms - starts at 0x228000 - length 0x100 (8 bits) -->
         <part name="tb-7.22f" crc="eb539ffb"/>
         <!-- Total 0x228100 bytes - 2208 kBytes -->
@@ -95,5 +95,5 @@
         <dip name="Difficulty" bits="10,11" ids="Hardest,Hard,Easy,Normal"/>
         <dip name="Allow Continue" bits="14" ids="Yes,No"/>
     </switches>
-    <buttons names="Shot,Jump,Turn left,Turn right,-,Start,Coin,Core credits" default="Y,B,L,R,Start,Select,-" count="4"/>
+    <buttons names="Shot,Jump,Turn left,Turn right,-,Start,Coin,Core credits,Test,Service" default="Y,B,L,R,Start,Select,L2,R2,L3" count="4"/>
 </misterromdescription>

@@ -4082,5 +4082,5 @@ CD D8 E3 ED EF F2 F5 F7 5B 62 69 70 77 48 62 7D
         <dip name="Freeze" bits="7" ids="On,Off"/>
         <dip name="*Sound fix" ids="On,Off" bits="8"/>
     </switches>
-    <buttons names="Small Jump,Mid Jump,High Jump,Weak Attack,Mid Attack,Strong Attack,Start,Coin,Core credits" default="A,B,X,Y,L,R,Start,Select,-" count="6"/>
+    <buttons names="Small Jump,Mid Jump,High Jump,Weak Attack,Mid Attack,Strong Attack,Start,Coin,Core credits,Test,Service" default="A,B,X,Y,L,R,Start,Select,L2,R2,L3" count="6"/>
 </misterromdescription>

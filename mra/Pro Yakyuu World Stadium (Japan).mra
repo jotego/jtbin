@@ -100,5 +100,5 @@ Byte 7: addr for upper nibble read
         <dip name="Service Mode" bits="0" ids="On,Off"/>
         <dip name="*Sound fix" ids="On,Off" bits="8"/>
     </switches>
-    <buttons names="Batting/Throw,Base Running/Checkmate,Timeout,-,-,-,Start,Coin,Core credits" default="A,B,X,Start,Select,-" count="3"/>
+    <buttons names="Batting/Throw,Base Running/Checkmate,Timeout,-,-,-,Start,Coin,Core credits,Test,Service" default="A,B,X,Start,Select,L2,R2,L3" count="3"/>
 </misterromdescription>

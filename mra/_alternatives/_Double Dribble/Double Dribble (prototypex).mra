@@ -91,5 +91,5 @@
         <dip name="Service Mode" bits="18" ids="On,Off"/>
         <dip name="vs match with 1 credit" bits="19" ids="On,Off"/>
     </switches>
-    <buttons names="Pass,Shoot,Steal,Start,Coin,Core credits" default="A,B,X,Start,Select,-" count="3"/>
+    <buttons names="Pass,Shoot,Steal,Start,Coin,Core credits,Test,Service" default="A,B,X,Start,Select,L2,R2,L3" count="3"/>
 </misterromdescription>

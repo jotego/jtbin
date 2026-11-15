@@ -123,5 +123,5 @@
         <dip name="Infinite Lives" bits="22" ids="On,Off"/>
         <dip name="Flip" ids="Off,On" bits="24"/>
     </switches>
-    <buttons names="Chop,Throw,-,-,-,-,Start,Coin,Core credits" default="A,B,Start,Select,-" count="2"/>
+    <buttons names="Chop,Throw,-,-,-,-,Start,Coin,Core credits,Test,Service" default="A,B,Start,Select,L2,R2,L3" count="2"/>
 </misterromdescription>

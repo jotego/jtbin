@@ -95,5 +95,5 @@
         <dip name="Difficulty" bits="10,11" ids="Hardest,Hard,Easy,Normal"/>
         <dip name="Allow Continue" bits="14" ids="Yes,No"/>
     </switches>
-    <buttons names="Shot,Jump,Turn left,Turn right,-,Start,Coin,Core credits" default="Y,B,L,R,Start,Select,-" count="4"/>
+    <buttons names="Shot,Jump,Turn left,Turn right,-,Start,Coin,Core credits,Test,Service" default="Y,B,L,R,Start,Select,L2,R2,L3" count="4"/>
 </misterromdescription>

@@ -80,5 +80,5 @@
         <dip name="Time" bits="5" ids="100,120"/>
         <dip name="Lives" bits="6" ids="3,4"/>
     </switches>
-    <buttons names="Shot,Trick,Start,Coin,Core credits" default="A,B,Start,Select,-" count="2"/>
+    <buttons names="Shot,Trick,Start,Coin,Core credits,Test,Service" default="A,B,Start,Select,L2,R2,L3" count="2"/>
 </misterromdescription>

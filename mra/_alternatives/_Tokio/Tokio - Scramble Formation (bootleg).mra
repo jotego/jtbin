@@ -112,5 +112,5 @@
         <dip name="Lives" bits="12,13" ids="99,5,4,3"/>
         <dip name="Language" bits="15" ids="English,Japanese"/>
     </switches>
-    <buttons names="Jump,Shoot,Start,Coin,Core credits" default="A,B,Start,Select,-" count="2"/>
+    <buttons names="Jump,Shoot,Start,Coin,Core credits,Test,Service" default="A,B,Start,Select,L2,R2,L3" count="2"/>
 </misterromdescription>

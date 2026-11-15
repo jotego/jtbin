@@ -104,5 +104,5 @@
         <dip name="Language" bits="14" ids="English,Japanese"/>
         <dip name="Coin Mode" bits="15" ids="Mode B,Mode A"/>
     </switches>
-    <buttons names="Rainbow,Jump,Start,Coin,Core credits" default="A,B,Start,Select,-" count="2"/>
+    <buttons names="Rainbow,Jump,Start,Coin,Core credits,Test,Service" default="A,B,Start,Select,L2,R2,L3" count="2"/>
 </misterromdescription>

@@ -72,8 +72,8 @@
             <part name="mpr-11923.b6" crc="c9ffe47d" map="10"/>
         </interleave>
         <part repeat="0x180000"> FF</part>
-        <!-- MCU_START -->
         <!-- JTFRAME_PROM_START -->
+        <!-- MCU_START -->
         <!-- mcu - starts at 0x440000 - length 0x2000 (13 bits) -->
         <part repeat="0x1000"> FF</part>
         <part repeat="0x1000"> FF</part>
@@ -100,5 +100,5 @@
         <dip name="Lives" bits="11,12" ids="5,4,2,3"/>
         <dip name="Bonus" bits="13,14" ids="400k,300k,150k,200k"/>
     </switches>
-    <buttons names="Shot,Jump,-,-,-,Start,Coin,Core credits" default="A,B,Start,Select,-" count="2"/>
+    <buttons names="Shot,Jump,-,-,-,Start,Coin,Core credits,Test,Service" default="A,B,Start,Select,L2,R2,L3" count="2"/>
 </misterromdescription>

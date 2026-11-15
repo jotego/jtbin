@@ -141,5 +141,5 @@
         <dip name="Difficulty" bits="12,13" ids="Hardest,Hard,Easy,Normal"/>
         <dip name="CPU +6 Pts" bits="14" ids="On,Off"/>
     </switches>
-    <buttons names="Shot,Pass,-,-,-,Start,Coin,Core credits" default="A,B,Start,Select,-" count="2"/>
+    <buttons names="Shot,Pass,-,-,-,Start,Coin,Core credits,Test,Service" default="A,B,Start,Select,L2,R2,L3" count="2"/>
 </misterromdescription>

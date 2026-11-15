@@ -78,8 +78,8 @@
             <part name="epr-17699.b8" crc="2694ecce" map="10"/>
         </interleave>
         <part repeat="0x100000"> FF</part>
-        <!-- JTFRAME_PROM_START -->
         <!-- MCU_START -->
+        <!-- JTFRAME_PROM_START -->
         <!-- mcu - starts at 0x440000 - length 0x2000 (13 bits) -->
         <part repeat="0x1000"> FF</part>
         <part repeat="0x1000"> FF</part>
@@ -105,5 +105,5 @@
         <dip name="VS Play Mode" bits="12" ids="3 Set,1 Set"/>
         <dip name="Difficulty" bits="13,15" ids="Hard+5,Hard+4,Hard+3,Hard+2,Hard+1,Hard,Easy,Normal"/>
     </switches>
-    <buttons names="Block Turn,-,-,-,-,Start,Coin,Core credits" default="A,Start,Select,-" count="1"/>
+    <buttons names="Block Turn,-,-,-,-,Start,Coin,Core credits,Test,Service" default="A,Start,Select,L2,R2,L3" count="1"/>
 </misterromdescription>

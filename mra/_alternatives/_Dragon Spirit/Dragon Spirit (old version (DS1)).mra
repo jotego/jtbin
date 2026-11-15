@@ -124,5 +124,5 @@ Byte 7: addr for upper nibble read
         <dip name="3rd life 7/7" bits="7" ids="Yes,No"/>
         <dip name="*Sound fix" ids="On,Off" bits="8"/>
     </switches>
-    <buttons names="Fire Air,Fire Ground,-,-,-,-,Start,Coin,Core credits" default="A,B,Start,Select,-" count="2"/>
+    <buttons names="Fire Air,Fire Ground,-,-,-,-,Start,Coin,Core credits,Test,Service" default="A,B,Start,Select,L2,R2,L3" count="2"/>
 </misterromdescription>

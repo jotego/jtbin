@@ -120,5 +120,5 @@
         <dip name="Invulnerability" bits="22" ids="On,Off"/>
         <dip name="Coin Slots" bits="23" ids="1,2"/>
     </switches>
-    <buttons names="Shot,Jump,-,-,-,-,Start,Coin,Core credits" default="A,B,Start,Select,-" count="2"/>
+    <buttons names="Shot,Jump,-,-,-,-,Start,Coin,Core credits,Test,Service" default="A,B,Start,Select,L2,R2,L3" count="2"/>
 </misterromdescription>

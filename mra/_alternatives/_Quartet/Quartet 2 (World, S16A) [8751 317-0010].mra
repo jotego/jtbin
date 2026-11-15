@@ -99,8 +99,8 @@
             <part name="epr-7472.5b" crc="8e2762ec" map="10"/>
         </interleave>
         <part repeat="0x10000"> FF</part>
-        <!-- JTFRAME_PROM_START -->
         <!-- MCU_START -->
+        <!-- JTFRAME_PROM_START -->
         <!-- mcu - starts at 0x180000 - length 0x2000 (13 bits) -->
         <part name="317-0010.bin" crc="8c2033ea"/>
         <part repeat="0x1000"> FF</part>
@@ -125,5 +125,5 @@
         <dip name="Credit Power" bits="9,10" ids="9000,2000,500,1000"/>
         <dip name="Difficulty" bits="11,12" ids="Hardest,Hard,Easy,Normal"/>
     </switches>
-    <buttons names="Jump,Shot,-,-,-,Start,Coin,Core credits" default="A,B,Start,Select,-" count="2"/>
+    <buttons names="Jump,Shot,-,-,-,Start,Coin,Core credits,Test,Service" default="A,B,Start,Select,L2,R2,L3" count="2"/>
 </misterromdescription>

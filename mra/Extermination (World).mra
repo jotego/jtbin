@@ -94,5 +94,5 @@
         <dip name="Difficulty" bits="8,9" ids="Hardest,Hard,Easy,Medium"/>
         <dip name="Damage Multiplier" bits="14,15" ids="*3,*2,*1.5,*1"/>
     </switches>
-    <buttons names="Fire,Warp,-,Start,Coin,Core credits" default="A,B,Start,Select,-" count="2"/>
+    <buttons names="Fire,Warp,-,Start,Coin,Core credits,Test,Service" default="A,B,Start,Select,L2,R2,L3" count="2"/>
 </misterromdescription>

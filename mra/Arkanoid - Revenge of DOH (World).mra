@@ -116,5 +116,5 @@
         <dip name="Lives" bits="12,13" ids="5,4,2,3"/>
         <dip name="Allow Continue" bits="15" ids="Yes,No"/>
     </switches>
-    <buttons names="Shoot,-,-,Start,Coin,Core credits" default="A,Start,Select,-" count="1"/>
+    <buttons names="Shoot,-,-,Start,Coin,Core credits,Test,Service" default="A,Start,Select,L2,R2,L3" count="1"/>
 </misterromdescription>

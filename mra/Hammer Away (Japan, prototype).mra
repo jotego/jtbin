@@ -98,5 +98,5 @@
         <dip name="Demo Sounds" bits="14" ids="On,Off"/>
         <dip name="2 Credits to Start" bits="15" ids="On,Off"/>
     </switches>
-    <buttons names="Land Shot,Air Shot with Missile,Bomb,-,Start,Coin,Core credits" default="A,B,X,Start,Select,-" count="3"/>
+    <buttons names="Land Shot,Air Shot with Missile,Bomb,-,Start,Coin,Core credits,Test,Service" default="A,B,X,Start,Select,L2,R2,L3" count="3"/>
 </misterromdescription>

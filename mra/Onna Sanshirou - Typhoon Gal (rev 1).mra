@@ -123,5 +123,5 @@
         <dip name="Difficulty" bits="21,22" ids="Normal,Easy,Difficult,Very Difficult"/>
         <dip name="Coinage" bits="23" ids="A only,A and B"/>
     </switches>
-    <buttons names="Hit,Throw,-,-,-,-,Start,Coin,Core credits" default="A,B,Start,Select,-" count="2"/>
+    <buttons names="Hit,Throw,-,-,-,-,Start,Coin,Core credits,Test,Service" default="A,B,Start,Select,L2,R2,L3" count="2"/>
 </misterromdescription>

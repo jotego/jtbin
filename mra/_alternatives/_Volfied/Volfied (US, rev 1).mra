@@ -73,8 +73,8 @@
             <part name="c04-09.14" crc="c78cf057" map="10"/>
         </interleave>
         <part repeat="0x20000"> FF</part>
-        <!-- JTFRAME_PROM_START -->
         <!-- JTFRAME_BA3_START -->
+        <!-- JTFRAME_PROM_START -->
         <!-- cchip_bios - starts at 0x200000 - length 0x1000 (12 bits) -->
         <part name="cchip_upd78c11.bin" crc="43021521" length="0x1000"/>
         <!-- cchip_eprom - starts at 0x201000 - length 0x2000 (13 bits) -->
@@ -100,5 +100,5 @@
         <dip name="32768 Lives (Cheat)" bits="14" ids="On,Off"/>
         <dip name="Language" bits="15" ids="English,Japanese"/>
     </switches>
-    <buttons names="button 1,Start,Coin,Core credits" default="A,B,Start,Select,-" count="1"/>
+    <buttons names="button 1,Start,Coin,Core credits,Test,Service" default="A,Start,Select,L2,R2,L3" count="1"/>
 </misterromdescription>

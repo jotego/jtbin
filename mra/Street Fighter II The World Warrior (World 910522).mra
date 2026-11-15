@@ -102,5 +102,5 @@
         <dip name="Game Mode" bits="23" ids="Test,Game"/>
         <dip name="PCB type" ids="88617A,89626A" bits="24"/>
     </switches>
-    <buttons names="LP,MP,SP,LK,MK,HK,Start,Coin,Core credits" default="A,B,X,Y,L,R,Start,Select,-" count="6"/>
+    <buttons names="LP,MP,SP,LK,MK,HK,Start,Coin,Core credits,Test,Service" default="A,B,X,Y,L,R,Start,Select,L2,R2,L3" count="6"/>
 </misterromdescription>
